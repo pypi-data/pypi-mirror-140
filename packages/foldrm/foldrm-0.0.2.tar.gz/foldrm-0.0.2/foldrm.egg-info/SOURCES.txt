@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+foldrm/__init__.py
+foldrm/algo.py
+foldrm/foldrm.py
+foldrm/utils.py
+foldrm.egg-info/PKG-INFO
+foldrm.egg-info/SOURCES.txt
+foldrm.egg-info/dependency_links.txt
+foldrm.egg-info/top_level.txt
