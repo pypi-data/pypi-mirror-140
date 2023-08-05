@@ -1,0 +1,9 @@
+flake8_django_on_delete_comment/__init__.py,sha256=yyLtGsBhynC-sSHdax-rRGvHNjH-gdWxIY68WnPVfDw,22
+flake8_django_on_delete_comment/ast_helpers.py,sha256=p6pg4ByWnIeDCv65pxuww7IBrODZ0paHpDTPtjkOpMo,1715
+flake8_django_on_delete_comment/checker.py,sha256=re2PS0lPfP2EGrx7pw9tgeWwkmQs8_r6p-njLrbIV-c,1315
+flake8_django_on_delete_comment-0.0.3.dist-info/LICENSE,sha256=5_lgu86Hy92n9_MjUkOh_GA3Gyj6BXOx01-uj68ji7k,1066
+flake8_django_on_delete_comment-0.0.3.dist-info/METADATA,sha256=lqMgFq_LevIn4wU7eXSkjU7LS_vefJ4k3lEXswUu9dA,3059
+flake8_django_on_delete_comment-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flake8_django_on_delete_comment-0.0.3.dist-info/entry_points.txt,sha256=br7-oojzqe1LHEep33zxGNQBQKFa1GU3GS4Y93x1y_o,97
+flake8_django_on_delete_comment-0.0.3.dist-info/top_level.txt,sha256=6uDtkPq0Ku_hgsQGBFudFth-f9nooKEJx6wL9GfyxN8,32
+flake8_django_on_delete_comment-0.0.3.dist-info/RECORD,,

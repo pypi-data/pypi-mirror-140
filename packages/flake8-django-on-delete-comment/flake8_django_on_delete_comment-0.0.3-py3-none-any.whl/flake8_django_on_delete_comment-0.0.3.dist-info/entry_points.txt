@@ -1,0 +1,3 @@
+[flake8.extension]
+CD001 = flake8_django_on_delete_comment.checker:DjangoOnDeleteCommentChecker
+
