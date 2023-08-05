@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ocrLangModel4uts
+Version: 1.0
+Summary: Deploying OCR lang model files for uitestrunner-syberos
+Author: Jinzhe Wang
+Author-email: wangjinzhe@syberos.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8, <4
+
+UNKNOWN
+

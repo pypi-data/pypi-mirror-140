@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+src/ocrLangModel4uts/__init__.py
+src/ocrLangModel4uts.egg-info/PKG-INFO
+src/ocrLangModel4uts.egg-info/SOURCES.txt
+src/ocrLangModel4uts.egg-info/dependency_links.txt
+src/ocrLangModel4uts.egg-info/top_level.txt
+src/ocrLangModel4uts/data/english_g2.pth
+src/ocrLangModel4uts/data/zh_sim_g2.pth
