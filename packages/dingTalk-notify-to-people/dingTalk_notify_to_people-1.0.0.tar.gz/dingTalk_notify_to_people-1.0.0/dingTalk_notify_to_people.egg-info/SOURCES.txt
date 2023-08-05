@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dingTalk_notify_to_people/__init__.py
+dingTalk_notify_to_people/plugin.py
+dingTalk_notify_to_people.egg-info/PKG-INFO
+dingTalk_notify_to_people.egg-info/SOURCES.txt
+dingTalk_notify_to_people.egg-info/dependency_links.txt
+dingTalk_notify_to_people.egg-info/entry_points.txt
+dingTalk_notify_to_people.egg-info/requires.txt
+dingTalk_notify_to_people.egg-info/top_level.txt
