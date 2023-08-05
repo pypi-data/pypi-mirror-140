@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Yaml8/Yaml.py
+Yaml8/__init__.py
+Yaml8.egg-info/PKG-INFO
+Yaml8.egg-info/SOURCES.txt
+Yaml8.egg-info/dependency_links.txt
+Yaml8.egg-info/requires.txt
+Yaml8.egg-info/top_level.txt
