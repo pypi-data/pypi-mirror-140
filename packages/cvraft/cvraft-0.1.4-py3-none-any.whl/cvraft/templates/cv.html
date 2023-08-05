@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ name }}</title>
+        <meta name="description"
+              content="{{ name }}" />
+        <meta name="author" content="{{ name }}" />
+        <meta property="og:title" content="{{ name }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url"
+              content="https://cvraft.io/" />
+        <meta property="og:description"
+              content="{{ name }}" />/>
+        <link rel="stylesheet" href="static/styles/main.css" />
+    </head>
+    <body>
+        <div class="page">
+            <section id="about">
+                <h1 class="name">{{ name }}</h1>
+                <span class="phone">{{ phone }}</span>
+                <span class="email">{{ email }}</span>
+                <p class="headline">{{ headline }}</span>
+            </section>
+            {{content | safe}}
+        </div>
+    </body>
+</html>
