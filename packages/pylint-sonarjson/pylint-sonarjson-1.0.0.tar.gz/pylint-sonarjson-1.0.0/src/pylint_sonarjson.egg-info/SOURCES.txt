@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/pylint_sonarjson/__init__.py
+src/pylint_sonarjson/sonarjson_reporter.py
+src/pylint_sonarjson/sonaroptions_checker.py
+src/pylint_sonarjson.egg-info/PKG-INFO
+src/pylint_sonarjson.egg-info/SOURCES.txt
+src/pylint_sonarjson.egg-info/dependency_links.txt
+src/pylint_sonarjson.egg-info/requires.txt
+src/pylint_sonarjson.egg-info/top_level.txt
