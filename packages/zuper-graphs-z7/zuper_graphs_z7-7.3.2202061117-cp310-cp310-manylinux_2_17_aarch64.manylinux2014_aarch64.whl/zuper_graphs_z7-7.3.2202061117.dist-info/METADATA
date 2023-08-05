@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zuper-graphs-z7
+Version: 7.3.2202061117
+Summary: UNKNOWN
+Home-page: https://github.com/zupermind/zuper-graphs
+Author: Andrea Censi
+Author-email: info@zupermind.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: networkx
+Requires-Dist: reprep-z7
+Requires-Dist: zuper-commons-z7
+Requires-Dist: zuper-typing-z7
+Requires-Dist: zuper-utils-soup-z7
+Provides-Extra: test
+Requires-Dist: PyMCDP-z7 ; extra == 'test'
+
+UNKNOWN
+
