@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+topsis/__init__.py
+topsis/__main__.py
+topsis_Bhagesh_101903540.egg-info/PKG-INFO
+topsis_Bhagesh_101903540.egg-info/SOURCES.txt
+topsis_Bhagesh_101903540.egg-info/dependency_links.txt
+topsis_Bhagesh_101903540.egg-info/entry_points.txt
+topsis_Bhagesh_101903540.egg-info/top_level.txt
