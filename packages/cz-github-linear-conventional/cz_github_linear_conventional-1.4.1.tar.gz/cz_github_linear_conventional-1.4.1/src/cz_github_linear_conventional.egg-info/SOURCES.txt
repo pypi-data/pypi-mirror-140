@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/cz_github_linear_conventional.py
+src/cz_github_linear_conventional.egg-info/PKG-INFO
+src/cz_github_linear_conventional.egg-info/SOURCES.txt
+src/cz_github_linear_conventional.egg-info/dependency_links.txt
+src/cz_github_linear_conventional.egg-info/not-zip-safe
+src/cz_github_linear_conventional.egg-info/requires.txt
+src/cz_github_linear_conventional.egg-info/top_level.txt

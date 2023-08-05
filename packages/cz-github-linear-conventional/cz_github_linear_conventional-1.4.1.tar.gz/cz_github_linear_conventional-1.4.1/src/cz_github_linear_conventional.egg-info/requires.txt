@@ -1,0 +1,5 @@
+commitizen
+
+[testing]
+pytest>=6.2.5
+flake8>=3.9
