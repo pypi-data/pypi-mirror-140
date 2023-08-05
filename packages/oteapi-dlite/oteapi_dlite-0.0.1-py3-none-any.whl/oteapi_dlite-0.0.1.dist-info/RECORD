@@ -1,0 +1,12 @@
+oteapi_dlite/__init__.py,sha256=Epv88aJSCTMThqngKuoQVmJJUN5fCQvTDTP8UM7WPaw,244
+oteapi_dlite/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oteapi_dlite/strategies/parse_image.py,sha256=4NMgNRtYGqSRugpm98jf0YIXq2tNYQ85Ypi8NasyLGY,6511
+oteapi_dlite/strategies/parse_xlsx.py,sha256=EwSfoGIpTVY7h5lubtj7Mjm4fl9k3aC_e3tso0cRs-8,4087
+oteapi_dlite/utils/__init__.py,sha256=B3vKYkqKnD73dILAMocA-A1aIraqvzWAYokTqMlqjcI,116
+oteapi_dlite/utils/nputils.py,sha256=THjrFmCEO4Ht1gUQS3Y_gydYm-IxdD8sbavaskE57eM,775
+oteapi_dlite-0.0.1.dist-info/LICENSE,sha256=Mu1rY6Cyv5ok6vHed1_EuINL9t16JY7Zf3YN0mgMhdE,1063
+oteapi_dlite-0.0.1.dist-info/METADATA,sha256=3AsbnyNJeTfkzpsagWDlXPFUXztNXeW_ldFU9AMMJe4,1408
+oteapi_dlite-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+oteapi_dlite-0.0.1.dist-info/entry_points.txt,sha256=AjZ5aTmkP-6OmfxAcVkEaykmTMamNtxyn2Hc94BhLws,652
+oteapi_dlite-0.0.1.dist-info/top_level.txt,sha256=ypkXUOViXjUgDgH6QrxPmKwOBU_M7sT5fbbpud1zOZ8,13
+oteapi_dlite-0.0.1.dist-info/RECORD,,
