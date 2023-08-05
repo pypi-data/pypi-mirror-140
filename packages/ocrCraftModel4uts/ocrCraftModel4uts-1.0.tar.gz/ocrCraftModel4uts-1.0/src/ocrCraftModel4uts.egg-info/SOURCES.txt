@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+src/ocrCraftModel4uts/__init__.py
+src/ocrCraftModel4uts.egg-info/PKG-INFO
+src/ocrCraftModel4uts.egg-info/SOURCES.txt
+src/ocrCraftModel4uts.egg-info/dependency_links.txt
+src/ocrCraftModel4uts.egg-info/top_level.txt
+src/ocrCraftModel4uts/data/craft_mlt_25k.pth
