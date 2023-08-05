@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/immutability/__init__.py
+src/immutability/this.py
+src/immutability.egg-info/PKG-INFO
+src/immutability.egg-info/SOURCES.txt
+src/immutability.egg-info/dependency_links.txt
+src/immutability.egg-info/top_level.txt
