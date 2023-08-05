@@ -1,0 +1,10 @@
+[
+  "test.py::test_individual_transformer",
+  "test.py::test_spacy_external_transformer",
+  "test.py::test_spacy_few_shot_external",
+  "test.py::test_spacy_internal_embeddings",
+  "test.py::test_spacy_zero_shot_external",
+  "tests.py::test_individual_transformer",
+  "tests.py::test_spacy_external_transformer",
+  "tests.py::test_spacy_internal_embeddings"
+]
