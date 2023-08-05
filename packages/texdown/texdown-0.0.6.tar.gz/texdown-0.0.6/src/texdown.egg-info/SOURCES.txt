@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyfoobar/__about__.py
+src/pyfoobar/__init__.py
+src/pyfoobar/cli.py
+src/pyfoobar/main.py
+src/texdown.egg-info/PKG-INFO
+src/texdown.egg-info/SOURCES.txt
+src/texdown.egg-info/dependency_links.txt
+src/texdown.egg-info/entry_points.txt
+src/texdown.egg-info/requires.txt
+src/texdown.egg-info/top_level.txt
