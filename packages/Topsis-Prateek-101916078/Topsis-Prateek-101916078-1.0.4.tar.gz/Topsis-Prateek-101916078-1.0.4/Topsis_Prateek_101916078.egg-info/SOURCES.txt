@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis_Prateek_101916078.egg-info/PKG-INFO
+Topsis_Prateek_101916078.egg-info/SOURCES.txt
+Topsis_Prateek_101916078.egg-info/dependency_links.txt
+Topsis_Prateek_101916078.egg-info/entry_points.txt
+Topsis_Prateek_101916078.egg-info/requires.txt
+Topsis_Prateek_101916078.egg-info/top_level.txt
+topsis/__init__.py
+topsis/__main__.py
