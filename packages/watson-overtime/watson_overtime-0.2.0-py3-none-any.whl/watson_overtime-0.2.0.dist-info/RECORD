@@ -1,0 +1,10 @@
+watson_overtime/__init__.py,sha256=EelxTGF-rM89KKt-gmLGmhs1W-OAu7hja_NBis6adoA,212
+watson_overtime/__main__.py,sha256=Ipm-KZJB7V1CFJ96iF1-pN8CBfK7qdsykjsmt4hl7LQ,32
+watson_overtime/click_timedelta.py,sha256=HM8BjmgqQeouEdOluv9AFM8Ch6zcs8hpvn2hTz7dbBI,338
+watson_overtime/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watson_overtime/main.py,sha256=9R4bxQYQka3XEig7-VRR_FrA3YHIz6vvD8hIfbQ4mTE,1497
+watson_overtime-0.2.0.dist-info/entry_points.txt,sha256=qDdkK0QtdRG13qz2oo-K95mZdvCNEuTDpGKgjsiF-f4,61
+watson_overtime-0.2.0.dist-info/LICENSE,sha256=41Kv7p2kr9F-88Ih-s4xljl4yX2BFJVK5E2jwRmpCKo,1070
+watson_overtime-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+watson_overtime-0.2.0.dist-info/METADATA,sha256=zxG5jhTfIc58AkpFz1bCvakdW8H3nvjqdBn0x-DcTJk,916
+watson_overtime-0.2.0.dist-info/RECORD,,
