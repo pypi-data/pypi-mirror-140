@@ -1,0 +1,8 @@
+setup.py
+soda_sql_redshift.egg-info/PKG-INFO
+soda_sql_redshift.egg-info/SOURCES.txt
+soda_sql_redshift.egg-info/dependency_links.txt
+soda_sql_redshift.egg-info/requires.txt
+soda_sql_redshift.egg-info/top_level.txt
+sodasql/dialects/redshift_dialect.py
+sodasql/scan/aws_credentials.py
