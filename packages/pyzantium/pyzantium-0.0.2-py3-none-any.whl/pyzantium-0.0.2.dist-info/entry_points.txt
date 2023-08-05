@@ -1,0 +1,4 @@
+[console_scripts]
+pyz-client = pyzantium.client:main
+pyz-node = pyzantium.node:main
+
