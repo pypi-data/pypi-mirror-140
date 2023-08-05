@@ -1,0 +1,15 @@
+pipm/__init__.py,sha256=fTrgr2bRsXjD2EDiDr6HHRLSDdeY4hD7lxOkeRQboaI,146
+pipm/__main__.py,sha256=rx85gu5-kcflDgpFnezCNbKGrrO9N9OAmXuwzvlVuCM,1302
+pipm/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipm/src/classes.py,sha256=EP3DeS1KCZKw319iZbYMSZhUGfF5OqOsTuW_QGYRzc8,410
+pipm/src/commands.py,sha256=YDHrm0CHNN7W0wVzUiO4KHlOhsexhgHDh5Em4W1G-bA,7150
+pipm/src/file.py,sha256=C3JE_V_MUlF6wqk9viyRajKvkeY2Or2WferqslvK-5g,4938
+pipm/src/file_utils.py,sha256=haVDOx1RKWZDasE1q90HFgR_IP14yxRKGhlsWXruL60,3683
+pipm/src/operations.py,sha256=G29L7P1qcLs9eWRBvnwSkJci-drLk40D7n6M0eccjoA,2947
+pipm/src/setup_cfg.py,sha256=R8Og61E7GM5XvonSsbVfxmA16DE6KtRzkwiRe4O6vho,4498
+pipm-22.2.1.dist-info/LICENSE,sha256=giof9pKe9nASEKng13ANaRRLRV5zGHvxhWcAEKNPJyI,1096
+pipm-22.2.1.dist-info/METADATA,sha256=OjY71QSVr50mS7uvegloiibViTiad1-jr6LeXqty2Rg,991
+pipm-22.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pipm-22.2.1.dist-info/entry_points.txt,sha256=xATlUcR90Jwanyq1WfAf59CoOu9tvV5fIACKAIEBzFY,45
+pipm-22.2.1.dist-info/top_level.txt,sha256=vzCDTfGdmDx-r-6cQlOwzNAcoeZe4eGeS9ryF5WzdRw,5
+pipm-22.2.1.dist-info/RECORD,,
