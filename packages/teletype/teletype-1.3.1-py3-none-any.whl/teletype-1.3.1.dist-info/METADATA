@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: teletype
+Version: 1.3.1
+Summary: A high-level cross platform tty library
+Home-page: https://github.com/jkwill87/teletype
+Author: Jessy Williams
+Author-email: jessy@jessywilliams.com
+Maintainer: Jessy Williams
+Maintainer-email: jessy@jessywilliams.com
+License: MIT
+Keywords: tty cli terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Terminals
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: license.txt
+Provides-Extra: ci
+Requires-Dist: black (~=22.1.0) ; extra == 'ci'
+Requires-Dist: isort (~=5.10.1) ; extra == 'ci'
+Requires-Dist: mypy (~=0.931) ; extra == 'ci'
+
+UNKNOWN
+
