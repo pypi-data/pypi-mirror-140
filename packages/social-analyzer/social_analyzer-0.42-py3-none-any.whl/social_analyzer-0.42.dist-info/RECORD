@@ -1,0 +1,14 @@
+social-analyzer/__init__.py,sha256=EEv28Du-q1fhel6Tup9XKsbFqr6_ZCwYAGoLlDQfO2g,92
+social-analyzer/__main__.py,sha256=hsF_Mzv3RI7NA8rfqvBNArTsQiRiRSZxOr-ejSqHPks,41800
+social-analyzer/social-analyzer,sha256=I1NjcG725CaghxqyXtHMSR1KUT5HTcbqjUcD3QxaHik,149
+social-analyzer/data/countries.json,sha256=xnzfddaMEAeI-QIpta7zdVyUPlV3g1w-_XMZVRzrzoo,5136
+social-analyzer/data/dict.json,sha256=koEQZd17IOveo-v0miAueW62mwezg9HB4A1ZSULagsQ,1444735
+social-analyzer/data/languages.json,sha256=A1TF8NdRMhQENhtmXBADry9c2hChZSJ2uBE-_WNjfjg,3510
+social-analyzer/data/names.json,sha256=oxwl5WwXhciRu6Uz_Pjtko7BVtzPIlKUlfNRyjLyKNc,193884
+social-analyzer/data/sites.json,sha256=JUpsyiHs5s-bMLtI0OK_oNvQeAuOu3t87lVaxEK4V-A,530230
+social-analyzer/data/sites.json_new,sha256=JUpsyiHs5s-bMLtI0OK_oNvQeAuOu3t87lVaxEK4V-A,530230
+social_analyzer-0.42.data/scripts/social-analyzer,sha256=3FVbir0Y0_V9OQmX4uEYazjD7bokkNqFi16fNemPo5s,136
+social_analyzer-0.42.dist-info/METADATA,sha256=jYV8LofhztRS-2UeulSHyyySsQW5PdgB66Rd46rcUJA,11403
+social_analyzer-0.42.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+social_analyzer-0.42.dist-info/top_level.txt,sha256=jOAs4a0yVsK2yKXHy43DTT3mS97Tkre-xCjmjKuE9iU,16
+social_analyzer-0.42.dist-info/RECORD,,
