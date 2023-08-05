@@ -1,0 +1,7 @@
+docspec/__init__.py,sha256=2Y6YqeYto0tFcZesaVFpfaWK-b2d7qCkDqZoD8YZAQs,19443
+docspec/__main__.py,sha256=5pbe1pyvTQxDgsx9TMv8qDnxSIV3tXf47wdH3mD2yEA,2678
+docspec/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docspec-2.0.0a1.dist-info/entry_points.txt,sha256=YtB_fWvOguIzxuMc2eOyHa3yV5Ltdl7g3qcdSDyc11E,49
+docspec-2.0.0a1.dist-info/WHEEL,sha256=FMw6u7Kp3jrdDDtJRZ3hkPV-9adLQT8pbM4iifKUGfw,85
+docspec-2.0.0a1.dist-info/METADATA,sha256=S4QKhDDnujlssrmggD0bBe6B72HQ8uNvI1Xuy9dg_Dg,1433
+docspec-2.0.0a1.dist-info/RECORD,,
