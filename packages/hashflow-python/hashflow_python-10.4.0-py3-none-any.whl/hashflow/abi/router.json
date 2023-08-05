@@ -1,0 +1,261 @@
+[
+    {
+        "inputs": [],
+        "name": "ETH",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "addLiquidityPrivatePool",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "oToken",
+                "type": "address"
+            }
+        ],
+        "name": "getOtokenDetails",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "trader",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "quoteToken",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "baseTokenAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "quoteTokenAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "quoteExpiry",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "kValueOrNonce",
+                "type": "uint256"
+            },
+            {
+                "internalType": "enum IEnum.Flag",
+                "name": "flag",
+                "type": "uint8"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "txid",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes",
+                "name": "signedQuote",
+                "type": "bytes"
+            }
+        ],
+        "name": "tradeETHForToken",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "trader",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "baseToken",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "baseTokenAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "quoteTokenAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "quoteExpiry",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "kValueOrNonce",
+                "type": "uint256"
+            },
+            {
+                "internalType": "enum IEnum.Flag",
+                "name": "flag",
+                "type": "uint8"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "txid",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes",
+                "name": "signedQuote",
+                "type": "bytes"
+            }
+        ],
+        "name": "tradeTokenForETH",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "trader",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "baseToken",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "quoteToken",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "baseTokenAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "quoteTokenAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "quoteExpiry",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "kValueOrNonce",
+                "type": "uint256"
+            },
+            {
+                "internalType": "enum IEnum.Flag",
+                "name": "flag",
+                "type": "uint8"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "txid",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes",
+                "name": "signedQuote",
+                "type": "bytes"
+            }
+        ],
+        "name": "tradeTokens",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]

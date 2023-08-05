@@ -1,0 +1,554 @@
+[
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "internalType": "address",
+              "name": "trader",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "bytes32",
+              "name": "txid",
+              "type": "bytes32"
+          },
+          {
+              "indexed": false,
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "address",
+              "name": "quoteToken",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "baseTokenAmount",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "quoteTokenAmount",
+              "type": "uint256"
+          }
+      ],
+      "name": "Trade",
+      "type": "event"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+          }
+      ],
+      "name": "approveMargin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "key",
+              "type": "address"
+          }
+      ],
+      "name": "authorizedKey",
+      "outputs": [
+          {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [],
+      "name": "getAdmin",
+      "outputs": [
+          {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "uint256",
+              "name": "kValue",
+              "type": "uint256"
+          }
+      ],
+      "name": "getFlag",
+      "outputs": [
+          {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+          }
+      ],
+      "name": "getNonce",
+      "outputs": [
+          {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [],
+      "name": "getPoolName",
+      "outputs": [
+          {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+          }
+      ],
+      "name": "getReserves",
+      "outputs": [
+          {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [],
+      "name": "getSigner",
+      "outputs": [
+          {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+          },
+          {
+              "internalType": "address",
+              "name": "admin",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "signer",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "operations",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "router",
+              "type": "address"
+          },
+          {
+              "internalType": "address[]",
+              "name": "whitelist",
+              "type": "address[]"
+          }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "components": [
+                  {
+                      "internalType": "enum IOpynActions.ActionType",
+                      "name": "actionType",
+                      "type": "uint8"
+                  },
+                  {
+                      "internalType": "address",
+                      "name": "owner",
+                      "type": "address"
+                  },
+                  {
+                      "internalType": "address",
+                      "name": "secondAddress",
+                      "type": "address"
+                  },
+                  {
+                      "internalType": "address",
+                      "name": "asset",
+                      "type": "address"
+                  },
+                  {
+                      "internalType": "uint256",
+                      "name": "vaultId",
+                      "type": "uint256"
+                  },
+                  {
+                      "internalType": "uint256",
+                      "name": "amount",
+                      "type": "uint256"
+                  },
+                  {
+                      "internalType": "uint256",
+                      "name": "index",
+                      "type": "uint256"
+                  },
+                  {
+                      "internalType": "bytes",
+                      "name": "data",
+                      "type": "bytes"
+                  }
+              ],
+              "internalType": "struct IOpynActions.ActionArgs[]",
+              "name": "args",
+              "type": "tuple[]"
+          },
+          {
+              "internalType": "address",
+              "name": "controller",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+          },
+          {
+              "internalType": "uint256",
+              "name": "baseTokenAmount",
+              "type": "uint256"
+          },
+          {
+              "internalType": "uint256",
+              "name": "kValueOrNonce",
+              "type": "uint256"
+          },
+          {
+              "internalType": "uint256",
+              "name": "quoteExpiry",
+              "type": "uint256"
+          },
+          {
+              "internalType": "enum IEnum.Flag",
+              "name": "flag",
+              "type": "uint8"
+          },
+          {
+              "internalType": "bytes32",
+              "name": "txid",
+              "type": "bytes32"
+          },
+          {
+              "internalType": "bytes",
+              "name": "signedQuote",
+              "type": "bytes"
+          }
+      ],
+      "name": "mintAndSellOpynOption",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "components": [
+                  {
+                      "internalType": "enum IOpynActions.ActionType",
+                      "name": "actionType",
+                      "type": "uint8"
+                  },
+                  {
+                      "internalType": "address",
+                      "name": "owner",
+                      "type": "address"
+                  },
+                  {
+                      "internalType": "address",
+                      "name": "secondAddress",
+                      "type": "address"
+                  },
+                  {
+                      "internalType": "address",
+                      "name": "asset",
+                      "type": "address"
+                  },
+                  {
+                      "internalType": "uint256",
+                      "name": "vaultId",
+                      "type": "uint256"
+                  },
+                  {
+                      "internalType": "uint256",
+                      "name": "amount",
+                      "type": "uint256"
+                  },
+                  {
+                      "internalType": "uint256",
+                      "name": "index",
+                      "type": "uint256"
+                  },
+                  {
+                      "internalType": "bytes",
+                      "name": "data",
+                      "type": "bytes"
+                  }
+              ],
+              "internalType": "struct IOpynActions.ActionArgs[]",
+              "name": "args",
+              "type": "tuple[]"
+          },
+          {
+              "internalType": "address",
+              "name": "controller",
+              "type": "address"
+          }
+      ],
+      "name": "performOpynAction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "router",
+              "type": "address"
+          }
+      ],
+      "name": "routerAuthorized",
+      "outputs": [
+          {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "trader",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "quoteToken",
+              "type": "address"
+          },
+          {
+              "internalType": "uint256",
+              "name": "baseTokenAmount",
+              "type": "uint256"
+          },
+          {
+              "internalType": "uint256",
+              "name": "quoteTokenAmount",
+              "type": "uint256"
+          },
+          {
+              "internalType": "uint256",
+              "name": "kValueOrNonce",
+              "type": "uint256"
+          },
+          {
+              "internalType": "enum IEnum.Flag",
+              "name": "flag",
+              "type": "uint8"
+          },
+          {
+              "internalType": "bytes32",
+              "name": "txid",
+              "type": "bytes32"
+          },
+          {
+              "internalType": "bytes",
+              "name": "signedQuote",
+              "type": "bytes"
+          }
+      ],
+      "name": "trade",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "margin",
+              "type": "address"
+          }
+      ],
+      "name": "updateMargin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "operations",
+              "type": "address"
+          }
+      ],
+      "name": "updateOperations",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "router",
+              "type": "address"
+          },
+          {
+              "internalType": "bool",
+              "name": "permissions",
+              "type": "bool"
+          }
+      ],
+      "name": "updateRouterPermissions",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "signer",
+              "type": "address"
+          }
+      ],
+      "name": "updateSigner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+          },
+          {
+              "internalType": "bool",
+              "name": "status",
+              "type": "bool"
+          }
+      ],
+      "name": "updateWhitelist",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+          },
+          {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+          }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address[]",
+              "name": "portfolio",
+              "type": "address[]"
+          },
+          {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+          }
+      ],
+      "name": "withdrawAll",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  }
+]
