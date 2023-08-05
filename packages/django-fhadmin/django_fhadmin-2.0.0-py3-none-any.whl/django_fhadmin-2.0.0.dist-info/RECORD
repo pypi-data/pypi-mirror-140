@@ -1,0 +1,13 @@
+fhadmin/__init__.py,sha256=8_1tBvX5j2-IE7ovYoovI5xJx8ncNXW_RYr9ck4CR9I,102
+fhadmin/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fhadmin/static/fhadmin/fhadmin.css,sha256=_LwHnwadApUx2P5jquyKUf78a8FP0xzDTFRhU--MsJU,1689
+fhadmin/templates/admin/base_site.html,sha256=UzUtDBH4BJT_lPKPA5-CO6eyniSL1-WUB-lPG159qqY,496
+fhadmin/templates/admin/group_list.html,sha256=kFDXntxU6uCn3k9yi09nrvvk0MS40TMxuSCMKE8amWQ,1796
+fhadmin/templates/admin/index.html,sha256=5pQfTNjGqcWINvs-rqX8bWkzmhOo9SY0sUs3j7rjqCY,1730
+fhadmin/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fhadmin/templatetags/fhadmin_module_groups.py,sha256=Mzo9CJMBu-iOE4wirnk-HiH1G6XbsBMjatdvAhuWzHo,4328
+django_fhadmin-2.0.0.dist-info/LICENSE,sha256=EeStXy_qBePVTsM8AHL7fnHdVlyfAmRdMDArwiUh84o,1557
+django_fhadmin-2.0.0.dist-info/METADATA,sha256=WHQ5PtzqJEShS8XA2yLeac8Y5HNpoyjZuWLdhSkOch0,1642
+django_fhadmin-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_fhadmin-2.0.0.dist-info/top_level.txt,sha256=K_aIxFl54EJbRhWz8-LdaWkS_Tfwd46pCxh1nn3kToU,8
+django_fhadmin-2.0.0.dist-info/RECORD,,
