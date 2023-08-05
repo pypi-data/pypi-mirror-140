@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: make.env
+Version: 0.0.1
+Summary: wraps make command with the ability to load .env files
+Home-page: https://github.com/smac89/make.env
+License: MIT
+Author: smac89
+Author-email: nobleman.code@gmx.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: python-dotenv (>=0.19.2,<0.20.0)
+Project-URL: Repository, https://github.com/smac89/make.env
