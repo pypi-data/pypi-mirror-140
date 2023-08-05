@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+aflevering3_tree/__init__.py
+aflevering3_tree.egg-info/PKG-INFO
+aflevering3_tree.egg-info/SOURCES.txt
+aflevering3_tree.egg-info/dependency_links.txt
+aflevering3_tree.egg-info/top_level.txt
