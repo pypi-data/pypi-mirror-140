@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: growingio-tracker
+Version: 0.3.0
+Summary: GrowingIO Tracker library for Python
+Home-page: https://github.com/growingio/growingio-python-sdk/
+Author: cpacm,GrowingIO SDK Team
+Author-email: sdk-integration@growingio.com
+License: Apache
+Keywords: growingio python analytics
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=2.7, !=3.4.*
+Requires-Dist: six (>=1.9.0)
+Requires-Dist: requests (>=2.4.2)
+Requires-Dist: urllib3
+
+growingio-track-python
+==============================
+
+GrowingIO提供在Python Server端部署的SDK，从而可以方便的进行事件上报等操作
+
+
+Installation
+------------
+
+可以使用 pip 下载我们的sdk::
+
+    pip install growingio_tracker
+
+Getting Started
+---------------
+
+简单示例::
+
+    from growingio_tracker import GrowingTracker
+
+    growing_tracker = GrowingTracker('<ProductId>', '<DataSOurceId>', '<ServerHost>')
+    growing_tracker.track_custom_event("test", attributes={'name': 'cpacm', 'age': '100'},
+                                       login_user_id='user', login_user_key='email')
+    growing_tracker.submit_item('test', 'python', item_attrs={'name': 'cpacm'})
+
+
+
+
