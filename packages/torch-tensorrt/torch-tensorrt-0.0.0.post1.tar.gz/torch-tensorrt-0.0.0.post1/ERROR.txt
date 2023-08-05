@@ -1,0 +1,7 @@
+
+###########################################################################################
+The package you are trying to install is only a placeholder project on PyPI.org repository.
+To install Torch-TensorRT please run the following command:
+
+$ pip install torch-tensorrt -f https://github.com/NVIDIA/Torch-TensorRT/releases
+###########################################################################################

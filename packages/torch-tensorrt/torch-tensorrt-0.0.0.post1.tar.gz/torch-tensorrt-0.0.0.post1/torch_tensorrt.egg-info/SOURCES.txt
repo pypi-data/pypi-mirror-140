@@ -1,0 +1,11 @@
+ERROR.txt
+LICENSE
+MANIFEST.in
+README.rst
+package_info.py
+setup.cfg
+setup.py
+torch_tensorrt.egg-info/PKG-INFO
+torch_tensorrt.egg-info/SOURCES.txt
+torch_tensorrt.egg-info/dependency_links.txt
+torch_tensorrt.egg-info/top_level.txt
