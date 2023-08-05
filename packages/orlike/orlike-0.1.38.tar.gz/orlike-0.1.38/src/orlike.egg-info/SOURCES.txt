@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/orlike/__init__.py
+src/orlike/__version__.py
+src/orlike/index.py
+src/orlike.egg-info/PKG-INFO
+src/orlike.egg-info/SOURCES.txt
+src/orlike.egg-info/dependency_links.txt
+src/orlike.egg-info/requires.txt
+src/orlike.egg-info/top_level.txt
+src/orlike/templates/orlike.html
+src/orlike/templates/test.html

@@ -1,0 +1,8 @@
+Flask>=1.1.2
+leancloud>=2.9.3
+flask-cors
+
+[dev]
+pytest==6.2.2
+pytest-cov==2.11.1
+tox~=3.21.0
