@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/econnlp/__init__.py
+src/econnlp.egg-info/PKG-INFO
+src/econnlp.egg-info/SOURCES.txt
+src/econnlp.egg-info/dependency_links.txt
+src/econnlp.egg-info/not-zip-safe
+src/econnlp.egg-info/requires.txt
+src/econnlp.egg-info/top_level.txt
+src/econnlp/embedding/__init__.py
+src/econnlp/embedding/docs.py
