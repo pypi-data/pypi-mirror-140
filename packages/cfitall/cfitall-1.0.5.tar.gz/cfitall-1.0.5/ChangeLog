@@ -1,0 +1,56 @@
+CHANGES
+=======
+
+v1.0.5
+------
+
+* changelog
+* update Pipfile.lock
+* reformatted all code w/ black
+* update deprecated import and reformat w/ black
+* Bump bleach from 3.2.1 to 3.3.0
+
+v1.0.4
+------
+
+* update changelog
+* update changelog
+* add Makefile
+* update dependencies
+* bump changelog
+
+v1.0.3
+------
+
+* allow splitting environment variable values by whitespace
+* add build status badge for dev
+* add travis config
+* remove some extraneous code
+
+v1.0.2
+------
+
+* updated changelog
+* add missing space
+* fix recursion bug
+* add stdeb.cfg for debian packaging
+
+v1.0.1
+------
+
+* improve support for booleans in environment vars
+
+v1.0.0
+------
+
+* add license
+* add AUTHORS and ChangeLog per pbr
+* update README
+* add json and yaml convenience methods
+* more work removing string > list conversions
+* stop doing weird string > list conversions
+* add tests and fix bugs exposed
+* update readme
+* replace readme with rst version, minor housekeeping
+* rename project to cfitall; mvp functionality; tests needed
+* initial commit
