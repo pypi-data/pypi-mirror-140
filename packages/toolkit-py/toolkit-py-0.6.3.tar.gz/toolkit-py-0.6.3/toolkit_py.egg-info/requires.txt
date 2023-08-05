@@ -1,0 +1,9 @@
+chardet
+click
+click_aliases
+lxml
+pyyaml
+requests
+
+[:python_version < "3.7"]
+dataclasses
