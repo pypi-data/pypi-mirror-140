@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+cs453_project_mert_yildirim.egg-info/PKG-INFO
+cs453_project_mert_yildirim.egg-info/SOURCES.txt
+cs453_project_mert_yildirim.egg-info/dependency_links.txt
+cs453_project_mert_yildirim.egg-info/requires.txt
+cs453_project_mert_yildirim.egg-info/top_level.txt
+dictionary/__init__.py
+dictionary/dictionary.py
