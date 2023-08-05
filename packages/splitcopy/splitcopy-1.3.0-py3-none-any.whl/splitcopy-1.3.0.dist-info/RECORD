@@ -1,0 +1,14 @@
+splitcopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splitcopy/ftp.py,sha256=CO8fpBCvkBlzAlXpZsllhhjYu-yuyr0LYN9HiFmBV_w,3341
+splitcopy/get.py,sha256=MTShp-H9zImqGTuhc2Y57tZp8DESxhY01MH8p8t4wAY,20273
+splitcopy/paramikoshell.py,sha256=Nfs4wWPaDyQ3mOcHPvxzuABdld75YbU9aTmeT2owA88,16436
+splitcopy/progress.py,sha256=Hcl_xko1De8DRgWQ7-qvlYN81rHHUOnOOx95DRFUk6E,2013
+splitcopy/put.py,sha256=4n2I8sg24YORWET06CtLQ2kutxxnKrR-Xn_Xh9kXyB0,19992
+splitcopy/shared.py,sha256=uFdCUN9vUaMirdmZvLym78OPqwuivak7O7b11Ob79Gs,24121
+splitcopy/splitcopy.py,sha256=oBeaLTZU5cIUbG2tTIrBvQ5Voh6rLdsqWz7iK8GntCM,7193
+splitcopy-1.3.0.dist-info/LICENSE,sha256=OJ5-T81ZwRzVpKgUd3Z6WCAPGcr0guUnJgPZuMvntTQ,11351
+splitcopy-1.3.0.dist-info/METADATA,sha256=nbpyMWtlcjhHLvQi8EwfyAwWmXX8HUs_JEfmrY2VheA,8424
+splitcopy-1.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+splitcopy-1.3.0.dist-info/entry_points.txt,sha256=FwmD1eokIc8crwPM7cREHDt3YT328mNdpxLE_XiwVCI,55
+splitcopy-1.3.0.dist-info/top_level.txt,sha256=S2eRB1F9lMeGN2u67fb_DyCc16nThA41YV2z3W-R55Q,10
+splitcopy-1.3.0.dist-info/RECORD,,
