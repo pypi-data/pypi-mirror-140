@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: historicdutchweather
+Version: 1.1.0
+Summary: Download the hourly historic weather from the dutch weather agency KNMI and localize the data to a particular lon/lat
+Home-page: https://github.com/stephanpcpeters/HourlyHistoricWeather
+Author: Stephan Peters
+Author-email: s.p.c.peters@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/stephanpcpeters/HourlyHistoricWeather/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: scipy
+
+UNKNOWN
+
