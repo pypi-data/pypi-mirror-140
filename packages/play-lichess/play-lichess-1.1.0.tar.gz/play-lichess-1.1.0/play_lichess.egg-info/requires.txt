@@ -1,0 +1,2 @@
+aiohttp<4,>=3.8
+dataclasses>=0.6

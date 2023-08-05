@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+play_lichess/__init__.py
+play_lichess/exceptions.py
+play_lichess/match.py
+play_lichess/option.py
+play_lichess/types.py
+play_lichess.egg-info/PKG-INFO
+play_lichess.egg-info/SOURCES.txt
+play_lichess.egg-info/dependency_links.txt
+play_lichess.egg-info/requires.txt
+play_lichess.egg-info/top_level.txt
