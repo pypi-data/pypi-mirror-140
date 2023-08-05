@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/phytoClassifier/__init__.py
+src/phytoClassifier/level0.py
+src/phytoClassifier/level1.py
+src/phytoClassifier/level2.py
+src/phytoClassifier/level3.py
+src/phytoClassifier/level4.py
+src/phytoClassifier/levelminus1.py
+src/phytoClassifier/main.py
+src/phytoClassifier.egg-info/PKG-INFO
+src/phytoClassifier.egg-info/SOURCES.txt
+src/phytoClassifier.egg-info/dependency_links.txt
+src/phytoClassifier.egg-info/top_level.txt
+src/phytoClassifier/data/mclk.db
