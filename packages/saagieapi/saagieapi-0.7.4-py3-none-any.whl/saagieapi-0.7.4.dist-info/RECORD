@@ -1,0 +1,11 @@
+saagieapi/__init__.py,sha256=Z_AfmqD17qJyrH1w5nKevQyIOzLEI4MuIoLFP_iwBXM,173
+saagieapi/manager/__init__.py,sha256=4_uVVBhWQu-A6LUQBjVopeDTsdhSX7d1lQDscHfEmIU,84
+saagieapi/manager/saagie_api_manager.py,sha256=l3ucGdLObs3ZJNLqkTaXGWDrNgEZ0ZB98104TcX-V8A,17477
+saagieapi/projects/__init__.py,sha256=W8auDHexUrW7_jyof_8OEDdTb1ClggRePYhhqbzXoSI,146
+saagieapi/projects/auth.py,sha256=ZvG3d6mlEpi_H2TbdH9879NQSOCL1BsI6Cs0ZVTNSXQ,1056
+saagieapi/projects/gql_template.py,sha256=ahJ6ZNimx3DdrLr-4Wg2bdFdZYE2JaNHPdDF18vgcr4,14954
+saagieapi/projects/graph_pipeline.py,sha256=Tv6ayIVj6MeR3WPvXnkXoeZRyrfOb6JDiWNSrFJL9LU,2524
+saagieapi/projects/saagie_api.py,sha256=D16eu2P0ppQKi90RL2LAGqfqTnf92KfQlUOSBHrxK9Q,52739
+saagieapi-0.7.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+saagieapi-0.7.4.dist-info/METADATA,sha256=xbWOly1w4qKre8cYrf4aby7becd0z8HoIECp-4MV-QQ,8184
+saagieapi-0.7.4.dist-info/RECORD,,
