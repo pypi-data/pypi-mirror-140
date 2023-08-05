@@ -1,0 +1,10 @@
+bdownload/VERSION,sha256=RTMGWu18lgJhojG0A1zJvOyL_2HOazONQ-nFDRU6RUY,5
+bdownload/__init__.py,sha256=7godRfSYjDZSDCWoLQijJEG6lHegfYKaH71NIg4s-78,293
+bdownload/__main__.py,sha256=vRsLS53k7TBhTXB5c0J5RZ7G7RJXpyBwCLc2yui1s0w,352
+bdownload/cli.py,sha256=J570ba4RUNBzFnWLxwmsOQn2d-824xgTR6uiwl6ZCHM,18170
+bdownload/download.py,sha256=5zFRAKRUrw2hGOyxgyJxLG1nltsxNUI-pN-QfihpEPA,93172
+bdownload-0.1.4.dist-info/METADATA,sha256=vTWshq1SPDi4G-yVyx8UA7SHbbPanjqX6V9obqvHhQU,19994
+bdownload-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bdownload-0.1.4.dist-info/entry_points.txt,sha256=AJdOLWe0q-bdpGCz55jqU2emDPQ_61BpTF57DulqgKc,93
+bdownload-0.1.4.dist-info/top_level.txt,sha256=ghAJsEsUH4NMUOmdKyY7iMYKKZHbvAL31iyeRHvPcaw,10
+bdownload-0.1.4.dist-info/RECORD,,

@@ -1,0 +1,6 @@
+[console_scripts]
+bdownload = bdownload.cli:main
+
+[distutils.commands]
+clean = CleanCommand
+
