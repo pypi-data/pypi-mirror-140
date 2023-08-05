@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: catmass
+Version: 0.1.0
+Summary: Py Qt package for calculating the proper loading of samples for XAS measurements
+Home-page: https://github.com/ahoffm02/catmass
+Author: Adam S. Hoffman
+Author-email: ashoff@slac.stanford.edu
+License: GNU General Public License v3
+Keywords: catmass
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click (>=7.0)
+
+=======
+catMass
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/catmass.svg
+        :target: https://pypi.python.org/pypi/catmass
+
+.. image:: https://img.shields.io/travis/ahoffm02/catmass.svg
+        :target: https://travis-ci.com/ahoffm02/catmass
+
+.. image:: https://readthedocs.org/projects/catmass/badge/?version=latest
+        :target: https://catmass.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Py Qt interface for calculating the proper sample loading for XAS measurements.
+GUI offers ability to account for diluents as well as complex sample inputs.
+
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://catmass.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-07-12)
+------------------
+
+* First release on PyPI.
+
+
