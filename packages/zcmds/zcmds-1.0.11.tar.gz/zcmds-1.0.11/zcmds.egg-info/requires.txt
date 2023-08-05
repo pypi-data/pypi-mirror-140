@@ -1,0 +1,5 @@
+ytclip
+pdf2image
+
+[test]
+pytest

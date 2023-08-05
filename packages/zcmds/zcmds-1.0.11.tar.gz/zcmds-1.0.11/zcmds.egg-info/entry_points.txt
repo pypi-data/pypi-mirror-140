@@ -1,0 +1,4 @@
+[console_scripts]
+zcmds = zcmds.util.zcmds_main:main
+zcmds_install = zcmds.install.update:main
+
