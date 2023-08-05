@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: Topsis-Mridhu-101916108
+Version: 0.1
+Summary: Topsis
+Home-page: UNKNOWN
+Author: Mridhu
+Author-email: mkaura_be19@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Topsis-Mridhu-101916108
+
+This package is used to implement TOPSIS in single line of code.
+
+## Input
+
+It takes a input CSV file which must contain >=3 columns: \
+First column is the variable name (e.g. M1, M2, M3...).\
+From 2nd to last columns must contain numeric values only.
+
+## Output
+
+Result file contains all the columns of input file and two additional columns having Topsis Score and Rank \
+It returns a dataframe as well as creates a CSV file in CWD.
+
+## Usage:
+
+```python
+!pip install Topsis-Mridhu-101916108
+tp=__import__("Topsis-Mridhu-101916108")
+#tp.topsis("input file","weights","impacts","outpul file")
+tp.topsis("101916108-data.csv","1,1,1,1,1","+,+,-,+,+","result.csv")
+
+```
+
+
