@@ -1,0 +1,3 @@
+[console_scripts]
+PowerBI_refresher-NPP = refresher.refresher:main
+
