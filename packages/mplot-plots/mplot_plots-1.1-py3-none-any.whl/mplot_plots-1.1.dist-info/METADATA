@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mplot-plots
+Version: 1.1
+Summary: Diagnostic plots for linear model
+Home-page: https://gitlab.com/gspwanyama97/mplot_plot
+Author: Geofrey Wanyama
+Author-email: wanyamag17@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+
+# mplot package
+
+mplot is a python package for generating diagnostic plots for linear models generated using the statsmodels package.
+It reproduces some of the plots from the mplot package in R software.
+
+# Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install mplot.
+
+```bash
+pip install mplot_plots
+```
+
+# Usage 
+```pyhton
+from mplot_plots import Mplot
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
