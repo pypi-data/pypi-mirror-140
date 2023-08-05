@@ -1,0 +1,15 @@
+attlesnake/__init__.py,sha256=EZzQU4gHPTOK2OzEAyJbKGKtX1a-sY33t3MERZZFK5g,35
+attlesnake/util.py,sha256=uYKmTxi_diViH1L77Ch8or1oiOZtBgzt0B5Vhm2GUtg,335
+attlesnake/parameter/__init__.py,sha256=QrXcdAnzdLJoTRa7LCxvZMMGrwz-o8gNfb6Ee4A87W4,343
+attlesnake/parameter/base.py,sha256=iRFeuKJpWRIKGA2U0RMhmQ9y-O6DlEfrqwVynwWm5zI,382
+attlesnake/parameter/constants.py,sha256=GKTX42uAPjWMhf0ZPwJd2TNVewqRvj2FsCUYsrI-I0g,114
+attlesnake/parameter/direction_cosine_matrix.py,sha256=gVtVKbXAs4hokJRK_o0lxMhkOUNa7JzzxjB5JbgfA-w,4191
+attlesnake/parameter/euler_angle.py,sha256=mxi44vDsqX_sKxtxt9ADsjZlEljrLsL3FNI6Ma-wYWw,4069
+attlesnake/parameter/principal_rotation_vector.py,sha256=hXjPU0TZIFUdguav85uuuNjDGSW8bpEIblG87Z90cmI,1260
+attlesnake/parameter/quaternion.py,sha256=iSO8p6Ota8oXqJkU0vgqgnNFvB7pYkYVznqcU9dXPqg,5290
+attlesnake/parameter/rodrigues.py,sha256=wFBRrilXKdKY4p1YsLCGdd6-hFZwIlYOmJNt5w3ve9M,2590
+attlesnake-0.2.0.dist-info/LICENSE,sha256=xt_Yf7x7pKVOgW8lB4rJL5VnBT4K4FOxO6mcFWlLxs0,1069
+attlesnake-0.2.0.dist-info/METADATA,sha256=q1MPrcB_3r22E7re6-Bl5d0roROhttJ-wRGGT18Hz6Q,1231
+attlesnake-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+attlesnake-0.2.0.dist-info/top_level.txt,sha256=ZMjNfisAvzHRk7a4P8--5KXWbOY0eeLdCzKvBAAFM3o,11
+attlesnake-0.2.0.dist-info/RECORD,,
