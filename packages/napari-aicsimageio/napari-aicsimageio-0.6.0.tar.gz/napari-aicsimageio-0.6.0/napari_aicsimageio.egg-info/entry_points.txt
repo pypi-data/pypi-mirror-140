@@ -1,0 +1,4 @@
+[napari.plugin]
+aicsimageio-in-memory = napari_aicsimageio.in_memory
+aicsimageio-out-of-memory = napari_aicsimageio.out_of_memory
+
