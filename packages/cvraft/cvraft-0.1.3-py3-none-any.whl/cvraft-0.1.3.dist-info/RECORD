@@ -1,0 +1,10 @@
+LICENSE,sha256=ud1XyYkEgwXKeuKwtInlcEMbdjxpROOptw9jOGUcXUU,1051
+cvraft/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvraft/cli.py,sha256=ryqhB2pFLDk07Z5r4vHRytfJgqc0cKR65j5VM0WwcYE,1741
+cvraft/extension.py,sha256=-mLPvxRrBGTz54mt2quBj8oRPA3r0X1fSFMgpkD59eM,4286
+cvraft/templates/cv.html,sha256=ETFmLtc3MjA_tg0NPTrxm9g7gELhfme2hxocaq_jOoc,1036
+cvraft-0.1.3.dist-info/entry_points.txt,sha256=fdIBhSs0R6XeORkkT3lkWRXDAas2FD9gpKoxiGcVgRg,41
+cvraft-0.1.3.dist-info/LICENSE,sha256=ud1XyYkEgwXKeuKwtInlcEMbdjxpROOptw9jOGUcXUU,1051
+cvraft-0.1.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+cvraft-0.1.3.dist-info/METADATA,sha256=RZmroD3ki7M144Dl9m5l_N45k469-hmMN2MfsZayzO4,1915
+cvraft-0.1.3.dist-info/RECORD,,
