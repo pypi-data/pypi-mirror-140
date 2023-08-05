@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: make.env
+Version: 0.0.2
+Summary: Infuses make with the ability to read .env files
+Home-page: https://github.com/smac89/make.env
+License: MIT
+Keywords: make,.env,Makefile,automation,buildtool
+Author: smac89
+Author-email: nobleman.code@gmx.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: python-dotenv (>=0.19.2,<0.20.0)
+Project-URL: Repository, https://github.com/smac89/make.env
+Description-Content-Type: text/markdown
+
+# make.env
+Infuses make with the ability to read .env files
+
