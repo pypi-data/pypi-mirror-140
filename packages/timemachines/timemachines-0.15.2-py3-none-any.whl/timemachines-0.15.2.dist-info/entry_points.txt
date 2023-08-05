@@ -1,0 +1,3 @@
+[console_scripts]
+timemachines = timemachines.__main__:main
+
