@@ -1,0 +1,2 @@
+[console_scripts]
+wigeon = wigeon.main:app
