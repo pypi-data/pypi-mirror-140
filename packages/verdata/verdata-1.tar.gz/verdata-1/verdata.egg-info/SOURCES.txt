@@ -1,0 +1,7 @@
+README.md
+setup.py
+verdata/__init__.py
+verdata.egg-info/PKG-INFO
+verdata.egg-info/SOURCES.txt
+verdata.egg-info/dependency_links.txt
+verdata.egg-info/top_level.txt

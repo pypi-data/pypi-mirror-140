@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: verdata
+Version: 1
+Summary: Veri şifreleme
+Home-page: UNKNOWN
+Author: Testere_necmi
+Author-email: 
+License: MIT
+Keywords: verdata
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Foobar
+
+ Metin ÅŸifreleme iÅŸlemlerini kolayca yapabileceÄŸiniz bir kobra kÃ¼tÃ¼phanesi. Bu paket ile verilerinizi kolayca
+ÅŸifreleyebilirsiniz.
+
+## Installation
+
+
+
+```bash
+pip install verdata
+```
+
+## Usage
+
+```
+import verdata
+verdata.cal()
+
+
+```
+
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
