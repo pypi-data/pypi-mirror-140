@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: MILWRM
+Version: 0.1.7
+Summary: Multiplex Image Labeling With Regional Morphology
+Home-page: https://github.com/codyheiser/MILWRM
+Author: Cody Heiser
+Author-email: cody.n.heiser@vanderbilt.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scanpy
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: imagecodecs
+Requires-Dist: scipy
+Requires-Dist: seaborn
+
+|milwrm_logo|
+
+Multiplex Image Labeling With Regional Morphology
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|Latest Version|
+
+Consensus tissue region identification from multiplex molecular image data for digital pathology
+
+Install from PyPI:
+^^^^^^^^^^^^^^^^^^
+.. code:: bash
+
+   pip install MILWRM
+
+Or compile from source:
+^^^^^^^^^^^^^^^^^^^^^^^
+.. code:: bash
+
+   git clone https://github.com/codyheiser/MILWRM.git
+   cd MILWRM
+   python setup.py install
+
+See the |tutorials|_ directory for Jupyter notebooks detailing usage of `MILWRM`
+
+Full documentation is available at |codyheiser.github.io/MILWRM|_
+
+.. |milwrm_logo| image:: https://github.com/codyheiser/MILWRM/blob/main/docs/milwrm_logo.jpg
+
+.. |Latest Version| image:: https://img.shields.io/pypi/v/MILWRM
+   :target: https://pypi.python.org/pypi/MILWRM/
+
+.. |tutorials| replace:: ``tutorials``
+.. _tutorials: tutorials
+
+.. |codyheiser.github.io/MILWRM| replace:: ``codyheiser.github.io/MILWRM``
+.. _codyheiser.github.io/MILWRM: https://codyheiser.github.io/MILWRM/
+
+
