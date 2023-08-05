@@ -1,0 +1,3 @@
+[console_scripts]
+mill_cache = mill_cache.main:main
+
