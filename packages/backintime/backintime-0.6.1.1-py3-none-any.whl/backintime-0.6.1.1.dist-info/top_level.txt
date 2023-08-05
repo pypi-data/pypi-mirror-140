@@ -1,0 +1,10 @@
+backintime
+backintime/backtester
+backintime/broker
+backintime/candles_providers
+backintime/candles_providers/binance_api_candles
+backintime/candles_providers/timeframe_dump
+backintime/market_data_analyzer
+backintime/market_data_storage
+backintime/oscillators
+backintime/timeframes_candle
