@@ -1,0 +1,3 @@
+[console_scripts]
+alphamap = alphamap.gui:run
+

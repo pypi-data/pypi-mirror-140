@@ -1,0 +1,8 @@
+include settings.ini
+include LICENSE
+include CONTRIBUTING.md
+include README.md
+recursive-include alphamap *
+recursive-exclude * __pycache__
+recursive-exclude alphamap/data *.fasta
+recursive-exclude alphamap/data *.csv
