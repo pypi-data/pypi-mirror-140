@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['formsg', 'formsg.schemas', 'formsg.util']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['PyNaCl>=1.5.0,<2.0.0', 'pytest>=6.2.5,<7.0.0', 'requests>=2.27.1,<3.0.0']
+
+extras_require = \
+{':python_version < "3.11"': ['typing_extensions>=4.0.0,<5.0.0']}
+
+setup_kwargs = {
+    'name': 'formsg-python-sdk',
+    'version': '0.1.12',
+    'description': 'Python SDK for FormSG',
+    'long_description': None,
+    'author': 'Chin Ying',
+    'author_email': 'chinying@open.gov.sg',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'extras_require': extras_require,
+    'python_requires': '>=3.6.2,<4.0.0',
+}
+
+
+setup(**setup_kwargs)
