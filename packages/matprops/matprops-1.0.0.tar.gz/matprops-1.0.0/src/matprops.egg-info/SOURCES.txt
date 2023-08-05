@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/matprops.egg-info/PKG-INFO
+src/matprops.egg-info/SOURCES.txt
+src/matprops.egg-info/dependency_links.txt
+src/matprops.egg-info/requires.txt
+src/matprops.egg-info/top_level.txt
