@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: toloka-prefect
+Version: 0.0.3
+Summary: Toloka prefect tasks library
+Author: Vladislav Moiseev
+Author-email: vlad-mois@yandex-team.ru
+License: Apache 2.0
+Project-URL: Source, https://github.com/Toloka/toloka-prefect
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: pandas (>=1.1.0)
+Requires-Dist: prefect
+Requires-Dist: requests
+Requires-Dist: toloka-kit (==0.1.23)
+
+# Toloka-Prefect
+
+[![GitHub Tests](https://github.com/Toloka/toloka-prefect/workflows/Tests/badge.svg?branch=main)](//github.com/Toloka/toloka-prefect/actions?query=workflow:Tests)
+
+This library allows you to run crowdsourcing [Toloka](https://toloka.ai/) processes in [Prefect](https://www.prefect.io/) - a widely used workflow management system
+
+Here you can find a collection of ready-made Prefect tasks for the most frequently used actions in [Toloka-Kit](https://github.com/Toloka/toloka-kit).
+
+Getting started
+--------------
+```
+$ pip install toloka-prefect
+```
+
+A good way to start is to follow the [example](https://github.com/Toloka/toloka-prefect/blob/main/example/text_classification.ipynb) in this repo.
+
+Useful Links
+--------------
+- [Toloka homepage.](https://toloka.ai/)
+- [Prefect homepage.](https://prefect.io/)
+- [Toloka API documentation.](https://yandex.com/dev/toloka/doc/concepts/about.html?lang=en)
+- [Toloka-kit usage examples.](https://github.com/Toloka/toloka-kit/tree/main/examples#toloka-kit-usage-examples)
+
+Questions and bug reports
+--------------
+* For reporting bugs please use the [Toloka/bugreport](https://github.com/Toloka/toloka-prefect/issues) page.
+* Join our English-speaking [slack community](https://toloka.ai/community) for both tech and abstract questions.
+
+License
+-------
+© YANDEX LLC, 2020-2021. Licensed under the Apache License, Version 2.0. See LICENSE file for more details.
+
+
