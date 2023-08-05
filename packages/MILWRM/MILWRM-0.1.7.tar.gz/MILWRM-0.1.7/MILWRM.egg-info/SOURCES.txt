@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+MILWRM/MILWRM.py
+MILWRM/MxIF.py
+MILWRM/ST.py
+MILWRM/__init__.py
+MILWRM/_version.py
+MILWRM.egg-info/PKG-INFO
+MILWRM.egg-info/SOURCES.txt
+MILWRM.egg-info/dependency_links.txt
+MILWRM.egg-info/requires.txt
+MILWRM.egg-info/top_level.txt

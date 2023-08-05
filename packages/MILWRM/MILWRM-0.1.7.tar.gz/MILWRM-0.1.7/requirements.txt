@@ -1,0 +1,9 @@
+matplotlib
+numpy
+pandas
+scanpy
+scikit-image
+scikit-learn
+imagecodecs
+scipy
+seaborn
