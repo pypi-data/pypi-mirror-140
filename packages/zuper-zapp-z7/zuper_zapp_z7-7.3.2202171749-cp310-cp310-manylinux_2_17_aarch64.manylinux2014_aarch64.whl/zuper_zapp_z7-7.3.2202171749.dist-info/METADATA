@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: zuper-zapp-z7
+Version: 7.3.2202171749
+Summary: UNKNOWN
+Home-page: https://github.com/zupermind/zuper-zapp
+Author: Andrea Censi
+Author-email: info@zupermind.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyYAML
+Requires-Dist: Pympler
+Requires-Dist: pyinstrument
+Requires-Dist: typing-extensions
+Requires-Dist: zuper-commons-z7
+Requires-Dist: zuper-utils-asyncio-z7
+Requires-Dist: zuper-zapp-interfaces-z7
+Provides-Extra: test
+Requires-Dist: zuper-ipcnd-sqlite-z7 ; extra == 'test'
+Requires-Dist: zuper-loghandle-z7 ; extra == 'test'
+Requires-Dist: zuper-notes-z7 ; extra == 'test'
+
+UNKNOWN
+
