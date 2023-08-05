@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/demo.py
+src/teamB_package.egg-info/PKG-INFO
+src/teamB_package.egg-info/SOURCES.txt
+src/teamB_package.egg-info/dependency_links.txt
+src/teamB_package.egg-info/top_level.txt
