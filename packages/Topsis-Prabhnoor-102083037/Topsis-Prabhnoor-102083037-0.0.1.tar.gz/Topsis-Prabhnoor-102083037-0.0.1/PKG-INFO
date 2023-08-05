@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: Topsis-Prabhnoor-102083037
+Version: 0.0.1
+Summary: A package to find the topsis score
+Author: Prabhnoor Singh
+Author-email: pchowdhary_be19@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+##Package for calculating TOPSIS score and ranking of a given dataframe
+
+Description
+The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) is a multiple-criteria decision making (MCDM) method.
+
+1. Usage
+**a. topsis.norm_dataframe(data)**
+normalize all the columns  except 1st(treated as index); distributive normalization
+**b. topsis.topsis_calc(data,weights,impacts)**
+calculates and returns the topsis score and rank for the given arguments
+
+2. Arguments
+* **topsis.norm_dataframe(data)**
+  * data
+A dataframe with m rows and n columns; 1st column is treated as index; All the calculations are done from 2nd column onwards
+
+* **topsis.topsis_calc(data,weights,impacts)**
+  * data
+A dataframe with m rows for m alternatives and n columns for n-1 criterions. 1st column is treated as index
+  * weights
+A numeric list with length equal to number of columns (from 2nd to last columns) in dataframe for weights of criterions.
+  * impacts
+A character list of "+" and "-" signs for the way that each criterion influences on the alternatives.
+
+3. Value (return)
+* **topsis.norm_dataframe(data)**
+A normalized dataframe (distributive normalization)
+* **topsis.topsis_calc(data,weights,impacts)**
+Input dataframe with  2 additional columns
+  * TOPSIS Score
+TOPSIS score of alternatives.
+  * Rank
+Rank of alternatives based on TOPSIS scores.
+
+4. Example
+raw=pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv')
+w=[0.25,0.25,0.25,0.25]
+i=['-','+','+','+']
+topsis_calc(raw,w,i)
+
