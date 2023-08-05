@@ -1,0 +1,15 @@
+alidaargparser/__init__.py,sha256=3pht5fcqt1l9KSY2oG0axbPe5snXQqE71gmqmZFt7Gc,34
+alidaargparser/dataset.py,sha256=xb_UIZyIieEUvZu1gYeMW_YBL46F9T-Q9tZpN-yqTfA,204
+alidaargparser/generator.py,sha256=abre4ZLoLxnpdva_4Bx5GLA4XRgJRBM19X14-MRtwQs,1271
+alidaargparser/model.py,sha256=MRwaOVuCKu92q8YZs1Zn5Gql6EX4w1HAXyvhdLOB9I0,131
+alidaargparser/parser.py,sha256=wbx44kfgsWY26GMzVBa9n6Tl-yp8Rz-P9mvbu0meRYo,6408
+alidaargparser/property.py,sha256=FMXDGWunuhyFlVR0EAhU7twq_JvXz1JIk-P--rLjiDo,745
+alidaargparser/translation_dictionary.py,sha256=coO7W2xTM_PrHHyBgX2xgJ-SqJGs16uF6Foa2i1TgrU,241
+alidaargparser/type_utils.py,sha256=u6UsM0VqkeduUXwXWt7LYY0xWSWi0OScOdF4ssRvGBE,210
+alidaargparser/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alidaargparser/templates/spark_3_2_0.py,sha256=zGEQhpnabxHyZh_Bl9Ntb8S0Dar6NgBGmMyKJ6kGLjM,15374
+alidaargparser/templates/template.py,sha256=mIBk4WRtXFGRQ7vXlDKaKOio41kuvqsWmIbbABi0Y1M,4835
+alida_arg_parser-0.0.4.4.4.dist-info/METADATA,sha256=8E5YT4EsoG64IhdCE1LV-T3YQ1jy69TZyBpMM3_8r2Y,450
+alida_arg_parser-0.0.4.4.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+alida_arg_parser-0.0.4.4.4.dist-info/top_level.txt,sha256=02dqhSx_sIP3qQScTGYR-0ZBnQmqxFKWY0XG9_W1GkY,15
+alida_arg_parser-0.0.4.4.4.dist-info/RECORD,,
