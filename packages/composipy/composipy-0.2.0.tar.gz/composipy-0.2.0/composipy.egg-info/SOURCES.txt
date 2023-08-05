@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+composipy/__init__.py
+composipy/_version.py
+composipy/laminate_class.py
+composipy/ply_class.py
+composipy.egg-info/PKG-INFO
+composipy.egg-info/SOURCES.txt
+composipy.egg-info/dependency_links.txt
+composipy.egg-info/requires.txt
+composipy.egg-info/top_level.txt
