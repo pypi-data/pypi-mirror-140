@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+EasyProxies/__init__.py
+EasyProxies/_proxy_descriptor.py
+EasyProxies/const.py
+EasyProxies.egg-info/PKG-INFO
+EasyProxies.egg-info/SOURCES.txt
+EasyProxies.egg-info/dependency_links.txt
+EasyProxies.egg-info/top_level.txt
