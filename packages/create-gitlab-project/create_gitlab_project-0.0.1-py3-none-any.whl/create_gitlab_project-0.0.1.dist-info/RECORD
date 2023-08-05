@@ -1,0 +1,11 @@
+create_gitlab_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+create_gitlab_project/__main__.py,sha256=mGZVSgr4ovRwsgZB_P6QS-KNcF7e1bq-15tRXH71LYQ,138
+create_gitlab_project/cli.py,sha256=ei8m3tNZ6YlVMFa38Hdk_a3h6v68beAQaG3KVDtagYU,2293
+create_gitlab_project/constants.py,sha256=_iaWHEkCF5w638uh2HlL50UHVcdoao_NV1FCG_JEANg,322
+create_gitlab_project/create_gitlab_project_dfx.py,sha256=VfhbjtgAeDflpEaB8A5dgCmWBhW_zapvuNV5Xf9Bc0I,3084
+create_gitlab_project/template-files/Jenkinsfile,sha256=WiWSZYf0fVHt9Zzb7ROhttyc3JVNb1V2z0Ke78CueHc,259
+create_gitlab_project/template-files/README.md,sha256=FrtLQq-PSCqPGMrgs1I_v5puBCqqFYjEZyschwwz55Q,153
+create_gitlab_project-0.0.1.dist-info/METADATA,sha256=UErlsZtnVas50uOmWh0oqQIgGX0dSSbpyuFkiIHBruk,473
+create_gitlab_project-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+create_gitlab_project-0.0.1.dist-info/top_level.txt,sha256=KGCoX2OLVIp9hTUBwmJHbgtyMoWRHC3Qw2NyXMfUgc4,22
+create_gitlab_project-0.0.1.dist-info/RECORD,,

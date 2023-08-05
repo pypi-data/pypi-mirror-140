@@ -1,0 +1,10 @@
+@Library('devopsx-library@master') _
+
+{{PIPELINE_TYPE}} {
+    params = [
+        type: "{{PARAMS_PROJECT_TYPE}}",
+        appName: "{{PARAMS_APP_NAME}}",
+        projectId: "<insert-project-id-here>",
+        namespace: "{{PARAMS_NAMESPACE}}"
+    ]
+}

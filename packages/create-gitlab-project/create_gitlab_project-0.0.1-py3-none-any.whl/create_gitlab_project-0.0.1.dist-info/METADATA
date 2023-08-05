@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: create-gitlab-project
+Version: 0.0.1
+Summary: Gitlab Project Creation CLI
+Home-page: https://teamdefinex.com/
+Author: DefineX Labs
+Author-email: labs@teamdefinex.com
+License: MIT
+Keywords: gitlab project creation
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Requires-Dist: python-gitlab (==3.1.0)
+
+UNKNOWN
+
