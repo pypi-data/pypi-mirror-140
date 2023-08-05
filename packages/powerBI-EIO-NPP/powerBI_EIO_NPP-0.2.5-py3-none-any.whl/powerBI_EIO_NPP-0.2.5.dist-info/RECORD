@@ -1,0 +1,8 @@
+gather/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gather/__main__.py,sha256=NShROGNOr4VOsLSJKE43COtt_tBF1C6NEMKdnoRqG7Q,38
+gather/gather.py,sha256=hx87VjYkjBC1LMTkNYvDthPVAhn8QB8mjBH6i3ekagY,3729
+powerBI_EIO_NPP-0.2.5.dist-info/METADATA,sha256=5wW-EY-LUWWYihPgEOj99NI00ewD-258pS5lLK82iwE,2127
+powerBI_EIO_NPP-0.2.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+powerBI_EIO_NPP-0.2.5.dist-info/entry_points.txt,sha256=pXae1q9cBfDB1w9MievvzZLLSDzd1P_FWCSS9XkOWBc,56
+powerBI_EIO_NPP-0.2.5.dist-info/top_level.txt,sha256=amUQ9zzQCiUmAOsy_Yj3SSXS5AiVfqtlUfhZF2fcJnE,7
+powerBI_EIO_NPP-0.2.5.dist-info/RECORD,,
