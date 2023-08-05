@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: compmake-z7
+Version: 7.3.2201261049
+Summary: UNKNOWN
+Home-page: https://github.com/AndreaCensi/compmake
+Author: 
+Author-email: info@zupermind.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyYAML
+Requires-Dist: SystemCmd-z7
+Requires-Dist: aiofiles
+Requires-Dist: coverage
+Requires-Dist: dill
+Requires-Dist: future
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: pyreadline
+Requires-Dist: setproctitle
+Requires-Dist: termcolor
+Requires-Dist: typing-extensions
+Requires-Dist: zuper-commons-z7
+Requires-Dist: zuper-graphs-z7
+Requires-Dist: zuper-typing-z7
+Requires-Dist: zuper-utils-asyncio-z7
+Requires-Dist: zuper-zapp-interfaces-z7
+Requires-Dist: zuper-zapp-z7
+Provides-Extra: test
+Requires-Dist: nose ; extra == 'test'
+Requires-Dist: zuper-fs-local-z7 ; extra == 'test'
+Requires-Dist: zuper-loghandle-z7 ; extra == 'test'
+Requires-Dist: zuper-notes-z7 ; extra == 'test'
+Requires-Dist: zuper-proc-local-z7 ; extra == 'test'
+
+UNKNOWN
+
