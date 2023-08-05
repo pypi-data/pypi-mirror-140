@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/hygro_premium_sp/__init__.py
+src/hygro_premium_sp/humidity_extractor.py
+src/hygro_premium_sp/main.py
+src/hygro_premium_sp_server.egg-info/PKG-INFO
+src/hygro_premium_sp_server.egg-info/SOURCES.txt
+src/hygro_premium_sp_server.egg-info/dependency_links.txt
+src/hygro_premium_sp_server.egg-info/entry_points.txt
+src/hygro_premium_sp_server.egg-info/requires.txt
+src/hygro_premium_sp_server.egg-info/top_level.txt
+test/test_humidity_extractor.py
