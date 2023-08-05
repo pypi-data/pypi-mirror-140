@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dbt-artifact-parser
+Version: 1.0.2
+Summary: utility package to parse dbt artifacts
+Author: Zoe Inc.
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: pre-commit (==2.9.3)
+Requires-Dist: pytest (==6.0.1)
+Requires-Dist: pytest-mock (==3.3.1)
+Requires-Dist: requests
+Requires-Dist: google-cloud-bigquery (==2.28.1)
+
+UNKNOWN
+
