@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "extrucal"
+version = "1.4.8"
+description = "Provides functions for calculating various parameters in extrusion processes"
+authors = ["John W.S. Lee"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/johnwslee/extrucal"
+repository = "https://github.com/johnwslee/extrucal"
+documentation = "https://extrucal.readthedocs.io/en/latest/"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.1"
+numpy = "^1.22.2"
+ipykernel = "^6.9.1"
+altair-saver = "^0.5.0"
+sphinx-autoapi = "^1.8.4"
+sphinx-rtd-theme = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+pytest = "^7.0.1"
+pytest-cov = "^3.0.0"
+myst-nb = {version = "^0.13.2", python = "^3.9"}
+codecov = "^2.1.12"
+python-semantic-release = "^7.25.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version" # version location
+branch = "main"                             # branch to make releases of
+changelog_file = "CHANGELOG.md"             # changelog file
+build_command = "pip install poetry && poetry build"  # build dists
+dist_path = "dist/"                         # where to put dists
+upload_to_pypi = false                      # don't auto-upload to PyPI
+remove_dist = false                         # don't remove dists
+patch_without_tag = "true"                  # always bump version on CD, even without angular commit (default is patch)
