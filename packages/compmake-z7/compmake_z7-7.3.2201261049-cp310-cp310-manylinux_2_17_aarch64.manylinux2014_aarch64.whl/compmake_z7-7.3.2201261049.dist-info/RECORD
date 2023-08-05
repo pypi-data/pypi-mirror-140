@@ -1,0 +1,10 @@
+compmake_plugins.cpython-310-aarch64-linux-gnu.so,sha256=pa0BcQOfU-Wd-uJGQxj3oPviUt-nfFviFCppIF41yBo,865920
+compmake.cpython-310-aarch64-linux-gnu.so,sha256=jNGPVxmFvP569AqVlZ6pXOwJrh-d1jx8d1pgPuBpapA,3161968
+compmake_plugins.pyi,sha256=NdCdUyhMIWNJtfXGLpaNQx_qba_sR6bjAdC10fiBXW8,641
+compmake.pyi,sha256=t7NCXzI0QZ04ix6OAyxcyKVt_uz5iE1HVo94h8N4Beg,2613
+compmake_z7-7.3.2201261049.dist-info/METADATA,sha256=nvk5aO0pL3LfMrK-EU2ho5rfZBK8fgCpulJ0WUuHQpM,1002
+compmake_z7-7.3.2201261049.dist-info/entry_points.txt,sha256=Df0cBh9PQGmG59jpJV18cv-e2cOdOXY8K4JlN39P4Jo,43
+compmake_z7-7.3.2201261049.dist-info/WHEEL,sha256=zqa_KS8T1crF1-Okzr7F4mMnpU2IPpcmqm23rS79Oj8,146
+compmake_z7-7.3.2201261049.dist-info/top_level.txt,sha256=hXcctyM-U1VBWd_v_RVACvsIxDnBpnaMvAgCdOxUdS4,26
+compmake_z7-7.3.2201261049.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+compmake_z7-7.3.2201261049.dist-info/RECORD,,
