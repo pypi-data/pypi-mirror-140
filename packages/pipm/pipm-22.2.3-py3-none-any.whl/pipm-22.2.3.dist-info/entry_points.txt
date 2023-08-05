@@ -1,0 +1,3 @@
+[console_scripts]
+pipm = pipm.__main__:main
+
