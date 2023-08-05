@@ -1,0 +1,11 @@
+setup.py
+gather/__init__.py
+gather/__main__.py
+gather/gather.py
+powerBI_EIO_NPP.egg-info/PKG-INFO
+powerBI_EIO_NPP.egg-info/SOURCES.txt
+powerBI_EIO_NPP.egg-info/dependency_links.txt
+powerBI_EIO_NPP.egg-info/entry_points.txt
+powerBI_EIO_NPP.egg-info/not-zip-safe
+powerBI_EIO_NPP.egg-info/requires.txt
+powerBI_EIO_NPP.egg-info/top_level.txt
