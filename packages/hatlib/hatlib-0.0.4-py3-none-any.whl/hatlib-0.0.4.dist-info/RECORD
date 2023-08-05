@@ -1,0 +1,14 @@
+hatlib/__init__.py,sha256=_WdIPohMhfXGWsk0RzyFT2jmxJAbRKQplh1VZOBcsO4,209
+hatlib/benchmark_hat_package.py,sha256=1Lklu8_7aCkmPbXrTnDE3nRau34vUpL9SrDYkZgU7eI,9990
+hatlib/hat.py,sha256=RUSqRitWPBYwCWuB3L5HT5dtKPbX8hjFh8gKDFQVJm4,6624
+hatlib/hat_file.py,sha256=uYSCDlHzAGVOx2C3TI_dy3WDsegHcn9YplcNsvnoJ_M,18133
+hatlib/hat_package.py,sha256=XyTuZ4mlQK07NG1etnMbAxhezRbpeN6fUtMJXESJNn0,1958
+hatlib/hat_to_dynamic.py,sha256=tXi4dqz3oWiR_-9dgPo6zHJjrcP5LnHOlQcGQGox3qQ,8160
+hatlib/hat_to_lib.py,sha256=itNNRFjH6Jc5e21k9dXC5McD-2PRHCkwTxX6Qp3TvqY,6246
+hatlib/platform_utilities.py,sha256=YVntuD9qWKOjtIyPuXNUBnSEoNxo02S0CyjxrThckqk,3366
+hatlib-0.0.4.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+hatlib-0.0.4.dist-info/METADATA,sha256=x0mpjrBtSLRR91W3ZQ_epXKHbeitsiFXFdoG2vLv22c,10341
+hatlib-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hatlib-0.0.4.dist-info/entry_points.txt,sha256=QHmh0PRlqZkpASHqwmGhIuLkhHpB7ZUA1lIl5aWlxo0,134
+hatlib-0.0.4.dist-info/top_level.txt,sha256=PLkfoVMyPdjyWZs_qLN-WV4XSZcapLA7FUa8kG7a41g,7
+hatlib-0.0.4.dist-info/RECORD,,
