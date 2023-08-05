@@ -1,0 +1,9 @@
+# {{ name }}
+
+🕒 {{ begin_datetime.to('local').format('DD MMMM, HH:mm') }} - {{ end_datetime.to('local').format('DD MMMM, HH:mm') }}
+
+{% if location %}
+📍 {{ location }}
+
+{% endif %}
+{{mobilizon_link}}
