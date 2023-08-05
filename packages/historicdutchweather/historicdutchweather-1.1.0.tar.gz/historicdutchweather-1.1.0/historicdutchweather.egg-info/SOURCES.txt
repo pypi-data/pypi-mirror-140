@@ -1,0 +1,11 @@
+README.md
+setup.py
+historicdutchweather/__init__.py
+historicdutchweather/main.py
+historicdutchweather/measuringstations.py
+historicdutchweather.egg-info/PKG-INFO
+historicdutchweather.egg-info/SOURCES.txt
+historicdutchweather.egg-info/dependency_links.txt
+historicdutchweather.egg-info/not-zip-safe
+historicdutchweather.egg-info/requires.txt
+historicdutchweather.egg-info/top_level.txt
