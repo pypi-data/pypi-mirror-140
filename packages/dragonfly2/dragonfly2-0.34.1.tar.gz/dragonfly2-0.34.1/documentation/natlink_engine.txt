@@ -1,0 +1,74 @@
+.. _RefNatlinkEngine:
+
+Natlink and DNS engine back-end
+============================================================================
+
+Dragonfly uses Natlink to communicate with Dragon.  The latest versions of
+Natlink are available from `SourceForge
+<https://sourceforge.net/projects/natlink/files/natlink/natlinktest4.1/>`__.
+All versions in the 4.X range should work with Dragonfly.  Please see the
+`Natlink install instructions
+<https://qh.antenna.nl/unimacro/installation/index.html>`__ on
+*qh.antenna.nl* for how to install Natlink on your machine and configure it.
+
+Dragonfly and Natlink support Dragon versions up to 15 (latest). The
+*Individual* editions of *Dragon* are recommended, although other editions
+such as *Home* will also work.
+
+Python version 2.7 (32-bit) is required to use this engine back-end, at
+least for the moment.  Support for this version is not maintained for the
+other engine back-ends and will be **dropped completely** in the first
+*MAJOR* release following stable Natlink support for Python 3.
+
+Once Natlink is up and running, Dragonfly command-modules can be
+treated as any other Natlink macro files.  Natlink automatically
+loads macro files from a predefined directory **or** from the
+optional user directory.  Common locations are:
+
+ * ``C:\NatLink\NatLink\MacroSystem``
+ * ``C:\Program Files\NatLink\MacroSystem``
+ * ``My Documents\Natlink``
+
+At least one of these should be present after installing
+Natlink.  That is the place where you should put Dragonfly
+command-modules so that Natlink will load them.  Don't forget to
+turn the microphone off and on again after placing a new
+command-modules in the Natlink directory, because otherwise
+Natlink does not immediately see the new file.
+
+
+Engine Configuration
+----------------------------------------------------------------------------
+
+This engine can be configured by passing (optional) keyword arguments to
+the ``get_engine()`` function, which passes them to the engine constructor
+(documented below). For example:
+
+.. code:: Python
+
+   engine = get_engine("natlink",
+     retain_dir="natlink_recordings",
+   )
+
+The engine can also be configured via the :ref:`command-line interface
+<RefCLI>`:
+
+.. code:: shell
+
+   # Initialize the Natlink engine back-end with custom arguments, then load
+   # command modules and recognize speech.
+   python -m dragonfly load _*.py --engine natlink --engine-options \
+       retain_dir="natlink_recordings"
+
+
+Engine API
+----------------------------------------------------------------------------
+
+.. autoclass:: dragonfly.engines.backend_natlink.engine.NatlinkEngine
+   :members:
+
+.. automodule:: dragonfly.engines.backend_natlink.dictation
+   :members:
+
+.. automodule:: dragonfly.engines.backend_natlink.timer
+   :members:

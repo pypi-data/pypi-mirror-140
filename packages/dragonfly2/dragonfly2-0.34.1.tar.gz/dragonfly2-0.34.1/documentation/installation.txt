@@ -1,0 +1,96 @@
+
+.. _installation:
+
+Installation
+============================================================================
+
+This section describes how to install Dragonfly.  The 
+installation procedure of Dragonfly itself is straightforward. 
+Its dependencies, however, differ depending on which speech 
+recognition engine is used.
+
+
+Prerequisites
+----------------------------------------------------------------------------
+
+To be able to use the dragonfly, you will need the following:
+
+ * **Python** -- available from the `Python dowloads page
+   <https://www.python.org/downloads/>`_.
+   **Version 2.7 (32-bit) is required if using Natlink**.
+ * **Win32 extensions for Python** *(only for Windows users)* --
+   available from the `pywin32 releases page
+   <https://github.com/mhammond/pywin32/releases>`_.
+ * **Natlink** *(only for Dragon users)* -- latest
+   versions available from `SourceForge
+   <https://sourceforge.net/projects/natlink/files/natlink/natlinktest4.1/>`_.
+ * `wmctrl <https://www.freedesktop.org/wiki/Software/wmctrl/>`__, `xdotool
+   <https://www.semicomplete.com/projects/xdotool/>`__ and `xsel
+   <http://www.vergenet.net/~conrad/software/xsel/>`__ programs *(only
+   for Linux/X11 users)* -- usually available from your system's package
+   manager.
+
+**Note on Python 2.7**: Python version 2.7 (32-bit) is required if using the
+Natlink engine back-end, at least for the moment.  Support for this version
+is not maintained for the other engine back-ends and will be **dropped
+completely** in the first *MAJOR* release following stable Natlink support
+for Python 3.
+
+**Note for Linux users**: Dragonfly is only fully functional in an X11
+session.  You may also need to manually set the ``DISPLAY`` environment
+variable.  Input action classes, application contexts and the ``Window``
+class will **not** be functional under Wayland.  It is recommended that
+Wayland users switch to X11.
+
+
+Installation of Dragonfly
+----------------------------------------------------------------------------
+Dragonfly is a Python package. It can be installed as *dragonfly2* using
+pip:
+
+.. code:: shell
+
+    pip install dragonfly2
+
+The distribution name has been changed to *dragonfly2* in order to
+upload releases to PyPI.org, but everything can still be imported using
+*dragonfly*. If you use any grammar modules that include something like
+:code:`pkg_resources.require("dragonfly >= 0.6.5")`, you will need to either
+replace :code:`dragonfly` with :code:`dragonfly2` or remove lines like this
+altogether.
+
+If you have dragonfly installed under the original *dragonfly*
+distribution name, you'll need to remove the old version using:
+
+.. code:: shell
+
+    pip uninstall dragonfly
+
+Dragonfly can also be installed by cloning this repository or
+downloading it from `the releases
+page <https://github.com/dictation-toolbox/dragonfly/releases>`__ and running
+the following (or similar) command in the project's root directory:
+
+.. code:: shell
+
+    python setup.py install
+
+If pip fails to install *dragonfly2* or any of its required or extra
+dependencies, then you may need to upgrade pip with the following command:
+
+.. code:: shell
+
+    pip install --upgrade pip
+
+
+Installation for specific SR engine back-ends
+----------------------------------------------------------------------------
+
+Each Dragonfly speech recognition engine back-end and its requirements are
+documented separately:
+
+* :ref:`RefNatlinkEngine`
+* :ref:`RefSapi5Engine`
+* :ref:`RefKaldiEngine`
+* :ref:`RefSphinxEngine`
+* :ref:`RefTextEngine`

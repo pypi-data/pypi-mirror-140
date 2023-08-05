@@ -1,0 +1,8 @@
+Sphinx
+mock
+six
+enum34;python_version<'3.4'
+sphinx-argparse
+sphinx_rtd_theme
+lark-parser
+requests
