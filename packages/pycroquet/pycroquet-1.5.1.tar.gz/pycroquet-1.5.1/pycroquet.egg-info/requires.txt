@@ -1,0 +1,6 @@
+click
+click-option-group
+python-magic
+pysam
+pygas
+PyYAML
