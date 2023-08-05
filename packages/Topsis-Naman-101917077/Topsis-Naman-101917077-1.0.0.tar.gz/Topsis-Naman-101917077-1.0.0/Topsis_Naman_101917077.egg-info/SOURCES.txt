@@ -1,0 +1,8 @@
+README.md
+setup.py
+Topsis-Naman-101917077/__init__.py
+Topsis_Naman_101917077.egg-info/PKG-INFO
+Topsis_Naman_101917077.egg-info/SOURCES.txt
+Topsis_Naman_101917077.egg-info/dependency_links.txt
+Topsis_Naman_101917077.egg-info/requires.txt
+Topsis_Naman_101917077.egg-info/top_level.txt
