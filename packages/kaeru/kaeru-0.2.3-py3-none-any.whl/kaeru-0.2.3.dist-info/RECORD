@@ -1,0 +1,9 @@
+kaeru/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+kaeru/api.py,sha256=E_t88qw6exogpD9Pa6gMxxX1gFYpzsrWP1ToDj8OX3s,3913
+kaeru/cli.py,sha256=sL0y97wrlK0z7_IXqaq2pNGL_csj2QgJXd1r9i6LnxY,1681
+kaeru/database.py,sha256=etiXUD8ChtYSBYcZaNWyzYaKufMMwFH-J1V_GFjyzj8,222
+kaeru/tables.py,sha256=QsN79PPk8EkR__jANlCFREz8Kzk5g4sq6raFFco0Tio,766
+kaeru-0.2.3.dist-info/entry_points.txt,sha256=cd-8Yar9N6Tvmpib-VPi_l9b8hSx_Q1oNrwbz8gBEzc,39
+kaeru-0.2.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+kaeru-0.2.3.dist-info/METADATA,sha256=9mLTYsy-krZqjNAVAJ4KQLSsDeqshjgFsSNTHpKjsa8,625
+kaeru-0.2.3.dist-info/RECORD,,

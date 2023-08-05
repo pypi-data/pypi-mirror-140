@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kaeru
+Version: 0.2.3
+Summary: 
+Author: faith
+Author-email: jamienibtong@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy[asyncio] (>=1.4.25,<2.0.0)
+Requires-Dist: aiodns (>=3.0.0,<4.0.0)
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: aiosqlite (>=0.17.0,<0.18.0)
+Requires-Dist: alright (>=1.7,<2.0)
+Requires-Dist: cchardet (>=2.1.7,<3.0.0)
+Requires-Dist: greenlet (>=1.1.2,<2.0.0)
+Requires-Dist: webwhatsapi (>=2.0.5,<3.0.0)
