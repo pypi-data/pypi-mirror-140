@@ -1,0 +1,2 @@
+exclude root_setup.py
+include ofdlib2/coefficients.h

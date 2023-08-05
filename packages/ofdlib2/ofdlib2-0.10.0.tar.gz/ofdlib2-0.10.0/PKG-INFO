@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ofdlib2
+Version: 0.10.0
+Summary: Finite difference tools
+Home-page: UNKNOWN
+Author: Cyril Desjouy
+Author-email: cyril.desjouy@univ-lemans.fr
+License: GPL
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# OFDLib : Optimized Finite Differences Library
+
+**ofdlib** is a cython package developped to work with nsfds2. It provides :
+
+* **derivation** module : finite difference derivatives
+* **filters** module : finite difference filters
+* **fdtd** module : Finite Differences Time Domain helper functions
+
+## Dependencies
+
+* numpy
+* cython
+
+## Installation
+
+pip install ofdlib2
+
+
