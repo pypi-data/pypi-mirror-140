@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+fastlabel/__init__.py
+fastlabel/api.py
+fastlabel/const.py
+fastlabel/converters.py
+fastlabel/exceptions.py
+fastlabel/utils.py
+fastlabel.egg-info/PKG-INFO
+fastlabel.egg-info/SOURCES.txt
+fastlabel.egg-info/dependency_links.txt
+fastlabel.egg-info/requires.txt
+fastlabel.egg-info/top_level.txt
