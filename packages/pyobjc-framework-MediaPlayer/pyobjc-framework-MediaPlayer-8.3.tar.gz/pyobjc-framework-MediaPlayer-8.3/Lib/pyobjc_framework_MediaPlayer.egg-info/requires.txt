@@ -1,0 +1,2 @@
+pyobjc-core>=8.3
+pyobjc-framework-AVFoundation>=8.3
