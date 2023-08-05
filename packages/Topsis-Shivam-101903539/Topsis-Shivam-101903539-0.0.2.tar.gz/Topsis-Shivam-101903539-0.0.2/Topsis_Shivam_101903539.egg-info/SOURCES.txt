@@ -1,0 +1,8 @@
+setup.py
+Topsis-Shivam-101903539/__init__.py
+Topsis-Shivam-101903539/q2.py
+Topsis_Shivam_101903539.egg-info/PKG-INFO
+Topsis_Shivam_101903539.egg-info/SOURCES.txt
+Topsis_Shivam_101903539.egg-info/dependency_links.txt
+Topsis_Shivam_101903539.egg-info/requires.txt
+Topsis_Shivam_101903539.egg-info/top_level.txt

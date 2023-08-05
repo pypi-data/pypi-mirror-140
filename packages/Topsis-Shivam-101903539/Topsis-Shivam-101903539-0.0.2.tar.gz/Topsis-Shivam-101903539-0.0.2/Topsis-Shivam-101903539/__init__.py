@@ -1,0 +1,1 @@
+from q2 import fun()
