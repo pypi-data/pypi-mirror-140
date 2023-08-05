@@ -1,0 +1,409 @@
+"""
+Tests for models
+"""
+# pylint: disable=too-many-public-methods
+
+import uuid
+from unittest import mock
+
+import ddt
+import pytest
+from django.conf import settings
+from django.contrib.sites.models import Site
+from organizations.models import Organization
+
+from tahoe_sites import api
+from tahoe_sites.models import TahoeSite, UserOrganizationMapping
+from tahoe_sites.tests.fatories import UserFactory
+from tahoe_sites.tests.test_models import DefaultsForTestsMixin
+from tahoe_sites.tests.utils import create_organization_mapping
+
+
+@ddt.ddt
+class TestAPIHelpers(DefaultsForTestsMixin):
+    """
+    Tests for API helpers
+    """
+    def setUp(self):
+        super().setUp()
+        self.org1 = None
+        self.org2 = None
+        self.mapping = None
+        self.org2_first_user = None
+        self.org2_second_user = None
+
+    def _prepare_mapping_data(self):
+        """
+        mapping:
+            default_org --> default_user
+            Org1        --> None
+            Org2        --> org2_first_user  -----> self.mapping points here
+            Org2        --> org2_second_user
+        """
+        self.org1 = self.create_organization(name='Org1', short_name='O1')
+        self.org2 = self.create_organization(name='Org2', short_name='O2')
+        self.org2_first_user = UserFactory.create()
+        self.org2_second_user = UserFactory.create()
+
+        create_organization_mapping(user=self.default_user, organization=self.default_org)
+        self.mapping = create_organization_mapping(user=self.org2_first_user, organization=self.org2)
+        create_organization_mapping(user=self.org2_second_user, organization=self.org2)
+
+        # We have three organizations
+        assert Organization.objects.count() == 3
+
+    @pytest.mark.skipif(settings.FEATURES['TAHOE_SITES_USE_ORGS_MODELS'],
+                        reason='Runs only when TAHOE_SITES_USE_ORGS_MODELS is off')
+    def test_get_organization_by_uuid_without_org(self):
+        """
+        Test get_organization_by_uuid helper when edx-organizations customization is off
+        """
+        assert api.get_organization_by_uuid(self.default_tahoe_site.site_uuid) == self.default_org
+
+    @pytest.mark.skipif(settings.FEATURES['TAHOE_SITES_USE_ORGS_MODELS'],
+                        reason='Runs only when TAHOE_SITES_USE_ORGS_MODELS is off')
+    def test_get_uuid_by_organization_without_org(self):
+        """
+        Test get_uuid_by_organization helper when edx-organizations customization is off
+        """
+        assert api.get_uuid_by_organization(self.default_org) == self.default_tahoe_site.site_uuid
+
+    @pytest.mark.skipif(not settings.FEATURES['TAHOE_SITES_USE_ORGS_MODELS'],
+                        reason='Runs only when TAHOE_SITES_USE_ORGS_MODELS is on')
+    def test_get_organization_by_uuid_with_org(self):
+        """
+        Test get_organization_by_uuid helper when edx-organizations customization is on
+        """
+        assert api.get_organization_by_uuid(self.default_org.edx_uuid) == self.default_org
+
+    @pytest.mark.skipif(not settings.FEATURES['TAHOE_SITES_USE_ORGS_MODELS'],
+                        reason='Runs only when TAHOE_SITES_USE_ORGS_MODELS is on')
+    def test_get_uuid_by_organization_with_org(self):
+        """
+        Test get_uuid_by_organization helper when edx-organizations customization is on
+        """
+        assert api.get_uuid_by_organization(self.default_org) == self.default_org.edx_uuid
+
+    def test_get_organization_for_user_default(self):
+        """
+        Verify that get_organization_for_user helper returns only related to active user
+        """
+        self._prepare_mapping_data()
+
+        # default_user is mapped to default_org
+        assert api.get_organization_for_user(self.default_user) == self.default_org
+
+        # org2_first_user is mapped to org2
+        assert api.get_organization_for_user(self.org2_first_user) == self.org2
+
+        # records with inactive user will not be returned
+        self.mapping.is_active = False
+        self.mapping.save()
+        with self.assertRaises(expected_exception=Organization.DoesNotExist):
+            api.get_organization_for_user(self.org2_first_user)
+
+    def test_get_organization_for_user_with_inactive_users(self):
+        """
+        Verify that get_organization_for_user helper can return all organization related to a user
+        including organizations having that user deactivated
+        """
+        self._prepare_mapping_data()
+
+        self.mapping.is_active = False
+        self.mapping.save()
+        assert api.get_organization_for_user(self.default_user, fail_if_inactive=False) == self.default_org
+
+    def test_get_organization_for_user_without_admins(self):
+        """
+        Verify that get_organization_for_user helper can return all organization related to a user
+        excluding organizations having that user as an admin
+        """
+        self._prepare_mapping_data()
+
+        self.mapping.is_admin = True
+        self.mapping.save()
+        with self.assertRaises(expected_exception=Organization.DoesNotExist):
+            api.get_organization_for_user(self.org2_first_user, fail_if_site_admin=True)
+
+    def test_get_users_of_organization(self):
+        """
+        Verify that get_users_of_organization returns all active users related to an organization
+        """
+        self._prepare_mapping_data()
+
+        # default_org is mapped to default_user
+        assert list(api.get_users_of_organization(self.default_org)) == [self.default_user]
+
+        # Org2 is mapped to two users
+        assert list(api.get_users_of_organization(self.org2)) == [self.org2_first_user, self.org2_second_user]
+
+        # inactive users will not be returned
+        self.mapping.is_active = False
+        self.mapping.save()
+        assert list(api.get_users_of_organization(self.org2)) == [self.org2_second_user]
+
+    def test_get_users_of_organization_with_inactive_users(self):
+        """
+        Verify that get_users_of_organization helper can return all user related to an organization
+        including deactivated users
+        """
+        self._prepare_mapping_data()
+
+        self.mapping.is_active = False
+        self.mapping.save()
+        assert list(api.get_users_of_organization(self.org2, without_inactive_users=False)) == [
+            self.org2_first_user,
+            self.org2_second_user
+        ]
+
+    def test_get_users_of_organization_without_admins(self):
+        """
+        Verify that get_users_of_organization helper can return all user related to an organization
+        excluding admin users
+        """
+        self._prepare_mapping_data()
+
+        self.mapping.is_admin = True
+        self.mapping.save()
+        assert list(api.get_users_of_organization(self.org2, without_site_admins=True)) == [self.org2_second_user]
+
+    def test_is_active_admin_on_organization(self):
+        """
+        Verify that is_active_admin_on_organization helper returns True if the given user
+        is an admin on the given organization
+        """
+        self._prepare_mapping_data()
+
+        assert not api.is_active_admin_on_organization(user=self.org2_first_user, organization=self.org2)
+
+        self.mapping.is_admin = True
+        self.mapping.save()
+        assert api.is_active_admin_on_organization(user=self.org2_first_user, organization=self.org2)
+
+    @pytest.mark.skipif(not settings.FEATURES['TAHOE_SITES_USE_ORGS_MODELS'],
+                        reason='Runs only when TAHOE_SITES_USE_ORGS_MODELS is on')
+    def test_create_tahoe_site_by_link_with_org(self):
+        """
+        Verify that create_tahoe_site_by_link creates a TahoeSite with the given organization and site
+        when edx-organizations customization is on
+        """
+        org = self.create_organization('dummy', 'DO')
+        site = self.create_django_site('dummy.org')
+        count = TahoeSite.objects.count()
+        assert org.sites.count() == 0
+
+        tahoe_site = api.create_tahoe_site_by_link(organization=org, site=site)
+        assert tahoe_site is None
+        assert TahoeSite.objects.count() == count
+        assert org.sites.count() == 1
+        assert org.sites.first() == site
+
+    @pytest.mark.skipif(settings.FEATURES['TAHOE_SITES_USE_ORGS_MODELS'],
+                        reason='Runs only when TAHOE_SITES_USE_ORGS_MODELS is off')
+    def test_create_tahoe_site_by_link_without_org(self):
+        """
+        Verify that create_tahoe_site_by_link creates a TahoeSite with the given organization and site
+        when edx-organizations customization is off
+        """
+        org = self.create_organization('dummy', 'DO')
+        site = self.create_django_site('dummy.org')
+        count = TahoeSite.objects.count()
+
+        tahoe_site = api.create_tahoe_site_by_link(organization=org, site=site)
+        assert TahoeSite.objects.count() == count + 1
+        assert tahoe_site.organization == org
+        assert tahoe_site.site == site
+
+    @pytest.mark.skipif(not settings.FEATURES['TAHOE_SITES_USE_ORGS_MODELS'],
+                        reason='Runs only when TAHOE_SITES_USE_ORGS_MODELS is on')
+    @ddt.data(uuid.uuid4(), None)
+    def test_create_tahoe_site_with_org(self, given_uuid):
+        """
+        Verify that create_tahoe_site creates a TahoeSite with the given organization/site information
+        when edx-organizations customization is on
+        """
+        organization_count = Organization.objects.count()
+        site_count = Site.objects.count()
+
+        data = api.create_tahoe_site(domain='dummydomain.org', short_name='DDOMAIN', uuid=given_uuid)
+        assert Organization.objects.count() == organization_count + 1
+        assert Site.objects.count() == site_count + 1
+
+        site = Site.objects.get(domain='dummydomain.org')
+        organization = Organization.objects.get(short_name='DDOMAIN')
+        self.assertDictEqual(data, {
+            'site_uuid': given_uuid if given_uuid else organization.edx_uuid,
+            'site': site,
+            'organization': organization,
+        })
+
+        assert organization.sites.get() == site
+        assert organization.name == 'DDOMAIN'
+        assert organization.description == 'Organization of dummydomain.org (automatic)'
+
+    @pytest.mark.skipif(settings.FEATURES['TAHOE_SITES_USE_ORGS_MODELS'],
+                        reason='Runs only when TAHOE_SITES_USE_ORGS_MODELS is off')
+    @ddt.data(uuid.uuid4(), None)
+    def test_create_tahoe_site_without_org(self, given_uuid):
+        """
+        Verify that create_tahoe_site creates a TahoeSite with the given organization/site information
+        when edx-organizations customization is off
+        """
+        tahoe_site_count = TahoeSite.objects.count()
+        organization_count = Organization.objects.count()
+        site_count = Site.objects.count()
+
+        data = api.create_tahoe_site(domain='dummydomain.org', short_name='DDOMAIN', uuid=given_uuid)
+        assert TahoeSite.objects.count() == tahoe_site_count + 1
+        assert Organization.objects.count() == organization_count + 1
+        assert Site.objects.count() == site_count + 1
+
+        tahoe_site = TahoeSite.objects.get(organization__short_name='DDOMAIN')
+        self.assertDictEqual(data, {
+            'site_uuid': given_uuid if given_uuid else tahoe_site.site_uuid,
+            'site': tahoe_site.site,
+            'organization': tahoe_site.organization,
+        })
+
+        assert tahoe_site.organization.name == 'DDOMAIN'
+        assert tahoe_site.organization.description == 'Organization of dummydomain.org (automatic)'
+
+    def test_get_site_by_organization(self):
+        """
+        Verify that get_site_by_organization returns the related Organization of the given Site
+        """
+        assert api.get_site_by_organization(organization=self.default_org) == self.default_django_site
+
+    def test_get_organization_by_site(self):
+        """
+        Verify that get_organization_by_site returns the related Site of the given Organization
+        """
+        assert api.get_organization_by_site(site=self.default_django_site) == self.default_org
+
+    def test_get_organization_by_site_exception(self):
+        """
+        When a site is not linked with any organization; an Organization.DoesNotExist exception should
+        be raised rather that TahoeSite.DoesNotExist
+        """
+        dummy_site = Site.objects.create(domain='dummy.org')
+        with self.assertRaisesMessage(
+            expected_exception=Organization.DoesNotExist,
+            expected_message='Organization matching query does not exist'
+        ):
+            api.get_organization_by_site(site=dummy_site)
+
+    def test_get_site_by_uuid(self):
+        """
+        Verify that get_site_by_uuid returns the related Site of the given UUID
+        """
+        assert api.get_site_by_uuid(
+            site_uuid=api.get_uuid_by_organization(self.default_org)
+        ) == self.default_django_site
+
+    def test_get_uuid_by_site(self):
+        """
+        Verify that get_uuid_by_site returns the related UUID of the given Site
+        """
+        assert api.get_uuid_by_site(site=self.default_django_site) == api.get_uuid_by_organization(self.default_org)
+
+    def test_get_current_site_no_site(self):
+        """
+        Emulate the behaviour of `openedx.core.djangoapps.theming.helpers.get_current_site`.
+        """
+        request = mock.Mock(site=None)
+        self.assertFalse(api.get_current_site(request))
+
+    def test_get_current_site_with_site(self):
+        """
+        Emulate the behaviour of `openedx.core.djangoapps.theming.helpers.get_current_site`.
+        """
+        request = mock.Mock(site={'domain': 'test.org'})
+        self.assertTrue(api.get_current_site(request))
+
+    def test_update_admin_role_active_mapping(self):
+        """
+        Test update_admin_role_in_organization on active UserOrganizationMapping.
+        """
+        self._prepare_mapping_data()
+        mapping = self.mapping
+        mapping.is_admin = False
+        mapping.save()
+
+        user = mapping.user
+        organization = mapping.organization
+
+        # Set as admin.
+        api.update_admin_role_in_organization(user, organization, set_as_admin=True)
+        assert api.is_active_admin_on_organization(user, organization), 'Should set as admin'
+
+        # Set as admin one more time. Shouldn't fail and should keep the user as admin.
+        api.update_admin_role_in_organization(user, organization, set_as_admin=True)
+        assert api.is_active_admin_on_organization(user, organization), 'Should keep the user as admin'
+
+        # Set as non-admin.
+        api.update_admin_role_in_organization(user, organization, set_as_admin=False)
+        assert not api.is_active_admin_on_organization(user, organization), 'Should remove admin status'
+
+    def test_update_admin_role_inactive_mapping(self):
+        """
+        Test update_admin_role_in_organization on inactive UserOrganizationMapping.
+        """
+        self._prepare_mapping_data()
+        mapping = self.mapping
+        mapping.is_active = False
+        mapping.save()
+
+        user = mapping.user
+        organization = mapping.organization
+
+        # Set as admin, but for inactive.
+        api.update_admin_role_in_organization(user, organization, set_as_admin=True)
+        assert not api.is_active_admin_on_organization(user, organization), (
+            'Should not be active admin, because the user is admin but is_active=False'
+        )
+
+    def test_update_admin_role_null_parameters(self):  # pylint: disable=no-self-use
+        """
+        Test update_admin_role_in_organization when having None parameters.
+        """
+        with pytest.raises(AssertionError, match='Parameter `user` should not be None'):
+            api.update_admin_role_in_organization(user=None, organization=object())
+
+        with pytest.raises(AssertionError, match='Parameter `organization` should not be None'):
+            api.update_admin_role_in_organization(user=object(), organization=None)
+
+    @mock.patch('tahoe_sites.api.get_organization_by_site')
+    def test_get_current_organization(self, mock_get_organization_by_site):  # pylint: disable=no-self-use
+        """
+        Verify that get_current_organization calls get_organization_by_site to return the current site
+        """
+        site = Site.objects.create(domain='test.org')
+        api.get_current_organization(request=mock.Mock(site=site))
+
+        mock_get_organization_by_site.assert_called_with(site)
+
+    def test_get_current_organization_main_site(self):
+        """
+        Verify that get_current_organization raises an exception if main-site is the current site
+        """
+        site = Site.objects.create(domain='test.org')
+        with mock.patch.object(settings, 'SITE_ID', site.id):
+            with self.assertRaisesMessage(
+                expected_exception=Organization.DoesNotExist,
+                expected_message='Tahoe Sites: Should not find organization of main site `settings.SITE_ID`'
+            ):
+                api.get_current_organization(request=mock.Mock(site=site))
+
+    @ddt.data(True, False)
+    def test_add_user_to_organization(self, is_admin):
+        """
+        Verify that add_user_to_organization maps the user to the organization with the given admin status
+        """
+        assert UserOrganizationMapping.objects.count() == 0
+
+        api.add_user_to_organization(user=self.default_user, organization=self.default_org, is_admin=is_admin)
+        assert UserOrganizationMapping.objects.count() == 1
+        mapping = UserOrganizationMapping.objects.get()
+        assert mapping.user == self.default_user
+        assert mapping.organization == self.default_org
+        assert mapping.is_admin == is_admin
