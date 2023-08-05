@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/TurtleIF.egg-info/PKG-INFO
+src/TurtleIF.egg-info/SOURCES.txt
+src/TurtleIF.egg-info/dependency_links.txt
+src/TurtleIF.egg-info/top_level.txt
