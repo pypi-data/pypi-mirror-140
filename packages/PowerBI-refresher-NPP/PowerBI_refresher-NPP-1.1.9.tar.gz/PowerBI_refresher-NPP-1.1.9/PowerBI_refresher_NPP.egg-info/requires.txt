@@ -1,0 +1,6 @@
+pywinauto
+psutil
+keyboard
+argparse
+setuptools>=42
+wheel
