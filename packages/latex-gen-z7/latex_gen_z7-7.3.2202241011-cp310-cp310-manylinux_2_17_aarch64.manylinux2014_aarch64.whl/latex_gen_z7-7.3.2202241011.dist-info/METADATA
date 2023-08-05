@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: latex-gen-z7
+Version: 7.3.2202241011
+Summary: UNKNOWN
+Home-page: https://github.com/zupermind/PACKAGENAME
+Author: Andrea Censi
+Author-email: info@zupermind.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyContracts3
+Requires-Dist: zuper-commons-z7
+Provides-Extra: test
+
+UNKNOWN
+
