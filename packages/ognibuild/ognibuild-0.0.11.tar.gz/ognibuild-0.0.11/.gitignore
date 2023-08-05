@@ -1,0 +1,9 @@
+build
+*~
+ognibuild.egg-info
+dist
+__pycache__
+.eggs
+*.swp
+*.swo
+*.swn
