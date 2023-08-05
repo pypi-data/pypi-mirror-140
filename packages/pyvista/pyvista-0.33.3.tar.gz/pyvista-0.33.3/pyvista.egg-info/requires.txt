@@ -1,0 +1,26 @@
+numpy
+imageio
+pillow
+appdirs
+scooby>=0.5.1
+vtk
+
+[:python_version <= "3.7"]
+typing_extensions
+
+[:python_version == "3.6"]
+dataclasses
+
+[all]
+matplotlib
+colorcet
+cmocean
+meshio
+
+[colormaps]
+matplotlib
+colorcet
+cmocean
+
+[io]
+meshio>=5.2
