@@ -1,0 +1,11 @@
+service_objects/__init__.py,sha256=C4RGVTFivVNmvkx92btJ_uGFoWpUozceh6ywCm_IPfY,84
+service_objects/celery_services.py,sha256=VhehUxSZreP8_4kyWcDhupHqVHx66PaOPY5yF-AY8UQ,2742
+service_objects/errors.py,sha256=ws7Ksl189L9lqfKxjKmbUIuE5TQXsHKyqdbKjeWGejM,645
+service_objects/fields.py,sha256=tZwPS_H3Yb9TLmD74JenUKQhxb7fLoe52rpIBpqlH38,8604
+service_objects/services.py,sha256=-I0xJ8dFYqcl_6aCU_ugKasSRovFwOrI9szsyhbFvbY,5000
+service_objects/views.py,sha256=L5fHa0S0j4PytB11978m8CG4lLqiY4HWXkjVR0bJP1s,3412
+django_service_objects-0.7.1.dist-info/LICENSE,sha256=bd94lajbUM4KxyLwhsFwJFkmdnxekKTVCeqgfSHWTwE,1083
+django_service_objects-0.7.1.dist-info/METADATA,sha256=ez8Qp93o4U4alUn2yhhd6FMeZ0CctS39-r2AGVzIxJs,6664
+django_service_objects-0.7.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_service_objects-0.7.1.dist-info/top_level.txt,sha256=zlc-k7fT2oFpiZVoTB6dU-Ls1RtXAuxKLPf52s5FUhc,16
+django_service_objects-0.7.1.dist-info/RECORD,,
