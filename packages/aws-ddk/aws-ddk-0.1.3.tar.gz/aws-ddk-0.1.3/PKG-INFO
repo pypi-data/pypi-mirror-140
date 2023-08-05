@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: aws-ddk
+Version: 0.1.3
+Summary: AWS DataOps Development Kit - CLI
+Home-page: https://github.com/awslabs/aws-ddk
+License: Apache-2.0
+Keywords: aws,ddk,dataops,cli
+Author: AWS Professional Services
+Author-email: aws-proserve-opensource@amazon.com
+Requires-Python: >=3.7.1,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: boto3 (>=1.20.37,<2.0.0)
+Requires-Dist: botocore (>=1.23.37,<2.0.0)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: cookiecutter (>=1.7.3,<2.0.0)
+Project-URL: Documentation, https://awslabs.github.io/aws-ddk/
+Project-URL: Repository, https://github.com/awslabs/aws-ddk
+Description-Content-Type: text/markdown
+
+# AWS DataOps Development Kit (DDK) CLI
+
+Command line interface to manage your DDK Apps.
