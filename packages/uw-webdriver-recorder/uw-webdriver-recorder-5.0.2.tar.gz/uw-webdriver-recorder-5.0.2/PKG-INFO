@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: uw-webdriver-recorder
+Version: 5.0.2
+Summary: A pytest plugin for recording screenshots of selenium interactions, with other convenient features too.
+License: Apache Software License 3.0
+Author: Tom Thorogood
+Author-email: goodtom@uw.edu
+Requires-Python: >=3.7,<4.0
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.0.1,<4.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: pytest (>=6.2.4,<7.0.0)
+Requires-Dist: selenium (>=4.1.0,<5.0.0)
