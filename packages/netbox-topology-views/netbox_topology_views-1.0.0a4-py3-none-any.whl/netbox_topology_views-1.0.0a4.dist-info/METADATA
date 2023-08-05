@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: netbox-topology-views
+Version: 1.0.0a4
+Summary: An NetBox plugin to create Topology maps
+Home-page: https://github.com/mattieserver/netbox-topology-views
+Author: Mattijs Vanhaverbeke
+License: Apache 2.0
+Project-URL: Source, https://github.com/mattieserver/netbox-topology-views
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+
+UNKNOWN
+
