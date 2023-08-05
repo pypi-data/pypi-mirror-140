@@ -1,0 +1,10 @@
+convertModel.py,sha256=FjqdVzYG0IqJKNgfe5scT1N0JJqZUfX-lQ1XGrGv6Rw,20027
+convertToPaddleJSModel.py,sha256=gjTjmJPQ9hOtnxu-OmarUDzU-cZoMpv5AvrAGvOlz2g,6234
+optimizeModel.py,sha256=viYEm17aV7T0xighqdOs62pmQaZexs1LlapqKgU-cK4,3486
+pruningModel.py,sha256=KkN3HcISo3W-_L6f4jiHWDLTtVgEUahKKwRXBfpZxnM,1657
+rnn.py,sha256=STAWkLbPMS84cKqqExxDFVOpwEY9aanbDeUyWYm67nM,9189
+paddlejsconverter-1.0.5.dist-info/METADATA,sha256=iQjEydRjucoI47Ec7i2BE1ivjYIUN17PnPBy4Fdkjus,988
+paddlejsconverter-1.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+paddlejsconverter-1.0.5.dist-info/entry_points.txt,sha256=ryhPhBPcmWpv5aX1SFVAEcJbUZ6MPwIUT0uXHQB0U1U,143
+paddlejsconverter-1.0.5.dist-info/top_level.txt,sha256=5uor4P225DIqS1cofuhygBboOnfQ-gfX1806E73kNR4,67
+paddlejsconverter-1.0.5.dist-info/RECORD,,

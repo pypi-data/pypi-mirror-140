@@ -1,0 +1,5 @@
+convertModel
+convertToPaddleJSModel
+optimizeModel
+pruningModel
+rnn
