@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tahoe-sites
+Version: 0.1.2
+Summary: Site and organization multi-tenancy management for Appsembler Tahoe
+Home-page: https://github.com/appsembler/tahoe-sites
+Author: Appsembler
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+UNKNOWN
+
