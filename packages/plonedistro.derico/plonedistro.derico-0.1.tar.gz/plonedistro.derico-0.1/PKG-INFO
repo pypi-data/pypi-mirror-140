@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: plonedistro.derico
+Version: 0.1
+Summary: UNKNOWN
+License: MIT
+Author-email: MrTango <md@derico.de>
+Requires-Python: >=3.8,<3.10
+Project-URL: homepage, http://derico.de
