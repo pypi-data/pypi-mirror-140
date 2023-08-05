@@ -1,0 +1,3 @@
+[console_scripts]
+bowyer=bowyer.cli.command:grp_main
+
