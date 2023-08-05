@@ -1,0 +1,12 @@
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/kor_coordinates.txt,sha256=87Xqe6LtvfIqUpKqmD1smrp0EZuFBPyD7K5_YexNrWo,15098
+naverplacescraper/__init__.py,sha256=1CClXEhbt7MeeMsDtlgTGZBhDQOZ-6IW_MabU3i-_OE,51
+naverplacescraper/coordinates.py,sha256=K97v_an4Ufju-UPpdsR15Cy-Qwb7CPytc75l7SY8-0k,922
+naverplacescraper/httprequest.py,sha256=wk9gpExe4xmwcUIIDF21Ae9-Dt8aYJj_vqZ6pz8qKtA,2167
+naverplacescraper/naverplace.py,sha256=JLvpniTLV_bASm7DpovDl_FJEEVXiL-xJUtrgqc4o_o,8222
+naverplacescraper/utils.py,sha256=-PFVYEy7LzxxZRN2BLZIGvJGMYEpqKpdwT-ub3WS3LU,127
+naverplacescraper-1.0.0.dist-info/LICENSE,sha256=wegYOYYcXY9GIeURoun_51MsfG7euEKB-5MMp6WYY5g,1067
+naverplacescraper-1.0.0.dist-info/METADATA,sha256=W4_rLzPiH4mZZRuGaktLC2L0vzJiCNQfhnG5Tzm-vWU,2596
+naverplacescraper-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+naverplacescraper-1.0.0.dist-info/top_level.txt,sha256=PC7TTHKWK8RkNkWcH__65GzwUuQalsvcMsIiZOygo_0,23
+naverplacescraper-1.0.0.dist-info/RECORD,,
