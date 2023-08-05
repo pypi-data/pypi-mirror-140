@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+spukhafte/__init__.py
+spukhafte/cdce9xx.py
+spukhafte/bin/__init__.py
+spukhafte/bin/config.py
+spukhafte_cdce9xx.egg-info/PKG-INFO
+spukhafte_cdce9xx.egg-info/SOURCES.txt
+spukhafte_cdce9xx.egg-info/dependency_links.txt
+spukhafte_cdce9xx.egg-info/entry_points.txt
+spukhafte_cdce9xx.egg-info/requires.txt
+spukhafte_cdce9xx.egg-info/top_level.txt
