@@ -1,0 +1,11 @@
+setup.py
+HyperbackupAPI2/HyperbackupAPI2_NPP.py
+HyperbackupAPI2/__init__.py
+HyperbackupAPI2/__main__.py
+HyperbackupAPI2_NPP.egg-info/PKG-INFO
+HyperbackupAPI2_NPP.egg-info/SOURCES.txt
+HyperbackupAPI2_NPP.egg-info/dependency_links.txt
+HyperbackupAPI2_NPP.egg-info/entry_points.txt
+HyperbackupAPI2_NPP.egg-info/not-zip-safe
+HyperbackupAPI2_NPP.egg-info/requires.txt
+HyperbackupAPI2_NPP.egg-info/top_level.txt
