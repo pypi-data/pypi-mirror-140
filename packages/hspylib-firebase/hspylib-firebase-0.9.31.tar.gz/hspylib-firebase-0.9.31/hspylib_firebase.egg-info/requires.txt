@@ -1,0 +1,4 @@
+hspylib>=0.11.27
+requests>=2.27.1
+setuptools>=60.9.2
+urllib3>=1.26.8
