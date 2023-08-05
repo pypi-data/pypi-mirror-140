@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: typing-environs
+Version: 0.1.7
+Summary: typing_environs add type hints support  for environs
+Home-page: https://github.com/Euraxluo/typing_environs
+License: The MIT LICENSE
+Author: Euraxluo
+Author-email: euraxluo@qq.com
+Requires-Python: >=3.6.5,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: easydict (>=1.9,<2.0)
+Requires-Dist: environs (>=9.5.0,<10.0.0)
+Requires-Dist: pydantic (>=1.8.0,<2.0.0)
+Project-URL: Repository, https://github.com/Euraxluo/typing_environs
+Description-Content-Type: text/markdown
+
+### typing_environs 
+- name = "typing_environs"
+- description = "typing_environs add type hints support  for environs"
+- authors = ["Euraxluo <euraxluo@qq.com>"]
+- license = "The MIT LICENSE"
+- repository = "https://github.com/Euraxluo/typing_environs"
+
+#### install
+`pip install typing-environs`
+
+#### UseAge
+```
+from typing_environs import EnvModule, Types
+
+
+class FLS(EnvModule):
+    open: Types.bool
+    level: Types.upper
+    dir: Types.dir
+    rotation: Types.str
+    retention: Types.str
+    compression: Types.str
+    encoding: Types.str
+    enqueue: Types.bool
+    backtrace: Types.bool
+    diagnose: Types.bool
+
+
+class Log(EnvModule):
+    format: Types.str
+    dir: Types.dir
+    level: Types.upper
+    fls: FLS
+
+
+class Config(EnvModule):  # 默认配置
+    env: Types.str
+    application: Types.str
+    version: Types.str
+    data_separator: Types.str
+
+    log: Log
+
+    def __init__(self, *args, paths=["default.env"], **kwargs):
+        super(Config, self).__init__(*args, paths=paths, **kwargs)
+```
