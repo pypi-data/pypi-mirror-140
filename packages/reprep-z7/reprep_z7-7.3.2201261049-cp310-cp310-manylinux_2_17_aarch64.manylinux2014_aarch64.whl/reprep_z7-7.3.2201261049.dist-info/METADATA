@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: reprep-z7
+Version: 7.3.2201261049
+Summary: UNKNOWN
+Home-page: https://github.com/zupermind/PACKAGENAME
+Author: Andrea Censi
+Author-email: info@zupermind.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Pillow
+Requires-Dist: PyContracts3
+Requires-Dist: docutils
+Requires-Dist: ipython
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Requires-Dist: six
+Requires-Dist: zuper-commons-z7
+Provides-Extra: test
+Requires-Dist: nose ; extra == 'test'
+
+UNKNOWN
+
