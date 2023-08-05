@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tachyconnect_pkg_gbv.egg-info/PKG-INFO
+src/tachyconnect_pkg_gbv.egg-info/SOURCES.txt
+src/tachyconnect_pkg_gbv.egg-info/dependency_links.txt
+src/tachyconnect_pkg_gbv.egg-info/requires.txt
+src/tachyconnect_pkg_gbv.egg-info/top_level.txt
