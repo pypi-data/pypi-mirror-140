@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        solve_wordle=wordle.play.wordle:play_wordle
+    
