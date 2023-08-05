@@ -1,0 +1,17 @@
+databricks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databricks/sql/HISTORY,sha256=7-kGxotOFY2EZaT6aUtmo_sIycS2PCJK7ayPuSsg7QY,1234
+databricks/sql/__init__.py,sha256=_ZGRw07eCqo4J5B76XdmsY0Mfr5dxDyeUGh6NZDbIw0,1284
+databricks/sql/client.py,sha256=4_xKHJ_atjC-h2MpnCFWUXiUntvQFbp282El_-v42co,25859
+databricks/sql/exc.py,sha256=MKWLIsG81S1FUdrhy2URWbqd3FfW96RPUXN0YxlP3Ag,632
+databricks/sql/thrift_backend.py,sha256=KlsMKW9MW4Q5ICBM6Dow-NGyzO-duhphzpg-huZaht0,34488
+databricks/sql/types.py,sha256=Y4InSW03iS0BrjUJZza4PtN9-RRk2NT1aLCgBVaN-qo,6764
+databricks/sql/utils.py,sha256=8YgafL6SLbu8YHsc4Gy64QCqXrwUmlUasocpu7XOQEQ,6680
+databricks/sql/thrift_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databricks/sql/thrift_api/TCLIService/TCLIService.py,sha256=8l4l8K93ijriUfu9yqUxHfZClabDlhst66FcBJv6AHs,130572
+databricks/sql/thrift_api/TCLIService/__init__.py,sha256=XERxa3ZbrWjXGs8DuVmNGw8jth4LsnQPJnAGCG3PacU,49
+databricks/sql/thrift_api/TCLIService/constants.py,sha256=18zrmzExSPzcTWvnAFzOHQJRnsqXgxnL9UO_aRagbuo,1127
+databricks/sql/thrift_api/TCLIService/ttypes.py,sha256=YN3G1kd45cj-9wEDlpCECwSzvxZkpFUO4GDDzMtO7Ao,1615349
+databricks_sql_connector-2.0.0b0.dist-info/METADATA,sha256=LCWfxs0fGtMKFdpuY4eM2x5Udr5av3VOKfW2g7HCJ9k,1977
+databricks_sql_connector-2.0.0b0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+databricks_sql_connector-2.0.0b0.dist-info/top_level.txt,sha256=7kRdatoSgU0EUurRQJ_3F1Nv4EOSHWAr6ng25tJOJKU,11
+databricks_sql_connector-2.0.0b0.dist-info/RECORD,,
