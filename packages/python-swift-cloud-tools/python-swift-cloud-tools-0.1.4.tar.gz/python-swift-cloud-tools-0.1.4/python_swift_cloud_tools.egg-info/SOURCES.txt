@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+python_swift_cloud_tools.egg-info/PKG-INFO
+python_swift_cloud_tools.egg-info/SOURCES.txt
+python_swift_cloud_tools.egg-info/dependency_links.txt
+python_swift_cloud_tools.egg-info/requires.txt
+python_swift_cloud_tools.egg-info/top_level.txt
+swift_cloud_tools/__init__.py
+swift_cloud_tools/client.py

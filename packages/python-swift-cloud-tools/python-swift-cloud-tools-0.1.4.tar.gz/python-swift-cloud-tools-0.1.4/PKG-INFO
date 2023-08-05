@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: python-swift-cloud-tools
+Version: 0.1.4
+Summary: Admin webapp for OpenStack Keystone and OpenStack Swift.
+Home-page: https://github.com/globocom/python-swift-cloud-tools
+Author: Storm
+Author-email: storm@g.globo
+License: UNKNOWN
+Description: # python-swift-cloud-tools
+        Python bindings to the Swift Cloud Tools API
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
