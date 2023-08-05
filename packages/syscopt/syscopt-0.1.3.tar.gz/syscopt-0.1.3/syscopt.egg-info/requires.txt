@@ -1,0 +1,6 @@
+click
+fonttools
+gurobipy==9.1.2
+mpi4py
+numpy
+scipy
