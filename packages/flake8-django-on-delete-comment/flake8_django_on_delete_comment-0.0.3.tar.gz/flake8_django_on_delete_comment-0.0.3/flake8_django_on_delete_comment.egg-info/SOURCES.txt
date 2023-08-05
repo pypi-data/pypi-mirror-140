@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flake8_django_on_delete_comment/__init__.py
+flake8_django_on_delete_comment/ast_helpers.py
+flake8_django_on_delete_comment/checker.py
+flake8_django_on_delete_comment.egg-info/PKG-INFO
+flake8_django_on_delete_comment.egg-info/SOURCES.txt
+flake8_django_on_delete_comment.egg-info/dependency_links.txt
+flake8_django_on_delete_comment.egg-info/entry_points.txt
+flake8_django_on_delete_comment.egg-info/not-zip-safe
+flake8_django_on_delete_comment.egg-info/requires.txt
+flake8_django_on_delete_comment.egg-info/top_level.txt
