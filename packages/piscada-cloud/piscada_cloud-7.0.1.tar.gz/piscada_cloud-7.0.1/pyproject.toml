@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "piscada_cloud"
+version = "7.0.1"
+description = "Library for the Piscada Cloud including authentication and data access."
+keywords = [
+    "piscada",
+    "automation",
+    "building-automation",
+    "fish-farming",
+    "assisted-living"
+]
+readme = "README.md"
+authors = ["Tim Jagenberg <tim.jagenberg@piscada.com>", "Filip Henrik Larsen <filip.larsen@piscada.com>"]
+homepage = "https://piscada.com/"
+license = "Other/Proprietary License"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+    "Topic :: Scientific/Engineering",
+    "License :: Other/Proprietary License"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+pandas = "^1.3.4"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+pylint = "^2.12.2"
+isort = "^5.10.1"
+mypy = "^0.910"
+pytest = "^6.2.5"
+pytest-mock = "^3.6.1"
+pytest-cov = "^3.0.0"
+rope = "^0.19.0"
+requests-mock = "^1.9.3"
+pydocstyle = "^6.1.1"
+bandit = "^1.7.1"
+types-requests = "^2.26.1"
+
+[tool.black]
+line-length = 172
+
+[tool.pylint.messages_control]
+# bad-continuation and bad-whitespace collide with black. Missing-function-docstring is picked up by pydocstyle
+disable = ["bad-continuation", "bad-whitespace", "missing-function-docstring"]
+good-names = ["df", "np", "pd"]
+
+[tool.pylint.format]
+max-line-length = "172"
+
+[tool.isort]
+profile = "black"
+line_length = 172
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
