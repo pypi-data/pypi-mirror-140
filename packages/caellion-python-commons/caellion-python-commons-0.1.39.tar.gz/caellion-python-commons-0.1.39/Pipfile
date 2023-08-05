@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+nose2 = "*"
+coverage = "*"
+flake8 = "*"
+mutmut = "*"
+setuptools = "*"
+wheel = "*"
+build = "*"
+virtualenv = "*"
+pip = "*"
+twine = "*"
+pydocstyle = "*"
+pyprof2html = "*"
+gprof2dot = "*"
+
+[requires]
+python_version = "3.7"
+
+[packages]
+pydes = "*"
