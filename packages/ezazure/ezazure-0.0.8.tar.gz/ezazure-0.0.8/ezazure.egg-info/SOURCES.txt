@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+ezazure/__init__.py
+ezazure/__main__.py
+ezazure/ezazure.py
+ezazure.egg-info/PKG-INFO
+ezazure.egg-info/SOURCES.txt
+ezazure.egg-info/dependency_links.txt
+ezazure.egg-info/requires.txt
+ezazure.egg-info/top_level.txt
