@@ -1,0 +1,17 @@
+odoo/addons/mrp_workorder_sequence/README.rst,sha256=ub3eMB5TWjwxyz9f0XwGTgnAHMsZk36G8LdohoSYV5c,3130
+odoo/addons/mrp_workorder_sequence/__init__.py,sha256=zcx06kU-CzrA2qoOw8kcLdbxMRgp5QQ8AqwUYcAr2cU,92
+odoo/addons/mrp_workorder_sequence/__manifest__.py,sha256=R8c1ShoJwUi0ah0NI1OVQ0BNYwXbIQU8WdTXt6DXv4o,605
+odoo/addons/mrp_workorder_sequence/i18n/mrp_workorder_sequence.pot,sha256=rqkoif06QKIscqFKTYv1PtwTm2LO-5Si9r3kO5OK0_c,1571
+odoo/addons/mrp_workorder_sequence/models/__init__.py,sha256=n5NXq7-Y5m6QFE1pL16Ni6qRn2Y8jhKVq7jTjUtJG5o,57
+odoo/addons/mrp_workorder_sequence/models/mrp_production.py,sha256=M8P9GnPvSXq06LESUCAL7MgP-hwSlirSmDat6KApV6w,595
+odoo/addons/mrp_workorder_sequence/models/mrp_workorder.py,sha256=r238NX3RD60d-FF8s50Pvxd2-6aTdQUIi7BDc_32AR8,266
+odoo/addons/mrp_workorder_sequence/readme/CONTRIBUTORS.rst,sha256=FnGvvDBS7F28HbJHxelCOaLPJ1KKvipJUL9w1BTXFZ4,83
+odoo/addons/mrp_workorder_sequence/readme/DESCRIPTION.rst,sha256=ebwURUSdBL-lEgk3IlPAtXlu9vCIVviwFxmEQbPDuE8,128
+odoo/addons/mrp_workorder_sequence/readme/USAGE.rst,sha256=ptDj5Ft4y0Rk65njpGaWCoszoA97n08nmSf4S-ZwcLw,73
+odoo/addons/mrp_workorder_sequence/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/mrp_workorder_sequence/static/description/index.html,sha256=3J_ZeLP3gLw-UmUQowBD9ma2K0CQwqc8uJ_rxhSkiWM,12513
+odoo/addons/mrp_workorder_sequence/views/mrp_workorder_view.xml,sha256=mbBJ4NTl_luuV3Ml6knoXznj7iQBxKMLlVv_E7-eJnQ,544
+odoo14_addon_mrp_workorder_sequence-14.0.1.0.1.dist-info/METADATA,sha256=sZm8NDpj1CiGBVef6CK-_kDj-0GdIDo01ePbSG04EY4,3741
+odoo14_addon_mrp_workorder_sequence-14.0.1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo14_addon_mrp_workorder_sequence-14.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_mrp_workorder_sequence-14.0.1.0.1.dist-info/RECORD,,
