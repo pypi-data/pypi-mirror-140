@@ -1,0 +1,2 @@
+[console_scripts]
+scratchip = scratchip.main:main
