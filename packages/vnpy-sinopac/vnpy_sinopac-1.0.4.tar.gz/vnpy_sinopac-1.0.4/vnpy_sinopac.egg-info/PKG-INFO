@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: vnpy-sinopac
+Version: 1.0.4
+Summary: Sinopac Securities - Shioaji api gateway for VeighNa quant trading framework.
+Home-page: https://github.com/ypochien/vnpy_sinopac
+Author: ypochien
+Author-email: ypochien@gmail.com
+License: MIT
+Project-URL: Documentation, https://sinotrade.github.io/
+Project-URL: Release notes, https://sinotrade.github.io/release/
+Project-URL: Funding, https://sjapi.tw
+Project-URL: Source, https://github.com/ypochien/vnpy_sinopac
+Keywords: quant,quantitative,investment,trading,algotrading
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Traditional)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vnpy_sinopac
+
+<p align="center">
+    <img src ="https://img.shields.io/badge/version-3.0.0-blueviolet.svg"/>
+    <img src ="https://img.shields.io/badge/platform-windows|linux|macos-yellow.svg"/>
+    <img src ="https://img.shields.io/badge/python-3.7-blue.svg" />
+    <img src ="https://img.shields.io/github/workflow/status/vnpy/vnpy/Python%20application/master"/>
+    <img src ="https://img.shields.io/github/license/vnpy/vnpy.svg?color=orange"/>
+</p>
+
+VeighNa框架的 Sinopac 交易接口
+
+- vnpy - https://github.com/vnpy/vnpy/
+- shioaji - https://sinotrade.github.io/
+

@@ -1,0 +1,3 @@
+shioaji
+importlib_metadata
+wmi

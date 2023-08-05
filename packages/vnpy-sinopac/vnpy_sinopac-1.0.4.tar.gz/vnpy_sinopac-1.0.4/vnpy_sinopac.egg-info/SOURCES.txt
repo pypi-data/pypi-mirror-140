@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vnpy_sinopac/__init__.py
+vnpy_sinopac.egg-info/PKG-INFO
+vnpy_sinopac.egg-info/SOURCES.txt
+vnpy_sinopac.egg-info/dependency_links.txt
+vnpy_sinopac.egg-info/not-zip-safe
+vnpy_sinopac.egg-info/requires.txt
+vnpy_sinopac.egg-info/top_level.txt
+vnpy_sinopac/gateway/__init__.py
+vnpy_sinopac/gateway/sinopac_gateway.py
