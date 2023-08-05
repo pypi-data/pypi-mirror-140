@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pipm
+Version: 22.2.2
+Summary: Wrapper around pip commands to auto-update requirements file
+Home-page: https://github.com/jnoortheen/pipm
+Author: noortheen
+Author-email: jnoortheen@gmail.com
+License: MIT
+Keywords: easy_install distutils setuptools egg virtualenv requirements
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black (~=22.1.0) ; extra == 'dev'
+Requires-Dist: pdbpp (~=0.10.3) ; extra == 'dev'
+Requires-Dist: twine (~=3.8.0) ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: pytest-cov (~=3.0.0) ; extra == 'testing'
+Requires-Dist: pytest-mock (~=3.7.0) ; extra == 'testing'
+Requires-Dist: pytest (~=7.0.1) ; extra == 'testing'
+Requires-Dist: tox (~=3.24.5) ; extra == 'testing'
+
+Checkout the README https://github.com/jnoortheen/pipm
+
