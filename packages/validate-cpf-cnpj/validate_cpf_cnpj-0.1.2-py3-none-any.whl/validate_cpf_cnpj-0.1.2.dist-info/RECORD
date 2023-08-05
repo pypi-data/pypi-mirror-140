@@ -1,0 +1,11 @@
+cpf_cnpj/__init__.py,sha256=aBvGBujy_uz9z1iWvSNFLoHx5b57f6uLgMVTSi9HIqU,107
+cpf_cnpj/cpf_cnpj.py,sha256=XyCh26n_XyHNxQtxwHcwG51MM_j3u6iPd9CqyFjqfL4,3833
+cpf_cnpj/utils.py,sha256=gp2yLJuRvrEEfyC4PkJH0X7cT57e3pxOR8ONhobp6mk,275
+cpf_cnpj/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpf_cnpj/tests/tests.py,sha256=IOaCoee9lzCIG4kj25mfqYVQLpxd4N-JcYHpnsNIoVI,4283
+validate_cpf_cnpj-0.1.2.dist-info/LICENSE,sha256=4GOiB0oI18EMepUWYW87jliAoox5widuVoN4Glksn_Q,1082
+validate_cpf_cnpj-0.1.2.dist-info/METADATA,sha256=wLt1X77Jkp0zzJsW3ltMWKK6Ly-PHOcoRSDRapJy0jU,353
+validate_cpf_cnpj-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+validate_cpf_cnpj-0.1.2.dist-info/top_level.txt,sha256=DLlEi4WGfrTIPyStjxGb6d1XbIdQBfdZ5SQfDQLsx2I,9
+validate_cpf_cnpj-0.1.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+validate_cpf_cnpj-0.1.2.dist-info/RECORD,,
