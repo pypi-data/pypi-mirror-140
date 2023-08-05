@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+Topsiss_Bhagesh_101903540.egg-info/PKG-INFO
+Topsiss_Bhagesh_101903540.egg-info/SOURCES.txt
+Topsiss_Bhagesh_101903540.egg-info/dependency_links.txt
+Topsiss_Bhagesh_101903540.egg-info/entry_points.txt
+Topsiss_Bhagesh_101903540.egg-info/top_level.txt
+topsis/__init__.py
+topsis/__main__.py
+topsiss_Bhagesh_101903540.egg-info/PKG-INFO
+topsiss_Bhagesh_101903540.egg-info/SOURCES.txt
+topsiss_Bhagesh_101903540.egg-info/dependency_links.txt
+topsiss_Bhagesh_101903540.egg-info/entry_points.txt
+topsiss_Bhagesh_101903540.egg-info/top_level.txt
