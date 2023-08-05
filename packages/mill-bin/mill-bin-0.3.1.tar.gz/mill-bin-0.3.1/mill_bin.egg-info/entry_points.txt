@@ -1,0 +1,2 @@
+[console_scripts]
+mill_bin = mill_bin.main:main
