@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pgserviceparser/__init__.py
+pgserviceparser.egg-info/PKG-INFO
+pgserviceparser.egg-info/SOURCES.txt
+pgserviceparser.egg-info/dependency_links.txt
+pgserviceparser.egg-info/top_level.txt
