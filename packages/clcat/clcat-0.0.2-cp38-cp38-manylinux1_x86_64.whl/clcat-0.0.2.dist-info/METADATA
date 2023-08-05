@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: clcat
+Version: 0.0.2
+Summary: Clara Holoscan Clinical Algorithms Toolkit
+Home-page: UNKNOWN
+Author: NVIDIA Corporation
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: patchelf
+
+Clara Clinical Algorithms Toolkit
+
+
