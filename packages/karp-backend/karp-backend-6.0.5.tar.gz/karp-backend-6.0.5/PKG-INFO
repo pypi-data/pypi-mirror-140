@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: karp-backend
+Version: 6.0.5
+Summary: Karp backend
+Home-page: https://spraakbanken.gu.se
+License: MIT
+Author: Språkbanken at the University of Gothenburg
+Author-email: sb-info@svenska.gu.se
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Provides-Extra: mysql
+Provides-Extra: sqlite
+Requires-Dist: PyJWT (>=2.1.0,<3.0.0)
+Requires-Dist: PyMySQL (>=0.9,<0.10); extra == "mysql"
+Requires-Dist: SQLAlchemy (>=1.4.25,<2.0.0)
+Requires-Dist: SQLAlchemy-Utils (>=0.38.2,<0.39.0)
+Requires-Dist: TatSu (>=5.6,<6.0)
+Requires-Dist: aiomysql (>=0.0.22,<0.0.23); extra == "mysql"
+Requires-Dist: aiosqlite (>=0.17.0,<0.18.0); extra == "sqlite"
+Requires-Dist: alembic (>=1.7.4,<2.0.0)
+Requires-Dist: dependency-injector (>=4.36.2,<5.0.0)
+Requires-Dist: elasticsearch (>=6,<7)
+Requires-Dist: elasticsearch-dsl (>=6,<7)
+Requires-Dist: environs (>=9.3.4,<10.0.0)
+Requires-Dist: fastapi (>=0.74,<0.75)
+Requires-Dist: injector (>=0.19,<0.20)
+Requires-Dist: json-streams (>=0.11,<0.12)
+Requires-Dist: mysqlclient (>=2.1.0,<3.0.0); extra == "mysql"
+Requires-Dist: paradigmextract (>=0.1.1,<0.2.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: python-dotenv (>=0.19.0,<0.20.0)
+Requires-Dist: regex (>=2021.9.30,<2022.0.0)
+Requires-Dist: sb-json-tools (>=0.9.1,<0.10.0)
+Requires-Dist: sqlalchemy-json (>=0.4.0,<0.5.0)
+Requires-Dist: structlog (>=21.5.0,<22.0.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Requires-Dist: tenacity (>=8.0.1,<9.0.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Requires-Dist: urllib3 (>=1.26.7,<2.0.0)
+Requires-Dist: uvicorn (>=0.17,<0.18)
+Project-URL: Bug Tracker, https://github.com/spraakbanken/karp-backend/issues
+Project-URL: Documentation, https://github.com/spraakbanken/karp-backend
+Project-URL: Repository, https://github.com/spraakbanken/karp-backend
+Description-Content-Type: text/markdown
+
+# Karp TNG backend
+
+[![Build Status](https://github.com/spraakbanken/karp-backend/workflows/Build/badge.svg)](https://github.com/spraakbanken/karp-backend/actions)
+
+This in the version 6 of Karp backend, [for the legacy version (v5)](https://github.com/spraakbanken/karp-backend-v5).
+
+## Setup
+
+This project uses [poetry](https://python-poetry.org) and
+[MariaDB](https://mariadb.org/).
+
+1. Run `make install` or `make install-dev` for a develop-install (VENV_NAME defaults to .venv)
+2. Install MariaDB and create a database
+3. Setup environment variables (can be placed in a `.env` file in the root and then **?** `pipenv run` sets those):
+   ```
+   export MARIADB_DATABASE=<name of database>
+   export MARIADB_USER=<database user>
+   export MARIADB_PASSWORD=<user's password>
+   export MARIADB_HOST=localhost
+   export AUTH_JWT_PUBKEY_PATH=/path/to/pubkey
+   ```
+4. Activate the virtual environment by running: `source <VENV_NAME>/bin/activate` (VENV_NAME defaults to .venv)
+5. Run `make init-db` to initialize database
+   or `source <VENV_NAME>/bin/activate` and then `alembic upgrade head`
+6. Run `make run-dev` to start development server
+
+   or `source <VENV_NAME>/bin/activate` and then `python wsgi.py`
+
+7. To setup Elasticsearch, download Elasticsearch 6.x or 7.x and start it
+8. Install elasticsearch python libs for the right version
+   1. If you use Elasticsearch 6.x, run `source <VENV_NAME>/bin/activate` and `pip install -e .[elasticsearch6]`
+   2. If you use Elasticsearch 7.x, run `source <VENV_NAME>/bin/activate` and `pip install -e .[elasticsearch7]`
+9. Add environment variables
+
+```
+export ES_ENABLED=true
+export ELASTICSEARCH_HOST=localhost:9200
+```
+
+## Create test resources
+
+1. `source <VENV_NAME>/bin/activate` and then:
+2. `karp-cli create --config tests/data/config/places.json`
+3. `karp-cli import --resource_id places --version 1 --data tests/data/places.jsonl`
+4. Do the same for `municipalities`
+5. `karp-cli publish --resource_id places --version 1`
+6. `karp-cli publish --resource_id municipalities --version 1`
+
+## Pre-processing data before publishing
+
+Can be used to have less downtime, because sometimes the preprocessing may
+be faster on another machine than the machine that talks to Elasticsearch.
+Do `create` and `import` on both machines, with the same data. Use
+machine 1 to preprocess and use result on machine 2.
+
+1. Create resource and import data as usual.
+2. Run `karp-cli preprocess --resource_id places --version 2 --filename places_preprocessed`
+
+   `places_preprocessed` will contain a pickled dataset containing everything that is needed
+
+3. Run `karp-cli publish_preprocessed --resource_id places --version 2 --data places_preprocessed`
+4. Alternatively run `karp-cli reindex_preprocessed --resource_id places --data places_preprocessed`
+   , if the resource was already published.
+
+## Technologies
+
+### Python
+
+- Pipenv
+- Flask
+- SQLAlchemy
+- Click
+- Elasticsearch
+- Elasticsearch DSL
+
+### Databases
+
+- MariaDB
+- Elasticsearch
+
+## Development
+
+### Version handling
+
+Version can be bumped with [`bumpversion`](https://pypi.org/project/bumpversion/).
+
+Usage:
+
+- Increase patch number `a.b.X => a.b.(X+1)`: `bumpversion patch`
+- Increase minor number `a.X.c => a.(X+1).c`: `bumpversion minor`
+- Increase major number `X.b.c => (X+1).b.c`: `bumpversion major`
+- To custom version `a.b.c => X.Y.Z`: `bumpversion --new-version X.Y.Z`
+
+`bumpversion` is configured in [`.bumpversion.cfg`](.bumpversion.cfg).
+
+The version is changed in the following files:
+
+- [`setup.py`](setup.py)
+- [`src/karp/__init__.py`](src/karp/__init__.py)
+- [`.bumpversion.cfg`](.bumpversion.cfg)
+- [`doc/karp_api_spec.yaml`](doc/karp_api_spec.yaml)
+
