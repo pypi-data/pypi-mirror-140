@@ -1,0 +1,3 @@
+[flake8.extension]
+FP001 = flake8_fine_pytest.checker:FinePytestChecker
+
