@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: dbt-artifact-parser
+Version: 1.0.5
+Summary: utility package to parse dbt artifacts
+Home-page: https://github.com/zoe/dbt-artifact-parser
+Author: Zoe Inc.
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pre-commit (==2.9.3)
+Requires-Dist: pytest (==6.0.1)
+Requires-Dist: pytest-mock (==3.3.1)
+Requires-Dist: requests
+Requires-Dist: google-cloud-bigquery (==2.28.1)
+
+# dbt-artifact-parser
+
+An open source project to parse dbt artifacts which can be later used for alerting purposes.
+
+Supporting repository to setup the alerting service can be found [here](https://github.com/zoe/dbt-alerting-service)
+
+## Setup
+
+While it is not necessary, we advise using a virtual environment with Python >= 3.8 before contributing to this project.
+
+1. Run `make init` to setup the necessary dependencies and commit hooks.
+
+## Testing
+
+Run `make test` to run all tests.
+
+## Help
+
+To see all the available commands for the repo, you can run `make help`
+
+
