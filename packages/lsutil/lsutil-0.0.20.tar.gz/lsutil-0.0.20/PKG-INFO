@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: lsutil
+Version: 0.0.20
+Summary: Unix ls in Python
+Home-page: https://koobedoc.github.io/lsutil/
+License: GNU GPLv3
+Keywords: unix,ls
+Platform: UNKNOWN
+License-File: LICENSE
+
+# lsutil -- Unix ls command in a Python module
+
+Edit this file for your project.
+
+
+## Project Information (YAML format)
+
+    python-depends: pyyaml rich
+    docs: mkdocs
+    python-modules:  lsutil
+    python-packages: lsutil
+
+
+
