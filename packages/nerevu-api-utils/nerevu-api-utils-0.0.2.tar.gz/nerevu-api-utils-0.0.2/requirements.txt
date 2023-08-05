@@ -1,0 +1,4 @@
+flask
+python-dateutil>=2.8.2,<3.0.0
+meza>=0.45.5,<1.0.0
+SQLAlchemy>=1.2.0,<1.4.0
