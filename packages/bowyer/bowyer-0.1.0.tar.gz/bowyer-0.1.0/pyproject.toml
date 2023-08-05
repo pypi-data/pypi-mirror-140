@@ -1,0 +1,62 @@
+[tool.poetry]
+name          = 'bowyer'
+version       = '0.1.0'
+description   = 'Model based design for developers'
+keywords      = ['modelling',
+                 'simulation',
+                 'message',
+                 'dataflow',
+                 'actor',
+                 'framework']
+license       = 'Apache 2.0'
+authors       = ['William Payne <wtpayne@gmail.com>']
+maintainers   = ['William Payne <wtpayne@gmail.com>']
+readme        = "README.rst"
+classifiers   = ['Development Status :: 1 - Planning',
+                 'Environment :: Console',
+                 'Environment :: No Input/Output (Daemon)',
+                 'Intended Audience :: Developers',
+                 'Intended Audience :: Information Technology',
+                 'Intended Audience :: Science/Research',
+                 'License :: OSI Approved :: Apache Software License',
+                 'Natural Language :: English',
+                 'Operating System :: Unix',
+                 'Operating System :: POSIX :: Linux',
+                 'Programming Language :: C',
+                 'Programming Language :: Cython',
+                 'Programming Language :: Python',
+                 'Programming Language :: Python :: 3.8',
+                 'Topic :: Scientific/Engineering',
+                 'Topic :: Scientific/Engineering :: Artificial Intelligence',
+                 'Topic :: Scientific/Engineering :: Image Processing',
+                 'Topic :: Scientific/Engineering :: Image Recognition',
+                 'Topic :: Software Development',
+                 'Topic :: Software Development :: Embedded Systems',
+                 'Topic :: Software Development :: Libraries :: Application Frameworks',
+                 'Topic :: System',
+                 'Topic :: System :: Distributed Computing']
+packages      = [{ include = 'bowyer', from = 'src' }]
+build         = 'build.py'
+include       = ["README.rst"]
+exclude       = ["*/_spec/**/*"]
+
+[tool.poetry.dependencies]
+python        = '^3.8'
+Cython        = '^0.29.26'
+click         = "^8.0.3"
+dill          = "^0.3.4"
+jsonschema    = "^4.4.0"
+loguru        = "^0.5.3"
+numpy         = "^1.22.1"
+PyYAML        = "^6.0"
+zmq           = "^0.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest        = '^5.2'
+
+[tool.poetry.scripts]
+bowyer        = "bowyer.cli.command:grp_main"
+
+[build-system]
+requires      = ['poetry-core>=1.0.0', 'setuptools', 'wheel', 'Cython', 'PyYAML']
+build-backend = 'poetry.core.masonry.api'
