@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: opscraper
+Version: 0.1.3
+Summary: "Scraper Data from oddsportal"
+Home-page: https://github.com/msalembsk/opscraper/tree/main/
+Author: Med Salem Boussoukaya
+Author-email: salem@cortexya.com
+License: Apache Software License 2.0
+Keywords: OddsPortal Scraper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
