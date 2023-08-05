@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = topsis_dilmanpreet_101903506.mmain:main
+
