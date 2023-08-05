@@ -1,0 +1,20 @@
+{
+  "name": "settings",
+  "version": "0.1.0",
+  "syscopt": {
+    "algorithm":0,
+    "dipoa": {
+      "maxiter": 500,
+      "gap": 1e-3,
+      "rgap": 1e-3,
+      "soc": false,
+      "verbose": true
+    },
+    "disoa": {
+      "verbose": true
+    },
+    "verbose": true,
+    "bigm": 200,
+    "sos": false
+  }
+}

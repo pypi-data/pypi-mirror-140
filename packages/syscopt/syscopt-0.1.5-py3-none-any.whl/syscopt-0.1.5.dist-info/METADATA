@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: syscopt
+Version: 0.1.5
+Summary: a Python framework designed to solve Distributed Cardinality Constrained Optimization
+Home-page: https://github.com/Alirezalm/syscopt
+Author: Alireza Olama
+Author-email: alireza.lm69@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: fonttools
+Requires-Dist: gurobipy (==9.1.2)
+Requires-Dist: mpi4py
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
