@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pyfuzz-tool
+Version: 0.0.2
+Summary: A tool for fuzzing programs in python
+Home-page: https://github.com/fabriceyhc/pyfuzz
+Author: Fabrice Harel-Canada
+Author-email: fabriceyhc@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/fabriceyhc/pyfuzz/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyfuzz
+
+A basic python-based fuzzing tool used to support miscellaneous research objectives.
+
+Install:
+```
+pip install pyfuzz_tool
+```
+
+Import:
+```
+import pyfuzz
+```
+
+Run some examples:
+```
+(pyfuzz) Github\src\pyfuzz> python examples\titanic\pyfuzz_titanic.py
+```
+
