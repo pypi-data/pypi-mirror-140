@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/abalin_nameday/__init__.py
+src/abalin_nameday/abalin_nameday.py
+src/abalin_nameday/version.py
+src/abalin_nameday.egg-info/PKG-INFO
+src/abalin_nameday.egg-info/SOURCES.txt
+src/abalin_nameday.egg-info/dependency_links.txt
+src/abalin_nameday.egg-info/top_level.txt
