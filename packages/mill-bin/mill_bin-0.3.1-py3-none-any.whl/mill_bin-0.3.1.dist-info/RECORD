@@ -1,0 +1,9 @@
+mill_bin/__init__.py,sha256=AFVaoLsMw9K1EeI8aVMctoaRnwNvrm5Pa-tN7tCeqnY,157
+mill_bin/main.py,sha256=rpUhJHWnfwbv_j0w59bU6ZY-ng0kWXN0bV4NklRnW9k,1654
+mill_bin/version.py,sha256=56WwOPv-d8e44F7v4kBRqHfVcnK0UZTh2j5uL4kUa3g,142
+mill_bin/assets/mill,sha256=9oCzFJYqY5-azjBnm_XuJsRqjGPZSc6n_15wRsQPlak,65538437
+mill_bin-0.3.1.dist-info/METADATA,sha256=LfnnrAuir9MoeUcerzs14XQe5Yj0Uu6y91Z05x6Za7s,308
+mill_bin-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mill_bin-0.3.1.dist-info/entry_points.txt,sha256=yEmeGyE19S2HMPRr84N7hY4-2AgVHI_KF3cHVnylD3M,49
+mill_bin-0.3.1.dist-info/top_level.txt,sha256=n0dj3GTZRM6e2uW7WdR2-59inO7PIEYaPlUEeSzu9rM,9
+mill_bin-0.3.1.dist-info/RECORD,,
