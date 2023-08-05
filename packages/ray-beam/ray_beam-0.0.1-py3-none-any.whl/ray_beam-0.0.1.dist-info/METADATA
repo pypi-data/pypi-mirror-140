@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ray-beam
+Version: 0.0.1
+Summary: A Ray runner for Apache Beam
+Home-page: https://github.com/ray-project/ray_beam_runner
+Author: Ray Team
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: ray
+Requires-Dist: apache-beam
+
+A distributed runner for Apache Beam built on top of distributed computing framework Ray.
+
+
