@@ -1,0 +1,16 @@
+.cz.json
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+pipm/__init__.py
+pipm/__main__.py
+pipm/src/__init__.py
+pipm/src/classes.py
+pipm/src/commands.py
+pipm/src/file.py
+pipm/src/file_utils.py
+pipm/src/operations.py
+pipm/src/setup_cfg.py
