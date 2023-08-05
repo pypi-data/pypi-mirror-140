@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "pyzscaler"
+version = "1.0.1"
+description = "A python SDK for the Zscaler API."
+authors = ["Mitch Kelly <me@mkelly.dev>"]
+license = "MIT"
+readme = "README.md"
+documentation = "https://pyzscaler.readthedocs.io/"
+homepage = "https://pyzscaler.packet.tech/"
+repository = "https://github.com/mitchos/pyZscaler"
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules", ]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/mitchos/pyZscaler/issues"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+restfly = "1.4.4"
+python-box = "5.4.1"
+
+[tool.poetry.dev-dependencies]
+python = "^3.6.1"
+restfly = "1.4.4"
+python-box = "5.4.1"
+Sphinx = "4.3.1"
+furo = "2021.11.23"
+pytest = "6.2.5"
+requests = "2.26.0"
+pre-commit = "2.16.0"
+responses = "0.16.0"
+toml = "0.10.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 127
+
+[tool.pylint.'MESSAGES CONTROL']
+disable=[
+    "format",
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "too-many-public-methods",
+    "anomalous-backslash-in-string",
+    "import-error",
+    "redefined-outer-name",
+]
+
+[tool.pylint.'FORMAT']
+max-line-length = 127
+
+[tool.isort]
+profile = "black"
