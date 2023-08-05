@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "corgi-org-tool"
+version = "0.1.0"
+description = "Command Line parser, agenda and manipulator for org-mode files."
+authors = ["Michal Goral <dev@goral.net.pl>"]
+license = "GPLv3"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Operating System :: POSIX",
+    "Topic :: Office/Business :: Scheduling",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+readme = "README.md"
+packages = [
+    { include = "corgi", from = "src" },
+]
+homepage = "https://git.goral.net.pl/mgoral/corgi"
+repository = "https://git.goral.net.pl/mgoral/corgi"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+colorama = "^0.4.4"
+tomli = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2.5"
+pytest-xdist = "^2.5.0"
+
+[tool.poetry.scripts]
+corgi = "corgi.app:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
