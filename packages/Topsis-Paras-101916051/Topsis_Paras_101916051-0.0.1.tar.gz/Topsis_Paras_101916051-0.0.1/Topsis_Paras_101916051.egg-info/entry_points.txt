@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Paras_101916051.topsis:main
