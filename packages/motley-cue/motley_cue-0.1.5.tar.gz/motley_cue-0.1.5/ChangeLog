@@ -1,0 +1,480 @@
+CHANGES
+=======
+
+v0.1.5
+------
+
+* move .env to .env-template
+* add pytest config
+* example .env file
+* add tests for config
+* more api testing
+* fix to\_list and canonical\_url error handling
+* add validator for docs url settings
+* fix monkeypatching api by unloading modules
+* add tests for local user maanger and fixes
+* add more tests for authorisation
+* wip, working tests for api and authz
+* refactoring for testing, mroe exception handling
+* parameterize tests w/ endpoints, status codes and tokens
+* read\_root: print prefix for endpoints in routers
+* use mo on env and config files to pass tokens to testing container
+* wip testing: passing AT through env var
+* initial basic testing with pytest
+* minimal readme
+* use default log file for feudal
+* wip testing: passing AT through env var
+* initial basic testing with pytest
+* update readme type in setup.cfg
+* set enable\_docs to false in default config
+* add info on swagger docs configuration to docs
+* handle errors when retrieving pkg version
+* update api reference in docs
+* add openapi validations, better execption handling, api settings, disable docs
+* fix doc description
+* fix readme and docs references in setup.cfg
+* fix oidc-agent link in usage.rst
+* add note on password enablement
+* Add G069 to G002 (which will be deprecated)
+* Change description of the two config files
+* Add yum cmdline for installation
+* Suggest some additional information distiguishing pip vs package
+* Add information for other providers with oidc-agent
+* add logos with higher dpi
+* use png logos in docs
+* add font files
+* docs: add config file list
+* add cc-by license file
+* update readme with license, restructure readme include in docs
+* add local fonts to docs
+* add support for openapi docs
+* add font as network resource
+* ignore doc/build files
+* add initial sphinx docs and tox.ini
+* minimal readme
+* do not ignore docs
+* create publish-docs workflow
+* bump up deb release version
+* ignore sqlite files
+* disable assurance checking by default
+* update url to renamed mccli (from mc\_ssh)
+* add API specs and link to user states in feudal
+* add pkg build for debian bookworm
+* update debian pkg version
+* consistent error msgs for login\_required with authorised\_user\_required
+* bump up deb release version
+* fix authorisation responses when op not supported, or flaat fails to get userinfo
+* fix given iss for admin actions
+* use flaat's new get iss from at in info/authorisation
+* remove non-jwt workaround since flaat 0.14.4 now supports it
+* add call to flaat.get\_issuer\_from\_accesstoken()
+* handle error for None userinfo for feudal
+* add google op and example to motley\_cue.conf
+* bump package version to 0.1.2-1
+* copy wlcg.groups from AT to 'groups' claim for feudal
+* fix #30 support non-jwt ops
+* fix MapperResponse error for info authorisation with bad token
+* add mention of port 8443 in nginx config for motley\_cue
+* fix #29 no more \_\_pycache\_\_ in /etc/motley\_cue
+* fix convert feudal login info to dict
+* improve logging
+* change wlcg config example to use groups in wlcg.groups claim
+* fix #26 add wlcg to default config
+* change log ldevl and location of log file
+* change default mode
+* bump version
+* fix order of fi and %endif
+* only run selinux on centos
+* adjust to source-tar distribution
+* bump version
+* also copy the source rpm to output
+* move virtualenv to source package; use version from debian/changelog
+* do not overwrite config files
+* use version and release from debian/changelog
+* patch debs and rpms: mapper logs to file
+* option to log to file
+* add more logging for authorisation
+* configure log level for root logger
+* update readme type in setup.cfg
+
+v0.1.4
+------
+
+* set enable\_docs to false in default config
+* add info on swagger docs configuration to docs
+* handle errors when retrieving pkg version
+* update api reference in docs
+* add openapi validations, better execption handling, api settings, disable docs
+* fix doc description
+* fix readme and docs references in setup.cfg
+* fix oidc-agent link in usage.rst
+* add note on password enablement
+* Add G069 to G002 (which will be deprecated)
+* Change description of the two config files
+* Add yum cmdline for installation
+* Suggest some additional information distiguishing pip vs package
+* Add information for other providers with oidc-agent
+* add logos with higher dpi
+* use png logos in docs
+* add font files
+* docs: add config file list
+* create publish-docs workflow
+* add cc-by license file
+* update readme with license, restructure readme include in docs
+* add local fonts to docs
+* add support for openapi docs
+* add font as network resource
+* ignore doc/build files
+* add initial sphinx docs and tox.ini
+* minimal readme
+* do not ignore docs
+* bump up deb release version
+* ignore sqlite files
+* disable assurance checking by default
+* update url to renamed mccli (from mc\_ssh)
+* add API specs and link to user states in feudal
+* add pkg build for debian bookworm
+* update debian pkg version
+* consistent error msgs for login\_required with authorised\_user\_required
+* bump up deb release version
+
+v0.1.3
+------
+
+* fix authorisation responses when op not supported, or flaat fails to get userinfo
+* fix given iss for admin actions
+* use flaat's new get iss from at in info/authorisation
+* remove non-jwt workaround since flaat 0.14.4 now supports it
+* add call to flaat.get\_issuer\_from\_accesstoken()
+* handle error for None userinfo for feudal
+* add google op and example to motley\_cue.conf
+* bump package version to 0.1.2-1
+
+v0.1.2
+------
+
+* copy wlcg.groups from AT to 'groups' claim for feudal
+* fix #30 support non-jwt ops
+* fix MapperResponse error for info authorisation with bad token
+* add mention of port 8443 in nginx config for motley\_cue
+* fix #29 no more \_\_pycache\_\_ in /etc/motley\_cue
+* change log ldevl and location of log file
+* fix convert feudal login info to dict
+* use default log file for feudal
+* improve logging
+* change wlcg config example to use groups in wlcg.groups claim
+* fix #26 add wlcg to default config
+* split tests to smalles possible unit - 1 req/test
+* prepare config file as mo template
+* prepare config file as mo template
+* wip testing: passing AT through env var
+* change default mode
+* bump version
+* fix order of fi and %endif
+* only run selinux on centos
+* patch debs and rpms: mapper logs to file
+* option to log to file
+* add more logging for authorisation
+* configure log level for root logger
+* adjust to source-tar distribution
+* bump version
+* also copy the source rpm to output
+* move virtualenv to source package; use version from debian/changelog
+* do not overwrite config files
+* use version and release from debian/changelog
+* initial basic testing with pytest
+* exclude .git and friends
+* Add Name:
+* ignore build log files
+* update readme info on service file
+* fix pam-ssh-oidc pkg name on deb, make it suggested instead of recommended
+
+v0.1.1
+------
+
+* update deb and rpm pkg version number
+* update running requirements on suse
+* add service reload fix #17
+* add info on how to find out your userinfo
+
+v0.1.0
+------
+
+* add admin authorisation by sub+iss
+* add examples for authorisation config for several OPs, default config authorises no one
+* fix all calls to to\_bool and to\_list to take string params
+* fix all calls to to\_bool and to\_list to take string params
+* rename env variable LOG\_LEVEL\_GUNICORN to reflect meaning -> log level for motley\_cue configured separately
+* update login info to use mccli in feudal\_adapter.conf
+* major refactoring, breaking update for config, fix #14, #15, #18
+* clean up output
+* ensure builds on more suse distros
+* ensure builds on more suse distros
+* bump version
+* add opensuse-15.2 and opensuse\_tumbleweed
+
+v0.0.15
+-------
+
+* increase version
+* keep friendly name gen mode as default when installed
+* incorporate changes from upstream config file; set sensible defaults
+* increase version
+* fix prject URL in spec file
+* add supported linux distros to readme
+* use postun for pkg removal scriptlet
+* centos 7 works, remove notice in selinux readme
+* allow semodule commands to fail on postinst/posttrans
+* fix se policy for centos 7
+* handle different centos dists in spec file instead of build, install selinux files in /usr/share, install/remove se modules on post/postun
+* update selinux readme
+* do not include binay \*.pp se policy files; add script to compile them on rpmbuild
+* add se policy for nginx persmissions on socket
+* fix se policy for gunicorn; works on centos8
+* restore original gitignore
+* pass PKG\_NAME to build script for centos7
+* Add info about centos7 vs centos8
+
+v0.0.14
+-------
+
+* add permission to create .ssh and authorized\_keys
+* ignore .pc
+* add selinux filex
+* remove debug bash
+* make pythonpath confgurable
+* bump version
+* make pythonpath optional for centos7
+* remote .gitignore if it exists
+* add option to disallow ssh keys
+* bump version
+* add typing-extensions to requirements, only for centos7
+* change spec to template
+* add information for signing the rpm; install \_ALL\_ requirements
+* remove virtualenv for centos7
+* prepare templating
+* test before removing .gitignore
+* bump version number
+* hardcode an ugly pythonpath for centos7 to work
+* add centos7 functions
+* add centos7 paths; autodetect virtualenv location
+* push version
+
+v0.0.13
+-------
+
+* move service file to etc/, add link to it in debian folder, bump up v0.0.13
+* fix systemd service name
+* fix rpm packaging: use rpm macros, exclude .build-id, install motley\_cue in virtual env, package all config files, provide only relevant files
+* add python as rpm dependency
+* update url in rpm spec file
+* remove python2 support
+* add systemd service file to data files installed with setuptools
+* undo spaces in assurancne
+* renamed from ldf\_adapter.conf
+* rename ldf\_adapter.config to feudal\_adapter.config, including environment variable
+* add a postinst script; adjust paths to avoid conflicts
+* remvoe the skip-qa, add fix-venv-path, install the system file
+* virtualenv is not aware of the rpm build env
+* fix ln -s bug
+* remove useless commentline
+* add more -e that were previously dropped
+* change -e back and force shell to bash
+* remve -e from echo command
+* add RuntimeDirectory
+
+v0.0.12
+-------
+
+* bumped up deb pkg version
+* reload nginx config on motley-cue install
+
+v0.0.11
+-------
+
+* increased version number for deb and rpm to 0.0.11
+* change default port for motley\_cue site in nginx to 8080
+* deb: fix issue of nginx not fully configured before motley-cue
+* add nginx.motley\_cue site file to pip install in etc
+* fix aarc\_g002\_group default config value as string instead of bool
+* fix issue with naming of pkgs \_/- by passing different pkg name to build.sh
+* increase version number to 0.0.10 for deb&rpm pkgs
+* temporary fix for package name with \_ instead of -
+* use latest tag to create packages
+* enable interpretation of newline for echo to Dockerfile
+* fix publishing
+* add publish-to-repo target
+* update build instructions
+* ignore \*.swp
+* add some dependencies
+* remove centos7
+* included dockerfile stuff into the Makefile
+* switch from apt to yum
+* integrate dockers and rpm
+* adapt for rpm builds
+* fix - => \_
+* remove unsupported distros
+* now builds also with ubuntu-focal
+* enforce python3
+* add dockerfiles
+* reduce debian version
+* update deb changelog for v0.0.9
+* update readme with info on nginx default site
+* update readme with info on running motley\_cue in production
+* change log files default location and create dir when installing deb pkg
+* add nginx configs to debian package
+* run gunicorn behind nginx, add nginx site configuration file
+* bind gunicorn to unix socket instead of host and port
+* update debian changelog with new version number
+* update debian changelog with new version number
+* update requirements to use uvicorn[standard] which already includes uvloop and httptools
+* dockerfile to build the deb package for debian testing
+* update readme with info on deb package and config files
+* fix dh virtualenv path
+* install config files in /etc/motley\_cue with deb pkg
+* added config files to go in /etc on install to setup.cfg
+* update readme with config file search locations
+* use separate config files for motley\_cue and ldf\_adapter
+* install feudalAdapter directly from pypi, updated requirements
+* comment out non-working part
+* add DESTDIR
+* trying to add data\_files, no success
+* change order of debhelper
+* remove shlibs depends
+* change dir to /usr/lib
+* adapt to virtualenv
+* re-add #DEBHELPER
+* initial versin
+* tried different locatin
+* fix outptu
+* reduce output
+* bump version
+* dont fail
+* add upgrade code
+* derive version number from git tag
+* bump version number
+* include debian into git-enabled ignorance
+* no binaries in git repos
+* debian building
+* ensure python3
+* ignore \*.swp
+* add some dependencies
+* remove centos7
+* included dockerfile stuff into the Makefile
+* switch from apt to yum
+* integrate dockers and rpm
+* adapt for rpm builds
+* fix - => \_
+
+v0.0.10
+-------
+
+* update readme with debian repo info, ssh integration info (pam, mc\_ssh)
+* add info on disabling nginx default site
+* better defaults and config templates
+* remove unsupported distros
+* now builds also with ubuntu-focal
+* enforce python3
+* add dockerfiles
+* read login\_info from ldf\_adapter CONFIG instead of mapper CONFIG
+* use relative path to install files in etc/motley\_cue
+* reduce debian version
+
+v0.0.9
+------
+
+* update deb changelog for v0.0.9
+* update readme with info on nginx default site
+* update readme with info on running motley\_cue in production
+* change log files default location and create dir when installing deb pkg
+* add nginx configs to debian package
+* run gunicorn behind nginx, add nginx site configuration file
+* bind gunicorn to unix socket instead of host and port
+
+v0.0.8
+------
+
+* update package version to non-native
+* update debian changelog with new version number
+* update debian changelog with new version number
+* update requirements to use uvicorn[standard] which already includes uvloop and httptools
+* dockerfile to build the deb package for debian testing
+* update readme with info on deb package and config files
+* fix dh virtualenv path
+* install config files in /etc/motley\_cue with deb pkg
+* added config files to go in /etc on install to setup.cfg
+* update readme with config file search locations
+* use separate config files for motley\_cue and ldf\_adapter
+* install feudalAdapter directly from pypi, updated requirements
+* comment out non-working part
+* add DESTDIR
+* trying to add data\_files, no success
+* change order of debhelper
+* remove shlibs depends
+* change dir to /usr/lib
+* adapt to virtualenv
+* re-add #DEBHELPER
+* initial versin
+* tried different locatin
+* fix outptu
+* reduce output
+* bump version
+* dont fail
+* add upgrade code
+* derive version number from git tag
+* bump version number
+* include debian into git-enabled ignorance
+* no binaries in git repos
+* updated requirements
+
+v0.0.7
+------
+
+* updated ldfAdapter tar
+* debian building
+* ensure python3
+
+v0.0.6
+------
+
+* added gunicorn configs
+* updated dependencies
+* updated info endpoint with login info and authz info
+* updated feudalAdapter to latest version that supports 'limited' state
+* removed possibility for admin users to undeploy accounts
+* removed possibility for admin users to expire accounts
+* changed priority of possible config files
+
+v0.0.5
+------
+
+* added admin authorisation support
+* added support for feudalAdapter v3.9: disable commandline args
+* refactoring for spelling consistency of authorised
+* add http bearer security requirement for validate\_user
+* added support for additional states
+* updated feudal-adapter package
+
+v0.0.4
+------
+
+* support changes in version 0.3.2 of feudal adapter, e.g. non-interactivity
+* updated installation instructions in readme
+
+v0.0.3
+------
+
+* return state for /user/get and /verify\_user
+* added two options for mappings database: redis and file
+
+v0.0.2
+------
+
+* added info on docker image repo
+* more .gitignore stuff
+* added primitive db to store mappings remote id -> local id
+
+v0.0.1
+------
+
+* initial commit of mapper api prototype

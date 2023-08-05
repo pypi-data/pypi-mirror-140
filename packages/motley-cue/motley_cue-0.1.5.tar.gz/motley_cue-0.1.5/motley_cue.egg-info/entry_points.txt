@@ -1,0 +1,2 @@
+[console_scripts]
+motley_cue_uvicorn = motley_cue.__main__:main
