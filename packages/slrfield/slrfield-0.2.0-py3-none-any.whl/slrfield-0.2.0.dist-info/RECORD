@@ -1,0 +1,16 @@
+slrfield/__init__.py,sha256=2RV8q4iNTh7l6NBiIa3kXHM1zbXLjR6SnaaVf1_r3R4,727
+slrfield/cpf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slrfield/cpf/cpf_download.py,sha256=pXWTpieMCBWpHoZyhS7vbBrs0qStr5AGTfmjbqGbKUo,18310
+slrfield/cpf/cpf_interpolate.py,sha256=P31pN4cs_aAIfmTiMb9oUxGTiSfR5HNlm53VK4WjxQk,18944
+slrfield/cpf/cpf_read.py,sha256=SU9MF4naiBLLQuWeglKcycem55BOEHwX124WmQiVi70,5052
+slrfield/slrclasses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slrfield/slrclasses/cpfclass.py,sha256=gOAT7wp8zHkl87mPXevc8TzbLuC2hMiCQvFKF5JvGjo,9379
+slrfield/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slrfield/utils/data_download.py,sha256=k5kpw2wYCMuEtPWg2YdUHopKoJcx3uq5-o3sAoidPHk,1488
+slrfield/utils/data_prepare.py,sha256=5hnCLpsuW71k-dEW0-vf0EV_UlzNoBnkJKkVmIVr1Z8,291
+slrfield/utils/try_download.py,sha256=Wr94CdbM2A5okxYKMoJGbyuDQAxplsxx7xzbepTZS68,2425
+slrfield-0.2.0.dist-info/LICENSE,sha256=K9ixHn0oyM1250Q4v3bXfUN43iykKHBrUlwr-IzZlJg,1073
+slrfield-0.2.0.dist-info/METADATA,sha256=dyDRj7H_SUSDcY5M3qaS1MOBhzFjscAx-36GodItwcg,9357
+slrfield-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+slrfield-0.2.0.dist-info/top_level.txt,sha256=cFRz41ekdADfHDrJ8qsRr2XKv73ZKHOipj_U7C-eSGY,9
+slrfield-0.2.0.dist-info/RECORD,,
