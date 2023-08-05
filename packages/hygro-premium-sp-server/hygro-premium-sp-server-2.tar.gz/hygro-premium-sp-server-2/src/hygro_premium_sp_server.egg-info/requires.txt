@@ -1,0 +1,9 @@
+Flask~=1.1.4
+flask_cors
+RPi.GPIO
+
+[testing]
+flake8
+pytest
+mock
+fake-rpigpio

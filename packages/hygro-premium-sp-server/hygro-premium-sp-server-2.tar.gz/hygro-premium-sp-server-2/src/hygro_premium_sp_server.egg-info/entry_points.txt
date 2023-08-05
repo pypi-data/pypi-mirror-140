@@ -1,0 +1,3 @@
+[console_scripts]
+hygro-premium-sp-server = hygro_premium_sp.main:main
+
