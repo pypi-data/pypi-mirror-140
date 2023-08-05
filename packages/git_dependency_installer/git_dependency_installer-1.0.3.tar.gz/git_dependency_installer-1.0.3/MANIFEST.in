@@ -1,0 +1,2 @@
+include *.txt
+recursive-include git_dependency_installer *.py
