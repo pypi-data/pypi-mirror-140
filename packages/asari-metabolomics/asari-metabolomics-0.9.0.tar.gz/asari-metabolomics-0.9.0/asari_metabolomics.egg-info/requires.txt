@@ -1,0 +1,6 @@
+metDataModel
+mass2chem>=0.2
+jms-metabolite-services
+pyopenms
+numpy
+scipy
