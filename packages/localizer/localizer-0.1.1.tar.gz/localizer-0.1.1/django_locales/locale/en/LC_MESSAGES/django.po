@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-24 06:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: django_locales/apps.py:8
+msgid "django_locales.app"
+msgstr "Django locales"
+
+#: django_locales/models.py:12
+msgid "group.name"
+msgstr "Name"
+
+#: django_locales/models.py:16 django_locales/models.py:31
+msgid "group.verbose"
+msgstr "Group"
+
+#: django_locales/models.py:17
+msgid "group.plural"
+msgstr "Groups"
+
+#: django_locales/models.py:36
+msgid "group_item.language"
+msgstr "Language"
+
+#: django_locales/models.py:40
+msgid "group_item.key"
+msgstr "Key"
+
+#: django_locales/models.py:44
+msgid "group_item.translate"
+msgstr "Translate"
+
+#: django_locales/models.py:48
+msgid "group_item.verbose"
+msgstr "Item"
+
+#: django_locales/models.py:49
+msgid "group_item.plural"
+msgstr "Items"

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: localizer
+Version: 0.1.1
+Summary: 
+Author: Алмас Бактубаев
+Author-email: a.baktubayev@mycar.kz
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=4.0.2,<5.0.0)
+Requires-Dist: django-filter (>=21.1,<22.0)
+Requires-Dist: djangorestframework (>=3.13.1,<4.0.0)

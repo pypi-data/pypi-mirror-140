@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "localizer"
+version = "0.1.1"
+description = ""
+authors = ["Алмас Бактубаев <a.baktubayev@mycar.kz>"]
+# build folders
+include = ["django_locales"]
+exclude = ["localizer"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.0.2"
+djangorestframework = "^3.13.1"
+django-filter = "^21.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
