@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+module_name/__init__.py
+module_name/imports.py
+packagenamedisplay.egg-info/PKG-INFO
+packagenamedisplay.egg-info/SOURCES.txt
+packagenamedisplay.egg-info/dependency_links.txt
+packagenamedisplay.egg-info/top_level.txt
+packagenamedisplay.egg-info/zip-safe
