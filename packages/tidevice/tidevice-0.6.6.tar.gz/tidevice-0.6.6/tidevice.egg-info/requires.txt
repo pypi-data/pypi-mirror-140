@@ -1,0 +1,14 @@
+cached_property
+logzero
+Pillow
+requests
+colored
+packaging
+tornado
+simple_tornado>=0.2.2
+retry
+simplejson
+
+[openssl]
+pyOpenSSL
+pyasn1
