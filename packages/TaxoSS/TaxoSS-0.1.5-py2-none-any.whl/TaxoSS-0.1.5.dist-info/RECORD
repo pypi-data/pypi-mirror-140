@@ -1,0 +1,11 @@
+TaxoSS/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TaxoSS/calculate_IC.py,sha256=2kGrwoV8WgF9zMaZyQ2279ptubPitATKeuUaUJKvcBo,758
+TaxoSS/create_card_cache.py,sha256=2IifQx3wO1_QLdUVVbYUgWOes9YMW2vU_Bawpgo5yfo,3692
+TaxoSS/functions.py,sha256=E7ga0jZGM4eLs2V8fAjlxwQtIqY9ypeHUtTbBOYbyoU,11137
+TaxoSS/data/card_cache.csv,sha256=Bgjegwl6Ckdx15csH-G1Yhp4gBJnU5OrVKWIBnmMk0c,2548851
+TaxoSS/data/card_cache_star.csv,sha256=HdfS2H2g13kmzZ03lvQCQm-dd1zb_eVLmTfSgrnQJwA,2545779
+TaxoSS/data/information_content_default.csv,sha256=qTE5hHOamgOoz9TeUR7O3m9LXcuJK1FIP19mCKAIvIE,127911524
+TaxoSS-0.1.5.dist-info/METADATA,sha256=wltgy8pB_dxqg8NBT38xko9eI4ecuUcuQflpTJYYleA,5644
+TaxoSS-0.1.5.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+TaxoSS-0.1.5.dist-info/top_level.txt,sha256=1nb7TQEo57mxySsIO1hppNptsL4JitVyQVhpa-Hvzeg,7
+TaxoSS-0.1.5.dist-info/RECORD,,
