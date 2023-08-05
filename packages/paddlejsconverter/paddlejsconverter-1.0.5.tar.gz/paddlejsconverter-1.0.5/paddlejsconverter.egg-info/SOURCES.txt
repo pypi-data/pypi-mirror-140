@@ -1,0 +1,13 @@
+README.md
+convertModel.py
+convertToPaddleJSModel.py
+optimizeModel.py
+pruningModel.py
+rnn.py
+setup.py
+paddlejsconverter.egg-info/PKG-INFO
+paddlejsconverter.egg-info/SOURCES.txt
+paddlejsconverter.egg-info/dependency_links.txt
+paddlejsconverter.egg-info/entry_points.txt
+paddlejsconverter.egg-info/requires.txt
+paddlejsconverter.egg-info/top_level.txt
