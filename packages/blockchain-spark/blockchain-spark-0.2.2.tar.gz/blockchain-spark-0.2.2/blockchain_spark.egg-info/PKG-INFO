@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: blockchain-spark
+Version: 0.2.2
+Summary: Spark extension utils for blockchain
+Home-page: https://github.com/tellery/blockchain-spark
+Author: songv
+Author-email: songwei@iftech.io
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/tellery/blockchain-spark/issues
+Project-URL: Source, https://github.com/tellery/blockchain-spark
+Description: # blockchain-spark: Spark extension utils for Web3
+        
+        ## How to use
+        
+        ```python
+        from spark3.transfomer import Transformer
+        
+        t = Transformer()
+        df = spark.sql('select * from ethereum.traces limit 100')
+        df = t.parse_traces_input(df=df, abi='xxxx')
+        df.show()
+        ```
+        
+        ```python
+        from spark3.transfomer import Transformer
+        
+        t = Transformer()
+        df = spark.sql('select * from ethereum.logs limit 100')
+        df = t.parse_logs_data(df=df, abi='xxxx')
+        df.show()
+        ```
+Keywords: web3,pandas
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/markdown
+Provides-Extra: pyspark
