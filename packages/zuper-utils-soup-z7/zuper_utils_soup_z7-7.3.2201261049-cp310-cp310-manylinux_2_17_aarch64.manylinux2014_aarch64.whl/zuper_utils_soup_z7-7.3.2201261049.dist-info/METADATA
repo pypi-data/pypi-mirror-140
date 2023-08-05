@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zuper-utils-soup-z7
+Version: 7.3.2201261049
+Summary: UNKNOWN
+Home-page: https://github.com/zupermind/zuper-utils-soup
+Author: Andrea Censi
+Author-email: info@zupermind.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4 (<=4.7.1,>=4.6)
+Requires-Dist: zuper-commons-z7
+Provides-Extra: test
+
+UNKNOWN
+
