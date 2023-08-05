@@ -1,0 +1,8 @@
+numpy
+scikit-learn
+scipy
+statsmodels
+sympy
+python-docx
+latex2mathml
+lxml
