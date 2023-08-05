@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: tensorutils
+Version: 0.0.2
+Summary: Small utils for Tensorflow in Python.
+Home-page: https://github.com/jmgomezsoriano/tensorutils
+Author: José Manuel Gómez Soriano
+Author-email: jmgomez.soriano@gmail.com
+License: LGPL3
+Description: # Tensorutils
+        Small utils for Tensorflow in Python.
+        
+        # Select CPU if not GPU
+        
+        A function to force Tensorflow to use CPU instead of GPU if this is not present.
+        This function is very easy to use. For example:
+        
+        ```python
+        from tensorutils import select_cpu_if_not_gpu
+        
+        select_cpu_if_not_gpu()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

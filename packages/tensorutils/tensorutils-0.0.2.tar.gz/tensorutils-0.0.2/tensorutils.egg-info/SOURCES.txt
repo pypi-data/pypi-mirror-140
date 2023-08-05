@@ -1,0 +1,9 @@
+README.md
+setup.py
+tensorutils/__init__.py
+tensorutils/utils.py
+tensorutils.egg-info/PKG-INFO
+tensorutils.egg-info/SOURCES.txt
+tensorutils.egg-info/dependency_links.txt
+tensorutils.egg-info/requires.txt
+tensorutils.egg-info/top_level.txt
