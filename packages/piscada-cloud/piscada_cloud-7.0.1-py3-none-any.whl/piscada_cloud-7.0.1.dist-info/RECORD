@@ -1,0 +1,11 @@
+piscada_cloud/__init__.py,sha256=rJd8h5z_nKaAFAaLhQDOHayFCojvdkOru0wMV2mCtIM,167
+piscada_cloud/auth.py,sha256=xKHUXbcWtnofSY4HlT9WzD0HiC2lRE-JT80-8ZUOP3I,3990
+piscada_cloud/cloud_functions.py,sha256=gjvb02KWg8TrAP657fu9EjrZvraWn_8o_r8iGOEKmqc,17373
+piscada_cloud/data.py,sha256=P4uoFmzaW-irBfmSy5hBaWed7PxxdyynOjwbL7gM5M4,6750
+piscada_cloud/manipulations.py,sha256=BaA0CJjlv25kH6GMOjmUF_DEgiXhEaZSIaBeFQ638Ds,9673
+piscada_cloud/mappings.py,sha256=GcO5VvXPCA3tmuA6dcpFljRUWVxwFN__jduqlFxe0sI,17473
+piscada_cloud/meta_data.py,sha256=IFZDqJNcgm7H9DEmSnG3wmbDNmPOf-0Jn4ANyiyEQsw,2692
+piscada_cloud-7.0.1.dist-info/LICENSE,sha256=ViQYCsC599lHFFqn792eGhLWie4jPj2q74Mig-8UOZk,20
+piscada_cloud-7.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+piscada_cloud-7.0.1.dist-info/METADATA,sha256=I9-9bHtwPDtlBoHofABmdXieP69zPJ0K_Jehi8p5YXQ,5706
+piscada_cloud-7.0.1.dist-info/RECORD,,
