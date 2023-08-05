@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/hmm_write/__init__.py
+src/hmm_write/hmm.py
+src/hmm_write.egg-info/PKG-INFO
+src/hmm_write.egg-info/SOURCES.txt
+src/hmm_write.egg-info/dependency_links.txt
+src/hmm_write.egg-info/top_level.txt

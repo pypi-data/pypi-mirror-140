@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hmm_write
+Version: 0.3.1
+Summary: Python implementation of a Hidden Markov Machine that generates text.
+Author: Toby Connor-Kebbell
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Hidden Markov Machine (HMM)
+
+This module provides the function `write([prompt], [length], [bias])` which adds `[length]` words to the end of the prompt. If the bias is set to 0 (the minimum), there will be no bias, and the closer it gets to 1 (the maximum) nouns in the prompt are more likely to be chosen. If a bias is not supplied, the default is 0.
+
