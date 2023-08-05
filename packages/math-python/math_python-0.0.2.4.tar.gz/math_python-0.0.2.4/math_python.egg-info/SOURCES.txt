@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+math_python/__init__.py
+math_python/math_python.py
+math_python.egg-info/PKG-INFO
+math_python.egg-info/SOURCES.txt
+math_python.egg-info/dependency_links.txt
+math_python.egg-info/not-zip-safe
+math_python.egg-info/top_level.txt
