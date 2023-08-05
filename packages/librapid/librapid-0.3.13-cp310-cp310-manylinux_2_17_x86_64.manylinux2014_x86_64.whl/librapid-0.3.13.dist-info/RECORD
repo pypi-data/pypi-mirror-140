@@ -1,0 +1,8 @@
+librapid/_librapid.cpython-310-x86_64-linux-gnu.so,sha256=mvA_X81WdqcUSNov2xxR8BmJvKBoayuhpByMC2rApvI,4621384
+librapid/__init__.py,sha256=J6KVBmv8xsMtOg_YtjapQFp_5h855LqromN0fEYA43A,2734
+librapid.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+librapid-0.3.13.dist-info/LICENSE,sha256=kTjI5Nc_1G-9SJdGPPgdgV3zq77vCvaDEQ3goPe0qpw,1066
+librapid-0.3.13.dist-info/METADATA,sha256=iohMYmDCYEMXN58uP4EiPNs83Mv54UqK6T7zRjAb-eA,10244
+librapid-0.3.13.dist-info/top_level.txt,sha256=Zy1k91fqAOGCubeF3wqdeufpRPHuQFK3ZuchWqSrUTs,9
+librapid-0.3.13.dist-info/RECORD,,
+librapid-0.3.13.dist-info/WHEEL,sha256=Bkankt0lRdksIrKAEu2uEpMJN6sSRfkRFTmzYYWcoDQ,146
