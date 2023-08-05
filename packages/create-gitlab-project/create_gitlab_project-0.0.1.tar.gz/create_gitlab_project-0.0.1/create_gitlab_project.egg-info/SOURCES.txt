@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+create_gitlab_project/__init__.py
+create_gitlab_project/__main__.py
+create_gitlab_project/cli.py
+create_gitlab_project/constants.py
+create_gitlab_project/create_gitlab_project_dfx.py
+create_gitlab_project.egg-info/PKG-INFO
+create_gitlab_project.egg-info/SOURCES.txt
+create_gitlab_project.egg-info/dependency_links.txt
+create_gitlab_project.egg-info/not-zip-safe
+create_gitlab_project.egg-info/requires.txt
+create_gitlab_project.egg-info/top_level.txt
+create_gitlab_project/template-files/Jenkinsfile
+create_gitlab_project/template-files/README.md
