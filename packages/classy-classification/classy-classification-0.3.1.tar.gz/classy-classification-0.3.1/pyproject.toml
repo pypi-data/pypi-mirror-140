@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "classy-classification"
+version = "0.3.1"
+description = "This repository contains an easy and intuitive approach to zero and few-shot text classification using sentence-transformers, huggingface or word embeddings within a Spacy pipeline."
+authors = ["David Berenstein <david.berenstein@pandoraintelligence.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/davidberenstein1957/classy-classification"
+repository = "https://github.com/davidberenstein1957/classy-classification"
+documentation = "https://github.com/davidberenstein1957/classy-classification"
+keywords = ["spacy", "rasa", "few-shot classification", "nlu", "sentence-transformers"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+spacy = {extras = ["transformers"], version = "^3.0"}
+sentence-transformers = "^2.0"
+scikit-learn = "^1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
