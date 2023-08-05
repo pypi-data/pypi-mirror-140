@@ -1,0 +1,5 @@
+jax
+jaxlib
+matplotlib
+numpy
+scipy>=1.8.0

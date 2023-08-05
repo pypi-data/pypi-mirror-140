@@ -1,0 +1,16 @@
+README.md
+setup.py
+gpmp/__init__.py
+gpmp/core.py
+gpmp/kernel.py
+gpmp.egg-info/PKG-INFO
+gpmp.egg-info/SOURCES.txt
+gpmp.egg-info/dependency_links.txt
+gpmp.egg-info/requires.txt
+gpmp.egg-info/top_level.txt
+gpmp/misc/__init__.py
+gpmp/misc/designs.py
+gpmp/misc/plotutils.py
+gpmp/misc/testfunctions.py
+test/__init__.py
+test/test_jax.py
