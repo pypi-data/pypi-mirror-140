@@ -1,0 +1,9 @@
+README.md
+setup.py
+uuidentifier/__init__.py
+uuidentifier/snowflake.py
+uuidentifier.egg-info/PKG-INFO
+uuidentifier.egg-info/SOURCES.txt
+uuidentifier.egg-info/dependency_links.txt
+uuidentifier.egg-info/requires.txt
+uuidentifier.egg-info/top_level.txt
