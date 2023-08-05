@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+django_serverside_datatable/__init__.py
+django_serverside_datatable/datatable.py
+django_serverside_datatable/views.py
+django_serverside_datatable.egg-info/PKG-INFO
+django_serverside_datatable.egg-info/SOURCES.txt
+django_serverside_datatable.egg-info/dependency_links.txt
+django_serverside_datatable.egg-info/requires.txt
+django_serverside_datatable.egg-info/top_level.txt
