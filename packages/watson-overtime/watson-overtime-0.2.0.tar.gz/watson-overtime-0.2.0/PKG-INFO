@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: watson-overtime
+Version: 0.2.0
+Summary: Check overtime in combination with the td-watson time tracker
+Home-page: https://github.com/flyingdutchman23/watson-overtime
+License: MIT
+Author: Joris Clement
+Author-email: flyingdutchman@posteo.eu
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<=9.0.0)
+Requires-Dist: humanize (>=3.14.0,<5.0.0)
+Requires-Dist: importlib-metadata (==4.2.0); python_version <= "3.7"
+Requires-Dist: pytimeparse (>=1.1.8,<2.0.0)
+Project-URL: Repository, https://github.com/flyingdutchman23/watson-overtime
