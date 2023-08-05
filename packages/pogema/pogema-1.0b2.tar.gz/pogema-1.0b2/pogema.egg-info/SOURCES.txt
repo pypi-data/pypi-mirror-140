@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+./pogema/__init__.py
+./pogema/animation.py
+./pogema/envs.py
+./pogema/generator.py
+./pogema/grid.py
+./pogema/grid_config.py
+./pogema.egg-info/PKG-INFO
+./pogema.egg-info/SOURCES.txt
+./pogema.egg-info/dependency_links.txt
+./pogema.egg-info/requires.txt
+./pogema.egg-info/top_level.txt
+./pogema/wrappers/__init__.py
+./pogema/wrappers/multi_time_limit.py
+./pogema/wrappers/seed_wrapper.py
