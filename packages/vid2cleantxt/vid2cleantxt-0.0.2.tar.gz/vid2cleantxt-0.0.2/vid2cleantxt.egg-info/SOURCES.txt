@@ -1,0 +1,13 @@
+LICENSE
+README.md
+requirements.txt
+setup.py
+vid2cleantxt/__init__.py
+vid2cleantxt/audio2text_functions.py
+vid2cleantxt/transcribe.py
+vid2cleantxt/v2ct_utils.py
+vid2cleantxt.egg-info/PKG-INFO
+vid2cleantxt.egg-info/SOURCES.txt
+vid2cleantxt.egg-info/dependency_links.txt
+vid2cleantxt.egg-info/requires.txt
+vid2cleantxt.egg-info/top_level.txt
