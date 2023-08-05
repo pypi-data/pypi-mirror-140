@@ -1,0 +1,13 @@
+blp_helpers_data_science/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blp_helpers_data_science/helper_time_series.py,sha256=X87CIBSHZ_G6b7rI2_E0hwWQgHkFoPWd-UTMhsHA3XM,6762
+blp_helpers_data_science/helpers_azure.py,sha256=-5cM0FJzH3hKyNzRMRH2RNqzCFAWohZzKes-nY-X3A4,7611
+blp_helpers_data_science/helpers_extract.py,sha256=FHuIjrtslXfP0Tt7129dHCvN3TrW07GNwDwfla7R8x8,2170
+blp_helpers_data_science/helpers_misc.py,sha256=Cip3kbsTb8amv5I_z9pN7x53Q91Lh25JcJF-5u-LYaM,1055
+blp_helpers_data_science/helpers_mongodb.py,sha256=dPI0CyFxuBJxunnvwOlunHeyrsvPzJxnEodNc7_nvjg,2464
+blp_helpers_data_science/helpers_newsapi.py,sha256=LqipCfnHLGpRWgzKy1JGCOog9v5f5uTfVJy1KZnDnDs,2830
+blp_helpers_data_science/helpers_text.py,sha256=IJbfjMyq-vvHtYSX1_Ui8u3LbDwf3SUIc4NQq1n5vUg,5974
+blp_helpers_data_science-2.8.5.dist-info/LICENSE,sha256=h3jZ3g9k2eZfzWbQIeKxTZCil0T7v0wnkACdhAWQ8-4,37
+blp_helpers_data_science-2.8.5.dist-info/METADATA,sha256=tMbFBK1Km4if9WLDN9eDPaZsArth9OolNtLgKRNtijc,1181
+blp_helpers_data_science-2.8.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+blp_helpers_data_science-2.8.5.dist-info/top_level.txt,sha256=AhN2w4VJpPKGieflGhZWrzzeX7EY0nXLBD9nfxlJVg8,25
+blp_helpers_data_science-2.8.5.dist-info/RECORD,,
