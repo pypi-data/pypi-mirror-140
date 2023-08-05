@@ -1,0 +1,16 @@
+murfey/bootstrap/__main__.py,sha256=2KFVnWD0RMLNwdrlytvs6di2T-OSp1hYkALSr7zchMs,3825
+murfey/client/__init__.py,sha256=SvAHEpf9RvZXv2iA97-7ipPPBwdAoNDhyT28pbWJRgk,1898
+murfey/client/main.py,sha256=pNhzM426a2KqT7uAv0Y2RuA2s_GNisSAqRhzmLBTWPM,3203
+murfey/client/tui.py,sha256=0mUuMzjwqT4f0G7vOjf6usV-5MMXCEY71GU1_wPX5GM,3718
+murfey/client/update.py,sha256=-U9OQRhNvNIYMECsG7rLx2e52XI4QhqYqtgzQ4IOpk8,2552
+murfey/server/__init__.py,sha256=ejJVSXjUIkZc_lpu4eLDm1RO95OTz9W2_XpjkdiHJZA,3121
+murfey/server/bootstrap.py,sha256=Jb0e9s2MRIfDiEY3pn8heWI4XzXZceQrutw43OQtyBI,5007
+murfey/server/main.py,sha256=9AGSWfRCGfkjSHJ9GT7Vbu7QjZzaBGvdtV6P39WLzTk,5464
+murfey/server/run.py,sha256=PKUjhCA1H2ExdZHpdTHR5tReTzkiKNor_MZVUFKPl4Q,85
+murfey/server/websocket.py,sha256=KVffmR656gQcsCvvJuow4-_u-4sYXP7B8GLmFfoBEq0,2191
+murfey-0.2.1.dist-info/LICENSE,sha256=8DFPP47DKe5nEKTBeMEDElin5xHJ9JtDYTwqBDRMhEk,1481
+murfey-0.2.1.dist-info/METADATA,sha256=XCCKva7Blvr06675GIKVFW4ZBSTwjntC9Jx4obBXha4,1312
+murfey-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+murfey-0.2.1.dist-info/entry_points.txt,sha256=esCaZgqc3aiESLG_wsCR4flXEG0inQ4FWxj7v6oEuw4,80
+murfey-0.2.1.dist-info/top_level.txt,sha256=Wyovry0bFJ1-CwtiemZ0wu4sbTvU0xA57-a3uHNFNxw,7
+murfey-0.2.1.dist-info/RECORD,,
