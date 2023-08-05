@@ -1,0 +1,4 @@
+include firebase/welcome.txt
+include firebase/.version
+recursive-include firebase/resources *
+recursive-include firebase/resources/log *
