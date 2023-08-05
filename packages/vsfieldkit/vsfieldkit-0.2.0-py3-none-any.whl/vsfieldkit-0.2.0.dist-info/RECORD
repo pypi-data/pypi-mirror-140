@@ -1,0 +1,11 @@
+vsfieldkit/__init__.py,sha256=dYna_9GYr1PnWBpO2hQdYSuE-m1gqJVe42znwfu1Tak,595
+vsfieldkit/deinterlacing.py,sha256=2H0MF-yaYu_qO1buhBvKsI-IgY4rH7uXoo8xNY712dk,925
+vsfieldkit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsfieldkit/scanning.py,sha256=7X3e95OY5I1c6eIBFt6vagF9DH9hV0uXT8qiD6BFISA,7274
+vsfieldkit/types.py,sha256=H1dQjiRPSEUxOcWrMw6m01wm7VsVOhHqLmZ2rTCaK6o,1075
+vsfieldkit/util.py,sha256=u_5ESeeaNZlbcqRawgSbEmdck2tfCJhKWfXHD2_yBzw,4798
+vsfieldkit-0.2.0.dist-info/LICENSE.txt,sha256=M19ELfvxqQxf0E-3-rvn3g7vCyQoOPVatIKX8GE8q9k,1077
+vsfieldkit-0.2.0.dist-info/METADATA,sha256=MslVssv0y2SnxlKbukIv6xnuqTKUa8KpNG7YpcbYtyo,1153
+vsfieldkit-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vsfieldkit-0.2.0.dist-info/top_level.txt,sha256=UD8fcVyfDELMo4Xsbep2yLAez8Wdc5JH0XQ7GoIPVNg,11
+vsfieldkit-0.2.0.dist-info/RECORD,,
