@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+topsis_shivom_101916036/__init__.py
+topsis_shivom_101916036.egg-info/PKG-INFO
+topsis_shivom_101916036.egg-info/SOURCES.txt
+topsis_shivom_101916036.egg-info/dependency_links.txt
+topsis_shivom_101916036.egg-info/top_level.txt
