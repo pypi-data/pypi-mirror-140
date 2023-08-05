@@ -1,0 +1,9 @@
+hygro_premium_sp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hygro_premium_sp/humidity_extractor.py,sha256=eBYQ1ME7mfnRkuu6Fnsb19IOZARwGrmtp0p8gB7lzhU,5265
+hygro_premium_sp/main.py,sha256=N-Io-kwRGIOKTjjnGbdwZYncPA8xx7VqylOvAUWW0uc,3436
+hygro_premium_sp_server-1.dist-info/LICENSE,sha256=-Ce6pkO4wIwZ-O4tWHCL3Z9kmRZTNPcvMKhFOgVfK3M,1072
+hygro_premium_sp_server-1.dist-info/METADATA,sha256=CoffYxWB4DZYg6rW7P7u8in-60Y6uXLdxX0Z1fj418k,2998
+hygro_premium_sp_server-1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hygro_premium_sp_server-1.dist-info/entry_points.txt,sha256=mu5cQb7NvJNYC_yu-diVC4MjhNe61xRf-vUjZ9XL6ZU,72
+hygro_premium_sp_server-1.dist-info/top_level.txt,sha256=1MY8H4VMSTb5Kj3C9yzoUlmYe_MpjDW9WGb61qeVvb8,17
+hygro_premium_sp_server-1.dist-info/RECORD,,
