@@ -1,0 +1,8 @@
+setup.py
+mixpanel_utils/__init__.py
+mixpanel_utils/mixpanel_utils_example.py
+mixpanel_utils/paginator.py
+mixpanel_utils.egg-info/PKG-INFO
+mixpanel_utils.egg-info/SOURCES.txt
+mixpanel_utils.egg-info/dependency_links.txt
+mixpanel_utils.egg-info/top_level.txt
