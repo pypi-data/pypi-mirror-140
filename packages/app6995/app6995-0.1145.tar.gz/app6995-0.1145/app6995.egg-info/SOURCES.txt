@@ -1,0 +1,6 @@
+setup.py
+app6995.egg-info/PKG-INFO
+app6995.egg-info/SOURCES.txt
+app6995.egg-info/dependency_links.txt
+app6995.egg-info/not-zip-safe
+app6995.egg-info/top_level.txt
