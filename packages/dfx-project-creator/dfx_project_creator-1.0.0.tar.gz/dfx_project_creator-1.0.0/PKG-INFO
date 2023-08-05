@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dfx_project_creator
+Version: 1.0.0
+Summary: Gitlab Project Creation CLI
+Home-page: https://teamdefinex.com/
+Author: DefineX Labs
+Author-email: labs@teamdefinex.com
+License: MIT
+Keywords: definex gitlab project jenkins job create
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+
+UNKNOWN
+
