@@ -1,0 +1,10 @@
+phageai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phageai/lifecycle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phageai/lifecycle/classifier.py,sha256=wt4ben1wdD9XjJlbQldGl4AymeIgrblrKasCvB01V6Y,2156
+phageai/repository/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phageai/repository/phages.py,sha256=1K5i81jte78gL94e2PLM8g6ZT8SgfIwnNc6aodwhIGs,2255
+phageai-0.3.1.dist-info/LICENSE,sha256=mWTApCo5qpbxyfg538yBp_jbv8xFuKPk5MNY-lDckKk,1069
+phageai-0.3.1.dist-info/METADATA,sha256=XHSXpdtCoifsFII96GTYrluMB29CDNi-XMLyLoh0Ryg,11447
+phageai-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+phageai-0.3.1.dist-info/top_level.txt,sha256=gN41zIo9C8tpOTmKIapg0qwTT0Mq2UHfK3jLV0RaQ1k,8
+phageai-0.3.1.dist-info/RECORD,,
