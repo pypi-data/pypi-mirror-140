@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+0.6.5
+-----
+
+* support pull file and directory
+* add retry for device, maybe work or not
+* add settimeout in some connection
+* change conn\_type to lower
+* hotfix for self.id not retrived
+* add command savesslfile
+* add debug, add set\_assistive\_touch support
+* change sha1 to sha256, maybe can fix CA\_MD\_TOO\_WEAK error
+* hotfix for py37
+* support iOS 15.2
