@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: tex-escape
+Version: 0.1.1
+Summary: A small package for escaping LaTeX.
+Project-URL: Documentation, https://github.com/leonzalion/tex-escape#readme
+Project-URL: Issues, https://github.com/leonzalion/tex-escape/issues
+Project-URL: Source, https://github.com/leonzalion/tex-escape
+Author-email: Leon Si <contact@leonzalion.com>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# tex-escape
+
+[![PyPI - Version](https://img.shields.io/pypi/v/tex-escape.svg)](https://pypi.org/project/tex-escape)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tex-escape.svg)](https://pypi.org/project/tex-escape)
+
+-----
+
+## Installation
+
+```console
+pip install tex-escape
+```
+
+## License
+
+`tex-escape` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+## Credits
+
+Code borrowed from [this StackOverflow post](https://stackoverflow.com/a/25875504].
