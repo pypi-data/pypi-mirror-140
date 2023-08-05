@@ -1,0 +1,2 @@
+[console_scripts]
+mb-waves = mb_waves.cli.cmd:cli
