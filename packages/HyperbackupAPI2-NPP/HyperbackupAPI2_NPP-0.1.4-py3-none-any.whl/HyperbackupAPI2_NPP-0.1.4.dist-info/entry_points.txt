@@ -1,0 +1,3 @@
+[console_scripts]
+HyperBackupAPI2-NPP = HyperBackupAPI2.HyperbackupAPI2_NPP:main
+
