@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+python_packaging_at.egg-info/PKG-INFO
+python_packaging_at.egg-info/SOURCES.txt
+python_packaging_at.egg-info/dependency_links.txt
+python_packaging_at.egg-info/not-zip-safe
+python_packaging_at.egg-info/requires.txt
+python_packaging_at.egg-info/top_level.txt
