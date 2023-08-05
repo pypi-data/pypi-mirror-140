@@ -1,0 +1,9 @@
+README.md
+setup.py
+shabbir-library/__init__.py
+shabbir-library/operation.py
+shabbir999.egg-info/PKG-INFO
+shabbir999.egg-info/SOURCES.txt
+shabbir999.egg-info/dependency_links.txt
+shabbir999.egg-info/not-zip-safe
+shabbir999.egg-info/top_level.txt
