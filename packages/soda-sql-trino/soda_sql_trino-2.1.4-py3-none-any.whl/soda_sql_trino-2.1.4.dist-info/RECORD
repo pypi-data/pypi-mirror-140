@@ -1,0 +1,5 @@
+sodasql/dialects/trino_dialect.py,sha256=OetliPDlxXz2DWT_xRqIDwFDJGqX2ClLn0D-l8ZrRv8,5337
+soda_sql_trino-2.1.4.dist-info/METADATA,sha256=f5FVuo4atAVe7xfLWUE8uqoPdMkd0qDzEYt0rFduxhg,597
+soda_sql_trino-2.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+soda_sql_trino-2.1.4.dist-info/top_level.txt,sha256=iWRgaTzdfqDF5qGyrChKrnJh7tIweOrFM4J4_Lun_Xc,8
+soda_sql_trino-2.1.4.dist-info/RECORD,,
