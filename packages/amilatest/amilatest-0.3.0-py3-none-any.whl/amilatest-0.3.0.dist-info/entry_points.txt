@@ -1,0 +1,3 @@
+[console_scripts]
+amilatest = amilatest.cli:main
+
