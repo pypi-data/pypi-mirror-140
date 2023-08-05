@@ -1,0 +1,3 @@
+[console_scripts]
+ddk=aws_ddk.__main__:main
+
