@@ -1,0 +1,7 @@
+[console_scripts]
+mlaunch = mtools.mlaunch.mlaunch:main
+mlogfilter = mtools.mlogfilter.mlogfilter:main
+mloginfo = mtools.mloginfo.mloginfo:main
+mplotqueries = mtools.mplotqueries.mplotqueries:main
+mtransfer = mtools.mtransfer.mtransfer:main
+
