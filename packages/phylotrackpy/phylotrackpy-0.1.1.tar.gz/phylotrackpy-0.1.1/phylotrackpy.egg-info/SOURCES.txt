@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+systematics_bindings.cpp
+phylotrackpy/__init__.py
+phylotrackpy.egg-info/PKG-INFO
+phylotrackpy.egg-info/SOURCES.txt
+phylotrackpy.egg-info/dependency_links.txt
+phylotrackpy.egg-info/not-zip-safe
+phylotrackpy.egg-info/requires.txt
+phylotrackpy.egg-info/top_level.txt
+test/test_systematics.py
