@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: zuper-ipce-z7
+Version: 7.3.2202161758
+Summary: UNKNOWN
+Home-page: https://github.com/zupermind/PACKAGENAME
+Author: Andrea Censi
+Author-email: info@zupermind.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyYAML
+Requires-Dist: base58 (<2.0,>=1.0.2)
+Requires-Dist: cbor2 (<6,>=5)
+Requires-Dist: numpy
+Requires-Dist: oyaml (>=0.9)
+Requires-Dist: py-cid (==0.3.0)
+Requires-Dist: py-multihash (<1.0.0)
+Requires-Dist: validate-email
+Requires-Dist: zuper-commons-z7
+Requires-Dist: zuper-typing-z7
+Provides-Extra: test
+Requires-Dist: jsonschema ; extra == 'test'
+Requires-Dist: nose ; extra == 'test'
+Requires-Dist: pytz ; extra == 'test'
+Requires-Dist: typing-extensions ; extra == 'test'
+
+UNKNOWN
+
