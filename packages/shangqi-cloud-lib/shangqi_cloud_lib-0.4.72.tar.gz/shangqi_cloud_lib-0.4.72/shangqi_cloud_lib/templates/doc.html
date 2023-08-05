@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ project_name }}接口文档</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+</head>
+<style>
+    table, table tr th, table tr td {
+        border: 1px solid black;
+    }
+
+    table tr > td:first-child, th:first-child {
+        min-width: 168px;
+    }
+
+    table tr > td {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+    table tr > td input {
+        border: none;
+        outline: none;
+        width: 99%;
+        height: 99%;
+    }
+
+    table tr > td input:focus {
+        border: none;
+        outline: none;
+    }
+
+    .admin-table {
+        min-height: 30px;
+        line-height: 25px;
+        text-align: center;
+        border-collapse: collapse;
+        min-width: 900px;
+        width: 100%;
+    }
+
+    .admin-header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+    }
+
+    .admin-center {
+        display: flex;
+        flex-direction: row;
+        width: 99%;
+        height: 90%;
+        position: absolute;
+        top: 10%;
+        z-index: 90;
+    }
+
+    .admin-logo {
+        width: 160px;
+        height: 100%;
+    }
+
+    .admin-nav {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 100%;
+    }
+
+    .admin-nav-item {
+        width: 18%;
+    }
+
+    .admin-left-side {
+        width: 20%;
+        max-height: calc(100vh - 12%);
+        position: fixed;
+        top: 11%;
+        overflow-y: scroll;
+    }
+
+    .admin-left-side ul {
+        line-height: 25px;
+    }
+
+    .admin-main {
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        left: 20%;
+        padding-left: 5%;
+    }
+
+    .admin-right-side {
+        width: 18%;
+        height: 100%;
+    }
+
+    .admin-card {
+        width: 100%;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+
+    .admin-card .admin-card-header {
+        text-align: left;
+        margin-bottom: 6px;
+    }
+
+    .admin-card .admin-card-header span {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .admin-card .admin-card-header button {
+        float: right;
+        width: 60px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .admin-card .admin-card-footer {
+        text-align: left;
+    }
+
+    .admin-card .admin-card-footer .res-content {
+        background-color: azure;
+        display: block;
+        max-height: 400px;
+        overflow: auto;
+        border: solid 1px black;
+        padding: 0.5%;
+        white-space: pre;
+    }
+</style>
+<script>
+    let hash = (!window.location.hash) ? "#{{ anchor }}" : window.location.hash;
+    window.location.hash = hash;
+</script>
+<body>
+<div style="height: 100%;width: 100%;">
+    <div class="admin-header">
+        <div class="admin-logo"><h2>接口文档</h2></div>
+        {# 项目列表 #}
+        <div class="admin-nav">
+            <div class="admin-nav-item"><h2>{{ project_name }}</h2></div>
+        </div>
+    </div>
+    <div class="admin-center">
+        <div class="admin-left-side">
+            <ul>
+                {% if len(record_data) > 0 %}
+                <li><a href="#record">更新记录</a></li>
+                {% end %}
+                {% for item in api_list %}
+                <li><a href="#{{ item.get("desc") }}">{{ item.get("desc") }}</a>
+                    <ul>
+                        {% for index,method_item in enumerate(item.get("method_dict").values()) %}
+                        <li><a href="#{{ method_item.get("id") }}">{{ method_item.get("desc") }}</a></li>
+                        {% end %}
+                    </ul>
+                </li>
+                {% end %}
+            </ul>
+            <div style="padding-left: 5%;">
+                {% if edit %}
+                <button type="button">全部执行</button>
+                <button type="submit">全部更新</button>
+                {% else %}
+                <button type="button" onclick="check_auth()">编辑文档</button>
+                {% end %}
+            </div>
+        </div>
+        <div class="admin-main">
+            <div class="admin-card" id="record">
+                {% if len(record_data) > 0 %}
+                <h1>更新记录</h1>
+                <table style="width: 100%;">
+                    <tr>
+                        <th>时间</th>
+                        <th>记录类型</th>
+                        <th>更新类型</th>
+                        <th>更新内容</th>
+                        <th>所属接口</th>
+                    </tr>
+                    {% for record in record_data %}
+                    <tr>
+                        <td>{{ record.get("record_time") }}</td>
+                        <td>{{ record.get("record_type") }}</td>
+                        <td>{{ record.get("key_type") }}</td>
+                        {% if record.get("old_val") and record.get("new_val") %}
+                        <td>{{ record.get("old_val") }}&nbsp; -> &nbsp;{{ record.get("new_val") }}</td>
+                        {% elif record.get("old_val") %}
+                        <td>{{ record.get("old_val","") }}</td>
+                        {% elif record.get("new_val","") %}
+                        <td>{{ record.get("new_val","") }}</td>
+                        {% end %}
+                        <td><a href="#{{ record.get('anchor') }}">{{ record.get("key_owner") }}</a></td>
+                    </tr>
+                    {% end %}
+                </table>
+                <div><a href="/record?page_number=1" target="_blank">更多记录...</a></div>
+                {% end %}
+            </div>
+            {% set num = 0 %}
+            {% for api_item in api_list %}
+            <h1 id="{{ api_item.get("desc") }}" style="padding-top: 120px;">{{ api_item.get("desc") }}</h1>
+            {% for index,item in enumerate(api_item.get("method_dict").values()) %}
+            <div class="admin-card" id="{{ item.get("id") }}">
+                <form action="/doc" method="post" style="width: 100%;height: 100%;">
+                    <div class="admin-card-header">
+                        <span>{{ item.get("desc") }}</span>
+                        <input type="hidden" name="command" value="update">
+                        <input type="hidden" name="anchor" value="{{ item.get("id") }}">
+                        <input type="hidden" name="path" value="{{ item.get("path") }}">
+                        <input type="hidden" name="method" value="{{ item.get("command") }}">
+                        {% if edit %}
+                        <input type="hidden" name="session" value="{{ session_list[num] }}">
+                        {% set num = num + 1 %}
+                        <button type="button" onclick="run_api({{ item }})">执行</button>
+                        {% if len(item.get("request_params").values()) > 0 %}
+                        <button type="submit">更新</button>
+                        {% end %}
+                        {% end %}
+                    </div>
+                    <table class="admin-table">
+                        <thead>
+                        <tr>
+                            <th>请求URL:</th>
+                            <th colspan="5">{{ item.get("http_url") }}</th>
+                        </tr>
+                        <tr>
+                            <th>请求方法:</th>
+                            <th colspan="5">{{ item.get("http_method") }}</th>
+                        </tr>
+                        <tr>
+                            <th>Command:</th>
+                            <th colspan="5">{{ item.get("command") }}</th>
+                        </tr>
+                        {% if len(item.get("request_params").values()) > 0 %}
+                        <tr>
+                            <th>参数名</th>
+                            <th>样例数据</th>
+                            <th>默认值</th>
+                            <th>参数说明</th>
+                            <th>数据类型</th>
+                            <th>是否必传</th>
+                        </tr>
+                        {% end %}
+                        </thead>
+                        <tbody>
+                        {% for param_item in item.get("request_params").values() %}
+                        <tr>
+                            <td><input name="param_name" type="text" value='{{ param_item.get("param_name") }}'
+                                       readonly></td>
+                            <td><input name="sample_data" type="text" value='{{ param_item.get("sample_data") }}'
+                                    {{ "" if edit else "readonly" }}></td>
+                            <td>{{ param_item.get("default_val") }}</td>
+                            <td><input name="comment" type="text" value='{{ param_item.get("comment") }}'
+                                    {{ "" if edit else "readonly" }}></td>
+                            <td><input name="data_type" type="text" value='{{ param_item.get("data_type") }}'
+                                    {{ "" if edit else "readonly" }}></td>
+                            <td>{{ param_item.get("required") }}</td>
+                        </tr>
+                        {% end %}
+                        </tbody>
+                    </table>
+                </form>
+                <div class="admin-card-footer" id="{{ item.get("id") }}_block" style="display: none">
+                    <h3 style="">响应结果</h3>
+                    <span class="res-content" id="{{ item.get("id") }}_res">
+                    </span>
+                </div>
+            </div>
+            {% end %}
+            {% end %}
+        </div>
+    </div>
+    <div>
+        {% if not edit %}
+        <form action="/doc" method="post" hidden>
+            <input type="text" id="auth_check_val" name="auth" value="">
+            <input type="text" name="command" value="edit">
+            <input type="text" id="anchor" name="anchor" value="{{ anchor }}">
+            <input type="submit" id="auth_check_submit">
+        </form>
+        {% end %}
+    </div>
+</div>
+<script defer>
+    function check_auth() {
+        let msg = prompt("请输入验证信息：");
+        if (msg) {
+            let val = document.getElementById('auth_check_val');
+            val.value = msg;
+            let anchorVal = window.location.hash;
+            let anchor = document.getElementById("anchor");
+            anchor.value = anchorVal.slice(1);
+            let submit = document.getElementById("auth_check_submit");
+            submit.click();
+        }
+    }
+
+    function run_api(method) {
+        let id = method.id;
+        let block_id = id + '_block';
+        let res_id = id + '_res';
+        let data = {"command": method.command};
+        Object.keys(method.request_params).forEach(function (key) {
+            item = method.request_params[key];
+            data[item.param_name] = item.sample_data
+        });
+        $.ajax({
+            url: method.path, // 目标资源
+            cache: false, //true 如果当前请求有缓存的话，直接使用缓存。如果该属性设置为 false，则每次都会向服务器请求
+            data: data,
+            // dataType: "json", // 服务器响应的数据类型
+            type: method.http_method, // 请求方式
+            success: function (res) {
+                document.getElementById(res_id).innerText = JSON.stringify(res, null, 4);
+                document.getElementById(block_id).style.display = "block";
+            },
+            fail: function (res) {
+                document.getElementById(res_id).innerText = JSON.stringify(res, null, 4);
+                document.getElementById(block_id).style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>

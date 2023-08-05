@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: shangqi_cloud_lib
+Version: 0.4.72
+Summary: 基于tornado封装简易开发框架，可自动化生成API文档
+Home-page: UNKNOWN
+Author: shangqi
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: tornado web
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
