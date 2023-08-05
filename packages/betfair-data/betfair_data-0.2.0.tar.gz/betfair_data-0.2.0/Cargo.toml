@@ -1,0 +1,37 @@
+[package]
+name = "betfair_data"
+version = "0.2.0"
+edition = "2021"
+
+[lib]
+name = "betfair_data"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.15.1", features = ["extension-module", "macros", "nightly", "abi3-py36"] }
+pyo3-log = "0.5.0"
+log = "0.4.14"
+tar = "0.4.38"
+self_cell = "0.10.2"
+crossbeam-channel = "0.5.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["raw_value"] }
+staticvec = { version = "0.11.2", features = ["serde"] }
+strum = { version = "0.23", features = ["derive"] }
+strum_macros = "0.23"
+chrono = "0.4.19"
+simdutf8 = { version = "0.1", features = ["std", "aarch64_neon"] }
+rayon = "1.5"
+flate2 = "1.0"
+rayon-seq-iter = { git = "https://github.com/nwtgck/rayon-seq-iter" }
+bzip2-rs = { git = "https://github.com/paolobarbolini/bzip2-rs", features = ["rayon", "nightly"]}
+
+ouroboros = "0.14.2"
+
+[target.'cfg(not(target_os = "linux"))'.dependencies]
+mimalloc = { version = "*", default-features = false }
+
+[profile.release]
+lto = true # "fat"    
+codegen-units = 1
+panic = "abort"
