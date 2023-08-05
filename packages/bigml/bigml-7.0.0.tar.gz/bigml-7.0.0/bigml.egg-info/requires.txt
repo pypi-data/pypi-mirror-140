@@ -1,0 +1,10 @@
+bigml-chronos>=0.4.3
+bigml-sensenet==0.4.6
+msgpack
+numpy
+pybind11
+requests
+requests-toolbelt
+scipy
+tensorflow==2.4
+unidecode
