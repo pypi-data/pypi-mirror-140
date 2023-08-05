@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+setup.py
+ovos_config_assistant/__init__.py
+ovos_config_assistant/config_helpers.py
+ovos_config_assistant/core_helpers.py
+ovos_config_assistant/module_helpers.py
+ovos_config_assistant/version.py
+ovos_config_assistant.egg-info/PKG-INFO
+ovos_config_assistant.egg-info/SOURCES.txt
+ovos_config_assistant.egg-info/dependency_links.txt
+ovos_config_assistant.egg-info/requires.txt
+ovos_config_assistant.egg-info/top_level.txt
+requirements/requirements.txt

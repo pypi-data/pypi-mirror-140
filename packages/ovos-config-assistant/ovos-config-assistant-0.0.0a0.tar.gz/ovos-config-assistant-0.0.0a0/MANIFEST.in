@@ -1,0 +1,2 @@
+recursive-include ovos_config_assistant/ *
+recursive-include requirements/ *
