@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+polygon_pascalvoc_writer/__init__.py
+polygon_pascalvoc_writer/voc_writer.py
+polygon_pascalvoc_writer.egg-info/PKG-INFO
+polygon_pascalvoc_writer.egg-info/SOURCES.txt
+polygon_pascalvoc_writer.egg-info/dependency_links.txt
+polygon_pascalvoc_writer.egg-info/requires.txt
+polygon_pascalvoc_writer.egg-info/top_level.txt
+polygon_pascalvoc_writer/templates/annotation.xml
