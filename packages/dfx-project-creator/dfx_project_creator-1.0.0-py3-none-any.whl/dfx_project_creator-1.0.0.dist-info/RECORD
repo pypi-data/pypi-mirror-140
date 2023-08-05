@@ -1,0 +1,17 @@
+create_gitlab_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+create_gitlab_project/__main__.py,sha256=cioVQAFxS8RwHlmzLZ94pU7G1z0g_lO8LArIUvAkZKg,140
+create_gitlab_project/cli.py,sha256=0UgwIJQI_pqUgQsAgMxxLYY1d-18CuIMLhuA-rapsso,2206
+create_gitlab_project/constants.py,sha256=FZaq1LJVec3w_6-Jld_dIlAuW4u7dmEtABAnJKrUVI8,310
+create_gitlab_project/create_gitlab_project_dfx.py,sha256=JFaJBJp0Iq5MuTPBjNxNS8_A_GGbETQVEKz2R4DdfT0,2700
+create_gitlab_project/template/Jenkinsfile,sha256=WiWSZYf0fVHt9Zzb7ROhttyc3JVNb1V2z0Ke78CueHc,259
+create_gitlab_project/template/README.md,sha256=FrtLQq-PSCqPGMrgs1I_v5puBCqqFYjEZyschwwz55Q,153
+create_jenkins_pipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+create_jenkins_pipeline/__main__.py,sha256=u6ozFkUZKk7gJJaIFU6x7uxPpxvoK0MjUkKm_dEZ6Oc,118
+create_jenkins_pipeline/cli.py,sha256=Q0998sIPm7OrJQBQV05zguBukSAruwlM7wAqG2jzVQs,1890
+create_jenkins_pipeline/constants.py,sha256=bGYUVkAaAwBLwahpcWzGWNO-_2leACdAunaPTpnwjnY,68
+create_jenkins_pipeline/create_jenkins_pipeline_dfx.py,sha256=-rw7rKDNfMvOdxX4yF72x5p_tN-1kG2RINfvkR42eo4,1256
+create_jenkins_pipeline/template/multi_branch.xml,sha256=apmMIe-6ehX-wWyQxq5lkux1Cm5poGhljwULzw8vJ-k,2390
+dfx_project_creator-1.0.0.dist-info/METADATA,sha256=k6wqKED3RmBF-iCiCO8Uc3BRV02i3QbF33tYWFQRgTQ,529
+dfx_project_creator-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dfx_project_creator-1.0.0.dist-info/top_level.txt,sha256=_5aL8aEC5UgaWjEHDYZisHhcx9th8OZYcMJQaChRPpI,46
+dfx_project_creator-1.0.0.dist-info/RECORD,,
