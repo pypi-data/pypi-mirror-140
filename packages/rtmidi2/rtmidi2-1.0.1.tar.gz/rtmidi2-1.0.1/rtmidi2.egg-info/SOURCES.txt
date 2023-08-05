@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+rtmidi2.cpp
+rtmidi2.pyx
+setup.py
+RtMidi/RtMidi.cpp
+RtMidi/RtMidi.h
+rtmidi2.egg-info/PKG-INFO
+rtmidi2.egg-info/SOURCES.txt
+rtmidi2.egg-info/dependency_links.txt
+rtmidi2.egg-info/top_level.txt
