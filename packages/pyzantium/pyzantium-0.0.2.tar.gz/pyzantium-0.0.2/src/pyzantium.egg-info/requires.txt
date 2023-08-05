@@ -1,0 +1,12 @@
+crypto
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+
+[doc]
+sphinx
+
+[fastapi]
+fastapi
