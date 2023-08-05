@@ -1,0 +1,15 @@
+dask_sphinx_theme/__init__.py,sha256=74k5k7YbUMh4qMIVmxOtQ5MRMisMIQrIz2s-_KFHxvE,396
+dask_sphinx_theme/layout.html,sha256=70Q3ndAOrbYNKbd9QoduUmaf_axS4R-mHdR6WSoF-vU,856
+dask_sphinx_theme/theme.conf,sha256=ofUwiXZybuaFCbsZV7TkelPE65xqakVJLQaYkSVdk2w,150
+dask_sphinx_theme/ext/dask_config_sphinx_ext.py,sha256=vQ0wIvkRnIEbeu8JuJ6xZiKMLvJqTnwerWsmVTUyOFI,2670
+dask_sphinx_theme/static/css/style.css,sha256=rPgp3RqR7onwxwTXEE3JINwqW5-YWnds0LazvwKAo9I,2650
+dask_sphinx_theme/static/images/background.png,sha256=_Pkx4wKShyXTvt0NuWP368bPUOKYHS4cQR1RzO7C8Z4,12554
+dask_sphinx_theme/static/images/dask-horizontal-white.svg,sha256=y0kpbMEoTe2zQ2HfjfkCWQeJzWhminJLREUm-C9KaBw,3100
+dask_sphinx_theme/static/images/favicon.ico,sha256=ko44smce_VF_LqojWUCmmMC3KrrKfhmEOWPg9OCH8Tg,15406
+dask_sphinx_theme/static/js/custom.js,sha256=X7sJaxMClLBtn-zKkWq2uZoA_IGFvO1zFUUmsfJGxRw,262
+dask_sphinx_theme-2.0.3.dist-info/LICENSE.txt,sha256=eWHAMUu64hUmsWv3UJWEiynEHpia-WEEUJVDeVm4ZdA,1466
+dask_sphinx_theme-2.0.3.dist-info/METADATA,sha256=EBuiAj85weiUO0LiUVbXnuAvCvCWB07OYkTnTqHCaGQ,1657
+dask_sphinx_theme-2.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dask_sphinx_theme-2.0.3.dist-info/entry_points.txt,sha256=mxXe6lwVnHpDvtBM-XbgIDibY57Ds4Yzsy_cAI5EAaE,60
+dask_sphinx_theme-2.0.3.dist-info/top_level.txt,sha256=N_LnBscrrFPkbzZJUzzrH76wCkINUfC8vW1VE6MAeas,18
+dask_sphinx_theme-2.0.3.dist-info/RECORD,,
