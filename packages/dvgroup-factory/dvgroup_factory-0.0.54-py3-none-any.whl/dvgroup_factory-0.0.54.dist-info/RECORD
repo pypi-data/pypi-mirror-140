@@ -1,0 +1,13 @@
+dvgroup_factory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvgroup_factory/factory.py,sha256=G5cY6uffZCpwZ-CNxTrJfWpjZ_uuBGKoGk3VBO-0-K0,23709
+dvgroup_factory/middleware.py,sha256=X-YqliMuidEtJqJf6eUc4yFn8ru7mSf5hPka228KNWA,3000
+dvgroup_factory/prometheus.py,sha256=dAD79girxszhrYprJWqwYW8ra2B4mJWTpDDOqIaSuz4,2025
+dvgroup_factory/security.py,sha256=IvcGUCwfgN8vkMqYwsI0aESfBPHjpAy9vlZYbqFxkKg,3926
+dvgroup_factory/etl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvgroup_factory/etl/copy_utils.py,sha256=RkPwuAfLt5ivEy1DP_bsMICpp8_nT4KrLgB9geAGbEA,4884
+dvgroup_factory/etl/greenplum_utils.py,sha256=C-9FKxl6j13yjzmq-gaLHFnNHTukpLC9F7KmE7xQzGA,1936
+dvgroup_factory-0.0.54.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+dvgroup_factory-0.0.54.dist-info/METADATA,sha256=_rh0m1b2Rd-plFr361N1qkUM0g17YevbhGE4jtwPqlM,6697
+dvgroup_factory-0.0.54.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dvgroup_factory-0.0.54.dist-info/top_level.txt,sha256=iMIPnF2ZTze39f5C7GwS1-eu7Qd2P-ZCYO7kCY-b0ws,16
+dvgroup_factory-0.0.54.dist-info/RECORD,,
