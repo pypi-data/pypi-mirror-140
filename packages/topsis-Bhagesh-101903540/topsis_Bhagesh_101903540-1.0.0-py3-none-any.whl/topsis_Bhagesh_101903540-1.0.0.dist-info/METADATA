@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: topsis-Bhagesh-101903540
+Version: 1.0.0
+Summary: It performs topsis for any model
+Home-page: https://github.com/bhagesh/topsis-bhagesh-101903540
+Author: Bhagesh Gupta
+Author-email: bhageshgupta25@gmail.com.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis-Bhaegesh-10193540
+
+This package is implementation of topsis technique of multi-criteria decision analysis. This package will accept three parameters as input:
+
+
+1. .csv file which contains the models and parameters
+2. string of weights separated by commas(,)
+3. string of requirements (+/-) separated by commas(,) 
+
+It performs the topsis, calculate the Performance
+Score and Rank according to the inputs and store them in the output file.
+This program must be run through command line only.
+### What is TOPSIS
+The Technique for Order of Preference by Similarity to Ideal Solution
+(TOPSIS) is a multi-criteria decision analysis method.
+TOPSIS is based on the concept that the chosen alternative should have the shortest geometric distance from the positive ideal solution (PIS)
+and the longest geometric distance from the negative ideal solution (NIS).
+### Installation 
+To install this module write the following line in the command prompt.
+
+```pip install Topsis-Bhagesh-101903540```
+### How to use this 
+
+Topsis-Bhagesh-101903540 can be run as in the following example:
+
+####In Command Prompt
+
+``` >> topsis data.csv "1,1,1,1" "+,+,-,+"```
+
+###Example on the Dataset
+
+####Input File
+
+| Moblie | Price($) | Storage(GB) | Camera(MP) | Rating |   
+|--------|----------|-------------|------------|--------|
+| `M1`   | 250      | 16          | 12         | 5      |
+| `M2`   | 200      | 16          | 8          | 3      |
+| `M3`   | 300      | 32          | 16         | 4      |
+| `M4`   | 275      | 32          | 8          | 4      |
+| `M5`   | 225      | 16          | 16         | 2      |
+
+In addition to input file we provide impact and weight for each columns from 2nd to last column. Impact must be +ve or -ve.
+Weight and Impact must be seperated with commans.
+
+####Output File
+The output file is steuctured as follows
+
+| Moblie | Price($) | Storage(GB) | Camera(MP) | Rating | Topsis Score | Rank| 
+|--------|----------|-------------|------------|--------|------------|--------|
+| `M1`   | 0.11     | 0.08        | 0.11       | 0.15   |0.53|3|
+| `M2`   | 0.09     | 0.08        | 0.07       | 0.09   |0.31|5|
+| `M3`   | 0.13     | 0.15        | 0.14       | 0.12   |0.69|1|
+| `M4`   | 0.12     | 0.15        | 0.07       | 0.12   |0.53|2|
+| `M5`   | 0.1      | 0.08        | 0.14       | 0.06   |0.40|4|
+
+For calulating Rank it compare upto six decimal digits but display only upto two decimal points.
+The rankings are displayed in the form of a table using a package 'tabulate', with the 1st rank offering us the best decision, and last rank offering the worst decision making, according to TOPSIS method.
+
+
+###License
+Â© 2021 Bhagesh Gupta
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
