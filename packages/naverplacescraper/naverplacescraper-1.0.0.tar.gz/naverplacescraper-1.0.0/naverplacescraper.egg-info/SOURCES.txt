@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+data/__init__.py
+data/kor_coordinates.txt
+naverplacescraper/__init__.py
+naverplacescraper/coordinates.py
+naverplacescraper/httprequest.py
+naverplacescraper/naverPlace.py
+naverplacescraper/naverplace.py
+naverplacescraper/utils.py
+naverplacescraper.egg-info/PKG-INFO
+naverplacescraper.egg-info/SOURCES.txt
+naverplacescraper.egg-info/dependency_links.txt
+naverplacescraper.egg-info/requires.txt
+naverplacescraper.egg-info/top_level.txt
