@@ -1,0 +1,9 @@
+nonebot_plugin_morning/__init__.py,sha256=i_SsA9mQZHTV3SyAISxd7Mmdtp0qHK78BDqMR8h3xuU,6628
+nonebot_plugin_morning/data_source.py,sha256=DtziibmPNUSR4_f0-Xfm335dmLktOPG-AzvzpMxORVg,23504
+nonebot_plugin_morning/download.py,sha256=U7B-AD1BXgn8D-fY1-t9hPaXd83h2RxZp53UKZgY8VE,678
+nonebot_plugin_morning/resource/config.json,sha256=h_jgyqlsKoYf5B8S48X8r-U-4OcGIqvIqHjM-vSBzHw,654
+nonebot_plugin_morning/resource/data.json,sha256=RBNvo1WzZ4oRRq0W9-hknpT7T8If536DEMBg9hyq_4o,2
+nonebot_plugin_morning-0.2.1.dist-info/LICENSE,sha256=aHhX9so28tCgkKmNzL5jtZdjzSzN2eYBBjr15v2qSD8,1068
+nonebot_plugin_morning-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+nonebot_plugin_morning-0.2.1.dist-info/METADATA,sha256=J_yaXY1Kh4hpMkcRS9s1JNKLeZHcf48q_E7QVoMs7Q8,6202
+nonebot_plugin_morning-0.2.1.dist-info/RECORD,,
