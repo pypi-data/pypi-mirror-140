@@ -1,0 +1,12 @@
+README.rst
+licence.txt
+setup.py
+easySQL_fiachia.egg-info/PKG-INFO
+easySQL_fiachia.egg-info/SOURCES.txt
+easySQL_fiachia.egg-info/dependency_links.txt
+easySQL_fiachia.egg-info/requires.txt
+easySQL_fiachia.egg-info/top_level.txt
+easysql/__init__.py
+easysql/easySQL.py
+easysql/setting.py
+easysql/type.py
