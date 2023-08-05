@@ -1,0 +1,10 @@
+README.md
+setup.py
+CsPy_Uploading/__init__.py
+CsPy_Uploading/classes.py
+CsPy_Uploading/functions.py
+CsPy_Uploading.egg-info/PKG-INFO
+CsPy_Uploading.egg-info/SOURCES.txt
+CsPy_Uploading.egg-info/dependency_links.txt
+CsPy_Uploading.egg-info/requires.txt
+CsPy_Uploading.egg-info/top_level.txt
