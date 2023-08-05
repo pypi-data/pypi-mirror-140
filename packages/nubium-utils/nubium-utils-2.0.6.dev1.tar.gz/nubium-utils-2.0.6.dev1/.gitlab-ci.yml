@@ -1,0 +1,25 @@
+default:
+  image: images.paas.redhat.com/mktg-ops/rocksdb-base:latest
+  tags:
+    - openshift
+
+stages:
+  - test
+  - publish
+
+pytest:
+  stage: test
+  variables:
+    KUBERNETES_MEMORY_REQUEST: 2Gi
+    KUBERNETES_MEMORY_LIMIT: 4Gi
+  before_script:
+    - pip install --upgrade pip
+    - pip install .[dev] -c <(sed -E 's/\[[^]]+]//' requirements.txt) # had to remove [extras] for constraints to work
+  script:
+    - ./unit_tests.sh
+
+publish:
+  stage: publish
+  rules:
+    - if: $CI_COMMIT_TAG
+  script: echo TODO actually publish the thing
