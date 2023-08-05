@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: wcommon
+Version: 1.1.3
+Summary: 常用工具类方法集合
+Home-page: http://www.hohode.com
+Author: WangJunbo
+Author-email: wjbhnu@gmail.com
+License: UNKNOWN
+Description: This is my common Python tool classes.
+        
+        Find the localhost internal network ip:
+        ```
+        ip = getLocalIp()
+        hostname = getLocalHostname()
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
