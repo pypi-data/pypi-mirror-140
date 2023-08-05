@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+cpf_cnpj/__init__.py
+cpf_cnpj/cpf_cnpj.py
+cpf_cnpj/utils.py
+cpf_cnpj/tests/__init__.py
+cpf_cnpj/tests/tests.py
+validate_cpf_cnpj.egg-info/PKG-INFO
+validate_cpf_cnpj.egg-info/SOURCES.txt
+validate_cpf_cnpj.egg-info/dependency_links.txt
+validate_cpf_cnpj.egg-info/requires.txt
+validate_cpf_cnpj.egg-info/top_level.txt
+validate_cpf_cnpj.egg-info/zip-safe

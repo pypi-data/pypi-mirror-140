@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: validate-cpf-cnpj
+Version: 0.1.2
+Summary: Validador de CPF e CNPJ para Python
+Home-page: https://github.com/elcidon/cpf_cnpj
+Author: El Cidon
+Author-email: erickfabiani123@gmail.com
+License: MIT
+Keywords: python cpf cnpj validador
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
