@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: wcommon
+Version: 1.1.8
+Summary: 常用工具类方法集合
+Home-page: http://www.hohode.com
+Author: WangJunbo
+Author-email: wjbhnu@gmail.com
+License: UNKNOWN
+Description: # This is my common Python tool classes.
+        
+        
+        ### /data/apps/public/conf.ini content like:
+        ```
+        [mysql]
+        host=example.com
+        port=3306
+        user=username
+        passwd=password
+        database=test
+        charset=utf8mb4
+        ```
+        
+        ### Find the localhost internal network ip:
+        ```python
+        from wcommon import *
+        ip = getLocalIp()
+        hostname = getLocalHostname()
+        ```
+        
+        ### Operate mysql data:
+        ```python
+        mysql = Mysql(configuraion_file="/data/apps/public/conf.ini", section="mysql")
+        
+        #query
+        rows = mysql.query("select * from example_table where status = %s order by id desc limit %s",(1,10))
+        for row in rows:
+            print(row)
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
