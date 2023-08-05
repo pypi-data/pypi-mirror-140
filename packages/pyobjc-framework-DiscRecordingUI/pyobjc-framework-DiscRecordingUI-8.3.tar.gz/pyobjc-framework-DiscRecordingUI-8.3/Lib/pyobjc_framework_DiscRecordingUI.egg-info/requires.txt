@@ -1,0 +1,3 @@
+pyobjc-core>=8.3
+pyobjc-framework-Cocoa>=8.3
+pyobjc-framework-DiscRecording>=8.3
