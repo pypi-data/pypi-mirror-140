@@ -1,0 +1,3 @@
+[sentry.plugins]
+sentry_dingTalk_notify_to_people = sentry_dingTalk_notify_to_people.plugin:DingTalkNotifyToPeoplePlugin
+
