@@ -1,0 +1,12 @@
+CHANGES.md
+MANIFEST.in
+README.md
+setup.py
+sinutils/__init__.py
+sinutils/__main__.py
+sinutils/utils.py
+sinutils.egg-info/PKG-INFO
+sinutils.egg-info/SOURCES.txt
+sinutils.egg-info/dependency_links.txt
+sinutils.egg-info/not-zip-safe
+sinutils.egg-info/top_level.txt
