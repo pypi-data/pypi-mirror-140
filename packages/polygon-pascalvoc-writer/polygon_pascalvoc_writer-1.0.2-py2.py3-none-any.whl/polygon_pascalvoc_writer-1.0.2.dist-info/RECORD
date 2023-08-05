@@ -1,0 +1,8 @@
+polygon_pascalvoc_writer/__init__.py,sha256=YpPfUX2AOET8ETwKTDp8AKhD6rfZqXibv_baVZAHT6s,34
+polygon_pascalvoc_writer/voc_writer.py,sha256=VN4FTJzDFnCgyssugpvQ_vxYc-NfcnXsvFIsqOM5v-Q,3155
+polygon_pascalvoc_writer/templates/annotation.xml,sha256=Xpi3li2iLDAjnDHYfPEBOVWvKqYK7eNhCuBZ4QT0gfg,933
+polygon_pascalvoc_writer-1.0.2.dist-info/LICENSE,sha256=rZjRt2Sefa5ZP-s7usUZMA4oVXo7w5sd3WsDlkmH57E,1066
+polygon_pascalvoc_writer-1.0.2.dist-info/METADATA,sha256=2r60Rjm9vmT-Nmu9O2cRqLU-Molxp6eUM-_gAUhc6-o,4724
+polygon_pascalvoc_writer-1.0.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+polygon_pascalvoc_writer-1.0.2.dist-info/top_level.txt,sha256=vb9dVFqPwxF95MCzzeH5UifvHuvHgbqoJMBTo-rmG5U,25
+polygon_pascalvoc_writer-1.0.2.dist-info/RECORD,,
