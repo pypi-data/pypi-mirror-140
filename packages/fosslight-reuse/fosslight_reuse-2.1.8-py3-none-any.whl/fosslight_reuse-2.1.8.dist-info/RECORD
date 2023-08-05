@@ -1,0 +1,17 @@
+fosslight_oss_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fosslight_oss_pkg/_common.py,sha256=AhPRhbAE_XSWGo100Zof5fyBDZ-THWv4u7-h-8MuBOk,3313
+fosslight_oss_pkg/_parsing_excel.py,sha256=9PpzRunbwZvpydyr62MCBghoGxqZ8xXyHYWGiNV-aCI,4982
+fosslight_oss_pkg/_parsing_yaml.py,sha256=EPE1a39g7AcF9uXSrwvsrl0BVITzDpFuKgx07O5U8qw,5182
+fosslight_oss_pkg/fosslight_oss_pkg.py,sha256=CkDy7HbL2Ex2yMkMhRCr1CuMLf4JozJOPrfMKXrSt4A,3286
+fosslight_reuse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fosslight_reuse/_add.py,sha256=0lBf_6bgxWGQB3JtEpp1pTgLNGY6VoUoMF9Qo5xDago,16724
+fosslight_reuse/_fosslight_reuse.py,sha256=KGGB7S0kzxOmMmDH1WrFAoLp2UWxinnSe7NEZn5c96g,14543
+fosslight_reuse/_help.py,sha256=MOMomtBOzyFheB1e4ZXOvhFs8hpM_pdz8Ln-3_mf_l4,1338
+fosslight_reuse/cli.py,sha256=blKdrj6OKndKIwqjXMGR9uQ8wyAHrMg9mScJxNrNb08,1746
+fosslight_reuse/resources/convert_license.json,sha256=bYMP2kFB2toMNTKfJbjZdAI-wPQOQ3ErI1cZTU2fPFc,605
+fosslight_reuse-2.1.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fosslight_reuse-2.1.8.dist-info/METADATA,sha256=uK-whUmBmErXHfIbR_-oIwv2IHcY-pToFs1EKPNd-LU,2783
+fosslight_reuse-2.1.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fosslight_reuse-2.1.8.dist-info/entry_points.txt,sha256=dxlhpFZ-15jnF7wTStzgpUzzY51hh6i01HfUmjkd2Ls,62
+fosslight_reuse-2.1.8.dist-info/top_level.txt,sha256=_Suw2m7Da5fNr-iTVk9qu-9yjKtN5LOr8QpEGgSdGkA,34
+fosslight_reuse-2.1.8.dist-info/RECORD,,
