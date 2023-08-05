@@ -1,0 +1,11 @@
+tstock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tstock/__main__.py,sha256=-xsCxT12Vm5cX4txv_UkupsE8HeNau_rgnQf0YGQkCY,115
+tstock/core.py,sha256=XYNZr3xOKBI5gmrDxp6_1_-H2IFprI9oj1lXRPGUPBY,18266
+tstock/parse.py,sha256=6gai7c4PY0RDd16s71IjJM4fyrnAKPTz4ONLKq_llfs,14634
+tstock/settings.py,sha256=ZynRQa6QEKJwXHLxvJpoBQNLpFKJZ0B3l2Mm4ts_xc4,511
+tstock-2.2.5.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+tstock-2.2.5.dist-info/METADATA,sha256=sfcXo5bnL-oZIVJdOSq2arh_w8n2hxf35uH4qXx99-U,6530
+tstock-2.2.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tstock-2.2.5.dist-info/entry_points.txt,sha256=dM_3dy6g9RW9tK-muN3xL0XGy3QFFRCQYgdc_3WEgkk,49
+tstock-2.2.5.dist-info/top_level.txt,sha256=B58QlUzqzQ6r_bgTK7F4WyNITp1VP9G_1a3j7d2O83E,7
+tstock-2.2.5.dist-info/RECORD,,
