@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: vnpy-sinopac
+Version: 1.0.3
+Summary: Sinopac Securities - Shioaji api gateway for VeighNa quant trading framework.
+Home-page: https://github.com/ypochien/vnpy_sinopac
+Author: ypochien
+Author-email: ypochien@gmail.com
+License: MIT
+Keywords: quant,quantitative,investment,trading,algotrading
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Traditional)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: shioaji
+Requires-Dist: importlib-metadata
+Requires-Dist: wmi
+
+# vnpy_sinopac
+VeighNa框架的 Sinopac 交易接口
+
+shioaji - https://sinotrade.github.io/
+
