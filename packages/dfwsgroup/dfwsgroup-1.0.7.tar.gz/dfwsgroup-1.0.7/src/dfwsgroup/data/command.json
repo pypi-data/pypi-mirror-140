@@ -1,0 +1,16 @@
+{
+  "command": [
+    {
+      "adb_shell": "adb -s {{contents.0}} shell",
+      "classpath": "CLASSPATH=/sdcard/monkeyq.jar:/sdcard/framework.jar:/sdcard/fastbot-thirdpart.jar exec app_process /system/bin com.android.commands.monkey.Monkey",
+      "package": "-p {{contents.1}}",
+      "pattern": "--agent reuseq",
+      "minutes": "--running-minutes {{contents.2}}",
+      "throttle": "--throttle {{contents.3}} -v -v"
+    },
+    {
+      "bugreport": "--bugreport",
+      "save_log": "--output-directory /sdcard/dfwsgroup log/crash"
+    }
+  ]
+}
