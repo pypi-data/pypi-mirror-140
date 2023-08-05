@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: fsclean
+Version: 1.0.0
+Summary: Tool to clean up filenames
+Keywords: scripts,commandline
+Author-email: Johannes Krattenmacher <fsclean@dev.krateng.ch>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Dist: emoji
+Requires-Dist: unidecode
+Requires-Dist: doreah
+Project-URL: repository, https://github.com/krateng/fsclean
+
+# fsclean
+
+Clean unicode filenames in a directory tree.
+
+## Install
+
+```sh
+	pip install fsclean
+```
+
+## How to use
+
+Use the command `fsclean <rootpath>`, e.g. `fsclean .`.
+
+Use `--dryrun` to check what would be renamed.
+
+Existing files will not be overwritten.
+
