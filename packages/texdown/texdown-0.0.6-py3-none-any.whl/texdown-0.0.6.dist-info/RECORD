@@ -1,0 +1,10 @@
+pyfoobar/__about__.py,sha256=1fFMM8zH4VJoXH4hVk_W3CkKklTp6E7x-wWggsubozQ,218
+pyfoobar/__init__.py,sha256=5yml0WpwO6mPW9hDUJ99rLTS5xwlcN5mmaylprMinlI,140
+pyfoobar/cli.py,sha256=GaINpQAT_ZL911LVB3v7_khsKhyorB5y3xFjccBom54,1037
+pyfoobar/main.py,sha256=EvnQWG8Pb5q36JLdESuFj73bZWFg_uUGCsIowU5f9kM,27
+texdown-0.0.6.dist-info/LICENSE,sha256=8UKpjB9xdqo8-n4PZQhH3oKOFraDtRaDzkAzTYSkH5M,1086
+texdown-0.0.6.dist-info/METADATA,sha256=D2uLGrpaxPD8L03cLRjzBDfk8nIK7Ebm5CRVkCMMey0,5985
+texdown-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+texdown-0.0.6.dist-info/entry_points.txt,sha256=OCCIbQpo1dLKy2zZnd7EFK5aagRu9gvkhm-HPc5UHkg,52
+texdown-0.0.6.dist-info/top_level.txt,sha256=khesWqyfPunlmbvSBTMj6wb5wBAdhVjz8YsJdTq7Rbw,9
+texdown-0.0.6.dist-info/RECORD,,
