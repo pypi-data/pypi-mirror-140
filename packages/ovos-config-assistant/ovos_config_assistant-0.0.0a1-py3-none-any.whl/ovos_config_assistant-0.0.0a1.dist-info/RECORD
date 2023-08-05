@@ -1,0 +1,10 @@
+ovos_config_assistant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ovos_config_assistant/config_helpers.py,sha256=6GdlDGGS_MAP370G8rLEl70vtiVaCJglaK0CPOKzG9Q,1114
+ovos_config_assistant/core_helpers.py,sha256=I75AgAOJ16mnvZ_zPALuES1oey8weg5LZNsbs7BVbeU,3384
+ovos_config_assistant/module_helpers.py,sha256=RJHQaXJ2PHzPXkeHtDu18OiKApLfermWm3LLxGtAAmI,3031
+ovos_config_assistant/version.py,sha256=nNBNctUG5zz0ZadphIByB9sNpvi2xpE0-n0nyMXrDkc,177
+ovos_config_assistant-0.0.0a1.dist-info/LICENSE,sha256=fYHkowW9JcaEcqCPTXYBayNJ9J1lGdYVb7Mf9oy6oEY,11349
+ovos_config_assistant-0.0.0a1.dist-info/METADATA,sha256=yCit7Uo27YKkwuyuepvFCBraykOeV1G29WAONmhH_PQ,292
+ovos_config_assistant-0.0.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ovos_config_assistant-0.0.0a1.dist-info/top_level.txt,sha256=gQkFvlcctChVpryBJKd4ZpHeElTI_jy-QctHES5ICCU,22
+ovos_config_assistant-0.0.0a1.dist-info/RECORD,,
