@@ -1,0 +1,5 @@
+Jinja2
+biopython
+colorlog
+lxml
+pandas>=0.23.0
