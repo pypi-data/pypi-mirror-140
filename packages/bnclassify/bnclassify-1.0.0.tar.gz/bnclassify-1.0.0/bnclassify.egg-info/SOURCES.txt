@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bnclassify/__init__.py
+bnclassify/bnclassify.py
+bnclassify/examples.py
+bnclassify.egg-info/PKG-INFO
+bnclassify.egg-info/SOURCES.txt
+bnclassify.egg-info/dependency_links.txt
+bnclassify.egg-info/requires.txt
+bnclassify.egg-info/top_level.txt
