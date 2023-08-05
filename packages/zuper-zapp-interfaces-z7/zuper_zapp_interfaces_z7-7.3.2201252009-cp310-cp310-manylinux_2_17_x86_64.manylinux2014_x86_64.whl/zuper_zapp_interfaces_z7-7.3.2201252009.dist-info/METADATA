@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zuper-zapp-interfaces-z7
+Version: 7.3.2201252009
+Summary: UNKNOWN
+Home-page: https://github.com/zupermind/zuper-template
+Author: Andrea Censi
+Author-email: info@zupermind.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: typing-extensions
+Requires-Dist: zuper-commons-z7
+Requires-Dist: zuper-typing-z7
+Requires-Dist: zuper-utils-asyncio-z7
+Provides-Extra: test
+
+UNKNOWN
+
