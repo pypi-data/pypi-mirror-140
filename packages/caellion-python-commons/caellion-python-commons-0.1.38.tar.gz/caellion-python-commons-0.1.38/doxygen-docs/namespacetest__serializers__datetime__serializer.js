@@ -1,0 +1,4 @@
+var namespacetest__serializers__datetime__serializer =
+[
+    [ "TestSerializersDateTimeSerializer", "classtest__serializers__datetime__serializer_1_1_test_serializers_date_time_serializer.html", "classtest__serializers__datetime__serializer_1_1_test_serializers_date_time_serializer" ]
+];
