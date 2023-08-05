@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mysocketuntils.egg-info/PKG-INFO
+src/mysocketuntils.egg-info/SOURCES.txt
+src/mysocketuntils.egg-info/dependency_links.txt
+src/mysocketuntils.egg-info/top_level.txt
+src/socketutils/__init__.py
+src/socketutils/utils.py
