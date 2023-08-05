@@ -1,0 +1,4 @@
+GitPython
+ruamel.yaml
+Jinja2
+cerberus
