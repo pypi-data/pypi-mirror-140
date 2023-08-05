@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Name_factor.egg-info/PKG-INFO
+Name_factor.egg-info/SOURCES.txt
+Name_factor.egg-info/dependency_links.txt
+Name_factor.egg-info/top_level.txt
+Name_factor.egg-info/zip-safe
+module_name/__init__.py
+module_name/main.py
