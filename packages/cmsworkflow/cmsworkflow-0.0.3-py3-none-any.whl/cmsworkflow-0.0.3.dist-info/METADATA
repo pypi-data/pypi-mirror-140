@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cmsworkflow
+Version: 0.0.3
+Summary: A high level package which provides tools to get useful information about CMS workflows
+Home-page: https://github.com/pypa/sampleproject
+Author: Hasan Ozturk, Hamed Bakhshiansohi
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
