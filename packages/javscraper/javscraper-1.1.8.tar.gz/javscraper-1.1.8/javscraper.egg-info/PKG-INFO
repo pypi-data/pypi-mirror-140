@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: javscraper
+Version: 1.1.8
+Summary: Python library used to help scrape JAV sites.
+Home-page: https://github.com/hibikidesu/javscraper
+Author: Hibiki
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+License-File: COPYING
+
+UNKNOWN
+
