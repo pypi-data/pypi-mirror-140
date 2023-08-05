@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: komle-plus
+Version: 0.3.0
+Summary: A python library to help with WITSML v1.4.1.1 and v2.0
+Home-page: https://github.com/kle043/komle
+Author: kle043
+Author-email: pale.dorg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: suds-py3 (==1.4.5)
+Requires-Dist: PyXB-X (==1.2.6)
+Requires-Dist: requests (==2.27.1)
+
+UNKNOWN
+
