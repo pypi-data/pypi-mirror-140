@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: querius
+Version: 0.1.9
+Summary: Client library for connecting with the Querius API
+Home-page: https://getquerius.com
+License: Apache-2.0
+Keywords: querius,bigquery,query,optimisation,api
+Author: Theo Windebank
+Author-email: theo@getquerius.com
+Requires-Python: >=3.7,<=3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: google-cloud-secret-manager
+Requires-Dist: google-auth (>=1.5,<2.0)
+Requires-Dist: google-cloud-bigquery (>=1.5.0,<=2)
+Requires-Dist: google-cloud-secret-manager (>=2.0.0,<3.0.0); extra == "google-cloud-secret-manager"
+Requires-Dist: loguru (>=0.5,<0.6)
+Requires-Dist: timeout-decorator (>=0.5.0,<0.6.0)
+Project-URL: Repository, https://github.com/querius-dev/client
+Description-Content-Type: text/markdown
+
+Querius Client
+---
+Client code for interacting with the [Querius](https://getquerius.com) API.
+
+### Install
+```bash
+pip install querius
+```
+
+### Usage
+
+```python
+from google.cloud import bigquery
+from querius import QueriusClient, patch_bq_client_with_querius_client
+from pathlib import Path
+
+bq_client = bigquery.Client()
+q_client = QueriusClient.from_service_account_path(
+    api_url="<querius-url>",
+    service_account_path=Path('path/to/key.json'),
+    customer_id="<querius-customer-id>",
+    timeout_seconds=2
+)
+patch_bq_client_with_querius_client(bq_client, q_client)
+```
