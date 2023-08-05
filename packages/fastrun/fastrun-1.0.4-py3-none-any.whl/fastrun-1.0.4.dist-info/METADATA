@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: fastrun
+Version: 1.0.4
+Summary: 快速启动-android稳定性测试
+Home-page: https://gitee.com/dongfang_rising_test/test-tool.git
+Author: liFeng
+Author-email: 960158047@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2 (==3.0.3)
+Requires-Dist: pyyaml (==5.4.1)
+
+
+###快速启动-android稳定性测试
+
+----
+- 前置条件：需安装`adb`环境、需安装`adb`环境、需安装`adb`环境，重要事情说三遍
+-----
+- 简介： 
+结合字节跳动提供的开源工具`Fastbot_android`, 进行封装了基础版的稳定性测试，
+只需要数据线连接电脑，并确定在`cmd`中输入`adb devices`，看到了手机设备号，即可运行命令。
+------
+- 命令参数
+```commandline
+必选参数:
+  startproject              创建工程目录
+  
+  run                       运行
+  
+    package 包名，必须输入，不然会抛出异常
+    
+    -m 10 是设置分钟，置默认为5分钟
+    
+    -t 500 是设置点击事件，默认设置为500
+    
+    -log 是捕获异常日志，布尔值，默认是true
+    
+    -module 是获取自定义文件中的模块名称
+```
+-----
+- 基础教程
+1. 新建一个工程目录`testProject`，在`Terminal`中输入命令创建脚手架：
+```commandline
+PS E:\testProject> py -m fastrun startproject demo          
+2022-02-23 11:27:43.369 | INFO     | fastrun.scaffold:create_folder:29 - 创建文件夹：demo
+2022-02-23 11:27:43.371 | INFO     | fastrun.scaffold:create_file:38 - 创建文件：demo\__init__.py
+2022-02-23 11:27:43.372 | INFO     | fastrun.scaffold:create_folder:29 - 创建文件夹：demo\modules
+2022-02-23 11:27:43.373 | INFO     | fastrun.scaffold:create_file:38 - 创建文件：demo\modules\fastrun.json
+2022-02-23 11:27:43.374 | INFO     | fastrun.scaffold:create_file:38 - 创建文件：demo\debugfeng.py 
+```
+2. 在`Terminal`中输入运行命令
+
+默认是运行 5 分钟点击 500 下
+```commandline
+PS E:\testProject> py -m fastrun run "包名" -module "login"(login是fastrun.json文件中的模块名)
+```
+默认是运行 10 分钟点击 1000 下
+```commandline
+PS E:\testProject> py -m fastrun run "包名" -m 10 -t 100 -module "login"(login是fastrun.json文件中的模块名)
+```
+默认是运行 5 分钟点击 500 下，并不要记录日志
+```commandline
+PS E:\testProject> py -m fastrun run "包名" -module login -l flase
+```
+3. 设置自定义文件`fastrun.json`文件
+
+`json`文件固定格式：
+```json
+{
+  "login": [
+    {
+      "prob": 1,
+      "activity": "xz.act.app_v4.account.LoginActivityV4",
+      "times": 1,
+      "actions": [
+        {
+          "xpath": "//*[@resource-id='xz.act:id/tv_account']",
+          "action": "CLICK",
+          "throttle": 2000
+        }
+      ]
+    },
+    {
+      "prob": 1,
+      "activity": "xz.act.app_v4.account.AccountLoginActivityV4",
+      "times": 1,
+      "actions": [
+        {
+          "xpath": "//*[@resource-id='xz.act:id/et_select']",
+          "action": "CLICK",
+          "throttle": 2000
+        },
+        {
+          "xpath": "//*[@resource-id='xz.act:id/et_search']",
+          "action": "CLICK",
+          "text": "*测试酒店",
+          "clearText": false,
+          "throttle": 2000
+        },
+        {
+          "xpath": "//*[@resource-id='xz.act:id/group_name']",
+          "action": "CLICK",
+          "throttle": 2000
+        }
+      ]
+    }
+  ]
+}
+```
+|
+
+后续会在增加黑白名单操作，敬请期待。。。
+
+-----
+-----
+###严正声明
+
+- 作者只提供工具使用，当用户使用其他用途时，对用户或者他人造成任何形式的损失和伤害，该工具不承担任何责任。
+
+- 本协议的一切解释权与修改权归本工具所有。
+

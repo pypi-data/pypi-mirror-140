@@ -1,0 +1,16 @@
+fastrun/__init__.py,sha256=jftDQJlgq6tEVUdYRWjmkpsmgK8oL5YD1Qt1xSMSi1A,370
+fastrun/__main__.py,sha256=M3stG8QBeFW84I3mjlj0A5XqPY1YIl03K75MWna1sWA,226
+fastrun/android/__init__.py,sha256=GEoyyYz-GejH8EfFTjisW79_VLru1vHCJn0t3ttkkaI,165
+fastrun/android/handle.py,sha256=WAR53AWPMga12c8UbNW0gmn5kBEDomE6XmJR1OHkb9M,1497
+fastrun/android/script.py,sha256=0CvGSRXJQWOvc-e8_06uytlVZBEIMf3k8jXWGVD2qy0,1917
+fastrun/common/__init__.py,sha256=GEoyyYz-GejH8EfFTjisW79_VLru1vHCJn0t3ttkkaI,165
+fastrun/common/cli.py,sha256=qRBL_GFsuI4D06rKopPEoTzGuejpSbi8GIOn1QJ9mHs,1102
+fastrun/common/command.py,sha256=ZBusR5oO4_rBqjsTjWeA2mN8FCvAoJ8Rg6QMZSubbVE,2910
+fastrun/common/custom.py,sha256=M_XX-SwCxWPO_EhmhCZ18iUG94ABAjZD9V9SC3MCr54,3553
+fastrun/common/process.py,sha256=aLD1hnpln4os0zvDNakWza6XKTrjcHbjd-I-r3EwCsg,163
+fastrun/common/scaffold.py,sha256=km6-tHMyXaiVjnQDlNaGdLIXzTOZ5PePOnTVrGqCoco,3460
+fastrun-1.0.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+fastrun-1.0.4.dist-info/METADATA,sha256=1cc4NkV2fkfAFZFaswzfqfGDRK1N8fZikvayC0Ymq-M,3937
+fastrun-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastrun-1.0.4.dist-info/top_level.txt,sha256=36DttMyocwj1Kf0jhdPRnIWHRWVNRPl33rMONJ4mMnE,8
+fastrun-1.0.4.dist-info/RECORD,,
