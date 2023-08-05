@@ -1,0 +1,8 @@
+setup.py
+soda_sql_athena.egg-info/PKG-INFO
+soda_sql_athena.egg-info/SOURCES.txt
+soda_sql_athena.egg-info/dependency_links.txt
+soda_sql_athena.egg-info/requires.txt
+soda_sql_athena.egg-info/top_level.txt
+sodasql/dialects/athena_dialect.py
+sodasql/scan/aws_credentials.py
