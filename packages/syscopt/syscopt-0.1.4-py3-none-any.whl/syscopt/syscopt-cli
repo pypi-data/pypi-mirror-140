@@ -1,0 +1,59 @@
+#! /home/alireza/projects/syscopt/venv/bin/python
+import os.path
+
+import click
+from mpi4py.MPI import COMM_WORLD
+
+from cli_handlers import delete_files
+from solver.syscopt import SysCopt
+
+target_folders = ["logfiles", "inputs", "output", "bin"]
+root = os.path.dirname(__file__)
+
+
+@click.group()
+def cli():
+    pass
+
+
+@click.command()
+@click.argument('inputname')
+@click.argument('settingsname', default = os.path.join(root, 'settings/settings.dis.json'))
+@click.version_option(
+    SysCopt.get_version(),
+    message = f"system of cardinality optimization\ncurrent version: {SysCopt.get_version()}"
+)
+def run(inputname: str, settingsname: str):
+    mpi_communicator = COMM_WORLD
+    solver = SysCopt(comm = mpi_communicator, input_file = inputname, settings_file = settingsname)
+    solver.solve()
+
+
+@click.command()
+@click.option('-l', is_flag = True, help = 'clean system logfiles')
+@click.option('-i', is_flag = True, help = 'clean system input json files')
+@click.option('-o', is_flag = True, help = 'clean system output json files')
+@click.option('-b', is_flag = True, help = 'clean system bin files')
+def clean(l: bool, i: bool, o: bool, b: bool):
+    if (not l) and (not i) and (not o) and (not b):
+        l, i, o, b = True, True, True, True
+    root_dir = os.path.dirname(__file__)
+    if l:
+        target_folder = os.path.join(root_dir, target_folders[0])
+        delete_files(target_folder)
+    if i:
+        target_folder = os.path.join(root_dir, target_folders[1])
+        delete_files(target_folder)
+    if o:
+        target_folder = os.path.join(root_dir, target_folders[2])
+        delete_files(target_folder)
+    if b:
+        target_folder = os.path.join(root_dir, target_folders[3])
+        delete_files(target_folder)
+
+
+cli.add_command(run)
+cli.add_command(clean)
+
+if __name__ == '__main__':
+    cli()
