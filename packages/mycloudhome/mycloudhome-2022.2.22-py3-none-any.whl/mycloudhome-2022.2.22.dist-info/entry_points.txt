@@ -1,0 +1,3 @@
+[console_scripts]
+mycloudhome = mycloudhome.main:cli
+

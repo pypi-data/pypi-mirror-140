@@ -1,0 +1,14 @@
+mycloudhome/__init__.py,sha256=MvdTjILFnhrJImBAUCGfUc1gn9LCeLiPtLheDFBVr4c,147
+mycloudhome/auth.py,sha256=7oqP3VndlvImbPoZ3Tg-g9hEOM4DV3mpZufWUIsEhx8,2448
+mycloudhome/configure.py,sha256=Pf1N3wzGdWNHBzAxpyQ2dzr7X1Jg-BQQ3XW4T4iqEtk,3102
+mycloudhome/device.py,sha256=scJlBMwuB7AhI4QEBORLmUKVC9gPibEjo_NoQpMYCUA,1525
+mycloudhome/filemanagement.py,sha256=03t1UUas-qQnh_TgpGazzzyN1Mxywq4Gz4v8adPMp5w,6229
+mycloudhome/main.py,sha256=Zdil5cv8HMlc_txVYUgRr_YASv4_CHy7tTE8lALmGO8,4497
+mycloudhome/resumablefiles.py,sha256=JvR1B9c8fwFhxw0Ykytvq65imP70oLDe_vHncBQrag8,2197
+mycloudhome/utils.py,sha256=Ycvex58IJcbNRGc9wQ_VtNiGKb8JPJ4cR1U-djJGfek,2202
+mycloudhome-2022.2.22.dist-info/LICENSE,sha256=s5N4PJ6bm7gDI_EUMg9yZB85n0x5gGNsyM_rIXqzUvM,1063
+mycloudhome-2022.2.22.dist-info/METADATA,sha256=Eg7NZwzhi17d9kKRSREZ2-wTWlTG7ezMJODuYEQAip0,2368
+mycloudhome-2022.2.22.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mycloudhome-2022.2.22.dist-info/entry_points.txt,sha256=JUUj3uMjAbQmAvKDQEV-xwTrAWh4TLUXZQca1Aq_Y8M,54
+mycloudhome-2022.2.22.dist-info/top_level.txt,sha256=GeL2h-_3cSEkoLX3bU2iBZl-JgIH4dc-XllWXmciulI,12
+mycloudhome-2022.2.22.dist-info/RECORD,,
