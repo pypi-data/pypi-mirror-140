@@ -1,0 +1,14 @@
+[console_scripts]
+karp-cli=karp.cliapp.main:cliapp
+
+[karp.clicommands]
+entries=karp.cliapp.subapp_entries
+entry_repo=karp.cliapp.subapp_entry_repo
+resource=karp.cliapp.subapp_resource
+
+[karp.infrastructure]
+es6=karp.infrastructure.elasticsearch6
+jwt=karp.infrastructure.jwt
+sql=karp.infrastructure.sql
+testing=karp.infrastructure.testing
+
