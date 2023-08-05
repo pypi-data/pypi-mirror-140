@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: backintime
+Version: 0.6.1.1
+Summary: Trading strategies backtesting
+Home-page: https://github.com/akim-mukhtarov/backintime
+Author: Akim Mukhtarov
+Author-email: akim.int80h@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+UNKNOWN
+
