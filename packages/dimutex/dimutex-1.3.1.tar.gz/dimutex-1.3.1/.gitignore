@@ -1,0 +1,9 @@
+.*_cache/
+__pycache__/
+/.venvs/
+/.task/
+/.benchmarks/
+/.coverage
+/htmlcov/
+/coverage.xml
+/dist/
