@@ -1,0 +1,16 @@
+scratchip/__init__.py,sha256=7A_s1BGzww24nhc5m5gg3bK27_8m7Cafk6rpEtWKpdM,110
+scratchip/main.py,sha256=NpJD6BFu4voisH7M7n8htgLLR9vI79G2BrldcKQ-R40,14227
+scratchip/version.py,sha256=6zor-BCpmDAy7nEOyPit3ZZh7lLgTO1lbSWTcT89wh8,137
+scratchip/assets/Demo.scala,sha256=sK3Bq4fKVgvSQPgFnxtK1gvLHzK2HzRsTd-z9jp_-Nk,459
+scratchip/assets/build.sc,sha256=NeoUlt_N9sLDkD7n36j_9gpjUJXaTGxVv9HlFvcm9CA,566
+scratchip/assets/chisel.mk,sha256=NAT7cul6eicPKm3TY1TzuR7sznk7fts-w-gvmUoF5WA,170
+scratchip/assets/default.yaml,sha256=zdk9yIK7rXQouUDEHwwf1xDhJW_oCKxtYIVOHU61gjE,199
+scratchip/assets/gitignore,sha256=56Eic7JCPL-rt81wIa-do91pLOM0WPqe-HU3djLc5EU,18
+scratchip/assets/project.mk,sha256=lJH20xMBuXX4mdCv-kwStyPJ8zpzgJg9E2_m6USoGYY,67
+scratchip/assets/project.yml,sha256=RycUB1RhjRfiKUWNRi7j4P2ZB7tCdfSgyGZAD6oFqyk,526
+scratchip-0.3.dist-info/LICENSE,sha256=5uqk_820kN6IIx3VC165dYdM_6Mz4CJe3RgI5wyn1lg,11345
+scratchip-0.3.dist-info/METADATA,sha256=PR5vRDVrgqEB9CJTfMb3XhYQwiV1FvmI4cQgPiPiNW4,462
+scratchip-0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scratchip-0.3.dist-info/entry_points.txt,sha256=t7L7iYtCpdvxmkB9jHekRuPBqJ4V70Di4Z-22wX4T7g,51
+scratchip-0.3.dist-info/top_level.txt,sha256=1KqUWf5njN30jRNvYJvGGVwBHdbeLiC_cW0g0FfuaHo,10
+scratchip-0.3.dist-info/RECORD,,

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: scratchip
+Version: 0.3
+Summary: ScratChip is a framework that can help to build your Chisel and Verilog/Systemverilog project easier.
+Home-page: https://github.com/jlsemi
+Author: Leway Colin@JLSemi
+Author-email: colinlin@jlsemi.com
+License: Apache-2.0 License
+Keywords: verilog,chisel,rtl
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: mill-bin
+Requires-Dist: mill-cache
+Requires-Dist: pyyaml
+
+UNKNOWN
+
