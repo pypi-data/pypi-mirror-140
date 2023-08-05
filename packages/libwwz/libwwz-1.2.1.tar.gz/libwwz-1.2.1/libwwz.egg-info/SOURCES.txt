@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+libwwz/__init__.py
+libwwz/plot_methods.py
+libwwz/wwz.py
+libwwz.egg-info/PKG-INFO
+libwwz.egg-info/SOURCES.txt
+libwwz.egg-info/dependency_links.txt
+libwwz.egg-info/requires.txt
+libwwz.egg-info/top_level.txt
