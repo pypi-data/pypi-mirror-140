@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Testcase for unittesting BDownloader &#8212; bdownload 0.1.3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">bdownload 0.1.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Testcase for unittesting <code class="docutils literal notranslate"><span class="pre">BDownloader</span></code></a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="testcase-for-unittesting-bdownloader">
+<span id="test-bdownloader"></span><h1>Testcase for unittesting <code class="docutils literal notranslate"><span class="pre">BDownloader</span></code><a class="headerlink" href="#testcase-for-unittesting-bdownloader" title="Permalink to this headline">¶</a></h1>
+<p>Download: <a class="reference download internal" download="" href="_downloads/23b29ce79bb68545eb417b297ed62b60/test_bdownloader.py"><code class="xref download docutils literal notranslate"><span class="pre">test_bdownloader.py</span></code></a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">import</span> <span class="nn">tempfile</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">hashlib</span>
+<span class="kn">from</span> <span class="nn">shutil</span> <span class="kn">import</span> <span class="n">rmtree</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">sample</span><span class="p">,</span> <span class="n">seed</span>
+
+<span class="kn">import</span> <span class="nn">bdownload</span>
+
+
+<span class="n">FILES</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;aria2-x86_64-linux.tar.xz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/Jesseatgao/aria2-patched-static-build/releases/download/1.35.0-win-linux/aria2-x86_64-linux.tar.xz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;d02dfdab7517e78a257f4403e502f1acc2a795e4&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;mkvtoolnix-x86_64-linux.tar.xz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/Jesseatgao/MKVToolNix-static-builds/releases/download/v47.0.0-mingw-w64-win32v1.0/mkvtoolnix-x86_64-linux.tar.xz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;19b0c7fc20839693cc0929f092f74820783a9750&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;aria2-x86_64-win.zip&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/Jesseatgao/aria2-patched-static-build/releases/download/1.35.0-win-linux/aria2-x86_64-win.zip&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;16835c5329450de7a172412b09464d36c549b493&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;mkvtoolnix-x86_64-win.zip&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/Jesseatgao/MKVToolNix-static-builds/releases/download/v47.0.0-mingw-w64-win32v1.0/mkvtoolnix-x86_64-win.zip&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;14e9b8eab421fcb225f16191834070217244cf53&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;aria2-i686-win.zip&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/Jesseatgao/aria2-patched-static-build/releases/download/1.35.0-win-linux/aria2-i686-win.zip&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;8dc7dc0c25489594d052acfc4415a536b6c2f257&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;mkvtoolnix-i686-win.zip&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/Jesseatgao/MKVToolNix-static-builds/releases/download/v47.0.0-mingw-w64-win32v1.0/mkvtoolnix-i686-win.zip&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;80e6d011a053855570471f76e0d1fb8e44af8a78&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;aria2-i686-linux.tar.xz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/Jesseatgao/aria2-patched-static-build/releases/download/1.35.0-win-linux/aria2-i686-linux.tar.xz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;441af1b5ce83eda9c7a62319b1dfa3fd790882e5&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;mkvtoolnix-i686-linux.tar.xz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/Jesseatgao/MKVToolNix-static-builds/releases/download/v47.0.0-mingw-w64-win32v1.0/mkvtoolnix-i686-linux.tar.xz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;b917e191106f5b6c0a2186dcaf8599a5481e30b9&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+
+<span class="n">NUM_SAMPLES</span> <span class="o">=</span> <span class="mi">3</span>
+
+
+<span class="k">class</span> <span class="nc">TestBDownloader</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">setUpClass</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="bp">cls</span><span class="o">.</span><span class="n">tmp_dir</span> <span class="o">=</span> <span class="n">tempfile</span><span class="o">.</span><span class="n">mkdtemp</span><span class="p">(</span><span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;bdl-&#39;</span><span class="p">)</span>
+
+        <span class="n">seed</span><span class="p">()</span>
+        <span class="bp">cls</span><span class="o">.</span><span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">FILES</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">FILES</span><span class="p">)),</span> <span class="n">NUM_SAMPLES</span><span class="p">)]</span>
+        <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">files</span><span class="p">:</span>
+            <span class="n">f</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">tmp_dir</span><span class="p">,</span> <span class="s1">&#39;notyet&#39;</span><span class="p">,</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">])</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">tearDownClass</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="n">rmtree</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">tmp_dir</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_bdownloader_download</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">fi</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">files</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">file_path</span> <span class="o">=</span> <span class="n">fi</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">]</span>
+        <span class="n">file_url</span> <span class="o">=</span> <span class="n">fi</span><span class="p">[</span><span class="s1">&#39;url&#39;</span><span class="p">]</span>
+        <span class="n">file_sha1_exp</span> <span class="o">=</span> <span class="n">fi</span><span class="p">[</span><span class="s1">&#39;sha1&#39;</span><span class="p">]</span>
+
+        <span class="n">ua</span> <span class="o">=</span> <span class="s1">&#39;Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148&#39;</span>
+
+        <span class="k">with</span> <span class="n">bdownload</span><span class="o">.</span><span class="n">BDownloader</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">user_agent</span><span class="o">=</span><span class="n">ua</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="s1">&#39;mill&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">downloader</span><span class="p">:</span>
+            <span class="n">downloader</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">file_url</span><span class="p">)</span>
+            <span class="n">downloader</span><span class="o">.</span><span class="n">wait_for_all</span><span class="p">()</span>
+
+        <span class="n">hashf</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha1</span><span class="p">()</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">hashf</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+        <span class="n">file_sha1</span> <span class="o">=</span> <span class="n">hashf</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">file_sha1_exp</span><span class="p">,</span> <span class="n">file_sha1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_bdownloader_downloads</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">fs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">files</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">file_urls</span> <span class="o">=</span> <span class="p">[(</span><span class="n">f</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">])</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">fs</span><span class="p">]</span>
+
+        <span class="k">with</span> <span class="n">bdownload</span><span class="o">.</span><span class="n">BDownloader</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="s1">&#39;mill&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">downloader</span><span class="p">:</span>
+            <span class="n">downloader</span><span class="o">.</span><span class="n">downloads</span><span class="p">(</span><span class="n">file_urls</span><span class="p">)</span>
+            <span class="n">downloader</span><span class="o">.</span><span class="n">wait_for_all</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">fs</span><span class="p">:</span>
+            <span class="n">hashf</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha1</span><span class="p">()</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
+                <span class="n">hashf</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">fd</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+            <span class="n">file_sha1</span> <span class="o">=</span> <span class="n">hashf</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s2">&quot;sha1&quot;</span><span class="p">],</span> <span class="n">file_sha1</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/test_bdownloader.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">bdownload 0.1.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Testcase for unittesting <code class="docutils literal notranslate"><span class="pre">BDownloader</span></code></a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Jesse Gao.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    </div>
+  </body>
+</html>

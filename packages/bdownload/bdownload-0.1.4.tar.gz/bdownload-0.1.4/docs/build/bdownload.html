@@ -1,0 +1,1444 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>bdownload package &#8212; bdownload 0.1.3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="bdownload - A multi-threaded and multi-source file downloading library" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="bdownload - A multi-threaded and multi-source file downloading library"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">bdownload 0.1.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">bdownload package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="bdownload-package">
+<h1>bdownload package<a class="headerlink" href="#bdownload-package" title="Permalink to this headline">¶</a></h1>
+<section id="module-bdownload.download">
+<span id="bdownload-download-module"></span><h2>bdownload.download module<a class="headerlink" href="#module-bdownload.download" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">BDownloader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_workers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_split_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1048576</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">102400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proxy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cookies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_agent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mill'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_pools</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool_maxsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_forcelist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resumption_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">continuation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referrer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_certificate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ca_certificate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">certificate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The class for executing and managing download jobs.</p>
+<p>The context of the current downloading job is structured as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ctx = {
+    &quot;total_size&quot;: 2000,  # total size of all the to-be-downloaded files, maybe inaccurate due to chunked transfer encoding
+    &quot;accurate&quot;: True,  # Is `total_size` accurate?
+    &quot;orig_path_urls&quot;: [(&#39;file1&#39;, &#39;url1  url2    url3&#39;), (&#39;file2&#39;, &#39;url4 url5    url6&#39;)],  # originally added downloads,
+        # which don&#39;t necessarily correspond to `files` e.g. due to duplicate or interruption
+    &quot;file_cnt&quot;: 2,  # number of current downloading files
+    &quot;alt_files&quot;: [(&quot;full_path_to_file1&quot;, `ctx_file1_obj`), (&quot;full_path_to_file2&quot;, `ctx_file2_obj`)],  # flattened `files`
+    &quot;files&quot;:{
+        &quot;full_path_to_file1&quot;:{
+            &quot;length&quot;: 2000,  # 0 means &#39;unknown&#39;, i.e. file size can&#39;t be pre-determined through any one of provided URLs
+            &quot;progress&quot;: 0,  # `SUCCEEDED` downloaded bytes: initialized to 0, set to the last progress when
+                            # resuming and updated on completion (SUCCEEDED only!) of every task (`Future`)
+            &quot;last_progress&quot;: 0,  # CONSTANT: the loaded progress of last run upon resuming from interruption
+            &quot;downloaded&quot;: 0, # downloaded bytes: initialized to 0, set to the last progress when resuming
+                             # and updated on completion (SUCCEEDED, FAILED, CANCELLED) of every task (`Future`)
+            &quot;resumable&quot;: True,
+            &quot;resuming_from_intr&quot;: False,  # Are we resuming from keyboard interruption?
+            &quot;download_state&quot;: &quot;inprocess&quot;,
+            &quot;cancelled_on_exception&quot;: False,
+            &quot;futures&quot;: [future1, future2],
+            &quot;tsk_num&quot;: 2,  # number of the `ranges` and `futures`
+            &quot;orig_path_url&quot;: (&#39;file1&#39;, &#39;url1    url2    url3&#39;),  # (path, url) as a subparameter passed to :meth:`downloads`
+            &quot;path_url&quot;: (&#39;full_path_to_file1&#39;, &#39;url1    url2    url3&#39;),  # (full_pathname, active_URLs)
+            &quot;urls&quot;:{&quot;url1&quot;:{&quot;accept_ranges&quot;: &quot;bytes&quot;, &quot;refcnt&quot;: 1, &quot;interrupted&quot;: 2, &quot;succeeded&quot;: -5},
+                    &quot;url2&quot;:{&quot;accept_ranges&quot;: &quot;none&quot;, &quot;refcnt&quot;: 0, &quot;interrupted&quot;: 0, &quot;succeeded&quot;: 0},
+                    &quot;url3&quot;:{&quot;accept_ranges&quot;: &quot;bytes&quot;, &quot;refcnt&quot;: 1, &quot;interrupted&quot;: 0, &quot;succeeded&quot;: -2}},
+            &quot;ranges&quot;:{
+                &quot;bytes=0-999&quot;: {
+                    &quot;start&quot;: 0,  # start byte position
+                    &quot;end&quot;: 999,  # end byte position, None for &#39;unkown&#39;, see above
+                    &quot;offset&quot;: 0,  # current pointer position relative to &#39;start&#39;(i.e. 0)
+                    &quot;start_time&quot;: 0,
+                    &quot;rt_dl_speed&quot;: 0,  # x seconds interval
+                    &quot;download_state&quot;: &quot;inprocess&quot;,
+                   &quot;future&quot;: future1,
+                   &quot;url&quot;: [url1],
+                   &quot;alt_urls&quot;: {}
+                },
+                &quot;bytes=1000-1999&quot;: {
+                    &quot;start&quot;:1000,
+                    &quot;end&quot;:1999,
+                    &quot;offset&quot;: 0,  # current pointer position relative to &#39;start&#39;(i.e. 1000)
+                    &quot;start_time&quot;: 0,
+                    &quot;rt_dl_speed&quot;: 0,  # x seconds interval
+                    &quot;download_state&quot;: &quot;inprocess&quot;,
+                    &quot;future&quot;: future2,
+                    &quot;url&quot;: [url3],
+                    &quot;alt_urls&quot;: {}
+                }
+            }
+        },
+        &quot;full_path_to_file2&quot;:{
+        }
+    },
+    &quot;futures&quot;: {
+        future1: {&quot;file&quot;: &quot;full_path_to_file1&quot;, &quot;range&quot;: &quot;bytes=0-999&quot;},
+        future2: {&quot;file&quot;: &quot;full_path_to_file1&quot;, &quot;range&quot;: &quot;bytes=1000-1999&quot;}
+    }
+}
+</pre></div>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.CANCELLED">
+<span class="sig-name descname"><span class="pre">CANCELLED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'cancelled'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.CANCELLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.FAILED">
+<span class="sig-name descname"><span class="pre">FAILED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'failed'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.INPROCESS">
+<span class="sig-name descname"><span class="pre">INPROCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'inprocess'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.INPROCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.INPROCESS_EXT">
+<span class="sig-name descname"><span class="pre">INPROCESS_EXT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'.bdl'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.INPROCESS_EXT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.PENDING">
+<span class="sig-name descname"><span class="pre">PENDING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'pending'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.PENDING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.PROGRESS_BS_BAR">
+<span class="sig-name descname"><span class="pre">PROGRESS_BS_BAR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'bar'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.PROGRESS_BS_BAR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.PROGRESS_BS_MILL">
+<span class="sig-name descname"><span class="pre">PROGRESS_BS_MILL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'mill'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.PROGRESS_BS_MILL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.PROGRESS_BS_NONE">
+<span class="sig-name descname"><span class="pre">PROGRESS_BS_NONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'none'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.PROGRESS_BS_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.RESUM_PARTS_EXT">
+<span class="sig-name descname"><span class="pre">RESUM_PARTS_EXT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'.bdl.par'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.RESUM_PARTS_EXT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.SUCCEEDED">
+<span class="sig-name descname"><span class="pre">SUCCEEDED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'succeeded'</span></em><a class="headerlink" href="#bdownload.download.BDownloader.SUCCEEDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_workers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_split_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1048576</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">102400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proxy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cookies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_agent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mill'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_pools</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool_maxsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_forcelist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resumption_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">continuation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referrer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_certificate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ca_certificate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">certificate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and initialize a <a class="reference internal" href="#bdownload.download.BDownloader" title="bdownload.download.BDownloader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BDownloader</span></code></a> object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>max_workers</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The <cite>max_workers</cite> parameter specifies the number of the parallel downloading threads,
+whose default value is determined by <code class="docutils literal notranslate"><span class="pre">#num_of_processor</span> <span class="pre">*</span> <span class="pre">5</span></code> if set to <cite>None</cite>.</p></li>
+<li><p><strong>min_split_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – <cite>min_split_size</cite> denotes the size in bytes of file pieces split to be downloaded
+in parallel, which defaults to 1024*1024 bytes (i.e. 1MB).</p></li>
+<li><p><strong>chunk_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The <cite>chunk_size</cite> parameter specifies the chunk size in bytes of every http range request,
+which will take a default value of 1024*100 (i.e. 100KB) if not provided.</p></li>
+<li><p><strong>proxy</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The <cite>proxy</cite> supports both HTTP and SOCKS proxies in the form of <code class="docutils literal notranslate"><span class="pre">'http://[user:pass&#64;]host:port'</span></code>
+and <code class="docutils literal notranslate"><span class="pre">'socks5://[user:pass&#64;]host:port'</span></code>, respectively.</p></li>
+<li><p><strong>cookies</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a><em> or </em><em>CookieJar</em>) – If <cite>cookies</cite> needs to be set, it must either take the form of <code class="docutils literal notranslate"><span class="pre">'cookie_key=cookie_value'</span></code>,
+with multiple pairs separated by whitespace and/or semicolon if applicable, e.g. <code class="docutils literal notranslate"><span class="pre">'key1=val1</span> <span class="pre">key2=val2;key3=val3'</span></code>,
+be packed into a <code class="docutils literal notranslate"><span class="pre">dict</span></code>, or be an instance of <code class="docutils literal notranslate"><span class="pre">CookieJar</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">cookielib.CookieJar</span></code> for Python27,
+<code class="docutils literal notranslate"><span class="pre">http.cookiejar.CookieJar</span></code> for Python3.x or <code class="docutils literal notranslate"><span class="pre">RequestsCookieJar</span></code> from <code class="docutils literal notranslate"><span class="pre">requests</span></code>.</p></li>
+<li><p><strong>user_agent</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – When <cite>user_agent</cite> is not given, it will default to <code class="docutils literal notranslate"><span class="pre">'bdownload/VERSION'</span></code>, with <code class="docutils literal notranslate"><span class="pre">VERSION</span></code>
+being replaced by the package’s version number.</p></li>
+<li><p><strong>logger</strong> (<a class="reference external" href="https://docs.python.org/3/library/logging.html#logging.Logger" title="(in Python v3.10)"><em>logging.Logger</em></a>) – The <cite>logger</cite> parameter specifies an event logger. If <cite>logger</cite> is not <cite>None</cite>,
+it must be an object of class <a class="reference external" href="https://docs.python.org/3/library/logging.html#logging.Logger" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">logging.Logger</span></code></a> or of its customized subclass.  Otherwise,
+it will use a default module-level logger returned by <code class="docutils literal notranslate"><span class="pre">logging.getLogger(__name__)</span></code>.</p></li>
+<li><p><strong>progress</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <cite>progress</cite> determines the style of the progress bar displayed while downloading files.
+Possible values are <code class="docutils literal notranslate"><span class="pre">'mill'</span></code>, <code class="docutils literal notranslate"><span class="pre">'bar'</span></code> and <code class="docutils literal notranslate"><span class="pre">'none'</span></code>. <code class="docutils literal notranslate"><span class="pre">'mill'</span></code> is the default. To disable this
+feature, e.g. while scripting or multi-instanced, set it to <code class="docutils literal notranslate"><span class="pre">'none'</span></code>.</p></li>
+<li><p><strong>num_pools</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The <cite>num_pools</cite> parameter has the same meaning as <cite>num_pools</cite> in <code class="docutils literal notranslate"><span class="pre">urllib3.PoolManager</span></code>
+and will eventually be passed to it. Specifically, <cite>num_pools</cite> specifies the number of connection pools
+to cache.</p></li>
+<li><p><strong>pool_maxsize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – <cite>pool_maxsize</cite> will be passed to the underlying <code class="docutils literal notranslate"><span class="pre">requests.adapters.HTTPAdapter</span></code>.
+It specifies the maximum number of connections to save that can be reused in the urllib3 connection pool.</p></li>
+<li><p><strong>request_timeout</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em> or </em><em>2-tuple of float</em>) – The <cite>request_timeout</cite> parameter specifies the timeouts for the
+internal <code class="docutils literal notranslate"><span class="pre">requests</span></code> session. The timeout value(s) as a float or <code class="docutils literal notranslate"><span class="pre">(connect,</span> <span class="pre">read)</span></code> tuple is intended
+for both the <code class="docutils literal notranslate"><span class="pre">connect</span></code> and the <code class="docutils literal notranslate"><span class="pre">read</span></code> timeouts, respectively. If set to <code class="docutils literal notranslate"><span class="pre">None</span></code>, it will take a
+default value of <a class="reference internal" href="#bdownload.download.RequestsSessionWrapper.TIMEOUT" title="bdownload.download.RequestsSessionWrapper.TIMEOUT"><code class="xref py py-attr docutils literal notranslate"><span class="pre">RequestsSessionWrapper.TIMEOUT</span></code></a>.</p></li>
+<li><p><strong>request_retries</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – <p><cite>request_retries</cite> specifies the maximum number of retry attempts allowed on exceptions
+and interested status codes(i.e. <cite>status_forcelist</cite>) for the builtin Retry logic of <code class="docutils literal notranslate"><span class="pre">urllib3</span></code>. It will
+default to <a class="reference internal" href="#bdownload.download.URLLIB3_BUILTIN_RETRIES_ON_EXCEPTION" title="bdownload.download.URLLIB3_BUILTIN_RETRIES_ON_EXCEPTION"><code class="xref py py-const docutils literal notranslate"><span class="pre">URLLIB3_BUILTIN_RETRIES_ON_EXCEPTION</span></code></a> if not given.</p>
+<div class="admonition-notes admonition">
+<p class="admonition-title">Notes</p>
+<p>There are two retry mechanisms that jointly determine the total retries of a request. One is the
+above-mentioned Retry logic that is built into <code class="docutils literal notranslate"><span class="pre">urllib3</span></code>, and the other is the extended high-level
+retry factor that is meant to complement the builtin retry mechanism. The total retries is bounded by
+the following formula:</p>
+<p><cite>request_retries</cite> * (<a class="reference internal" href="#bdownload.download._requests_extended_retries_factor" title="bdownload.download._requests_extended_retries_factor"><code class="xref py py-data docutils literal notranslate"><span class="pre">_requests_extended_retries_factor</span></code></a> + 1)</p>
+<p>See <a class="reference internal" href="#bdownload.download.retry_requests" title="bdownload.download.retry_requests"><code class="xref py py-func docutils literal notranslate"><span class="pre">retry_requests()</span></code></a>, <a class="reference internal" href="#bdownload.download.RequestsSessionWrapper" title="bdownload.download.RequestsSessionWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">RequestsSessionWrapper</span></code></a> and <a class="reference internal" href="#bdownload.download.requests_retry_session" title="bdownload.download.requests_retry_session"><code class="xref py py-func docutils literal notranslate"><span class="pre">requests_retry_session()</span></code></a> for
+more details on the retry mechanisms.</p>
+</div>
+</p></li>
+<li><p><strong>status_forcelist</strong> (<em>set of int</em>) – <cite>status_forcelist</cite> specifies a set of HTTP status codes that a retry should
+be enforced on. The default set of status codes shall be <a class="reference internal" href="#bdownload.download.URLLIB3_RETRY_STATUS_CODES" title="bdownload.download.URLLIB3_RETRY_STATUS_CODES"><code class="xref py py-const docutils literal notranslate"><span class="pre">URLLIB3_RETRY_STATUS_CODES</span></code></a> if not given.</p></li>
+<li><p><strong>resumption_retries</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The <cite>resumption_retries</cite> parameter specifies the maximum allowable number of retries
+on error at resuming the interrupted download while streaming the request content. The default value of it
+is <a class="reference internal" href="#bdownload.download.REQUESTS_RETRIES_ON_STREAM_EXCEPTION" title="bdownload.download.REQUESTS_RETRIES_ON_STREAM_EXCEPTION"><code class="xref py py-const docutils literal notranslate"><span class="pre">REQUESTS_RETRIES_ON_STREAM_EXCEPTION</span></code></a> when not provided.</p></li>
+<li><p><strong>continuation</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – The <cite>continuation</cite> parameter specifies whether, if possible, to resume the partially
+downloaded files before, e.g. when the downloads had been terminated by the user by pressing <cite>Ctrl-C</cite>.
+When not present, it will default to <cite>True</cite>.</p></li>
+<li><p><strong>referrer</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <cite>referrer</cite> specifies an HTTP request header <code class="docutils literal notranslate"><span class="pre">Referer</span></code> that applies to all downloads.
+If set to <code class="docutils literal notranslate"><span class="pre">'*'</span></code>, the request URL shall be used as the referrer per download.</p></li>
+<li><p><strong>check_certificate</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – The <cite>check_certificate</cite> parameter specifies whether to verify the server’s TLS
+certificate or not. It defaults to <cite>True</cite>.</p></li>
+<li><p><strong>ca_certificate</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The <cite>ca_certificate</cite> parameter specifies a path to the preferred CA bundle file (.pem)
+or directory with certificates in PEM format of trusted CAs. If set to a path to a directory, the directory
+must have been processed using the <code class="docutils literal notranslate"><span class="pre">c_rehash</span></code> utility supplied with OpenSSL, according to <code class="docutils literal notranslate"><span class="pre">requests</span></code>.
+NB the cert files in the directory each only contain one CA certificate.</p></li>
+<li><p><strong>certificate</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a>) – <cite>certificate</cite> specifies a client certificate. It has the same meaning as that of
+<cite>cert</cite> in <code class="xref py py-meth docutils literal notranslate"><span class="pre">requests.request()</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.10)"><strong>ValueError</strong></a> – Raised when the <cite>cookies</cite> is of the <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> type and not in valid format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._backup_resumption_ctx">
+<span class="sig-name descname"><span class="pre">_backup_resumption_ctx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">the_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._backup_resumption_ctx"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._backup_resumption_ctx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Back up the necessary context of the unsuccessful download for resuming later.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>the_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file being downloaded.</p></li>
+<li><p><strong>ctx_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – The download context of the file <cite>the_file</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The resumption context for the file <cite>the_file</cite>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)">dict</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._build_ctx">
+<span class="sig-name descname"><span class="pre">_build_ctx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_urls</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._build_ctx"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._build_ctx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the context for downloading the file(s).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path_urls</strong> (<em>list of tuple</em>) – Paths and URLs for the file(s) to download, see <a class="reference internal" href="#bdownload.download.BDownloader.downloads" title="bdownload.download.BDownloader.downloads"><code class="xref py py-meth docutils literal notranslate"><span class="pre">downloads()</span></code></a> for details.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A 6-tuple of lists <code class="docutils literal notranslate"><span class="pre">'(active,</span> <span class="pre">active_orig,</span> <span class="pre">failed,</span> <span class="pre">failed_orig,</span> <span class="pre">existing,</span> <span class="pre">existing_orig)'</span></code>, where the
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>s <code class="docutils literal notranslate"><span class="pre">active</span></code> and <code class="docutils literal notranslate"><span class="pre">active_orig</span></code> contain the active <code class="docutils literal notranslate"><span class="pre">(path,</span> <span class="pre">url)</span></code>’s, converted and original
+respectively; <code class="docutils literal notranslate"><span class="pre">failed</span></code> and <code class="docutils literal notranslate"><span class="pre">failed_orig</span></code> contain the same <code class="docutils literal notranslate"><span class="pre">(path,</span> <span class="pre">url)</span></code>’s that are not downloadable;
+<code class="docutils literal notranslate"><span class="pre">existing</span></code> and <code class="docutils literal notranslate"><span class="pre">existing_orig</span></code> contain the downloads whose desired files already exist out there.</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#bdownload.download.BDownloaderException" title="bdownload.download.BDownloaderException"><strong>BDownloaderException</strong></a> – Raised when the termination or cancellation flag has been set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._build_ctx_internal">
+<span class="sig-name descname"><span class="pre">_build_ctx_internal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._build_ctx_internal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._build_ctx_internal" title="Permalink to this definition">¶</a></dt>
+<dd><p>The helper method that actually does the build of the downloading context of the file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file to download.</p></li>
+<li><p><strong>url</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The URL referencing the target file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A 3-tuple <code class="docutils literal notranslate"><span class="pre">'(downloadable,</span> <span class="pre">(path,</span> <span class="pre">url),</span> <span class="pre">(orig_path,</span> <span class="pre">orig_url))'</span></code>, where the <code class="docutils literal notranslate"><span class="pre">downloadable</span></code>
+indicates whether the desired file is downloadable, unavailable or existing by <code class="docutils literal notranslate"><span class="pre">True</span></code>, <code class="docutils literal notranslate"><span class="pre">False</span></code> or
+<code class="docutils literal notranslate"><span class="pre">None</span></code> respectively, <code class="docutils literal notranslate"><span class="pre">(path,</span> <span class="pre">url)</span></code> denotes the converted full pathname and the URL that consists
+only of active URLs, and <code class="docutils literal notranslate"><span class="pre">(orig_path,</span> <span class="pre">orig_url)</span></code> denotes the originally input pathname and URL.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)">tuple</a></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#bdownload.download.BDownloaderException" title="bdownload.download.BDownloaderException"><strong>BDownloaderException</strong></a> – Raised when the termination or cancellation flag has been set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._calc_completed">
+<span class="sig-name descname"><span class="pre">_calc_completed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._calc_completed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._calc_completed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the already downloaded bytes of the files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The size in bytes of the downloaded pieces.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._cancel_all_on_interrupted">
+<span class="sig-name descname"><span class="pre">_cancel_all_on_interrupted</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._cancel_all_on_interrupted"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._cancel_all_on_interrupted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel all the downloading tasks when receiving the <code class="docutils literal notranslate"><span class="pre">SIGINT</span></code> signal or the QUIT command.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._finalize_on_interrupted_py2">
+<span class="sig-name descname"><span class="pre">_finalize_on_interrupted_py2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._finalize_on_interrupted_py2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._finalize_on_interrupted_py2" title="Permalink to this definition">¶</a></dt>
+<dd><p>When interrupted under Python2.x, perform state transitions manually and act accordingly.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._get_alt_urls">
+<span class="sig-name descname"><span class="pre">_get_alt_urls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._get_alt_urls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._get_alt_urls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get alternative URLs from the multiple sources of the file to resume downloading from.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file to be downloaded.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The alternative source URLs sorted by descending succeeded downloads, then by ascending interrupted
+and references.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._get_fname_from_hdr">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_get_fname_from_hdr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content_disposition</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._get_fname_from_hdr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._get_fname_from_hdr" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Get the file name from the HTTP response header.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>content_disposition</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – Content of the <code class="docutils literal notranslate"><span class="pre">Content-Disposition</span></code> field of the response header.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The extracted file name.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
+</dd>
+</dl>
+<div class="admonition-references admonition">
+<p class="admonition-title">References</p>
+<p><a class="reference external" href="https://stackoverflow.com/questions/37060344">https://stackoverflow.com/questions/37060344</a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._get_fname_from_url">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_get_fname_from_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._get_fname_from_url"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._get_fname_from_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a file name from the download URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>url</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – A URL referencing the intended file.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The automatically generated file name.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._get_remote_file_multipart">
+<span class="sig-name descname"><span class="pre">_get_remote_file_multipart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req_range</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._get_remote_file_multipart"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._get_remote_file_multipart" title="Permalink to this definition">¶</a></dt>
+<dd><p>The worker thread body for downloading an assigned piece of a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file to be downloaded.</p></li>
+<li><p><strong>req_range</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – A chunk of the file <cite>path_name</cite> as a range request of the form <code class="docutils literal notranslate"><span class="pre">'bytes=start-end'</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="#bdownload.download.BDownloaderException" title="bdownload.download.BDownloaderException"><strong>BDownloaderException</strong></a> – Raised when connect timeouts, read timeouts, failed connections or bad status
+    codes occurred and the retries is exhausted.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#EnvironmentError" title="(in Python v3.10)"><strong>EnvironmentError</strong></a> – Raised when file operations failed.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._get_remote_file_singlewhole">
+<span class="sig-name descname"><span class="pre">_get_remote_file_singlewhole</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req_range</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._get_remote_file_singlewhole"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._get_remote_file_singlewhole" title="Permalink to this definition">¶</a></dt>
+<dd><p>The worker thread body for downloading the whole of a file, as opposed to <a class="reference internal" href="#bdownload.download.BDownloader._get_remote_file_multipart" title="bdownload.download.BDownloader._get_remote_file_multipart"><code class="xref py py-meth docutils literal notranslate"><span class="pre">_get_remote_file_multipart()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file to be downloaded.</p></li>
+<li><p><strong>req_range</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The whole chunk of the file <cite>path_name</cite> as a mock range request of the form <code class="docutils literal notranslate"><span class="pre">'bytes=0-None'</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="#bdownload.download.BDownloaderException" title="bdownload.download.BDownloaderException"><strong>BDownloaderException</strong></a> – Raised when connect timeouts, read timeouts, failed connections or bad status
+    codes occurred and the retries is exhausted.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#EnvironmentError" title="(in Python v3.10)"><strong>EnvironmentError</strong></a> – Raised when file operations failed.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._is_all_done">
+<span class="sig-name descname"><span class="pre">_is_all_done</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._is_all_done"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._is_all_done" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if all the tasks have completed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if all the <code class="docutils literal notranslate"><span class="pre">Future</span></code>s have been done, meaning that all the files have finished downloading,
+whether successfully or not; <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._is_download_resumable">
+<span class="sig-name descname"><span class="pre">_is_download_resumable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._is_download_resumable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._is_download_resumable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the current download of the file can be resumed from the point of last interruption through retrying.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file being downloaded.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if the server accepts range requests for the file, otherwise <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._is_parallel_downloadable">
+<span class="sig-name descname"><span class="pre">_is_parallel_downloadable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._is_parallel_downloadable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._is_parallel_downloadable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the file can be downloaded in parallel, i.e. using multi-threads to download the file pieces simultaneously.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file to be downloaded.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if the file length is known and the server accepts its range requests, otherwise <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._load_resumption_ctx">
+<span class="sig-name descname"><span class="pre">_load_resumption_ctx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">the_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._load_resumption_ctx"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._load_resumption_ctx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load from the resumption parts file to restore the download context.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>the_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file to download.</p></li>
+<li><p><strong>ctx_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – The download context of the file <cite>the_file</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A 2-tuple <code class="docutils literal notranslate"><span class="pre">(is_resuming,</span> <span class="pre">resumption_ctx)</span></code>, where <code class="docutils literal notranslate"><span class="pre">is_resuming</span></code> indicates whether the
+download is resuming from last interruption, and if this is the case (<code class="docutils literal notranslate"><span class="pre">True</span></code>), <code class="docutils literal notranslate"><span class="pre">resumption_ctx</span></code> holds
+the successfully loaded resumption context.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)">bool</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)">dict</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._mgmnt_task">
+<span class="sig-name descname"><span class="pre">_mgmnt_task</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._mgmnt_task"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._mgmnt_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>The management thread body.</p>
+<p>This thread manages the downloading process of the whole job queue, currently including state management only.
+When all the tasks have been done, it signals the waiting thread and exits immediately.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._on_cancelled">
+<span class="sig-name descname"><span class="pre">_on_cancelled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">the_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._on_cancelled"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._on_cancelled" title="Permalink to this definition">¶</a></dt>
+<dd><p>When transitioning to the <cite>CANCELLED</cite> state, remove the empty, obsolete files.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._on_failed">
+<span class="sig-name descname"><span class="pre">_on_failed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">the_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._on_failed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._on_failed" title="Permalink to this definition">¶</a></dt>
+<dd><p>When transitioning to the <cite>FAILED</cite> state, save the resumption ctx or remove the intermediate files.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._on_succeeded">
+<span class="sig-name descname"><span class="pre">_on_succeeded</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">the_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._on_succeeded"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._on_succeeded" title="Permalink to this definition">¶</a></dt>
+<dd><p>When transitioning to the <cite>SUCCEEDED</cite> state, convert from in-process to finished file and do the cleanup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._pick_file_url">
+<span class="sig-name descname"><span class="pre">_pick_file_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._pick_file_url"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._pick_file_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select one URL from the multiple sources of the file to download from.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file to be downloaded.</p>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>list</em> – A list of URL(s) to download the file from using a strategy of <code class="docutils literal notranslate"><span class="pre">Round</span> <span class="pre">Robin</span></code>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._progress_task">
+<span class="sig-name descname"><span class="pre">_progress_task</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._progress_task"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._progress_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>The thread body for showing the progress of the downloading tasks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._rename_existing_file">
+<span class="sig-name descname"><span class="pre">_rename_existing_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">full_pathname</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._rename_existing_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._rename_existing_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rename the file or directory with the given pathname if present.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>full_pathname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file to check for duplicate.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._result">
+<span class="sig-name descname"><span class="pre">_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._result" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Return both the succeeded and failed downloads when all done or interrupted by user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Same as that returned by <a class="reference internal" href="#bdownload.download.BDownloader.wait_for_all" title="bdownload.download.BDownloader.wait_for_all"><code class="xref py py-meth docutils literal notranslate"><span class="pre">wait_for_all()</span></code></a>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>tuple of list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._state_mgmnt">
+<span class="sig-name descname"><span class="pre">_state_mgmnt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._state_mgmnt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._state_mgmnt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform the state-related operations of file downloading.</p>
+<p>This method updates the download status of the files and their related chunks when the associated worker threads
+completed, either because of finished without error, raised on exception or cancelled intentionally.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._submit_dl_tasks">
+<span class="sig-name descname"><span class="pre">_submit_dl_tasks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_urls</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._submit_dl_tasks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._submit_dl_tasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Submit the download tasks of the files to the thread pool.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path_urls</strong> (<em>list of tuple</em>) – The meaning and format of the <cite>path_urls</cite> is similar to the parameter for
+<a class="reference internal" href="#bdownload.download.BDownloader.downloads" title="bdownload.download.BDownloader.downloads"><code class="xref py py-meth docutils literal notranslate"><span class="pre">downloads()</span></code></a>.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._topmost_missing_dir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_topmost_missing_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._topmost_missing_dir"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._topmost_missing_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the topmost non-existent directory for a given path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – A path to the directory to save the downloaded file in.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The uppermost directory that is missing from the <cite>path</cite>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._wait_py2">
+<span class="sig-name descname"><span class="pre">_wait_py2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._wait_py2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._wait_py2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for all the jobs done on Python 2.x</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader._wait_py3">
+<span class="sig-name descname"><span class="pre">_wait_py3</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader._wait_py3"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader._wait_py3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for all the jobs done on Python 3.x and newer</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.calc_req_ranges">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calc_req_ranges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req_len</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.calc_req_ranges"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.calc_req_ranges" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split the request <cite>req_len</cite> into chunks of the size <cite>split_size</cite> starting from the point <cite>req_start</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>req_len</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The length of the request to split.</p></li>
+<li><p><strong>split_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The size of each split chunk.</p></li>
+<li><p><strong>req_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The start position to split from.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The list of ranges in the form of 2-tuple <code class="docutils literal notranslate"><span class="pre">'(start</span> <span class="pre">,end)'</span></code>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.cancel">
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keyboard_interrupt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.cancel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.cancel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel all the download jobs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>keyboard_interrupt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – Specifies whether or not the user hit the interrupt key (e.g. Ctrl-C).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.close"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shut down and perform the cleanup.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.download">
+<span class="sig-name descname"><span class="pre">download</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.download"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.download" title="Permalink to this definition">¶</a></dt>
+<dd><p>Submit a single downloading job to the downloading queue.</p>
+<p>This method is simply a wrapper of the method <a class="reference internal" href="#bdownload.download.BDownloader.downloads" title="bdownload.download.BDownloader.downloads"><code class="xref py py-meth docutils literal notranslate"><span class="pre">downloads()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The full path name of the file to be downloaded.</p></li>
+<li><p><strong>url</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The URL referencing the target file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+<p>:raises Same as in <a class="reference internal" href="#bdownload.download.BDownloader.downloads" title="bdownload.download.BDownloader.downloads"><code class="xref py py-meth docutils literal notranslate"><span class="pre">downloads()</span></code></a>.:</p>
+<div class="admonition-notes admonition">
+<p class="admonition-title">Notes</p>
+<p>The limitation on the method and the <cite>path_name</cite> parameter herein is the same as in <a class="reference internal" href="#bdownload.download.BDownloader.downloads" title="bdownload.download.BDownloader.downloads"><code class="xref py py-meth docutils literal notranslate"><span class="pre">downloads()</span></code></a>.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.downloads">
+<span class="sig-name descname"><span class="pre">downloads</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_urls</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.downloads"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.downloads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Submit multiple downloading jobs at a time to the downloading queue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path_urls</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a>s) – <cite>path_urls</cite> accepts a list of tuples of the form <code class="docutils literal notranslate"><span class="pre">(path,</span> <span class="pre">url)</span></code>,
+where <code class="docutils literal notranslate"><span class="pre">path</span></code> should be a pathname, optionally prefixed with absolute or relative paths, and <code class="docutils literal notranslate"><span class="pre">url</span></code> should
+be a URL string, which may consist of multiple TAB-separated URLs pointing to the same file.
+A valid <cite>path_urls</cite>, for example, could be [(‘/opt/files/bar.tar.bz2’, <code class="docutils literal notranslate"><span class="pre">'https://foo.cc/bar.tar.bz2'</span></code>),
+(‘./sanguoshuowen.pdf’, <code class="docutils literal notranslate"><span class="pre">'https://bar.cc/sanguoshuowen.pdf\thttps://foo.cc/sanguoshuowen.pdf'</span></code>),
+(‘/<strong>to</strong>/<strong>be</strong>/created/’, <code class="docutils literal notranslate"><span class="pre">'https://flash.jiefang.rmy/lc-cl/gaozhuang/chelsia/rockspeaker.tar.gz'</span></code>),
+(‘/path/to/<strong>existing</strong>-dir’, <code class="docutils literal notranslate"><span class="pre">'https://ghosthat.bar/foo/puretonecone81.xz\thttps://tpot.horn/foo/pure</span>
+<span class="pre">tonecone81.xz\thttps://hawkhill.bar/foo/puretonecone81.xz'</span></code>)].</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#bdownload.download.BDownloaderException" title="bdownload.download.BDownloaderException"><strong>BDownloaderException</strong></a> – Raised when the downloads were interrupted, e.g. by calling <a class="reference internal" href="#bdownload.download.BDownloader.cancel" title="bdownload.download.BDownloader.cancel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">cancel()</span></code></a>
+    in a <code class="docutils literal notranslate"><span class="pre">SIGINT</span></code> signal handler, in the process of submitting the download requests.</p>
+</dd>
+</dl>
+<div class="admonition-notes admonition">
+<p class="admonition-title">Notes</p>
+<p>The method is not thread-safe, which means it should not be called at the same time in multiple threads
+with one instance.</p>
+<p>When multi-instanced (e.g. one instance per thread), the file paths specified in one instance should not
+overlap those in another to avoid potential race conditions. File loss may occur, for example, if a failed
+download task in one instance tries to delete a directory that is being accessed by some download tasks in
+other instances.
+However, this limitation doesn’t apply to the file paths specified in a same instance.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.list_split">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">list_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">li</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.list_split"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.list_split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Break a list into chunks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>li</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – The list to split.</p></li>
+<li><p><strong>chunk_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The size of the resultant chunk list.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>list</em> – The next chunk of the split list <cite>li</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.raise_on_interrupted">
+<span class="sig-name descname"><span class="pre">raise_on_interrupted</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.raise_on_interrupted"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.raise_on_interrupted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raise a customized exception signaling that the downloads have been terminated by the user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#bdownload.download.BDownloaderException" title="bdownload.download.BDownloaderException"><strong>BDownloaderException</strong></a> – Raised when the termination or cancellation flag has been set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.result">
+<span class="sig-name descname"><span class="pre">result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the final download status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>0 for success, and -1 failure.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.results">
+<span class="sig-name descname"><span class="pre">results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.results" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get both the succeeded and failed downloads when all done or interrupted by user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Same as that returned by <a class="reference internal" href="#bdownload.download.BDownloader.wait_for_all" title="bdownload.download.BDownloader.wait_for_all"><code class="xref py py-meth docutils literal notranslate"><span class="pre">wait_for_all()</span></code></a>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>tuple of list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.BDownloader.wait_for_all">
+<span class="sig-name descname"><span class="pre">wait_for_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#BDownloader.wait_for_all"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloader.wait_for_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for all the downloading jobs to complete.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A 2-tuple of lists <code class="docutils literal notranslate"><span class="pre">'(succeeded,</span> <span class="pre">failed)'</span></code>. The first list <code class="docutils literal notranslate"><span class="pre">succeeded</span></code> contains the
+originally passed <code class="docutils literal notranslate"><span class="pre">(path,</span> <span class="pre">url)</span></code>s that finished successfully, while the second list <code class="docutils literal notranslate"><span class="pre">failed</span></code> contains
+the raised and cancelled ones.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>tuple of list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="bdownload.download.BDownloaderException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">BDownloaderException</span></span><a class="reference internal" href="_modules/bdownload/download.html#BDownloaderException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.BDownloaderException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>The exception indicating that an error occurred while executing the download tasks.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="bdownload.download.COOKIE_STR_REGEX">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">COOKIE_STR_REGEX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">re.compile('\\s*(?:[^,;</span> <span class="pre">=]+=[^,;</span> <span class="pre">]+\\s*(?:$|\\s+|;\\s*))+\\s*')</span></em><a class="headerlink" href="#bdownload.download.COOKIE_STR_REGEX" title="Permalink to this definition">¶</a></dt>
+<dd><p>A compiled regular expression object used to match the cookie string in the form of key/value pairs.</p>
+<p>See also <a class="reference internal" href="#bdownload.download.BDownloader.__init__" title="bdownload.download.BDownloader.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BDownloader.__init__()</span></code></a> for more details about <cite>cookies</cite>.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">MillProgress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">every</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'eta:'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elapsed_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'elapsed:'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#MillProgress"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.MillProgress" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Print a mill while progressing.</p>
+<p>This class is adapted from <code class="docutils literal notranslate"><span class="pre">clint.textui.progress</span></code>, with added support for unknown <cite>expected_size</cite>.</p>
+<div class="admonition-references admonition">
+<p class="admonition-title">References</p>
+<p><a class="reference external" href="https://github.com/kennethreitz-archive/clint/blob/master/clint/textui/progress.py">https://github.com/kennethreitz-archive/clint/blob/master/clint/textui/progress.py</a></p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.ETA_INTERVAL">
+<span class="sig-name descname"><span class="pre">ETA_INTERVAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#bdownload.download.MillProgress.ETA_INTERVAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.ETA_SMA_WINDOW">
+<span class="sig-name descname"><span class="pre">ETA_SMA_WINDOW</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#bdownload.download.MillProgress.ETA_SMA_WINDOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.MILL_CHARS">
+<span class="sig-name descname"><span class="pre">MILL_CHARS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['|',</span> <span class="pre">'/',</span> <span class="pre">'-',</span> <span class="pre">'\\']</span></em><a class="headerlink" href="#bdownload.download.MillProgress.MILL_CHARS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.MILL_TEMPLATE">
+<span class="sig-name descname"><span class="pre">MILL_TEMPLATE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'{}</span>&#160; <span class="pre">{}</span>&#160; <span class="pre">{:,d}/{:&lt;}</span>&#160; <span class="pre">{}</span>&#160; <span class="pre">{}</span> <span class="pre">{}\r'</span></em><a class="headerlink" href="#bdownload.download.MillProgress.MILL_TEMPLATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.NULL_EXPECTED_DISP">
+<span class="sig-name descname"><span class="pre">NULL_EXPECTED_DISP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'--'</span></em><a class="headerlink" href="#bdownload.download.MillProgress.NULL_EXPECTED_DISP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.NULL_EXPECTED_WIDTH">
+<span class="sig-name descname"><span class="pre">NULL_EXPECTED_WIDTH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#bdownload.download.MillProgress.NULL_EXPECTED_WIDTH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.STREAM">
+<span class="sig-name descname"><span class="pre">STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;clint.packages.colorama.ansitowin32.StreamWrapper</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#bdownload.download.MillProgress.STREAM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.done">
+<span class="sig-name descname"><span class="pre">done</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#MillProgress.done"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.MillProgress.done" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.format_time">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">format_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seconds</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#MillProgress.format_time"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.MillProgress.format_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.mill_char">
+<span class="sig-name descname"><span class="pre">mill_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">progress</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#MillProgress.mill_char"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.MillProgress.mill_char" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.MillProgress.show">
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">progress</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#MillProgress.show"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.MillProgress.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="bdownload.download.PICKLE_PROTOCOL_NUMBER">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">PICKLE_PROTOCOL_NUMBER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#bdownload.download.PICKLE_PROTOCOL_NUMBER" title="Permalink to this definition">¶</a></dt>
+<dd><p>The highest pickle protocol number valid for both Python 2.x and Python 3.x.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="bdownload.download.REQUESTS_EXTENDED_RETRIES_FACTOR">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">REQUESTS_EXTENDED_RETRIES_FACTOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#bdownload.download.REQUESTS_EXTENDED_RETRIES_FACTOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default number of retries factor for <a class="reference internal" href="#bdownload.download._requests_extended_retries_factor" title="bdownload.download._requests_extended_retries_factor"><code class="xref py py-data docutils literal notranslate"><span class="pre">_requests_extended_retries_factor</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="bdownload.download.REQUESTS_RETRIES_ON_STREAM_EXCEPTION">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">REQUESTS_RETRIES_ON_STREAM_EXCEPTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#bdownload.download.REQUESTS_RETRIES_ON_STREAM_EXCEPTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default number of retries on exceptions raised while streaming the request content.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="bdownload.download.RETRY_BACKOFF_FACTOR">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">RETRY_BACKOFF_FACTOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.1</span></em><a class="headerlink" href="#bdownload.download.RETRY_BACKOFF_FACTOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default retry backoff factor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bdownload.download.RequestsSessionWrapper">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">RequestsSessionWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proxy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cookies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_agent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referrer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verify</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">requester_cb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#RequestsSessionWrapper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.RequestsSessionWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">requests.sessions.Session</span></code></p>
+<p>Subclass of the <code class="docutils literal notranslate"><span class="pre">requests.Session</span></code> class with extended <cite>retry-on-exception</cite> behavior for the <code class="docutils literal notranslate"><span class="pre">get</span></code> method.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The retry mechanism here is independent from that built into <code class="docutils literal notranslate"><span class="pre">urllib3</span></code> (see <a class="reference internal" href="#bdownload.download._requests_extended_retries_factor" title="bdownload.download._requests_extended_retries_factor"><code class="xref py py-data docutils literal notranslate"><span class="pre">_requests_extended_retries_factor</span></code></a>
+and <a class="reference internal" href="#bdownload.download.retry_requests" title="bdownload.download.retry_requests"><code class="xref py py-func docutils literal notranslate"><span class="pre">retry_requests()</span></code></a>). That is, the decorated retry attempts will be triggered whenever the <code class="docutils literal notranslate"><span class="pre">get</span></code> method
+raised on some <code class="docutils literal notranslate"><span class="pre">requests.RequestException</span></code> or for any bad status code, regardless of whether or not the builtin
+Retry of <code class="docutils literal notranslate"><span class="pre">urllib3</span></code> is enabled. Nevertheless, they together determine the number of the total retries.
+See <a class="reference internal" href="#bdownload.download.requests_retry_session" title="bdownload.download.requests_retry_session"><code class="xref py py-func docutils literal notranslate"><span class="pre">requests_retry_session()</span></code></a> for more information about their cooperation.</p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bdownload.download.RequestsSessionWrapper.TIMEOUT">
+<span class="sig-name descname"><span class="pre">TIMEOUT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(3.05,</span> <span class="pre">6)</span></em><a class="headerlink" href="#bdownload.download.RequestsSessionWrapper.TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>the connect timeout value defaults to 3.05 seconds, and the read timeout 6 seconds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Default timeouts</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.RequestsSessionWrapper.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proxy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cookies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_agent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referrer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verify</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">requester_cb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#RequestsSessionWrapper.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.RequestsSessionWrapper.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the <code class="docutils literal notranslate"><span class="pre">Session</span></code> instance.</p>
+<p>The HTTP header <code class="docutils literal notranslate"><span class="pre">User-Agent</span></code> of the session is set to a default value of <cite>bdownload/VERSION</cite>, if not provided,
+with <cite>VERSION</cite> being replaced by the package’s version number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>timeout</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em> or </em><em>2-tuple of float</em>) – Timeout value(s) as a float or <code class="docutils literal notranslate"><span class="pre">(connect,</span> <span class="pre">read)</span></code> tuple for both the
+<code class="docutils literal notranslate"><span class="pre">connect</span></code> and the <code class="docutils literal notranslate"><span class="pre">read</span></code> timeouts, respectively. If set to <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">()</span></code>, whether the
+whole or any item thereof, it will take a default value from <a class="reference internal" href="#bdownload.download.RequestsSessionWrapper.TIMEOUT" title="bdownload.download.RequestsSessionWrapper.TIMEOUT"><code class="xref py py-attr docutils literal notranslate"><span class="pre">TIMEOUT</span></code></a>, accordingly.</p></li>
+<li><p><strong>proxy</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – Same as for <a class="reference internal" href="#bdownload.download.BDownloader.__init__" title="bdownload.download.BDownloader.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BDownloader.__init__()</span></code></a>.</p></li>
+<li><p><strong>cookies</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a><em> or </em><em>CookieJar</em>) – Same as for <a class="reference internal" href="#bdownload.download.BDownloader.__init__" title="bdownload.download.BDownloader.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BDownloader.__init__()</span></code></a>.</p></li>
+<li><p><strong>user_agent</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – Same as for <a class="reference internal" href="#bdownload.download.BDownloader.__init__" title="bdownload.download.BDownloader.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BDownloader.__init__()</span></code></a>.</p></li>
+<li><p><strong>referrer</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – Same as for <a class="reference internal" href="#bdownload.download.BDownloader.__init__" title="bdownload.download.BDownloader.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BDownloader.__init__()</span></code></a>.</p></li>
+<li><p><strong>verify</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – Same as for <code class="xref py py-meth docutils literal notranslate"><span class="pre">requests.request()</span></code>.</p></li>
+<li><p><strong>cert</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a>) – Same as for <code class="xref py py-meth docutils literal notranslate"><span class="pre">requests.request()</span></code>.</p></li>
+<li><p><strong>requester_cb</strong> (<em>func</em>) – The callback function provided by the downloader that uses the instantiated
+session object as the HTTP(S) requester. It will get called when making an HTTP GET request.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.RequestsSessionWrapper._build_cookiejar_from_kvp">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_build_cookiejar_from_kvp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key_values</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#RequestsSessionWrapper._build_cookiejar_from_kvp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.RequestsSessionWrapper._build_cookiejar_from_kvp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a CookieJar from cookies in the form of key/value pairs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>key_values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The cookies must take the form of <code class="docutils literal notranslate"><span class="pre">'cookie_key=cookie_value'</span></code>, with multiple pairs separated
+by whitespace and/or semicolon if applicable, e.g. <code class="docutils literal notranslate"><span class="pre">'key1=val1</span> <span class="pre">key2=val2;</span> <span class="pre">key3=val3'</span></code>.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The built CookieJar for <code class="docutils literal notranslate"><span class="pre">requests</span></code> sessions.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">requests.cookies.RequestsCookieJar</span></code></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.10)"><strong>ValueError</strong></a> – Raised when the cookies string <cite>key_values</cite> is not in valid format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bdownload.download.RequestsSessionWrapper.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#RequestsSessionWrapper.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.RequestsSessionWrapper.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper around <code class="docutils literal notranslate"><span class="pre">requests.Session</span></code>’s <cite>get</cite> method decorated with the <a class="reference internal" href="#bdownload.download.retry_requests" title="bdownload.download.retry_requests"><code class="xref py py-func docutils literal notranslate"><span class="pre">retry_requests()</span></code></a> decorator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> – URL for the file to download from.</p></li>
+<li><p><strong>**kwargs</strong> – Same arguments as that <code class="docutils literal notranslate"><span class="pre">requests.Session.get</span></code> takes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The response to the HTTP <code class="docutils literal notranslate"><span class="pre">GET</span></code> request.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">requests.Response</span></code></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#bdownload.download.BDownloaderException" title="bdownload.download.BDownloaderException"><strong>BDownloaderException</strong></a> – Raised when the termination or cancellation flag has been set, for example,
+    if <code class="xref py py-attr docutils literal notranslate"><span class="pre">RequestsSessionWrapper.requester_cb</span></code> is initialized to <a class="reference internal" href="#bdownload.download.BDownloader.raise_on_interrupted" title="bdownload.download.BDownloader.raise_on_interrupted"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BDownloader.raise_on_interrupted()</span></code></a>.</p></li>
+<li><p><strong>ExceptionByRequesterCB</strong> – Same exception(s) as that raised by <code class="xref py py-attr docutils literal notranslate"><span class="pre">RequestsSessionWrapper.requester_cb</span></code>, if any.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="bdownload.download.URLLIB3_BUILTIN_RETRIES_ON_EXCEPTION">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">URLLIB3_BUILTIN_RETRIES_ON_EXCEPTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#bdownload.download.URLLIB3_BUILTIN_RETRIES_ON_EXCEPTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default number of retries on exception set through <code class="docutils literal notranslate"><span class="pre">urllib3</span></code>’s <cite>Retry</cite> mechanism.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="bdownload.download.URLLIB3_RETRY_STATUS_CODES">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">URLLIB3_RETRY_STATUS_CODES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({413,</span> <span class="pre">429,</span> <span class="pre">500,</span> <span class="pre">502,</span> <span class="pre">503,</span> <span class="pre">504})</span></em><a class="headerlink" href="#bdownload.download.URLLIB3_RETRY_STATUS_CODES" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default status codes to retry on intended for the underlying <code class="docutils literal notranslate"><span class="pre">urllib3</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set" title="(in Python v3.10)">set</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.download._cpu_count">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">_cpu_count</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#_cpu_count"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download._cpu_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple wrapper around the <code class="docutils literal notranslate"><span class="pre">cpu_count()</span></code> for escaping the <cite>NotImplementedError</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The number of CPUs in the system. Return <cite>None</cite> if not obtained.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="bdownload.download._requests_extended_retries_factor">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">_requests_extended_retries_factor</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#bdownload.download._requests_extended_retries_factor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of retries that complements and extends the builtin <cite>Retry</cite> mechanism of <code class="docutils literal notranslate"><span class="pre">urllib3</span></code>.</p>
+<p>This global variable is meant for the decorator <a class="reference internal" href="#bdownload.download.retry_requests" title="bdownload.download.retry_requests"><code class="xref py py-func docutils literal notranslate"><span class="pre">retry_requests()</span></code></a>, and its value can be modified through the
+module level function <a class="reference internal" href="#bdownload.download.set_requests_retries_factor" title="bdownload.download.set_requests_retries_factor"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_requests_retries_factor()</span></code></a>. It is initialized to <a class="reference internal" href="#bdownload.download.REQUESTS_EXTENDED_RETRIES_FACTOR" title="bdownload.download.REQUESTS_EXTENDED_RETRIES_FACTOR"><code class="xref py py-const docutils literal notranslate"><span class="pre">REQUESTS_EXTENDED_RETRIES_FACTOR</span></code></a>
+by default, and usually you don’t want to change it.</p>
+<p>Together with <code class="docutils literal notranslate"><span class="pre">urllib3</span></code>’s builtin retry logic, they determine the total number of the retries on exceptions and bad
+status codes at requests for downloading. For more details on the retry mechanisms, see <a class="reference internal" href="#bdownload.download.requests_retry_session" title="bdownload.download.requests_retry_session"><code class="xref py py-func docutils literal notranslate"><span class="pre">requests_retry_session()</span></code></a>.</p>
+<div class="admonition-notes admonition">
+<p class="admonition-title">Notes</p>
+<p>Don’t mix these two retry mechanisms up with the retries at failed connections while streaming the request content.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.download.requests_retry_session">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">requests_retry_session</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">builtin_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backoff_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_forcelist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_pools</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool_maxsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#requests_retry_session"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.requests_retry_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a session object of the class <a class="reference internal" href="#bdownload.download.RequestsSessionWrapper" title="bdownload.download.RequestsSessionWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">RequestsSessionWrapper</span></code></a> by default.</p>
+<p>Aside from the retry mechanism implemented by the wrapper decorator, the created session also leverages the built-in
+retries bound to <code class="docutils literal notranslate"><span class="pre">urllib3</span></code>. When both of them are enabled, they cooperate to determine the total retry attempts.
+The worst-case retries is determined using the following formula:</p>
+<blockquote>
+<div><p><cite>builtin_retries</cite> * (<a class="reference internal" href="#bdownload.download._requests_extended_retries_factor" title="bdownload.download._requests_extended_retries_factor"><code class="xref py py-data docutils literal notranslate"><span class="pre">_requests_extended_retries_factor</span></code></a> + 1)</p>
+</div></blockquote>
+<p>which applies to all the exceptions and those status codes that fall into the <cite>status_forcelist</cite>. For other status
+codes, the maximum retries shall be <a class="reference internal" href="#bdownload.download._requests_extended_retries_factor" title="bdownload.download._requests_extended_retries_factor"><code class="xref py py-data docutils literal notranslate"><span class="pre">_requests_extended_retries_factor</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>builtin_retries</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Maximum number of retry attempts allowed on errors and interested status codes, which will
+apply to the retry logic of the underlying <code class="docutils literal notranslate"><span class="pre">urllib3</span></code>. If set to <cite>None</cite> or <code class="docutils literal notranslate"><span class="pre">0</span></code>, it will default to
+<code class="xref py py-const docutils literal notranslate"><span class="pre">URLLIB3_RETRIES_ON_EXCEPTION</span></code>.</p></li>
+<li><p><strong>backoff_factor</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – The backoff factor to apply between retries.</p></li>
+<li><p><strong>status_forcelist</strong> (<em>set of int</em>) – A set of HTTP status codes that a retry should be enforced on. The default status
+forcelist shall be <a class="reference internal" href="#bdownload.download.URLLIB3_RETRY_STATUS_CODES" title="bdownload.download.URLLIB3_RETRY_STATUS_CODES"><code class="xref py py-const docutils literal notranslate"><span class="pre">URLLIB3_RETRY_STATUS_CODES</span></code></a> if not given.</p></li>
+<li><p><strong>session</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">requests.Session</span></code>) – An instance of the class <code class="docutils literal notranslate"><span class="pre">requests.Session</span></code> or its customized subclass.
+When not provided, it will use <a class="reference internal" href="#bdownload.download.RequestsSessionWrapper" title="bdownload.download.RequestsSessionWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">RequestsSessionWrapper</span></code></a> to create by default.</p></li>
+<li><p><strong>num_pools</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The number of connection pools to cache, which has the same meaning as <cite>num_pools</cite> in
+<code class="docutils literal notranslate"><span class="pre">urllib3.PoolManager</span></code> and will eventually be passed to it.</p></li>
+<li><p><strong>pool_maxsize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The maximum number of connections to save that can be reused in the <code class="docutils literal notranslate"><span class="pre">urllib3</span></code> connection
+pool, which will be passed to the underlying <code class="docutils literal notranslate"><span class="pre">requests.adapters.HTTPAdapter</span></code>.</p></li>
+<li><p><strong>**kwargs</strong> – Same arguments as that <a class="reference internal" href="#bdownload.download.RequestsSessionWrapper.__init__" title="bdownload.download.RequestsSessionWrapper.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">RequestsSessionWrapper.__init__()</span></code></a> takes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The session instance with retry capability.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">requests.Session</span></code></p>
+</dd>
+</dl>
+<div class="admonition-references admonition">
+<p class="admonition-title">References</p>
+<p><a class="reference external" href="https://www.peterbe.com/plog/best-practice-with-retries-with-requests">https://www.peterbe.com/plog/best-practice-with-retries-with-requests</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.download.retry_requests">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">retry_requests</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exceptions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backoff_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#retry_requests"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.retry_requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>A decorator that retries calling the wrapped <code class="docutils literal notranslate"><span class="pre">requests</span></code>’ function using an exponential backoff on exception.</p>
+<p>The retry attempt will be activated in the event of <cite>exceptions</cite> being caught and for all the bad status codes (i.e.
+codes ranging from 400 to 600).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>exceptions</strong> (<a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Exception</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Exception</span></code></a>s) – The exceptions to check against.</p></li>
+<li><p><strong>backoff_factor</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – The backoff factor to apply between retries.</p></li>
+<li><p><strong>logger</strong> (<a class="reference external" href="https://docs.python.org/3/library/logging.html#logging.Logger" title="(in Python v3.10)"><em>logging.Logger</em></a>) – An event logger.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The wrapper function.</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>exceptions</strong> – Re-raise the last caught exception when retries is exhausted.</p>
+</dd>
+</dl>
+<div class="admonition-notes admonition">
+<p class="admonition-title">Notes</p>
+<p>This function has an external dependency on the global variable <a class="reference internal" href="#bdownload.download._requests_extended_retries_factor" title="bdownload.download._requests_extended_retries_factor"><code class="xref py py-data docutils literal notranslate"><span class="pre">_requests_extended_retries_factor</span></code></a>, whose
+value can be changed through the function <a class="reference internal" href="#bdownload.download.set_requests_retries_factor" title="bdownload.download.set_requests_retries_factor"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_requests_retries_factor()</span></code></a>. Also, it should be greater than
+<code class="docutils literal notranslate"><span class="pre">0</span></code>, thus allowing the decorated method to retry at least once to cover the edge cases of exceptions and bad
+status codes.</p>
+</div>
+<div class="admonition-references admonition">
+<p class="admonition-title">References</p>
+<p>[1] <a class="reference external" href="http://www.saltycrane.com/blog/2009/11/trying-out-retry-decorator-python/">http://www.saltycrane.com/blog/2009/11/trying-out-retry-decorator-python/</a></p>
+<p>[2] <a class="reference external" href="https://en.wikipedia.org/wiki/Exponential_backoff">https://en.wikipedia.org/wiki/Exponential_backoff</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.download.set_requests_retries_factor">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">set_requests_retries_factor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">retries</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#set_requests_retries_factor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.set_requests_retries_factor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the retries factor for the decorator <a class="reference internal" href="#bdownload.download.retry_requests" title="bdownload.download.retry_requests"><code class="xref py py-func docutils literal notranslate"><span class="pre">retry_requests()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>retries</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Number of retries when a decorated method of <code class="docutils literal notranslate"><span class="pre">requests</span></code> raised an exception or returned any bad
+status code. It should take a value of at least <code class="docutils literal notranslate"><span class="pre">1</span></code>, or else nothing changes.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.download.unquote_unicode">
+<span class="sig-prename descclassname"><span class="pre">bdownload.download.</span></span><span class="sig-name descname"><span class="pre">unquote_unicode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/download.html#unquote_unicode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.download.unquote_unicode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unquote a percent-encoded string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>string</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – A %xx- and %uxxxx- encoded string.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The unquoted unicode string.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
+</dd>
+</dl>
+<div class="admonition-references admonition">
+<p class="admonition-title">References</p>
+<p><a class="reference external" href="https://stackoverflow.com/questions/300445">https://stackoverflow.com/questions/300445</a></p>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-bdownload.cli">
+<span id="bdownload-cli-module"></span><h2>bdownload.cli module<a class="headerlink" href="#module-bdownload.cli" title="Permalink to this headline">¶</a></h2>
+<p>This module provides the entry point <cite>main</cite> for the command line utility <code class="docutils literal notranslate"><span class="pre">bdownload</span></code>.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.cli._cmd_quit_handler">
+<span class="sig-prename descclassname"><span class="pre">bdownload.cli.</span></span><span class="sig-name descname"><span class="pre">_cmd_quit_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bdownloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/cli.html#_cmd_quit_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.cli._cmd_quit_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>The handler for the signals <code class="docutils literal notranslate"><span class="pre">SIGTERM</span></code>, <code class="docutils literal notranslate"><span class="pre">SIGABRT</span></code>, <code class="docutils literal notranslate"><span class="pre">SIGHUP</span></code> and <code class="docutils literal notranslate"><span class="pre">SIGBREAK</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bdownloader</strong> (<a class="reference internal" href="#bdownload.download.BDownloader" title="bdownload.download.BDownloader"><em>BDownloader</em></a>) – The <code class="xref py py-obj docutils literal notranslate"><span class="pre">BDownloader</span></code> instance acting as the file downloader.</p></li>
+<li><p><strong>signum</strong> – The signal number being one of the possible values as <code class="docutils literal notranslate"><span class="pre">signal.SIGTERM</span></code>, <code class="docutils literal notranslate"><span class="pre">signal.SIGABRT</span></code>,
+<code class="docutils literal notranslate"><span class="pre">signal.SIGHUP</span></code>, or <code class="docutils literal notranslate"><span class="pre">signal.SIGBREAK</span></code>.</p></li>
+<li><p><strong>frame</strong> – The current stack frame when the signal <code class="docutils literal notranslate"><span class="pre">SIGINT</span></code> is received.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.cli._dec_raw_tab_separated_urls">
+<span class="sig-prename descclassname"><span class="pre">bdownload.cli.</span></span><span class="sig-name descname"><span class="pre">_dec_raw_tab_separated_urls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/cli.html#_dec_raw_tab_separated_urls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.cli._dec_raw_tab_separated_urls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode a <em>raw</em> URL string that may consist of multiple escaped TAB-separated URLs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>url</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – URL for the file to be downloaded, which might be TAB-separated composite URL pointing to the same file.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Decoded URL.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ArgumentTypeError</strong> – Raised when <cite>url</cite> contains URL(s) that don’t conform to the format “http[s]://[user:pass&#64;]foo.bar[*]”.</p>
+</dd>
+</dl>
+<div class="admonition-examples admonition">
+<p class="admonition-title">Examples</p>
+<dl class="simple">
+<dt>Examples of the parameter <cite>url</cite> include:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'https://fakewebsite-01.com/downloads/soulbody4ct.pdf\thttps://fakewebsite-02.com/archives/soulbody4ct.pdf'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'https://fakewebsite-01.com/downloads/ipcress.docx</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">https://fakewebsite-02.com/archives/ipcress.docx'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'https://tianchengren:öp€nsasimi&#64;i.louder.ss\thttps://fangxun.xiaoqing.sunmoon.xue'</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="admonition-references admonition">
+<p class="admonition-title">References</p>
+<p>[1] <a class="reference external" href="https://stackoverflow.com/questions/1885181/">https://stackoverflow.com/questions/1885181/</a></p>
+<p>[2] <a class="reference external" href="https://stackoverflow.com/questions/34145686/">https://stackoverflow.com/questions/34145686/</a></p>
+<p>[3] <a class="reference external" href="https://stackoverflow.com/questions/161738/">https://stackoverflow.com/questions/161738/</a></p>
+<p>[4] <a class="reference external" href="https://github.com/django/django/blob/master/django/core/validators.py">https://github.com/django/django/blob/master/django/core/validators.py</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.cli._interrupt_handler">
+<span class="sig-prename descclassname"><span class="pre">bdownload.cli.</span></span><span class="sig-name descname"><span class="pre">_interrupt_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bdownloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/cli.html#_interrupt_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.cli._interrupt_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>The handler for the signals <code class="docutils literal notranslate"><span class="pre">SIGINT</span></code> and <code class="docutils literal notranslate"><span class="pre">SIGQUIT</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bdownloader</strong> (<a class="reference internal" href="#bdownload.download.BDownloader" title="bdownload.download.BDownloader"><em>BDownloader</em></a>) – The <code class="xref py py-obj docutils literal notranslate"><span class="pre">BDownloader</span></code> instance acting as the file downloader.</p></li>
+<li><p><strong>signum</strong> – The signal number being either <code class="docutils literal notranslate"><span class="pre">signal.SIGINT</span></code> or <code class="docutils literal notranslate"><span class="pre">signal.SIGQUIT</span></code>.</p></li>
+<li><p><strong>frame</strong> – The current stack frame when the signal <code class="docutils literal notranslate"><span class="pre">SIGINT</span></code> is received.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.cli._load_cookies">
+<span class="sig-prename descclassname"><span class="pre">bdownload.cli.</span></span><span class="sig-name descname"><span class="pre">_load_cookies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cookies</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/cli.html#_load_cookies"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.cli._load_cookies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load cookie(s) either from a Netscape cookie file or a string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cookies</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – <p>Cookies either in the form of a string (maybe whitespace- and/or semicolon- separated)
+like “cookie_key=cookie_value cookie_key2=cookie_value2; cookie_key3=cookie_value3”, or a file,
+e.g. named “cookies.txt”, in the Netscape cookie file format.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The option <cite>-D DIR</cite> does not apply to the cookie file.</p>
+</div>
+</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <code class="docutils literal notranslate"><span class="pre">CookieJar</span></code> or a validated cookies string.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">cookielib.MozillaCookieJar</span></code> or str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ArgumentTypeError</strong> – Raised when exception occurred while loading the <cite>cookies</cite> file or the <cite>cookies</cite> string is
+    not in valid format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.cli._normalize_bytes_num">
+<span class="sig-prename descclassname"><span class="pre">bdownload.cli.</span></span><span class="sig-name descname"><span class="pre">_normalize_bytes_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes_num</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/cli.html#_normalize_bytes_num"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.cli._normalize_bytes_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize and convert the integer number string expressed in the unit <code class="docutils literal notranslate"><span class="pre">Byte</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bytes_num</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – The integer number string that may be suffixed with a quantity of ‘K’ or ‘M’, where
+‘K’ indicates multiples of 1024 and ‘M’ means multiples of <em>1024*1024</em>.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Normalized integer number.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ArgumentTypeError</strong> – Raised when passed <cite>bytes_num</cite> is neither a normal integer decimal number string nor
+    a suffixed one.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.cli._win32_utf8_argv">
+<span class="sig-prename descclassname"><span class="pre">bdownload.cli.</span></span><span class="sig-name descname"><span class="pre">_win32_utf8_argv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/cli.html#_win32_utf8_argv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.cli._win32_utf8_argv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use <code class="docutils literal notranslate"><span class="pre">kernel32.GetCommandLineW</span></code> and <code class="docutils literal notranslate"><span class="pre">shell32.CommandLineToArgvW</span></code> to get <code class="docutils literal notranslate"><span class="pre">sys.argv</span></code> as a list of UTF-8 strings.</p>
+<p>Versions 2.5 and older of Python don’t support Unicode (“mon€y röcks” for example) in <code class="docutils literal notranslate"><span class="pre">sys.argv</span></code> on Windows, with
+the underlying Windows API instead replacing multi-byte characters with ‘?’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Command-line arguments. A list of utf-8 strings for success, None on failure.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list of str</p>
+</dd>
+</dl>
+<div class="admonition-references admonition">
+<p class="admonition-title">References</p>
+<p>[1] <a class="reference external" href="https://code.activestate.com/recipes/572200/">https://code.activestate.com/recipes/572200/</a></p>
+<p>[2] <a class="reference external" href="https://stackoverflow.com/questions/846850/">https://stackoverflow.com/questions/846850/</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.cli.ignore_termination_signals">
+<span class="sig-prename descclassname"><span class="pre">bdownload.cli.</span></span><span class="sig-name descname"><span class="pre">ignore_termination_signals</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/cli.html#ignore_termination_signals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.cli.ignore_termination_signals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cause the process not to respond to termination signals.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.cli.install_signal_handlers">
+<span class="sig-prename descclassname"><span class="pre">bdownload.cli.</span></span><span class="sig-name descname"><span class="pre">install_signal_handlers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bdownloader</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/cli.html#install_signal_handlers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.cli.install_signal_handlers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Install handlers for termination signals.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bdownloader</strong> (<a class="reference internal" href="#bdownload.download.BDownloader" title="bdownload.download.BDownloader"><em>BDownloader</em></a>) – The <code class="xref py py-obj docutils literal notranslate"><span class="pre">BDownloader</span></code> instance acting as the file downloader.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bdownload.cli.main">
+<span class="sig-prename descclassname"><span class="pre">bdownload.cli.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bdownload/cli.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bdownload.cli.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collect the command-line arguments from <code class="docutils literal notranslate"><span class="pre">sys.argv</span></code>, parse and do the downloading as specified.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">bdownload package</a><ul>
+<li><a class="reference internal" href="#module-bdownload.download">bdownload.download module</a></li>
+<li><a class="reference internal" href="#module-bdownload.cli">bdownload.cli module</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">bdownload - A multi-threaded and multi-source file downloading library</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/bdownload.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="bdownload - A multi-threaded and multi-source file downloading library"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">bdownload 0.1.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">bdownload package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Jesse Gao.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bdownload.cli &#8212; bdownload 0.1.3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxdoc.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">bdownload 0.1.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">bdownload.cli</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for bdownload.cli</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;This module provides the entry point `main` for the command line utility ``bdownload``.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">absolute_import</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">platform</span> <span class="kn">import</span> <span class="n">system</span>
+<span class="kn">from</span> <span class="nn">argparse</span> <span class="kn">import</span> <span class="n">ArgumentParser</span><span class="p">,</span> <span class="n">ArgumentTypeError</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">join</span><span class="p">,</span> <span class="n">abspath</span><span class="p">,</span> <span class="n">isfile</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">codecs</span> <span class="kn">import</span> <span class="n">encode</span><span class="p">,</span> <span class="n">decode</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span>
+<span class="kn">import</span> <span class="nn">signal</span>
+
+<span class="kn">from</span> <span class="nn">requests.cookies</span> <span class="kn">import</span> <span class="n">cookielib</span>
+
+<span class="kn">from</span> <span class="nn">.download</span> <span class="kn">import</span> <span class="n">BDownloader</span><span class="p">,</span> <span class="n">COOKIE_STR_REGEX</span><span class="p">,</span> <span class="n">BDownloaderException</span>
+
+
+<span class="n">DEFAULT_MAX_WORKER</span> <span class="o">=</span> <span class="mi">20</span>         <span class="c1"># number of worker threads</span>
+<span class="n">DEFAULT_MIN_SPLIT_SIZE</span> <span class="o">=</span> <span class="s2">&quot;1M&quot;</span>   <span class="c1"># file split size in bytes[1M = 1024*1024]</span>
+<span class="n">DEFAULT_CHUNK_SIZE</span> <span class="o">=</span> <span class="s2">&quot;100K&quot;</span>     <span class="c1"># every request range size in bytes[1K = 1024]</span>
+<span class="n">DEFAULT_NUM_POOLS</span> <span class="o">=</span> <span class="mi">20</span>          <span class="c1"># number of connection pools</span>
+<span class="n">DEFAULT_POOL_SIZE</span> <span class="o">=</span> <span class="mi">20</span>          <span class="c1"># max number of connections in the pool</span>
+
+
+<div class="viewcode-block" id="_win32_utf8_argv"><a class="viewcode-back" href="../../bdownload.html#bdownload.cli._win32_utf8_argv">[docs]</a><span class="k">def</span> <span class="nf">_win32_utf8_argv</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Use ``kernel32.GetCommandLineW`` and ``shell32.CommandLineToArgvW`` to get ``sys.argv`` as a list of UTF-8 strings.</span>
+
+<span class="sd">    Versions 2.5 and older of Python don&#39;t support Unicode (&quot;mon€y röcks&quot; for example) in ``sys.argv`` on Windows, with</span>
+<span class="sd">    the underlying Windows API instead replacing multi-byte characters with &#39;?&#39;.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">         list of str: Command-line arguments. A list of utf-8 strings for success, None on failure.</span>
+
+<span class="sd">    References:</span>
+<span class="sd">        [1] https://code.activestate.com/recipes/572200/</span>
+
+<span class="sd">        [2] https://stackoverflow.com/questions/846850/</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">ctypes</span> <span class="kn">import</span> <span class="n">POINTER</span><span class="p">,</span> <span class="n">byref</span><span class="p">,</span> <span class="n">cdll</span><span class="p">,</span> <span class="n">c_int</span><span class="p">,</span> <span class="n">windll</span>
+        <span class="kn">from</span> <span class="nn">ctypes.wintypes</span> <span class="kn">import</span> <span class="n">LPCWSTR</span><span class="p">,</span> <span class="n">LPWSTR</span>
+
+        <span class="n">GetCommandLineW</span> <span class="o">=</span> <span class="n">cdll</span><span class="o">.</span><span class="n">kernel32</span><span class="o">.</span><span class="n">GetCommandLineW</span>
+        <span class="n">GetCommandLineW</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">GetCommandLineW</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">LPCWSTR</span>
+
+        <span class="n">CommandLineToArgvW</span> <span class="o">=</span> <span class="n">windll</span><span class="o">.</span><span class="n">shell32</span><span class="o">.</span><span class="n">CommandLineToArgvW</span>
+        <span class="n">CommandLineToArgvW</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">LPCWSTR</span><span class="p">,</span> <span class="n">POINTER</span><span class="p">(</span><span class="n">c_int</span><span class="p">)]</span>
+        <span class="n">CommandLineToArgvW</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">POINTER</span><span class="p">(</span><span class="n">LPWSTR</span><span class="p">)</span>
+
+        <span class="n">cmd</span> <span class="o">=</span> <span class="n">GetCommandLineW</span><span class="p">()</span>
+        <span class="n">argc</span> <span class="o">=</span> <span class="n">c_int</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">argv</span> <span class="o">=</span> <span class="n">CommandLineToArgvW</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">byref</span><span class="p">(</span><span class="n">argc</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">argc</span><span class="o">.</span><span class="n">value</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># Remove Python executable if present</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="n">argc</span><span class="o">.</span><span class="n">value</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">argv</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">argc</span><span class="o">.</span><span class="n">value</span><span class="p">)]</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="_dec_raw_tab_separated_urls"><a class="viewcode-back" href="../../bdownload.html#bdownload.cli._dec_raw_tab_separated_urls">[docs]</a><span class="k">def</span> <span class="nf">_dec_raw_tab_separated_urls</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Decode a *raw* URL string that may consist of multiple escaped TAB-separated URLs.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL for the file to be downloaded, which might be TAB-separated composite URL pointing to the same file.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: Decoded URL.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ArgumentTypeError: Raised when `url` contains URL(s) that don&#39;t conform to the format &quot;http[s]://[user:pass@]foo.bar[*]&quot;.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        Examples of the parameter `url` include:</span>
+<span class="sd">            * ``&#39;https://fakewebsite-01.com/downloads/soulbody4ct.pdf\\thttps://fakewebsite-02.com/archives/soulbody4ct.pdf&#39;``</span>
+<span class="sd">            * ``&#39;https://fakewebsite-01.com/downloads/ipcress.docx	https://fakewebsite-02.com/archives/ipcress.docx&#39;``</span>
+<span class="sd">            * ``&#39;https://tianchengren:öp€nsasimi@i.louder.ss\\thttps://fangxun.xiaoqing.sunmoon.xue&#39;``</span>
+
+<span class="sd">    References:</span>
+<span class="sd">        [1] https://stackoverflow.com/questions/1885181/</span>
+
+<span class="sd">        [2] https://stackoverflow.com/questions/34145686/</span>
+
+<span class="sd">        [3] https://stackoverflow.com/questions/161738/</span>
+
+<span class="sd">        [4] https://github.com/django/django/blob/master/django/core/validators.py</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">norm_url</span> <span class="o">=</span> <span class="n">decode</span><span class="p">(</span><span class="n">encode</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="s1">&#39;latin-1&#39;</span><span class="p">,</span> <span class="s1">&#39;backslashreplace&#39;</span><span class="p">),</span> <span class="s1">&#39;unicode_escape&#39;</span><span class="p">)</span>
+
+    <span class="c1"># do some basic validation of the `url`</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="n">norm_url</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">suburl</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">matched</span> <span class="o">=</span> <span class="n">_dec_raw_tab_separated_urls</span><span class="o">.</span><span class="n">regex</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">suburl</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="n">_dec_raw_tab_separated_urls</span><span class="o">.</span><span class="n">regex</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+                <span class="sa">r</span><span class="s1">&#39;^https?://&#39;</span>  <span class="c1"># scheme</span>
+                <span class="sa">r</span><span class="s1">&#39;(?:[^\s:@/]+(?::[^\s:@/]*)?@)?&#39;</span>  <span class="c1"># user:pass authentication (deprecated)</span>
+                <span class="sa">r</span><span class="s1">&#39;(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|&#39;</span>  <span class="c1"># domain</span>
+                <span class="sa">r</span><span class="s1">&#39;localhost|&#39;</span>  <span class="c1"># localhost</span>
+                <span class="sa">r</span><span class="s1">&#39;(?:25[0-5]|2[0-4]\d|[0-1]?\d?\d)(?:\.(?:25[0-5]|2[0-4]\d|[0-1]?\d?\d))</span><span class="si">{3}</span><span class="s1">|&#39;</span>  <span class="c1"># ipv4</span>
+                <span class="sa">r</span><span class="s1">&#39;\[?[A-F0-9]*:[A-F0-9:]+\]?)&#39;</span>  <span class="c1"># ipv6</span>
+                <span class="sa">r</span><span class="s1">&#39;(?::\d{2,5})?&#39;</span>  <span class="c1"># port</span>
+                <span class="sa">r</span><span class="s1">&#39;(?:/?|[/?]\S+)$&#39;</span><span class="p">,</span>  <span class="c1"># resource path</span>
+                <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span><span class="p">)</span>
+            <span class="n">matched</span> <span class="o">=</span> <span class="n">_dec_raw_tab_separated_urls</span><span class="o">.</span><span class="n">regex</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">suburl</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">matched</span><span class="p">:</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{!r}</span><span class="s1"> contains invalid URL(s): not conforming to &quot;http[s]://[user:pass@]foo.bar[*]&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">norm_url</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">ArgumentTypeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">norm_url</span></div>
+
+
+<div class="viewcode-block" id="_normalize_bytes_num"><a class="viewcode-back" href="../../bdownload.html#bdownload.cli._normalize_bytes_num">[docs]</a><span class="k">def</span> <span class="nf">_normalize_bytes_num</span><span class="p">(</span><span class="n">bytes_num</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Normalize and convert the integer number string expressed in the unit ``Byte``.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        bytes_num (str): The integer number string that may be suffixed with a quantity of &#39;K&#39; or &#39;M&#39;, where</span>
+<span class="sd">            &#39;K&#39; indicates multiples of 1024 and &#39;M&#39; means multiples of *1024\*1024*.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        int: Normalized integer number.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ArgumentTypeError: Raised when passed `bytes_num` is neither a normal integer decimal number string nor</span>
+<span class="sd">            a suffixed one.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">matched</span> <span class="o">=</span> <span class="n">_normalize_bytes_num</span><span class="o">.</span><span class="n">regex</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">bytes_num</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+        <span class="n">_normalize_bytes_num</span><span class="o">.</span><span class="n">regex</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;^[1-9][0-9]*[KM]?$&#39;</span><span class="p">)</span>
+        <span class="n">matched</span> <span class="o">=</span> <span class="n">_normalize_bytes_num</span><span class="o">.</span><span class="n">regex</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">bytes_num</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">matched</span><span class="p">:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{!r}</span><span class="s1"> is not a valid integer number, use, for example, 1024, 10K, or 2M instead&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">bytes_num</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">ArgumentTypeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">bytes_num</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">bytes_num</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">&lt;&lt;</span> <span class="mi">20</span> <span class="k">if</span> <span class="n">bytes_num</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">bytes_num</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">&lt;&lt;</span> <span class="mi">10</span>
+
+    <span class="k">return</span> <span class="n">size</span></div>
+
+
+<div class="viewcode-block" id="_load_cookies"><a class="viewcode-back" href="../../bdownload.html#bdownload.cli._load_cookies">[docs]</a><span class="k">def</span> <span class="nf">_load_cookies</span><span class="p">(</span><span class="n">cookies</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Load cookie(s) either from a Netscape cookie file or a string.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        cookies (str): Cookies either in the form of a string (maybe whitespace- and/or semicolon- separated)</span>
+<span class="sd">            like &quot;cookie_key=cookie_value cookie_key2=cookie_value2; cookie_key3=cookie_value3&quot;, or a file,</span>
+<span class="sd">            e.g. named &quot;cookies.txt&quot;, in the Netscape cookie file format.</span>
+
+<span class="sd">            Note:</span>
+<span class="sd">                The option `-D DIR` does not apply to the cookie file.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        :obj:`cookielib.MozillaCookieJar` or str: A ``CookieJar`` or a validated cookies string.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ArgumentTypeError: Raised when exception occurred while loading the `cookies` file or the `cookies` string is</span>
+<span class="sd">            not in valid format.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># A cookie file takes precedence over a cookie string</span>
+    <span class="k">if</span> <span class="n">isfile</span><span class="p">(</span><span class="n">cookies</span><span class="p">):</span>  <span class="c1"># Netscape HTTP Cookie File</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cj</span> <span class="o">=</span> <span class="n">cookielib</span><span class="o">.</span><span class="n">MozillaCookieJar</span><span class="p">(</span><span class="n">cookies</span><span class="p">)</span>
+            <span class="n">cj</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">ignore_expires</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ignore_discard</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">cj</span>
+        <span class="k">except</span> <span class="ne">EnvironmentError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>  <span class="c1"># `LoadError` is a subclass of which</span>
+            <span class="k">raise</span> <span class="n">ArgumentTypeError</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">COOKIE_STR_REGEX</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">cookies</span><span class="p">):</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;Cookie </span><span class="si">{!r}</span><span class="s1"> is not in valid format!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cookies</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">ArgumentTypeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">cookies</span></div>
+
+
+<span class="k">def</span> <span class="nf">_arg_parser</span><span class="p">():</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">ArgumentParser</span><span class="p">()</span>
+
+    <span class="n">omeg</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_mutually_exclusive_group</span><span class="p">()</span>
+    <span class="n">omeg</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-O&#39;</span><span class="p">,</span> <span class="s1">&#39;--OUTPUT&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;output&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="k">lambda</span> <span class="n">f</span><span class="p">:</span> <span class="p">[</span><span class="n">f</span><span class="p">],</span>
+                      <span class="n">help</span><span class="o">=</span><span class="s1">&#39;a save-as file name (optionally with absolute or relative (to `-D DIR`) path), &#39;</span>
+                           <span class="s1">&#39;e.g. `-O afile.tar.gz https://www.afilelink.com/afile.tar.gz`&#39;</span><span class="p">)</span>
+    <span class="n">omeg</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-o&#39;</span><span class="p">,</span> <span class="s1">&#39;--output&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;output&#39;</span><span class="p">,</span>
+                      <span class="n">help</span><span class="o">=</span><span class="s1">&#39;one or more file names (optionally prefixed with relative (to `-D DIR`) or absolute paths),&#39;</span>
+                           <span class="s1">&#39; e.g. `-o file1.zip ~/file2.tgz`, paired with URLs specified by `--url` or `-L`&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-D&#39;</span><span class="p">,</span> <span class="s1">&#39;--dir&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;dir&#39;</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;directory in which to save the downloaded files [default: directory in which this App is running]&#39;</span><span class="p">)</span>
+
+    <span class="n">lmeg</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_mutually_exclusive_group</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">lmeg</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;?&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="k">lambda</span> <span class="n">url</span><span class="p">:</span> <span class="p">[</span><span class="n">_dec_raw_tab_separated_urls</span><span class="p">(</span><span class="n">url</span><span class="p">)],</span>
+                      <span class="n">help</span><span class="o">=</span><span class="s1">&#39;URL for the file to be downloaded, &#39;</span>
+                           <span class="s1">&#39;which can be either a single URL or TAB-separated composite URL pointing to the same file, &#39;</span>
+                           <span class="s1">&#39;e.g. `&quot;https://www.afilelink.com/afile.tar.gz&quot;`, &#39;</span>
+                           <span class="s1">&#39;and `&quot;https://www.afilelink.com/afile.tar.gz</span><span class="se">\\</span><span class="s1">thttps://nianpei.bpfatran.com/afile.tar.gz&quot;`&#39;</span><span class="p">)</span>
+    <span class="n">lmeg</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-L&#39;</span><span class="p">,</span> <span class="s1">&#39;--url&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;urls&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">_dec_raw_tab_separated_urls</span><span class="p">,</span>
+                      <span class="n">help</span><span class="o">=</span><span class="s1">&#39;URL(s) for the files to be downloaded, &#39;</span>
+                           <span class="s1">&#39;each of which might contain TAB-separated URLs pointing to the same file, &#39;</span>
+                           <span class="s1">&#39;e.g. `-L https://yoursite.net/yourfile.7z`, &#39;</span>
+                           <span class="s1">&#39;`-L &quot;https://yoursite01.net/thefile.7z</span><span class="se">\\</span><span class="s1">thttps://yoursite02.com/thefile.7z&quot;`, &#39;</span>
+                           <span class="s1">&#39;and `--url &quot;http://foo.cc/file1.zip&quot; &quot;http://bar.cc/file2.tgz</span><span class="se">\\</span><span class="s1">thttp://bar2.cc/file2.tgz&quot;`&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-p&#39;</span><span class="p">,</span> <span class="s1">&#39;--proxy&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;proxy&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;proxy either in the form of &quot;http://[user:pass@]host:port&quot; or &quot;socks5://[user:pass@]host:port&quot;&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-n&#39;</span><span class="p">,</span> <span class="s1">&#39;--max-workers&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;max_workers&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">DEFAULT_MAX_WORKER</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;number of worker threads [default: </span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">DEFAULT_MAX_WORKER</span><span class="p">))</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-k&#39;</span><span class="p">,</span> <span class="s1">&#39;--min-split-size&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;min_split_size&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">DEFAULT_MIN_SPLIT_SIZE</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">_normalize_bytes_num</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;file split size in bytes, &quot;1048576, 1024K or 2M&quot; for example [default: </span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">DEFAULT_MIN_SPLIT_SIZE</span><span class="p">))</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-s&#39;</span><span class="p">,</span> <span class="s1">&#39;--chunk-size&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;chunk_size&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">DEFAULT_CHUNK_SIZE</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">_normalize_bytes_num</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;every request range size in bytes, &quot;10240, 10K or 1M&quot; for example [default: </span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">DEFAULT_CHUNK_SIZE</span><span class="p">))</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-e&#39;</span><span class="p">,</span> <span class="s1">&#39;--cookie&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;cookie&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">_load_cookies</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;cookies either in the form of a string (maybe whitespace- and/or semicolon- separated) &#39;</span>
+                             <span class="s1">&#39;like &quot;cookie_key=cookie_value cookie_key2=cookie_value2; cookie_key3=cookie_value3&quot;, or &#39;</span>
+                             <span class="s1">&#39;a file, e.g. named &quot;cookies.txt&quot;, in the Netscape cookie file format. &#39;</span>
+                             <span class="s1">&#39;NB the option `-D DIR` does not apply to the cookie file&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--user-agent&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;user_agent&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;custom user agent&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--referrer&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;referrer&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;HTTP request header &quot;Referer&quot; that applies to all downloads. In particular, use &quot;*&quot; to &#39;</span>
+                             <span class="s1">&#39;tell the downloader to take the request URL as the referrer per download [default: *]&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--check-certificate&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;check_certificate&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;True&#39;</span><span class="p">,</span>
+                        <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;True&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">,</span> <span class="s1">&#39;TRUE&#39;</span><span class="p">,</span> <span class="s1">&#39;False&#39;</span><span class="p">,</span> <span class="s1">&#39;false&#39;</span><span class="p">,</span> <span class="s1">&#39;FALSE&#39;</span><span class="p">],</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;whether to verify the server</span><span class="se">\&#39;</span><span class="s1">s TLS certificate or not [default: True]&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--ca-certificate&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;ca_certificate&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;path to the preferred CA bundle file (.pem) or directory with certificates in PEM format &#39;</span>
+                             <span class="s1">&#39;of trusted CAs. NB the directory must have been processed using the `c_rehash` utility &#39;</span>
+                             <span class="s1">&#39;from OpenSSL. Also, the cert files in the directory each only contain one CA certificate&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--certificate&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;certificate&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;path to a single file in PEM format containing the client certificate and optionally &#39;</span>
+                             <span class="s1">&#39;a chain of additional certificates. If `--private-key` is not provided, then the file &#39;</span>
+                             <span class="s1">&#39;must contain the unencrypted private key as well&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--private-key&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;private_key&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;path to a file containing the unencrypted private key to the client certificate&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-P&#39;</span><span class="p">,</span> <span class="s1">&#39;--progress&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;progress&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;mill&#39;</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;mill&#39;</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="s1">&#39;none&#39;</span><span class="p">],</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;progress indicator. To disable this feature, use &quot;none&quot;. [default: mill]&#39;</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--num-pools&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;num_pools&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">DEFAULT_NUM_POOLS</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;number of connection pools [default: </span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">DEFAULT_NUM_POOLS</span><span class="p">))</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--pool-size&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;pool_size&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">DEFAULT_POOL_SIZE</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;max number of connections in the pool [default: </span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">DEFAULT_POOL_SIZE</span><span class="p">))</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-l&#39;</span><span class="p">,</span> <span class="s1">&#39;--log-level&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;log_level&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;warning&#39;</span><span class="p">,</span>
+                        <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;debug&#39;</span><span class="p">,</span> <span class="s1">&#39;info&#39;</span><span class="p">,</span> <span class="s1">&#39;warning&#39;</span><span class="p">,</span> <span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="s1">&#39;critical&#39;</span><span class="p">],</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;logger level [default: warning]&#39;</span><span class="p">)</span>
+
+    <span class="n">cmeg</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_mutually_exclusive_group</span><span class="p">()</span>
+    <span class="n">cmeg</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-c&#39;</span><span class="p">,</span> <span class="s1">&#39;--continue&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;continuation&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_const&#39;</span><span class="p">,</span> <span class="n">const</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                      <span class="n">help</span><span class="o">=</span><span class="s1">&#39;resume from the partially downloaded files. This is the default behavior&#39;</span><span class="p">)</span>
+    <span class="n">cmeg</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--no-continue&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;no_continue&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_const&#39;</span><span class="p">,</span> <span class="n">const</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                      <span class="n">help</span><span class="o">=</span><span class="s1">&#39;do not resume from last interruption, i.e. start the download from beginning&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">parser</span>
+
+
+<div class="viewcode-block" id="_interrupt_handler"><a class="viewcode-back" href="../../bdownload.html#bdownload.cli._interrupt_handler">[docs]</a><span class="k">def</span> <span class="nf">_interrupt_handler</span><span class="p">(</span><span class="n">bdownloader</span><span class="p">,</span> <span class="n">signum</span><span class="p">,</span> <span class="n">frame</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The handler for the signals ``SIGINT`` and ``SIGQUIT``.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        bdownloader (BDownloader): The :obj:`BDownloader` instance acting as the file downloader.</span>
+<span class="sd">        signum: The signal number being either ``signal.SIGINT`` or ``signal.SIGQUIT``.</span>
+<span class="sd">        frame: The current stack frame when the signal ``SIGINT`` is received.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">bdownloader</span><span class="o">.</span><span class="n">cancel</span><span class="p">(</span><span class="n">keyboard_interrupt</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="_cmd_quit_handler"><a class="viewcode-back" href="../../bdownload.html#bdownload.cli._cmd_quit_handler">[docs]</a><span class="k">def</span> <span class="nf">_cmd_quit_handler</span><span class="p">(</span><span class="n">bdownloader</span><span class="p">,</span> <span class="n">signum</span><span class="p">,</span> <span class="n">frame</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The handler for the signals ``SIGTERM``, ``SIGABRT``, ``SIGHUP`` and ``SIGBREAK``.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        bdownloader (BDownloader): The :obj:`BDownloader` instance acting as the file downloader.</span>
+<span class="sd">        signum: The signal number being one of the possible values as ``signal.SIGTERM``, ``signal.SIGABRT``,</span>
+<span class="sd">            ``signal.SIGHUP``, or ``signal.SIGBREAK``.</span>
+<span class="sd">        frame: The current stack frame when the signal ``SIGINT`` is received.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">bdownloader</span><span class="o">.</span><span class="n">cancel</span><span class="p">(</span><span class="n">keyboard_interrupt</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="install_signal_handlers"><a class="viewcode-back" href="../../bdownload.html#bdownload.cli.install_signal_handlers">[docs]</a><span class="k">def</span> <span class="nf">install_signal_handlers</span><span class="p">(</span><span class="n">bdownloader</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Install handlers for termination signals.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        bdownloader (BDownloader): The :obj:`BDownloader` instance acting as the file downloader.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sig_actions</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;SIGINT&#39;</span><span class="p">,</span> <span class="n">partial</span><span class="p">(</span><span class="n">_interrupt_handler</span><span class="p">,</span> <span class="n">bdownloader</span><span class="p">)),</span>
+                   <span class="p">(</span><span class="s1">&#39;SIGQUIT&#39;</span><span class="p">,</span> <span class="n">partial</span><span class="p">(</span><span class="n">_interrupt_handler</span><span class="p">,</span> <span class="n">bdownloader</span><span class="p">)),</span>
+                   <span class="p">(</span><span class="s1">&#39;SIGTERM&#39;</span><span class="p">,</span> <span class="n">partial</span><span class="p">(</span><span class="n">_cmd_quit_handler</span><span class="p">,</span> <span class="n">bdownloader</span><span class="p">)),</span>
+                   <span class="p">(</span><span class="s1">&#39;SIGABRT&#39;</span><span class="p">,</span> <span class="n">partial</span><span class="p">(</span><span class="n">_cmd_quit_handler</span><span class="p">,</span> <span class="n">bdownloader</span><span class="p">)),</span>
+                   <span class="p">(</span><span class="s1">&#39;SIGHUP&#39;</span><span class="p">,</span> <span class="n">partial</span><span class="p">(</span><span class="n">_cmd_quit_handler</span><span class="p">,</span> <span class="n">bdownloader</span><span class="p">)),</span>
+                   <span class="p">(</span><span class="s1">&#39;SIGBREAK&#39;</span><span class="p">,</span> <span class="n">partial</span><span class="p">(</span><span class="n">_cmd_quit_handler</span><span class="p">,</span> <span class="n">bdownloader</span><span class="p">))]</span>
+
+    <span class="k">for</span> <span class="n">sig</span><span class="p">,</span> <span class="n">act</span> <span class="ow">in</span> <span class="n">sig_actions</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">sig</span><span class="p">):</span>
+            <span class="n">signal</span><span class="o">.</span><span class="n">signal</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">sig</span><span class="p">),</span> <span class="n">act</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ignore_termination_signals"><a class="viewcode-back" href="../../bdownload.html#bdownload.cli.ignore_termination_signals">[docs]</a><span class="k">def</span> <span class="nf">ignore_termination_signals</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Cause the process not to respond to termination signals.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sigset</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;SIGINT&#39;</span><span class="p">,</span> <span class="s1">&#39;SIGQUIT&#39;</span><span class="p">,</span> <span class="s1">&#39;SIGTERM&#39;</span><span class="p">,</span> <span class="s1">&#39;SIGABRT&#39;</span><span class="p">,</span> <span class="s1">&#39;SIGHUP&#39;</span><span class="p">,</span> <span class="s1">&#39;SIGBREAK&#39;</span><span class="p">)</span>
+    <span class="n">actset</span> <span class="o">=</span> <span class="p">(</span><span class="n">signal</span><span class="o">.</span><span class="n">SIG_IGN</span><span class="p">,)</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">sigset</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">sig</span><span class="p">,</span> <span class="n">act</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">sigset</span><span class="p">,</span> <span class="n">actset</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">sig</span><span class="p">):</span>
+            <span class="n">signal</span><span class="o">.</span><span class="n">signal</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">sig</span><span class="p">),</span> <span class="n">act</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../bdownload.html#bdownload.cli.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Collect the command-line arguments from ``sys.argv``, parse and do the downloading as specified.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">unicode</span>
+
+        <span class="c1"># for Python 2.x on Windows only</span>
+        <span class="n">sys_name</span> <span class="o">=</span> <span class="n">system</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">sys_name</span> <span class="o">==</span> <span class="s1">&#39;Windows&#39;</span><span class="p">:</span>
+            <span class="n">argv</span> <span class="o">=</span> <span class="n">_win32_utf8_argv</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">argv</span><span class="p">:</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">argv</span> <span class="o">=</span> <span class="n">argv</span>
+    <span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+    <span class="n">args</span> <span class="o">=</span> <span class="n">_arg_parser</span><span class="p">()</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+
+    <span class="n">log_level</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">logging</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">log_level</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">log_level</span><span class="p">)</span>
+
+    <span class="n">continuation</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">continuation</span> <span class="k">else</span> <span class="kc">False</span> <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">no_continue</span> <span class="k">else</span> <span class="kc">True</span>
+
+    <span class="n">check_certificate</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">check_certificate</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;true&#39;</span> <span class="k">else</span> <span class="kc">False</span>
+    <span class="n">client_certificate</span> <span class="o">=</span> <span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">certificate</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">private_key</span><span class="p">)</span> <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">certificate</span> <span class="ow">and</span> <span class="n">args</span><span class="o">.</span><span class="n">private_key</span> <span class="k">else</span> <span class="n">args</span><span class="o">.</span><span class="n">certificate</span>
+
+    <span class="n">urls</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">url</span> <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">url</span> <span class="k">else</span> <span class="n">args</span><span class="o">.</span><span class="n">urls</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">urls</span><span class="p">)</span> <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">output</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="o">+</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">urls</span><span class="p">)</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="p">))</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">urls</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The specified OUTPUTs and URLs don</span><span class="se">\&#39;</span><span class="s1">t align, extra OUTPUTs will be ignored: </span><span class="si">{!r}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">urls</span><span class="p">):]))</span>
+
+    <span class="n">path_files</span> <span class="o">=</span> <span class="p">[</span><span class="n">abspath</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">dir</span><span class="p">,</span> <span class="n">f</span><span class="p">))</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">files</span><span class="p">]</span>
+    <span class="n">path_urls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">path_files</span><span class="p">,</span> <span class="n">urls</span><span class="p">))</span>
+
+    <span class="n">ignore_termination_signals</span><span class="p">()</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">BDownloader</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">max_workers</span><span class="p">,</span> <span class="n">min_split_size</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">min_split_size</span><span class="p">,</span> <span class="n">chunk_size</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">chunk_size</span><span class="p">,</span>
+                         <span class="n">proxy</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">proxy</span><span class="p">,</span> <span class="n">cookies</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">cookie</span><span class="p">,</span> <span class="n">user_agent</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">user_agent</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">progress</span><span class="p">,</span>
+                         <span class="n">num_pools</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">num_pools</span><span class="p">,</span> <span class="n">pool_maxsize</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">pool_size</span><span class="p">,</span> <span class="n">continuation</span><span class="o">=</span><span class="n">continuation</span><span class="p">,</span>
+                         <span class="n">referrer</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">referrer</span><span class="p">,</span> <span class="n">check_certificate</span><span class="o">=</span><span class="n">check_certificate</span><span class="p">,</span>
+                         <span class="n">ca_certificate</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">ca_certificate</span><span class="p">,</span> <span class="n">certificate</span><span class="o">=</span><span class="n">client_certificate</span><span class="p">)</span> <span class="k">as</span> <span class="n">downloader</span><span class="p">:</span>
+            <span class="n">install_signal_handlers</span><span class="p">(</span><span class="n">downloader</span><span class="p">)</span>
+            <span class="n">downloader</span><span class="o">.</span><span class="n">downloads</span><span class="p">(</span><span class="n">path_urls</span><span class="p">)</span>
+            <span class="n">succeeded</span><span class="p">,</span> <span class="n">failed</span> <span class="o">=</span> <span class="n">downloader</span><span class="o">.</span><span class="n">wait_for_all</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">BDownloaderException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="n">succeeded</span><span class="p">,</span> <span class="n">failed</span> <span class="o">=</span> <span class="n">downloader</span><span class="o">.</span><span class="n">results</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">succeeded</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Succeeded in downloading: </span><span class="si">{!r}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">succeeded</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">failed</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Failed to download: </span><span class="si">{!r}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">failed</span><span class="p">))</span>
+
+    <span class="n">exit_code</span> <span class="o">=</span> <span class="n">downloader</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
+
+    <span class="n">fin_msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">File(s) downloading was successfully completed!&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">exit_code</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">File(s) downloading was aborted with erros!&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fin_msg</span><span class="p">)</span>
+
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">exit_code</span><span class="p">)</span></div>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">bdownload 0.1.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">bdownload.cli</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Jesse Gao.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    </div>
+  </body>
+</html>

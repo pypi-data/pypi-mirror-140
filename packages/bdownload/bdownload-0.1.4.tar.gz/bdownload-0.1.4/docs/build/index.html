@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>bdownload &#8212; bdownload 0.1.3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bdownload package" href="bdownload.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="bdownload.html" title="bdownload package"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">bdownload 0.1.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">bdownload</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="bdownload">
+<h1>bdownload<a class="headerlink" href="#bdownload" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><strong>A multi-threaded and multi-source aria2-like batch file downloading library for Python 2.7 and 3.6+</strong></p>
+</div></blockquote>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>via PyPI</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">bdownload</span></code></p>
+</div></blockquote>
+</li>
+<li><p>from within source directory locally</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">.</span></code></p>
+<p>Note that you should <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> or download the source tarball (and unpack it of course) from the repository first</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="usage-as-a-python-package">
+<h2>Usage: as a Python package<a class="headerlink" href="#usage-as-a-python-package" title="Permalink to this headline">¶</a></h2>
+<section id="importing">
+<h3>Importing<a class="headerlink" href="#importing" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">from</span> <span class="pre">bdownload</span> <span class="pre">import</span> <span class="pre">BDownloader</span></code></p>
+<blockquote>
+<div><p>or</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">import</span> <span class="pre">bdownload</span></code></p>
+</div></blockquote>
+</section>
+<section id="signatures">
+<h3>Signatures<a class="headerlink" href="#signatures" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>For information on the developer interfaces of <code class="docutils literal notranslate"><span class="pre">bdownload</span></code>, see <a class="reference internal" href="#api-indices"><span class="std std-ref">API indices</span></a>.</p>
+</div></blockquote>
+</section>
+<section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="cli.html#example-cli"><span class="std std-ref">bdownload’s command-line utility</span></a></p></li>
+<li><p><a class="reference internal" href="test_bdownloader.html#test-bdownloader"><span class="std std-ref">Testcase for unittesting BDownloader</span></a></p></li>
+<li><p><a class="reference internal" href="test_multisource_download.html#test-multisource-download"><span class="std std-ref">Testcase for unittesting multi-source downloading of BDownloader</span></a></p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="usage-as-a-command-line-script">
+<h2>Usage: as a command-line script<a class="headerlink" href="#usage-as-a-command-line-script" title="Permalink to this headline">¶</a></h2>
+<section id="synopsis">
+<h3>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bdownload      url <span class="p">|</span> -L URLS <span class="o">[</span>URLS ...<span class="o">]</span>
+               <span class="o">[</span>-O OUTPUT <span class="p">|</span> -o OUTPUT <span class="o">[</span>OUTPUT ...<span class="o">]]</span> <span class="o">[</span>-D DIR<span class="o">]</span>
+               <span class="o">[</span>-p PROXY<span class="o">]</span> <span class="o">[</span>-n MAX_WORKERS<span class="o">]</span> <span class="o">[</span>-k MIN_SPLIT_SIZE<span class="o">]</span>
+               <span class="o">[</span>-s CHUNK_SIZE<span class="o">]</span> <span class="o">[</span>-e COOKIE<span class="o">]</span> <span class="o">[</span>--user-agent USER_AGENT<span class="o">]</span>
+               <span class="o">[</span>--referrer REFERRER<span class="o">]</span>
+               <span class="o">[</span>--check-certificate <span class="o">{</span>True,true,TRUE,False,false,FALSE<span class="o">}]</span>
+               <span class="o">[</span>--ca-certificate CA_CERTIFICATE<span class="o">]</span>
+               <span class="o">[</span>--certificate CERTIFICATE<span class="o">]</span> <span class="o">[</span>--private-key PRIVATE_KEY<span class="o">]</span>
+               <span class="o">[</span>-P <span class="o">{</span>mill,bar,none<span class="o">}]</span> <span class="o">[</span>--num-pools NUM_POOLS<span class="o">]</span>
+               <span class="o">[</span>--pool-size POOL_SIZE<span class="o">]</span> <span class="o">[</span>-l <span class="o">{</span>debug,info,warning,error,critical<span class="o">}]</span>
+               <span class="o">[</span>-c <span class="p">|</span> --no-continue<span class="o">]</span>
+               <span class="o">[</span>-h<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="description">
+<h3>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code></p>
+<blockquote>
+<div><p>URL for the file to be downloaded, which can be either a single URL or TAB-separated composite URL
+pointing to the same file, e.g. <cite>“https://www.afilelink.com/afile.tar.gz”</cite>,
+<cite>“https://chinshou.libccp.mil/luoxuan1981/panjuan-hangyi/tiqianbaozha-key-yasui/qianjunyifa/bengqiyijiao/i-manual/dashboy-basket/zhongzhenkong/xinghuo-xianghui/chunqiao-electronhive-midianfeng/zhenhudan-yasally/afile.tar.gz”</cite>,
+and <cite>“https://www.afilelink.com/afile.tar.gzthttps://nianpei.bpfatran.com/afile.tar.gz”</cite></p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-L</span> <span class="pre">URLS</span> <span class="pre">[URLS</span> <span class="pre">...],</span> <span class="pre">--url</span> <span class="pre">URLS</span> <span class="pre">[URLS</span> <span class="pre">...]</span></code></p>
+<blockquote>
+<div><p>URL(s) for the files to be downloaded, each of which might contain TAB-separated URLs
+pointing to the same file, e.g. <cite>-L https://yoursite.net/yourfile.7z</cite>,
+<cite>-L “https://yoursite01.net/thefile.7zthttps://yoursite02.com/thefile.7z”</cite>,
+or <cite>–url “http://foo.cc/file1.zip” “http://bar.cc/file2.tgzthttp://bar2.cc/file2.tgz”</cite></p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-O</span> <span class="pre">OUTPUT,</span> <span class="pre">--OUTPUT</span> <span class="pre">OUTPUT</span></code></p>
+<blockquote>
+<div><p>a save-as file name (optionally with absolute or relative (to <code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">DIR</span></code>) path),
+e.g. <cite>-O afile.tar.gz https://www.afilelink.com/afile.tar.gz</cite></p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-o</span> <span class="pre">OUTPUT</span> <span class="pre">[OUTPUT</span> <span class="pre">...],</span> <span class="pre">--output</span> <span class="pre">OUTPUT</span> <span class="pre">[OUTPUT</span> <span class="pre">...]</span></code></p>
+<blockquote>
+<div><p>one or more file names (optionally prefixed with relative (to <code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">DIR</span></code>) or absolute paths), e.g.
+<cite>-o file1.zip ~/file2.tgz</cite>, paired with URLs specified by <code class="docutils literal notranslate"><span class="pre">--url</span></code> or <code class="docutils literal notranslate"><span class="pre">-L</span></code></p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">DIR,</span> <span class="pre">--dir</span> <span class="pre">DIR</span></code></p>
+<blockquote>
+<div><p>directory in which to save the downloaded files [default: directory in which this App is running]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-p</span> <span class="pre">PROXY,</span> <span class="pre">--proxy</span> <span class="pre">PROXY</span></code></p>
+<blockquote>
+<div><p>proxy either in the form of “<a class="reference external" href="http://[user:pass&#64;]host:port">http://[user:pass&#64;]host:port</a>” or “socks5://[user:pass&#64;]host:port”</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-n</span> <span class="pre">MAX_WORKERS,</span> <span class="pre">--max-workers</span> <span class="pre">MAX_WORKERS</span></code></p>
+<blockquote>
+<div><p>number of worker threads [default: 20]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-k</span> <span class="pre">MIN_SPLIT_SIZE,</span> <span class="pre">--min-split-size</span> <span class="pre">MIN_SPLIT_SIZE</span></code></p>
+<blockquote>
+<div><p>file split size in bytes, “1048576, 1024K or 2M” for example [default: 1M]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">CHUNK_SIZE,</span> <span class="pre">--chunk-size</span> <span class="pre">CHUNK_SIZE</span></code></p>
+<blockquote>
+<div><p>every request range size in bytes, “10240, 10K or 1M” for example [default: 100K]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-e</span> <span class="pre">COOKIE,</span> <span class="pre">--cookie</span> <span class="pre">COOKIE</span></code></p>
+<blockquote>
+<div><p>cookies either in the form of a string (maybe whitespace- and/or semicolon- separated)
+like “cookie_key=cookie_value cookie_key2=cookie_value2; cookie_key3=cookie_value3”, or a file,
+e.g. named “cookies.txt”, in the Netscape cookie file format. NB the option <code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">DIR</span></code> does not apply to the cookie file</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--user-agent</span> <span class="pre">USER_AGENT</span></code></p>
+<blockquote>
+<div><p>custom user agent</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--referrer</span> <span class="pre">REFERRER</span></code></p>
+<blockquote>
+<div><p>HTTP request header “Referer” that applies to all downloads. In particular, use <cite>*</cite> to tell the downloader
+to take the request URL as the referrer per download [default: <cite>*</cite>]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--check-certificate</span> <span class="pre">{True,true,TRUE,False,false,FALSE}</span></code></p>
+<blockquote>
+<div><p>whether to verify the server’s TLS certificate or not [default: True]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--ca-certificate</span> <span class="pre">CA_CERTIFICATE</span></code></p>
+<blockquote>
+<div><p>path to the preferred CA bundle file (.pem) or directory with certificates in PEM format of trusted CAs.
+NB the directory must have been processed using the <code class="docutils literal notranslate"><span class="pre">c_rehash</span></code> utility from OpenSSL. Also, the cert files in the directory
+each only contain one CA certificate</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--certificate</span> <span class="pre">CERTIFICATE</span></code></p>
+<blockquote>
+<div><p>path to a single file in PEM format containing the client certificate and optionally a chain of additional
+certificates. If <code class="docutils literal notranslate"><span class="pre">--private-key</span></code> is not provided, then the file must contain the unencrypted private key as well</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--private-key</span> <span class="pre">PRIVATE_KEY</span></code></p>
+<blockquote>
+<div><p>path to a file containing the unencrypted private key to the client certificate</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-P</span> <span class="pre">{mill,bar,none},</span> <span class="pre">--progress</span> <span class="pre">{mill,bar,none}</span></code></p>
+<blockquote>
+<div><p>progress indicator. To disable this feature, use <cite>none</cite>. [default: mill]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--num-pools</span> <span class="pre">NUM_POOLS</span></code></p>
+<blockquote>
+<div><p>number of connection pools [default: 20]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--pool-size</span> <span class="pre">POOL_SIZE</span></code></p>
+<blockquote>
+<div><p>max number of connections in the pool [default: 20]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-l</span> <span class="pre">{debug,info,warning,error,critical},</span> <span class="pre">--log-level</span> <span class="pre">{debug,info,warning,error,critical}</span></code></p>
+<blockquote>
+<div><p>logger level [default: warning]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-c,</span> <span class="pre">--continue</span></code></p>
+<blockquote>
+<div><p>resume from the partially downloaded files. This is the default behavior</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">--no-continue</span></code></p>
+<blockquote>
+<div><p>do not resume from last interruption, i.e. start the download from beginning</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">-h,</span> <span class="pre">--help</span></code></p>
+<blockquote>
+<div><p>show help message and exit</p>
+</div></blockquote>
+</section>
+<section id="id1">
+<h3>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">bdownload</span> <span class="pre">https://www.afilelink.com/afile.tar.gz</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">bdownload</span> <span class="pre">-O</span> <span class="pre">/abspath/to/afile.tar.gz</span> <span class="pre">https://www.afilelink.com/afile.tar.gz</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">bdownload</span> <span class="pre">-O</span> <span class="pre">/abspath/to/a/dir/</span> <span class="pre">https://www.afilelink.com/afile.tar.gz</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">bdownload</span> <span class="pre">-O</span> <span class="pre">/abspath/to/afile.tar.gz</span> <span class="pre">&quot;https://www.afilelink.com/afile.tar.gz\thttps://nianpei.bpfatran.com/afile.tar.gz&quot;</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">bdownload</span> <span class="pre">-D</span> <span class="pre">path/to/working_dir/</span> <span class="pre">-O</span> <span class="pre">relpath/to/working_dir/alias_afile.tar.gz</span> <span class="pre">https://www.afilelink.com/afile.tar.gz</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">bdownload</span> <span class="pre">-D</span> <span class="pre">path/to/working/dir</span> <span class="pre">https://www.afilelink.com/afile.tar.gz</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">bdownload</span> <span class="pre">-o</span> <span class="pre">/abspath/to/file1.zip</span> <span class="pre">~/file2.tgz</span> <span class="pre">-L</span> <span class="pre">&quot;http://foo.cc/file1.zip&quot;</span> <span class="pre">&quot;http://bar.cc/file2.tgz\thttp://bar2.cc/file2.tgz&quot;</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">bdownload</span> <span class="pre">-D</span> <span class="pre">path/to/working/dir</span> <span class="pre">-L</span> <span class="pre">&quot;http://foo.cc/file1.zip&quot;</span> <span class="pre">&quot;http://bar.cc/file2.tgz\thttp://bar2.cc/file2.tgz&quot;</span></code></p>
+</div></blockquote>
+</section>
+</section>
+</section>
+<section id="api-indices">
+<span id="id2"></span><h1>API indices<a class="headerlink" href="#api-indices" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="bdownload.html">bdownload package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bdownload.html#module-bdownload.download">bdownload.download module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bdownload.html#module-bdownload.cli">bdownload.cli module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">bdownload</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage-as-a-python-package">Usage: as a Python package</a><ul>
+<li><a class="reference internal" href="#importing">Importing</a></li>
+<li><a class="reference internal" href="#signatures">Signatures</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage-as-a-command-line-script">Usage: as a command-line script</a><ul>
+<li><a class="reference internal" href="#synopsis">Synopsis</a></li>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#id1">Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#api-indices">API indices</a></li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bdownload.html"
+                        title="next chapter">bdownload package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="bdownload.html" title="bdownload package"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">bdownload 0.1.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">bdownload</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Jesse Gao.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    </div>
+  </body>
+</html>
