@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/flood_napari/__init__.py
+src/flood_napari/_dock_widget.py
+src/flood_napari.egg-info/PKG-INFO
+src/flood_napari.egg-info/SOURCES.txt
+src/flood_napari.egg-info/dependency_links.txt
+src/flood_napari.egg-info/entry_points.txt
+src/flood_napari.egg-info/requires.txt
+src/flood_napari.egg-info/top_level.txt
+src/flood_napari/_tests/__init__.py
+src/flood_napari/_tests/test_dock_widget.py
