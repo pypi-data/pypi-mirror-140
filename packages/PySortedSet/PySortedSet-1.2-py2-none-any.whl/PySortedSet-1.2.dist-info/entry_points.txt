@@ -1,0 +1,3 @@
+[console_scripts]
+PySortedSet = PySortedSet.PySortedSet_versus_set:main
+
