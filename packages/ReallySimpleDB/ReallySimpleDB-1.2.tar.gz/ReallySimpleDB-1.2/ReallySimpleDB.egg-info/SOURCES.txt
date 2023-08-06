@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+ReallySimpleDB/__init__.py
+ReallySimpleDB/manager.py
+ReallySimpleDB/utils.py
+ReallySimpleDB.egg-info/PKG-INFO
+ReallySimpleDB.egg-info/SOURCES.txt
+ReallySimpleDB.egg-info/dependency_links.txt
+ReallySimpleDB.egg-info/top_level.txt
