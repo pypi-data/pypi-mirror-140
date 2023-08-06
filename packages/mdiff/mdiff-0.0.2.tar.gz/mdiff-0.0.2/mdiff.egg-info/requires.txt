@@ -1,0 +1,4 @@
+
+[cli]
+colorama==0.4.*
+typer==0.4.*
