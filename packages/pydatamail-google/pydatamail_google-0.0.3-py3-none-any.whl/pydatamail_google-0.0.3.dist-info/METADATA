@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pydatamail-google
+Version: 0.0.3
+Summary: Python interface to filter emails on Google Mail.
+Home-page: https://github.com/pyscioffice/pydatamail_google
+Author: Jan Janssen
+Author-email: jan.janssen@outlook.com
+License: BSD
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: google-api-python-client (>=2.38.0)
+Requires-Dist: google-auth (>=2.6.0)
+Requires-Dist: google-auth-oauthlib (>=0.4.6)
+Requires-Dist: tqdm (>=4.62.3)
+Requires-Dist: pandas (>=1.4.1)
+Requires-Dist: sqlalchemy (>=1.4.31)
+Requires-Dist: numpy (>=1.22.2)
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: pydatamail (>=0.0.4)
+Provides-Extra: archive
+Requires-Dist: pypdf3 (>=1.0.6) ; extra == 'archive'
+Requires-Dist: email2pdf (>=0.9.9.0) ; extra == 'archive'
+
+UNKNOWN
+
