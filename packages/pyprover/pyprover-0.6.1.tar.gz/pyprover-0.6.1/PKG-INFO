@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyprover
+Version: 0.6.1
+Summary: Resolution theorem proving for predicate logic in pure Python.
+Home-page: https://github.com/evhub/pyprover
+Author: Evan Hubinger
+Author-email: evanjhub@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
+UNKNOWN
+
