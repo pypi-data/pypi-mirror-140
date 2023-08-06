@@ -1,0 +1,17 @@
+ucm/Dialogs.py,sha256=EPRBTQsm5zT7GKOPDYVRLYsHS7NO_GzIK_ZFddCwEIk,4640
+ucm/DockerListView.py,sha256=QhU1AyMHVire8rRhEqW_ttlJapwN09FEXQMbsHnAcAU,4767
+ucm/Registry.py,sha256=oNMPKCt2mQ3TUnAULDP6KS9ZZa9MrgFg2J1N5qVqcLY,1247
+ucm/SshListView.py,sha256=Auk0nIZNELCdw04_fEkRA_0vEbdxWy8iPn8fZ9hEMwY,4681
+ucm/SwarmListView.py,sha256=2KO7bAQ6gnB51ZWaAE74GG3FfVd558xsvNrXC-wLAl0,6694
+ucm/UserConfig.py,sha256=3augt19lQwgKBUlkSVRNEbHrkKYQDVs8Q0kE9V-c-Kg,4448
+ucm/Widgets.py,sha256=nNoU4hoNivACfDTlyO2hIpEeSVL-G77rFT-TN2Sj168,12876
+ucm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ucm/constants.py,sha256=oWDcU4LyPzjjz9LtHIKO7SNaCd6TDL1etpSZ0siJJwI,2310
+ucm/help.txt,sha256=JHJPz36wdb4kgRRKgrQ4D3wc1zJRTkxYywN4JQmwXZU,3454
+ucm/ucm-swarmlisting.sh,sha256=CvBre5PwwKdNYA0VM5CtERD5v9Mj-244UBP6I1oo8_o,254
+ucm-0.0.21.data/scripts/ucm,sha256=mZTv59euL_oBaGQsaUjCUCva3vH7g5njIr6LusVJSuw,6802
+ucm-0.0.21.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+ucm-0.0.21.dist-info/METADATA,sha256=4_4UZLveqfy_FjRoFJfT60RUU9V0HEeny1xR0vzpgt0,5820
+ucm-0.0.21.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ucm-0.0.21.dist-info/top_level.txt,sha256=vAOXKZgg2ReUb7BELuE5zah-f0X8ULY1zEigDRQYies,4
+ucm-0.0.21.dist-info/RECORD,,
