@@ -1,0 +1,11 @@
+odte/Odte.py,sha256=_tfUOEA20lVYFBDwDHfFYkfhx7v-s6MFtw35FsjG3IM,9637
+odte/__init__.py,sha256=DsGEI_JbyVMmt8znWqN8xs9iit5la4zQTps6y3V30-0,229
+odte/_version.py,sha256=vNiWJ14r_cw5t_7UDqDQIVZvladKFGyHH2avsLpN7Vg,22
+odte/tests/Odte_tests.py,sha256=ykePjPtPqfoXx0TbBJcf9uQefD2tnAvSCUi9WQSFzsk,9459
+odte/tests/__init__.py,sha256=BFPOPi4RhCYJuyTY3BryDVSd2OKnsPCwhvZLAWQ7PvQ,74
+odte/tests/utils.py,sha256=UznEmtImrkgIgWB48DW27pUN_agLX6oATVpG_4me4io,449
+Odte-0.3.2.dist-info/LICENSE,sha256=5l3icIy34K_-qHGnzLDv6uIFXD8DCrvjS15r_Dw1tOE,1069
+Odte-0.3.2.dist-info/METADATA,sha256=90eHYlSJ1Ij_XtfNTeCC5vNE10haDbR0rUG1YBZr08o,1486
+Odte-0.3.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Odte-0.3.2.dist-info/top_level.txt,sha256=l43SvCURX9GwGP0o_owemawztfqprlFZm3JavTzkmUY,5
+Odte-0.3.2.dist-info/RECORD,,
