@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+tdf_tools/__init__.py
+tdf_tools/dependencies_analysis.py
+tdf_tools/git_utils.py
+tdf_tools/json_data_read.py
+tdf_tools/module_dependencies_rewrite.py
+tdf_tools/python_gitlab_api.py
+tdf_tools/tdf_print.py
+tdf_tools.egg-info/PKG-INFO
+tdf_tools.egg-info/SOURCES.txt
+tdf_tools.egg-info/dependency_links.txt
+tdf_tools.egg-info/entry_points.txt
+tdf_tools.egg-info/requires.txt
+tdf_tools.egg-info/top_level.txt
