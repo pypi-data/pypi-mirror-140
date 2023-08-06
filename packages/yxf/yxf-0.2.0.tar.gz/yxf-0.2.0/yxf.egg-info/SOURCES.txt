@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+docs/yxf-yaml-and-xlsx-side-by-side.png
+yxf/__init__.py
+yxf/__main__.py
+yxf/xlsform.py
+yxf.egg-info/PKG-INFO
+yxf.egg-info/SOURCES.txt
+yxf.egg-info/dependency_links.txt
+yxf.egg-info/entry_points.txt
+yxf.egg-info/requires.txt
+yxf.egg-info/top_level.txt
