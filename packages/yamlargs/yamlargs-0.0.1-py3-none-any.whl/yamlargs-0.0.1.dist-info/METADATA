@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yamlargs
+Version: 0.0.1
+Summary: YAML based config management for ML
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+
+[![Build Status](https://app.travis-ci.com/mkrum/yamlargs.svg?branch=main)](https://app.travis-ci.com/mkrum/yamlargs) 
+# yamlargs: YAML-based config management for python
+
+
