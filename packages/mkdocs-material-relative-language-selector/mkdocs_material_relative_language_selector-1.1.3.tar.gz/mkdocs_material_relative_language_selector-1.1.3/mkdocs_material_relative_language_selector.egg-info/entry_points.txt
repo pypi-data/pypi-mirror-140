@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+material-relative-language-selector = mmrlsp:MkdocsMaterialRelativeLanguageSelectorPlugin
+
