@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: topsis-ADITYA-101903150
+Version: 1.0.0
+Summary: Multiple criteria decision making (MCDM) using TOPSIS
+Author: Aditya Anand
+Author-email: adityaanand6767@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#Topsis-Aditya-101903150
+Multiple criteria decision making (MCDM) using TOPSIS
+
+## Installation
+```pip install topsis-ADITYA-101903150```
+
+##Sample Use case
+import topsis-ADITYA-10903150 as t
+t.topsis("input.csv","1,2,1,2,3","+,+,-,+,-","output.csv")
+
+
