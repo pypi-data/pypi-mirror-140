@@ -1,0 +1,34 @@
+image: python:3.8-alpine
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - |
+    apk add --update --no-cache \
+    ttf-freefont gcc musl-dev g++ libxslt-dev \
+    libressl-dev libffi-dev \
+    libxml2 libxslt jpeg-dev zlib-dev \
+    make cmake
+  - python -V  # Print out python version for debugging
+  - python -m venv venv
+  - source venv/bin/activate
+  - python -m pip install -U pip
+
+test:
+  script:
+    - pip install tox .[testsite]
+    - sh ci/check-migrations.sh
+    - python manage.py migrate
+    - tox
+
+test-docs:
+  script:
+    - pip install . -r docs/requirements.txt
+    - cd docs
+    - make linkcheck
