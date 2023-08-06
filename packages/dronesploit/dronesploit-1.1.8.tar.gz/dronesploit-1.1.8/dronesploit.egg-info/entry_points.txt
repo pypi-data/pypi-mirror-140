@@ -1,0 +1,3 @@
+[console_scripts]
+dronesploit = dronesploit.__main__:main
+
