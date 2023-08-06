@@ -1,0 +1,13 @@
+nbdoc/__init__.py,sha256=XJ5NZRv5ahaSlYm7_PUNTixULma76xIxwxi2Yy6Eb8w,23
+nbdoc/_nbdev.py,sha256=UuDMEr1WJCl7a_56hs0Xtb1yoEVl1cj8YhDCUrHUQB0,1233
+nbdoc/apiref.py,sha256=tlpz1NvJG7E-UR828V9om9zx7VIFPMJsqm52CGAPEoY,3825
+nbdoc/convert.py,sha256=40-JEOJQLBwHk3iueQdy0vX14g8cZnvEB4AC8TefJL0,2567
+nbdoc/mdx.py,sha256=1uWwA-4vJ55jX0DU6RY6wIp5Ir4xKXAs1iMZk6_12lc,8186
+nbdoc/showdoc.py,sha256=WMP20l-pr-1vvAGvQhJadeELVLLoNYBinLkVx7nYkC4,6880
+nbdoc/templates/ob.tpl,sha256=25MhvsS5NR0TIxgjxGttilb9XMcdP-19AHBAX--e524,475
+nbdoc-0.0.27.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nbdoc-0.0.27.dist-info/METADATA,sha256=Sy6jXYySPdSPKkHV4D8jXVedbqPI_TFXFEtiityG6sk,5848
+nbdoc-0.0.27.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+nbdoc-0.0.27.dist-info/entry_points.txt,sha256=v39BpavFUei1-XcJ9qByZSd_b8VUHMreHT34bNKKaJI,98
+nbdoc-0.0.27.dist-info/top_level.txt,sha256=O_4e0vDYav0RYlHkAKp8iyiZnKmZ8k52AP65UTN20ro,6
+nbdoc-0.0.27.dist-info/RECORD,,
