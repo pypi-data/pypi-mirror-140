@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+recursive-include standingsrequests *.py
+recursive-include standingsrequests/templates *
+recursive-include standingsrequests/static *
+recursive-exclude testauth *.*
+recursive-exclude standingsrequests/tests *.*
