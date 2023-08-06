@@ -1,0 +1,3 @@
+[console_scripts]
+juwel = Juwel_2.Main:main
+
