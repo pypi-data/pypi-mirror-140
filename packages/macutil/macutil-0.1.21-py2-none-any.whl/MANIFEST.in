@@ -1,0 +1,5 @@
+include *.txt
+include *.md
+recursive-include doc *.txt
+recursive-include modules *.py
+recursive-exclude  *.DS_store
