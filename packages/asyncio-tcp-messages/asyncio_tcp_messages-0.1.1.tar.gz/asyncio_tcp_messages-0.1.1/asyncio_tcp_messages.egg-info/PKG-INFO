@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: asyncio-tcp-messages
+Version: 0.1.1
+Summary: A library for developing applications with a message-based protocol on top of TCP based on asyncio.
+Home-page: https://gitlab.com/python-2k2s-2022/asyncio-tasks-submissions/team-4
+Author-email: UnMelow@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A library for developing applications with a message-based protocol on top of TCP based on asyncio.Opens the possibility of adding controllers that are responsible for specific commands, the ability to define and validate command arguments.
+
+1. First, you need to create an instance of the App class
+
+   ```
+   import asyncio
+   from asyncio_tcp_messages import App
+
+   app = App()
+
+   #Your code
+
+   if __name__ == '__main__':
+       asyncio.run(app.run())
+
+   ```
+2. Here are some usage examples. You can use pydantic BaseModel subclasses for data validation.
+
+   ```
+   import asyncio
+   from asyncio_tcp_messages import App
+   import pydantic
+
+   app = App()
+
+
+   class Person(pydantic.BaseModel):
+       name: str = pydantic.Field(..., min_length=2, max_length=250, description="The person's name must be at least 2 "
+                                                                                 "and at most 250 characters")
+       age: int = pydantic.Field(..., ge=0, lt=200, description="The person's age must be greater or equal to zero "
+                                                                "and lesser than 250")
+       funs: list[str] = pydantic.Field(default_factory=list, title="The activities person likes to do")
+       salary: int = pydantic.Field(None, gt=0, description="The person's salary must be greater than zero")
+
+       def __str__(self) -> str:
+           return f'{self.name} is {self.age} years old with {self.salary}$ salary and favourite activities: {self.funs}'
+
+
+   @app.command(name='sum')
+   async def custom_sum(arg1: int, arg2: int) -> str:
+       return str(arg1 + arg2)
+
+
+   @app.command()
+   async def add_person(person: Person):
+       people.append(person)
+
+
+   @app.command()
+   async def get_person(name: str) -> str:
+       return '\n'.join(str(person) for person in people if person.name == name)
+
+
+   if __name__ == '__main__':
+       asyncio.run(app.run())
+
+   ```
+
+
