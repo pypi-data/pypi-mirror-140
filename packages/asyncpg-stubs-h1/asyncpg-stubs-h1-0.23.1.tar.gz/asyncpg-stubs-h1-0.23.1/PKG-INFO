@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: asyncpg-stubs-h1
+Version: 0.23.1
+Summary: asyncpg stubs (pypi-upload copy)
+License: BSD-3-Clause
+Author: Bryan Forbes
+Author-email: bryan@reigndropsfall.net
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: asyncpg (>=0.25.0,<0.26.0)
+Requires-Dist: mypy (>=0.800)
+Requires-Dist: typing-extensions (>=4.1.1,<5.0.0)
