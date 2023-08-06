@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: diffusion-core
+Version: 0.0.16
+Summary: Python SDK for Diffusion - CBOR serialisation.
+Home-page: 
+https: //www.pushtechnology.com/
+License: Proprietary
+Keywords: diffusion,cloud,websockets,data,delta
+Platform: UNKNOWN
+Classifier: License :: Other/Proprietary License
+Classifier: Environment :: Other Environment
+Classifier: Development Status :: 4 - Beta
+License-File: LICENSE
+
+# Python SDK for Diffusion - Core functionality
+
+**Pre-release version; not ready for production.**
+
+This is the core module for the [Python SDK for Diffusion](https://pypi.org/project/diffusion/).
+It provides core functionality for the Python client, in particular
+the native bindings for various performance-critical functions.
+
+## Supported Python Versions
+
+The Diffusion Python SDK officially supports the following:
+
+Supported Interpreters:
+
+* CPython 3.7.9 or later
+* CPython 3.8.6 or later
+* CPython 3.9.0 or later
+
+Supported Platforms:
+
+* MacOS 10.13-11.5
+* Windows Intel 64-bit
+* Any Linux supported by the [ManyLinux 2010/2014](https://github.com/pypa/manylinux) binary wheel standard.
+
+## Current Capabilities
+
+- CBOR (the binary protocol used to communicate with the Diffusion Server):
+  - indefinite encoding (the preferred variant)
+  - definite encoding
+- Delta encoding/decoding (used to send and receive changes in a compact, CBOR-based format)
+
+## Test call
+
+```
+python
+import diffusion_cbor
+obj = {"arbitary":["json", "data", 0.0, -35]}
+diffusion_cbor.dumps(obj, indefinite=True)
+```
+
+
