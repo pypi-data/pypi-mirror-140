@@ -1,0 +1,11 @@
+README.md
+setup.py
+classutil/__init__.py
+classutil/__main__.py
+classutil/data_types.py
+classutil/scrape.py
+classutil.egg-info/PKG-INFO
+classutil.egg-info/SOURCES.txt
+classutil.egg-info/dependency_links.txt
+classutil.egg-info/requires.txt
+classutil.egg-info/top_level.txt
