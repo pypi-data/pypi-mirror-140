@@ -1,0 +1,2 @@
+qsharp-core==0.23.194793b1
+qsharp-chemistry==0.23.194793b1
