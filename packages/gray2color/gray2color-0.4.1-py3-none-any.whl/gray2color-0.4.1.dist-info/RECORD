@@ -1,0 +1,14 @@
+gray2color/__init__.py,sha256=oHPD-wey6NcxepfYXjEWC88_SLgYB_c7BjHS7qDM2Zs,36
+gray2color/gray2color.py,sha256=RvG-3cTgCMzeIAlCz6Zd7IA-KSEQueSUzBmBgfRhAQo,1767
+gray2color/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gray2color/utils/ade20k.py,sha256=6-2hz0M17IlV5axs_mLRhj5drXw4S1iJOuEoZxygs-U,7998
+gray2color/utils/cityscape.py,sha256=OJ9wWb6KZ3wHHKrA9lOOdC2LNFjnbvpoUMjs1dTY4zo,3538
+gray2color/utils/gray2rgb.py,sha256=UzXAqwAsGARHjfI7Hb_IzmIa1ePS5brBlAukwVQ8dZ0,762
+gray2color/utils/lip.py,sha256=7KYcGQqhxni2lNg5G6s320nTcYEXyVsVOsMK4Hoaays,1385
+gray2color/utils/pannuke.py,sha256=5mLrOnv56fBxuGLRDI8RVCOBX1Br9Z6IaWngPhZaKI0,760
+gray2color/utils/pascal.py,sha256=jR5AYFsWAfri5Baxla6Z1_WgC7lsARMJEuR6kPPwks0,1175
+gray2color/utils/vistas.py,sha256=BkkSxUs_IsEXiBpajaBJVSWByTY6YLW_Na2DLgp_Gcw,3886
+gray2color-0.4.1.dist-info/METADATA,sha256=WRhfBwMsoZw3ExDtPZ9MIOPsVRiYu_9FRgUIdFgwbyA,3381
+gray2color-0.4.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gray2color-0.4.1.dist-info/top_level.txt,sha256=NdAgyg4h0TVPkBWGPESSvGD3n4yDBCR4QFsnUEb_8v0,11
+gray2color-0.4.1.dist-info/RECORD,,
