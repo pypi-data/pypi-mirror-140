@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: eapy
+Version: 0.0.1
+Summary: Evolutionary Algorithm for Python
+Author: Dennis Otter
+Author-email: dennis.john.otter@gmail.com
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib
+Requires-Dist: numpy (>=1.21,<1.22)
+Requires-Dist: ray (>=1.10,<1.11)
