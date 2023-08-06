@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/musicjson/__init__.py
+src/musicjson/band.py
+src/musicjson.egg-info/PKG-INFO
+src/musicjson.egg-info/SOURCES.txt
+src/musicjson.egg-info/dependency_links.txt
+src/musicjson.egg-info/requires.txt
+src/musicjson.egg-info/top_level.txt
