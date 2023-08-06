@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "asyncpg-stubs-h"
+version = "0.23.1"
+description = "asyncpg stubs (pypi-upload copy)"
+authors = ["Bryan Forbes <bryan@reigndropsfall.net>"]
+license = "BSD-3-Clause"
+packages = [
+  { include = "asyncpg-stubs/**/*.pyi" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+asyncpg = "^0.25.0"
+mypy = ">=0.800"
+typing-extensions = "^4.1.1"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.7b0", allow-prereleases = true}
+flake8 = "^3.9.2"
+flake8-pyi = "^20.10.0"
+pre-commit = "^2.14.0"
+isort = "^5.9.3"
+
+[tool.black]
+line-length = 88
+target-version = ["py36", "py37"]
+skip-string-normalization = true
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.pytest_cache
+  | \.venv
+  | external
+)/
+'''
+
+[tool.isort]
+extra_standard_library = ["typing_extensions"]
+virtual_env = ".venv"
+profile = "black"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
