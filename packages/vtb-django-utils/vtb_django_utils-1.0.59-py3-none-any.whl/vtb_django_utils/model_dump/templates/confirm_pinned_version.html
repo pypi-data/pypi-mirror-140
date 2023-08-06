@@ -1,0 +1,22 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_list %}
+{% load l10n %}
+
+{% block content %}
+
+<form action="" method="post">{% csrf_token %}
+    <div>
+        <h1>{{ action_name }}</h1>
+        <h2>Будет импортирован объект с закрепленными версиями</h2>
+        <br>
+        <input type="submit" name="submit_ok" value="OK" />
+        <input type="submit" name="submit_cancel" value="Cancel"  style="background-color: red;"/>
+    </div>
+
+    <input type="hidden" name="mode" value="{{mode}}" />
+    <input type="hidden" name="uploaded_file_name" value="{{uploaded_file_name}}" />
+    <input type="hidden" name="object_dump_str" value="{{object_dump_str}}" />
+    <input type="hidden" name="referer" value="{{referer}}" />
+</form>
+
+{% endblock %}

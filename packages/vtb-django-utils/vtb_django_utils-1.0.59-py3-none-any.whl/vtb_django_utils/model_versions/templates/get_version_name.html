@@ -1,0 +1,23 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_list %}
+{% load l10n %}
+
+{% block content %}
+
+<form action="" method="post">{% csrf_token %}
+    <div>
+        <h1>Сохранить версию {{class_name}}</h1>
+        <label>Укажите номер версии (например {{version}}): <input  style="min-width: 90%" type="text" name="version" value="{{version}}" /></label>
+        <h4>Последняя версия: {{last_version}}</h4>
+        <h5 style="color: crimson">{{error}}</h5>
+        <br>
+        <input type="submit" value="OK" />
+    </div>
+
+    <input type="hidden" name="mode" value="{{mode}}" />
+    <input type="hidden" name="last_version" value="{{last_version}}" />
+    <input type="hidden" name="is_start_version" value="{{is_start_version}}" />
+    <input type="hidden" name="referer" value="{{referer}}" />
+</form>
+
+{% endblock %}
