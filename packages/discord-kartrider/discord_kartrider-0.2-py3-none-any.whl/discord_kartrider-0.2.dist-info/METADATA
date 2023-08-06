@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: discord-kartrider
+Version: 0.2
+Summary: 넥슨 API, 카트라이더 TMI, BAZZI를 이용한 크롤링(디스코드 용)
+Home-page: https://github.com/chunjoonseo541/discord-kartrider
+Author: joonseo7397
+Author-email: joonseo5411@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: nextcord
+Requires-Dist: requests
+
+# discord-kartrider
+
+**discord-kartrider** 는 단순하고 업데이트가 자주 될것입니다.
+
+[![Downloads](https://static.pepy.tech/badge/discord_kartrider/month)](https://pepy.tech/project/discord_kartrider)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/discord_kartrider.svg)](https://pypi.org/project/discord_kartrider)
+[![Contributors](https://img.shields.io/github/contributors/psf/discord_kartrider.svg)](https://github.com/chunjoonseo541/discord-kartrider/graphs/contributors)
+
+# install
+```
+pip install discord-kartrider
+```
+
+# 사용법
+```
+from nextcord.ext import commands
+import discord_kartrider as kart
+
+bot = commands.Bot(command_prefix'YOUR_PREFIX')
+
+@bot.command()
+async def 카트유저(ctx, name):
+    await kart.kartrideruser(ctx, nexon_api, chromedriver_link, name)
+```
+
