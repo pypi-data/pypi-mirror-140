@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: simpleml
+Version: 0.12.0
+Summary: Simplified Machine Learning
+Home-page: https://github.com/eyadgaran/SimpleML
+Author: Elisha Yadgaran
+Author-email: ElishaY@alum.mit.edu
+License: BSD-3
+Download-URL: https://github.com/eyadgaran/SimpleML/archive/v0.12.0.tar.gz
+Keywords: machine-learning,deep-learning,automated-learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Requires-Dist: sqlalchemy (>=1.3.7)
+Requires-Dist: sqlalchemy-mixins
+Requires-Dist: sqlalchemy-json
+Requires-Dist: alembic
+Requires-Dist: numpy
+Requires-Dist: cloudpickle
+Requires-Dist: future
+Requires-Dist: configparser
+Requires-Dist: simplejson
+Requires-Dist: click
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Provides-Extra: all
+Requires-Dist: tensorflow (>=2) ; extra == 'all'
+Requires-Dist: hickle ; extra == 'all'
+Requires-Dist: onedrivesdk (<2) ; extra == 'all'
+Requires-Dist: apache-libcloud ; extra == 'all'
+Requires-Dist: psycopg2 ; extra == 'all'
+Requires-Dist: pycrypto ; extra == 'all'
+Requires-Dist: dask[complete] ; extra == 'all'
+Requires-Dist: sshtunnel ; extra == 'all'
+Requires-Dist: pyarrow ; extra == 'all'
+Provides-Extra: cloud
+Requires-Dist: apache-libcloud ; extra == 'cloud'
+Requires-Dist: pycrypto ; extra == 'cloud'
+Requires-Dist: sshtunnel ; extra == 'cloud'
+Provides-Extra: dask
+Requires-Dist: dask[complete] ; extra == 'dask'
+Requires-Dist: pyarrow ; extra == 'dask'
+Provides-Extra: deep-learning
+Requires-Dist: tensorflow (>=2) ; extra == 'deep-learning'
+Requires-Dist: hickle ; extra == 'deep-learning'
+Provides-Extra: onedrive
+Requires-Dist: onedrivesdk (<2) ; extra == 'onedrive'
+Provides-Extra: postgres
+Requires-Dist: psycopg2 ; extra == 'postgres'
+Provides-Extra: test
+Requires-Dist: tensorflow (>=2) ; extra == 'test'
+Requires-Dist: hickle ; extra == 'test'
+Requires-Dist: onedrivesdk (<2) ; extra == 'test'
+Requires-Dist: apache-libcloud ; extra == 'test'
+Requires-Dist: psycopg2 ; extra == 'test'
+Requires-Dist: pycrypto ; extra == 'test'
+Requires-Dist: dask[complete] ; extra == 'test'
+Requires-Dist: sshtunnel ; extra == 'test'
+Requires-Dist: pyarrow ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+
+UNKNOWN
+
+
