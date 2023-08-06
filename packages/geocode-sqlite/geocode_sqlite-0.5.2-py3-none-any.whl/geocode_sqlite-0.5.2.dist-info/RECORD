@@ -1,0 +1,10 @@
+geocode_sqlite/__init__.py,sha256=z53xPHZ9WlcpXazJLu5FMRlCTO3aFo_Hzqn81zVwW8c,33
+geocode_sqlite/cli.py,sha256=6CG7YRXKlZnKCSSgXaMRF9Hsr0jazUN1zPDA_q16jIk,8531
+geocode_sqlite/testing.py,sha256=gvwdal60dfqXrDyxsAl-lSPIcz1JT0dRM4smfvhSQEE,1230
+geocode_sqlite/utils.py,sha256=ze5a5PEypxF_2zfM056qEGMXQgBvZ9tKpq0TJEzbHqY,4326
+geocode_sqlite-0.5.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+geocode_sqlite-0.5.2.dist-info/METADATA,sha256=K2Lckfh-R5dHor_g8YWnls6MnzeceYA3yg40tWfvpTU,5820
+geocode_sqlite-0.5.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+geocode_sqlite-0.5.2.dist-info/entry_points.txt,sha256=RXtfPwt4lJuEbzdS1nTlWn4fSCa2EiH1Oa3OObXSFPI,77
+geocode_sqlite-0.5.2.dist-info/top_level.txt,sha256=4WOjuNmNyBFRecsqqkCfw608DqSFTnVeX0Fomj3mn1k,15
+geocode_sqlite-0.5.2.dist-info/RECORD,,
