@@ -1,0 +1,16 @@
+setuptools
+lazy
+wheel
+blessed
+
+[filefinder]
+setuptools-subversion>=3.1
+setuptools-hg>=0.4
+setuptools-git>=1.2
+
+[testing]
+nose2
+nose2-kflag
+
+[twine]
+twine
