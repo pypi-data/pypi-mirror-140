@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: segar
+Version: 0.1a0
+Summary: UNKNOWN
+Author: R Devon Hjelm, Bogdan Mazoure, Florian Golemo, Mihai Jalobeanu, and Felipe Frujeri
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: absl-py
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: aenum
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python-headless
+Requires-Dist: scikit-image
+Requires-Dist: sklearn
+Requires-Dist: h5py
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+Requires-Dist: gym
+Requires-Dist: POT
+Requires-Dist: wandb
+Provides-Extra: rl
+Requires-Dist: ray[default] ; extra == 'rl'
+Requires-Dist: ray[rllib] ; extra == 'rl'
+
+UNKNOWN
+
