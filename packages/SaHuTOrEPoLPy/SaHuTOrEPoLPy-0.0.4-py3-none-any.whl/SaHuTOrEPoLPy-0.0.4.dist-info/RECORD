@@ -1,0 +1,16 @@
+sahutorepol/Errors.py,sha256=folHyHFHT7w9DGK7bOIrzvS8sq5sS7X8JQTSpjoAFoQ,4282
+sahutorepol/TypeHints.py,sha256=rT03CPFRFPv63KJ-BBMhY2tPToGk1XYM6nJCMU2iVsM,2304
+sahutorepol/Types.py,sha256=0K92D8EtqI0r8uArOUvtmIkXGAh10pCYGyy8kdUWIes,28777
+sahutorepol/__init__.py,sha256=9I8TlF0QOkhAqqHJydcp9XMNNTBd1PkIaF5G3rqc29A,509
+sahutorepol/__main__.py,sha256=_vjysVSgZClMBZcCimF7YU9I3VEwn31tVzPPqSC-FWc,64
+sahutorepol/debug.py,sha256=qGSbY0Uuc0RyLX57kMWBKzKK88Kl4gYmCnWPR4UkrhE,79
+sahutorepol/main.py,sha256=wOTOOgE8Q4xHYVzqe_L5E7mVCiH9GvZKiW3_H5T05As,24633
+sahutorepol/profiling.py,sha256=aR0di_s3w4S9LePnsJ-aZiPOsOpei64VRx69Zp_CpZU,60
+sahutorepol/sahutorepol.py,sha256=eJUrN6rwhdFT4k5H9HugWGRKto2mdiaTZBzOAxkAsz8,20957
+simple_warnings/__init__.py,sha256=_BFoWt2TQobXvnAy3xaj0dFIGbvTIrCJaZOZEhieGhc,1708
+SaHuTOrEPoLPy-0.0.4.dist-info/LICENSE.md,sha256=2Odmgi-zF0E6CbXFU0DGvshyhTMu_zVC_ME_6f2veqI,1287
+SaHuTOrEPoLPy-0.0.4.dist-info/METADATA,sha256=D6d55Nc4A6Lkb49UJbiMTRyHYLdEjDglSy7fyjPKU6o,899
+SaHuTOrEPoLPy-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+SaHuTOrEPoLPy-0.0.4.dist-info/entry_points.txt,sha256=eQu_99Nf96vgGUEjwWINl4GAn8qOw4DSUJJTu0ldvKY,57
+SaHuTOrEPoLPy-0.0.4.dist-info/top_level.txt,sha256=7hz-10tgMIDLCBNjLLTEJIKq5osTmLxHxk_hiJiwlKQ,28
+SaHuTOrEPoLPy-0.0.4.dist-info/RECORD,,
