@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+shx/__init__.py
+shx/shx.py
+shx/test_shx.py
+shx.egg-info/PKG-INFO
+shx.egg-info/SOURCES.txt
+shx.egg-info/dependency_links.txt
+shx.egg-info/entry_points.txt
+shx.egg-info/top_level.txt
