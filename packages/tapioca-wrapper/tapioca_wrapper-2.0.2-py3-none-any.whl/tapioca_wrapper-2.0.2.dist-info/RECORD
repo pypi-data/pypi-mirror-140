@@ -1,0 +1,10 @@
+tapioca/__init__.py,sha256=OXNCPebuqngBCDR_t8ww0aU3kOqJQbL8XE2by9_QIWc,269
+tapioca/adapters.py,sha256=m9-zYXM5TqBWViRtF9mq-s5ffDVX_54zs8Ig5ZX48FM,5659
+tapioca/exceptions.py,sha256=u2I2DG8tQywdQN_l-Bi4JWxKxeSeRJVthW8YS17wU4c,947
+tapioca/serializers.py,sha256=RLXsbDuil1dAWP-truRGYouAZoxsuirel1jl7UBWbwY,1240
+tapioca/tapioca.py,sha256=IHlmBwKxkQpgGphnjRDjRuzDj9CmMw8OSl7ZGsyOQA0,12147
+tapioca_wrapper-2.0.2.dist-info/LICENSE,sha256=ZeyeOkSqZPhaayMonYgLxM1iLtBhxcrknjz8RaTg5As,1086
+tapioca_wrapper-2.0.2.dist-info/METADATA,sha256=To2vk_wh3_7qb0fDALD3J7HiIe0hUOpYoLUs5RrOazI,1092
+tapioca_wrapper-2.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tapioca_wrapper-2.0.2.dist-info/top_level.txt,sha256=2UUKWct3Qi0wcsBBWHUO73hX2x6ZKfvkyGLfb4di1pY,8
+tapioca_wrapper-2.0.2.dist-info/RECORD,,
