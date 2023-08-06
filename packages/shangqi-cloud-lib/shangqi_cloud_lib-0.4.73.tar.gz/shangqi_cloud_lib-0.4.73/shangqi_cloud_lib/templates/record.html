@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ project_name }}接口文档</title>
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/src/core.min.js"></script>
+</head>
+<style>
+    table, table tr th, table tr td {
+        border: 1px solid black;
+    }
+
+    table tr > td:first-child, th:first-child {
+        min-width: 168px;
+    }
+
+    table tr > td {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+    table tr > td input {
+        border: none;
+        outline: none;
+        width: 99%;
+        height: 99%;
+    }
+
+    table tr > td input:focus {
+        border: none;
+        outline: none;
+    }
+
+    .admin-table {
+        min-height: 30px;
+        line-height: 25px;
+        text-align: center;
+        border-collapse: collapse;
+        min-width: 900px;
+        width: 100%;
+    }
+
+    .admin-header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+    }
+
+    .admin-center {
+        display: flex;
+        flex-direction: row;
+        width: 99%;
+        height: 90%;
+        position: absolute;
+        top: 10%;
+        z-index: 90;
+    }
+
+    .admin-logo {
+        width: 160px;
+        height: 100%;
+    }
+
+    .admin-nav {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 100%;
+    }
+
+    .admin-nav-item {
+        width: 18%;
+    }
+
+    .admin-left-side {
+        width: 20%;
+        max-height: calc(100vh - 12%);
+        position: fixed;
+        top: 11%;
+        overflow-y: scroll;
+    }
+
+    .admin-left-side ul {
+        line-height: 25px;
+    }
+
+    .admin-main {
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        left: 20%;
+        padding-left: 5%;
+    }
+
+    .admin-right-side {
+        width: 18%;
+        height: 100%;
+    }
+
+    .admin-card {
+        width: 100%;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+
+    .admin-card .admin-card-header {
+        text-align: left;
+        margin-bottom: 6px;
+    }
+
+    .admin-card .admin-card-header span {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .admin-card .admin-card-header button {
+        float: right;
+        width: 60px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .admin-card .admin-card-footer {
+        text-align: left;
+    }
+
+    .admin-card .admin-card-footer .res-content {
+        background-color: azure;
+        display: block;
+        max-height: 400px;
+        overflow: auto;
+        border: solid 1px black;
+        padding: 0.5%;
+        white-space: pre;
+    }
+</style>
+<body>
+<div style="height: 100%;width: 100%;">
+    <div class="admin-header">
+        <div class="admin-logo"><h2>接口更新记录</h2></div>
+        {# 项目列表 #}
+        <div class="admin-nav">
+            <div class="admin-nav-item" style="width: 100%;"><h2>{{ project_name }}</h2></div>
+        </div>
+    </div>
+    <div class="admin-center" style="overflow: hidden;">
+        <div class="admin-main" style="width: 100%; left: 0; padding-left: 0;">
+            <div class="admin-card" id="record" style="padding-top: 10px;">
+                {% if len(record_data) > 0 %}
+                <table style="width: 100%;">
+                    <tr>
+                        <th style="width: 18%">时间</th>
+                        <th style="width: 10%">记录类型</th>
+                        <th style="width: 10%">更新类型</th>
+                        <th style="width: 28%">更新内容</th>
+                        <th style="width: 31%">所属接口</th>
+                    </tr>
+                    {% for record in record_data %}
+                    <tr>
+                        <td>{{ record.get("record_time") }}</td>
+                        <td>{{ record.get("record_type") }}</td>
+                        <td>{{ record.get("key_type") }}</td>
+                        {% if record.get("old_val") and record.get("new_val") %}
+                        <td>{{ record.get("old_val") }}&nbsp; -> &nbsp;{{ record.get("new_val") }}</td>
+                        {% elif record.get("old_val") %}
+                        <td>{{ record.get("old_val","") }}</td>
+                        {% elif record.get("new_val","") %}
+                        <td>{{ record.get("new_val","") }}</td>
+                        {% end %}
+                        <td><a href="#{{ record.get('anchor') }}">{{ record.get("key_owner") }}</a></td>
+                    </tr>
+                    {% end %}
+                </table>
+                <div>
+                    <span>第{{ curr_page }}页，共{{ total_page }}页</span>
+                    <a href="/record?page_number=1">首页</a>
+                    <a href="/record?page_number={{ last_page }}">上一页</a>
+                    <a href="/record?page_number={{ next_page }}">下一页</a>
+                    <a href="/record?page_number={{ total_page }}">尾页</a>
+                </div>
+                {% end %}
+            </div>
+        </div>
+</div>
+</body>
+</html>
