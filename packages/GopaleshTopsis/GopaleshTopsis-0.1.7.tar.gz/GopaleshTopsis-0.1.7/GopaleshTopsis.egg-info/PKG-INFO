@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: GopaleshTopsis
+Version: 0.1.7
+Summary: MCDM implementation using Topsis for numerical data
+Author: Gopalesh Bansal
+Author-email: <gopalesh2002@gmail.com>
+License: UNKNOWN
+Keywords: python,topsis,weights,impacts
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+UNKNOWN
+

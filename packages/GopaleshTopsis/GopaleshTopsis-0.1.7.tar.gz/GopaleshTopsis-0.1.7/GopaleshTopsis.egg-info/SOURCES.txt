@@ -1,0 +1,8 @@
+setup.py
+GopaleshTopsis/__init__.py
+GopaleshTopsis/utils.py
+GopaleshTopsis.egg-info/PKG-INFO
+GopaleshTopsis.egg-info/SOURCES.txt
+GopaleshTopsis.egg-info/dependency_links.txt
+GopaleshTopsis.egg-info/requires.txt
+GopaleshTopsis.egg-info/top_level.txt
