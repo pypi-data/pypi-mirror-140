@@ -1,0 +1,3 @@
+[console_scripts]
+nptel-dl = nptel_dl:main
+
