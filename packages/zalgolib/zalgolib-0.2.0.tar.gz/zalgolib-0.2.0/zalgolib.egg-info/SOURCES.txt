@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+zalgolib/__init__.py
+zalgolib/diacritics.py
+zalgolib/zalgolib.py
+zalgolib.egg-info/PKG-INFO
+zalgolib.egg-info/SOURCES.txt
+zalgolib.egg-info/dependency_links.txt
+zalgolib.egg-info/top_level.txt
