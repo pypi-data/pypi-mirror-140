@@ -1,0 +1,4 @@
+ACTION_SCAN_TABLE = "scan_table"
+SUB_ACTION_SCAN_INIT = "init"
+SUB_ACTION_SCAN_START = "start"
+SUB_ACTION_SCAN_CONTINUE = "continue"
