@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sdmaster
+Version: 1.0.1
+Summary: Stock Data Master
+Home-page: https://redrumsherlock.github.io/stockdatamaster
+Author: Mike Wang
+Author-email: wml816@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+
+UNKNOWN
+
