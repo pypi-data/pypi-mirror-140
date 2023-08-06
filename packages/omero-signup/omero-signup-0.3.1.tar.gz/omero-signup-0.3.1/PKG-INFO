@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: omero-signup
+Version: 0.3.1
+Summary: A Python plugin for OMERO.web
+Home-page: https://github.com/ome/omero-signup
+Author: The Open Microscopy Team
+Author-email: ome-devel@lists.openmicroscopy.org.uk
+License: AGPL-3.0
+Download-URL: https://github.com/ome/omero-signup/archive/v0.3.1.tar.gz
+Keywords: OMERO.web,plugin
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Requires-Python: >=3
+License-File: LICENSE
+
+.. image:: https://github.com/ome/omero-signup/workflows/OMERO/badge.svg
+    :target: https://github.com/ome/omero-signup/actions
+
+.. image:: https://badge.fury.io/py/omero-signup.svg
+    :target: https://badge.fury.io/py/omero-signup
+
+OMERO.signup
+============
+OMERO.web app to allow anyone to signup for an OMERO account.
+
+Generated usernames are formed from the alphanumeric unicode characters in a user's first and last names, with a numeric suffix if the username already exists.
+If OMERO.web is configured to connect to multiple OMERO servers the user account will be created on the default one.
+
+
+Requirements
+------------
+
+* OMERO.web 5.6 or newer.
+* Python 3.6 or newer.
+
+
+Installation
+------------
+
+This section assumes that an OMERO.web is already installed.
+
+::
+
+    $ pip install omero-signup
+    $ omero config append omero.web.apps '"omero_signup"'
+
+Required configuration settings:
+
+- ``omero.web.signup.admin.user``: OMERO admin username, must have permission to create groups and users
+- ``omero.web.signup.admin.password``: Password for OMERO admin username
+- ``omero.web.signup.group.name``: Default group for new users, will be created if it doesn't exist
+
+
+Optional configuration settings:
+
+- ``omero.web.signup.group.templatetime``: If ``True`` expand ``omero.web.signup.group.name`` using ``strftime`` to enable time-based groups, default disabled
+- ``omero.web.signup.group.perms``: Permissions on default group for new users if it doesn't exist
+
+These configuration settings are untested due to the difficulty of configuring email on a test server:
+
+- ``omero.web.signup.email.enabled``: If ``True`` send emails to new users with their username and password instead of displaying the password, default disabled
+- ``omero.web.signup.email.subject``: Email subject for new-user emails
+- ``omero.web.signup.email.body``: Email body for new-user emails.
+  It should include template strings ``{username}`` and ``{password}`` that will be substituted with the created user's username and password.
+
+Example:
+
+::
+
+    $ omero config get
+    omero.web.apps=["omero_signup"]
+    omero.web.signup.admin.password=root-password
+    omero.web.signup.admin.user=root
+    omero.web.signup.group.name=testgroup-%Y-%m
+    omero.web.signup.group.templatetime=true
+    omero.web.signup.host=localhost
+
+
+Restart OMERO.web in the usual way.
+
+::
+
+    $ omero web restart
+
+
+New users will be able to sign-up for an account at http://omero.web.host/signup.
+
+
+Release process
+---------------
+
+Use `bumpversion
+<https://pypi.org/project/bump2version/>`_ to increment the version, commit and tag the repo.
+
+::
+
+    $ bumpversion patch
+    $ git push origin master
+    $ git push --tags
+
+
+License
+-------
+
+OMERO.signup is released under the AGPL.
+
+Copyright
+---------
+
+2019, The Open Microscopy Environment
+
+
