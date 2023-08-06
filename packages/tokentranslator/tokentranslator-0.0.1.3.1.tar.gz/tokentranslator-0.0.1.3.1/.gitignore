@@ -1,0 +1,14 @@
+*.pyc
+*~
+__pycache__/
+TAGS
+*.log
+tokentranslator.egg-info/
+tokentranslator.egg-info/*
+tokentranslator.egg-info/**
+build/
+build/*
+build/**
+dist/
+dist/*
+dist/**

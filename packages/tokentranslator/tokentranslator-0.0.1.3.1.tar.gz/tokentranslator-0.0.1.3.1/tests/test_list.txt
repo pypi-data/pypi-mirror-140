@@ -1,0 +1,64 @@
+### Main tokentranslator tests:
+
+# new equation translator test:
+# (mostly for wolfram)
+python3 -c "import tokentranslator.env.equation_net.tests as ts;ts.run()"
+
+# old equation translator test (deprecated):
+python3 -c "import tokentranslator.env.equation.tests as ts;ts.run()"
+
+# system of equations tests:
+python3 -c "import tokentranslator.env.system.tests_sys as ts;ts.run()"
+
+# clauses tests:
+python3 -c "import tokentranslator.env.clause.tests as ts;ts.run()"
+
+==================================================
+### Main tokentranslator tests:
+# for changing eqs dialect to tex:
+python3 -c "import tokentranslator.db_models.model_main as dbm; dbm.change_eqs('tex')"
+
+# to wolfram:
+python3 -c "import tokentranslator.db_models.model_main as dbm; dbm.change_eqs('wolfram')"
+===================================================
+
+### tokentranslator components tests:
+
+# lex and cyk tests:
+python3 -c "import tokentranslator.translator.grammar.tests_cyk as ts;ts.run()"
+
+# tree and map tests:
+python3 -c "import tokentranslator.translator.tree.tests_map as ts;ts.run()"
+
+v# parser general test:
+python3 -c "import tokentranslator.translator.main.test_parser_general as ts;ts.run()"
+
+=================================
+### tokenizer tests
+
+# main tokenizer  tests:
+python3 -c "import tokentranslator.translator.tokenizer.tests.tests_tokenizer_main as ts;ts.run()"
+
+# patterns sorting tests:
+python3 -c "import tokentranslator.translator.tokenizer.patterns.patterns_listtests.tests_patterns_list as ts;ts.run()"
+
+# patterns types tests:
+python3 -c "import tokentranslator.translator.tokenizer.patterns.patterns_types.tests.tests_pattern_re as ts;ts.run()"
+
+python3 -c "import tokentranslator.translator.tokenizer.patterns.patterns_types.tests.tests_pattern_txt as ts;ts.run()"
+
+python3 -c "import tokentranslator.translator.tokenizer.patterns.patterns_types.tests.tests_pattern_ex as ts;ts.run()"
+
+========================================
+
+### Test model:
+python3 -c "import tokentranslator.gui.web.model.model_main as ts;ts.run()"
+python3 -c "import tokentranslator.gui.web.model.model_signatures as ts;ts.run()"
+python3 -c "import tokentranslator.gui.web.model.model_examples as ts;ts.run()"
+python3 -c "import tokentranslator.gui.web.model.model_stable as ts;ts.run()"
+
+
+
+=======================================
+
+# see also: tokentranslator/translator/tokenizer/tests/tests_list.py
