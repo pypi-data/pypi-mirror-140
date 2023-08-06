@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+Makefile
+README.rst
+main.py
+setup.cfg
+setup.py
+lithic.egg-info/PKG-INFO
+lithic.egg-info/SOURCES.txt
+lithic.egg-info/dependency_links.txt
+lithic.egg-info/not-zip-safe
+lithic.egg-info/top_level.txt
