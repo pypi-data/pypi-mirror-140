@@ -1,0 +1,35 @@
+# new virtual environment: 
+#     conda env create -f environment_dev.yml
+# activate: 
+#     conda activate cofi_dev
+# update from file:
+#     conda env update --file environment_dev.yml --prune
+# share current env: 
+#     conda env export > environment_ref.yml
+
+name: cofi_dev
+channels: 
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  # - jax
+  # - jaxlib
+  - pyyaml
+  - black
+  - sphinx
+  - mpi4py
+  - petsc
+  - petsc4py
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - cython
+  - pybind11
+  - scikit-build
+  - pytest
+  - pip
+  - pip:
+    - coverage[toml]
+    - insipid-sphinx-theme
+    - cibuildwheel
