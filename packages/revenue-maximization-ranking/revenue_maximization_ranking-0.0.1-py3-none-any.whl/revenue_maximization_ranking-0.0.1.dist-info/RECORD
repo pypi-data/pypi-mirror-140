@@ -1,0 +1,16 @@
+revenue_maximization_ranking/__init__.py,sha256=C6hnd7is0d5ZSo1Ut3iilkLWXLipD0FqAh2Ksve85jw,418
+revenue_maximization_ranking/_types.py,sha256=ctrNbBi-LfTmVky_bpgT_Aao-px5YU1WAesAACuY8L8,399
+revenue_maximization_ranking/cascade/__init__.py,sha256=kLHEHo1t87GCxxp_wDDzcXNucEkr32S19A9aPIEkSus,1249
+revenue_maximization_ranking/cascade/best_x.py,sha256=o1HHfClB8sLCCauQx5c7HKgzXAB-NnvQz0k5Jlaeoww,5760
+revenue_maximization_ranking/cascade/dataframe.py,sha256=YAoxiq2b_dKwSTj4ImcqJ6YCMJwdfnSsqtTLEcxEjEk,5054
+revenue_maximization_ranking/cascade/fixed_attention.py,sha256=raJOFE3ZSawoQj1q2c_ZVoJng76WznanqGkNCmwAmN0,3919
+revenue_maximization_ranking/cascade/revenue.py,sha256=oNI4jm4GWKvZboMN-gbpZJfQbXCGDz7u1P_viUyVphM,1323
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cascade/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cascade/test_fixed_attention.py,sha256=xjZ7DddKTTWP9xvWQ3gnJSdyENP1x1_Svz6uHPTK8bc,1080
+tests/test_cascade/test_revenue.py,sha256=LrLi50AN--WeNxirU1F1xd1WlbZr15gDjiVKAoSlqDI,728
+revenue_maximization_ranking-0.0.1.dist-info/LICENSE,sha256=-W8VduUodkL3Vev3IWOTtFaZST03tPBLeU86EN6JP9Q,1111
+revenue_maximization_ranking-0.0.1.dist-info/METADATA,sha256=3fF3eRcYr4vqn4XMT9zukYdAEg15YPMQDzRXWcCJBF0,693
+revenue_maximization_ranking-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+revenue_maximization_ranking-0.0.1.dist-info/top_level.txt,sha256=5Peo4OgVEqU9nuWHneMV9ynhModhB4IdeZNMai-T5hg,35
+revenue_maximization_ranking-0.0.1.dist-info/RECORD,,
