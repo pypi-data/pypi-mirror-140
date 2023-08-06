@@ -1,0 +1,16 @@
+pygetpapers/__init__.py,sha256=U5rdKwEXgZrU1cGtszW8yo8j_285wlD35lanRV5r6js,387
+pygetpapers/arxiv.py,sha256=v92VfPG71r3UihCzKbRgUZMT9sJ-QeAZj7Gyq3_Gt0s,5544
+pygetpapers/config.ini,sha256=3obgy-2xGEXC5aT771IDJYnXWhhfAdEAC5aBql2GYeE,2793
+pygetpapers/crossref.py,sha256=sX6l1OFLae4KLGtKj7YeFpMY_-ekvXxhyMpMhxFWT8c,6091
+pygetpapers/download_tools.py,sha256=WqKbI1u8FUCuCy9inUcrz190raNA1x25JJbyKM4yfcU,26481
+pygetpapers/europe_pmc.py,sha256=NEtA4CqJq1M2o8IiAiNeVJ1zmjWRuFX-ZMmZVxB3JyU,26096
+pygetpapers/pgexceptions.py,sha256=bw12ZsSLYd6ciRMwEqbUfqvOeMmhI9l-KGrg-DPQsdw,252
+pygetpapers/pygetpapers.py,sha256=Fk0l9fESidFzUTSfHWb-sXqRlGF24J3zEjB2IsnbJGM,18438
+pygetpapers/rxiv.py,sha256=SheEBDw23SJEi_hvjnZQ1uotmHCnyYJg_zAlEatGdZY,10982
+pygetpapers/rxivist.py,sha256=Aq-_6ptKLLs8o8Hc3IBC6kH3zYIP2teggnFHjAahMsU,8189
+pygetpapers-1.1.6.dist-info/LICENSE,sha256=h4Oeu-PXjaaiN1X3w7dUaff7sMwbIjvduzQOKD71IAA,11314
+pygetpapers-1.1.6.dist-info/METADATA,sha256=1db0ocGoFWZXlgO-0ciSMi_Td42U2Ze9Iy5M-f_MZCc,46918
+pygetpapers-1.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygetpapers-1.1.6.dist-info/entry_points.txt,sha256=Xcd6aOHvJ62ceD7TVF4Zj3hrATDXEl32mMjh-Ualkjw,61
+pygetpapers-1.1.6.dist-info/top_level.txt,sha256=Xu5bsUQBBvUyorNfrG7GC_x43gbgWfGvI53pFvjYWaQ,12
+pygetpapers-1.1.6.dist-info/RECORD,,
