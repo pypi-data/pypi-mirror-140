@@ -1,0 +1,13 @@
+Cython>=0.22
+arviz
+h5py
+lalsuite
+matplotlib
+numpy
+pandas
+pystan<3,>=2
+qnm
+scipy
+seaborn
+gwosc
+ringdown
