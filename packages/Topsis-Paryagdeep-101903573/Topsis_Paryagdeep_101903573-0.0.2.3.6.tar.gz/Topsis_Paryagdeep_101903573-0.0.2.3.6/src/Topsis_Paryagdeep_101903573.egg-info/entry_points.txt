@@ -1,0 +1,3 @@
+[console_scripts]
+Topsis-Paryagdeep-101903573 = Topsis_Paryagdeep_101903573.topsis_Paryagdeep:main
+
