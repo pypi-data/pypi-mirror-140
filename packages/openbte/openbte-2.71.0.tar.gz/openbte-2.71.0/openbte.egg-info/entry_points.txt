@@ -1,0 +1,4 @@
+[console_scripts]
+AlmaBTE2OpenBTE = openbte.almabte2openbte:main
+Phono3py2OpenBTE = openbte.phono3py2openbte:main
+
