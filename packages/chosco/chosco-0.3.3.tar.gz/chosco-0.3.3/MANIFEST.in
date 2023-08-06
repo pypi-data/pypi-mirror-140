@@ -1,0 +1,3 @@
+include chosco/VERSION
+include requirements/requirements.txt
+include LICENSE

@@ -1,0 +1,4 @@
+google-cloud-storage==1.44.0
+numpy>=1.19.5
+ipywidgets==7.6.5
+loguru
