@@ -1,0 +1,4 @@
+numpy
+multiprocess
+h5py
+scipy

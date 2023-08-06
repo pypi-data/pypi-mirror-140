@@ -1,0 +1,10 @@
+setup.py
+turbESN/__init__.py
+turbESN/core.py
+turbESN/study.py
+turbESN/util.py
+turbESN.egg-info/PKG-INFO
+turbESN.egg-info/SOURCES.txt
+turbESN.egg-info/dependency_links.txt
+turbESN.egg-info/requires.txt
+turbESN.egg-info/top_level.txt

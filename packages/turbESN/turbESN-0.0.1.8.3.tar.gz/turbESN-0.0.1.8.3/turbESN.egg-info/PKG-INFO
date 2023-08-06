@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: turbESN
+Version: 0.0.1.8.3
+Summary: An echo state network implementation.
+Home-page: UNKNOWN
+Author: flohey (Florian Heyder)
+Author-email: <florian.heyder@tu-ilmenau.de>
+License: UNKNOWN
+Keywords: python,ESN,reservoir computing,echo state network,recurrent neural network
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+An echo state network implementation, used in my PhD research as part of the DeepTurb project of the Carl-Zeiss Stiftung.
+
