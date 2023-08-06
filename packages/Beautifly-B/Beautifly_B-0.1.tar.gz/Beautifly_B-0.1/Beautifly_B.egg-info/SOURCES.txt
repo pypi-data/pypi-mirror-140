@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+Beautifly_B/__init__.py
+Beautifly_B.egg-info/PKG-INFO
+Beautifly_B.egg-info/SOURCES.txt
+Beautifly_B.egg-info/dependency_links.txt
+Beautifly_B.egg-info/not-zip-safe
+Beautifly_B.egg-info/top_level.txt
