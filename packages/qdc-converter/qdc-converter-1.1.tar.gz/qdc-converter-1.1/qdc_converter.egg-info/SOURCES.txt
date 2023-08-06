@@ -1,0 +1,7 @@
+qdc-converter
+setup.py
+qdc_converter.egg-info/PKG-INFO
+qdc_converter.egg-info/SOURCES.txt
+qdc_converter.egg-info/dependency_links.txt
+qdc_converter.egg-info/requires.txt
+qdc_converter.egg-info/top_level.txt
