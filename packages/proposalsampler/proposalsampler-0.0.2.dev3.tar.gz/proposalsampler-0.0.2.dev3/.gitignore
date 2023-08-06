@@ -1,0 +1,14 @@
+*.pyc
+*~
+__pycache__/
+TAGS
+*.log
+proposalsampler.egg-info/
+proposalsampler.egg-info/*
+proposalsampler.egg-info/**
+build/
+build/*
+build/**
+dist/
+dist/*
+dist/**
