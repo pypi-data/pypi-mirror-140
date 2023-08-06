@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: bitnesslib
+Version: 0.1.2
+Summary: Given a binary, determine its bitness
+Home-page: https://github.com/ramikg/bitnesslib
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# bitnesslib
+
+A Python library with one simple purpose: given a binary, determine its bitness.  
+
+## Installation
+
+`pip install bitnesslib`
+
+## Usage example
+
+```python
+>>> import bitnesslib
+>>> bitnesslib.get_bitness('C:/Windows/System32/calc.exe')
+64
+>>> bitnesslib.get_bitness('C:/Windows/SysWOW64/calc.exe')
+32
+```
+
+## Supported file formats
+
+- MZ & PE
+- ELF
+- Mach-O
+- IDA databases (_.idb_ & _.i64_)
+
+

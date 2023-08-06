@@ -1,0 +1,14 @@
+README.md
+setup.py
+bitnesslib/__init__.py
+bitnesslib/bitnesslib.py
+bitnesslib.egg-info/PKG-INFO
+bitnesslib.egg-info/SOURCES.txt
+bitnesslib.egg-info/dependency_links.txt
+bitnesslib.egg-info/top_level.txt
+bitnesslib/file_formats/ELF.py
+bitnesslib/file_formats/PE.py
+bitnesslib/file_formats/__init__.py
+bitnesslib/file_formats/abstract_format.py
+bitnesslib/file_formats/const_bitness_format.py
+bitnesslib/file_formats/magic_map.py
