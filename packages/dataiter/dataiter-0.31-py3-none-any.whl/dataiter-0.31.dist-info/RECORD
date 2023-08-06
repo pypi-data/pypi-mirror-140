@@ -1,0 +1,15 @@
+dataiter/__init__.py,sha256=FXFtzHlHHGfDiLjs8FxFw_cf4qICOrGiVv26YLwyAMc,2888
+dataiter/aggregate.py,sha256=ur-GMd5bfor2qBOoKsSK6vL8sZGAqlgM4fuiqHd2mqg,21245
+dataiter/data_frame.py,sha256=ru4RcxGNnmi1kKSPyMoURXWX66k5B7w7xmfk2Wzgg6g,42153
+dataiter/deco.py,sha256=yDUJY8LpMllFwXFwl268147iyT0fafhbU1SceM70u_g,1910
+dataiter/geojson.py,sha256=EZA1JmoJHfnz-Jag2l-um8JMu9-xxWaf1xNWp4AbfdA,6176
+dataiter/io.py,sha256=Vp9tFOVJrZbBIWbXiaLzjRLE-h2EW2ZO3S9pTWF8qJw,2545
+dataiter/list_of_dicts.py,sha256=GDR2GhlxzT7cwrJegH0uBxEZ6zBj4Z23nycMN88-XjY,30471
+dataiter/util.py,sha256=GiAPqbMP0AyfUi0nAx-KCRNIUW15PIFzN1hQXMGiDmo,4257
+dataiter/vector.py,sha256=PPd1G-ZFiTsufnWW79MItMkY9lSeoWF6xZcNw5amQVU,21520
+dataiter-0.31.dist-info/AUTHORS.md,sha256=DkBUjOMQs21VsurU8QyVx5n-jK86HvFckGhLpDWeRps,31
+dataiter-0.31.dist-info/COPYING,sha256=_TDswg62fNuPGfyx7Z9ldpqzz6QXDfcMqeRgrWCq2Jw,1084
+dataiter-0.31.dist-info/METADATA,sha256=8z8EMIwPSLm8GAtQLGUiQvMPWmgPs2tT3rFU8fet7HM,2797
+dataiter-0.31.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dataiter-0.31.dist-info/top_level.txt,sha256=AyzhuconxSL0vtzMidFUK3fSaDR7vds2QLyM3Xt6C0Y,9
+dataiter-0.31.dist-info/RECORD,,
