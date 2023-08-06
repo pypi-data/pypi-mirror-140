@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+setup.py
+pydest/__init__.py
+pydest/api.py
+pydest/dbase.py
+pydest/manifest.py
+pydest/pydest.py
+pydest.egg-info/PKG-INFO
+pydest.egg-info/SOURCES.txt
+pydest.egg-info/dependency_links.txt
+pydest.egg-info/top_level.txt
+pydest/test/__init__.py
+pydest/test/test_integration.py
+pydest/test/test_pydest.py
