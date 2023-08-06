@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: yaoauth2
+Version: 0.0.2
+Summary: Simple OAuth2 client library for FastAPI
+Author: Martin Wacker
+Author-email: martas@imm.cz
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: fastapi (>=0.72.0,<0.73.0)
+Requires-Dist: httpx (>=0.22.0,<0.23.0)
+Requires-Dist: nxtools (>=1.6,<2.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
