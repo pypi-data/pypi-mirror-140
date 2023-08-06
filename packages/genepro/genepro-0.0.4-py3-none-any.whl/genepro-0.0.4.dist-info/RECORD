@@ -1,0 +1,13 @@
+genepro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genepro/evo.py,sha256=z7BrL1PI7UMSZf8npvUl8WGova6qHS6LMNZoJZiOuTM,7445
+genepro/node.py,sha256=v1fhYszUFxVz_qSfyy-G_xEbhQlHCNYLPmwqyIeBn2g,7335
+genepro/node_impl.py,sha256=HECIRS1WoxHnk5TPQA77S7BT6OwZ9Mj-C7urz55qdic,2866
+genepro/scikit.py,sha256=qcsZ6uCQAmtvriaq5Lc__63JsUQw4sY_obbYItRELHQ,3611
+genepro/selection.py,sha256=uexfjealaTvInRbsU2wVX2gn3GPqTo6Xoe5gd-lzg9w,1394
+genepro/util.py,sha256=kY6H_xkFNzcBW7TlA9j5I0OhaDF90xCQKvOYUfQLSjg,2306
+genepro/variation.py,sha256=WfokbxYsIi6euCcgs0xvtv6xK9UbbEySL5y_OSrJvxQ,9182
+genepro-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+genepro-0.0.4.dist-info/METADATA,sha256=cHAkB_RUyO1pYWiUcFsbpFGWWn1Ir1AsAB27_J9UDJI,4732
+genepro-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+genepro-0.0.4.dist-info/top_level.txt,sha256=7lpWeLPKlQAtz_mDeGJh6k5FHXtcePUDH72FitHD-Jc,8
+genepro-0.0.4.dist-info/RECORD,,
