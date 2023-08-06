@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+1Q847.egg-info/PKG-INFO
+1Q847.egg-info/SOURCES.txt
+1Q847.egg-info/dependency_links.txt
+1Q847.egg-info/requires.txt
+1Q847.egg-info/top_level.txt
+Dll/DmReg.dll
+Dll/Reg.py
+Dll/__init__.py
+Dll/dm.dll
