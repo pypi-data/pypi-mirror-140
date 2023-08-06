@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: bluebild-tools
+Version: 0.0.3
+Summary: Tools around Bluebild@EPFL
+Home-page: https://github.com/epfl-radio-astro/bluebild-tools.git
+Author: Etienne Orliac
+Author-email: etienne.orliac@epfl.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bluebild-tools
+
+Tools around bluebild@EPFL
+
+## Installation
+```
+$ pip install bluebild-tools --upgrade
+```
+## Usage
+
+### Check whether CuPy can be used
+
+```
+from bluebild_tools import cupy as bbt_cupy
+use_cupy = bbt_cupy.is_cupy_usable()
+```
+
+You can set the `MUST_CUPY` environment variable to influence the behavior of the function:
+- With `MUST_CUPY` unset or set to 0, the `use_cupy` boolean variable will be set to `False` if CuPy can't be used and set to `True` if CuPy can be used.
+- With `MUST_CUPY` set to 1, the process will be killed if CuPy is not usable.
+- With `MUST_CUPY` set to 0, no attempt will be made to use CuPy (i.e. `use_cupy` will be set to `False`, always).
+
+## Note
+If CuPy is found unusable, the following environment variables are automatically set to 0:
+- `CUPY_PYFFS`
+- `CUPY_PYLOPS`
+
+That way, the pyFFS (https://github.com/imagingofthings/pyFFS) and PyLops (https://github.com/PyLops/pylops) packages can be imported with CuPy support disabled.
+
+
