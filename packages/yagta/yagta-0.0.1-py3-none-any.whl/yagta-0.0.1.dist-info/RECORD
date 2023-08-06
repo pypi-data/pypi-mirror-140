@@ -1,0 +1,13 @@
+yagta/__main__.py,sha256=A_A4k7TOnGTPHNsSKmKiDWxG8sOWH33dcbo5PEoCu0s,9653
+yagta/css/main.css,sha256=uUXJLQng94i--CFAW6RuDyFo1EHITptgRQP_0IIGZvE,901
+yagta/ui/CalendarOverlay.ui,sha256=9nramYDUar0XQSjmrgiS7UUK7xF40W8SHr7bY-EN1f8,1204
+yagta/ui/MainWindow.ui,sha256=oHz8FZjzvdhWz2ksKj8XC9UfEtq5H0-64my9Ny6MjQM,1642
+yagta/ui/Task.ui,sha256=0QtEf3RdKsu83Vr1eNmrAVulxY7DEm38QIpJNPCRaL0,2024
+yagta/ui/TaskList.ui,sha256=E1TpjoVavqxlCFfPGFOVpySHG21tw2T5rAPfcJ8D05g,1416
+yagta-0.0.1.data/data/share/applications/io.github.epiccakeking.YAGTA.desktop,sha256=up8mtxTIUyVsR697kfzo5Tj8cpw16e8tT31BDGz3j8M,169
+yagta-0.0.1.data/data/share/icons/io.github.epiccakeking.YAGTA.svg,sha256=XGc0us394QrPWBVcI8W1p0CEuT4eUtiu3fTKu9x0X3U,353
+yagta-0.0.1.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+yagta-0.0.1.dist-info/METADATA,sha256=e-0qOqlIgao0_X4LsSSI9Dm2H6X-bw9SWGBhT1YXi5w,638
+yagta-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+yagta-0.0.1.dist-info/top_level.txt,sha256=seDswoJm0UEhUyD4pZXMDkZuTE0setnsaGH5LRgQeyY,6
+yagta-0.0.1.dist-info/RECORD,,
