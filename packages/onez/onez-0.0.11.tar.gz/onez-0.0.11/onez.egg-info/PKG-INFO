@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: onez
+Version: 0.0.11
+Summary: test pip module
+Home-page: https://99onez.com
+Author: 99onez
+Author-email: 99onez@qq.com
+License: MIT
+Description: test how to define pip module and upload to pypi
+Keywords: pip,testpypi
+Platform: any
