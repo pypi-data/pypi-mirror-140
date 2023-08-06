@@ -1,0 +1,3 @@
+requests
+django-redis<4.9,>4.4
+omero-web<5.14.0,>=5.13.0
