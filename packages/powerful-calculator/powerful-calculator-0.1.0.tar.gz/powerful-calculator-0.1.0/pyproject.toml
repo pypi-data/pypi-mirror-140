@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "powerful-calculator"
+version = "0.1.0"
+description = "Calculator for basic operation"
+authors = ["Dawid Konard Kohnke <dawid.kohnke.cad@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/anytokin/calculator"
+repository = "https://github.com/anytokin/calculator"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+cli_command_name = 'package_name:function'
+
+[build-system]
+requires = ["poetry>=0.12","numpy>=1.21.4"]
+
+build-backend = "poetry.masonry.api"
