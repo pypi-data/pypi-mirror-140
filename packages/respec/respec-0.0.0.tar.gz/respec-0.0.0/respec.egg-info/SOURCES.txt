@@ -1,0 +1,8 @@
+MANIFEST.in
+requirements.txt
+setup.py
+respec/__init__.py
+respec.egg-info/PKG-INFO
+respec.egg-info/SOURCES.txt
+respec.egg-info/dependency_links.txt
+respec.egg-info/top_level.txt
