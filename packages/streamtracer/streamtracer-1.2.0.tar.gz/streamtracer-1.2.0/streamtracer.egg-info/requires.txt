@@ -1,0 +1,13 @@
+numpy>=1.14.5
+
+[docs]
+jupyter-sphinx
+numpydoc
+pydata-sphinx-theme
+sphinx
+sphinx-automodapi
+sphinx_rtd_theme
+
+[tests]
+pytest
+pytest-cov

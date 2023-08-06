@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: streamtracer
+Version: 1.2.0
+Summary: "Python wrapped fortran to calculate streamlines"
+Home-page: https://streamtracer.readthedocs.io/en/stable/
+Author: David Stansby, Lars Mejnertsen
+Author-email: dstansby@gmail.com
+License: GPL v3
+Platform: any
+Provides: streamtracer
+Requires-Python: >=3.6
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE
+
+UNKNOWN
+
