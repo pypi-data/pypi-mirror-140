@@ -1,0 +1,10 @@
+drf_excel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_excel/fields.py,sha256=DJQFx67hlA0xOGGU6bpgAmxP6-LcARZq8wp1NMemI54,6311
+drf_excel/mixins.py,sha256=Rx9wqN4AryAfX_ocTIH5_EcOI9pPhAIg_qykZmttEgM,1125
+drf_excel/renderers.py,sha256=fPnpwgM2R35KOjl2DDkAoH90BMbKLPvqT3m1RLVlCQM,14388
+drf_excel/utilities.py,sha256=sMZxGM5j_8CQCg6Fng_pEkCO8-QxDSRRmxCS5jT84mo,2911
+drf_excel-2.0.1.dist-info/LICENSE,sha256=2L7iMW5Yiks3qafzK3LrB-kuDlzsfpS1gCDTiPotJ4I,1582
+drf_excel-2.0.1.dist-info/METADATA,sha256=rgdoM6bNKfLD-61fhyiaE5fHxKCbAKgXGOE5gG5rk-A,12747
+drf_excel-2.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+drf_excel-2.0.1.dist-info/top_level.txt,sha256=XvdwJ71oWh1MzRf_ZKiA3F1bLj33W-hyD95YsjY4RI4,10
+drf_excel-2.0.1.dist-info/RECORD,,
