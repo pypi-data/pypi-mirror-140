@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = top.__main__:checkRequirements
+
