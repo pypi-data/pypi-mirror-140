@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: py-experimenter
+Version: 0.0.6
+Summary: The PyExperimenter is a tool for the automatic execution of various experiments.
+Home-page: UNKNOWN
+Author: Lukas Gehring
+Author-email: lgehring@mail.upb.de
+License: UNKNOWN
+Keywords: python,executor
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: mysql-connector-python
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+
+    With the PyExperimenter user can create a function that run one single experiment (we call this function `own_function`, but any function name is possible). The experiment itself,
+    which is defined by its parameters, is then automatically executed by passing the parameters to the `own_function` and writing the
+    results in a database. Errors that occur during execution are also captured by the PyExperimenter and written to the database.
+    For the complete documentation, please visit the GitHub: https://github.com/lukasgehring/py_experimenter
+
