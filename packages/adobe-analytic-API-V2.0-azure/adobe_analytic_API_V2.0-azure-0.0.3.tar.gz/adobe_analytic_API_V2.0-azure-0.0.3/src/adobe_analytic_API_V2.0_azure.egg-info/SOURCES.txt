@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+src/adobe_analytic_API_V2.0_azure.egg-info/PKG-INFO
+src/adobe_analytic_API_V2.0_azure.egg-info/SOURCES.txt
+src/adobe_analytic_API_V2.0_azure.egg-info/dependency_links.txt
+src/adobe_analytic_API_V2.0_azure.egg-info/requires.txt
+src/adobe_analytic_API_V2.0_azure.egg-info/top_level.txt
+src/analytics/AnalyticsClient.py
+src/analytics/AzureAnalyticsClient.py
+src/analytics/__init__.py

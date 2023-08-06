@@ -1,0 +1,7 @@
+pandas
+requests
+PyJWT
+azure.storage.blob
+DateTime
+requests-mock
+pytest-mock
