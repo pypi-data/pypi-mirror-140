@@ -1,0 +1,5 @@
+sodasql/dialects/postgres_dialect.py,sha256=fEntX9rIax0UNhjbz0kJcX5q8KdYxnkXXV8BKFPfKbM,18509
+soda_sql_postgresql-2.1.5.dist-info/METADATA,sha256=64kTSBttP9VgWnkuCTAxp1qaP02agIpysCpOLyeXWQY,628
+soda_sql_postgresql-2.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+soda_sql_postgresql-2.1.5.dist-info/top_level.txt,sha256=iWRgaTzdfqDF5qGyrChKrnJh7tIweOrFM4J4_Lun_Xc,8
+soda_sql_postgresql-2.1.5.dist-info/RECORD,,
