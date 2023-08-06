@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: viasp-dash
+Version: 0.3.5
+Summary: The dash frontend for the viasp package.
+Author: Luis Glaser <Luis.Glaser@uni-potsdam.de>
+License: MIT
+Platform: UNKNOWN
+Classifier: Framework :: Dash
+
+UNKNOWN
+
