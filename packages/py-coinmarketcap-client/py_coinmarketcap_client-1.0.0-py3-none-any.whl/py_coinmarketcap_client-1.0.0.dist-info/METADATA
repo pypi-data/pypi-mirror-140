@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: py-coinmarketcap-client
+Version: 1.0.0
+Summary: CoinMarketCap API wrapper
+Home-page: https://github.com/nlnsaoadc/py-coinmarketcap
+Author: nlnsaoadc
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# [CoinMarketCap API](https://coinmarketcap.com/) wrapper
+
+[![py-coinmarketcap-client-pypi](https://img.shields.io/pypi/v/py-coinmarketcap-client.svg)](https://pypi.python.org/pypi/py-coinmarketcap-client)
+
+CoinMarketCap API Doc: https://coinmarketcap.com/api/documentation/v1/
+
+## Install
+
+```bash
+pip install py-coinmarketcap-client
+```
+
+## Usage
+
+```python
+from coinmarketcap import CoinMarketCap
+
+cmc = CoinMarketCap(key="<your-key-here>", key_type="Basic")
+cmc.get_info(id=1)
+```
+
+## Testing
+
+```bash
+virtualenv venv
+source ./venv/bin/activate
+pip install -r dev_requirements.txt
+deactivate
+source ./venv/bin/activate
+pytest
+```
+
+
