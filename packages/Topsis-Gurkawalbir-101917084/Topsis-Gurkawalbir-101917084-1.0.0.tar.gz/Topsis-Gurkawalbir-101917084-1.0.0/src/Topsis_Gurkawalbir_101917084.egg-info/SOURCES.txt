@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Topsis_Gurkawalbir_101917084.egg-info/PKG-INFO
+src/Topsis_Gurkawalbir_101917084.egg-info/SOURCES.txt
+src/Topsis_Gurkawalbir_101917084.egg-info/dependency_links.txt
+src/Topsis_Gurkawalbir_101917084.egg-info/requires.txt
+src/Topsis_Gurkawalbir_101917084.egg-info/top_level.txt
+src/topsis1/__init__.py
+src/topsis1/topsis.py
