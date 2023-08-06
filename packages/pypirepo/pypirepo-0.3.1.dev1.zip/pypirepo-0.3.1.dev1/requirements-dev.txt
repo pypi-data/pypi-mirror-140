@@ -1,0 +1,4 @@
+pypirepo
+devrepo
+pytest
+tox
