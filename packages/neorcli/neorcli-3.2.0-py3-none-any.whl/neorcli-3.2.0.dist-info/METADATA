@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: neorcli
+Version: 3.2.0
+Summary: NeorCli tool
+Home-page: https://github.com/NeorCloud/neor-cli
+Author: Ali Ghotbizadeh
+Author-email: ali.ghotbizadeh@gmail.com
+License: MIT
+Keywords: NeorCloud NeorCli
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiodns (==3.0.0)
+Requires-Dist: aiohttp[speedups] (==3.8.1)
+Requires-Dist: aiosignal (==1.2.0)
+Requires-Dist: async-timeout (==4.0.2)
+Requires-Dist: attrs (==21.4.0)
+Requires-Dist: brotli (==1.0.9)
+Requires-Dist: cchardet (==2.1.7)
+Requires-Dist: cffi (==1.15.0)
+Requires-Dist: charset-normalizer (==2.0.9)
+Requires-Dist: frozenlist (==1.2.0)
+Requires-Dist: humanize (==4.0.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: multidict (==5.2.0)
+Requires-Dist: pycares (==4.1.2)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: tabulate (==0.8.9)
+Requires-Dist: yarl (==1.7.2)
+
+NeorCloud CLI tool to manage your services from cli.
+
