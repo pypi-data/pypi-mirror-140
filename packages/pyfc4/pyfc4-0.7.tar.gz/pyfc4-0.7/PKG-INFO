@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyfc4
+Version: 0.7
+Summary: Python 3 client for Fedora Commons 4
+Home-page: http://github.com/ghukill/pyfc4
+Author: Graham Hukill
+Author-email: ghukill@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.md
+
+UNKNOWN
+
