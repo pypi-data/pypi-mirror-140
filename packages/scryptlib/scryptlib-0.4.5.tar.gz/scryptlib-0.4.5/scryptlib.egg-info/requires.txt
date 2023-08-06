@@ -1,0 +1,6 @@
+bitcoinX==0.6.0
+
+[testing]
+pytest
+rabin
+ecdsa
