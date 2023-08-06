@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+diamond_registry/__init__.py
+diamond_registry/diamond_registry.py
+diamond_registry.egg-info/PKG-INFO
+diamond_registry.egg-info/SOURCES.txt
+diamond_registry.egg-info/dependency_links.txt
+diamond_registry.egg-info/requires.txt
+diamond_registry.egg-info/top_level.txt
