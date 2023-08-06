@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.py
+wayfarer/__init__.py
+wayfarer/functions.py
+wayfarer/loader.py
+wayfarer/merger.py
+wayfarer/routing.py
+wayfarer/splitter.py
+wayfarer/validator.py
+wayfarer.egg-info/PKG-INFO
+wayfarer.egg-info/SOURCES.txt
+wayfarer.egg-info/dependency_links.txt
+wayfarer.egg-info/not-zip-safe
+wayfarer.egg-info/requires.txt
+wayfarer.egg-info/top_level.txt
