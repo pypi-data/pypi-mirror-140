@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_microservices_admin/__init__.py
+django_microservices_admin/apps.py
+django_microservices_admin/routers.py
+django_microservices_admin/settings.py
+django_microservices_admin.egg-info/PKG-INFO
+django_microservices_admin.egg-info/SOURCES.txt
+django_microservices_admin.egg-info/dependency_links.txt
+django_microservices_admin.egg-info/requires.txt
+django_microservices_admin.egg-info/top_level.txt
+django_microservices_admin/management/__init__.py
+django_microservices_admin/management/commands/__init__.py
+django_microservices_admin/management/commands/update_microservices_admin.py
+django_microservices_admin/migrations/__init__.py

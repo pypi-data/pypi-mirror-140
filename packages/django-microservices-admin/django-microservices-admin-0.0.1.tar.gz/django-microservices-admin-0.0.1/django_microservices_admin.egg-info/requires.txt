@@ -1,0 +1,8 @@
+django>=3.2
+dj-database-url>=0.5.0
+
+[mysql]
+mysqlclient>=2.1.0
+
+[postgres]
+psycopg2-binary>=2.9.3
