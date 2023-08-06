@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pacchettoDiG
+Version: 0.0.2
+Summary: A comprehensive useless package.
+Home-page: UNKNOWN
+Author: Gabriele Pittarello
+License: BSD 3-Clause
+Project-URL: Source Code, https://github.com/GEM-analytics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pacchetto di G
+
+Questo Ã¨ un pacchetto di prova che fa cose assolutamente non ordinarie.
+
+
