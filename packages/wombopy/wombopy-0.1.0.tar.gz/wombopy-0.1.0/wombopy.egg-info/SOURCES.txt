@@ -1,0 +1,11 @@
+README.md
+setup.py
+wombopy/__init__.py
+wombopy/__main__.py
+wombopy/cli.py
+wombopy/config.py
+wombopy.egg-info/PKG-INFO
+wombopy.egg-info/SOURCES.txt
+wombopy.egg-info/dependency_links.txt
+wombopy.egg-info/requires.txt
+wombopy.egg-info/top_level.txt
