@@ -1,0 +1,13 @@
+GitPython>=3.0.5
+PyYAML>=3.13
+anyjson>=0.3.3
+cryptography>=2.1.4
+eventlet!=0.20.1,!=0.21.0,>=0.20.0
+kombu>=4.3.0
+oslo.config>=5.2.0
+oslo.log>=3.37.0
+oslo.service>=1.30.0
+oslo.utils>=3.36.0
+pbr>=3.1.1
+requests>=2.18.4
+semantic-version>=2.6.0
