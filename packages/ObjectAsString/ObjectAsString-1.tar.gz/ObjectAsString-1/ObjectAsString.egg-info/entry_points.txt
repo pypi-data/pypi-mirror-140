@@ -1,0 +1,3 @@
+[console_scripts]
+ObjectAsString = ObjectAsString.ObjectAsString_versus_string:main
+

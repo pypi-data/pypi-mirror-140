@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ObjectAsString/ObjectAsString.py
+ObjectAsString/ObjectAsString_tests.py
+ObjectAsString/ObjectAsString_versus_string.py
+ObjectAsString.egg-info/PKG-INFO
+ObjectAsString.egg-info/SOURCES.txt
+ObjectAsString.egg-info/dependency_links.txt
+ObjectAsString.egg-info/entry_points.txt
+ObjectAsString.egg-info/top_level.txt
