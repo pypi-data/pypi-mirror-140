@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "telegram-stats-bot"
+version = "0.6.4"
+description = "A logging and statistics bot for Telegram based on python-telegram-bot."
+authors = ["Michael DM Dryden <mk.dryden@utoronto.ca>"]
+repository = "https://github.com/mkdryden/telegram-stats-bot"
+license = "gpl-3.0-or-later"
+readme = "README.rst"
+include = ["examples/*", "CHANGELOG.rst"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+python-telegram-bot = "^13.11"
+sqlalchemy = {version = "^1.4", extras = ["postgresql_psycopg2binary"]}
+SQLAlchemy-Utils = "0.37.6"
+pandas = "^1.0.4"
+seaborn = "^0.10.1"
+numpy = "^1.22.0"
+matplotlib = "^3.2.1"
+appdirs = "^1.4.4"
+single-source = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
