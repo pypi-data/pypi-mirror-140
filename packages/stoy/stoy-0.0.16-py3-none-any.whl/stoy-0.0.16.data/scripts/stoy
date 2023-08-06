@@ -1,0 +1,3 @@
+#!python
+from stoy.stoy import main
+main()
