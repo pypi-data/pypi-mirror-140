@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: irmin
+Version: 0.3.1b0
+Summary: Irmin bindings for Python
+Home-page: https://github.com/mirage/irmin-py
+License: ISC
+Author: Zach Shipko
+Author-email: zachshipko@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cffi (>=1.15.0,<2.0.0)
+Project-URL: Repository, https://github.com/mirage/irmin-py
+Description-Content-Type: text/markdown
+
+# irmin-py
+
+[irmin](https://irmin.org) bindings for Python
+
+This crate enables you to call directly into irmin from your Python application and
+can be used to open an existing irmin store from Python that may have been created
+by an application written in OCaml.
+
+## Dependencies
+
+- `cffi`
+- `pytest` (for testing)
+
+## Installation
+
+After installing [libirmin](https://github.com/mirage/irmin) using opam, you can run:
+
+```
+$ pip3 install git+https://github.com/mirage/irmin-py.git --user
+```
+
+Or from the root of the project:
+
+Using pip:
+```
+$ pip3 install . --user
+```
+
+Using poetry:
+```
+$ POETRY_VIRTUALENVS_CREATE=false poetry install
+```
+
+And the build script should be able to find the location of the `libirmin` library and header files.
+
+If `libirmin.so` and `irmin.h` were not installed using opam and they're not in `~/.local` or
+`/usr/local`, then you can specify where to look for them using the `LIBIRMIN_PREFIX` env
+variable.
+
+## Testing
+
+Run the tests:
+
+```
+$ poetry run pytest
+```
+

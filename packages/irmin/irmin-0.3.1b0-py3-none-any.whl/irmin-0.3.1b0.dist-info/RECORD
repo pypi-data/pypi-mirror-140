@@ -1,0 +1,7 @@
+irmin/__init__.py,sha256=86_sh2BClJTgbKC4LGSjipEBoud-vozZXt2R1tcoOds,286
+irmin/bindings.py,sha256=wA4_1VMTkPDCrhdejwmYrLmTxFb51BnmXKG8T3cc3hs,1027
+irmin/irmin.py,sha256=5vDEWtw3KAayxShMERZX1P6swtFgIF5gcxTxGNY9pnk,42004
+irmin-0.3.1b0.dist-info/LICENSE.md,sha256=SX7w7UYlz2S2E77JBpLFG_7tfh0ox2seZM-SVPgO0pA,729
+irmin-0.3.1b0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+irmin-0.3.1b0.dist-info/METADATA,sha256=M_ayS7FDnEtWzfE1I22j8SJW1QZn2fOhf15gW8ex85Q,1650
+irmin-0.3.1b0.dist-info/RECORD,,
