@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/bin/qfieldcloud-cli
+src/qfieldcloud_sdk/__init__.py
+src/qfieldcloud_sdk/sdk.py
+src/qfieldcloud_sdk.egg-info/PKG-INFO
+src/qfieldcloud_sdk.egg-info/SOURCES.txt
+src/qfieldcloud_sdk.egg-info/dependency_links.txt
+src/qfieldcloud_sdk.egg-info/requires.txt
+src/qfieldcloud_sdk.egg-info/top_level.txt
