@@ -1,0 +1,3 @@
+[console_scripts]
+ds = source.datasource:main
+
