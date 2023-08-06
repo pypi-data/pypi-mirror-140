@@ -1,0 +1,2 @@
+[console_scripts]
+cpe = calliope.__main__:main
