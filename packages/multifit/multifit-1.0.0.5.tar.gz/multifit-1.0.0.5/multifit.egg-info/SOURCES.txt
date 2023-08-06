@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+multifit/UI.py
+multifit/__init__.py
+multifit/fitting.py
+multifit.egg-info/PKG-INFO
+multifit.egg-info/SOURCES.txt
+multifit.egg-info/dependency_links.txt
+multifit.egg-info/requires.txt
+multifit.egg-info/top_level.txt
+tests/__init__.py
