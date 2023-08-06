@@ -1,0 +1,52 @@
+<script id="auto-advance">
+    $(document).ready(function(){
+        function getMilliseconds(){
+            // get the number of milliseconds since the page was compiled
+            var curr_time = new Date();
+            return {{ after }} - (curr_time.getTime() - start_time.getTime() + localOffset);
+        }
+
+        function formatMilliseconds(milliseconds){
+            // format milliseconds in HH:MM:SS (or H:MM:SS)
+            var milliseconds = milliseconds + 1000; // this is like changing the clock from 0 index to 1 index
+            var hours = Math.floor((milliseconds / (60 * 60 * 1000)) % 24);
+            var minutes = Math.floor((milliseconds / (60 * 1000)) % 60);
+            var minutes = (minutes < 10) ? "0" + minutes : minutes;
+            var seconds = Math.floor((milliseconds / 1000) % 60);
+            var seconds = (seconds < 10) ? "0" + seconds : seconds;
+            return hours + ":" + minutes + ":" + seconds
+        }
+
+        function go_forward(){
+            // page.html adds "submitted" class to the form on submission
+            // this prevents double submission
+            if (!$("form").hasClass("submitted")){
+                // TODO: what if there's no forward button on the page?
+                $("#forward-button").click();
+            }
+        }
+
+        const localOffset = new Date().getTimezoneOffset() * 60 * 1000;
+        const start_time = new Date("{{ start_time }}");
+
+        // update the clock text at regular intervals
+        {% if clock_id is none %}
+            setTimeout(function(){
+                go_forward();
+            }, getMilliseconds())
+        {% else %}
+            var clock = $("#{{ clock_id }}");
+            clock.text(formatMilliseconds(getMilliseconds()));
+            setInterval(function(){
+                var milliseconds = getMilliseconds();
+                if (milliseconds > 0){
+                    clock.text(formatMilliseconds(milliseconds));
+                }
+                else{
+                    clock.text("0:00:00");
+                    go_forward();
+                }
+            }, {{ clock_update_interval }})
+        {% endif %}
+    })
+</script>

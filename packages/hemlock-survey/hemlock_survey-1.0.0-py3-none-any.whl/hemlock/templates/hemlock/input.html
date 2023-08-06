@@ -1,0 +1,21 @@
+{% extends "hemlock/utils/input_group.html" %}
+
+{% macro input(add_placeholder) %}
+    {% set default = question.get_default(alt_value="") %}
+
+    {% if add_placeholder is sameas true %}
+        {% set placeholder = " placeholder='placeholder'" | safe %}
+    {% else %}
+        {% set placeholder = "" %}
+    {% endif %}
+
+    <input id="{{ question.hash }}" name="{{ question.hash }}" {{ question.input_tag.get_attrs() | safe }} value="{{ default }}"{{ placeholder }}>
+{% endmacro %}
+
+{% block content %}
+    {% if question.floating_label is not none %}
+        {{ form_floating(input(true)) }}
+    {% else %}
+        {{ input(false) }}
+    {% endif %}
+{% endblock %}

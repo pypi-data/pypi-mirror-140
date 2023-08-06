@@ -1,0 +1,6 @@
+{% if label is none %}
+    {% set label = "" %}
+    {% endif %}
+<label {{ question.html_settings["label"].get_attrs() | safe }} for="{{ question.hash }}">
+    {{ label | safe }}
+</label>
