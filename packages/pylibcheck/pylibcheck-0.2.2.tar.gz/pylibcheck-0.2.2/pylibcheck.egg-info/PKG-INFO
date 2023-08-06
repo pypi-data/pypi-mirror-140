@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pylibcheck
+Version: 0.2.2
+Summary: Simple library to check if packages are installed and install them for you
+Home-page: https://github.com/rdimo/pylibcheck
+Author: Rdimo
+Author-email: <contact.rdimo@gmail.com>
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rdimo/pylibcheck/issues
+Keywords: pylibcheck,python,package,library,lib,module,checker
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align="center">
+  <img src="https://img.shields.io/pypi/v/PyLibCheck?style=flat-square" </a>
+  <img src="https://img.shields.io/pypi/l/PyLibCheck?style=flat-square" </a>
+  <img src="https://img.shields.io/pypi/dm/pylibcheck?style=flat-square" </a>
+  <img src="https://img.shields.io/github/stars/Rdimo/PyLibCheck?label=Stars&style=flat-square" </a>
+  <img src="https://img.shields.io/github/forks/Rdimo/PyLibCheck?label=Forks&style=flat-square" </a>
+</p>
+
+#### PyLibCheck was made by
+Love ❌ code ✅
+
+---
+### 🎈・Code example
+Example of how you can use [pylibcheck](https://pypi.org/project/pylibcheck/)
+```py
+import pylibcheck, time
+
+if pylibcheck.checkPackage("pyinstaller") == False:
+    print("pyinstaller is not installed!")
+    time.sleep(1)
+    print("installing it for you!")
+    pylibcheck.installPackage("pyinstaller")
+```
+
+
