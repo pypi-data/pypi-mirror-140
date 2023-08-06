@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: acni
+Version: 0.0.1
+Summary: A Jax/Optax implementation of Anticorrelated Noise Injection for Improved Generalization
+Home-page: https://github.com/PyriteAI/anticorrelated-noise-injection
+Author: Miller Wilt
+Author-email: miller@pyriteai.com
+License: UNKNOWN
+Keywords: artificial intelligence,machine learning,jax,optax,generalization,noise injection
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Typing :: Typed
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chex
+Requires-Dist: optax
+
+# Anticorrelated Noise Injection
+
+A Jax/Optax implementation of [Anticorrelated Noise Injection for Improved Generalization](https://arxiv.org/abs/2202.02831)
+
+
