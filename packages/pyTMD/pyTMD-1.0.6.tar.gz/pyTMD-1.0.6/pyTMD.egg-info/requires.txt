@@ -1,0 +1,9 @@
+h5py
+lxml
+netCDF4
+numpy
+pyproj
+python-dateutil
+pyyaml
+scipy
+setuptools_scm
