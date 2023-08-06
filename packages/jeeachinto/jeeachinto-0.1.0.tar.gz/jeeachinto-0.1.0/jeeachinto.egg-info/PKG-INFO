@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jeeachinto
+Version: 0.1.0
+Summary: Connect to hosts in an easier way
+Home-page: https://github.com/naodellerba/easy-connection-lib
+Author: IISS Luigi Dell' Erba
+Author-email: me@domysh.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# jeeachinto - easy connections
+
+Create for allow the communication of robots in an easier way
+
