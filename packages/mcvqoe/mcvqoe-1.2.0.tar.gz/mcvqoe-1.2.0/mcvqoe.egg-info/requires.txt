@@ -1,0 +1,16 @@
+abcmrt16
+mcvqoe-base
+mcvqoe-psud
+mcvqoe-intelligibility
+mcvqoe-accesstime
+mcvqoe-mouth2ear
+mcvqoe-tvo
+numpy
+pandas
+dash
+flask
+plotly
+requests
+pillow
+scipy
+werkzeug<2.1
