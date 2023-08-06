@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: NewsBetter
+Version: 1.0.0
+Summary: Yet another RSS news reader 
+Home-page: https://github.com/SnakesAndLadders/NewsBetter
+Author: Shawn Ayotte
+Author-email: shawn.k.ayotte@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: feedparser (==6.0.8)
+Requires-Dist: newspaper3k (==0.2.8)
+Requires-Dist: py-cui (==0.1.4)
+Requires-Dist: setuptools (==58.0.4)
+Requires-Dist: testresources (==2.0.1)
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# NewsBetter
+
+Yet another RSS news reader 
+
