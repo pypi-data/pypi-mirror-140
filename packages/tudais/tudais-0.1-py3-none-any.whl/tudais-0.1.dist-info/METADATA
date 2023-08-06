@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tudais
+Version: 0.1
+Summary: Supplemental material for the lecture Angewandte Intelligente Signalverarbeitung at TU Dresden
+Home-page: http://github.com/TUD-STKS/tud-ais-package
+Author: Simon Stone
+Author-email: simon.stone@tu-dresden.de
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: jupyterlab
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: tudthemes
+
+UNKNOWN
+
+
