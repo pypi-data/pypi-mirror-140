@@ -1,0 +1,13 @@
+eqsolvcarlover101/__init__.py
+eqsolvcarlover101/setup.py
+eqsolvcarlover101.egg-info/PKG-INFO
+eqsolvcarlover101.egg-info/SOURCES.txt
+eqsolvcarlover101.egg-info/dependency_links.txt
+eqsolvcarlover101.egg-info/top_level.txt
+eqsolvcarlover101/equation/__init__.py
+eqsolvcarlover101/equation/commands.py
+eqsolvcarlover101/equation/help.py
+eqsolvcarlover101/equation/midpoint.py
+eqsolvcarlover101/equation/perpint.py
+eqsolvcarlover101/equation/quadsolve.py
+eqsolvcarlover101/equation/slopeint.py
