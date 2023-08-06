@@ -1,0 +1,2 @@
+[console_scripts]
+gaddlemaps = gaddlemaps._cli:main
