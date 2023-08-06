@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+structuremap/__init__.py
+structuremap/cli.py
+structuremap/gui.py
+structuremap/plotting.py
+structuremap/processing.py
+structuremap/utils.py
+structuremap.egg-info/PKG-INFO
+structuremap.egg-info/SOURCES.txt
+structuremap.egg-info/dependency_links.txt
+structuremap.egg-info/entry_points.txt
+structuremap.egg-info/requires.txt
+structuremap.egg-info/top_level.txt
+structuremap/__pycache__/__init__.cpython-38.pyc
