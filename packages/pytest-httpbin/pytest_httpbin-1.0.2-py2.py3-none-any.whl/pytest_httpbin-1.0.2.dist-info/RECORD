@@ -1,0 +1,13 @@
+pytest_httpbin/__init__.py,sha256=slCH5rFSMps5x3EFc3qSyrVy25opcDCsdWtuI5pFfJs,366
+pytest_httpbin/certs.py,sha256=5LKEXUk9BqyPQMvSjZ2mF8spZcOs5MThPX5RyZA50fA,512
+pytest_httpbin/plugin.py,sha256=XVQFyF2wOOzqFgUbJkuA3aAoFtroSKJPd6GL4tpF144,1109
+pytest_httpbin/serve.py,sha256=txwU13PUbr0JqyybhbTD7MOUB8YJIEAlQV-FL_JwEAI,4114
+pytest_httpbin/version.py,sha256=ZTipNH6wyC6qsq1H_lZsvJyVruUa1nu3y4EysMdkpuU,22
+pytest_httpbin/certs/cacert.pem,sha256=_ZIk6xSdyJZy1Unmctr9BATTIDarNPExDk5H4NNcrrs,1866
+pytest_httpbin/certs/cert.pem,sha256=5VmGzPWZSLPHrYz6xrnSLoeJbz6At96KakCUetjXQgc,1606
+pytest_httpbin/certs/key.pem,sha256=Eq0rIF84OnxoGxlXcnVdYfBta8ClHcHHz5XcGZkXEcY,1675
+pytest_httpbin-1.0.2.dist-info/METADATA,sha256=oVBkE4QqSWMAj7IY9SNB0y_r2op_UYHjyEC_mc7-KmA,2281
+pytest_httpbin-1.0.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pytest_httpbin-1.0.2.dist-info/entry_points.txt,sha256=qo7al5OVTR0nH_n99BLuf9YgaZb1Wn1vyPoFkG46R44,43
+pytest_httpbin-1.0.2.dist-info/top_level.txt,sha256=3TUvdoGfYpUrAS1NI4cR1isdawUeS7IKYROUv3LtD-c,15
+pytest_httpbin-1.0.2.dist-info/RECORD,,
