@@ -1,0 +1,5 @@
+[console_scripts]
+intell-measure = mcvqoe.intelligibility.intelligibility_test:main
+intell-reprocess = mcvqoe.intelligibility.intelligibility_reprocess:main
+intell-sim = mcvqoe.intelligibility.intelligibility_simulate:main
+
