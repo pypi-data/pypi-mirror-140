@@ -1,0 +1,8 @@
+khalinox/__init__.py,sha256=qkBRmd_bBraRrvQnXyrPgTVkyJpNiocxrfHV3dkbluw,37
+khalinox/config.py,sha256=zffW0kwGyR9vIczmXpM_QQ7DcxFsVOfWNippT7PUzMY,2629
+khalinox/hive.py,sha256=QA4qLbaoXu5w0HgRcuLlEDVNgNQ0KiMIlpWO8i678fg,2507
+khalinox/utils.py,sha256=RiD7Tagh403ez1OTxBzq704kPxsi-YSDEqmxhJSndnw,476
+khalinox/webhdfs.py,sha256=qI56dYAoGagH4Ubi1ctxFw9bAeuAV75Lsfn2dnNUVGA,1596
+khalinox-1.1.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+khalinox-1.1.3.dist-info/METADATA,sha256=djslRYdBTXPE8pQmwVJ8Vol16RD6s20BLWLIgzLbjKg,632
+khalinox-1.1.3.dist-info/RECORD,,
