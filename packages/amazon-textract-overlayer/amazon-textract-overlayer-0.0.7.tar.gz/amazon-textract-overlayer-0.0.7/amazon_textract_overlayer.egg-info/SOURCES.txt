@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+amazon_textract_overlayer.egg-info/PKG-INFO
+amazon_textract_overlayer.egg-info/SOURCES.txt
+amazon_textract_overlayer.egg-info/dependency_links.txt
+amazon_textract_overlayer.egg-info/requires.txt
+amazon_textract_overlayer.egg-info/top_level.txt
+textractoverlayer/__init__.py
+textractoverlayer/_version.py
+textractoverlayer/image_tools.py
+textractoverlayer/t_overlay.py
