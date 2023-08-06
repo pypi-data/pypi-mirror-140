@@ -1,0 +1,17 @@
+xkcd_pass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xkcd_pass/xkcd_pass.py,sha256=by1R89Zsi0YK4lSAFY0NSATwaXqMxAtWK4m2lU50Mus,16022
+xkcd_pass/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xkcd_pass/lib/case.py,sha256=eV0h5GKDs7YHpn7AGHN9oNp5gv2yPgT288WmIeGv1sM,1301
+xkcd_pass/static/.gitignore,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xkcd_pass/static/eff-long,sha256=q65JdhuI8_G6Me-US-ofYbeVo81-HPt9J27UW_d5Z7o,62143
+xkcd_pass/static/eff-short,sha256=NoD7hIPgPqswZ_IO-LiEighgBrJZgbDfbIvcYDxO1V4,7179
+xkcd_pass/static/eff-special,sha256=eGnkonmj8BnfIforKJhWVqLuk22trZrtyHdZ2rVK708,10777
+xkcd_pass/static/test_list,sha256=eEdQwyug8CZ78nIhUuo20ld8x3C00x968ytFe3VNLY4,66
+xkcd_pass/static/test_files/stdin_main_interactive,sha256=zHGrSKor34LepJr1E4h_KDrvBzK4wORKONDcNmx0RSI,3
+xkcd_pass-1.1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+xkcd_pass-1.1.2.dist-info/LICENSE.BSD,sha256=OlDutefFIjNLdz2H6a8v5y9HXYCMXPcgwo2y2VoK9WA,1528
+xkcd_pass-1.1.2.dist-info/METADATA,sha256=PfrnRESP07_FS4GwTrkrJeYFWEr994bljf6rxhaV8Uk,8591
+xkcd_pass-1.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xkcd_pass-1.1.2.dist-info/entry_points.txt,sha256=6AghNgF-zIsREtUF9y02D-Vva8kdrR-KLzuT7Ph0Nns,55
+xkcd_pass-1.1.2.dist-info/top_level.txt,sha256=b158GpaH8GFEOyuSMb9HvrzWxUxEWaeJ2O75lCyDCHc,10
+xkcd_pass-1.1.2.dist-info/RECORD,,
