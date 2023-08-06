@@ -1,0 +1,17 @@
+aiohttp~=3.8
+colorlog~=6.6
+
+[docs]
+sphinx~=4.4.0
+furo~=2022.2.14
+sphinx-hoverxref~=1.0.1
+
+[speed]
+orjson~=3.6.5
+aiodns~=3.0
+Brotli~=1.0.9
+cchardet~=2.1.7
+ciso8601~=2.2.0
+
+[voice]
+PyNaCl~=1.5.0
