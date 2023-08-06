@@ -1,0 +1,14 @@
+datalake/__init__.py,sha256=qfBhIw4ZG2_QRekVeufX-G6MmOvbOgaaGRNSnq6-7JE,8949
+datalake/exceptions.py,sha256=AJQ5gzF-e4gBeV5_5nWwz2ol7QsHNCacVh2z7573sts,777
+datalake/helpers.py,sha256=K3Dl4aVBwMuEgfo0mJxRN583A_0f_Y4J29_UytGYzX4,7381
+datalake/interface.py,sha256=98C9rBHDLX9qwkrDwjwPs5J4ynHg6uDlwE4Yo_OSm1s,3430
+datalake/provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datalake/provider/aws.py,sha256=R5Ypx8PPfBXrynUXgbgcE1-eI8l976CxNc0_gN47lzE,6137
+datalake/provider/azure.py,sha256=MLacEwD8CYpcDEH29LJe3mt4cxkEEsI-AaHyFQ9ofyo,7787
+datalake/provider/gcp.py,sha256=Rl9aJW1VHc549OlVc4Tbu6Ek2WhYulnOpxljEJqU7Ew,7246
+datalake/provider/local.py,sha256=nvAeyA0rX5-cSzoPHCUNAPt4DK2jjjZXBLeqfp95TZg,3737
+datalake/telemetry.py,sha256=13bY3DUPvbOf9L6oAWxLf3lkBCVX-Ez8H8CY2jhTzsQ,3091
+datalake_framework-1.0.2.dist-info/LICENSE,sha256=-ukIf-A6HA-fNUtqt6DLSVEHB2szMsFufuBxExgDRJY,1084
+datalake_framework-1.0.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+datalake_framework-1.0.2.dist-info/METADATA,sha256=m1JZi-RSZz96AQu_CuTSVtTbbPZq7roILxTMyYyUxU4,1367
+datalake_framework-1.0.2.dist-info/RECORD,,
