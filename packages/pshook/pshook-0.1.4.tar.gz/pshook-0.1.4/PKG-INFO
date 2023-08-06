@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pshook
+Version: 0.1.4
+Summary: A small tool that enables monitoring of executable files
+Home-page: https://bitbucket.org/jakobsg/pshook
+Author: Jakob Simon-Gaarde
+Author-email: jakobsg@simon-gaarde.dk
+License: UNKNOWN
+Description: # Process Hook (pshook)
+        
+        Wrap your binaries with the pshook wrapper enabling process related logging each
+        time th executable is called. This includes all arguments, CPU info over execution
+        time, CPU Core utilized and more
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown

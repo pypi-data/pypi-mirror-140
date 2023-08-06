@@ -1,0 +1,10 @@
+README.md
+setup.py
+pshook/__init__.py
+pshook/wrapper.py
+pshook.egg-info/PKG-INFO
+pshook.egg-info/SOURCES.txt
+pshook.egg-info/dependency_links.txt
+pshook.egg-info/requires.txt
+pshook.egg-info/top_level.txt
+scripts/pshook

@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+import pshook.wrapper
+import sys
+import argparse
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Hook executable for process monitoring.')
+    parser.add_argument('cmdline', metavar='ARGS', type=str, nargs='+',
+                        help='Command and arguments')
+    parser.add_argument('-l', '--logfile', dest='logfile', default='psmon.log',
+                        help='Where to log the results of the monitored execution.')
+    parser.add_argument('-c', '--configfile', dest='configfile', default=None,
+                        help='JSON or YAML logging config file.')
+    args = parser.parse_args()
+    sys.exit(pshook.wrapper.execute_command(args.cmdline, logfile=args.logfile, configfile=args.configfile))
