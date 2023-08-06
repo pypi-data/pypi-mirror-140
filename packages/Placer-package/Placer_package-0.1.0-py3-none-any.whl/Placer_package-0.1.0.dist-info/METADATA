@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Placer-package
+Version: 0.1.0
+Summary: A collection of modules created by Placer_0884
+Home-page: https://github.com/placer0884/Placer_package
+Author: Placer_0884
+Author-email: placer0884@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/Placer_package/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Placer_package
+## *Modules written by Placer_0884*
+
+
+
+### The package currently contains:
+- Shortr  - Basic input formating
+- Games   - Module for games, currently holds saveable highscore creation and usage function
+- Ether   - Unrecognized input logger, used to log unrecognized inputs into a ether_logs.txt file
+
+
+### License:
+**Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+
