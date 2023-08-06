@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/imagewithrandnumbermahdi11.egg-info/PKG-INFO
+src/imagewithrandnumbermahdi11.egg-info/SOURCES.txt
+src/imagewithrandnumbermahdi11.egg-info/dependency_links.txt
+src/imagewithrandnumbermahdi11.egg-info/top_level.txt
+src/rand_num_gen_with_json/__init__.py
+src/rand_num_gen_with_json/randNumGenWithJson.py
