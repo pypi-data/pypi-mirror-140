@@ -1,0 +1,2 @@
+fonttools[pathops,unicode,woff]<5.0,>=4.27.0
+python-fsutil<1.0.0,>=0.6.0
