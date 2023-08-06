@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Topsis-AbhayKansal-101903685
+Version: 1.0.0
+Summary:  A Topsis package developed by ABHAY KANSAL
+Home-page: UNKNOWN
+Author: Abhay Kansal
+Author-email: <akansal1_be19@thapar.edu>
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+## Topsis Package
+It takes an Datafile(.csv file) as an input along with 2 more arguments(weights ,impactas) along with name for output file(.csv format) as 4th argument
+
+## Installation
+```Syntax :```
+```pip install Topsis-AbhayKansal-101903685```
+
+## License
+
+Â© 2022 Abhay Kansal
+
+This repository is licensed under the MIT license. See LICENSE for details.touch
+
