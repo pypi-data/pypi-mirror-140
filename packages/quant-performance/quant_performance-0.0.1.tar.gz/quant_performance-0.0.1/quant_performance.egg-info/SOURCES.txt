@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+quant_performance/__init__.py
+quant_performance/report.py
+quant_performance/version.py
+quant_performance.egg-info/PKG-INFO
+quant_performance.egg-info/SOURCES.txt
+quant_performance.egg-info/dependency_links.txt
+quant_performance.egg-info/entry_points.txt
+quant_performance.egg-info/not-zip-safe
+quant_performance.egg-info/requires.txt
+quant_performance.egg-info/top_level.txt
