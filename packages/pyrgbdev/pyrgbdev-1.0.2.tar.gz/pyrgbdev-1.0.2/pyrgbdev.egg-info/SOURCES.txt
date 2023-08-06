@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./pyrgbdev/All/SDK.cpp
+./pyrgbdev/Corsair/SDK.cpp
+./pyrgbdev/Razer/SDK.cpp
+pyrgbdev.egg-info/PKG-INFO
+pyrgbdev.egg-info/SOURCES.txt
+pyrgbdev.egg-info/dependency_links.txt
+pyrgbdev.egg-info/requires.txt
+pyrgbdev.egg-info/top_level.txt
+pyrgbdev/All/SDK.cpp
+pyrgbdev/Corsair/SDK.cpp
+pyrgbdev/Corsair/dlls/CUESDK.x64_2019.dll
+pyrgbdev/Razer/SDK.cpp
