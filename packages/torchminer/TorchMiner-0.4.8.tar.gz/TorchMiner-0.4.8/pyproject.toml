@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "TorchMiner"
+version = "0.4.8"
+description = "Run Torch With A Simple Miner"
+authors = ["InEase <inease28@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4.0"
+matplotlib = "^3.5.0"
+tensorboardX = "^2.4.1"
+torch = "^1.8.0"
+tqdm = "^4.50.0"
+ipython = "^7.18.0"
+google-api-python-client = "^2.31.0"
+seaborn = "^0.11.2"
+pandas = "^1.3.4"
+sklearn = "^0.0"
+pylint = "^2.12.1"
+Pillow = "^8.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
