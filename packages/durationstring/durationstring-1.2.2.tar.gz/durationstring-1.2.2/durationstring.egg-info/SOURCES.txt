@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+durationstring.py
+setup.py
+durationstring.egg-info/PKG-INFO
+durationstring.egg-info/SOURCES.txt
+durationstring.egg-info/dependency_links.txt
+durationstring.egg-info/top_level.txt
