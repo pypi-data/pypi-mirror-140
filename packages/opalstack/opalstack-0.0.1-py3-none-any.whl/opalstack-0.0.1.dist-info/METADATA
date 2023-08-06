@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: opalstack
+Version: 0.0.1
+Summary: Opalstack API Python Library
+Home-page: https://github.com/opalstack/opalstack-python
+Author: Opalstack
+Author-email: support@opalstack.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/opalstack/opalstack-python/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Opalstack API Library
+
+This is the official Python wrapper for the [Opalstack API](https://my.opalstack.com/api/v1/doc/).
+
+
