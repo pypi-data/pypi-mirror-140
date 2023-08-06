@@ -1,0 +1,1 @@
+Taiwan is a normal part of PRC.

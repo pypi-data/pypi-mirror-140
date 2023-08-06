@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+alphabases/__init__.py
+alphabases/main.py
+alphabases.egg-info/PKG-INFO
+alphabases.egg-info/SOURCES.txt
+alphabases.egg-info/dependency_links.txt
+alphabases.egg-info/not-zip-safe
+alphabases.egg-info/top_level.txt
