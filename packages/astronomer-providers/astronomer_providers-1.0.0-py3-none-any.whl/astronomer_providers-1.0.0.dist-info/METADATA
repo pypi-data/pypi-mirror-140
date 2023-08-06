@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: astronomer-providers
+Version: 1.0.0
+Summary: Apache Airflow Providers containing Deferrable Operators & Sensors from Astronomer
+Home-page: https://github.com/astronomer/astronomer-providers/
+Author: Astronomer
+Author-email: humans@astronomer.io
+License: Apache License 2.0
+Project-URL: Source Code, https://github.com/astronomer/astronomer-providers/
+Project-URL: Homepage, https://astronomer.io/
+Project-URL: Changelog, https://github.com/astronomer/astronomer-providers/blob/main/CHANGELOG.rst
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Requires-Dist: apache-airflow (>=2.2.0)
+Requires-Dist: aiohttp
+Requires-Dist: aiofiles
+Requires-Dist: aioresponses
+Requires-Dist: apache-airflow-providers-amazon (>=3.0.0)
+Requires-Dist: apache-airflow-providers-cncf-kubernetes (>=3)
+Requires-Dist: apache-airflow-providers-databricks (>=2.2.0)
+Requires-Dist: apache-airflow-providers-google
+Requires-Dist: google-api-core (<2.0.0,>=1.25.1)
+Requires-Dist: apache-airflow-providers-snowflake
+Requires-Dist: asgiref
+Requires-Dist: aiobotocore (>=2.1.1)
+Requires-Dist: kubernetes-asyncio
+Requires-Dist: gcloud-aio-storage
+Requires-Dist: gcloud-aio-bigquery
+Requires-Dist: markupsafe (<2.1.0,>=1.1.1)
+Requires-Dist: typing-extensions ; python_version < "3.8"
+Provides-Extra: tests
+Requires-Dist: parameterized ; extra == 'tests'
+Requires-Dist: asynctest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: mypy (>=0.800) ; extra == 'tests'
+Requires-Dist: pre-commit ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-asyncio ; extra == 'tests'
+Requires-Dist: types-aiofiles ; extra == 'tests'
+Requires-Dist: types-boto ; extra == 'tests'
+Requires-Dist: types-certifi ; extra == 'tests'
+Requires-Dist: types-croniter ; extra == 'tests'
+Requires-Dist: types-Deprecated ; extra == 'tests'
+Requires-Dist: types-docutils ; extra == 'tests'
+Requires-Dist: types-freezegun ; extra == 'tests'
+Requires-Dist: types-paramiko ; extra == 'tests'
+Requires-Dist: types-protobuf ; extra == 'tests'
+Requires-Dist: types-python-dateutil ; extra == 'tests'
+Requires-Dist: types-python-slugify ; extra == 'tests'
+Requires-Dist: types-pytz ; extra == 'tests'
+Requires-Dist: types-redis ; extra == 'tests'
+Requires-Dist: types-requests ; extra == 'tests'
+Requires-Dist: types-setuptools ; extra == 'tests'
+Requires-Dist: types-termcolor ; extra == 'tests'
+Requires-Dist: types-tabulate ; extra == 'tests'
+Requires-Dist: types-toml ; extra == 'tests'
+Requires-Dist: types-Markdown ; extra == 'tests'
+Requires-Dist: types-PyMySQL ; extra == 'tests'
+Requires-Dist: types-PyYAML ; extra == 'tests'
+
+Astronomer Providers
+====================
+
+.. image:: https://badge.fury.io/py/astronomer-providers.svg
+    :target: https://badge.fury.io/py/astronomer-providers
+    :alt: PyPI Version
+.. image:: https://img.shields.io/pypi/pyversions/astronomer-providers
+    :target: https://img.shields.io/pypi/pyversions/astronomer-providers
+    :alt: PyPI - Python Version
+.. image:: https://img.shields.io/pypi/l/astronomer-providers?color=blue
+    :target: https://img.shields.io/pypi/l/astronomer-providers?color=blue
+    :alt: PyPI - License
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+    :alt: Code style: black
+
+`Apache Airflow <https://airflow.apache.org/>`_ Providers containing Deferrable Operators & Sensors from Astronomer.
+
+Installation
+------------
+
+Install and update using `pip <https://pip.pypa.io/en/stable/getting-started/>`_:
+
+.. code-block:: bash
+
+    pip install astronomer-providers
+
+
+Example Usage
+-------------
+
+This repo is structured same as the Apache Airflow's source code, so for example
+if you want to import Async operators, you can import it as follows:
+
+.. code-block:: python
+
+    from astronomer.providers.amazon.aws.sensors.s3 import S3KeySensorAsync as S3KeySensor
+
+    waiting_for_s3_key = S3KeySensor(
+        task_id="waiting_for_s3_key",
+        bucket_key="sample_key.txt",
+        wildcard_match=False,
+        bucket_name="sample-bucket",
+    )
+
+**Example DAGs** for each provider is within the respective provider's folder. For example,
+the Kubernetes provider's DAGs are within the
+`astronomer/providers/cncf/kubernetes/example_dags <https://github.com/astronomer/astronomer-providers/tree/main/astronomer/providers/cncf/kubernetes/example_dags>`_
+folder.
+
+Principle
+---------
+
+We will only create Async operators for the "sync-version" of operators that do some level of polling
+(take more than a few seconds to complete).
+
+For example, we won’t create an async Operator for a ``BigQueryCreateEmptyTableOperator`` but will create one
+for ``BigQueryInsertJobOperator`` that actually runs queries and can take hours in the worst case for task completion.
+
+Changelog
+---------
+
+We follow `Semantic Versioning <https://semver.org/>`_ for releases.
+Check `CHANGELOG.rst <https://github.com/astronomer/astronomer-providers/blob/main/CHANGELOG.rst>`_
+for the latest changes.
+
+Contributing Guide
+------------------
+
+All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
+
+A detailed overview on how to contribute can be found in the
+`Contributing Guide <https://github.com/astronomer/astronomer-providers/blob/main/CONTRIBUTING.rst>`_.
+
+As contributors and maintainers to this project, you are expected to abide by the
+`Contributor Code of Conduct <https://github.com/astronomer/astronomer-providers/blob/main/CODE_OF_CONDUCT.md>`_.
+
+License
+-------
+
+`Apache License 2.0 <LICENSE>`_
+
+
