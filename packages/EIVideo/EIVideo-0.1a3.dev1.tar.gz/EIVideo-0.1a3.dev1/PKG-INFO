@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: EIVideo
+Version: 0.1a3.dev1
+Summary: EIVideo - 交互式智能视频标注工具，几次鼠标点击即可解放双手，让视频标注更加轻松
+Home-page: https://github.com/QPT-Family/EIVideo
+Author: GT-ZhangAcer
+Author-email: zhangacer@foxmail.com
+License: LGPL
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+[https://github.com/QPT-Family/EIVideo](https://github.com/QPT-Family/EIVideo)
+
