@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rv-ltl
+Version: 0.1.0a1
+Summary: 
+Author: Shun
+Author-email: shunthedev@gmail.com
+Requires-Python: >=3.7,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
