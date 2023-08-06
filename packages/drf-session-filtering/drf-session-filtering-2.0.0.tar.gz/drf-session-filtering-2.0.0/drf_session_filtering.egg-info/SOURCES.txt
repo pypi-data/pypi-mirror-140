@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+drf_session_filtering.egg-info/PKG-INFO
+drf_session_filtering.egg-info/SOURCES.txt
+drf_session_filtering.egg-info/dependency_links.txt
+drf_session_filtering.egg-info/requires.txt
+drf_session_filtering.egg-info/top_level.txt
+session_filtering/__init__.py
+session_filtering/apps.py
+session_filtering/backends.py
+session_filtering/field_mapping.py
+session_filtering/models.py
+session_filtering/serializers.py
+session_filtering/views.py

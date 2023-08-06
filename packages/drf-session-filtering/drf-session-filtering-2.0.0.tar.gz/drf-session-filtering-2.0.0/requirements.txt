@@ -1,0 +1,4 @@
+Django>=1.11,<3
+djangorestframework>=3.5
+django-filter>=2.0,<2.3
+pytz>=2018.7
