@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/justunzip/__init__.py
+src/justunzip/justunzip.py
+src/justunzip.egg-info/PKG-INFO
+src/justunzip.egg-info/SOURCES.txt
+src/justunzip.egg-info/dependency_links.txt
+src/justunzip.egg-info/entry_points.txt
+src/justunzip.egg-info/requires.txt
+src/justunzip.egg-info/top_level.txt
