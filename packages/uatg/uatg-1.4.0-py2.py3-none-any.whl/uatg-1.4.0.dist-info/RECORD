@@ -1,0 +1,17 @@
+uatg/__init__.py,sha256=qBL61r_avXrNaiIeWElbwQKRncoQWI0OvjEM1RS5Br4,223
+uatg/instruction_constants.py,sha256=blIdwroYxbOPUhjsShUXE9VFlieJHUMy5mDxkSPkwy4,25436
+uatg/instruction_generator.py,sha256=vAM2JngMhuNB6f1XbQyYiAngZO33NOmXsXilUQuM3E8,34628
+uatg/log.py,sha256=sIq-tzVs-5J4S5BiYyBOhhaOHeRjtbc2d_Mf1CfqzuQ,3059
+uatg/main.py,sha256=ryu5OfgJcW0BZ-OzTJJO2Kf4G8HMLhwKhl7e3vZX13s,18748
+uatg/regex_formats.py,sha256=23Nu977J-e4ZGaGYmhJ1bCHoXBsTRWwHHp3RCEZ1I30,3584
+uatg/requirements.txt,sha256=Ttucx1FGk01VdTAcV0QrahnxNRG6ioIh3PigPLKxxGo,64
+uatg/test_generator.py,sha256=fBE-_2UkbK2kVLfuTsqozYcDJOlC7fiEDDnme_LZRRo,23657
+uatg/utils.py,sha256=eKyc6xpOuUQGOrtkLzMPcDL64XjyJCIEv3L4KgPzFKU,44249
+uatg/env/arch_test.h,sha256=FngtRRpu5rKTVXjr4fsCvcJwp98ULxG13OFxSvS9BpI,35750
+uatg/env/encoding.h,sha256=nPukaSabz0ilMsI6IAifyUo5r65Z_Q396NV_kzg06WM,53044
+uatg-1.4.0.dist-info/LICENSE.incore,sha256=uTN-ckoAK23iDq5XK9NYqcB0NqdvoZsgC20siN95gd4,1532
+uatg-1.4.0.dist-info/METADATA,sha256=vvwnBXZH9e8hkYuTitMfE1fPyikzXiH3nGCtOTZwkWk,824
+uatg-1.4.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+uatg-1.4.0.dist-info/entry_points.txt,sha256=OwUYN2tsNkQ0ApOsrfmVzEvfZEO31YmOuUy2gn0HR10,40
+uatg-1.4.0.dist-info/top_level.txt,sha256=YTVUZw3M6TkyGvz8gVZLG2FAo_FWegUmzMKtEK7DlmQ,5
+uatg-1.4.0.dist-info/RECORD,,
