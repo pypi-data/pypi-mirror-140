@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+from nxstools import nxscollect
+
+nxscollect.main()
