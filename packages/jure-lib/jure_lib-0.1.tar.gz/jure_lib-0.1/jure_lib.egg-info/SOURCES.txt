@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+docs/docs.txt
+jure_lib/__init__.py
+jure_lib.egg-info/PKG-INFO
+jure_lib.egg-info/SOURCES.txt
+jure_lib.egg-info/dependency_links.txt
+jure_lib.egg-info/requires.txt
+jure_lib.egg-info/top_level.txt
+jure_lib/pack_a/__init__.py
+jure_lib/pack_a/find_index.py
+jure_lib/pack_b/__init__.py
+jure_lib/pack_b/my_factorial.py
