@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: morse-audio-decoder
+Version: 0.1.0
+Summary: Decode morse code from input audio file
+License: MIT
+Author: Mikko Kouhia
+Author-email: mikko.kouhia@iki.fi
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.22.2,<2.0.0)
+Requires-Dist: scikit-learn (>=1.0.2,<2.0.0)
