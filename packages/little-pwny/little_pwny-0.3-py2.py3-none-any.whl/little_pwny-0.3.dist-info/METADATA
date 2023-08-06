@@ -1,0 +1,165 @@
+Metadata-Version: 2.1
+Name: little-pwny
+Version: 0.3
+Summary: Check whether your password has been pwnd
+Home-page: https://codeberg.org/ulif/little-pwny
+Author: ulif
+Author-email: uli@gnufix.de
+License: GPL3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Utilities
+Classifier: Topic :: Security :: Cryptography
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+little-pwny
+***********
+
+Has my password been compromised? And how often?
+
+|pypi-release|
+
+
+`little-pwny` queries the `have-i-been-pwned password database
+<https://haveibeenpwned.com/Passwords>`_ for breaches that contain a given
+passphrase and returns the number of breaches found. It does *not* reveal the
+plain passphrase to the HIBP server (nor to anyone/anything else, see below).
+
+`little-pwny` works with plain Python 3.x and requires no additional packages.
+
+
+Usage
+=====
+
+::
+
+    $ pwny p@ssw0rd
+    51763
+
+    $ pwny aiPh1eehec8AhY2y
+    0
+
+Use::
+
+    $ pwny --help
+
+to learn more about all options supported.
+
+Please note, that the Python package is called `little-pwny` while the
+executable script is called `pwny`.
+
+At no time the raw password is transferred to https://haveibeenpwned.com (or
+elsewhere). Instead we use the generously offered haveibeenpwned.com-API to
+deploy `k-anonymity <https://en.wikipedia.org/wiki/K-anonymity>`_. I.e. we send
+the first five chars of the SHA1 hash of any given password. This way you can
+check new passwords without revealing them to the server (or any other party).
+
+
+
+Install
+=======
+
+You need at least some Python3 interpreter installed on your System.
+
+with `pip`
+----------
+
+Simply::
+
+    $ pip3 install --user little-pwny
+
+Leave out `--user` if you are root and want to install `little-pwny`
+system-wide.
+
+If `pip` is not installed on your system, chances are, your Python3 comes with
+`pip` included::
+
+    $ python3 -m pip install --user little-pwny
+
+(again you can leave `--user` out in case you are root).
+
+If that fails as well, you might use your systems package manager to install
+`pip3`. On Ubuntu for instance this will do::
+
+    $ sudo apt install python3-pip
+    $ sudo pip3 install little-pwny
+
+
+From Source
+-----------
+
+Clone the source::
+
+     $ git clone https://codeberg.org/ulif/little-pwny
+     $ cd little-pwny
+
+Create and activate a virtualenv::
+
+     $ virtualenv venv
+     $ source ./venv/bin/activate.sh
+
+Then, from this directory, install the package::
+
+     [venv] $ pip install -e .
+
+
+Running Tests
+=============
+
+We use `tox` and `py.test` for testing. So,::
+
+     $ pip install tox
+     $ tox
+
+should run all tests.
+
+
+.. |pypi-release| image:: https://img.shields.io/pypi/v/little-pwny?color=006dad
+   :target: https://pypi.python.org/pypi/little-pwny/
+   :alt: Latest release
+
+
+
+Changes
+=======
+
+0.3 (2022-02-25)
+----------------
+
+- Officially also support Python 3.8 and 3.9
+- Moved from github over to https://codeberg.org/ulif/little-pwny
+- Introduced `main` as default branch.
+
+
+0.2 (2019-12-12)
+----------------
+
+- Officially also support Python 3.5 and 3.7
+- Add support for commandline option `--version`.
+- Add support for commandline option `--help`.
+
+
+0.1 (2019-10-31)
+----------------
+
+- Initial release.
+
+
+
+
+
