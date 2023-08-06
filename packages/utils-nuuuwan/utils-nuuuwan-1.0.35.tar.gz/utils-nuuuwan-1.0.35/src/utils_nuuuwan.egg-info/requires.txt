@@ -1,0 +1,12 @@
+area
+bs4
+geopandas
+matplotlib
+pandas
+pillow
+psutil
+py_console
+requests
+selenium
+shapely
+tweepy
