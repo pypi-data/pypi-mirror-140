@@ -1,0 +1,123 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+package_dir = \
+{'': 'src'}
+
+packages = \
+['labster',
+ 'labster.bi',
+ 'labster.blueprints',
+ 'labster.blueprints.auth',
+ 'labster.blueprints.bi',
+ 'labster.blueprints.logging',
+ 'labster.blueprints.notifications',
+ 'labster.blueprints.v3',
+ 'labster.blueprints.v3.user',
+ 'labster.bus',
+ 'labster.cli',
+ 'labster.domain',
+ 'labster.domain.models',
+ 'labster.domain.services',
+ 'labster.domain2',
+ 'labster.domain2.model',
+ 'labster.domain2.model.tests',
+ 'labster.domain2.services',
+ 'labster.domain2.services.tests',
+ 'labster.domain2.services.workflow',
+ 'labster.extensions',
+ 'labster.forms',
+ 'labster.infrastructure',
+ 'labster.infrastructure.repositories',
+ 'labster.infrastructure.repositories.inmemory',
+ 'labster.infrastructure.repositories.sqla',
+ 'labster.infrastructure.services',
+ 'labster.infrastructure.services.inmemory',
+ 'labster.infrastructure.services.sqla',
+ 'labster.ldap',
+ 'labster.lib',
+ 'labster.newforms',
+ 'labster.newforms.base',
+ 'labster.rpc',
+ 'labster.rpc.bi',
+ 'labster.rpc.commands',
+ 'labster.rpc.queries',
+ 'labster.rpc.tests',
+ 'labster.test']
+
+package_data = \
+{'': ['*'],
+ 'labster': ['templates/*', 'templates/emails/*'],
+ 'labster.blueprints.auth': ['templates/auth/*'],
+ 'labster.blueprints.bi': ['templates/bi/*'],
+ 'labster.blueprints.logging': ['templates/logs/*'],
+ 'labster.blueprints.notifications': ['templates/notifications/debug/*',
+                                      'templates/notifications/email/*']}
+
+install_requires = \
+['Flask-Assets<2',
+ 'Flask-Redis',
+ 'Flask-WeasyPrint',
+ 'abilian-core>=0.11.12',
+ 'apscheduler>=3.6.3,<4.0.0',
+ 'attrs',
+ 'cairocffi>=1.0.2,<2.0.0',
+ 'cython>=0.29.22,<0.30.0',
+ 'devtools',
+ 'diskcache>=4.1,<5.0',
+ 'dotted',
+ 'email_validator',
+ 'flask-babel<2',
+ 'flask-injector',
+ 'flask-profiler>=1.8,<2.0',
+ 'flask-smorest',
+ 'glom',
+ 'gunicorn<20',
+ 'html2text',
+ 'inflection',
+ 'invoke>=1.3,<2.0',
+ 'iso8601',
+ 'jsonrpcserver>=4.0,<5.0',
+ 'ldif>=4,<5',
+ 'loguru>=0.4.1,<0.5.0',
+ 'markupsafe>=2,<2.1',
+ 'marshmallow-annotations',
+ 'marshmallow-sqlalchemy',
+ 'marshmallow<3',
+ 'more-itertools',
+ 'newrelic>=5.22.1,<6.0.0',
+ 'nox',
+ 'pampy>=0.3.0,<0.4.0',
+ 'pandas>=1.2.3,<2.0.0',
+ 'psycopg2-binary',
+ 'python-dotenv>=0.10.1,<0.11.0',
+ 'ramda>=0.5.2,<0.6.0',
+ 'requests[security]>=2.13,<3.0',
+ 'structlog',
+ 'toolz',
+ 'werkzeug<1',
+ 'wtforms<3']
+
+entry_points = \
+{'console_scripts': ['labster = labster.cli:cli']}
+
+setup_kwargs = {
+    'name': 'labandco',
+    'version': '2.2.31',
+    'description': 'solution métier pour fluidifier les relations entre chercheurs et administration dans les universités et les EPST',
+    'long_description': '# Lab&Co - solution métier pour fluidifier les relations entre chercheurs et administration\n\n## A propos de Lab&Co\n\nLab&Co est un progiciel permettant aux établissements de recherche ou d\'enseignement et de recherche(universités, EPST, etc.) de fluidifier les relations entre les chercheurs (porteurs de projets) et l\'administration.\n\nIl couvre notamment:\n\n- Le recrutement de personnel sur contrat de projets (doctorants, bourses, CDD...)\n- Les contrats de recherche (recherche partenariale, ANR, projets européens...)\n- La valorisation de la recherche (logiciels, brevets, bases de donnée...)\n\n## Illustration\n\n<img src="https://raw.githubusercontent.com/abilian/labandco/main/doc/illustration.png">\n\n### Historique\n\nLab&Co est développé par [Abilian](http://www.abilian.com/) en partenariat avec [Will Strategy](https://willstrategy.com/) depuis 2014 pour l\'Université Pierre et Marie Curie (UPMC), devenue depuis Sorbonne Université.\n\nIl est utilisé par plusieurs centaines de chercheurs et la soixantaine de personnes travaillant à la DR&I (Direction de la Recherche et de l\'Innovation).\n\nLa version du code que vous consultez actuellement est la version "3.0" de l\'application, qui est en cours de finalisation pour un déploiement fin 2019 à Sorbonne Université.\n\n### Votre projet\n\nLab&Co peut être déployé dans votre établissement, après connexion à son annuaire LDAP et adaptation des modèles et des workflows à vos processus métiers.\n\nContactez-nous à: [contact@abilian.com](mailto:contact@abilian.com) pour toute demande d\'information.\n\n\n## Développement\n\n### Installer en 1 ligne\n\nSi votre machine de développement est "raisonnablement" configurée, vous pouvez installer Lab&Co localement en une ligne avec la commande:\n\n    ./install.py\n\nDe manière alternative, si vous avez [Poetry](https://poetry.eustace.io/) installé, vous pouvez tapper:\n\n    poetry install\n\n\n### Installer un environnement de développement\n\n1) Créer et activer un virtualenv (Python 3.9 pour l\'instant)\n\n2) Installer Poetry <https://github.com/sdispater/poetry>\n\n3) Dans `/etc/hosts`, faire pointer `labster.local` sur `localhost`.\n\n4) Tapper:\n\n        poetry install\n        yarn --cwd front\n\n\n### Comment développper\n\nEn mode développement, il suffit de lancer `flask devserver`.\n\nPuis lancer le navigateur sur: http://labster.local:5000/\n\nPour lancer les tests: `pytest` ou mieux `tox`.\n\nIl y d\'autres commandes utiles, tapper juste `flask` pour avoir la\nliste.\n\n\n### BDD de prod\n\nCréer une base Postgresql `labster`:\n\n    createdb labster\n\npuis:\n\n    flask create-db\n\n\n### Migrations\n\n    flask db migrate\n    flask db upgrade\n\nDoc: http://alembic.zzzcomputing.com/en/latest/tutorial.html\n\n\n### Tests\n\n1) Tests unitaires:\n\n        pytest\n        yarn --cwd front run test:unit\n\n2) Tests e2e:\n\n        flask cypress\n        flask testcafe\n\n3) Pour tester manuellement en tant qu\'un autre utilisateur, utiliser l\'url\n`backdoor/uid=xxx` (see blueprints/auth/cas.py).\n\n\n#### Tester l\'envoi de mails\n\nLancer\n\n    python -m smtpd -n -c DebuggingServer localhost:1025\n\net dans `DevConfig`\n\n    # MAIL_SUPPRESS_SEND = True\n    MAIL_SUPPRESS_SEND = False\n    MAIL_SERVER = \'localhost\'\n    MAIL_PORT = 1025\n\nAinsi les mais envoyés seront affichés sur stdout.\n\nAutre possibilité, mettre la variable que l\'on veux changer (par rapport au défaut)\ndans un fichier `.env` (similaire au fichier `.flaskenv` qui existe déjà).\n\nLe fichier `.env` a priorité sur `.flaskenv`.\n\nPour les tests unitaires, voir la doc de [flask-mail](https://pythonhosted.org/Flask-Mail/).\n\n\n## Architecture\n\nL\'application est constitué d\'un backend en Python, utilisant notamment le framework Web Flask, l\'ORM SQLAlchemy, et d\'un front-end SPA en JavaScript utilisant le framework réactif Vuejs.\n\nLa communication entre front-end et back-end se fait soit en utilisant le paradigme REST (sans HATEOAS), soit le protocole JSON-RPC 2.0.\n\nLe backend utilise également le framework Abilian-Core développé par Abilian. Il utilise également l\'injection de dépendance grâce à la bibliothèque Injector (+ Flask-Injector).\n\nL\'authentification se fait en utilisant le protocole CAS implémenté par l\'Université.\n\n### Modèle de données (simplifié)\n\n<img src="https://raw.githubusercontent.com/abilian/labandco/main/doc/model.png">\n\n\n\n## FAQ\n\n### L\'application s\'appelle-t-elle "Labster" ou "Lab&Co" ?\n\nLe projet s\'appelait initialement "Labster", d\'où le nom encore donné au package principal et à certaines variables ou constantes. Il s\'appelle à présent "Lab&Co".\n',
+    'author': 'Abilian SAS',
+    'author_email': None,
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'package_dir': package_dir,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
