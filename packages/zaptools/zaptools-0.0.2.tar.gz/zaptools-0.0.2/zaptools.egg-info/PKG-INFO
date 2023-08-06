@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: zaptools
+Version: 0.0.2
+Summary: Python Implementation to ZapTools WebSockets
+Home-page: https://github.com/NathanDraco22/zap-adapter-python
+Author: Nathan Mejia
+Author-email: nathandraco22@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+zaptools
+========
+
+PreAlfa 2
+
+Wrapper around WebSocket to ZapTools Clients
+
+Usage
+-----
+
+How to use **zaptools**
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    from fastapi import FastAPI
+    from zaptools import FastApiZapAdapter, SocketClient
+
+    app : FastAPI = FastAPI()
+    adapter = FastApiZapAdapter(app= app, route= "/" )
+
+    @adapter.on_client_connected
+    async def on_connected(client : SocketClient , adapter : FastApiZapAdapter):
+        print("client connected : ", client.id_connection)
+        await client.send_event("myEvent", "Data Payload to send")
+
+    @adapter.on_event("event")
+    async def event(payload, client:SocketClient , adapter : FastApiZapAdapter ):
+        print(payload)
+        await client.send_event("anyEvent", {"msg" : "a Json Format"})
+
+    @adapter.on_client_disconnected
+    async def client_disconected(client : SocketClient , adapter : FastApiZapAdapter):
+        print("client disconnected: ", client.id_connection)
+
+
+**zaptools** is only compatible with FastAPI apps, so we need to create 
+a **FastAPI** app and then create a instance of *FastApiZapAdapter*, the constructor
+need the app (FastApi app) and a specific route ("/")
+
+.. code-block:: python
+
+    app : FastAPI = FastAPI()
+    adapter = FastApiZapAdapter(app= app, route= "/" )
+
+Now we can use the ``adapter`` to define the function to be called
+when a event is triggered, for example is we need to check if a new client
+is connected to our Socket server, and then response to client:
+
+.. code-block:: python
+
+    @adapter.on_client_connected
+    async def on_connected(client : SocketClient , adapter : FastApiZapAdapter):
+        print("client connected : ", client.id_connection)
+        await client.send_event("myEvent", "Data Payload to send")
+
+the ``SocketClient`` is a class that have ``id_connection`` and ``send_event`` method,
+remember ever ``await`` the ``send_event``.
+
+Also, you can define a function to be called when a client is disconnected:
+
+.. code-block:: python
+
+    @adapter.on_client_disconnected
+    async def client_disconected(client : SocketClient , adapter : FastApiZapAdapter):
+        print("client disconnected: ", client.id_connection)
+
+We can register a event, in this case we have the payload:
+
+.. code-block:: python
+
+    @adapter.on_event("eventName")
+    async def event(payload, client:SocketClient , adapter : FastApiZapAdapter ):
+        print(payload)
+        await client.send_event("eventName", {"msg" : "a Json Format"})
+
+And finally, start the FastAPI app normally (uvicorn)
+
+
+Installation
+------------
+
+``pip install zaptools``
+
+
+Requirements
+------------
+
+FastApi
+
+
+
+Compatibility
+-------------
+
+Python 3.7+
+
+Licence
+-------
+
+MIT
+
+Authors
+-------
+zaptools was written by Nathan Mejia
+
