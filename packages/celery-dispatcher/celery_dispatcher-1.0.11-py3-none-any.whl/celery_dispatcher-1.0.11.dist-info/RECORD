@@ -1,0 +1,12 @@
+celery_dispatcher/__init__.py,sha256=ehbVJaUJOH1kbvsQ8xe9SY9ywr9bBIgaqO6Zjl0OJ5k,51
+celery_dispatcher/backends.py,sha256=T47z8KZS9Hb60US5AOPIjoqT70J4ZDjv_YZSEtJ5eE4,783
+celery_dispatcher/core.py,sha256=pyPvFjfdBOkM8lVkorLXdUf22qu8hESlVDnritkmtdg,19848
+celery_dispatcher/mixins.py,sha256=OO8WwVJ9hWBUSD68n_Iww_AQ-SDVQZGV6UBT8d5epOE,236
+celery_dispatcher/signals.py,sha256=xceDR08I09qDo7UP-j4MUBT0pciUxX1N9WifGScG3A0,151
+celery_dispatcher/states.py,sha256=QvXHANOxMVEfOb6LMTA-08SjY1UhW8Fw86kzZKsrbaU,41
+celery_dispatcher/utils.py,sha256=9fjaUDSLURS1hSu8UknMox6lNh2zPMoxD7I39KuOrqk,1999
+celery_dispatcher-1.0.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+celery_dispatcher-1.0.11.dist-info/METADATA,sha256=ELT6XJKaC8IeCK3zszCO5gANpCmkfAmdP72vn8xAHr4,3337
+celery_dispatcher-1.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+celery_dispatcher-1.0.11.dist-info/top_level.txt,sha256=zmFzeK_9ZQmwBAUahBvVeRgC31cMRkjI2oEjb5-Ap_M,18
+celery_dispatcher-1.0.11.dist-info/RECORD,,
