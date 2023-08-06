@@ -1,0 +1,9 @@
+README.md
+setup.py
+HJRewardsBot/RewardsBot.py
+HJRewardsBot/__init__.py
+HJRewardsBot.egg-info/PKG-INFO
+HJRewardsBot.egg-info/SOURCES.txt
+HJRewardsBot.egg-info/dependency_links.txt
+HJRewardsBot.egg-info/requires.txt
+HJRewardsBot.egg-info/top_level.txt
