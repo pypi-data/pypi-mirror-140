@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Поздравление с днем рождения",
+    "description": "Поздравляет пользователей с днем рождения",
+    "task": "notifications.tasks.congratulation_tasks.happy_birthday",
+    "crontab": 3
+  }
+]
