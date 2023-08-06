@@ -1,0 +1,10 @@
+veryfi/__init__.py,sha256=9KkGxLS3JBOpzY9Iw6lvNJB-DXpONEhRmQPpSk080Gs,28
+veryfi/client.py,sha256=90WGhJpBcFNLAZ-n8rsCPvh1Mk7XVB9w8WYaGPVyPWg,9072
+veryfi/errors.py,sha256=XggDS4mrJ9vDOx2EZ6cxuMzUCXoXJJlmvA3JboERGSc,1579
+veryfi-3.0.0.dist-info/LICENSE,sha256=-yAaQf3Xdt-4RM3LtLdk9zNvP77bl0W0XcYhYG5ze-I,1093
+veryfi-3.0.0.dist-info/METADATA,sha256=EY6heW-fauldqaFypn288Nf9h5Ke9boXvVGEGFSVEAI,5830
+veryfi-3.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+veryfi-3.0.0.dist-info/entry_points.txt,sha256=ipBXrTjG1bil_B5XP2WIQIkLEEBWjfs9sD3NZKfERFU,51
+veryfi-3.0.0.dist-info/pbr.json,sha256=dMOHQgSRtQrdDuJykzzySPUAZFLhktkcIJW0ZMOMeUk,47
+veryfi-3.0.0.dist-info/top_level.txt,sha256=zGV0fyyeaXBUaMFsXHOLSfEvYlgk6g-7MHqW4lSGL4Q,7
+veryfi-3.0.0.dist-info/RECORD,,
