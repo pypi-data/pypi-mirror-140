@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nextcord-ext-activities
+Version: 2022.2.25.post2
+Summary: An nextcord extension that helps you to launch activities on Discord.
+Home-page: UNKNOWN
+Author: MaskDuck
+License: MIT
+Keywords: activities
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DISCLAIMER: THIS LIBRARY IS IN BETA. I AM NOT RESPONSIBLE FOR ANYTHING DAMAGED TO YOUR BOT. USE THIS LIBRARY AT YOUR OWN RISK.
+
+# nextcord-ext-activities
+nextcord.ext.activities is an extension that helps you to launch activities on Discord.
+
+
+
+
