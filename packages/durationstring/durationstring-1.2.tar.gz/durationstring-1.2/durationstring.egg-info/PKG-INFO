@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: durationstring
+Version: 1.2
+Summary: Get readable time in seconds.
+Home-page: https://github.com/geonyoro/durationstring
+Author: George Nyoro
+Author-email: geonyoro@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+durationstring
+==============
+
+A small module to assist in getting readable time in seconds that can be easily passed to time.sleep(*seconds*).
+
+Converters
+----------
+
+- s - seconds
+- m - minutes
+- h - hours
+- d - days
+
+Failing to provide a converter will default to seconds.
+
+Examples
+--------
+.. code-block:: python
+
+    import duration_string
+    import time
+    time.sleep(duration_string.get("2m"))
+    duration_string.is_valid("2f") # raises ValueError
+
+
+Tests
+-----
+These are run using docstrings.
+
+
