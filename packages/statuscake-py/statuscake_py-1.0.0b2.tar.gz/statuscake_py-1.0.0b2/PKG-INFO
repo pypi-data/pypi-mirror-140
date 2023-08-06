@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: statuscake_py
+Version: 1.0.0b2
+Summary: StatusCake API
+Home-page: https://github.com/StatusCakeDev/statuscake-py
+Author: Support
+Author-email: support@statuscake.com
+License: Apache-2.0
+Keywords: python,sdk,statuscake
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+    # Introduction  The StatusCake API is organised around the features that we offer, with each feature providing a set of endpoints to perform operations on resources associated with your account.  # Authentication  The StatusCake API uses API keys to authenticate requests. You can view and manage your API keys from [the StatusCake account panel](https://app.statuscake.com/User.php).  All API requests must be made over HTTPS. Calls made over plain HTTP will be redirected to the secure endpoint. API requests without authentication will fail unless otherwise stated in the documentation for the specific endpoint.  &lt;SecurityDefinitions /&gt;  For example an authenticated request must contain an HTTP header of the form &#x60;Authorization: Bearer &lt;API KEY&gt;&#x60;.  **NOTE**: API keys must be kept private. In the event that is it exposed a new one should be generated.  # Ratelimits  Ratelimits are applied to the API to prevent any one client degrading the overall system stability. StatusCake accounts without a subscription, or those on a free plan, can make a maximum of 10 requests per second. For accounts with a paid subscription this limit is increaed to 20 requests per second.  Authenticated requests are associated with the authenticated account, regardless of which API key was used. This means that all API clients share the same ratelimit quota per second when they authenticate with different API keys owned by the same StatusCake account.  When the ratelimit quota is exceeded all future requests will return an HTTP &#x60;429&#x60; status until the ratelimit window is reset.  # Cross-Origin Resource Sharing  The StatusCake API features Cross-Origin Resource Sharing (CORS) implemented in compliance with the W3C specification. This allows cross-domain communication from the browser. All responses have a wildcard same-origin which makes them completely public and accessible to everyone.  # Errors  StatusCake uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the &#x60;2xx&#x60; range indicate success. Codes in the &#x60;4xx&#x60; range indicate an error that failed given the information provided (e.g. a required parameter was omitted or malformed). Codes in the &#x60;5xx&#x60; range indicate an error with StatusCake servers.  ## Handling Errors  Our client libraries raise exceptions, or return error types, depending on the control flow supported by the language. We recommend using these to write code that handles all possible API exceptions.   # noqa: E501
+    
+
