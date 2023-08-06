@@ -1,0 +1,9 @@
+setup.py
+dur/__init__.py
+dur/__main__.py
+dur/dur.py
+dur.egg-info/PKG-INFO
+dur.egg-info/SOURCES.txt
+dur.egg-info/dependency_links.txt
+dur.egg-info/entry_points.txt
+dur.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+dur = dur.dur:main
+
