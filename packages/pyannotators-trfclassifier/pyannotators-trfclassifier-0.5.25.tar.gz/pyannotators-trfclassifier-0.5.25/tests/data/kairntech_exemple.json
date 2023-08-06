@@ -1,0 +1,4162 @@
+[
+  {
+    "identifier": "kairntech_exemple_0",
+    "title": "kairntech_exemple_0",
+    "text": "La consommation local nour permet de nous ramener \u00e0 l'essentiel, de savoir que notre consommation sera b\u00e9n\u00e9fique \u00e0 mon voisin, \u00e7a la rend utile\n0",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-30T18:55:35Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "37.0",
+      "Th\u00e8me": "Mondialisation et circuits courts"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_1",
+    "title": "kairntech_exemple_1",
+    "text": "L'art, la culture nous apporte une ouverture d'esprit et peux nous permetre d'aborder les probl\u00e8mes diff\u00e9remment\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-30T18:47:25Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "37.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_2",
+    "title": "kairntech_exemple_2",
+    "text": "Avoir/Prendre du temps pour les autres et en avoir suffisamment pour gagner sa vie\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-30T18:44:45Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "37.0",
+      "Th\u00e8me": "La g\u00e9n\u00e9rosit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_3",
+    "title": "kairntech_exemple_3",
+    "text": "Le travail\n0",
+    "metadata": {
+      "Accord": "6",
+      "Date": "2020-09-30T18:41:02Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "37.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_4",
+    "title": "kairntech_exemple_4",
+    "text": "Les difficult\u00e9s de concentration et d'investissement dans un cadre d\u00e9plaisant.\nMa capacit\u00e9 d'apprentissage est d\u00e9pendante de mes \u00e9motions.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-30T14:57:17Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "41.0",
+      "Th\u00e8me": "Les \u00e9motions et notre cognition"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_5",
+    "title": "kairntech_exemple_5",
+    "text": "Avec l'acc\u00e9l\u00e9ration de nos soci\u00e9t\u00e9s et la multitude d'apprentissages existants devenant vite obsol\u00e8tes, il est important de prendre du recul par rapport \u00e0 nos sch\u00e9mas \u00e9ducationnels h\u00e9rit\u00e9s (subis), se d\u00e9tacher de ceux qui ne nous conviennent plus pour pouvoir inventer des nouveaux mod\u00e8les.\nApprendre \u00e0 d\u00e9sapprendre pour mieux apprendre",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-30T10:40:31Z",
+      "Genre": "Femme",
+      "Statut": "En \u00e9laboration de projet",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_6",
+    "title": "kairntech_exemple_6",
+    "text": "Accepter l'id\u00e9e de notre finitude et le fait que \u00e7a peut arriver \u00e0 n'importe quel moment, nous fait vivre et profiter pleinement de chaque instant comme si c'\u00e9tait le dernier. Car nos actions ne sont plus driv\u00e9es par la peur de la mort mais par l'audace de la vie\nAccepter notre condition de mortel nous rend plus vivant",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-30T10:16:18Z",
+      "Genre": "Femme",
+      "Statut": "En \u00e9laboration de projet",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_7",
+    "title": "kairntech_exemple_7",
+    "text": "Dans certains algos d'IA, des biais induisant des discriminations et des atteintes aux droits fondamentaux ont \u00e9t\u00e9 mis en \u00e9vidence. d'o\u00f9 l'importance de d\u00e9velopper une conscience \u00e9thique et soci\u00e9tale pour ceux qui con\u00e7oivent/impl\u00e9mentent ces algos.\nLa technologie est un vrai levier si son id\u00e9e initiale est consciente et \u00e9thique. Elle peut \u00eatre destructrice dans le cas contraire.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-30T09:59:50Z",
+      "Genre": "Femme",
+      "Statut": "En \u00e9laboration de projet",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_8",
+    "title": "kairntech_exemple_8",
+    "text": "On parle souvent de mod\u00e8les \u00e9conomiques qui devraient \u00eatre circulaires, en les d\u00e9connectant de la mani\u00e8re de consommer qui induit cette non circularit\u00e9\nNous devons d'abord changer les modes de consommation pour que les mod\u00e8les \u00e9conomiques puissent devenir circulaires",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-30T08:58:03Z",
+      "Genre": "Femme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "21.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_9",
+    "title": "kairntech_exemple_9",
+    "text": "Accepter l'incertitude c'est consentir \u00e0 ne pas savoir/contr\u00f4ler et permet d'\u00eatre dans une approche d'\u00e9coute/ouverture/adaptation/coop\u00e9ration qui prend en compte les interactions/interd\u00e9pendances entre les \u00e9l\u00e9ments du syst\u00e8me. De l\u00e0 \u00e9mergent des dynamiques nouvelles permettant l'auto-r\u00e9gulation\nQuand l'incertitude est accept\u00e9e et que la volont\u00e9 de contr\u00f4le est l\u00e2ch\u00e9e, les \u00e9l\u00e9ments d'un syst\u00e8me complexe finissent par s'auto-organiser",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-29T17:36:28Z",
+      "Genre": "Femme",
+      "Statut": "En \u00e9laboration de projet",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_10",
+    "title": "kairntech_exemple_10",
+    "text": "Bizarrement je nai pas l'impression davoir perdu mon temps quand je bois de la bi\u00e8re.. je peux affirmer que jarrive a me souvenir de nombreux d\u00e9tails sans importances dans ces moments la ce qui me donne l'impression davoir v\u00e9cu beaucoup plus de choses..\nLa perception du temps s'acc\u00e9l\u00e8re avec l'\u00e2ge sauf quand je bois des bi\u00e8res...",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-29T14:38:21Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "43.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_11",
+    "title": "kairntech_exemple_11",
+    "text": "mena\u00e7ant notre Terre qui n'est pas une poubelle. Ainsi les ressources naturelles s'\u00e9puisent au d\u00e9triment d'un \u00e9quilibre que devrait avoir la nature.\nC'est un sujet bien d'actualit\u00e9, car on consomme bien trop au d\u00e9triment des ressources naturelles; il y a encore trop de d\u00e9chets non recyclables",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-29T13:36:16Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "77.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_12",
+    "title": "kairntech_exemple_12",
+    "text": "notre climat au d\u00e9pens de la biodiversit\u00e9 qui fait vivre des esp\u00e8ces menac\u00e9es par ces \u00e9carts de temp\u00e9rature extr\u00eame, comme ces canicules 2020\nIl est temps que l'on prenne des mesures durables pour sauver notre plan\u00e8te en r\u00e9duisant nos d\u00e9chets, les \u00e9missions de gaz de carbone qui d\u00e9r\u00e8glent no",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-29T13:05:41Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "77.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_13",
+    "title": "kairntech_exemple_13",
+    "text": "nantis que nous, ce qui n'est pas vrai en dictature : libert\u00e9 bafou\u00e9e.\nHeureusement que nous avons la d\u00e9mocratie pour pouvoir nous exprimer librement sans contraintes, pouvoir \u00eatre solidaire des gens qui sont moins bien l",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-29T12:56:58Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "77.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_14",
+    "title": "kairntech_exemple_14",
+    "text": "apporter travail en France?pr\u00e9server r\u00e9serves\npour \u00e9l\u00e9ctronique r\u00e9parable, fabriqu\u00e9e en France",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-29T11:23:28Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "68.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_15",
+    "title": "kairntech_exemple_15",
+    "text": "Nous devons tous etre responsables de nos emissions CO2 et nous eduquer a la reduction de celles-ci. L\u2019effort doit etre collectif et encadr\u00e9 par une reglementation qui doit etre respectee.\nUne taxe Carbone pour tous",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-29T08:04:20Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "49.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_16",
+    "title": "kairntech_exemple_16",
+    "text": "L'exp\u00e9rience ?\nQu'est-ce que le contraire de la mort ? C'est la naissance",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-28T19:37:19Z",
+      "Genre": "Homme",
+      "Statut": "Sans activit\u00e9",
+      "\u00c2ge": "44.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_17",
+    "title": "kairntech_exemple_17",
+    "text": "Les \u00e9tudes sur le sujet. Les t\u00e9moignages et interviews\nM\u00e9diter devrait \u00eatre proposer aux salari\u00e9s",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-28T19:00:18Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_18",
+    "title": "kairntech_exemple_18",
+    "text": "Le temps qu'ont les autres\nJe vois passer le temps pour m'organiser",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-28T15:50:30Z",
+      "Genre": "Homme",
+      "Statut": "Sans activit\u00e9",
+      "\u00c2ge": "45.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_19",
+    "title": "kairntech_exemple_19",
+    "text": "Notre environnement \u00e9tant complexe, vouloir ma\u00eetriser l'ensemble de ses param\u00e8tres ajoute encore de l'incertitude.\nPar nature, l'avenir est incertain. Cette incertitude se renforce encore par l'impression que nous avons de vouloir tout maitriser.",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-28T10:50:08Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_20",
+    "title": "kairntech_exemple_20",
+    "text": "Si rien ne vient justifier votre valeur alors elle n existe pas aux yeux des autres  Il faut donc des actes en coherence avec vos valeurs  Les necessites du monde viennent contrariees vos valeurs et l arbitrage est necessaire ou pas c est ce sui fait la valeur de vos valeurs\nLa valeur des personnes s'expriment par leurs actes qui doivent \u00eatre en coh\u00e9rence tout en tenant compte des n\u00e9cessit\u00e9s du monde",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-28T10:39:14Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "Valeur et perception"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_21",
+    "title": "kairntech_exemple_21",
+    "text": "0\nUne belle merde qui sert a rien sans la moindre source electrique",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-28",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_22",
+    "title": "kairntech_exemple_22",
+    "text": "Je suis descendue bri\u00e8vement du train \u00e0 l'\u00e2ge de 28 ans. Depuis je sais que nous ne mourons jamais, nous changeons de train (de corps), c'est tout.\nLa mort, c'est un quai de gare entre deux trains sur le trajet de la vie \u00e9ternelle.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-27T11:23:49Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_23",
+    "title": "kairntech_exemple_23",
+    "text": "0\nLa technologie permettrait plus de libert\u00e9 mais l'homme en a fait une prison",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-27",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_24",
+    "title": "kairntech_exemple_24",
+    "text": "0\nN\u00e9 en 1940 dans le milieu rural, la vie n\u2019\u00e9tait pas toujours joyeuse, les travaux \u00e9taient durs pour les femmes ainsi que les hommes. Le modernisme \u00e9tait le bienvenu, nous l\u2019attendions pour la p\u00e9nibilit\u00e9. Ensuite c\u2019est all\u00e9 tr\u00e8s vite en technologie, l\u2019\u00e9lectricit\u00e9, le poste radio, le t\u00e9l\u00e9phone, la t\u00e9l\u00e9vision, la voiture, les travaux des champs. Aujourd'hui en 2020 il faut faire les comptes sur cette \u00e9volution sans contr\u00f4le, dans beaucoup de domaines. Nos enfants et petits enfants sont dans un pi\u00e8ge, abandonner toutes les nouvelles technologies qui leurs sont enseign\u00e9es dans les \u00e9coles \u00e7a n\u2019\u00e0 pas de sens. Il y a celles que nous comprenons ; trop rapides nos d\u00e9cennies pass\u00e9es, il faut r\u00e9parer sans trop de technologies inutiles et parfois on\u00e9reuses c\u2019est possible. Pour d\u2019autres o\u00f9 le passage oblig\u00e9 s\u2019impose, toujours pour r\u00e9parer, les nouvelles technologies seront n\u00e9cessaires. Quant aux nouvelles technologies qui d\u00e9marrent de partout, personne ne conna\u00eet les r\u00e9sultats positifs ou n\u00e9gatifs pour la faune la flore l\u2019\u00eatre humain. Une ou deux g\u00e9n\u00e9rations pour conna\u00eetre les cons\u00e9quences. Restons positifs pour continuer de vivre, s\u2019alimenter, se faire soigner, en oubliant pas tous ces enfants qui ont faim, dans monde!!..C\u2019est triste \u00e0 dire, mais les langues parlent, notre plan\u00e8te est en danger, avec surpopulation, surconsommation, l\u2019emploi pr\u00e9caire, il n\u2019y a pas r\u00e9ponses bien r\u00e9fl\u00e9chies tellement c\u2019est complexe. Soyons plus solidaires, plus conviviaux, l\u2019amortisseur sera plus souple avec le dialogue !!.. plus que n\u00e9cessaire.",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-27",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_25",
+    "title": "kairntech_exemple_25",
+    "text": "0\nAttention au transhumanisme.",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-27",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_26",
+    "title": "kairntech_exemple_26",
+    "text": "La vie ne permet pas de conna\u00eetre un sujet enti\u00e8rement selon l \u00e9volution universelle\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-26T11:08:25Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_27",
+    "title": "kairntech_exemple_27",
+    "text": "L humanit\u00e9 depend aussi de la vie animale\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-26T11:06:51Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_28",
+    "title": "kairntech_exemple_28",
+    "text": "\u00c9ducation civique et interpersonnelle\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-26T11:06:03Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_29",
+    "title": "kairntech_exemple_29",
+    "text": "\u00c9quilibre fragile\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-26T11:05:00Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_30",
+    "title": "kairntech_exemple_30",
+    "text": "L amour sert de d\u00e9passement individuel et collectif\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-26T11:04:16Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_31",
+    "title": "kairntech_exemple_31",
+    "text": "Revaloris\u00e9s ces metiers\n0",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-26T11:03:26Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Valeur et perception"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_32",
+    "title": "kairntech_exemple_32",
+    "text": "Eco participation\n0",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-26T11:02:30Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_33",
+    "title": "kairntech_exemple_33",
+    "text": "Je me base sur la bible et les autres religions et croyances qui s'y rejoignent, bas\u00e9 sur ma propre existence\nJe crois que le Cr\u00e9ateur nous a cr\u00e9\u00e9s sur cette terre pour que l'on y soit heureux. Par cons\u00e9quent cessons de chercher ailleurs. Tout ce dont nous avon",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-26T08:43:40Z",
+      "Genre": "Homme",
+      "Statut": "Handicap\u00e9",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "Ma th\u00e9orie*"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_34",
+    "title": "kairntech_exemple_34",
+    "text": "J'ai \u00e9tudi\u00e9 toutes les religions. Personne n'est un surhomme, c'est pourquoi il nous faut vivre une vie d'\u00e9quilibre et epanouissante\nL'homme probablement le plus sage d'entre nous \u00e9tait J\u00e9sus. Il a pr\u00e9conis\u00e9 l'amour entre tous sous toutes ses formes et nous n'avons fait que nous ent",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-26T08:38:01Z",
+      "Genre": "Homme",
+      "Statut": "Handicap\u00e9",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_35",
+    "title": "kairntech_exemple_35",
+    "text": "Les hommes s'entre tuent depuis leur origine parcequ'ils n'ont pas la notion de ce que je pr\u00e9conise\nNous ne connaissons absolument rien de la mort, sauf th\u00e9ories, c'est pourquoi je crois qu'il faut croire en un \u00eatre supr\u00eame et qu'il faut essayer de v",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-26T08:34:28Z",
+      "Genre": "Homme",
+      "Statut": "Handicap\u00e9",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_36",
+    "title": "kairntech_exemple_36",
+    "text": "Je vois la quasi totalit\u00e9 de mes semblables ruiner leur vie et leur sant\u00e9 dans une vie qui ne leur convient pas\nLe monde qui doit arriver doit s'occuper essentiellement de notre sant\u00e9 et bien \u00eatre pour la bonne raison que c'est le seul chemin a emprunter. Focali",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-26T08:29:44Z",
+      "Genre": "Homme",
+      "Statut": "Handicap\u00e9",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_37",
+    "title": "kairntech_exemple_37",
+    "text": "J'ai remarqu\u00e9 dans ma vie que sans ses domaines nous sommes perdus ( et cherchons le salut dans l'espace )\nJe crois justement que notre soci\u00e9t\u00e9 doit \u00eatre ax\u00e9e sur les arts et la culture  susceptibles de nous apporter l'\u00e9quilibre n\u00e9cessaire",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-26T08:25:48Z",
+      "Genre": "Homme",
+      "Statut": "Handicap\u00e9",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_38",
+    "title": "kairntech_exemple_38",
+    "text": "Je constate que nous nous enfoncons et qu'il faut passer \u00e0 une autre civilisation tout de suite, compl\u00e8tement diff\u00e9rente ( moralement aussi notamment humilit\u00e9 et respect de chacun\nJe crois que la pand\u00e9mie est une opportunit\u00e9 pour d\u00e9velopper une soci\u00e9t\u00e9 bas\u00e9e 100% sur l'ecolo et le bio ( energies vertes et nourriture bio ( sans v",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-26T08:22:01Z",
+      "Genre": "Homme",
+      "Statut": "Handicap\u00e9",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_39",
+    "title": "kairntech_exemple_39",
+    "text": "Je suis moi meme artiste et la soci\u00e9t\u00e9 m'a laiss\u00e9 pour compte\nJe crois que la soci\u00e9t\u00e9 devrait se focaliser et aider les vrais artistes et artisans trop souvent rejet\u00e9s par cett soci\u00e9t\u00e9 mettant \u00e0 leur place des pe",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-26T08:16:14Z",
+      "Genre": "Homme",
+      "Statut": "Handicap\u00e9",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "Valeur et perception"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_40",
+    "title": "kairntech_exemple_40",
+    "text": "0\nLa \"modernisation pour l'\u00e9conomie\" \u00e0 travers les si\u00e8cles a toujours conduit \u00e0 la d\u00e9cadence ou \u00e0 la disparition d'un mode de civilisation.",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-26",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_41",
+    "title": "kairntech_exemple_41",
+    "text": "0\nl'homme d\u00e9truit cette belle vie... qui date de mill\u00e9naires ! Attention aux futures g\u00e9n\u00e9rations : : DANGER",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-26",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_42",
+    "title": "kairntech_exemple_42",
+    "text": "J\u2019ai propos\u00e9 moi-m\u00eame cette affirmation, j\u2019en suis donc convaincue \u00e0 100%\nJe suis convaincue que chacun peut tout apprendre du moment que l\u2019on s\u2019adapte \u00e0 son mode d\u2019apprentissage et que l\u2019on prenne le temps n\u00e9cessaire.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-25T20:27:07Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "39.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_43",
+    "title": "kairntech_exemple_43",
+    "text": "Pyramide \"sociale\" non respect\u00e9e\n0",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-25T20:17:01Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Valeur et perception"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_44",
+    "title": "kairntech_exemple_44",
+    "text": "R\u00e9volution culturelle et mode de vie\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-25T20:15:43Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_45",
+    "title": "kairntech_exemple_45",
+    "text": "Addictions\n0",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-25T20:12:40Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_46",
+    "title": "kairntech_exemple_46",
+    "text": "\u00c9quilibre vie priv\u00e9e, vie professionnelle\n0",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-25T20:11:48Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_47",
+    "title": "kairntech_exemple_47",
+    "text": "Toucher la r\u00e9alit\u00e9\n0",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-25T20:10:14Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_48",
+    "title": "kairntech_exemple_48",
+    "text": "Gestion globale de la plan\u00e8te\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-25T20:08:35Z",
+      "Genre": "Femme",
+      "Statut": "Sans activit\u00e9",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_49",
+    "title": "kairntech_exemple_49",
+    "text": "Le temps est une mesure quantitative et pas qualitative.\nPeu importe le temps que cela prend, ce qui compte finalement c'est notre propre rapport \u00e0 ce temps \u00e9coul\u00e9 et notre perception de sa valeur.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-25T17:07:42Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "41.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_50",
+    "title": "kairntech_exemple_50",
+    "text": "L'\u00e9tat du march\u00e9 de l'Art. Le besoin d'exp\u00e9rience authentique depuis la d\u00e9saffection populaire pour la cr\u00e9ation.\nL'art est mort. Atomis\u00e9. D\u00e9valu\u00e9. Sur-\u00e9valu\u00e9. D\u00e9saffect\u00e9. Il va falloir le remplacer par autre chose. Le rituel. La transe. La gr\u00e2ce collective.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-25T14:26:35Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "41.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_51",
+    "title": "kairntech_exemple_51",
+    "text": "Mes \u00e9tudes universitaires sur le sujet ?\nL'\u00e9tude du cerveau humain (individuel et son \u00e9volution collective) devrait retenir toute notre attention.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-25T14:20:58Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "41.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_52",
+    "title": "kairntech_exemple_52",
+    "text": "L'int\u00e9r\u00eat g\u00e9n\u00e9ral difficile \u00e0 d\u00e9gager de tous les int\u00e9r\u00eats particuliers. Il est insuffisant pour faire soci\u00e9t\u00e9.\nLe bien commun est diff\u00e9rent de l'int\u00e9r\u00eat g\u00e9n\u00e9ral.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-24T18:02:27Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "76.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_53",
+    "title": "kairntech_exemple_53",
+    "text": "parce que c'est un th\u00e8me malheureusement trait\u00e9 id\u00e9ologiquement et clivant.\n0",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-24T17:53:13Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "76.0",
+      "Th\u00e8me": "Les mouvements migratoires*"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_54",
+    "title": "kairntech_exemple_54",
+    "text": "Pr\u00e9servation de la plan\u00e8te\n\u00c9nergie renouvelable",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-24T17:45:10Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "76.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_55",
+    "title": "kairntech_exemple_55",
+    "text": "Moins de transport et soutien \u00e0 l'activit\u00e9 locale\nConsommer local r\u00e9duit notre emprunte environnementale",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-24T12:44:28Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "52.0",
+      "Th\u00e8me": "Mondialisation et circuits courts"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_56",
+    "title": "kairntech_exemple_56",
+    "text": "A l'\u00e9cole, il n'y a pas de projet d'\u00e9cole, pas de projet collectif; d\u00e9j\u00e0 les enseignants entre eux ne sont pas soud\u00e9s\nRien n'est fait pour cr\u00e9er un collectif : on cherche toujours \u00e0 diviser les gens; l'\u00e9cole ne fait rien pour apprendre le vivre ensemble aux enfants",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-24T09:27:36Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Valeur et perception"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_57",
+    "title": "kairntech_exemple_57",
+    "text": "La difficult\u00e9 de retenir les notions les plus faciles\nNous devrions tous avoir des cours de m\u00e9thodes d\u2019apprentissage dans notre enfance pour que tout le monde puisse savoir comment apprendre plus tard",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-24T07:44:58Z",
+      "Genre": "Femme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "18.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_58",
+    "title": "kairntech_exemple_58",
+    "text": "trop de gens sont perdus dans ce monde mat\u00e9rialiste par exces!\nla motivation n'est pas toujours naturelle, elle se construit avant de se d\u00e9construire!",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-23T14:45:57Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "72.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_59",
+    "title": "kairntech_exemple_59",
+    "text": "trop de monde sans travail, c'est n\u00e9gliger le respect de chacun \u00e0 la maison...\nla semaine de 28h00 pour tous",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-23T14:42:58Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "72.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_60",
+    "title": "kairntech_exemple_60",
+    "text": "moins de materiel pour plus de bien etre!\nralentissez pour prendre le temps",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-23T14:39:42Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "72.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_61",
+    "title": "kairntech_exemple_61",
+    "text": "R\u00e9alit\u00e9, pens\u00e9e du Dala\u00ef-lama\nLa seul chose de s\u00fbr dans la vie, c'est que nous allons mourir! Mais tous les autres jours nous allons vivre!",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-23T14:21:09Z",
+      "Genre": "Femme",
+      "Statut": "Professionnel\u00b7le de sant\u00e9",
+      "\u00c2ge": "54.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_62",
+    "title": "kairntech_exemple_62",
+    "text": "solidarit\u00e9, travail d'\u00e9quipe, accompagnement\nensemble on est plus fort",
+    "metadata": {
+      "Accord": "5",
+      "Date": "2020-09-23T14:05:17Z",
+      "Genre": "Femme",
+      "Statut": "Professionnel\u00b7le de sant\u00e9",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_63",
+    "title": "kairntech_exemple_63",
+    "text": "Le manque de temps\nChacun devrait avoir le choix de travailler le nombre d'heures souhait\u00e9es. Ou bien faire un forfait",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-23T14:00:41Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "34.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_64",
+    "title": "kairntech_exemple_64",
+    "text": "Le manque de temp\nAvoir une journ\u00e9e pour participer \u00e0 une \u0153uvre caritatifve",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-23T13:59:02Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "34.0",
+      "Th\u00e8me": "La g\u00e9n\u00e9rosit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_65",
+    "title": "kairntech_exemple_65",
+    "text": "Les besoins en M\u00e9decine et loisirs.\nLa technologie est essentielle au bien-\u00eatre et on peut le regretter...",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-23T13:50:10Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_66",
+    "title": "kairntech_exemple_66",
+    "text": "nous sommes des \u00eatres d'\u00e9motion, les \u00e9motions font parties int\u00e9grantes de notre processus de d\u00e9cision- consciemment ou inconsciemment, cependant nous pouvons avoir un regard objectif et rationnel\nl'amour ou le d\u00e9samour guide nos actions",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-23T13:11:26Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "42.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_67",
+    "title": "kairntech_exemple_67",
+    "text": "plusieurs r\u00e9actions sont possibles face \u00e0 un \u00e9v\u00e9nement face auquel nous ne pouvons rien, lutter, accepter, ou l'int\u00e9grer\nje crois que la r\u00e9silience est la capacit\u00e9 a int\u00e9grer des \u00e9v\u00e8nements \u00e0 port\u00e9e n\u00e9gatives et de passer outre, ainsi les int\u00e9grer a notre environnement",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-23T13:05:05Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "42.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_68",
+    "title": "kairntech_exemple_68",
+    "text": "Surconsommation de la viande, produisant un gaspillage \u00e9norme et une pollution sans pr\u00e9c\u00e9dent\nL\u2019\u00e9levage d\u2019animaux pour la conso humaine produit une forte \u00e9mission de gaz \u00e0 effet de serre, l\u2019id\u00e9al serait de diminuer notre consommation de viande",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-23T12:21:01Z",
+      "Genre": "Femme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "23.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_69",
+    "title": "kairntech_exemple_69",
+    "text": "cale interroge, cela peut donner une autre perspective. De plus, c'est une forme de transmission dans le temps et dans l'espace. Une forme de communication intra et interculturelle.\nl'art et la culture sont indispensables au d\u00e9veloppement d'une soci\u00e9t\u00e9",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-23T12:20:27Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "36.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_70",
+    "title": "kairntech_exemple_70",
+    "text": "0\nIl faut toujours la respecter et on ne la respecte plus d'o\u00f9 elle se rebelle coronavirus etc.",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-23",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_71",
+    "title": "kairntech_exemple_71",
+    "text": "Ne pas faire pour faire, ni faire pour recevoir, mais faire pour donner du sens, pour comprendre, pour grandir, pour transmettre, pour relier... Et \u00e7a, \u00e7a prend du temps.\nJe pense qu'il est important de donner du temps pour chaque chose. Il n'y a qu'ainsi que l'on peut appr\u00e9hender la complexit\u00e9 du monde.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-22T10:16:42Z",
+      "Genre": "Femme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_72",
+    "title": "kairntech_exemple_72",
+    "text": "La nostalgie du pass\u00e9, notre besoin irr\u00e9pressible de mesurer et de contr\u00f4ler absolument tout, l'importance que nous accordons \u00e0 notre image (fig\u00e9e, \u00e9ternelle) et qui d\u00e9termine nos d\u00e9cisions...\nJe pense que l'adaptabilit\u00e9 est un fondement de la vie. En voyant nos difficult\u00e9s actuelles, je me demande si nous sommes une civilisation vivante...",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-22T10:10:57Z",
+      "Genre": "Femme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_73",
+    "title": "kairntech_exemple_73",
+    "text": "C'est mon exp\u00e9rience personnelle\nIl m'arrive de me souvenir de choses inutiles juste parce que c'est quelqu'un qui compte pour moi qui les as dites.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-21T10:58:53Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "Les \u00e9motions et notre cognition"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_74",
+    "title": "kairntech_exemple_74",
+    "text": "Nouvelle g\u00e9n\u00e9ration: l\u2019\u00e9gocentrisme prend de plus en plus de place\nLa g\u00e9n\u00e9rosit\u00e9 est une valeur importante qui se doit d\u2019\u00eatre inculquer \u00e0 chacun. Que le partage ne soit plus une obligation mais quelque chose d\u2019inn\u00e9e",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-21T10:19:04Z",
+      "Genre": "Femme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "22.0",
+      "Th\u00e8me": "La g\u00e9n\u00e9rosit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_75",
+    "title": "kairntech_exemple_75",
+    "text": "Il n'est pas toujours \u00e9vident de rester motiv\u00e9. Nous avons tous des hauts et des bas dans tous les aspects de nos vies. Ne nous punissons pas de ne pas r\u00e9ussir ou d'abandonner, car le plus important c'est d'avoir eu le courage de commencer.\n30% is better then 0%. Give yourself more credit for trying.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-21T09:52:41Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "30.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_76",
+    "title": "kairntech_exemple_76",
+    "text": "0\nL'homme pr\u00e9tend dominer la nature avec la technologie ! Il n'en est rien ! Et plus il s'\u00e9loigne de la nature plus il court \u00e0 sa perte !",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-21",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_77",
+    "title": "kairntech_exemple_77",
+    "text": "0\nLa plupart des techniques servent a faire consommer plus . Ce n'est pas un progr\u00e8s ! On a tendance a confondre nouveaut\u00e9 et progr\u00e8s !",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-21",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_78",
+    "title": "kairntech_exemple_78",
+    "text": "0\nEt leur tecknologie nique la nature",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-21",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_79",
+    "title": "kairntech_exemple_79",
+    "text": "0\nalors si effectivement le progr\u00e8s se borne \u00e0 tout vouloir robotis\u00e9 et vivre dans un monde que le profit qui profite c'est un monde de d\u00e9shumanisation ",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-21",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_80",
+    "title": "kairntech_exemple_80",
+    "text": "\u00catre capable de reconna\u00eetre cet \u00e9tat permet de l\u00e2cher prise sur sa seule expertise pour construire quelque chose avec les autres sans avoir d\u2019id\u00e9e pr\u00e9con\u00e7ue sur la solution\nDans une situation complexe et incertaine, tous les membres d\u2019un groupe savent avec certitude qu\u2019ils ne connaissent pas la solution",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-20T09:13:12Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_81",
+    "title": "kairntech_exemple_81",
+    "text": "Les sujets de discussion ne sont pas enti\u00e8rement pr\u00e9visibles et si on \u00e9coute on apprend toujours des choses\nUne rencontre c\u2019est comme une bo\u00eete de chocolat : on ne sait jamais sur quoi on va tomber (Forrest Gump)",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-20T09:08:20Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "L'inattendu dans nos interactions"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_82",
+    "title": "kairntech_exemple_82",
+    "text": "Au regard de la complexit\u00e9 actuelle\nL'approche syst\u00e9mique va \u00eatre vulgaris\u00e9e dans les ann\u00e9es \u00e0 venir",
+    "metadata": {
+      "Accord": "5",
+      "Date": "2020-09-18T19:24:05Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_83",
+    "title": "kairntech_exemple_83",
+    "text": "je pense que cela d\u00e9pend du trajet personnel de chacun\nUn \u00eatre humain vit pleinement en tant qu\u2019adulte quand il accepte l'id\u00e9e de sa propre mort",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-18T12:27:22Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "56.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_84",
+    "title": "kairntech_exemple_84",
+    "text": "nous nous construisons avec notre h\u00e9ritage biologique et culturel/familial et d\u00e9veloppons une identit\u00e9 unique avec les interactions avec notre environnement\nChaque personne a une fa\u00e7on unique d'\u00eatre au monde",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-18T12:26:00Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "56.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_85",
+    "title": "kairntech_exemple_85",
+    "text": "exp\u00e9rience personnelle et travail spirituel\nL'Amour est ce qui permet de contacter notre humanit\u00e9",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-18T12:23:45Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "56.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_86",
+    "title": "kairntech_exemple_86",
+    "text": "le biomimetisme d\u00e9marche philosophique et spirituelle\nS'inspirer du vivant pour comprendre notre univers. Je sais que je ne sais rien",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-18T12:22:38Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "56.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_87",
+    "title": "kairntech_exemple_87",
+    "text": "Les sciences neuro cognitives sont d\u00e9sormais formelles sur les cons\u00e9quences n\u00e9fastes de la surexposition aux \u00e9crans: cerveau appauvri et addiction : r\u00e9sultat: les niveaux de langage baissent et la violence augmente\nL\u2019acc\u00e8s au num\u00e9rique en illimit\u00e9 est un moyen de nous asservir et de ne jamais tenir compte de l\u2019impact environnemental du num\u00e9rique.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-18T06:52:49Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "47.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_88",
+    "title": "kairntech_exemple_88",
+    "text": "Priorit\u00e9s Co\u00fbt\nLa sortie des \u00e9nergies fossiles est notre priorit\u00e9, m\u00eame si \u00e0 court terme elle repr\u00e9sente un co\u00fbt \u00e9conomique pour la soci\u00e9t\u00e9 et les individus",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-18T06:05:41Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_89",
+    "title": "kairntech_exemple_89",
+    "text": "Retour a un meilleur equilibre de vie.\nLa semaine de 4 jours serait une excellente facon de revoir l'\u00e9quilibre travail/vie personnelle.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-18T03:33:36Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "38.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_90",
+    "title": "kairntech_exemple_90",
+    "text": "Dans un monde o\u00f9 le pouvoir est remis en question, tout le monde se voit attribuer la responsabilit\u00e9 d'avoir un avis et de pouvoir agir. Faisons comme la l\u00e9gende du Colibri, le tout est plus que la somme des parties.\nChacun doit faire sa part, Etats, entreprises, citoyens, enfants",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-17T14:14:15Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "24.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_91",
+    "title": "kairntech_exemple_91",
+    "text": "La complexite est une approche globale du monde et des interactions avoir ce champ de reflexion de curiosite diminue l incertitude\nPlus je m'ouvre \u00e0 la complexit\u00e9 plus je r\u00e9duis l'incertitude",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-17T13:03:00Z",
+      "Genre": "Homme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_92",
+    "title": "kairntech_exemple_92",
+    "text": "Je n'ai pas de perte de temps pour les d\u00e9placements, la restauration, les pauses caf\u00e9s. Je peux r\u00e9cup\u00e9rer ce temps pour \u00eatre plus productif et mieux organiser ma vie priv\u00e9e.\nJ'appr\u00e9cie le t\u00e9l\u00e9travail et me rends compte que je n'ai que tr\u00e8s peu besoin d'\u00eatre sur place pour accomplir mon travail.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-17T10:17:46Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_93",
+    "title": "kairntech_exemple_93",
+    "text": "L\u2019exp\u00e9rience personnelle\nDifficile \u00e0 \u00e9quilibrer",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-17T07:04:55Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_94",
+    "title": "kairntech_exemple_94",
+    "text": "Le principe du pollueur payeur est \u00e0 g\u00e9n\u00e9raliser et il faut une \"carotte\" pour inciter les gens \u00e0 modifier leurs habitudes\nLes m\u00e9nages devraient payer en fonction de la quantit\u00e9 de d\u00e9chets qu'ils g\u00e9n\u00e8rent pour \u00eatre int\u00e9ress\u00e9s \u00e0 sa r\u00e9duction",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-17T04:58:55Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "47.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_95",
+    "title": "kairntech_exemple_95",
+    "text": "Je reste toujours connect\u00e9 par t\u00e9l\u00e9phone ou tablette\nJe d\u00e9pend trop des technologies",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-16T18:27:44Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_96",
+    "title": "kairntech_exemple_96",
+    "text": "l'observation pragmatique?\nLa motivation est le r\u00e9sultat du sens : le sens met en mouvement, il motive.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-16T15:24:28Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "39.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_97",
+    "title": "kairntech_exemple_97",
+    "text": "Attendre que des collaborateurs soient motiv\u00e9s est un contre-sens. L'empathie est le coeur de ce puissant m\u00e9canisme\nLa motivation se cr\u00e9e. Elle n'est pas donn\u00e9e. Elle est construite par des \u00e9l\u00e9ments internes (valeurs) et par des \u00e9l\u00e9ments externes (groupe)",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-16T12:57:52Z",
+      "Genre": "Homme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_98",
+    "title": "kairntech_exemple_98",
+    "text": "Les sources de motivation peuvent \u00eatre multiple, mais si je ne ressors rien d\u2019une action, si je n\u2019ai aucun int\u00e9r\u00eat \u00e0 la faire, alors je ne la fais/ferais pas.\nIl n\u2019est pas possible de mener une action sans motivation",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-16T09:16:49Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "28.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_99",
+    "title": "kairntech_exemple_99",
+    "text": "En democratie, l'homme n'est plus Homme Sauvage et doit accepter des limites pour le bien collectif. Bien pratique cette regle heuristique !\nLa libert\u00e9 des uns s'arr\u00eate l\u00e0 o\u00f9 commence celle des autres",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-16T08:53:36Z",
+      "Genre": "Homme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "24.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_100",
+    "title": "kairntech_exemple_100",
+    "text": "Pour pouvoir contribuer \u00e0 rendre le monde plus \u00e9quitable et respectueux de la plan\u00e8te, nos enfants doivent \u00eatre \u00e9quilibr\u00e9s entre bienveillance et respect de l'autre, engagement vers le bien commun et \u00e9panouissement personnel en fonction de sa personnalit\u00e9.\nApprendre aux enfant \u00e0 avoir \"1 main sur la beaut\u00e9 du monde, 1 main sur la souffrance des hommes et les 2 pieds dans le devoir du moment pr\u00e9sent.\"",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-16T07:15:14Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "44.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_101",
+    "title": "kairntech_exemple_101",
+    "text": "Lorsqu\u2019on apprend \u00e0 nos enfants, cela se fait souvent de fa\u00e7on descendante. Ils sont en position de r\u00e9ceptacle de l\u2019information, ils ne la cherchent pas, ils la subissent /ne l\u2019int\u00e8grent pas, finissent pas l\u2019ignorer, sans y porter pas d\u2019attention\nIl est difficile de transmettre \u00e0 nos enfants le go\u00fbt et la curiosit\u00e9 du savoir, sans tomber dans de la p\u00e9dagogie forc\u00e9e",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-15T15:30:07Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "41.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_102",
+    "title": "kairntech_exemple_102",
+    "text": "l'\u00eatre humain est une composante de la nature. En adoptant la vie citadine, il se convainc qu'il n'en a pas besoin, il ne se rend m\u00eame pas compte, \u00e0 court terme, que \u00e7a lui manque. Pour se r\u00e9aliser en tant qu'\u00eatre humain, il a pourtant un besoin vital de reconnexion avec des odeurs, des temporalit\u00e9s (les saisons), des sensations, des observations.\nL'\u00eatre humain, par nature, n'est pas fait pour vivre en ville",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-15T15:09:24Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Urbanisme et ruralit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_103",
+    "title": "kairntech_exemple_103",
+    "text": "On se fixe un objectif qui nous satisfait jamais. Du coup on essaye d'aller toujours plus loin et c'est pour cela qu'on cherche \u00e0 innover.\nL'humain cherche toujours \u00e0 innover afin d'atteindre son objectif.",
+    "metadata": {
+      "Accord": "4",
+      "Date": "2020-09-15T14:00:00Z",
+      "Genre": "Femme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "21.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_104",
+    "title": "kairntech_exemple_104",
+    "text": "C'est quelque chose de fr\u00e9quent mais pas obligatoire. Quand je suis sur mon portable, je me proj\u00e8te dans un tout autre espace qui m'abstrait de mon espace actuel (en termes d'attention). Mais il n'en est pas le cas de toutes les technologies. Et pour les personnes isol\u00e9es la technologie peut \u00eatre le moyen de connexion a un espace pr\u00e9sent souhait\u00e9.\nLa technologie nous imperm\u00e9abilise \u00e0 notre environnement pr\u00e9sent.",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-15T12:43:07Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "26.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_105",
+    "title": "kairntech_exemple_105",
+    "text": "Notre rapport au temps est \u00e9troitement li\u00e9 \u00e0 ce envers quoi on se sent responsable / impliqu\u00e9 (perso ou professionnel). Pour ma part, je dois penser \u00e0 (et faire par la m\u00eame occasion) \u00e9norm\u00e9ment plus de choses aujourd'hui entre qu'il y a 10 ans par exemple.\nPlus je vieillis, plus j'ai l'impression de manquer de temps. Cela est d\u00fb au fait de traiter de plus en plus de sujets / projets en m\u00eame temps",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-15T12:39:33Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "26.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_106",
+    "title": "kairntech_exemple_106",
+    "text": "Chaque nous permet de construire ce que l'on souhaite.\nLe temps est une ressource pr\u00e9cieuse.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-15T12:35:00Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "27.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_107",
+    "title": "kairntech_exemple_107",
+    "text": "La vie d'adulte est complexe, savoir g\u00e9rer ces \u00e9motions, savoir s\u2019\u00e9couter, se connaitre, se concentrer sont des comp\u00e9tences qui construisent des adultes plus equilibr\u00e9s\nLa m\u00e9ditation et la gestion de nos \u00e9motions devraient \u00eatre enseign\u00e9s d\u00e8s le plus jeune age",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-15T12:17:34Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "34.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_108",
+    "title": "kairntech_exemple_108",
+    "text": "Nos motivations (bonnes ou mauvaises) sont sous tendues par les diff\u00e9rentes formes d'amour.\nL'amour est tout",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-15T12:11:50Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "34.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_109",
+    "title": "kairntech_exemple_109",
+    "text": "Si nous ne prenons pas en compte les \u00e9quilibres naturels, si nous continuons \u00e0 exploiter sans r\u00e9fl\u00e9chir \u00e0 notre impact, alors nous allons droit dans le mur.\nSans respect de la nature, notre d\u00e9veloppement est vou\u00e9 \u00e0 l\u2019\u00e9chec.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-15T11:43:50Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "33.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_110",
+    "title": "kairntech_exemple_110",
+    "text": "Le cerveau apprend tout le temps, toute la vie\nL'apprentissage doit durer toute la vie. C'est le d\u00e9veloppement durable de l'Homme",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-15T10:06:10Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "33.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_111",
+    "title": "kairntech_exemple_111",
+    "text": "Plus on apprend petit \u00e0 \u00eatre g\u00e9n\u00e9reux, meilleur sera le monde\nLa g\u00e9n\u00e9rosit\u00e9 doit s\u2019apprendre \u00e0 l\u2019\u00e9cole",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-14T22:29:01Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "53.0",
+      "Th\u00e8me": "La g\u00e9n\u00e9rosit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_112",
+    "title": "kairntech_exemple_112",
+    "text": "Mon experience\nL' amour est vital.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-14T18:50:46Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_113",
+    "title": "kairntech_exemple_113",
+    "text": "Mes relations aux autres\nR\u00e9inventer, s'adapter, \u00e9voluer sont des actions enrichissantes et \u00e9panouissantes",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-14T18:49:29Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "L'inattendu dans nos interactions"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_114",
+    "title": "kairntech_exemple_114",
+    "text": "Mon experience\nLa litt\u00e9rature, la po\u00e9sie et la musique, rien de tel pour \u00e0 la fois s'\u00e9vader, r\u00e9fl\u00e9chir et se nourrir.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-14T18:47:19Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_115",
+    "title": "kairntech_exemple_115",
+    "text": "R\u00f4le de l \u00e9tat.  Citoyenne\nLe bien-\u00eatre social et la sant\u00e9 doivent rester une priorit\u00e9 de l \u00e9tat",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-14T18:41:39Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_116",
+    "title": "kairntech_exemple_116",
+    "text": "L'amour s'entretient par la surprise, 3 ans de routine en viendront \u00e0 bout, mais l'inattendu et le renouveau permettent qu'il perdure. par analogie, l'\u00c9t\u00e9 aurait bien moins d'int\u00e9r\u00eat s'il n'\u00e9tait pas accompagn\u00e9 du Printemps et de l'Automne, et mis en opposition avec l'Hiver. \u00c0 bas la morne \u00e9ternit\u00e9, vive le changement et la diversit\u00e9 !\nL'amour dure 3 ans",
+    "metadata": {
+      "Accord": "1",
+      "Date": "2020-09-14T16:38:10Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "22.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_117",
+    "title": "kairntech_exemple_117",
+    "text": "chaque pens\u00e9e est accompagn\u00e9e d'une \u00e9motion (comme la pens\u00e9e d'\u00eatre appr\u00e9ci\u00e9 qui provoque de la fiert\u00e9, de la joie) et chaque \u00e9motion nourrit un flux de pens\u00e9e qui nourrit \u00e0 son tour cette derni\u00e8re (quand on est en col\u00e8re contre quelqu'un, on va alimenter cette \u00e9motion par un flux de pens\u00e9es n\u00e9gatives contre cette personne).\nNos \u00e9motions et notre cognition sont intriqu\u00e9s et se nourrissent mutuellement et souvent inconsciemment.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-14T14:14:55Z",
+      "Genre": "Femme",
+      "Statut": "Sans activit\u00e9",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "Les \u00e9motions et notre cognition"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_118",
+    "title": "kairntech_exemple_118",
+    "text": "La vision occidentale du temps est trop statique, nous percevons les transformations comme une abstraction l\u00e0 o\u00f9 en orient la transformation est le r\u00e9el.\nNous pourrions bien mieux vivre si notre conception du temps \u00e9tait circulaire",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-14T14:12:02Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "33.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_119",
+    "title": "kairntech_exemple_119",
+    "text": "Exp\u00e9rience pass\u00e9e, perception des coll\u00e8gues et du manager face aux \u00e9motions qui peuvent \u00eatre mal per\u00e7ues, surtout celles qui sont consid\u00e9r\u00e9es comme n\u00e9gatives ou signe de faiblesse ex: pleurs dans un contexte professionnel.\nExprimer ses \u00e9motions au travail doit \u00eatre encourag\u00e9 et fait dans le non jugement afin d'\u00e9tablir de la confiance et une communication ouverte.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-14T13:49:02Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Les \u00e9motions et notre cognition"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_120",
+    "title": "kairntech_exemple_120",
+    "text": "Les infractions, les d\u00e9lits et les crimes nuisent en priorit\u00e9 aux plus fragiles et encouragent la stigmatisation d'innocents.\nPlus de sanctions contre ceux qui contreviennent aux lois r\u00e9publicaines , c'est lutter en faveur de la dignit\u00e9 et du droit \u00e0 une vie apais\u00e9e pour tous",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-14T06:27:09Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_121",
+    "title": "kairntech_exemple_121",
+    "text": "Avec le temps on passe beaucoup moins de temps \u00e0 la recherche d'information, ce qui permet d'apprendre des notions plus sp\u00e9cifiques\nLa technologie permet une acc\u00e9l\u00e9ration de la connaissance",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-11T18:42:03Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "54.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_122",
+    "title": "kairntech_exemple_122",
+    "text": "Toute notre attention ne doit pas tourner autour du travail. Je ne suis pas qu'une fiche de poste.\nLe travail n'est pas l'\u00e9l\u00e9ment central de l'\u00e9panouissement.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-11T16:47:24Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "29.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_123",
+    "title": "kairntech_exemple_123",
+    "text": "Elle est la raison pour laquelle la vie \u00e0 de la valeur, la raison pour laquelle nous donnons de l'importance au pr\u00e9sent, de peur qu'il n'y ait pas de futur.\nLa mort fait partie de la vie",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-11T14:48:29Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "42.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_124",
+    "title": "kairntech_exemple_124",
+    "text": "quelque chose implique un objet flou, incertain, ind\u00e9finissable... Et qui n'en veut pas, qui ne veut pas de quelque chose ind\u00e9fini, incertain, ind\u00e9finissable... C'est un constat d'impuissance \u00e0 d\u00e9finir et l'objet et le concept. L'id\u00e9e de Whorf qui dit que le langage structure la pens\u00e9e s'applique dans cet essai de d\u00e9finition : si l'on a trois mots\nDonner quelque chose que l'on n'a pas \u00e0 quelqu'un qui n'en veut pas de Lacan",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-11T13:33:42Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "62.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_125",
+    "title": "kairntech_exemple_125",
+    "text": "l approche doit \u00eatre globale et les actions prises \u00e0 tout les niveaux en passant par la conception, l extraction, la r\u00e9paration, le recyclage etc... un mod\u00e8le int\u00e9gratif d \u00e9conomie circulaire dans lequel on retrouverai une pens\u00e9e de d\u00e9veloppement durable prenant en compte l \u00e9conomie l \u00e9cologie et le social\nL'\u00e9conomie circulaire est la seule fa\u00e7on de r\u00e9soudre ce probl\u00e8me [surconsommation]",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-11T11:43:39Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_126",
+    "title": "kairntech_exemple_126",
+    "text": "Parce que je l'ai v\u00e9cu... C'est bon d'\u00eatre aim\u00e9e\nL'amour vous donne des ailes",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-11T11:11:02Z",
+      "Genre": "Femme",
+      "Statut": "Sans activit\u00e9",
+      "\u00c2ge": "61.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_127",
+    "title": "kairntech_exemple_127",
+    "text": "Le salari\u00e9 n'est plus consid\u00e9r\u00e9 comme un \u00eatre mais comme une source de profits\nLe bien-\u00eatre des salari\u00e9s importe peu dans la course au profit",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-11T10:57:35Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "38.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_128",
+    "title": "kairntech_exemple_128",
+    "text": "les maux du corps sont les maux de l'\u00e2me.. la m\u00e9decine douce aide a tout r\u00e9\u00e9quilibrer la t\u00eate et le corps.\nLe bien \u00eatre physique passe par le bien \u00eatre moral",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-11T10:33:00Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_129",
+    "title": "kairntech_exemple_129",
+    "text": "Favoriser la suggestion pour engager la transformation et adressons la transformation n\u00e9cessaire \u00e0 la plus grande coalition possible\nSachons rester raisonnables tous ensemble",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-11T09:43:25Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "48.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_130",
+    "title": "kairntech_exemple_130",
+    "text": "ce que je partage personnellement depuis quelque mois\namiti\u00e9s la sinc\u00e9rit\u00e9 d\u00e9sint\u00e9ress\u00e9e associ\u00e9e \u00e0 la convivialit\u00e9 dans ce passage difficile \u00e0 vivre avec la covid 19",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-11T04:47:26Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "77.0",
+      "Th\u00e8me": "La g\u00e9n\u00e9rosit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_131",
+    "title": "kairntech_exemple_131",
+    "text": "Important apprendre un m\u00e9tier qu'on aime\nApprendre un m\u00e9tier qu'on aime",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-10T11:47:47Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "70.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_132",
+    "title": "kairntech_exemple_132",
+    "text": "Important de faire un m\u00e9tier qu'on aime aller travailler avec bonheur\nFaire un m\u00e9tier qu'on aime, aller travailler contents, avoir de la motivation pour soi et les coll\u00e8gues et son patron",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-10T11:46:33Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "70.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_133",
+    "title": "kairntech_exemple_133",
+    "text": "Des jeunes s'ennuient \u00e0 l'\u00e9cole ne font rien par manque d'int\u00e9r\u00eats pas de motivation parfois \u00e0 cause du lyc\u00e9e ou du coll\u00e8ge\nIl faut l'apprentissage d\u00e8s 14ans apprendre un m\u00e9tier pour ceux et celles qui n'aiment pas l'\u00e9cole",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-10T11:44:01Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "70.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_134",
+    "title": "kairntech_exemple_134",
+    "text": "DANS NOTRE P\u00e9RIODE TOURMENT\u00e9E\nQUELQUE SOIT L'AGE IL RESTE TOUJOURS \u00c0 DECOUVRIR",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-10T02:49:10Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "77.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_135",
+    "title": "kairntech_exemple_135",
+    "text": "je maintiens mes efforts au travail malgr\u00e9 mes soucis de sant\u00e9\nla sant\u00e9 des salari\u00e9s devrait \u00eatre la premi\u00e8re mission des managers",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-09T07:20:25Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "47.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_136",
+    "title": "kairntech_exemple_136",
+    "text": "Conditionnement, regard des autres, comp\u00e9tition d\u00e9mesur\u00e9e sont des d\u00e9motivateurs tr\u00e8s lourds\nOn fait les choses pour avoir l'esprit tranquille mais sans envie",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-09T07:06:23Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_137",
+    "title": "kairntech_exemple_137",
+    "text": "les circonstances  peuvent influer sur la motivation ,  le d\u00e9roulements des \u00e9v\u00e8nements de l'existence peuvent qu'une motivation sera entrav\u00e9e  et stopp\u00e9e par un obstacle.\n0",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-08T14:24:06Z",
+      "Genre": "Homme",
+      "Statut": "Professionnel\u00b7le de sant\u00e9",
+      "\u00c2ge": "65.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_138",
+    "title": "kairntech_exemple_138",
+    "text": "ne pas s'enfermer sur soi meme\nChacun de nous devrait offrir 2h de son temps chaque mois pour contribuer au bien commun en fonction de ses comp\u00e9tences",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-08T09:49:17Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "82.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_139",
+    "title": "kairntech_exemple_139",
+    "text": "le collectif ne peut pas \u00eatre identique a l'\u00eatre unique\nIl y a une tension entre le besoin d'\u00eatre unique, et celui d'appartenir \u00e0 un collectif",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-08T09:42:36Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "83.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_140",
+    "title": "kairntech_exemple_140",
+    "text": "Lorsqu'on pratique une activit\u00e9 artistique ou lorsqu'on regarde une \u0153uvre cela engendre forc\u00e9ment une r\u00e9flexion, un avis, des \u00e9motions, des rencontres et ainsi ouvre notre esprit \"critique\"\nL'art est une ouverture d'esprit... qui peut nous permettre de vivre dans un monde plus tol\u00e9rant, pour d\u00e9couvrir l'autre...",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-08T08:17:23Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_141",
+    "title": "kairntech_exemple_141",
+    "text": "Les exemples politiques, les exemples de carri\u00e8re dans le priv\u00e9, les exemples que je connais dans mes exp\u00e9riences professionnelles : on regarde davantage la rapidit\u00e9 que la qualit\u00e9\nLa soci\u00e9t\u00e9 actuelle valorise toujours les personnes qui vont vite (dans leur travail ou dans leur carri\u00e8re)",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-08T07:09:12Z",
+      "Genre": "Homme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "29.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_142",
+    "title": "kairntech_exemple_142",
+    "text": "L'effet \"start-up nation\" tend \u00e0 faire croire \u00e0 tout le monde qu'innover est un objectif en soi (notamment pour se faire de l'argent). Il faut plut\u00f4t se demander ce qu'est une bonne innovation.\nLa doxa actuelle fait de l'innovation l'alpha et l'om\u00e9ga de la r\u00e9ussite, sans s'interroger sur les effets de l'innovation : est-elle pour tous ?",
+    "metadata": {
+      "Accord": "6",
+      "Date": "2020-09-08T07:03:47Z",
+      "Genre": "Homme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "29.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_143",
+    "title": "kairntech_exemple_143",
+    "text": "La difficult\u00e9 actuelle de l'\u00e9cole r\u00e9side dans son organisation g\u00e9ographique : elle prend place dans des ghettos sociaux qui emp\u00eachent \u00e0 une large partie de la population d'avoir acc\u00e8s \u00e0 des apprentissages durables.\nIl n'est pas tant question des contenus que des modalit\u00e9s d'enseignement : l'\u00e9cole doit \u00eatre le lieu de la mixit\u00e9 pour fonctionner.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-08T06:59:21Z",
+      "Genre": "Homme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "29.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_144",
+    "title": "kairntech_exemple_144",
+    "text": "Le m\u00e9tier de soignant/accompagnant est un m\u00e9tier de relation. Les outils sont souvent inadapt\u00e9s s'ils ne sont pas port\u00e9s par une attitude de bienveillance. L'humain n'est pas une machine, les protocoles ne suffisent pas\nL'intelligence \u00e9motionnelle devrait \u00eatre plus prise en compte comme comp\u00e9tence professionnelle",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-08T06:36:05Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "54.0",
+      "Th\u00e8me": "Les \u00e9motions et notre cognition"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_145",
+    "title": "kairntech_exemple_145",
+    "text": "Oui tr\u00e8s r\u00e9guli\u00e8re dans mes dons malgr\u00e9 mon handicap\nPartager m\u00eame peu selon les moyens de chacun est un bonheur pour une personne dans le besoin. Je donne souvent pour la nourriture des animaux, car Sdf",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-07T22:25:10Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "63.0",
+      "Th\u00e8me": "La g\u00e9n\u00e9rosit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_146",
+    "title": "kairntech_exemple_146",
+    "text": "l'experience personnelle, bien \u00e9videmment! Ecouter 1 cantate de Bach met entre parentheses- pour 1 temps-mes bobos,mes soucis et le terre \u00e0 terre\nLes arts et la culture nous \u00e9l\u00e8vent au-dessus de la banalit\u00e9 du quotidien",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-07T14:39:57Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "87.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_147",
+    "title": "kairntech_exemple_147",
+    "text": "ecouter 1 oeuvre de Bach r\u00e9concilie avec les difficult\u00e9s du quotidien et nous \u00e9l\u00e8ve\nArts et culture aident \u00e0 supporter les al\u00e9as de l'existence",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-07T14:31:36Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "87.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_148",
+    "title": "kairntech_exemple_148",
+    "text": "d\u00e9veloppement indispensable de la ruralit\u00e9/// d\u00e9veloppement des m\u00e9tiers de proximit\u00e9, ruraux et agraires///  R\u00e9ouverture de lignes ferroviaires et bus/// des \u00e9coles, des structures m\u00e9dicales, postes, magasins de proximit\u00e9,police municipale renforc\u00e9e, rendre le pouvoir des maires et \u00e0 quelques locaux asserment\u00e9s\n0",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-07T12:04:32Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "69.0",
+      "Th\u00e8me": "Urbanisme et ruralit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_149",
+    "title": "kairntech_exemple_149",
+    "text": "d\u00e9placements mondiaux peuvent \u00eatre remplac\u00e9s ( par ex: signature  contrat, mouvement bancaire par  op\u00e9rations internet/  limit\u00e9s pour importations: d\u00e9velopp\u00e9s pour exportations///  LOCAL indispensable pour TOUT\n0",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-07T11:57:50Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "69.0",
+      "Th\u00e8me": "Mondialisation et circuits courts"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_150",
+    "title": "kairntech_exemple_150",
+    "text": "apprentissage  des jeunes le plus t\u00f4t possible, en continu pour tous ceux dont le changement est soit indispensable ou survenu ans leur vie\n0",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-07T11:52:16Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "69.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_151",
+    "title": "kairntech_exemple_151",
+    "text": "se d\u00e9velopper en petit comit\u00e9\nL'art peut nous sortir de la crise",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-07T11:49:44Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "69.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_152",
+    "title": "kairntech_exemple_152",
+    "text": "agricuteurs, aide- soignant\nLes personnes indispensables \u00e0 la soci\u00e9t\u00e9 sont celles qui sont les moins bien pay\u00e9es",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-07T11:48:04Z",
+      "Genre": "Femme",
+      "Statut": "Artisan - commer\u00e7ant\u00b7e",
+      "\u00c2ge": "69.0",
+      "Th\u00e8me": "Valeur et perception"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_153",
+    "title": "kairntech_exemple_153",
+    "text": "contexte actuel qui rend vuln\u00e9rable chaque personne\nEtre agile et r\u00e9silient dans la complexit\u00e9 et incertitude devrait s'apprendre \u00e0 l'\u00e9cole",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-07T10:33:27Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "53.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_154",
+    "title": "kairntech_exemple_154",
+    "text": "0\nLa morale du Petit prince: il faut pr\u00e9server son \u00e2me enfantine et ne jamais se fier aux apparences... Bref, un autre monde. Des critiques \u00e0 la tonne. Il est pr\u00e9f\u00e9rable de conna\u00eetre ses classiques plut\u00f4t que de b\u00e9ler \u00e0 tout va",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-07",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_155",
+    "title": "kairntech_exemple_155",
+    "text": "0\nNous faisons partie int\u00e9grante de la nature. D\u00e9truire la nature, c'est nous d\u00e9truire nous m\u00eames.",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-07",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_156",
+    "title": "kairntech_exemple_156",
+    "text": "0\nLa nature faut pas la d\u00e9ranger, elle sait r\u00e9tablir l'\u00e9quilibre !!!",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-07",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_157",
+    "title": "kairntech_exemple_157",
+    "text": "Oui vrai prot\u00e9ger la nature c'est vouloir son bien-\u00eatre\n0",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-07",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_158",
+    "title": "kairntech_exemple_158",
+    "text": "0\nSi on prenait soin de notre plan\u00e8te au lieu de d\u00e9penser des milliards pour voir s'il y a de l'eau sur mars\u2026 la nature nous serait reconnaissante !!! Il n'y a qu'a voir comme tout reprenait vie lors du confinement !",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-07",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_159",
+    "title": "kairntech_exemple_159",
+    "text": "0\nD\u00e9forestations, rivi\u00e8re - mers - oc\u00e9ans pollu\u00e9s, esp\u00e8ces disparues animaux & v\u00e9g\u00e9taux... mais armes chimique & bact\u00e9riologique en progressions...",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-07",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_160",
+    "title": "kairntech_exemple_160",
+    "text": "les personnes ne sont pas serieuses elles oublient la covid\nun second confinement",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-06T22:19:42Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "66.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_161",
+    "title": "kairntech_exemple_161",
+    "text": "Quantit\u00e9 de ressources disponibles \u00e0 l'avenir; in\u00e9galit\u00e9s d\u00e9j\u00e0 croissantes\nLa d\u00e9croissance (\u00e9nerg\u00e9tique, en tous cas) est in\u00e9vitable au niveau global. Il s'agit de permettre une r\u00e9silience \u00e0 tous les niveaux.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-06T14:44:48Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_162",
+    "title": "kairntech_exemple_162",
+    "text": "Le manque de curiosit\u00e9 et le d\u00e9sir d'apprendre sont devenus minoritaires avec la t\u00e9l\u00e9vision par exemple\nL'apprentissage et l'\u00e9ducation sont parasit\u00e9s par les m\u00e9dias",
+    "metadata": {
+      "Accord": "6",
+      "Date": "2020-09-05T21:42:34Z",
+      "Genre": "Femme",
+      "Statut": "Sans activit\u00e9",
+      "\u00c2ge": "56.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_163",
+    "title": "kairntech_exemple_163",
+    "text": "Elle paralyse la coh\u00e9rence d'une soci\u00e9t\u00e9\n[La violence est] D\u00e9stabilisante",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-05T21:36:43Z",
+      "Genre": "Femme",
+      "Statut": "Sans activit\u00e9",
+      "\u00c2ge": "56.0",
+      "Th\u00e8me": "La violence*"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_164",
+    "title": "kairntech_exemple_164",
+    "text": "je suis toujours pressee et je fais tout vite\nest de prendre son temps",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-05T13:24:22Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Les \u00e9motions et notre cognition"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_165",
+    "title": "kairntech_exemple_165",
+    "text": "La pr\u00e9carit\u00e9 voire la mis\u00e8re pour les intermitants du spectacle\nLe financement [de l'art et de la culture] est insuffisant",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-05T07:59:34Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "66.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_166",
+    "title": "kairntech_exemple_166",
+    "text": "Pr\u00e9venir et g\u00e9rer les conflits notamment \u00e0 l'\u00e9cole. Munir les \u00e9l\u00e8ves, \u00e9tudiants d'outils pour un acc\u00e8s plus constructif \u00e0 des comportements davantage bas\u00e9s sur les valeurs humanistes\nJe suis convaincue que des cours de comportement devraient \u00eatre ajout\u00e9s dans le cursus scolaire et int\u00e9grer des ateliers se rem\u00e9diation",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-05T07:56:25Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "66.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_167",
+    "title": "kairntech_exemple_167",
+    "text": "D\u00e9g\u00e2ts \u00e0 la nature et r\u00e9percussions sur l'humain; le monde animal et v\u00e9g\u00e9tal\nUtilisation du plastique",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09-05T07:51:46Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "66.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_168",
+    "title": "kairntech_exemple_168",
+    "text": "Transports en commun, \u00e9coles, commerces, stades sont ouverts quasi sans restriction. Mais tout ce qui concerne les spectacles artistique est soumis \u00e0 des restrictions de public et artistes telles que l'art et la culture agonisent. Sans art, notre esprit meurt.\nNous devons sauver la musique, le th\u00e9\u00e2tre, le cin\u00e9ma, la danse en ouvrant les salles dans leur pleine capacit\u00e9.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-05T05:53:03Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "66.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_169",
+    "title": "kairntech_exemple_169",
+    "text": "L'\u00eatre humain est plein de ressources et de capacit\u00e9s. La nature l'a dot\u00e9 d'un esprit capable de combiner les id\u00e9es et d'agir de mani\u00e8re cr\u00e9ative. Ce qui fait la diff\u00e9rence c'est l'orientation qu'il donne \u00e0 ces capacit\u00e9s. Agir de mani\u00e8re responsable est la cl\u00e9.\nQuand on agit de mani\u00e8re responsable (en ayant en t\u00eate le soin qu'on se doit \u00e0 soi-m\u00eame et celui qu'on doit aux autres), on peut s'adapter \u00e0 tout.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-04T21:37:33Z",
+      "Genre": "Homme",
+      "Statut": "Profession interm\u00e9diaire",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_170",
+    "title": "kairntech_exemple_170",
+    "text": "la surconsommation est la cause principale de l'\u00e9puisement des ressources naturelles, les pr\u00e9server n\u00e9cessite donc de produire moins, pour consommer moins.\nNous devons lutter contre la surconsommation pour pr\u00e9server les derni\u00e8res ressources naturelles",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-04T17:48:16Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "49.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_171",
+    "title": "kairntech_exemple_171",
+    "text": "Le poids social nous contrat \u00e0 l'imm\u00e9diatet\u00e9\nPouvoir avoir le droit de savourer le temps qui passe",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-04T16:55:12Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "41.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_172",
+    "title": "kairntech_exemple_172",
+    "text": "BATIR DES LEADERS CREDIBLES\n0",
+    "metadata": {
+      "Accord": "6",
+      "Date": "2020-09-04T15:52:41Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_173",
+    "title": "kairntech_exemple_173",
+    "text": "L'oberservation des faits\nLa complexit\u00e9 et l'incertitude apportent de l'angoisse mais aussi souvent du d\u00e9passement et de l'excellence",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-04T11:34:40Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "54.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_174",
+    "title": "kairntech_exemple_174",
+    "text": "De nombreux exemples dans le monde me poussent \u00e0 rester positive malgr\u00e9 les images m\u00e9diatiques n\u00e9gatives et destructrices. Les capacit\u00e9s de l'Homme sont tout \u00e0 fait extra-ordinaires dans la recherche du sensationnel comme dans la recherche de la simplicit\u00e9 et du retour au naturel.\nLa crise sanitaire nous prouve une nouvelle fois que l'Homme est capable de s'adapter et de faire preuve d'humanit\u00e9.",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-04T07:03:12Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "38.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_175",
+    "title": "kairntech_exemple_175",
+    "text": "Harvard Study of Adult Development . Ma propre exp\u00e9rience face \u00e0 l'am\u00e9lioration de ma d\u00e9pression et de mes troubles anxieux lorsque j'ai renouvel\u00e9 mon cercle social\nPour vivre le plus longtemps possible en bonne sant\u00e9/heureux, nous devons absolument prendre soin de nos relations sociales.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-03T22:06:16Z",
+      "Genre": "Femme",
+      "Statut": "Professionnel\u00b7le de sant\u00e9",
+      "\u00c2ge": "27.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_176",
+    "title": "kairntech_exemple_176",
+    "text": "La plupart des grands groupes demandent \u00e0 leurs salari\u00e9s de revenir sur site, m\u00eame pour les m\u00e9tiers qui peuvent b\u00e9n\u00e9ficier du t\u00e9l\u00e9travail et, ce, contrairement aux directives gouvernementales.\nLe t\u00e9l\u00e9travail risque de ne pas prendre en France car les managers ont trop peur de perdre le contr\u00f4le.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-03T15:11:11Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_177",
+    "title": "kairntech_exemple_177",
+    "text": "O\u00f9 sont pass\u00e9s les cours de cuisine, de couture, d'organisation... Comment peut-on attendre des citoyens de demain qu'ils fassent mieux que leur a\u00een\u00e9s avec moins d'outils ?\nPourquoi ne baser les apprentissages que sur des comp\u00e9tences purement \"scolaires\" ?",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-03T12:06:01Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "33.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_178",
+    "title": "kairntech_exemple_178",
+    "text": "Mon experience de professeur. L'important, c'est de leur communiquer l'amour de la vie et la confiance en eux. S'ils sont en permanence angoiss\u00e9s par le rechauffement climatique, culpabilis\u00e9s sur leur pass\u00e9 historique, victimis\u00e9s comme femmes, descendants d'esclave ou de colonis\u00e9s, les Fran\u00e7ais, tout en etant  consid\u00e9r\u00e9s par les autres peuples comme des privil\u00e9gi\u00e9s par la beaut\u00e9 et la vari\u00e9t\u00e9 de leurs paysages, par leur culture et leur art de vivre continueront leurs jeremiades, leur morosit\u00e9 et leur declinisme. Que les parents et les profs soient fiers et optimistes \u00e0 propos de leur pays, son avenir et l'avenir de leurs enfants !\nIl faut que les parents cessent de stresser leurs enfants et de stresser eux-m\u00eames \u00e0 propos de l'avenir de leurs enfants.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-02T22:41:27Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "80.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_179",
+    "title": "kairntech_exemple_179",
+    "text": "tous les indicateurs vont dans le sens d'une urgence climatique r\u00e9elle, or, nous continuons de d\u00e9cider en fonction d'autres aspects, notamment l'enrichissement financier.\nsauver la vie sur terre doit \u00eatre la premi\u00e8re priorit\u00e9 de toutes les d\u00e9cisions prises",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-02T20:38:05Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_180",
+    "title": "kairntech_exemple_180",
+    "text": "Nous passons trop de temps \u00e0 travailler \u00e0 prendre les transports...\nLes journ\u00e9es ne sont pas assez longues pour profiter au maximum de soi et son entourage.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-02T13:49:50Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "34.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_181",
+    "title": "kairntech_exemple_181",
+    "text": "\u00e9noncer que l'intelligence n'est pas un crit\u00e8re d'apprentissage mais que l'\u00e9ducation, l'observation, la sensibilit\u00e9, la perception, l'intuition peuvent \u00eatre des points forts\nLa d\u00e9finition de l'intelligence devrait \u00eatre la capacit\u00e9 d'adaptation.",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-02T13:45:03Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "48.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_182",
+    "title": "kairntech_exemple_182",
+    "text": "Mon implication dans l'\u00e9cologie\nLes \u00e9nergies renouvelables sont l'avenir du monde.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-02T13:39:43Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "31.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_183",
+    "title": "kairntech_exemple_183",
+    "text": "la vie nous r\u00e9serve des bonnes et des bonnes surprises. L'amour, tout va bien et sur le tard des \u00e9v\u00e9nements importants \"chamboulent\" tout , et c'est la catastrophe\nLe couple, \u00e7a s'entretient, \u00e7a se construit et\u2026 on y croyait et tout est d\u00e9truit, utopie",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-02T12:44:16Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "69.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_184",
+    "title": "kairntech_exemple_184",
+    "text": "Avec l'age nous aimerions \"nous laisser aller\" , vivre mieux le moment pr\u00e9sent, \u00eatre heureux !!!!!\nS'adapter, oui, toujours, c'est la vie, \u00e7a nous demande souvent beaucoup de \"force\"\u2026",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-02T12:41:16Z",
+      "Genre": "Femme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "69.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_185",
+    "title": "kairntech_exemple_185",
+    "text": "Nous ne pouvons plus consommer des produits qui ont fait le tour de la terre pour nous parvenir et dont on sait qu'ils d\u00e9truisent l'\u00e9cosyst\u00e8me dont les humains comme les non humains font partie. Commencer par une localisation de la production (en acceptant de mieux r\u00e9mun\u00e9rer les producteurs et donc de consacrer un plus grand budget \u00e0 notre alimentation) me parait un objectif r\u00e9alisable \u00e0 court terme.\nIl faut revenir \u00e0 une agriculture non industrialis\u00e9e pour disposer d'une alimentation locale et d\u00e9nu\u00e9e de produits chimiques",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-02T12:31:28Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "58.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_186",
+    "title": "kairntech_exemple_186",
+    "text": "Ca ne m'int\u00e9resse pas vraiment donc je ne suis pas motiv\u00e9e pour apprendre\nJe ne ma\u00eetrise pas assez la technologie",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-09-02T12:22:46Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_187",
+    "title": "kairntech_exemple_187",
+    "text": "Si \u00e7a ne pla\u00eet pas je ne le fais pas ou uniquement si je suis oblig\u00e9e\nJe fais les choses quand je suis motiv\u00e9e il faut que \u00e7a me plaise et que j'ai envie de les faire",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-02T12:21:15Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_188",
+    "title": "kairntech_exemple_188",
+    "text": "La crise sanitaire pr\u00e9sente a montr\u00e9 que l'ensemble des dispositifs de formation n'\u00e9taient que des syst\u00e8mes \u00e0 vocation limit\u00e9e, incapable de g\u00e9rer une g\u00e9n\u00e9ralisation des principes de multimodalit\u00e9\nIl faut repenser en profondeur nos approches de terrain en mati\u00e8re de formation \u00e0 la lueur des risques sanitaires qui sont eux aussi mondialis\u00e9s",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-02T12:16:42Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_189",
+    "title": "kairntech_exemple_189",
+    "text": "Actuellement, nous raisonnons sans alternative: si nous d\u00e9veloppons la fili\u00e8re \u00e9cologique, nous choisissons la d\u00e9croissance. Seule la fili\u00e8re industrielle permet la croissance .\nIl faut d\u00e9velopper une \u00e9conomie \u00e9cologique qui ne soit pas en contradiction avec l'\u00e9conomie industrielle",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-02T11:51:43Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "58.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_190",
+    "title": "kairntech_exemple_190",
+    "text": "Une personne, enfant ou adulte, apprend mieux s'il y trouve un int\u00e9r\u00eat. Cela devrait \u00eatre pris en compte \u00e0 l'\u00e9cole, mais aussi dans les entreprises..\nLa motivation est une grande part de l'\u00e9ducation.",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-09-02T11:34:16Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_191",
+    "title": "kairntech_exemple_191",
+    "text": "Se sentir soit m\u00eame dans une situation exceptionnelle et inconfortable permet de mieux se rendre compte du v\u00e9cu d'autres personnes pour qui cette situation est plus durable, et de se dire que l'on peut aider.\nIl aura fallu un confinement pour que certains se d\u00e9couvrent une empathie solidaire.",
+    "metadata": {
+      "Accord": "6",
+      "Date": "2020-09-02T11:15:00Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_192",
+    "title": "kairntech_exemple_192",
+    "text": "Nous regardons tout le temps l\u2019heure avec une certaine anxi\u00e9t\u00e9. \u00ab\u00a0Il est d\u00e9j\u00e0 8h, je vais \u00eatre en retard au travail\u00a0\u00bb ; \u00ab\u00a0il est 12h, je dois cuisiner pour les enfants avant qu\u2019il retourne \u00e0 l\u2019\u00e9cole\u00a0\u00bb ; \u00ab\u00a0\u00e7a y est, 17h, je quitte le travail, vite que je sorte pour que j\u2019arrive \u00e0 temps pour mon cours de tennis \u00e0 17h30\u00a0\u00bb ; \u00ab\u00a0je n\u2019ai pas le temps de pr\u00e9parer ce bon petit plat\u00a0\u00bb ; \u00ab\u00a0mon panier Veepee est disponible 15 minutes, il faut que je me d\u00e9p\u00eache\u00a0\u00bb ; \u00ab\u00a0 le temps passe vite ! J\u2019ai d\u00e9j\u00e0 40 ans ... ai-je pris assez de temps pour moi ? Ma famille ? Mes r\u00eaves ?\u00a0\u00bb \u00ab\u00a0Mince, j\u2019ai 5 minutes de retard, mon patron va m\u2019engueuler\u00a0\u00bb ; \u00ab\u00a0il faut que ce projet soit boucl\u00e9 dans deux jours, quitte \u00e0 faire des heures suppl\u00e9mentaires\u00a0\u00bb\nPrendre le temps est devenu un luxe dans une soci\u00e9t\u00e9 o\u00f9 nous sommes sans cesse lanc\u00e9s dans une course contre la montre",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-02T10:25:11Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_193",
+    "title": "kairntech_exemple_193",
+    "text": "Une prise de conscience personnelle en vieillissant que je v\u00e9rifie presque quotidiennement de l'importance d'\u00e9changer et concerter pour s'enrichir et gagner en pertinence et en efficacit\u00e9.\nL'intelligence collective au-del\u00e0 des talents de chacun me para\u00eet \u00eatre une valeur montante et essentielle.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-01T14:36:49Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "52.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_194",
+    "title": "kairntech_exemple_194",
+    "text": "Le confinement a montr\u00e9 qu'on pouvait beaucoup moins \"acheter pour acheter\"\nSi on revenait \u00e0 nos vrais besoins, on consommerait beaucoup moins sans \u00eatre plus malheureux pour autant",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-09-01T14:35:09Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_195",
+    "title": "kairntech_exemple_195",
+    "text": "Mon enfant de 3 ans a gagn\u00e9 en maturit\u00e9 lors du confinement via le homeschool + temps pass\u00e9 ensemble\nAll\u00e9ger les classes et participer plus activement \u00e0 l'\u00e9ducation en allouant aux parents qui le souhaitent 1j homeschool/semaine",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-09-01T13:00:43Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "43.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_196",
+    "title": "kairntech_exemple_196",
+    "text": "0\nVous pouvez vous attendre, \u00e0 des commentaires qui n\u2019ont rien \u00e0 voir avec les questions pos\u00e9es. La critique passe toujours vite sans r\u00e9fl\u00e9chir, ce qui compte c\u2019est la contradiction et le tour est jou\u00e9. Du monde de la rue aux hauts responsables des moutons il y en a partout. Ils vont du c\u00f4t\u00e9 o\u00f9 ils pensent que \u00e7a sent bon, avec ni courage ni conviction. Tous les cinq ans, souvent un nouveau pr\u00e9sident!! qu\u2019il fasse leur mandat, il est toujours temps de donner son avis, m\u00eame sur un nouveau monde.",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-09_07",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_197",
+    "title": "kairntech_exemple_197",
+    "text": "et si le \"Future of work\" r\u00e9sidait dans la mise en avant de l\u2019aspect humain du travail avant toute autre consid\u00e9ration?\nA l'\u00e9cole on devrait apprendre \u00e0 se comprendre, pour mieux comprendre sa dynamique \u00e0 l'autre.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-31T18:49:05Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "44.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_198",
+    "title": "kairntech_exemple_198",
+    "text": "Apprendre, tester, se tromper et recommencer est fondamental pour nous adapter aux inexorables transformations du march\u00e9 auxquelles nous sommes confront\u00e9s.\nPour avancer de fa\u00e7on agile, il est vital d'insuffler et encourager nos \u00e9quipes \u00e0 ce devoir de prendre des risques avec le droit \u00e0 l\u2019erreur.",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-08-31T18:42:38Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "44.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_199",
+    "title": "kairntech_exemple_199",
+    "text": "Quitte \u00e0 parler Q.V.T, si on commen\u00e7ait par respecter et faire respecter nos rythmes individuels?\nIl est urgent d'apprendre \u00e0 s'am\u00e9nager une zone de temps consacr\u00e9e \u00e0 ne rien faire.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-31T18:38:38Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "44.0",
+      "Th\u00e8me": "Les \u00e9motions et notre cognition"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_200",
+    "title": "kairntech_exemple_200",
+    "text": "La s\u00e9rendipit\u00e9 se cultive\nConsid\u00e9rer l'inattendu comme une chance, c\u2019est accepter de se laisser porter par lui sans pour autant ne s\u2019en remettre qu\u2019\u00e0 lui.",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-08-31T18:33:55Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "44.0",
+      "Th\u00e8me": "L'inattendu dans nos interactions"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_201",
+    "title": "kairntech_exemple_201",
+    "text": "Limiter les impacts des effondrements environnementaux (climat, populations du vivant, limite des ressources y compris humaines, \u00e9nerg\u00e9tique ou physique...) devraient \u00eatre notre priorit\u00e9 absolue dans une optique de pr\u00e9servation de l'esp\u00e8ce humaine. Tout comme les droits de l'homme ont \u00e9t\u00e9 promulgu\u00e9s suite \u00e0 l'holocauste, les droits de la terre et du vivant doivent \u00e9merger de la crise environnementale qui se joue sous nos yeux.\nNos soci\u00e9t\u00e9s doivent repenser le rapport \u00e0 la nature, en g\u00e9n\u00e9ral.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-31T07:36:26Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_202",
+    "title": "kairntech_exemple_202",
+    "text": "La soci\u00e9t\u00e9 civile doit fondamentalement se r\u00e9 approprier le d\u00e9bat politique et sortir des positions binaires port\u00e9es par les politiques d\u2019extr\u00eame.\nAppr\u00e9hender la complexit\u00e9 est fondamental si nous ne voulons pas basculer dans une soci\u00e9t\u00e9 binaire, cela passe par le d\u00e9bat public",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-27T19:21:29Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "52.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_203",
+    "title": "kairntech_exemple_203",
+    "text": "Mon exp\u00e9rience de l\u00e2cher prise et de danse avec la vie : intuition, synchronicites, beaut\u00e9, nous faisons partie d\u2019un tout qui joue avec nous, jouons avec lui :-)\nL\u2019inattendu c\u2019est le cadeau de la vie : je l\u2019adore, il m\u2019oblige \u00e0 improviser \u00e0 en rire : merci la vie",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-27T19:18:32Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "52.0",
+      "Th\u00e8me": "L'inattendu dans nos interactions"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_204",
+    "title": "kairntech_exemple_204",
+    "text": "Etudes scientifiques qui d\u00e9montrent que l\u2019on retient lorsqu\u2019on transmet, et une v\u00e9rit\u00e9 : on a tous quelque chose \u00e0 transmettre et si chacun se donne ce d\u00e9fi, on sera une soci\u00e9t\u00e9 apprenante (cf Fran\u00e7ois Taddei, apprendre au 21 eme si\u00e8cle)\nQu\u2019on apprend en faisant, et surtout en transmettant : une soci\u00e9t\u00e9 apprenante est une soci\u00e9t\u00e9 o\u00f9 chacun se sent responsable de transmettre aux autres",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-27T19:16:10Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "52.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_205",
+    "title": "kairntech_exemple_205",
+    "text": "La technologie -- m\u00eame autonome -- est encod\u00e9e et utilis\u00e9e par les personnes.\nLa technologie n'est pas mauvaise en soi ; ce sont les personnes qui l'utilisent qui en font mauvais usage.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-08-27T13:36:37Z",
+      "Genre": "Homme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "56.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_206",
+    "title": "kairntech_exemple_206",
+    "text": "Ne pas exclure les populations \u00e9loign\u00e9es du num\u00e9rique (fragiles & seniors), pr\u00e9venir les + jeunes des risques li\u00e9s \u00e0 Internet (discours de haine, fake news, st\u00e9r\u00e9otypes, harc\u00e8lement...)\nPromouvoir l'\u00e9ducation aux m\u00e9dias asap pour favoriser l'inclusion num\u00e9rique, lutter contre l'illectronisme et les comportements non adapt\u00e9s en ligne.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-27T11:07:40Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "48.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_207",
+    "title": "kairntech_exemple_207",
+    "text": "l'incertitude cr\u00e9e des opportunit\u00e9s et des espaces de cr\u00e9ativit\u00e9 exacerb\u00e9s. Quand elle est permanente ou de long terme, il n'est pas \u00e9vident que l'innovation cr\u00e9\u00e9e soit durable car la situation \u00e9volue perp\u00e9tuellement.\nIl est plus facile d'\u00eatre cr\u00e9atif dans l'incertitude, mais plus difficile d'\u00eatre durable",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-08-27T07:42:04Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "33.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_208",
+    "title": "kairntech_exemple_208",
+    "text": "nos soci\u00e9t\u00e9s bas\u00e9s sur un d\u00e9sir individuel nous rendent malheureux alors que les peuples racines avec un mode de vie collectif vivent tr\u00e8s bien\nIl y a une tension entre le besoin d'\u00eatre unique, et celui d'appartenir \u00e0 un collectif",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-26T19:23:34Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "30.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_209",
+    "title": "kairntech_exemple_209",
+    "text": "Les \u00e9l\u00e8ves qui ont du mal \u00e0 l'\u00e9cole et qu'on ne redirige pas vers un cursus plus adapt\u00e9 \u00e0 ce qu'ils veulent et leurs capacit\u00e9s\nL'apprentissage scolaire n'est pas assez souvent personnalis\u00e9 pour r\u00e9pondre aux probl\u00e8mes et besoins de chacun",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-08-26T07:26:13Z",
+      "Genre": "Femme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "14.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_210",
+    "title": "kairntech_exemple_210",
+    "text": "une conviction\nLa cr\u00e9ativit\u00e9, c\u2019est l\u2019intelligence qui s\u2019amuse.",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-08-25T08:39:41Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_211",
+    "title": "kairntech_exemple_211",
+    "text": "1. Le taux d'\u00e9chec scolaire du syst\u00e8me classique; 2. L'exemple RFA, ...; 3. L\u2019acquisition des savoirs techniques et d'int\u00e9gration dans la vie prof et sociale; 4. la d\u00e9couverte de l'autonomie financi\u00e8re; 5. Les taux de r\u00e9ussite et d'int\u00e9gration professionnelle; 6. Tout le monde n'est pas fait pour l'enseignement classique, etc ...\nNous devons accro\u00eetre nos capacit\u00e9s de formation par l'acc\u00e8s \u00e0 l'apprentissage qui est de loin le syst\u00e8me le plus vertueux et le plus efficace",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-25T08:01:49Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "60.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_212",
+    "title": "kairntech_exemple_212",
+    "text": "Donner le BAC, (ne pas faire redoubler, ...) conduisent au niveau d'inculture constat\u00e9 au BAC et enseignement sup\u00e9rieur. Ne pas stimuler l'effort acc\u00e9l\u00e8re le processus de paup\u00e9risation et d'\u00e9chec.\nTout jeune DOIT savoir (& minimum de culture g\u00e9n\u00e9rale), lire, \u00e9crire et compter v\u00e9ritablement avant de rentrer en 6eme !",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-25T07:53:31Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "60.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_213",
+    "title": "kairntech_exemple_213",
+    "text": "Avant de faire \"r\u00eaver\" \u00e0 la \"5G\", indispensable que tout fran\u00e7ais quel que soit son lieu d'habitation ait un acc\u00e8s \u00e0 un r\u00e9seau fiable (taux de couverture en zone rurale nul) alors que l'on souhaite d\u00e9sengorger les villes et digitaliser les services publics !\nAvant de penser \u00e0 la 5G, indispensable que tout le territoire (tout fran\u00e7ais) soit \u00e9quip\u00e9 de la 3G ou d'une connexion fibre !",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-25T07:48:34Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "60.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_214",
+    "title": "kairntech_exemple_214",
+    "text": "Qui peut pr\u00e9tendre qu'il apprend quelque chose d'utile avec les m\u00e9dias (t\u00e9l\u00e9vision, radio, web, ...) qui lui apprend a \u00eatre meilleur intellectuellement et socialement\nLe service public de l'audiovisuel et les m\u00e9dias publics, tirent les citoyens vers le bas, n'aident, ni n'incitent \u00e0 s'\u00e9lever culturellement.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-25T07:44:17Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "60.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_215",
+    "title": "kairntech_exemple_215",
+    "text": "Le laxisme, l'assistanat et l'absence de contrepartie(s) \u00e0 l'aide souvent n\u00e9cessaire, tirent l'Humain vers le bas; la connaissance seule peut sauver l'Humain\nIl faut remettre l\u2019exigence au c\u0153ur dans l'apprentissage (effort, savoirs de base et savoir \u00eatre)",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-25T07:37:52Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "60.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_216",
+    "title": "kairntech_exemple_216",
+    "text": "L'\u00e9galit\u00e9 devant la Loi n'est plus ! On peut br\u00fbler une voiture en toute impunit\u00e9 alors que l'on sanctionne pour ne pas porter un masque ? (cf Montesquieu); ou est pass\u00e9e l'\u00e9chelle des valeurs ?\nBeaucoup de citoyens pensent que face \u00e0 la croissance des incivilit\u00e9s, la place de l'autorit\u00e9 doit \u00eatre r\u00e9tablie (le respect des normes & des H)",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-25T07:33:39Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "60.0",
+      "Th\u00e8me": "Valeur et perception"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_217",
+    "title": "kairntech_exemple_217",
+    "text": "Moins de stress et beaucoup d avantages pour le travailleur et la planete\nLe teletravail favorise le bien \u00eatre, \u00e9vite le stress, supprime le temps perdu dans les embouteillages et est bon pour la plan\u00e8te",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-08-24T18:03:02Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "52.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_218",
+    "title": "kairntech_exemple_218",
+    "text": "En p\u00e9riode de crise sanitaire mais pas que, certains  employeurs ne veulent en aucun cas mettre en place de t\u00e9l\u00e9travail. Il s\u2019agit souvent des plus petites entreprises. Cela doit pourtant \u00eatre un sujet de soci\u00e9t\u00e9 aujourd\u2019hui\nLe t\u00e9l\u00e9travail : pourquoi tant d\u2019\u00e9cart entre les grandes et les petites entreprises ?",
+    "metadata": {
+      "Accord": "5",
+      "Date": "2020-08-24T16:17:54Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_219",
+    "title": "kairntech_exemple_219",
+    "text": "- probl\u00e8me d\u2019une co\u00fbt Trop important - probl\u00e8me d\u2019int\u00e9r\u00eat \u00e0 la culture d\u00e8s le plus jeune \u00e2ge\nLa culture accessible \u00e0 tous.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-24T16:14:38Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_220",
+    "title": "kairntech_exemple_220",
+    "text": "Agressions, Isolement, manque d\u2019engagment au sein des conseils municipaux ou des associations sont autant d\u2019arguments\nLe monde dans lequel nous vivons est devenu tres individualiste. Cet individualisme est difficilement compatible avec la Res Publica",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-08-24T15:01:23Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "56.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_221",
+    "title": "kairntech_exemple_221",
+    "text": "Je forme des professeurs \u00e0 cette th\u00e9matique et tous me font part de ce manque et de ce que \u00e7a leur apporte dans leur relation avec les \u00e9l\u00e8ves et leur mani\u00e8re de voir l'apprentissage.\nIl faut int\u00e9grer les sciences du comportement dans l'apprentissage des professeurs",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-24T14:46:02Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "48.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_222",
+    "title": "kairntech_exemple_222",
+    "text": "Des observations\nLe syst\u00e8me \u00e9ducatif actuel, bien que pr\u00f4nant l'\u00e9galit\u00e9 des chances, \u00e9choue \u00e0 ce niveau.",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-08-24T14:43:44Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "48.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_223",
+    "title": "kairntech_exemple_223",
+    "text": "Appartenant d\u00e9j\u00e0 \u00e0 un collectif d'entrepreneur.es, je vois combien le collectif peut-\u00eatre respectueux et bienveillant avec tous les individus qui le composent tout en apportant un cadre pour avancer ensemble vers un mod\u00e8le qui nous convient.\nIl est possible de cr\u00e9er des collectifs pour que s'\u00e9panouissent les individus.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-08-24T14:40:35Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "48.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_224",
+    "title": "kairntech_exemple_224",
+    "text": "bousculer dans nos habitudes on en profite pour \u00e9valuer o\u00f9 l'on en est et on met en place des actions que l'on aurait peut \u00eatre pas os\u00e9 faire\nL'incertitude nous pousse \u00e0 nous renouveler et \u00e0 red\u00e9finir les contours de notre existence pour les jours \u00e0 venir",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-08-24T14:32:08Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "45.0",
+      "Th\u00e8me": "Les \u00e9motions et notre cognition"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_225",
+    "title": "kairntech_exemple_225",
+    "text": "l'ignorance d'un probl\u00e8me et la complexit\u00e9 des ses causes et de ses consequences annihilent toute forme de MOTIVATION!\nLa vision, les enjeux qui me font agir sont la base naturelle ou contrainte de mes motivations\u2026",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-24T13:47:15Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "72.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_226",
+    "title": "kairntech_exemple_226",
+    "text": "Le respect des autres est une valeur fondamentale qui n\u00e9cessite de la compr\u00e9hension (\u00e9motionnelle, sensorielle, logique, complexe, scientifique, verbale ..) de l'expression \u00e9crite ou orale par cons\u00e9quent une ma\u00eetrise du langage (des langages), du d\u00e9passement de soi et de la ma\u00eetrise, de la g\u00e9n\u00e9rosit\u00e9, de l'empathie ... un apprentissage complet qui doit s'adapter tout au long de la vie et se doter d'un respect pour celui qui enseigne (enseignants, philosophes, po\u00e8tes, politiques, scientifiques, miliaires, artistes ...)\nL'\u00e9ducation doit se focaliser sur un socle fondamental : apprendre dans le respect des autres et des valeurs tout au long de sa vie",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-08-24T13:44:28Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "48.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_227",
+    "title": "kairntech_exemple_227",
+    "text": "Tout d'abord le fait que je suis n\u00e9e \u00e0 la campagne, j'ai grandi \u00e0 la campagne et qu'aujourd'hui on remarque que chaque jour celle-ci est d\u00e9truite avec la disparition peu \u00e0 peu de certaines esp\u00e8ces, et l'arriv\u00e9e de personnes issues de la ville qui condamne les richesses de la campagne comme les bruits ou alors les odeurs et d\u00e9truisent la nature au fur et \u00e0 mesure, voil\u00e0 ce que je condamne et il faut pr\u00e9server ce bien si pr\u00e9cieux qui est la nature que l'on nous a offerte en si bon \u00e9tat et que nous d\u00e9truisons dans le temps alors que sans elle nous ne serions m\u00eame pas la, nous ne serions pas vivant, il faut la remercier et ne pas la tuer d'une mani\u00e8re si lente que nous la voyons agoniser mais essayer de la gu\u00e9rir et de la sauver comme elle le fait si souvent pour nous.\nIl faut pr\u00e9serve la faune et la flore locale, surtout \u00e0 la campagne, car on remarque la disparition peu \u00e0 peu de certaines esp\u00e8ces.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-24T12:58:08Z",
+      "Genre": "Femme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "18.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_228",
+    "title": "kairntech_exemple_228",
+    "text": "L'\u00e9volution est permanente et notre travail devrait nous permettre de progresser dans tous les domaines et non nous restreindre...\nTravailler tout en continuant \u00e0 apprendre, en continuant \u00e0 se d\u00e9velopper cognitivement et \u00e9motionnellement",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-08-24T12:46:26Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_229",
+    "title": "kairntech_exemple_229",
+    "text": "Les difficult\u00e9s que nous avons \u00e0 entretenir un bon et vrai relationnel\nApprendre \u00e0 l'ensemble des citoyens et ce d\u00e8s leur plus jeune age, la fa\u00e7on dont on se connecte \u00e0 l'autre, l'\u00e9coute, l'empathie\u2026",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-08-24T12:43:04Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_230",
+    "title": "kairntech_exemple_230",
+    "text": "aller vite signifie \u00eatre efficace de nos jours\nNous ne prenons plus le temps de faire les choses",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-08-24T12:21:24Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_231",
+    "title": "kairntech_exemple_231",
+    "text": "constat d\u00e9solant de voir des personnes jeter leur masque dans la nature, d\u00e9sengagement des individus  dans les entreprises, gestion court terme dans les entreprises , les r\u00e9seaux sociaux qui mettent l'image de soi en avant\nLe collectif est en perdition face \u00e0 une mont\u00e9e constante de l'individualisme dans notre soci\u00e9t\u00e9",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-08-24T12:17:37Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "40.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_232",
+    "title": "kairntech_exemple_232",
+    "text": "Il faut savoir de quel amour on parle . L\u2019amour pour autrui est vital et indispensable , l\u2019amour pour du mat\u00e9riel est plus vil , passager et parfois destructeur\nPar Amour rien est impossible",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-23T13:46:43Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "65.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_233",
+    "title": "kairntech_exemple_233",
+    "text": "Sans projet et la motivation pour y arriver la Vie est subie et non construite vers un Avenir convoit\u00e9\nLa motivation est un moteur essentiel pour arriver \u00e0 r\u00e9aliser ses envies, ses souhaits et atteindre la finalit\u00e9 de son projet de Vie",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-23T13:42:26Z",
+      "Genre": "Femme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "65.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_234",
+    "title": "kairntech_exemple_234",
+    "text": "On ne prend pas assez de temps pour faire un retour sur soi, s\u2019accorder du temps On se met trop de pression...\nNous vivons des vies intenses entre gestion de la vie de famille au quotidien et activit\u00e9 professionnelle, comment prendre le temps et ralentir ?",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-23T13:00:25Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "38.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_235",
+    "title": "kairntech_exemple_235",
+    "text": "c est merveilleux ce que nous pourrions faire chaque jour et de notre vie en prenant conscience que le temps perdu ne se rattrape gu\u00e8re..mais est il vraiment perdu?\n86400\u2026 cela vous dit que faire de ces 86400 secondes en 24 heures. Un petit miracle journalier nous est propos\u00e9",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-22T21:42:32Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "70.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_236",
+    "title": "kairntech_exemple_236",
+    "text": "la mort fait peur car elle repr\u00e9sente la finitude , il s'agit en fait d une nouvelle transformation\nLa mort est une renaissance",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T21:38:05Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "70.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_237",
+    "title": "kairntech_exemple_237",
+    "text": "l amour est un sentiment qui se modifie avec le temps et de quoi parles t on de l amour avec un grand A de l amour de son prochain de l amour maternelle ,fraternelle ..\nL'amour est un sentiment \u00e0 valeur variable",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T21:32:44Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "70.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_238",
+    "title": "kairntech_exemple_238",
+    "text": "on peut avoir des difficult\u00e9s pour atteindre un objectif c est en pers\u00e9v\u00e9rant que l on aura augmentera nos chances de reussir\nPers\u00e9v\u00e9rer c'est un moyen pour apprendre",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-22T21:27:38Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "70.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_239",
+    "title": "kairntech_exemple_239",
+    "text": "On est sans arr\u00eat confront\u00e9 \u00e0 de nouvelles personnes, de nouvelles pratiques/exp\u00e9riences, de nouveaux lieux de vie, centres d'inter\u00eats, etc. Ce qui fait que l'on est sans cesse confront\u00e9 \u00e0 de nouvelles \"premi\u00e8res fois\".\nOn ne cesse d'apprendre tout au long de sa vie.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T16:07:42Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "34.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_240",
+    "title": "kairntech_exemple_240",
+    "text": "Personne n'a envie de devenir grabataire, d\u00e9pendant des autres. Pas envie d'acharnement th\u00e9rapeutique.\nLa question n'est pas de vivre vieux mais de vivre en bonne sant\u00e9",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T15:42:45Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_241",
+    "title": "kairntech_exemple_241",
+    "text": "La cr\u00e9ativit\u00e9 est un cheminement intellectuel et une succession de choix. Tr\u00e8s souvent, lorsque l'on rencontre un obstacle, on use de cr\u00e9ativit\u00e9 pour le contourner et g\u00e9n\u00e9rer de meilleurs choix devant nous.\nTout le monde a une capacit\u00e9 cr\u00e9ative.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T15:04:07Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "34.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_242",
+    "title": "kairntech_exemple_242",
+    "text": "l'innovation est le fait de rencontrer quelque chose de nouveau, qui n'existait pas avant. l'existant \u00e0 toujours \u00e9t\u00e9 la pour satisfaire un besoin. Le besoin humain \u00e9volue avec le temps et se cr\u00e9er continuellement de mani\u00e8re inconsciente. Innover c'est arriver \u00e0 mat\u00e9rialiser un besoin produit de l'\u00e9volution.\nL'innovation part toujours d'un besoin.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T14:40:46Z",
+      "Genre": "Homme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "23.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_243",
+    "title": "kairntech_exemple_243",
+    "text": "Chaque petit geste peut en engendrer un autre. Et le cumul des petites actions individuelles peut avoir des effets consid\u00e9rables.\nIl faut que chacun agisse \u00e0 son \u00e9chelle",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T14:37:51Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "26.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_244",
+    "title": "kairntech_exemple_244",
+    "text": "L'amour est une \u00e9motion. Son expression est intellectuelle, rationnelle, sensible, magnifi\u00e9e et galvaud\u00e9e.  L'amour est humain. Animal. Terrestre. Plan\u00e9taire. Qui aurait song\u00e9, il y a un demi-si\u00e8cle, aimer sa plan\u00e8te de ce m\u00eame sentiment dont il aimait sa femme ou les roses de son jardin ? Attentif \u00e0 l'\u00e9volution et la pr\u00e9servation de leurs conditions de d\u00e9veloppement.  La d\u00e9finition de l'amour repose peut-\u00eatre sur un fait de civilisation. Certaines la voient large, d'autres plus \u00e9troites. Mais au bout du compte, la mise en mot, en id\u00e9es et en pratique de l'amour passe par le langage parl\u00e9 ou corporel et l'importance que la pens\u00e9e veut bien accorder \u00e0 l'\u00e9motion. On peut aimer les animaux, aimer la terre, mais pour autant sera-t-on visc\u00e9ralement attach\u00e9 \u00e0 leur d\u00e9veloppement et \u00e0 leur pr\u00e9servation au point d'entreprendre pour les prot\u00e9ger ? Ou bien ne voudra-t-on que les avoir pour soi ? Dans une sorte d'amour exclusif. Un peu comme l'amour d'un homme et d'une femme. Voudra-t-on pr\u00e9server l'id\u00e9e du couple et de stabilit\u00e9 ou entretenir les \u00e9motions qui l'ont vu na\u00eetre ? Il faut choisir, pr\u00eater attention \u00e0 ce qui para\u00eet le plus important, et faire avec les circonstances : aimer la terre ne suffit pas, pas plus qu'aimer son alter ego. Verbaliser ne suffit pas. Aimer est dans la pens\u00e9e en action. Avec tous les \u00e9cueils qui font les tsunamis.\nL'amour est une construction humaine",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T14:34:07Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_245",
+    "title": "kairntech_exemple_245",
+    "text": "Sans g\u00e9n\u00e9rosit\u00e9, rien ne permettrai aux humains de se rencontrer et s'appr\u00e9cier\nLa g\u00e9n\u00e9rosit\u00e9 est comme la politesse, ce n'est pas une option",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T14:25:33Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "La g\u00e9n\u00e9rosit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_246",
+    "title": "kairntech_exemple_246",
+    "text": "l'humain aime cr\u00e9er mais n'aime pas ce fatiguer \u00e0 le faire, comme la cr\u00e9ation de la calculatrice plutot que d'apprendre les tables de multiplications\nL'innovation et la cr\u00e9ativit\u00e9 sont toujours li\u00e9es \u00e0 une t\u00e2che que l'humain ne d\u00e9sire pas ou ne plus faire et r\u00e9p\u00e9ter",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T14:16:56Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_247",
+    "title": "kairntech_exemple_247",
+    "text": "Chacune de ces notions a pour corollaire la peur, une certaine angoisse li\u00e9e au changement in\u00e9luctable que la complexit\u00e9 et l'incertitude font na\u00eetre. Car, appr\u00e9hender l'une ou l'autre consiste \u00e0 se projeter dans un univers opaque et h\u00e9riss\u00e9 de doutes. De questions qui ne trouveront pas forc\u00e9ment une r\u00e9ponse imm\u00e9diate en d\u00e9pit de la qualit\u00e9 de construction de r\u00e9flexion que chacun des concept suscite. Les deux exigent un positionnement de l'individu. La complexit\u00e9 ouvre des portes d'entr\u00e9e, plonge l'acteur dans une sorte de labyrinthe aux multiples acc\u00e8s. Cr\u00e9e une incertitude difficile \u00e0 dompter du fait de la multiplicit\u00e9 des chemins qu'elle met en oeuvre.  Pour autant, l'incertitude est aussi un seuil de vacillement. Le doute \u00e9rig\u00e9 en postulat de d\u00e9part de la pens\u00e9e en action. En cela, elle constitue une sorte de ressort de l'activit\u00e9 humaine, prise au sens large et non r\u00e9duite au seul fait intellectuel. Elle serait presque un fait culturel en soi, car elle agit en d\u00e9pendance avec un champ de r\u00e9f\u00e9rence propre \u00e0 chaque individu et \u00e0 chaque communaut\u00e9. Il ne faut pas n\u00e9gliger le fait que chacune g\u00e9n\u00e8re une angoisse et simultan\u00e9ment l'ouverture de nombreux futurs. En cela, elles sont un basculement, une possibilit\u00e9 ouverte et naturelle de l'\u00e9volution.\nLa complexit\u00e9 et l'incertitude sont des ressorts du savoir",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-22T14:05:33Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_248",
+    "title": "kairntech_exemple_248",
+    "text": "Lorsque je rencontre un autre \u00eatre humain, qu'il soit petit, grand, d'une couleur ou d'une autre, beau ou laid, socialement reconnu ou vivant dans la rue, j'essaie de lui porter la m\u00eame attention et de l'\u00e9couter de la m\u00eame mani\u00e8re, avec les yeux et les oreilles bien ouverts. Pour moi, c'est ainsi que l'on apprend le plus de choses sur la nature humaine et sur soi-m\u00eame. Je suis souvent surprise par la sagesse des personnes dites \"d\u00e9munies\"... De quoi sommes-nous d\u00e9munis, nous-m\u00eame ?\nUne vie = une vie. Un \u00eatre vivant n'est ni sup\u00e9rieur ni inf\u00e9rieur \u00e0 un autre \u00eatre vivant. C'est aussi vrai dans la nature qu'avec les \u00eatres humains.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T13:52:35Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "42.0",
+      "Th\u00e8me": "L'inattendu dans nos interactions"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_249",
+    "title": "kairntech_exemple_249",
+    "text": "Lorsque j'ai mal quelque part, les m\u00e9decins me prescrivent des cachets contre la douleur. Lorsque j'ai un organe \"malade\", le chirurgien me propose de le retirer car \"on vit tr\u00e8s bien sans\". Ce que je souhaiterais c'est qu'on analyse pourquoi j'ai mal, pourquoi mon organe est 'malade' et que l'on trouve ensemble le moyen de \"soigner\" et non de \"traiter\".\nLe syst\u00e8me de sant\u00e9 occidental tente de supprimer les sympt\u00f4mes alors que les sympt\u00f4mes sont une r\u00e9ponse de notre organisme \u00e0 ce qui le rend malade.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T13:46:49Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "42.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_250",
+    "title": "kairntech_exemple_250",
+    "text": "Lorsqu'on apprend quelque chose, cela ouvre de nouvelles portes que l'on ne soup\u00e7onnait pas. On se rend alors compte que notre savoir est tout petit et qu'il y a une infinit\u00e9 de choses inconnues.\nPlus on apprend de choses, plus on se rend compte qu'on ne sait rien.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-22T13:40:58Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "42.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_251",
+    "title": "kairntech_exemple_251",
+    "text": "Oui mais tout le monde produit de l'art et de la culture. Penser ces termes institutionnellement rend caduque l'affirmation.\nL'art et la culture sont indispensables \u00e0 l'individu.",
+    "metadata": {
+      "Accord": "6",
+      "Date": "2020-07-22T13:15:16Z",
+      "Genre": "Homme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "28.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_252",
+    "title": "kairntech_exemple_252",
+    "text": "Une illusion car c'est \u00e0 la fois un sentiment et une valeur. En tant que sentiment il est subjectif, et en tant que valeur ce n'est qu'une croyance. Croire en l'amour cependant reste beau et sans doute n\u00e9cessaire car quelque soit notre fa\u00e7on de l'appr\u00e9hender une personne semble plus heureuse lorsque se sent aim\u00e9e\nL'amour est une illusion.",
+    "metadata": {
+      "Accord": "6",
+      "Date": "2020-07-22T13:12:17Z",
+      "Genre": "Homme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "28.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_253",
+    "title": "kairntech_exemple_253",
+    "text": "La mort est l'\u00e9l\u00e9ment qui motive nos d\u00e9cisions de chaque instant. Sans elle, qu'est-ce qui nous motiverait \u00e0 agir si pour vivre nous n'avons rien \u00e0 faire ?\nLa mort, on passe son temps \u00e0 la fuir alors que l'on devrait passer sa vie \u00e0 apprendre \u00e0 l'aimer.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T13:08:55Z",
+      "Genre": "Homme",
+      "Statut": "Etudiant\u00b7e",
+      "\u00c2ge": "28.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_254",
+    "title": "kairntech_exemple_254",
+    "text": "Je pense qu'on pourrait m\u00eame faire mieux avec un principe de salaire universel, ou justement on pourrait avoir un revenu pour le bien commun, m\u00eame sans travailler pour le capital\nChacun de nous devrait offrir 2h de son temps chaque mois pour contribuer au bien commun en fonction de ses comp\u00e9tences",
+    "metadata": {
+      "Accord": "5",
+      "Date": "2020-07-22T13:05:07Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "54.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_255",
+    "title": "kairntech_exemple_255",
+    "text": "Je pense que c'est plus complexe, car ce qui est rare est cher, et quelques soit le circuit court, cela impactera principalement les classes basse ou moyenne\nConsommer local et des produits issus de l'agriculture biologique permettraient d'att\u00e9nuer le risque d'effondrement civilisationnel",
+    "metadata": {
+      "Accord": "5",
+      "Date": "2020-07-22T13:02:03Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "54.0",
+      "Th\u00e8me": "Mondialisation et circuits courts"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_256",
+    "title": "kairntech_exemple_256",
+    "text": "L'\u00e9cole r\u00e9publicaine et la\u00efque ne tient plus que gr\u00e2ce au d\u00e9vouement et au charisme des enseignants qui la maintiennent en vie, et s'opposant aux successions sans fin de r\u00e9formes ne paraissant destin\u00e9es qu'\u00e0 la perdre.\nIl ne faut pas tant se soucier du monde que nous laisserons \u00e0 nos enfants, mais des enfants que nous laisserons \u00e0 notre monde.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T12:16:05Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "47.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_257",
+    "title": "kairntech_exemple_257",
+    "text": "La diversit\u00e9, le renouveau, l'inattendu, permettent l'entretien motivationnel ; n\u00e9anmoins, a fortiori l'\u00e2ge avan\u00e7ant et le monde devenant de plus en plus incertain, le besoin de routines et, de fa\u00e7on plus g\u00e9n\u00e9rale, de s\u00e9curit\u00e9, s'impose lui aussi irr\u00e9sistiblement et entre en concurrence avec le premier enjeu. Deux dangers ne cessent de menacer le monde : l'ordre et le d\u00e9sordre.\nDu possible, sinon j'\u00e9touffe",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-22T12:13:15Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "47.0",
+      "Th\u00e8me": "L'inattendu dans nos interactions"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_258",
+    "title": "kairntech_exemple_258",
+    "text": "De toutes les valeurs que je peux investir, l'amour est celle qui donne le plus de sens \u00e0 ma vie.\nTout le temps qui n'est pas consacr\u00e9 \u00e0 l'amour est perdu",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T12:10:11Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "47.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_259",
+    "title": "kairntech_exemple_259",
+    "text": "Le retour de mon exp\u00e9rience professionnelle\nL'amour peut s'av\u00e9rer destructeur",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T09:16:52Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "52.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_260",
+    "title": "kairntech_exemple_260",
+    "text": "le constat ann\u00e9e apr\u00e8s ann\u00e9e  de cette destruction apparait sans retour\nLa population est indiff\u00e9rente \u00e0 la disparation consid\u00e9rable d'esp\u00e8ces animales imputable tant \u00e0 l'homme et  la destruction de l'environnement naturel",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T09:11:45Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "52.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_261",
+    "title": "kairntech_exemple_261",
+    "text": "La vieillesse appara\u00eet aujourd'hui comme une perspective de vie plus longue mais aussi plus douloureuse du fait du d\u00e9veloppement de maladies difficiles \u00e0 soigner (Parkinson, Alzheimer...). Il existe une prise en charge qui ne peut pas soulager la conscience qu'ont les patients de leur d\u00e9g\u00e9n\u00e9rescence. Lorsqu'on vieillit, on aborde ce temps avec une certaine terreur d'\u00eatre atteint de l'un de ces maux. L'individu devrait avoir le choix, avant d'\u00eatre d\u00e9pourvu de libre-arbitre, de d\u00e9terminer son droit propre \u00e0 poursuivre ou non cet itin\u00e9raire d\u00e9l\u00e9t\u00e8re. Il y va du respect de la personne humaine dans son pouvoir de d\u00e9cision sur son destin. Le choix des familles, de la m\u00e9decine et de la loi de maintenir en vie une personne ne devrait pas primer sur le voeu d'un homme ou d'une femme qui souhaite \"avoir barre\" sur sa mort.\nDans un contexte de maladies d\u00e9g\u00e9n\u00e9ratives exponentielles, la mort devrait \u00eatre un choix.",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T08:39:19Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_262",
+    "title": "kairntech_exemple_262",
+    "text": "La crise sanitaire a montr\u00e9 que le d\u00e9veloppement du t\u00e9l\u00e9-travail \u00e9tait une possibilit\u00e9 d'am\u00e9nager autrement son temps. Le bilan n'est pas aussi ang\u00e9lique qu'on aurait pu esp\u00e9rer puisque les participants n'ont pas \u00e9t\u00e9 form\u00e9s, autrement que sur le tas, \u00e0 la mise en oeuvre du syst\u00e8me. Mais celui-ci a tout de m\u00eame apport\u00e9 une souplesse dans l'am\u00e9nagement du temps de travail qui a pu att\u00e9nuer le stress impos\u00e9 par des horaires fixes dans un cadre de pr\u00e9sence obligatoire sur le lieu habituel d'exercice de l'activit\u00e9. Pour un \u00e9panouissement plus abouti de l'exercice d'une activit\u00e9 professionnelle, on pourrait imaginer des plages fixes et des plages volantes qui cassent le rythme d'une journ\u00e9e, le morcelle pour combiner un espace de d\u00e9tente associ\u00e9 \u00e0 un temps de travail sans doute plus productif. L'id\u00e9e est que le salari\u00e9 ait prise sur son temps quotidien au lieu d'en supporter la contrainte r\u00e9p\u00e9titive. Il faudrait donc repenser le temps d\u00e9volu \u00e0 la pratique professionnelle en assouplissant sa perception pour d\u00e9velopper un sentiment de libert\u00e9 plus ou moins relative.\nUne bonne gestion du temps devrait permettre de m\u00e9nager de vraies plages de libert\u00e9",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T08:22:01Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_263",
+    "title": "kairntech_exemple_263",
+    "text": "comment peut-on savoir avant d'avoir cr\u00e9\u00e9 ?\nLa cr\u00e9ation est toujours incertaine",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-22T08:21:45Z",
+      "Genre": "Homme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "49.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_264",
+    "title": "kairntech_exemple_264",
+    "text": "EN quelques ann\u00e9es, les \"\u00e9crans\" ont pris une place consid\u00e9rable dans la vie des individus, des familles, des entreprises. Derri\u00e8re une simplification d'un certain nombre de d\u00e9marches, de recherches, se dessinent \u00e9galement une marchandisation de notre temps, une simplification de la pens\u00e9e  et, plus que probablement un \"asservissement\" du cerveau (via le circuit de la r\u00e9compense).\nJe ne comprends pas comment nous pouvons accepter la mani\u00e8re dont \"les \u00e9crans\" d\u00e9truisent notre cerveau et notre vie sociale.",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T08:15:29Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "45.0",
+      "Th\u00e8me": "Les r\u00e9seaux sociaux*"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_265",
+    "title": "kairntech_exemple_265",
+    "text": "Malgr\u00e9 de timides initiatives individuelles, politiques ou du monde de l'entreprise, peu d'indicateurs nous montrent aujourd'hui que nous allons vers la r\u00e9silience. Chacun (ou du moins, beaucoup) a le sentiment de d\u00e9j\u00e0 faire quelque chose alors qu'il ne s'agit pas de \"faire quelque chose\" mais d'en faire assez (c'est \u00e0 dire beaucoup) pour \u00e9viter le d\u00e9sastre, voire l'annihilation de l'humanit\u00e9.\nComment pouvons-nous, \u00e0 ce point, scier la branche sur laquelle nous sommes assis ?",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-22T08:10:30Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "45.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_266",
+    "title": "kairntech_exemple_266",
+    "text": "Les villes moyennes ont suivi un d\u00e9veloppement d'urbanisation et de r\u00e9partition des commerces de grande consommation en p\u00e9riph\u00e9rie des centres. Une r\u00e9partition plus harmonieuse devrait permettre un retour des activit\u00e9s commerciales vers les centres et l'am\u00e9nagement des zones commerciales en cit\u00e9s jardin et non en lotissements st\u00e9r\u00e9otyp\u00e9s. Ce type d'urbanisation permettrait un lissage du paysage des banlieues vers une meilleure int\u00e9gration des espaces urbains purs et des abords d\u00e9volus \u00e0 la campagne.\nLes villes devraient \u00eatre construites \u00e0 la campagne",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T08:10:14Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "Urbanisme et ruralit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_267",
+    "title": "kairntech_exemple_267",
+    "text": "La crise actuelle (Covid) a montr\u00e9 la fragilit\u00e9, plus que jamais, la fragilit\u00e9 des artistes  en dehors de quelques stars, bien s\u00fbr. Et plus encore, le m\u00e9pris du politique vis \u00e0 vis de l'art.\nFinalement, \u00e0 l'\u00e9chelle de l'histoire, l'art est une des rares choses qui r\u00e9siste \u00e0 l'oubli, pourtant notre soci\u00e9t\u00e9 balise ou marchandise l'art.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-22T08:06:00Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "45.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_268",
+    "title": "kairntech_exemple_268",
+    "text": "L'\u00e9ducation comme syst\u00e8me obligatoire d'enseignement ne suffit pas \u00e0 ouvrir le champ culturel des individus. Celui-ci peut b\u00e9n\u00e9ficier d'\u00e9v\u00e9nements porteurs comme la f\u00eate de la musique ou celle du cin\u00e9ma, du patrimoine ou des mus\u00e9es ou d'exp\u00e9riences plus intimistes comme la rencontre plus ou moins inopin\u00e9e avec une oeuvre d'art.\nLa culture peut \u00eatre un moyen de porter les plus d\u00e9favoris\u00e9s vers le haut",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-22T08:03:06Z",
+      "Genre": "Homme",
+      "Statut": "Retrait\u00e9\u00b7e",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_269",
+    "title": "kairntech_exemple_269",
+    "text": "La po\u00e9sie, de par son format court, pourrait s'inscrire facilement dans les habitudes quotidiennes pour provoquer par sa puissance des mots des prises de conscience, am\u00e9liorer les \u00e9motions positives, le bien-\u00eatre, l'empathie, en se sentant davantage concern\u00e9 et respectueux du vivant. Il existe d'ailleurs des consultations po\u00e9tiques pour accompagner les individus qui en ressentent le besoin.\nLa po\u00e9sie peut nous aider \u00e0 orienter notre attention sur la beaut\u00e9 des choses, la nature, et augmenter ainsi notre capacit\u00e9 d'\u00e9merveillement.",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-22T07:51:57Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Arts et culture"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_270",
+    "title": "kairntech_exemple_270",
+    "text": "Parfois nous avons besoin de savoir ce qui est interdit pour avoir la motivation d'aller fr\u00f4ler cette limite ou la d\u00e9passer. Sans cela, l'objectif peut paraitre fade.\nNous avons besoin de limites pour encourager notre motivation",
+    "metadata": {
+      "Accord": "5",
+      "Date": "2020-07-22T07:39:31Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "26.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_271",
+    "title": "kairntech_exemple_271",
+    "text": "Nos ressources s'amenuisent et notre population augmente. La famine gagne du terrain. Pourquoi ne pas s'occuper d'abord de la population d\u00e9j\u00e0 vivante qui meurt de faim ?\nPourquoi faisons-nous encore des enfants ?",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-22T07:35:58Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "26.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_272",
+    "title": "kairntech_exemple_272",
+    "text": "Parfois jusque 100km en montagne pour qu'une femme enceinte puisse \u00eatre suivie normalement, et on nous parle \"s\u00e9curit\u00e9\"...\nLa fermeture des maternit\u00e9s dans certaines r\u00e9gions, pour raisons de rentabilit\u00e9 est une honte",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T07:34:17Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_273",
+    "title": "kairntech_exemple_273",
+    "text": "Si les parisiens pouvaient respecter les us et coutumes des r\u00e9gions, les r\u00e9gionnaux pourraient vivre normalement. Ex : prix des aliments x2 \u00e0 l'arriv\u00e9e des parisiens en \u00e9t\u00e9.\nLe parisianisme devient franchement p\u00e9nible, non la province n'est pas un charmant petit coin tranquille pour passer son week-end",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T07:32:49Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Urbanisme et ruralit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_274",
+    "title": "kairntech_exemple_274",
+    "text": "Les yaourts, les paquets de g\u00e2teaux suremball\u00e9s, ce n'est pas normal que ce soit autoris\u00e9\nOn devrait interdire la vente de produits surpackag\u00e9s",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T07:29:55Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_275",
+    "title": "kairntech_exemple_275",
+    "text": "1 passage tous les 15 jours pour le recyclable, avec conseil du d\u00e9partement : si c'est pas assez mettez dans la poubelle verte.\nLa gestion des d\u00e9chets en milieu rural est tellement mauvaise qu'on voit de plus en plus de d\u00e9charges sauvages apparaitre",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-22T07:28:53Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Urbanisme et ruralit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_276",
+    "title": "kairntech_exemple_276",
+    "text": "C'est quasi du \"jetable\", avec de surcroit un manque de cr\u00e9ativit\u00e9 consternant, on \u00e9puise les ressources en eau, on appauvrit les terres pour au final porter des v\u00eatements de mauvaise qualit\u00e9 et encombrer des placards. Totalement absurde\nL'industrie textile actuelle est une aberration",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-22T07:26:59Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "Surconsommation et ressources naturelles"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_277",
+    "title": "kairntech_exemple_277",
+    "text": "trop de gadgets sortent chaque ann\u00e9e, sont invendus pour la plupart ou trainent dans un placard et finissent par polluer la plan\u00e8te\nOn n'a pas besoin de tous ces objets connect\u00e9s dernier cri non recyclables",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-22T07:24:50Z",
+      "Genre": "Femme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "51.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_278",
+    "title": "kairntech_exemple_278",
+    "text": "L'offre sur le march\u00e9 concernant l'apprentissage de nouveaux comportements est souvent repr\u00e9sent\u00e9e par des formats tr\u00e8s courts et court terme. Le temps accord\u00e9 \u00e0 l'acquisition de nouveaux comportements est souvent insuffisant, trait\u00e9 comme un apprentissage d'une connaissance technique.\nIl est n\u00e9cessaire de prendre en compte le temps long de l'apprentissage, notamment celui li\u00e9 aux nouveaux comportements",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-22T07:21:08Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "46.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_279",
+    "title": "kairntech_exemple_279",
+    "text": "Mon ressenti personnel : surmobilisation cognitive apr\u00e8s une journ\u00e9e sur l'ordinateur, addiction \u00e0 l'\u00e9cran...\nLa technologie impacte notre attention et concentration",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-21T19:08:02Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "26.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_280",
+    "title": "kairntech_exemple_280",
+    "text": "Pour arriver \u00e0 une connaissance, \u00e0 un savoir faire, ou tout autre r\u00e9sultat, il faut un investissement qui demande un minimum de travail (m\u00eame si on ne s'en aper\u00e7oit pas toujours). Il y a peu d'inn\u00e9\nLe talent n'existe pas, c'est surtout de l'apprentissage et du travail",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-21T18:22:06Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "27.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_281",
+    "title": "kairntech_exemple_281",
+    "text": "Mon exp\u00e9rience personnelle\nLa flexibilit\u00e9 et la libert\u00e9 laiss\u00e9es aux salari\u00e9s dans l'organisation de leur travail favorise l'augmentation de la productivit\u00e9",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-21T18:16:42Z",
+      "Genre": "Homme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_282",
+    "title": "kairntech_exemple_282",
+    "text": "Sans changement de paradigme, notre monde va dans le mur et je ne veux pas le laisser ainsi \u00e0 mon enfant.\nMon souhait c'est que la crise sanitaire actuelle ait une v\u00e9ritable r\u00e9percussion sur la mani\u00e8re d'envisager les \u00e9changes, en les r\u00e9-humanisant.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-21T15:52:11Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "43.0",
+      "Th\u00e8me": "Mondialisation et circuits courts"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_283",
+    "title": "kairntech_exemple_283",
+    "text": "Mon exp\u00e9rience personnelle de vie\nL'amour c'est faire ressortir le meilleur chez l'autre qu'il soit passionnel fraternel ou encore amical",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-21T15:49:00Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "33.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_284",
+    "title": "kairntech_exemple_284",
+    "text": "Les actes de propri\u00e9t\u00e9 de terrains/ b\u00e2timents etc donnent des droits aux propri\u00e9taires mais aucun devoir sur la fa\u00e7on d'entretenir le terrain, la terre qui est en dessous et qui ne devrait pas \u00eatre c\u00e9d\u00e9e en tant que telle. Le propri\u00e9taire a donc tous les droits pour souiller la terre s'il le souhaite. Pour la prot\u00e9ger, il faudrait la consid\u00e9rer comme un bien commun \"mis \u00e0 disposition\" du propri\u00e9taire de la construction et dont il doit s'occuper\", prendre soin selon des r\u00e8gles communes et non propres \u00e0 l'int\u00e9r\u00eat du dit propri\u00e9taire.\nLa terre est un bien commun dont on a c\u00e9d\u00e9 la propri\u00e9t\u00e9",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-21T15:41:44Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "41.0",
+      "Th\u00e8me": "Vie collective (bien commun - d\u00e9mocratie - solidarit\u00e9)"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_285",
+    "title": "kairntech_exemple_285",
+    "text": "La sensation d'appartenance se cr\u00e9e chez un individu \u00e0 condition qu'il voit des similitudes, des points communs. Cependant, il ne doit pas y avoir que des similitudes car il apparait n\u00e9cessaire d'avoir des pens\u00e9es diff\u00e9rentes pour faire na\u00eetre des d\u00e9bats et grandir, au sein du m\u00eame collectif\nL'individu consid\u00e8re qu'il appartient \u00e0 un collectif qui renvoie la vision qu'il a de lui-m\u00eame",
+    "metadata": {
+      "Accord": "6",
+      "Date": "2020-07-21T15:38:13Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "29.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_286",
+    "title": "kairntech_exemple_286",
+    "text": "tout n'est qu'une question de point de vue\nLa mol\u00e9cule d'eau",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-21T15:38:11Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "37.0",
+      "Th\u00e8me": "Les intersections*"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_287",
+    "title": "kairntech_exemple_287",
+    "text": "L'exp\u00e9rience, les t\u00e9moignage, mes relations aux autres\nL'amour peut prendre diff\u00e9rentes formes",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-21T15:33:37Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "23.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_288",
+    "title": "kairntech_exemple_288",
+    "text": "Interagir c\u2019est s\u2019ouvrir, se nourrir... le fait d\u2019\u00eatre surpris par des \u00e9changes obligent \u00e0 ouvrir une fen\u00eatre, de cr\u00e9er un lien sans pr\u00e9jug\u00e9s et donc accueillir plus facilement\nPour trouver un int\u00e9r\u00eat aux interactions j\u2019ai besoin qu\u2019elles soient inattendues, encore mieux si elles bousculent ce que j\u2019avais pu imaginer",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-21T15:30:46Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "45.0",
+      "Th\u00e8me": "L'inattendu dans nos interactions"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_289",
+    "title": "kairntech_exemple_289",
+    "text": "exp\u00e9rience personnelle et observation des autres\nQuelqu'un qui n'a pas d'incertitude a plus de risques de se tromper",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-21T15:26:54Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "27.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_290",
+    "title": "kairntech_exemple_290",
+    "text": "je l'ai \u00e9crite\nPour r\u00e9duire complexit\u00e9 et incertitude, il faut travailler le diagnostic, non pas au regard d'une cible, mais des potentialit\u00e9s de la situation",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-21T11:58:54Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "47.0",
+      "Th\u00e8me": "Complexit\u00e9 et incertitude"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_291",
+    "title": "kairntech_exemple_291",
+    "text": "De la m\u00eame mani\u00e8re que pour les autres produits (essence>taxe pollution, eau>retraitement, mat\u00e9riel electrique>ecotaxe,...)\nLes m\u00e9nages devraient payer en fonction de la quantit\u00e9 de d\u00e9chets qu'ils g\u00e9n\u00e8rent",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-21T11:43:45Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "54.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_292",
+    "title": "kairntech_exemple_292",
+    "text": "La connaissance va de paire avec l'\u00e9volution, et la technologie n'est qu'un outil pour plus de connaissance\nLa technologie comme la science est une marche vers l'avant qu'on ne pourra arr\u00eater qu'avec la fin de l'Humanit\u00e9",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-21T11:38:00Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "54.0",
+      "Th\u00e8me": "La technologie et ses usages"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_293",
+    "title": "kairntech_exemple_293",
+    "text": "- On a vue comment cela a fonctionn\u00e9 pendant ces quelques mois - Il y a une tendance de fond de d\u00e9centralisation - On est dans une \u00e8re num\u00e9rique\nUne transformation des modes de travail vers plus de t\u00e9l\u00e9travail est possible",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-21T11:31:20Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "54.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_294",
+    "title": "kairntech_exemple_294",
+    "text": "Un manager, un client, un coll\u00e8gue, une entreprise ... ce ne sont pas les autres qui peuvent motiver un individu.  Pour motiver un individu il faut que ses actions, son comportement le nourrisse\nLa motivation est uniquement nourri par des envies, des objectifs personnels\u2026",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-21T08:57:42Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "45.0",
+      "Th\u00e8me": "La motivation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_295",
+    "title": "kairntech_exemple_295",
+    "text": "les salles d'attentes des cabinets m\u00e9dicaux sont des lieux des plus contagieux. La t\u00e9l\u00e9consultation est une alternative tr\u00e8s interresante dans de nombreuses situations.\nEn ces temps incertains, il parait urgent et fondamental de faire \u00e9voluer les parcours de soins, notamment en int\u00e9grant mieux la e-sant\u00e9.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-21T08:31:18Z",
+      "Genre": "Homme",
+      "Statut": "Chef\u00b7fe d'entreprise",
+      "\u00c2ge": "50.0",
+      "Th\u00e8me": "Sant\u00e9 et bien-\u00eatre"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_296",
+    "title": "kairntech_exemple_296",
+    "text": "Apprendre de soi / apprendre \u00e0 prendre soin pour mieux accompagner et vivre collectivement - Apprendre \u00e0 d\u00e9passer les \u00e9v\u00e9nements de la vie\nNous devons apprendre de ces exp\u00e9riences de vie 'traumatisantes' pour avancer individuellement et collectivement",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-21T08:04:20Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_297",
+    "title": "kairntech_exemple_297",
+    "text": "mon exp\u00e9rience et mes \u00e9tudes\nJe suis convaincue que, quelque soit l'\u00e2ge, l'exp\u00e9rimentation pr\u00e9c\u00e8de la connaissance.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-20T12:23:22Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "37.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_298",
+    "title": "kairntech_exemple_298",
+    "text": "Plus personne n\u2019a de temps, \u00eatre press\u00e9 est devenu le signe de son utilit\u00e9 voire un marqueur du fait que notre vie a du sens, qu\u2019elle est remplie de choses \u00e0 faire - et pourtant nous n\u2019avons jamais eu autant besoin de temps pour la r\u00e9flexion, l\u2019introspection et la r\u00e9invention\nIl faut prendre \u00e0 d\u00e9faut de l\u2019avoir",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-18T08:08:59Z",
+      "Genre": "Homme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "36.0",
+      "Th\u00e8me": "Le temps"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_299",
+    "title": "kairntech_exemple_299",
+    "text": "Historiquement, le progr\u00e8s social s\u2019est principalement concentr\u00e9 sur les aspects mat\u00e9riels de la vie, il est temps de le concentrer sur les aspects immat\u00e9riels : comp\u00e9tences, cr\u00e9ativit\u00e9, spiritualit\u00e9, ...\nLa cr\u00e9ativit\u00e9 des individus doit \u00eatre lib\u00e9r\u00e9e",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-18T08:06:10Z",
+      "Genre": "Homme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "36.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_300",
+    "title": "kairntech_exemple_300",
+    "text": "Je crois qu\u2019il est important de donner un sens \u00e0 la mort, surtout celle de nos proches - le deuil est toujours rempli de tristesse mais peut aussi \u00eatre une source d\u2019espoir et de motivation pour donner un sens a sa vie\nLa mort des proches doit nous rappeler \u00e0 notre vie",
+    "metadata": {
+      "Accord": "5",
+      "Date": "2020-07-18T08:02:20Z",
+      "Genre": "Homme",
+      "Statut": "Ind\u00e9pendant\u00b7e",
+      "\u00c2ge": "36.0",
+      "Th\u00e8me": "La mort"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_301",
+    "title": "kairntech_exemple_301",
+    "text": "L'inattendu est ce \u00e0 quoi on ne s'attend pas, c'est ce qui \"vient tout seul\" donc on devrait justement le \"laisser venir tout seul\". Pourtant, des d\u00e9marches permettent de le provoquer de mani\u00e8re intentionnelle car elles cr\u00e9ent des cadres propices \u00e0 son \u00e9mergence.  Ex : La M\u00e9ditation, AnthropoviZ... Cela dit, je ne suis d'accord qu'\u00e0 80% avec ma propre affirmation car \u00e0 partir du moment o\u00f9 l'on cr\u00e9\u00e9 intentionnellement un cadre pour accueillir l'inattendu, on \"s'attend\" de fait \u00e0 quelque chose, ce quelque chose ne pouvant alors plus \u00eatre totalement \"inattendu\".  Finalement, en installant des conditions d'accueil de l'inattendu, on sait que quelque chose va probablement appara\u00eetre, mais on ne sait pas quoi pr\u00e9cis\u00e9ment, ni quand, ni comment, ni avec qui...\nIl est possible de d\u00e9clencher de l'inattendu dans nos interactions.",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-17T08:27:59Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "26.0",
+      "Th\u00e8me": "L'inattendu dans nos interactions"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_302",
+    "title": "kairntech_exemple_302",
+    "text": "Le fait de subir un isolement n'est pas v\u00e9cu cognitivement/psychologiquement pareil qu'un isolement choisi. M\u00eame si les deux demandent de s'adapter.  Un podcast : https://open.spotify.com/episode/17QFHhpbGVJb5gDs5mLIDT?si=uGnHadrvTliLx1yILlWAKA\nDevoir s'adapter n'est pas pareil que vouloir s'adapter.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-17T07:43:58Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "28.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_303",
+    "title": "kairntech_exemple_303",
+    "text": "Il faudra un peu plus que le discours de politique g\u00e9n\u00e9rale pour s\u2019en convaincre, avec un premier ministre qui croit \u00ab\u00a0en la croissance \u00e9cologique, pas \u00e0 la d\u00e9croissance verte\u00a0\u00bb. La sobri\u00e9t\u00e9 est un des leviers que devra rencontrer l\u2019industrie...\n\u00ab\u00a0Nous pouvons redevenir une grande Nation industrielle gr\u00e2ce et par l\u2019\u00e9cologie.\u00a0\u00bb Castex",
+    "metadata": {
+      "Accord": "5",
+      "Date": "2020-07-17T06:33:01Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "43.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_304",
+    "title": "kairntech_exemple_304",
+    "text": "La cr\u00e9ativit\u00e9 n'est pas inn\u00e9e, et peut \u00eatre pr\u00e9par\u00e9e et anticip\u00e9e pour en tirer le meilleur. La contrainte de temps est source de cr\u00e9ativit\u00e9.\nLa cr\u00e9ativit\u00e9 est souvent nourrie sous la contrainte",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-17T06:27:07Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_305",
+    "title": "kairntech_exemple_305",
+    "text": "En apprenant j'anticipe davantage, en prenant en compte les biais qui pourraient m'influencer, et je peux prendre de meilleures d\u00e9cisions et favoriser un  bien \u00eatre futur. Et surtout, ceci se fera au b\u00e9n\u00e9fice de ceux qui n'apprennent pas ou qui ne savent pas.\nPlus j'apprends, plus je sers le collectif",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-17T06:23:16Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "55.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_306",
+    "title": "kairntech_exemple_306",
+    "text": "Des lectures sur le role des parents dans l'education des enfants, l'experience\nLe role de l'\u00e9ducation est de permettre a des individus de vivre en collectivite, sans pour autant se diluer dans la masse",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-17T02:19:58Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_307",
+    "title": "kairntech_exemple_307",
+    "text": "Mon experience personnelle, des cours de philo, des exercices de litterature sur ce sujet\nSelon l'\u00e9motion ressentie et son intensit\u00e9, notre perception d'une situation et les souvenirs que nous en gardons, s'\u00e9loignent de la r\u00e9alit\u00e9 objective",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-17T02:17:17Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "35.0",
+      "Th\u00e8me": "Les \u00e9motions et notre cognition"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_308",
+    "title": "kairntech_exemple_308",
+    "text": "Observation personnelle\nLes identit\u00e9s semblent s'hybrider totalement: les genres, les nationalit\u00e9s, les modes de conso identitaires (on porte du H&M et du cartier) #floutotal",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-16T17:23:35Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_309",
+    "title": "kairntech_exemple_309",
+    "text": "l'exp\u00e9rience personnelle\nLes cursus scolaires semblent obsol\u00e8tes : empathie, recherche de sens, apprendre \u00e0 apprendre, dev. personnel - tellement de notions cl\u00e9s \"oubli\u00e9es\"",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-16T17:16:54Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "Apprentissage et \u00e9ducation"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_310",
+    "title": "kairntech_exemple_310",
+    "text": "Instable en d\u00e9but de relation amoureuse car partag\u00e9 entre d\u00e9sir, peur, envie et le besoin de \"marquer son territoire\" -  Instable ensuite car partag\u00e9 entre l'envie de conserver une certaine stabilit\u00e9  et le besoin de vivre et de se trouver/ s'\u00e9panouir . Instable toujours entre le fait d'\u00eatre d\u00e9pass\u00e9 ou celui de se d\u00e9passer\nL'amour rend l'homme instable",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-16T16:58:45Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "41.0",
+      "Th\u00e8me": "L'amour"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_311",
+    "title": "kairntech_exemple_311",
+    "text": "Il y a un grand d\u00e9bat sur comment s'articulent les forces r\u00e9gulant ces dynamiques. Je pense que de nombreux \u00e9conomistes diraient que cette affirmation est globalement fausse et que de telles comportements minoritaires n'ont aucun impact sur des dynamiques \u00e9conomiques de grande \u00e9chelle. Donc je dirais qu'il s'agit plut\u00f4t d'une conviction humaniste ;)\nLes consommateurs peuvent influencer ces dynamiques de grande \u00e9chelle \u00e0 travers l'acte d'achat (boycott et buycott)",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-16T16:00:13Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "26.0",
+      "Th\u00e8me": "Mondialisation et circuits courts"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_312",
+    "title": "kairntech_exemple_312",
+    "text": "Dans une d\u00e9marche de protection des ressources naturelles (exemple : les for\u00eats et les junlges), en lien avec les populations directement en contact avec elles, on g\u00e9n\u00e8re un sentiment de lien plus fort entre l'humain et la nature. Vient ensuite une v\u00e9ritable question de ce que cette ressource \u00e0 a offrir de mani\u00e8re durable plut\u00f4t que ce que l'on pourrait en tirer de mani\u00e8re instantan\u00e9e. L'aspect cumulatif d'un gain p\u00e9renne d\u00e9passe \u00e0 coup s\u00fbr ce que l'on peut en tirer \u00e0 court terme, si l'on r\u00e9fl\u00e9chit non plus en termes d'ann\u00e9es mais de g\u00e9n\u00e9rations. Ceci, sans compter les externalit\u00e9s n\u00e9gatives que ces ressources contrent par leur simple existence, (exemple : d\u00e9sertification, glissements de terrain, migration d'esp\u00e8ces invasives, etc.).\nSi bien g\u00e9r\u00e9e et optimis\u00e9e, la protection des ressources naturelles et de leur diversit\u00e9 g\u00e9n\u00e8re plus de b\u00e9n\u00e9fices que son exploitation",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-16T15:48:41Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "22.0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_313",
+    "title": "kairntech_exemple_313",
+    "text": "la col\u00e8re, l'inacceptation des diff\u00e9rences que l'on peut voir dans son entourage ou sur les r\u00e9seaux sociaux, le manque de respect de l'autre, l'\u00e9go\u00efsme tel que l'on a pu le voir durant le confinement (rupture de stocks, masques par terre, manque de respect des consignes sanitaires...). La soci\u00e9t\u00e9 de consommation \u00e0 d\u00e9velopp\u00e9 l\u2019individualisme \u00e0 un point o\u00f9 l'importance du collectif a disparu. Le collectif ? la compr\u00e9hension que l'on est un tout, et que nos actions personnelles agissent sur l'environnement de tous.\nJe pense que la soci\u00e9t\u00e9 est trop individualiste en raison de l'importance que l'on s'accorde plus \u00e0 soi m\u00eame qu'aux autres.",
+    "metadata": {
+      "Accord": "10",
+      "Date": "2020-07-16T15:39:19Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "30.0",
+      "Th\u00e8me": "L'individu et l'appartenance \u00e0 un collectif"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_314",
+    "title": "kairntech_exemple_314",
+    "text": "Moins les gens sont fortun\u00e9s plus ils sont d\u00e9sint\u00e9ress\u00e9s, en fin de compte ceux qui donnent le plus sont ceux qui ont le moins\nLa g\u00e9n\u00e9rosit\u00e9 est inversement corr\u00e9l\u00e9e \u00e0 notre niveau de richesse",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-16T15:30:20Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "La g\u00e9n\u00e9rosit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_315",
+    "title": "kairntech_exemple_315",
+    "text": "Le masque est un pas de plus vers la r\u00e9duction de nos interactions physiques.\nJ'ai le sentiment que l'\u00e9poque actuelle va dans le sens de la r\u00e9duction des interactions physiques et la multiplication des interactions virtuelles",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-16T15:27:56Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "32.0",
+      "Th\u00e8me": "L'inattendu dans nos interactions"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_316",
+    "title": "kairntech_exemple_316",
+    "text": "Les petits pas face \u00e0 une crise profonde ne permettent pas d'aller assez vite. Un cap doit \u00eatre consolider par des petits pas pour aboutir.\nS'adapter par petits pas aux \u00e9volutions graduelles est vital. Mais il faut savoir changer de cap pour d\u00e9velopper une r\u00e9silience aux crises majeures.",
+    "metadata": {
+      "Accord": "8",
+      "Date": "2020-07-16T15:07:38Z",
+      "Genre": "Homme",
+      "Statut": "Cadre",
+      "\u00c2ge": "42.0",
+      "Th\u00e8me": "R\u00e9silience et adaptabilit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_317",
+    "title": "kairntech_exemple_317",
+    "text": "L'homme a oubli\u00e9 l'essence et la raison du travail  et avec l'oubli a disparu le respect du travail et le plaisir qu'il procure\nC.Bukowski : \"un homme peut il se r\u00e9jouir d'\u00eatre r\u00e9veill\u00e9 \u00e0 6h30 du mat par une alarme(...): Affirmation: Le plaisir est en train de disparaitre",
+    "metadata": {
+      "Accord": "7",
+      "Date": "2020-07-16T14:45:49Z",
+      "Genre": "Femme",
+      "Statut": "Cadre",
+      "\u00c2ge": "41.0",
+      "Th\u00e8me": "Travail et modes de vie"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_318",
+    "title": "kairntech_exemple_318",
+    "text": "Par l'exp\u00e9rience personnelle et observ\u00e9e aupr\u00e8s des autres personnes.\nLa cr\u00e9ativit\u00e9 n'est pas toujours li\u00e9e au sens artistique. On peut \u00eatre cr\u00e9atif sans \u00eatre artiste, mais pour \u00eatre un bon artiste il faut \u00eatre cr\u00e9atif.",
+    "metadata": {
+      "Accord": "9",
+      "Date": "2020-07-16T14:42:43Z",
+      "Genre": "Femme",
+      "Statut": "Employ\u00e9\u00b7e",
+      "\u00c2ge": "29.0",
+      "Th\u00e8me": "Innovation et cr\u00e9ativit\u00e9"
+    }
+  },
+  {
+    "identifier": "kairntech_exemple_319",
+    "title": "kairntech_exemple_319",
+    "text": "0\nLaissons faire la nature, elle est belle, observons, elle, change tous les jours.",
+    "metadata": {
+      "Accord": "0",
+      "Date": "2020-07-09",
+      "Genre": "NC",
+      "Statut": "NC",
+      "\u00c2ge": "0",
+      "Th\u00e8me": "Nature et environnement"
+    }
+  }
+]
