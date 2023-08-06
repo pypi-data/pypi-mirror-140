@@ -1,0 +1,3 @@
+[console_scripts]
+sigmadsp = sigmadsp.application.frontend:main
+sigmadsp-backend = sigmadsp.application.backend:main
