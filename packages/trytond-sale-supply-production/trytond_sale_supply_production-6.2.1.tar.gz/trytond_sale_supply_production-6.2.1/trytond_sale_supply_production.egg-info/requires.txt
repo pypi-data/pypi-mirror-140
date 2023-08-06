@@ -1,0 +1,3 @@
+trytond_production<6.3,>=6.2
+trytond_sale_supply<6.3,>=6.2
+trytond<6.3,>=6.2
