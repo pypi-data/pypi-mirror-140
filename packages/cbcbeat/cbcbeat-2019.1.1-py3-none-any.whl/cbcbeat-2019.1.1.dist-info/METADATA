@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: cbcbeat
+Version: 2019.1.1
+Summary: An adjoint-enabled framework for computational cardiac electrophysiology
+Home-page: https://github.com/ComputationalPhysiology/cbcbeat
+Author: M. E. Rognes, J. E. Hake, P. E. Farrell, S. W. Funke
+Author-email: meg@simula.no
+License: UNKNOWN
+Project-URL: Source, https://github.com/ComputationalPhysiology/cbcbeat
+Platform: UNKNOWN
+License-File: COPYING
+License-File: COPYING.LESSER
+License-File: AUTHORS
+Provides-Extra: all
+Requires-Dist: gotran ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: sphinx ; extra == 'all'
+Requires-Dist: sphinx-book-theme ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-book-theme ; extra == 'docs'
+Provides-Extra: gotran
+Requires-Dist: gotran ; extra == 'gotran'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: matplotlib ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+=================================================================================
+cbcbeat: an adjoint-enabled framework for computational cardiac electrophysiology
+=================================================================================
+
+
+.. image:: https://codecov.io/gh/ComputationalPhysiology/cbcbeat/branch/master/graph/badge.svg?token=Z4BCNQRRPU
+    :target: https://codecov.io/gh/ComputationalPhysiology/cbcbeat
+
+.. image:: https://circleci.com/gh/ComputationalPhysiology/cbcbeat.svg?style=shield
+    :target: https://circleci.com/gh/ComputationalPhysiology/cbcbeat
+
+
+cbcbeat is a collection of Python-based solvers for cardiac
+electrophysiology models. cbcbeat offers basic and optimized solvers
+for the bidomain and monodomain equations coupled with cardiac cell
+models. cbcbeat is based on the FEniCS Project and dolfin-adjoint.
+
+For more information visit http://cbcbeat.readthedocs.org
+
+Installation:
+=============
+
+See separate file ./INSTALL for how to install the cbcbeat module and
+a list of dependencies.
+
+Documentation:
+==============
+
+The cbcbeat documention is availble on readthedocs, see:
+
+    http://cbcbeat.readthedocs.org
+
+For manually updating the API and demo documentation, run:
+
+    cd doc
+    make html
+
+assuming that cbcbeat and the optional dependency Sphinx
+(sphinx-doc.org) is installed.
+
+Automated Testing:
+==================
+
+cbcbeat uses Bitbucket Pipelines for automated and continuous testing:
+
+  https://bitbucket.org/meg/cbcbeat/addon/pipelines/home
+
+
+License:
+========
+
+cbcbeat is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+cbcbeat is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
+License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this program. If not, see
+<http://www.gnu.org/licenses/>.
+
+
