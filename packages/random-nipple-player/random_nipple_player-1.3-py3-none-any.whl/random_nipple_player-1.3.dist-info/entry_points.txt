@@ -1,0 +1,3 @@
+[console_scripts]
+rnp = randomnipple.main:main
+
