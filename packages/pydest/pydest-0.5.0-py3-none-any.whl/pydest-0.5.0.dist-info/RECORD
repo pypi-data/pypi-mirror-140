@@ -1,0 +1,13 @@
+pydest/__init__.py,sha256=kDc5K3XoWuFNS8w3ZwWwt5ei8w-VDJ21ANHSoHrgLWc,124
+pydest/api.py,sha256=-cl8L0d7EeAl44yXf8cQ-QnAQRhdSZkMDQGxT2-_6Dg,15666
+pydest/dbase.py,sha256=Q1GFs7JBh5zQoPmFCm1OLd7CuPxpjbBUBPNKVyRUu3s,608
+pydest/manifest.py,sha256=1IY_pRda7N_wtyZERbz-k8o3Xj_nZm1g1MM-6ER1Cgo,4419
+pydest/pydest.py,sha256=g4pFzUwlHQ1-mPAQn6F7bVsSG_dD78zzquW3Ji5IHuQ,1577
+pydest/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydest/test/test_integration.py,sha256=uGK0QfuSiyXdSqbs9n-pDqYU0vf_QRZbvFwTiCjZ7_4,6205
+pydest/test/test_pydest.py,sha256=wm9_x7zulergH24VEmVgUKGoE5l9gSAcdjkbjGllZnQ,1263
+pydest-0.5.0.dist-info/LICENSE.md,sha256=F3O9HrFnAeyATctu9RlZm1La0kl0Y7Z7YGvOavYiCbw,1069
+pydest-0.5.0.dist-info/METADATA,sha256=dP-CWOv5ouLW_plNM9pCrNOejHWL2UGV0bN5raVlRxI,19509
+pydest-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydest-0.5.0.dist-info/top_level.txt,sha256=w9WcRA3csdWrCR-vBKn2iKbrKdoh2j3Xr9rB_BtPljY,7
+pydest-0.5.0.dist-info/RECORD,,
