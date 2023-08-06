@@ -1,0 +1,6 @@
+comun_pandas.py
+setup.py
+comun_pandas.egg-info/PKG-INFO
+comun_pandas.egg-info/SOURCES.txt
+comun_pandas.egg-info/dependency_links.txt
+comun_pandas.egg-info/top_level.txt
