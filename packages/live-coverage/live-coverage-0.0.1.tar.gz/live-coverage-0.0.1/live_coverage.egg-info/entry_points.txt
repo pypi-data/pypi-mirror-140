@@ -1,0 +1,3 @@
+[console_scripts]
+live-coverage = live_coverage.live_coverage:main
+

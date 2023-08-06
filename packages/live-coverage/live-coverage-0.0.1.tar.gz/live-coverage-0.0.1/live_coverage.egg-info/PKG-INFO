@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: live-coverage
+Version: 0.0.1
+Summary: Live Code Coverage for Python
+Home-page: https://github.com/Defelo/live-coverage
+Author: Defelo
+Author-email: elodef42@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# live-coverage
+Live Code Coverage for Python
+
+

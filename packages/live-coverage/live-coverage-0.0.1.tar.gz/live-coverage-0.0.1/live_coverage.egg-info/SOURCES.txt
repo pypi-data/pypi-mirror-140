@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+live_coverage/__init__.py
+live_coverage/__main__.py
+live_coverage/live_coverage.py
+live_coverage.egg-info/PKG-INFO
+live_coverage.egg-info/SOURCES.txt
+live_coverage.egg-info/dependency_links.txt
+live_coverage.egg-info/entry_points.txt
+live_coverage.egg-info/requires.txt
+live_coverage.egg-info/top_level.txt
