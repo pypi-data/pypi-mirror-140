@@ -1,0 +1,33 @@
+# DSDM
+DMX inspired lighting protocol optimized for modern lighting solutions
+
+DSDM is python REPL like tool to control mutiple micoPython lighting devices with single python REPL input.
+user can send the commands to the fixture from DMX(rs485), lumenRadio, WDMX, BLE, WiFi(Art-Net, sACN)
+* All are timestamped for NTP synced execution to adjust for wiggle from IP networks.
+* Reply from REPL is only possible via Art-Net or sACN
+
+## microDSDM
+Micopython 1.18 ESP32 platform implementation of DSDM for sending and recieveing DMX packets to adjust lighting and execute REPL commands
+lamp has global variables: ```device_id```, ```tags[]```
+if new command is wished to be exeuted sender must optain ```que(quid,tags,nr_of_messages)``` 
+que is granted: 
+1. only correct quid lines are red, all others ignored to preven between lines REPL commands ```recieved_messages<nr_of_messages```
+1. if ```my_labels in labels```
+Then listned only to the quid messages until all messages are recieved. Execute code line by line
+
+## DSDMpy
+Python3 library to send and recieve REPL commands to DSDM compatible devices. 
+The setup contains 2 lamps (Apollo0001,Apollo0002 and Apollo0003), computer is connected to the same submnet with the lamps
+```Python
+import DSDMpy as DSDM
+
+lamps = DSDM.DSDMpy(ip="broadcast", reply="True")
+# Red: 50%, Green: 50%, Blue: 50%, White Balance: 5600K, Fx opacity: 0%
+# WB calculated as 1500-10 000K, (5600-1500)/8500*255
+lamps.send("renderer.set_color(128,128,128,123,0)", tags=[])
+lamps.send("tags.append('ceiling'), tags=['Apollo0001']")
+lamps.send("tags.append('ceiling'), tags=['Apollo0002']")
+# Red: 50%, Green: 50%, Blue: 50%, White Balance: 5600K, Fx opacity: 0%
+# WB calculated as 1500-10 000K, (3200-1500)/8500*255
+lamps.send("renderer.set_color(255,255,255,51,100)",tags=['ceiling'])
+```
