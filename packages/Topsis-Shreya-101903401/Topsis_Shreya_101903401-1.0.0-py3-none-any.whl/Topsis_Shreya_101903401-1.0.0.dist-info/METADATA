@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: Topsis-Shreya-101903401
+Version: 1.0.0
+Summary: Package to calculate topsis score and rank them
+Home-page: https://github.com/shreyajha2410/topsis_shreya
+Author: Shreya Jha
+Author-email: shreyajha2418@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
+## topsis_shreya
+
+# TOPSIS
+
+Submitted By: **Shreya Jha - 101903401**.
+
+Type: **Package**.
+
+Title: **TOPSIS method for multiple-criteria decision making (MCDM)**.
+
+Version: **1.0.4**.
+
+Date: **2022-02-27**.
+
+Author: **Shreya Jha**.
+
+Maintainer: **Shreya Jha <shreyajha2418@gmail.com>**.
+
+Description: **Evaluation of alternatives based on multiple criteria using TOPSIS method.**.
+
+---
+
+## What is TOPSIS?
+
+**T**echnique for **O**rder **P**reference by **S**imilarity to **I**deal **S**olution
+(TOPSIS) originated in the 1980s as a multi-criteria decision making method.
+TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution,
+and greatest distance from the negative-ideal solution.
+
+<br>
+
+## How to install this package:
+
+```
+>> pip install topsis_shreya
+```
+
+
+
+
+
+
+
