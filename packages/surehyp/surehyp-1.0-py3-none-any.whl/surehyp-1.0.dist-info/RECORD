@@ -1,0 +1,9 @@
+surehyp/__init__.py,sha256=CsI4Y-Wks0Ymrij0vkf5-6yUtDmENWZvzjpdEa-GyfQ,119
+surehyp/atmoCorrection.py,sha256=Pn0bsCP4UceEAdhY1hrJCxSqdaJ6eIf18s76jHmOon8,53795
+surehyp/preprocess.py,sha256=7-Xk6l6_FyW-bsyOdoiDcV66tOQmFqRZvk6kQNC2fpc,26930
+surehyp/various.py,sha256=c2YkpdHzwy4x8Oic_asgqGQP8NNRgIdlFzDEzIJ5wMY,3439
+surehyp-1.0.dist-info/LICENSE.txt,sha256=aFLFZg6LEJFpTlNQ8su3__jw4GfV-xWBmC1cePkKZVw,35802
+surehyp-1.0.dist-info/METADATA,sha256=SLrRez8d-Ilfevf1_sGYDl72Pp9lxaWynaYl08IpOgE,11257
+surehyp-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+surehyp-1.0.dist-info/top_level.txt,sha256=_4w9u2YfMLwVZuaGpbliy4F6U1W-YgmxWdgwF-0j6oc,8
+surehyp-1.0.dist-info/RECORD,,
