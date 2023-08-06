@@ -1,0 +1,25 @@
+[tool.black]
+line-length = 120
+target_version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.tox
+    | \.venv
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+    "ignore:SelectableGroups:DeprecationWarning",
+    "ignore:<class '.*'> is not using a cooperative constructor:pytest.PytestDeprecationWarning",
+    "ignore:The \\(fspath. py.path.local\\) argument to .* is deprecated.:pytest.PytestDeprecationWarning",
+    "ignore:.* is an Item subclass and should not be a collector.*:pytest.PytestWarning",
+]
