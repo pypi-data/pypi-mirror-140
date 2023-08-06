@@ -1,0 +1,1 @@
+{{coverage_type}} coverage "{{slugline}}" internal note: "{{internal_note}}"
