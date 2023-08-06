@@ -1,0 +1,10 @@
+README.md
+setup.py
+gdriveaudio/__init__.py
+gdriveaudio/gdriveaudio.py
+gdriveaudio.egg-info/PKG-INFO
+gdriveaudio.egg-info/SOURCES.txt
+gdriveaudio.egg-info/dependency_links.txt
+gdriveaudio.egg-info/entry_points.txt
+gdriveaudio.egg-info/requires.txt
+gdriveaudio.egg-info/top_level.txt
