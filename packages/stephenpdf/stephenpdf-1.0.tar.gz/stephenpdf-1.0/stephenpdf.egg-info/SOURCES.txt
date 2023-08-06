@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+stephenpdf/__init__.py
+stephenpdf/pdf2text.py
+stephenpdf.egg-info/PKG-INFO
+stephenpdf.egg-info/SOURCES.txt
+stephenpdf.egg-info/dependency_links.txt
+stephenpdf.egg-info/top_level.txt
