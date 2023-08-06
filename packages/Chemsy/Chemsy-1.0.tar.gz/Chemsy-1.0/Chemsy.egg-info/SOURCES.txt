@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+Chemsy.egg-info/PKG-INFO
+Chemsy.egg-info/SOURCES.txt
+Chemsy.egg-info/dependency_links.txt
+Chemsy.egg-info/requires.txt
+Chemsy.egg-info/top_level.txt
+chemsy/__init__.py
+chemsy/explore.py
+chemsy/help.py
+chemsy/predict/__init__.py
+chemsy/predict/methods.py
+chemsy/prep/__init__.py
+chemsy/prep/methods.py
