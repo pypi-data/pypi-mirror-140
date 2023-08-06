@@ -1,0 +1,6 @@
+[console_scripts]
+minegauler-bot = minegauler.bot.msgparse:main [bot]
+
+[gui_scripts]
+minegauler = minegauler.app.__main__:main
+
