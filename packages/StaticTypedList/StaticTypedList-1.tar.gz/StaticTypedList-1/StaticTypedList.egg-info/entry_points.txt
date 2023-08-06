@@ -1,0 +1,3 @@
+[console_scripts]
+StaticTypedList = StaticTypedList.StaticTypedList_versus_list:main
+

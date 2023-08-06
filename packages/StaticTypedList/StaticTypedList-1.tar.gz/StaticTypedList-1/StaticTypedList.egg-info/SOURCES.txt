@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+StaticTypedList/StaticTypedList.py
+StaticTypedList/StaticTypedList_tests.py
+StaticTypedList/StaticTypedList_versus_list.py
+StaticTypedList.egg-info/PKG-INFO
+StaticTypedList.egg-info/SOURCES.txt
+StaticTypedList.egg-info/dependency_links.txt
+StaticTypedList.egg-info/entry_points.txt
+StaticTypedList.egg-info/top_level.txt
