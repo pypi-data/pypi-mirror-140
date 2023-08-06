@@ -1,0 +1,6 @@
+mpi_enabled=OFF
+openmp_enabled=ON
+root_enabled=OFF
+cuda_enabled=ON
+c_compiler=/opt/rh/devtoolset-7/root/usr/bin/gcc
+cxx_compiler=/opt/rh/devtoolset-7/root/usr/bin/g++
