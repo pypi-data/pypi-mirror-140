@@ -1,0 +1,10 @@
+wlabkit/__init__.py,sha256=lza9jMxlONROvPYSdZaWWDI4KlIIOfvbb-YNZnHQAoM,45
+wlabkit/getseq.py,sha256=6W2wH6l5uQlvfiCmnRsxbhO3SjUE58hotZ-3tPl0WYc,992
+wlabkit/parse_antismash_result.py,sha256=Rp3XJ8yDUepDDgva9-fQVhKSJEqRVwqjX8GiwJzPuKA,3767
+wlabkit/parse_gbk.py,sha256=UEWTJqwGXu_DMGeRPsshfHtOpWAspDgTOwM7zv8VLQY,4859
+wlabkit-0.0.18.data/scripts/wlabkit,sha256=OabfjhDUnjEwQzh3uimEQZtY-RM7Uuh-cbhF7KtFv_I,4404
+wlabkit-0.0.18.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+wlabkit-0.0.18.dist-info/METADATA,sha256=zRWPCv7x9AVOIPx5oP7WGq-MzbgP6SuiwhkRKX8N9_M,1334
+wlabkit-0.0.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wlabkit-0.0.18.dist-info/top_level.txt,sha256=xqu2LQ9D6Fai4_F58uT3Ff-hG0JAcHvgwhAkxcoeo0k,8
+wlabkit-0.0.18.dist-info/RECORD,,
