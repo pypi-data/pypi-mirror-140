@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: eva-tools
+Version: 0.0.7
+Summary: Set of tools for manipulating research data related to the Easy Volcanic Aerosol Model, and other stratospheric aerosol datasets.
+Home-page: https://arggit.usask.ca/cj/eva_tools
+Author: C.J. Ogilvie
+Author-email: cfo188@usask.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: netCDF4
+Requires-Dist: datetime
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: re
+Requires-Dist: scipy
+
+UNKNOWN
+
