@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: eyja-aws-hub
+Version: 0.1.1
+Summary: AWS Hub for Eyja
+Home-page: https://gitlab.com/public.eyja.dev/eyja-aws-hub
+Maintainer: Anton Berdnikov
+Maintainer-email: agratoth@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: eyja-internal (>=0.4.1)
+Requires-Dist: aiobotocore (>=2.1.0)
+Requires-Dist: httpx (>=0.21.3)
+
+# eyja-aws-hub
+
+AWS Hub for Eyja
+
+
+
