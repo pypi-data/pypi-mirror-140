@@ -1,0 +1,6 @@
+comun_mail.py
+setup.py
+comun_mail.egg-info/PKG-INFO
+comun_mail.egg-info/SOURCES.txt
+comun_mail.egg-info/dependency_links.txt
+comun_mail.egg-info/top_level.txt
