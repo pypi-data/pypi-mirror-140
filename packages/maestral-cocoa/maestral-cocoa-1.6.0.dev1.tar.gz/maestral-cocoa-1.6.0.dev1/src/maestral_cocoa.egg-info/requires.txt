@@ -1,0 +1,22 @@
+click
+maestral>=1.5.3
+markdown2
+toga==0.3.0.dev32
+rubicon-objc>=0.4.2
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[:python_version < "3.9"]
+importlib_resources
+
+[dev]
+black
+bump2version
+flake8
+mypy
+pre-commit
+pytest
+pytest-cov
+types-pkg_resources
+types-requests
