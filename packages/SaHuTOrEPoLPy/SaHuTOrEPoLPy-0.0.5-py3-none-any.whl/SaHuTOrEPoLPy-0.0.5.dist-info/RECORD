@@ -1,0 +1,17 @@
+sahutorepol/Errors.py,sha256=MQ_glm6FNdOIApAw7f4Jb7hALNODVOfySYz4mWLUF50,4649
+sahutorepol/TypeHints.py,sha256=qbomroE8CZfTohUyRkPruu-vDJvK0JXS8Ouixx1qVs0,2325
+sahutorepol/Types.py,sha256=WutKX_B2j9oDfk4UrCsOe2Txbp5YcTOCReLTfyPjVFc,29204
+sahutorepol/__init__.py,sha256=aspg6MEO4afzWzfv-saBj1SzdaPVFnJHFy4sASZLyZU,534
+sahutorepol/__main__.py,sha256=pFtC55Oww1P7_P3aQQ6h0oU02KyZskkZ3jG4QFKDMTM,9482
+sahutorepol/debug.py,sha256=qGSbY0Uuc0RyLX57kMWBKzKK88Kl4gYmCnWPR4UkrhE,79
+sahutorepol/main.py,sha256=DtiV8EukBuLdSlQshTxLR__pYRNVoKUPU58vP02GBoo,23055
+sahutorepol/profiling.py,sha256=aR0di_s3w4S9LePnsJ-aZiPOsOpei64VRx69Zp_CpZU,60
+sahutorepol/sahutorepol.py,sha256=wcgPoMYoVnGeMjHTVSXPoLSUYO05vXGFwYanpbCJhAo,21115
+sahutorepol/shell.py,sha256=kAgTv4rTxoWcv4t27h8uxlPxj92SO4ZQI_rAcfI4nkQ,4339
+simple_warnings/__init__.py,sha256=LCzZ-988DcYo3R94__s_I84qnDYOBzQNvJyXdDqBnPA,1761
+SaHuTOrEPoLPy-0.0.5.dist-info/LICENSE.md,sha256=2Odmgi-zF0E6CbXFU0DGvshyhTMu_zVC_ME_6f2veqI,1287
+SaHuTOrEPoLPy-0.0.5.dist-info/METADATA,sha256=f16yG_VeolHmyXIWRtk2Z6e4ckC_pKEbPUxHBZIqkPc,920
+SaHuTOrEPoLPy-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+SaHuTOrEPoLPy-0.0.5.dist-info/entry_points.txt,sha256=OXIeg9xBxZQwY-ij1n8ayptlXGE9o1OldYNNmCDeEUw,59
+SaHuTOrEPoLPy-0.0.5.dist-info/top_level.txt,sha256=7hz-10tgMIDLCBNjLLTEJIKq5osTmLxHxk_hiJiwlKQ,28
+SaHuTOrEPoLPy-0.0.5.dist-info/RECORD,,
