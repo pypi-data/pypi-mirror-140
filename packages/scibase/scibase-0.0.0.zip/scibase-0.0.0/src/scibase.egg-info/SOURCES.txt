@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/scibase/__init__.py
+src/scibase.egg-info/PKG-INFO
+src/scibase.egg-info/SOURCES.txt
+src/scibase.egg-info/dependency_links.txt
+src/scibase.egg-info/top_level.txt

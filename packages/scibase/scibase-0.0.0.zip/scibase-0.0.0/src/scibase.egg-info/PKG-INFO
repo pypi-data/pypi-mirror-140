@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: scibase
+Version: 0.0.0
+Summary: A LIMS for Structural Biology
+Home-page: https://github.com/dtriand/scibase
+Author: Dimitris P. Triandafillidis
+Author-email: 64985525+dtriand@users.noreply.github.com
+License: GPLv3
+Keywords: x-ray,diffraction,crystallography,macromolecular,structural,biology,lims,management,laboratory
+Platform: linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.10
+License-File: LICENSE
+
+⚗️ SciBase 
+==========
+
+SciBase is a Laboratory Information Management System (LIMS) focused around the needs of a Structural Biology lab.
+
+Features
+--------
+- 
+
+Contribute
+----------
+- Source code: github.com/dtriand/scibase
+- Issue tracker: github.com/dtriand/scibase/issues
+
+License
+-------
+SciBase is licensed under GNU GPLv3.
+
+
+
