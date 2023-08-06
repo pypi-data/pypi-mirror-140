@@ -1,0 +1,9 @@
+tweety/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tweety/_types.py,sha256=NaVv-2VR-R6FDMty42cVE3fYv0q_s0Y_wYA8_80kOKU,18666
+tweety/bot.py,sha256=h8vYJu89fJvZT8x9ppTxZqBtTzoUocQ31MRmxgmk18w,10501
+tweety/exceptions_.py,sha256=gsxMTGthSUxb69Wauoh_BkPqK5ESDrVcy1vUBsyKk9Y,622
+tweety/utils.py,sha256=EiDup7N6Q1HX-8vUrRIWSalXBgaxcx-R0OscEDzv0Mk,13010
+tweety_ns-0.2.21.dist-info/METADATA,sha256=XO1BV261pD9NxWjw_YgiIRQ7oGnrH_6gBTf6j164Wrk,1091
+tweety_ns-0.2.21.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tweety_ns-0.2.21.dist-info/top_level.txt,sha256=uPXcucbykHdjdEzWJnsSz3ZmrBwgdCy1zqazd-b0dJ8,7
+tweety_ns-0.2.21.dist-info/RECORD,,
