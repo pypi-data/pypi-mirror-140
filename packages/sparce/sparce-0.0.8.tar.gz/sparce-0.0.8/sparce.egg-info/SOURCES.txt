@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+sparce/__init__.py
+sparce/ars_parse.py
+sparce/sparce.py
+sparce.egg-info/PKG-INFO
+sparce.egg-info/SOURCES.txt
+sparce.egg-info/dependency_links.txt
+sparce.egg-info/requires.txt
+sparce.egg-info/top_level.txt
