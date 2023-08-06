@@ -1,0 +1,229 @@
+[
+    {
+        "reaction_to": "Funny",
+        "triggers": [
+            {
+                "phrase": "lol",
+                "is_exact": false
+            },
+            {
+                "phrase": "lmao",
+                "is_exact": false
+            },
+            {
+                "phrase": "hahaha",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Scary",
+        "triggers": [
+            {
+                "phrase": "scary",
+                "is_exact": false
+            },
+            {
+                "phrase": "scared",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Shocked or surprised",
+        "triggers": [
+            {
+                "phrase": "!!!",
+                "is_exact": false
+            },
+            {
+                "phrase": "???",
+                "is_exact": false
+            },
+            {
+                "phrase": "what",
+                "is_exact": true
+            },
+            {
+                "phrase": "what?",
+                "is_exact": true
+            },
+            {
+                "phrase": "wow",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Sad",
+        "triggers": [
+            {
+                "phrase": "sad",
+                "is_exact": false
+            },
+            {
+                "phrase": "cry",
+                "is_exact": false
+            },
+            {
+                "phrase": "nooo",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Amazing",
+        "triggers": [
+            {
+                "phrase": "holy",
+                "is_exact": false
+            },
+            {
+                "phrase": "amazing",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Curious",
+        "triggers": [
+            {
+                "phrase": "?",
+                "is_exact": true
+            }
+        ]
+    },
+    {
+        "reaction_to": "Pumped up",
+        "triggers": [
+            {
+                "phrase": "lets go",
+                "is_exact": false
+            },
+            {
+                "phrase": "let's go",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Cute",
+        "triggers": [
+            {
+                "phrase": "cute",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Wholesome",
+        "triggers": [
+            {
+                "phrase": "awww",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Backchanneling",
+        "triggers": [
+            {
+                "phrase": "same",
+                "is_exact": true
+            }
+        ]
+    },
+    {
+        "reaction_to": "Greeting",
+        "triggers": [
+            {
+                "phrase": "hi",
+                "is_exact": true
+            },
+            {
+                "phrase": "hello",
+                "is_exact": true
+            }
+        ]
+    },
+    {
+        "reaction_to": "Stream end",
+        "triggers": [
+            {
+                "phrase": "bye",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Good move",
+        "triggers": [
+            {
+                "phrase": "nice",
+                "is_exact": false
+            },
+            {
+                "phrase": "pog",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Close to achieve something",
+        "triggers": [
+            {
+                "phrase": "almost",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Understood",
+        "triggers": [
+            {
+                "phrase": "ok",
+                "is_exact": true
+            }
+        ]
+    },
+    {
+        "reaction_to": "Coming back",
+        "triggers": [
+            {
+                "phrase": "おかえり",
+                "is_exact": false
+            },
+            {
+                "phrase": "welcome back",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Congratulating",
+        "triggers": [
+            {
+                "phrase": "congrat",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Applause",
+        "triggers": [
+            {
+                "phrase": "👏👏👏",
+                "is_exact": false
+            }
+        ]
+    },
+    {
+        "reaction_to": "Loud",
+        "triggers": [
+            {
+                "phrase": "my ears",
+                "is_exact": false
+            }
+        ]
+    }
+]

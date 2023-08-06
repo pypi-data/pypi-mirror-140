@@ -1,0 +1,2 @@
+[console_scripts]
+streamanalyser = streamanalyser.modules.cli:main
