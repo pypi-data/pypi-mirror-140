@@ -1,0 +1,11 @@
+appdirs
+numpy
+pandas
+plotly
+pyserial
+scipy
+sounddevice
+soundfile
+
+[:python_version < "3.8"]
+importlib-metadata

@@ -1,0 +1,15 @@
+[console_scripts]
+local-copy = mcvqoe.utilities.local_copy:main
+mcvqoe-2loc-process = mcvqoe.timing.two_loc_process:main
+mcvqoe-chan = mcvqoe.utilities.channelinfo:main
+mcvqoe-diagnostics = mcvqoe.diagnostics.diagnostics:main
+mcvqoe-reprocess = mcvqoe.utilities.reprocess:main
+mcvqoe-test-play = mcvqoe.hardware.PTT_play:main
+testCpy = mcvqoe.utilities.test_copy:main
+
+[mcvqoe.channel]
+clean=mcvqoe.simulation.cleanchan
+
+[mcvqoe.impairment]
+probabilityiser=mcvqoe.simulation.pbiplugin
+
