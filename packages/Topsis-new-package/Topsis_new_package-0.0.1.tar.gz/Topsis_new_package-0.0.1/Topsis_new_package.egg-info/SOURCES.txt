@@ -1,0 +1,7 @@
+setup.py
+Topsis_new_package.egg-info/PKG-INFO
+Topsis_new_package.egg-info/SOURCES.txt
+Topsis_new_package.egg-info/dependency_links.txt
+Topsis_new_package.egg-info/requires.txt
+Topsis_new_package.egg-info/top_level.txt
+libname/__init__.py
