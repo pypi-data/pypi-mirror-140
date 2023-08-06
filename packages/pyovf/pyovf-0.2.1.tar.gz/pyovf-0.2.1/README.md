@@ -1,0 +1,80 @@
+# pyOVF
+
+PyOVF is a Python3 package for reading and writing binary OVF files (mumax3 or OOMMF) using the python connector provided by the [OVF RW](https://gitlab.flavio.be/flavio/ovf-rw) project (which is not open-source yet).
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pyovf.
+
+```bash
+pip install pyovf
+```
+
+This package is also available in this private GitLab instance and can be installed using the `--extra-index-url` parameter.
+
+```bash
+pip install pyovf --extra-index-url https://gitlab.flavio.be/api/v4/projects/16/packages/pypi/simple
+```
+
+This library relies on the compiled C++ code from [OVF RW](https://gitlab.flavio.be/flavio/ovf-rw) project. The compiled versions are the following:
+
+- Linux (x86_64) | python {3.7, 3.8, 3.9, 3.10} (Ubuntu 20.04)
+
+- macOS (darwin, intel) | python {3.7, 3.8, 3.9, 3.10} (Catalina)
+
+As far as the main operating systems are concerned, the following are not available yet:
+
+- Windows (any)
+  
+- Linux (armv7l, ARM arch64)
+
+## Usage
+
+```python
+import pyovf as OVF
+import numpy as np
+
+print(f'pyOVF version: {OVF.__version__}')
+
+#* Create a (2, 2, 2, 3) ndarray representing a fictive vector field
+data_in = np.array([[[[1.1, 1.2, 1.3],   # vector @ z-comp 0, y-comp 0, x-comp 0
+                      [1.4, 1.5, 1.6]],  # vector @ z-comp 0, y-comp 0, x-comp 1
+                     [[2.1, 2.2, 2.3],   # vector @ z-comp 0, y-comp 1, x-comp 0
+                      [2.4, 2.5, 2.6]]], # vector @ z-comp 0, y-comp 1, x-comp 1
+                    [[[3.1, 3.2, 3.3],   # vector @ z-comp 1, y-comp 0, x-comp 0
+                      [3.4, 3.5, 3.6]],  # vector @ z-comp 1, y-comp 0, x-comp 1
+                     [[4.1, 4.2, 4.3],   # vector @ z-comp 1, y-comp 1, x-comp 0
+                      [4.4, 4.5, 4.6]]], # vector @ z-comp 1, y-comp 1, x-comp 1
+                   ], dtype=np.float32)
+
+#* Writes data_in into file
+OVF.write('test.ovf', data_in, title="J", Xlim=[0,10e-9],
+                Ylim=[0,10e-9], Zlim=[0,10e-9])
+
+#* Reads data and meshgrid (X, Y) from file
+X, Y, data_out = OVF.read('test.ovf')
+#?INFO output format => data_out[z-comp, y-comp, x-comp, vect-comp]
+#?INFO vect-comp = 0 for scalar field data (geam, etc.)
+#?INFO vect-comp = {0, 1, 2} for scalar field data (m, B_ext, etc.)
+print(data_out.shape)
+
+#? Checks if the data elements correspond
+if (data_in == data_out.squeeze()).all():
+    print('Test passed!')
+
+#* Reads data (only) from file
+data_out2 = OVF.read_data_only('test.ovf')
+#?INFO read_data_only applies squeeze(), so z-comp may desappear
+#?INFO if data is scalar field, the vect-comp also desappears
+print(data_out2.shape)
+
+#? Checks if the data elements correspond
+if (data_in == data_out2).all():
+    print('Test passed!')
+```
+
+## Contributing
+Pull requests are welcome.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
