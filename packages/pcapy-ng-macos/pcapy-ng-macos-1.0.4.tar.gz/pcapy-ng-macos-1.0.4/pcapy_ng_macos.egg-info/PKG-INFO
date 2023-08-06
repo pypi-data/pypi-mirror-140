@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pcapy-ng-macos
+Version: 1.0.4
+Summary: Python pcap extension (pre-built for MacOS)
+Home-page: https://github.com/stamparm/pcapy-ng/
+Author: Miroslav Stampar
+Author-email: miroslav@sqlmap.org
+Maintainer: Kevin Ruff
+Maintainer-email: ruff.kevin@outlook.com
+License: Apache
+Platform: Unix
+Platform: Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+See the base pcapy-ng project if you need to build this in your own specific environment.
+
