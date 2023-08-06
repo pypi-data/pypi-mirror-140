@@ -1,0 +1,1 @@
+from DIVESH.topsis import topsis
