@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/ta_clickup/__init__.py
+src/ta_clickup/clickup.py
+src/ta_clickup.egg-info/PKG-INFO
+src/ta_clickup.egg-info/SOURCES.txt
+src/ta_clickup.egg-info/dependency_links.txt
+src/ta_clickup.egg-info/top_level.txt

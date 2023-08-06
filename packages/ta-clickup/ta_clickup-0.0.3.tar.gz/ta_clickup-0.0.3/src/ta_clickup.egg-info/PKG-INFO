@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: ta-clickup
+Version: 0.0.3
+Summary: A wrapper for the ClickUp API to expedite automations
+Home-page: https://www.thoughtfulautomation.com/
+Author: Jacob Brooks
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+================
+ta-bitwarden-cli
+================
+
+
+[//]: # (.. image:: https://img.shields.io/pypi/v/ta_clickup.svg)
+
+[//]: # (        :target: https://pypi.python.org/pypi/ta_clickup)
+
+[//]: # ()
+[//]: # (.. image:: https://img.shields.io/travis/macejiko/ta_clickup.svg)
+
+[//]: # (        :target: https://travis-ci.com/macejiko/ta_clickup)
+
+[//]: # ()
+[//]: # (.. image:: https://readthedocs.org/projects/ta-ta_clickup/badge/?version=latest)
+
+[//]: # (        :target: https://ta-ta_clickup.readthedocs.io/en/latest/?version=latest)
+
+[//]: # (        :alt: Documentation Status)
+
+Thoughtful Automation BitWarden CLI installation package
+
+Installation
+------------
+
+For correct work please use python virtualenv approach!
+Also use *--no-cache-dir* option.
+Otherwise it would cache package wheel and wont download **bw** CLI binary anymore
+```commandline
+python3 -m virtualenv venv
+source venv/bin/activate
+pip install --no-cache-dir ta-bitwarden-cli
+```
+Code above will additionally install **bw** CLI binary to a first available folder in the $PATH
+
+Example Usage
+-------------
+```python
+import os
+from ta_clickup import ClickUp
+
+credentials = {
+    'login': os.getenv("CLICKUP_LOGIN"),
+    'password': os.getenv("CLICKUP_PASSWORD"),
+    'API Key': os.getenv("CLICKUP_API_KEY")
+}
+clickup = ClickUp(credentials)
+```
+
+Development
+-----------
+**Prepare local dev env**
+```commandline
+python3 -m virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
