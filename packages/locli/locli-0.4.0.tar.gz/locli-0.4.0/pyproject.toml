@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "locli"
+version = "0.4.0"
+description = ""
+authors = ["wonjae.h <warren@telelian.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+redis = "^4.1.4"
+hiredis = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+exam1 = "examples.exam1:main"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.4.0"
+tag_format = "$version"
+version_files = [
+    "locli/__init__.py",
+    "pyproject.toml:version"
+]
+
+[tool.black]
+fast=true
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | examples
+)/
+'''
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
