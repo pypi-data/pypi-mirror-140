@@ -1,0 +1,10 @@
+opennews/__init__.py,sha256=GX8IDHGeOfp2ckmoFSrqZQ1brwanU5aedoVIT6JNe04,158
+opennews/fetch.py,sha256=E5azEWLIcPaRbL6rRubTbgzyQFomMB2aZINv9GgYrKg,508
+opennews/getnews.py,sha256=xe1zIfsT7WZgq1Kiobu3jV8wpSmGhUshirqfn985ouM,1061
+opennews/models.py,sha256=8_iLioHO-l6PirZdPHHETvYxaP6gtTIGvVSNGWHw5Zg,544
+opennews/parse.py,sha256=CRMi3QE4GnUSTBErU7INGchg3agjD5YV6hrFjp_xxeY,323
+opennews/rss.txt,sha256=-Np8gfd8dffVSTNghC2eP9sXKfFwoiaTLu3nDqBYcxw,5537
+opennews-0.1.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+opennews-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+opennews-0.1.1.dist-info/METADATA,sha256=MsmcHJdi6oLyRjsPJ9QJd-huiEVJbjRM4miKzEBzaro,6058
+opennews-0.1.1.dist-info/RECORD,,
