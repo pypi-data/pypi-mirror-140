@@ -1,0 +1,6 @@
+README.md
+setup.py
+napery.egg-info/PKG-INFO
+napery.egg-info/SOURCES.txt
+napery.egg-info/dependency_links.txt
+napery.egg-info/top_level.txt
