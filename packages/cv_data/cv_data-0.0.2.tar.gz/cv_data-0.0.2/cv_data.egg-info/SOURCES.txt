@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+cv_data/__info__.py
+cv_data/__init__.py
+cv_data.egg-info/PKG-INFO
+cv_data.egg-info/SOURCES.txt
+cv_data.egg-info/dependency_links.txt
+cv_data.egg-info/requires.txt
+cv_data.egg-info/top_level.txt
+cv_data/coco/__init__.py
+cv_data/coco/_vis_mask.py
+cv_data/coco/utils.py
+cv_data/coco/vis.py
