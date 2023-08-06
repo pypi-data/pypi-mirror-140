@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: donphan
+Version: 4.9.1
+Summary: Asynchronous Database ORM for Postgres
+License: MIT
+Author: bijij
+Author-email: josh@josh-is.gay
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Provides-Extra: docs
+Requires-Dist: asyncpg (>=0.22.0)
+Requires-Dist: sphinx (>=3.5.3); extra == "docs"
+Requires-Dist: sphinxcontrib-websupport (>=1.2.4); extra == "docs"
+Requires-Dist: sphinxcontrib_trio (>=1.1.2); extra == "docs"
+Description-Content-Type: text/x-rst
+
+Donphan
+=======
+
+.. image:: https://readthedocs.org/projects/donphan/badge/?version=latest
+    :target: https://donphan.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+Asynchronous database ORM for use with Postgres.
