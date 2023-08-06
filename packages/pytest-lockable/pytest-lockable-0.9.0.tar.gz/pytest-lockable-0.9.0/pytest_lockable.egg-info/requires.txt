@@ -1,0 +1,11 @@
+pytest
+lockable<0.8.0,>=0.7.1
+
+[dev]
+nose
+coveralls
+pylint
+coverage
+
+[optional]
+pytest-metadata
