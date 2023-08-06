@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include src/analysishelper/map/metadata/period_dict.xlsx
+include src/analysishelper/map/metadata/config.ini
