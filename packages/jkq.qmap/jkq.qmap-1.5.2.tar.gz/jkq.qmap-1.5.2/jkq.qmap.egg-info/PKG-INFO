@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jkq.qmap
+Version: 1.5.2
+Summary: jkq.qmap is now mqt.qmap
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# jkq.qmap is now mqt.qmap
+
+This package has been renamed. Use `pip install mqt.qmap` instead.
+
+New package: https://pypi.org/project/mqt.qmap/
+
+

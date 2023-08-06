@@ -1,0 +1,7 @@
+README.md
+setup.py
+jkq.qmap.egg-info/PKG-INFO
+jkq.qmap.egg-info/SOURCES.txt
+jkq.qmap.egg-info/dependency_links.txt
+jkq.qmap.egg-info/requires.txt
+jkq.qmap.egg-info/top_level.txt
