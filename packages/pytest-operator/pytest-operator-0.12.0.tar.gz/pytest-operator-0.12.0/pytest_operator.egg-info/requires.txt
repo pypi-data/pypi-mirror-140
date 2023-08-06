@@ -1,0 +1,6 @@
+ipdb
+pytest
+pytest-asyncio
+pyyaml
+juju
+jinja2
