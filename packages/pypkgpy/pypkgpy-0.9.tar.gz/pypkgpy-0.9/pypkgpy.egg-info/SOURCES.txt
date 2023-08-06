@@ -1,0 +1,7 @@
+Licence.txt
+setup.py
+pypkgpy.egg-info/PKG-INFO
+pypkgpy.egg-info/SOURCES.txt
+pypkgpy.egg-info/dependency_links.txt
+pypkgpy.egg-info/top_level.txt
+pythonpkg/__init__.py
