@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: envoy.gpg.identity
+Version: 0.1.0
+Summary: "GPG identity util used in Envoy proxy's CI"
+Home-page: https://github.com/envoyproxy/pytooling/tree/main/envoy.gpg.identity
+Author: Ryan Northey
+Author-email: ryan@synca.io
+Maintainer: Ryan Northey
+Maintainer-email: ryan@synca.io
+License: Apache Software License 2.0
+Platform: UNKNOWN
+Requires-Dist: aio.core (>=0.8.0)
+Requires-Dist: python-gnupg
+
+
+envoy.gpg.identity
+==================
+
+GPG identity util used in Envoy proxy's CI
+
+

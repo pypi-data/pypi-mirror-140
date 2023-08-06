@@ -1,0 +1,8 @@
+envoy/gpg/identity/__init__.py,sha256=aEvqTHa7wWXBMckuWs1MxV9S3of8O7TIu1stqd8bsTw,105
+envoy/gpg/identity/identity.py,sha256=N7SzrSJqCUEBCu7b5TuK1mYMif6HNMwr20X91r4G5Ik,6502
+envoy/gpg/identity/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envoy.gpg.identity-0.1.0.dist-info/METADATA,sha256=noN7c0I56znNi5kmJY8N1UO-rI81gsU75JXsme1I04w,505
+envoy.gpg.identity-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+envoy.gpg.identity-0.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+envoy.gpg.identity-0.1.0.dist-info/top_level.txt,sha256=Qt7_yN7QRZC50oQqo2LSWNZ4cciJy3VtrF6PYF4qkLQ,6
+envoy.gpg.identity-0.1.0.dist-info/RECORD,,
