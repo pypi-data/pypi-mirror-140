@@ -1,0 +1,12 @@
+skydb/__init__.py,sha256=AeY9zGfemF_qPlOskRuroIOxjyV0m5hPe4ljIrjgQVw,177
+skydb/classes.py,sha256=vPWVmEs1JnzL6DHDafzS9S099dI9A4Xm8JbqeIZR-Ag,5573
+skydb/connections.py,sha256=qa56DLPZxODlqpk3AaALeytZ8sG6-d3jpO7emHWmWcA,1214
+skydb/tables.py,sha256=Ab8P6T2v5AzX9LcnkhPYkSV_aBWFVQHkBkzuDkPHuEY,6963
+skydb/update.py,sha256=MdwSGc4DH8Pd2rwXRaTm2UFpzHIiTT4m__nZW4sy3So,3740
+skydb/sheets/__init__.py,sha256=kTB73mMHQMN0feQh_b63Z4ttmfX1wDKaQfMi8_47qxE,300
+skydb/sheets/google_sheets.py,sha256=HYzku4JhbXPVl96t_ahC2xAtr4PrrmqHb5jkWprCfH4,2178
+skydb/sheets/style.py,sha256=b2ssWMePXXs68sJvksXlO79UpTOkCEGfCkdvWQYIdRA,1158
+skydb-0.1.1.dist-info/METADATA,sha256=qNWuwpiIwLEavYvARwTMV3xACTndQg9ztDH6Gj7MEXQ,735
+skydb-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+skydb-0.1.1.dist-info/top_level.txt,sha256=bJD7r4-gWkoPq7Y6tM-vYN8LgSfisNYmRSbZ7gr5XLg,6
+skydb-0.1.1.dist-info/RECORD,,

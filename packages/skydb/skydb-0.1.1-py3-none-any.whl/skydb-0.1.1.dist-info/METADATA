@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: skydb
+Version: 0.1.1
+Summary: For maintinaing Tampa Prep Data Warehouse
+Author: Warren Hyson
+Author-email: warren.hyson5@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: sqlalchemy
+Requires-Dist: cloud-sql-python-connector[pg8000]
+Requires-Dist: pg8000
+Requires-Dist: sky-api-python-client
+Requires-Dist: google-cloud-secret-manager
+Requires-Dist: google-cloud-storage
+Requires-Dist: gspread
+Requires-Dist: gspread (==5.2.0)
+
+UNKNOWN
+
