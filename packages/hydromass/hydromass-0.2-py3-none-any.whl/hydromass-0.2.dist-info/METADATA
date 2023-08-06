@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hydromass
+Version: 0.2
+Summary: Hydrostatic mass calculator
+Home-page: https://github.com/domeckert/pyproffit
+Author: Dominique Eckert, Vittorio Ghirardini, Stefano Ettori
+Author-email: Dominique.Eckert@unige.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: astropy
+Requires-Dist: matplotlib
+Requires-Dist: pymc3
+Requires-Dist: pyproffit
+
+UNKNOWN
+
