@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: laiiqa-lab-utilities
+Version: 0.1.0
+Summary: Package for ozonation, spectro uv and bioreaction data analysis files for the LAIIQA laboratory (ESIQIE - IPN).
+Home-page: UNKNOWN
+Author: F. Javier Morales M.
+Author-email: fmoralesm87@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: natsort
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: h5py
+Requires-Dist: sklearn
+Requires-Dist: IPython
+
+# LAIIQA Laboratory Utilities Package
+Librería escrita en Python para el análisis numérico y gráfico de los datos obtenidos de los equipos de ozonización (.mat), espectrofotómetro UV/Vis (.asc) y biorreacciones (.csv), en el Laboratorio de Investigación en Ingeniería Química Ambiental (LAIIQA - ESIQIE - IPN).
+
+## Instalación
+Para Python 2, desde la línea de comandos (cmd o  terminal):
+```bash
+>> pip install laiiqa-lab-utilities
+```
+
+Para Python 3:
+```bash
+>> pip3 install laiiqa-lab-utilities
+```
+## Uso de la librería
+### Obtención de ozonograma
+Desde el **IDLE** de **Python**, o **Jupyter Notebook**:
+
+```python{cmd}
+import laiiqa.ozonation as oz
+import tkinter as tk
+from tkinter import filedialog as fd
+
+root = tk.Tk()
+root.withdraw()
+
+filetypes = (('MAT-Files', '*.mat'),)
+
+file_path = fd.askopenfilename(
+        title='Seleccionar archivo .mat',
+        filetypes=filetypes)
+
+c1 = oz.Ozonation()
+
+c1.plot(file_path)
+```
+
+
