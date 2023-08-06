@@ -1,0 +1,4 @@
+geopandas==0.10.2
+xarray==0.21.1
+netcdf4==1.5.8
+pygeos==0.12.0
