@@ -1,0 +1,19 @@
+numpy>=1.22
+scipy
+scikit-image
+matplotlib
+matplotlib_scalebar
+
+# dev
+
+black>=22.1
+flake8
+isort
+mypy
+pdoc3
+pipe2codeblock
+pre-commit
+pytest
+setuptools-scm
+setuptools
+wheel

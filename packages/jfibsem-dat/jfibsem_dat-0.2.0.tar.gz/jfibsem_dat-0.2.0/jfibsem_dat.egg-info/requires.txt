@@ -1,0 +1,14 @@
+numpy>=1.22
+scipy
+
+[all]
+matplotlib
+matplotlib_scalebar
+scikit-image
+
+[skimage]
+scikit-image
+
+[vis]
+matplotlib
+matplotlib_scalebar
