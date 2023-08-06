@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+auntminnieupdate/__init__.py
+auntminnieupdate.egg-info/PKG-INFO
+auntminnieupdate.egg-info/SOURCES.txt
+auntminnieupdate.egg-info/dependency_links.txt
+auntminnieupdate.egg-info/top_level.txt
