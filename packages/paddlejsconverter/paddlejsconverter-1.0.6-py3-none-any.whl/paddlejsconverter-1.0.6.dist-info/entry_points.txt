@@ -1,0 +1,5 @@
+[console_scripts]
+paddlejsconverter = convertToPaddleJSModel:main
+pdjsConvertModel = convertModel:main
+pdjsOptimizeModel = optimizeModel:main
+
