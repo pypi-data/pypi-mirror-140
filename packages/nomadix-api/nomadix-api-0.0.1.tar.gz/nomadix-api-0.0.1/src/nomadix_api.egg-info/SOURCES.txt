@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/nomadix_api/__init__.py
+src/nomadix_api/api.py
+src/nomadix_api.egg-info/PKG-INFO
+src/nomadix_api.egg-info/SOURCES.txt
+src/nomadix_api.egg-info/dependency_links.txt
+src/nomadix_api.egg-info/requires.txt
+src/nomadix_api.egg-info/top_level.txt
+src/nomadix_api/utils/__init__.py
+src/nomadix_api/utils/decorators.py
