@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+./onlinezip/OnlineZip.py
+./onlinezip/__init__.py
+./tests/__init__.py
+./tests/test_units.py
+onlinezip.egg-info/PKG-INFO
+onlinezip.egg-info/SOURCES.txt
+onlinezip.egg-info/dependency_links.txt
+onlinezip.egg-info/top_level.txt
