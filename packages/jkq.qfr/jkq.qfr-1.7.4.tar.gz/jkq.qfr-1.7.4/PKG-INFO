@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jkq.qfr
+Version: 1.7.4
+Summary: jkq.qfr is now mqt.qfr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# jkq.qfr is now mqt.qfr
+
+This package has been renamed. Use `pip install mqt.qfr` instead.
+
+New package: https://pypi.org/project/mqt.qfr/
+
+
