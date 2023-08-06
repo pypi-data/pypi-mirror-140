@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kgraph
+Version: 1.0.2
+Summary: A Python library for relational learning on knowledge graphs.
+Home-page: https://github.com/YaoShuang-long/kgraph
+Author: Yao Shuang-long
+Author-email: shuanglongyao@gmail.com
+License: Apache 2.0
+Platform: linux_x86_64
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+Requires-Dist: numpy (>=1.14.3)
+Requires-Dist: torch (>=1.6.0)
+Requires-Dist: tqdm (>=4.23.4)
+Requires-Dist: prettytable (>=0.7.2)
+
+UNKNOWN
+
