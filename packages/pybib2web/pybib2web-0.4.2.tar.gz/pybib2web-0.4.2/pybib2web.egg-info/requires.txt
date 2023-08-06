@@ -1,0 +1,2 @@
+bibtexparser>=1.2
+PyYAML>=5.3
