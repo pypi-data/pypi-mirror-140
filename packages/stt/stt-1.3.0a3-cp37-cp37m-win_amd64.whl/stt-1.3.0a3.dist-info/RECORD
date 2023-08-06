@@ -1,0 +1,13 @@
+Release/_impl.cp37-win_amd64.exp,sha256=jr0xmpjKHC0WXWn1bE8jyclPwkXQXgB1mArzXrlxy5Y,737
+Release/_impl.cp37-win_amd64.lib,sha256=-br-GiNeDydDOesT6Rotn7fDNFxIJqfYIrxgd0YmJYM,1964
+stt/__init__.py,sha256=QtMBdthtCBVb63HboIuO095K7x3ZOHEDO9fOYBN19Ek,15448
+stt/_impl.cp37-win_amd64.pyd,sha256=eV2lSP9u5NTVgw8uRSbZ4MCmc6PAE_FZL2yNajfggJg,80384
+stt/client.py,sha256=6Pk_V2SqXHSscy3jzzRmDcgRfl_VjlLEJkxyRn9Y2Cg,7019
+stt/impl.py,sha256=lT4GODdi2VHro8Yqr7kfRRXiF-ZAfU4eIRjnNhTY1GI,7943
+stt/lib/libkenlm.so,sha256=HSQohTFXOA9QdN3HXQJU6KULS17pyODKEvU2LEpjA6Q,357376
+stt/lib/libstt.so,sha256=hDRvnGdDTBW_lT0ADJ01ExrfL86KsYdBu51BxN6dmCM,3111936
+stt-1.3.0a3.dist-info/METADATA,sha256=LHUYxQdsEdj7XpaTRVYzAEqvP4lwLr7XSluYcVthz00,1357
+stt-1.3.0a3.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+stt-1.3.0a3.dist-info/entry_points.txt,sha256=-RJKAhqFH3le0allDtX9BNVyOHyAXMbyweoEXUinoRI,41
+stt-1.3.0a3.dist-info/top_level.txt,sha256=U36suN9i5BZ2UbKj5dzgbpHmkIEAvyge7wRwJVB24jk,4
+stt-1.3.0a3.dist-info/RECORD,,
