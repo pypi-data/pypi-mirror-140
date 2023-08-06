@@ -1,0 +1,13 @@
+tudthemes/__init__.py,sha256=2IUtgykCBDykEDiWh5M7sSB1kRhVeFirGTDIlZ-AXs0,146
+tudthemes/create_common_stylesheet.py,sha256=csB8mBH485hfsaLesl8eLjooLleSNYfY0wrDCQyBJcs,662
+tudthemes/get_address.py,sha256=dkPz2LAKzNVn0hc8Ivp3DudSf3CylUkpaBO7H2-r5TI,895
+tudthemes/start_notebook.py,sha256=0xzd7MB42n4eFZ31oZxOJow9PtenTBjpwNqM3n2NSI4,833
+tudthemes/themes/bright/custom/custom.css,sha256=vf193Rg_wWgaRwFoPkwb4bVjqaU588HoX5G6OEo3F8g,3050
+tudthemes/themes/common/Logo_TU_Dresden.svg,sha256=ipQLAi_ih5TsJ2swXUnpT17K2GeQV4qDW7SInQ4zmBQ,10799
+tudthemes/themes/dark/custom/custom.css,sha256=HIzGWc9RoMZ9E72KpCSrpBKlXNA7cwfGS-Zz0akyItE,3140
+tudthemes/themes/default/custom/custom.css,sha256=xsMCucTgX80Iwu9FBYJJTSaPGPMW3stdyHJj1Im9HnQ,365
+tudthemes-0.1.dist-info/LICENSE,sha256=4pKmZGfElM4IwQkNuNpdQB9_sytniXhcVyNrrtQTdns,1136
+tudthemes-0.1.dist-info/METADATA,sha256=LyNuotVft3nV16rqCa9LHLgAwMrb7rDM6eAV7NcWqLk,806
+tudthemes-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tudthemes-0.1.dist-info/top_level.txt,sha256=yRfWwzeNr-_Kj2NvM0xV4tB3vETz94hmvqFHJAJr5ho,10
+tudthemes-0.1.dist-info/RECORD,,
