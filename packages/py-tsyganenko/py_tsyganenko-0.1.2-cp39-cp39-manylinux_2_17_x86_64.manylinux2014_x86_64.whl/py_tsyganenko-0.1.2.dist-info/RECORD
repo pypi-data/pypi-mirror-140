@@ -1,0 +1,6 @@
+py_tsyganenko.cpython-39-x86_64-linux-gnu.so,sha256=KyBfxm4Myiy_o7BRnNEotc-Sx6cRSt73cr1hsaBgKSM,3174256
+py_tsyganenko.libs/libquadmath-96973f99.so.0.0.0,sha256=l82oXdtRY-Labh7bTh1rVXgzqZpA7aB5rjflA5Rltl0,247608
+py_tsyganenko.libs/libgfortran-040039e1.so.5.0.0,sha256=R6s7aClbCjzomQpEjef6sRq928Fg-IlZcsqapxLPhtA,2686064
+py_tsyganenko-0.1.2.dist-info/METADATA,sha256=Iis-r70_YyG-hIicMlVsJ2hjnvPeI_B_0PgKeA_fQ9c,339
+py_tsyganenko-0.1.2.dist-info/RECORD,,
+py_tsyganenko-0.1.2.dist-info/WHEEL,sha256=D7UtKL7sRUPulxxjyrQ-OEzverCqb0XP9ps2ZmfSAlI,139
