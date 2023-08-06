@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ondokuz
+Version: 1
+Summary: Data Send
+Home-page: UNKNOWN
+Author: Testere_necmi
+Author-email: 
+License: MIT
+Keywords: Ondokuz
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Foobar
+
+ You can safely message with the ondokuz program.
+
+
+## Installation
+
+
+
+```bash
+pip install ondokuz
+```
+
+## Usage
+
+```
+import ondokuz
+ondokuz.tr()
+
+
+```
+
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
