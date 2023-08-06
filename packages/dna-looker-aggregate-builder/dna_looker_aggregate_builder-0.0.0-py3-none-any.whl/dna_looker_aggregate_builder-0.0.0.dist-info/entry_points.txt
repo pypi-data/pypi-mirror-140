@@ -1,0 +1,2 @@
+[console_scripts]
+lab = looker_aggregate_builder.cli.lab_cli:lab
