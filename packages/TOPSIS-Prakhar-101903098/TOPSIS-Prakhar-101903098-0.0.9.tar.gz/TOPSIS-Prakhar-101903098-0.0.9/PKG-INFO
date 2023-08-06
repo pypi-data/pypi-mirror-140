@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: TOPSIS-Prakhar-101903098
+Version: 0.0.9
+Summary: Calculating the TOPSIS scores for various criterions
+Author: Prakhar Bhateja
+Author-email: <pbhateja_be19@thapar.edu>
+License: UNKNOWN
+Keywords: python,topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+UNKNOWN
+
