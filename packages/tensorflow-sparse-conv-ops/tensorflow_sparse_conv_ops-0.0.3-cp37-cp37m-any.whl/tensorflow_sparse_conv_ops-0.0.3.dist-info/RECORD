@@ -1,0 +1,7 @@
+tensorflow_sparse_conv_ops/__init__.py,sha256=vkn1Nw7O2xbx6xPrJz4ZE433kPawVN6YMUJHj6td1NE,882
+tensorflow_sparse_conv_ops/_sparse_conv_ops.so,sha256=7CwBNO5ttHeZPGUlTSRCuD5A10WDVETww3ZcfhZknM4,779912
+tensorflow_sparse_conv_ops/sparse_conv_ops.py,sha256=FnareoSGdChn9efMjNlMEkpcCpLpM6GguG327iulz3w,3577
+tensorflow_sparse_conv_ops-0.0.3.dist-info/METADATA,sha256=2OLssDgxHQeoIZ13t3wdaF4HWg2g6OqZCApJo1_Wsjk,851
+tensorflow_sparse_conv_ops-0.0.3.dist-info/WHEEL,sha256=a8-lE8CDY3fTc-2Q7EKZhl4GYCxX5tnur3ksQusxWu4,104
+tensorflow_sparse_conv_ops-0.0.3.dist-info/top_level.txt,sha256=sbHEdiKluDCrcvCxufU1kI_xl5cxlq-NGXQ5dWX4_SU,27
+tensorflow_sparse_conv_ops-0.0.3.dist-info/RECORD,,
