@@ -1,0 +1,4 @@
+[console_scripts]
+gtbook_fix_colab_links = gtbook.cli:fix_nbs_colab_links
+gtbook_rename = gtbook.cli:rename
+

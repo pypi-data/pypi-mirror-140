@@ -1,0 +1,16 @@
+gtbook/__init__.py,sha256=AixLlU6Em9Z_zs4l1lTxAHg1b8pa8z3BTNKIHDkjBmo,23
+gtbook/_nbdev.py,sha256=q29_UuCwEBOm-OKedyZAMb0w_qnSwo1VKLzdqiVJh1E,2049
+gtbook/cli.py,sha256=kW4siDK2PeVz3VFvnDqdH_whNOraeEoH4yEZ36jk34k,2284
+gtbook/dbn.py,sha256=mSlhJ-KkYteslkNG_BBzvmfrdl7nQ7o7Y3LUGM3uGxw,2257
+gtbook/diffdrive.py,sha256=8YIYxUWr1xCbqCsJXA5FdFsSKOWRae5CiKG8Rx1E3PM,1587
+gtbook/discrete.py,sha256=Mn8Dej8yT6bqNAUcuRCUTC1gP9rB1h4EnKBWcssdQP0,5314
+gtbook/display.py,sha256=_fz-GUS1xGbNUcv-78ZDchswdGC6dLr52_x6rAxWByA,3673
+gtbook/html.py,sha256=6ycok4tkVHAtYggh-mZMkdJVkzGM1f9JrTNOpgPBppI,1185
+gtbook/linear.py,sha256=y7VHMk--kj79GnSc8Q8Lg403H969jHFpnN3-xIkz-Dc,416
+gtbook/logistics.py,sha256=DZ0z2_H69E3eL92OG9Sq-56TI73CTR3l4iefrKt2RM4,3866
+gtbook-0.0.19.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gtbook-0.0.19.dist-info/METADATA,sha256=yTVFF6pE7WqfyNf93Vo-Y6rIy8674tR7fBdcWtaBchE,1827
+gtbook-0.0.19.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gtbook-0.0.19.dist-info/entry_points.txt,sha256=EAh-vrG7igtoJf-_4NDUHzkNyWh_WGGg_ek-8Lp3lWo,109
+gtbook-0.0.19.dist-info/top_level.txt,sha256=PLMDM7nxqa329fUuvQQ3m5VilmvvlWsEUDUhcptP0mM,7
+gtbook-0.0.19.dist-info/RECORD,,
