@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Arnav_101917097.101917097:main
