@@ -1,0 +1,7 @@
+setup.py
+hellopdojfi.egg-info/PKG-INFO
+hellopdojfi.egg-info/SOURCES.txt
+hellopdojfi.egg-info/dependency_links.txt
+hellopdojfi.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
