@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/veeam_easy_connect/__init__.py
+src/veeam_easy_connect/__main__.py
+src/veeam_easy_connect/api_settings.py
+src/veeam_easy_connect.egg-info/PKG-INFO
+src/veeam_easy_connect.egg-info/SOURCES.txt
+src/veeam_easy_connect.egg-info/dependency_links.txt
+src/veeam_easy_connect.egg-info/requires.txt
+src/veeam_easy_connect.egg-info/top_level.txt
