@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: carsdata
+Version: 0.1
+Summary: Package to apply MCR-ALS on CARS images
+Home-page: https://gitlab.xlim.fr/datacart/cars-data
+Author: D. Boildieu
+Author-email: damien.boildieu@xlim.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pymcr
+Requires-Dist: matplotlib
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Provides-Extra: torch
+Requires-Dist: pytorch ; extra == 'torch'
+
+# CARS Data
+
+CARS Data is a package providing multivariate curve resolution algorithms and utilities functions for CARS cartographies.
+The package provides: 
+* a Simplisma algorithm implementation
+* MCR-ALS based on [pymcr](https://pages.nist.gov/pyMCR/) package:
+  * ALS and NNLS regressions
+  * the classical normalization (sum-to-one) and non-negative constraints
+  * a new segmentation constraint based on Chan-Sandberg-Vese algorithm
+* fit unknown spectra onto fixed signature spectra using ALS or NNLS and apply MCR constraints on the results
+* Autoencoders based on [PyTorch](https://pytorch.org/) packages.
+## Dependencies
+**Note**: These are the developmental system specs. Others versions of certain packages may work.
+
+* python 3
+  * Tested with 3.8.10
+* numpy
+  * Tested with 1.16.5
+* pymcr
+  * Tested with 0.3.2
+* matplotlib
+  * Tested with 3.4.2
+
+## Optional depencies
+* torch
+  * Tested with 1.9.0 
+
+## Installation
+```
+pip install .
+```
+
+
