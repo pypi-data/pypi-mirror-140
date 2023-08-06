@@ -1,0 +1,4 @@
+requests
+
+[dev]
+pytest>=3.7
