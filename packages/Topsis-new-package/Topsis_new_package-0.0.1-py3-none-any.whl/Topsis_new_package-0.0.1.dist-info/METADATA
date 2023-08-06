@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Topsis-new-package
+Version: 0.0.1
+Summary: Topsis:-a package to pick best model
+Home-page: UNKNOWN
+Author: Sourav Khanna
+Author-email: <souravkhanna227@gmail.com>
+License: UNKNOWN
+Keywords: python,model,best,test,topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
