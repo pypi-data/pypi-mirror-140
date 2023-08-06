@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PyWaifuPics
+Version: 0.0.1
+Summary: An asyncronous API wrapper for https://waifu.pics written in Python.
+Home-page: https://github.com/Scrumpyy/WaifuPics4Python
+Author: Scrumpyy
+Author-email: scrumpy@weeb.email
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Scrumpyy/WaifuPics4Python/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WaifuPics4Python
+
+README Pending
+
