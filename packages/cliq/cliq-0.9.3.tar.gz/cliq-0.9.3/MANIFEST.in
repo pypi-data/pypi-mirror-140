@@ -1,0 +1,5 @@
+recursive-include *.py
+include setup.cfg
+include README.md CHANGELOG.md LICENSE
+recursive-include cliq/templates *.py setup.cfg
+recursive-include cliq/sample_commands *.py
