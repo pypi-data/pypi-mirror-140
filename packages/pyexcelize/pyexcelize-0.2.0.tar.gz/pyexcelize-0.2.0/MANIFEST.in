@@ -1,0 +1,5 @@
+global-include *.go
+include requirements.txt
+include go.mod
+include go.sum
+include tests/template.xlsx
