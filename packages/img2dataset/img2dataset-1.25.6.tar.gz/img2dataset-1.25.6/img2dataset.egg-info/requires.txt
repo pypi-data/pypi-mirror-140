@@ -1,0 +1,11 @@
+tqdm<5,>=4.62.3
+opencv-python<5,>=4.5.5.62
+fire<0.5.0,>=0.4.0
+webdataset<0.2,>=0.1.103
+pandas<2,>=1.1.5
+pyarrow<8,>=6.0.1
+exifread-nocycle<4,>=3.0.1
+albumentations<2,>=1.1.0
+dataclasses<1.0.0,>=0.6
+wandb<0.13,>=0.12.10
+fsspec>=2022.1.0
