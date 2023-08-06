@@ -1,0 +1,11 @@
+strategyenhancement/__init__.py,sha256=ogxmIav2f3_7DI7HXuaM1-AzajYRNnxvhu00NbvFBT8,52
+strategyenhancement/add.py,sha256=Tqp9MqFJq3CXI8CLN6GmH9EIJsCjXebmQpjEvmTgUVY,28
+strategyenhancement/subtract.py,sha256=H0kAFcvVBqvnIxk7MgebDuoydyHpp53vMnddM84RUFQ,35
+strategyenhancement/extras/__init__.py,sha256=ZKvbMdwRelroZYTuZ60sh2KhkDm5OkdkxXT6KO4tyX0,110
+strategyenhancement/extras/divide.py,sha256=zmHyt-LtmQCO4aK-7T82YOzX-83y3OvCLVFYTtDyCNE,32
+strategyenhancement/extras/multiply.py,sha256=F8MlJi8ey7efjRSco6lJ5n-3rRqGeo36uo2iQ0nJ7eM,35
+strategyenhancement-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+strategyenhancement-0.0.1.dist-info/METADATA,sha256=10UPSMB9o19aNJ6-3JvwOB7ZdIPzVm2QiEDAxCN4S7Y,618
+strategyenhancement-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+strategyenhancement-0.0.1.dist-info/top_level.txt,sha256=CMYLdE8qPH1UOxFyGNtc0j6MoZiWUNfP_PHtIzJUxqE,20
+strategyenhancement-0.0.1.dist-info/RECORD,,
