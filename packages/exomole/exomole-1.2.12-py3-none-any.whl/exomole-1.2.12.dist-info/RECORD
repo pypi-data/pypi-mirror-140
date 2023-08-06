@@ -1,0 +1,11 @@
+exomole/__init__.py,sha256=cjiNL6FLg5sfdFeTXR7J47_4E7YXYvKVw2_JDWfgb7o,89
+exomole/exceptions.py,sha256=qsJBsLmdAGUK9cVM4_Jh72Alfbmy08A91NJGLW28v1M,594
+exomole/read_all.py,sha256=BYZRPnqV8Lpm3y0tRXHMF6T9GN8ZLcSBkJuuQrA8NAU,12175
+exomole/read_data.py,sha256=y7jQxm2gbnZunWEnyetrHose5OvBdMZX4QI02acUEb0,6528
+exomole/read_def.py,sha256=bmPgZMgzUB4Nv8IX90NH3RSYExf9VUzVHbFedZWNoUo,21800
+exomole/utils.py,sha256=npiJDmJuoOp1ZThFvst8xEfUfPuwiyOo_2qHgbH4Qkw,9615
+exomole-1.2.12.dist-info/LICENSE,sha256=d1VmE-KeuZClaeZCOhOLassVXl2RwFoLQTARpMj26ro,1073
+exomole-1.2.12.dist-info/METADATA,sha256=Y2cEV_lAvNbXTPl9vH3ZYZnoZoSScrOq8PqukpfHG4Y,5309
+exomole-1.2.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+exomole-1.2.12.dist-info/top_level.txt,sha256=mX_E0GqoZ7TKMg6GSkB7yqV5B-F4Oo9h-HurIazsOqI,8
+exomole-1.2.12.dist-info/RECORD,,
