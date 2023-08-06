@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: onionpp
+Version: 0.5
+Summary: embed tor into your application
+Home-page: https://github.com/nbdy/onionpp
+Author: Pascal Eberlein
+Author-email: pascal@eberlein.io
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
