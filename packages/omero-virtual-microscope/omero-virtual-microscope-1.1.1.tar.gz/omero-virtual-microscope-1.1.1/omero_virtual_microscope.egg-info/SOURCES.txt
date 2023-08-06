@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+omero_virtual_microscope.egg-info/PKG-INFO
+omero_virtual_microscope.egg-info/SOURCES.txt
+omero_virtual_microscope.egg-info/dependency_links.txt
+omero_virtual_microscope.egg-info/not-zip-safe
+omero_virtual_microscope.egg-info/requires.txt
+omero_virtual_microscope.egg-info/top_level.txt
+virtualmicroscope/__init__.py
+virtualmicroscope/urls.py
+virtualmicroscope/views.py
+virtualmicroscope/templates/virtualmicroscope/start.html
