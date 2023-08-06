@@ -1,0 +1,106 @@
+{
+  "id": 1,
+  "tasks": [
+    {
+      "name": "drive_to_pose",
+      "pose": {
+        "position": {
+          "x": -2,
+          "y": -2,
+          "z": 0,
+          "frame": "asset"
+        },
+        "orientation": {
+          "x": 0,
+          "y": 0,
+          "z": 0.4794255,
+          "w": 0.8775826,
+          "frame": "asset"
+        },
+        "frame": "asset"
+      }
+    },
+    {
+      "name": "drive_to_pose",
+      "pose": {
+        "position": {
+          "x": -2,
+          "y": 2,
+          "z": 0,
+          "frame": "asset"
+        },
+        "orientation": {
+          "x": 0,
+          "y": 0,
+          "z": 0.4794255,
+          "w": 0.8775826,
+          "frame": "asset"
+        },
+        "frame": "asset"
+      }
+    },
+    {
+      "name": "take_image",
+      "target": {
+        "x": 2,
+        "y": 2,
+        "z": 0,
+        "frame": "robot"
+      }
+    },
+    {
+      "name": "drive_to_pose",
+      "pose": {
+        "position": {
+          "x": 2,
+          "y": 2,
+          "z": 0,
+          "frame": "asset"
+        },
+        "orientation": {
+          "x": 0,
+          "y": 0,
+          "z": 0.4794255,
+          "w": 0.8775826,
+          "frame": "asset"
+        },
+        "frame": "asset"
+      }
+    },
+    {
+      "name": "take_image",
+      "target": {
+        "x": 2,
+        "y": 2,
+        "z": 0,
+        "frame": "robot"
+      },
+      "depends_on": [
+        0
+      ]
+    },
+    {
+      "name": "drive_to_pose",
+      "pose": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "frame": "asset"
+        },
+        "orientation": {
+          "x": 0,
+          "y": 0,
+          "z": 0.4794255,
+          "w": 0.8775826,
+          "frame": "asset"
+        },
+        "frame": "asset"
+      },
+      "depends_on": [
+        1,
+        2
+      ]
+    }
+  ]
+}
