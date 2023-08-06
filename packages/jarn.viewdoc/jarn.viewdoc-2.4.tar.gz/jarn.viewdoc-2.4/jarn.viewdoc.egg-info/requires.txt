@@ -1,0 +1,4 @@
+setuptools
+docutils
+pygments
+blessed
