@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: panda3d-sprite
+Version: 1.0.0
+Summary: Panda3D module provides spritesheet capabilities to the Panda3D game engine
+Home-page: https://github.com/NxtStudios/p3d-prite
+Author: Jordan Maxwell
+Maintainer: Jordan Maxwell
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+
+The P3D-Sprite module provides spritesheet capabilities to the Panda3D game engine. This module is a modification and slight redesign of work done by Panda3D forum user ZeroByte.
+
+
