@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: ipptemplate
+Version: 0.1.5
+Summary: A template package from iPP eng. GmbH
+Home-page: https://github.com/ipp-git/python_template
+Author: iPP (Thierry Lochmatter)
+Author-email: info@ipp.swiss
+License: UNKNOWN
+Keywords: iPP,application
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+
+# Python Project Template
+
+A Python Template to start quickly a new project. Generate doxygen for html and latex (PDF) with single<br>
+command in the project directory with the CLI. As well an program (.exe) for Windows can be generated with<br>
+a single instruction.
+
+*Note*: Section Links not working with Pycharm markdown preview.
+
+## Getting started
+Make sure you have installed python on your machine. If working with vscode, see at the tasks first (ctrl+shit+P -> task). There are some automation scripts in *.vscode/scripts* to execute several commands. This project and the scripts are optimized for using in a virtual environment (venv). Just run task `Run (main.py)` and the rest will be done automatically for you (consider notification or desired actions in terminal output).<br>
+
+Use the appropriate task to execute commands in virtual environment, such as *pip list* or *pip install <PACKAGE_NAME>*<br>
+
+
+### Create virtual environment
+It is recommended to use this project in a virtual environment.
+1. Make sure you have installed *virtualenv* package globaly: `pip install virtualenv`
+1. **If you're working with vsCode, run main.py from tasks, will handle all automatically.**
+    Otherwise continue with following steps.
+1. Create new folder (e.g. `mkdir venv`)
+1. Navigate to this folder and just type `python -m venv .`
+1. Then start the environment: Navigate to `venv/Scripts/` and execute `activate.bat`
+
+### Project setup (This section is just for template documentation, delete on release)
+1. Setup the PROJECT_NAME in docs/doxyfile
+___
+
+
+## Project Folder Description
+
+Folder-Name | Usage/Content
+--- | ---
+bin     | the executable generated with py2exe
+docs    | doxygen documentation
+src     | code sources, implementations & scripts
+
+___
+
+## Deploy Project
+If the application want to execute from everywhere, you have to generate an
+executable (.exe) with py2exe.
+
+### py2exe
+Use [py2exe](https://pypi.org/project/py2exe/) to generate the
+executable file.<br>
+First install py2exe, then run `python generate_bin.py` from root folder.<br>
+This script contains following three steps:
+
+1. navigate to project's directory with CLI
+1. run `python setup.py py2exe -d ./bin`
+
+*Note*: Using py2exe every "folder" (here programs) must be a package. Otherwise py2exe don't include these modules
+for executable file.  
+___
+
+
+## Generate documentation
+Run doxygen in docs-folder because relative paths in doxygen-config-file are relative to the directory from which
+doxygen is run. <br>
+Navigate to *./docs* and run just `doxygen doxyfile`
+
+Edit ./docs/doxyfile and change PROJECT_NAME to the desired name. 
+___
+
+
+
