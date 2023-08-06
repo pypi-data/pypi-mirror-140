@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+loliglio.egg-info/PKG-INFO
+loliglio.egg-info/SOURCES.txt
+loliglio.egg-info/dependency_links.txt
+loliglio.egg-info/top_level.txt
