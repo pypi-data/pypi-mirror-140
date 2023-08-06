@@ -1,0 +1,17 @@
+Orange3>=3.31.1
+cachecontrol
+lockfile
+ndf>=0.1.4
+numpy>=1.16.*
+orange-widget-base
+pillow>=6.2.0
+requests
+scipy
+
+[doc]
+sphinx
+recommonmark
+sphinx_rtd_theme
+
+[test]
+coverage
