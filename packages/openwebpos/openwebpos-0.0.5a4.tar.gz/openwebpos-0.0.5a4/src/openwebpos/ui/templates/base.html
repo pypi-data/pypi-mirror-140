@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="OWPOS">
+    <meta name="apple-mobile-web-app-title" content="OWPOS">
+    <meta name="msapplication-starturl" content="/">
+    <title>{{ title }}</title>
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/material.icons.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<header>
+    <div class="row mb0 black white-text">
+        <div class="col s4 left-align">
+            <pre class="my0">User:Admin</pre>
+        </div>
+        <div class="col s4 center-align">
+            <pre class="my0" id="date"></pre>
+        </div>
+        <div class="col s4 right-align">
+            <pre class="my0" id="time"></pre>
+        </div>
+    </div>
+    <nav class="nav-wrapper blue accent-2">
+        <a href="#" class="brand-logo center">OpenWebPOS</a>
+        <ul class="left left-align">
+            <li><a href="#"><i class="material-icons">arrow_back</i></a></li>
+            <li class="hide-on-med-and-down"><a href="#"><i class="material-icons">apps</i></a></li>
+        </ul>
+        <ul class="right">
+            <li class="red"><a href="#"><i class="material-icons">close</i></a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    {% block main %}
+
+    {% endblock %}
+</main>
+<footer>
+    <div class="row mb0 black white-text">
+        <div class="col s4 left-align">
+            <pre class="my0">ID:TRK038</pre>
+        </div>
+        <div class="col s4 center-align">
+            <pre class="my0">OpenWebPOS</pre>
+        </div>
+        <div class="col s4 right-align">
+            <pre class="my0">V:0.0.1</pre>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="{{ url_for('static', filename='js/materialize.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
