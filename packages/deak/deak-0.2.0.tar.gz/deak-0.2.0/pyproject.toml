@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "deak"
+version = "0.2.0"
+description = "Deak: A Developer's Army Knife."
+authors = ["ryo.ishii <ryoishii1101@gmail.com>"]
+
+[tool.poetry.scripts]
+yaml2json = "deak.converter:yaml2json"
+json2yaml = "deak.converter:json2yaml"
+han2zen = "deak.converter:han2zen"
+zen2han = "deak.converter:zen2han"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fire = "^0.4.0"
+PyYAML = "^6.0"
+mojimoji = "^0.0.12"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.931"
+flake8 = "^4.0.1"
+types-PyYAML = "^6.0.3"
+black = "^21.12b0"
+pre-commit = "^2.17.0"
+tox = "^3.24.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
