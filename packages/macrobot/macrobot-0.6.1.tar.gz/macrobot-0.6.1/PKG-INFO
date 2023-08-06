@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: macrobot
+Version: 0.6.1
+Summary: Macrobot is an image analysis software for studying plant-pathogen interactions on macroscopic level.
+Author: Stefanie Lueck
+Author-email: lueck@ipk-gatersleben.de
+Requires-Python: >=3.7,<3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: MarkupSafe (==2.0.1)
+Requires-Dist: jinja2 (==2.10.3)
+Requires-Dist: numpy (==1.18.3)
+Requires-Dist: opencv-python (==4.2.0.34)
+Requires-Dist: pytest (==5.4.1)
+Requires-Dist: scikit-image (==0.16.2)
