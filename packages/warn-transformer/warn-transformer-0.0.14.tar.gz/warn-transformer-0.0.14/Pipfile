@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+bln = "*"
+marshmallow = "*"
+click = "*"
+
+[dev-packages]
+pre-commit = "*"
+flake8 = "*"
+black = "*"
+flake8-bugbear = "*"
+flake8-docstrings = "*"
+pytest = "*"
+pytest-vcr = "*"
+pytest-cov = "*"
+mypy = "*"
+pandas = "*"
+jupyterlab = "*"
+twine = "*"
+"keyrings.google-artifactregistry-auth" = "*"
+setuptools-scm = "*"
+
+[requires]
+python_version = "3.7"
