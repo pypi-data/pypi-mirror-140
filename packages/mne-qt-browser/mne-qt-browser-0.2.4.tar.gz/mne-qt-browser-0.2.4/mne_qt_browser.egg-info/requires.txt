@@ -1,0 +1,13 @@
+numpy
+scipy
+matplotlib
+PyQt5>=5.12
+qtpy
+mne>=0.24
+pyqtgraph>=0.12.3
+
+[:platform_system == "Darwin"]
+pyopengl
+
+[opengl]
+pyopengl
