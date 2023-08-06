@@ -1,0 +1,14 @@
+Changelog
+=========
+
+0.2.0 - 2022-02-28
+------------------
+
+- Added storage attribute
+- Adapted handling of input values for in_service and controllable
+- Fix load cigre network via gridfile
+
+0.1.0 - 2021-08-31
+------------------
+
+- Initial release of mosaik-pandapower adapter

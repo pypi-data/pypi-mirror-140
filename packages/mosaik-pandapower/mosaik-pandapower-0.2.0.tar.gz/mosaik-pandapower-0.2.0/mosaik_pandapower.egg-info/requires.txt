@@ -1,0 +1,5 @@
+arrow>=1.0
+mosaik-api>=2.0
+pandapower
+matplotlib
+numba
