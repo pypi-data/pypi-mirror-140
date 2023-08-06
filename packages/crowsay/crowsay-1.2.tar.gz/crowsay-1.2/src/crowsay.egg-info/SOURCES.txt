@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/crowsay/__init__.py
+src/crowsay/__main__.py
+src/crowsay.egg-info/PKG-INFO
+src/crowsay.egg-info/SOURCES.txt
+src/crowsay.egg-info/dependency_links.txt
+src/crowsay.egg-info/top_level.txt
