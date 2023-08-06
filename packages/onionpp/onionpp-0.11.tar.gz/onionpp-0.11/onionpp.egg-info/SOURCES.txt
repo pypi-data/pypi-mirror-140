@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+build.sh
+install.sh
+onionpp.h
+pyproject.toml
+python_binding.cpp
+setup.cfg
+setup.py
+setup.sh
+tor_setup.sh
+onionpp.egg-info/PKG-INFO
+onionpp.egg-info/SOURCES.txt
+onionpp.egg-info/dependency_links.txt
+onionpp.egg-info/not-zip-safe
+onionpp.egg-info/top_level.txt
