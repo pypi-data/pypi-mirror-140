@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PlantNannyDB
+Version: 1.2.6
+Summary: Enable read/write functionality for Plant Nanny Database
+Home-page: https://github.com/loganbalkwill/plant-nanny-db
+Author: Logan Balkwill
+Author-email: lgb0020@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: importlib
+Requires-Dist: mysqlclient
+
+readme.md
+
+
