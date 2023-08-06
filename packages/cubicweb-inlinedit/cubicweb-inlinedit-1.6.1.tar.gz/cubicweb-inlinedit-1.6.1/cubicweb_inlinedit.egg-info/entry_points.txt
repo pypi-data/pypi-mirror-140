@@ -1,0 +1,3 @@
+[cubicweb.cubes]
+inlinedit = cubicweb_inlinedit
+

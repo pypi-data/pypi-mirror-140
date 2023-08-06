@@ -1,0 +1,15 @@
+include *.py
+include */*.py
+
+recursive-include cubicweb_inlinedit *.py
+recursive-include cubicweb_inlinedit/data *.gif *.png *.ico *.css *.js
+recursive-include cubicweb_inlinedit/i18n *.po
+recursive-include test bootstrap_cubes *.py
+
+include tox.ini
+include README.rst
+exclude .cube-doctor.yml
+exclude .gitlab-ci.yml
+exclude .yamllint
+exclude .gitlab-ci-extended.yml
+exclude CHANGELOG.md
