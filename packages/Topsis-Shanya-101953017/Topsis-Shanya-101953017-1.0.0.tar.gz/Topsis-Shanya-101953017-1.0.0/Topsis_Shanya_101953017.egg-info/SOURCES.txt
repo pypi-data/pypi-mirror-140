@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Topsis_Shanya_101953017.egg-info/PKG-INFO
+Topsis_Shanya_101953017.egg-info/SOURCES.txt
+Topsis_Shanya_101953017.egg-info/dependency_links.txt
+Topsis_Shanya_101953017.egg-info/entry_points.txt
+Topsis_Shanya_101953017.egg-info/top_level.txt
+topsis/__init__.py
+topsis/__main__.py
