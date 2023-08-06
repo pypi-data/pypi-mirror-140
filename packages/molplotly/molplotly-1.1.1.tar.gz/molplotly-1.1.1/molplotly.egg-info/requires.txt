@@ -1,0 +1,5 @@
+jupyter-dash
+plotly
+pandas
+ipykernel
+scikit-learn
