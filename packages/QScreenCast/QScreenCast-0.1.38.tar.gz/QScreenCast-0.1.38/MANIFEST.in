@@ -1,0 +1,9 @@
+include LICENSE.txt
+recursive-include QScreenCast *.py
+include QScreenCast/countdown.gif
+recursive-exclude QScreenCast/__pycache__ *.*
+recursive-exclude documentation *.*
+recursive-exclude examples *.*
+recursive-exclude requirements *.*
+recursive-exclude tests *.*
+recursive-include example *.py

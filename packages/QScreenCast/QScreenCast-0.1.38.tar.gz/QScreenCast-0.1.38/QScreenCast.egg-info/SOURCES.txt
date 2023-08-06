@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+QScreenCast/QScreenCast.py
+QScreenCast/__init__.py
+QScreenCast/countdown.gif
+QScreenCast.egg-info/PKG-INFO
+QScreenCast.egg-info/SOURCES.txt
+QScreenCast.egg-info/dependency_links.txt
+QScreenCast.egg-info/requires.txt
+QScreenCast.egg-info/top_level.txt
+example/main.py
