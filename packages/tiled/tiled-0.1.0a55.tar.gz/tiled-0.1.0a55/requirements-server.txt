@@ -1,0 +1,25 @@
+# These are the requirements needed for basic server functionality.
+aiofiles
+alembic
+cachey
+cached-property; python_version < '3.8'
+cachetools
+dask
+fastapi
+jinja2
+jmespath
+jsonschema
+msgpack
+orjson
+psutil
+prometheus_client
+pydantic
+python-dateutil
+python-jose[cryptography]
+python-multipart
+pyyaml
+sqlalchemy
+toolz
+typer
+uvicorn[standard]
+watchgod
