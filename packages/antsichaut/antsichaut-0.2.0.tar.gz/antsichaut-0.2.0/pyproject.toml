@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "antsichaut"
+version = "0.2.0"
+description = "antsichaut automates ansible changelog generation from GitHub Pull Requests"
+authors = ["Sebastian Gumprich <sebastian.gumprich@t-systems.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/rndmh3ro/antsichaut"
+repository = "https://github.com/rndmh3ro/antsichaut"
+keywords = ["antsibull-changelog", "release", "ansible"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Environment :: Console",
+    "Framework :: Ansible",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Documentation"
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ConfigArgParse = "^1.4.1"
+requests = "^2.25.1"
+"ruamel.yaml" = "^0.17.9"
+
+[tool.poetry.dev-dependencies]
+ConfigArgParse = "^1.4.1"
+requests = "^2.25.1"
+"ruamel.yaml" = "^0.17.9"
+
+[tool.poetry.scripts]
+antsichaut = "antsichaut.antsichaut:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
