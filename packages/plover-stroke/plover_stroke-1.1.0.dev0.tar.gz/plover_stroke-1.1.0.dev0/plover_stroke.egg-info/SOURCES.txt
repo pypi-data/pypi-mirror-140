@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+_plover_stroke.c
+plover_stroke.py
+pyproject.toml
+setup.cfg
+setup.py
+tox.ini
+plover_stroke.egg-info/PKG-INFO
+plover_stroke.egg-info/SOURCES.txt
+plover_stroke.egg-info/dependency_links.txt
+plover_stroke.egg-info/requires.txt
+plover_stroke.egg-info/top_level.txt
+plover_stroke.egg-info/zip-safe
+test/test_stroke.py
