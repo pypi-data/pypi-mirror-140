@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+npimage/__init__.py
+npimage/binary.py
+npimage/filters.py
+npimage/label.py
+npimage/measures.py
+npimage.egg-info/PKG-INFO
+npimage.egg-info/SOURCES.txt
+npimage.egg-info/dependency_links.txt
+npimage.egg-info/requires.txt
+npimage.egg-info/top_level.txt

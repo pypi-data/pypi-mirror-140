@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: npimage
+Version: 0.1
+Summary: ndimage in numpy
+Home-page: https://github.com/Image-Py/npimage
+Author: YXDragon
+Author-email: yxdragon@imagepy.org
+License: BSD 3-clause
+Description: scipy.ndimage implemented in pure numpy
+Platform: UNKNOWN
