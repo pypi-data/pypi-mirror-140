@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/openwebpos/__init__.py
+src/openwebpos.egg-info/PKG-INFO
+src/openwebpos.egg-info/SOURCES.txt
+src/openwebpos.egg-info/dependency_links.txt
+src/openwebpos.egg-info/requires.txt
+src/openwebpos.egg-info/top_level.txt
+src/openwebpos/ui/templates/base.html
+src/openwebpos/ui/templates/index.html
