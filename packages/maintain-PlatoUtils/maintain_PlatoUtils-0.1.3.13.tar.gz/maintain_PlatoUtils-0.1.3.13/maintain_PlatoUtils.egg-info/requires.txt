@@ -1,0 +1,9 @@
+numpy
+nebula-python
+pandas
+flashtext
+gensim
+tensorflow
+stellargraph
+networkx
+chardet
