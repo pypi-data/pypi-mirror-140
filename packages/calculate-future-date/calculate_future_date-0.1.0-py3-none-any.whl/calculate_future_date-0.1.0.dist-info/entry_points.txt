@@ -1,0 +1,3 @@
+[console_scripts]
+my_calc=calculate_future_date.mycalc:calc_future
+
