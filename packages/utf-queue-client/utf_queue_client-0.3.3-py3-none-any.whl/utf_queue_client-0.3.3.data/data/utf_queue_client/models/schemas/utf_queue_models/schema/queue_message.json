@@ -1,0 +1,348 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "QueueMessage": {
+      "type": "object",
+      "properties": {
+        "recordType": {
+          "description": "Type of record",
+          "enum": [
+            "ARTIFACT_UPLOAD_REQUEST",
+            "EXCEPTION_EVENT",
+            "LOG_EVENT",
+            "TEST_EVENT"
+          ],
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/definitions/QueueRecord",
+          "description": "Record Payload"
+        },
+        "timestamp": {
+          "description": "UTC Timestamp\nGiven in seconds since epoch (unix time)",
+          "type": "number"
+        }
+      },
+      "required": [
+        "payload",
+        "recordType",
+        "timestamp"
+      ]
+    },
+    "QueueRecord": {
+      "type": "object",
+      "additionalProperties": {}
+    },
+    "ArtifactUploadRequest": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "extension": {
+          "type": "string"
+        },
+        "metadata": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ArtifactMetadata"
+            },
+            {
+              "$ref": "#/definitions/ArtifactBuildMetadata"
+            }
+          ]
+        },
+        "base64Content": {
+          "type": "string"
+        },
+        "validateMetadata": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "base64Content",
+        "extension",
+        "metadata",
+        "name",
+        "validateMetadata"
+      ]
+    },
+    "ArtifactMetadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "ArtifactBuildMetadata": {
+      "type": "object",
+      "properties": {
+        "branch": {
+          "type": "string"
+        },
+        "stack": {
+          "type": "string"
+        },
+        "build_number": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string"
+        },
+        "studio": {
+          "type": "string"
+        },
+        "compiler": {
+          "type": "string"
+        },
+        "app_name": {
+          "type": "string"
+        },
+        "test_suite": {
+          "type": "string"
+        },
+        "chip_id": {
+          "type": "string"
+        },
+        "studio_build_version": {
+          "type": "string"
+        },
+        "compiler_build_version": {
+          "type": "string"
+        }
+      }
+    },
+    "SqaTestEvent": {
+      "type": "object",
+      "properties": {
+        "eventType": {
+          "enum": [
+            "SESSION_COMPLETE",
+            "SESSION_START",
+            "TEST_RESULT"
+          ],
+          "type": "string"
+        },
+        "testResult": {
+          "$ref": "#/definitions/SqaTestResultRecord"
+        },
+        "testSessionMetadata": {
+          "$ref": "#/definitions/SqaTestSessionMetadata"
+        }
+      },
+      "required": [
+        "eventType",
+        "testSessionMetadata"
+      ]
+    },
+    "SqaTestResultRecord": {
+      "type": "object",
+      "properties": {
+        "testCaseId": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "failed",
+            "passed",
+            "skipped"
+          ],
+          "type": "string"
+        },
+        "testResult": {
+          "enum": [
+            "failed",
+            "passed",
+            "skipped"
+          ],
+          "type": "string"
+        },
+        "testResultType": {
+          "enum": [
+            "DURATION",
+            "FEATURE",
+            "MEASUREMENT",
+            "PERFORMANCE",
+            "REGRESSION",
+            "SMOKE",
+            "SOAK"
+          ],
+          "type": "string"
+        },
+        "sessionId": {
+          "type": "string"
+        },
+        "testStartTime": {
+          "type": "integer"
+        },
+        "testStopTime": {
+          "type": "integer"
+        },
+        "testDurationSec": {
+          "type": "number"
+        },
+        "engineerName": {
+          "type": "string"
+        },
+        "exceptionMsg": {
+          "type": "string"
+        },
+        "failureReasonCode": {
+          "type": "number"
+        },
+        "featureName": {
+          "type": "string"
+        },
+        "moduleName": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "phyName": {
+          "type": "string"
+        },
+        "portalWatch": {
+          "type": "string"
+        },
+        "portalWatchNum": {
+          "type": "integer"
+        },
+        "IOTREQDescription": {
+          "type": "string"
+        },
+        "IOTREQNum": {
+          "type": "integer"
+        },
+        "testSuiteName": {
+          "type": "string"
+        },
+        "testBedName": {
+          "type": "string"
+        },
+        "parametricData": {
+          "type": "string"
+        },
+        "toolChain": {
+          "type": "string"
+        },
+        "vendorBuild": {
+          "type": "string"
+        },
+        "vendorName": {
+          "type": "string"
+        },
+        "vendorResult": {
+          "type": "string"
+        },
+        "vmName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sessionId",
+        "status",
+        "testCaseId",
+        "testDurationSec",
+        "testResult",
+        "testResultType",
+        "testStartTime",
+        "testStopTime"
+      ]
+    },
+    "SqaTestSessionMetadata": {
+      "type": "object",
+      "properties": {
+        "sessionId": {
+          "type": "string"
+        },
+        "sessionStartTime": {
+          "type": "number"
+        },
+        "sessionStopTime": {
+          "type": "number"
+        },
+        "sessionDurationSec": {
+          "type": "number"
+        },
+        "status": {
+          "type": "string"
+        },
+        "stackName": {
+          "type": "string"
+        },
+        "jobType": {
+          "type": "string"
+        },
+        "releaseName": {
+          "type": "string"
+        },
+        "SDKBranchName": {
+          "type": "string"
+        },
+        "SDKBuildNum": {
+          "type": "integer"
+        },
+        "SDKURL": {
+          "type": "string"
+        },
+        "studioBuildURL": {
+          "type": "string"
+        },
+        "totalTest": {
+          "type": "integer"
+        },
+        "PASS_cnt": {
+          "type": "integer"
+        },
+        "FAIL_cnt": {
+          "type": "integer"
+        },
+        "SKIP_cnt": {
+          "type": "integer"
+        },
+        "jenkinsServerName": {
+          "type": "string"
+        },
+        "jenkinsRunNum": {
+          "type": "integer"
+        },
+        "jenkinsJobName": {
+          "type": "string"
+        },
+        "jenkinsTestResultsUrl": {
+          "type": "string"
+        },
+        "jobBuildNum": {
+          "type": "integer"
+        },
+        "jobBuildURL": {
+          "type": "string"
+        },
+        "studioBranchName": {
+          "type": "string"
+        },
+        "studioBuildNum": {
+          "type": "integer"
+        },
+        "parentBuildNum": {
+          "type": "integer"
+        },
+        "parentBuildURL": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sessionId",
+        "sessionStartTime",
+        "stackName",
+        "status"
+      ]
+    },
+    "LogEvent": {
+      "type": "object"
+    },
+    "ExceptionEvent": {
+      "type": "object"
+    }
+  }
+}

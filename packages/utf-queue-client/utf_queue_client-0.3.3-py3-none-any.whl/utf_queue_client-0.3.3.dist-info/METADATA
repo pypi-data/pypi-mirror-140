@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: utf-queue-client
+Version: 0.3.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Joe Savage
+Author-email: joe.savage@silabs.com
+License: UNKNOWN
+Keywords: UTF,
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: pika (>=1.2.0)
+Requires-Dist: jsonschema (>=4.2.1)
+Requires-Dist: msgpack (>=1.0.2)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: regex
+
+No description provided
+
+
