@@ -1,0 +1,2 @@
+notifier==1.0.3
+plyer==2.0.0
