@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: Wlyrics-W4lk3r
+Version: 0.1.21
+Summary: song lyrics pip by W4lk3r
+Home-page: https://github.com/Walker-00/Wlyrics
+Author: W4lk3r
+Author-email: w000alker@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Walker-00/Wlyrics/issues
+Keywords: song lyrics,music lyrics,lyrics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Wlyrics
+Created by W4lk3r with Python3
+# Get Lyrics
+
+```python
+from Wlyrics.lyrics import ly
+
+ly(singer_name, song_name)
+
+```
+
+# Example Code
+
+
+```python
+from Wlyrics.lyrics import ly
+
+ly("Imagine Dragons", "Whatever it takes")
+
+```
+
+
+
