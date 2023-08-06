@@ -1,0 +1,12 @@
+polylidar_pybind.cp36-win_amd64.pyd,sha256=AXBKSaBtGpwhBI7wnBo13vwm357-xdyFpytMuTwEeXw,639488
+polylidar/__init__.py,sha256=_FEMu2UiEld4Y0FaFX4RoUbjrihPy_3uKZnSduxzsi0,347
+polylidar/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polylidar/polylidarutil/__init__.py,sha256=mAOAr-lfehuvHKvZA8SgWYTEdX_w6hyyc7ZL-Oz4vVE,10325
+polylidar/polylidarutil/line_mesh.py,sha256=o7brSIrlF2kIFqnUlxpw8LEu_UjISnkk4VdzIeYp9Yo,5518
+polylidar/polylidarutil/open3d_util.py,sha256=Iwi45RMB2zKlGBAo2hU8VdPhOYscBfJrZPyLAw_bu64,6013
+polylidar/polylidarutil/plane_filtering.py,sha256=gyh9VhADaPsff72gO9TZDR1h95Nhw9eHm6WpXPcyRN4,19605
+polylidar-1.0.8.dist-info/LICENSE,sha256=VVus4mzZYQtK5geMZYEiUT0kxPuCkpbxOFQU25ZYw8E,1093
+polylidar-1.0.8.dist-info/METADATA,sha256=I_zzxF1WRVFVrXvIVAYogQ1d2h7GhxavB2ShVoy09-Q,7112
+polylidar-1.0.8.dist-info/WHEEL,sha256=zukbZftcRdNfJ55Q_RYV9JZ3uVyqWKyq-wDJbmszs_U,101
+polylidar-1.0.8.dist-info/top_level.txt,sha256=ouaox60V-QA960Zq0qRUyKLLzeqLPjEjaFEUiyzBWbk,27
+polylidar-1.0.8.dist-info/RECORD,,
