@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Connection_Tool/Connection.py
+Connection_Tool/__init__.py
+wbs_connectdb.egg-info/PKG-INFO
+wbs_connectdb.egg-info/SOURCES.txt
+wbs_connectdb.egg-info/dependency_links.txt
+wbs_connectdb.egg-info/requires.txt
+wbs_connectdb.egg-info/top_level.txt
