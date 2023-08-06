@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "streamlit-timing"
+version = "0.1.0"
+description = ""
+authors = ["Yuichiro Tachibana (Tsuchiya) <t.yic.yt@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+streamlit = ">=0.65.0"
+
+[tool.poetry.dev-dependencies]
+streamlit = "^1.6.0"
+black = "^22.1.0"
+isort = "^5.8.0"
+flake8 = "^4.0.1"
+mypy = "^0.931"
+pytest = "^7.0.1"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
