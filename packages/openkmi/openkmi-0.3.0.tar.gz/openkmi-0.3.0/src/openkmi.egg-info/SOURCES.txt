@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/openkmi/__init__.py
+src/openkmi/point_obs.py
+src/openkmi.egg-info/PKG-INFO
+src/openkmi.egg-info/SOURCES.txt
+src/openkmi.egg-info/dependency_links.txt
+src/openkmi.egg-info/requires.txt
+src/openkmi.egg-info/top_level.txt
