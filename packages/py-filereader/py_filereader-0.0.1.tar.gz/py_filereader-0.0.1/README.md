@@ -1,0 +1,1 @@
+Allows you to edit text files very easily using clear, replace, write and read.
