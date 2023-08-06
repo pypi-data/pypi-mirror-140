@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fuzzup/fuzzup.egg-info/PKG-INFO
+fuzzup/fuzzup.egg-info/SOURCES.txt
+fuzzup/fuzzup.egg-info/dependency_links.txt
+fuzzup/fuzzup.egg-info/requires.txt
+fuzzup/fuzzup.egg-info/top_level.txt
