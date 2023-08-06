@@ -1,0 +1,47 @@
+version: 2.1
+
+orbs:
+  python: cjw296/python-ci@3
+
+common: &common
+  jobs:
+
+    - python/pip-run-tests:
+        matrix:
+          parameters:
+            image:
+              - cimg/python:3.6
+              - cimg/python:3.9
+              - cimg/python:3.10
+            extra_packages:
+              - "'pytest>=6.2,<7'"
+              - "'pytest>=7'"
+          exclude:
+            - {"image": "cimg/python:3.6", "extra_packages": "'pytest>=7'"}
+            - {"image": "cimg/python:3.9", "extra_packages": "'pytest>=6.2,<7'"}
+
+    - python/coverage:
+        name: coverage
+        requires:
+          - python/pip-run-tests
+
+    - python/release:
+        name: release
+        config: .carthorse.yml
+        requires:
+          - coverage
+        filters:
+          branches:
+            only: master
+
+workflows:
+  push:
+    <<: *common
+  periodic:
+    <<: *common
+    triggers:
+      - schedule:
+          cron: "0 0 * * 2"
+          filters:
+            branches:
+              only: master

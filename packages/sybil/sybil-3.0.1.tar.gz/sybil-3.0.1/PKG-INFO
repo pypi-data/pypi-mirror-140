@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: sybil
+Version: 3.0.1
+Summary: Automated testing for the examples in your code and documentation.
+Home-page: https://github.com/simplistix/sybil
+Author: Chris Withers
+Author-email: chris@withers.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: build
+
+Sybil
+=====
+
+|CircleCI|_ |Docs|_
+
+.. |CircleCI| image:: https://circleci.com/gh/simplistix/sybil/tree/master.svg?style=shield
+.. _CircleCI: https://circleci.com/gh/simplistix/sybil/tree/master
+
+.. |Docs| image:: https://readthedocs.org/projects/sybil/badge/?version=latest
+.. _Docs: http://sybil.readthedocs.org/en/latest/
+
+
+This library provides a way to check examples in your code and documentation by parsing
+them from their source and evaluating the parsed examples as part of
+your normal test run. Integration is provided for the main Python test
+runners.
+
+The `documentation <https://sybil.readthedocs.io/>`__ is the best place to start.
+
+

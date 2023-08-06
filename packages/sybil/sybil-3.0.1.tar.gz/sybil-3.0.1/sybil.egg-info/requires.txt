@@ -1,0 +1,11 @@
+
+[build]
+furo
+sphinx
+setuptools-git
+twine
+wheel
+
+[test]
+pytest>=6.2.0
+pytest-cov
