@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bluebild/__init__.py
+src/bluebild/utils.py
+src/bluebild.egg-info/PKG-INFO
+src/bluebild.egg-info/SOURCES.txt
+src/bluebild.egg-info/dependency_links.txt
+src/bluebild.egg-info/top_level.txt
