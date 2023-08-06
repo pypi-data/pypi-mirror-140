@@ -1,0 +1,2 @@
+[console_scripts]
+satellite-constellation = satellite_constellation.main:main
