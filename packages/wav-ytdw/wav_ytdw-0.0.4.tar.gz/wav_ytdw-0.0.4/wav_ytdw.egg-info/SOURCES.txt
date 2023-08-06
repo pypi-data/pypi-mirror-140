@@ -1,0 +1,8 @@
+setup.py
+wav_ytdw/__init__.py
+wav_ytdw/wav_ytdw.py
+wav_ytdw.egg-info/PKG-INFO
+wav_ytdw.egg-info/SOURCES.txt
+wav_ytdw.egg-info/dependency_links.txt
+wav_ytdw.egg-info/requires.txt
+wav_ytdw.egg-info/top_level.txt
