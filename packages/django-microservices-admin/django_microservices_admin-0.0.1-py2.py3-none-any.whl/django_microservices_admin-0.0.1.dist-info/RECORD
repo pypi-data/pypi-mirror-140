@@ -1,0 +1,13 @@
+django_microservices_admin/__init__.py,sha256=Qsuvsun7lCA89torIR4HuIa1HuVHRA0uZ0bK1C07Tpo,122
+django_microservices_admin/apps.py,sha256=StWRendrpEUW4Y1K9VVqP5l2kWrDfy7ul0cR6xHWyds,244
+django_microservices_admin/routers.py,sha256=2ukMaHeb0HbkZDv0w4-nXDNohy2G3NzXiX6nErkClnw,1456
+django_microservices_admin/settings.py,sha256=xE3yzSVOTIAowbxi0fHlK6c1oRvQ67SZbTeYrba32AE,722
+django_microservices_admin/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_microservices_admin/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_microservices_admin/management/commands/update_microservices_admin.py,sha256=9DqegX0ByF7chWePeDuoV0wul_jrBYjD8BpVd8E-E58,1214
+django_microservices_admin/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_microservices_admin-0.0.1.dist-info/LICENSE,sha256=SYaZ-c3XWYY5RG7snF3sO269GqYZ9OZ2b2VBfm2YaD4,1089
+django_microservices_admin-0.0.1.dist-info/METADATA,sha256=JB2BbbPSwYvoyiHYbY4K6w-MxO1PtWGUlGLhW-IK7XU,5012
+django_microservices_admin-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+django_microservices_admin-0.0.1.dist-info/top_level.txt,sha256=b_Uu_y3EUKoDWdOB6pf0zQwOW13m9DuGhO9pONEvCw8,27
+django_microservices_admin-0.0.1.dist-info/RECORD,,
