@@ -1,0 +1,15 @@
+flask_logify/__init__.py,sha256=M-M5BpqRToYH299aUOsdKCgaFUqrl8ItwsAkDS6VilA,57
+flask_logify/filters.py,sha256=bb4N9rIUmyav4NQXcGH_DO_Z_bFNFtUwXD_dQl-8N9o,1351
+flask_logify/formatters.py,sha256=LzHqNOA9RwGN3UGmS7i_5D8xM6ORuo8eSMx3a2uZLnc,1470
+flask_logify/handlers.py,sha256=RbD36yCabryPHKFweg8omeeyQEIsnM_ByM_CwwSR8Gw,3084
+flask_logify/logging.py,sha256=8BJl0ojJPa4K0H8BRZLj8S79fVu8_5ZwKo7Iy-Yieaw,4817
+flask_logify/version.py,sha256=L5GX3w_G6-WDUSfkaoPZgQYklx_x21be036DU024d2Y,252
+flask_logify/builders/__init__.py,sha256=nE1mh4VXMPziTGw7wV2CZveEcoXBz8xa3pAURpun3e8,234
+flask_logify/builders/base.py,sha256=beYLETvnKAZxzADjHlynVGceRy5r6w8cP4ld95fRtXo,1836
+flask_logify/builders/json.py,sha256=RYQtmzll41qUSddj1bXLvelGeWPVp3plwlu3MfVsTo8,3146
+flask_logify/builders/text.py,sha256=FmZ9z_N4_rioY3DYr2wL24iTRqr8IMjPgTdfTx_bs4w,2977
+Flask_Logify-2.4.5.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+Flask_Logify-2.4.5.dist-info/METADATA,sha256=VMyVUTXsGOppWmYaMUtOe7UHrer4RRCR2T4I90OqHdI,3782
+Flask_Logify-2.4.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Flask_Logify-2.4.5.dist-info/top_level.txt,sha256=QN5ZsrbYgfSyo3L-OnPSgwtuTT6gl6tfZSJD1Vqffww,13
+Flask_Logify-2.4.5.dist-info/RECORD,,
