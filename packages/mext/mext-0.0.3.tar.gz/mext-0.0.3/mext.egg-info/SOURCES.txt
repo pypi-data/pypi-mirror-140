@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+mext/__init__.py
+mext/provider_template.py
+mext.egg-info/PKG-INFO
+mext.egg-info/SOURCES.txt
+mext.egg-info/dependency_links.txt
+mext.egg-info/requires.txt
+mext.egg-info/top_level.txt
+mext/providers/__init__.py
+mext/providers/mangadex_org.py
