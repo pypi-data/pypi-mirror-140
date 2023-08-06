@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: geraldo3
+Version: 0.1.0
+Summary: Python 3 version of reportgenerator Geraldo by Marinho Brandao based of ReportLab. Not  ready for production
+License: GNU Lessser General Public
+Author: Nico de Groot
+Author-email: ndegroot0@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyPDF3 (>=1.0.5,<2.0.0)
+Requires-Dist: reportlab (>=3.6.3,<4.0.0)
