@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+datastand/__init__.py
+datastand/datastand.py
+datastand/requirements.txt
+datastand.egg-info/PKG-INFO
+datastand.egg-info/SOURCES.txt
+datastand.egg-info/dependency_links.txt
+datastand.egg-info/top_level.txt
+images/logo.jpg
+images/missing_data_heatmap.png
