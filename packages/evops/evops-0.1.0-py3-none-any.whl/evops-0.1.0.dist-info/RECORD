@@ -1,0 +1,15 @@
+evops/__init__.py,sha256=g6ousss4yiOVKLTM_yJOReIAXGXUvv-oNNWPrTgGruQ,743
+evops/metrics/DefaultMetrics.py,sha256=yUguvMHSxMchhrulOip0_n6UX_4s3VGX2JirPdjIWDk,2045
+evops/metrics/DiceBenchmark.py,sha256=eRJ-KjcTNeSfBNOTLsTzKkaTFyTx7AYE7OJeKPS7pp4,989
+evops/metrics/IoUBenchmark.py,sha256=kmhi0rVpyqg9eD4AYp-GqcJ2nDrn0iNDnpU_ODZQetY,1006
+evops/metrics/Mean.py,sha256=K3u_G1US5_CTYOwrY2ABIj2e4pZVvIUuVe5zp955Ig8,1852
+evops/metrics/MultiValueBenchmark.py,sha256=-B6iQO4SjdR111mICjHJDSacHymyWZe23ZkYLMU0_WM,3563
+evops/metrics/__init__.py,sha256=4PusAEQ9LtMqewz5nKUNHwDbXuE9crGcKv4CM5iprNk,65
+evops/metrics/constants.py,sha256=dIFg8eNc7qc6RaptV74vl2SFuM6f7sp3ZXfpmZiXYjI,646
+evops/metrics/metrics.py,sha256=_EvvnGXzFQG-cDm4dMUa9_Q-xtzROv-DgmfXccOLyj8,9412
+evops/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evops/utils/metrics_utils.py,sha256=U8DI5IdFqkEr8wj8TWl4TvZMM6bfOvPT7kIzRuNhCiU,2006
+evops-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+evops-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+evops-0.1.0.dist-info/METADATA,sha256=xD7W4K3_Rlf3U1YWe3obPd1gRGxWjhp_OAoaTiXQANQ,478
+evops-0.1.0.dist-info/RECORD,,
