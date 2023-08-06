@@ -1,0 +1,3 @@
+from automutualinformation.mi.sequential_mi import sequential_mutual_information
+
+from automutualinformation.modelfitting.fit import fit_model
