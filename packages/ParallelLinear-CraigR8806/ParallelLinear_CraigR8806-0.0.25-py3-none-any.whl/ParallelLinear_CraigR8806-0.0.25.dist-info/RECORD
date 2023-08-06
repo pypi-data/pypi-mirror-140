@@ -1,0 +1,11 @@
+parallellinear/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parallellinear/calculations/ParallelLinear.py,sha256=46p-5fnhKbqE87NMckBy_QdWVEnA67eQsVFp_6JwjiY,14082
+parallellinear/calculations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parallellinear/datatypes/Matrix.py,sha256=TyPYP3P_ZMufPoC-NGpFx6bATMrhpY9AMz7dy8p7SsY,4385
+parallellinear/datatypes/Vector.py,sha256=1zgzM7YSMZiIlmNrWbcYUoL-6xwMd4tb8Oig4HWK60M,3099
+parallellinear/datatypes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ParallelLinear_CraigR8806-0.0.25.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+ParallelLinear_CraigR8806-0.0.25.dist-info/METADATA,sha256=SDlH-BNFkwFu3KZCS_vgvt86VLQersPY6wXRPmI7Y_g,1389
+ParallelLinear_CraigR8806-0.0.25.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ParallelLinear_CraigR8806-0.0.25.dist-info/top_level.txt,sha256=_60drVFfNa4yxLH4MyzVAVhjS6K6nb7VhdyFFaJBVgo,15
+ParallelLinear_CraigR8806-0.0.25.dist-info/RECORD,,
