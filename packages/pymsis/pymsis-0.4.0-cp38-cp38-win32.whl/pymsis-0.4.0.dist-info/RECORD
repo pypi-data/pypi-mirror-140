@@ -1,0 +1,12 @@
+pymsis/__init__.py,sha256=qgr91NJqb3CE65Qf-3oVNFWHopsOmsgsrTVtiMrihXc,966
+pymsis/msis.py,sha256=879LSwfIQzqpN4sDVGaj2G-8yCREuFi0MljbqUpwbuc,9275
+pymsis/msis00f.cp38-win32.pyd,sha256=jGDJLzOH-3ymKHRu6B9qz0VCemSGE9csKkwVhT1BgZw,71168
+pymsis/msis2.0.parm,sha256=z2Enlq8E9HP8mxRFRgwwqkl83JyZHTUHGQiTV3wSRgI,536576
+pymsis/msis2f.cp38-win32.pyd,sha256=SDPIlDM4jTSHZCqUiQXgxWo8v8u5IabTBkSbPSRP4tg,27136
+pymsis/.libs/libmsis00.3XA3O2DNKBB6CIT2RMS54LALY7PGR3HJ.gfortran-win32.dll,sha256=MExv8zmbJCgC3mj5gN-k9zt4HRj8JxCIWWxQPm7hoNs,799146
+pymsis/.libs/libmsis_con.TPMPHGKERDGQNTFCBMPGANU2KEJQ5KXX.gfortran-win32.dll,sha256=igHLrBtLARxpR3Ludl47lFjuhVUZWIo53Eoc1Cd9aho,828650
+pymsis-0.4.0.dist-info/LICENSE,sha256=Dfuks8Di1rCiWBvUpyQIScvwLFRZraSwGbiPpioQB0Q,1116
+pymsis-0.4.0.dist-info/METADATA,sha256=gAmNHaIqUMMnO4AbWvJ_wE8TAcVnWf0rqQwYSt0uNDs,4484
+pymsis-0.4.0.dist-info/WHEEL,sha256=f5A3Ypo9PM0E06rgvH7-s12WthkA89SedEqLArPnjKU,96
+pymsis-0.4.0.dist-info/top_level.txt,sha256=TiYeKYHnA9nfW3aAzoqJpgM341ljEG0AymtrZvFSGeQ,7
+pymsis-0.4.0.dist-info/RECORD,,
