@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/ffmpegio.egg-info/PKG-INFO
+src/ffmpegio.egg-info/SOURCES.txt
+src/ffmpegio.egg-info/dependency_links.txt
+src/ffmpegio.egg-info/entry_points.txt
+src/ffmpegio.egg-info/requires.txt
+src/ffmpegio.egg-info/top_level.txt
+src/ffmpegio_plugin_numpy/__init__.py
