@@ -1,0 +1,166 @@
+Metadata-Version: 2.1
+Name: wagtail-webradio
+Version: 0.2.1
+Summary: manage podcats, webradio programs and more in a wagtail website
+Home-page: https://forge.cliss21.org/cliss21/wagtail-webradio
+Author: Cliss XXI
+Author-email: contact@cliss21.com
+License: AGPLv3+
+Project-URL: Bug Tracker, https://forge.cliss21.org/cliss21/wagtail-webradio/issues
+Project-URL: Source Code, https://forge.cliss21.org/cliss21/wagtail-webradio
+Keywords: django,wagtail,radio
+Platform: UNKNOWN
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wagtail (<2.16,>=2.15)
+Provides-Extra: components
+Requires-Dist: django-unicorn ; extra == 'components'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-django ; extra == 'test'
+Requires-Dist: django-webtest ; extra == 'test'
+Requires-Dist: factory-boy (>=2.9) ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: flake8 (>=3.5) ; extra == 'test'
+Requires-Dist: flake8-black ; extra == 'test'
+Requires-Dist: flake8-isort ; extra == 'test'
+Requires-Dist: isort (>=5.0) ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: django-unicorn ; extra == 'test'
+Requires-Dist: pytest-snapshot ; extra == 'test'
+Requires-Dist: wagtail-factories ; extra == 'test'
+
+# wagtail-webradio
+
+Manage your web radio - e.g. podcats, programs - in Wagtail.
+
+**Warning!** This project is still early on in its development lifecycle. It is
+possible for breaking changes to occur between versions until reaching a stable
+1.0. Feedback and pull requests are welcome.
+
+## Requirements
+
+This package requires the following:
+- **Wagtail** (2.15 LTS)
+- **Django** (3.1, 3.2)
+- **Python 3** (3.7, 3.8, 3.9)
+
+## Installation
+
+1. Install using ``pip``:
+   ```shell
+   pip install wagtail-webradio
+   ```
+2. Add ``wagtail_webradio`` to your ``INSTALLED_APPS`` setting:
+   ```python
+   INSTALLED_APPS = [
+       # ...
+       'wagtail_webradio',
+       # ...
+   ]
+   ```
+3. Run ``python manage.py migrate`` to create the models
+
+## Usage
+### Frontend components
+
+A player is provided and can be included into your frontend. It uses [django-unicorn]
+with a bit of JavaScript to manipulate the audio in the client web browser.
+
+To make use of it:
+
+1. Install the ``player`` extra of this package:
+   ```shell
+   pip install wagtail-webradio[player]
+   ```
+2. Integrate ``Unicorn`` in your project by [following the documentation][1]
+3. Configure ``Unicorn`` settings to look for this package's components:
+   ```python
+   UNICORN = {
+       'APPS': ['wagtail_webradio'],
+   }
+   ```
+
+Then, e.g. in ``base.html``, load the player scripts in the ``<head>`` of your
+document and the component in the ``<body>``:
+```django
+<html>
+  <head>
+    <!-- […] -->
+
+    <script src="{% static "wagtail_webradio/player/js/main.js" %}" defer></script>
+  </head>
+  <body>
+    <! -- […] -->
+
+    {% unicorn "player" %}
+
+    <! -- […] -->
+  </body>
+</html>
+```
+
+When the player scripts are loaded, you can simply add a song to the playlist
+by defining a ``data-player-add-podcast`` or ``data-player-add`` attribute on an
+element, and optionally ``data-player-autoplay`` to play the song once added:
+```html
+<button data-player-add-podcast="10" data-player-autoplay>Add a podcast by id</button>
+
+<button data-player-add="{'title': 'Title', 'subtitle': 'Subtitle', 'url': 'http://example.org/song.ogg', 'thumbnail_url': 'http://example.org/thumb.png'}">
+  Add a song
+</button>
+```
+
+[django-unicorn]: https://www.django-unicorn.com/
+[1]: https://www.django-unicorn.com/docs/installation/#integrate-unicorn-with-django
+
+## Development
+### Quick start
+
+To set up a development environment, ensure that Python 3 is installed on your
+system. Then:
+
+1. Clone this repository
+2. Create a virtual environment and activate it:
+   ```shell
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+3. Install this package in develop mode with extra requirements:
+   ```shell
+   pip install -e .[test]
+   ```
+
+If you plan to upload the package on PyPi, you will also need to run:
+```shell
+pip install --upgrade build twine
+```
+
+### Contributing
+
+The Python code is formatted and linted thanks to [flake8], [isort] and [black].
+To ease the use of this tools, the following commands are available:
+- `make lint`: check the Python code syntax and imports order
+- `make format`: fix the Python code syntax and imports order
+
+The tests are written with [pytest] and code coverage is measured with [coverage].
+You can use the following commands for that:
+- ``make test``: run the tests and output a quick report of code coverage
+- ``make coverage``: run the tests and produce an HTML report of code coverage
+
+When submitting a pull-request, please ensure that the code is well formatted
+and covered, and that all the other tests pass.
+
+[flake8]: https://flake8.pycqa.org/
+[isort]: https://pycqa.github.io/isort/
+[black]: https://black.readthedocs.io/
+[pytest]: https://docs.pytest.org/
+[coverage]: https://coverage.readthedocs.io/
+
+## License
+
+This extension is mainly developed by [Cliss XXI](https://www.cliss21.com) and
+licensed under the [AGPLv3+](LICENSE). Any contribution is welcome!
+
+
