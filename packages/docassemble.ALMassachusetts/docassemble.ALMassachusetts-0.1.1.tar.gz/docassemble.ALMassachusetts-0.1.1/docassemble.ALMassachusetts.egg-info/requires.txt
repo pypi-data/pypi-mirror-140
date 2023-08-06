@@ -1,0 +1,1 @@
+docassemble.MACourts>=0.0.58.2
