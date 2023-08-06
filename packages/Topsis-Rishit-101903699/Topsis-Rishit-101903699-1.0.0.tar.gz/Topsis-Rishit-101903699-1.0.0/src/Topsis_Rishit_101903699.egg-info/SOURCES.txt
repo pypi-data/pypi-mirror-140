@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Topsis_Rishit_101903699.egg-info/PKG-INFO
+src/Topsis_Rishit_101903699.egg-info/SOURCES.txt
+src/Topsis_Rishit_101903699.egg-info/dependency_links.txt
+src/Topsis_Rishit_101903699.egg-info/requires.txt
+src/Topsis_Rishit_101903699.egg-info/top_level.txt
+src/topsispack/__init__.py
+src/topsispack/topsis.py
