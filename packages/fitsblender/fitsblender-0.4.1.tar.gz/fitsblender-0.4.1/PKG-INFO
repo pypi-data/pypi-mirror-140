@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fitsblender
+Version: 0.4.1
+Summary: Aggregate values in FITS headers
+Home-page: https://github.com/spacetelescope/fitsblender
+Author: Michael Droettboom
+Author-email: help@stsci.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE.txt
+
+UNKNOWN
+
