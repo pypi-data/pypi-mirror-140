@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: braindynamics
+Version: 0.0.0
+Summary: BrainDynamics: Brain Dynamics Programming in Python
+Home-page: https://github.com/PKU-NIP-Lab/BrainPy
+Author: BrainPy Team
+Author-email: chao.brain@qq.com
+License: GPL-3.0 License
+Keywords: computational neuroscience,brain-inspired computation,dynamical systems,differential equations,brain modeling,brain dynamics programming
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+

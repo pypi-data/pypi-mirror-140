@@ -1,0 +1,6 @@
+setup.py
+braindynamics/__init__.py
+braindynamics.egg-info/PKG-INFO
+braindynamics.egg-info/SOURCES.txt
+braindynamics.egg-info/dependency_links.txt
+braindynamics.egg-info/top_level.txt
