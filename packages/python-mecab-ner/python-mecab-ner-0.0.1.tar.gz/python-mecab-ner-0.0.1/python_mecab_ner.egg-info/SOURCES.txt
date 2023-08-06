@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+python_mecab_ner/__init__.py
+python_mecab_ner/mecab_parser.py
+python_mecab_ner.egg-info/PKG-INFO
+python_mecab_ner.egg-info/SOURCES.txt
+python_mecab_ner.egg-info/dependency_links.txt
+python_mecab_ner.egg-info/not-zip-safe
+python_mecab_ner.egg-info/requires.txt
+python_mecab_ner.egg-info/top_level.txt
