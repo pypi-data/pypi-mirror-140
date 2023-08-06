@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: amazonian
+Version: 2022.2.25
+Summary: Python library for working with Amazon Web Services such as Redshift and S3
+Home-page: https://github.com/idin/amazonian
+Author: Idin
+Author-email: py@idin.ca
+License: MIT
+Description: # Amazonian
+        
+        *Amazonian* is a *Python* library for interacting easily with Amazon S3 and Redshift.
+        
+        # Installation
+        `pip install amazonian`
+        
+        # Usage
+        
+        ## `S3`
+        
+        ```python
+        from amazonian import S3
+        
+        s3 = S3(key=None, secret=None, iam_role=None, root='s3://', spark=spark)
+        
+        # get list of files:
+        s3.ls(path='s3://bucket/directory/subdirectory')
+        
+        # get a tree representation of folder structure
+        s3.tree(path='s3://bucket/directory/subdirectory')
+        
+        # get file size:
+        s3.get_size(path='some_file')
+        
+        # save a Spark DataFrame as a Parquet
+        s3.save_parquet(data=my_data, path='s3://bucket/directory/subdirectory/name.parquet')
+        
+        # load a Parquet into a Spark DataFrame
+        my_data = s3.load_parquet(path='s3://bucket/directory/subdirectory/name.parquet')
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown

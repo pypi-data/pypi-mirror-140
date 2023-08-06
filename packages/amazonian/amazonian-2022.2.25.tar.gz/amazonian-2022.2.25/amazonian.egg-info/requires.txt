@@ -1,0 +1,5 @@
+numpy
+pandas
+sqlalchemy
+psycopg2-binary
+s3fs>=2021.8.0
