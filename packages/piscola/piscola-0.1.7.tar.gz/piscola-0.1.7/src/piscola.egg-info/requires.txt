@@ -1,0 +1,12 @@
+numpy
+matplotlib
+scipy
+pandas
+lmfit
+peakutils
+astropy
+sfdmap
+extinction
+george
+wget
+pickle5
