@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Topsis-101903706-RohitJ
+Version: 1.0.0
+Summary: Topsis Package
+Home-page: UNKNOWN
+Author: Rohit Jain
+Author-email: <rjain1_be19@thapar.edu>
+License: UNKNOWN
+Keywords: python,topsis,thapar,Prdictive-Analysis,101903706
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+A package as part of Predictive Analysis course at Thapar Institute of Engineering and
+
