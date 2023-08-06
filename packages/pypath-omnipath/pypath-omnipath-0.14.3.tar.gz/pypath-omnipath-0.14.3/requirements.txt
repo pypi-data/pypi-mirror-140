@@ -1,0 +1,19 @@
+--index-url https://pypi.python.org/simple/
+
+beautifulsoup4
+dill
+numpy
+scipy
+timeloop
+matplotlib
+pandas
+pycurl
+pyreadr
+lxml
+xlrd
+openpyxl
+future
+tqdm
+tabulate
+rdata
+-e .
