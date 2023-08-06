@@ -1,0 +1,13 @@
+pyfinra/__init__.py,sha256=hhqVh8dN_GoJe2phtZ1eFHaqFvt6DDRprVYYoKlZOPo,26
+pyfinra/financials/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfinra/financials/finStatementsDictToDf.py,sha256=py8Orup6UtVYrGShRouXWzISUM2iLgZ_P15xmHSGAmE,1854
+pyfinra/financials/financialStatements.py,sha256=8iVdD-GCv9lKYBFGH-V5KRDpe65ycal9rjegpvh5ltA,1907
+pyfinra/financials/quote.py,sha256=KiQ6Q4cVA7RTNqaaWRqfJMq3G0ObtRAwzoyju0y1vl4,549
+pyfinra/financials/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfinra/financials/tools/cookieGetter.py,sha256=e-bk2ueDfJYrICcFdKgDbWsKjaIOGijGpVnPc7Y-ZV8,509
+pyfinra/financials/tools/finraStockID.py,sha256=n_JcyLxDHAV-7Uw5H3G7m5AsT8Lw3sGebYx5cBoQoe8,583
+pyfinra/financials/tools/get_acces.py,sha256=uOi4pENW0XuOldND5iUuMnDCjv9NjtIqolXddR_kBEM,957
+pyfinra/ticker.py,sha256=-XhPwcbZWwNfoJGeuOk-ml4lK7GCPYiGdSKrF2RaIvs,1331
+pyfinra-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyfinra-0.2.0.dist-info/METADATA,sha256=3kyNtFUQLfdbwiOLBn7F970pAbsN-Q8j6QHxuUhLUbw,304
+pyfinra-0.2.0.dist-info/RECORD,,
