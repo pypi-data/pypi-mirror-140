@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: pada
+Version: 0.1.0
+Summary: a ligthweight feature manage framework
+Home-page: https://github.com/eleveyuan/pada
+Author: Eleve Yuan
+Author-email: eleveyuane@gmail.com
+License: MIT license
+Keywords: pada
+Platform: UNKNOWN
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Provides-Extra: category_encoders
+Provides-Extra: feature_engine
+Provides-Extra: featuretools
+Provides-Extra: skits
+Provides-Extra: tsfresh
+Provides-Extra: all
+License-File: LICENSE
+
+# pada
+
+pada is an onomatopoeia, like the sound we make when building blocks.
+
+a ligthweight feature manage framework
+
+1. load_data: load data
+2. feature definition: metadata, input data, transform
+3. assemble: construct
+
+
+## pada command line generates the project directory
+
+```
+project
+|---definition
+|  |-feats_def.py
+|---load_data.py
+|---main.py
+|---url.py    
+```
+
+## base introduce
+
+### load_data.py
+define a function named *data()*, return your data which is a pd.DataFrame
+
+### definition
+you should define your feature in this directory
+
+### url.py
+find your feature definition by *url()* function
+
+### main.py
+run your feature engeering by *run()* function
+
+
+
+# History
+
+## 0.1.0 (2022-03-01)
+
+* First release on PyPI
+
