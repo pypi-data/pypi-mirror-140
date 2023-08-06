@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+include RUINS_logo_small.png
+graft explainer
+prune data
