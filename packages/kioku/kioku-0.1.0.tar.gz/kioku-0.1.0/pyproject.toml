@@ -1,0 +1,98 @@
+[tool.poetry]
+name = "kioku"
+version = "0.1.0"
+description = "Python package project template."
+authors = ["Takeru Saito <takelushi@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/takelushi/kioku"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+yapf = "^0.32.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+mypy = "^0.931"
+lxml = "^4.8.0"
+pytest = "^7.0.1"
+cohesion = "^1.0.0"
+darglint = "^1.8.1"
+flake8-2020 = "^1.6.1"
+flake8-absolute-import = "^1.0.0"
+flake8-blind-except = "^0.2.0"
+flake8-breakpoint = "^1.1.0"
+flake8-bugbear = "^22.1.11"
+flake8-builtins = "^1.5.3"
+flake8-class-newline = "^1.6.0"
+flake8-coding = "^1.3.2"
+flake8-cognitive-complexity = "^0.1.0"
+flake8-commas = "^2.1.0"
+flake8-comprehensions = "^3.8.0"
+flake8-debugger = "^4.0.0"
+flake8-docstrings = "^1.6.0"
+flake8-eradicate = "^1.2.0"
+flake8-expression-complexity = "^0.0.10"
+flake8-fixme = "^1.1.1"
+flake8-functions = "^0.0.7"
+flake8-html = "^0.4.1"
+flake8-import-order = "^0.18.1"
+flake8-logging-format = "^0.6.0"
+flake8-multiline-containers = "^0.0.18"
+flake8-mutable = "^1.2.0"
+flake8-pep3101 = "^1.3.0"
+flake8-pie = "^0.15.0"
+flake8-print = "^4.0.0"
+flake8-printf-formatting = "^1.1.2"
+flake8-pyi = "^22.2.0"
+flake8-pytest-style = "^1.6.0"
+flake8-quotes = "^3.3.1"
+flake8-return = "^1.1.3"
+flake8-simplify = "^0.18.1"
+flake8-string-format = "^0.3.0"
+pep8-naming = "^0.12.1"
+pyproject-flake8 = "^0.0.1-alpha.2"
+pytest-cov = "^3.0.0"
+pytest-html = "^3.1.1"
+toml = "^0.10.2"
+types-toml = "^0.10.4"
+
+[tool.poetry.urls]
+issues = "https://github.com/takelushi/kioku/issues"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "google"
+line_length = "79"
+force_single_line = false
+known_first_party = ["kioku"]
+
+[tool.yapf]
+based_on_style = "google"
+column_limit = 79
+
+[tool.flake8]
+ignore = "H601"
+# exclude = "__init__.py"
+per-file-ignores = [
+    "**/__init__.py:ABS101"
+]
+# flake8-quotes
+inline-quotes = "single"
+multiline-quotes = "double"
+# flake8-import-order
+application-import-names = "kioku"
+import-order-style = "google"
+# flake8-coding
+no-accept-encodings = "true"
+
+[tool.pytest.ini_options]
+minversion = "6.2"
+addopts = "--cov=src/ --cov-report term-missing"
+testpaths = [
+   "tests"
+]
