@@ -1,0 +1,9 @@
+django_hawk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_hawk/authentication.py,sha256=qxI_MKeBPvQhPyaYG421k4BplC1HwT6v_Gp4FATnnBw,1943
+django_hawk/middleware.py,sha256=Ht9IKEVd1SmDFSVLrXCN09_5KHghYbQKcvxFqaXzzUU,715
+django_hawk/settings.py,sha256=w5-w-TPD04hOiDZ4Opr94_mdYCxIj9gZKJm37JS3FxQ,938
+django_hawk/utils.py,sha256=1vbGj6wrdhix1lh8taYjgSrD8GsqVsvO4Wxlp4QSTUg,836
+django_hawk-0.0.1.dist-info/METADATA,sha256=bMmOfWIgo96jKCxiHrGW7h0XSGki33VBteU6Bfi-a7I,2792
+django_hawk-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_hawk-0.0.1.dist-info/top_level.txt,sha256=lx6_0KTPJLPPzvTPqIkDkFBWWl2dqc_ec1O8PJ8L7_M,12
+django_hawk-0.0.1.dist-info/RECORD,,
