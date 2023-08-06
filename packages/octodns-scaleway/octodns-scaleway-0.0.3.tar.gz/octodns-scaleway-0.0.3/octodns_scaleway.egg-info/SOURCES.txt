@@ -1,0 +1,8 @@
+README.md
+setup.py
+octodns_scaleway/__init__.py
+octodns_scaleway.egg-info/PKG-INFO
+octodns_scaleway.egg-info/SOURCES.txt
+octodns_scaleway.egg-info/dependency_links.txt
+octodns_scaleway.egg-info/requires.txt
+octodns_scaleway.egg-info/top_level.txt
