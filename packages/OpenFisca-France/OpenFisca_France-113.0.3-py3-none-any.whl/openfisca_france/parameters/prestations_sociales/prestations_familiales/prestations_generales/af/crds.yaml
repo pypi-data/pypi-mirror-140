@@ -1,0 +1,6 @@
+description: Taux de crds
+values:
+  1996-01-01:
+    value: 0.005
+metadata:
+  unit: /1
