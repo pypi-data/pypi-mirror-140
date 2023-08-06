@@ -1,0 +1,12 @@
+pytest
+pytest-cov
+check-manifest
+pip 
+setuptools 
+twine
+tree
+tqdm
+h5py
+semi-ate-stdf
+pandas
+tables

@@ -1,0 +1,5 @@
+h5py    
+semi-ate-stdf
+pandas
+tqdm
+tables
