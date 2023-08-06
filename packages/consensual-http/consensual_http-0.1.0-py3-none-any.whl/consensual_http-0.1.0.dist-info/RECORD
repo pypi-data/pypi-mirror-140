@@ -1,0 +1,13 @@
+consensual_http/__init__.py,sha256=pmnFIeSGnVXRlCaBhGqDsk3CPtxqw7x2E1IzI0Dtr8w,86
+consensual_http/communication.py,sha256=UtiUV4G16i7sW63Ya8ZXEblzyKuf-Myn6mM-iBiY5M4,93
+consensual_http/core/__init__.py,sha256=p4ODHrzfLTkepSDAsCV6wXEiMfkGb-ImjfpGuIR2zMA,58
+consensual_http/core/consts.py,sha256=zLPXQ73Zv3nv-ThW-EIJ8TJcvnaX7HgyuD0DDG3Pksc,56
+consensual_http/core/hints.py,sha256=IDYxNHNM0SLNUUxPDTxHtPHTojS3iumudUxzzLv_zBg,121
+consensual_http/core/receiver.py,sha256=l1pt-oidjFlmZ1xpaucQmNA0RdBbgOEBMEMl1c6D2Go,5271
+consensual_http/core/result.py,sha256=vX081VIXqHDn9MA_FCVh2p--r9-57ZohXKavepVVymg,534
+consensual_http/core/sender.py,sha256=xIKEXkCVeNyMO-8I7fYdvSXP2bGK9HnuNopQlw1v3_c,3946
+consensual_http-0.1.0.dist-info/LICENSE,sha256=GVgQqNDQRNdThEhKuOc23ZtZtLyb9u9rEJtEkcH3GGM,1069
+consensual_http-0.1.0.dist-info/METADATA,sha256=3trBi4iEfTUmfhA-6fFhJBIhMzudAWxZQ1aLJpZETYc,5380
+consensual_http-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+consensual_http-0.1.0.dist-info/top_level.txt,sha256=QyJqNiVzc9W8mJ0DxIJMRO9E5G0scl3h6TlClEwyYKY,16
+consensual_http-0.1.0.dist-info/RECORD,,
