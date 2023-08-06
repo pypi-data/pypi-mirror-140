@@ -1,0 +1,11 @@
+tgedr/connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgedr/connectors/azure_ad.py,sha256=nG7eZKwaHjyC6Jxc2_Y8JAl4LOgu8FY-4TdD1DynRgw,1105
+tgedr/connectors/azure_table_storage.py,sha256=BQ1gnNs_zUR2kSGCr46t8JaO-JqzuAXUgDjGj669Fs4,3978
+tgedr/connectors/common.py,sha256=GnsCW4LAuWn_bVmzPION7dN7bdU3LwsRLsJu49XeO9Q,135
+tgedr/connectors/ftp.py,sha256=3ILDsumVI0UjeeJ0sxVkSBT43EfywNPBehKIwF9bckc,1445
+tgedr/connectors/monetate_api.py,sha256=2Udesxby1h7r3Sz-YMs2LKL23fTK-U0jJFQAGOTjMxw,7001
+tgedr_connectors-0.0.5.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+tgedr_connectors-0.0.5.dist-info/METADATA,sha256=94FxnMXqwC_mGwhToMMyj4Uhk2KowlT0nmv8rkn0DSc,852
+tgedr_connectors-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tgedr_connectors-0.0.5.dist-info/top_level.txt,sha256=acugNvvENatFXbPxKQD9YI5PpzzehbAwyY1keiIkR7I,6
+tgedr_connectors-0.0.5.dist-info/RECORD,,
