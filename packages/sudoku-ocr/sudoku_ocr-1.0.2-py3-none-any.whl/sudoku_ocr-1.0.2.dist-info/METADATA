@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sudoku-ocr
+Version: 1.0.2
+Summary: Package to ocr sudoku
+Home-page: https://github.com/klawik-j/sudoku-ocr
+Author: Jakub Klawikowski
+Author-email: klawik.j@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: imutils (==0.5.4)
+Requires-Dist: opencv-python (==4.5.2.54)
+Requires-Dist: scikit-image (==0.18.2)
+Requires-Dist: tensorflow (==2.5.0)
+Requires-Dist: py-sudoku (==1.0.2)
+
+## OCR to query sudoku board and all its cells from picture 
+
