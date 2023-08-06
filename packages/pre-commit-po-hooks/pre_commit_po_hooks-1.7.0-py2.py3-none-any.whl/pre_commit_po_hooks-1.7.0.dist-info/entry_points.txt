@@ -1,0 +1,8 @@
+[console_scripts]
+check-entries-hook = hooks.check_entries:main
+check-metadata-hook = hooks.check_metadata:main
+fuzzy-messages-hook = hooks.fuzzy_messages:main
+lreplace-extracted-comments-hook = hooks.lreplace_extracted_comments:main
+obsolete-messages-hook = hooks.obsolete_messages:main
+untranslated-messages-hook = hooks.untranslated_messages:main
+
