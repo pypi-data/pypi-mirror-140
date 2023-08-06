@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gcloudy
+Version: 0.0.4
+Summary: A wrapper for google's existing google-cloud python package that aims to make using python inside the Google Cloud framework more intuitive.
+Home-page: https://bitbucket.org/tomathon-io/gcloudy/src/master/
+Author: tomathon
+Author-email: tomathon.dev@pm.me
+License: UNKNOWN
+Project-URL: Bug Tracker, https://bitbucket.org/tomathon-io/gcloudy/src/master/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package is a wrapper for google's existing google-cloud python package. 
+
+It aims to make using python inside the Google Cloud framework more intuitive. 
+
+Full guide coming soon.
+
+
