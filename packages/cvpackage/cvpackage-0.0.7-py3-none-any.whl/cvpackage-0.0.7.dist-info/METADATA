@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cvpackage
+Version: 0.0.7
+Summary: An helper library for openCv developer.
+Home-page: https://github.com/MrBucks07/CvPack
+Author: Kartik Panchal
+Author-email: clickshare07@gmail.com
+License: MIT
+Keywords: MediaPipe,FaceMesh,FaceDetection,HandTracking,HandModule,FaceModule
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: opencv-python
+Requires-Dist: mediapipe
+
+This an Computer Vision library uses mediapipe solutions at base level.An open cv developer can use it, to fastly use all solutions provided by mediapipe by writing few lines of code.
+

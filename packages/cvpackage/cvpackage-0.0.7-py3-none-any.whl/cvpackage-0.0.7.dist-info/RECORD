@@ -1,0 +1,14 @@
+cvpackage/FaceDetectionModule.py,sha256=AXUHgMkT6egJxrL59hB2DIHiKiVMwbwIcJ-EsgOmz6A,1482
+cvpackage/FaceMeshDetectionModule.py,sha256=tkEyvJtZXQtquGgmcv7aIoqyFFpIko_2dkz3IlgWqBg,2354
+cvpackage/FaceModule.py,sha256=JfJbUEhnux1TkJ2FXp8F3iQtBa8r_DpbbeQU2GSFH_s,2668
+cvpackage/HandDetectionModule.py,sha256=CE5LqU1MHrxp84SAIb7MUMyb1Z7vOo9Ve-_g8owsrGI,2266
+cvpackage/HandModule.py,sha256=CU1YYcoVfkOhXFKbzzyZzFe6BXPE2EOr6Pm3iickqMg,1955
+cvpackage/HolisticModule.py,sha256=UMkJvqnFkKM4lbjWeHRn0pGZTwLwaIRTqlXm451s35M,2112
+cvpackage/PoseDetectionModule.py,sha256=pl6k_ERdDdbdhRAWR_h3NshaBtk1f970m-tbaLvbmMA,1731
+cvpackage/commonFunction.py,sha256=VGqH861Qx3Xukq-pz_JoLt3bWawfmrBXkgnQCrHMsCI,350
+cvpackage/tryModules.py,sha256=JI9Z60t7kXPYIu14xXqxvAGTFr1kvAbccHCtq79dWbI,832
+cvpackage-0.0.7.dist-info/LICENSE.txt,sha256=Xu64CUMVFk57GhlbWNlVlhBsrbxMHlImkMu4N0tHRfw,1092
+cvpackage-0.0.7.dist-info/METADATA,sha256=ThOFbAqStkkWm3mcKU9Jr4kg03KKEYBjxcz1VsIAJlc,774
+cvpackage-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cvpackage-0.0.7.dist-info/top_level.txt,sha256=5U6C98a5VtmWgcLHNYdC6UZFGighYQoYdtyJsLEUpog,10
+cvpackage-0.0.7.dist-info/RECORD,,
