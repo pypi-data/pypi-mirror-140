@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: nopynotion
+Version: 0.2.5
+Summary: a warpper for notion to update data
+Home-page: https://github.com/wuchangsheng951/nopynotion
+Author: Huiming Sun
+Author-email: sunhuiming55@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
