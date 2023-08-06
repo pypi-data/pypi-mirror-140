@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: phantasyRestClient
+Version: 0.1.1
+Summary: Python interface to PHANTASY-REST
+Home-page: https://github.com/phantasy-project/phantasy-rest-client
+Author: Tong Zhang
+Author-email: zhangt@frib.msu.edu
+License: GPL3+
+Keywords: PHANTASY
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# phantasy-rest-client
+
+
+

@@ -1,0 +1,12 @@
+phantasyRestClient/__init__.py,sha256=53JsnFVitXh0aq2pTUzvNXU0hMw6gcZXdcrtpj45FcM,187
+phantasyRestClient/config/__init__.py,sha256=hi7PRc_RHxE4W2nRaU_K5tNuq_ncd4DQwDzAfQu9Zac,124
+phantasyRestClient/config/client.ini,sha256=elBn-dvbny-Tn8fEEpo33HQYkUPfl6DHfwbKiJw1H_w,114
+phantasyRestClient/config/read.py,sha256=PLMbFA2Ot70k0sqPGtUrVrlEF6ENgeKRx7fUXGg0ZGg,1007
+phantasyRestClient/config/write.py,sha256=FslD2O6gWsJN1gqmjbaGf85fovNRtMCygnkX6cYMVTU,395
+phantasyRestClient/req/__init__.py,sha256=Sh4y_3WhScDJR0FbaUo9uWAM65Ybhz39Ocjk44qtI5I,258
+phantasyRestClient/req/mp.py,sha256=C8FOyuthUW5TDhMSW0xPLmeiztJZL8cBd86SCp39-XI,4364
+phantasyRestClient-0.1.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+phantasyRestClient-0.1.1.dist-info/METADATA,sha256=ftepwLAiMXedqTbxUJANZwne4mAmv-cLs80lIOPhw6Y,534
+phantasyRestClient-0.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+phantasyRestClient-0.1.1.dist-info/top_level.txt,sha256=jDJuYR6sKegBWd19Piow9PaPJTBjs0eJ2woqFQ90DaY,19
+phantasyRestClient-0.1.1.dist-info/RECORD,,
