@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/powerline_keebs/__init__.py
+src/powerline_keebs/segments.py
+src/powerline_keebs.egg-info/PKG-INFO
+src/powerline_keebs.egg-info/SOURCES.txt
+src/powerline_keebs.egg-info/dependency_links.txt
+src/powerline_keebs.egg-info/requires.txt
+src/powerline_keebs.egg-info/top_level.txt
