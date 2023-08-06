@@ -1,0 +1,6 @@
+[console_scripts]
+rnpath = RNS.Utilities.rnpath:main
+rnprobe = RNS.Utilities.rnprobe:main
+rnsd = RNS.Utilities.rnsd:main
+rnstatus = RNS.Utilities.rnstatus:main
+

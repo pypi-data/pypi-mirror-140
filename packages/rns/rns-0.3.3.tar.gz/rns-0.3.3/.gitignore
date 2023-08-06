@@ -1,0 +1,10 @@
+*.DS_Store
+*.pyc
+testutils
+TODO
+Examples/RNS
+RNS/Utilities/RNS
+build
+dist
+docs/build
+rns*.egg-info
