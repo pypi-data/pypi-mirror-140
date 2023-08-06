@@ -1,0 +1,8 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+apipe/__init__.py,sha256=UlOBFx4rdZRl6_g3Y8WWC1jea0iggt2wU8hb7wLjryA,273
+apipe/_cached.py,sha256=wkb-t_rS1ABevswXB_XdBFYS0trf5T_i3m_iLAyoeaY,15864
+apipe/_dask.py,sha256=Ul9K4c9XYu8sllPjspXMQRnWLYr5EIBbNcm2dmyUlaM,5203
+apipe-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+apipe-0.1.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+apipe-0.1.4.dist-info/METADATA,sha256=PHtkl42_6b8XdZ7uNhROxcWpP2HVJWx-W-ElFq58N5Y,3338
+apipe-0.1.4.dist-info/RECORD,,
