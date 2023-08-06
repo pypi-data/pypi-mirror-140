@@ -1,0 +1,43 @@
+<Simulation>
+ <Variable Name='TIME_END'>20.0</Variable>
+<WeightType>CustomConnectionParameters</WeightType>
+<Algorithms>
+<Algorithm type="GridSomaDendriteAlgorithm" name="SOMA" modelfile="mn_soma.model" tau_refractive="0.0" transformfile="mn_soma_0_0_0_0_.tmat" start_v="-0.5" start_w="0.0000001" >
+<TimeStep>0.0001</TimeStep>
+</Algorithm>
+<Algorithm type="GridSomaDendriteAlgorithm" name="DENDRITE" modelfile="mn_dendrite.model" tau_refractive="0.0" transformfile="mn_dendrite_0_0_0_0_.tmat" start_v="-0.5" start_w="0.0000001" >
+<TimeStep>0.0001</TimeStep>
+</Algorithm>
+<Algorithm type="RateFunctor" name="MLR_1">
+<expression>5000</expression>
+</Algorithm>
+<Algorithm type="RateFunctor" name="MLR_2">
+<expression>0</expression>
+</Algorithm>
+</Algorithms>
+<Nodes>
+<Node algorithm="SOMA" name="S" type="NEUTRAL" />
+<Node algorithm="DENDRITE" name="D" type="NEUTRAL" />
+<Node algorithm="MLR_1" name="MLR_E" type="NEUTRAL" />
+<Node algorithm="MLR_2" name="INHIB" type="NEUTRAL" />
+</Nodes>
+<Connections>
+<Connection In="MLR_E" Out="S" type="input" num_connections="1" efficacy="0.01" delay="0.0" conductance="0.0"/>
+<Connection In="INHIB" Out="S" type="input" num_connections="1" efficacy="-0.01" delay="0.0" conductance="0.0"/>
+<Connection In="S" Out="D" type="SomaDendrite" num_connections="1000" efficacy="1.0" delay="0.0" conductance="0.5"/>
+<Connection In="D" Out="S" type="SomaDendrite" num_connections="1000" efficacy="1.0" delay="0.0" conductance="0.5"/>
+</Connections>
+<Reporting>
+	<!--<Density node="RG_E" t_start="0.0" t_end="6.0" t_interval="0.001" />
+	<Density node="RG_F" t_start="0.0" t_end="6.0" t_interval="0.001" />-->
+	<Display node="S" />
+	<Display node="D" />
+	<Rate node="S" t_interval="0.0001" />
+	<Rate node="D" t_interval="0.0001" />
+</Reporting>
+<SimulationRunParameter>
+<t_end>TIME_END</t_end>
+<t_step>0.0001</t_step>
+<name_log>mn.log</name_log>
+</SimulationRunParameter>
+</Simulation>
