@@ -1,0 +1,53 @@
+{# -*- coding: utf-8 -*-
+
+  This file is part of Invenio.
+  Copyright (C) 2016-2020 CERN.
+
+  Invenio is free software; you can redistribute it and/or modify it
+  under the terms of the MIT License; see LICENSE file for more details.
+#}
+
+{% extends config.BASE_TEMPLATE %}
+
+{% set title = _("Request ") %}
+
+{% block css %}
+{{ super() }}
+{{ webpack['invenio-requests-theme.css']}}
+{% endblock %}
+
+{% block javascript %}
+  {{ super() }}
+  {{ webpack['invenio-requests-base.js'] }}
+{% endblock %}
+
+{% block page_body %}
+{% block custom_header %}
+  {#  placeholder for custom header fe. community #}
+{% endblock custom_header %}
+
+<div class="ui container mt-25">
+  <div class="ui grid">
+    <div class="two column row">
+      <div class="column ten wide">
+        {% block request_topic %}
+        {% endblock request_topic %}
+      </div>
+      <div class="column six wide right aligned">
+        {% block request_actions %}
+          <div id="request-actions"></div>
+        {% endblock request_actions %}
+      </div>
+    </div>
+  </div>
+</div>
+  {% block conversation %}
+    <div class="ui container request-detail-page">
+      <div class="ui header"><h2>{{ request.title }}</h2></div>
+      <div class="ui divider"></div>
+      <div id="request-detail"
+           data-record='{{ request | tojson }}'
+      >{# react app root #}</div>
+    </div>
+  {% endblock conversation %}
+{% endblock page_body %}
