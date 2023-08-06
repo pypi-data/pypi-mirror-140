@@ -1,0 +1,7 @@
+fastapi_microsoft_identity/__init__.py,sha256=ih8d8NEnHS5HNlROJko1LqnARMF3YPlf4JtBUUuAWBI,277
+fastapi_microsoft_identity/auth_service.py,sha256=tWOqXnZbbNnU2rfJr19lxp3WDLGm7c5e1pI5pQXa1j0,7604
+fastapi_microsoft_identity-0.1.3.dist-info/LICENSE,sha256=E5qMRjs1WDxCmy-200TY1HYpbD6R8y1YE7pf_6Csjk8,1102
+fastapi_microsoft_identity-0.1.3.dist-info/METADATA,sha256=KOO7FqxjDIWC5Cd61VMzTs7MSVxex-9B0DfxAM17iwc,8875
+fastapi_microsoft_identity-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastapi_microsoft_identity-0.1.3.dist-info/top_level.txt,sha256=OSxU8WLRx-9Ca57Z0J93KKtv7NVSnsAYfEVJPr_cULc,27
+fastapi_microsoft_identity-0.1.3.dist-info/RECORD,,
