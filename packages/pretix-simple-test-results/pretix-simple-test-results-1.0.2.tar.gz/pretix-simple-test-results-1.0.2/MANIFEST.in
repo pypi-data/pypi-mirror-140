@@ -1,0 +1,5 @@
+recursive-include pretix_simple_test_results/static *
+recursive-include pretix_simple_test_results/templates *
+recursive-include pretix_simple_test_results/locale *
+include LICENSE
+exclude .gitlab-ci.yml

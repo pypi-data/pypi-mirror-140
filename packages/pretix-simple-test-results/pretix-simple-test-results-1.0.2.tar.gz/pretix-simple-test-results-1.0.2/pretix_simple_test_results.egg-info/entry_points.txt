@@ -1,0 +1,3 @@
+
+[pretix.plugin]
+pretix_simple_test_results=pretix_simple_test_results:PretixPluginMeta
