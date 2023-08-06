@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+generic-web-server/Client.py
+generic-web-server/Server.py
+generic-web-server/__init__.py
+generic_web_server.egg-info/PKG-INFO
+generic_web_server.egg-info/SOURCES.txt
+generic_web_server.egg-info/dependency_links.txt
+generic_web_server.egg-info/requires.txt
+generic_web_server.egg-info/top_level.txt
