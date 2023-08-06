@@ -1,0 +1,14 @@
+numpy
+momentum>=0.2.5
+kmeans1d
+runthis
+scikit-learn
+osqp
+latextable
+tomark
+pandas_datareader
+seriate
+pandas
+scipy>=1.7.3
+pyportfolioopt
+riskfolio-lib
