@@ -1,0 +1,6 @@
+
+        [console_scripts]
+        atomic=oc_mirror.scripts.atomic:cli
+        oc-mirror=oc_mirror.scripts.oc_mirror:cli
+        op-mirror=oc_mirror.scripts.op_mirror:cli
+    
