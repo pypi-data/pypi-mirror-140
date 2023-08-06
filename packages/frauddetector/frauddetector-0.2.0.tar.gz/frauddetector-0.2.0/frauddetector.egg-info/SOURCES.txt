@@ -1,0 +1,15 @@
+LICENSE
+NOTICE
+README.md
+pyproject.toml
+setup.py
+frauddetector/__init__.py
+frauddetector/frauddetector.py
+frauddetector/metrics.py
+frauddetector/profiler.py
+frauddetector.egg-info/PKG-INFO
+frauddetector.egg-info/SOURCES.txt
+frauddetector.egg-info/dependency_links.txt
+frauddetector.egg-info/requires.txt
+frauddetector.egg-info/top_level.txt
+frauddetector.egg-info/zip-safe
