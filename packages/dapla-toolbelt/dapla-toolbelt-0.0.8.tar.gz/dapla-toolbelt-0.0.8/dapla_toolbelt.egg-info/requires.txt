@@ -1,0 +1,5 @@
+pandas
+jupyterhub
+gcsfs
+ipython
+lxml
