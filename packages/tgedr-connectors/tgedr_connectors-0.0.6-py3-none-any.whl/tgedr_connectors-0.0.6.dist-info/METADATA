@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: tgedr-connectors
+Version: 0.0.6
+Summary: This package provides a set of wrappers to specific connectors, be it db's, api's, etc...
+Home-page: https://github.com/tgedr/connectors
+Author: joao tiago viegas
+Author-email: jtviegas.js@gmail.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyJWT (>=2.3.0)
+Requires-Dist: pytest (>=6.2.5)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: astroid (>=2.9.0)
+Requires-Dist: pycodestyle (>=2.8.0)
+Requires-Dist: pyflakes (>=2.4.0)
+Requires-Dist: typed-ast (>=1.5.0)
+Requires-Dist: wrapt (>=1.13.3)
+Requires-Dist: paramiko (>=2.7.1)
+
+# connectors
+a set of wrappers to specific connectors, be it db's, api's, etc...
+
+
