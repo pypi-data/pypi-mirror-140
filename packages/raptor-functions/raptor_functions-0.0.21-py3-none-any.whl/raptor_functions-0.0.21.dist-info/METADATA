@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: raptor-functions
+Version: 0.0.21
+Summary: raptor functions
+Home-page: https://github.com/Bryant-Dental/raptor_functions.git
+Author: Daniel Fiuza, Ibrahim Animashaun
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/Bryant-Dental/raptor_functions.git
