@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bin/pc
+prismacloud_cli/__init__.py
+prismacloud_cli/main.py
+prismacloud_cli/version.py
+prismacloud_cli.egg-info/PKG-INFO
+prismacloud_cli.egg-info/SOURCES.txt
+prismacloud_cli.egg-info/dependency_links.txt
+prismacloud_cli.egg-info/requires.txt
+prismacloud_cli.egg-info/top_level.txt
