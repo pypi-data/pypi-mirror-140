@@ -1,0 +1,28 @@
+appdirs
+biopython
+cement
+evalidate
+h5py
+kisao >= 2.29
+lxml
+matplotlib
+mpmath
+natsort
+networkx >= 2.6
+numpy
+openpyxl
+pandas
+pronto >= 2.4
+pyomexmeta >= 1.2.13
+python_dateutil
+python_libcombine >= 0.2.11
+python_libsedml >= 2.0.16
+pyyaml
+rdflib
+regex
+requests
+setuptools
+simplejson
+termcolor
+uritools
+yamldown
