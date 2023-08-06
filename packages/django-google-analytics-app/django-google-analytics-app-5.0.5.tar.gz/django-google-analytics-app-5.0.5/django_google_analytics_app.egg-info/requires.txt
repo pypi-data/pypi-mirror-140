@@ -1,0 +1,12 @@
+Django<4.1,>=2.2.5
+celery<6.0.0
+requests
+beautifulsoup4
+six
+structlog
+
+[lint]
+flake8
+
+[test]
+responses
