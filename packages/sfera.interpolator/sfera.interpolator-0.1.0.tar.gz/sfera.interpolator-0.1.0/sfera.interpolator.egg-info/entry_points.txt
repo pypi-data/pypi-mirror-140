@@ -1,0 +1,3 @@
+[console_scripts]
+interpolator = sfera.interpolator.__main__:main
+
