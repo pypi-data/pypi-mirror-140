@@ -1,0 +1,3 @@
+[console_scripts]
+ciman = ciman.__main__:main
+
