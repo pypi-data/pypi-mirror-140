@@ -1,0 +1,17 @@
+.gitignore
+Makefile
+README.md
+setup.cfg
+setup.py
+test.csv
+tests/labels.csv
+tests/test.csv
+tests/torchcsvtest.py
+torchcsv/__init__.py
+torchcsv/torchcsv.py
+torchcsv.egg-info/PKG-INFO
+torchcsv.egg-info/SOURCES.txt
+torchcsv.egg-info/dependency_links.txt
+torchcsv.egg-info/not-zip-safe
+torchcsv.egg-info/requires.txt
+torchcsv.egg-info/top_level.txt
