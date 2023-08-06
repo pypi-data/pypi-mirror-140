@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: propinfer
+Version: 1.2.0
+Summary: Modular framework to run Property Inference Attacks on Machine Learning models.
+Home-page: https://epfl-dlab.github.io/property-inference-attacks/
+Author: Léo Meynent
+Author-email: leo.meynent@epfl.ch
+License: MIT
+Project-URL: Repository, https://github.com/epfl-dlab/property-inference-attacks/
+Project-URL: Tracker, https://github.com/epfl-dlab/property-inference-attacks/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: hydra-core
+
+# Property Inference Attacks
+
+In this repository, we propose a modular framework to run Property Inference Attacks on Machine Learning models.
+
+[![Documentation](https://img.shields.io/badge/Documentation-v1.2.0-informational)](https://epfl-dlab.github.io/property-inference-attacks/)
+
+
+## Installation
+
+You can get this package directly from pip:
+
+`python -m pip install propinfer`
+
+Please note that PyTorch is required to run this framework. Please find installation instructions corresponding to you [here](https://pytorch.org/).
+
+## Usage
+
+This framework is made modular for any of your experiments: you simply should define subclasses of `Generator` and `Model`
+to represent your data source and your evaluated model respectively.
+
+From these, you can create a specific experiment configuration file. We suggest using [hydra](https://hydra.cc/docs/intro/) for your configurations, but parameters can also be passed in a standard `dict`.
+
+Alternatively, you can extend the Experiment class.
+
+## Threat models and attacks
+
+### White-Box 
+In this threat model, we have access to the model's parameters directly. In this case, [1] defines three different attacks:
+ * Simple meta-classifier attack
+ * Simple meta-classifier attack, with layer weights' sorting
+ * DeepSets attack
+ 
+They are respectively designated by the keywords `Naive`, `Sort`and `DeepSets`.
+
+### Grey- and Black-Box
+ 
+In this threat model, we have only query access to the model (we do not know its parameters). In the scope of the Grey-Box threat model, we know the model's architecture and hyperparameters - in the scope of Black-Box we do not.
+
+For the Grey-Box case, [2] describes two simple attacks:
+ * The Loss Test (represented by the `LossTest` keyword)
+ * The Threshold Test (represented by the `ThresholdTest` keyword)
+ 
+[3] also proposes a meta-classifier-based attack, that we use for both the Grey-Box and Black-Box cases: these are respectively represented by the `GreyBox` and `BlackBox` keywords. For the latter case, we simply default on a pre-defined model architecture.
+
+## Running an experiment
+
+To run an experiment, you have to instanciate an `Experiment` object using a specific `Generator` and `Model`, and then run both targets and shadows before performing an attack.
+
+It is possible to provide a list as a model hyperparameter: in that case, the framework will automatically optimise between the given options.
+
+## References
+
+[1] Karan Ganju, Qi Wang, Wei Yang, Carl A. Gunter, and Nikita Borisov. 2018. Property Inference Attacks on Fully Connected Neural Networks using Permutation Invariant Representations. In Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security (CCS '18). Association for Computing Machinery, New York, NY, USA, 619–633. DOI:https://doi.org/10.1145/3243734.3243834
+
+[2] Anshuman Suri, David Evans. 2021. Formalizing Distribution Inference Risks. 2021 Workshop on Theory and Practice of Differential Privacy, ICML. https://arxiv.org/abs/2106.03699
+
+[3] Wanrong Zhang, Shruti Tople, Olga Ohrimenko. 2021. Leakage of Dataset Properties in Multi-Party Machine Learning. https://arxiv.org/abs/2006.07267
+
+
