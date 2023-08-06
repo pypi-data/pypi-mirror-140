@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+gwtool/__init__.py
+gwtool.egg-info/PKG-INFO
+gwtool.egg-info/SOURCES.txt
+gwtool.egg-info/dependency_links.txt
+gwtool.egg-info/requires.txt
+gwtool.egg-info/top_level.txt
