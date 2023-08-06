@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: os-image-builder
+Version: 0.1.5
+Summary: Helper for image isos
+License: MIT
+Author: Martin Ortbauer
+Author-email: mortbauer@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.20,<0.18.0)
