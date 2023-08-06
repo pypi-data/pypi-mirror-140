@@ -1,0 +1,9 @@
+pandas
+statsmodels
+numpy
+scikit-bio
+
+[dev]
+pytest
+pytest-cov
+flake8
