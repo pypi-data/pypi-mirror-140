@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "excel-model-runner"
+version = "0.1.0"
+description = "Runs an Excel model (.xlsx) with parameters"
+authors = ["Matthew Printz <matt@jataware.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/dojo-modeling/excel-model-runner"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis"
+]
+packages = [
+    { include = "excel_model_runner" }
+]
+
+[tool.poetry.scripts]
+run-excel-model = "excel_model_runner.command:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+formulas = "^1.2.2"
+openpyxl = "^3.0.9"
+click = "^8.0.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
