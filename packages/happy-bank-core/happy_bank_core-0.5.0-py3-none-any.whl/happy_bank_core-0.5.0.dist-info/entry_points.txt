@@ -1,0 +1,3 @@
+[console_scripts]
+happy-bank-core=happy_bank_core.app:main
+
