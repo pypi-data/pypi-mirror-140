@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+tensorflow_sparse_conv_ops/__init__.py
+tensorflow_sparse_conv_ops/_sparse_conv_ops.so
+tensorflow_sparse_conv_ops/sparse_conv_ops.py
+tensorflow_sparse_conv_ops/sparse_conv_ops_test.py
+tensorflow_sparse_conv_ops.egg-info/PKG-INFO
+tensorflow_sparse_conv_ops.egg-info/SOURCES.txt
+tensorflow_sparse_conv_ops.egg-info/dependency_links.txt
+tensorflow_sparse_conv_ops.egg-info/not-zip-safe
+tensorflow_sparse_conv_ops.egg-info/requires.txt
+tensorflow_sparse_conv_ops.egg-info/top_level.txt
