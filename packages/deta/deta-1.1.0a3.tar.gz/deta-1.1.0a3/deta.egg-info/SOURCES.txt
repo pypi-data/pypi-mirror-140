@@ -1,0 +1,13 @@
+README.md
+setup.py
+deta/__init__.py
+deta/base.py
+deta/drive.py
+deta/service.py
+deta/utils.py
+deta.egg-info/PKG-INFO
+deta.egg-info/SOURCES.txt
+deta.egg-info/dependency_links.txt
+deta.egg-info/top_level.txt
+deta/_async/__init__.py
+deta/_async/client.py
