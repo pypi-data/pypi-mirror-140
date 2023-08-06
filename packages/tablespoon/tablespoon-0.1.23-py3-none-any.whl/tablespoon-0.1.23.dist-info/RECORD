@@ -1,0 +1,11 @@
+tablespoon/__init__.py,sha256=GD2_G-FAOELVXEKvbJWASIQ67Cm4wqaN0E3OrnaRb6o,84
+tablespoon/data.py,sha256=i04veSU1SUVxs4faBHugITmuTtwmGoGUVcD11Tqp25A,20786
+tablespoon/forecasters.py,sha256=qsMLvUDNvbAtqOzSWb9sFVh7R_jnFk8mD6fntrYcHkQ,8880
+tablespoon/stan/mean.stan,sha256=eg8WedWqA4v6iFnYepBHGmF05lr4YdEYGVJNYURJ208,339
+tablespoon/stan/naive.stan,sha256=wxr4axqMN4kJoJUHy1A9lsmsy5lh6NH4QX6fqyryxg4,330
+tablespoon/stan/snaive.stan,sha256=LfZNYl5482TAwiJNNc6FojRJ82V5OQSDsgS_Fuu-jCI,411
+tablespoon/stan/snaive_t_dist.stan,sha256=YevB45Zpf7ZK5q0pj1CYTwx92Kc9GFiJAStBE7_eiIc,468
+tablespoon-0.1.23.dist-info/LICENSE,sha256=SH3muxPSvSD6G4Bs9M9fWUsuhv9aXa5BVIR_GbI5Kn0,1068
+tablespoon-0.1.23.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+tablespoon-0.1.23.dist-info/METADATA,sha256=9YNl7tJPgKdtTwbDDlRurs7TFowX-rBHMBepIylWESU,9027
+tablespoon-0.1.23.dist-info/RECORD,,
