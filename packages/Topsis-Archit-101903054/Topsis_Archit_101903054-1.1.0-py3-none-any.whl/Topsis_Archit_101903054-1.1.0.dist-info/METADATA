@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: Topsis-Archit-101903054
+Version: 1.1.0
+Summary: Calculates TOPSIS on the given dataset!
+Home-page: https://github.com/Snehil-21/Topsis-Snehil-101903064
+Author: Archit Kapoor
+Author-email: architkapoor13@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+# Topsis-Archit-101903054
+It takes the dataset and calculates the TOPSIS and assign the topsis score and rank!
+
+## Installation
+```pip install Topsis-Archit-101903054```
+
+## How to use it?
+Open terminal Write:
+```Topsis <inputFilename.csv> <"Weights"> <"Impacts"> <outputFilename.csv>```
+
+## License
+
+Â© 2022 Archit Kapoor
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
