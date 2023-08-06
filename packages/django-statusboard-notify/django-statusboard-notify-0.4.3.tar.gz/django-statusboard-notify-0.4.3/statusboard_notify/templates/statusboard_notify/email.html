@@ -1,0 +1,42 @@
+{% load i18n %}
+{% load statusboard %}
+
+<html>
+    <head>
+        <style>
+body {
+    font-family: sans;
+    font-size: 90%;
+    padding: 0.5em;
+}
+h1 {
+    font-size: 110%;
+}
+        </style>
+    </head>
+    <body>
+        <h1>{% trans "Service status updates" %}</h1>
+            {% for notification in notifications %}
+            <li>
+                <strong>{{ notification.service.name }}</strong>
+                {% if notification.from_status is None %}
+                    {% trans "created with status" %}
+                    <em>{{ notification.get_to_status_display }}</em>
+                {% else %}
+                    {% trans "from status" %}
+                    <em>{{ notification.get_from_status_display }}</em>
+                    {% trans "to status" %}
+                    <em>{{ notification.get_to_status_display }}</em>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% block footer %}
+        <footer class="footer">
+            <div class="container">
+                <small>Powered by <a href="https://github.com/edigiacomo/django-statusboard">django-statusboard</a></small>
+            </div>
+        </footer>
+        {% endblock %}
+    </body>
+</html>
