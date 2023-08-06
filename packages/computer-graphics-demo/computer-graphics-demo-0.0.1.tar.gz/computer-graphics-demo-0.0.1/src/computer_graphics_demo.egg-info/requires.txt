@@ -1,0 +1,6 @@
+docopt
+taichi<0.8,>=0.7
+numpy
+
+[debug]
+rich
