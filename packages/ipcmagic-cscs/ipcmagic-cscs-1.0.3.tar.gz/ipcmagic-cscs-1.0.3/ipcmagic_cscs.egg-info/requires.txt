@@ -1,0 +1,4 @@
+ipython>=6.3.0
+pexpect>=4.8.0
+docopt>=0.6.2
+ipyparallel>=7.0.1

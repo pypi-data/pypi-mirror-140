@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ipcmagic-cscs
+Version: 1.0.3
+Summary: IPyParallel Slurm magics for jupyterlab at CSCS
+Home-page: https://github.com/eth-cscs/ipcluster_magic
+License: BSD 3-Clause
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# IPyCluster Magics
+
+Magic commands to support running MPI Python code on Jupyter notebooks at CSCS.
+See the examples [here](https://github.com/eth-cscs/ipcluster_magic/tree/master/examples).
+
+

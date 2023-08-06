@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+ipcmagic/__init__.py
+ipcmagic/magics.py
+ipcmagic/utilities.py
+ipcmagic/version.py
+ipcmagic_cscs.egg-info/PKG-INFO
+ipcmagic_cscs.egg-info/SOURCES.txt
+ipcmagic_cscs.egg-info/dependency_links.txt
+ipcmagic_cscs.egg-info/requires.txt
+ipcmagic_cscs.egg-info/top_level.txt
