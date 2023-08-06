@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pop_serial/conf.py
+pop_serial/version.py
+pop_serial.egg-info/PKG-INFO
+pop_serial.egg-info/SOURCES.txt
+pop_serial.egg-info/dependency_links.txt
+pop_serial.egg-info/entry_points.txt
+pop_serial.egg-info/requires.txt
+pop_serial.egg-info/top_level.txt
+pop_serial/serial/json_serial.py
+pop_serial/serial/msgpack_serial.py
+pop_serial/serial/contracts/init.py

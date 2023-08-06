@@ -1,0 +1,6 @@
+def sig_dump(hub, data) -> bytes:
+    ...
+
+
+def sig_load(hub, data: bytes):
+    ...
