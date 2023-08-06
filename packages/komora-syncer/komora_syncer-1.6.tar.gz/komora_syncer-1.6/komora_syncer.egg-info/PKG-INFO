@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: komora-syncer
+Version: 1.6
+Summary: Synchronize data between Komora and Netbox applications
+Home-page: https://gitlab.cesnet.cz/701/done/netbox_komora_syncer
+Author: Jan Krupa
+Author-email: jan.krupa@cesnet.cz
+License: UNKNOWN
+Description: Netbox and Komora synchronizer
+        ===
+        
+        `komora_syncer` is a tool to synchronize data between Komora and Netbox application 
+        
+        Installation
+        ------------
+        - `git clone` this repository
+        - `pip install .`
+        - setup configuration files [config.yml, logging.ini]
+           - paths: 
+              - ~/.config/komora_syncer/
+              - /etc/komora_syncer/config.yml
+              - Or can be set with the variable `--config`. Example: `komora_syncer --config ./configuration_folder synchronize`
+        
+        
+        Run
+        ---
+        
+        - `komora_syncer`
+        
+        komora_syncer requires at least Python 3.6.
+        
+Keywords: netbox,komora
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
