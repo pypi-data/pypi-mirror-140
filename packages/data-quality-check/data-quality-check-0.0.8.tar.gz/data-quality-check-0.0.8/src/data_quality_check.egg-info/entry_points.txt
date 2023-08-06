@@ -1,0 +1,3 @@
+[console_scripts]
+data-quality-check = data_quality_check.controller.console:main
+

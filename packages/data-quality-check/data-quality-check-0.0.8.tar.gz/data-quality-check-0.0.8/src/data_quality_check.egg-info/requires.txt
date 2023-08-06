@@ -1,0 +1,5 @@
+PyYAML~=6.0
+pydantic~=1.6
+requests~=2.6
+jinja2~=3.0.3
+markupsafe~=2.1.0
