@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: colorstamps
+Version: 0.1.2
+Summary: 2D colormaps for every occation
+Home-page: https://github.com/trygvrad/colorstamps
+Author: Trygve Ræder
+Author-email: tmara@dtu.dk
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: colorspacious
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+UNKNOWN
+
+
