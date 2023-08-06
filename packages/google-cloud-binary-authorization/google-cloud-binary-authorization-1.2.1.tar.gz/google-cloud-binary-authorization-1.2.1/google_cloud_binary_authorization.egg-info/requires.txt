@@ -1,0 +1,3 @@
+google-api-core[grpc]<3.0.0dev,>=1.28.0
+proto-plus>=1.15.0
+grafeas>=1.1.2
