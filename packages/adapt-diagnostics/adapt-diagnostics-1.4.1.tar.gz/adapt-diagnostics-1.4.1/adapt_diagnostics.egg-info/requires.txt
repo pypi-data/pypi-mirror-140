@@ -1,0 +1,7 @@
+numpy<1.19.0,>=1.16.0
+scipy==1.4.1
+tensorflow==2.3.2
+
+[AWS]
+boto3>=1.14.54
+botocore>=1.17.54
