@@ -1,0 +1,17 @@
+fastcore
+matplotlib
+Pillow
+altair
+dill
+ipython
+loguru
+numpy
+pandas
+tqdm
+rich
+PyYAML
+catalogue
+pydantic
+srsly
+typing_extensions
+wasabi
