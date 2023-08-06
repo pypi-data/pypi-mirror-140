@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: coffee-dou-requests
+Version: 2.0.0
+Summary: A small example package
+Home-page: https://mp.csdn.net/mp_blog/creation/editor/122833225
+Author: guiling
+Author-email: 1666285441@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://mp.csdn.net/mp_blog/creation/editor/122833225
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 恭喜此模块迎来了第一次大更新，更新了超分辨率项目，借用了xinntao在GitHub开源的Real-ESRGAN项目，并修复了已知的bug
+#超分辨率项目使用前请确保下载了此项目并更改了项目的安装位置
+
