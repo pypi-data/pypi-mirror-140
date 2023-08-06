@@ -1,0 +1,35 @@
+name: hyp3-lib
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - pip
+  # For packaging, and testing
+  - flake8
+  - flake8-import-order
+  - flake8-blind-except
+  - flake8-builtins
+  - setuptools
+  - setuptools_scm
+  - wheel
+  - pytest
+  - pytest-console-scripts
+  - pytest-cov
+  - responses
+  # For running
+  - boto3
+  - gdal
+  - imageio
+  - importlib_metadata
+  - lxml
+  - matplotlib
+  - netCDF4
+  - numpy
+  - pillow
+  - pyproj>=2
+  - pyshp
+  - requests
+  - scipy
+  - six
+  - statsmodels
+  - urllib3
