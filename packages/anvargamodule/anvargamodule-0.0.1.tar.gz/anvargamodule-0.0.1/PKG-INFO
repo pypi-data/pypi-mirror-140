@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: anvargamodule
+Version: 0.0.1
+Summary: anvarga package
+Home-page: UNKNOWN
+Author: Tony Vargas
+Author-email: tontvt94@gmail.com
+License: UNKNOWN
+Description: anvarga package with a slightly longer description
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
