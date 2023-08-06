@@ -1,0 +1,2 @@
+[console_scripts]
+shapelets-compute = shapelets_compute:cli
