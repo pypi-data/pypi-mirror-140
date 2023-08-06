@@ -1,0 +1,3 @@
+[console_scripts]
+dpx_control = dpx_control.dpx_control:main
+
