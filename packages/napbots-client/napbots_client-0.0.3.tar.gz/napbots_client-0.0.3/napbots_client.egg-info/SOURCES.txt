@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+napbots_client.egg-info/PKG-INFO
+napbots_client.egg-info/SOURCES.txt
+napbots_client.egg-info/dependency_links.txt
+napbots_client.egg-info/top_level.txt
