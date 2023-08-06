@@ -1,0 +1,13 @@
+bottleneck
+fsspec
+numcodecs
+numpy>=1.19.4
+pandas>=1.1.4
+requests
+satpy[seviri_l2_grib]>=0.30.1
+tqdm
+xarray
+zarr
+imagecodecs
+pyorbital
+netCDF4
