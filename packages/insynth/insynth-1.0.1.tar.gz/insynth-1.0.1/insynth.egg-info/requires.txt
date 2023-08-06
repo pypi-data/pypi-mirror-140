@@ -1,0 +1,13 @@
+audiomentations
+coverage
+librosa
+numpy
+requests
+scipy
+tensorflow
+tqdm
+Pillow
+pandas
+pydub
+scikit-learn
+tensorflow-datasets
