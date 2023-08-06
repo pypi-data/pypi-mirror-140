@@ -1,0 +1,7 @@
+setup.py
+pysimplefunctioins/__init__.py
+pysimplefunctioins/example.py
+pysimplefunctions.egg-info/PKG-INFO
+pysimplefunctions.egg-info/SOURCES.txt
+pysimplefunctions.egg-info/dependency_links.txt
+pysimplefunctions.egg-info/top_level.txt
