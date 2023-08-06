@@ -1,0 +1,11 @@
+django_nextflow/__init__.py,sha256=nRZsRKABB-2JiA8aCR-VUYf6JpoyUylAk3lxjg06P5U,48
+django_nextflow/graphs.py,sha256=I6PZBg8f92qXlFV4lWWW7XJap0551yULqor8tMzZ1_E,999
+django_nextflow/models.py,sha256=a7QokY_PLcE0ht7MbNEdQcRaVPe_Ps2m-Rax3v00w4k,21184
+django_nextflow/utils.py,sha256=1hHVOd90BWr1YSul2AOzBPes_Kd0F9qI9ofriRb-00c,1278
+django_nextflow/migrations/0001_initial.py,sha256=23NLcTrkgcJkZ3LMXgCRBWBJA7jJEY8tfe_9Ob_JcbA,4401
+django_nextflow/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_nextflow-0.8.0.dist-info/LICENSE,sha256=EW7UiAr9bU9-IvpU0V6OYDDHKaAZPzhR4cY4i4XITp8,35067
+django_nextflow-0.8.0.dist-info/METADATA,sha256=JCMm4HTEar8dMJ50u9npzlMm3UMnaiTseNHbpzmbGTI,7940
+django_nextflow-0.8.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_nextflow-0.8.0.dist-info/top_level.txt,sha256=mUcx1x53GjxkGnIErXkcq4vFz9ppoo4cuQtCRXGBPGo,16
+django_nextflow-0.8.0.dist-info/RECORD,,
