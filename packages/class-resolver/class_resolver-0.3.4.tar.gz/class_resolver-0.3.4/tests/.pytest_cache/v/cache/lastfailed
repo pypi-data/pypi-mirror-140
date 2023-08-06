@@ -1,0 +1,4 @@
+{
+  "test_api.py::TestResolver::test_registration_failure": true,
+  "test_metaresolver.py::TestMetaResolver::test_annotation_invalid_origin": true
+}
