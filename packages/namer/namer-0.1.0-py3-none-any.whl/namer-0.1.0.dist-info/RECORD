@@ -1,0 +1,13 @@
+namer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+namer/__main__.py,sha256=PQpegdQVR05fHmDdD_C3IlflTg1EXH6nBCBeMcrk8_w,2160
+namer/ffmpeg.py,sha256=lZN5yA3HnjgdWOxd9lorbB3K_v9SWJSa_Kn2bjC4QIs,5841
+namer/filenameparser.py,sha256=scSu9wIyXU_WTHfwqz_A4LiD8bQsEbd96b-vKLSz-rQ,3319
+namer/metadataapi.py,sha256=zjzXxIE6aivsCf5CfROoqWqhgV-bIfB3RUPArWthSuk,11145
+namer/moviexml.py,sha256=cHNh-mrC0p21maLsnLmlOosQ1rBSRRI_pmP2yIXZ4SE,1416
+namer/mutagen.py,sha256=ZvAl9RA1OWSgHbp-erJvfJJWMNJt53inBukOKyMTXmg,3802
+namer/namer.py,sha256=GX9hjn6xas9-SDhOLC8xwc01bnSkDKd6-FD1sKkk9uA,14276
+namer/types.py,sha256=SEI8Db83GrxprchYDy8JhMqcbLNDYoLfXiAi9ZND6Sc,23446
+namer/watchdog.py,sha256=MKrsx-TMce7cjTvk12nCcjSXx8mDMo8yhCKyydL0lzo,8571
+namer-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+namer-0.1.0.dist-info/METADATA,sha256=QScJJmzQL3vT-kIWUHnQDul1U1PJ-iO_g1q-ToQjT0k,626
+namer-0.1.0.dist-info/RECORD,,
