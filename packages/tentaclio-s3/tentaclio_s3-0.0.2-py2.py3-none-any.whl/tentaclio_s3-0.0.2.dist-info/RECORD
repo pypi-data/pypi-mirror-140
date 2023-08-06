@@ -1,0 +1,10 @@
+tentaclio_s3/__init__.py,sha256=4NSnyU5AYR5kqyBBxQlA-52UAsJT_mHdYvVICzEQRDw,1137
+tentaclio_s3/__main__.py,sha256=RakHtpi_Sc3tjz1A5prffMfcCJ5zQHc0-ORXNQrDqIo,141
+tentaclio_s3/clients/__init__.py,sha256=lmlgrjxoUlRGe04qPQsd8XkJglECk6PTF3nXzeDU4uI,288
+tentaclio_s3/clients/exceptions.py,sha256=-NpjkCqulcSXu_FEbJMmdXwe_OHlSUAHBwgtBR00eLw,169
+tentaclio_s3/clients/s3_client.py,sha256=Lkhlr8zfrOx8mhKZstggyTXCV7EHuDjP5tpOTMwMd30,7133
+tentaclio_s3-0.0.2.dist-info/LICENSE.txt,sha256=Aqv2h5R53YlGaQXl7XgUDMZPUxJK1HftERN2ExXJ_u4,1080
+tentaclio_s3-0.0.2.dist-info/METADATA,sha256=sd72RSfqGz8wcuwuvdvRdrgws02iV3RUtcuX_2kzW34,1516
+tentaclio_s3-0.0.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+tentaclio_s3-0.0.2.dist-info/top_level.txt,sha256=Ns1IDcTwkcJXm3-qvLl-8CE-zPJmHFNp51hu7VuqIdY,13
+tentaclio_s3-0.0.2.dist-info/RECORD,,
