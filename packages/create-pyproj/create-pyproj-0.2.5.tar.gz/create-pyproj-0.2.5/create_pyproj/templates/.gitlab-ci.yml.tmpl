@@ -1,0 +1,38 @@
+
+include:
+  - template: Security/SAST.gitlab-ci.yml
+
+stages:
+  - build
+  - test
+  - deploy
+
+image: registry.gitlab.com/evenergi/secdevops/build-tools/pybuild${python_version}:latest
+
+variables:
+  ENV: development
+
+build:
+  stage: build
+  script:
+    - VERSION=$(cat VERSION)
+    - echo $VERSION
+  only:
+    - master
+
+test:
+  stage: test
+  script:
+    - pipenv check
+    - pytest -v
+  artifacts:
+    reports:
+      cobertura: coverage.xml
+
+deploy:
+  stage: deploy
+  script:
+    - VERSION=$(cat VERSION)
+    - echo $VERSION
+  only:
+    - master
