@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: opylib
+Version: 0.0.1
+Summary: My frequently used classes and functions
+Home-page: https://github.com/c-git/opylib
+Author: One
+Author-email: one.bgz1@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/c-git/opylib/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# One's python library
+
+Organizes a collection of classes and functions I use often. It makes finding them again easier. It also simplifies
+sharing between projects.
+
+
