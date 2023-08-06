@@ -1,0 +1,6 @@
+setup.py
+src/split_library.py
+src/split_library.egg-info/PKG-INFO
+src/split_library.egg-info/SOURCES.txt
+src/split_library.egg-info/dependency_links.txt
+src/split_library.egg-info/top_level.txt
