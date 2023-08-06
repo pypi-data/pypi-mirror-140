@@ -1,0 +1,13 @@
+tdf_tools/__init__.py,sha256=CxPDB_iTuvcz7MgUqgjwrDNLu_0xI7VhB62tkautPGc,10532
+tdf_tools/dependencies_analysis.py,sha256=dPXkZQPT2RxcCVgc17QsM2eALAmzVMc5hL97k5QahUA,5771
+tdf_tools/git_utils.py,sha256=Ddy87ZmVJpb0TUrComlh5GTXxokO5wOUOa2O-lBgGQI,10205
+tdf_tools/json_data_read.py,sha256=kttS6W_HTPqwa5nP3cM06MoYiOjmiayiuvAP-3v8RMc,2370
+tdf_tools/module_dependencies_rewrite.py,sha256=MBw35kHs0t8Y0xERsWusDAq2KHGYqyna3F2Nahw0DA4,6898
+tdf_tools/python_gitlab_api.py,sha256=ClTUU-2NFge3-uDvRlE0DNgEla6NrSEjjMUAfqnGF7c,2795
+tdf_tools/tdf_print.py,sha256=n43v3YR4N5gIm4J2idjiyNMjf2w9n_oWGFxoKoAoaKU,657
+tdf_tools-0.0.46.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+tdf_tools-0.0.46.dist-info/METADATA,sha256=pB7kiNP_bRbzL9FX1LPVRrDzT-vSCoVjhG__G0r8U60,9383
+tdf_tools-0.0.46.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tdf_tools-0.0.46.dist-info/entry_points.txt,sha256=LV2hx-TG_1bvBllZr8Dc0XFwVcXfqazNW_-CIBvBpGc,76
+tdf_tools-0.0.46.dist-info/top_level.txt,sha256=Gzlgd76ZOqDGPs_8_zumV8nsaRcSjEuvvSJSCIRF3Mo,10
+tdf_tools-0.0.46.dist-info/RECORD,,
