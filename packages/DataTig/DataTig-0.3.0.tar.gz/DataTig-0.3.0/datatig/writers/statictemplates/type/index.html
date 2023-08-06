@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}{{ type.id }}{% endblock %}
+
+{% block breadcrumbs %}
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ url }}/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ type.id }}</li>
+      </ol>
+    </nav>
+{% endblock %}
+
+{% block body %}
+
+<h2>{{ type.id }}</h2>
+
+<table class="table">
+    <tr>
+        <th>id</th>
+        {% for field_name in type.list_fields %}
+            <th>{{ field_name }}</th>
+        {% endfor %}
+        <th>&nbsp;</th>
+    </tr>
+    {% for item_id in datastore.get_ids_in_type(type.id) %}
+        <tr>
+            <td>{{ item_id }}</td>
+            {% for field_name in type.list_fields %}
+                {% set field = type.fields[field_name] %}
+                <td>
+                    {% if field.type() == 'url' %}
+                        <a href="{{ datastore.get_field(type.id, item_id, field_name) }}">{{ datastore.get_field(type.id, item_id, field_name) }}</a>
+                    {% elif field.type() == 'list-strings' %}
+                        <ul>
+                            {% for value in datastore.get_field_as_list(type.id, item_id, field_name) %}
+                                <li>{{ value }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        {{ datastore.get_field(type.id, item_id, field_name) }}
+                    {% endif %}
+                </td>
+            {% endfor %}
+            <td><a href="{{ url }}/type/{{ type.id }}/record/{{ item_id }}/"><button type="button" class="btn btn-link">View</button></a></td>
+        </tr>
+    {% endfor %}
+</table>
+
+<h3>New</h3>
+<p class="text-right">
+    <a href="newweb/"><button type="button" class="btn btn-primary">New</button></a>
+</p>
+
+<p class="text-right">
+    <a href="{{ url }}/type/{{ type.id }}/api.json"><button type="button" class="btn btn-secondary">API</button></a>
+</p>
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: DataTig
+Version: 0.3.0
+Summary: A tool for working with crowd sourced data in JSON files in a Git repository
+Home-page: https://github.com/DataTig/DataTig
+Author: Open Data Services
+Author-email: code@opendataservices.coop
+License: MIT
+Project-URL: Documentation, https://datatig.readthedocs.io/en/latest/
+Project-URL: Issues, https://github.com/DataTig/DataTig/issues
+Project-URL: Source, https://github.com/DataTig/DataTig
+Description: A tool for working with crowd sourced data in JSON files in a Git repository
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: Dev
