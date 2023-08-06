@@ -1,0 +1,3 @@
+[console_scripts]
+nautilus-librarian=nautilus_librarian.main:app
+
