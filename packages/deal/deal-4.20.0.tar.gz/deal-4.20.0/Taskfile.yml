@@ -1,0 +1,129 @@
+# https://taskfile.dev/
+version: "3"
+
+vars:
+  PYTHON: python3
+  VENVS: .venvs
+
+env:
+  FLIT_ROOT_INSTALL: "1"
+
+tasks:
+  install:base:
+    status:
+      - test -f {{.VENVS}}/base/bin/flitenv
+    cmds:
+      - "{{.PYTHON}} -m venv {{.VENVS}}/base"
+      - >
+        {{.VENVS}}/base/bin/python3 -m pip install flitenv
+  install:test:
+    sources:
+      - pyproject.toml
+    deps:
+      - install:base
+    cmds:
+      - >
+        {{.VENVS}}/base/bin/flitenv --venvs={{.VENVS}} test install
+  install:lint:
+    sources:
+      - pyproject.toml
+    deps:
+      - install:base
+    cmds:
+      - >
+        {{.VENVS}}/base/bin/flitenv --venvs={{.VENVS}} lint install
+  install:docs:
+    sources:
+      - pyproject.toml
+    deps:
+      - install:base
+    cmds:
+      - >
+        {{.VENVS}}/base/bin/flitenv --venvs={{.VENVS}} docs install
+
+  release:
+    cmds:
+      - grep -F {{.CLI_ARGS}} deal/__init__.py
+      - git add deal/__init__.py
+      - git commit -m "bump version"
+      - git tag {{.CLI_ARGS}}
+      - flit publish
+      - git push
+      - git push --tags
+
+  pytest:run:
+    desc: "run Python tests"
+    deps:
+      - install:test
+    cmds:
+      - >
+        {{.VENVS}}/base/bin/flitenv --venvs={{.VENVS}} test run
+        pytest {{.CLI_ARGS}}
+  flake8:run:
+    desc: "lint Python code"
+    deps:
+      - install:lint
+    cmds:
+      - >
+        {{.VENVS}}/base/bin/flitenv --venvs={{.VENVS}} lint run
+        flake8 --ignore=DEAL {{.CLI_ARGS}} .
+  mypy:run:
+    desc: "check type annotations"
+    deps:
+      - install:lint
+    cmds:
+      - >
+        {{.VENVS}}/base/bin/flitenv --venvs={{.VENVS}} lint run
+        mypy {{.CLI_ARGS}}
+  isort:run:
+    desc: "sort imports"
+    deps:
+      - install:lint
+    cmds:
+      - >
+        {{.VENVS}}/base/bin/flitenv --venvs={{.VENVS}} lint run
+        isort {{.CLI_ARGS}} .
+  mypy_test:run:
+    desc: "validate type annotations"
+    deps:
+      - install:lint
+    cmds:
+      - >
+        {{.VENVS}}/base/bin/flitenv --venvs={{.VENVS}} lint run
+        mypy_test {{.CLI_ARGS}} ./types/
+
+  sphinx:run:
+    desc: "generate documentation"
+    deps:
+      - install:docs
+    cmds:
+      - rm -rf docs/build
+      - >
+        {{.VENVS}}/base/bin/flitenv --venvs={{.VENVS}} docs run
+        sphinx-build -W docs docs/build {{.CLI_ARGS}}
+  ci:run:
+    desc: "run all the same checks as deal runs on CI"
+    cmds:
+      - task: flake8:run
+      - task: mypy:run
+      - task: pytest:run
+
+  # solver:inject:
+  #   status:
+  #     - "test -d {{.DEAL_ENV}}/lib/python3.7/site-packages/deal_solver"
+  #   deps:
+  #     - task: flit:install
+  #       vars:
+  #         ENV: "{{.DEAL_ENV}}"
+  #   cmds:
+  #     - >
+  #       export FLIT=$(pwd)/{{.FLIT_ENV}}/bin/flit
+  #       && export PYTHON=$(pwd)/{{.DEAL_ENV}}/bin/python
+  #       && cd ../deal-solver/
+  #       && "$FLIT" install --symlink --python $PYTHON
+
+  # solver:run:
+  #   deps:
+  #     - task: solver:inject
+  #   cmds:
+  #     - "{{.DEAL_ENV}}/bin/python -m deal prove {{.CLI_ARGS}}"
