@@ -1,0 +1,14 @@
+numpy
+numexpr
+openpyxl
+h5py
+hdf5plugin
+psutil
+fileloc
+gdal
+
+[fancy feature]
+requests
+six
+jinja2
+pandas

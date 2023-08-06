@@ -1,0 +1,8 @@
+README.md
+setup.py
+catchment/__init__.py
+catchment.egg-info/PKG-INFO
+catchment.egg-info/SOURCES.txt
+catchment.egg-info/dependency_links.txt
+catchment.egg-info/requires.txt
+catchment.egg-info/top_level.txt
