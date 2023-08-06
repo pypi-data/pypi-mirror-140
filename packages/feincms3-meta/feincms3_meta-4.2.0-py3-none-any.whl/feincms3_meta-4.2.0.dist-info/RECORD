@@ -1,0 +1,10 @@
+feincms3_meta/__init__.py,sha256=VTGU3WYPE47q0i21zn0gKk3YPlDsWi3xiSonXrkO6qw,62
+feincms3_meta/models.py,sha256=t2NETD9YZxuR1H4qEITWC8xrJt3207p0hAiCgysp8g8,2909
+feincms3_meta/utils.py,sha256=iV_mEQfwDy9zL3JBlPUPQFG0uYy8PF9hsdDwIl4psQE,3497
+feincms3_meta/locale/de/LC_MESSAGES/django.mo,sha256=rIwxPv9LIAZP8Hq-kqYHPJ4pghHDpEeETNmTMCCZqAQ,1283
+feincms3_meta/locale/de/LC_MESSAGES/django.po,sha256=owuUIl8coUSlJ2egqCPRJkq3T0gCb3-QulcS7Yj-8ko,1700
+feincms3_meta-4.2.0.dist-info/LICENSE,sha256=rkRQclV-c7-LGmbt6lisoVE2FWHft1Zs9Rl5nVwCN60,1548
+feincms3_meta-4.2.0.dist-info/METADATA,sha256=XC0EmcqIPaIisL5a-ToYRNZ2DEpRhqMMBkMtExJjrto,1816
+feincms3_meta-4.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+feincms3_meta-4.2.0.dist-info/top_level.txt,sha256=RcXXMWorZH-zZGz9hghnZGlj-F5hfwbMHLeI1mEXtrk,14
+feincms3_meta-4.2.0.dist-info/RECORD,,
