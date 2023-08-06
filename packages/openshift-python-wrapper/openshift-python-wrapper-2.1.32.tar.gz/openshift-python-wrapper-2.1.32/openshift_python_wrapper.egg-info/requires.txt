@@ -1,0 +1,4 @@
+openshift
+xmltodict
+urllib3
+colorlog
