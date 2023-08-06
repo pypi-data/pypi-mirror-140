@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: fastapi-extviews
+Version: 0.1.4
+Summary: extviews is a fastapi library for creating RESTful APIs with a single class.
+Home-page: https://github.com/BilalAlpaslan/fastapi-extviews
+License: LICENSE
+Author: Bilal Alpaslan
+Author-email: m.bilal.alpaslan@gmail.com
+Requires-Python: >=3.7
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.73)
+Requires-Dist: motor (>=2.0)
+Requires-Dist: pymongo (>=3.11)
+Description-Content-Type: text/markdown
+
+# Fastapi-ExtViews
+
+extviews is a fastapi library for creating RESTful APIs with classes.
+
