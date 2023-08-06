@@ -1,0 +1,10 @@
+dowml/__init__.py,sha256=sQ7thRPYH-0Py2xaDXeV3E7cBiBbb7FchCMSss2GrfU,642
+dowml/interactive.py,sha256=PvwHpmD2xdrtjqB6dJtkzv8SlQMAoqpwMocgYJReYVk,25258
+dowml/lib.py,sha256=x_jVy31IWyJL-FUJG3sRQflPHw6hvsDB8X1Ok5ypCGg,60052
+dowml/dowmllib/__init__.py,sha256=DCaOJH5mDDcCmW3AJlLbF4dftJY5Q8tRH_gqeG7eoyw,648
+dowml-1.8.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+dowml-1.8.0.dist-info/METADATA,sha256=qINTVz3flQcmnH8IpM4UwV4PApDnhyHWc6YErS1jyKY,22505
+dowml-1.8.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dowml-1.8.0.dist-info/entry_points.txt,sha256=covlH0YlFsJJLB3WK0VrnOKKI8AKtsup1EZNQgWFVCc,56
+dowml-1.8.0.dist-info/top_level.txt,sha256=xwtgMFJ0Y9Pn9fijOR4-pyed8X15FniPm5vWTgDaI8o,6
+dowml-1.8.0.dist-info/RECORD,,
