@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/softpotato/__init__.py
+src/softpotato/calculate.py
+src/softpotato/plotting.py
+src/softpotato/simulate.py
+src/softpotato/technique.py
+src/softpotato.egg-info/PKG-INFO
+src/softpotato.egg-info/SOURCES.txt
+src/softpotato.egg-info/dependency_links.txt
+src/softpotato.egg-info/requires.txt
+src/softpotato.egg-info/top_level.txt
