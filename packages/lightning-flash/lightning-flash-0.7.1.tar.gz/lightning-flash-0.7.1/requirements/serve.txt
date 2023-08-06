@@ -1,0 +1,13 @@
+numpy
+pillow
+pyyaml
+cytoolz
+graphviz
+tqdm
+fastapi>=0.65.2
+pydantic>1.8.1
+starlette==0.14.2
+uvicorn[standard]>=0.12.0
+aiofiles
+jinja2
+torchvision
