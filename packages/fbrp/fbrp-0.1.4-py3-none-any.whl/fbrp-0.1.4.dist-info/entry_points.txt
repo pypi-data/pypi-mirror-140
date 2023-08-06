@@ -1,0 +1,3 @@
+[console_scripts]
+fbrp = fbrp.tool:main
+
