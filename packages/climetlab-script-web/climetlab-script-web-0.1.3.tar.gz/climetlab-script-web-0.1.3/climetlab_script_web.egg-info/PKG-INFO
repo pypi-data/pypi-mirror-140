@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: climetlab-script-web
+Version: 0.1.3
+Summary: Example climetlab external dataset plugin
+Home-page: https://github.com/ecmwf/climetlab-script-web
+Author: European Centre for Medium-Range Weather Forecasts (ECMWF)
+Author-email: software.support@ecmwf.int
+License: Apache License Version 2.0
+Keywords: meteorology
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+This is a draft.
+
+
+## Get source code
+```
+pip install climetlab
+git clone https://github.com/ecmwf-lab/climetlab-script-web
+```
+
+## Install python plugin
+```
+cd climetlab-script-web
+pip install -e .
+```
+
+## Build the javascript (See the github actions)
+```
+cd reactjs
+npm install
+npm test
+npm run build
+mv build/static/* build/.
+rmdir build/static
+rm -rf ../climetlab_script_web/static
+mv build ../climetlab_script_web/static
+```
+
+## Run server
+```
+cd ..
+climetlab web
+```
+
+Now browse to http://127.0.0.1:51979 (front-end) and http://127.0.0.1:51979/api/cache (API).
+
+# Licence
+See LICENSE file.
+
+
