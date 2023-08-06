@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+forioccrawler
+pyproject.toml
+setup.py
+ForIocCrawler.egg-info/PKG-INFO
+ForIocCrawler.egg-info/SOURCES.txt
+ForIocCrawler.egg-info/dependency_links.txt
+ForIocCrawler.egg-info/top_level.txt
+crawler/__init__.py
+crawler/crawler.py
+crawler/crawlerdata.py
+crawler/crawlererr.py
+crawler/exporter.py
+crawler/data/config.ini
+crawler/data/pattern.ini
+crawler/data/whitelist.ini
