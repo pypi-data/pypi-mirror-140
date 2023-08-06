@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TOPSIS-KARAN-101903072
+Version: 0.0.0
+Summary: Calculate the TOPSIS score
+Home-page: https://github.com/Karanpathania2205/TOPSIS
+Author: Karan Singh Pathania
+Author-email: singhpathaniakaran@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TOPSIS-KARAN-101903072
+calculates the topsis score of the parameters
+

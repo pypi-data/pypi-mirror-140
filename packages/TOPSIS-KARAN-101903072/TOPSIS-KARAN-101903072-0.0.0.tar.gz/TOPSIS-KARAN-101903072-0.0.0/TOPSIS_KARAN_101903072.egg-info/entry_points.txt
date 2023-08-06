@@ -1,0 +1,2 @@
+[console_scripts]
+topsis_karan = TOPSIS.__main__:main

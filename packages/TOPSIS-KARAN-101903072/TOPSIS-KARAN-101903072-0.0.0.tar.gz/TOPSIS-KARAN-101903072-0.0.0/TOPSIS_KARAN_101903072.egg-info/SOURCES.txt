@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+TOPSIS/__init__.py
+TOPSIS/__main__.py
+TOPSIS_KARAN_101903072.egg-info/PKG-INFO
+TOPSIS_KARAN_101903072.egg-info/SOURCES.txt
+TOPSIS_KARAN_101903072.egg-info/dependency_links.txt
+TOPSIS_KARAN_101903072.egg-info/entry_points.txt
+TOPSIS_KARAN_101903072.egg-info/top_level.txt
