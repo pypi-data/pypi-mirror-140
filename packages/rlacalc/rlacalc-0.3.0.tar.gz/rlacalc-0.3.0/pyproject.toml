@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "rlacalc"
+version = "0.3.0"
+description = "Statistical calculations for risk-limiting election tabulation audits (RLAs)"
+authors = ["Neal McBurnett <neal@mcburnett.org>"]
+license="MIT"
+readme="README.md"
+homepage="http://bcn.boulder.co.us/~neal/electionaudits/rlacalc.html"
+repository="https://github.com/nealmcb/rlacalc"
+keywords=["RLA", "risk-limiting audit", "election", "audit"]
+classifiers=[
+	"Development Status :: 5 - Production/Stable",
+	"Environment :: Console",
+	"Environment :: Web Environment",
+	"Intended Audience :: Developers",
+	"Intended Audience :: Science/Research",
+	"Natural Language :: English",
+	"Topic :: Security",
+	"Topic :: Scientific/Engineering :: Mathematics",
+]
+
+packages = [
+    { include = "rlacalc", from = "src" },
+    { include = "hug_noop.py", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+rlacalc = "rlacalc:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
