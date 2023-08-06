@@ -1,0 +1,179 @@
+{% if filetype_loop == 0 %}Name,ID,Description,Process Host Lookup,Allow PAP ASCII,Allow CHAP,Allow MS CHAPv1,Allow MS CHAPv2,Allow EAP MD5,Allow LEAP,Allow EAP-TLS,Allow EAP-TTLS,Allow EAP-FAST,Allow PEAP,Allow TEAP,Allow Preferred EAP,EAP-TLS Bit,Allow Weak EAP Ciphers,Require Message Authentication
+{%- for resource in allowedProtocolsDetails %}
+{{ resource.AllowedProtocols.name }},{{ resource.AllowedProtocols.id }},{{ resource.AllowedProtocols.description }},{{ resource.AllowedProtocols.processHostLookup }},{{ resource.AllowedProtocols.allowPapAscii }},{{ resource.AllowedProtocols.allowChap }},{{ resource.AllowedProtocols.allowMsChapV1 }},{{ resource.AllowedProtocols.allowMsChapV2 }},{{ resource.AllowedProtocols.allowEapMd5 }},{{ resource.AllowedProtocols.allowLeap }},{{ resource.AllowedProtocols.allowEapTls }},{{ resource.AllowedProtocols.allowEapTtls }},{{ resource.AllowedProtocols.allowEapFast }},{{ resource.AllowedProtocols.allowPeap }},{{ resource.AllowedProtocols.allowTeap }},{{ resource.AllowedProtocols.allowPreferredEapProtocol }},{{ resource.AllowedProtocols.eapTlsLBit }},{{ resource.AllowedProtocols.allowWeakCiphersForEap }},{{ resource.AllowedProtocols.requireMessageAuth }}
+{%- endfor %}
+{% else %}{% if filetype_loop == 1 %}
+# ISE Allowed Protocols 
+| Name | ID | Description | Process Host Lookup | Allow PAP ASCII | Allow CHAP | Allow MS CHAPv1 | Allow MS CHAPv2 | Allow EAP MD5 | Allow LEAP | Allow EAP-TLS | Allow EAP-TTLS | Allow EAP-FAST | Allow PEAP | Allow TEAP | Allow Preferred EAP | EAP-TLS Bit | Allow Weak EAP Ciphers | Require Message Authentication |
+| ---- | -- | ----------- | ------------------- | --------------- | ---------- | --------------- | --------------- | ------------- | ---------- | ------------- | -------------- | -------------- | ---------- | ---------- | ------------------- | ----------- | ---------------------- | ------------------------------ |
+{%- for resource in allowedProtocolsDetails %}
+| {{ resource.AllowedProtocols.name }} | {{ resource.AllowedProtocols.id }} | {{ resource.AllowedProtocols.description }} | {{ resource.AllowedProtocols.processHostLookup }} | {{ resource.AllowedProtocols.allowPapAscii }} | {{ resource.AllowedProtocols.allowChap }} | {{ resource.AllowedProtocols.allowMsChapV1 }} | {{ resource.AllowedProtocols.allowMsChapV2 }} | {{ resource.AllowedProtocols.allowEapMd5 }} | {{ resource.AllowedProtocols.allowLeap }} | {{ resource.AllowedProtocols.allowEapTls }} | {{ resource.AllowedProtocols.allowEapTtls }} | {{ resource.AllowedProtocols.allowEapFast }} | {{ resource.AllowedProtocols.allowPeap }} | {{ resource.AllowedProtocols.allowTeap }} | {{ resource.AllowedProtocols.allowPreferredEapProtocol }} | {{ resource.AllowedProtocols.eapTlsLBit }} | {{ resource.AllowedProtocols.allowWeakCiphersForEap }} | {{ resource.AllowedProtocols.requireMessageAuth }} |
+{%- endfor %}
+{% else %}{% if filetype_loop == 2 %}
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/colreorder/1.5.4/js/dataTables.colReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/keytable/2.6.4/js/dataTables.keyTable.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.9/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.6.4/css/keyTable.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+</head>
+<body>
+<h1>ISE Allowed Protocols </h1>
+<table id = "ise">
+  <tr>
+    <th>Name</th>
+    <th>ID</th>
+    <th>Description</th>
+    <th>Process Host Lookup</th>
+    <th>Allow PAP ASCII</th>
+    <th>Allow CHAP</th>
+    <th>Allow MS CHAPv1</th>
+    <th>Allow MS CHAPv2</th>
+    <th>Allow EAP MD5</th>
+    <th>Allow LEAP</th>
+    <th>Allow EAP-TLS</th>
+    <th>Allow EAP-TTLS</th>
+    <th>Allow EAP-FAST</th>
+    <th>Allow PEAP</th>
+    <th>Allow TEAP</th>
+    <th>Allow Preferred EAP</th>
+    <th>EAP-TLS Bit</th>
+    <th>Allow Weak EAP Ciphers</th>
+    <th>Require Message Authentication</th>
+  </tr>
+{%- for resource in allowedProtocolsDetails %}
+  <tr>
+    <td>{{ resource.AllowedProtocols.name }}</td>
+    <td>{{ resource.AllowedProtocols.id }}</td>
+    <td>{{ resource.AllowedProtocols.description }}</td>
+    <td>{{ resource.AllowedProtocols.processHostLookup }}</td>
+    <td>{{ resource.AllowedProtocols.allowPapAscii }}</td>
+    <td>{{ resource.AllowedProtocols.allowChap }}</td>
+    <td>{{ resource.AllowedProtocols.allowMsChapV1 }}</td>
+    <td>{{ resource.AllowedProtocols.allowMsChapV2 }}</td>
+    <td>{{ resource.AllowedProtocols.allowEapMd5 }}</td>
+    <td>{{ resource.AllowedProtocols.allowLeap }}</td>
+    <td>{{ resource.AllowedProtocols.allowEapTls }}</td>
+    <td>{{ resource.AllowedProtocols.allowEapTtls }}</td>
+    <td>{{ resource.AllowedProtocols.allowEapFast }}</td>
+    <td>{{ resource.AllowedProtocols.allowPeap }}</td>
+    <td>{{ resource.AllowedProtocols.allowTeap }}</td>
+    <td>{{ resource.AllowedProtocols.allowPreferredEapProtocol }}</td>
+    <td>{{ resource.AllowedProtocols.eapTlsLBit }}</td>
+    <td>{{ resource.AllowedProtocols.allowWeakCiphersForEap }}</td>
+    <td>{{ resource.AllowedProtocols.requireMessageAuth }}</td>
+  </tr>
+{%- endfor %}   
+</table>
+<script type = "text/javascript">
+  $(document).ready(function(){
+    $('#ise thead tr')
+    .clone(true)
+    .addClass('filters')
+    .appendTo('#ise thead');
+
+    var table = $('#ise').DataTable({
+        keys: true,
+        dom: 'Bfrtip',
+        lengthMenu: [
+            [ 10, 25, 50, -1 ],
+            [ '10 rows', '25 rows', '50 rows', 'Show all' ]
+        ],
+        buttons: [
+        'pageLength','colvis','copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        colReorder: true,
+        select: true,            
+        orderCellsTop: true,
+        fixedHeader: true,
+        initComplete: function () {
+        var api = this.api();
+
+        // For each column
+        api
+            .columns()
+            .eq(0)
+            .each(function (colIdx) {
+                // Set the header cell to contain the input element
+                var cell = $('.filters th').eq(
+                    $(api.column(colIdx).header()).index()
+                );
+                var title = $(cell).text();
+                $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+                // On every keypress in this input
+                $(
+                    'input',
+                    $('.filters th').eq($(api.column(colIdx).header()).index())
+                )
+                    .off('keyup change')
+                    .on('keyup change', function (e) {
+                        e.stopPropagation();
+
+                        // Get the search value
+                        $(this).attr('title', $(this).val());
+                        var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                        var cursorPosition = this.selectionStart;
+                        // Search the column for that value
+                        api
+                            .column(colIdx)
+                            .search(
+                                this.value != ''
+                                    ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                    : '',
+                                this.value != '',
+                                this.value == ''
+                            )
+                            .draw();
+
+                        $(this)
+                            .focus()[0]
+                            .setSelectionRange(cursorPosition, cursorPosition);
+                    });
+            });
+    },
+});
+});        
+</script>
+</body></html>
+{%- else %}
+# Allowed Protocols
+{%- for resource in allowedProtocolsDetails %}
+## Name: {{ resource.AllowedProtocols.name }}
+### ID: {{ resource.AllowedProtocols.id }}
+### Description: {{ resource.AllowedProtocols.description }}
+#### Process Host Lookup: {{ resource.AllowedProtocols.processHostLookup }}
+#### Allow
+##### PAP ASCII: {{ resource.AllowedProtocols.allowPapAscii }}
+##### CHAP: {{ resource.AllowedProtocols.allowChap }}
+##### MS CHAP
+###### v1: {{ resource.AllowedProtocols.allowMsChapV1 }}
+###### v2: {{ resource.AllowedProtocols.allowMsChapV2 }}
+##### EAP MD5: {{ resource.AllowedProtocols.allowEapMd5 }}
+##### LEAP: {{ resource.AllowedProtocols.allowLeap }}
+##### EAP
+###### TLS: {{ resource.AllowedProtocols.allowEapTls }}
+###### TTLS: {{ resource.AllowedProtocols.allowEapTtls }}
+###### FAST: {{ resource.AllowedProtocols.allowEapFast }}
+###### Preferred: {{ resource.AllowedProtocols.allowPreferredEapProtocol }}
+###### Bit: {{ resource.AllowedProtocols.eapTlsLBit }}
+##### PEAP: {{ resource.AllowedProtocols.allowPeap }}
+##### TEAP: {{ resource.AllowedProtocols.allowTeap }}
+#### Allow Weak EAP Ciphers: {{ resource.AllowedProtocols.allowWeakCiphersForEap }}
+#### Require Message Authentication: {{ resource.AllowedProtocols.requireMessageAuth }}
+{%- endfor %}
+{%- endif %}{% endif %}{% endif %}
