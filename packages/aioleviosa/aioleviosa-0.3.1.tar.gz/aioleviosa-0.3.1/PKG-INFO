@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: aioleviosa
+Version: 0.3.1
+Summary: AsyncIO compatible library to talk to a Leviosa Motor Shades Zone
+Home-page: https://github.com/altersis/aioleviosa
+Author: Gerardo Castillo
+Author-email: gcastillo@integrahome.net
+License: APACHE 2.0
+Download-URL: https://github.com/altersis/aioleviosa/archive/refs/tags/0.3.0.tar.gz
+Description: UNKNOWN
+Keywords: Communication,AsyncIO,Leviosa Zone
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
