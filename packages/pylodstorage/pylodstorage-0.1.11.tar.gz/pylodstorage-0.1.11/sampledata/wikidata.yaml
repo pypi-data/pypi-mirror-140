@@ -1,0 +1,53 @@
+#
+# Sample Queries for Wikidata
+#
+# WF 2022-02-19
+'MountainsHigher8000m':
+    title:  Mountains higher than 8000 m
+    description: https://qlever.cs.uni-freiburg.de/wikidata/F7JXq3
+    sparql: |
+      # Mountains higher than 8000 m
+      # fixes:
+      # https://qlever.cs.uni-freiburg.de/wikidata/F7JXq3
+      # see https://github.com/ad-freiburg/qlever/issues/604
+      PREFIX wd: <http://www.wikidata.org/entity/>
+      PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+      PREFIX p: <http://www.wikidata.org/prop/>
+      PREFIX psn: <http://www.wikidata.org/prop/statement/value-normalized/>
+      PREFIX wikibase: <http://wikiba.se/ontology#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      SELECT ?mountain ?mountain_label (MAX(?elevationValues) AS ?elevation) (SAMPLE(?coordinateValues) AS ?coordinates) WHERE {
+        ?mountain wdt:P31 wd:Q8502 .
+        ?mountain p:P2044/psn:P2044/wikibase:quantityAmount ?elevationValues .
+        ?mountain wdt:P625 ?coordinateValues .
+        ?mountain rdfs:label ?mountain_label .
+        FILTER(?elevationValues >= 8000.0) .
+        FILTER (LANG(?mountain_label) = "en")
+      }
+      GROUP BY ?mountain ?mountain_label
+      ORDER BY DESC(?elevation)
+'GermanFIFA2014WorldCupTeam':
+     title: German FIFA 2014 World Cup Team
+     description:  German football players participating in the FIFA World GermanFIFA2014WorldCupTeam
+     sparql: |
+        # German FIFA 2014 Worldcup Team
+        #
+        PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+        PREFIX p: <http://www.wikidata.org/prop/>
+        PREFIX wd: <http://www.wikidata.org/entity/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+        SELECT  ?player ?playerLabel
+        WHERE
+          {
+            #SERVICE  <https://query.wikidata.org/bigdata/namespace/wdq/sparql>
+            #SERVICE  <http://sun.bitplan.com:7001/>
+            {                           #a working example query for wikidata:
+              ?player wdt:P31 wd:Q5.         #humans
+              ?player wdt:P54 wd:Q43310.     #germans
+              ?player wdt:P1344 wd:Q79859.   #part of world cup 2014
+              ?player rdfs:label ?playerLabel.
+              FILTER(LANG(?playerLabel) = "en")
+            }
+        }
+        ORDER BY(?playerLabel)
