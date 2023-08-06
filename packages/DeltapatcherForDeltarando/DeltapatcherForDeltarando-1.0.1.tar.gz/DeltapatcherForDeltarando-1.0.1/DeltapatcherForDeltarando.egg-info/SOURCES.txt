@@ -1,0 +1,14 @@
+LICENSE.txt
+NOTICE.txt
+pyproject.toml
+setup.cfg
+setup.py
+DeltapatcherForDeltarando.egg-info/PKG-INFO
+DeltapatcherForDeltarando.egg-info/SOURCES.txt
+DeltapatcherForDeltarando.egg-info/dependency_links.txt
+DeltapatcherForDeltarando.egg-info/entry_points.txt
+DeltapatcherForDeltarando.egg-info/not-zip-safe
+DeltapatcherForDeltarando.egg-info/requires.txt
+DeltapatcherForDeltarando.egg-info/top_level.txt
+__pyinstaller/__init__.py
+__pyinstaller/hook-deltarune_rando_patcher.py
