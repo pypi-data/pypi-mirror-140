@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+PrachiCalculator.egg-info/PKG-INFO
+PrachiCalculator.egg-info/SOURCES.txt
+PrachiCalculator.egg-info/dependency_links.txt
+PrachiCalculator.egg-info/top_level.txt
+prachi-topsis/__init__.py
