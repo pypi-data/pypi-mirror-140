@@ -1,0 +1,12 @@
+{
+    "paths_db_patterns": {
+        "eqs": "db_models/data/eqs/tex_dialect.db",
+        "cs": "db_models/data/cs/demo_dialect.db",
+        "signatures": "db_models/data/sampling/signatures.db",
+        "examples_sampler": "db_models/data/examples/examples_sampler.db",
+        "examples_parser_eqs": "db_models/data/examples/examples_parser_eqs.db",
+        "examples_parser_cs": "db_models/data/examples/examples_parser_cs.db",
+        "eqs_tex": "db_models/data/eqs/tex_dialect.db",
+        "eqs_wolfram": "db_models/data/eqs/demo_dialect.db"
+    }
+}
