@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "habitat-fydp-package"
+version = "0.0.6"
+description = "Democratize access to HAB related data in Lake Erie to be used for scientific research"
+authors = ["Shanthosh Pushparajah <spushpar@uwaterloo.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/cognitetosh/habitat-fydp-package"
+repository = "https://github.com/cognitetosh/habitat-fydp-package"
+keywords = ["HAB", "Harmful Algae Blooms", "Lake Erie"]
+
+[tool.poetry.dependencies]
+python = "3.7"
+requests = "^2.27.1"
+DateTime = "^4.3"
+folium = "^0.12.1"
+pyshp = "^2.1.3"
+matplotlib = "^3.5.1"
+numpy = "1.19.3"
+pandas = "1"
+wwo-hist = "^0.0.7"
+sklearn = "^0.0"
+pmdarima = "^1.8.4"
+scikit-learn = "^1.0.2"
+scipy = "^1.7.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
