@@ -1,0 +1,7 @@
+workforce_async/__init__.py,sha256=pvY_HZSSzUfMJTgfRUAkC8iDUuEgcod-6Kw7epZ7Teg,46
+workforce_async/aiohttp.py,sha256=YMYYNHY0wAPIBQiLrHuPJUq4H3BrulsipA7EIQ1YMrM,858
+workforce_async/models.py,sha256=Xu7lhr-7JgedWXqRCjnw27kUQ8H6AK037qCx0pksXDk,11491
+workforce_async-0.12.0.dist-info/LICENSE,sha256=ULNIDyIXptHnIYAFf-2q7ENMdqE3hrkkCkCcBI8N9_8,1525
+workforce_async-0.12.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+workforce_async-0.12.0.dist-info/METADATA,sha256=A1lbmX6rWPBeB2uIuO_-4qJZ8Z8-6Qi8keMzs07-vak,3774
+workforce_async-0.12.0.dist-info/RECORD,,
