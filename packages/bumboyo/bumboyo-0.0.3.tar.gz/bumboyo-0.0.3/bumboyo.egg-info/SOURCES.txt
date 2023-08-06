@@ -1,0 +1,7 @@
+README.txt
+setup.py
+bumboyo.egg-info/PKG-INFO
+bumboyo.egg-info/SOURCES.txt
+bumboyo.egg-info/dependency_links.txt
+bumboyo.egg-info/requires.txt
+bumboyo.egg-info/top_level.txt
