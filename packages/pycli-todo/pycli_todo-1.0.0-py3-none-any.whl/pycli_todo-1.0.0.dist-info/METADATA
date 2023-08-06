@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pycli-todo
+Version: 1.0.0
+Summary: Simple to-do list for your terminal, made in Python
+Author: lufa
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: click-aliases (>=1.0.1,<2.0.0)
