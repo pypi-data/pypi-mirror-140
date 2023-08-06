@@ -1,0 +1,7 @@
+README.md
+python_binding.cpp
+setup.py
+onionpp.egg-info/PKG-INFO
+onionpp.egg-info/SOURCES.txt
+onionpp.egg-info/dependency_links.txt
+onionpp.egg-info/top_level.txt

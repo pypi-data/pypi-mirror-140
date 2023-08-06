@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: onionpp
+Version: 0.2
+Summary: embed tor into your application
+Home-page: https://github.com/nbdy/onionpp
+Author: Pascal Eberlein
+Author-email: pascal@eberlein.io
+License: UNKNOWN
+Keywords: tor embedded
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# onionpp
+
+embed tor in your application
+
+## features
+
+- [X] start tor
+- [X] python bindings
+
+## usage
+
+```c++
+#include "onionpp.h"
+
+int main() {
+  onionpp::Tor tor;
+
+  // use the tor socks port
+  return 0;
+}
+```
+
+
