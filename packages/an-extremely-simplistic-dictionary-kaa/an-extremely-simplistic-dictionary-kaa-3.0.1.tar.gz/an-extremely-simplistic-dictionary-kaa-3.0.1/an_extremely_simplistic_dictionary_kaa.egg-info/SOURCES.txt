@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+an_extremely_simplistic_dictionary_kaa.egg-info/PKG-INFO
+an_extremely_simplistic_dictionary_kaa.egg-info/SOURCES.txt
+an_extremely_simplistic_dictionary_kaa.egg-info/dependency_links.txt
+an_extremely_simplistic_dictionary_kaa.egg-info/requires.txt
+an_extremely_simplistic_dictionary_kaa.egg-info/top_level.txt
+dictionary/__init__.py
+dictionary/dictionary.py
