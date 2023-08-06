@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+spa_in_django_dir="${SPA_IN_DJANGO_DIR:?}"
+
+commit_message="New SPA build"
+if [[ ! -z "$1" ]] ; then
+  commit_message=$1
+fi
+
+git reset
+
+git add $spa_in_django_dir
+git commit -m "$commit_message"

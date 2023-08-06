@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+
+graft docs
+
+graft serve_spa/static
+graft serve_spa/templates
+graft serve_spa/*/static
+graft serve_spa/*/templates
