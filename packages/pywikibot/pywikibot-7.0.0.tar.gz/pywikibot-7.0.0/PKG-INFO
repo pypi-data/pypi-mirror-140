@@ -1,0 +1,447 @@
+Metadata-Version: 2.1
+Name: pywikibot
+Version: 7.0.0
+Summary: Python MediaWiki Bot Framework
+Home-page: https://www.mediawiki.org/wiki/Manual:Pywikibot
+Maintainer: The Pywikibot team
+Maintainer-email: pywikibot@lists.wikimedia.org
+License: MIT License
+Download-URL: https://pywikibot.toolforge.org/
+Keywords: API,bot,client,framework,mediawiki,pwb,pybot,python,pywiki,pywikibase,pywikibot,pywikipedia,pywikipediabot,wiki,wikibase,wikidata,wikimedia,wikipedia
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Afrikaans
+Classifier: Natural Language :: Arabic
+Classifier: Natural Language :: Basque
+Classifier: Natural Language :: Bengali
+Classifier: Natural Language :: Bosnian
+Classifier: Natural Language :: Bulgarian
+Classifier: Natural Language :: Cantonese
+Classifier: Natural Language :: Catalan
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Natural Language :: Croatian
+Classifier: Natural Language :: Czech
+Classifier: Natural Language :: Danish
+Classifier: Natural Language :: Dutch
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Esperanto
+Classifier: Natural Language :: Finnish
+Classifier: Natural Language :: French
+Classifier: Natural Language :: Galician
+Classifier: Natural Language :: German
+Classifier: Natural Language :: Greek
+Classifier: Natural Language :: Hebrew
+Classifier: Natural Language :: Hindi
+Classifier: Natural Language :: Hungarian
+Classifier: Natural Language :: Icelandic
+Classifier: Natural Language :: Indonesian
+Classifier: Natural Language :: Irish
+Classifier: Natural Language :: Italian
+Classifier: Natural Language :: Japanese
+Classifier: Natural Language :: Javanese
+Classifier: Natural Language :: Korean
+Classifier: Natural Language :: Latin
+Classifier: Natural Language :: Latvian
+Classifier: Natural Language :: Lithuanian
+Classifier: Natural Language :: Macedonian
+Classifier: Natural Language :: Malay
+Classifier: Natural Language :: Marathi
+Classifier: Natural Language :: Nepali
+Classifier: Natural Language :: Norwegian
+Classifier: Natural Language :: Panjabi
+Classifier: Natural Language :: Persian
+Classifier: Natural Language :: Polish
+Classifier: Natural Language :: Portuguese
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Natural Language :: Romanian
+Classifier: Natural Language :: Russian
+Classifier: Natural Language :: Serbian
+Classifier: Natural Language :: Slovak
+Classifier: Natural Language :: Slovenian
+Classifier: Natural Language :: Spanish
+Classifier: Natural Language :: Swedish
+Classifier: Natural Language :: Tamil
+Classifier: Natural Language :: Telugu
+Classifier: Natural Language :: Thai
+Classifier: Natural Language :: Tibetan
+Classifier: Natural Language :: Turkish
+Classifier: Natural Language :: Ukrainian
+Classifier: Natural Language :: Urdu
+Classifier: Natural Language :: Vietnamese
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5.3
+Provides-Extra: eventstreams
+Provides-Extra: isbn
+Provides-Extra: Graphviz
+Provides-Extra: Google
+Provides-Extra: mwparserfromhell
+Provides-Extra: wikitextparser
+Provides-Extra: mysql
+Provides-Extra: Tkinter
+Provides-Extra: mwoauth
+Provides-Extra: html
+Provides-Extra: http
+Provides-Extra: flake8
+Provides-Extra: hacking
+Provides-Extra: commons_information.py
+Provides-Extra: patrol.py
+Provides-Extra: weblinkchecker.py
+Provides-Extra: scripts
+License-File: LICENSE
+
+.. image:: https://github.com/wikimedia/pywikibot/actions/workflows/pywikibot-ci.yml/badge.svg?branch=master
+   :alt: Github CI
+   :target: https://github.com/wikimedia/pywikibot/actions/workflows/pywikibot-ci.yml
+.. image:: https://ci.appveyor.com/api/projects/status/xo2g4ctoom8k6yvw/branch/master?svg=true
+   :alt: AppVeyor Build Status
+   :target: https://ci.appveyor.com/project/ladsgroup/pywikibot-g4xqx
+.. image:: https://codecov.io/gh/wikimedia/pywikibot/branch/master/graph/badge.svg
+   :alt: Code coverage
+   :target: https://app.codecov.io/gh/wikimedia/pywikibot
+.. image:: https://api.codeclimate.com/v1/badges/de6ca4c66e7c7bee4156/maintainability
+   :alt: Maintainability
+   :target: https://codeclimate.com/github/wikimedia/pywikibot
+.. image:: https://img.shields.io/pypi/pyversions/pywikibot.svg
+   :alt: Python
+   :target: https://www.python.org/downloads/
+.. image:: https://img.shields.io/pypi/v/pywikibot.svg
+   :alt: Pywikibot release
+   :target: https://pypi.org/project/pywikibot/
+.. image:: https://static.pepy.tech/badge/pywikibot
+   :alt: Total downloads
+   :target: https://pepy.tech/project/pywikibot
+.. image:: https://static.pepy.tech/personalized-badge/pywikibot?period=month&units=international_system&left_color=black&right_color=blue&left_text=monthly
+   :alt: Monthly downloads
+   :target: https://pepy.tech/project/pywikibot
+
+Pywikibot
+=========
+
+The Pywikibot framework is a Python library that interfaces with the
+`MediaWiki API <https://www.mediawiki.org/wiki/API:Main_page>`_
+version 1.23 or higher.
+
+Also included are various general function scripts that can be adapted for
+different tasks.
+
+For further information about the library excluding scripts see
+the full `code documentation <https://doc.wikimedia.org/pywikibot/>`_.
+
+Quick start
+-----------
+
+::
+
+    pip install requests
+    git clone https://gerrit.wikimedia.org/r/pywikibot/core.git
+    cd core
+    git submodule update --init
+    python pwb.py script_name
+
+Or to install using PyPI (excluding scripts)
+
+::
+
+    pip install -U setuptools
+    pip install pywikibot
+    pwb <scriptname>
+
+In addition a MediaWiki markup parser is required. Please install one of them:
+
+::
+
+    pip install mwparserfromhell
+
+or
+
+::
+
+    pip install wikitextparser
+
+Our `installation
+guide <https://www.mediawiki.org/wiki/Manual:Pywikibot/Installation>`_
+has more details for advanced usage.
+
+Basic Usage
+-----------
+
+If you wish to write your own script it's very easy to get started:
+
+::
+
+    import pywikibot
+    site = pywikibot.Site('en', 'wikipedia')  # The site we want to run our bot on
+    page = pywikibot.Page(site, 'Wikipedia:Sandbox')
+    page.text = page.text.replace('foo', 'bar')
+    page.save('Replacing "foo" with "bar"')  # Saves the page
+
+Wikibase Usage
+--------------
+
+Wikibase is a flexible knowledge base software that drives Wikidata.
+A sample pywikibot script for getting data from Wikibase:
+
+::
+
+    import pywikibot
+    site = pywikibot.Site('wikipedia:en')
+    repo = site.data_repository()  # the Wikibase repository for given site
+    page = repo.page_from_repository('Q91')  # create a local page for the given item
+    item = pywikibot.ItemPage(repo, 'Q91')  # a repository item
+    data = item.get()  # get all item data from repository for this item
+
+Script example
+--------------
+
+Pywikibot provides bot classes to develop your own script easily:
+
+::
+
+    import pywikibot
+    from pywikibot import pagegenerators
+    from pywikibot.bot import ExistingPageBot
+
+    class MyBot(ExistingPageBot):
+
+        update_options = {
+            'text': 'This is a test text',
+            'summary: 'Bot: a bot test edit with Pywikibot.'
+        }
+
+        def treat_page(self):
+            """Load the given page, do some changes, and save it."""
+            text = self.current_page.text
+            text += '\n' + self.opt.text
+            self.put_current(text, summary=self.opt.summary)
+
+    def main():
+        """Parse command line arguments and invoke bot."""
+        options = {}
+        gen_factory = pagegenerators.GeneratorFactory()
+        # Option parsing
+        local_args = pywikibot.handle_args(args)  # global options
+        local_args = gen_factory.handle_args(local_args)  # generators options
+        for arg in local_args:
+            opt, sep, value = arg.partition(':')
+            if opt in ('-summary', '-text'):
+                options[opt[1:]] = value
+        MyBot(generator=gen_factory.getCombinedGenerator(), **options).run()
+
+    if __name == '__main__':
+        main()
+
+
+For more documentation on Pywikibot see our `docs <https://doc.wikimedia.org/pywikibot/>`_.
+
+
+Required external programs
+---------------------------
+
+It may require the following programs to function properly:
+
+* `7za`: To extract 7z files
+
+Roadmap
+-------
+
+Current release changes
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Improvements
+------------
+
+* i18n updates for date.py
+* Add number transliteration of 'lo', 'ml', 'pa', 'te' to NON_LATIN_DIGITS
+* Detect range blocks with Page.is_blocked() method (T301282)
+* to_latin_digits() function was added to textlib as counterpart of to_local_digits() function
+* api.Request.submit now handles search-title-disabled and search-text-disabled API Errors
+* A show_diff parameter  was added to Page.put() and Page.change_category()
+* Allow categories when saving IndexPage (T299806)
+* Add a new function case_escape to textlib
+* Support inheritance of the __STATICREDIRECT__
+* Avoid non-deteministic behavior in removeDisableParts
+* Update isbn dependency and require python-stdnum >= 1.17
+* Synchronize Page.linkedPages() parameters with Site.pagelinks() parameters
+* Scripts hash bang was changed from python to python3
+* i18n.bundles(), i18n.known_languages and  i18n._get_bundle() functions were added
+* Raise ConnectionError immediately if urllib3.NewConnectionError occurs (T297994, 298859)
+* Make pywikibot messages available with site package (T57109, T275981)
+* Add support for API:Redirects
+* Enable shell script with Pywikibot site package
+* Enable generate_user_files.py and generate_family_file with site-package (T107629)
+* Add support for Python 3.11
+* Pywikibot supports PyPy 3 (T101592)
+* A new method User.is_locked() was added to determine whether the user is currently locked globally (T249392)
+* A new method APISite.is_locked() was added to determine whether a given user or user id is locked globally (T249392)
+* APISite.get_globaluserinfo() method was added to retrieve globaluserinfo for any user or user id (T163629)
+* APISite.globaluserinfo attribute may be deleted to force reload
+* APISite.is_blocked() method has a force parameter to reload that info
+* Allow family files in base_dir by default
+* Make pwb wrapper script a pywikibot entry point for scripts (T139143, T270480)
+* Enable -version and --version with pwb wrapper or code entry point (T101828)
+* Add `title_delimiter_and_aliases` attribute to family files to support WikiHow family (T294761)
+* BaseBot has a public collections.Counter for reading, writing and skipping a page
+* Upload: Retry upload if 'copyuploadbaddomain' API error occurs (T294825)
+* Update invisible characters from unicodedata 14.0.0
+* Add support for Wikimedia OCR engine with proofreadpage
+* Rewrite tools.intersect_generators which makes it running up to 10'000 times faster. (T85623, T293276)
+* The cached output functionality from compat release was re-implemented (T151727, T73646, T74942, T132135, T144698, T196039, T280466)
+* L10N updates
+* Adjust groupsize within pagegenerators.PreloadingGenerator (T291770)
+* New "maxlimit" property was added to APISite (T291770)
+
+
+Bugfixes
+--------
+
+* Don't raise an exception if BlockEntry initializer found a hidden title (T78152)
+* Fix KeyError in create_warnings_list (T301610)
+* Enable similar script call of pwb.py on toolforge (T298846)
+* Remove question mark character from forbidden file name characters (T93482)
+* Enable -interwiki option with pagegenerators (T57099)
+* Don't assert login result (T298761)
+* Allow title placeholder $1 in the middle of an url (T111513, T298078)
+* Don't create a Site object if pywikibot is not fully imported (T298384)
+* Use page.site.data_repository when creating a _WbDataPage (T296985)
+* Fix mysql AttributeError for sock.close() on toolforge (T216741)
+* Only search user_script_paths inside config.base_dir (T296204)
+* pywikibot.argv has been fixed for pwb.py wrapper if called with global args (T254435)
+* Only ignore FileExistsError when creating the api cache (T295924)
+* Only handle query limit if query module is limited (T294836)
+* Upload: Only set filekey/offset for files with names (T294916)
+* Make site parameter of textlib.replace_links() mandatory (T294649)
+* Raise a generic ServerError if the http status code is unofficial (T293208)
+
+
+Breaking changes
+----------------
+
+* Support of Python 3.5.0 - 3.5.2 has been dropped (T286867)
+* generate_user_files.py, generate_user_files.py, shell.py and version.py were moved to pywikibot/scripts and must be used with pwb wrapper script
+* *See also Code cleanups below*
+
+
+Code cleanups
+-------------
+
+* Deprecated  http.get_fake_user_agent() function was removed
+* FilePage.fileIsShared() was removed in favour of FilePage.file_is_shared()
+* Page.canBeEdited() was removed in favour of Page.has_permission()
+* BaseBot.stop() method were removed in favour of BaseBot.generator.close()
+* showHelp() function was remove in favour of show_help
+* CombinedPageGenerator pagegenerator was removed in favour of itertools.chain
+* Remove deprecated echo.Notification.id
+* Remove APISite.newfiles() method (T168339)
+* Remove APISite.page_exists() method
+* Raise a TypeError if BaseBot.init_page return None
+* Remove private upload parameters in UploadRobot.upload_file(), FilePage.upload() and APISite.upload() methods
+* Raise an Error exception if 'titles' is still used as where parameter in Site.search()
+* Deprecated version.get_module_version() function was removed
+* Deprecated setOptions/getOptions OptionHandler methods were removed
+* Deprecated from_page() method of CosmeticChangesToolkit was removed
+* Deprecated diff attribute of CosmeticChangesToolkit  was removed in favour of show_diff
+* Deprecated namespace and pageTitle parameter of CosmeticChangesToolkit were removed
+* Remove deprecated BaseSite namespace shortcuts
+* Remove deprecated Family.get_cr_templates method in favour of Site.category_redirects()
+* Remove deprecated Page.put_async() method (T193494)
+* Ignore baserevid parameter for several DataSite methods
+* Remove deprecated preloaditempages method
+* Remove disable_ssl_certificate_validation kwargs in http functions in favour of verify parameter (T265206)
+* Deprecated PYWIKIBOT2 environment variables were removed
+* version.ParseError was removed in favour of exceptions.VersionParseError
+* specialbots.EditReplacement and specialbots.EditReplacementError were removed in favour of exceptions.EditReplacementError
+* site.PageInUse exception was removed in favour of exceptions.PageInUseError
+* page.UnicodeToAsciiHtml and page.unicode2html were removed in favour of tools.chars.string_to_ascii_html and tools.chars.string2html
+* interwiki_graph.GraphImpossible and login.OAuthImpossible exception were removed in favour of ImportError
+* i18n.TranslationError was removed in favour of exceptions.TranslationError
+* WikiaFamily was removed in favour of FandomFamily
+* data.api exceptions were removed in favour of exceptions module
+* cosmetic_changes CANCEL_ALL/PAGE/METHOD/MATCH constants were removed in favour of CANCEL enum
+* pywikibot.__release__ was removed in favour of pywikibot.__version__
+* TextfilePageGenerator was replaced by TextIOPageGenerator
+* PreloadingItemGenerator was replaced by PreloadingEntityGenerator
+* DuplicateFilterPageGenerator was replaced by tools.filter_unique
+* ItemPage.concept_url method was replaced by ItemPage.concept_uri
+* Outdated parameter names has been dropped
+* Deprecated pywikibot.Error exception were removed in favour of pywikibot.exceptions.Error classes (T280227)
+* Deprecated exception identifiers were removed (T280227)
+* Deprecated date.FormatDate class was removed in favour of date.format_date function
+* language_by_size property of wowwiki Family was removed in favour of codes attribute
+* availableOptions was removed in favour of available_options
+* config2 was removed in favour of config
+* tools.RotatingFileHandler was removed in favour of logging.handlers.RotatingFileHandler
+* tools.DotReadableDict, tools.LazyRegex and tools.DeprecatedRegex classes were removed
+* tools.frozenmap was removed in favour of types.MappingProxyType
+* tools.empty_iterator() was removed in favour of iter(())
+* tools.concat_options() function was removed in favour of bot_choice.Option
+* tools.is_IP was be removed in favour of tools.is_ip_address()
+* textlib.unescape() function was be removed in favour of html.unescape()
+* APISite.deletepage() and APISite.deleteoldimage() methods were removed in favour of APISite.delete()
+* APISite.undeletepage() and APISite.undelete_file_versions() were be removed in favour of APISite.undelete() method
+
+
+Deprecations
+^^^^^^^^^^^^
+
+* 7.0.0: The i18n identifier 'cosmetic_changes-append' will be removed in favour of 'pywikibot-cosmetic-changes'
+* 7.0.0: User.isBlocked() method is renamed to is_blocked for consistency
+* 7.0.0: Require mysql >= 0.7.11 (T216741)
+* 7.0.0: Private BaseBot counters _treat_counter, _save_counter, _skip_counter will be removed in favour of collections.Counter counter attribute
+* 7.0.0: A boolean watch parameter in Page.save() is deprecated and will be desupported
+* 7.0.0: baserevid parameter of editSource(), editQualifier(), removeClaims(), removeSources(), remove_qualifiers() DataSite methods will be removed
+* 7.0.0: Values of APISite.allpages() parameter filterredir other than True, False and None are deprecated
+* 6.5.0: OutputOption.output() method will be removed in favour of OutputOption.out property
+* 6.5.0: Infinite rotating file handler with logfilecount of -1 is deprecated
+* 6.4.0: 'allow_duplicates' parameter of tools.intersect_generators as positional argument is deprecated, use keyword argument instead
+* 6.4.0: 'iterables' of tools.intersect_generators given as a list or tuple is deprecated, either use consecutive iterables or use '*' to unpack
+* 6.2.0: outputter of OutputProxyOption without out property is deprecated
+* 6.2.0: ContextOption.output_range() and HighlightContextOption.output_range() are deprecated
+* 6.2.0: Error messages with '%' style is deprecated in favour for str.format() style
+* 6.2.0: page.url2unicode() function is deprecated in favour of tools.chars.url2string()
+* 6.2.0: Throttle.multiplydelay attribute is deprecated
+* 6.2.0: SequenceOutputter.format_list() is deprecated in favour of 'out' property
+* 6.0.0: config.register_family_file() is deprecated
+* 5.5.0: APISite.redirectRegex() is deprecated in favour of APISite.redirect_regex()
+* 4.0.0: Revision.parent_id is deprecated in favour of Revision.parentid
+* 4.0.0: Revision.content_model is deprecated in favour of Revision.contentmodel
+
+
+Release history
+---------------
+
+See https://github.com/wikimedia/pywikibot/blob/stable/HISTORY.rst
+
+Contributing
+------------
+
+Our code is maintained on Wikimedia's `Gerrit installation <https://gerrit.wikimedia.org/>`_,
+`learn <https://www.mediawiki.org/wiki/Developer_account>`_ how to get
+started.
+
+Code of Conduct
+---------------
+
+The development of this software is covered by a
+`Code of Conduct <https://www.mediawiki.org/wiki/Special:MyLanguage/Code_of_Conduct>`_.
+
+
+
