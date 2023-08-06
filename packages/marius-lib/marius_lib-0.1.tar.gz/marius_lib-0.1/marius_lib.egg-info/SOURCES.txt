@@ -1,0 +1,15 @@
+MANIFEST.in
+README.MD
+README.md
+setup.py
+docs/DOC.txt
+marius_lib/__init__.py
+marius_lib.egg-info/PKG-INFO
+marius_lib.egg-info/SOURCES.txt
+marius_lib.egg-info/dependency_links.txt
+marius_lib.egg-info/requires.txt
+marius_lib.egg-info/top_level.txt
+marius_lib/pack_a/__init__.py
+marius_lib/pack_a/find_index.py
+marius_lib/pack_b/__init__.py
+marius_lib/pack_b/my_factorial.py
