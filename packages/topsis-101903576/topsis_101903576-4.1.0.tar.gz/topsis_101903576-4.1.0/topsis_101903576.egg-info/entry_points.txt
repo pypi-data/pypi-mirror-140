@@ -1,0 +1,3 @@
+[console_scripts]
+topsis-101903576 = topsis_101903576.__init__:main
+
