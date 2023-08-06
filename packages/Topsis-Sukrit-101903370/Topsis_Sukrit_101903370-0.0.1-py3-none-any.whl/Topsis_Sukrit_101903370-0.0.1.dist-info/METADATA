@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Topsis-Sukrit-101903370
+Version: 0.0.1
+Summary: Topsis rank genrator
+Home-page: UNKNOWN
+Author: Sukrit Bansal
+Author-email: <sukritbansal01@gmail.com>
+License: UNKNOWN
+Keywords: python,numpy,rank,score
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+Topsis is a comparator model which allows user to select the best option amongst all the options
+
