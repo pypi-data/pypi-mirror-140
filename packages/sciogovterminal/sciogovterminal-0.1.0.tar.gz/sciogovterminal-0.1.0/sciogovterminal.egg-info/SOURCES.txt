@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+sciogovterminal/__init__.py
+sciogovterminal/sciogovterminal.py
+sciogovterminal.egg-info/PKG-INFO
+sciogovterminal.egg-info/SOURCES.txt
+sciogovterminal.egg-info/dependency_links.txt
+sciogovterminal.egg-info/entry_points.txt
+sciogovterminal.egg-info/requires.txt
+sciogovterminal.egg-info/top_level.txt
+sciogovterminal.egg-info/zip-safe
