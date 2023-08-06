@@ -1,0 +1,11 @@
+vision_evaluation/__init__.py,sha256=Lz22Cap_QXK_eUkQ4n_FxKK2_CPXnYGFWJth5MGYRDc,1323
+vision_evaluation/coco_evalcap_utils.py,sha256=XWRh8mHt6xSzwSbmHA-PFUpJL1ey3VTlZ7jWr7T0dCE,3947
+vision_evaluation/coco_wrapper.py,sha256=HXZrtPB2z-1RO6iO45a3AQhFwLgcPemBo5r_XYgvjug,1905
+vision_evaluation/evaluators.py,sha256=nv_kBcZ1dbj5xEJNuxMXgMSL8VzZ1NgpXi_9GD31fsI,33005
+vision_evaluation/prediction_filters.py,sha256=uz9EJQKR2-WuIUagF8_U2YH8X-KPcbJ8318VZQL9Glk,2603
+vision_evaluation/resource_tight_evaluators.py,sha256=GBfL27c_3J6hXHVRs1rqChyR8guWLwV0FCKUutq4iWY,3494
+vision_evaluation-0.2.4.dist-info/LICENSE,sha256=o4i_MuPC9rAsMCKMCJaJPIKqZ4oAuWYUqEjjWMbaOhI,1087
+vision_evaluation-0.2.4.dist-info/METADATA,sha256=0HKMAaaDQxVvP71tBx2YAOg8VbjRfyhZzP1M0__E-kc,4498
+vision_evaluation-0.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vision_evaluation-0.2.4.dist-info/top_level.txt,sha256=kUzoZ-gPUxz-bRaSToa0-usTI9N1RAYJ89IGEhuqNLA,18
+vision_evaluation-0.2.4.dist-info/RECORD,,
