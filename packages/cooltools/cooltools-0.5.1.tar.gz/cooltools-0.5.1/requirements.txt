@@ -1,0 +1,13 @@
+bioframe>=0.3.3
+click>=7
+cooler>=0.8.5
+cython
+joblib
+matplotlib
+multiprocess
+numba
+numpy
+pandas>=1.3
+scikit-learn
+scipy
+scikit-image

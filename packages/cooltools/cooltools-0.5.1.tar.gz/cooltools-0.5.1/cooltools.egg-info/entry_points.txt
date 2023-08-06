@@ -1,0 +1,3 @@
+[console_scripts]
+cooltools = cooltools.cli:cli
+
