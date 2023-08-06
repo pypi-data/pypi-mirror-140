@@ -1,0 +1,10 @@
+README.md
+setup.py
+mkdocs_include_dir_to_nav/__init__.py
+mkdocs_include_dir_to_nav/include_dir_to_nav.py
+mkdocs_include_dir_to_nav.egg-info/PKG-INFO
+mkdocs_include_dir_to_nav.egg-info/SOURCES.txt
+mkdocs_include_dir_to_nav.egg-info/dependency_links.txt
+mkdocs_include_dir_to_nav.egg-info/entry_points.txt
+mkdocs_include_dir_to_nav.egg-info/requires.txt
+mkdocs_include_dir_to_nav.egg-info/top_level.txt
