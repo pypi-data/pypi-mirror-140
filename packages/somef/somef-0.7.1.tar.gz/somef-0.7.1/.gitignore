@@ -1,0 +1,16 @@
+build/*
+dist/*
+env/*
+.vscode/
+.ipynb_checkpoints/
+config.json
+__pycache__/
+.DS_Store
+Lib/*
+Scripts/*
+.idea/*
+*.json
+*.ttl
+env_3.9/*
+src/somef/create_corpus_for_NER.py
+src/somef.egg-info/*
