@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: EUKulele
+Version: 2.0.0
+Summary: A package to make the process of taxonomically classifying microbial eukaryotes easier.
+Home-page: https://github.com/AlexanderLabWHOI/EUKulele
+Author: Arianna Krinos
+Author-email: akrinos@mit.edu
+License: MIT
+Keywords: eukaryote taxonomy classification
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: biopython
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: chardet
+Requires-Dist: argparse
+Requires-Dist: multiprocess
+Requires-Dist: joblib
+Requires-Dist: ujson
+Requires-Dist: python-coveralls
+Requires-Dist: pyyaml
+Requires-Dist: matplotlib
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-xdist
+Requires-Dist: sphinxcontrib-bibtex (==1.0.0)
+
+UNKNOWN
+
+

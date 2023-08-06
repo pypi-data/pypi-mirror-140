@@ -1,0 +1,14 @@
+setuptools
+conda
+hypothesis
+pandas
+numpy
+matplotlib
+argparse
+seaborn
+multiprocess
+chardet
+biopython
+joblib
+ujson
+pyyaml
