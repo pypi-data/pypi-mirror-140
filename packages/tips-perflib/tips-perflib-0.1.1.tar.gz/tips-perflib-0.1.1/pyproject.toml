@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "tips-perflib"
+version = "0.1.1"
+description = ""
+authors = ["Vlad Rachev <vlad.rachev@mongodb.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "^1.22.2"
+pandas = "^1.4.1"
+requests = "^2.27.1"
+more-itertools = "^8.12.0"
+scipy = "^1.8.0"
+pymongo = "^4.0.1"
+types-requests = "^2.27.11"
+
+[tool.poetry.dev-dependencies]
+pytest-isort = "^3.0.0"
+pytest-flake8 = "^1.0.7"
+pytest-mypy = "^0.9.1"
+pytest-pydocstyle = "^2.2.0"
+flake8-bugbear = "^22.1.11"
+types-PyYAML = "^6.0.4"
+flake8 = "^4.0.1"
+pytest-black = "^0.3.12"
+black = "^22.1.0"
+pytest = "^7.0.1"
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 100
+
+[tool.pytest.ini_options]
+flake8-ignore = "W605 W503 W291 E203 E501 F821"
+# Only running black/isort for now. If we pick up more work here we can work on integrating
+# the other tests.
+addopts = "--black --isort"
+# addopts = "--flake8 --black --mypy --isort --pydocstyle"
+testpaths = [
+    "src",
+    "tests",
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = [
+    "tests.*",
+]
+ignore_errors = true
+
+[tool.pydocstyle]
+ignore = "D104,D203,D212,D301,D407,D412"
+match = "(?!(?:test_|conftest)).*\\.py"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
