@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+zhangtest3/__init__.py
+zhangtest3/demo1.py
+zhangtest3.egg-info/PKG-INFO
+zhangtest3.egg-info/SOURCES.txt
+zhangtest3.egg-info/dependency_links.txt
+zhangtest3.egg-info/top_level.txt
