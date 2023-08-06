@@ -1,0 +1,8 @@
+README.md
+psg.py
+pyproject.toml
+setup.cfg
+psg.egg-info/PKG-INFO
+psg.egg-info/SOURCES.txt
+psg.egg-info/dependency_links.txt
+psg.egg-info/top_level.txt

@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: psg
+Version: 0.0.2
+Summary: Pakistan SUI Gas Bills and Tariff
+Home-page: https://www.techtum.dev/work-psg-220228.html#work-psg-220228
+Author: siphr
+Author-email: pypi@techtum.dev
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/siphr/psg/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+psg
+===
+
+A package to check the Bills and Tariff of Pakistan's SUI Gas companies.
+
+
+Details
+-------
+
+Uses the Pakistan SUI gas web resource.
+
+Package Usage
+-------------
+
+import psg
+
+\# Show Bill Types
+
+bill_types = psg.show_types()
+
+
+\# Bill Retrieval
+
+bill_object = psg.get_bill(<bill_type>, <some_bill_umber>)
+
+
+\# Bill to JSON Conversion
+
+json_bill = psg.bill_to_json(<bill_object>)
+
+
+\# Formatted Bill Printing
+
+psg.print_bill(json_bill)
+
+
+
+
