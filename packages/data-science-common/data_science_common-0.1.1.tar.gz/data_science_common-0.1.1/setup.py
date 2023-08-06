@@ -1,0 +1,11 @@
+from setuptools import setup
+
+setup(
+    name="data_science_common",
+    version="0.1.1",
+    description="UNDER CONSTRUCTION: A simple Python library for facilitating analysis",
+    author="Ryan Kelley",
+    url="https://github.com/kelleyrw/data_science_common",
+    license="Apache License, Version 2.0",
+    py_modules=["pids"],
+)
