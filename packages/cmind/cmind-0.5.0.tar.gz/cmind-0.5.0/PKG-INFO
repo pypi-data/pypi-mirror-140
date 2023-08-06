@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cmind
+Version: 0.5.0
+Summary: cmind
+Home-page: https://github.com/octoml/cm
+Author: Grigori Fursin
+Author-email: grigori@octoml.ai
+License: Apache 2.0
+Description: # Collective Mind (CM or cMind)
+        
+        The goal of the Collective Mind framework (CM) is to provide the foundation
+        to make AI modular, reproducible and easy to use.
+        
+        CM attempts brings together interdisciplinary teams to exchange their knowledge, 
+        experience and best practices about designing, optimizing and deploying AI and ML Systems 
+        as a database of reusable artifacts with JSON/YAML meta descriptions, 
+        unified automation recipes and portable workflows. 
+        
+        All automation recipes have a common Python API with unified dictionaries as I/O
+        to help abstract and interconnect numerous and previously incompatible 
+        software, hardware and data.
+        
+        Inspired by LEGO(tm), CM framework facilitates collaboration across organizations and companies
+        to decompose, asbtract and solve complex problems such as reproducible benchmarking, 
+        optimization and deployment of ML Systems by interconnecting, testing and improving
+        common automation recipes, artifacts and workflows.
+        
+        # Installation
+        
+        ```bash
+        python3 -m pip install cmind
+        ```
+        
+        # Command line
+        ```bash
+        cm {automation} {action} {artifact(s)} {flags}
+        ```
+        
+        # License
+        CM is licensed under the Apache License 2.0. 
+        See LICENCE for more information.
+        
+        CM may contain functions from the [MLCommons CK framework](https://github.com/mlcommons/ck) 
+        also licensed under the Apache License 2.0. See LICENCE.CK for more information.
+        
+        
+Keywords: collective mind,cmind,cdatabase,cmeta,automation,reusability,meta,JSON,YAML,python
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
