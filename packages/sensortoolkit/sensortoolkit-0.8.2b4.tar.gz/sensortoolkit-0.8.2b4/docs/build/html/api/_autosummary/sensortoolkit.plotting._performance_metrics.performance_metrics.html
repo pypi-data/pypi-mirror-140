@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sensortoolkit.plotting._performance_metrics.performance_metrics &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="sensortoolkit.plotting._plot_formatting" href="sensortoolkit.plotting._plot_formatting.html" />
+    <link rel="prev" title="sensortoolkit.plotting._performance_metrics" href="sensortoolkit.plotting._performance_metrics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testingattrib_objects/index.html">Testing Attribute Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">sensortoolkit API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../calculate.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.calculate</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../datetime_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.datetime_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deploy.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.deploy</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../evaluation_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.evaluation_objs</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ingest.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.ingest</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lib_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.lib_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../model.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.model</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../param.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.param</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../plotting.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.plotting</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.plotting._distribution.html">sensortoolkit.plotting._distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.plotting._errorbars.html">sensortoolkit.plotting._errorbars</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="sensortoolkit.plotting._performance_metrics.html">sensortoolkit.plotting._performance_metrics</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">sensortoolkit.plotting._performance_metrics.performance_metrics</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.plotting._plot_formatting.html">sensortoolkit.plotting._plot_formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.plotting._scatter.html">sensortoolkit.plotting._scatter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.plotting._timeseries.html">sensortoolkit.plotting._timeseries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qc.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.qc</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.reference</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing_attrib_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.testing_attrib_objs</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">sensortoolkit API</a> &raquo;</li>
+          <li><a href="../plotting.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.plotting</span></code></a> &raquo;</li>
+          <li><a href="sensortoolkit.plotting._performance_metrics.html">sensortoolkit.plotting._performance_metrics</a> &raquo;</li>
+      <li>sensortoolkit.plotting._performance_metrics.performance_metrics</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/api/_autosummary/sensortoolkit.plotting._performance_metrics.performance_metrics.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sensortoolkit-plotting-performance-metrics-performance-metrics">
+<h1>sensortoolkit.plotting._performance_metrics.performance_metrics<a class="headerlink" href="#sensortoolkit-plotting-performance-metrics-performance-metrics" title="Permalink to this headline"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="sensortoolkit.plotting._performance_metrics.performance_metrics">
+<span class="sig-name descname"><span class="pre">performance_metrics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stats_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deploy_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_averaging</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">12</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">write_to_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/sensortoolkit/plotting/_performance_metrics.html#performance_metrics"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensortoolkit.plotting._performance_metrics.performance_metrics" title="Permalink to this definition"></a></dt>
+<dd><p>Display performance metric results via a set of adjacent subplots
+corresponding to each metric. Results are displayed as either dots (if
+the number of sensors is less than four) or via boxplots (number of sensors
+exceeds 3). Target ranges are indicated by gray shaded regions, and target
+goals are indicated by dark gray lines.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stats_df</strong> (<em>pandas dataframe</em>) – A dataframe containing regression statistics (sensor vs. FRM/FEM
+reference) at averaging intervals corresponding to the
+<code class="docutils literal notranslate"><span class="pre">param_averaging</span></code> attribute.</p></li>
+<li><p><strong>deploy_dict</strong> (<em>dict</em>) – A dictionary containing descriptive statistics and textual
+information about the deployment (testing agency, site, time
+period, etc.), sensors tested, and site conditions during the
+evaluation.</p></li>
+<li><p><strong>param</strong> (<em>str</em><em>, </em><em>optional</em>) – Parameter name to evaluate. Defaults to None.</p></li>
+<li><p><strong>param_averaging</strong> (<em>str</em><em>, </em><em>optional</em>) – The measurement averaging intervals commonly utilized for
+analyzing data corresponding the selected parameter. Defaults
+to None.</p></li>
+<li><p><strong>font_size</strong> (<em>int</em><em>, </em><em>optional</em>) – The font size for text displayed in the figure. Defaults to 12.</p></li>
+<li><p><strong>path</strong> (<em>str</em><em>, </em><em>optional</em>) – The full directory path to the <code class="docutils literal notranslate"><span class="pre">/figures</span></code> subfolder housed
+within the user’s project path. Defaults to None.</p></li>
+<li><p><strong>sensor_name</strong> (<em>str</em><em>, </em><em>optional</em>) – The make and model of the air sensor for which the performance
+evaluation figure is being generated. Defaults to None.</p></li>
+<li><p><strong>write_to_file</strong> (<em>bool</em><em>, </em><em>optional</em>) – If true, the figure will be written to the /figures/[param] sensor
+subdirectory (where ‘param’ is the name of the parameter being
+evaluated). Defaults to True.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Keyword Arguments:</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fill_color</strong> (<em>Two-element tuple</em>) – Tuple with color hex code(s) for the fill color assigned to 1-hour and
+24-hour metric value markers. Defaults to <code class="docutils literal notranslate"><span class="pre">('#80c5c9',</span> <span class="pre">'#4ea1c0')</span></code>,
+which are light and dark teal hues.</p></li>
+<li><p><strong>marker</strong> (<em>str</em>) – The shape of the plotting marker for metric values. Matplotlib maintains
+a <a class="reference external" href="https://matplotlib.org/stable/api/markers_api.html?highlight=marker#module-matplotlib.markers">list of markers</a>.
+Defaults to ‘o’ (circle).</p></li>
+<li><p><strong>marker_size</strong> (<em>int</em><em> or </em><em>float</em>) – Assign the marker size in points. Defaults to 7.</p></li>
+<li><p><strong>marker_border_width</strong> (<em>int</em><em> or </em><em>float</em>) – Set the width of the border surrounding each marker. Defaults to 1.</p></li>
+<li><p><strong>mean_marker</strong> (<em>str</em>) – (# sensors  &gt; 4 only) The marker indicating the mean value of metric
+values. Defaults to <code class="docutils literal notranslate"><span class="pre">'d'</span></code> (diamond marker).</p></li>
+<li><p><strong>figure_width</strong> (<em>int</em><em> or </em><em>float</em>) – The width of the figure in inches. Defaults to .</p></li>
+<li><p><strong>figure_height</strong> (<em>int</em><em> or </em><em>float</em>) – The height of the figure in inches. Defaults to 3.9.</p></li>
+<li><p><strong>R^2_ylims</strong> (<em>Two-element tuple of floats</em>) – The y-limits (ymin, ymax) for the metric subplot 15.7.</p></li>
+<li><p><strong>Slope_ylims</strong> (<em>Two-element tuple of floats</em>) – The y-limits (ymin, ymax) for the metric subplot.</p></li>
+<li><p><strong>Intercept_ylims</strong> (<em>Two-element tuple of floats</em>) – The y-limits (ymin, ymax) for the metric subplot.</p></li>
+<li><p><strong>CV_ylims</strong> (<em>Two-element tuple of floats</em>) – The y-limits (ymin, ymax) for the metric subplot.</p></li>
+<li><p><strong>RMSE_ylims</strong> (<em>Two-element tuple of floats</em>) – The y-limits (ymin, ymax) for the metric subplot.</p></li>
+<li><p><strong>NRMSE_ylims</strong> (<em>Two-element tuple of floats</em>) – The y-limits (ymin, ymax) for the metric subplot.</p></li>
+<li><p><strong>SD_ylims</strong> (<em>Two-element tuple of floats</em>) – The y-limits (ymin, ymax) for the metric subplot.</p></li>
+<li><p><strong>R^2_hline_dims</strong> (<em>Three-element tuple</em>) – Dimensions for the target goal horizontal line. Tuple containing the
+y-coordinate of the target value, x-min (leftmost) coordinate for
+drawing horizontal line, and the x-max (rightmost) coordinate for
+drawing horizontal line).</p></li>
+<li><p><strong>Slope_hline_dims</strong> (<em>Three-element tuple</em>) – Dimensions for the target goal horizontal line. Tuple containing the
+y-coordinate of the target value, x-min (leftmost) coordinate for
+drawing horizontal line, and the x-max (rightmost) coordinate for
+drawing horizontal line).</p></li>
+<li><p><strong>Intercept_hline_dims</strong> (<em>Three-element tuple</em>) – Dimensions for the target goal horizontal line. Tuple containing the
+y-coordinate of the target value, x-min (leftmost) coordinate for
+drawing horizontal line, and the x-max (rightmost) coordinate for
+drawing horizontal line).</p></li>
+<li><p><strong>CV_hline_dims</strong> (<em>Three-element tuple</em>) – Dimensions for the target goal horizontal line. Tuple containing the
+y-coordinate of the target value, x-min (leftmost) coordinate for
+drawing horizontal line, and the x-max (rightmost) coordinate for
+drawing horizontal line).</p></li>
+<li><p><strong>RMSE_hline_dims</strong> (<em>Three-element tuple</em>) – Dimensions for the target goal horizontal line. Tuple containing the
+y-coordinate of the target value, x-min (leftmost) coordinate for
+drawing horizontal line, and the x-max (rightmost) coordinate for
+drawing horizontal line).</p></li>
+<li><p><strong>NRMSE_hline_dims</strong> (<em>Three-element tuple</em>) – Dimensions for the target goal horizontal line. Tuple containing the
+y-coordinate of the target value, x-min (leftmost) coordinate for
+drawing horizontal line, and the x-max (rightmost) coordinate for
+drawing horizontal line).</p></li>
+<li><p><strong>SD_hline_dims</strong> (<em>Three-element tuple</em>) – Dimensions for the target goal horizontal line. Tuple containing the
+y-coordinate of the target value, x-min (leftmost) coordinate for
+drawing horizontal line, and the x-max (rightmost) coordinate for
+drawing horizontal line).</p></li>
+<li><p><strong>R^2_box_dims</strong> (<em>Four-element tuple</em>) – Dimensions for a box indicating the metric target range. Four element
+tuple containing the x-min (left-most coordinate of the box), y-min
+(bottom-most coordinate of the target range box), x-range (the height
+of the box, or the difference between the x-min coordinate position
+and the x-max coordinate position), and the y-range (the width of the
+box, or the difference between the y-min coordinate position and the
+y-max coordinate position).</p></li>
+<li><p><strong>Slope_box_dims</strong> (<em>Four-element tuple</em>) – Dimensions for a box indicating the metric target range. Four element
+tuple containing the x-min (left-most coordinate of the box), y-min
+(bottom-most coordinate of the target range box), x-range (the height
+of the box, or the difference between the x-min coordinate position
+and the x-max coordinate position), and the y-range (the width of the
+box, or the difference between the y-min coordinate position and the
+y-max coordinate position).</p></li>
+<li><p><strong>Intercept_box_dims</strong> (<em>Four-element tuple</em>) – Dimensions for a box indicating the metric target range. Four element
+tuple containing the x-min (left-most coordinate of the box), y-min
+(bottom-most coordinate of the target range box), x-range (the height
+of the box, or the difference between the x-min coordinate position
+and the x-max coordinate position), and the y-range (the width of the
+box, or the difference between the y-min coordinate position and the
+y-max coordinate position).</p></li>
+<li><p><strong>CV_box_dims</strong> (<em>Four-element tuple</em>) – Dimensions for a box indicating the metric target range. Four element
+tuple containing the x-min (left-most coordinate of the box), y-min
+(bottom-most coordinate of the target range box), x-range (the height
+of the box, or the difference between the x-min coordinate position
+and the x-max coordinate position), and the y-range (the width of the
+box, or the difference between the y-min coordinate position and the
+y-max coordinate position).</p></li>
+<li><p><strong>RMSE_box_dims</strong> (<em>Four-element tuple</em>) – Dimensions for a box indicating the metric target range. Four element
+tuple containing the x-min (left-most coordinate of the box), y-min
+(bottom-most coordinate of the target range box), x-range (the height
+of the box, or the difference between the x-min coordinate position
+and the x-max coordinate position), and the y-range (the width of the
+box, or the difference between the y-min coordinate position and the
+y-max coordinate position).</p></li>
+<li><p><strong>NRMSE_box_dims</strong> (<em>Four-element tuple</em>) – Dimensions for a box indicating the metric target range. Four element
+tuple containing the x-min (left-most coordinate of the box), y-min
+(bottom-most coordinate of the target range box), x-range (the height
+of the box, or the difference between the x-min coordinate position
+and the x-max coordinate position), and the y-range (the width of the
+box, or the difference between the y-min coordinate position and the
+y-max coordinate position).</p></li>
+<li><p><strong>SD_box_dims</strong> (<em>Four-element tuple</em>) – Dimensions for a box indicating the metric target range. Four element
+tuple containing the x-min (left-most coordinate of the box), y-min
+(bottom-most coordinate of the target range box), x-range (the height
+of the box, or the difference between the x-min coordinate position
+and the x-max coordinate position), and the y-range (the width of the
+box, or the difference between the y-min coordinate position and the
+y-max coordinate position).</p></li>
+<li><p><strong>hline_color</strong> (<em>str</em>) – Set the color of horizontal lines indicating the target value for metric
+subplots. Defaults to #8b8b8b (light gray).</p></li>
+<li><p><strong>box_facecolor</strong> (<em>str</em>) – Set the color of boxes indicating the target range for each metric
+subplot. Defaults to #8b8b8b (light gray).</p></li>
+<li><p><strong>font_scale</strong> (<em>int</em><em> or </em><em>str</em>) – Set the size and scale of the font elements in the figure.</p></li>
+<li><p><strong>fig_wspace</strong> (<em>float</em>) – Modify the width of padding between subplots. Passed to
+<code class="docutils literal notranslate"><span class="pre">Matplotlib.subplots.subplots_adjust()</span></code> <code class="docutils literal notranslate"><span class="pre">'wspace'</span></code> argument.</p></li>
+<li><p><strong>fig_hspace</strong> (<em>float</em>) – Modify the height of padding between subplots. Passed to
+<code class="docutils literal notranslate"><span class="pre">Matplotlib.subplots.subplots_adjust()</span></code> <code class="docutils literal notranslate"><span class="pre">'hspace'</span></code> argument.</p></li>
+<li><p><strong>fig_left</strong> (<em>float</em>) – Modify the left-most bounds of the figure. Passed to
+<code class="docutils literal notranslate"><span class="pre">Matplotlib.subplots.subplots_adjust()</span></code> <code class="docutils literal notranslate"><span class="pre">'left'</span></code> argument.</p></li>
+<li><p><strong>fig_right</strong> (<em>float</em>) – Modify the right-most bounds of the figure. Passed to
+<code class="docutils literal notranslate"><span class="pre">Matplotlib.subplots.subplots_adjust()</span></code> <code class="docutils literal notranslate"><span class="pre">'right'</span></code> argument.</p></li>
+<li><p><strong>fig_top</strong> (<em>float</em>) – Modify the upper-most bounds of the figure. Passed to
+<code class="docutils literal notranslate"><span class="pre">Matplotlib.subplots.subplots_adjust()</span></code> <code class="docutils literal notranslate"><span class="pre">'top'</span></code> argument.</p></li>
+<li><p><strong>fig_bottom</strong> (<em>float</em>) – Modify the lower-most bounds of the figure. Passed to
+<code class="docutils literal notranslate"><span class="pre">Matplotlib.subplots.subplots_adjust()</span></code> <code class="docutils literal notranslate"><span class="pre">'bottom'</span></code> argument.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sensortoolkit.plotting._performance_metrics.html" class="btn btn-neutral float-left" title="sensortoolkit.plotting._performance_metrics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sensortoolkit.plotting._plot_formatting.html" class="btn btn-neutral float-right" title="sensortoolkit.plotting._plot_formatting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

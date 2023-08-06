@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading Sensor Data &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="The ReferenceMonitor Object" href="../referencemonitor/index.html" />
+    <link rel="prev" title="AirSensor Setup" href="setup.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Testing Attribute Objects</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">The AirSensor Object</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="overview.html">AirSensor Instantiation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html">AirSensor Setup</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Loading Sensor Data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../referencemonitor/index.html">The ReferenceMonitor Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../parameter.html">The Parameter Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_overview.html">Overview of Instantiating Testing Attributes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">sensortoolkit API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Testing Attribute Objects</a> &raquo;</li>
+          <li><a href="index.html">The AirSensor Object</a> &raquo;</li>
+      <li>Loading Sensor Data</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/testingattrib_objects/airsensor/load_data.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="loading-sensor-data">
+<h1>Loading Sensor Data<a class="headerlink" href="#loading-sensor-data" title="Permalink to this headline"></a></h1>
+<p>Following the use of the setup module for air sensor datasets, sensor data are
+loaded to the <code class="docutils literal notranslate"><span class="pre">AirSensor</span></code> object via the <code class="docutils literal notranslate"><span class="pre">AirSensor.load_data()</span></code> method.
+The procedure for loading sensor data depends slightly on whether the user is loading
+datasets for the first time (i.e., the AirSensor.sensor_setup() module was run
+immediately before this point and the <code class="docutils literal notranslate"><span class="pre">/data/sensor_data/[sensor_name]/processed_data</span></code> directory
+containing SDFS formatted datasets is empty) or whether users have previously loaded sensor
+datasets via the <code class="docutils literal notranslate"><span class="pre">AirSensor.load_data()</span></code> and wish to re-load these datasets for additional
+analysis.</p>
+<p><code class="docutils literal notranslate"><span class="pre">AirSensor.load_data()</span></code> accepts the following Boolean arguments:</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">AirSensor.load_data()</span></code> Arguments</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Argument</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">write_to_file</span></code></p></td>
+<td><p>If true, processed (SDFS formatted) sensor datasets will be saved as csv <br />
+files to the <code class="docutils literal notranslate"><span class="pre">/data/sensor_data/[sensor_name]/processed_data</span></code> <br />
+directory. If false, formatted datasets will not be saved to the user’s hard drive.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">load_raw_data</span></code></p></td>
+<td><p>If true, raw data (datasets as originally recorded) in the appropriate <br />
+subdirectory will be loaded and 1-hour and 24-hour averages will be <br />
+computed. If false, processed data will be loaded.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="initial-import">
+<h2>Initial Import<a class="headerlink" href="#initial-import" title="Permalink to this headline"></a></h2>
+<p>To load originally recorded datasets and save processed (SDFS formatted) versions
+of sensor datasets to the appropriate directory location, select <code class="docutils literal notranslate"><span class="pre">load_raw_data</span> <span class="pre">=</span> <span class="pre">True</span></code>
+and <code class="docutils literal notranslate"><span class="pre">write_to_file</span> <span class="pre">=</span> <span class="pre">True</span></code> when calling the <code class="docutils literal notranslate"><span class="pre">AirSensor.load_data()</span></code> method.</p>
+<p>Below, we follow with the example of the ‘Toco Toucan’ sensor discussed in the
+<a class="reference external" href="../../quickstart.html#example-scenario-toco-toucan">Quickstart Guide</a>. Recorded datasets are imported and ingested
+into the sensortoolkit data formatting scheme followed by writing of processed csv
+files to the <code class="docutils literal notranslate"><span class="pre">`.../processed_data</span></code> directory.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Loading sensor data for the first time</span>
+<span class="n">sensor</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">load_raw_data</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                 <span class="n">write_to_file</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Importing Recorded Sensor Data:</span>
+<span class="go">..RT01</span>
+<span class="go">....Toco_Toucan_RT01_raw.csv</span>
+<span class="go">..RT02</span>
+<span class="go">....Toco_Toucan_RT02_raw.csv</span>
+<span class="go">..RT03</span>
+<span class="go">....Toco_Toucan_RT03_raw.csv</span>
+<span class="go">..RT01 recording interval mode: 0 days 00:01:00, 60.0 counts per hour</span>
+<span class="go">....writing full, hourly, and daily datasets to .csv files</span>
+<span class="go">..RT02 recording interval mode: 0 days 00:01:00, 60.0 counts per hour</span>
+<span class="go">....writing full, hourly, and daily datasets to .csv files</span>
+<span class="go">..RT03 recording interval mode: 0 days 00:01:00, 60.0 counts per hour</span>
+<span class="go">....writing full, hourly, and daily datasets to .csv files</span>
+</pre></div>
+</div>
+</section>
+<section id="loading-from-processed-data-files">
+<h2>Loading from Processed Data Files<a class="headerlink" href="#loading-from-processed-data-files" title="Permalink to this headline"></a></h2>
+<p>If users have previously loaded sensor datasets (i.e., processed sensor data files
+have been created for the sensor), users can save a little bit of time by loading
+the SDFS formatted processed datasets. This saves some time in that the processing
+and averaging that occur on the first import of sensor datasets does not need to
+take place.</p>
+<p>To load processed datasets, ensure that the <code class="docutils literal notranslate"><span class="pre">load_raw_data</span></code> and <code class="docutils literal notranslate"><span class="pre">write_to_file</span></code> arguments
+are both set to <code class="docutils literal notranslate"><span class="pre">False</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sensor</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">load_raw_data</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">write_to_file</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The following will be printed to the console, indicating that processed datasets recorded
+at the original sampling frequency (‘full’), 1-hour averaged datasets (‘hourly’)
+and 24-hour averaged datasets (‘daily’) are loaded for each sensor in the evaluation.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Loading processed sensor data</span>
+<span class="go">..Toco_Toucan_RT01_daily.csv</span>
+<span class="go">..Toco_Toucan_RT01_full.csv</span>
+<span class="go">..Toco_Toucan_RT01_hourly.csv</span>
+<span class="go">..Toco_Toucan_RT02_daily.csv</span>
+<span class="go">..Toco_Toucan_RT02_full.csv</span>
+<span class="go">..Toco_Toucan_RT02_hourly.csv</span>
+<span class="go">..Toco_Toucan_RT03_daily.csv</span>
+<span class="go">..Toco_Toucan_RT03_full.csv</span>
+<span class="go">..Toco_Toucan_RT03_hourly.csv</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For details on accessing sensor datasets via the <code class="docutils literal notranslate"><span class="pre">sensor_object.data</span></code> attribute,
+please see <a class="reference external" href="../../data_structures/sensor_data.html#accessing-sensor-data">Accessing sensor data</a></p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="setup.html" class="btn btn-neutral float-left" title="AirSensor Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../referencemonitor/index.html" class="btn btn-neutral float-right" title="The ReferenceMonitor Object" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

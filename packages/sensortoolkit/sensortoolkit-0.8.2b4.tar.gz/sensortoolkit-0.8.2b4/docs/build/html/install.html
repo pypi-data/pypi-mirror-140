@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installing and Updating sensortoolkit &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Importing sensortoolkit" href="import_sensortoolkit.html" />
+    <link rel="prev" title="Quickstart Guide" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testingattrib_objects/index.html">Testing Attribute Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">sensortoolkit API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Installing and Updating sensortoolkit</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/install.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installing-and-updating-sensortoolkit">
+<h1>Installing and Updating sensortoolkit<a class="headerlink" href="#installing-and-updating-sensortoolkit" title="Permalink to this headline"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Users will need an installation of Python (v3.6 or greater). It’s highly
+recommended that users download an <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda distribution of Python</a>. Anaconda is
+a package distribution of Python that includes many widely used libraries as
+well as the <a class="reference external" href="https://www.spyder-ide.org">Spyder IDE</a> for editing and compiling code. Anaconda is free for
+individuals.</p>
+</div>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
+<section id="installing-with-pip">
+<h3>Installing with pip<a class="headerlink" href="#installing-with-pip" title="Permalink to this headline"></a></h3>
+<p>The easiest way to install sensortoolkit is via <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Open up a command line interface (for Anaconda users,
+the Anaconda Prompt is recommended) and type the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install sensortoolkit</span>
+</pre></div>
+</div>
+</section>
+<section id="installing-from-source">
+<h3>Installing from source<a class="headerlink" href="#installing-from-source" title="Permalink to this headline"></a></h3>
+<p>sensortoolkit is developed and maintained in a USEPA GitHub repository. The latest
+development build can be obtained by cloning the repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">USEPA</span><span class="o">/</span><span class="n">sensortoolkit</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>Next, navigate to the folder location for the cloned repository:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd path/to/sensortoolkit</span>
+</pre></div>
+</div>
+<p>Next, sensortoolkit needs to be installed to a target directory where python
+looks for packages whenever the user tells python to import a package name.
+By default, this is the <cite>/site-packages`</cite> directory, and should be located at a
+path that looks something like <code class="docutils literal notranslate"><span class="pre">C:\Users\...\Anaconda3\Lib\site-packages</span></code>
+(if you have Anaconda installed). The location of this package may be a little
+different depending on how your python installation was configured, although this
+shouldn’t matter too much.</p>
+<p>Type the following CLI prompt to install sensortoolkit (don’t forget the period!):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install .</span>
+</pre></div>
+</div>
+<p>The installation process checks for several packages sensortoolkit needs to run (dependencies).
+If you have Anaconda installed, you’ll notice that the installation process may indicate
+that a lot of the required libraries are already installed as those packages come with
+the base installation of Anaconda.</p>
+</section>
+</section>
+<section id="updating-sensortoolkit">
+<h2>Updating sensortoolkit<a class="headerlink" href="#updating-sensortoolkit" title="Permalink to this headline"></a></h2>
+<section id="updating-from-a-pypi-package-distribution">
+<h3>Updating from a PyPI package distribution<a class="headerlink" href="#updating-from-a-pypi-package-distribution" title="Permalink to this headline"></a></h3>
+<p>If you’ve installed sensortoolkit using the <a class="reference external" href="./install.html#installing-with-pip">installing with pip</a> instructions listed
+above, updating your installation is equally as easy!</p>
+<p>Open a command line interface and type the following:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install --upgrade sensortoolkit</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<blockquote>
+<div><p>If you wish to upgrade to a specific version of sensortoolkit, this can be done</p>
+</div></blockquote>
+<p>via the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install --upgrade sensortoolkit==X.X.X</span>
+</pre></div>
+</div>
+<p>where X.X.X is replaced by the version you would like to install.</p>
+</div>
+</section>
+<section id="updating-from-source">
+<h3>Updating from source<a class="headerlink" href="#updating-from-source" title="Permalink to this headline"></a></h3>
+<p>If you cloned the GitHub repository, first, open a command line interface and
+change directories to the folder containing your cloned version of the sensortoolkit repository:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd path/to/sensortoolkit</span>
+</pre></div>
+</div>
+<p>Next, install available updates via a ‘git pull’ command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git pull</span>
+
+<span class="go">remote: Enumerating objects: 4141, done.</span>
+<span class="go">remote: Counting objects: 100% (4141/4141), done.</span>
+<span class="go">remote: Compressing objects: 100% (690/690), done.</span>
+<span class="go">remote: Total 3747 (delta 3334), reused 3396 (delta 3044), pack-reused 0</span>
+<span class="go">Receiving objects: 100% (3747/3747), 7.86 MiB | 487.00 KiB/s, done.</span>
+<span class="go">Resolving deltas: 100% (3334/3334), completed with 362 local objects.</span>
+<span class="go">From https://github.com/USEPA/sensortoolkit.git</span>
+<span class="go"> e5aed929..026ee1c2  master -&gt; origin/master</span>
+<span class="go">Updating files: 100% (559/559), done.</span>
+<span class="go">Updating e5aed929..026ee1c2</span>
+<span class="go">Fast-forward</span>
+<span class="go">[A log of various files in the source code that have been modified in the current dev. package]</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quickstart Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="import_sensortoolkit.html" class="btn btn-neutral float-right" title="Importing sensortoolkit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

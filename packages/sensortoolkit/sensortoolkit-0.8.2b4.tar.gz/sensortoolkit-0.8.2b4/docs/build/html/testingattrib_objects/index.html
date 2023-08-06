@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testing Attribute Objects &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The AirSensor Object" href="airsensor/index.html" />
+    <link rel="prev" title="Importing sensortoolkit" href="../import_sensortoolkit.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Testing Attribute Objects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="airsensor/index.html">The AirSensor Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="referencemonitor/index.html">The ReferenceMonitor Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parameter.html">The Parameter Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup_overview.html">Overview of Instantiating Testing Attributes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">sensortoolkit API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Testing Attribute Objects</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/testingattrib_objects/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="testing-attribute-objects">
+<h1>Testing Attribute Objects<a class="headerlink" href="#testing-attribute-objects" title="Permalink to this headline"></a></h1>
+<p>sensortoolkit contains several class objects to aid users in various data
+analysis tasks. <strong>These objects can be roughly divided into two categories:
+testing attribute objects and evaluation objects.</strong></p>
+<p>Since users may wish to evaluate multiple sensor types and numerous pollutants,
+the intent in organizing the evaluation workflow into a set of recognizable and
+consistent class objects is to provide an easy-to-navigate platform for conducting
+evaluations and data analysis, while also allowing a high degree of customization.</p>
+<hr class="docutils" />
+<p>Testing attribute objects include the
+<code class="docutils literal notranslate"><span class="pre">sensortoolkit.AirSensor</span></code> object, <code class="docutils literal notranslate"><span class="pre">sensortoolkit.ReferenceMonitor</span></code> object,
+and the <code class="docutils literal notranslate"><span class="pre">sensortoolkit.Parameter</span></code> object. These objects are used to house
+information about the air sensor being tested (<code class="docutils literal notranslate"><span class="pre">sensortoolkit.AirSensor</span></code>), the
+FRM/FEM monitor against which sensor measurements are being evaluated
+(<code class="docutils literal notranslate"><span class="pre">sensortoolkit.ReferenceMonitor</span></code>), and the parameter or pollutant corresponding
+to the measurement data of interest for the evaluation (<code class="docutils literal notranslate"><span class="pre">sensortoolkit.Parameter</span></code>).
+In addition, both the <code class="docutils literal notranslate"><span class="pre">sensortoolkit.AirSensor</span></code> and <code class="docutils literal notranslate"><span class="pre">sensortoolkit.ReferenceMonitor</span></code>
+objects house sensor and reference data, respectively.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>sensortoolkit organizes datasets and various outputs, such as figures,
+evaluation datasets, and reports into several sub-directories within a project folder
+that user specifies.</p>
+<p>The following guide assumes that the user intends to place all user-created scripts,
+datasets, figures, and reports at a project folder location <code class="docutils literal notranslate"><span class="pre">C:/Users/.../Documents/my_evaluation</span></code>. While we name this
+folder <code class="docutils literal notranslate"><span class="pre">my_evaluation</span></code>, users are free to assign their project directory whatever name suits best.</p>
+</div>
+<p>In the note above, we’ve created a folder called <code class="docutils literal notranslate"><span class="pre">my_evaluation</span></code> which will contain data,
+figures, and reports, as well as any scripts that we create related to this project. The
+path to the directory will be referred to as the <strong>project path</strong>.</p>
+<p>From within the project directory, create a new python file and import the sensortoolkit library.
+Next, users should indicate the project path to sensortoolkit. This is done by using the
+<code class="docutils literal notranslate"><span class="pre">sensortoolkit.presets.set_project_path()</span></code> method as indicated in the code snippet below. Users can either
+pass the full path to the project directory as a string to the <code class="docutils literal notranslate"><span class="pre">set_project_path()</span></code> method, or if a path is
+not passed, a file explorer window will open up and prompt the user to select the folder corresponding to the
+project directory.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This python script is located at &quot;../my_evaluation/evaluation.py&quot;</span>
+<span class="kn">import</span> <span class="nn">sensortoolkit</span>
+
+<span class="c1"># Point to the full directory path for this scripts&#39; parent directory</span>
+<span class="c1"># This is the project folder path</span>
+
+<span class="n">sensortoolkit</span><span class="o">.</span><span class="n">presets</span><span class="o">.</span><span class="n">set_project_path</span><span class="p">(</span><span class="s1">&#39;C:/Users/.../Documents/my_evaluation&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Overview of sensortoolkit Testing Attribute Objects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="airsensor/index.html">The AirSensor Object</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="airsensor/overview.html">AirSensor Instantiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="airsensor/setup.html">AirSensor Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="airsensor/load_data.html">Loading Sensor Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="referencemonitor/index.html">The ReferenceMonitor Object</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="referencemonitor/overview.html">ReferenceMonitor Instantiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="referencemonitor/setup.html">ReferenceMonitor Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="referencemonitor/load_data.html">Loading Reference Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="parameter.html">The Parameter Object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_overview.html">Overview of Instantiating Testing Attributes</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../import_sensortoolkit.html" class="btn btn-neutral float-left" title="Importing sensortoolkit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="airsensor/index.html" class="btn btn-neutral float-right" title="The AirSensor Object" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

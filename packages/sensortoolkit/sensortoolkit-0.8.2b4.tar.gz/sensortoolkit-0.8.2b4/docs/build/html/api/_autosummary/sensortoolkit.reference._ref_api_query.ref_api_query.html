@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sensortoolkit.reference._ref_api_query.ref_api_query &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="sensortoolkit.reference._ref_api_query.save_api_dataset" href="sensortoolkit.reference._ref_api_query.save_api_dataset.html" />
+    <link rel="prev" title="sensortoolkit.reference._ref_api_query.query_periods" href="sensortoolkit.reference._ref_api_query.query_periods.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testingattrib_objects/index.html">Testing Attribute Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">sensortoolkit API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../calculate.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.calculate</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../datetime_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.datetime_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deploy.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.deploy</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../evaluation_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.evaluation_objs</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ingest.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.ingest</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lib_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.lib_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../model.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.model</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../param.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.param</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plotting.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.plotting</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qc.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.qc</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../reference.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.reference</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.reference._airnowtech_to_long.html">sensortoolkit.reference._airnowtech_to_long</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.reference._import_airnowtech.html">sensortoolkit.reference._import_airnowtech</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.reference._load_ref_data.html">sensortoolkit.reference._load_ref_data</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="sensortoolkit.reference._ref_api_query.html">sensortoolkit.reference._ref_api_query</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="sensortoolkit.reference._ref_api_query.html#resources">Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../testing_attrib_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.testing_attrib_objs</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">sensortoolkit API</a> &raquo;</li>
+          <li><a href="../reference.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.reference</span></code></a> &raquo;</li>
+          <li><a href="sensortoolkit.reference._ref_api_query.html">sensortoolkit.reference._ref_api_query</a> &raquo;</li>
+      <li>sensortoolkit.reference._ref_api_query.ref_api_query</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/api/_autosummary/sensortoolkit.reference._ref_api_query.ref_api_query.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sensortoolkit-reference-ref-api-query-ref-api-query">
+<h1>sensortoolkit.reference._ref_api_query.ref_api_query<a class="headerlink" href="#sensortoolkit-reference-ref-api-query-ref-api-query" title="Permalink to this headline"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="sensortoolkit.reference._ref_api_query.ref_api_query">
+<span class="sig-name descname"><span class="pre">ref_api_query</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bdate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aqs_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">airnow_bbox</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/sensortoolkit/reference/_ref_api_query.html#ref_api_query"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensortoolkit.reference._ref_api_query.ref_api_query" title="Permalink to this definition"></a></dt>
+<dd><p>Wrapper function for sending an API data query to either the AQS or
+AirNow API for a specified parameter (<code class="docutils literal notranslate"><span class="pre">param</span></code>).</p>
+<p>Data returned by queries are parsed into pandas DataFrames and processed
+to convert header labels and column data types into a consistent standard
+for reference data sets.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is configured to return datasets for parameters with the
+same parameter classification. The sensortoolkit Data Formatting Scheme
+(SDFS) organizes reference data into three primary
+classifications (datasets containing parameters corresponding to
+particulate matter are given the ‘PM’ classification, datasets
+containing gaseous parameters are assigned the ‘Gases’ classification,
+and datasets with meteorological parameters are assigned the ‘Met’
+classification).</p>
+<p>If users wish to query multiple parameters in one API call, the
+parameters passed to the ref_api_query() function via the <code class="docutils literal notranslate"><span class="pre">param</span></code>
+argument must be of the same parameter classification. For example,
+passing <code class="docutils literal notranslate"><span class="pre">param</span> <span class="pre">=</span> <span class="pre">['PM25',</span> <span class="pre">'PM10']</span></code> would result in a valid query
+request, as both PM25 and PM10 have the same classification (PM). If
+instead, a user passed <code class="docutils literal notranslate"><span class="pre">param</span> <span class="pre">=</span> <span class="pre">['PM25',</span> <span class="pre">'O3']</span></code>, this would result
+in the function exiting execution as PM25 and O3 have different
+parameter classifications (PM and Gases).</p>
+<p>Also, please note that AQS and AirNow use different naming conventions
+for parameters (e.g., AQS uses the parameter code 88101 for PM2.5 and
+AirNow uses ‘PM25’). These naming conventions are each different than
+the parameter naming convention used for this library. The
+<code class="docutils literal notranslate"><span class="pre">param_to_api_naming</span></code> dictionary provides a lookup dictionary for
+translating from sensortoolkit’s SDFS parameter naming convention to
+each of the API services, however, the list of associated parameter API
+names is not comprehensive. Users wishing to query parameters outside
+those listed below will need to modify this method accordingly.</p>
+<p>For additional resources, please consult the linked documentation below
+for each API service:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>AQS Documentation</strong>:
+<a class="reference external" href="https://aqs.epa.gov/aqsweb/documents/data_api.html">https://aqs.epa.gov/aqsweb/documents/data_api.html</a></p></li>
+<li><p><strong>AirNow Documentation</strong>:
+<a class="reference external" href="https://docs.airnowapi.org/Data/docs">https://docs.airnowapi.org/Data/docs</a></p></li>
+<li><p><strong>More information about AQS Qualifier codes</strong>:
+<a class="reference external" href="https://aqs.epa.gov/aqsweb/documents/codetables/qualifiers.html">https://aqs.epa.gov/aqsweb/documents/codetables/qualifiers.html</a></p></li>
+</ul>
+</div></blockquote>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query_type</strong> (<em>str</em>) – The API service to query (either <code class="docutils literal notranslate"><span class="pre">'AQS'</span></code> or <code class="docutils literal notranslate"><span class="pre">'AirNow'</span></code>).</p></li>
+<li><p><strong>param</strong> (<em>str</em>) – The evaluation parameter for which to return API query data.</p></li>
+<li><p><strong>bdate</strong> (<em>str</em>) – The overall starting date for the API query.</p></li>
+<li><p><strong>edate</strong> (<em>str</em>) – The overall ending date for the API query.</p></li>
+<li><p><strong>aqs_id</strong> (<em>dict</em>) – AQS only: AQS site ID separated into state, county, and
+site ID components.</p></li>
+<li><p><strong>airnow_bbox</strong> (<em>dict</em>) – AirNow only: Bounding box of latitude and longitude values.</p></li>
+<li><p><strong>username</strong> (<em>str</em>) – AQS only: email associated with API account</p></li>
+<li><p><strong>key</strong> (<em>str</em>) – Both AQS and AirNow: API authentication key code.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>two-element tuple containing:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>query_data</strong> (<em>pandas DataFrame</em>): Data returned by the API for
+the specified parameter and time frame. Data have been processed
+with column headers converted into standard naming scheme and
+column data types converted into a consistent formatting scheme
+for reference datasets.</p></li>
+<li><p><strong>raw_data</strong> (<em>pandas DataFrame</em>): An unmodified version of the
+dataset returned by the API query.</p></li>
+</ul>
+</div></blockquote>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(tuple)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sensortoolkit.reference._ref_api_query.query_periods.html" class="btn btn-neutral float-left" title="sensortoolkit.reference._ref_api_query.query_periods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sensortoolkit.reference._ref_api_query.save_api_dataset.html" class="btn btn-neutral float-right" title="sensortoolkit.reference._ref_api_query.save_api_dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
