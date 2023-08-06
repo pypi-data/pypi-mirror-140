@@ -1,0 +1,13 @@
+bomancli/Config.py,sha256=1FpZlut5r_FeFzbKDoSkG_GymerYjyYgaXsmLqet1UI,858
+bomancli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bomancli/auth.py,sha256=gDvxDO9VT-w8ae5n8nrC1gr83_Fd2Pu13zDyUp8XqY4,1965
+bomancli/base_logger.py,sha256=M2y1z5XFSgz_lsG0GWtz5GpG_Zqr-pPrtWqAXJwN57o,941
+bomancli/loc_finder.py,sha256=chpclwSIaAKGnNsQYC2s3PLHEZGJ34Wh6w_MjsPveNE,1340
+bomancli/main.py,sha256=P5TyWFkmLItPWeavmZekBxnWRidiWcYdGza2ZnOlseI,14458
+bomancli/utils.py,sha256=iDeGB4mmV1AVISzvBhBIzryDBqVgPq9mZmMoLGM6tSE,4399
+bomancli/validation.py,sha256=Ij4fC2JFFEaeTnI8oWf6g5FOkGy_JYXLaWNNBHaCF7Y,4402
+boman_cli-0.1.dist-info/METADATA,sha256=Abtmf1OLrtNlXe75uUFk-XMna-cuX3-CopjMh7uvVlU,671
+boman_cli-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+boman_cli-0.1.dist-info/entry_points.txt,sha256=ekavI74cJK2wHY4FASqHizPl181TZ95X3k5uv5IdaGA,53
+boman_cli-0.1.dist-info/top_level.txt,sha256=HlJDgM_AET3xrg86-N3yME062jUTdrQ0kla9DVZXfW8,9
+boman_cli-0.1.dist-info/RECORD,,
