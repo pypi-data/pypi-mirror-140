@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+koko_keywords/__init__.py
+koko_keywords/koko_keywords.py
+koko_keywords.egg-info/PKG-INFO
+koko_keywords.egg-info/SOURCES.txt
+koko_keywords.egg-info/dependency_links.txt
+koko_keywords.egg-info/requires.txt
+koko_keywords.egg-info/top_level.txt
+koko_keywords/lib/libkoko_arm64.dylib
+koko_keywords/lib/libkoko_arm64.so
+koko_keywords/lib/libkoko_x86_64.dylib
+koko_keywords/lib/libkoko_x86_64.so
