@@ -1,0 +1,12 @@
+COPYRIGHT
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+Stiletto.egg-info/PKG-INFO
+Stiletto.egg-info/SOURCES.txt
+Stiletto.egg-info/dependency_links.txt
+Stiletto.egg-info/not-zip-safe
+Stiletto.egg-info/top_level.txt
+doc/introduction.rst
+stiletto/about.py

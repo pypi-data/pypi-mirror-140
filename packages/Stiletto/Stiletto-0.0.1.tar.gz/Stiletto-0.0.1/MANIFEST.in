@@ -1,0 +1,10 @@
+include doc/*.rst
+include doc/images/*.png
+include doc/images/*.webp
+include stiletto/*.py
+
+include MANIFEST.in
+include LICENSE
+include COPYRIGHT
+
+global-exclude *.pyc
