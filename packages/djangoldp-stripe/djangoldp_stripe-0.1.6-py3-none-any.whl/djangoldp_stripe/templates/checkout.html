@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{product.name}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet"/>
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <section id="checkout">
+      <div class="product">
+        <div class="text-center">
+          <h2>{{product.description}}</h2>
+        </div>
+        <div class="card">
+          <div class="description">
+            <p>Vous vous apprétez à souscrire à notre offre pour un prix de <b>{{ unit_amount }} {{price.currency}} {% if price.tax_behaviour == 'inclusive' %} TTC {% elif price.tax_behaviour == 'exclusive' %} HT {% endif %}{% if price.type == 'recurring' %} par {{price.recurring.interval_count}} {{price.recurring.interval}} {% endif %}</b>.</p>
+            <div class="title">Merci !</div>
+          </div>
+          <form action="/checkout-session/" method="POST">
+            <!-- Add a hidden field with the lookup_key of your Price -->
+            <input type="hidden" name="lookup_key" value={{price.lookup_key}} />
+            <button id="checkout-and-portal-button" type="submit" class="button blue-button">Procéder au paiement</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

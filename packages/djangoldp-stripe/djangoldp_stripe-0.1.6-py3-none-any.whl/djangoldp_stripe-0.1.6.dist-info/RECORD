@@ -1,0 +1,15 @@
+djangoldp_stripe/__init__.py,sha256=N10suCGy_dEdftj9XT3muMPBNRAQsl8AwtILd7RUzek,48
+djangoldp_stripe/apps.py,sha256=agZn30P5u9EUHZIjMf15erA9_8DNeQdMPFLnjOATfHk,190
+djangoldp_stripe/djangoldp_settings.py,sha256=QoPK5pQmo8XeHRGQrX0AE_J6wtO54eI9G5jvH7FKy-8,920
+djangoldp_stripe/djangoldp_urls.py,sha256=FJ0nDiMmEldp8t2S1Z2oaIlH_o2V76IRS_xbh_xVEEQ,658
+djangoldp_stripe/middleware.py,sha256=WAlrQnCS5ugeL3inSnUM660GYB_zU8O0YKAKRhor4Rk,1254
+djangoldp_stripe/permissions.py,sha256=ePPXNw1jbv4AFywZC6DrExFe0WJEN5kexz_wd-LLh8I,2715
+djangoldp_stripe/views.py,sha256=cf7M3XKo7v_rdDJgOigyCVrGtomMUsrWGnzigkPAEY8,2908
+djangoldp_stripe/static/style.css,sha256=9B8rytm2UZAp4XhMEWc7gMMT0dhQ9qRwN78ks23MAjA,1356
+djangoldp_stripe/templates/cancel.html,sha256=CTEoQyWVyxbXG9LmcJw3gHpuG8Ob5PcW6B0d-EdnaKw,781
+djangoldp_stripe/templates/checkout.html,sha256=J1r0OgntjOuXCxbuePQwDzIGJeiCNQJcffFAmGy479s,1680
+djangoldp_stripe/templates/success.html,sha256=-VVRqTUKxp4EdbX_m2-F0o0Q90CBkowdevmez2KGvpM,1004
+djangoldp_stripe-0.1.6.dist-info/METADATA,sha256=vz272KZSMlJWKXy92HwZnGgg860MaH6IxbeF7Q_WXQI,5303
+djangoldp_stripe-0.1.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+djangoldp_stripe-0.1.6.dist-info/top_level.txt,sha256=DqX85pZ_n4cH1E5uNuwTcfB4RY_FiEefC-xo4y5L7PM,17
+djangoldp_stripe-0.1.6.dist-info/RECORD,,
