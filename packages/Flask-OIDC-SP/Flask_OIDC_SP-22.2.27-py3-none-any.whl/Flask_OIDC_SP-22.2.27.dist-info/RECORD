@@ -1,0 +1,14 @@
+FlaskOIDC/FlaskOIDC.py,sha256=SEkd9_BzTcg23DJs099E-t_7By43Zad4eQGlqOTdmYE,14512
+FlaskOIDC/JWKS.py,sha256=M1nvW6HvBEXYdtPGABW6_AQGh06MGMLhOzjNvjuLkiw,4876
+FlaskOIDC/__init__.py,sha256=o5kagSmTuwGxtLy-MfHU6Jwpyw21p1mgZOwzzvJKG3M,32
+FlaskOIDC/flask_utils.py,sha256=m8XTTjhWmqYBSJRbh3-fXwIiHEZoKyyutJJ9q5V-L0o,783
+FlaskOIDC/oidc_discover.py,sha256=_OpG0rm7KW_kTls5hus2HXbpm67q699G9YEbrAzxnCc,1792
+FlaskOIDC/oidc_state.py,sha256=FnffnMIf0iqRUj785NGczdX_5zufHgSeBUDTOSWXfRA,916
+Flask_OIDC_SP-22.2.27.data/data/examples/app.py,sha256=BPesZPxb9SknwPRITJEE-ycLpIs_bHoZtY00ygM2WCM,3761
+Flask_OIDC_SP-22.2.27.data/data/examples/config_sample.py,sha256=J2vkhhSh6HaXnNLWBS9-XU8MErVI1yINeOLDxzq_XxU,716
+Flask_OIDC_SP-22.2.27.data/scripts/example_flask_oidc_app.py,sha256=BPesZPxb9SknwPRITJEE-ycLpIs_bHoZtY00ygM2WCM,3761
+Flask_OIDC_SP-22.2.27.dist-info/LICENSE.txt,sha256=IsKhNAExnuxGLWUOpUYTEH0JttGV2QexZXW-ttXs0YE,1067
+Flask_OIDC_SP-22.2.27.dist-info/METADATA,sha256=pS47HOMCYOq2fr7VF1Ag2Flp5dnJd8mNrhGIRthYKF0,5970
+Flask_OIDC_SP-22.2.27.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Flask_OIDC_SP-22.2.27.dist-info/top_level.txt,sha256=jZPkvxelbhTPgOy7j8yk8ZI_BH2PD8n73KfQOGCoFhc,10
+Flask_OIDC_SP-22.2.27.dist-info/RECORD,,
