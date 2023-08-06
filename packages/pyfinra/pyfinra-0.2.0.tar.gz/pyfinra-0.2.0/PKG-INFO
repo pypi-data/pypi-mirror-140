@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyfinra
+Version: 0.2.0
+Summary: unofficial Finra api
+Author: T-136
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
