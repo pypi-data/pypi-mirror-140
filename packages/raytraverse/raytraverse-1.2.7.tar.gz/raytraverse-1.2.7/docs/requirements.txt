@@ -1,0 +1,5 @@
+Sphinx==3.0.4
+sphinx-click
+clasp
+numpy
+tqdm
