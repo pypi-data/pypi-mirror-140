@@ -1,0 +1,3 @@
+[console_scripts]
+pudatabase=pusoft.pudatabase:cmdpusoft=pusoft.home_page:cmdpupm = pusoft.pusoft_package_manager:cmd
+
