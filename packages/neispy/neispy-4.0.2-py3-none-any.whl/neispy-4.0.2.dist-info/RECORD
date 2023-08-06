@@ -1,0 +1,14 @@
+neispy/__init__.py,sha256=CnoZsAby9KT-HkK2sHfrHxizC_W2bH-Nr_BXtaV1NQI,66
+neispy/client.py,sha256=66GoB95NWffmZj1jWhAwL5IfpCZUHyGP8UxwDbOFmK0,9899
+neispy/error.py,sha256=oTc-lJ-j54Kgz49-QlNTRD5J0S2-HPb0ivJutqDE-OE,1314
+neispy/http.py,sha256=Xj6_zmDJFCT88oIdV5WgsSoxReNNwhNDI1j-cCsZiWo,4014
+neispy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neispy/sync.py,sha256=i7P2IFLgdj85bsi9Hkl3KyKeW19vh4JDiBPVevv13B0,7850
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/conftest.py,sha256=iZRHBD7zgN3ytYCqaqCTo4ByKsu6xcDjTIcjziUZKi0,96
+test/test_requests.py,sha256=QxTuPE1XFuMKPy7qAvlUum2svxrm9iw6eptrDSHlISI,2079
+neispy-4.0.2.dist-info/LICENSE,sha256=r_zFSFStuu8SGxBjKXJfVzc1qJN4brEBW-L4j0ck2IQ,1067
+neispy-4.0.2.dist-info/METADATA,sha256=rOLGo_C4c--tOl9x5n5PDcGML-3Rzj-3iW-exHJNrT4,10355
+neispy-4.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+neispy-4.0.2.dist-info/top_level.txt,sha256=wjp6Dq4K4g1kbQ8pAx9mKK3udxqMhEDDIurSicrBRKg,12
+neispy-4.0.2.dist-info/RECORD,,
