@@ -1,0 +1,15 @@
+coco_agent/__init__.py,sha256=sj-dz27lyKvj6X-VuISGJygHe56jZmOlqReXFf0dwTM,49
+coco_agent/remote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coco_agent/remote/logging.py,sha256=OIXMfWELwKO68kuZVD5yzFAiHf3OX1LzeTyPLIbHeNw,3101
+coco_agent/remote/transfer.py,sha256=iSJ8O7gmpxOKa-NSuwIJijnsBNLoeN1xY919cXGPWXo,2336
+coco_agent/remote/cli/__init__.py,sha256=UujuXmicBQvzjjRul40VtLvZL6Yh6fC822VgxWQbfng,8291
+coco_agent/remote/cli/params.py,sha256=yzUxtY1YN_Frmp5FiSEuwSzITE2YjfuoU8035UGGvi0,1478
+coco_agent/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coco_agent/services/gcs.py,sha256=wP0WlhukUsgl6-XvSrhYeGWpSgo-EY9jBHeP7-ZTntQ,3954
+coco_agent/services/git.py,sha256=LwtafHcOgeIyT5Vd1KIZMzs89WxuIeBqJTRAVk3GGTU,17099
+coco_agent/services/tm_id.py,sha256=tyrDsMCMNclKZeRLpe91QK0ldzm8OUUJtIhju7kkE7A,3216
+coco_agent-0.3.3.data/scripts/coco-agent,sha256=lwv_A2xYtkuJsLV-Beue4lBeJ72kLqHLAmGm1mbVWyg,79
+coco_agent-0.3.3.dist-info/METADATA,sha256=QwZjFlvXo4wTD3N000XGz4YpHjEWYS7XvF4fIxWSCxk,2616
+coco_agent-0.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+coco_agent-0.3.3.dist-info/top_level.txt,sha256=gGvfXnbx7cjl8u-MugLifz1jL8SUDUhcUKZhKEij-Js,11
+coco_agent-0.3.3.dist-info/RECORD,,
