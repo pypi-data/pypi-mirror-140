@@ -1,0 +1,7 @@
+fastfec/utils.py,sha256=SibSW-cZ5kjzcPmRAuvXh4lZiHKgtdMMpFPu7mU-suQ,9416
+fastfec/client.py,sha256=-GunFb07iFkOx6ERGt67SOLiOT0qDY2ZgqxuEcvDL-s,7823
+fastfec/__init__.py,sha256=zhvJeu1paYQSbocrzG8RnPrAtZKxL2m_m-YIICfHCWc,90
+fastfec/libfastfec.so,sha256=5HBteX7NTFbeJ3SbANnjtpB3SEQy7sT_imcpnCStpU4,888224
+fastfec-0.0.8.dist-info/METADATA,sha256=XWL-D-ITaUcPXy5wBeu3ryGZbW7qJpDkmnMKJCWf2nk,4911
+fastfec-0.0.8.dist-info/WHEEL,sha256=Z2IJoh7HyyDMA7sLEF96pNmtXU9GvUVxO_nXCHXZ5GE,113
+fastfec-0.0.8.dist-info/RECORD,,
