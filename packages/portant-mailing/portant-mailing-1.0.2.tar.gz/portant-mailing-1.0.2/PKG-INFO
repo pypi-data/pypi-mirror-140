@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: portant-mailing
+Version: 1.0.2
+Summary: a Django mailing app for Portant shop
+Home-page: https://github.com/portant-shop/mailing
+Author: Vedran Vojvoda
+Author-email: vedran@pinkdroids.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Description-Content-Type: text/x-rst
+Provides-Extra: testing
+
+
+============
+Django WSPay
+============
+
+This django app provides simple support for payments using WSPay gateway.
+
+
