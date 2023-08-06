@@ -1,0 +1,17 @@
+amazonian/S3.py,sha256=im8yx7iC2jXgNcGfBxFDJPZo5l0-3ad3kAFstNmJCIc,13525
+amazonian/S3File.py,sha256=z7_SfZr2XxTqd6FYwSAgm4tHjDZV4rcPtRHH6i5DdJw,1320
+amazonian/__init__.py,sha256=JHxVap4yLfpGBo8PnUiSALbpgGg6zzxzXCs9fSq8zYg,67
+amazonian/redshift/BasicRedshift.py,sha256=ynfo60T620VIs6T0dMPY4KLLaorlujKM54Z7Fbh4DN4,11097
+amazonian/redshift/Column.py,sha256=wKGud5U3Ja_dGhN1_sj6tntY7bUiaqJZ0wVtMtCOAIo,2050
+amazonian/redshift/Metadata.py,sha256=at36SZFzSTqaxM6L_zGuod8RUtEXELJSEIpz6tdIuWE,1100
+amazonian/redshift/Redshift.py,sha256=PF1N7_s_tzD7GG_j4Tnf8BHaGHAUfSHGWUn535_-5Do,3886
+amazonian/redshift/Schema.py,sha256=JPgkWO3vVOeDIN8s4LSxs9Iu1MyTVHYraZvZlyiM-E8,3507
+amazonian/redshift/Snapshot.py,sha256=QlWct5IpJA5ZHz74Xh3Y4WFC15KiBCdswUInYnlpYZo,4494
+amazonian/redshift/Table.py,sha256=zXF1ShjhIUU4cXrPOnEuv9sNaqkZVF6btSAVBNIkrLY,5447
+amazonian/redshift/__init__.py,sha256=jS1r8tORpDMPqCi1it_DrvW63yj3Agh-FAvLscdtxaU,141
+amazonian/redshift/get_redshift_create_table_query.py,sha256=KLyxQuEKXaMYtY92-g9w2DXvMYBY7hDnuZuslbZUyh0,1793
+amazonian-2022.2.25.dist-info/LICENSE,sha256=uww8wNRuFn46-WFLqnEjAtt1-_uantZ-19scpxlh1dw,1064
+amazonian-2022.2.25.dist-info/METADATA,sha256=n9F4yqSyi70VykSXDbTJ0hbnCL0eVCn6D-0usk1JLYc,1509
+amazonian-2022.2.25.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+amazonian-2022.2.25.dist-info/top_level.txt,sha256=4XWgCxpbbSPbUFYevcNEmzQRbbjVpuiDe_vZmWXnA1U,10
+amazonian-2022.2.25.dist-info/RECORD,,
