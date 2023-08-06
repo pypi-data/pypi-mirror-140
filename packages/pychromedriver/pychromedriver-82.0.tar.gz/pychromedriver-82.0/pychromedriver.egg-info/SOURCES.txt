@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+VERSION.txt
+setup.py
+pychromedriver/__init__.py
+pychromedriver.egg-info/PKG-INFO
+pychromedriver.egg-info/SOURCES.txt
+pychromedriver.egg-info/dependency_links.txt
+pychromedriver.egg-info/not-zip-safe
+pychromedriver.egg-info/top_level.txt
