@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+priceit/src/priceit.egg-info/PKG-INFO
+priceit/src/priceit.egg-info/SOURCES.txt
+priceit/src/priceit.egg-info/dependency_links.txt
+priceit/src/priceit.egg-info/requires.txt
+priceit/src/priceit.egg-info/top_level.txt
+priceit/src/priceit.py
+priceit/src/priceit.egg-info/PKG-INFO
+priceit/src/priceit.egg-info/SOURCES.txt
+priceit/src/priceit.egg-info/dependency_links.txt
+priceit/src/priceit.egg-info/requires.txt
+priceit/src/priceit.egg-info/top_level.txt
