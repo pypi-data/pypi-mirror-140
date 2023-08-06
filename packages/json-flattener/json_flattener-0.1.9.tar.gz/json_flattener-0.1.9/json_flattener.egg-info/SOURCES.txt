@@ -1,0 +1,11 @@
+README.md
+setup.py
+json_flattener/__init__.py
+json_flattener/cli.py
+json_flattener/flattener.py
+json_flattener.egg-info/PKG-INFO
+json_flattener.egg-info/SOURCES.txt
+json_flattener.egg-info/dependency_links.txt
+json_flattener.egg-info/entry_points.txt
+json_flattener.egg-info/requires.txt
+json_flattener.egg-info/top_level.txt
