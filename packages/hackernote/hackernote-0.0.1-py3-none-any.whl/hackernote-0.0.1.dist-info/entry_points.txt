@@ -1,0 +1,3 @@
+[console_scripts]
+hackernote = hackernote.__main__:main
+
