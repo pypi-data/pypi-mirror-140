@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: em_fares_to_xml
+Version: 1.0.1
+Summary: Library to parse specific fare data into XML outputs
+Author: Raydel Miranda <raydel@everymundo.com>, Anahi Martinez <anahi@everymundo.com>
+Author-email: Raydel Miranda <raydel@everymundo.com>, Anahi Martinez <anahi@everymundo.com>
