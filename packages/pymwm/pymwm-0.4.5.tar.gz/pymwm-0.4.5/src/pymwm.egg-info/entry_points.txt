@@ -1,0 +1,3 @@
+[console_scripts]
+update_pymwm_h5 = pymwm.bin.update_pymwm_h5:main
+
