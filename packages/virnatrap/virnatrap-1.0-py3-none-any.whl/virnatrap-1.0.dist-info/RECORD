@@ -1,0 +1,9 @@
+virnatrap/__init__.py,sha256=FfILCK3ssDTDmaRaxxO1BTxOm0kyFtRffnqcN4LOXfM,25
+virnatrap/command_line.py,sha256=d8AP1zwftvq2zs5megGZunyOuFI5ZKunWHX_Z5_P18w,2586
+virnatrap/virnatrap.py,sha256=HQKes62JINQb6rxILmIEkIJbrek198XeA27qLqv_snY,12178
+virnatrap-1.0.dist-info/LICENSE,sha256=sMgOQ7cm6R8s1hJ5PkkOplbjXPID4fyyo6jJpV5HoSI,1087
+virnatrap-1.0.dist-info/METADATA,sha256=_9N3LTRLoW3bLb6Xzq64GiSrJg696snnHaEdXcwM64A,623
+virnatrap-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+virnatrap-1.0.dist-info/entry_points.txt,sha256=LRjdfBZj6Y6B5oeT-wTSwKgy8Tbyq8VptPJTrOR2W2o,79
+virnatrap-1.0.dist-info/top_level.txt,sha256=Z7au9tTdNrrYi_acL2-I1ONfmU40gRF3Ecmu0iab4GI,10
+virnatrap-1.0.dist-info/RECORD,,
