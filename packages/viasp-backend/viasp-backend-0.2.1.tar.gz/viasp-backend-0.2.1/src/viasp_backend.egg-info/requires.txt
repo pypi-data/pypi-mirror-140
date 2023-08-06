@@ -1,0 +1,8 @@
+networkx>=2.4
+flask>=2
+clingo==5.5.0.post3
+flask-cors>=3.0
+clingox>=1.0.0
+
+[testing]
+pytest
