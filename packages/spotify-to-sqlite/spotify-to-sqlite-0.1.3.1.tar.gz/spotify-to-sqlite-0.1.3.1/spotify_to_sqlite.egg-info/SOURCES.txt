@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+spotify_to_sqlite/__init__.py
+spotify_to_sqlite/__main__.py
+spotify_to_sqlite/cli.py
+spotify_to_sqlite/constants.py
+spotify_to_sqlite/utils.py
+spotify_to_sqlite.egg-info/PKG-INFO
+spotify_to_sqlite.egg-info/SOURCES.txt
+spotify_to_sqlite.egg-info/dependency_links.txt
+spotify_to_sqlite.egg-info/entry_points.txt
+spotify_to_sqlite.egg-info/requires.txt
+spotify_to_sqlite.egg-info/top_level.txt
