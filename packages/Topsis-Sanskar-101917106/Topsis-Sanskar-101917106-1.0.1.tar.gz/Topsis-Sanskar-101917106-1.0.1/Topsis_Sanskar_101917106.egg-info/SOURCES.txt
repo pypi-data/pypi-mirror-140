@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Topsis_Sanskar_101917106.egg-info/PKG-INFO
+Topsis_Sanskar_101917106.egg-info/SOURCES.txt
+Topsis_Sanskar_101917106.egg-info/dependency_links.txt
+Topsis_Sanskar_101917106.egg-info/top_level.txt
