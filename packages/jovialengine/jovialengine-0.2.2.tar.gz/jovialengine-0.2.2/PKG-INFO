@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: jovialengine
+Version: 0.2.2
+Summary: A Simple Pygame Engine
+Home-page: https://github.com/JovialKnoll/jovialengine
+Author: Brett Kaplan
+Author-email: BrettCKaplan@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/JovialKnoll/jovialengine/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# JovialEngine
+A Simple Pygame Engine
+
+![test badge](https://github.com/JovialKnoll/jovialengine/actions/workflows/test.yml/badge.svg?branch=master)
+
+
