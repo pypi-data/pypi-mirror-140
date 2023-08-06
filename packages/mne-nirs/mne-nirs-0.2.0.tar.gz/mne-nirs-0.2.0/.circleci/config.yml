@@ -1,0 +1,171 @@
+# Tagging a commit with [circle front] will build the front page and perform tests-doc.
+# Tagging a commit with [circle full] will build everything.
+version: 2.1
+
+_xvfb: &xvfb
+  name: Start Xvfb virtual framebuffer
+  command: |
+    echo "export DISPLAY=:99" >> $BASH_ENV
+    /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -screen 0 1280x1024x24 -ac +extension GLX +render -noreset -nolisten tcp -nolisten unix
+
+jobs:
+    build_docs:
+      docker:
+        # Use 18.04 rather than 20.04 because MESA 20.0.8 on 18.04 has working
+        # transparency but 21.0.3 on 20.04 does not!
+        - image: cimg/base:stable-18.04
+      steps:
+        - checkout
+        - run:
+            name: Merge with upstream
+            command: |
+              echo $(git log -1 --pretty=%B) | tee gitlog.txt
+              echo ${CI_PULL_REQUEST//*pull\//} | tee merge.txt
+              if [[ $(cat merge.txt) != "" ]]; then
+                echo "Merging $(cat merge.txt)";
+                if ! git remote -v | grep upstream; then
+                  git remote add upstream https://github.com/mne-tools/mne-nirs.git
+                fi
+                git fetch upstream
+                git pull --ff-only upstream "refs/pull/$(cat merge.txt)/merge";
+              fi
+
+        - run:
+            name: Set BASH_ENV
+            command: |
+              set -e
+              sudo apt update -qq
+              sudo apt install -qq libosmesa6 libglx-mesa0 libopengl0 libglx0 libdbus-1-3 \
+                libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 \
+                libxcb-render-util0 libxcb-shape0 libxcb-xfixes0 libxcb-xinerama0 \
+                graphviz optipng \
+                python3.8-venv python3-venv \
+                xvfb libxft2 ffmpeg
+              python3.8 -m venv ~/python_env
+              echo "set -e" >> $BASH_ENV
+              echo "export OPENBLAS_NUM_THREADS=4" >> $BASH_ENV
+              echo "export XDG_RUNTIME_DIR=/tmp/runtime-circleci" >> $BASH_ENV
+              echo "export MNE_FULL_DATE=true" >> $BASH_ENV
+              echo "export MNE_3D_OPTION_ANTIALIAS=false" >> $BASH_ENV
+              source tools/get_minimal_commands.sh
+              echo "export MNE_3D_BACKEND=pyvistaqt" >> $BASH_ENV
+              echo "export PATH=~/.local/bin/:$PATH" >> $BASH_ENV
+              echo "source ~/python_env/bin/activate" >> $BASH_ENV
+              mkdir -p ~/.local/bin
+              ln -s ~/python_env/bin/python ~/.local/bin/python
+              echo "BASH_ENV:"
+              cat $BASH_ENV
+              mkdir -p ~/mne_data
+              touch pattern.txt
+        - run:
+            name: check neuromag2ft
+            command: |
+              neuromag2ft --version
+
+        - run:
+            <<: *xvfb
+
+        - run:
+            name: Install fonts needed for diagrams
+            command: |
+              mkdir -p $HOME/.fonts
+              curl https://codeload.github.com/adobe-fonts/source-code-pro/tar.gz/2.038R-ro/1.058R-it/1.018R-VAR | tar xz -C $HOME/.fonts
+              curl https://codeload.github.com/adobe-fonts/source-sans-pro/tar.gz/3.028R | tar xz -C $HOME/.fonts
+              fc-cache -f
+
+
+        - run:
+            name: Install fonts needed for diagrams
+            command: |
+              mkdir -p $HOME/.fonts
+              curl https://codeload.github.com/adobe-fonts/source-code-pro/tar.gz/2.030R-ro/1.050R-it | tar xz -C $HOME/.fonts
+              curl https://codeload.github.com/adobe-fonts/source-sans-pro/tar.gz/3.006R | tar xz -C $HOME/.fonts
+              fc-cache -f
+
+        # This command differs from MNE-Python by just installing requirements_doc.txt, which greatly speeds up install time
+        # We also don't check PyQt5 because it's not actually installed
+        - run:
+            name: Get Python running
+            command: |
+              python -m pip install --upgrade pip setuptools wheel
+              python -m pip install --upgrade --progress-bar off --pre sphinx
+              python -m pip install --upgrade --progress-bar off -r requirements.txt -r requirements_testing.txt -r requirements_doc.txt https://github.com/mne-tools/mne-python/zipball/main
+              python -m pip install -e .
+
+
+        # Hack in uninstalls of libraries as necessary if pip doesn't do the right thing in upgrading for us...
+        - run:
+            name: Get Python running
+            command: |
+              ./tools/circleci_dependencies.sh
+
+        - run:
+            name: Download fOLD data
+            command: |
+              ./tools/fold.sh
+
+        - run:
+            name: Check PyQt5
+            command: LD_DEBUG=libs python -c "from PyQt5.QtWidgets import QApplication, QWidget; app = QApplication([])"
+
+
+        # Look at what we have and fail early if there is some library conflict
+        # (remove irrelevant lines compared to MNE-Python)
+        - run:
+            name: Check installation
+            command: |
+               which python
+               QT_DEBUG_PLUGINS=1 mne sys_info
+               python -c "import numpy; numpy.show_config()"
+               LIBGL_DEBUG=verbose python -c "import pyvistaqt; pyvistaqt.BackgroundPlotter(show=True)"
+               python -c "import mne; mne.set_config('MNE_USE_CUDA', 'false')"  # this is needed for the config tutorial
+               python -c "import mne; mne.set_config('MNE_LOGGING_LEVEL', 'info')"
+               python -c "import mne; level = mne.get_config('MNE_LOGGING_LEVEL'); assert level.lower() == 'info', repr(level)"
+
+        - run:
+            name: list packages
+            command: |
+               pip list
+
+
+        - run:
+            name: Only build this branch and not main
+            command: |
+              git reset --hard "$CIRCLE_SHA1"
+              git checkout -q -B "$CIRCLE_BRANCH"
+              git reset --hard "$CIRCLE_SHA1"
+              git branch -D main
+
+        # Build docs
+        - run:
+            name: make html
+            command: |
+              cd doc;
+              git status
+              git tag
+              git branch
+              make html-single;
+
+        # Save the outputs
+        - store_artifacts:
+            path: doc/_build/html/
+            destination: dev
+
+workflows:
+  version: 2
+
+  default:
+    jobs:
+      - build_docs
+
+  weekly:
+    jobs:
+      - build_docs
+    triggers:
+      - schedule:
+          # "At 00:00 on Sunday" should be often enough
+          cron: "0 0 * * 0"
+          filters:
+            branches:
+              only:
+                - main
