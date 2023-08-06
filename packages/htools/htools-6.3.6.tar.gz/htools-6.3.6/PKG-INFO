@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: htools
+Version: 6.3.6
+Summary: Harrison's custom functions.
+Home-page: UNKNOWN
+Author: Harrison Mamin
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: fuzzy
+Provides-Extra: speedup
