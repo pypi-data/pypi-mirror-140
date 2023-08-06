@@ -1,0 +1,4 @@
+xlwt
+m3-xlrd==0.9.4.1a
+xlutils
+lxml
