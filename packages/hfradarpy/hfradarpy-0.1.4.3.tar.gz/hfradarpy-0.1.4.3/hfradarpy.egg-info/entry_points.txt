@@ -1,0 +1,2 @@
+[console_scripts]
+hfradarpy = hfradarpy.cli:main
