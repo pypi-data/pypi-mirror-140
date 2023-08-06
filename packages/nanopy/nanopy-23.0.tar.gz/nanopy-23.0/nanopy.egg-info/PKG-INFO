@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nanopy
+Version: 23.0
+Summary: UNKNOWN
+Home-page: https://github.com/npy0/nanopy
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: full
