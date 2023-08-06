@@ -1,0 +1,17 @@
+girder-cli-oauth-client
+humanize
+isic-metadata
+joblib
+more-itertools
+numpy
+packaging
+pandas
+requests
+retryable-requests
+rich
+django-s3-file-field-client
+typer
+
+[dev]
+ipython
+tox
