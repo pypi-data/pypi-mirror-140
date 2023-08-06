@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: combinationsum
+Version: 0.0.1
+Summary: Combination Sum: A package that help find all possible combinations to reach the target value
+Home-page: UNKNOWN
+Author: Chuhan
+Author-email: xuchuhan777@gmai.com
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
