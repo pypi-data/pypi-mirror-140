@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: pds-api
+Version: 12.0.0
+Summary: A short description, about 100-120 characters, suitable for search summaries
+Home-page: https://github.com/NASA-PDS/pds-api
+Download-URL: https://github.com/NASA-PDS/pds-api/releases/
+Author: PDS
+Author-email: pds_operator@jpl.nasa.gov
+License: apache-2.0
+Keywords: pds,planetary data,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+License-File: NOTICE.txt
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-docstrings ; extra == 'dev'
+Requires-Dist: pep8-naming ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-watch ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinxcontrib-openapi ; extra == 'dev'
+Requires-Dist: sphinxcontrib-redoc ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: types-setuptools ; extra == 'dev'
+
+# NASA PDS Federated API
+
+This repository is the entry point for the NASA PDS federated API specifications.
+
+PDS is willing to develop rest-ful web APIs for different applications (so far, data search, dois) without a priori limitation of what the API is relevant for.
+
+The detailed documentation can be found https://nasa-pds.github.io/pds-api/
+
+
+# For developers, generate the API documentation
+
+The openAPI yaml unrevolved specifications are stored in the `specs` directory.
+
+The naming of the the specification are:
+    PDS_APIs-<application>-<version>-swagger.yaml
+
+For example:
+    PDS_APIs-registry-1.0.0-SNAPSHOT-swagger.yaml
+    
+To add a new specification or a new version of a specification:
+
+1. copy the openapi specification under the `specs` directory following the above filename convention.
+2. add a new entry for this file in `docs/source/specifications.rst`
+3. in the file `docs/source/conf.py` add a section for the new specification in the `redoc` object.
+4. Generate the doc with command line:
+
+    pip install -e '.[dev]'
+    sphinx-build -b html docs/source docs/build
+
+
+
+# Tags
+
+The tags of this repository should follow the PDS build tag names (e.g. 12.1, 13.0 ...) with a 6 months release cycle.
+
