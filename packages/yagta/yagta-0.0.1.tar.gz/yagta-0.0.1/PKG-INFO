@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: yagta
+Version: 0.0.1
+Summary: A simple tasks app.
+Home-page: https://github.com/epiccakeking/yagta
+Author: epiccakeking
+Author-email: epiccakeking@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/epiccakeking/yagta/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: COPYING
+
+# YAGTA
+
+Yet Another GTK Task App
+
+This project is a prototype.
+Do not use this for important work.
+
+

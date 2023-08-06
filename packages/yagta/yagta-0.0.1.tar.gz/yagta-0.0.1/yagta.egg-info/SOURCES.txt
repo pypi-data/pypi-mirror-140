@@ -1,0 +1,16 @@
+COPYING
+README.md
+pyproject.toml
+setup.cfg
+data/io.github.epiccakeking.YAGTA.desktop
+data/io.github.epiccakeking.YAGTA.svg
+yagta/__main__.py
+yagta.egg-info/PKG-INFO
+yagta.egg-info/SOURCES.txt
+yagta.egg-info/dependency_links.txt
+yagta.egg-info/top_level.txt
+yagta/css/main.css
+yagta/ui/CalendarOverlay.ui
+yagta/ui/MainWindow.ui
+yagta/ui/Task.ui
+yagta/ui/TaskList.ui
