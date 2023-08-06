@@ -1,0 +1,4 @@
+[console_scripts]
+takiyasha = takiyasha.app.cli:main
+takiyasha-unlocker = takiyasha.app.cli:main
+unlocker = takiyasha.app.cli:main
