@@ -1,0 +1,2 @@
+[console_scripts]
+stac_check = stac_check.cli:main
