@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jax_meta
+Version: 1.0.0
+Summary: Collection of meta-learning algorithms in Jax
+Home-page: https://github.com/tristandeleu/jax-meta-learning
+Author: Tristan Deleu
+Author-email: tristan.deleu@gmail.com
+License: MIT
+Keywords: meta-learning,jax,few-shot,few-shot learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# jax-meta-learning
+A collection of meta-learning algorithms in Jax
+
+

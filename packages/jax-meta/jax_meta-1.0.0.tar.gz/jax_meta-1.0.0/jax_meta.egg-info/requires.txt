@@ -1,0 +1,7 @@
+jax
+jaxlib
+tqdm
+simple-parsing
+Pillow>=7.0.0
+dm-haiku
+optax
