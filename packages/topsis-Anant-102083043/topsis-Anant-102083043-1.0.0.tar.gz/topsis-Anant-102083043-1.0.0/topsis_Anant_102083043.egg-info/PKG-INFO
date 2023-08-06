@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: topsis-Anant-102083043
+Version: 1.0.0
+Summary: Multiple criteria decision making (MCDM) using TOPSIS
+Author: Anant Joshi
+Author-email: ajoshi_be19@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#Topsis-Anant-102083043
+Multiple criteria decision making (MCDM) using TOPSIS
+
+## Installation
+```pip install topsis-Anant-102083043```
+
+##Sample Use case
+import topsis-Anant-102083043 as t
+t.topsis("input.csv","1,2,1,2,3","+,+,-,+,-","output.csv")
+
+
