@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "wj_pytrends"
+version = "1.0.5"
+description = "Whale&Jaguar Libary - Pytrends"
+authors = ["Sebastian Franco <jsfranco@whaleandjaguar.co>", 'John Hogue', 'Burton DeWilde']
+license = "GNU3"
+
+[tool.poetry.dependencies]
+python = ">3.6.1,<4.0"
+requests = ">=2.25.1"
+pandas = "0.25.3"
+lxml = "4.6.3"
+
+[tool.poetry.dev-dependencies]
+pylint = "2.4.4"
+colorama = "0.4.3"
+gitlint = "0.15.1"
+autopep8 = "1.5.6"
+pyflakes = "2.3.1"
+yapf = "0.31.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+  "wj_pytrends/__init__.py:__version__",
+  "pyproject.toml:version"
+]
+
+branch = "master"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "poetry build"

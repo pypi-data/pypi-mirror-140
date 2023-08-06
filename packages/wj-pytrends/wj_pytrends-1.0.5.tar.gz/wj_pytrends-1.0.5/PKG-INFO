@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wj-pytrends
+Version: 1.0.5
+Summary: Whale&Jaguar Libary - Pytrends
+License: GNU3
+Author: Sebastian Franco
+Author-email: jsfranco@whaleandjaguar.co
+Requires-Python: >3.6.1,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: lxml (==4.6.3)
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: requests (>=2.25.1)
