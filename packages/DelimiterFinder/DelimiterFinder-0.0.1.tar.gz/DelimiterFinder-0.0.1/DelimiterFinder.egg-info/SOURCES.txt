@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+DelimiterFinder/__init__.py
+DelimiterFinder/bayes.py
+DelimiterFinder/finder.py
+DelimiterFinder.egg-info/PKG-INFO
+DelimiterFinder.egg-info/SOURCES.txt
+DelimiterFinder.egg-info/dependency_links.txt
+DelimiterFinder.egg-info/top_level.txt
