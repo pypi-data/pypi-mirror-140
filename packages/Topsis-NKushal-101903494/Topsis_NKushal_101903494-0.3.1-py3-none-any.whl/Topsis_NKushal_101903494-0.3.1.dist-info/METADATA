@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Topsis-NKushal-101903494
+Version: 0.3.1
+Summary: A TOPSIS calculator
+Home-page: UNKNOWN
+Author: N Kushal
+Author-email: kushal.nov2000@gmail.com
+License: MIT
+Keywords: TOPSIS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+## Project description
+
+This is a Python package implementing Topsis method sed for multi-criteria decision analysis. Topsis stands for Technique for Order of Preference by Similarity to Ideal Solution
+
+Just provide your input attributes and it will give you the results
+
+## Installation
+$ pip install Topsis-NKushal-101903494==0.3.1
+
+In the commandline, you can write as - $ python <program_filename> <path to input_data_file_name> <weights as strings> <impacts as strings> <result_file_name>
+
+E.g for input data file as data.csv, command will be like $ python topsis.py data.csv "1,1,1,1,1" "+,+,+,+,+" output.csv
+
+This will print all the output attribute values along with the Rank column, in a tabular format
+
+License -> MIT
+
+## Change Log
+0.2.5 (25/02/2022)
+First Release
+
