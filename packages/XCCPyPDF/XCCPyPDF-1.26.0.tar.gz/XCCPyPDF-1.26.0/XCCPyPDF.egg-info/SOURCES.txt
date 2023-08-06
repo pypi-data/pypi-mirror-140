@@ -1,0 +1,17 @@
+CHANGELOG
+MANIFEST.in
+README.md
+setup.py
+XCCPyPDF/__init__.py
+XCCPyPDF/_version.py
+XCCPyPDF/filters.py
+XCCPyPDF/generic.py
+XCCPyPDF/merger.py
+XCCPyPDF/pagerange.py
+XCCPyPDF/pdf.py
+XCCPyPDF/utils.py
+XCCPyPDF/xmp.py
+XCCPyPDF.egg-info/PKG-INFO
+XCCPyPDF.egg-info/SOURCES.txt
+XCCPyPDF.egg-info/dependency_links.txt
+XCCPyPDF.egg-info/top_level.txt
