@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: romancal
+Version: 0.6.0
+Summary: Library for calibration of science observations from the Nancy Grace Roman Space Telescope
+Home-page: https://github.com/spacetelescope/romancal
+Author: Roman calibration pipeline developers
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://github.com/spacetelescope/romancal/issues
+Project-URL: Documentation, https://roman-pipeline.readthedocs.io/en/stable/
+Project-URL: Source Code, https://github.com/spacetelescope/romancal
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: asdf (>=2.10.0)
+Requires-Dist: astropy (>=5.0)
+Requires-Dist: crds (>=11.9.0)
+Requires-Dist: gwcs (>=0.17.0)
+Requires-Dist: jsonschema (>=3.0.2)
+Requires-Dist: numpy (>=1.22)
+Requires-Dist: pyparsing (>=2.2)
+Requires-Dist: requests (>=2.22)
+Requires-Dist: roman-datamodels (>=0.11.0)
+Requires-Dist: stcal (>=0.2.5)
+Requires-Dist: stpipe (>=0.3.1)
+Provides-Extra: docs
+Requires-Dist: matplotlib ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-automodapi ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: stsci-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-astropy ; extra == 'docs'
+Requires-Dist: sphinx-asdf ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: ci-watson (>=0.3.0) ; extra == 'test'
+Requires-Dist: pytest (>=4.6.0) ; extra == 'test'
+Requires-Dist: pytest-astropy ; extra == 'test'
+Requires-Dist: codecov (>=1.6.0) ; extra == 'test'
+
+Library for calibration of science observations from the Nancy Grace Roman Space Telescope
+
