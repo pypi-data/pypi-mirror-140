@@ -1,0 +1,3 @@
+include src/skipperz/assets/*.*
+include src/skipperz/pgSprite/*.*
+include src/skipperz/skip_libs/*.*
