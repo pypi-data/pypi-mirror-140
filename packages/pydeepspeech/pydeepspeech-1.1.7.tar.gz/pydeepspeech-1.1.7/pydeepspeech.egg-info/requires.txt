@@ -1,0 +1,9 @@
+deepspeech==0.9.3
+webrtcvad
+pathlib
+capturing_process
+requests
+black
+
+[test]
+pytest
