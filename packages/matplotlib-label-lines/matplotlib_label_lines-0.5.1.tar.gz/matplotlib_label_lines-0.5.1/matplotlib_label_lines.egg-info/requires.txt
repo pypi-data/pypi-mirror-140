@@ -1,0 +1,12 @@
+matplotlib>=2.0.2
+more-itertools
+numpy>=1.16
+
+[test]
+flake8==3.9.2
+flake8-black==0.2.1
+flake8-bugbear==21.4.3
+matplotlib==3.5.1
+pytest~=6.2.5
+pytest-cov==3.0.0
+pytest-mpl==0.13
