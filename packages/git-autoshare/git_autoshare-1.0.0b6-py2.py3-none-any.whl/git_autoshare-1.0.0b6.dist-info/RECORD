@@ -1,0 +1,12 @@
+git_autoshare/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_autoshare/clone.py,sha256=iZSJU40bL_jY7tuzKXwbURuVtp-1Jr7xS7kNFhPL6L8,803
+git_autoshare/core.py,sha256=Jt3rqHKWo92MIFc45Rqk4pXZKxgQKTb3GETt9iXSmgM,6862
+git_autoshare/giturlparse.py,sha256=G7FpBeqeqr_q3aF_2MNtFcbLn17erzgOOPFvgfK3yZk,1213
+git_autoshare/prefetch.py,sha256=O1qgBdj1Z1qFXa1pdnsw-_sHN2bmpIO4uVbdVLdm-5s,848
+git_autoshare/submodule.py,sha256=z5zGZTTzcAaSwQEguZs5rcsnWt59vpagjzxuVCIbNus,840
+git_autoshare-1.0.0b6.dist-info/LICENSE.md,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+git_autoshare-1.0.0b6.dist-info/METADATA,sha256=V_Z0a7h8b7TkCphQsFhplDRNjPVLINyi4p-ReR9wFVo,6860
+git_autoshare-1.0.0b6.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+git_autoshare-1.0.0b6.dist-info/entry_points.txt,sha256=8kgAEmoUODcGNKXW3xHN5nElDmTgDdRW33qAvyAFaNM,176
+git_autoshare-1.0.0b6.dist-info/top_level.txt,sha256=7s5lzTy0Y0KPDsyeDernk2iJtz4_e4nrfgbgXlmoTI4,14
+git_autoshare-1.0.0b6.dist-info/RECORD,,
