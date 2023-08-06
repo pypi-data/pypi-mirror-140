@@ -1,0 +1,68 @@
+#   _    _ _ _     _          _____ _____
+#  | |  | (_) |   (_)   /\   |  __ \_   _|
+#  | |__| |_| |__  _   /  \  | |__) || |
+#  |  __  | | '_ \| | / /\ \ |  ___/ | |
+#  | |  | | | |_) | |/ ____ \| |    _| |_
+#  |_|  |_|_|_.__/|_/_/    \_\_|   |_____|
+#
+# An alternative implement of Imjad API
+
+debug: false # 是否开启Debug模式
+
+data:
+  temp-expiry: 7 # 临时文件目录文件过期时间, 单位为天
+  path: ./data # data目录所在位置
+
+server:
+  host: 127.0.0.1 # 监听主机
+  port: 8080 # 端口
+  gzip: true
+
+  domains: null # 限定来源域名, 设置为null为不限制
+
+  cors:
+    origins:
+      - "http://localhost.tiangolo.com"
+      - "https://localhost.tiangolo.com"
+      - "http://localhost"
+      - "http://localhost:8080"
+    credentials: true
+    methods: ["*"]
+    headers: ["*"]
+
+  allowed-forward: null # Reference: https://stackoverflow.com/questions/63511413
+
+cache:
+  enabled: true # 设置是否启用缓存
+  ttl: 3600 # 缓存默认生存时间, 单位为秒
+  uri: "memory://" # 缓存URI
+
+log:
+  level: INFO # 日志等级, 可选 [TRACE,DEBUG,INFO,WARNING,ERROR]
+  format: > # 输出日志格式, 如果没有必要请不要修改
+    <level>
+    <v>{level:<8}</v>
+    [{time:YYYY/MM/DD} {time:HH:mm:ss.SSS} <d>{module}:{name}:{line}</d>]</level>
+    {message}
+
+  # file: logs/{time.log}
+  file: null # 日志输出文件位置, 相对于data目录, 为空则不保存
+
+  sentry:
+    enabled: false
+    sample: 1
+    dsn: ""
+    pii: false
+
+content:
+  slogan: | # 在文档附加的标语, 可以用于自定义内容
+    ![](https://img.shields.io/github/stars/mixmoe/HibiAPI?color=brightgreen&logo=github&style=for-the-badge)
+  robots: | # 提供的robots.txt内容, 用于提供搜索引擎抓取
+    User-agent: *
+    Disallow: /api/
+
+authorization:
+  enabled: false # 是否开启验证
+  allowed:
+    - username: admin # 用户名
+      password: admin # 密码

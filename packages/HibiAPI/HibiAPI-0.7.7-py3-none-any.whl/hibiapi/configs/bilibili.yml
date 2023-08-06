@@ -1,0 +1,8 @@
+enabled: true
+
+net:
+  cookie: > # Bilibili的Cookie, 在一些需要用户登录的场景下需要
+    DedeUserID=; 
+    DedeUserID__ckMd5=; 
+    SESSDATA=;
+  user-agent: "Mozilla/5.0 (mixmoe@GitHub.com/HibiAPI) Chrome/114.514.1919810" # UA头, 一般没必要改

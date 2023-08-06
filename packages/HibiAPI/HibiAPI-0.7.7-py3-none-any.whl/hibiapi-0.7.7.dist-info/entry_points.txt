@@ -1,0 +1,3 @@
+[console_scripts]
+hibiapi=hibiapi.__main__:main
+
