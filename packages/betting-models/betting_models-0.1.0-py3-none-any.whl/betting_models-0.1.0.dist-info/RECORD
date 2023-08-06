@@ -1,0 +1,17 @@
+betting_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betting_models/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betting_models/core/allocation.py,sha256=vqT2zpFBcBAZvH3ch7VxKGMqxgOWpYhVGMcR3-8Ql3A,6666
+betting_models/football/league_markets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betting_models/football/league_markets/seed.py,sha256=aa_AYhKN40UkqGsYyIFpoIEBqcMP9Sp7YaDlTpr68GY,4202
+betting_models/football/match_markets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betting_models/football/match_markets/backsolve_lambda.py,sha256=N_l8OkBvK9ydrHL8UAzY2zkHAHiD0NLOltqiCSqYly4,2443
+betting_models/football/match_markets/config.py,sha256=6NxERnJu-nniwejKd36AciNXs3rmcbKPupXgP16zmrk,175
+betting_models/football/match_markets/formats.py,sha256=jnQhrT2lcidHQA_nj0Jfk8M0QWeIiVwLQnkeWp6IKIU,4807
+betting_models/football/match_markets/market_model_base.py,sha256=OrWc-AZ3h_XHxUE5MP0iXQq3jLwqc1LbDYECsvXtIbQ,4429
+betting_models/football/match_markets/score_model.py,sha256=p4kea_GtL1Qa5IXgwlNMxRsU9e1Pa-4oUD-WqCnJl0s,4521
+betting_models/football/match_markets/seed.py,sha256=2gFHHMfyRoMTa6KIkVHy7CyCUr8wcE27RfGbKztNgWI,1272
+betting_models/racing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betting_models/racing/seed.py,sha256=33mjfVaoPudh4gVAvJejVfnFWIpWRozqaPJDx7Sygl8,4159
+betting_models-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+betting_models-0.1.0.dist-info/METADATA,sha256=JqO63AvA4bpnLA3N1cljCZ_9mJ5BQzytrJfi0eHfJbo,557
+betting_models-0.1.0.dist-info/RECORD,,
