@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: convml-data
+Version: 0.2.0
+Summary: Dataset creation for neural network classification of clouds
+Home-page: https://github.com/convml/convml_data
+Author: Leif denby
+Author-email: l.c.denby@leeds.ac.uk
+License: Apache
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: xarray
+Requires-Dist: netCDF4
+Requires-Dist: matplotlib
+Requires-Dist: parse
+Requires-Dist: coloredlogs
+Requires-Dist: luigi
+Requires-Dist: isodate
+Provides-Extra: dev
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: sattiles
+Requires-Dist: cartopy ; extra == 'sattiles'
+Requires-Dist: satpy ; extra == 'sattiles'
+Requires-Dist: esmpy ; extra == 'sattiles'
+Requires-Dist: xesmf ; extra == 'sattiles'
+Requires-Dist: regridcart (>=0.1.0) ; extra == 'sattiles'
+Requires-Dist: satdata (>=0.2.4) ; extra == 'sattiles'
+
+UNKNOWN
+
