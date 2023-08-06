@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+PySortedSet/PySortedSet.py
+PySortedSet/PySortedSet_tests.py
+PySortedSet/PySortedSet_versus_set.py
+PySortedSet.egg-info/PKG-INFO
+PySortedSet.egg-info/SOURCES.txt
+PySortedSet.egg-info/dependency_links.txt
+PySortedSet.egg-info/entry_points.txt
+PySortedSet.egg-info/top_level.txt
