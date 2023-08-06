@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: LotR_Omer_Reshef_SDK
+Version: 0.3
+Summary: Awesome SDK for a Lord of the Rings API
+Home-page: https://github.com/omerr1/LotR_Omer_Reshef_SDK
+Author: Omer Reshef
+Author-email: omer1997@gmail.com
+License: MIT
+Download-URL: https://github.com/omerr1/LotR_Omer_Reshef_SDK/archive/refs/tags/03.tar.gz
+Description: UNKNOWN
+Keywords: Awesome,Lord of the Rings,LotR,API
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
