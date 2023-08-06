@@ -1,0 +1,3 @@
+attrdict
+click>=6.0
+requests

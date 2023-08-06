@@ -1,0 +1,3 @@
+[console_scripts]
+pypuck = pypuck.__main__:main
+
