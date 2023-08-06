@@ -1,0 +1,8 @@
+beancount_bot_costflow/__init__.py,sha256=rCLpLjnJYIoAsbL2bo1P5FaWQNZYvL5p7Y398BUnpsc,122
+beancount_bot_costflow/beancount_bot_costflow.py,sha256=P-l_fKaw6kRyo9zTf-s70g3g8__yGncNCqsaTsZesyw,2976
+beancount_bot_costflow/costflow-parser.js,sha256=XXlBqVYW2hajn5VISEZ7fVVZVmO0nuGl4oLWlBYbUJ4,162498
+beancount_bot_costflow-1.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+beancount_bot_costflow-1.1.0.dist-info/METADATA,sha256=W8q-lM_SD71mjTybIXffb0bJ6yaZtxokCcVGh0w3kY0,1863
+beancount_bot_costflow-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+beancount_bot_costflow-1.1.0.dist-info/top_level.txt,sha256=ZvmPRp5J12B8XsO8ISjrsabi68FsZ3YxpZ75_LRXNdA,23
+beancount_bot_costflow-1.1.0.dist-info/RECORD,,
