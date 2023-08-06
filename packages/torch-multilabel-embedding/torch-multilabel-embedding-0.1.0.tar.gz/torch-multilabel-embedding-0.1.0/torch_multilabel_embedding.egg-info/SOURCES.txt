@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+test/__init__.py
+test/test_fixednumlabels.py
+torch_multilabel_embedding/__init__.py
+torch_multilabel_embedding/fixednumlabels.py
+torch_multilabel_embedding.egg-info/PKG-INFO
+torch_multilabel_embedding.egg-info/SOURCES.txt
+torch_multilabel_embedding.egg-info/dependency_links.txt
+torch_multilabel_embedding.egg-info/requires.txt
+torch_multilabel_embedding.egg-info/top_level.txt
+torch_multilabel_embedding.egg-info/zip-safe
