@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pacchettoDiG.egg-info/PKG-INFO
+pacchettoDiG.egg-info/SOURCES.txt
+pacchettoDiG.egg-info/dependency_links.txt
+pacchettoDiG.egg-info/requires.txt
+pacchettoDiG.egg-info/top_level.txt
+pacchettodig/__init__.py
+pacchettodig/module1.py
+pacchettodig/module2.py
