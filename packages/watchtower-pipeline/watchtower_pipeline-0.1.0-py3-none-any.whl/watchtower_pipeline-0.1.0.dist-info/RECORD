@@ -1,0 +1,7 @@
+watchtower_pipeline/__init__.py,sha256=BCts--vaB06JUVUpkv9ZAUtl3nMcoETM8fMJGQXTRns,66
+watchtower_pipeline/kitsu.py,sha256=rNdJjpx8mSnIzyZHrL4BDVCY7Mhzghg-7qlDqOuarnc,10622
+watchtower_pipeline/models.py,sha256=jzA-qWuGc6815TRT85Cgl_9rB2K4hEfflngmYfKgq74,6119
+watchtower_pipeline/writers.py,sha256=Lpf6P10foE3-W2ABfesRjJymjuB3HDjwHbO7he8UPWA,3039
+watchtower_pipeline-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+watchtower_pipeline-0.1.0.dist-info/METADATA,sha256=mujYxxxJOvKTWlNi0LgKG0ESWsAQdRlookOLnO6dOXw,1085
+watchtower_pipeline-0.1.0.dist-info/RECORD,,
