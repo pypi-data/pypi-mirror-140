@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyclicksign/__init__.py
+pyclicksign/protocol.py
+pyclicksign/sign.py
+pyclicksign.egg-info/PKG-INFO
+pyclicksign.egg-info/SOURCES.txt
+pyclicksign.egg-info/dependency_links.txt
+pyclicksign.egg-info/requires.txt
+pyclicksign.egg-info/top_level.txt
+requirements/basic.txt
