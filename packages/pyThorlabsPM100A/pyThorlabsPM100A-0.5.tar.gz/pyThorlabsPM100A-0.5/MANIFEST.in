@@ -1,0 +1,2 @@
+include pyThorlabsPM100A/graphics/*
+include pyThorlabsPM100A/*.ini
