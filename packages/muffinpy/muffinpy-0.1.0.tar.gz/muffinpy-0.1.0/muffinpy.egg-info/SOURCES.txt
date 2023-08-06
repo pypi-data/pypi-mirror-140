@@ -1,0 +1,7 @@
+README.md
+setup.py
+muffinpy/__init__.py
+muffinpy.egg-info/PKG-INFO
+muffinpy.egg-info/SOURCES.txt
+muffinpy.egg-info/dependency_links.txt
+muffinpy.egg-info/top_level.txt
