@@ -1,0 +1,9 @@
+numpy>=1.19
+imgaug
+scikit-image
+epam.indigo
+jpype1
+ipyplot
+rdkit-pypi
+imagecorruptions
+pillow>=8.2.0
