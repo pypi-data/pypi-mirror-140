@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: exogas
+Version: 1.0.4
+Summary: Exogas is a package to simulate the evolution of exocometary gas in debris discs.
+Home-page: https://github.com/SebaMarino/exogas
+Author: Sebastian Marino
+Author-email: sebastian.marino.estay@gmail.com
+License: MIT
+Download-URL: https://github.com/SebaMarino/exogas/archive/refs/tags/v1.0.4.tar.gz
+Description: UNKNOWN
+Keywords: gas,exocomet,viscous,photodissociation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
