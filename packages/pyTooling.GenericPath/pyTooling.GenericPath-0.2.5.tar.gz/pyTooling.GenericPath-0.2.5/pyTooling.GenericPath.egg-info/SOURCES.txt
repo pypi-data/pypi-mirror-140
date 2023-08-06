@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+pyTooling.GenericPath.egg-info/PKG-INFO
+pyTooling.GenericPath.egg-info/SOURCES.txt
+pyTooling.GenericPath.egg-info/dependency_links.txt
+pyTooling.GenericPath.egg-info/requires.txt
+pyTooling.GenericPath.egg-info/top_level.txt
+pyTooling/GenericPath/URL.py
+pyTooling/GenericPath/__init__.py
