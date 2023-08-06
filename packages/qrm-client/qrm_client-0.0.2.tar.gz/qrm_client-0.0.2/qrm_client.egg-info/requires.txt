@@ -1,0 +1,3 @@
+dataclass-type-validator
+requests
+pyyaml

@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+qrm_client/__init__.py
+qrm_client/qrm_http_client.py
+qrm_client/ver.yaml
+qrm_client.egg-info/PKG-INFO
+qrm_client.egg-info/SOURCES.txt
+qrm_client.egg-info/dependency_links.txt
+qrm_client.egg-info/requires.txt
+qrm_client.egg-info/top_level.txt
+qrm_defs/__init__.py
+qrm_defs/qrm_urls.py
+qrm_defs/resource_definition.py
