@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Topsis-Ritik-101917101
+Version: 0.0.1
+Summary: Topsis package Assignment-4 Ritik Raj-101917101
+Home-page: UNKNOWN
+Author: Ritik Raj
+License: UNKNOWN
+Description: #topsis
+        
+        #how to install 
+        pip install Topsis-Ritik-101917101
+Keywords: ritik
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
