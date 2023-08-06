@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+deduplify/__init__.py
+deduplify/_version.py
+deduplify/cli.py
+deduplify/compare_files.py
+deduplify/del_empty_dirs.py
+deduplify/hash_files.py
+deduplify.egg-info/PKG-INFO
+deduplify.egg-info/SOURCES.txt
+deduplify.egg-info/dependency_links.txt
+deduplify.egg-info/entry_points.txt
+deduplify.egg-info/requires.txt
+deduplify.egg-info/top_level.txt

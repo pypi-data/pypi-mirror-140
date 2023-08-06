@@ -1,0 +1,17 @@
+incremental
+jmespath==0.10.0
+tinydb==4.7.0
+tqdm
+twisted
+
+[dev]
+coverage==6.3.2
+pytest==7.0.1
+
+[docs]
+
+[full]
+
+[tests]
+coverage==6.3.2
+pytest==7.0.1
