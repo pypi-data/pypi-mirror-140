@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jupyterlite-sphinx
+Version: 0.4.0
+Summary: Sphinx extension for deploying JupyterLite
+Home-page: UNKNOWN
+Author: Martin Renou
+Author-email: martin.renou@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: docutils
+Requires-Dist: jupyterlite
+Requires-Dist: sphinx (>=1.8)
+Requires-Dist: jupyter-server
+Requires-Dist: jupyterlab-server
+
+UNKNOWN
+
