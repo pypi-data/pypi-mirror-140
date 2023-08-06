@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "cic-utils"
+version = "0.2.5"
+description = ""
+authors = ["William Luke <williamluke4@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "Readme.md"
+repository = "https://git.grassecon.net/grassrootseconomics/cic-utils"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "6.2.5"
+pytest-cov = "2.10.1"
+python-semantic-release = "^7.25.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-x --cov=cic_utils --cov-fail-under=97 --cov-report term-missing"
+testpaths = ["tests"]
+
+[tool.semantic_release]
+version_variable = [
+    "cic_utils/__init__.py:__version__",
+    "pyproject.toml:version",
+]
+version_source = "commit"
+branch = "main"
+upload_to_repository=true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+hvcs="gitea"
+hvcs_domain = "git.grassecon.net"
+check_build_status=false
