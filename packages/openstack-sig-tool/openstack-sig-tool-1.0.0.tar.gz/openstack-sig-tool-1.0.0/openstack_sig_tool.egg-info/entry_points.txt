@@ -1,0 +1,3 @@
+[console_scripts]
+oos = oos.cli:main
+
