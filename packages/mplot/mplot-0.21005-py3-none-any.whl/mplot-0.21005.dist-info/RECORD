@@ -1,0 +1,9 @@
+mplot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mplot/color.py,sha256=-e4DBC6YjAUATH712vRDGBwxvugV4uQsTXaTo17-M_4,11345
+mplot/createdate.py,sha256=TkT9q4Me99sF1ty4c3jR25r1rx8Nn84s0-qb__IreRk,1772
+mplot/example_of_mplot.py,sha256=dwVH70CsyYowZP13QDnRvUOg48XEMwwPb18jqs8nGUM,730
+mplot/plot.py,sha256=y7GfqVX3VdW-UMkhoTXqCW7CtDfg_C-8DtpibdZdHJg,87038
+mplot-0.21005.dist-info/METADATA,sha256=JRLRg5CYF1DO-qXjMovLe367QzbFhA00a_EsA_dZprk,248
+mplot-0.21005.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mplot-0.21005.dist-info/top_level.txt,sha256=c36EyPrqtIiK3Mjd7RiRLZ96HrDEeKHc19s91JxWK60,6
+mplot-0.21005.dist-info/RECORD,,
