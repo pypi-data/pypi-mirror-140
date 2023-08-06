@@ -1,0 +1,3 @@
+[console_scripts]
+trame-sandtank-xai = sandtank_xai:main
+
