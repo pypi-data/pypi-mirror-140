@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cogbooks
+Version: 0.10.0
+Summary: Convert instructor jupytext-markdown to student notebooks, removing all solutions
+Home-page: https://github.com/CogWorksBWSI/Cogbooks
+Author: Petar Griggs
+Author-email: marrs2k@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: jupytext (>=1.2.0)
+
+
+The idea of using jupytext for CogWorks is this: Editing notebooks is painful. Doing version control on notebooks is 
+painful. Giving students notebooks is great. So, as instructors, we will develop all of our material in markdown files 
+and then we will use `cogbooks` to convert our markdown files to jupyter notebooks.
+
+What is great about this is, `cogbooks` introduces special markdown delimiters that permit instructors to include 
+solutions and instructors-eyes-only comments in a markdown file, so that the file contains the full solutions. 
+`cogbooks` will then excise these sections when it converts the instructor-markdown files to student-notebooks. 
+
+
