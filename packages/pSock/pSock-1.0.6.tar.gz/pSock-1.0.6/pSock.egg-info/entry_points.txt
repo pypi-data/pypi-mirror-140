@@ -1,0 +1,3 @@
+[console_scripts]
+program = pSock.pSock:main
+
