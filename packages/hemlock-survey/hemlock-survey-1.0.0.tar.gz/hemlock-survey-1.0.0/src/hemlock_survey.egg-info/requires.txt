@@ -1,0 +1,11 @@
+IPython
+flask
+flask-login
+flask-socketio
+flask-sqlalchemy
+markdown
+matplotlib
+networkx
+pandas
+simple-websocket
+sqlalchemy-mutable>=1.0.2

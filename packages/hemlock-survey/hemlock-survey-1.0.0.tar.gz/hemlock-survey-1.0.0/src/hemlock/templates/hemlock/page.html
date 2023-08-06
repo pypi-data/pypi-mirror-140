@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        {% block head %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://dsbowen.gitlab.io/hemlock/_static/favicon.png">
+        {{ page.html_settings.get_css() | safe}}
+        {% for question in page.questions %}
+            {{ question.html_settings.get_css() | safe }}
+        {% endfor %}
+        <style>
+            input[type="checkbox"]:hover + label {
+                background-color: rgb(224,224,224);
+            }
+            input[type="radio"]:hover + label {
+                background-color: rgb(224,224,224);
+            }
+            input:checked + label {
+                background-color: rgb(206, 206, 206);
+            }
+            input[type="checkbox"]:checked:hover + label {
+                background-color: gainsboro;
+            }
+            .custom-check-label {
+                padding-left: 3px;
+                padding-right: 3px;
+                border-radius: 3px;
+                background-clip: padding-box;
+            }
+            .loading {
+                display: none;
+                position: fixed;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 0, 0, .2);
+                height: 100vh;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: 9999;
+            }
+            /* @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: black;
+                    color: white;
+                }
+                .card {
+                    background-color: #4A4A4A;
+                }
+            } */
+        </style>
+        {% if for_notebook_display is defined and for_notebook_display is sameas true %}
+        <style>
+            body {
+                background-color: inherit;
+                color: inherit;
+            }
+        </style>
+        {% endif %}
+        {% endblock %}
+    </head>
+    <body>
+        <div class="loading">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        {% block body %}
+        {% if for_notebook_display is not defined or for_notebook_display is sameas false %}
+            {% block navbar %}
+                {% if page.navbar is not none %}
+                    {% set navbar = page.navbar %}
+                    {% include "hemlock/utils/navbar.html" %}
+                {% endif %}
+            {% endblock %}
+        {% endif %}
+
+        <div {{ page.html_settings["div"].get_attrs() | safe }}>
+            <form method="POST" class="w-100" style="margin-top:80px;" enctype="multipart/form-data">
+                <input id="page-hash" name="page-hash" type="hidden" value="{{ page.hash }}">
+            {% block form %}                
+                {% for question in page.questions %}
+                    {{ question.render() | safe}}
+                {% endfor %}
+    
+                {% if page.forward is not none and not page.is_last_page %}
+                <button {{ page.html_settings["forward-button"].get_attrs() | safe }}{% if for_notebook_display is sameas true %} disabled{% endif %}>
+                    {{ page.forward }}
+                </button>
+                {% endif %}
+                {% if page.back is not none and not page.is_first_page %}
+                <button {{ page.html_settings["back-button"].get_attrs() | safe }}{% if for_notebook_display is sameas true %} disabled{% endif %}>
+                    {{ page.back }}
+                </button>
+                {% endif %}
+                <p style="clear:both;"><br></p>
+    
+                {% if for_notebook_display is sameas false %}
+                    {{ page.defaults["banner"] | safe }}
+                {% endif %}
+            {% endblock %}
+            </form>
+        </div>
+
+        {{ page.html_settings.get_js() | safe }}
+        {% for question in page.questions %}
+            {{ question.html_settings.get_js() | safe }}
+        {% endfor %}
+        <script>
+            $(document).ready(function() {
+                var submitted_class = "submitted";
+                $("form").submit( function(e) {
+                    if ($(this).hasClass(submitted_class)) {
+                        e.preventDefault();
+                    }
+                    else {
+                        $(this).addClass(submitted_class);
+                        $(".loading").css("display", "flex");
+                        $("input").prop("readonly", true);
+                        $("select").prop("readonly", true);
+                        $("textarea").prop("readonly", true);
+                    }
+                });
+            })
+        </script>
+    {% endblock %}
+    </body>
+</html>
