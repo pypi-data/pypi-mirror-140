@@ -1,0 +1,67 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+gorp/__init__.py
+gorp/__main__.py
+gorp/bad_json.json
+gorp/extended_programming_file_exts.py
+gorp/gprint.py
+gorp/k_option_del_files.py
+gorp/option_docs.py
+gorp/pdf_utils.py
+gorp/readfiles.py
+gorp/tabular_excel.py
+gorp/textcache.py
+gorp/utils.py
+gorp/x_option.py
+gorp/zip_utils.py
+gorp/jsonpath/__init__.py
+gorp/jsonpath/aggregate.py
+gorp/jsonpath/filters.py
+gorp/jsonpath/jsonpath.py
+gorp/jsonpath/mutate.py
+gorp/jsonpath/parser.py
+gorp/test/__init__.py
+gorp/test/main.py
+gorp/test/test_b_option.py
+gorp/test/test_e_w_options.py
+gorp/test/test_jsonpath.py
+gorp/test/test_ku_options.py
+gorp/test/test_option_combos.py
+gorp/test/test_pdf_option.py
+gorp/test/test_q_option.py
+gorp/test/test_s_m_options.py
+gorp/test/test_textcache.py
+gorp/test/test_x_option.py
+gorp/test/test_zip.py
+gorp/testDir/anger_date.tsv
+gorp/testDir/bad_json.json
+gorp/testDir/bluddGame.htm
+gorp/testDir/bluddText.txt
+gorp/testDir/books.xml
+gorp/testDir/dict size vs memory allocated.png
+gorp/testDir/project_final.docx
+gorp/testDir/silly_example.csv
+gorp/testDir/silly_html_example.pdf
+gorp/testDir/yaml example.yml
+gorp/testDir/foo.barf/file_inside_foo.barf.txt
+gorp/testDir/walnut/AHH_FRESH_MEAT.txt
+gorp/testDir/walnut/Bogo bucks.docx
+gorp/testDir/walnut/baseball.json
+gorp/testDir/walnut/blood4Bludd.htm
+gorp/testDir/walnut/hello world.py
+gorp/testDir/walnut/ln1 proofs.pdf
+gorp/testDir/walnut/mbox-short.txt
+gorp/testDir/walnut/silly_example_decap.csv
+gorp/testDir/walnut/zebra-mjo.txt
+gorp/testDir/walnut/zebra.txt
+gorp/testDir/walnut/zebra_tofu.txt
+gorp/testDir/walnut/waffles/AHH_FRESH_MEAT.txt
+gorp/testDir/walnut/waffles/anger_date_decap.tsv
+gorpy.egg-info/PKG-INFO
+gorpy.egg-info/SOURCES.txt
+gorpy.egg-info/dependency_links.txt
+gorpy.egg-info/requires.txt
+gorpy.egg-info/top_level.txt

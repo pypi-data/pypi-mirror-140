@@ -1,0 +1,2 @@
+recursive-include gorp/testDir *.txt *.htm *.json *.[tc]sv *.pdf *.png *.xml *.yml *.docx
+include gorp/bad_json.json

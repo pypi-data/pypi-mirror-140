@@ -1,0 +1,5 @@
+# See https://setuptools.pypa.io/en/latest/userguide/quickstart.html
+# for info on how to lay this out
+[build-system]
+requires = ["setuptools", "wheel", 'python-dateutil', 'math_eval']
+build-backend = "setuptools.build_meta"
