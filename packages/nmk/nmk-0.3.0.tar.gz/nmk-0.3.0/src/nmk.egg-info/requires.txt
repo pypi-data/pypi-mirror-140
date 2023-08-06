@@ -1,0 +1,8 @@
+Jinja2
+argcomplete
+coloredlogs
+jsonschema
+pyyaml
+requests
+rich
+wheel
