@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: solve-logic
+Version: 0.1.1
+Summary: Solve a logic puzzle game.
+Author: Saito Tsutomu
+Author-email: tsutomu7@hotmail.co.jp
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
