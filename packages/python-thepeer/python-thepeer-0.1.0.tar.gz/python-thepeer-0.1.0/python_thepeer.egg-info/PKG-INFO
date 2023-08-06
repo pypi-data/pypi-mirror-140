@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-thepeer
+Version: 0.1.0
+Summary: Python Wrapper for thePeer payment infrastructure.
+Home-page: https://github.com/salemzii/ThePeerPythonSdk
+Download-URL: https://github.com/salemzii/ThePeerPythonSdk/archive/refs/tags/v0.1.0-beta.tar.gz
+Author: salem ododa
+Author-email: salemododa2@gmail.com
+License: UNKNOWN
+Keywords: python,thepeer,payment,sdk
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+
+UNKNOWN
+
