@@ -1,0 +1,2 @@
+lark-parser<1,>=0.9.0
+sympy
