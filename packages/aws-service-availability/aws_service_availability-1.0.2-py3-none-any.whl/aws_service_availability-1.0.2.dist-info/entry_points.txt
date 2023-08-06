@@ -1,0 +1,3 @@
+[console_scripts]
+aws-service-availability=aws_service_availability.__main__:app
+
