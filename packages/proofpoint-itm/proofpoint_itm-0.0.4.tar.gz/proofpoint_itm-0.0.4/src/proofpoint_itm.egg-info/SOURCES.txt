@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/proofpoint_itm/__init__.py
+src/proofpoint_itm/proofpoint_itm.py
+src/proofpoint_itm.egg-info/PKG-INFO
+src/proofpoint_itm.egg-info/SOURCES.txt
+src/proofpoint_itm.egg-info/dependency_links.txt
+src/proofpoint_itm.egg-info/requires.txt
+src/proofpoint_itm.egg-info/top_level.txt
