@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+.github/workflows/pypi_release.yml
+pydk/__init__.py
+pydk/_create_empty_dict.py
+pydk/_flexible_multilevel_mkdir.py
+pydk/_moving_average.py
+pydk/_return_class_attributes.py
+pydk/_to_list.py
+pydk.egg-info/PKG-INFO
+pydk.egg-info/SOURCES.txt
+pydk.egg-info/dependency_links.txt
+pydk.egg-info/requires.txt
+pydk.egg-info/top_level.txt
