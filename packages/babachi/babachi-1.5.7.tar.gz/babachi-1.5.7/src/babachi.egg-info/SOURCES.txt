@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/babachi/BADEstimation.py
+src/babachi/__init__.py
+src/babachi/helpers.py
+src/babachi/version.py
+src/babachi/visualize_segmentation.py
+src/babachi.egg-info/PKG-INFO
+src/babachi.egg-info/SOURCES.txt
+src/babachi.egg-info/dependency_links.txt
+src/babachi.egg-info/entry_points.txt
+src/babachi.egg-info/requires.txt
+src/babachi.egg-info/top_level.txt
