@@ -1,0 +1,14 @@
+pyeuropeana/__init__.py,sha256=IMqRTaWLJWIqeXEBHE8qnp4s9K2UdAqWTa1I6eERqbc,209
+pyeuropeana/apis/__init__.py,sha256=V-mX6iNeqJ9TwKuxT7rX6Lpdc1YDCukVkVSMfU1aeyU,54
+pyeuropeana/apis/entity.py,sha256=qj_JvG5H4JnOjDMrh_ACQXdh247prgPsUHBm1LVjnWU,3659
+pyeuropeana/apis/iiif.py,sha256=3Mg2TL6qRhGjrCLLBkHSF_ZtrHRU-c7LshlKCjIf4yk,5342
+pyeuropeana/apis/record.py,sha256=PPPpEOInOpueOP8lRVx73TWaF3jqfvOSpt6gcKXdob8,1210
+pyeuropeana/apis/search.py,sha256=74wi6l7Z8ng9p90lkbn9LMG7w6qzgOSb-qBIoP0hOCM,4836
+pyeuropeana/utils/__init__.py,sha256=Zwq4ooPci5ALJvQ2dqyW1C-vz9pUbSto59VN4Xzv9xw,196
+pyeuropeana/utils/auth.py,sha256=f6iU3KG1o1WfSu9S9wqKOFhH8sRJTBygjMz9xNqUMbE,392
+pyeuropeana/utils/edm_utils.py,sha256=L6twKUHnH1zvOyCKxHIcji_I-FqAKaPqArQnmccstKU,4532
+pyeuropeana/utils/img_utils.py,sha256=Y2SQKviQtivJveN7Em3vAf4MZPbHxQOz0nf-EcGGuaY,1381
+pyeuropeana-0.1.7.dist-info/LICENSE.md,sha256=cMjP1jCztK_-LLhad1QMMCXUGRHUVpjCwcHcaPTkc2s,13676
+pyeuropeana-0.1.7.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pyeuropeana-0.1.7.dist-info/METADATA,sha256=GvMaFJDZKHGEBhiAY1BLlsbVj9O5yqj3ehtEg8j37uA,4604
+pyeuropeana-0.1.7.dist-info/RECORD,,
