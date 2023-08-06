@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "flask-selfdoc"
+version = "1.3.0-alpha.2"
+description = "Documentation generator for flask"
+authors = ["Jack Grahl <jack.grahl@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+Flask = "^1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+requests = "^2.26.0"
+
+[tool.poetry.scripts]
+test = 'run_tests:test'
+doctest = 'run_tests:run_doctest'
+check_pypi = 'run_tests:check_pypi'
+check_pypi_prerelease = 'run_tests:check_pypi_prerelease'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
