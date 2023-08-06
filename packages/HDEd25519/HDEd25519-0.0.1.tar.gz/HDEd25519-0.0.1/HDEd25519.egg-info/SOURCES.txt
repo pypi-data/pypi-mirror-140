@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+HDEd25519.egg-info/PKG-INFO
+HDEd25519.egg-info/SOURCES.txt
+HDEd25519.egg-info/dependency_links.txt
+HDEd25519.egg-info/requires.txt
+HDEd25519.egg-info/top_level.txt
+HDEd25519_nacl/__init__.py
