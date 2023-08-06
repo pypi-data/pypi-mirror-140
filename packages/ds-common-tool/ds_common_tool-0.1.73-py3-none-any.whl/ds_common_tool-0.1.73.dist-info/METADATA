@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: ds-common-tool
+Version: 0.1.73
+Summary: data processing & modeling function
+Home-page: https://github.com/ZhangLe59151/data_model_processing_tool
+Author: ZhangLe
+Author-email: zhangle@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ZhangLe59151/data_model_processing_tool
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=0.25.1)
+Requires-Dist: numpy (>=1.21.5)
+Requires-Dist: DateTime (>=4.4)
+Requires-Dist: tensorflow (>=2.7.0)
+Requires-Dist: xgboost (>=1.5.2)
+Requires-Dist: scikit-learn (>=1.0)
+Requires-Dist: keras-tcn (>=3.4.0)
+Requires-Dist: matplotlib (>=3.1.1)
+Requires-Dist: pickleshare (>=0.7.5)
+Requires-Dist: cloudpickle (>=1.2.2)
+Requires-Dist: optuna (>=2.10.0)
+
+###  DS_COMMON_TOOL  
+  
+This repo including the model for data processing and model training with optuna.  
+Supported model list:  
+- LSTM  
+- TCN  
+- Transformer  
+- Linear  (Lasso, Ridge, ElasticNet)  
+- Xgb  
+  
+
+  
+## [pypi](https://pypi.org/project/ds-common-tool/#description)  
+  
+## [document](https://zhanglenus.gitbook.io/ds_common_tool-doc/)  
+
+
