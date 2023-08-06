@@ -1,0 +1,144 @@
+{
+  "src/lib/components/DynamicGrid.react.js": {
+    "description": "dd",
+    "displayName": "DynamicGrid",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "dd"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "dd"
+      },
+      "data": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "columns": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "ids": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "editable": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "selectedCells": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "editedValues": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "'fit-all-columns'",
+          "computed": false
+        }
+      },
+      "height": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "'fit-all-rows'",
+          "computed": false
+        }
+      },
+      "rowHeight": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "16",
+          "computed": false
+        }
+      },
+      "font": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "'13px Microsoft Sans Serif'",
+          "computed": false
+        }
+      },
+      "cellPadding": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "dd",
+        "defaultValue": {
+          "value": "{ horizontal: 3, vertical: 2 }",
+          "computed": false
+        }
+      }
+    }
+  }
+}
