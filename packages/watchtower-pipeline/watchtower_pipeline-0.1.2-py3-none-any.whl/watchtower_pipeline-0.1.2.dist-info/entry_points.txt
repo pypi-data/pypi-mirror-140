@@ -1,0 +1,3 @@
+[console_scripts]
+package-watchtower-vue=scripts:package_watchtower_vue
+

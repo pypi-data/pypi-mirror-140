@@ -1,0 +1,16 @@
+dist_watchtower/css/app.8df4d025.css,sha256=mMuK3vSKeahBq4e7i4GtM1ilmusjNsf6VxvLSxXwU4o,5834
+dist_watchtower/css/chunk-vendors.eeda7bd9.css,sha256=jgt0FeWxj7l6KdQjsxPNUgPxISczoQt0-hTUJa1abxA,40835
+dist_watchtower/favicon.ico,sha256=_c2ecakUzUvuGU4KIVnf2A6B7sKbj7-Dv71QfJQA3iU,15406
+dist_watchtower/img/placeholder-asset.png,sha256=2kP60Ulrb_slS8q5C1DeemXqsFhFJSjYvOjxdWuaDRc,3576
+dist_watchtower/img/placeholder-user.png,sha256=9bzU9RM3spEIFkZNO0jUoXMpxzLnGouAVADsmqjqMVY,10165
+dist_watchtower/index.html,sha256=i0Gz-NUZBqvezJwDuHqUSQZc2KqRyeoYFYug8R8iIoA,889
+dist_watchtower/js/app.3e6fc5fe.js,sha256=XGIHn7fohLhWf823Z9FP5mobuEBXRthj5vFw8zOGCLo,55110
+dist_watchtower/js/chunk-vendors.ec80e25d.js,sha256=DV5-5S19Emh8CvSryRJN69pG3aoKcumMQDeBx0frd1Q,855335
+watchtower_pipeline/__init__.py,sha256=F9OjF9sxiiteXJed0Dm5iKr0maMK3Ccvp3ugXLocy38,66
+watchtower_pipeline/kitsu.py,sha256=DtXDE3Zx1Mt3VumQ4ERulK4J4dKsa5wGL8k2Pj8fCZY,11765
+watchtower_pipeline/models.py,sha256=8zVb2zRCsP5Vcz5q_c3jga7yETTshh2EC3jH2TVzRp0,6244
+watchtower_pipeline/writers.py,sha256=hFhg0caZa9ro7ocr_i5pkLEWuT4VnsqTK6y9ormNNOY,3039
+watchtower_pipeline-0.1.2.dist-info/entry_points.txt,sha256=0DybbGgBQTZ6mdOrZQySXcc2RsaWTKQjCWgSdeMfbSw,73
+watchtower_pipeline-0.1.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+watchtower_pipeline-0.1.2.dist-info/METADATA,sha256=FhRwo3SRc7Nsjut8yRqhZNQHRQ8dlC5_2sc2QBEAU0Q,1163
+watchtower_pipeline-0.1.2.dist-info/RECORD,,
