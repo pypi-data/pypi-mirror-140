@@ -1,0 +1,7 @@
+README.md
+setup.py
+speedpy.egg-info/PKG-INFO
+speedpy.egg-info/SOURCES.txt
+speedpy.egg-info/dependency_links.txt
+speedpy.egg-info/requires.txt
+speedpy.egg-info/top_level.txt
