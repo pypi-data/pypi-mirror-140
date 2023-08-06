@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+paginator/__init__.py
+paginator/objects.py
+paginator/paginator.py
+pycord_paging.egg-info/PKG-INFO
+pycord_paging.egg-info/SOURCES.txt
+pycord_paging.egg-info/dependency_links.txt
+pycord_paging.egg-info/requires.txt
+pycord_paging.egg-info/top_level.txt
