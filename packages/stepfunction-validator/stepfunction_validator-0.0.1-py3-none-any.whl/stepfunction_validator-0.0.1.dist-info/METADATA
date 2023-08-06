@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: stepfunction-validator
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/NileshDebix/Step-Function-Validator
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/NileshDebix/Step-Function-Validator#readme
+Project-URL: Download, https://pypi.org/project/yamllint/#files
+Project-URL: Bug Tracker, https://github.com/NileshDebix/Step-Function-Validator/issues
+Project-URL: Source Code, https://github.com/NileshDebix/Step-Function-Validator
+Keywords: stepfunctions,syntax,checker
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Requires-Dist: click (>=8.0.4)
+Requires-Dist: pyyaml
+Requires-Dist: jsonschema
+
+UNKNOWN
+
