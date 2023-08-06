@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pyflowline
+Version: 0.1.2
+Summary: River network for Earth Science
+Home-page: https://github.com/changliao1025/pyflowline
+Author: Chang Liao
+Author-email: chang.liao@pnnl.gov
+License: custom
+Keywords: Earth Science
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+
+# Build
+Please refer the installation documentation for details.
+
+
+# Usage
+Please refer the example documentation for details.
+
+# Model structure
+
