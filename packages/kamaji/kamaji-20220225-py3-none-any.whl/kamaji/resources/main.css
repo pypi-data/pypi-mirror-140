@@ -1,0 +1,266 @@
+@import url(code.css);
+
+html {
+	--blau:          #120a8f; /* Ultramarinblau, RAL 5002 */
+	--schwarzblau:   #191e28; /* Schwarzblau,    RAL 5004 */
+	--lichtblau:     #3481b8; /* Lichtblau,      RAL 5012 */
+	--perlnachtblau: #102c54; /* Perlnachtblau,  RAL 5026 */
+	--grau:          #7a888e; /* Fehgrau,        RAL 7000 */
+	--signalschwarz: 16,16,16; /* Signalschwarz,  RAL 9004, #101010 */
+	--weiss:         #f7fbf5; /* Verkehrsweiß,   RAL 9016 */
+	
+	--fgStd:           var(--weiss);
+	--bgStd:           rgb(var(--signalschwarz));
+	--bgStdTrsp:       rgba(var(--signalschwarz),0.9);
+	--anchor:          var(--lichtblau);
+	--anchorVisited:   var(--blau);
+	--menuItemVisited: var(--grau);
+	--menuItemMarker:  var(--blau);
+	--bgToc:           var(--blau);
+	--bgTocList:       var(--schwarzblau);
+	--bdrTocList:      var(--perlnachtblau);
+	
+	color: var(--fgStd);
+	background: var(--bgStd);
+	font: 1em/150% sans-serif;
+	scroll-behavior: smooth;
+}
+
+a {
+	color: var(--anchor);
+}
+
+a:visited {
+	color: var(--anchorVisited);
+}
+
+body {
+	max-width: 60em;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+body > header {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	flex: 1 100%;
+}
+
+body > header a,
+body > header a:visited {
+	text-decoration: none;
+	color: var(--fgStd);
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 1em;
+}
+
+body > header a img {
+	height: 4em;
+	max-width: 32em;
+}
+
+body > footer {
+	padding: 0;
+	text-align: center;
+	font-size: 75%;
+}
+
+body > nav {
+	position: sticky;
+	top: 0;
+	background: var(--bgStdTrsp);
+	margin-bottom: 1em;
+}
+
+body > nav > ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+body > nav > ul a {
+	display: block;
+	padding: 0.25em 0.7em;
+}
+
+body > nav > ul a,
+body > nav > ul a:visited {
+	color: var(--menuItemVisited);
+	text-decoration: none;
+}
+
+body > nav > ul a:not([href]) {
+	color: var(--weiss);
+	border-bottom: 0.25em solid var(--menuItemMarker);
+}
+
+
+main {
+	padding: 0.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+main > article {
+	align-self: center;
+}
+
+main > nav {
+	width: 100%;
+	position: sticky;
+	top: 2.75em;
+	border-bottom: 0.25em solid var(--bgToc);
+	background: var(--bgToc);
+	opacity: 95%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1em;
+}
+
+main > nav > h4 {
+	margin: 0;
+	padding: 0.25em 0.5em;
+	color: var(--weiss);
+	border-bottom: 0.125em solid var(--bgTocList);
+	cursor: pointer;
+}
+
+main > nav > div > ul {
+	border-left: 1px solid var(--bdrTocList);
+	border-right: 1px solid var(--bdrTocList);
+}
+
+main > nav ul {
+	background: var(--bgTocList);
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0.5em 0.5em 1em 0.5em;
+	line-height: 1.1;
+}
+
+main > nav li {
+	padding-left: 0.25em;
+	padding-bottom: 0.5em;
+}
+
+main > nav a {
+	text-decoration: none;
+	color: var(--fgStd);
+}
+
+main > nav a:visited {
+	color: var(--fgStd);
+}
+
+
+.tocHeadingOpened::before {
+	content: "▸ ";
+}
+
+.tocHeadingClosed::before {
+	content: "▾ ";
+}
+
+
+/* media query: if desktop (>=60em), let ToC float aside */
+@media (min-width: 60em) {
+	main {
+		width: 60em;
+		flex-direction: row;
+		gap: 1em;
+	}
+	main > article {
+		width: auto;
+		flex-basis: 70%;
+	}
+	main > nav {
+		width:auto;
+		opacity: 100%;
+		flex-basis: 30%;
+	}
+	main > nav > h4 {
+		cursor: auto;
+	}
+}
+
+main > article h1 { font-size: 150%; margin-top: 1.5em; }
+
+main > article h2 { font-size: 133%; margin-top: 1.33em; }
+
+main > article h3 { font-size: 125%; margin-top: 1.25em; }
+
+main > article h4,
+main > article h5,
+main > article h6 { font-size: 100%; margin-top: 1em; }
+
+main > article > h1,
+main > article > h2,
+main > article > h3,
+main > article > h4,
+main > article > h5,
+main > article > h6 { margin-top: 0em; }
+
+div.codehilite {
+	margin: 0;
+	padding-left: 1em;
+}
+
+pre {
+	margin: 0;
+	padding: 0;
+	white-space: pre-wrap;
+}
+
+/* Sitemap styling */
+
+svg {
+	width: 100%;
+}
+
+svg > g > polygon {
+	fill: transparent;
+}
+
+svg text {
+	fill: var(--weiss);
+}
+
+g.node ellipse {
+	stroke: transparent; /* var(--weiss); */
+}
+
+g.node a[href] {
+	cursor: pointer;
+}
+
+g.node a text {
+	fill: var(--weiss);
+}
+
+g.node a[href] text {
+	text-decoration: underline;
+}
+
+g.edge path {
+	stroke: var(--weiss);
+}
+
+g.edge polygon {
+	fill: var(--weiss);
+}
+
+g.edgedep path {
+	stroke-dasharray: 2% 1%;
+}

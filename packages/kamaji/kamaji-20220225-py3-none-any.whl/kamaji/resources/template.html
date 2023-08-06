@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="$language">
+
+<!--
+	created with $kamajiNameFull
+	
+	Kamaji is a static website generator developed by Frank Abelbeck
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="$pathStylesheet">
+	<link rel="shortcut icon" type="$typeIcon" href="$pathIcon">
+	<script src="$pathScript"></script>
+	<title>$titleContent</title>
+</head>
+
+<body>
+
+<header id="top">
+	<a href="index.md">
+		<img src="$pathIcon" alt="Kamaji Icon">
+		<p>Kamaji Demo Website</p>
+	</a>
+</header>
+
+<nav>
+$htmlNav
+</nav>
+
+<main>
+
+<nav>
+<h4>$titleToc</h4>
+$htmlToc
+</nav>
+<article>
+$htmlContent
+</article>
+
+</main>
+
+<footer>
+	<p>edited on $dateISO by <a href="mailto:$authorMail">$authorName</a> | made with <a href="$kamajiSite">Kamaji</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+Metadata-Version: 2.1
+Name: kamaji
+Version: 20220225
+Summary: A static website generator
+Home-page: https://code.abelbeck.info/projects/kamaji.html
+Author: Frank Abelbeck
+Author-email: kamaji@abelbeck.info
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Text Processing :: Markup
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: tinycss2
+Requires-Dist: html5lib
+Requires-Dist: markdown
+Requires-Dist: python-magic
+
+# Kamaji Static Website Generator
+
+Copyright (C) 2021-2022 Frank Abelbeck <kamaji@abelbeck.info>
+
+Version: 20220225
+
+License: GLP 3
+
+## Overview
+
+Kamaji is a static website generator. It generates HTML files from Markdown
+source files, processing their metadata and following all local file references.
+
+Kamaji will only process source files that are newer than the output. It will
+build all dependencies and references as it goes along.
+
+Metadata in a Markdown file defines the environment of that file. You configure
+your entire website only by defining metadata.
+
+With metadata you can define environment variables for a file. You can access
+these variables in your markdown source or in HTML templates/snippets by
+prepending the variable name with a dollar sign.
+
+Note: Kamaji confines its operations to the current working directory.
+
+## Name, Icon, and Development
+
+This program is named after the boiler-grandpa in "Spirited Away" to honour
+Hayao Miyazaki and his œuvre.
+
+The Icon represents the letter "K" in the Braille writing system.
+
+The BBC recording of the Last Night of the Proms 2019 supplied the soundtrack
+while developing this software. You can't go wrong with a bit of a Cancan.
+And with *the* all-time great version of "Somewhere Over the Rainbow", sung so
+lushly by Jamie Barton.
+
+## Usage
+
+### General
+
+```
+usage: kamaji [-h] [-l {debug,info,warn,err,crit}] [--version] {demo,build,map,info,license} ...
+
+Manage a static website.
+
+positional arguments:
+  {demo,build,map,info,license}
+    demo                Initialise an example source directory
+    build               Build a static website
+    map                 Create a graph of the site structure
+    info                show documentation on Kamaji
+    license             show Kamaji's license text
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -l {debug,info,warn,err,crit}, --loglevel {debug,info,warn,err,crit}
+                        Set the minimum log level (default: info)
+  --version             show program's version number and exit
+```
+
+### Build
+
+```
+usage: kamaji.py build [-h] [--no-prune] [--no-clean] [--force] [--exclude PATTEXC] [--include PATTINC] [--copy PATTCPY] [--output PATHOUT] [--db PATHDB]
+
+Build a static website in the current directory.
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --no-prune         do not remove empty HTML tags from the final output
+  --no-clean         do not remove stale files from the output directory
+  --force            force rebuilding by ignoring any existing node DB
+  --exclude PATTEXC  exclude any file matching PATTEXC
+  --include PATTINC  include any file matching PATTINC
+  --copy PATTCPY     instead of processing, just copy any file matching PATTCPY
+  --output PATHOUT   define the path PATHOUT of the output directory
+  --db PATHDB        define the path PATHDB of the node JSON database
+
+Default values:
+   PATHOUT = .kamaji/out
+   PATHDB  = .kamaji/nodes.json
+
+The options --exclude, --include, and --copy accept patterns with the following special characters:
+  '*'      matches everything
+  '**'     matches everything in the current and all subdirectories, recursively
+  '?'      matches any single character
+  '[seq]'  matches any character in seq
+  '[!seq]' matches any character not in seq
+
+Output directory PATHOUT and node database file PATHDB are ignored automatically.
+
+The options --ignore and --copy may be specified multiple times.
+```
+
+### Map
+
+```
+usage: kamaji.py map [-h] [--db PATHDB] [--format FMT] [--engine ENGINE] [--exclude PATTEXC] [--include PATTINC] [--class CLS] [--deps] [--refs] [--all] [--site] [--attribute CLS KEY VAL]
+                     [--undirected] [--merge]
+                     PATHOUT
+
+Create a graph of the node structure in the current directory.
+
+positional arguments:
+  PATHOUT               define the path PATHOUT of the sitemap output file. Suffixes are appended as needed.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --db PATHDB           define the path PATHDB of the node JSON database [default: .kamaji/nodes.json]
+  --format FMT          define the output format FORMAT of the sitemap output file
+  --engine ENGINE       define the layout engine ENGINGE used by GraphViz
+  --exclude PATTEXC     exclude any file matching PATTEXC
+  --include PATTINC     include any file matching PATTINC
+  --class CLS           include all nodes of given class and its subclasses
+  --deps                include all nodes that are dependencies of others
+  --refs                include all nodes that are references to others
+  --all                 include nodes of all classes and all relationships
+  --site                include all website nodes, suitable for a sitemap
+  --attribute CLS KEY VAL
+                        define an additional attribute KEY=VAL for a given class CLS
+  --undirected          create an undirected graph
+  --merge               merge parallel edges (i.e. use edge concentrators)
+
+Default values:
+   PATHDB = .kamaji/nodes.json
+   FORMAT = svg
+   ENGINE = dot
+
+Available node classes (option --class):
+   Node
+    +-- NodeQuery
+    +-- NodeLocal
+    |    +-- NodeLocalFile
+    |    |    +-- NodeLocalFileMarkdown
+    |    |    +-- NodeLocalFileHtml
+    |    |    +-- NodeLocalFileSvg
+    |    |    +-- NodeLocalFileCss
+    |    |    +-- NodeLocalFileMisc
+    |    |    `-- NodeLocalFileUnkown
+    |    `-- NodeLocalDirectory
+    `-- NodeRemote
+         +-- NodeRemoteMailto
+         +-- NodeRemoteHttp
+         `-- NodeRemoteMisc
+
+Any local link is made relative to the output file's directory.
+
+Option --all equals "--class Node --deps --refs" and takes precedence over --site.
+
+Option --site equals "--class NodeLocalFileMarkdown --class NodeLocalFileHtml --class NodeLocalDirectory --refs" and takes precedence over --class.
+
+Option --attribute allows attribute definition for nodes and edges.
+If CLS equals "graph", this defines a graph attribute.
+If CLS equals "nodes", this defines a general node attribute.
+If CLS equals "edges", "dep", or "ref", this defines a general, dependency, or reference edge attribute.
+Otherwise CLS is interpreted as node class name (see above) and defines the attribute for that node class and all subclasses.
+
+The options --exclude and --include accept a pattern with the following special characters:
+  '*'      matches everything
+  '**'     matches everything in the current and all subdirectories, recursively
+  '?'      matches any single character
+  '[seq]'  matches any character in seq
+  '[!seq]' matches any character not in seq
+
+If --undirected is passed, Kamaji will create an undirected graph. Otherwise dependency edges point from the dependency towards the dependent node, and reference edges point from the referrer to the referenced node.
+
+The option --merge lets Kamaji merge parallel edges (i.e. pairwise reference/dependency).
+
+Extra class "edgedep" and "edgeref" are added to dependency and reference edges, respectively. This is useful when styling SVG output over CSS.
+
+The options --class, --attribute, --exclude, and --include may be specified multiple times.
+```
+
+### Demo
+
+```
+usage: kamaji.py demo [-h]
+
+Populate the current directory with some example files.
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+
+### Info
+
+```
+usage: kamaji.py info [-h] [--raw]
+
+Show documentation on Kamaji.
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --raw       show documentation in raw markdown format
+```
+
+### License
+
+```
+usage: kamaji.py license [-h] [--raw]
+
+Show Kamaji's license text.
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --raw       show license in raw markdown format
+```
+
+## Changelog
+
+ - **2022-02-25** copy argument now also copies unreferenced files
+ - **2022-02-18** Kamaji mk4 is ready
+
+

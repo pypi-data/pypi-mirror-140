@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewport="0 0 256 256" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
+  <desc>Icon of Kamaji</desc>
+  <rect   fill="#102c54" x="0" y="0" width="256" height="256" rx="48" ry="48"/>
+  <circle fill="#eaf044" cx="80"  cy="48"  r="32" />
+  <circle fill="#eaf044" cx="176" cy="48"  r="32" />
+  <circle fill="#102c54" cx="176" cy="48"  r="20" />
+  <circle fill="#eaf044" cx="80"  cy="128" r="32" />
+  <circle fill="#102c54" cx="80"  cy="128" r="20" />
+  <circle fill="#eaf044" cx="176" cy="128" r="32" />
+  <circle fill="#102c54" cx="176" cy="128" r="20" />
+  <circle fill="#eaf044" cx="80"  cy="208" r="32" />
+  <circle fill="#eaf044" cx="176" cy="208" r="32" />
+  <circle fill="#102c54" cx="176"  cy="208" r="20" />
+</svg>
