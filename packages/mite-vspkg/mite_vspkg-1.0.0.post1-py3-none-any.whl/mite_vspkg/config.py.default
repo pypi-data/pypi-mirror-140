@@ -1,0 +1,364 @@
+import os
+
+from mite_vspkg.src.util import util_enum
+
+
+cfg_script_dir = os.path.dirname(__file__)
+work_dir = os.path.dirname(cfg_script_dir)
+
+
+manifest = {
+    # URL or filepath to a channel manifest.
+    # "17" - major Visual Studio version.
+    # "release" - Visual Studio variant. Possible values: "release", "pre".
+    "channel_URL": "https://aka.ms/vs/17/release/channel",
+
+    # If set, "channel_URL" will be ignored.
+    # URL or filepath to an installer manifest.
+    "installer_URL": "",
+
+    "cache": {
+        # Don't cache the manifest; don't use the cache.
+        "skip_cache": False,
+
+        # Cache directory.
+        "dir": os.path.join(work_dir, "manifest_cache"),
+
+        # If enough time passed, download new manifest anyway.
+        "expire_delta_ns": 24 * 60 * 60 * 10**9,
+    },
+
+    # The timeout in seconds (float) for connection attempts.
+    "timeout": 15,
+}
+
+
+# Regex packages by traits using match() method.
+# https://docs.python.org/3/library/re.html#regular-expression-syntax
+##
+# Examples:
+#
+# Whitelist pkgs with id starting with "Microsoft.VisualStudio.TestTools".
+# "trait_whitelist": {"id": ["Microsoft\.VisualStudio\.TestTools"]}
+#
+# Blacklist pkgs which have "arm" or "android" in their id (case insensitive).
+# "trait_blacklist": {"id": ["(?i).*arm", "(?i).*android"]}
+#
+# Blacklist pkgs with language not starting with "en-US".
+# "trait_blacklist": {"language": ["(?!en-US)"]}
+raw_pkg_filter = {
+    # Remove packages if they don't have the trait
+    #     or the trait doesn't match.
+    "trait_whitelist": {
+        "id": [".*"],
+#        "type": [".*"],
+#        "chip": [".*"],
+#        "machineArch": [".*"],
+#        "productArch": [".*"],
+#        "language": [".*"],
+    },
+    # Remove packages if they have the trait
+    #     and the trait matches.
+    "trait_blacklist": {
+        "id": [],
+        "type": [],
+        "chip": [],
+        "machineArch": [],
+        "productArch": [],
+        "language": [],
+    },
+    # "-1" - skip check.
+    "size": {
+        "check": {
+            "min": -1,
+            "max": -1,
+        },
+        "unpack": {
+            "min": -1,
+            "max": -1,
+        },
+        "install": {
+            "min": -1,
+            "max": -1,
+        },
+    },
+}
+
+# How dependencies are handled.
+raw_dep_filter = {
+    # Don't select any dependencies.
+    "skip_dependencies": False,
+    "incl_type": {
+        # Include dependencies marked as "optional".
+        "optional": True,
+        # Include dependencies marked as "recommended".
+        "recommended": False,
+    },
+    # If there are several packages with the same id,
+    #     prioritize the one which have the matching traits.
+    # If "chip" of the dependency is specified in the manifest,
+    #     it has higher priority than the "chip" in this "prioritize".
+    "prioritize": {
+        "chip": {"regex": "(?i)x64", "weight": 1000},
+        "machineArch": {"regex": "(?i)x64", "weight": 100},
+        "productArch": {"regex": "(?i)x64", "weight": 10},
+        "language": {"regex": "(?i)en-", "weight": 1},
+    },
+    # Same as "raw_pkg_filter" above but for dependencies.
+    "pkg_filter": {
+        "trait_whitelist": {
+            "id": [".*"],
+#            "type": [".*"],
+#            "chip": [".*"],
+#            "machineArch": [".*"],
+#            "productArch": [".*"],
+#            "language": [".*"],
+        },
+        "trait_blacklist": {
+            "id": [],
+            "type": [],
+            "chip": [],
+            "machineArch": [],
+            "productArch": [],
+            "language": [],
+        },
+        # "-1" - skip check.
+        "size": {
+            "check": {
+                "min": -1,
+                "max": -1,
+            },
+            "unpack": {
+                "min": -1,
+                "max": -1,
+            },
+            "install": {
+                "min": -1,
+                "max": -1,
+            },
+        },
+    },
+}
+
+# Regex payloads by traits using match() method.
+# https://docs.python.org/3/library/re.html#regular-expression-syntax
+##
+# util_enum.mode.CHECK_FILES will generate wrong CAB info
+#     and util_enum.mode.DOWNLOAD_AND_UNPACK will fail
+#     if the required .cab/.msi have been filtered.
+##
+# Doesn't affect modes: util_enum.mode.PARSE_OUT_*
+raw_pl_filter = {
+    "trait_whitelist": {
+        "fileName": [".*"],
+#        "url": [".*"],
+    },
+    "trait_blacklist": {
+        "fileName": [],
+        "url": [],
+    },
+    # "-1" - skip check.
+    "size": {
+        "min": -1,
+        "max": -1,
+    },
+}
+
+
+# For mode: util_enum.mode.PRINT_SEL_PKGS_TRAITS
+# Traits of the selected packages to print.
+traits_to_print = [
+    "id",
+    "version",
+    "type",
+    "chip",
+    "machineArch",
+    "productArch",
+    "language",
+]
+
+
+# For mode: util_enum.mode.DOWNLOAD_AND_UNPACK
+download_unpack = {
+    # Directory to store downloaded files.
+    "download_dir": os.path.join(work_dir, "download_and_unpack", "download"),
+
+    "download_options": {
+        # Don't treat the attempt as a failed one
+        #     if the hash of the downloaded file
+        #     doesn't match the hash in the manifest.
+        "allow_hash_mismatch": False,
+
+        # The timeout in seconds (float) for connection attempts.
+        "timeout": 15,
+
+        # Number of parallel downloads.
+        "threads": 5,
+
+        # Number of retries per payload before giving up.
+        "attempts": 3,
+    },
+
+    # Don't unpack the downloaded files.
+    "skip_unpack": False,
+
+    # Directory to store unpacked files.
+    "unpack_dir": os.path.join(work_dir, "download_and_unpack", "unpack"),
+}
+
+
+# For mode: util_enum.mode.CHECK_FILES
+check_files = {
+    # Directory to store downloaded files.
+    "download_dir": os.path.join(work_dir, "check_files", "tmp"),
+
+    # Path to the output file.
+    "out_file": os.path.join(work_dir, "check_files", "out", "out_file.json"),
+
+    # Don't delete all files in "download_dir" after checking a package.
+    "keep_download": False,
+
+    "download_options": {
+        # Don't treat the attempt as a failed one
+        #     if the hash of the downloaded file
+        #     doesn't match the hash in the manifest.
+        "allow_hash_mismatch": False,
+
+        # The timeout in seconds (float) for connection attempts.
+        "timeout": 15,
+
+        # Number of parallel downloads.
+        "threads": 5,
+
+        # Number of retries per payload before giving up.
+        "attempts": 3,
+    },
+
+    # Retry modes.
+    ##
+    # util_enum.retry.FALSE
+    #
+    # Don't try to resume previous interrupted check.
+    ##
+    # util_enum.retry.RETRY
+    #
+    # If "out_file" has packages which weren't checked yet,
+    #     ignore the selected packages,
+    #     check the remaining packages.
+    #     Packages which couldn't be checked because of errors are ignored.
+    ##
+    # util_enum.retry.RETRY_FAILED
+    #
+    # If "out_file" has packages which weren't checked yet
+    #     or packages which couldn't be checked because of errors,
+    #     ignore the selected packages,
+    #     first check packages which weren't checked yet,
+    #     then check packages which couldn't be checked because of errors.
+#    "retry_check": util_enum.retry.FALSE,
+#    "retry_check": util_enum.retry.RETRY,
+    "retry_check": util_enum.retry.RETRY_FAILED,
+
+    # Write partially filled ".json" to the "out_file"
+    #     and print the amount of remaining packages to check
+    #     after downloading this amount of bytes.
+    "backup_after_bytes": 100 * 1000 * 1000,
+}
+
+
+# For modes: util_enum.mode.PARSE_OUT_*
+parse_out = {
+    # ".json" to parse.
+    # Should be the output of "util_enum.mode.CHECK_FILES".
+    "out_file": check_files["out_file"],
+
+    # Replace "%xx" escapes with their single-character equivalent.
+    # This happens before filtering and parsing.
+    "unquote_filenames": True,
+
+    # Regex filenames using match() method.
+    # https://docs.python.org/3/library/re.html#regular-expression-syntax
+    "raw_file_filter": {
+        "file_whitelist": [
+            "(?i).*/vcruntime140d\.dll$",
+            "(?i).*/ucrtbased\.dll$",
+        ],
+        "file_blacklist": [
+        ],
+    },
+}
+
+
+# Operation modes.
+##
+# util_enum.mode.PRINT_DEPS_VSDOWNLOAD
+#
+# Print a tree of dependencies for the selected packages
+#     similar to the original "vsdownload.py".
+##
+# util_enum.mode.PRINT_REV_DEPS_VSDOWNLOAD
+#
+# Print a tree of packages that depend on the selected packages
+#     similar to the original "vsdownload.py".
+##
+# util_enum.mode.PRINT_SEL_PKGS_VSDOWNLOAD
+#
+# Print the selected packages and their download size
+#     similar to the original "vsdownload.py".
+##
+# util_enum.mode.PRINT_SEL_PKGS_RAW
+#
+# Print the selected packages a package per line without parsing.
+##
+# util_enum.mode.PRINT_SEL_PKGS_TRAITS
+#
+# Print specified traits of the selected packages.
+##
+# util_enum.mode.DOWNLOAD_AND_UNPACK
+#
+# Download and unpack the selected packages.
+##
+# util_enum.mode.CHECK_FILES
+#
+# Download the selected packages one by one,
+#     get list of filenames per package,
+#     save list of filenames per package in "out_file".
+##
+# util_enum.mode.PARSE_OUT_FILES_PER_PKG
+#
+# Print filenames per payload (with URLs) per package.
+##
+# util_enum.mode.PARSE_OUT_PKGS_PER_FILEPATTERN
+#
+# Get a list of packages containing the files
+#     with filenames matching the "file_whitelist" regex,
+#     print packages per "file_whitelist" regex.
+##
+# util_enum.mode.PARSE_OUT_URLS_PER_FILEPATTERN
+#
+# Get a list of payloads containing the files
+#     with filenames matching the "file_whitelist" regex,
+#     print URLs per payload per "file_whitelist" regex.
+##
+# util_enum.mode.PARSE_OUT_EMBEDDED_CABS
+#
+# Print payloads with embedded CABs
+#     per payload which needs them per package.
+##
+# util_enum.mode.PARSE_OUT_ERRORS_PER_PKG
+#
+# In "util_enum.mode.CHECK_FILES" when package check fails,
+#     the error message is saved in the "out_file".
+#     Print a list of error messages per package.
+
+#mode = util_enum.mode.PRINT_DEPS_VSDOWNLOAD
+#mode = util_enum.mode.PRINT_REV_DEPS_VSDOWNLOAD
+mode = util_enum.mode.PRINT_SEL_PKGS_VSDOWNLOAD
+#mode = util_enum.mode.PRINT_SEL_PKGS_RAW
+#mode = util_enum.mode.PRINT_SEL_PKGS_TRAITS
+#mode = util_enum.mode.DOWNLOAD_AND_UNPACK
+#mode = util_enum.mode.CHECK_FILES
+#mode = util_enum.mode.PARSE_OUT_FILES_PER_PKG
+#mode = util_enum.mode.PARSE_OUT_PKGS_PER_FILEPATTERN
+#mode = util_enum.mode.PARSE_OUT_URLS_PER_FILEPATTERN
+#mode = util_enum.mode.PARSE_OUT_EMBEDDED_CABS
+#mode = util_enum.mode.PARSE_OUT_ERRORS_PER_PKG
