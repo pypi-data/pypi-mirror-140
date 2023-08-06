@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: topsis-101803398
+Version: 1.0.2
+Summary: Topsis implementation
+Home-page: 
+Author: Harshit Verma
+Author-email: iamharshitverma114@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) originated in the 1980s as a multi-criteria decision making method. TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution, and greatest distance from the negative-ideal solution. 
+
+## How to Install
+```
+pip install topsis-101803398
+```
+
+## How to use it?
+Open terminal and type `python topsis` along with input file path, weight array, impact array and name of output file. for eg. 
+```
+python topsis test.csv "1,1,2,3,1" "+,-,+,-,-" output.csv
+```
+
+
+## License
+Â©  2022 Harshit Verma
+This repository is licensed under the MIT license. See LICENSE for details
+
