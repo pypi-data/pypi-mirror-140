@@ -1,0 +1,7 @@
+LICENSE.txt
+NOTICE.txt
+setup.py
+DeltapatcherForDeltarando.egg-info/PKG-INFO
+DeltapatcherForDeltarando.egg-info/SOURCES.txt
+DeltapatcherForDeltarando.egg-info/dependency_links.txt
+DeltapatcherForDeltarando.egg-info/top_level.txt
