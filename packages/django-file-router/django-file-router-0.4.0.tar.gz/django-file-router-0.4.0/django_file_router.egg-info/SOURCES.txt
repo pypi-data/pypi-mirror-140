@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_file_router.egg-info/PKG-INFO
+django_file_router.egg-info/SOURCES.txt
+django_file_router.egg-info/dependency_links.txt
+django_file_router.egg-info/requires.txt
+django_file_router.egg-info/top_level.txt
+file_router/__init__.py
+file_router/file_router_test.py
