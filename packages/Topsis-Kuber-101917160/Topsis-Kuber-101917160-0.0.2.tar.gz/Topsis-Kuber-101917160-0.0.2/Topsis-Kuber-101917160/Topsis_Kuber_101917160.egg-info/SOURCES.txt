@@ -1,0 +1,6 @@
+README.md
+setup.py
+Topsis-Kuber-101917160/Topsis_Kuber_101917160.egg-info/PKG-INFO
+Topsis-Kuber-101917160/Topsis_Kuber_101917160.egg-info/SOURCES.txt
+Topsis-Kuber-101917160/Topsis_Kuber_101917160.egg-info/dependency_links.txt
+Topsis-Kuber-101917160/Topsis_Kuber_101917160.egg-info/top_level.txt

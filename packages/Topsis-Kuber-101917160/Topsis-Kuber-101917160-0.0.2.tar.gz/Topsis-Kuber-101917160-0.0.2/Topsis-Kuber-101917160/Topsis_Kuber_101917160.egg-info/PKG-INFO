@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Topsis-Kuber-101917160
+Version: 0.0.2
+Summary: A small example package
+Author: Kuber Mehra
+Author-email: kubermehra2000@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+install topsis
+A library to calculate topsis score and rank
+
