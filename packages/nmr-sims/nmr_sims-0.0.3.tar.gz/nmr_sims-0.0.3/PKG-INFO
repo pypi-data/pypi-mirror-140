@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nmr_sims
+Version: 0.0.3
+Summary: A package for running basic NMR simulations.
+Home-page: https://github.com/5hulse/nmr_sims
+Author: Simon Hulse
+Author-email: simonhulse@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![PyPI badge](https://badge.fury.io/py/nmr-sims.svg)](https://pypi.org/project/nmr-sims)
+
+# nmr\_sims
+
+NMR simulations in Python.
+
+Some rather simple simulations of basic NMR pulse sequences.
+
+Everything uses the Zeeman basis in Hilbert space, so nothing too fancy is possible.
+
+Currently have pulse-acquire, 2DJ, and HSQC code available.
+
+Install with `$pip install nmr-sims`
+
+To get started, take a look at (and run) `$python -m nmr_sims pa`, `$python -m nmr_sims jres` or `$python -m nmr_sims hsqc`.
+
+
