@@ -1,0 +1,1 @@
+"""``greendeploy.framework`` provides GreenDeploy's framework components """
