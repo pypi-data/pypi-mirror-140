@@ -1,0 +1,16 @@
+notramp/__init__.py,sha256=Z6wSZiEg85YYIlJr2ZHQZW3GKmle3_pU5ayU7JB-jD0,292
+notramp/amp_cov.py,sha256=3YHHvVQdFHae9OqfoVxew3AcJJADRGhsgD351gao_hc,3450
+notramp/map_trim.py,sha256=q9XfgNx2pvOfE6eCmhdgLtBg3-MapoELcJNrBT4P6p0,2513
+notramp/notramp_main.py,sha256=-HI0bD0-hMluPMjwywQ0_uyBLNUQyi1W0Rtq3fo3auU,22144
+notramp/nta_aux.py,sha256=yyDnKNlU-GB-E1QxaXnISotycu2XptTl3psHYMsaDf8,2340
+notramp/version.py,sha256=D-ekD7Bc2JxMnW5g40OR4LS2iUKTlBQ5GQ6_KmbEVcw,44
+notramp/resources/artic_nCoV_scheme.json,sha256=B_HWU8Jts2D1gx7TQ4TF1kuzwUjtfueRMydwtk7bL6A,191
+notramp/resources/generic_scheme.json,sha256=Y3pKiHVaIeT_3AKNXr3E1pwTXaXElaeIhV1ji-g1IFA,187
+notramp/resources/logging.conf,sha256=OvcV54OTaiWmL8wjDiivyJAm-UFmvG6A6mX5IqrEeys,680
+notramp-1.0.2.data/scripts/notramp,sha256=qS00NXepO0oTS7tSBZhei74qIdVnMqQTmIxbmuhZ7nM,21931
+notramp-1.0.2.dist-info/LICENSE,sha256=kCFl6U6DwGaqw-atJ2mfPnBYFfeC7IKsuGJYKhJODxU,1331
+notramp-1.0.2.dist-info/METADATA,sha256=GvHtPo6Xuiu0lgXel-lLbxl0P_FV0Wp3I45gUvPps1k,4020
+notramp-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+notramp-1.0.2.dist-info/entry_points.txt,sha256=DGWYMu31Xke4Us4CSX25XxsIsEwMaog_MxO0bOAUb3o,61
+notramp-1.0.2.dist-info/top_level.txt,sha256=juYI5lbjcDwvzniGXNe7lmC8Rtn1WjUyNzheIzDXiYk,8
+notramp-1.0.2.dist-info/RECORD,,
