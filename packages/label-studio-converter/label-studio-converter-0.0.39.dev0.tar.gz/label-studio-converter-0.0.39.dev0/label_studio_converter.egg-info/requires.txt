@@ -1,0 +1,4 @@
+Pillow==8.3.2
+nltk==3.5
+pandas>=0.24.0
+requests<3,>=2.22.0
