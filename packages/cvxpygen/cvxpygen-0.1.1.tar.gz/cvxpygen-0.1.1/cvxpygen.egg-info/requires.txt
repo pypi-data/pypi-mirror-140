@@ -1,0 +1,9 @@
+cmake>=3.5
+cvxpy>=1.1.18
+pybind11>=2.8.0
+osqp>=0.6.2
+scipy>=1.1.0
+numpy>=1.15
+
+[dev]
+pytest==6.2.4
