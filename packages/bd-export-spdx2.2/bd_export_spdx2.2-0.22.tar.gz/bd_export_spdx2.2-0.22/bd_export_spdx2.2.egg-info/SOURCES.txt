@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+bd_export_spdx2.2.egg-info/PKG-INFO
+bd_export_spdx2.2.egg-info/SOURCES.txt
+bd_export_spdx2.2.egg-info/dependency_links.txt
+bd_export_spdx2.2.egg-info/entry_points.txt
+bd_export_spdx2.2.egg-info/requires.txt
+bd_export_spdx2.2.egg-info/top_level.txt
+export_spdx/__init__.py
+export_spdx/config.py
+export_spdx/data.py
+export_spdx/globals.py
+export_spdx/main.py
+export_spdx/process.py
+export_spdx/projects.py
+export_spdx/spdx.py

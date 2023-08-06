@@ -1,0 +1,3 @@
+[console_scripts]
+bd_export_spdx = export_spdx.main:run
+
