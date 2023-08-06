@@ -1,0 +1,4 @@
+[console_scripts]
+plot_ifgs = scripts.plot_ifgs:main
+pyrate = pyrate.main:main
+
