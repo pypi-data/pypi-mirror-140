@@ -1,0 +1,4 @@
+pyperclip
+empty-files
+beautifulsoup4
+pytest
