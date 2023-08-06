@@ -1,0 +1,108 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry]
+authors = ["Denis Rosset <physics@denisrosset.com>"]
+description = "Configuration from command line parameters, configuration files and environment variables"
+license = "MIT"
+name = "configpile"
+readme = "README.rst"
+repository = "https://github.com/denisrosset/configpile.git"
+version = "2.1.0"
+
+[tool.poetry.dependencies]
+class-doc = "^0.2.6"
+parsy = "^1.4.0"
+python = "^3.8"
+rich = "^11.2.0"
+typing-extensions = "^4.1.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+commitizen = "^2.21.2"
+mypy = "^0.931"
+pytest = "^7.0.1"
+pytest-black = "^0.3.12"
+pytest-cov = "^3.0.0"
+pytest-mypy-plugins = "^1.9.3"
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+files = [
+  "src",
+  "tests",
+]
+no_implicit_optional = true
+no_implicit_reexport = true
+python_version = "3.8"
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+show_none_errors = true
+strict_equality = true
+strict_optional = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = 'parsy'
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = 'class_doc'
+
+[tool.pytest.ini_options]
+addopts = [
+  "--black",
+  "--tb=short",
+  "--cov=result",
+  "--cov=tests",
+  "--cov-report=term",
+  "--cov-report=xml",
+]
+
+testpaths = [
+  "tests",
+]
+
+[tool.black]
+line-length = 99
+target_version = ['py38']
+
+[tool.isort]
+line_length = 99
+profile = "black"
+py_version = 38
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+style = [
+  ["qmark", "fg:#ff9d00 bold"],
+  ["question", "bold"],
+  ["answer", "fg:#ff9d00 bold"],
+  ["pointer", "fg:#ff9d00 bold"],
+  ["highlighted", "fg:#ff9d00 bold"],
+  ["selected", "fg:#cc5454"],
+  ["separator", "fg:#cc5454"],
+  ["instruction", ""],
+  ["text", ""],
+  ["disabled", "fg:#858585 italic"],
+]
+tag_format = "v$major.$minor.$patch$prerelease"
+version = "2.1.0"
+version_files = [
+  "src/configpile/__init__.py:version",
+  "pyproject.toml:version",
+]
+update_changelog_on_bump = true
+annotated_tag = true
