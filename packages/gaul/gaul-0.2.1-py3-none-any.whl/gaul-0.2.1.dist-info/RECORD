@@ -1,0 +1,17 @@
+gaul/__init__.py,sha256=7elV1n5pCjac7ergKdCsVgjMlUXp9auSrY_d24fBd1M,161
+gaul/modelling/__init__.py,sha256=QQY8zgbE_XvFDTVqwTGh2fcmn6Wi-PJ5Ky_PpwitZyo,64
+gaul/modelling/hmc.py,sha256=AXxfBZ3QYX6kFzQkL4JjDiAyCJlmRyZqq48D9sIGvPc,5442
+gaul/nn/__init__.py,sha256=IRAOPepF4Ei2v6kGMOygd1VEccRmwbcc9OHSknfYXtg,466
+gaul/nn/attention.py,sha256=Bi84nPeNLj4PWmIrjKpdWtjf7rB28zwhucuVONQLpzY,2655
+gaul/nn/module.py,sha256=mRRFiC4-_w4lXZTaHbuakrvfgJo5K0Ci3ets-ztpNew,23
+gaul/nn/transformer.py,sha256=AnbtB04A06vhOVK6UNmpkqt9MygB_n-3cF-jGSi4MXw,9155
+gaul/nn/utils.py,sha256=AMZX5yiifEYBdBUvqehAlUWoGy2foCrYbdwgi9kHErw,2723
+gaul/optim/__init__.py,sha256=JDrHIm8ps5Q3ylLfVndjb4UJ3JXnJVmQ0IlI_SEBDoA,69
+gaul/optim/optimizers.py,sha256=sml30eELUHQqZhEZqp7q6B7FoeG5ZYAUTxKYMcUXKX4,3812
+gaul/types.py,sha256=tVIYO6vnW-zKGxxuclruwM-X7UkuoMTz_sVi3l8FImk,89
+gaul/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaul/utils/pbar.py,sha256=0caQIlXgM94qiJC8HYiehnSJadDd5nIZozZP3sa0SSU,2626
+gaul/utils/tree_utils.py,sha256=3UzxVVXgZksNK7I92iOtmnI5Po4YQVIqkwSYWDQCjoM,2175
+gaul-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gaul-0.2.1.dist-info/METADATA,sha256=rrvcCu3c8p3hSCRDaMtx3FvH9zaDsiJLwbLGDgxD3mI,1174
+gaul-0.2.1.dist-info/RECORD,,
