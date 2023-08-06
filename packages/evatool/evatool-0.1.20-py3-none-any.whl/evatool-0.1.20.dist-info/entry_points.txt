@@ -1,0 +1,3 @@
+[console_scripts]
+evatool = evatool.main:main
+

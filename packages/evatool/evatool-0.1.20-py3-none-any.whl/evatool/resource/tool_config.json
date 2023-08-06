@@ -1,0 +1,7 @@
+{
+  "fastqdump": "./bin/fastq-dump",
+  "samtools": "./bin/samtools",
+  "bowtie": "./bin/bowtie2",
+  "bedtools": "./bin/bedtools",
+  "trimmomatic": "./bin/trimmomatic-0.39.jar"
+}

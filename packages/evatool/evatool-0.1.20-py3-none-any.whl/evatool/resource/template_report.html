@@ -1,0 +1,263 @@
+<meta http-equiv="Content-Type"content="text/html;charset=utf-8">
+<html align='left', lang="en">
+
+<head>
+    <title>Report</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <style type="text/css">
+        body {
+            background-color: #F9F5F5;
+        }
+        .bodystyle{
+            width: 60%;
+            margin: auto;
+            background-color: white
+        }
+        .headstyle{
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #005167;
+            margin-top: 20px;
+        }
+        h2{
+            color: #3C9EB7;
+        }
+        h5{
+            color: #F99136;
+            margin-top: -15px;
+        }
+        img{
+            width: 600px;
+        }
+        li span{
+            color: #9C4500;
+        }
+        pre{
+            background-color: #E6F4F1;
+            border: 1px solid #F9F5F5;
+            padding: 10px;
+            margin-left: 15px;
+            width: 95%;
+        }
+    </style>
+</head>
+
+    <body>
+        <div class="bodystyle">
+            <div class="headstyle">
+                <h1>EVAtool result report</h1>
+                <h5>Report time: {{stop_time}}</h5>
+            </div>
+            <div style="margin-left: 15px;">
+                <div class="row">
+                    <h2><i class="fa fa-cubes" aria-hidden="true">&nbsp;</i>Input parameters:</h2>
+                    <pre>
+<ul>
+<li><span>Sample name: </span></li>
+<span>{{ sam_info.sam_name }}</span>
+
+<li><span>ncRNA types: </span></li>
+<span>{{ sam_info.ncrna_list}}</span>
+
+<li><span>Directory of result: </span></li>
+<span>{{ sam_info.sam_path }}</span>
+
+<li><span>Config file for your analysis: </span></li>
+<span>{{ config }}</span>
+</ul>
+                    </pre>
+                </div>
+                <div>
+                    <h2><i class="fa fa-cubes" aria-hidden="true">&nbsp;</i>Analysis results:</h2>
+                    <h4><i class="fa fa-fire" aria-hidden="true">&nbsp;</i>Reads length distribution</h4>
+                    <p>The length distributions of the reads in the trimmed {{ sam_info.sam_name }} sample are showed as follow:</p>
+                    <table border="1" width = "60%" cellspacing='0' cellpadding='0' align='left'>
+                    <tr>
+                        <th> <15 </th>
+                        <th>15-30</th>
+                        <th>30-40</th>
+                        <th>>50</th>
+                        <th>OutReads</th>
+                        <th>OutReads/TotalReads</th>
+                        <th>Total reads</th>
+                    </tr>
+                    {% for item in body %}
+                    <tr align='center'>
+                        <td>{{ item.fi }}</td>
+                        <td>{{ item.thr }}</td>
+                        <td>{{ item.fo }}</td>
+                        <td>{{ item.fif }}</td>
+                        <td>{{ item.out_reads }}*</td>
+                        <td>{{ item.ratio }}</td>
+                        <td>{{ item.total }}</td>
+                    </tr>
+                    {% endfor%}
+                    </table>
+                    <br><br>
+                    <p>*: Sum of the read count which is defind in the config file (Default: ["tag_cut": "0"]). </p>
+                </div>
+                <div>
+                    <h4><i class="fa fa-area-chart" aria-hidden="true">&nbsp;</i>Visualization</h4>
+                    <p>Line chart displays the distributions of the read length.</p>
+                    <img src="./{{ img_path.read_len }}">
+                </div>
+                <div>
+                    <h4><i class="fa fa-fire" aria-hidden="true">&nbsp;</i>Proportion of reads in different ncRNAs</h4>
+                    <p>The proportion of reads in different small ncRNAs calculated by RDAA.</p>
+                    <table border="1" width = "60%" cellspacing='0' cellpadding='0' align='left'>
+                        <tr>
+                            <th>ncRNAType</th>
+                            <th>MappedTag</th>
+                            <th>ReadsRatio</th>
+                        </tr>
+                        {% for item in body2 %}
+                        <tr align='center'>
+                            <td>{{ item.Category }}</td>
+                            <td>{{ item.MappedTag }}</td>
+                            <td>{{ item.Ratio }}</td>
+                        </tr>
+                        {% endfor%}
+                        </table>
+                    <br><br>
+                </div>
+                <div style="clear: both;">
+                    <br>
+                    <h4><i class="fa fa-area-chart" aria-hidden="true">&nbsp;</i>Visualization</h4>
+                    <p>The bar plot shows the ratio of reads for different ncRNAs.</p>
+                    <img src="./{{ img_path.ncrna_type }}">
+                    <p>Pie chart shows the proportion of reads for different ncRNAs.</p>
+                    <img src="./{{ img_path.ncrna_type_pie }}">
+                </div>
+                <div style="clear: both;">
+                    <h4><i class="fa fa-fire" aria-hidden="true">&nbsp;</i>ncRNA(s) read count & RPM quantifications file</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                <span>File name: </span>
+                            </p>
+                        </li>
+                        <span>{{ sam_info.sam_name }}.{ RNA type }.exp</span>
+                        <li>
+                            <p>
+                                <span>File content:</span>
+                            </p>
+                        </li>
+                        <span>The format of these tab-delimited files is as follows:</span>
+                    </ul>
+                    <pre>GeneSymbol      TagCount      RPM
+piR-33043       21745         14126.22
+piR-35982       872           566.48
+piR-49143       3088          2006.06
+piR-49144       2602          1690.34
+piR-33044       2267          1472.71
+piR-34536       114           74.06</pre>
+                    <h4><i class="fa fa-fire" aria-hidden="true">&nbsp;</i>Top 5 highly expressed RNAs from different ncRNAs</h4>
+                    <p>The top 5 highly expressed RNAs are displayed in the following table:</p>
+                    <table border="1" width = "60%" cellspacing='0' cellpadding='0' align='left'>
+                        <tr>
+                            <th>ncRNAType</th>
+                            <th>RNA name</th>
+                            <th>RPM</th>
+                            <th>Count</th>
+                        </tr>
+                        {% for item in all_top10 %}
+                        <tr align='center'>
+                            <td>{{ item.type }}</td>
+                            <td>{{ item.rna }}</td>
+                            <td>{{ item.rpm }}</td>
+                            <td>{{ item.count }}</td>
+                        </tr>
+                        {% endfor%}
+                        </table>
+                    <br><br>
+                </div>
+                <div style="clear: both;">
+                    <br>
+                    <h4><i class="fa fa-fire" aria-hidden="true">&nbsp;</i>The abundance distributions of each ncRNA</h4>
+                    <p>The following plots shows the different ncRNA expression profile in extracellular vesicles.</p>
+                    {% for item in sam_info.ncrna_list %}
+                    <img src="./exp_distribution_of_{{ item }}.png">
+                    {% endfor%}
+                </div>
+                <div style="clear: both;">
+                    <h4><i class="fa fa-fire" aria-hidden="true">&nbsp;</i>The number of expressed RNAs detected in different types of ncRNA</h4>
+                    <p>The details are displayed in the following table:</p>
+                    <table border="1" width = "60%" cellspacing='0' cellpadding='0' align='left'>
+                        <tr>
+                            <th>ncRNAType</th>
+                            <th>Number</th>
+                        </tr>
+                        {% for item in sam_info.ncrna_list %}
+                        <tr align='center'>
+                            <td>{{ item }}</td>
+                            <td>{{ num_rnas[item] }}</td>
+                        </tr>
+                        {% endfor%}
+                        </table>
+                    <br><br>
+                </div>
+                <div style="clear: both;">
+                    <br>
+                    <h4><i class="fa fa-area-chart" aria-hidden="true">&nbsp;</i>Visualization</h4>
+                    <p>The distribution of RNA expression quantity in different types of ncRNA.</p>
+                    <img src="./{{ img_path.ncrna_number }}">
+                </div>
+                <div class="row">
+                    <h2><i class="fa fa-cubes" aria-hidden="true">&nbsp;</i>Other results:</h2>
+                    <ul>
+                        <li><span>Fasta format of trimmed {{ sam_info.sam_name }}:</span></li>
+                        <p>{{ sam_info.sam_name }}.fa</p>
+                        <li><span>Trimmed file:</span></li>
+                        <p>{{ sam_info.sam_name }}.fastq.trimmed.gz</p>
+                        <li><span>Expression file:</span></li>
+                        <p>{{ sam_info.sam_name }}.{RNA type}.exp</p>
+                        <li><span> Mapping statistcs and result: </span></li>
+                        <p>{{ sam_info.sam_name }}.{RNA type}.bowtie.stat</p>
+                        <p>{{ sam_info.sam_name }}.{RNA type}.genome.sort.bed.count</p>
+                        <p>{{ sam_info.sam_name }}.{RNA type}.genome.sort.bed</p>
+                        <p>{{ sam_info.sam_name }}.{RNA type}.genome.sort.bam</p>
+                        <p>{{ sam_info.sam_name }}.{RNA type}.genome.merge.bed</p>
+                        <p>{{ sam_info.sam_name }}.{RNA type}.genome.sort</p>
+                        <p>{{ sam_info.sam_name }}.{RNA type}.sam</p>
+                        <p>{{ sam_info.sam_name }}.{RNA type}.genome.bam</p>
+                        <li><span>Unmapped reads:</span></li>
+                        <p>{{ sam_info.sam_name }}.tag.unmapped</p>
+                        <li><span>Classification of each reads (ncRNA & genome):</span></li>
+                        <p>{{ sam_info.sam_name }}.tag.ncRNA.classification</p>
+                        <p>{{ sam_info.sam_name }}.tag.genome.classification</p>
+                        <li><span>Annotation and unannotation reads:</span></li>
+                        <p>{{ sam_info.sam_name }}.genome.annotation.info</p>
+                        <p>{{ sam_info.sam_name }}.region.unanno.genome.classification</p>
+                        <p>{{ sam_info.sam_name }}.genome.unanno.info</p>
+                        <p>{{ sam_info.sam_name }}.region.anno.genome.classification</p>
+                        <li><span>Result report files:</span></li>
+                        <p>distribution_of_ncRNA_type.png/pdf</p>
+                        <p>distribution_of_read_len.png/pdf</p>
+                        <p>Report_result.html</p>
+                        <li><span>Log file:</span></li>
+                        <p>evatools.log</p>
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+            <hr>
+            <footer>
+                <div style="text-align: center;margin-top: 15px;">
+                    <p>
+                        <strong>Copyright &copy;</strong>
+                        <a href="http://bioinfo.life.hust.edu.cn" target="_blank">Guo Lab</a>,
+                        <a href="http://life.hust.edu.cn" target="_blank">College of Life Science and Technology</a>,
+                        <a href="http://www.hust.edu.cn" target="_blank">HUST</a>,
+                        China.
+                    </p>
+                    <p>
+                        Any comments and suggestions, please <a href="http://127.0.0.1:5500/index.html#foot" target="blank">contact us</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
