@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Topsis_Harsimran_101903288
+Version: v1.2
+Summary: Topsis Score and Rank generator
+Home-page: https://github.com/Harsimrank23/Topsis_Harsimran_101903288
+Author: Harsimran Kaur
+Author-email: hkaur3_be19@thapar.edu
+License: MIT
+Download-URL: https://github.com/Harsimrank23/Topsis_Harsimran_101903288/archive/refs/heads/main.zip
+Description: UNKNOWN
+Keywords: topsis,topsis score,rank,Thapar
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
