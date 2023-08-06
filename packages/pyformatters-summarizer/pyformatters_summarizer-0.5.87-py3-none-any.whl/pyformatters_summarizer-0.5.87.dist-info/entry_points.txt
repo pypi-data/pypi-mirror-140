@@ -1,0 +1,6 @@
+[pyformatters.plugins]
+summarizer=pyformatters_summarizer.summarizer:SummarizerFormatter
+
+[pyprocessors.plugins]
+summarizer=pyformatters_summarizer.summarizer:SummarizerFormatter
+
