@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+calcoperations/__init__.py
+calcoperations/calc.py
+calcoperations.egg-info/PKG-INFO
+calcoperations.egg-info/SOURCES.txt
+calcoperations.egg-info/dependency_links.txt
+calcoperations.egg-info/top_level.txt
