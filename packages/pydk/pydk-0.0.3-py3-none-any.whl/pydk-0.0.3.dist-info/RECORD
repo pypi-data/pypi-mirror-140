@@ -1,0 +1,10 @@
+pydk/__init__.py,sha256=krFWwxbTuS0H6ZPyrT_McqgUVd-mPKmHszvz4cBzs1Y,239
+pydk/_create_empty_dict.py,sha256=Fw3a6jDbdXS09QpBZQGTJmhUG5pOJXZ81I9UaHJ_U1Q,434
+pydk/_flexible_multilevel_mkdir.py,sha256=61EyAT_t2ZG1S7Uy8YM88dJK8Oyk0rsm5rZTcw_SBgk,1195
+pydk/_get_parent_directory.py,sha256=kHuJASVyp2WqBdHRH2VCvzLFcPf5yIDaeaKHr9puBwo,636
+pydk/_mk_GCP_command.py,sha256=Ox5UnwuySFwka-UE3CfnFCWesMbiG-s5VtCfU9zWdk4,841
+pydk-0.0.3.dist-info/LICENSE,sha256=Ff-4VTG-k3DmnDPrOey0wfFniUA6gNWMVvl2ozoPFm8,1072
+pydk-0.0.3.dist-info/METADATA,sha256=ho7hPQSkRFUl30EAfFblv6jSAsTdCbJwnf09lRXVEv8,751
+pydk-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydk-0.0.3.dist-info/top_level.txt,sha256=NzHGyyMgYfdis3wp_YqI9o9k3ezjNW2cB_gS9M-JZRw,5
+pydk-0.0.3.dist-info/RECORD,,
