@@ -1,0 +1,11 @@
+pcapy.cp310-win_amd64.pyd,sha256=mGg4ZDZTWNiP4IQ4nrCEgtxxU58lKCYVZAQpEyqRzc8,31232
+pcapy_ng_win_amd64-1.0.4.data/data/share/doc/pcapy-ng-win-amd64/LICENSE,sha256=MpW0ivkHL7Shs6YLuflYYjFFcymGRrqKeAFEi1rlOOE,2198
+pcapy_ng_win_amd64-1.0.4.data/data/share/doc/pcapy-ng-win-amd64/README,sha256=AnVYLBXXf2OTAay_QAQMNmUXn0m44a2Hl4HV3sTix7k,2626
+pcapy_ng_win_amd64-1.0.4.data/data/share/doc/pcapy-ng-win-amd64/pcapy.html,sha256=SQJ3E4RTrG-mGlH-l2F20ZmmomMjhdSa9-nCd4eov8k,64706
+pcapy_ng_win_amd64-1.0.4.data/data/share/doc/pcapy-ng-win-amd64/tests/96pings.pcap,sha256=TAUKSm1hamgBu-CHDaIiWlBlc9hZVtOqhi-wYEsdX-Y,10776
+pcapy_ng_win_amd64-1.0.4.data/data/share/doc/pcapy-ng-win-amd64/tests/pcapytests.py,sha256=E2ZwEuHkMEZfLqYCw-9pCD_7KQyhP5ic0UeiZixt1LM,4833
+pcapy_ng_win_amd64-1.0.4.dist-info/LICENSE,sha256=MpW0ivkHL7Shs6YLuflYYjFFcymGRrqKeAFEi1rlOOE,2198
+pcapy_ng_win_amd64-1.0.4.dist-info/METADATA,sha256=C-ckM2yHWl8YP6mrshme-Qil-zW5J98mViAuZtpIAv4,825
+pcapy_ng_win_amd64-1.0.4.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+pcapy_ng_win_amd64-1.0.4.dist-info/top_level.txt,sha256=uSbF_1hgLKJ8ajqADg1KAe_t7h6qs01tRXTugpsM_Vw,6
+pcapy_ng_win_amd64-1.0.4.dist-info/RECORD,,
