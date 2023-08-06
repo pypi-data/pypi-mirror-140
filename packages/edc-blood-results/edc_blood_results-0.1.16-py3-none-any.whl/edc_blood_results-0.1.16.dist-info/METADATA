@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: edc-blood-results
+Version: 0.1.16
+Summary: Simple blood result data collection format
+Home-page: https://github.com/clinicedc/edc-blood-results
+Author: Erik van Widenfelt
+Author-email: ew2789@gmail.com
+License: GPL license, see LICENSE
+Keywords: django edc blood results
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+|pypi| |actions| |codecov| |downloads|
+
+edc-blood-results
+-----------------
+
+Simple blood result data collection format
+
+
+.. |pypi| image:: https://img.shields.io/pypi/v/edc-blood-results.svg
+    :target: https://pypi.python.org/pypi/edc-blood-results
+
+.. |actions| image:: https://github.com/clinicedc/edc-blood-results/workflows/build/badge.svg?branch=develop
+  :target: https://github.com/clinicedc/edc-blood-results/actions?query=workflow:build
+
+.. |codecov| image:: https://codecov.io/gh/clinicedc/edc-blood-results/branch/develop/graph/badge.svg
+  :target: https://codecov.io/gh/clinicedc/edc-blood-results
+
+.. |downloads| image:: https://pepy.tech/badge/edc-blood-results
+   :target: https://pepy.tech/project/edc-blood-results
+
+
