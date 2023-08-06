@@ -1,0 +1,3 @@
+[console_scripts]
+mapaction=mapaction.cli:run
+
