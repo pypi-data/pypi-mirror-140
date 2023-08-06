@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/SlyYTAAPI/__init__.py
+src/SlyYTAAPI/analytics.py
+src/SlyYTAAPI.egg-info/PKG-INFO
+src/SlyYTAAPI.egg-info/SOURCES.txt
+src/SlyYTAAPI.egg-info/dependency_links.txt
+src/SlyYTAAPI.egg-info/requires.txt
+src/SlyYTAAPI.egg-info/top_level.txt
+test/test_readme.py
