@@ -1,0 +1,9 @@
+matplotlib
+keras>=2.0.0
+opencv-python
+opencv-contrib-python
+pandas
+Pillow
+requests
+mtcnn>=0.1.1
+tqdm>=4.62.1
