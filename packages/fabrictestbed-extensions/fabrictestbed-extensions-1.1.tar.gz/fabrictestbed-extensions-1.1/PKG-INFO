@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fabrictestbed-extensions
+Version: 1.1
+Summary: FABRIC Python Client Library and CLI Extensions
+Home-page: https://github.com/fabric-testbed/fabrictestbed-extensions
+Author: Paul Ruth, Komal Thareja
+Author-email: pruth@renci.org, kthare10@renci.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fabrictestbed-extensions
+
+Extensions for the FABRIC API/CLI.  
+
+## Install Instructions
+```
+git clone https://github.com/fabric-testbed/fabrictestbed-extensions.git 
+cd fabrictestbed-extensions
+pip install --user .
+```
+
+
