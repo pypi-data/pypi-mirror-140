@@ -1,0 +1,11 @@
+numpy
+scipy
+ciso8601
+pandas
+pyyaml
+
+[docs]
+sphinx==4.4.0
+sphinx-rtd-theme
+myst-parser
+autodocsumm
