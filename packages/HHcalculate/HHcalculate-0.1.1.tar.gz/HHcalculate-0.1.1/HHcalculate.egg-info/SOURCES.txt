@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+HHcalculate.egg-info/PKG-INFO
+HHcalculate.egg-info/SOURCES.txt
+HHcalculate.egg-info/dependency_links.txt
+HHcalculate.egg-info/entry_points.txt
+HHcalculate.egg-info/requires.txt
+HHcalculate.egg-info/top_level.txt
+HHcalculate.egg-info/zip-safe

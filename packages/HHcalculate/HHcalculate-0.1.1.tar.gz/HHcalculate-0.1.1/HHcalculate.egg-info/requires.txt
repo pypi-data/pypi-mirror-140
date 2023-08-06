@@ -1,0 +1,6 @@
+pandas
+tqdm
+numpy
+biopython
+onnxruntime
+torch==1.7.1

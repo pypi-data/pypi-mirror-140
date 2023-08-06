@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: HHcalculate
+Version: 0.1.1
+Summary: calculate number
+Home-page: https://github.com/HaihuaWang-hub/calculate
+Author: H-H Wang
+Author-email: wanghaihua@ufl.edu
+License: GPL-3 License
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# calculate
+
+
