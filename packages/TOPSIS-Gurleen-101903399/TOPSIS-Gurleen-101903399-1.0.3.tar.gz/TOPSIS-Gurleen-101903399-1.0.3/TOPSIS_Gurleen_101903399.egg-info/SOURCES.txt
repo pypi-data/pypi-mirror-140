@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+TOPSIS_Gurleen_101903399.egg-info/PKG-INFO
+TOPSIS_Gurleen_101903399.egg-info/SOURCES.txt
+TOPSIS_Gurleen_101903399.egg-info/dependency_links.txt
+TOPSIS_Gurleen_101903399.egg-info/entry_points.txt
+TOPSIS_Gurleen_101903399.egg-info/requires.txt
+TOPSIS_Gurleen_101903399.egg-info/top_level.txt
+Topsis_Ranking/topsis.py
