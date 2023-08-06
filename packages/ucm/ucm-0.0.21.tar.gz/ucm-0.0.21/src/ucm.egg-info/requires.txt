@@ -1,0 +1,5 @@
+PyYAML
+urwid
+panwid
+datatables
+dataclasses
