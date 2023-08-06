@@ -1,0 +1,190 @@
+{%- if filetype_loop == 0 %}Latest Health Score,Timestamp,Total Count,Good Count,Fair Count,Bad Count,No Health Count,Measured By,Network Layer Category,Layer Health Score,Layer Total Count,Layer Good Count,Layer Fair Count,Layer Bad Count,Layer No Health Count,Layer Total Good Percentage,Layer Good Perecentage,Layer Fair Percentatge,Layer Bad Percentage,Layer No Health Percentage
+{%- for layer in health.healthDistirubution %}
+{{ health.response[0].healthScore }},{{ health.response[0].time }},{{ health.response[0].totalCount }},{{ health.response[0].goodCount }},{{ health.response[0].fairCount }},{{ health.response[0].badCount }},{{ health.response[0].noHealthCount }},{{ health.measuredBy }},{{ layer.category }},{{ layer.healthScore }},{{ layer.totalCount }},{{ layer.goodCount }},{{ layer.fairCount }},{{ layer.badCount }},{{ layer.noHealthCount }},{{ layer.totalPercentage }},{{ layer.goodPercentage }},{{ layer.fairPercentage }},{{ layer.badPercentage }},{{ layer.noHealthPercentage }}
+{%- endfor %}
+{%- else %}
+{%-     if filetype_loop == 1 %}
+# DNAC Network Health
+| Latest Health Score | Timestamp | Total Count | Good Count | Fair Count | Bad Count | No Health Count | Measured By | Network Layer Category | Layer Health Score | Layer Total Count | Layer Good Count | Layer Fair Count | Layer Bad Count | Layer No Health Count | Layer Total Good Percentage | Layer Good Perecentage | Layer Fair Percentatge | Layer Bad Percentage | Layer No Health Percentage |
+| ------------------- | --------- | ----------- | ---------- | ---------- | --------- | --------------- | ----------- | ---------------------- | ------------------ | ----------------- | ---------------- | ---------------- | --------------- | --------------------- | --------------------------- | ---------------------- | ---------------------- | -------------------- | -------------------------- |
+{%- for layer in health.healthDistirubution %}
+| {{ health.response[0].healthScore }} | {{ health.response[0].time }} | {{ health.response[0].totalCount }} | {{ health.response[0].goodCount }} | {{ health.response[0].fairCount }} | {{ health.response[0].badCount }} | {{ health.response[0].noHealthCount }} | {{ health.measuredBy }} | {{ layer.category }} | {{ layer.healthScore }} | {{ layer.totalCount }} | {{ layer.goodCount }} | {{ layer.fairCount }} | {{ layer.badCount }} | {{ layer.noHealthCount }} | {{ layer.totalPercentage }} | {{ layer.goodPercentage }} | {{ layer.fairPercentage }} | {{ layer.badPercentage }} | {{ layer.noHealthPercentage }} |
+{%- endfor %}
+{%-     else %}
+{%-         if filetype_loop == 2 %}
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/colreorder/1.5.4/js/dataTables.colReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/keytable/2.6.4/js/dataTables.keyTable.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.9/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.6.4/css/keyTable.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+</head>
+<body>
+<h1>DNAC Network Health</h1>
+<table id ="health">
+  <thead>
+    <tr>
+      <th>Latest Health Score</th>
+      <th>Timestamp</th>
+      <th>Total Count</th>
+      <th>Good Count</th>
+      <th>Fair Count</th>
+      <th>Bad Count</th>
+      <th>No Health Count</th>
+      <th>Measured By</th>
+      <th>Network Layer Category</th>
+      <th>Layer Health Score</th>
+      <th>Layer Total Count</th>
+      <th>Layer Good Count</th>
+      <th>Layer Fair Count</th>
+      <th>Layer Bad Count</th>
+      <th>Layer No Health Count</th>
+      <th>Layer Total Good Percentage</th>
+      <th>Layer Good Perecentage</th>
+      <th>Layer Fair Percentatge</th>
+      <th>Layer Bad Percentage</th>
+      <th>Layer No Health Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+{%- for layer in health.healthDistirubution %}
+<tr>
+    <td>{{ health.response[0].healthScore }}</td>
+    <td>{{ health.response[0].time }}</td>
+    <td>{{ health.response[0].totalCount }}</td>
+    <td>{{ health.response[0].goodCount }}</td>
+    <td>{{ health.response[0].fairCount }}</td>
+    <td>{{ health.response[0].badCount }}</td>
+    <td>{{ health.response[0].noHealthCount }}</td>
+    <td>{{ health.measuredBy }}</td>
+    <td>{{ layer.category }}</td>
+    <td>{{ layer.healthScore }}</td>
+    <td>{{ layer.totalCount }}</td>
+    <td>{{ layer.goodCount }}</td>
+    <td>{{ layer.fairCount }}</td>
+    <td>{{ layer.badCount }}</td>
+    <td>{{ layer.noHealthCount }}</td>
+    <td>{{ layer.totalPercentage }}</td>
+    <td>{{ layer.goodPercentage }}</td>
+    <td>{{ layer.fairPercentage }}</td>
+    <td>{{ layer.badPercentage }}</td>
+    <td>{{ layer.noHealthPercentage }}</td>
+  </tr>
+{%- endfor %}
+  </tbody>
+</table>
+<script type = "text/javascript">
+  $(document).ready(function(){
+    $('#health thead tr')
+    .clone(true)
+    .addClass('filters')
+    .appendTo('#health thead');
+
+    var table = $('#health').DataTable({
+        keys: true,
+        dom: 'Bfrtip',
+        lengthMenu: [
+            [ 10, 25, 50, -1 ],
+            [ '10 rows', '25 rows', '50 rows', 'Show all' ]
+        ],
+        buttons: [
+        'pageLength','colvis','copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        colReorder: true,
+        select: true,            
+        orderCellsTop: true,
+        fixedHeader: true,
+        initComplete: function () {
+        var api = this.api();
+
+        // For each column
+        api
+            .columns()
+            .eq(0)
+            .each(function (colIdx) {
+                // Set the header cell to contain the input element
+                var cell = $('.filters th').eq(
+                    $(api.column(colIdx).header()).index()
+                );
+                var title = $(cell).text();
+                $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+                // On every keypress in this input
+                $(
+                    'input',
+                    $('.filters th').eq($(api.column(colIdx).header()).index())
+                )
+                    .off('keyup change')
+                    .on('keyup change', function (e) {
+                        e.stopPropagation();
+
+                        // Get the search value
+                        $(this).attr('title', $(this).val());
+                        var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                        var cursorPosition = this.selectionStart;
+                        // Search the column for that value
+                        api
+                            .column(colIdx)
+                            .search(
+                                this.value != ''
+                                    ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                    : '',
+                                this.value != '',
+                                this.value == ''
+                            )
+                            .draw();
+
+                        $(this)
+                            .focus()[0]
+                            .setSelectionRange(cursorPosition, cursorPosition);
+                    });
+            });
+    },
+});
+});        
+</script>
+</body></html>
+{%-         else %}
+# Latest Health Score: {{ health.response[0].healthScore }}
+## Timestamp: {{ health.response[0].time }}
+## Counts
+### Total: {{ health.response[0].totalCount }}
+### Good: {{ health.response[0].goodCount }}
+### Fair: {{ health.response[0].fairCount }}
+### Bad: {{ health.response[0].badCount }}
+### No Health: {{ health.response[0].noHealthCount }}
+## Measured By: {{ health.measuredBy }}
+## Network Layers 
+{%- for layer in health.healthDistirubution %}
+### {{ layer.category }}
+#### Health Score: {{ layer.healthScore }}
+##### Counts
+###### Total: {{ layer.totalCount }}
+###### Good: {{ layer.goodCount }}
+###### Fair: {{ layer.fairCount }}
+###### Bad: {{ layer.badCount }}
+###### No Health: {{ layer.noHealthCount }}
+##### Percentages
+###### Total: {{ layer.totalPercentage }}
+###### Good: {{ layer.goodPercentage }}
+###### Fair: {{ layer.fairPercentage }}
+###### Bad: {{ layer.badPercentage }}
+###### No Health: {{ layer.noHealthPercentage }}
+{%- endfor %}
+{%-         endif %}
+{%-     endif %}
+{%- endif %}
