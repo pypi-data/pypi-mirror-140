@@ -1,0 +1,7 @@
+protobuf>=3.19.4
+
+[:platform_system == "Darwin"]
+pcapy-ng-macos>=1.0.4
+
+[:platform_system == "Windows"]
+pcapy-ng-win-amd64>=1.0.4

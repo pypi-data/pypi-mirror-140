@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/zwiftpktmon/__init__.py
+src/zwiftpktmon/async_monitor.py
+src/zwiftpktmon/events.py
+src/zwiftpktmon/zwift_messages_pb2.py
+src/zwiftpktmon.egg-info/PKG-INFO
+src/zwiftpktmon.egg-info/SOURCES.txt
+src/zwiftpktmon.egg-info/dependency_links.txt
+src/zwiftpktmon.egg-info/requires.txt
+src/zwiftpktmon.egg-info/top_level.txt
