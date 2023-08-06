@@ -1,0 +1,10 @@
+numpy
+tqdm
+appdirs
+torch>=1
+pySmartDL
+torchtext>=0.6
+tables
+Pillow>=6
+torchvision
+h5py
