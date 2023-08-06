@@ -1,0 +1,8 @@
+setup.py
+cxdepy/__init__.py
+cxdepy/demo1.py
+cxdepy/demo2.py
+cxdepy.egg-info/PKG-INFO
+cxdepy.egg-info/SOURCES.txt
+cxdepy.egg-info/dependency_links.txt
+cxdepy.egg-info/top_level.txt
