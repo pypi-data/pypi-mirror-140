@@ -1,0 +1,10 @@
+merge_koskidata2primusdata/__init__.py,sha256=q6-QSEz1vEyUJCL35QOHhxYOqCfUafpIHoJnXeEDweo,172
+merge_koskidata2primusdata/__main__.py,sha256=rBZE0brp15WdRfX4iNfgqLB-YdGmv1z9PmuMzFvViiU,88
+merge_koskidata2primusdata/add_column.py,sha256=ew8SOLVtRN6_e67BYxPz9U0zQ90oXz4uwdkudPXavq0,4221
+merge_koskidata2primusdata/merge_student_years.py,sha256=ySqQ0Sd6Be3wHtCr6JXrmvXISvhVUgxGC6JG1QVGkIU,4820
+merge_koskidata2primusdata-0.11.0.dist-info/LICENSE,sha256=va7uzkBxuvq1TlSHpdrjOEqKO8RAciSGbcR9Z55LoyU,35132
+merge_koskidata2primusdata-0.11.0.dist-info/METADATA,sha256=9Y0u-W1yfAf6DL0PmEW-tvTC99YLvTuwMIwm4oplsys,2264
+merge_koskidata2primusdata-0.11.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+merge_koskidata2primusdata-0.11.0.dist-info/entry_points.txt,sha256=k5nGsC_whMJcYM3iIc7dljkdy38-C93B2w-m4CtnjBU,148
+merge_koskidata2primusdata-0.11.0.dist-info/top_level.txt,sha256=brF_tSAIvU3vDQK8asdyQNfNRisAGYV7zdV6Razxh90,27
+merge_koskidata2primusdata-0.11.0.dist-info/RECORD,,
