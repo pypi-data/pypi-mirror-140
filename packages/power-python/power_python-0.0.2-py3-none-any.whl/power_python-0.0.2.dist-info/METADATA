@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: power-python
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/MimApps/PPython/
+Author: Mark Obozov
+Author-email: krammnic@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1>PPython</h1>
+
+<h3>PPython is a package with many upgrades for python and examples of design patterns.<h3>
+
+
+
