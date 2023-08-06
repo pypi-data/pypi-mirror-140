@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+django_telegram_logging/__init__.py
+django_telegram_logging/apps.py
+django_telegram_logging/handler.py
+django_telegram_logging.egg-info/PKG-INFO
+django_telegram_logging.egg-info/SOURCES.txt
+django_telegram_logging.egg-info/dependency_links.txt
+django_telegram_logging.egg-info/not-zip-safe
+django_telegram_logging.egg-info/requires.txt
+django_telegram_logging.egg-info/top_level.txt
