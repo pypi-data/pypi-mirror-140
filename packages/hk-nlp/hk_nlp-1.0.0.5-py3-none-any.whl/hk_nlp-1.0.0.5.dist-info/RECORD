@@ -1,0 +1,9 @@
+hknlp/__init__.py,sha256=s31Np-KbwV9Fgg8AyazHebuVWame6KNV0n-Rs_IRQes,27
+hknlp/crawler.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hknlp/text.py,sha256=dfsxxwepT90VlmSe8v-aT7ejx9WAE-VW-WIuy0Uf6QI,40
+hknlp/utils.py,sha256=OPGzLEScbYoXR6Ax61VBm7F6ovvltFbQpDfjMbBYpc4,1205
+hknlp/wiki.py,sha256=0I5t5_sHSLgL31tIiplzlb7XFCiXwqR7n_To41ycyQ0,3604
+hk_nlp-1.0.0.5.dist-info/METADATA,sha256=_w3Xb-JgtTWdtxmYnZxXLus2-hXHPpBPVbD9ig3jTgw,229
+hk_nlp-1.0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hk_nlp-1.0.0.5.dist-info/top_level.txt,sha256=zqpzhvDvB911IOtHUEnvEGSHyQjHLy3RJGkaPpGqQt8,17
+hk_nlp-1.0.0.5.dist-info/RECORD,,
