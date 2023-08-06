@@ -1,0 +1,1 @@
+django_auto_static_libs

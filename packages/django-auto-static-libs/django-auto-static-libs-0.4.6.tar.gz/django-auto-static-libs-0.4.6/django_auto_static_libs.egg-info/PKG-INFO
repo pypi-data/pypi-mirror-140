@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django-auto-static-libs
+Version: 0.4.6
+Summary: jQuery and other librarys ready to download self hosted and embed into templates
+Home-page: https://github.com/rokdd/django-auto-static-libs
+Author: rokdd
+Author-email: r0kdd@yahoo.com
+License: BSD
+Download-URL: https://github.com/rokdd/django-auto-static-libs/archive/refs/tags/v0.4.6.tar.gz
+Description: Provide basic libraries and resources like jQuery or semantic-ui in django applications. Make it easier for keeping them updated and self-hosted. 
+Keywords: django,jquery,fontawesome,pygal,javascript,static
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
