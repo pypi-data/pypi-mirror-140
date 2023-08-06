@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Shelegia_Motta_2021/IModel.py
+Shelegia_Motta_2021/Models.py
+Shelegia_Motta_2021/__init__.py
+Shelegia_Motta_2021.egg-info/PKG-INFO
+Shelegia_Motta_2021.egg-info/SOURCES.txt
+Shelegia_Motta_2021.egg-info/dependency_links.txt
+Shelegia_Motta_2021.egg-info/requires.txt
+Shelegia_Motta_2021.egg-info/top_level.txt
