@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hamsterkmn/hamkom.egg-info/PKG-INFO
+hamsterkmn/hamkom.egg-info/SOURCES.txt
+hamsterkmn/hamkom.egg-info/dependency_links.txt
+hamsterkmn/hamkom.egg-info/requires.txt
+hamsterkmn/hamkom.egg-info/top_level.txt
+hamsterkmn/src/__init__.py
+hamsterkmn/src/hamsterkmn.py
