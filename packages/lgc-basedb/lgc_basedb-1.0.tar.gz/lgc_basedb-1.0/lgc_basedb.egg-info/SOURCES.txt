@@ -1,0 +1,8 @@
+setup.py
+lgc_basedb/__init__.py
+lgc_basedb/models.py
+lgc_basedb.egg-info/PKG-INFO
+lgc_basedb.egg-info/SOURCES.txt
+lgc_basedb.egg-info/dependency_links.txt
+lgc_basedb.egg-info/requires.txt
+lgc_basedb.egg-info/top_level.txt
