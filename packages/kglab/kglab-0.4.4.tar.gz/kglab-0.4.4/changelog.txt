@@ -1,0 +1,196 @@
+# `kglab` changelog
+
+## 0.4.4
+
+2022-02-27
+
+  * integration of `morph-kgc`; kudos @Mec-iS and @ArenasGuerreroJulian
+
+
+## 0.4.3
+
+2022-02-10
+
+  * improved GPU detection when RAPIDS is not installed
+
+
+## 0.4.2
+
+2021-12-13
+
+  * update `pySHACL` and `OWL-RL` to track updates in `RDFlib`
+  * fixed `abort_on_error` flag for `pySHACL` integration; kudos @fils
+
+
+## 0.4.1
+
+2021-11-26
+
+  * further testing/config for NVIDIA GPUs
+  * fixes for Snyk security advisories
+  * update to `RDFlib` 6.x, removing use of `json-ld` plugin
+  * use `nbmake` to add test coverage of example notebooks into the CI pipeline; kudos @Mec-iS
+
+
+## 0.4.0
+
+2021-05-10
+
+  * add multifile support for `load_jsonld()`; kudos @Ankush-Chander
+  * warning about NumPy/TensorFlow version conflicts; kudos @CatChenal
+  * roll back NumPy requirement to >= 1.19.2
+  * documenting notes about how to handle "PEP 517" errors
+  * add multifile support for `load_parquet()`; kudos @Ankush-Chander
+  * import JSON from Roam Research export
+  * add docker-compose support for tutorial; kudos @louisguitton
+  * note the PSL dependency on Java JDK
+  * Visualize a SPARQL query using PyVis; kudos @pebbie
+  * CI based on GitHub Actions; kudos @louisguitton
+
+
+## 0.3.0
+
+2021-04-23
+
+  * add conda `environment.yml` plus instructions
+  * use `bandit` to check for security issues
+  * add `pre-commit` hooks
+  * add `lgtm` code reviews (slow, not integrating into GitHub PRs directly)
+  * add use of `pipdeptree` to analyze dependencies
+  * refactor docs to use Divio design patterns; kudos @louisguitton
+  * created `SECURITY.md` security policy
+  * using Snyk for security audits of dependencies (it has some troubles)
+  * testing/correcting the PSL examples; kudos @louisguitton
+  * include first user quote; kudos @kaaloo !!
+  * multifile decorator (supports globs) for `load_rdf()`; kudos @Ankush-Chander
+  * fixed bug in SubgraphTensor null check; kudos @dvsrepo
+  * prep for pytorch_geometric integration; kudos @dvsrepo
+  * add `as_tensor()` support for PyTorch
+
+
+## 0.2.1
+
+2021-03-12
+
+  * tutorial proofreading and corrections; kudos @louisguitton
+  * better exception handling for RDF construction, parsing, serialization
+  * `build_nx_graph()` now requires a `networkx.DiGraph` directed graph as an argument
+  * add DOI to README, CITATION, and docs
+  * add contributor instructions
+  * neo4j integration via `neosemantics`; kudos @gauravjaglan
+  * replace `GPUtil` with `pynvml` as recommended by NVidia; kudos @kingmesal
+  * option to enable NVidia GPU use, if devices are available and libraries are installed
+  * using `cuDF`/`cuGraph` in lieu of `pandas`/`networkx` where possible; kudos @BradReesWork
+
+
+## 0.2.0
+
+2021-02-07
+
+  * project milestone release
+  * begin integration of `csvwlib`
+
+
+## 0.1.8
+
+2021-01-31
+
+  * hotfix: backing out the `igraph` dependency; too many installation issues with it
+  * factory pattern to build an `igraph` object allows caller to create and pass in, instead
+
+
+## 0.1.7
+
+2021-01-30
+
+  * fix for `save_parquet()` since `storage_options` won't be used by `pandas` before 1.2.0
+  * introduced `SubgraphMatrix` and `SubgraphTensor` as subclasses for the base vectorization
+  * introduced `PSLModel` class for building *probabilistic soft logic* models
+  * using `icecream` in methods that require verbose traces
+
+
+## 0.1.6
+
+2021-01-19
+
+  * rollback `pandas` to 1.1.5 which is the latest stable on Ubuntu; see #94
+  * revise `pyvis` use as a factory pattern
+  * extend RDFlib serialization with `urlpath` support
+  * extend all serialization to support file-like objects
+  * including `gcsfs` and `fsspec` to leverage cloud bucket access in `pandas`
+  * added `code_of_conduct.md`
+  * code checking based on `pylint`
+  * added accessor methods, e.g., `KnowledgeGraph.rdf_graph()`
+  * updated `pandas` usage for direct Parquet/Arrow calls, e.g., `read_parquet()` and `to_parquet()`
+  * updated `pyshacl` usage to >= 0.14.1 to support `inplace` graph manipulation (inference)
+
+
+## 0.1.5
+
+2021-01-04
+
+  * renamed serialization methods, e.g., `save_ttl()` -- **WILL BREAK THINGS**
+  * impl `load_rdf_text()` and `save_rdf_text()` to deserialize/serialize as text
+  * type checking based on `typing` and `mypy`
+  * corrected the `networkx` examples to use `DiGraph` for directed graphs
+  * generated `meta.yml` for conda support
+  * use `mkdocs` to generate documentation
+  * add method to return SPARQL query result set as a `pandas` DataFrame
+  * integrate with `python-igraph`, `leidenalg`, `cairocffi` to support iGraph
+  * provide simple `OWL-RL` inference with `infer_rdfs_closure()` and `infer_owlrl_closure()`
+  * add `Subgraph` class for projecting onto `networkx`
+  * add `Measure` class for measuring graphs and creating simplex generators
+  * use `coverage` for unit test coverage
+  * use `chocolate` for enhanced kwargs
+  * make `KnowledgeGraph` class GPU-aware
+  * add `ShapeFactory` and related classes for evolving shape prediction
+
+
+## 0.1.4
+
+2020-12-06
+
+  * added `pySHACL` examples
+  * resolved Google Colab errors registering the `rdflib-jsonld` plugin
+  * comparing timing info across serialization methods
+  * simplified the example notebook naming convention
+
+
+## 0.1.3
+
+2020-12-04
+
+  * resolved removal of `grave` dependencies
+  * added arrows to `pyvis` example by making it a directed graph
+  * kudos @dmoore247
+
+
+## 0.1.2
+
+2020-11-30
+
+  * support for dependabot
+  * added a logo
+  * interactive visualizations in `pyvis` and `grave`
+  * SPARQL query examples
+  * running graph algorithms in `networkx`
+  * Parquet files using `pyarrow`
+  * examples of annotation that combine use of SPARQL, SKOS, etc.
+  * added instructions for installing/running JupyterLab
+  * examples of SRL inference using `pslpython`
+  * demo use of vector embedding with `gensim`
+  * examples of string similarity with `pylev`
+
+
+## 0.1.1
+
+2020-11-09
+
+  * first distribution on PyPi
+
+
+## 0.1.0
+
+2020-10-25
+
+  * initial check-in
