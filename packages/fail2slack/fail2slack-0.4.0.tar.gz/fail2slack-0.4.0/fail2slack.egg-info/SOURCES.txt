@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+fail2slack/__init__.py
+fail2slack/__main__.py
+fail2slack/delivery.py
+fail2slack/jails.py
+fail2slack/settings.py
+fail2slack.egg-info/PKG-INFO
+fail2slack.egg-info/SOURCES.txt
+fail2slack.egg-info/dependency_links.txt
+fail2slack.egg-info/requires.txt
+fail2slack.egg-info/top_level.txt
+test/__init__.py
+test/test_fail2slack.py
