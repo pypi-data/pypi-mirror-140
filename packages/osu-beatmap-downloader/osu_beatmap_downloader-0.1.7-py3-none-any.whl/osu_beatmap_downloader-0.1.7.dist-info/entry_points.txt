@@ -1,0 +1,3 @@
+[console_scripts]
+osu-beatmap-downloader=osu_beatmap_downloader:main
+
