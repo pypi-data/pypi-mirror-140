@@ -1,0 +1,4 @@
+[console_scripts]
+pydeepspeech = pydeepspeech.run:main
+pydeepspeech_installmodels = pydeepspeech.interactive_install_modules:main
+
