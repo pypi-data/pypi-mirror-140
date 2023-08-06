@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyDABAX
+Version: 0.1.2
+Summary: Add a short description here!
+Home-page: https://github.com/pyscaffold/pyscaffold/
+Author: Julian Mars
+Author-email: jmars@mailbox.org
+License: mit
+Project-URL: Documentation, https://pyscaffold.org/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+
+UNKNOWN
+
