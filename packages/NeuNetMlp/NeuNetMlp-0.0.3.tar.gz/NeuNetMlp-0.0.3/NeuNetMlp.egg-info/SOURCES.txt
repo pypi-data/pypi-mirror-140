@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+NeuNetMlp/__init__.py
+NeuNetMlp.egg-info/PKG-INFO
+NeuNetMlp.egg-info/SOURCES.txt
+NeuNetMlp.egg-info/dependency_links.txt
+NeuNetMlp.egg-info/requires.txt
+NeuNetMlp.egg-info/top_level.txt
