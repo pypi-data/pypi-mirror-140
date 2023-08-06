@@ -1,0 +1,9 @@
+concrete_toto-0.0.11-py3.9-nspkg.pth,sha256=49aY5UL-7inz-l1YHHT6jvcH4VoQTR2abblwztFBvQI,549
+concrete/toto/__init__.py,sha256=6XF8C9_9mfdATXc0dj_COAE_TVqxLYQMYaAzNhuDYKw,33
+concrete/toto/file.py,sha256=rUhsBDD8fq_NfXPyLfPBEh6lc8vC1kii7HQqBiLcG4Q,139
+concrete_toto-0.0.11.dist-info/LICENSE,sha256=eXiWHp2qyZ9Tx5PiKmVshKzyBvDdsMFo-w10EknTVVU,2666
+concrete_toto-0.0.11.dist-info/METADATA,sha256=5d5aTtfT6jdqlI3FTMj9A8USElnfukKKGKwbL4VTbgc,1166
+concrete_toto-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+concrete_toto-0.0.11.dist-info/namespace_packages.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_toto-0.0.11.dist-info/top_level.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_toto-0.0.11.dist-info/RECORD,,
