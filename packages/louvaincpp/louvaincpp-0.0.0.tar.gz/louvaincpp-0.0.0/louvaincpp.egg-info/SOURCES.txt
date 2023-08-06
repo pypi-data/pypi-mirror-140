@@ -1,0 +1,10 @@
+setup.py
+louvaincpp/__init__.py
+louvaincpp/algorithm.py
+louvaincpp.egg-info/PKG-INFO
+louvaincpp.egg-info/SOURCES.txt
+louvaincpp.egg-info/dependency_links.txt
+louvaincpp.egg-info/requires.txt
+louvaincpp.egg-info/top_level.txt
+src/algorithm.cpp
+src/bindings.cpp
