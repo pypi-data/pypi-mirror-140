@@ -1,0 +1,7 @@
+boolean.py
+gym
+matplotlib
+networkx
+numpy
+tensorflow
+keras

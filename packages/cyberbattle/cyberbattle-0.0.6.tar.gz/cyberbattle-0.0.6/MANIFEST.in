@@ -1,0 +1,7 @@
+include MANIFEST.in
+include cyberbattle/agents/*.py
+include cyberbattle/agents/utils/*.py
+include cyberbattle/env/env_generation/*py
+include cyberbattle/env/samples/*py
+include cyberbattle/utils/*py
+include cyberbattle/*py
