@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+swatpy/FileEdit.py
+swatpy/ReadOut.py
+swatpy/SimManage.py
+swatpy/__init__.py
+swatpy.egg-info/PKG-INFO
+swatpy.egg-info/SOURCES.txt
+swatpy.egg-info/dependency_links.txt
+swatpy.egg-info/requires.txt
+swatpy.egg-info/top_level.txt
