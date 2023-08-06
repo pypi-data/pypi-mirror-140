@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        dsv=docker_sign_verify.scripts.dsv:cli
+    
