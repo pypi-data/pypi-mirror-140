@@ -1,0 +1,9 @@
+LICENSE.txt
+README.txt
+setup.py
+pywhatsbomb/__init__.py
+pywhatsbomb.egg-info/PKG-INFO
+pywhatsbomb.egg-info/SOURCES.txt
+pywhatsbomb.egg-info/dependency_links.txt
+pywhatsbomb.egg-info/requires.txt
+pywhatsbomb.egg-info/top_level.txt
