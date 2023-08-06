@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: django-atomics
+Version: 0.0.2
+Summary: Django atomic ui components.
+Home-page: https://github.com/realnoobs/django_atomics
+Author: Rizki Sasri Dwitama
+Author-email: sasri.project@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/realnoobs/django_atomics
+Project-URL: Source, https://github.com/realnoobs/django_atomics
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: Django (>=3.2.7)
+
+# Django Atomics
+
+Django atomics ui components.
+
+Install:
+
+```shell
+pip install django_atomics
+```
+
+
