@@ -1,0 +1,11 @@
+syntok/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syntok/_segmentation_states.py,sha256=b7wIRSYx6VYhgbLrFQyhZ0CGDF2l03pgDfFdAJ9fLTU,18657
+syntok/segmenter.py,sha256=ycYxl9UEn9VtjYTQY5fruC-yHSftpdkSRo4wAlMthuw,4160
+syntok/segmenter_test.py,sha256=GPPcuLu6O0XIr5enP7ABZ3aSMxkvquVmuEIHSq28QRs,24002
+syntok/tokenizer.py,sha256=L4UmSVYvbK1i68mvgRdQZlTlUxUY9A1Ww1X_a4L_G20,9188
+syntok/tokenizer_test.py,sha256=bal_8rA8hBovRWgTslFOZsHTuhcliF5kMWWWx3yx8w0,5421
+syntok/tokenizer_test.txt,sha256=T1qvtmKRsHlwqFJtlFUtLwc9RzmVOdqTiQ-u-3PjSsA,2135
+syntok-1.4.3.dist-info/LICENSE,sha256=hfv1FpQyDJlFFuYwokSpYJMwPb__maw8axNWFlj9ZLg,1077
+syntok-1.4.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+syntok-1.4.3.dist-info/METADATA,sha256=EpChn7xQ8ZEfe5AMiBltQj-mSDbQsitz9xEa7YWl4EI,10730
+syntok-1.4.3.dist-info/RECORD,,
