@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: py4uview
+Version: 0.0.2
+Summary: Data analysis package for MAXPEEM
+Home-page: https://gitlab.maxiv.lu.se/zhulin/py4uview
+Author: Lin Zhu
+Author-email: lin.zhu@maxiv.lu.se
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.maxiv.lu.se/zhulin/py4uview/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Py4Uview: Tools for Uview images 
+
+## Introduction
+__Py4Uview__ provides a set of tools for images saved by Uivew, which is used by SPEELEEM in MAXPEEM to save the user's data in format of .dat file. Py4Uview can read the image and metadata from the file saved by Uview software.
+
