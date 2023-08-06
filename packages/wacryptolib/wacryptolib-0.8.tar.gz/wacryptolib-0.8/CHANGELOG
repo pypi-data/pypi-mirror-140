@@ -1,0 +1,120 @@
+
+Development
+=============
+
+
+Version 0.8
+==================
+
+* Change the filename and fields of keystore metadata
+* Add methods to import/export data in keystores and keystore-pools
+* Gather small functions in utilities.py
+* Add schema validators for internal use
+* Rename "verify" argument of decryptors to "verify_integrity_tags"
+* Change cryptainer algorithm to always store cryptainer_metadata along the encrypted symkey, and access them in Trustee API
+* Rename DummyKeystore to InMemoryKeystore
+
+
+Version 0.7
+==================
+
+* Prefix WIP containers with ~ so that they don't show up in management interfaces
+* Make BIG REFACTORING (incompatible) of the codebase, with new naming of concepts and new container structure
+* Add docs/concepts.rst to describe new concepts of the lib
+* Change layout of user-profile directories
+* Make "payload_digest" and "payload_signature_struct" optional in data schema
+* Change exceptions hierarchy
+* Implement "--cryptoconf" argument for CLI
+* Add ReadonlyCryptainerStorage and ReadonlyFilesystemKeystore
+* Replace len(cryptainer_storage) by cryptainer_storage.get_cryptainer_count()
+* Replace len() of data aggregator and tarfile aggregator by custom methods
+
+
+Version 0.6
+==================
+
+* Allow shamir shared secrets where threshold==shares_count
+* Allow open file handles in enqueue_file_for_encryption()
+* Rename message "prehash" as "digest"
+* Rename max_containers_count as max_container_count
+* Implement container purges based on total disk quota and container ages
+* Make containers a recursive structure of "shamir" and "normal" strata
+* Add support for Python 3.9 and 3.10
+* Add authenticator submodule
+* Add StreamManager and ContainerEncryptionStream API
+* Make symmetric keys be dicts instead of bytes
+* Add integrity tags (Poly1305, EAX...) to containers
+* Add fields "message_digest" and "container_state" to container
+* Add verify=True/False parameter to decryption API
+* Add wacryptolib_installer.py
+* Add check_container_sanity() and check_conf_sanity() API
+* Optimize test runs via asymmetric key caching
+
+
+Version 0.5.2
+==================
+
+* Repair linux version of USB authentication device listing
+
+
+Version 0.5.1
+==================
+
+* Fix declaration of platform-specific dependencies
+
+
+Version 0.5
+==================
+
+* Add API to list and initialize USB "authentication devices"
+* Introduce KeyStorage pool, containing local and imported key storages
+* Allow importing keypairs from authentication devices
+* Add support for Shamir Shared Secrets in container encryption/decryption toolchain
+* Allow listing of keypairs in FilesystemKeyStorage
+* Support offloading of ciphertext in separate file nearby the json container
+* Accept and normalize unicode passphrases as NFKC/UTF8 bytesstrings
+* Begin using custom functional exceptions in APIs
+* Extend ContainerStorage API to load containers or override encryption parameters per-file
+* Allow overriding keychain_uid at different levels of encryption configuration
+
+
+Version 0.4
+==================
+
+* Improve Key storage API to separate private and public keys
+* Add FilesystemKeyStorage implementation
+* Add APIs and workers for pregeneration of free keypairs
+* Add Base classes for poll/push sensors
+* Add some logging in encryption toolchain
+* Add metadata to storage containers, and get_encryption_configuration_summary() utility
+* Make UUIDs include a timestamp
+* Add request_decryption_authorization() to Escrow API
+* Complete error conversion utilities (using StatusSlugs for webservices)
+* Add hashing utilities
+* Ensure escrows only sign hashes, never real data
+* Refactor key types to separate encryption and signature keys.
+* Perform container encryption in a separate threads pool
+
+
+Version 0.3
+==================
+
+* Rename key length arguments to distinguish bytes and bits
+* Add thread-safe data aggregation classes ContainerStorage, TarfileAggregator and JsonAggregator
+* Add JsonRpcProxy class
+* Add url-based escrow type
+* Add drafts of private error handling utilities
+
+
+Version 0.2
+==================
+
+* Add Extended Json utilities to deal with both str and bytes
+* Make most arguments of public functions keyword-only
+* Forbid too small key lengths
+
+
+Version 0.1
+==================
+
+* Draft of wacryptolib API

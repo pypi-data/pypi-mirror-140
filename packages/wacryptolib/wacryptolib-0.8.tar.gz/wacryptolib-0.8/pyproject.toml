@@ -1,0 +1,85 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "wacryptolib"
+description = "Witness Angel Cryptolib"
+version = "0.8"
+license = "MIT"
+readme = "Readme.rst"
+authors = ["Pascal Chambon", "Manon Michelet", "Akram Bourichi", "Francinette Atchade"]
+homepage = "https://witnessangel.com/"
+repository = "https://github.com/WitnessAngel/witness-angel-cryptolib"
+documentation = "https://witness-angel-cryptolib.readthedocs.io/"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Operating System :: MacOS :: MacOS X",
+]
+include = ["CHANGELOG", "tox.ini", "docs/*", "docs/api/*", "tests/*.py"]
+exclude = ["_build"]
+
+[tool.poetry.dependencies]
+python = ">=3.7, <=3.10"
+
+# Cryptography & transports
+pycryptodome = "^3.9.9"
+schema = "^0.7.2"
+jsonschema = "^4.1.2"
+click = "^8.0"
+pymongo = "^4.0"
+jsonrpc-requests = "^0.4.0"
+decorator = "^5.1"
+multitimer = "^0.3"
+uuid0 = "^0.2.7"
+pytz = ">=2021.3"
+psutil = { version = "^5.8.0" }  # Use on Win32 too for get_memory_rss_bytes()()
+wmi = { version = "^1.5.1 ", platform = 'win32' }
+pywin32 = { version = ">=300", platform = 'win32' }
+pyudev = { version = "^0.22.0 ", platform = 'linux' }
+
+[tool.poetry.dev-dependencies]
+
+# Test runners and plugins
+pytest = "^7.0.1"
+pytest-cov = "^3.0"
+pytest_mock = "^3.7.0"
+pytest-randomly = "^3.11"
+pytest-deadfixtures = "^2.2.1"
+pytest-testmon = "^1.0.3"
+pytest-timeout = "^2.1.0"
+pytest-xdist = "^2.5.0"
+responses = "^0.18.0"
+freezegun = "^1.1.0"
+typeguard = "^2.13.0"
+
+# Linters and formatters
+black = {version = "^22.1.0"}
+darglint = "^1.8.1"
+pylint = "^2.6"
+mypy = "^0.931"
+xenon = "^0.9.0"
+safety = "^1.10"
+doc8 = "^0.10.1"
+
+# Documentation
+sphinx = "^4.4.0"
+sphinx-autodoc-typehints = "^1.17.0"
+sphinx_rtd_theme = "^1.0.0"
+toml = "^0.10.2"
+
+# Install these with pip for manual benchmarks
+#memory-profiler = "^0.58.0"
+#matplotlib = "^3.4.3"
+#pytest-profiling = "^1.7.0"
