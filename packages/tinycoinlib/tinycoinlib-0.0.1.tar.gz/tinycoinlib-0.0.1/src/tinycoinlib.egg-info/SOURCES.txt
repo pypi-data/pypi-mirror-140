@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tinycoinlib/__init__.py
+src/tinycoinlib/receive.py
+src/tinycoinlib/send.py
+src/tinycoinlib/talk.py
+src/tinycoinlib/version.py
+src/tinycoinlib.egg-info/PKG-INFO
+src/tinycoinlib.egg-info/SOURCES.txt
+src/tinycoinlib.egg-info/dependency_links.txt
+src/tinycoinlib.egg-info/top_level.txt
