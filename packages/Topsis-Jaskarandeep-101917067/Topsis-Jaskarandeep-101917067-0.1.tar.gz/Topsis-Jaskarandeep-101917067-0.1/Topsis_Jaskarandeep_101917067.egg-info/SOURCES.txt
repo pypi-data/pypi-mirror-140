@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+Topsis-Jaskarandeep-101917067/__init__.py
+Topsis_Jaskarandeep_101917067.egg-info/PKG-INFO
+Topsis_Jaskarandeep_101917067.egg-info/SOURCES.txt
+Topsis_Jaskarandeep_101917067.egg-info/dependency_links.txt
+Topsis_Jaskarandeep_101917067.egg-info/requires.txt
+Topsis_Jaskarandeep_101917067.egg-info/top_level.txt
