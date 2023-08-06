@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: alei-utils
+Version: 0.1.3
+Summary: Alei utils
+Home-page: https://gitlab.com/gpam/alei/service/alei-utils
+Author: GPAM
+Author-email: gpam@gmail.com
+License: Apache-2.0
+Project-URL: Documentation, https://gitlab.com/gpam/alei/service/alei-utils
+Project-URL: Code, https://gitlab.com/gpam/alei/service/alei-utils
+Project-URL: Issue tracker, https://gitlab.com/gpam/alei/service/alei-utils/-/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# alei-utils
+
+
+
