@@ -1,0 +1,2 @@
+[console_scripts]
+create-clinical-db = mcl.sickbay.db:main
