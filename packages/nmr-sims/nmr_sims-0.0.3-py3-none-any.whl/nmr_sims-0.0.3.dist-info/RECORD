@@ -1,0 +1,16 @@
+nmr_sims/__init__.py,sha256=UyoSz4E2bo71qMfIvlLnVAYTw407qbWwyTdCKeobKsI,212
+nmr_sims/__main__.py,sha256=ZhSrFU3WWD6oMBHLJHZs5kD0KSVBcPV73FxHDCezL1s,766
+nmr_sims/_operators.py,sha256=INGhhLhVS4tDnMjx2RjXsZHcRqVyWC81J4HVU8tMqoA,9984
+nmr_sims/_sanity.py,sha256=l5ps4Qk_q3RgEaYZcq-NDckNWWKGjerrpgI8IokpVgU,7019
+nmr_sims/_version.py,sha256=mjre1KnG1TZdfNGF0gaJJCqwemqVw1TUb29ZJTUGU3s,123
+nmr_sims/nuclei.py,sha256=ITd7Y_CyVdoCAlvGTNSaR3snpUOKMGzK9XbuUrmoTbg,2370
+nmr_sims/spin_system.py,sha256=Hw81PpNzfCbPs3OsQLui7FWXTJxeF_b40HfV2wjJgek,13502
+nmr_sims/experiments/__init__.py,sha256=mOw2opkrrqy39YDU9EOGSJ7ln8j5txLcurq-koumPfw,8209
+nmr_sims/experiments/hsqc.py,sha256=OR_ifHaJGmog2ha5zo2bRQhq-JkFvgdIHs9gRdZ8-kA,6997
+nmr_sims/experiments/jres.py,sha256=rKjE2O1rI9iKR4yiAL4nkmpGQr8-Gj3baWtYsia58Iw,5198
+nmr_sims/experiments/pa.py,sha256=hIr5okQJnKf3z8dD1etFv50Cuv9HgED_RowiAdGgpiM,4510
+nmr_sims-0.0.3.dist-info/LICENSE,sha256=XpPWU5fxod9CRUS1f-zOi2hluk5Y8iZfra05Sod_icc,1051
+nmr_sims-0.0.3.dist-info/METADATA,sha256=7d7QL_cy5gW5yOWMd4cGoxY5oyiM4b0R-8OEvTaHhcc,907
+nmr_sims-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nmr_sims-0.0.3.dist-info/top_level.txt,sha256=sFfn1WFjcZVbeyuFpu8Ul2Fqn-F5A1tLA_p4ZE7_u3Q,9
+nmr_sims-0.0.3.dist-info/RECORD,,
