@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+# See configuration details in https://github.com/pypa/setuptools_scm
+version_scheme = "release-branch-semver"
+local_scheme = "node-and-date"
+normalize = false
+root = "."
+relative_to = "setup.py"
+write_to = 'culebrONT/_version.py'
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py{38,39}
+skip_missing_interpreters = True
+skipsdist=False
+
+[gh-actions]
+python = 3.8: py38
+
+[testenv:py{38,39}]
+description = Run the install in Python 3.8
+skip_install = False
+changedir={envdir}
+whitelist_externals =
+    bash
+    echo
+envdir =
+    py38: {toxworkdir}/py38
+    py39: {toxworkdir}/py39
+commands =
+    #culebrONT --help
+    bash -ec 'echo `pwd`'
+    bash -ec 'CPDIR="./lib/python3.8/site-packages/culebrONT/containers/"; DIR="/usr/local/culebrONT/Containers"; if [[ -d $DIR ]]; then ls $DIR;  echo "copy Containers files in $DIR to $CPDIR"; ln -sf $DIR/* $CPDIR; fi'
+    culebrONT install_local
+
+
+[run]
+description = Run Installation culebrONT install_local
+changedir={envdir}
+skipsdist=True
+commands =
+    culebrONT test_install -d test
+    culebrONT run_local --threads 8 --config {posargs} --singularity-args '--bind /builds:/builds'
+
+
+[testenv:py38-run]
+description = Run workflow pass on args to culebrONT
+envdir =
+    py38: {toxworkdir}/py38
+    py39: {toxworkdir}/py39
+changedir={envdir}
+commands = {[run]commands}
+
+
+#[testenv:py{38,39}-run]
+#description = Run workflow pass on args to culebrONT
+#envdir = {toxworkdir}/py{38,39}-tests
+#skipsdist=True
+#commands = culebrONT run_local --threads 8 --config {posargs}
+#    #culebrONT run_local --threads 8 --config ../../culebrONT/install_files/config_test/config_A.yaml
+#    #culebrONT run_local --threads 8 --config ../../culebrONT/install_files/config_test/config_APC.yaml
+
+"""
+
