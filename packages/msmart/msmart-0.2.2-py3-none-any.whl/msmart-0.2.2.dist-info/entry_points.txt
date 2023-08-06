@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        midea-discover=msmart.cli:discover
+    
