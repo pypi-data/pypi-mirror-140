@@ -1,0 +1,11 @@
+spotify_to_sqlite/__init__.py,sha256=oigpL-KTSMQwHFeMBMyBtF-I6yR_cpuAh3y6PHcR_iM,49
+spotify_to_sqlite/__main__.py,sha256=RX8AhSLFx3-lEra7W7Nv-hsTyxqcWzoqkQNPuZNBO0E,117
+spotify_to_sqlite/cli.py,sha256=Wph99fHIBYIQ69FG4w91dhqG8IcMRX3MQ3cadWxr6DY,1265
+spotify_to_sqlite/constants.py,sha256=UR_t0DxyTggQPcUJLwSbQbKT9vzR9OqEfqlVJeZX2kU,449
+spotify_to_sqlite/utils.py,sha256=cwyWfcXaOQkqay2T9JvksiiuKkNRBnX9Wrzx0CiIfoM,7548
+spotify_to_sqlite-0.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spotify_to_sqlite-0.1.3.dist-info/METADATA,sha256=Oa_lmRh0grqV6MDvir9il5CTt69LPfGLqs3rBblbWxA,3270
+spotify_to_sqlite-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spotify_to_sqlite-0.1.3.dist-info/entry_points.txt,sha256=7dzzCE2vRPc4yt8JnmYk7FamiHLhCzQrGo0jdSkyJkI,64
+spotify_to_sqlite-0.1.3.dist-info/top_level.txt,sha256=a0FG9fKnPmQadWfbAxBbPyVrNY88K_wr9FT9eFylqwA,18
+spotify_to_sqlite-0.1.3.dist-info/RECORD,,
