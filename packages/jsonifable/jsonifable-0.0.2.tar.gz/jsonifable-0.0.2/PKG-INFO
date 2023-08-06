@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: jsonifable
+Version: 0.0.2
+Summary: Simple decorator for making classes easily convertable to JSON
+Home-page: UNKNOWN
+Author: Maciej Oliwa (avery)
+Author-email: maciejoliwa0906@gmail.com
+License: UNKNOWN
+Keywords: python,json,class,dataclass,tojson
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
