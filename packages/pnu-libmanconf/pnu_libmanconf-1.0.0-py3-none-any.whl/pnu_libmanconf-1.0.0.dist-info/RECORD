@@ -1,0 +1,9 @@
+libmanconf/__init__.py,sha256=OIUvQK6yxVB8AiXXHt83ZFQSsZMxRVNxkf2BJMND5v0,60
+libmanconf/main.py,sha256=lbKg3m3y3tYbnLfhVRjHfC4bQ3At4orrnLCts9gzsl8,5681
+pnu_libmanconf-1.0.0.data/data/man/man3/libmanconf.3.gz,sha256=6b3E9PWYSGuEFBzAMQjybMYtE77QOc69kYia0miBBBg,922
+pnu_libmanconf-1.0.0.data/data/man/man5/man.conf.5.gz,sha256=50mFz9Mqr0YLRy21Embj25I6KWgNF8HLudTyxvDtAac,1918
+pnu_libmanconf-1.0.0.dist-info/License,sha256=tAU1J_XOOJC2x6h49s8g_Pyqo4S2I1DCYVuQozYsx_o,1461
+pnu_libmanconf-1.0.0.dist-info/METADATA,sha256=9ppNb3fT4Xn85Jq0KalW1IqB1asZLWjHt3g4vXR7FfM,3686
+pnu_libmanconf-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pnu_libmanconf-1.0.0.dist-info/top_level.txt,sha256=xp4j_UvxpG6NUSzZyZbH_x1QirQHkSbXmefrhvTcGXQ,11
+pnu_libmanconf-1.0.0.dist-info/RECORD,,
