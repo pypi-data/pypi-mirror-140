@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Topsis-Divyansh-102083048/__init__.py
+Topsis-Divyansh-102083048/topsis.py
+Topsis_Divyansh_102083048.egg-info/PKG-INFO
+Topsis_Divyansh_102083048.egg-info/SOURCES.txt
+Topsis_Divyansh_102083048.egg-info/dependency_links.txt
+Topsis_Divyansh_102083048.egg-info/requires.txt
+Topsis_Divyansh_102083048.egg-info/top_level.txt
