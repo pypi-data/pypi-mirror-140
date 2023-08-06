@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: moocxing
+Version: 0.8.0
+Summary: anzhi
+Home-page: https://github.com/Aanzhi/moocxing
+Author: anzhi
+Author-email: 1532741445@qq.com
+License: MIT License
+Keywords: moocxing
+Platform: any
+Requires-Dist: requests (>=2.24.0)
+Requires-Dist: bs4 (>=0.0.1)
+Requires-Dist: pyserial (>=3.4)
+Requires-Dist: mcpi (>=1.2.0)
+Requires-Dist: minecraftstuff (>=1.0.1)
+Requires-Dist: baidu-aip (>=2.2.18.0)
+Requires-Dist: ffmpeg-python (>=0.2.0)
+Requires-Dist: paho-mqtt (>=1.5.0)
+Requires-Dist: xpinyin (>=0.5.6)
+Requires-Dist: pyecharts (>=1.9.0)
+Requires-Dist: ruamel.yaml (>=0.17.21)
+
+UNKNOWN
+
