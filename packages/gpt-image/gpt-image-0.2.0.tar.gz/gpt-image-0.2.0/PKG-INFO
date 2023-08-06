@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gpt-image
+Version: 0.2.0
+Summary: Build GPT Disk Images on Local Drives
+Home-page: https://github.com/swysocki/gpt-image
+Author: Scott Wysocki
+Author-email: swysocki@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
