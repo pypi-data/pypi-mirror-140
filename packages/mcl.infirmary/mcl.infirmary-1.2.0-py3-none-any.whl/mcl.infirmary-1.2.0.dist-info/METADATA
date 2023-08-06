@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: mcl.infirmary
+Version: 1.2.0
+Summary: 🏥 Infirmary: an API for Clinical Data for the Consortium for Molecular and Cellular Characterization of Screen-Detected Lesions
+Home-page: https://github.com/MCLConsortium/mcl.infirmary
+Author: Sean Kelly
+Author-email: sean.kelly@jpl.nasa.gov
+License: ALv2
+Keywords: rest api web clinical data lesions cancer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pyramid
+Classifier: Framework :: Buildout
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: setuptools (==51.3.3)
+Requires-Dist: pyramid (==1.9.4)
+Requires-Dist: waitress (==1.4.4)
+Requires-Dist: pyramid-beaker (==0.8)
+Requires-Dist: pyramid-ldap (==0.3.1)
+Requires-Dist: zope.component (==4.6.2)
+Requires-Dist: zope.interface (==5.4.0)
+Requires-Dist: mcl.sickbay (==1.2.0)
+
+# 🏥 Infirmary
+
+Welcome to "Infirmary", the [ReST-based](https://restfulapi.net/) [application programming interface](https://www.mulesoft.com/resources/api/what-is-an-api) for the [Clinical Data component](https://github.com/MCLConsortium/clinical-data) of the the [Consortium for Molecular and Cellular Characterization of Screen-Detected Lesions](https://mcl.nci.nih.gov/). This project, along with [Sickbay](https://github.com/MCLConsortium/clinical-data/tree/master/sickbay) form a database for discovering clinical data.
+
+
+## ⚙️ Endpoints
+
+Once deployed, this package provides the following ReST API endpoints:
+
+| Endpoint                          | Auth | Purpose                                                        |
+| :-------------------------------- | :--: | :------------------------------------------------------------- |
+| `/ping`                           |      | Test if the server is working                                  |
+| `/hello/{greeting}`               |  🔐  | Test if authentication is working                              |
+| `/clinicalCores`                  |  🔐  | Return all Clinical Cores in the database, fully serialized    |
+| `/clinicalCores/{participant_ID}` |  🔐  | Return the single Clinical Core for the named `participant_ID` |
+| `/organs`                         |  🔐  | Return all organs in the database                              |
+| `/organs/{identifier}`            |  🔐  | Return the single organ with the numeric `identifier`          |
+| `/specimens`                      |  🔐  | Return all biospecimens in the database                        |
+| `/specimens/{specimen_ID}`        |  🔐  | Return the single biospecimen with the given `specimen_ID`     |
+| `/genomics`                       |  🔐  | Return all genomics in the database                            |
+| `/genomics/{specimen_ID}`         |  🔐  | Return the genomics information with the given `specimens_ID`  |
+| `/images`                         |  🔐  | Return all imaging information in the database                 | 
+| `/images/{identifier}`            |  🔐  | Return the imaging information with the numeric `identifier`   |
+
+For those endpoints where the "Auth" column is dispays 🔐, you must provide an HTTP Basic Authentication header with a username and password of a member of the Consortium for Molecular and Cellular Characterization of Screen-Detected Lesions. All of the endpoints return a JSON payload.
+
+
+## 🔧 Development
+
+To develop locally with a local Postgres database:
+```console
+python3 -m venv venv
+venv/bin/pip install --quiet --upgrade setuptools pip wheel build
+venv/bin/pip install --editable '.[dev]'
+venv/bin/infirmary --debug
+```
+
+To create and register the image:
+```console
+docker image build --tag mcl-infirmary:latest .
+docker image tag mcl-infirmary:latest nutjob4life/mcl-infirmary:latest
+docker login
+docker image push nutjob4life/mcl-infirmary:latest
+```
+
+To explore the image:
+
+    docker container run --rm --interactive --tty --entrypoint /bin/sh mcl-infirmary:latest
+
+

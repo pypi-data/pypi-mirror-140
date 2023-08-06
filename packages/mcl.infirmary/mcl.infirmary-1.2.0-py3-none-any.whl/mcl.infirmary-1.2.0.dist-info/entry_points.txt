@@ -1,0 +1,5 @@
+[console_scripts]
+infirmary = mcl.infirmary.main:main
+
+[paste.app_factory]
+infirmary = mcl.infirmary.main:main
