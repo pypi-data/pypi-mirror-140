@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+razortrace/__init__.py
+razortrace/__version__.py
+razortrace/main.py
+razortrace.egg-info/PKG-INFO
+razortrace.egg-info/SOURCES.txt
+razortrace.egg-info/dependency_links.txt
+razortrace.egg-info/top_level.txt
