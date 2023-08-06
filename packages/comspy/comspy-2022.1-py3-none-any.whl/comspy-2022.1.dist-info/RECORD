@@ -1,0 +1,12 @@
+comspy/__init__.py,sha256=vw6iLLXr_Oa8rzlHqLHX06GqjeTnu_mkwH__ryfCKck,85
+comspy/Client/Client_Chinese.py,sha256=pjoV0WZNvNGDKNb8lgybAMukloODvNhVtpgpf_RhEGU,1170
+comspy/Client/Client_English.py,sha256=v9fHrELTZL7MVVLPLxOxdMV0En_stb8bkc7Yyuufgvg,1293
+comspy/Client/__init__.py,sha256=80ed9bhSQ25aQ4Oo2zJsaqFJHvIiWq6zfNbPP5mwRNk,23
+comspy/Server/Server_Chinese.py,sha256=mzrJBhOmibtGBsB34MFtkaSOc-fPtidDNURhomgNTZg,1795
+comspy/Server/Server_English.py,sha256=lkEaA2j78I-GvPKnxg6XFOtXH7LD0mK4H0OT1MJ6XTE,1714
+comspy/Server/__init__.py,sha256=b0Gng6QQMaXPWZRxp0Qr4Y-jFQ_wncIac8FX2zcha0s,23
+comspy-2022.1.dist-info/LICENSE,sha256=GzHS9pi6vw_oGwKIGxAPch8iuVrHazOilEsYL7AlPK0,1085
+comspy-2022.1.dist-info/METADATA,sha256=VGn6vGwKE_7sk0wTt6ioH8IQjf3fjHO9fU7L5Vw3U-c,1435
+comspy-2022.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+comspy-2022.1.dist-info/top_level.txt,sha256=jfjCvZLvwcyxOu20O0h2vYGdRzmWEH6cDSYRHTlQ30Y,7
+comspy-2022.1.dist-info/RECORD,,
