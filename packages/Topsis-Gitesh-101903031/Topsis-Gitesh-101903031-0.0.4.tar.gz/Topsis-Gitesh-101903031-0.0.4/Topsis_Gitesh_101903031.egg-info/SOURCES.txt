@@ -1,0 +1,7 @@
+README.md
+setup.py
+Topsis-Gitesh-101903031/__init__.py
+Topsis_Gitesh_101903031.egg-info/PKG-INFO
+Topsis_Gitesh_101903031.egg-info/SOURCES.txt
+Topsis_Gitesh_101903031.egg-info/dependency_links.txt
+Topsis_Gitesh_101903031.egg-info/top_level.txt
