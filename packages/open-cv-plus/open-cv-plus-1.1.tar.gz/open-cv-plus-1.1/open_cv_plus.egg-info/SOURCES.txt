@@ -1,0 +1,6 @@
+setup.py
+open_cv_plus.egg-info/PKG-INFO
+open_cv_plus.egg-info/SOURCES.txt
+open_cv_plus.egg-info/dependency_links.txt
+open_cv_plus.egg-info/top_level.txt
+opencvplus/__init__.py
