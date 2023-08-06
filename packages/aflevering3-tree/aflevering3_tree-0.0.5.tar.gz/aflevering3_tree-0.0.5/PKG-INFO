@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: aflevering3_tree
+Version: 0.0.5
+Summary: A collection of functions from Aflevering 3
+Home-page: UNKNOWN
+Author: Christopher L. Kristiansen
+Author-email: Christopher@kristiansenz.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a collection of functions from an assigment, that i could not be bothered to have on the top of my new project.
+They include the functions:
+
+"gen_labels_letters(n)", this generates a List of n length, of max length 24, of letters from A to Z
+
+"gen_labels(n)", this generates a list of n length with names of "L1, L2, ... , Ln"
+
+"permute(L)", permutes a given list L
+
+"pairs(L)", pairs elements of a given list L, with the condition that a < b
+
+"canonical_triplets(A, B)", Makes pairs of with all combinations from A and B, so [(A[1], B[1], (A[1], B[2]), ... , (A[n], B[1]), ... , (A[n], B[n])]
+
+"anchored_triplets(L, R)", takes "canonical_triplets(L, R) + canonical_triplets(R, L)" and outputs that.
+
+Change Log
+===========
+
+
+0.0.1 (24/02/2022)
+-------------------
+- First version
+
+
+0.0.2 (24/02/2022)
+-------------------
+- added import random to hopefully make a function work
+
+
+0.0.3 (24/02/2022)
+------------------
+- added 'import string' to make another function work :)))))
+- added more the README
+
+0.0.4 (24/02/2022)
+------------------
+- Improved the pairs function, so L1 > L10
+- Removed unnecessary code
+
+0.0.5 (24/02/22)
+-----------------
+- removed some test code i accidentally uploaded, so everytime this was imported it was spit out a list
+
