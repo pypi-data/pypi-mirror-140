@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: response-measurer
+Version: 0.4.1
+Summary: A HTTP request response measurer
+License: MIT
+Author: eminaktas
+Author-email: eminaktas34@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.27.1,<3.0.0)

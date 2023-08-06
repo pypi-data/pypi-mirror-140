@@ -1,0 +1,3 @@
+[console_scripts]
+response-measurer=response_measurer.run:main
+
