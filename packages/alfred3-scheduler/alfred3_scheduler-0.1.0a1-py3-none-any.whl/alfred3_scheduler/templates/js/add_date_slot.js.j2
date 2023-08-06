@@ -1,0 +1,20 @@
+$( "#{{ name }}-send" ).one("click", function() {
+
+
+    // submit data to alfred
+    var data = $("#form").serializeArray();
+    $.post("{{ set_data_url }}", data);
+
+    // activate spinner
+    $( "#{{ name }}-spinner" ).html("<div class='spinner-border spinner-border-sm' role='status'><span class='sr-only'>Loading...</span></div>")
+
+    // call function to write data to database
+    $.get( "{{ url }}", function(data) {
+        $( "#{{ name }}-send" ).attr('disabled','disabled');
+        setTimeout(function() {
+            $( "#{{ name }}-spinner" ).html("")
+            $( "#{{ name }}-feedback" ).html(data)
+        }, 2000)
+    
+    });
+})

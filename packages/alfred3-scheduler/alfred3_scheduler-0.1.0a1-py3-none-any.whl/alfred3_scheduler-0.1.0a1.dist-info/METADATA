@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: alfred3-scheduler
+Version: 0.1.0a1
+Summary: Organize study appointments with alfred3.
+Home-page: https://github.com/jobrachem/alfred3_scheduler
+Author: Johannes Brachem, Christian Treffenstädt
+Author-email: brachem@uni-goettingen.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: alfred3 (>=2.0)
+Requires-Dist: bleach (>=3.2.1)
+
+# alfred3_scheduler
+
+
+

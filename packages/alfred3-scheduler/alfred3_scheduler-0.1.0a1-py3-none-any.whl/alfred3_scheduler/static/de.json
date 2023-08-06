@@ -1,0 +1,41 @@
+{
+    "start_text": "Start um",
+    "start_time_unit": "Uhr",
+    "duration_text": "Dauer",
+    "choose_text": "Auswählen",
+    "free_slots_text": "freie Plätze",
+    "confirmation_heading": "Auswahl bestätigen",
+    "close_text": "Abbrechen",
+    "date_text": "Datum",
+    "confirm_button": "Bestätigen",
+    "modal_content": "Nach dem Klick auf 'Bestätigen' erhalten Sie eine E-Mail mit einem Bestätigungslink. Ihre Registrierung ist erst abgeschlossen, wenn Sie sie per Klick auf den Link bestätigt haben. Bis dahin ist Ihr Platz eine Stunde lang reserviert.",
+    "date_format": "%d.%m.%Y",
+    "minutes": "Minuten",
+    "registration_initiated_title": "Bestätigungs-Email verschickt!",
+    "registration_mail_subject": "Bitte bestätigen Sie Ihre Registrierung zur Studienteilnahme",
+    "time_format": "%H:%M Uhr",
+
+    "registration_failed_title": "Registration gescheitert",
+    "registration_failed_msg": "Die Registrierung konnte nicht abgeschlossen werden. Das könnte daran liegen, dass der ausgewählte Termin keine freien Kapazitäten mehr hat. Bitte versuchen Sie, sich für einen anderen Termin zu registrieren.",
+
+    "registration_success_title": "Registrierung erfolgreich",
+    "registration_success_msg": "Vielen Dank für Ihre Registrierung. Ihr Platz ist nun für ${reservation_time} reserviert. In wenigen Minuten erhalten Sie eine E-Mail mit einem Link zu Bestätigung der Registrierung. Sollten Sie keine E-Mail erhalten, überprüfen Sie bitte Ihr Spam-Postfach und melden sich ggf. bei der Studienleitung.",
+
+    "confirmation_failed_title": "Bestätigung nicht erfolgreich",
+    "confirmation_failed_msg": "Die Bestätigung Ihrer Registrierung konnte nicht abgeschlossen werden. Das könnte daran liegen, dass Ihre Reservierung abgelaufen ist. Bitte versuchen Sie, sich erneut zu registrieren. Falls der Termin in der Zwischenzeit ausgebucht sein sollte, versuchen Sie bitte, sich für einen anderen Termin zu registrieren.",
+
+    "confirmation_success_title": "Bestätigung erfolgreich",
+    "confirmation_success_msg": "Vielen Dank für Ihre Registrierung. Ihr Platz ist nun bestätigt. Bitte stellen Sie sicher, dass Sie pünktlich zum Studienbeginn bereit sind.",
+
+    "cancellation_failed_title": "Absage nicht erfolgreich",
+    "cancellation_failed_msg": "Die Absage Ihrer Registrierung konnte nicht abgeschlossen werden. Das könnte daran liegen, dass Sie sich bereits schon einmal abgemeldet haben. Wenn Sie sich unsicher sind, kontaktieren Sie bitte die Studienleitung.",
+
+    "cancellation_success_title": "Absage erfolgreich",
+    "cancellation_success_msg": "Ihre Absage wurde aufgenommen.",
+
+    "cancellation_late_title": "Absage nicht erfolgreich",
+    "cancellation_late_msg": "Eine Absage ist nur mit einem gewissen Vorlauf möglich. Bitte überprüfen Sie Ihre Registrierungs-Email. Falls Sie denken, dass es sich um einen Irrtum handelt, kontaktieren Sie bitte die Studienleitung.",
+
+    "registration_page_title": "Verfügbare Termine"
+
+}
