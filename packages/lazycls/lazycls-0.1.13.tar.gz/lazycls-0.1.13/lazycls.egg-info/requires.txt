@@ -1,0 +1,13 @@
+anyio
+aiofile
+dill
+fsspec
+orjson
+pydantic[dotenv]
+pylogz
+pysimdjson
+pyyaml
+sniffio
+typer
+universal_pathlib
+PyJWT
