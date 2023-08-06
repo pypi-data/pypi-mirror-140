@@ -1,0 +1,11 @@
+aiit_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiit_sdk/algo.py,sha256=erZNPDPqxDRJx3m99t0NYVFL2EakwRSTdWQI09Jr5w0,1369
+aiit_sdk/auth.py,sha256=bQX0fMU6Na95LqqNuBstF1JQklfdSaWQTVXCIdkXGzQ,3481
+aiit_sdk/page.py,sha256=M6yYtpWwjZLGGxtwBWp_NTrIRVrFodMEo6UIL2Xpwlw,2607
+aiit_sdk/response.py,sha256=BQfGWdse396VE-sVik6aUuDy-XZew3VRYYQbr_zM71c,541
+aiit_sdk/storage.py,sha256=A4XdpaUcFmB-gS-Eo5GQ9GyB9_4AiryniuirmtVZwro,1573
+aiit_sdk-0.0.5.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+aiit_sdk-0.0.5.dist-info/METADATA,sha256=EjInPLpRqrCN6ixFIGD2YkDQDMe8LTcB281-SwIOYQY,3853
+aiit_sdk-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiit_sdk-0.0.5.dist-info/top_level.txt,sha256=aNIji-WWhAeKVmuZ0PeApq8-7E-Ui9KyQIFpZCfRKjI,9
+aiit_sdk-0.0.5.dist-info/RECORD,,
