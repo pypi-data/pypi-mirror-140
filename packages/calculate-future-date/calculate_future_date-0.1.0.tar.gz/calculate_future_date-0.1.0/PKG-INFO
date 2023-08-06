@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: calculate-future-date
+Version: 0.1.0
+Summary: 
+Author: pratik kumar sarangi
+Author-email: psarangi50@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Flask (==2.0.3)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
