@@ -1,0 +1,8 @@
+asdf-standard>=1.0.1
+
+[:python_version < "3.9"]
+importlib_resources>=3
+
+[test]
+asdf>=2.8.0
+pytest
