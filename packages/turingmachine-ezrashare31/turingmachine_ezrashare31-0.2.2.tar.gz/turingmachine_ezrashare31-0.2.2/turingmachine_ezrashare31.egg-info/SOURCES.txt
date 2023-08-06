@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+turingmachine/__init__.py
+turingmachine/__main__.py
+turingmachine/turingmachineversion/__init__.py
+turingmachine_ezrashare31.egg-info/PKG-INFO
+turingmachine_ezrashare31.egg-info/SOURCES.txt
+turingmachine_ezrashare31.egg-info/dependency_links.txt
+turingmachine_ezrashare31.egg-info/top_level.txt
