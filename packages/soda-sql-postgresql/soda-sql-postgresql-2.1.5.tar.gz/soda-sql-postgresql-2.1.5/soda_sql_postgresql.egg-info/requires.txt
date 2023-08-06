@@ -1,0 +1,2 @@
+soda-sql-core==2.1.5
+psycopg2-binary<3.0,>=2.8.5
