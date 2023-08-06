@@ -1,0 +1,9 @@
+certifi
+pytube
+chardet
+colorama
+idna
+mutagen
+requests
+urllib3
+python-ffmpeg
