@@ -1,0 +1,6 @@
+redis
+expiring-dict
+dnspython
+mariadb
+pyspf
+python-pidfile
