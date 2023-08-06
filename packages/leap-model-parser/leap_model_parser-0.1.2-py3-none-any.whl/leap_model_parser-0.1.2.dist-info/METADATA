@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: leap-model-parser
+Version: 0.1.2
+Summary: 
+Home-page: https://github.com/tensorleap/leap-model-parser
+License: MIT
+Author: idan
+Author-email: idan.yogev@tensorleap.ai
+Requires-Python: >=3.6.1,<3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: dataclasses (==0.8)
+Requires-Dist: keras-data-format-converter (==0.0.4)
+Requires-Dist: numpy (>=1.19.5,<2.0.0)
+Requires-Dist: onnx (==1.6.0)
+Requires-Dist: onnx2kerastl (==0.0.32)
+Requires-Dist: tensorflow (==2.4.4)
+Requires-Dist: tensorflow-addons (==0.14.0)
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.21.0)
+Project-URL: Repository, https://github.com/tensorleap/leap-model-parser
+Description-Content-Type: text/markdown
+
+# Tensorleap model parser
+Used to parse model to the import format 
+
