@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Topsis_101917203_Mansi
+Version: 0.1
+Summary: A pip library for TOPSIS
+Home-page: https://github.com/mansi7696/Topsis-101917203-Mansi
+Author: Mansi Saini
+Author-email: mansisaini7696@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: topsis,Rank,Best,Model
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
