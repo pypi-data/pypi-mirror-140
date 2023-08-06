@@ -1,0 +1,4 @@
+include notifier/break.ico
+include notifier/end.ico
+include notifier/food.ico
+include notifier/sea_fishes.ico

@@ -1,0 +1,2 @@
+[console_scripts]
+notifier = notifier.__main__:start_notifier
