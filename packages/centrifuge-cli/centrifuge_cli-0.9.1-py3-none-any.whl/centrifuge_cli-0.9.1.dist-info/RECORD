@@ -1,0 +1,9 @@
+centrifuge_cli/__init__.py,sha256=pF8TnH2QJF8nfDmcD7oPTrAOnioy05dV4YmYDzkT5Es,22
+centrifuge_cli/main.py,sha256=io7_uoJqkevxjfkx633Yz9lUXRC7nRW2otaxaj4d2c0,21966
+centrifuge_cli/policy.py,sha256=GqbgcTq5pLPOqoKahs0_W718tTRJfXJK3ajaIGV-DP8,18944
+centrifuge_cli/stats.py,sha256=1lUbVuFW0Je46wMBk1Emskj-ODuP1v2W68x4sZff3kg,3340
+centrifuge_cli-0.9.1.dist-info/entry_points.txt,sha256=wRJ_AeYLfUv1nrEZNeDD5yQrYU9VOTJEkbcrzs6bPUU,54
+centrifuge_cli-0.9.1.dist-info/LICENSE,sha256=Bi-UT2_BpH14bvxM-q1N3HBFlpSgFbZchMT1iShhwSg,1068
+centrifuge_cli-0.9.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+centrifuge_cli-0.9.1.dist-info/METADATA,sha256=8S0gPcax0HHduRQS_CcAe8fnV7xj_BuYRCihQWWqe70,8720
+centrifuge_cli-0.9.1.dist-info/RECORD,,
