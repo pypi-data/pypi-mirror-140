@@ -1,0 +1,13 @@
+baygaud/__init__.py,sha256=8398cp-09fL0qcW1iTWEhRsFjXA3ICgs9Cxh05K97v0,124
+baygaud/_baygaud_params.py,sha256=XHhBXJRhjZjOH8_QKNOWwuBgP2L5zpIa-KAMgKkL6G4,1678
+baygaud/_dynesty_sampler.py,sha256=drjvzb9OIQ5xl4Sy51cHuGeCzgTcEbiwMcivfAzA-7g,7007
+baygaud/_fits_io.py,sha256=ofupPp0CtQ63l8KrY6tI158gIXp3gSPL3N0tD5YUINU,1720
+baygaud/_plot.py,sha256=h-st_wL7iEoOpmbnh7JmaPIvK2fEFO_SyG8_arfnkdE,838
+baygaud/baygaud.py,sha256=NY6gIvQG5dpUHt3VXncEuf5TV6R0gbV1NS-bS9FhQOo,4091
+baygaud/combine_segs.py,sha256=vnwj9kVEQJSUvJrAlIMC7e86Ygf1wzEMGV4TQ14zv98,3290
+baygaud-0.1.3.dist-info/DESCRIPTION.rst,sha256=zS54wBVgy3CfSq8q7qh-JWLsjwhGW64lUZGRcMV_tdQ,9
+baygaud-0.1.3.dist-info/METADATA,sha256=ThqIK0D_00n6EInebcIYfrCDAqZ7kwD2AHoV4XbGlaU,1010
+baygaud-0.1.3.dist-info/RECORD,,
+baygaud-0.1.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+baygaud-0.1.3.dist-info/metadata.json,sha256=EqBTAXdLVOMNd1w1FJhJyH6zPnL5-aIdSSVnHv3RQXw,1043
+baygaud-0.1.3.dist-info/top_level.txt,sha256=41A43a6bh4IM4VKWVICJjQ-lWw_c5GIed6wt6Fn_Yd4,8
