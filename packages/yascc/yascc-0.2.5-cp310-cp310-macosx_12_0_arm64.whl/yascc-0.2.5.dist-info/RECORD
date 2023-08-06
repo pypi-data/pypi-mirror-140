@@ -1,0 +1,11 @@
+yascc/__init__.py,sha256=5qLm8MBNSgTM-1CWtuIC0qe57JRMuMtusYqxV3MTWXU,209
+yascc/_bench.py,sha256=xeC41bVMjtzU5oVU_chBgC7WHJPlJ3V78F5mwidD8No,814
+yascc/camelcase.py,sha256=fEgejxf0gQIizXUT4U3QX0VnPC7X-lFyH0Y70pxMb1A,436
+yascc/case.c,sha256=ff-YEAOSMfBjw5arIqzMkLlm8VHspabADGTwzBRNuj0,1776
+yascc/common.py,sha256=1dfI54oe8ie1N6OkUTVi8VXZUdJYp-vRQXOS_EZ3er0,380
+yascc/snakecase.py,sha256=CW89FrqKQWa-1WqaEZ0xCh9LkcPa6m0NN8lMcCDympg,460
+_case.cpython-310-darwin.so,sha256=KbAOSJVMFrozgHRYuuzB_H6CLUj9tZEqFpGkjjHpdQc,51096
+yascc-0.2.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+yascc-0.2.5.dist-info/WHEEL,sha256=Qp5UKJXlvVa5xBHGiA-KeZcoh9ZuAYNLsUdMcNCwHkI,101
+yascc-0.2.5.dist-info/METADATA,sha256=rb0j2bKB8OM7E0ggUm3d9BSMuBy3HdEXdQ8uParQA1U,578
+yascc-0.2.5.dist-info/RECORD,,
