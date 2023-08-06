@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: optix
+Version: 0.2.1
+Summary: Optics simplified
+Home-page: https://github.com/cavic19/optix
+Author: David Tomecek
+Author-email: david.tomecek1@seznam.cz
+License: MIT
+Download-URL: https://github.com/cavic19/optix/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: optics,geometric optics,matrix optics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
