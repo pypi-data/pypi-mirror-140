@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: py-volley
+Version: 0.16.0
+Summary: Pluggable message queueing for Python
+Author: ask-machine-learning
+Author-email: shipt@shipt.com
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyRSMQ (>=0.4.5,<0.5.0)
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: confluent-kafka (>=1.7.0,<2.0.0)
+Requires-Dist: hiredis (>=2.0.0,<3.0.0)
+Requires-Dist: msgpack (>=1.0.3,<2.0.0)
+Requires-Dist: orjson (>=3.6.4,<4.0.0)
+Requires-Dist: prometheus-client (>=0.11.0,<0.12.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: tenacity (>=8.0.1,<9.0.0)
