@@ -1,0 +1,13 @@
+afwf/__init__.py,sha256=Db4a7DRwUGrpBiMkWM6RM7cSWuFgMeAPZT7WpEkCxHE,298
+afwf/_version.py,sha256=cW-ZWkvI8hd2WB45U48UUY3NqYDy4rPf0etHg29ZU5s,93
+afwf/__pycache__/__init__.cpython-38.pyc,sha256=-b0886KYef0bTXch6fdy0-Kqso-TOIY4yfvGHm21mYk,462
+afwf/__pycache__/_version.cpython-38.pyc,sha256=TVXFGULfgfhlMk7t7gcgBAe_qvceqsTSPiBldBe7haY,220
+afwf/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+afwf/lbd/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+afwf/lbd/hello.py,sha256=_jDgO8HR5SULkSwI4IgoK5fKcfOVzBjByRZQ-3h7RqE,601
+afwf-0.0.1.dist-info/AUTHORS.rst,sha256=ROrEuLM7jAJnyn4FKyYG8vfwtw5hcpdBOwWnnBRzWTM,509
+afwf-0.0.1.dist-info/LICENSE.txt,sha256=yUF9kMMnK6LzB91r279ua0IO0CECV5HgZftjcE7MkOk,1114
+afwf-0.0.1.dist-info/METADATA,sha256=_z2XjDrF2Ke7CCK5NSQ9pqXFDMYYILw8tqExC6vKmpI,3863
+afwf-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+afwf-0.0.1.dist-info/top_level.txt,sha256=8o2-uW52xZHLVJx7ytC0Q0mEQhvbRS_Q3xmpJExaoww,5
+afwf-0.0.1.dist-info/RECORD,,
