@@ -1,0 +1,8 @@
+LICENSE
+README.md
+serializedb.py
+setup.py
+serializeDB.egg-info/PKG-INFO
+serializeDB.egg-info/SOURCES.txt
+serializeDB.egg-info/dependency_links.txt
+serializeDB.egg-info/top_level.txt

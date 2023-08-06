@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: serializeDB
+Version: 0.0.1
+Summary: A lightweight key-value database based on serialization
+Home-page: https://github.com/imyizhang/serializeDB
+Author: Yi Zhang
+Author-email: yizhang.dev@gmail.com
+License: three-clause BSD
+Download-URL: https://github.com/imyizhang/serializeDB
+Keywords: key-value,database,serialization
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# serializeDB
+
+serializeDB is
+
+* a lightweight key-value database based on serialization
+
+
+
+## Quickstart
+
+```python
+import json
+import serializedb
+
+db = serializeDB.load('test.db', serializer=json, auto_dump=False)
+
+db['key'] = 'value'
+
+db.dump()
+```
+
+
+
+### Install serializeDB
+
+```python
+$ pip install serializeDB
+```
+
+
