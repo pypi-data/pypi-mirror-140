@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: soda-sql-hive
+Version: 2.1.5
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: soda-sql-core (==2.1.5)
+Requires-Dist: PyHive (<1.0,>=0.6.3)
+Requires-Dist: thrift (<1.0,>=0.13.0)
+
+UNKNOWN
+
