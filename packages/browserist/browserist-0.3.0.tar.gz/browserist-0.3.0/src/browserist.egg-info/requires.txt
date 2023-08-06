@@ -1,0 +1,8 @@
+selenium>=4.0.0a6.post2
+chromedriver
+
+[testing]
+pytest>=6.0
+pytest-cov>=2.0
+flake8>=3.9
+tox>=3.24
