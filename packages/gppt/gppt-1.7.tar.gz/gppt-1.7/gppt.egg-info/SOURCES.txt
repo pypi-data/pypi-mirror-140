@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+gppt/__init__.py
+gppt/_selenium.py
+gppt/auth.py
+gppt/login_response_types.py
+gppt/main.py
+gppt.egg-info/PKG-INFO
+gppt.egg-info/SOURCES.txt
+gppt.egg-info/dependency_links.txt
+gppt.egg-info/entry_points.txt
+gppt.egg-info/requires.txt
+gppt.egg-info/top_level.txt
