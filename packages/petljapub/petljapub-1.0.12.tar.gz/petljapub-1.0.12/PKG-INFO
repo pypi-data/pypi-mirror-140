@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: petljapub
+Version: 1.0.12
+Summary: Petlja publishing system
+Home-page: https://github.com/pypa/petljapub
+Author: Filip Maric, Petlja
+Author-email: filip.maric@petlja.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/petljapub/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# PetljaPub - publishing system
+
+
+
