@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: snaplogic_pymg
+Version: 0.0.1
+Summary: Like pymongo, but have cache logic on top to store a location or whatever
+Home-page: UNKNOWN
+Author: PassawitPunyawat
+Author-email: passawit@punyawat.com
+License: UNKNOWN
+Description: Like pymongo, but have cache logic on top to store a location or whatever
+Keywords: HelloHello
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
