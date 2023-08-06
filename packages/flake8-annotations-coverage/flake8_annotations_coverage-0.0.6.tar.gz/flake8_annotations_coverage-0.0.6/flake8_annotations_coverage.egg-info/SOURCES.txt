@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flake8_annotations_coverage/__init__.py
+flake8_annotations_coverage/annotations_coverage.py
+flake8_annotations_coverage/ast_helpers.py
+flake8_annotations_coverage.egg-info/PKG-INFO
+flake8_annotations_coverage.egg-info/SOURCES.txt
+flake8_annotations_coverage.egg-info/dependency_links.txt
+flake8_annotations_coverage.egg-info/entry_points.txt
+flake8_annotations_coverage.egg-info/not-zip-safe
+flake8_annotations_coverage.egg-info/requires.txt
+flake8_annotations_coverage.egg-info/top_level.txt
