@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "toml-adapt"
+version = "0.2.5"
+description = "A very simple cli for manipulating toml files."
+authors = ["Iztok Fister Jr. <iztokf@fedoraproject.org>","Filip Strajnar <filip.strajnar@gmail.com>"]
+include = [ { path = "toml-adapt.1", format = "sdist" } ]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+toml = "*"
+click = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+toml-adapt = "toml_adapt.main:TomlAdapt"
