@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dh-client"
+version = "0.1.17"
+description = "A high level python client for datahub."
+authors = ["Netdata Inc."]
+license = "Apache License 2.0"
+packages = [{ include = "dh_client"}]
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<4.0"
+acryl-datahub = ">=0.8.17.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+black = "^21.11b1"
+mkdocs = "^1.2.3"
+mkdocstrings = "^0.16.2"
+mkdocs-material = "^8.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
