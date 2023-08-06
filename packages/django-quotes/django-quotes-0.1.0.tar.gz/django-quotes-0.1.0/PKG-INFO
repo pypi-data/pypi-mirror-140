@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: django-quotes
+Version: 0.1.0
+Summary: A reusable Django app to collect quotes for use in random retrieval or generation of sentences using Markov Chains.
+Home-page: https://github.com/andrlik/django-quotes
+License: BSD-3-Clause
+Author: Daniel Andrlik
+Author-email: daniel@andrlik.org
+Requires-Python: >=3.9,<4.0
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: docs
+Requires-Dist: Django (>=4.0.2,<5.0.0)
+Requires-Dist: Markdown (>=3.3.6,<4.0.0)
+Requires-Dist: Sphinx (>=4.4.0,<5.0.0); extra == "docs"
+Requires-Dist: django-cors-headers (>=3.11.0,<4.0.0)
+Requires-Dist: django-crispy-forms (>=1.14.0,<2.0.0)
+Requires-Dist: django-easy-logging (>=0.4.0,<0.5.0); extra == "docs"
+Requires-Dist: django-model-utils (>=4.2.0,<5.0.0)
+Requires-Dist: djangorestframework (>=3.13.1,<4.0.0)
+Requires-Dist: drf-spectacular (>=0.21.2,<0.22.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: markovify (>=0.9.3,<0.10.0)
+Requires-Dist: python-slugify (>=6.1.1,<7.0.0)
+Requires-Dist: rules (>=3.1,<4.0)
+Requires-Dist: spacy (>=3.2.2,<4.0.0)
+Requires-Dist: sphinx-autobuild (>=2021.3.14,<2022.0.0); extra == "docs"
+Project-URL: Documentation, https://django-quotes-app.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/andrlik/django-quotes
+Description-Content-Type: text/markdown
+
+# Django Quotes
+
+A simple reusable [Django](https://www.djangoproject.com) app that allows you to collect quotes from arbitrary groups of characters, and then serve random quotes or Markov-chain generated sentences based upon them. Includes a Bootstrap compatible set of templates an optional REST API.
+
+[![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/andrlik/django-quotes/blob/main/.pre-commit-config.yaml)
+[![License](https://img.shields.io/github/license/andrlik/django-quotes)](https://github.com/andrlik/django-quotes/blob/main/LICENSE)
+![Test results](https://github.com/andrlik/django-quotes/actions/workflows/ci.yml/badge.svg)
+![Codestyle check results](https://github.com/andrlik/django-quotes/actions/workflows/codestyle.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/andrlik/django-quotes/badge.svg?branch=main)](https://coveralls.io/github/andrlik/django-quotes?branch=main)
+[![Documentation Status](https://readthedocs.org/projects/django-quotes-app/badge/?version=latest)](https://django-quotes-app.readthedocs.io/en/latest/?badge=latest)
+
+## Features
+
+- Documentation and a full test suite.
+- Support for abstract grouping of quote sources.
+- Convenience methods for fetching a random quote.
+- Object-level permissions via [django-rules](https://github.com/dfunckt/django-rules).
+- Generate sentences based off of a Markov-chain for individual sources and groups using natural language processing.
+- Bootstrap-compatible templates.
+- A simple REST API for fetching data via JSON with CORS support.
+
+Check out [the documentation](https://django-quotes-app.readthedocs.io/en/latest/) for installation and quickstart instructions.
+
