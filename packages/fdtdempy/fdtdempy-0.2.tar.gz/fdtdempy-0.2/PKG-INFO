@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: fdtdempy
+Version: 0.2
+Summary: FDTD Electromagnetic Field Simulation
+Home-page: https://github.com/johankirsten/fdtdempy
+Author: Johan Kirsten
+Author-email: kirsten.johanf@gmail.com
+License: MIT
+Download-URL: https://github.com/johankirsten/fdtdempy/archive/refs/tags/v_02.tar.gz
+Description: UNKNOWN
+Keywords: FDTD,Electromagnetism,Simulation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
