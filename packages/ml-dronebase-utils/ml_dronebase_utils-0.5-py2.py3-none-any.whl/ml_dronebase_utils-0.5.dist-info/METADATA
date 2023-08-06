@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ml-dronebase-utils
+Version: 0.5
+Summary: A collection of commonly functions used by DroneBase ML Engineers
+Home-page: https://github.com/DroneBase/ml-dronebase-utils
+Author: Conor Wallace
+Author-email: conor.wallace@dronebase.com
+License: MIT
+Keywords: python,utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: boto3 (>=1.19.2)
+Requires-Dist: tqdm (>=4.62.3)
+Requires-Dist: jinja2 (>=2.0.1)
+Requires-Dist: black
+Requires-Dist: isort
+Requires-Dist: colorama
+Requires-Dist: flake8
+Requires-Dist: pytest
+
+# Dronebase Machine Learning Utils
+
+## PUBLIC FACING
+
+This package contains commonly used functions for ML Engineers
+
+```python
+import ml_dronebase_utils as ml_utils
+...
+```
+
+## Installation from source
+
+Clone and ```cd``` into the root directory of this repo, then run the following:
+
+```bash
+pip install -e .
+```
+
+## Installation using pip
+
+```bash
+pip install git+https://github.com/DroneBase/ml-dronebase-utils
+```
+
+
