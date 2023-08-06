@@ -1,0 +1,13 @@
+nice/__init__.py,sha256=IYA9PI8_7JJSdR4DxvGLJfzdcOCxX0A7mFOdocMHQX4,1866
+nice/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nice/utils/data.py,sha256=nu1RLaExDLd_BRC01TqgaL60yo6Y5RZfmDwElPNY1vA,3122
+nice/utils/distance.py,sha256=Vt3GqsdkGlg-EeyDzrIdNQNWyPdmEwRp8Q7Ww1mrTOk,2186
+nice/utils/preprocessing.py,sha256=x8ZDhokQ5qzaPWQ9Rto95wW6GSdkk9gcubqTdy-00dQ,1435
+nice/utils/optimization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nice/utils/optimization/heuristic.py,sha256=Y6hcON3ekpdAfLtDDI9mxR9rILuog9TxJgJ1iH6AEgY,907
+nice/utils/optimization/reward.py,sha256=x88qbJTT6DVYlE5HSv8D9Kkfm7ujg9qqhNb82jJftKw,2395
+NICEx-0.2.0.dist-info/LICENSE.txt,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+NICEx-0.2.0.dist-info/METADATA,sha256=1ot6pOJ3CSL2AJfg3BM1lKjpwdIS54aWRQmJFQcCcy8,1693
+NICEx-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+NICEx-0.2.0.dist-info/top_level.txt,sha256=9j5orAvwUq6SPAP1sSrtxsykmHTBybDM8_ObZi0fSHs,5
+NICEx-0.2.0.dist-info/RECORD,,
