@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+etherscan/__init__.py
+etherscan/etherscan.py
+etherscan/utils.py
+py_etherscan_client.egg-info/PKG-INFO
+py_etherscan_client.egg-info/SOURCES.txt
+py_etherscan_client.egg-info/dependency_links.txt
+py_etherscan_client.egg-info/requires.txt
+py_etherscan_client.egg-info/top_level.txt
