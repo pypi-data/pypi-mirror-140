@@ -1,0 +1,111 @@
+#!python
+import argparse
+import getpass
+import os
+import readline
+import socket
+import subprocess
+import re
+
+try:
+    import aya
+except ImportError:
+    pass
+VERSION = 2.1
+with open(os.getenv("HOME") + "/.psh_history", "r") as file:
+    hist = file.read().split("\n")
+    for i in hist:
+        readline.add_history(i)
+CS = ""
+un = getpass.getuser()
+hn = socket.gethostname()
+if ".local" in hn:
+    hn = hn[:-6]
+uid = '$'
+if os.getuid() == 0:
+    uid = '#'
+pwd = os.getcwd()
+
+
+def run(runshell):
+    home = os.getenv("HOME")
+    with open(f"{home}/.psh_history", 'a') as historyfile:
+        historyfile.write(f"{runshell}\n")
+    if "cd" in runshell[0:2]:
+        try:
+            if runshell[3:] == '':
+                os.chdir(os.getenv("HOME"))
+            os.chdir(runshell[3:])
+        except Exception as e:
+            print(e)
+    if runshell in ['exit', 'exit()']:
+        exit()
+    env = os.environ.copy()
+    env["SHELL"] = __file__
+
+    finds = re.findall(r'\$(\w+)', runshell)
+    for variable in finds:
+        try:
+            runshell = runshell.replace('$' + variable, str(env[variable]))
+        except KeyError:
+            pass
+    try:
+        exec(runshell)
+    except Exception:
+        try:
+            runshell = runshell.split(" ")
+            subprocess.run(runshell, env=env, encoding="UTF-8")
+        except Exception as e:
+            return e
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-v", "--version", action="version", version=f"v{VERSION}", help="Shows the current version")
+parser.parse_args()
+
+while True:
+    try:
+        pwd = os.getcwd()
+        if os.getenv("HOME") in pwd:
+            al = os.getenv("HOME")
+            va = len(al)
+            pwd = pwd[va:]
+            pwd = f"~{pwd}"
+        ps ="[\\u@\\h \\W]\\$ "
+        ps = ps.replace("\\u", getpass.getuser())
+        ps = ps.replace("\\h", socket.gethostname().replace(".local", ""))
+        ps = ps.replace("\\W", pwd)
+        ps = ps.replace("\\$", "#" if os.geteuid() == 0 else "$")
+        values = os.listdir()
+
+        # $PATH add
+        envpath = os.getenv("PATH")
+        if envpath is not None:
+            envpath = envpath.split(":")
+
+            for i in envpath:
+                try:
+                    os.listdir(i)
+                    for am in os.listdir(i):
+                        values.append(am)
+                except FileNotFoundError:
+                    pass
+
+
+        def complete(text, state):
+            matches = [v for v in values if v.startswith(text)]
+            if len(matches) == 1 and matches[0] == text:
+                # Add space if the current text is the same as the only match
+                return "{} ".format(matches[0]) if state == 0 else None
+            if state >= len(matches):
+                return None
+            return matches[state]
+
+
+        readline.set_completer(complete)
+        for line in ("tab: complete", "set show-all-if-unmodified on"):
+            readline.parse_and_bind(line)
+        app = run(input(ps))
+    except KeyboardInterrupt:
+        print()
+        continue
