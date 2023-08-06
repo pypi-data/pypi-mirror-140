@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dswizard-components
+Version: 0.2.1
+Summary: Contains all base algorithms used by dswizard
+Home-page: https://github.com/Ennosigaeon/dswizard-components
+Author: Marc Zoeller
+Author-email: m.zoeller@usu.de
+License: MIT
+Keywords: automl,machine learning,pipeline synthesis
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# dswizard-components
+
+[_dswizard_](https://github.com/Ennosigaeon/dswizzard) is an efficient solver for machine learning (ML) pipeline
+synthesis inspired by human behaviour. It automatically derives a pipeline structure, selects algorithms and performs
+hyperparameter optimization. This repository contains all _basic_ algorithms that can be optimized by _dswizard_. For
+more information check [_dswizard_](https://github.com/Ennosigaeon/dswizzard).
+
+
