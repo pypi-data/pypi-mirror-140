@@ -1,0 +1,7 @@
+pandas>=1.0
+numpy
+seaborn
+matplotlib
+papermill
+dnaio
+pysam
