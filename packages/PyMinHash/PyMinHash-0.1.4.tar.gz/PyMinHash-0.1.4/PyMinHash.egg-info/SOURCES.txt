@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PyMinHash.egg-info/PKG-INFO
+PyMinHash.egg-info/SOURCES.txt
+PyMinHash.egg-info/dependency_links.txt
+PyMinHash.egg-info/requires.txt
+PyMinHash.egg-info/top_level.txt
+pyminhash/__init__.py
+pyminhash/datasets.py
+pyminhash/pyminhash.py
+pyminhash/data/stoxx50_extended_with_id.xlsx
