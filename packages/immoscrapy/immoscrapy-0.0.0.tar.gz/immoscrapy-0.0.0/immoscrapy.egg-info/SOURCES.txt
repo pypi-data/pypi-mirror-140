@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+immoscrapy/__init__.py
+immoscrapy/cli.py
+immoscrapy/immoscrapy.py
+immoscrapy/version.py
+immoscrapy.egg-info/PKG-INFO
+immoscrapy.egg-info/SOURCES.txt
+immoscrapy.egg-info/dependency_links.txt
+immoscrapy.egg-info/entry_points.txt
+immoscrapy.egg-info/requires.txt
+immoscrapy.egg-info/top_level.txt

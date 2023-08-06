@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: immoscrapy
+Version: 0.0.0
+Summary: Scrape Immobilienscout24 data using Python.
+Home-page: https://github.com/venthur/immoscrapy
+Author: Bastian Venthur
+Author-email: mail@venthur.de
+License: MIT
+Project-URL: Documentation, https://immoscrapy.readthedocs.io/
+Project-URL: Source, https://github.com/venthur/immoscrapy
+Project-URL: Changelog, https://github.com/venthur/immoscrapy/blob/master/CHANGELOG.md
+Keywords: immobilienscout24 immoscout cli python scraper
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# immoscrapy
+
+Scrape [Immobilienscout24][] data using Python.
+
+[Immobilienscout24]: https://www.immobilienscout24.de/
+
+
