@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+isprime/parag_isprime.egg-info/PKG-INFO
+isprime/parag_isprime.egg-info/SOURCES.txt
+isprime/parag_isprime.egg-info/dependency_links.txt
+isprime/parag_isprime.egg-info/entry_points.txt
+isprime/parag_isprime.egg-info/top_level.txt
