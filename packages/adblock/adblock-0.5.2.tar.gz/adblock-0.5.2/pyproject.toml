@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "adblock"
+version = "0.0.0"
+description = "Brave's adblocking in Python"
+authors = ["Árni Dagur <arni@dagur.eu>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+maturin = "*"
+pytest = "*"
+toml = "*"
+
+[build-system]
+requires = ["maturin>=0.12,<0.13"]
+build-backend = "maturin"
