@@ -1,0 +1,8 @@
+aiohttp
+yarl
+
+[dev]
+pytest
+pytest-asyncio
+black==20.8b1
+flake8==3.8.4

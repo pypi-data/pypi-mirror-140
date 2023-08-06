@@ -1,0 +1,3 @@
+[console_scripts]
+jhubctl = jhub_client.__main__:main
+
