@@ -1,0 +1,2 @@
+pybind11~=2.0
+python-mecab-ko~=1.0.12
