@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/simpleUID/__init__.py
+src/simpleUID/exceptions.py
+src/simpleUID/include.py
+src/simpleUID/simpleUID.py
+src/simpleUID.egg-info/PKG-INFO
+src/simpleUID.egg-info/SOURCES.txt
+src/simpleUID.egg-info/dependency_links.txt
+src/simpleUID.egg-info/top_level.txt
