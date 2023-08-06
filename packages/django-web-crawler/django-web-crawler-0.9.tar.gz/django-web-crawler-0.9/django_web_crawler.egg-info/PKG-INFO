@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: django-web-crawler
+Version: 0.9
+Summary: A Django app to gather the links of a website.
+Home-page: https://www.majestylink.com/
+Author: Atuh Samuel
+Author-email: atuhsamuel96@gmail.com
+Maintainer: Atuh Samuel
+Maintainer-email: atuhsamuel96@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+
+==================
+Django Web Crawler
+==================
+
+Crawler is a Django app to help connect to a website and gather as much links as you want.
+
+Quick start
+-----------
+
+1. Add "gatherlinks" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'gatherlinks',
+    ]
+
+2. Import the "main" module like this::
+
+    from gatherlinks.crawler import main
+
+
+3. Initialize the StartPoint class like this::
+
+    crawler = main.StartPoint(https://example.com, max_crawl=50, number_of_threads=10)
+
+
+4. The StartPoint class can be initialized with three arguments.
+    a. homepage (a positional argument of the website to gather it's link.)
+
+    b. max_crawl (maximum number of links to gather from the website. Default is 50)
+
+    c. number_of_threads (Number of threads to be doing the work simultaneously. Default is 10)
+5. After initialising the class, you can then call the "start" method like this::
+
+    crawler.start()
+
+6. When the crawler must have finished gathering the link, you can access the gathered links like this::
+
+    crawler.result
+
+That result attribute is a "set" datatype that holds all the links that the crawler could gather.
+You can then loop through the "crawler.result" and do whatever you want with it (write to file or save to database).
+
