@@ -1,0 +1,3 @@
+[console_scripts]
+advertools = advertools.cli
+
