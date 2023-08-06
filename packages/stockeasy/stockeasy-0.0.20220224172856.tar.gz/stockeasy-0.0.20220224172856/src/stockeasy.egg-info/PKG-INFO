@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: stockeasy
+Version: 0.0.20220224172856
+Summary: A package for a quick and dirty portfolio analysis.
+Home-page: https://github.com/AdamBlacke/stockeasy
+Author: Adam Blacke
+Author-email: adamblacke@gmail.com
+License: UNKNOWN
+Description: # stockeasy
+        Quick and Easy Stock Portfolio Analysis - FOR ENTERTAINMENT PURPOSES ONLY!!
+        
+        ### Note
+        I use Docker for enviroment management; as such, my build process will deviate from more classical approaches. 
+        
+        ```
+        docker build -f ./container/dockerfile . -t stockeasy:develop
+        docker run -it stockeasy:develop
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
