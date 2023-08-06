@@ -1,0 +1,438 @@
+.codacy.yaml
+.editorconfig
+.git-blame-ignore-revs
+.gitattributes
+.gitignore
+.gitlab-ci.yml
+.pre-commit-config.yaml
+.prospector.yml
+.pylintrc
+.readthedocs.yml
+AUTHORS.rst
+CHANGELOG.rst
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+Makefile
+README.rst
+conftest.py
+requirements.txt
+requirements_dev.txt
+requirements_setup.txt
+setup.cfg
+setup.py
+.gitlab/issue_templates/Defect.md
+.gitlab/issue_templates/Feature.md
+.gitlab/merge_request_templates/General.md
+.gitlab/merge_request_templates/New release.md
+docker/unix/Dockerfile_python37
+docker/unix/Dockerfile_python38
+docker/unix/Dockerfile_python39
+docker/unix/Dockerfile_python_latest
+docker/windows/Dockerfile_python37
+docker/windows/Dockerfile_python38
+docker/windows/Dockerfile_python39
+docker/windows/Dockerfile_python_latest
+docs/Makefile
+docs/api_reference.rst
+docs/authors.rst
+docs/changelog.rst
+docs/conf.py
+docs/contributing.rst
+docs/index.rst
+docs/installation.rst
+docs/make.bat
+docs/nitpick-exceptions.txt
+docs/readme.rst
+docs/refs.bib
+docs/sphinx_extensions.rst
+docs/usage.py.rst
+docs/usage.rst.py
+docs/_build/html/_images/Quantify dataset - advanced examples.py_12_1.png
+docs/_build/html/_images/Quantify dataset - advanced examples.py_3_1.png
+docs/_build/html/_images/Quantify dataset - advanced examples.py_8_1.png
+docs/_build/html/_images/Quantify dataset - advanced examples.py_9_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_10_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_11_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_12_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_19_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_19_3.png
+docs/_build/html/_images/Quantify dataset - examples.py_25_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_25_3.png
+docs/_build/html/_images/Quantify dataset - examples.py_26_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_30_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_30_3.png
+docs/_build/html/_images/Quantify dataset - examples.py_31_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_31_3.png
+docs/_build/html/_images/Quantify dataset - examples.py_32_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_32_3.png
+docs/_build/html/_images/Quantify dataset - examples.py_39_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_4_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_4_3.png
+docs/_build/html/_images/Quantify dataset - examples.py_5_1.png
+docs/_build/html/_images/Quantify dataset - examples.py_8_1.png
+docs/_build/html/_images/Quantify dataset - specification.py_10_1.png
+docs/_build/html/_images/Quantify dataset - specification.py_10_3.png
+docs/_build/html/_images/Quantify dataset - specification.py_5_1.png
+docs/_build/html/_images/Quantify dataset - specification.py_6_1.png
+docs/_build/html/_images/Quantify dataset - specification.py_6_3.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_11_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_16_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_18_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_21_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_22_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_22_1.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_26_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_27_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl.py_10_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl.py_12_1.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl.py_13_5.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl.py_14_1.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl.py_16_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl.py_8_0.png
+docs/_build/html/_images/Tutorial 3. Building custom analyses - the data analysis framework.py_13_0.png
+docs/_build/html/_images/Tutorial 3. Building custom analyses - the data analysis framework.py_19_0.png
+docs/_build/html/_images/Tutorial 3. Building custom analyses - the data analysis framework.py_22_0.png
+docs/_build/html/_images/Tutorial 3. Building custom analyses - the data analysis framework.py_6_3.png
+docs/_build/html/_images/Tutorial 3. Building custom analyses - the data analysis framework.py_8_0.png
+docs/_build/html/_images/Tutorial 4. Adaptive Measurements.py_10_0.png
+docs/_build/html/_images/Tutorial 4. Adaptive Measurements.py_10_1.png
+docs/_build/html/_images/Tutorial 4. Adaptive Measurements.py_10_2.png
+docs/_build/html/_images/Tutorial 4. Adaptive Measurements.py_11_0.png
+docs/_build/html/_images/Tutorial 4. Adaptive Measurements.py_15_0.png
+docs/_build/html/_images/Tutorial 4. Adaptive Measurements.py_8_0.png
+docs/_build/html/_images/Tutorial 4. Adaptive Measurements.py_9_0.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_10_1.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_11_1.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_12_1.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_13_1.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_14_0.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_15_0.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_17_1.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_18_0.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_19_2.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_20_0.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_21_2.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_22_1.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_22_2.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_23_1.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_23_2.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_24_1.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_24_2.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_25_0.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_25_1.png
+docs/_build/html/_images/Tutorial 5. Plot monitor.py_9_1.png
+docs/_build/html/_images/Xarray introduction.py_16_1.png
+docs/_build/html/_images/conda_activate.gif
+docs/_build/html/_images/conda_install.gif
+docs/_build/html/_images/conda_source_installed_all_users.gif
+docs/_build/html/_images/quantify_core_all_docs_13_1.png
+docs/_build/html/_images/quantify_core_all_docs_16_3.png
+docs/_build/html/_images/quantify_core_all_docs_2_1.png
+docs/_build/html/_images/quantify_core_all_docs_32_3.png
+docs/_build/html/_images/quantify_core_all_docs_33_3.png
+docs/_build/html/_images/quantify_core_all_docs_34_3.png
+docs/_build/html/_images/quantify_core_all_docs_36_1.png
+docs/_build/html/_images/quantify_core_all_docs_36_3.png
+docs/_build/html/_images/quantify_core_all_docs_38_1.png
+docs/_build/html/_images/quantify_core_all_docs_47_2.png
+docs/_build/html/_images/quantify_core_all_docs_49_1.png
+docs/_build/html/_images/quantify_core_all_docs_49_3.png
+docs/_build/html/_images/quantify_core_all_docs_49_5.png
+docs/_build/html/_images/quantify_core_all_docs_49_7.png
+docs/_build/html/_images/quantify_core_all_docs_49_9.png
+docs/_build/html/_images/surface-7-sched.png
+docs/_build/html/_images/usage.py_12_0.png
+docs/_build/html/_images/usage.py_16_2.png
+docs/_build/html/_images/usage.py_17_2.png
+docs/_build/html/_images/usage.py_18_1.png
+docs/_build/html/_images/usage.py_19_2.png
+docs/_build/html/_images/usage.py_19_3.png
+docs/_build/html/_images/usage.py_19_4.png
+docs/_build/html/_images/usage.py_20_2.png
+docs/_build/html/_images/usage.py_21_2.png
+docs/_build/html/_images/usage.py_22_1.png
+docs/_build/html/_images/usage.py_6_2.png
+docs/_build/html/_images/usage.py_8_1.png
+docs/_build/html/_images/usage.py_9_1.png
+docs/_build/html/_static/QUANTIFY-FAVICON_16.png
+docs/_build/html/_static/file.png
+docs/_build/html/_static/minus.png
+docs/_build/html/_static/plus.png
+docs/_build/jupyter_execute/quantify_core_all_docs_13_1.png
+docs/_build/jupyter_execute/quantify_core_all_docs_16_3.png
+docs/_build/jupyter_execute/quantify_core_all_docs_2_1.png
+docs/_build/jupyter_execute/quantify_core_all_docs_32_3.png
+docs/_build/jupyter_execute/quantify_core_all_docs_33_3.png
+docs/_build/jupyter_execute/quantify_core_all_docs_34_3.png
+docs/_build/jupyter_execute/quantify_core_all_docs_34_4.png
+docs/_build/jupyter_execute/quantify_core_all_docs_36_1.png
+docs/_build/jupyter_execute/quantify_core_all_docs_36_3.png
+docs/_build/jupyter_execute/quantify_core_all_docs_38_1.png
+docs/_build/jupyter_execute/quantify_core_all_docs_47_2.png
+docs/_build/jupyter_execute/quantify_core_all_docs_49_1.png
+docs/_build/jupyter_execute/quantify_core_all_docs_49_3.png
+docs/_build/jupyter_execute/quantify_core_all_docs_49_5.png
+docs/_build/jupyter_execute/quantify_core_all_docs_49_7.png
+docs/_build/jupyter_execute/quantify_core_all_docs_49_9.png
+docs/_build/jupyter_execute/usage.py_12_0.png
+docs/_build/jupyter_execute/usage.py_16_2.png
+docs/_build/jupyter_execute/usage.py_17_2.png
+docs/_build/jupyter_execute/usage.py_18_1.png
+docs/_build/jupyter_execute/usage.py_19_2.png
+docs/_build/jupyter_execute/usage.py_19_3.png
+docs/_build/jupyter_execute/usage.py_19_4.png
+docs/_build/jupyter_execute/usage.py_20_2.png
+docs/_build/jupyter_execute/usage.py_21_2.png
+docs/_build/jupyter_execute/usage.py_22_1.png
+docs/_build/jupyter_execute/usage.py_6_2.png
+docs/_build/jupyter_execute/usage.py_8_1.png
+docs/_build/jupyter_execute/usage.py_9_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - advanced examples.py_12_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - advanced examples.py_3_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - advanced examples.py_8_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - advanced examples.py_9_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_10_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_11_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_12_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_19_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_19_3.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_25_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_25_3.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_26_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_30_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_30_3.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_31_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_31_3.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_32_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_32_3.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_39_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_4_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_4_3.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_5_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - examples.py_8_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - specification.py_10_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - specification.py_10_3.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - specification.py_5_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - specification.py_6_1.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Quantify dataset - specification.py_6_3.png
+docs/_build/jupyter_execute/technical_notes/dataset_design/Xarray introduction.py_16_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_11_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_16_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_18_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_21_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_22_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_22_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_26_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.py_27_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl.py_10_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl.py_12_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl.py_13_5.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl.py_14_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl.py_16_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl.py_8_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Building custom analyses - the data analysis framework.py_13_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Building custom analyses - the data analysis framework.py_19_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Building custom analyses - the data analysis framework.py_22_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Building custom analyses - the data analysis framework.py_6_3.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Building custom analyses - the data analysis framework.py_8_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Adaptive Measurements.py_10_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Adaptive Measurements.py_10_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Adaptive Measurements.py_10_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Adaptive Measurements.py_11_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Adaptive Measurements.py_15_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Adaptive Measurements.py_8_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Adaptive Measurements.py_9_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_10_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_11_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_12_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_13_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_14_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_15_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_17_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_18_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_19_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_20_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_21_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_22_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_22_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_23_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_23_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_24_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_24_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_25_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_25_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 5. Plot monitor.py_9_1.png
+docs/_static/quantify_core.css
+docs/examples/analysis.base_analysis.AnalysisSteps.rst.txt.py
+docs/examples/analysis.base_analysis.BaseAnalysis.run_custom_analysis_args.rst.txt.py
+docs/examples/analysis.calibration.has_calibration_points.rst.txt.py
+docs/examples/data.dataset_attrs.QCoordAttrs.rst.txt.py
+docs/examples/data.dataset_attrs.QDatasetAttrs.rst.txt.py
+docs/examples/data.dataset_attrs.QDatasetAttrs.software_versions.rst.txt.py
+docs/examples/data.dataset_attrs.QDatasetIntraRelationship.rst.txt.py
+docs/examples/data.dataset_attrs.QVarAttrs.rst.txt.py
+docs/examples/data.handling.to_gridded_dataset.rst.txt.py
+docs/examples/measurement.control.setpoints_grid.rst.txt.py
+docs/examples/utilities.deprecated.rst.txt.py
+docs/examples/utilities.examples_support.mk_iq_shots.rst.txt.py
+docs/examples/utilities.examples_support.mk_trace_for_iq_shot.rst.txt.py
+docs/examples/visualization.color_utilities.set_hlsa.rst.txt.py
+docs/examples/visualization.instrument_monitor.rst.txt.py
+docs/examples/visualization.mpl_plotting.set_cyclic_colormap.rst.txt.py
+docs/images/OQS_logo_with_text.svg
+docs/images/QUANTIFY-FAVICON_16.png
+docs/images/QUANTIFY-LOGO-WHITE-TEXT.svg
+docs/images/QUANTIFY-LOGO.svg
+docs/images/QUANTIFY_LANDSCAPE.svg
+docs/images/Qblox_logo.svg
+docs/images/surface-7-sched.png
+docs/images/install/conda_activate.gif
+docs/images/install/conda_install.gif
+docs/images/install/conda_source_installed_all_users.gif
+docs/technical_notes/dataset_design/Quantify dataset - advanced examples.py.rst
+docs/technical_notes/dataset_design/Quantify dataset - advanced examples.rst.py
+docs/technical_notes/dataset_design/Quantify dataset - examples.py.rst
+docs/technical_notes/dataset_design/Quantify dataset - examples.rst.py
+docs/technical_notes/dataset_design/Quantify dataset - specification.py.rst
+docs/technical_notes/dataset_design/Quantify dataset - specification.rst.py
+docs/technical_notes/dataset_design/Xarray introduction.py.rst
+docs/technical_notes/dataset_design/Xarray introduction.rst.py
+docs/technical_notes/dataset_design/index.rst
+docs/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.py.rst
+docs/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.rst.py
+docs/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl.py.rst
+docs/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl.rst.py
+docs/tutorials/Tutorial 3. Building custom analyses - the data analysis framework.py.rst
+docs/tutorials/Tutorial 3. Building custom analyses - the data analysis framework.rst.py
+docs/tutorials/Tutorial 4. Adaptive Measurements.py.rst
+docs/tutorials/Tutorial 4. Adaptive Measurements.rst.py
+docs/tutorials/Tutorial 5. Plot monitor.py.rst
+docs/tutorials/Tutorial 5. Plot monitor.rst.py
+docs/tutorials/index.rst
+docs/tutorials/set_data_dir_notes.rst.txt
+frozen-requirements/frozen-requirements-0.5.1.txt
+frozen-requirements/frozen-requirements-0.5.2.txt
+frozen-requirements/frozen-requirements-0.5.3.txt
+quantify_core/__init__.py
+quantify_core.egg-info/PKG-INFO
+quantify_core.egg-info/SOURCES.txt
+quantify_core.egg-info/dependency_links.txt
+quantify_core.egg-info/not-zip-safe
+quantify_core.egg-info/requires.txt
+quantify_core.egg-info/top_level.txt
+quantify_core/analysis/__init__.py
+quantify_core/analysis/base_analysis.py
+quantify_core/analysis/calibration.py
+quantify_core/analysis/cosine_analysis.py
+quantify_core/analysis/fitting_models.py
+quantify_core/analysis/interpolation_analysis.py
+quantify_core/analysis/optimization_analysis.py
+quantify_core/analysis/single_qubit_timedomain.py
+quantify_core/analysis/spectroscopy_analysis.py
+quantify_core/analysis/types.py
+quantify_core/analysis/schemas/AnalysisSettings.json
+quantify_core/analysis/schemas/__init__.py
+quantify_core/data/__init__.py
+quantify_core/data/dataset_adapters.py
+quantify_core/data/dataset_attrs.py
+quantify_core/data/experiment.py
+quantify_core/data/handling.py
+quantify_core/data/types.py
+quantify_core/measurement/__init__.py
+quantify_core/measurement/control.py
+quantify_core/measurement/gettables.py
+quantify_core/measurement/types.py
+quantify_core/measurement/schemas/Gettable.json
+quantify_core/measurement/schemas/Settable.json
+quantify_core/measurement/schemas/__init__.py
+quantify_core/sphinx_extensions/__init__.py
+quantify_core/sphinx_extensions/notebook_to_jupyter_sphinx.py
+quantify_core/utilities/__init__.py
+quantify_core/utilities/_docs_helpers.py
+quantify_core/utilities/_tests_helpers.py
+quantify_core/utilities/dataset_examples.py
+quantify_core/utilities/deprecation.py
+quantify_core/utilities/examples_support.py
+quantify_core/utilities/experiment_helpers.py
+quantify_core/utilities/general.py
+quantify_core/utilities/inspect_utils.py
+quantify_core/visualization/SI_utilities.py
+quantify_core/visualization/__init__.py
+quantify_core/visualization/_appnope.py
+quantify_core/visualization/color_utilities.py
+quantify_core/visualization/instrument_monitor.py
+quantify_core/visualization/mpl_plotting.py
+quantify_core/visualization/plot_interpolation.py
+quantify_core/visualization/pyqt_plotmon.py
+quantify_core/visualization/pyqt_plotmon_remote.py
+quantify_core/visualization/ins_mon_widget/__init__.py
+quantify_core/visualization/ins_mon_widget/qc_snapshot_widget.py
+tests/__init__.py
+tests/test_headers_and_copyright.py
+tests/analysis/test_base_analysis.py
+tests/analysis/test_calibration.py
+tests/analysis/test_fitting_models.py
+tests/analysis/test_interpolation_analysis.py
+tests/analysis/test_optimization_analysis.py
+tests/analysis/test_single_qubit_timedomain.py
+tests/analysis/test_spectroscopy_analysis.py
+tests/analysis/test_types.py
+tests/data/__init__.py
+tests/data/test_data_handling.py
+tests/data/test_experiment.py
+tests/data/test_types.py
+tests/measurement/__init__.py
+tests/measurement/test_measurement_control.py
+tests/measurement/test_types.py
+tests/sphinx_extensions/__init__.py
+tests/sphinx_extensions/test_notebook_to_jupyter_sphinx.py
+tests/test_data/__init__.py
+tests/test_data/transmon_test_config.json
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/dataset.hdf5
+tests/test_data/20200504/20200504-191556-002-4209ee-2D Cosine test/dataset.hdf5
+tests/test_data/20200814/20200814-134652-492-fbf254-save/snapshot.json
+tests/test_data/20201124/20201124-184709-137-8a5112-(0) Spec IF=0.000 MHz/dataset.hdf5
+tests/test_data/20201124/20201124-184716-237-918bee-(1) Spec IF=20.000 MHz/dataset.hdf5
+tests/test_data/20201124/20201124-184722-988-0463d4-(2) Spec IF=-20.000 MHz/dataset.hdf5
+tests/test_data/20201124/20201124-184729-618-85970f-(3) Spec IF=40.000 MHz/dataset.hdf5
+tests/test_data/20201124/20201124-184736-341-3628d4-(4) Spec IF=-40.000 MHz/dataset.hdf5
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/dataset.hdf5
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/snapshot.json
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/dataset.hdf5
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/snapshot.json
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/dataset.hdf5
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/dataset.hdf5
+tests/test_data/20210305/.DS_Store
+tests/test_data/20210305/20210305-152943-497-ad8670-Resonator_id2_4.483GHz/dataset.hdf5
+tests/test_data/20210305/20210305-154735-413-142768-Resonator_id2_4.483GHz/dataset.hdf5
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/dataset.hdf5
+tests/test_data/20210305/20210305-161550-671-982c6d-Resonator_id5_4.577GHz/dataset.hdf5
+tests/test_data/20210319/20210319-094728-327-69b211-load_settings_test/snapshot.json
+tests/test_data/20210322/20210322-205253-758-6689ca-T1 at 4.715GHz/dataset.hdf5
+tests/test_data/20210331/20210331-133734-718-aa9c83 AllXY q0/dataset.hdf5
+tests/test_data/20210419/20210419-153127-883-fa4508-Rabi oscillation at 4.515GHz/dataset.hdf5
+tests/test_data/20210419/20210419-170747-902-9c5a05-Offset_calibration/dataset.hdf5
+tests/test_data/20210419/20210419-173649-456-23c5f3-AllXY q0/dataset.hdf5
+tests/test_data/20210420/20210420-001339-580-97bdef-Echo at 4.715GHz/dataset.hdf5
+tests/test_data/20210422/20210422-104958-297-7d6034-Ramsey oscillation at 4.715GHz/dataset.hdf5
+tests/test_data/20210827/20210827-174946-357-70a986-T1 experiment q0/dataset.hdf5
+tests/test_data/20210827/20210827-175004-087-ab1aab-Ramsey oscillation q0 at 4.9969 GHz/dataset.hdf5
+tests/test_data/20210827/20210827-175021-521-251f28-Echo experiment q0/dataset.hdf5
+tests/test_data/20210901/20210901-132357-561-5c3ef7-Ramsey oscillation q0 at 6.1400 GHz/dataset.hdf5
+tests/test_data/20211029/20211029-000217-063-ab42e4-Pulsed spectroscopy q4/dataset.hdf5
+tests/test_data/20211029/20211029-000217-063-ab42e4-Pulsed spectroscopy q4/snapshot.json
+tests/test_data/20211029/20211029-001240-717-587536-Pulsed spectroscopy q4/dataset.hdf5
+tests/test_data/20211029/20211029-001240-717-587536-Pulsed spectroscopy q4/snapshot.json
+tests/test_data/20211029/20211029-002303-114-e360dc-Pulsed spectroscopy q4/dataset.hdf5
+tests/test_data/20211029/20211029-002303-114-e360dc-Pulsed spectroscopy q4/snapshot.json
+tests/test_data/empty/nothing
+tests/utilities/__init__.py
+tests/utilities/test_deprecation.py
+tests/utilities/test_experiment_helpers.py
+tests/utilities/test_general.py
+tests/utilities/test_inspect_utils.py
+tests/visualization/test_SI_utilities.py
+tests/visualization/test_instrument_monitor.py
+tests/visualization/test_mpl_plotting.py
+tests/visualization/test_pyqt_plotmon.py
