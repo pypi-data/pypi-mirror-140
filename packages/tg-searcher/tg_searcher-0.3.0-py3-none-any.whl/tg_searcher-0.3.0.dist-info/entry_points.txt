@@ -1,0 +1,2 @@
+[console_scripts]
+tg-searcher = tg_searcher:main
