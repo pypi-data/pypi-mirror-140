@@ -1,0 +1,5 @@
+setup.py
+fa_tools_misc.egg-info/PKG-INFO
+fa_tools_misc.egg-info/SOURCES.txt
+fa_tools_misc.egg-info/dependency_links.txt
+fa_tools_misc.egg-info/top_level.txt
