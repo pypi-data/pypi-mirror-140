@@ -1,0 +1,11 @@
+gartersnake/__init__.py,sha256=sRg0TzzYZyJUCjtp6a1esdcDKRixS20JY649hxb0Lps,284
+gartersnake/conda.py,sha256=Mn2ZZKaPG23F8J5crlW8__KsnlMNZveRoIi7V5X4GBA,2368
+gartersnake/missing.py,sha256=naOOmTbGl7PGUnpmzfa_SJf2evkiLxAZLOBLiAz0c78,1281
+gartersnake/pip.py,sha256=st6ZisuBwaS52D8iOQZcNBjtmccRByEFm3xWSLBIE1k,639
+gartersnake/version.py,sha256=pMkU4SBgc-qWxyDW9i9uvbJYmkcF5iTIYvQR-XXZOoQ,430
+gartersnake/windows.py,sha256=tJwwyb2cX34nCvaD7KGV1BHJSbGA7yrrOsqUhIb3jbg,2765
+gartersnake-1.0.1.dist-info/LICENSE,sha256=C5zh5X_KjgNvUsyqYLhKK3BgktzcgCJe-rLmaBX-40E,1061
+gartersnake-1.0.1.dist-info/METADATA,sha256=bJWsUDireDje2P_R0lAVmLoV3UL1RSoeLqEfDNDuisA,2457
+gartersnake-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gartersnake-1.0.1.dist-info/top_level.txt,sha256=vPstJknxR28Uk8wTXWijlXKqzzwXfwinnjat_9tnguY,12
+gartersnake-1.0.1.dist-info/RECORD,,
