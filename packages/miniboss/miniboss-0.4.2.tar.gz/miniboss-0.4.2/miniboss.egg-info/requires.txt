@@ -1,0 +1,6 @@
+click>7
+docker>4
+furl>2
+requests>2
+attrs>20
+python-slugify>6.0.0
