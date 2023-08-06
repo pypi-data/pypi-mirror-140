@@ -1,0 +1,14 @@
+stock_report/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stock_report/__main__.py,sha256=H1eKx0RFJ4OES_Nufk5rNAqCJrQ7zM_2X19lAwW3V-Q,2733
+stock_report/analysis.py,sha256=wV0FIPWlA5g0dMF4Av-VQZD7-ddB2TwDM-zsOueEjMU,4525
+stock_report/data.py,sha256=-s1tgYJkLkfgD2jJrQw9BqBftGsw8cBWhoNXeCJarbM,5571
+stock_report/pdf.py,sha256=_8RDJS6DW6Jo1nXQ6BD_Ny639_BtwB3DxcBYRwYe4xM,20584
+stock_report/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stock_report/resources/footer.png,sha256=VanY1W8mrrYFNYS1SQMR5_9O45DxN6LQk5ka19AHygo,433128
+stock_report/resources/header.png,sha256=A4AI-Iu4aSrsm02pW4MCeFVKy1GmAOTp87anwC-p_7s,202948
+stock_report/resources/logo.png,sha256=pBaRAASzEU6LGGaw8ot0_1CLkoxb13mtJa72ik5ey7g,9505
+stock_report-1.0.0.dist-info/LICENSE,sha256=g0DCj28Dr5b9yRhILfJ01NcKXElexCj6MCSbssB6FY8,1070
+stock_report-1.0.0.dist-info/METADATA,sha256=mpKcR2-v4GbUgWgfy3SeTS95DFl_CIGeYyxD_fOdBig,2851
+stock_report-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stock_report-1.0.0.dist-info/top_level.txt,sha256=nFHz2kH16QACwF-QZCTGOKbX4fsqwTyAt-NTqMO9rSs,13
+stock_report-1.0.0.dist-info/RECORD,,
