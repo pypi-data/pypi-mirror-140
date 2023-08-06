@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gridx-egret
+Version: 0.5.2
+Summary: EGRET: Electrical Grid Research and Engineering Tools.
+Home-page: https://github.com/grid-parity-exchange/Egret
+Author: Michael Bynum, Anya Castillo, Carl Laird, Bernard Knueven and Jean-Paul Watson
+Maintainer-email: carldlaird@users.noreply.github.com
+License: Revised BSD
+Platform: UNKNOWN
+Requires-Python: >=3.7, <4
+License-File: LICENSE.txt
+
+UNKNOWN
+
