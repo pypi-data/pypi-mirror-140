@@ -1,0 +1,16 @@
+numpy
+uncertainties
+pandas
+openpyxl
+pint
+strictyaml
+chemicals
+yadg>=4.0.0
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+
+[testing]
+pytest

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: dgpost
+Version: 0.2rc1
+Summary: datagram postprocessing tools
+Home-page: https://empa.gitlab.ch/krpe/postprocess
+Author: Peter Kraus
+Author-email: peter@tondon.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://empa.gitlab.ch/krpe/postprocess/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Provides-Extra: docs
+License-File: LICENSE
+
+# dgpost: datagram postprocessing tools
+
+Set of tools to post-process instrument data in `datagram` format.
+
+### Capabilities:
+
+### Features:
+
+### Contributors:
+- [Peter Kraus](http://github.com/PeterKraus)
+- [Nicolas Vetsch](http://github.com/vetschn)
+- [Ulrich Sauter](http://github.com/ileu)
+
+
