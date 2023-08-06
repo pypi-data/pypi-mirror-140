@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+xontrib/goenv.xsh
+xontrib/langenv_common.xsh
+xontrib/nodenv.xsh
+xontrib/pyenv.xsh
+xontrib/rbenv.xsh
+xontrib_langenv.egg-info/PKG-INFO
+xontrib_langenv.egg-info/SOURCES.txt
+xontrib_langenv.egg-info/dependency_links.txt
+xontrib_langenv.egg-info/top_level.txt
