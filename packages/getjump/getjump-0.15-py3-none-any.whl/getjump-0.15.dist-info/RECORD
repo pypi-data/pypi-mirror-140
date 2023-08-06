@@ -1,0 +1,11 @@
+getjump/GetJump.py,sha256=UfaVay1h-yp8V3eQ9WSiQKtzdFgPctGHirGEUNFyGcI,5459
+getjump/__init__.py,sha256=iKRlxVO3u0cYZ3FPx9_skF_LBLiWQLXuOyGICD0bfyA,101
+getjump/gap.py,sha256=JvUa7ChOxL94PWfnSYhBBujAq3S0-XsA2fZGxiMQpJc,1319
+getjump/main.py,sha256=JjlkWcSYDZSz9L3c4fTkKybhzjLQT2mGZRdE6cZooIA,3484
+getjump/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getjump-0.15.dist-info/LICENSE.txt,sha256=r8H2g5CSzw2VZr2CrBp33IHi2bpSxPAxRsUZhUn7e3M,1046
+getjump-0.15.dist-info/METADATA,sha256=VYLXyUzF2kHYrZzIYdk-pZrjZR47pVIdA5iAqG5j-Dc,6673
+getjump-0.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+getjump-0.15.dist-info/entry_points.txt,sha256=xdRz1DJRLBG7-F9hjdwZP3NK-1NvWWVRslAlYoeQLMI,44
+getjump-0.15.dist-info/top_level.txt,sha256=uy9hz_rfRCRJFpLUtW6Q732sVH9Ch8rwbnTDY0CqDRk,8
+getjump-0.15.dist-info/RECORD,,
