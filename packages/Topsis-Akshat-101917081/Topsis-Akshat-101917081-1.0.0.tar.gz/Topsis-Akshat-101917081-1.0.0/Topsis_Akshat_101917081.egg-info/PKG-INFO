@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Topsis-Akshat-101917081
+Version: 1.0.0
+Summary: It calculates the topsis score and ranks accordingly
+Home-page: https://github.com/akshat0703/Topsis-Akshat-101917081.git
+Author: Akshat Gupta
+Author-email: aksgupta0001@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# (TOPSIS)Technique for Order of Preference by Similarity to Ideal Solution 
+It takes input from command line and creates a .csv file containing TOPSIS score and ranks.
+
+## Installation
+```pip install Topsis-Akshat-101917081```
+
+## How to use it?
+Open terminal and type the input in following format
+python <program.py> <InputDataFile> <Weights> <Impacts> <ResultFileName>
+
+## License
+
+Â© 2022 Akshat Gupta
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
