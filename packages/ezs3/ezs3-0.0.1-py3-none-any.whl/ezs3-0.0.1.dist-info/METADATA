@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ezs3
+Version: 0.0.1
+Summary: S3 wrapper built on top of `boto3`.
+Home-page: UNKNOWN
+Author: nchz
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: boto3 (==1.*)
+
+UNKNOWN
+
