@@ -1,0 +1,9 @@
+hera_tda-0.0.2.dist-info/top_level.txt,sha256=DckPWsTustS5X4CPE_COlK4fEzxyh7aAVlc_eOsbBMU,9
+hera_tda-0.0.2.dist-info/WHEEL,sha256=F28Xsnq72Ur0dg82JyTpildZiuk86tGnSvP2APeOfVU,112
+hera_tda-0.0.2.dist-info/RECORD,,
+hera_tda-0.0.2.dist-info/LICENSE,sha256=TYqbWmhiAw0LZVvn_r58nLAfP4h_l8ix3dGIZcikglc,1456
+hera_tda-0.0.2.dist-info/METADATA,sha256=G8GXmA0yvfkq8jByH8UDc2JVXt-bgvUkalWAw2u38wM,3790
+hera_tda/wasserstein.cpython-39-x86_64-linux-gnu.so,sha256=OF_Sjc5LtjwP4qIqIxysW24yR-UFRovW9_oTtL2puHo,4216232
+hera_tda/__init__.py,sha256=-U4qDi0z8e2QccA7ipUygDeGNngSCtyW4w6rxjw6gV0,53
+hera_tda/_version.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+hera_tda/bottleneck.cpython-39-x86_64-linux-gnu.so,sha256=mtytUUU41fqSql53l6EmJKV2dfw2MXHAGyJ_zDpEYv0,4174680
