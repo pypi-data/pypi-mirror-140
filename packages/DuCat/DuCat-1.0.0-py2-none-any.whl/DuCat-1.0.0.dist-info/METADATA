@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: DuCat
+Version: 1.0.0
+Summary: An powerful log processor BASE ON OkCat
+Home-page: https://github.com/TokenChen/okcat
+Author: Zhentao
+Author-email: chenzhentao70@gmail.com
+License: Apache2
+Keywords: okcat log 'log processor' 'log filter'
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: PyYAML (>=3.12)
+
+More detail please move to https://github.com/TokenChen/okcat
+
+
