@@ -1,0 +1,15 @@
+grpcio
+grpcio-tools
+packaging
+wrapt
+
+[http]
+requests>=2.26.0
+
+[kafka]
+kafka
+
+[test]
+testcontainers
+pyyaml
+pytest
