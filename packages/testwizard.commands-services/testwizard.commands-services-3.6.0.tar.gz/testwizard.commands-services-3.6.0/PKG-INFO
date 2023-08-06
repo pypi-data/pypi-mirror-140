@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: testwizard.commands-services
+Version: 3.6.0
+Summary: Testwizard Services commands
+Home-page: https://www.eurofins-digitaltesting.com/testwizard/
+Author: Eurofins Digital Testing - Belgium
+Author-email: testwizard-support@eurofins-digitaltesting.com
+License: UNKNOWN
+Description: TODO
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
