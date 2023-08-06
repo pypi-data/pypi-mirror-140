@@ -1,0 +1,13 @@
+License
+README.md
+pyproject.toml
+setup.cfg
+man/libmanconf.3.gz
+man/man.conf.5.gz
+src/libmanconf/__init__.py
+src/libmanconf/main.py
+src/pnu_libmanconf.egg-info/PKG-INFO
+src/pnu_libmanconf.egg-info/SOURCES.txt
+src/pnu_libmanconf.egg-info/dependency_links.txt
+src/pnu_libmanconf.egg-info/requires.txt
+src/pnu_libmanconf.egg-info/top_level.txt
