@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+dictionary/__init__.py
+dictionary/dictionary.py
+very_simple_dictionary_by_ilke_v.0.1.egg-info/PKG-INFO
+very_simple_dictionary_by_ilke_v.0.1.egg-info/SOURCES.txt
+very_simple_dictionary_by_ilke_v.0.1.egg-info/dependency_links.txt
+very_simple_dictionary_by_ilke_v.0.1.egg-info/requires.txt
+very_simple_dictionary_by_ilke_v.0.1.egg-info/top_level.txt
