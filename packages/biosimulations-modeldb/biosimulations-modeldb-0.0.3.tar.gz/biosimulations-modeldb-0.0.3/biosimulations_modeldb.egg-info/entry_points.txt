@@ -1,0 +1,2 @@
+[console_scripts]
+biosimulations-modeldb = biosimulations_modeldb.__main__:main

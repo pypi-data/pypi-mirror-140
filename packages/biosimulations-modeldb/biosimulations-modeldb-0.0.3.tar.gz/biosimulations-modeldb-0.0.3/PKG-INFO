@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: biosimulations-modeldb
+Version: 0.0.3
+Summary: Command-line program for publishing the ModelDB model repository to BioSimulations.
+Home-page: https://github.com/biosimulations/biosimulations-modeldb
+Download-URL: https://github.com/biosimulations/biosimulations-modeldb
+Author: Center for Reproducible Biomedical Modeling
+Author-email: info@biosimulations.org
+License: MIT
+Keywords: neuroscience,systems biology,computational biology,mathematical modeling,numerical simulation,XPP,ModelDB
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Provides-Extra: tests
+Provides-Extra: docs
+Provides-Extra: all
+License-File: LICENSE
+
+UNKNOWN
+
