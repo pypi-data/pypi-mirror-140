@@ -1,0 +1,7 @@
+scyjava
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+sphinx_automodapi
