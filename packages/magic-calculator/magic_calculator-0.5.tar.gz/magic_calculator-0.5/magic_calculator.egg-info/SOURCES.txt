@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+magic_calculator/__init__.py
+magic_calculator/decorators.py
+magic_calculator/functions.py
+magic_calculator.egg-info/PKG-INFO
+magic_calculator.egg-info/SOURCES.txt
+magic_calculator.egg-info/dependency_links.txt
+magic_calculator.egg-info/requires.txt
+magic_calculator.egg-info/top_level.txt
