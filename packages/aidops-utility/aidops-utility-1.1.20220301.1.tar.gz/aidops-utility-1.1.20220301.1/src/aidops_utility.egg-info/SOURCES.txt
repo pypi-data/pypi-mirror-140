@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/aidops_utility/__init__.py
+src/aidops_utility/serialization.py
+src/aidops_utility.egg-info/PKG-INFO
+src/aidops_utility.egg-info/SOURCES.txt
+src/aidops_utility.egg-info/dependency_links.txt
+src/aidops_utility.egg-info/top_level.txt
