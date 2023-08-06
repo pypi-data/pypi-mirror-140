@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/entityscan/__init__.py
+src/entityscan/__version__.py
+src/entityscan/rules_db.py
+src/entityscan/scanner.py
+src/entityscan.egg-info/PKG-INFO
+src/entityscan.egg-info/SOURCES.txt
+src/entityscan.egg-info/dependency_links.txt
+src/entityscan.egg-info/requires.txt
+src/entityscan.egg-info/top_level.txt
+src/entityscan/engines/__init__.py
+src/entityscan/engines/composites.py
+src/entityscan/engines/literals.py
+src/entityscan/engines/patterns.py
