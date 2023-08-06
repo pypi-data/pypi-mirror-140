@@ -1,0 +1,10 @@
+scode/__init__.py,sha256=Y9_hc_yG1UjFXnHlcuyACV1-EfRJ_QtUpnca1eGZZuM,357
+scode/dropbox.py,sha256=kHlSlGHQFnGLxuRa_-jN2sHRU3BonV9r8eObgmz588M,1286
+scode/paramiko.py,sha256=Jf0A_TdFiETkqVCeWb6LNzh1DPr8EADrCCYxSFLqbK8,1796
+scode/selenium.py,sha256=sXLYUGAy7Ox3f1h6jhYgzHthnJ_mh-meVjOz8uEaEv4,14353
+scode/telegram.py,sha256=Dt2sH2aJFXxuXwpW2-C8HlTXP4gyA3jHilMhpq77KkU,3542
+scode/util.py,sha256=BQur-azsFywKh_pD_Vs0GKcnqaU_Iu9Z5u1OhmlKq5g,229
+scode-0.1.1.dist-info/METADATA,sha256=Ivg6WZHRLoScc2TonZH6NH1FzBEL5PW1oOExrdKp_1g,3200
+scode-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scode-0.1.1.dist-info/top_level.txt,sha256=0fHoCK77WQK1x4xU1jkBqqDmNsOJqpriBBhU4QVOvmU,6
+scode-0.1.1.dist-info/RECORD,,
