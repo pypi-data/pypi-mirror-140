@@ -1,0 +1,19 @@
+To Do:
+
+Testing:
+* Look into the limits of structure overlay
+* Make the Wigner D matrices accessible from python as well as their computation for various alpha, beta and gamma values
+* Finish the translation function optimisation
+
+Development
+* Timing - are band and integration order correctly determined?
+* Timing - can it be faster?
+* Support non-orthogonal maps
+* Change to NFFT and then change the sphere sampling for spherical harmonics, rotation function and angle-axis spheres to Fibonacci sampling.
+* Create Homebrew/MacPorts build procedure for MacOS
+* Create apt/zypper/yum build procedure for Linux
+* Modify the code to use pragmas to include the Windows specific __declspec(dllexport) modifier to make the library usable on Windows.
+* Add mmCIF output support.
+
+Admin
+* Get new version to CCP-EM including new interface
