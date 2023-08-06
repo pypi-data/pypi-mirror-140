@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: latex-utils-TheRaphael0000
+Version: 0.0.3
+Summary: Latex utils
+Home-page: https://github.com/TheRaphael0000/latex_utils
+Author: TheRaphael0000
+Author-email: raphael.margueron@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2 (>=2.10.1)
+
+UNKNOWN
+
