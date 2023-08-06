@@ -1,0 +1,14 @@
+MANIFEST.in
+requirements.txt
+setup.py
+devdiary/__init__.py
+devdiary/specification/__init__.py
+devdiary/specification/registration/__init__.py
+devdiary/specification/registration/driver.py
+devdiary/specification/registration/dsl.py
+devdiary/specification/registration/main.py
+devdiary_specification.egg-info/PKG-INFO
+devdiary_specification.egg-info/SOURCES.txt
+devdiary_specification.egg-info/dependency_links.txt
+devdiary_specification.egg-info/requires.txt
+devdiary_specification.egg-info/top_level.txt
