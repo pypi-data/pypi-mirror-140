@@ -1,0 +1,12 @@
+wapi2nsconf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wapi2nsconf/cli.py,sha256=txVqiyjO2nrR5fb0OzlcLh6EuMmExVKdiMhQKj_ESQ8,7344
+wapi2nsconf/config.py,sha256=UpU_W1Sohxu7t8pqeQXLd_B_PlSGtz0fDKd-xaOp8fA,1426
+wapi2nsconf/templates/bind.conf,sha256=OPxMdF9TN5RNIW9_EjN-sYox1SIL8v3ymFyHmCgdpoI,655
+wapi2nsconf/templates/knot.conf,sha256=6pTihRZo_0Vi6cROuvDt6xc56RUunNGKrDdt6gDdJd0,770
+wapi2nsconf/templates/nsd.conf,sha256=QlnTC9Wkq9oQzcyTFKp_j-_KgJs7OsKf2f3eprGKUZI,527
+wapi2nsconf/wapi.py,sha256=lHOnXR_iho4RHqFPRO5rC50o9RsWiOA53PQha66l9Q4,2311
+wapi2nsconf-0.4.0.dist-info/entry_points.txt,sha256=12jwCLtG3XQP5XUv9mQ9euFDTrVjrst2RUtX1yilys0,52
+wapi2nsconf-0.4.0.dist-info/LICENSE,sha256=Km3_F4C_s_onXwst1yTCpFqEO-7-ioXGdVYN_QXwb9Y,1318
+wapi2nsconf-0.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+wapi2nsconf-0.4.0.dist-info/METADATA,sha256=JN3GBKxVDpT3imJtjRvym24Bs_hfpf7uS0F5atYcyvw,708
+wapi2nsconf-0.4.0.dist-info/RECORD,,

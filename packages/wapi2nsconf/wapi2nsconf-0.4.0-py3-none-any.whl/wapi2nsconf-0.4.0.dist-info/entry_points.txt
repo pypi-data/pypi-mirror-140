@@ -1,0 +1,3 @@
+[console_scripts]
+wapi2nsconf=wapi2nsconf.cli:main
+

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wapi2nsconf
+Version: 0.4.0
+Summary: Infoblox WAPI to DNS server configuration tool
+License: BSD
+Author: Jakob Schlyter
+Author-email: jakob@kirei.se
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.0.3,<4.0.0)
+Requires-Dist: PyYAML (>=5.3.1,<6.0.0)
+Requires-Dist: requests (>=2.25.0,<3.0.0)
+Requires-Dist: urllib3 (>=1.26.2,<2.0.0)
+Requires-Dist: voluptuous (>=0.12.0,<0.13.0)
