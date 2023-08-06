@@ -1,0 +1,5 @@
+pyyaml
+spidev
+grpcio
+protobuf
+RPi.GPIO
