@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+import argparse
+import importlib.util
+import logging
+import os
+
+from job_farmer import Task
+
+if __name__ == '__main__':
+
+    logging.basicConfig(level=logging.INFO)
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--task-list", help="Task list filename to use", required=True)
+    parser.add_argument("--line-number", type=int, help="Line number", default=os.getenv('SLURM_PROCID'))
+
+    args = parser.parse_args()
+
+    if args.line_number is None:
+        raise Exception('Argument `--line-number` not provided or the '
+                        'SLURM environment variable `SLURM_PROCID` is not defined')
+
+    log = logging.getLogger(f'runner-line-{args.line_number}')
+
+    log.info(f'Reading tasks from {args.task_list}')
+
+    spec = importlib.util.spec_from_file_location("tasks", args.task_list)
+    task_list = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(task_list)
+
+    tasks = task_list.tasks
+
+    if args.line_number >= len(tasks):
+        raise Exception(f'There are {len(args.line_number)} in the file {args.task_list}.'
+                        f'Index {args.line_number} out of range.')
+
+    task_to_run = Task.from_dict(tasks[args.line_number])
+
+    log.info(f'Executing the task: {task_to_run}')
+
+    task_to_run.execute()

@@ -1,0 +1,8 @@
+coverage-badge==1.1.0
+pylint==2.12.2
+pylint-json2html==0.4.0
+pylint-gitlab==1.0.0
+pytest==7.0.1
+pytest-cov==3.0.0
+sphinx==4.4.0
+sphinx-rtd-theme==1.0.0
