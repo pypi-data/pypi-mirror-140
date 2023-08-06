@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+oCrypt0r.egg-info/PKG-INFO
+oCrypt0r.egg-info/SOURCES.txt
+oCrypt0r.egg-info/dependency_links.txt
+oCrypt0r.egg-info/requires.txt
+oCrypt0r.egg-info/top_level.txt
+ocryptor/__init__.py
+ocryptor/main.py
