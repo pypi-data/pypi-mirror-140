@@ -1,0 +1,8 @@
+pyqt5
+pycromanager
+pyqtgraph
+qimage2ndarray
+qdarkstyle
+tifffile
+zenodo_get
+docstring_inheritance
