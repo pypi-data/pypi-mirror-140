@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: file-grouper
+Version: 0.1.1
+Summary: Group file based on file name pattern defined by regex.
+Author: Yu Wang
+Author-email: anselmwang@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.4,<9.0.0)

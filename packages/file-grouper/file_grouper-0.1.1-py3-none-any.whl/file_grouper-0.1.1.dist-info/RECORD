@@ -1,0 +1,8 @@
+file_grouper/__init__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+file_grouper/console.py,sha256=76DH2E1mD-mbqEeN1mC-YLJeGIeHysvNQWdZKNWqvlI,383
+file_grouper/file_grouper.py,sha256=jY7hkA6VsGcH5ZvO2MoxM4CqLuVdFMPdv4NqqDKFcpA,1284
+file_grouper-0.1.1.dist-info/entry_points.txt,sha256=7JRG2GXeYre8ng0t5a_5drf9nO3eBaYijY4Y_JCf9Mg,100
+file_grouper-0.1.1.dist-info/LICENSE,sha256=L7PzZddcT3QY7dQUvRahGd5fki2Z4Xg4v0u87uJV_uI,1086
+file_grouper-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+file_grouper-0.1.1.dist-info/METADATA,sha256=1SbVpC24IzHr3ecF6Fc_WtcmAni5uRiCEQRjBtQ1er4,487
+file_grouper-0.1.1.dist-info/RECORD,,
