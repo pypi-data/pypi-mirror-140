@@ -1,0 +1,46 @@
+# BodyMassIndex Calculator
+
+This repository consists of a simple BodyMassIndex calculator using Python.
+
+## Summary
+
+### About BodyMassIndex
+
+Body mass index is a value derived using weight and height of a person.
+Formula : - **BodyMassIndex(kg/m2) = mass(kg) / height(m)2**
+
+#### Chart
+
+| Category | Range | Health risk |
+| --- | --- | --- |
+| Underweight | 18.4 and below  | Malnutrition risk |
+| Normal weight | 18.5 to 24.9 | Low risk |
+| Overweight | 25 to 29.9 | Enhanced risk |
+| Moderately obese  | 30 to 34.9 | Medium risk |
+| Severely obese  | 35 to 39.9 | High risk |
+| Very severely obese | 40 and above | Very high risk |
+
+### About Calculator
+
+1. It accepts Json file as input and returns number of overwieght people count (considering all the count above 25 BodyMassIndex) and stores the output as Json/CSV
+2. Output file contains output BodyMassIndex along with Category and Health risk data.
+
+### Future work
+
+We can returns the people details with approximate weight to be lost or increase to reach normal BodyMassIndex.
+
+### Install and Run
+
+- Install the module using following command
+    ```
+        pip install code_20220301_rayeesck
+    ```
+- Import the module in your code and call the process with passing the parameters
+    ```
+        from code_20220301_rayeesck import process
+        output = process('InputJsonPath',output_format = 'csv')
+    ```
+- ouput will have the number of over weight count and stores the output file in same directory with appending 'output' into the name of file.
+- Parameters
+    - InputJsonPath = path of input json file
+    - output_format = csv/json, which format output to be stored
