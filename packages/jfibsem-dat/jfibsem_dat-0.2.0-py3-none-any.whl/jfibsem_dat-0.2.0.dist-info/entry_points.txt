@@ -1,0 +1,5 @@
+[console_scripts]
+datcalib = jfibsem_dat.cli:datcalib
+dathead = jfibsem_dat.cli:dathead
+dathist = jfibsem_dat.cli:dathist
+datview = jfibsem_dat.cli:datview

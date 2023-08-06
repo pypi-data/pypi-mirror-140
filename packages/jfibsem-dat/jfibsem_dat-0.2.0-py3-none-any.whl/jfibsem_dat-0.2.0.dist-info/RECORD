@@ -1,0 +1,11 @@
+jfibsem_dat/__init__.py,sha256=m-Smona7WiWUiksaaDayyPjlWokIFjyAE9Ayam2-IH4,157
+jfibsem_dat/calibrate.py,sha256=SJOiZhwcCXPlBA_ak4rqgmWdtWP2xOK-pZgKF9ZWVg0,832
+jfibsem_dat/cli.py,sha256=8MtqLhoOdcC1sgNoThI9IH8UwaNW2AdlTs-HsWdsl8I,11296
+jfibsem_dat/read.py,sha256=Vfy0BJMBdlIjW7Wv8d8mA-u5pC3NZAFstod8tQl7Nkk,18591
+jfibsem_dat/version.py,sha256=g0RU_Fiae76hPEUjU6lGnapa9IZoqGcB4oFcTnsoMbM,142
+jfibsem_dat-0.2.0.dist-info/LICENSE,sha256=DUNGDk7fcdp4nINzuF3goF5grQM39uvgZxv5oGVBPdw,1073
+jfibsem_dat-0.2.0.dist-info/METADATA,sha256=Pufze4cIeo5cjksZNVGE5ShyI8MZw1dKf0b7c-wGyI4,6429
+jfibsem_dat-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jfibsem_dat-0.2.0.dist-info/entry_points.txt,sha256=HFavQj59My-_06RBETj7sfM2AHzzvvIJun0jobUUqII,156
+jfibsem_dat-0.2.0.dist-info/top_level.txt,sha256=bhYdzp1UNJW6oI3rw7y_qYgEZUKJjsqrW41W5rv65bM,12
+jfibsem_dat-0.2.0.dist-info/RECORD,,
