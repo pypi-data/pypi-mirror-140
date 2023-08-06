@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ANU-inversion-course
+Version: 0.1.0.dev4
+Summary: ANU Inversion Course Package
+Author: InLab
+License: UNKNOWN
+Keywords: inversion,inference,geoscience,geophysics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.22.0)
+Requires-Dist: matplotlib (>=3.5.0)
+Requires-Dist: scipy (>=1.7.0)
+Requires-Dist: tqdm (>=4.62.0)
+Requires-Dist: seaborn (>=0.11.0)
+
+# ANU Inversion Course Package
+
+[![Build](https://github.com/anu-ilab/ANUInversionCourse/actions/workflows/build_wheels.yml/badge.svg?branch=main)](https://github.com/anu-ilab/ANUInversionCourse/actions/workflows/build_wheels.yml)
+
+This package contains resources to be used in the [inversion course practicals](https://github.com/anu-ilab/JupyterPracticals).
+
+## Installation
+
+(optional) It's recommended to use a virtual environment (using `conda` or `venv`, etc.) so that it doesn't conflict with your other Python projects. 
+
+Type the following in your terminal:
+
+```bash
+pip install anu-inversion-course
+```
+
+And when you run `jupyter-lab` to do the practicals, make sure you are in the same environment as where your `anu-inversion-course` was installed. You can try to test this by checking if the following commands give you similar result:
+
+```bash
+$ which pip
+<some-path>/bin/pip
+$ which jupyter-lab
+<same-path>/bin/jupyter-lab
+$ pip list | grep anu-inversion-course
+anu-inversion-course               0.1.0
+```
+
+
+
+
+
