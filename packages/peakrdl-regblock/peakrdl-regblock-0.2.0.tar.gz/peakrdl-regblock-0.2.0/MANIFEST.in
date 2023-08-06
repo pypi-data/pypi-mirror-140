@@ -1,0 +1,2 @@
+recursive-include src/peakrdl/regblock *.sv
+prune tests
