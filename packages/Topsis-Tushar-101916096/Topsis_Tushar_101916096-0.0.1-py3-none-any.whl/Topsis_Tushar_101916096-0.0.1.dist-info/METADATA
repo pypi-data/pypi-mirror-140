@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Topsis-Tushar-101916096
+Version: 0.0.1
+Summary: Topsis implementation
+Home-page: UNKNOWN
+Author: Tushar Dua
+Author-email: <duatushar7@gmail.com>
+License: UNKNOWN
+Keywords: python,topsis,impacts
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: topsispy
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
