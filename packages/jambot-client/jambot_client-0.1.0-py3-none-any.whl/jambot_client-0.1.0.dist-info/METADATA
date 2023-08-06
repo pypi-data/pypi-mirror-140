@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jambot-client
+Version: 0.1.0
+Summary: 
+Author: Vladislav Bakaev
+Author-email: vlad@bakaev.tech
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: fast-json (>=0.3.2,<0.4.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: yarl (>=1.7.2,<2.0.0)
