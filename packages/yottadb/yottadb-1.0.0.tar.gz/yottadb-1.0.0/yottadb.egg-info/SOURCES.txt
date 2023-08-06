@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+_yottadb.c
+_yottadb.h
+pyproject.toml
+setup.py
+yottadb/__init__.py
+yottadb.egg-info/PKG-INFO
+yottadb.egg-info/SOURCES.txt
+yottadb.egg-info/dependency_links.txt
+yottadb.egg-info/top_level.txt
