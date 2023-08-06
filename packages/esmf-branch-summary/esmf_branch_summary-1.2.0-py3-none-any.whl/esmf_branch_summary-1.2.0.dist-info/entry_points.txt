@@ -1,0 +1,2 @@
+[console_scripts]
+esmf-branch-summary = esmf_branch_summary:main
