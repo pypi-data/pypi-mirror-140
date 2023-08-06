@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: Planet Objects
+Version: 1.0.2
+Summary: Planetary data stored as objects
+Home-page: https://github.com/matthewkayne/Planets
+Author: Matthew Kayne
+Author-email: matthewkayne2004@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Planets
+
+[![CodeFactor](https://www.codefactor.io/repository/github/matthewkayne/planets/badge)](https://www.codefactor.io/repository/github/matthewkayne/planets)
+
+Planetary data stored as objects
+
+`from planets.planets import *` then you can call:
+
+`mercury, venus, earth, moon, mars, jupiter, saturn, uranus, neptune, pluto`
+
+with any of the following attributes:
+
+`name, mass, diameter, density, gravity, escVelocity, rotationPeriod, dayLength, fromSun, periheleon, apheleon, orbitPeriod, orbitVelocity, orbitInclination, orbitEccentricity, obliquityToOrbit, temp, surfacePressure, moons, ringsys, gmf, img, atmosphereComp`
+
+All data from: https://nssdc.gsfc.nasa.gov/planetary/factsheet/
+
+
