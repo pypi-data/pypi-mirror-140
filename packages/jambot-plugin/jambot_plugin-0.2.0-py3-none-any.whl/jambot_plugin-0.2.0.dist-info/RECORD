@@ -1,0 +1,16 @@
+jambot_plugin/__init__.py,sha256=oh7rGLUsGVP1zeThweRjtTpTsJSxrtK7sGhQ4-KbdWo,649
+jambot_plugin/bot_info.py,sha256=yaYWzqhRRwHha3r9lHqRaAT5k5E6hov5gc39A116u3w,423
+jambot_plugin/deps.py,sha256=HhZuH9lWrNx88WZOzw6vEQKzi37s4Vg6L4rEX5cvsAk,1216
+jambot_plugin/handlers/__init__.py,sha256=KodanqZ4te0w4roKz52nqMIV1i2ctc18k2nlQO9yRy8,504
+jambot_plugin/handlers/base_handler.py,sha256=6CeGoQI8bF9-dGem7KYMCPxp6mYZrLNWyCH_hiUh9Fs,694
+jambot_plugin/handlers/cron_handler.py,sha256=3GDnBTV7rLznrmjxvvKghtmiHy7JDC8KoQIl8gN5Gcc,614
+jambot_plugin/handlers/event_handler.py,sha256=TH7x5ttJWTqs4G-j_t9P6iBZRPOh1rcoE6ZqCOfuzXM,6600
+jambot_plugin/handlers/http_handler.py,sha256=aUawgE2xkAXD_BFCj5UP6-SpBPkhOJeuTXiJW1-88Tg,4056
+jambot_plugin/handlers/ping_handler.py,sha256=iaqdV2fA5ZVnmzER0j-Js-3ue3l-4qN0QNcCLXOC0lw,243
+jambot_plugin/plugin.py,sha256=Jdwtvt0eM9CFv-kr6X7w1BUrdoKk1Sr9gvq4z3gsQTw,2387
+jambot_plugin/template.py,sha256=Uaix5E6AxkmlaOH5tTUC55ADElwJtCpC_ImMXLysVZk,1527
+jambot_plugin/types.py,sha256=0uJ2_DGLYxoYQUIEVuEwKurJv4dqnqOrVYSCs7bhfDE,3609
+jambot_plugin/user_info.py,sha256=qBiM71JPTPTgehrggyhhW7zTOfYap-liXt0eWSFpw2E,478
+jambot_plugin-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+jambot_plugin-0.2.0.dist-info/METADATA,sha256=9FJtBS0xACGdg0dv-H-xaNOM2utW2BK7q57o50FRUlw,689
+jambot_plugin-0.2.0.dist-info/RECORD,,
