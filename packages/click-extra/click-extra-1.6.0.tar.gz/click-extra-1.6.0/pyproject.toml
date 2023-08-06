@@ -1,0 +1,120 @@
+[tool.poetry]
+# Docs: https://python-poetry.org/docs/pyproject/
+name = "click-extra"
+version = "1.6.0"
+description = "🌈 Extra colorization and configuration file for Click."
+license = 'GPL-2.0-or-later'
+authors = ["Kevin Deldycke <kevin@deldycke.com>"]
+readme = "readme.md"
+homepage = 'https://github.com/kdeldycke/click-extra'
+repository = 'https://github.com/kdeldycke/click-extra'
+documentation = 'https://github.com/kdeldycke/click-extra#readme'
+keywords = [
+    'cli',
+    'cli-helper',
+    'click-help-color',
+    'click-log',
+    'cloup',
+    'colorization',
+    'configuration',
+    'console',
+    'json',
+    'logging',
+    'multiplatform',
+    'pytest',
+    'python',
+    'python-tabulate',
+    'terminal',
+    'toml',
+    'yaml',
+]
+classifiers = [
+    # See: https://pypi.org/pypi?%3Aaction=list_classifiers
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Environment :: MacOS X',
+    'Environment :: Plugins',
+    'Intended Audience :: Developers',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Utilities',
+]
+
+[tool.poetry.urls]
+"Funding" = "https://github.com/sponsors/kdeldycke"
+"Issues" = "https://github.com/kdeldycke/click-extra/issues"
+"Changelog" = "https://github.com/kdeldycke/click-extra/blob/main/changelog.md"
+
+[tool.poetry.dependencies]
+# List of python versions and their support status:
+# https://en.wikipedia.org/wiki/History_of_Python#Support
+python = "^3.7"
+boltons = "^21.0.0"
+click = "^8.0.4"
+click-log = "^0.3.2"
+cli-helpers = "^2.2.0"
+cloup = "^0.13.0"
+pyyaml = "^6.0.0"
+requests = "^2.27.1"
+tabulate = { extras = ["widechars"], version = "^0.8.9" }
+tomli = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+bump2version = "^1.0.1"
+coverage = { extras = ["toml"], version = "^6.3" }
+pytest = "^7.0.1"
+# More pytest plugins at: https://docs.pytest.org/en/latest/reference/plugin_list.html
+pytest-cov = "^3.0.0"
+pytest-httpserver = "^1.0.3"
+pytest-randomly = "^3.10.2"
+
+[tool.black]
+# "You should include all Python versions that you want your code to run under."
+# Source: https://github.com/psf/black/issues/751
+target-version = ['py37', 'py38', 'py39', 'py310']
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/black_compatibility/
+multi_line_output = 3
+line_length = 88
+include_trailing_comma = true
+
+[tool.pylint.MASTER]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html
+output-format = "colorized"
+fail-under = "8"
+[tool.pylint."messages control"]
+# List messages with: $ pylint --list-msgs
+# C0114: missing-module-docstring
+# C0116: missing-function-docstring
+disable = "C0114, C0116"
+[tool.pylint.LOGGING]
+# The type of string formatting that logging methods do. `old` means using %
+# formatting, `new` is for `{}` formatting.
+logging-format-style = "new"
+[tool.pylint.FORMAT]
+# Aligns to black's config: https://github.com/psf/black/blob/master/docs/compatible_configs.md#pylint
+max-line-length = "88"
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/latest/customize.html#pyproject-toml
+addopts = "--durations=10 --cov-report term --cov=click_extra"
+xfail_strict = true
+
+[tool.coverage.paths]
+# https://coverage.readthedocs.io/en/latest/config.html
+source = ["click_extra"]
+[tool.coverage.run]
+source = ["click_extra"]
+branch = true
+omit = ["*/tests/*"]
+[tool.coverage.report]
+omit = ["*/tests/*"]
+precision = 2
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
