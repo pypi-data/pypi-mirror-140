@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+measuresoftgram/cli.py
+measuresoftgram.egg-info/PKG-INFO
+measuresoftgram.egg-info/SOURCES.txt
+measuresoftgram.egg-info/dependency_links.txt
+measuresoftgram.egg-info/entry_points.txt
+measuresoftgram.egg-info/requires.txt
+measuresoftgram.egg-info/top_level.txt
