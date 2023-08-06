@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+adpred/ADpred.py
+adpred/__init__.py
+adpred.egg-info/PKG-INFO
+adpred.egg-info/SOURCES.txt
+adpred.egg-info/dependency_links.txt
+adpred.egg-info/requires.txt
+adpred.egg-info/top_level.txt
+adpred/lib/__init__.py
+adpred/lib/run-adpred.py
+adpred/lib/utils.py
+adpred/model/ADpred.h5
+adpred/model/ADpred.json
+bin/run-adpred

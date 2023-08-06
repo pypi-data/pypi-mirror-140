@@ -1,0 +1,2 @@
+include adpred/model/ADpred.json
+include adpred/model/ADpred.h5
