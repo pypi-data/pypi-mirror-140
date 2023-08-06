@@ -1,0 +1,3 @@
+[console_scripts]
+stapy = stapy.cli.main:main
+
