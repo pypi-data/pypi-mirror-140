@@ -1,0 +1,10 @@
+global-exclude *.pyc
+recursive-include *.py
+recursive-include *.md
+recursive-include *.py-tpl
+recursive-include *.js-tpl
+include LICENSE
+include setup.py
+include requirements.txt
+include CHANGES.md
+include README.md
