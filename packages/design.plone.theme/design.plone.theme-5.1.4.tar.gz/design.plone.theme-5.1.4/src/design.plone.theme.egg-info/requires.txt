@@ -1,0 +1,21 @@
+setuptools
+collective.monkeypatcher
+collective.tiles.advancedstatic
+collective.tiles.collection
+plone.api
+plone.app.theming
+plone.behavior
+Products.GenericSetup>=1.8.2
+redturtle.patterns.slider
+redturtle.tiles.management>=2.0.0
+plone.app.standardtiles
+z3c.jbot
+
+[:python_version == "2.7"]
+plone.app.themingplugins
+
+[test]
+plone.app.testing
+plone.testing>=5.0.0
+plone.app.contenttypes
+plone.app.robotframework[debug]
