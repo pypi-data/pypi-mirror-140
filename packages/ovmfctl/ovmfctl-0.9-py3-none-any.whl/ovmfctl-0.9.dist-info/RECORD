@@ -1,0 +1,15 @@
+ovmfctl/__init__.py,sha256=pY0204vW0rO6jJGqg8a6lwpcX9QSXniBtKn-TocoypE,93
+ovmfctl/ovmfctl.py,sha256=CH3lEVEkvx--hM7R0sp9daw3EnY7b4neGsOr8pUQP1c,21529
+ovmfctl/ovmfdump.py,sha256=ic0nUBE5M1AI0CyPeAT3Icfj0FQU_DnpoQjyLVqx204,10111
+ovmfctl/certs/MicrosoftCorporationKEKCA2011.pem,sha256=QZF05R1doO0RiPCuoPzSWzqRKhJn-IA_7fvIrQjraFM,6739
+ovmfctl/certs/MicrosoftCorporationUEFICA2011.pem,sha256=uuqdrL8fMFUZY-Pe5utX4hn77a7XF5jDtliaUoAZNVk,6869
+ovmfctl/certs/MicrosoftWindowsProductionPCA2011.pem,sha256=jSNQQOX0iKlb1dNoAQ9IWVfTmbcbZ2Sfv3pDuucRBRI,6698
+ovmfctl/certs/RedHatSecureBootPKKEKkey1.pem,sha256=pf5nv7D7dw5m5I95y6sdCl9c2z3WtxbfYwbD_bl4_zM,4500
+ovmfctl/efi/__init__.py,sha256=CJ7GNHFjCbs0prPFAb-YA5_Gifm25xlV-G-yzqX4_rQ,58
+ovmfctl/efi/guids.py,sha256=6pgaJp-oT0lduV822mgOc6EZAVJew8xs3m3JNPsDA5g,3600
+ovmfctl/efi/ucs16.py,sha256=WIfDNTUU4us5ShlakYv2YBc7rfklMjx38VVdlRM7pLc,1021
+ovmfctl-0.9.dist-info/METADATA,sha256=b4cQhKHQHcLrHG8rShqBx5M0cLXGg7OVTeD93snUxuc,686
+ovmfctl-0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ovmfctl-0.9.dist-info/entry_points.txt,sha256=qFTADktuBgIMWH3FIQOCUz0WVoawFtxgqDjy5cE5MXA,82
+ovmfctl-0.9.dist-info/top_level.txt,sha256=gPPwBAsmFuI7omFFV1tFIUN1_uGdhLew4oNyBKGledk,20
+ovmfctl-0.9.dist-info/RECORD,,

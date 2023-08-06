@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ovmfctl
+Version: 0.9
+Summary: tools for ovmf firmware volumes
+Author: Gerd Hoffmann
+Author-email: kraxel@redhat.com
+License: GPLv2
+Project-URL: GitLab, https://gitlab.com/kraxel/ovmfctl
+Keywords: ovmf,armvirt,edk2
+Platform: UNKNOWN
+
+
+Tools for ovmf / armvirt firmware volumes
+=========================================
+
+ovmfdump
+--------
+
+Decodes and prints the content of firmware volumes.
+
+ovmfctl
+-------
+
+Print and edit variable store volumes.
+Currently focused on enrolling certificates and enabling secure boot.
+
+Install
+-------
+
+`pip3 install git+https://gitlab.com/kraxel/ovmfctl.git`
+
+TODO list
+---------
+
+ * Modularize code.
+ * Add documentation.
+
+
