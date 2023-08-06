@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: NXModToolkit
+Version: 1.0.1
+Summary: NXModToolkit - A toolkit for creating and packaging .nxmod files.
+Home-page: 
+Author: Witherking25
+Author-email: witherking@withertech.com
+Maintainer: 
+Maintainer-email: 
+License: GNU GPL v3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Dist: cookiecutter (~=1.7.3)
+Requires-Dist: requests (~=2.27.1)
+Requires-Dist: pip (~=21.1.2)
+Requires-Dist: wheel (~=0.36.2)
+Requires-Dist: arrow (~=1.2.2)
+Requires-Dist: python-dateutil (~=2.8.2)
+Requires-Dist: MarkupSafe (~=2.1.0)
+Requires-Dist: certifi (~=2021.10.8)
+Requires-Dist: chardet (~=4.0.0)
+Requires-Dist: six (~=1.16.0)
+Requires-Dist: idna (~=3.3)
+Requires-Dist: urllib3 (~=1.26.8)
+Requires-Dist: setuptools (~=57.0.0)
+Requires-Dist: Jinja2 (~=3.0.3)
+Requires-Dist: click (~=8.0.4)
+Requires-Dist: poyo (~=0.5.0)
+Requires-Dist: binaryornot (~=0.4.4)
+Requires-Dist: pybuilder (~=0.13.5)
+Requires-Dist: jsonschema (~=4.4.0)
+Requires-Dist: attrs (~=21.4.0)
+Requires-Dist: zipp (~=3.7.0)
+Requires-Dist: pyrsistent (~=0.18.1)
+
+
+NXModToolkit is a toolkit for creating and packaging .nxmod files.
+
+Usage: 
+
+nxmodtoolkit create
+
+nxmodtoolkit package <path>
+
+
+
