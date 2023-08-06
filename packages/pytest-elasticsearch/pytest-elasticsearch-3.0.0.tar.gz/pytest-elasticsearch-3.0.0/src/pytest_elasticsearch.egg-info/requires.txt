@@ -1,0 +1,9 @@
+pytest>=6.2.0
+port-for>=0.6.0
+mirakuru>=2.3.0
+elasticsearch
+
+[tests]
+pytest-cov
+pytest-xdist
+mock
