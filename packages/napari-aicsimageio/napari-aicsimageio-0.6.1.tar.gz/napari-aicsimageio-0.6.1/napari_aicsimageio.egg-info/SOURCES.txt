@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+napari_aicsimageio/__init__.py
+napari_aicsimageio/core.py
+napari_aicsimageio/in_memory.py
+napari_aicsimageio/out_of_memory.py
+napari_aicsimageio.egg-info/PKG-INFO
+napari_aicsimageio.egg-info/SOURCES.txt
+napari_aicsimageio.egg-info/dependency_links.txt
+napari_aicsimageio.egg-info/entry_points.txt
+napari_aicsimageio.egg-info/not-zip-safe
+napari_aicsimageio.egg-info/requires.txt
+napari_aicsimageio.egg-info/top_level.txt
