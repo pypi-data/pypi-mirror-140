@@ -1,0 +1,10 @@
+sentinel_local.py,sha256=ZPDU8On-zCZCpZfDhdheADcSj6ELiFcnumAnHFRFjf0,1506
+sentinel_local/__init__.py,sha256=Xj3fHh5e5E21LMTRkm5huNNmTl2437akKYM73vgGX9Q,54
+sentinel_local/main.py,sha256=Cq2vEOexIxx8cr5iS58k06yVM39RjzFEYxkl70zC-NA,7593
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/utils.py,sha256=144RHDTXlhukN__kjX8lgV-qeTFYMllkNUGoSm3oZMs,5185
+sentinel_local-0.1.12.dist-info/METADATA,sha256=ZFaPR4nYkoUeiGfn68aXcp2pfbfTGpxlAhS-JHIIqRc,2691
+sentinel_local-0.1.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sentinel_local-0.1.12.dist-info/top_level.txt,sha256=52vzsM903ItmfggHijLkF7avbKEIoImFCG3E1PvCAyk,19
+sentinel_local-0.1.12.dist-info/RECORD,,
