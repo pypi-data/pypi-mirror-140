@@ -1,0 +1,6 @@
+click>=7.0
+numpy>=1.15.0
+voxcell>=3.0.0
+
+[tests]
+pytest>=4.4.0
