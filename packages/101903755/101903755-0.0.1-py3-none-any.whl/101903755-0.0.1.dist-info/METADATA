@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: 101903755
+Version: 0.0.1
+Summary: Calculating topsis
+Home-page: UNKNOWN
+Author: Krishna
+Author-email: <ksharma3_be19@thapar.edu>
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
