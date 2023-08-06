@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: PyFastDub
+Version: 1.0.1
+Summary: Voice video by .srt subtitles, Youtube and other video (or without video, oly subtitles)
+Home-page: UNKNOWN
+Author: Nikita (NIKDISSV)
+Author-email: nikdissv.forever@protonmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Typing :: Typed
+Requires-Python: >=3.9<3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyttsx3
+Requires-Dist: pydub
+Requires-Dist: moviepy
+Requires-Dist: imageio-ffmpeg
+Requires-Dist: pytube
+Requires-Dist: download-youtube-subtitle
+Requires-Dist: youtube-dl
+
+> pip install [PyFastDub](https://pypi.org/project/PyFastDub/)
+
+# CLI
+For YouTube Video
+> python -m fast_dub -h
+
+
+For File Video
+> python -m fast_dub.raw -h
+
+Needs .srt file subtitles.
+
+See also [RHVoice](https://rhvoice.org), [RHVoices](https://rhvoice.su/voices/)
+
