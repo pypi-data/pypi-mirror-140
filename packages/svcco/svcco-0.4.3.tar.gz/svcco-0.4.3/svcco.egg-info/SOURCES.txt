@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+svcco/__init__.py
+svcco/tree.py
+svcco.egg-info/PKG-INFO
+svcco.egg-info/SOURCES.txt
+svcco.egg-info/dependency_links.txt
+svcco.egg-info/requires.txt
+svcco.egg-info/top_level.txt
