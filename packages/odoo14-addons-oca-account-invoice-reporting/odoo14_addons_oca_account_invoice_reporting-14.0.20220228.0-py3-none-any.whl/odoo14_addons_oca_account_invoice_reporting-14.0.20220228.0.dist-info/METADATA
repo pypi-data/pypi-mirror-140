@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-account-invoice-reporting
+Version: 14.0.20220228.0
+Summary: Meta package for oca-account-invoice-reporting Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-account-comment-template
+Requires-Dist: odoo14-addon-account-invoice-line-report
+Requires-Dist: odoo14-addon-account-invoice-line-sale-line-position
+Requires-Dist: odoo14-addon-account-invoice-production-lot
+Requires-Dist: odoo14-addon-account-invoice-report-due-list
+Requires-Dist: odoo14-addon-account-invoice-report-grouped-by-picking
+Requires-Dist: odoo14-addon-account-invoice-report-hide-line
+
+UNKNOWN
+
