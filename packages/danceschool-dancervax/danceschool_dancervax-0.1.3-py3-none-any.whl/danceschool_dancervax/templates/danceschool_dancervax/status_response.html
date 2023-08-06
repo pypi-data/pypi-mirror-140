@@ -1,0 +1,11 @@
+{% load i18n %}
+{% for this in reg_extras %}
+{% if this.type == "vaccine_lookup" %}
+<div class="extra-response vaccine-status-response">
+    {% trans "DancerVax Status" %}: 
+    <span class="{% if this.response.vaxStatus == "Approved" %}text-success{% else %}text-secondary{% endif %}">
+        <strong>{{ this.response.vaxStatus }}</strong>
+    </span>
+</div>
+{% endif %}
+{% endfor %}
