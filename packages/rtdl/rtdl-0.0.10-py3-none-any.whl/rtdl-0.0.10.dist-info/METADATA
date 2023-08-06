@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rtdl
+Version: 0.0.10
+Summary: Revisiting Tabular Deep Learning.
+Keywords: artificial intelligence,deep learning,library,python,pytorch,research,torch
+Author-email: Yandex Research <strausmg@gmail.com>
+Requires-Python: >=3.7
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: numpy >=1.18,<2
+Requires-Dist: torch >= 1.7,<2
+Project-URL: Code, https://github.com/yandex-research/rtdl
+Project-URL: Documentation, https://yandex-research.github.io/rtdl
