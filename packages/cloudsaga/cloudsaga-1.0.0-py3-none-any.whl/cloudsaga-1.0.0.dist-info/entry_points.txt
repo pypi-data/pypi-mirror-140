@@ -1,0 +1,3 @@
+[console_scripts]
+cloudsaga=cloudsaga.cloudsaga:main
+
