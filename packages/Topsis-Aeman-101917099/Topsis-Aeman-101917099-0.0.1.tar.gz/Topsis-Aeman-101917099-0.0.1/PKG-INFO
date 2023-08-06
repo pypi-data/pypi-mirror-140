@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Topsis-Aeman-101917099
+Version: 0.0.1
+Summary: Calculate the topsis score for different models
+Author: Aeman Singla
+Author-email: aemansingla09@gmail.com
+License: MIT
+Keywords: Topsis,Aeman Singla
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+

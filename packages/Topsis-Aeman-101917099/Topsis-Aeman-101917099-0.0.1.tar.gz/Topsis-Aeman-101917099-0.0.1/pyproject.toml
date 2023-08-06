@@ -1,0 +1,5 @@
+requires = [
+    "pandas",
+    "sys"
+]
+build-backend = "setuptools.build_meta"
