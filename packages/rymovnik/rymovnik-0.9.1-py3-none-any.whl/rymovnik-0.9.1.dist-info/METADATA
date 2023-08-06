@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rymovnik
+Version: 0.9.1
+Summary: A simple script to search for words in the dictionary based on criteria.
+License: GPL 3.0
+Author: Lukáš Růžička
+Author-email: lruzicka@redhat.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: argparse (>=1.4.0,<2.0.0)

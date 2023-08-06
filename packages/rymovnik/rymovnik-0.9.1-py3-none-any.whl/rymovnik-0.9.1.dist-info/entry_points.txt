@@ -1,0 +1,3 @@
+[console_scripts]
+rymovnik=rymovnik.rymovnik:main
+
