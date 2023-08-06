@@ -1,0 +1,14 @@
+serialization_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serialization_tools/common_directories.py,sha256=Le23PXsJNSA_MyM-e-VdHm30bZpQBqum77OTX2jqLWA,1507
+serialization_tools/error.py,sha256=jxmld7BWItfosSe7GFUfjO6xMCn8fimVuc8xi6gNZ-A,220
+serialization_tools/ioutil.py,sha256=l3te2WygAsrbbyTy7IMKXukAeXr3WFAeI12dTwI-ZM0,7363
+serialization_tools/magic.py,sha256=Gx97L3v2kckfBZsMVdYoybPsp1i7YFKLZJnnn82bJ6o,2937
+serialization_tools/size.py,sha256=9Q_31u21d_ExGsoT14ZEt57y26PBRhAw1Kw2z5lKpuU,551
+serialization_tools/structx.py,sha256=frbPNpHkVAbEV1_lXTQ_NG2i4dzspsCR353n19pfrzk,4422
+serialization_tools/vstruct.py,sha256=J5IiMaEoAEnJg-AedeHK73Ig7qsIlvtFXsqBUjTmeL4,10201
+serialization_tools/walkutil.py,sha256=KmBkvmmb_EeCy9uStnhEzC4sJ8QS7_yXYlaHXIV9WCU,7061
+mak_serialization_tools-2022.0a18.dist-info/LICENSE.txt,sha256=Y81EgPINg8oCT-TT3UwnfqEppz3XgiGU3-2sPkctjR0,1090
+mak_serialization_tools-2022.0a18.dist-info/METADATA,sha256=XWbtpx_O5pA1OHVUnsvWL5pUUujkFQhEj_FD-NWzZQM,925
+mak_serialization_tools-2022.0a18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mak_serialization_tools-2022.0a18.dist-info/top_level.txt,sha256=ALEv8rvkofiFgsR9IAYLXsZf1-dkFoGv6VYWwglzJ8g,20
+mak_serialization_tools-2022.0a18.dist-info/RECORD,,
