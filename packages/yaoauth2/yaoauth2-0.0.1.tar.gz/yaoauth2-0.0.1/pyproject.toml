@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "yaoauth2"
+version = "0.0.1"
+description = "Simple OAuth2 client library for FastAPI"
+authors = ["Martin Wacker <martas@imm.cz>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.72.0"
+nxtools = "^1.6"
+httpx = "^0.21.3"
+pydantic = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^4.0.1"
+pydocstyle = "^6.1.1"
+uvicorn = "^0.17.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
