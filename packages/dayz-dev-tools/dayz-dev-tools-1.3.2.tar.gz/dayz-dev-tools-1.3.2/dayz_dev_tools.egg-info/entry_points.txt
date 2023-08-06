@@ -1,0 +1,3 @@
+[console_scripts]
+run-server = dayz_dev_tools.run_server:main
+unpbo = dayz_dev_tools.unpbo:main
