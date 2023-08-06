@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yascc
+Version: 0.2.7
+Summary: swap cases
+License: LICENCE
+Author: urm8
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib-metadata; python_version < "3.8"
+Requires-Dist: setuptools (>=60.5.0,<61.0.0)
