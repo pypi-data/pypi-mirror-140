@@ -1,0 +1,9 @@
+pyminhash/__init__.py,sha256=aR3cy4CHBodN812OS8w0pR4MkVrFP4bJi26yZLJtqoA,54
+pyminhash/datasets.py,sha256=rf4DVdtHql3QwriNutYIPuvs_VmKVCKO4qDG8zXkXto,473
+pyminhash/pyminhash.py,sha256=G0Tx4CVm7fdZ3y5ZA7VNRFQ8zNPUY123_Skw6maUFbo,6617
+pyminhash/data/stoxx50_extended_with_id.xlsx,sha256=apFLhePMKwVARBr1K-rAwdTF-7Sf360UO3jtOIHyJzU,13367
+PyMinHash-0.1.4.dist-info/LICENSE,sha256=mYzHIjsJ0Q8QlBekTuotdcP4NqlHgvJNXBoKv-3QYJo,1070
+PyMinHash-0.1.4.dist-info/METADATA,sha256=3XnjbWCXgQLAxe1oQJPLfUBd9XquihKAvQBf-RE2EB0,3443
+PyMinHash-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyMinHash-0.1.4.dist-info/top_level.txt,sha256=xBqYh9cdvzed1KrcX4j4SKfBIBj1LVc7NUFp8pwGBac,10
+PyMinHash-0.1.4.dist-info/RECORD,,
