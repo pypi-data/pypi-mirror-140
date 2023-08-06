@@ -1,0 +1,6 @@
+id: "chope_b2c"
+
+gcp:
+  bucket_name: "chope-vertex-ai-feature-store"
+  pipeline_folder: "pipeline_root/merchant"
+  bigquery_dataset: "vertex_ai_feature_store"
