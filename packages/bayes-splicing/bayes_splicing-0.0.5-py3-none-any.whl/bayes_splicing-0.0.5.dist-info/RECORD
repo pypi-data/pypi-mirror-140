@@ -1,0 +1,14 @@
+bayes_splicing/__init__.py,sha256=HpsA-amnqXNlrfm3uwAMGvi7aoqlsxZZSQsO0ulbUpw,270
+bayes_splicing/independent_priors.py,sha256=0g5FOipsn4TQeV27ie42RnO-oUiBmUp7AW7BdZtJ5ZA,3721
+bayes_splicing/loss_distribution.py,sha256=Fn4lEl6wK2J-dYYV3wttFIsXXw6zNmEGlXFyjYQFKdU,54748
+bayes_splicing/move.py,sha256=PM0l2Q1hL6mFLSg4whNiMn6pWgN7npL6u5TenONgeVs,2847
+bayes_splicing/posterior_analysis.py,sha256=yAAKLMu5MosJ9TLJeditclXCC0pWVdvakL3GUfw8QZk,4004
+bayes_splicing/prior_distribution.py,sha256=M8wZNtZE6ROkxjv7Sy3ZucL3iZ6Q-vesanxR3RZoz1g,2035
+bayes_splicing/smc.py,sha256=pb5MOiSZ7BXZQ9DqDP2J5VVfA4e2j7OWRLrj_ACHYYo,6415
+bayes_splicing/spliced_distribution.py,sha256=wOOj3-lCeUexBn0A936VfrIToQXqAMe5kejwcyyk464,12486
+bayes_splicing/temperature.py,sha256=VedI9LJsWvOj8oLDW3Gd816VXgciUXCfscuWhZMVetY,4080
+bayes_splicing-0.0.5.dist-info/LICENSE,sha256=Ybxaliue7K2mYfSjnH4YUq5mRdQTexNRPqUtYPJWrYg,1087
+bayes_splicing-0.0.5.dist-info/METADATA,sha256=iw8i6KpsZBHLqtTGhQ3VvJKueSSPAphhh4UBc6Ranbk,2669
+bayes_splicing-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bayes_splicing-0.0.5.dist-info/top_level.txt,sha256=Xh3hgqLoAD1WkfQEHH0wDLI8gMz_5ZpfBqjzRMDvhAU,15
+bayes_splicing-0.0.5.dist-info/RECORD,,
