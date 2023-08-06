@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+coincap/__init__.py
+coincap/coincap.py
+coincap/utils.py
+py_coincap_client.egg-info/PKG-INFO
+py_coincap_client.egg-info/SOURCES.txt
+py_coincap_client.egg-info/dependency_links.txt
+py_coincap_client.egg-info/requires.txt
+py_coincap_client.egg-info/top_level.txt
