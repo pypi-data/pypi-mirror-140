@@ -1,0 +1,5 @@
+protobuf
+pytest
+python-snappy
+PyYAML
+roman
