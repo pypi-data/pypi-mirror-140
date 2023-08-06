@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: neuralkg
+Version: 1.0.2
+Summary: An Open Source Library for Diverse Representation Learning of Knowledge Graphs
+Home-page: https://github.com/zjukg/NeuralKG
+Author: ZJUKG
+Author-email: xnchen2020@zju.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
