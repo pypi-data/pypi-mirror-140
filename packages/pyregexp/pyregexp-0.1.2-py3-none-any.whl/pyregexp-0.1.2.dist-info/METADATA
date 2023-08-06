@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyregexp
+Version: 0.1.2
+Summary: Simple regex library
+Home-page: https://github.com/lorenzofelletti/pyregex_lib
+Download-URL: https://github.com/lorenzofelletti/pyregex_lib/archive/v0.1.2.tar.gz
+Author: Lorenzo Felletti
+License: MIT
+Keywords: Regex,RegExp,Engine
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy
+
+UNKNOWN
+
