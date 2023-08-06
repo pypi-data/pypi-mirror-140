@@ -1,0 +1,2 @@
+[console_scripts]
+xkcd-pass = xkcd_pass.xkcd_pass:main

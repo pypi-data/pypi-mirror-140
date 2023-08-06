@@ -1,0 +1,2 @@
+recursive-include src/xkcd_pass/lib/ *
+recursive-include src/xkcd_pass/static/ *
