@@ -1,0 +1,2 @@
+[console_scripts]
+discohook = discohook.__main__:main

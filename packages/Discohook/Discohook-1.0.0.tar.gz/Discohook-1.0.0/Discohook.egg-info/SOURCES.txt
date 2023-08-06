@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Discohook.egg-info/PKG-INFO
+Discohook.egg-info/SOURCES.txt
+Discohook.egg-info/dependency_links.txt
+Discohook.egg-info/entry_points.txt
+Discohook.egg-info/requires.txt
+Discohook.egg-info/top_level.txt
+discohook/__init__.py
+discohook/__main__.py
+discohook/client.py
