@@ -1,0 +1,9 @@
+text2excel/__init__.py,sha256=DNIVclplokJLnINrB5LSJjjIUqrobp-MIGQnQU2ErH0,341
+text2excel/cli.py,sha256=JgdHh0OptvBhOuRbaW_UKf2yQlG5stzY4u4k-Y7QlIc,1728
+text2excel/convert.py,sha256=q4sBpFS2RKSxeK_u6oBFZEsNP80ah8NS8MkiC-WGzYw,2186
+text2excel/fmt.py,sha256=_iUFSKnla8J_mmPSlwpdK1N5hj64Gk5ouLEB7qV0eeU,1427
+text2excel-0.4.3.dist-info/entry_points.txt,sha256=yAGM8JA68zL95EGhZ1tpmbTVXqdvT4-ILVwFOfTx4-U,50
+text2excel-0.4.3.dist-info/LICENSE,sha256=krR2ITwzhtF47xbtoP2eodoY6vf8CTq8GpVFV7jKHJ4,1112
+text2excel-0.4.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+text2excel-0.4.3.dist-info/METADATA,sha256=CLzNfUTglLhVf-Dg3NRsHbDkm-wpZWMG0Pd0lfrGnDw,3178
+text2excel-0.4.3.dist-info/RECORD,,
