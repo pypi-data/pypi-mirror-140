@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: geoplot
+Version: 0.5.0
+Summary: High-level geospatial plotting for Python.
+Home-page: https://github.com/ResidentMario/geoplot
+Download-URL: https://github.com/ResidentMario/geoplot/tarball/0.5.0
+Author: Aleksey Bilogur
+Author-email: aleksey.bilogur@gmail.com
+License: UNKNOWN
+Keywords: data,data visualization,data analysis,data science,pandas,geospatial data,geospatial analytics
+Platform: UNKNOWN
+Classifier: Framework :: Matplotlib
+Requires-Python: >=3.7.0
+Provides-Extra: doc
+Provides-Extra: test
+Provides-Extra: develop
+License-File: LICENSE.md
+
+UNKNOWN
+
