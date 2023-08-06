@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: opennews
+Version: 0.0.0
+Summary: An open source scraper to get current news.
+License: LGPL-3.0
+Author: Zeb Taylor
+Author-email: zceboys@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp
+Requires-Dist: requests
