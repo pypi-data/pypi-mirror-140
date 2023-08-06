@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pydme
+Version: 0.2.0
+Summary: Hook into the Dolphin emulator and manipulate the memory
+Home-page: https://gitlab.com/OpenDisrupt/pydme
+Author: Maximillian Strand
+Author-email: maximillian.strand@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dolphin-memory-engine (>=1.1.0,<2.0.0)
+Project-URL: Repository, https://gitlab.com/OpenDisrupt/pydme
+Description-Content-Type: text/markdown
+
+# PyDME
+
+## Warning
+
+**Do not use** before at least version 1.0.0. There will probably be a lot of incompatible changes in the beginning.
+
+## Purpose
+
+It is based on [`dolphin-memory-engine`](https://pypi.org/project/dolphin-memory-engine/), having it as a dependency and adding a few wrapper functions, but the point is to put together one big package that merges the functionality of *that* and the JIT Cache refreshing its author has implemented in a different project.
