@@ -1,0 +1,14 @@
+dhtmlparser3/__init__.py,sha256=MziEM_wwKd-xfcbXk0rVCGHd4VTgn-zs_jPTnpWdAKE,309
+dhtmlparser3/parser.py,sha256=OHsN_m-UIbx-9nxG5h9A72P4m2cG04q8AFjMGWQ_Nnc,4593
+dhtmlparser3/quoter.py,sha256=57La0RhoEa5rsQoHlZkdQ-Zn7jHchK8PpejHDPfYzBg,1266
+dhtmlparser3/specialdict.py,sha256=JkLSfEvHJQSjJLGe73KSfuU2R1Wv0OrojHS0LLVoStQ,3926
+dhtmlparser3/tokenizer.py,sha256=gVkH8-N7tEn9iqS0rFacT5DKhm5kpHbvzSOnFrJ13Xc,8367
+dhtmlparser3/tokens.py,sha256=oBJNf4S8yWkwH_HRQgboOMwNOuu5MnFVQqonZyNrjPk,3901
+dhtmlparser3/tags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dhtmlparser3/tags/comment.py,sha256=HYqivIWcpzHg001y9xx5_u9rrLkuGtlf2hHLmfaDhCY,660
+dhtmlparser3/tags/tag.py,sha256=ac-QMDLnSjUP3294bWsHV-6jpKxA8ilFq6GijSPgf-o,17419
+DHTMLParser3-3.0.8.dist-info/LICENSE.txt,sha256=4byHqR9TunApSpHpUxiokYDhj9mfdywvIzcMWEriN_U,1055
+DHTMLParser3-3.0.8.dist-info/METADATA,sha256=Grg2Masl0Zu9EKz8EGDucQaa8TbQjaU8On3ouYvIy14,5865
+DHTMLParser3-3.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+DHTMLParser3-3.0.8.dist-info/top_level.txt,sha256=RDZmp7gKQM4Zi7uySPwiNYgXQl2lUUq397OERHlwReI,13
+DHTMLParser3-3.0.8.dist-info/RECORD,,
