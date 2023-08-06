@@ -1,0 +1,10 @@
+eircode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eircode/address.py,sha256=PNfx60m415gAqWrKGXRiVEGDh9hx8Ggzjt340Ql4-lk,6360
+eircode/constants.py,sha256=gagsCS9ZgLQ1Y-TPYdc2bjty1O8ONg5EPrfFOOI5dkY,7623
+eircode/eircode.py,sha256=H9h6KMqOsx4LaSvhUhCWRGV9btUp328Oz4ZW2NuDrsE,1040
+eircode/proxy.py,sha256=1L96Y9dly4aHP1HqgZ30tnaP22sZdp4XhPH580OvLGM,1301
+eircode-0.0.16.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+eircode-0.0.16.dist-info/METADATA,sha256=xni7Dp_bCYPKMq9fj_jKzLPiloug8sYTrz3RHclOUHg,320
+eircode-0.0.16.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+eircode-0.0.16.dist-info/top_level.txt,sha256=tIeJz4NWAUx9Wb0Lb_tRObpnlAM7dKo9V4WjKkuTPU4,8
+eircode-0.0.16.dist-info/RECORD,,
