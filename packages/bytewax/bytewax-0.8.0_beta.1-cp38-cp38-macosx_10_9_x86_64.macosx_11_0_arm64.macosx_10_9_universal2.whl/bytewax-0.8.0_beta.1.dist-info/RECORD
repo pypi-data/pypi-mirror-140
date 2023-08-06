@@ -1,0 +1,10 @@
+bytewax-0.8.0_beta.1.dist-info/METADATA,sha256=W-qvwuoWx5OwbO2_RKq2VAAcO5uokHJxqoQIU9E5o4U,3123
+bytewax-0.8.0_beta.1.dist-info/WHEEL,sha256=CC0u1QWI9VDrv3LUak6RbJ3yZJCxT7sVDjKFcmFiZ94,145
+bytewax/__init__.py,sha256=WZ4OL3u-zLGzJQ764gvVYyiRw3vTj0_VnkSdWsWnzVE,5508
+bytewax/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bytewax/bytewax.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bytewax/parse.py,sha256=Q1nFl-HDE0Npg8mgAKnV-ziuZ2N4--OKQuPS_Q4irfY,4629
+bytewax/exhash.py,sha256=Op6t-mvCO18Z091dtzttLwFW_iLbjC3x_H9Gkuf7sbk,1847
+bytewax/inp.py,sha256=iYrc0HYdvLtk5QHFkFIxDfPurLEvS7i3dX0R08B8RaE,2132
+bytewax/bytewax.cpython-38-darwin.so,sha256=ZrhKLU87igNmtfKvOi7ov5rBTgoUt_X-3Q1zuFW9Y-k,8879373
+bytewax-0.8.0_beta.1.dist-info/RECORD,,
