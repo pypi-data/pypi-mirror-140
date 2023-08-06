@@ -1,0 +1,10 @@
+ovos_PHAL/__init__.py,sha256=kg7Mk0W2X67hqL6vweIC0vuGnL8oK62n5AJhPWed_TY,1159
+ovos_PHAL/__main__.py,sha256=NP7e86dXgFd__9pGOugUdoTpyalCPqaIMlwzGJeuViI,305
+ovos_PHAL/detection.py,sha256=GujqinjXF467EdMk80StP1he1bYUHUWvSQ1j7mYJbe8,1436
+ovos_PHAL/version.py,sha256=ngFn7CKVyhopdVfKT4gcARfNTt6vFxPLcvHzSZ4vXJY,177
+ovos_PHAL-0.0.1a1.dist-info/LICENSE,sha256=ujdvnin8cAYCsJhQhQxfUSvS5yCf7RAk24ltOrau7rA,11349
+ovos_PHAL-0.0.1a1.dist-info/METADATA,sha256=Xwmkt7lKGXNN3-nPbgYuTGCSqbkrCZP1_oFpCaodE0g,288
+ovos_PHAL-0.0.1a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ovos_PHAL-0.0.1a1.dist-info/entry_points.txt,sha256=PregQlul5H6BQq23e7PyvjcNYLB_eupkaSLprLV9eys,55
+ovos_PHAL-0.0.1a1.dist-info/top_level.txt,sha256=Pt4y92j6yi3cwUiC_jA7_7ztrK5zhkW3zQj0szVT8h0,10
+ovos_PHAL-0.0.1a1.dist-info/RECORD,,
