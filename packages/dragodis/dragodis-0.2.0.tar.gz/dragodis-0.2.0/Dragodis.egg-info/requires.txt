@@ -1,0 +1,10 @@
+bytesparse
+capstone
+rpyc
+pyhidra
+
+[:platform_system == "Windows"]
+pywin32
+
+[testing]
+pytest
