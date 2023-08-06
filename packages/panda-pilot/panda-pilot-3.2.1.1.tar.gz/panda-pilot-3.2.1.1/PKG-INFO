@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: panda-pilot
+Version: 3.2.1.1
+Summary: PanDA Pilot 3
+Home-page: https://github.com/PanDAWMS/pilot3/wiki
+Author: PanDA Team
+Author-email: atlas-adc-panda@cern.ch
+License: Apache License 2.0
+Description: This package contains the PanDA Pilot 3 source code
+Platform: UNKNOWN
+Requires-Python: >=2.7
