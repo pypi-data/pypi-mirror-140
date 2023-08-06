@@ -1,0 +1,17 @@
+mcap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcap/mcap0/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcap/mcap0/chunk_builder.py,sha256=vN0w5en07ijuB_bkyTdXzPt3V0776TQp_Oeg3g8q7JE,1537
+mcap/mcap0/data_stream.py,sha256=5Yo-X6UVCDJGLDe5zw7dDm-OWf5OpMZoxiZ6RsdxfbA,2415
+mcap/mcap0/exceptions.py,sha256=pS3bJZnnX5bFJASXrI6jAZ_uyZpT_Qg0sjbxChmc92E,76
+mcap/mcap0/opcode.py,sha256=IXRSatLmkU3zwgYoXdks_cz4uFTHY0GjKqK7RPpO5XA,387
+mcap/mcap0/records.py,sha256=IdUurymy-cSKcNXICjhqCPDWYtIvQp8EjgrkX0GOPqg,15426
+mcap/mcap0/serialization.py,sha256=dGOx32RD4rQpUUb74jU_CVWcbxfOKBhG5sKGFx2nxek,626
+mcap/mcap0/stream_reader.py,sha256=EkqKuSOzx0VCmEP1MasIjE-lpkNqt_yN0FZrCt7GUV0,4916
+mcap/mcap0/writer.py,sha256=jM-5FK83hW6JJwf-Z738PoELKMsJ9HiA2RG0FipfsGk,15314
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/run_reader_test.py,sha256=i2tYihsYrbiibi7cxp_2uIJIOFAFHVNBOHqcQvv97U4,440
+tests/run_writer_test.py,sha256=YEt1BRieF8SFW8gmG7dZfF9HkoKHYHnarNrV9r1r8dU,3608
+mcap-0.0.3.dist-info/METADATA,sha256=BrnEeSmayxMIqmj_B1Z19aWApZ9F5lo7PHfX7Q3-GnA,1335
+mcap-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mcap-0.0.3.dist-info/top_level.txt,sha256=kgOmWz7Rrg_dIB_okQvzqX0wGuOVdmR4xjgnVhUUSho,11
+mcap-0.0.3.dist-info/RECORD,,
