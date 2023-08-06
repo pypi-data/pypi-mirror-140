@@ -1,0 +1,85 @@
+[tool.black]
+skip-string-normalization = true
+
+[tool.poetry]
+name = "libtmux"
+version = "0.11.0b0"
+description = "scripting library / orm for tmux"
+license = "MIT"
+authors = ["Tony Narlock <tony@git-pull.com>"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX",
+  "Operating System :: MacOS :: MacOS X",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Utilities",
+  "Topic :: System :: Shells"
+]
+
+keywords = ["tmux", "session manager", "terminal", "ncurses"]
+homepage = "http://github.com/tmux-python/libtmux/"
+readme = "README.md"
+packages = [
+    { include = "libtmux" }
+]
+include = [
+    { path = "CHANGES", format = "sdist" },
+    { path = ".tmuxp.yaml", format = "sdist" },
+    { path = "tests", format = "sdist" },
+    { path = "docs", format = "sdist" }
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/tmux-python/libtmux/issues"
+Documentation = "https://libtmux.git-pull.com"
+Repository = "https://github.com/tmux-python/libtmux"
+Changes = "https://github.com/tmux-python/libtmux/blob/master/CHANGES"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+### Docs ###
+sphinx = "*"
+alagitpull = "~0.1.0"
+sphinx-issues = "^1.2.0"
+sphinx-autodoc-typehints = "~1.14.1"
+myst_parser = "~0.16.1"
+
+### Testing ###
+pytest = "*"
+pytest-rerunfailures = "*"
+pytest-mock = "*"
+tox = {version = "^3.24.5", extras = ["test"]}
+tox-poetry-installer = {extras = ["poetry"], version = "^0.8.3"}
+
+### Coverage ###
+codecov = "*"
+coverage = "*"
+pytest-cov = "*"
+
+### Format ###
+black = "*"
+isort = "*"
+
+### Lint ###
+flake8 = "*"
+
+[tool.poetry.extras]
+docs = ["sphinx", "myst_parser", "sphinx-issues", "alagitpull", "sphinx-autodoc-typehints"]
+test = ["pytest", "pytest-rerunfailures", "pytest-mock", "tox", "tox-poetry-installer"]
+coverage = ["codecov", "coverage", "pytest-cov"]
+format = ["black", "isort"]
+lint = ["flake8"]
+
+[build-system]
+requires = ["poetry_core>=1.0.0", "setuptools>50"]
+build-backend = "poetry.core.masonry.api"
