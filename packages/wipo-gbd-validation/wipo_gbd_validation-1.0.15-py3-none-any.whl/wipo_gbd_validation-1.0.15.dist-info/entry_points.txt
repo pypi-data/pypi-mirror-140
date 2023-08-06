@@ -1,0 +1,4 @@
+[console_scripts]
+gbd-validation = gbdvalidation.execs:run
+gbd-validation-collection = gbdvalidation.execs:bulk_run
+
