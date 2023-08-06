@@ -1,0 +1,13 @@
+marshmallow_recipe/__init__.py,sha256=AOOFEx4Xf4cRJztMzX_fIdBQ_59NfY-6VbWw1JEi_Rg,1690
+marshmallow_recipe/bake.py,sha256=-6wz9WSZHL8V8xh2Ss7RMzgn8no56T3CkANGhwZUVp4,5498
+marshmallow_recipe/fields.py,sha256=vZz_mX556IF0b4ToTgysRLO0w-3Hg980qplMxJtrXMk,8622
+marshmallow_recipe/metadata.py,sha256=VR3Yz5xG1C_dARFGR2iykt32o2CBQRzRcGpk7mH4cts,686
+marshmallow_recipe/missing.py,sha256=KJqlwLakMZPkG9gyksjlV3XuwCiZ17b-eu3VGVFntRs,94
+marshmallow_recipe/naming_case.py,sha256=EZr9VikktAemS4zpURMkipFYdi_1jqIJ2TYixRhOZgI,1397
+marshmallow_recipe/py.typed,sha256=E84IaZyFwfLqvXjOVW4LS6WH7QOaKEFpNh9TFyzHNQc,6
+marshmallow_recipe/serialization.py,sha256=l3ibyXKMAc-n3ZQwpOBGfVirAPXpSIJCG7y_tTx91J8,3493
+marshmallow_recipe-0.0.5.dist-info/LICENSE,sha256=6wxFLIsIEt5jsCoTL_2zi4Ma1m2wqQjJs-uAQq48m8w,1068
+marshmallow_recipe-0.0.5.dist-info/METADATA,sha256=ZBm8VJdTfCi-ilJapXgJrX0SfEoIt9ZkM1UwwzoBKOk,2341
+marshmallow_recipe-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+marshmallow_recipe-0.0.5.dist-info/top_level.txt,sha256=hNKY_Bwb9z2443kMrbnoWJX2SSO51TYPsMaXJ895njg,19
+marshmallow_recipe-0.0.5.dist-info/RECORD,,
