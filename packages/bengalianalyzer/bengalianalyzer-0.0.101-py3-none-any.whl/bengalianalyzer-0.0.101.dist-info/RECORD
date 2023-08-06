@@ -1,0 +1,13 @@
+bengali_analyzer/__init__.py,sha256=ejWHJY9K1fuaCjZ0eUjaDa5K77mWOkkdpUhSFcfgUrM,70
+bengali_analyzer/bengali_analyzer.py,sha256=cetOjRn2bdzZXZHIA-JCSAMyDqKAdRKEi_H3IO65KyU,8805
+bengali_analyzer/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bengali_analyzer/libs/composite_words.py,sha256=JPcY6spEiCl8PPfgsCUxL3CqKRg6mKwZt_GWF7RRhOg,5816
+bengali_analyzer/libs/non_verbs.py,sha256=Io0zI89YUlcScDPBQdmQK2I8jnKpnUa_QXNk8bp8EsU,425
+bengali_analyzer/libs/numerics.py,sha256=RjXhd6f-v9lZTT_bzCBZCxRiP-jSEQk9YpkTFtg52jY,4598
+bengali_analyzer/libs/special_entity.py,sha256=z7I9qVkDI2lEXVr9Dlpi1uusurc2GMv5Qg_Ey9ZjnS8,1283
+bengali_analyzer/libs/verbs.py,sha256=WVQtPi0kyKcD9J7PlXItuXI5U3IQ-K_ZAnvgFiTMUFc,6109
+bengalianalyzer-0.0.101.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bengalianalyzer-0.0.101.dist-info/METADATA,sha256=-nXQecw4QOo71KiGayNA3ReFFSBPoRqqkEX3ewICYzU,8366
+bengalianalyzer-0.0.101.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bengalianalyzer-0.0.101.dist-info/top_level.txt,sha256=xn-FVPasel-Pxezm931OMHK3wXeKSGucNyXQhgVvRGM,17
+bengalianalyzer-0.0.101.dist-info/RECORD,,
