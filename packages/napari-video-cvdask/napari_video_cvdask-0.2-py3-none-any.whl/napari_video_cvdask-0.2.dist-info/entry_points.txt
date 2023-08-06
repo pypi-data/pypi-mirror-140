@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-video-cvdask = napari_video_cvdask:napari.yaml
