@@ -1,0 +1,3 @@
+[console_scripts]
+Apfloat = Apfloat.apfloat_versus_mpf:main
+
