@@ -1,0 +1,12 @@
+shifter_pandas/__init__.py,sha256=WVGI-Gmm9i1dH2M1ZsHRmPbUi8x3xtY861x6W-B5pHc,259
+shifter_pandas/bp.py,sha256=KMKcGLkZdF9MwhTSkOoAgh73-l0mp2iVU_LR5_IUTzg,17547
+shifter_pandas/ofs.py,sha256=wBDuIeo9_CK4Ybwsxe9OVgvSXXwyj7yN5iC2sKdxprU,3801
+shifter_pandas/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shifter_pandas/wikidata_.py,sha256=ocRExD4CxsgsSOHDfH-ZtjsWQ4k5ifXqwQliWKOI6NQ,25895
+shifter_pandas/worldbank.py,sha256=zQShaOOvtivDFRvI4U0ILMjA78oHmJfWS56GlAc2KZ8,3165
+shifter_pandas-0.1.0.dist-info/DESCRIPTION.rst,sha256=aDuMd2IjqCSYDMhPmTx71_y7vBdACcbULy-r-ofFUtk,2044
+shifter_pandas-0.1.0.dist-info/METADATA,sha256=zvcInIRcYepxhyrjHdEcQPn1t7H44b85oKXQqsVSVNI,2943
+shifter_pandas-0.1.0.dist-info/RECORD,,
+shifter_pandas-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+shifter_pandas-0.1.0.dist-info/metadata.json,sha256=xJWtrLzsqUA_Q1biYfE2oUtwx_vKuV3Z5hPiRpzTM5E,1009
+shifter_pandas-0.1.0.dist-info/top_level.txt,sha256=pd0uFMX5qo-FhRKspxk1kpDLgKuo27-PtPH4XErz1is,15
