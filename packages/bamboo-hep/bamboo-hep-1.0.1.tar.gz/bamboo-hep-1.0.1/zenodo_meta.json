@@ -1,0 +1,15 @@
+{
+    "title": "Bamboo: A high-level HEP analysis library for ROOT::RDataFrame",
+    "creators": [{
+            "name": "David, Pieter",
+            "affiliation": "Université catholique de Louvain",
+            "orcid": "0000-0001-9260-9371"
+        }, {
+            "name": "Wertz, Sébastien",
+            "affiliation": "Université catholique de Louvain",
+            "orcid": "0000-0002-8645-3670"
+        }
+    ],
+    "access_right": "open",
+    "communities": [{"identifier": "zenodo"}]
+}

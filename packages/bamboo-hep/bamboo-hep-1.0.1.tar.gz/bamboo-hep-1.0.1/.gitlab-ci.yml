@@ -1,0 +1,153 @@
+image: gitlab-registry.cern.ch/ci-tools/ci-worker:cc7
+
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+cache:
+  paths:
+    - .cache/pip
+    - tests/data/JECDatabase
+    - tests/data/JRDatabase
+
+build_99: # LCG_99, ROOT 6.22/06, oldest supported
+  tags: [cvmfs]
+  stage: build
+  before_script:
+    - yum install -y libgfortran make atlas
+    - source /cvmfs/sft.cern.ch/lcg/views/LCG_99/x86_64-centos7-gcc10-opt/setup.sh
+    - python -m venv venv99
+    - source venv99/bin/activate
+  artifacts:
+    paths: [venv99]
+    expire_in: 30min
+  script:
+    - python -m pip install scikit-build
+    - python -m pip install git+https://gitlab.cern.ch/cp3-cms/CMSJMECalculators.git
+    - python -m pip install . --no-build-isolation # with libtorch
+test_99:
+  tags: [cvmfs]
+  stage: test
+  needs: [build_99]
+  before_script:
+    - source /cvmfs/sft.cern.ch/lcg/views/LCG_99/x86_64-centos7-gcc10-opt/setup.sh
+    - source venv99/bin/activate
+  script:
+    - cd tests
+    - pytest --junitxml=report_99.xml
+  artifacts:
+    paths: [tests/report_99.xml]
+    reports:
+      junit: tests/report_99.xml
+
+build_100: # LCG_100, ROOT 6.24/00
+  tags: [cvmfs]
+  stage: build
+  before_script:
+    - yum install -y libgfortran make atlas
+    - source /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/setup.sh
+    - python -m venv venv100
+    - source venv100/bin/activate
+  artifacts:
+    paths: [venv100]
+    expire_in: 30min
+  script:
+    - python -m pip install scikit-build
+    - python -m pip install git+https://gitlab.cern.ch/cp3-cms/CMSJMECalculators.git
+    - python -m pip install . --no-build-isolation # with libtorch
+test_100:
+  tags: [cvmfs]
+  stage: test
+  needs: [build_100]
+  before_script:
+    - source /cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc10-opt/setup.sh
+    - source venv100/bin/activate
+  script:
+    - cd tests
+    - pytest --junitxml=report_100.xml
+  artifacts:
+    paths: [tests/report_100.xml]
+    reports:
+      junit: tests/report_100.xml
+
+build_101: # LCG_101, ROOT 6.24/06, newest version
+  tags: [cvmfs]
+  stage: build
+  before_script:
+    - yum install -y libgfortran make atlas
+    - source /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/setup.sh
+    - python -m venv venv101
+    - source venv101/bin/activate
+  artifacts:
+    paths: [venv101]
+    expire_in: 30min
+  script:
+    # NOTE 'pre-commit -a' can be used (with all the checks) from LCG_102 on
+    # NOTE see https://sft.its.cern.ch/jira/browse/SPI-1978
+    - python -m pip install flake8 flake8-bugbear
+    - flake8 --exclude=venv101/
+    - python -m pip install scikit-build
+    - python -m pip install git+https://gitlab.cern.ch/cp3-cms/CMSJMECalculators.git
+    - python -m pip install . --no-build-isolation # with libtorch
+test_101:
+  tags: [cvmfs]
+  stage: test
+  needs: [build_101]
+  before_script:
+    - source /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/setup.sh
+    - source venv101/bin/activate
+  script:
+    - cd tests
+    - pytest --junitxml=report_101.xml
+  artifacts:
+    paths: [tests/report_101.xml]
+    reports:
+      junit: tests/report_101.xml
+
+build_101_clang: # LCG_101, ROOT 6.24/06, clang12 newest version
+  tags: [cvmfs]
+  stage: build
+  before_script:
+    - yum install -y libgfortran make atlas
+    - source /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-clang12-opt/setup.sh
+    - python -m venv venv101_clang
+    - source venv101_clang/bin/activate
+  artifacts:
+    paths: [venv101_clang]
+    expire_in: 30min
+  script:
+    - python -m pip install scikit-build
+    - python -m pip install git+https://gitlab.cern.ch/cp3-cms/CMSJMECalculators.git
+    - python -m pip install . --no-build-isolation # with libtorch
+test_101_clang:
+  tags: [cvmfs]
+  stage: test
+  needs: [build_101_clang]
+  before_script:
+    - source /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-clang12-opt/setup.sh
+    - source venv101_clang/bin/activate
+  script:
+    - cd tests
+    - pytest --junitxml=report_101_clang.xml
+  artifacts:
+    paths: [tests/report_101_clang.xml]
+    reports:
+      junit: tests/report_101_clang.xml
+
+upload_pypi:
+  stage: deploy
+  only: [tags]
+  before_script:
+    - yum install -y python3
+    - python3 -m venv release_venv
+    - source release_venv/bin/activate
+  script:
+    - python3 -m pip install --upgrade pip
+    - python3 -m pip install --upgrade setuptools build setuptools-scm twine
+    - python3 -m build -s
+    - python3 -m twine check dist/*
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python3 -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+    - TWINE_PASSWORD=${PYPI_TOKEN} TWINE_USERNAME=__token__ python3 -m twine upload dist/*

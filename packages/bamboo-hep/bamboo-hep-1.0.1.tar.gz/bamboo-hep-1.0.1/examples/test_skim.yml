@@ -1,0 +1,15 @@
+tree: Events
+eras:
+  '2016':
+    luminosity: 1
+samples:
+  TTWJetsToLNu_2016:
+    era: '2016'
+    type: mc
+    #db: 'das:/TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM'
+    # one file from this dataset that happens to be locally available
+    files: [ /storage/data/cms/store/mc/RunIISummer20UL16NanoAODv9/TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/7E9F6CC0-91F2-704A-9341-25E17263CAA3.root ]
+    generated-events: genEventSumw
+    cross-section: 1
+    legend: TTW(lnu)+jets
+    fill-color: "#EDC951"

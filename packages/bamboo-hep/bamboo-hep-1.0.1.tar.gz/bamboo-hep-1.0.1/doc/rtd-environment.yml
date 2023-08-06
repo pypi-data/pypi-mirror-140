@@ -1,0 +1,7 @@
+name: withroot
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - root
+  - boost

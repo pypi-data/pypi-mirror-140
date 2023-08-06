@@ -1,0 +1,13 @@
+Pipfile*
+__pycache__/
+examples/*.root
+build
+_skbuild
+.eggs
+pip-wheel-metadata/
+bamboo.egg-info
+bamboo/cmake
+bamboo/lib
+bamboo/include
+tests/data/JECDatabase
+tests/data/JRDatabase
