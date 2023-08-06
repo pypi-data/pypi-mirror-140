@@ -1,0 +1,2 @@
+[console_scripts]
+biosimulators-bionetgen = biosimulators_bionetgen.__main__:main
