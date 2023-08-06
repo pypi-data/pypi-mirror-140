@@ -1,0 +1,10 @@
+gdal
+rasterio
+boto3
+botocore
+pyproj
+pysheds==0.2.7
+numpy
+torch
+tifffile
+pandas
