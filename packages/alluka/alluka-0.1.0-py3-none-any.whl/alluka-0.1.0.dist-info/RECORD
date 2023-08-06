@@ -1,0 +1,17 @@
+alluka/__init__.py,sha256=8g61GRv3tHv9QTEcHxT_NCwqP-vsF9OdNRr-31fm-qc,3009
+alluka/_client.py,sha256=p-UIP1wgZDop8I9l_TN9O5Vt_4Rr266HyJf27vfg5ZI,13828
+alluka/_errors.py,sha256=bqcGQVYw-6ioihT_opjU3zlKRSWJiUQEnvhTaJ7L5IU,2561
+alluka/_self_injecting.py,sha256=c3MeqhqhEyySd6N5PAfMxU1RR9Dk1W53nhyqSFnJFig,6085
+alluka/_types.py,sha256=HMw5T2e9CocAsq6Iq98uPasf3nc6gHLWAnFS_MmPNSY,9047
+alluka/_visitor.py,sha256=KZkLbfVm00zvoODdMdRcGiyWTZZ0KPqWj0aamjv97lM,9144
+alluka/abc.py,sha256=9DSQwBU6Gd5-qpTiSGJqRiJ87dQBbxrt25UlN58VLGQ,18484
+alluka/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alluka/_vendor/__init__.py,sha256=599qTbgdYZacaAvqFllqi1JyyHq62fdvb6jkhxuNZHM,156
+alluka/_vendor/inspect.py,sha256=aPGPpKhPyraUCnqyujXas8p61boGuzAyY-47JvecghE,123923
+alluka/_vendor/inspect.py.LICENSE,sha256=8D4XzVlMIIX2akVOaVx-vltNPA7_U09PGUq8L9FkYhs,13931
+alluka/_vendor/inspect.pyi,sha256=AuQxGE4wzwr4NY2PQGPbhowSvaV473lGZsF4u9rDBeM,12295
+alluka/_vendor/inspect.pyi.LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+alluka-0.1.0.dist-info/LICENSE,sha256=DgRzE4IfSKqv4SbpLgnfRtsCd_sI7Vf4XGZH-5Waehw,1520
+alluka-0.1.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+alluka-0.1.0.dist-info/METADATA,sha256=O1Y655BgfPEzgMmAEG28boExmARWAZ_ez4nPSOGP4pE,2049
+alluka-0.1.0.dist-info/RECORD,,
