@@ -1,0 +1,13 @@
+pre_commit_po_hooks/__init__.py,sha256=UJX4YTLptiVPwsuLHbMbCnX_wmDuusrrST_DA1If4jU,22
+pre_commit_po_hooks/check_entries.py,sha256=F_qGm86uru81lPlPu7HW9tsibl8FO9QR9ZDbJjCOSSM,3800
+pre_commit_po_hooks/check_metadata.py,sha256=SitZRcqVKtkl0tcicFGye40uOvasiUv26Kcz_4pPoCU,7746
+pre_commit_po_hooks/fuzzy_messages.py,sha256=EJq_RH75C0FRBEDEUi4vw6kMOZz_Ryout527S7Ax34A,1312
+pre_commit_po_hooks/lreplace_extracted_comments.py,sha256=zAEH4lR8hNcrPL_QAlK-fW7RG-8CeBk7CB_O1HkAuoA,4325
+pre_commit_po_hooks/obsolete_messages.py,sha256=dJer_DWnMVnQCIfw8UpyGky9AMIvK6gD6bSZGjGqdgo,1567
+pre_commit_po_hooks/untranslated_messages.py,sha256=7vAdaYDja4rg164TzCvsNc55MgdMBhmM090V7MEitAk,3639
+pre_commit_po_hooks-1.7.3.dist-info/LICENSE,sha256=CGQrSbjo2jOUPBOhwoH7TITvxptuzo3IZgvYsTNeMLM,1536
+pre_commit_po_hooks-1.7.3.dist-info/METADATA,sha256=meq1rdeDVRsYE1rGniI9MJXkqPiuTwLBDC9m8H9vkLc,6853
+pre_commit_po_hooks-1.7.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pre_commit_po_hooks-1.7.3.dist-info/entry_points.txt,sha256=2o-OP-Rr1wgMCy7pobrxPs0GOedBbNBxt6q0F8bfAAo,441
+pre_commit_po_hooks-1.7.3.dist-info/top_level.txt,sha256=Fk2Iv17-n2j-_D05aF1Xp9PZ0dpnEhBL6syyLf0NU7Y,20
+pre_commit_po_hooks-1.7.3.dist-info/RECORD,,
