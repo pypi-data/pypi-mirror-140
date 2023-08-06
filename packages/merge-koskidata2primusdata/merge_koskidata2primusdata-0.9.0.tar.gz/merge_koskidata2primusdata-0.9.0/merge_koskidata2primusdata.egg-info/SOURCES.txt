@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+merge_koskidata2primusdata/__init__.py
+merge_koskidata2primusdata/__main__.py
+merge_koskidata2primusdata/add_column.py
+merge_koskidata2primusdata/merge_student_years.py
+merge_koskidata2primusdata.egg-info/PKG-INFO
+merge_koskidata2primusdata.egg-info/SOURCES.txt
+merge_koskidata2primusdata.egg-info/dependency_links.txt
+merge_koskidata2primusdata.egg-info/entry_points.txt
+merge_koskidata2primusdata.egg-info/requires.txt
+merge_koskidata2primusdata.egg-info/top_level.txt
