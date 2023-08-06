@@ -1,0 +1,3 @@
+[console_scripts]
+pycyapi = pycyapi.cli:cli
+
