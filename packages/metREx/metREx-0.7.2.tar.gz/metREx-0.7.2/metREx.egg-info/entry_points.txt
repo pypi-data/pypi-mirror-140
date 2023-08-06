@@ -1,0 +1,2 @@
+[console_scripts]
+metrex = metREx.manage:run
