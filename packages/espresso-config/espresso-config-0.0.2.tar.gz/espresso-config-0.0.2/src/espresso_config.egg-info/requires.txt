@@ -1,0 +1,2 @@
+smart-open>=5
+pyyaml>=6
