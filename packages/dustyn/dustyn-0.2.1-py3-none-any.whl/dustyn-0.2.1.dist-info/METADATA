@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: dustyn
+Version: 0.2.1
+Summary: UNKNOWN
+Home-page: https://github.com/neutrinoceros/dustyn
+Author: C.M.T. Robert
+License: GPL-2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (<3.6,>=3.4)
+Requires-Dist: more-itertools (>=8.7.0)
+Requires-Dist: numpy (<1.22,>=1.20)
+Requires-Dist: rich (>=10.0.0)
+Requires-Dist: scipy (<1.8.0,>=1.7.0)
+Requires-Dist: sympy (<1.8.0,>=1.7.1)
+Provides-Extra: dev
+Requires-Dist: hypothesis (>=6.2.0<7.0) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.2<7.0) ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mpl (>=0.12) ; extra == 'dev'
+Requires-Dist: requests (>=1.21.1) ; extra == 'dev'
+
+dustyn
+======
+
+[![PyPI](https://img.shields.io/pypi/v/dustyn)](https://pypi.org/project/dustyn/)
+[![PyPI](https://img.shields.io/pypi/pyversions/dustyn)](https://pypi.org/project/dustyn/)
+[![codecov](https://codecov.io/gh/neutrinoceros/dustyn/branch/main/graph/badge.svg)](https://codecov.io/gh/neutrinoceros/dustyn)
+[![CI](https://github.com/neutrinoceros/dustyn/actions/workflows/ci.yml/badge.svg)](https://github.com/neutrinoceros/dustyn/actions/workflows/ci.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/neutrinoceros/dustyn/main.svg)](https://results.pre-commit.ci/latest/github/neutrinoceros/dustyn/main)
+
+dustyn is a small Python framework to simulate the dynamics of Lagrangian test
+particles (dust) in arbitrary flows, store, and analyse the outputs. It is
+designed to be extensible.
+
+
