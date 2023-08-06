@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py37,py38,report
+
+[testenv]
+deps =
+    pytest >= 6.2.3
+    pytest-testconfig == 0.2.0
+    pytest-cov >= 2.11.1
+    pytest-mock >=  3.6.1
+    bs4 >= 0.0.1
+    lxml >= 4.6.3
+    html5lib >= 1.1
+commands =
+    pytest {posargs: --tc-file=tests/config/config.yaml --tc-format=yaml --cov=gendev_tools --cov-report=xml:coverage.xml --junitxml=unittest.xml}
+
+[testenv:report]
+deps = coverage
+skip_install = true
+commands =
+    coverage report
+    coverage html
+"""
