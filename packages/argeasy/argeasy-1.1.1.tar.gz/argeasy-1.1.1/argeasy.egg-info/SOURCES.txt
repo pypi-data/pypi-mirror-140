@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+argeasy/__init__.py
+argeasy/argeasy.py
+argeasy.egg-info/PKG-INFO
+argeasy.egg-info/SOURCES.txt
+argeasy.egg-info/dependency_links.txt
+argeasy.egg-info/top_level.txt
