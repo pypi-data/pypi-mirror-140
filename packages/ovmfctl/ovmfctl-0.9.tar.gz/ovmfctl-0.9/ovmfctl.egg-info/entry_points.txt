@@ -1,0 +1,3 @@
+[console_scripts]
+ovmfctl = ovmfctl.ovmfctl:main
+ovmfdump = ovmfctl.ovmfdump:main
