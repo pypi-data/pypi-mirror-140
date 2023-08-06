@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/readingpy/__init__.py
+src/readingpy/example.py
+src/readingpy.egg-info/PKG-INFO
+src/readingpy.egg-info/SOURCES.txt
+src/readingpy.egg-info/dependency_links.txt
+src/readingpy.egg-info/top_level.txt
