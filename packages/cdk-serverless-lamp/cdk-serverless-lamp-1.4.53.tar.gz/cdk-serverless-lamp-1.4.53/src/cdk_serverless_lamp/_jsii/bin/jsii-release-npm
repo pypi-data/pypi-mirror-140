@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+import jsii
+import sys
+
+__jsii_assembly__ = jsii.JSIIAssembly.load(
+    "cdk-serverless-lamp",
+    "1.4.53",
+    "cdk_serverless_lamp",
+    "cdk-serverless-lamp@1.4.53.jsii.tgz",
+)
+
+__jsii_assembly__.invokeBinScript(
+    "cdk-serverless-lamp", "jsii-release-npm", sys.argv[1:]
+)
