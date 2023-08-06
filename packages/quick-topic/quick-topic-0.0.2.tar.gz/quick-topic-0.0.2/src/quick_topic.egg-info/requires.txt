@@ -1,0 +1,12 @@
+jieba
+quick-csv
+gensim
+numpy
+pandas
+matplotlib
+
+[dev]
+check-manifest
+
+[test]
+coverage
