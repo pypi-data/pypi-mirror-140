@@ -1,0 +1,10 @@
+include settings.ini
+include LICENSE
+include CONTRIBUTING.md
+include README.md
+include aquacrop/data/*.txt
+include aquacrop/data/*.dat
+include aquacrop/data/*.st
+include aquacrop/data/*.OUT
+include aquacrop/data/*.csv
+recursive-exclude * __pycache__
