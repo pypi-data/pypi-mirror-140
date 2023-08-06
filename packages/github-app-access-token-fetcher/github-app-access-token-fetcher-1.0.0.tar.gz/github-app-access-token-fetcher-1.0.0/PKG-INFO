@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: github-app-access-token-fetcher
+Version: 1.0.0
+Summary: Utility script to produce a github app access token.
+Author: Bendik Samseth
+Author-email: bendik.samseth@inspera.no
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyJWT (>=2.3.0,<3.0.0)
+Requires-Dist: boto3 (>=1.21.8,<2.0.0)
+Requires-Dist: cryptography (>=36.0.1,<37.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
