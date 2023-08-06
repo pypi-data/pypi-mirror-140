@@ -1,0 +1,4 @@
+gcp:
+  project_id: hybrid-circle-165702
+  api_endpoint: "us-central1-aiplatform.googleapis.com"
+  region: "us-central1"
