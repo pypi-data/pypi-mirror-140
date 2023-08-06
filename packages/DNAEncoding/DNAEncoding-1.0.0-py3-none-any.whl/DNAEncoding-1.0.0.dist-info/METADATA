@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: DNAEncoding
+Version: 1.0.0
+Summary: This will return a list of Sequnces
+Home-page: UNKNOWN
+Author: Shujaat Muhammad
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: Bio
+
+This will read a Fasta file and Sequence length, file format should be Fasta
+
+
