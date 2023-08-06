@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pynprimos
+Version: 1.0
+Summary: Existing prime numbers up to the entered number.
+Home-page: UNKNOWN
+Author: Leandro Martin
+Author-email: leandromh@hotmail.com
+License: GNU GPLv3
+Keywords: nprimos primenumbers
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+NPRIMOS
+=======
+
+Facilitando un número n a la función esta devuelve los números primos hasta n, indicando también la cantidad que ellos.
+
+El paquete se llama pynprimos y la función nprimos.
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version
+
+
