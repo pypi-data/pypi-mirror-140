@@ -1,0 +1,8 @@
+README.md
+setup.py
+ggshow/__init__.py
+ggshow/ggshow.py
+ggshow.egg-info/PKG-INFO
+ggshow.egg-info/SOURCES.txt
+ggshow.egg-info/dependency_links.txt
+ggshow.egg-info/top_level.txt
