@@ -1,0 +1,14 @@
+python-dateutil
+RestrictedPython
+numpy
+pandas
+pandas_ta
+TA-Lib
+pymongo
+tabulate
+hashids
+
+[testing]
+WebTest>=1.3.1
+pytest
+pytest-cov
