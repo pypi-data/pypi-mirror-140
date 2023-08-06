@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: diddiparser2
+Version: 1.2.0
+Summary: The official DiddiScript parser.
+Home-page: http://diddiparser2.readthedocs.io
+Author: Diego Ramirez
+Author-email: dr01191115@gmail.com
+License: MIT License
+Project-URL: Documentation, http://diddiparser2.readthedocs.io
+Project-URL: Tracker, http://github.com/DiddiLeija/diddiparser2/issues
+Project-URL: Source, http://github.com/DiddiLeija/diddiparser2
+Keywords: diddiscript python parser
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# DiddiParser 2
+
+[![Documentation Status](https://readthedocs.org/projects/diddiparser2/badge/?version=latest)](https://diddiparser2.readthedocs.io/en/latest/?badge=latest)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+The DiddiScript parser, written in Python.
+
+## Installation
+
+DiddiParser2 can be installed via [pip](https://pip.pypa.io):
+
+```
+pip install diddiparser2
+```
+
+## Usage
+
+DiddiParser2 is mostly used as a command-line tool. To run a DiddiScript
+file, just run
+
+```
+diddiparser2 [filename]
+```
+
+Also, you can use `python -m diddiparser2` instead of `diddiparser2`.
+
+## Documentation
+
+The documentation (hosted by ReadTheDocs) is [here](https://diddiparser2.readthedocs.io/en/latest/).
+
+
