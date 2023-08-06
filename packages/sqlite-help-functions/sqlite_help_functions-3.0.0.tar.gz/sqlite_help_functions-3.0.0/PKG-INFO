@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sqlite_help_functions
+Version: 3.0.0
+Summary: Sql helper: No need to worry about syntax when doing sqlite3 in python3
+Home-page: https://github.com/TvoozMagnificent/sql
+Author: TvoozMagnificent
+Author-email: luchang1106@icloud.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# sql
+Sql helper: No need to worry about syntax when using sqlite3 in python3
+---
+No more worrying about syntax: go straight away with our functions and constants!!! 
+
+```
+from sqlite_help_functions import *
+```
+**This line does everything. No more f\*cking syntax.**
+
+
+
