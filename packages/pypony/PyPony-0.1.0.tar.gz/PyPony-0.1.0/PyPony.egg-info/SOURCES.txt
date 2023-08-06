@@ -1,0 +1,7 @@
+README.md
+setup.py
+PyPony.egg-info/PKG-INFO
+PyPony.egg-info/SOURCES.txt
+PyPony.egg-info/dependency_links.txt
+PyPony.egg-info/requires.txt
+PyPony.egg-info/top_level.txt
