@@ -1,0 +1,6 @@
+{
+  "label": "small undirected graph",
+  "directed": false,
+  "weighted": false,
+  "graph": { "A": ["A"] }
+}

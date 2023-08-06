@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: graphworks
+Version: 0.4.2
+Summary: Graph theoretic classes and helper functions.
+Home-page: https://github.com/nathan-gilbert/graphworks
+Author: Nathan Gilbert
+Author-email: me@nathangilbert.com
+License: Copyright (c) 2020 Nathan Gilbert        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to  use, copy, modify, merge, or distribute copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to the
+        following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS  FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY,  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.21.5)
+Requires-Dist: graphviz (==0.19.1)
+
+# Graphworks
+
+[![Python package](https://github.com/nathan-gilbert/graphworks/actions/workflows/python-package-ci.yml/badge.svg)](https://github.com/nathan-gilbert/graphworks/actions/workflows/python-package-ci.yml)
+
+## A Python module for efficient graph theoretic programming
+
+## Usage
+
+See the [wiki](https://github.com/nathan-gilbert/graphworks/wiki)
+
+### TLDR
+
+First, `pip install graphworks`
+
+```python
+import json
+from graphworks.graph import Graph
+
+json_graph = {"label": "my graph", "edges": {"A": ["B"], "B": []}}
+graph = Graph("my graph", input_graph=json.dumps(json_graph))
+print(graph)
+```
+
+## Development
+
+### Requirements
+
+- Python 3.8+
+- virtualenv
+- numpy
+- graphviz
+
+### Install the required packages
+
+```sh
+pip install virtualenv
+virtualenv env
+```
+
+### Start the virtualenv
+
+```sh
+source ./env/bin/activate
+```
+
+### You can deactivate the virtualenv with
+
+```sh
+deactivate
+```
+
+### Lastly, install the required libraries
+
+```sh
+pip install -r requirements.txt
+```
+
+### Building the package
+
+- Update the version number in `setup.py`
+- Run `python setup.py sdist bdist_wheel`
+- Run `twine check dist/*`
+- Upload to test PyPi: `twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+- Upload to PyPi main: `twine upload --skip-existing dist/*`
+- To autopublish, tag commit with `git tag -a vX.Y.Z -m 'release message`
+- Then `git push --tags`
+
+### Diagnostics
+
+- Run the unit tests: `python -m unittest discover tests '*_tests.py'`
+- Run unit test coverage: `coverage run --source=graphworks/ -m unittest discover tests '*_tests.py'`
+- Generate test coverage reports (either works):
+  - `coverage report --omit="*/test*,*/venv/*"`
+  - `coverage html --omit="*/test*,*/venv/*"`
+
+## TODO
+
+- Create Vertex class
+- <https://www.python-course.eu/graphs_python.php>
+- Build out directed graphs algorithms
+  - <https://algs4.cs.princeton.edu/42digraph/>
+- Allow for weighted graph algorithms
+  - Jarnik's algorithm
+  - Dijkstra's algorithm
+- C++ binaries for speeding up graph computations
+
+
