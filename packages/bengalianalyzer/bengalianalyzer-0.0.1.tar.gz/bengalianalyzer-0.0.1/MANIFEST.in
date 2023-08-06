@@ -1,0 +1,2 @@
+include src/bengali_lemmatization_beta/assets/*.csv
+include src/bengali_lemmatization_beta/assets/*.txt
