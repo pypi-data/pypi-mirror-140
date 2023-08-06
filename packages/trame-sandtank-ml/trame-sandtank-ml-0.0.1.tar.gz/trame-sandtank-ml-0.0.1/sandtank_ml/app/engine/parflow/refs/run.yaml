@@ -1,0 +1,430 @@
+BCPressure:
+  PatchNames: z_upper z_lower x_lower x_upper y_lower y_upper
+ComputationalGrid:
+  DX: 1.0
+  DY: 1.0
+  DZ: 1.0
+  Lower:
+    X: 0.0
+    Y: 0.0
+    Z: 0.0
+  NX: 100
+  NY: 1
+  NZ: 50
+Contaminants:
+  Names: ''
+Cycle:
+  Names: constant
+  constant:
+    Names: alltime
+    Repeat: -1
+    alltime:
+      Length: 1
+Domain:
+  GeomName: domain
+FileVersion: 4
+Geom:
+  Perm:
+    Names: s1 s2 s3 s4
+    TensorByGeom:
+      Names: domain
+  Porosity:
+    GeomNames: domain s1 s2 s3 s4
+  domain:
+    ICPressure:
+      RefGeom: domain
+      RefPatch: z_lower
+      Value: 30.0
+    Lower:
+      X: 0.0
+      Y: 0.0
+      Z: 0.0
+    Patches: z_upper z_lower x_lower x_upper y_lower y_upper
+    Perm:
+      TensorValX: 1.0
+      TensorValY: 1.0
+      TensorValZ: 1.0
+    Porosity:
+      Type: Constant
+      Value: 0.4
+    RelPerm:
+      Alpha: 2.0
+      N: 3.0
+    Saturation:
+      Alpha: 2.0
+      N: 3.0
+      SRes: 0.2
+      SSat: 1.0
+    SpecificStorage:
+      Value: 1.0e-05
+    Upper:
+      X: 100.0
+      Y: 1.0
+      Z: 50.0
+  indi_input:
+    FileName: SandTank_Indicator.pfb
+  s1:
+    Perm:
+      Type: Constant
+      Value: 1.0
+    Porosity:
+      Type: Constant
+      Value: 0.4
+  s2:
+    Perm:
+      Type: Constant
+      Value: 0.6
+    Porosity:
+      Type: Constant
+      Value: 0.25
+  s3:
+    Perm:
+      Type: Constant
+      Value: 0.3
+    Porosity:
+      Type: Constant
+      Value: 0.3
+  s4:
+    Perm:
+      Type: Constant
+      Value: 0.05
+    Porosity:
+      Type: Constant
+      Value: 0.35
+GeomInput:
+  Names: solidinput indi_input
+  indi_input:
+    GeomNames: s1 s2 s3 s4
+    InputType: IndicatorField
+  s1:
+    Value: 1
+  s2:
+    Value: 2
+  s3:
+    Value: 3
+  s4:
+    Value: 4
+  solidinput:
+    FileName: SandTank.pfsol
+    GeomNames: domain
+    InputType: SolidFile
+Gravity: 1.0
+ICPressure:
+  GeomNames: domain
+  Type: HydroStaticPatch
+KnownSolution: NoKnownSolution
+Mannings:
+  Geom:
+    domain:
+      Value: 5.0e-06
+  GeomNames: domain
+  Type: Constant
+OverlandFlowDiffusive: 0
+Patch:
+  x_lower:
+    BCPressure:
+      Cycle: constant
+      RefGeom: domain
+      RefPatch: z_lower
+      Type: DirEquilRefPatch
+      alltime:
+        Value: 50
+  x_upper:
+    BCPressure:
+      Cycle: constant
+      RefGeom: domain
+      RefPatch: z_lower
+      Type: DirEquilRefPatch
+      alltime:
+        Value: 10
+  y_lower:
+    BCPressure:
+      Cycle: constant
+      Type: FluxConst
+      alltime:
+        Value: 0.0
+  y_upper:
+    BCPressure:
+      Cycle: constant
+      Type: FluxConst
+      alltime:
+        Value: 0.0
+  z_lower:
+    BCPressure:
+      Cycle: constant
+      Type: FluxConst
+      alltime:
+        Value: 0.0
+  z_upper:
+    BCPressure:
+      Cycle: constant
+      Type: FluxConst
+      alltime:
+        Value: 0.0
+Perm:
+  TensorType: TensorByGeom
+Phase:
+  Names: water
+  RelPerm:
+    GeomNames: domain
+    Type: VanGenuchten
+  Saturation:
+    GeomNames: domain
+    Type: VanGenuchten
+  water:
+    Density:
+      Type: Constant
+      Value: 1.0
+    Mobility:
+      Type: Constant
+      Value: 1.0
+    Viscosity:
+      Type: Constant
+      Value: 1.0
+PhaseSources:
+  water:
+    Geom:
+      domain:
+        Value: 0.0
+    GeomNames: domain
+    Type: Constant
+Process:
+  Topology:
+    P: 1
+    Q: 1
+    R: 1
+Solver:
+  AbsTol: 1.0e-07
+  Drop: 1.0e-20
+  Linear:
+    KrylovDimension: 100
+    MaxRestarts: 5
+    Preconditioner: PFMG
+  MaxIter: 2500000
+  Nonlinear:
+    DerivativeEpsilon: 1.0e-08
+    EtaValue: 0.01
+    Globalization: LineSearch
+    MaxIter: 100
+    ResidualTol: 1.0e-05
+    StepTol: 1.0e-20
+    UseJacobian: true
+  PrintMask: true
+  PrintSubsurf: true
+  PrintVelocities: true
+  WritePfbMannings: true
+  WritePfbSlopes: true
+  _value_: Richards
+SpecificStorage:
+  GeomNames: domain
+  Type: Constant
+TimeStep:
+  Type: Constant
+  Value: 1.0
+TimingInfo:
+  BaseUnit: 1.0
+  DumpInterval: -1
+  StartCount: 0
+  StartTime: 0.0
+  StopTime: 100
+TopoSlopesX:
+  Geom:
+    domain:
+      Value: 0.0
+  GeomNames: domain
+  Type: Constant
+TopoSlopesY:
+  Geom:
+    domain:
+      Value: 0.05
+  GeomNames: domain
+  Type: Constant
+Wells:
+  Names: w1 w2 w3 w4 w5 w6 w7 w8 w9 w10 w11
+  w1:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 11.5
+    Y: 0.5
+    ZLower: 15.1
+    ZUpper: 15.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w10:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 87.5
+    Y: 0.5
+    ZLower: 14.1
+    ZUpper: 14.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w11:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 92.5
+    Y: 0.5
+    ZLower: 26.1
+    ZUpper: 26.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w2:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 23.5
+    Y: 0.5
+    ZLower: 1.1
+    ZUpper: 1.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w3:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 26.5
+    Y: 0.5
+    ZLower: 15.1
+    ZUpper: 15.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w4:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 29.5
+    Y: 0.5
+    ZLower: 27.1
+    ZUpper: 27.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w5:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 48.5
+    Y: 0.5
+    ZLower: 1.1
+    ZUpper: 1.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w6:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 51.5
+    Y: 0.5
+    ZLower: 13.1
+    ZUpper: 13.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w7:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 54.5
+    Y: 0.5
+    ZLower: 15.1
+    ZUpper: 15.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w8:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 57.5
+    Y: 0.5
+    ZLower: 1.1
+    ZUpper: 1.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
+  w9:
+    Action: Extraction
+    Cycle: constant
+    InputType: Vertical
+    Method: Standard
+    Type: Flux
+    X: 82.5
+    Y: 0.5
+    ZLower: 1.1
+    ZUpper: 1.9
+    alltime:
+      Flux:
+        water:
+          Value: 0
+      Saturation:
+        water:
+          Value: 1.0
