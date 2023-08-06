@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/cnnutils/__init__.py
+src/cnnutilstp.egg-info/PKG-INFO
+src/cnnutilstp.egg-info/SOURCES.txt
+src/cnnutilstp.egg-info/dependency_links.txt
+src/cnnutilstp.egg-info/top_level.txt
