@@ -1,0 +1,6 @@
+telethon
+click>=6.0
+cryptg
+hachoir
+scandir; python_version<'3.6'
+prompt_toolkit
