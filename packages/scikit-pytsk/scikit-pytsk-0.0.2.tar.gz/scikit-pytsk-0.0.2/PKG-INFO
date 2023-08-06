@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: scikit-pytsk
+Version: 0.0.2
+Summary: PyTSK provides tools for uses conveniently developing TSK fuzzy systems.
+Home-page: https://github.com/YuqiCui/PyTSK
+Author: Yuqi Cui
+Author-email: yqcui@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Welcome to PyTSK package!
+The document can be found at: https://pytskdocs.readthedocs.io/en/latest
+
+
