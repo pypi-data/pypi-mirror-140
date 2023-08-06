@@ -1,0 +1,3 @@
+[console_scripts]
+libGen-leecher = LibGenLeecher:search
+

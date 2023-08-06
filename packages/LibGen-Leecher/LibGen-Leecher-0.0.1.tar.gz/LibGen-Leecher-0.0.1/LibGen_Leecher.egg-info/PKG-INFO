@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: LibGen-Leecher
+Version: 0.0.1
+Summary: Library Genesis downloader
+Home-page: UNKNOWN
+Author: Andrew Secco
+Author-email: <asecco99@gmail.com>
+License: UNKNOWN
+Description: A script for easily downloading books from Library Genesis.
+Keywords: python,downloader,library genesis,textbooks
+Platform: UNKNOWN
