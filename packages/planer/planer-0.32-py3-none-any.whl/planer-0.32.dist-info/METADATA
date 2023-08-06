@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: planer
+Version: 0.32
+Summary: Powerful Light Artificial NEuRon
+Home-page: https://github.com/Image-Py/planer
+Author: Y.Dong, YXDragon
+Author-email: yxdragon@imagepy.org
+License: BSD 3-clause
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+A powerful light-weight inference framework for CNN.
+The aim of planer is to provide efficient and adaptable inference environment for CNN model.
+Also in order to enlarge the application scope,
+we support ONNX format, which enables the converting of trained model within various DL frameworks.
+
+
