@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        agentos=agentos.cli:agentos_cmd
+    
