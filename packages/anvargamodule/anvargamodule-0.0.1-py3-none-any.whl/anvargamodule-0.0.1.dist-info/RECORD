@@ -1,0 +1,12 @@
+anvargamodule/__init__.py,sha256=RW6Dpug8z8F_QKuZqB6ih45XkOtw7PU08DR_mAWToQc,50
+anvargamodule/add.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anvargamodule/substract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anvargamodule/extras/__init__.py,sha256=ae2dA6qND6c35l1Iu-AN6ZgAtnw47exlMDoQueOjYw4,56
+anvargamodule/extras/divide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anvargamodule/extras/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anvargamodule-0.0.1.dist-info/DESCRIPTION.rst,sha256=LtfT-ILGj9N7fflWz5EnE-3IDP4fH0ZWQtdDej1LAVU,53
+anvargamodule-0.0.1.dist-info/METADATA,sha256=Wu9Q-KqY8RI-oA8nc9e0VAqyJKFOxK2jjXOtPVq1iLA,559
+anvargamodule-0.0.1.dist-info/RECORD,,
+anvargamodule-0.0.1.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+anvargamodule-0.0.1.dist-info/metadata.json,sha256=L08yMghzJ0zs4Hp7x9oWjJfynarMGaP2GdAUXPyVbug,609
+anvargamodule-0.0.1.dist-info/top_level.txt,sha256=yoOAS4G1yzQrX3tBtpn1MvMPA_GFzUPQK0ry9SM-67U,14
