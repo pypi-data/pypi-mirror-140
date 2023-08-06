@@ -1,0 +1,65 @@
+---
+include:
+  - docassemble.ALMassachusetts:al_massachusetts.yml
+---  
+metadata:
+  title: |
+    CourtFormsOnline: MassAccess
+  short title: |
+    MassAccess
+  title url: https://courtformsonline.org
+  exit url: |
+    https://courtformsonline.org
+---
+code: |
+  AL_ORGANIZATION_TITLE = "CourtFormsOnline"
+---
+objects:
+  - al_logo: DAStaticFile.using(filename="lit_logo_light.png")
+---
+features:
+  question help button: True
+  question back button: True
+  progress bar: True
+  css: colors.css
+---
+event: about_this_interview
+id: about AssemblyLine project
+question: |
+  About this form
+subquestion: |
+  [CENTER] [FILE seal.jpg, 30%, Logo of the Suffolk LIT Lab]
+  
+  ${ about_this_interview_version_info }
+back button label: |
+  Back to form
+---
+template: about_this_interview_version_info
+content: |
+  "${all_variables(special='metadata').get('title','').rstrip()}" version 
+  `${ package_version_number }`; AssemblyLine version `${ al_version }`.
+  
+  % if package_updated_on:
+  Last updated on ${ package_updated_on }.
+  % endif
+
+  [Submit feedback](${ interview_url(i=feedback_form, github_repo=github_repo_name, github_user=github_user, variable=user_info().variable, question_id=user_info().question_id, package_version=package_version_number, local=False,reset=1) } ){:target="_blank"}.
+
+  "${all_variables(special='metadata').get('title','').rstrip()}" is part of the [Document
+  Assembly Line project](https://suffolklitlab.org/docassemble-AssemblyLine-documentation/docs/). 
+  It was created by attorneys, coders, students, and volunteers coordinated by 
+  Suffolk University Law School's [Legal Innovation and Technology 
+  Lab](https://suffolklitlab.org). 
+  % if all_variables(special='metadata').get('authors'):
+  This form was authored by ${ comma_and_list(all_variables(special='metadata').get('authors')) }.
+  % endif
+       
+  &copy; ${today().year} 
+  [Suffolk Legal Innovation and Technology Lab](https://suffolklitlab.org)
+  and open source contributors under the [MIT License](https://opensource.org/licenses/MIT).
+  [:fab-fa-github: View code on GitHub](${ github_url }). 
+---
+code: |
+  feedback_form = "docassemble.MassAccess:feedback.yml"  
+  
+  

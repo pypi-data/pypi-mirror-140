@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: docassemble.MassAccess
+Version: 0.3.0
+Summary: A docassemble project using the AssemblyLine package in combination with the ALMassachusetts package.
+Home-page: https://suffolklitlab.org/docassemble-AssemblyLine-documentation/docs
+Author: MassAccess
+Author-email: litlab@suffolk.edu
+License: The MIT License (MIT)
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: docassemble.ALMassachusetts (>=0.1.0)
+Requires-Dist: docassemble.GithubFeedbackForm (>=0.1.3)
+
+# docassemble.MassAccess
+
+Branding for the CourtFormsOnline.org website; implementation of 
+https://github.com/suffolklitlab/docassemble-AssemblyLine
+
