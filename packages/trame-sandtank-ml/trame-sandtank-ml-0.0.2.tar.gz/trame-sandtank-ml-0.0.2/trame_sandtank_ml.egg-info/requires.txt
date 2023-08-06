@@ -1,0 +1,4 @@
+trame
+pftools[io]>=1.3.2
+pytorch_lightning
+xaitk-saliency

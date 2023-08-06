@@ -1,0 +1,3 @@
+[console_scripts]
+trame-sandtank-ml = sandtank_ml:main
+
