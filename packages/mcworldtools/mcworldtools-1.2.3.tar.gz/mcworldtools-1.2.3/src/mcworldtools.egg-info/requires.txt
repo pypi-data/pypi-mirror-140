@@ -1,0 +1,7 @@
+nbt>=1.5.1
+pathlib
+tqdm
+argparse
+pyyaml
+regex
+pyreadline
