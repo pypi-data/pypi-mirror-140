@@ -1,0 +1,3 @@
+_swigPageXML
+pagexml
+pagexml_tests
