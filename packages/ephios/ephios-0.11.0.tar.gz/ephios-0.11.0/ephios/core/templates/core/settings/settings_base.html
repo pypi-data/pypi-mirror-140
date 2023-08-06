@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+    {% translate "Settings" %}
+{% endblock %}
+
+{% block content %}
+    <div class="page-header mb-3">
+        <h1>{% translate "Settings" %} {% block settings_title %}{% endblock %}</h1>
+    </div>
+    <div class="d-flex flex-column flex-sm-row">
+        <div class="me-3 mb-2">
+                <ul class="nav nav-pills flex-column">
+                    {% for section in settings_sections %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if section.active %}active{% endif %}"
+                           href="{{ section.url }}">{{ section.label }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </div>
+        <div class="flex-fill">
+            {% block settings_content %}
+
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
