@@ -1,0 +1,5 @@
+comtypes
+
+[dev]
+pycparser
+sphinx
