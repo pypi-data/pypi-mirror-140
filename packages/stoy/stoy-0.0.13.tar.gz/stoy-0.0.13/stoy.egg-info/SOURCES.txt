@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bin/generate-token
+bin/stoy
+stoy/VERSION
+stoy/__init__.py
+stoy/stoy.py
+stoy.egg-info/PKG-INFO
+stoy.egg-info/SOURCES.txt
+stoy.egg-info/dependency_links.txt
+stoy.egg-info/requires.txt
+stoy.egg-info/top_level.txt
