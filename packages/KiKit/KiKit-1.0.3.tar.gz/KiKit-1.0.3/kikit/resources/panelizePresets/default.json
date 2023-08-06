@@ -1,0 +1,102 @@
+{
+    "layout": {
+        "type": "grid",
+        "rows": 1,
+        "cols": 1,
+        "hspace": "0mm",
+        "vspace": "0mm",
+        "rotation": "0deg",
+        "alternation": "none",
+        "renamenet": "Board_{n}-{orig}",
+        "renameref": "{orig}",
+        "hbackbone": "0mm",
+        "vbackbone": "0mm",
+        "vbonecut": true,
+        "hbonecut": true
+    },
+    "source": {
+        "type": "auto",
+        "tolerance": "1mm",
+        "tlx": "0mm",
+        "tly": "0mm",
+        "brx": "0mm",
+        "bry": "0mm",
+        "ref": "",
+        "stack": "inherit"
+    },
+    "tabs": {
+        "type": "spacing",
+        "hcount": 1,
+        "vcount": 1,
+        "hwidth": "3mm",
+        "vwidth": "3mm",
+        "mindistance": "0mm",
+        "spacing": "10mm"
+    },
+    "cuts": {
+        "type": "none",
+        "clearance": "0mm",
+        "cutcurves": false,
+        "layer": "Cmts.User",
+        "offset": "0mm",
+        "prolong": "0mm",
+        "drill": "0.5mm",
+        "spacing": "0.8mm"
+    },
+    "framing": {
+        "type": "none",
+        "thickness": "0mm",
+        "millRadius": "0mm",
+        "cuts": "both",
+        "copperFill": false,
+        "slotwidth": "2mm",
+        "hspace": "2mm",
+        "vspace": "2mm",
+        "chamfer": "0mm",
+        "fillet": "0mm"
+    },
+    "tooling": {
+        "type": "none",
+        "layout": "3hole",
+        "hoffset": "0mm",
+        "voffset": "0mm",
+        "paste": false
+    },
+    "fiducials": {
+        "type": "none",
+        "hoffset": "0mm",
+        "voffset": "0mm",
+        "coppersize": "1mm",
+        "opening": "1mm"
+    },
+    "text": {
+        "type": "none",
+        "text": "",
+        "anchor": "mt",
+        "hoffset": "0mm",
+        "voffset": "0mm",
+        "orientation": "0deg",
+        "width": "1.5mm",
+        "height": "1.5mm",
+        "hjustify": "center",
+        "vjustify": "center",
+        "thickness": "0.3mm",
+        "layer": "F.SilkS"
+    },
+    "post": {
+        "type": "auto",
+        "copperfill": false,
+        "millradius": "0mm",
+        "script": "",
+        "scriptarg": "",
+        "origin": ""
+    },
+    "debug": {
+        "type": "none",
+        "drawPartitionLines": false,
+        "drawBackboneLines": false,
+        "drawboxes": false,
+        "trace": false,
+        "deterministic": false
+    }
+}
