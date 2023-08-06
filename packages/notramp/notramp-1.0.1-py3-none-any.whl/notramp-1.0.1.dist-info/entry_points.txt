@@ -1,0 +1,2 @@
+[console_scripts]
+notramp = notramp.notramp_main:run_notramp
