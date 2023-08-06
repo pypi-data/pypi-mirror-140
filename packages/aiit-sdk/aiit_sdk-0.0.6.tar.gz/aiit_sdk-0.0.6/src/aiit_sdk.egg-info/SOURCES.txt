@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/aiit_sdk/__init__.py
+src/aiit_sdk/algo.py
+src/aiit_sdk/auth.py
+src/aiit_sdk/page.py
+src/aiit_sdk/response.py
+src/aiit_sdk/storage.py
+src/aiit_sdk.egg-info/PKG-INFO
+src/aiit_sdk.egg-info/SOURCES.txt
+src/aiit_sdk.egg-info/dependency_links.txt
+src/aiit_sdk.egg-info/requires.txt
+src/aiit_sdk.egg-info/top_level.txt
