@@ -1,0 +1,8 @@
+setup.py
+Wpip.egg-info/PKG-INFO
+Wpip.egg-info/SOURCES.txt
+Wpip.egg-info/dependency_links.txt
+Wpip.egg-info/requires.txt
+Wpip.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
