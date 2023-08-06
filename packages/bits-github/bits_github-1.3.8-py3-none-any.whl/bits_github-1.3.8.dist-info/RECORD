@@ -1,0 +1,14 @@
+bits/__init__.py,sha256=EtOD91ivU_kXxRA8lopap-Ihis3DvCkFVpiaQIdypM4,89
+bits/github/__init__.py,sha256=2FxsebaSV7B5it1xxh4AhZjFX838MbY-I7XaycFn918,25644
+bits/github/app.py,sha256=dc_kDC-de9KgpWfZoRquU_7rQbwuPT_MiYk8qz1ROIk,1885
+bits/github/auditlogs.py,sha256=c2gnYevj4w5iEIbnzbdAhEUxPOUH0Irs0bEBiXVB4f0,13916
+bits/github/client.py,sha256=Wfg5vL1SJjjO5-6uRkB-OevnE1iHsWoi9lMDKBm3ZWo,17160
+bits/github/datastore.py,sha256=25SrGMX5nNGnR09_CWKHXbOTnLZ1WGlMCSCqNvb5zFk,1931
+bits/github/firestore.py,sha256=RDXWj26QQnw6iK6vKK2Z87lZqJ7mcJsUoCr4H2qrjKA,10167
+bits/github/helpers.py,sha256=3fMvWWAAosVR0tGIjna_0V7Vf-yJbaTnKep5x3hrE80,7012
+bits/github/sync.py,sha256=-UvoUnLTDyE-tbfR2HNYYqWwte-nJ7BbHD4fr2K4lLY,2775
+bits/github/update.py,sha256=gkBOe__2rB4VPmnFyPIjyNe9BcSebp7l7Dw75mclces,24925
+bits_github-1.3.8.dist-info/METADATA,sha256=CuYo1FYjnx5fQ78fyf7yt05qeugqjLRq7fgwQFC4XNs,260
+bits_github-1.3.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bits_github-1.3.8.dist-info/top_level.txt,sha256=r0CPtEdvhPhtNI1RzFMKlSds-wmUFadHdR_o8lZNEOg,5
+bits_github-1.3.8.dist-info/RECORD,,
