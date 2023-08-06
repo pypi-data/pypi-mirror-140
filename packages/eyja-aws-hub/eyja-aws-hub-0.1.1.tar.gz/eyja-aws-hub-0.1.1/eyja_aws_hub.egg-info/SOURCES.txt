@@ -1,0 +1,10 @@
+README.md
+setup.py
+eyja_aws/__init__.py
+eyja_aws/aws_hub.py
+eyja_aws_hub.egg-info/PKG-INFO
+eyja_aws_hub.egg-info/SOURCES.txt
+eyja_aws_hub.egg-info/dependency_links.txt
+eyja_aws_hub.egg-info/requires.txt
+eyja_aws_hub.egg-info/top_level.txt
+eyja_aws_hub.egg-info/zip-safe

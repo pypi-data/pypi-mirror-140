@@ -1,0 +1,3 @@
+eyja-internal>=0.4.1
+aiobotocore>=2.1.0
+httpx>=0.21.3
