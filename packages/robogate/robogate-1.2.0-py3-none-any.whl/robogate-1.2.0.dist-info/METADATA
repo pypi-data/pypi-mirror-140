@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: robogate
+Version: 1.2.0
+Summary: Robogate Python SDK to be used for Delegates Robogate Event.
+Home-page: https://www.robogate.codes
+Author: Thomas H. Knudsen
+Author-email: thk@delegate.dk
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+
+UNKNOWN
+
