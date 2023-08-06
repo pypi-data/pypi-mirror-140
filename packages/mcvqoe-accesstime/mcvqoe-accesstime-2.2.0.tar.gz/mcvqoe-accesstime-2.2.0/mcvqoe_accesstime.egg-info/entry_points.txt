@@ -1,0 +1,5 @@
+[console_scripts]
+accessTime-eval = mcvqoe.accesstime.access_time_eval:main
+accessTime-measure = mcvqoe.accesstime.access_time_hw_test:main
+accessTime-sim = mcvqoe.accesstime.access_time_sim:main
+

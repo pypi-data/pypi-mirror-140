@@ -1,0 +1,69 @@
+#python things
+__pycache__
+
+#data directory
+/data/
+
+#test type file
+test-type.txt
+
+#test conditions log file
+tests.log
+
+#computer name file
+ComputerName.txt
+
+#ignore log files
+*.log
+
+# Audio files
+*.wav
+
+# Output data files
+# *.csv
+
+# R files
+*.Rhistory
+*.html
+*.log
+*.pdf
+
+# MATLAB publish stuff
+*html/
+
+# Visio autosave 
+*.~vsdx
+
+# Latex stuff
+*.aux
+*.synctex*
+
+# R Package Files
+*.Rproj.user
+*.Rbuildignore
+.Rproj.user
+
+# Un-ignore raw data for R package (wav and csv)
+!/accessTime/inst/extdata/**
+
+
+# Un-ignore R data directory for package
+!/accessTime/data/
+
+# Un-ignore python default audio and cutpoints
+!/mcvqoe/accesstime/audio_clips/*.wav
+!/mcvqoe/accesstime/audio_clips/*.csv
+# Un-ignore python correction csv files
+!/mcvqoe/accesstime/correction_data/*.csv
+# Un-ignore testing data
+!/tests/data/**/*.csv
+
+# ignore python packing stuff
+.eggs/
+build/
+dist/
+mcvqoe_accesstime.egg-info/
+
+#ignore version file
+mcvqoe/accesstime/version.py
+
