@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: bashflags.py
+Version: 0.0.1
+Summary: Parse bash flags
+Home-page: http://github.com/Ehnryu/flags
+Author: Ehnryu/Sakurai07
+Author-email: blzzardst0rm@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: flags,argparse,getopt
+Platform: UNKNOWN
