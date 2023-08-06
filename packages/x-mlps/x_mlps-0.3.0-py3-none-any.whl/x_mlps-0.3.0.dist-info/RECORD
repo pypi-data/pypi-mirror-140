@@ -1,0 +1,12 @@
+x_mlps/__init__.py,sha256=SQ7tEmQzeWwia_AOmLLRtd9yA032HtHITKf2UL8a1ns,218
+x_mlps/_ff.py,sha256=c2BGxSXCKg-efaFUt2llwNd9l10CLc5FN2PQ-ejWyNU,16064
+x_mlps/_nn.py,sha256=aqPKoqM6SSTYypCoVLXDShppiQgKEfdbEhMruNxRRx0,11689
+x_mlps/_types.py,sha256=5HoM-LlSJbqPEERYOYNbT_ZGdQgTT3YIsFKkPLgXTo4,338
+x_mlps/_utils.py,sha256=qFXexwzwne9TQCXCpsXK7kMDfML4hfjHSqpPp7Gods4,1078
+x_mlps/_version.py,sha256=xesxQcRqYv1ArwRupYZjekET8K2Dz98jZ5VNLpFovyA,186
+x_mlps/_x_mlps.py,sha256=Dojv7s0cESoqJ-CJlhP15kTcC-vea7XO4zMx7wUCraY,24032
+x_mlps-0.3.0.dist-info/LICENSE,sha256=n4Ddnc1maU5ZcBwav4zIODizuzCWFbqk0-zdhCH4EOw,1070
+x_mlps-0.3.0.dist-info/METADATA,sha256=aWGkC0uyph53r0Hz-5c7gfUlsRfiu_hNVPr3gbKpWZg,8069
+x_mlps-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+x_mlps-0.3.0.dist-info/top_level.txt,sha256=C9ccSCpQ4nAZNJlAxqq9tkOJcDVYudYYLRvZU1v-5pI,7
+x_mlps-0.3.0.dist-info/RECORD,,
