@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Topsis-jobanvir-101903552
+Version: 0.0.1
+Summary: assignment
+Home-page: UNKNOWN
+Author: joban
+Author-email: jwalia_be19@thapar.edu
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+topsis
+
+
