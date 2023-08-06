@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+spectromap.egg-info/PKG-INFO
+spectromap.egg-info/SOURCES.txt
+spectromap.egg-info/dependency_links.txt
+spectromap.egg-info/requires.txt
+spectromap.egg-info/top_level.txt
