@@ -1,0 +1,2 @@
+[console_scripts]
+tpr = texproject.command:cli
