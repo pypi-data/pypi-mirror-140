@@ -1,0 +1,12 @@
+automutualinformation/__init__.py,sha256=uWFkamWOy-un5nt4HLgE1FhwoyFFBTfQfyg4_crP40Y,143
+automutualinformation/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automutualinformation/mi/grassberger.py,sha256=dFN16OGlFRm81k-zLCdxymXxw3gVclK_NpCs0aqdNj4,1868
+automutualinformation/mi/sequential_mi.py,sha256=AZ_q2bElLbgXE9Ffrex8R_oKbkTklYncxMgF0MT0-IA,6850
+automutualinformation/modelfitting/comparison.py,sha256=BGmTEyPOLN7ThiJmGUR9t74hA8c4S7nZhxzrv7E_AHs,1939
+automutualinformation/modelfitting/decay_functions.py,sha256=erJP9ZCFzpFbcv_OIZA5quCcA1z3-Ek5vQZqevVQ2zw,430
+automutualinformation/modelfitting/fit.py,sha256=Uo1EOGt2vf7y9-m7n__frFZWpECHSQ9t_QUT3EAdnGw,4666
+automutualinformation-0.1.5.dist-info/LICENSE,sha256=1nKVR6bFhYWMdyfyraEfRIAbjHp358KVGa7FOoeNK6I,1081
+automutualinformation-0.1.5.dist-info/METADATA,sha256=5PZuh8P-4cioDCGT_nSvKhntKdAUP1tHLZe7zXXM5VU,2759
+automutualinformation-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+automutualinformation-0.1.5.dist-info/top_level.txt,sha256=j4SoTvbk9mhTfHaA8dyIPvgYuPeqGWMpeiOUReN33R8,22
+automutualinformation-0.1.5.dist-info/RECORD,,
