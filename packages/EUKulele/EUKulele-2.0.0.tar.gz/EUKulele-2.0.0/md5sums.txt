@@ -1,0 +1,4 @@
+58d2cd88847d378a6f7ed2c190382d72  EukZoo_creation_and_cleanup.docx
+d898b9061517fd3b6c6dbe5a1bf4266e  EukZoo_KEGG_annotation_v_0.2.tsv
+91821d18415b9021751cc5ae95820f98  EukZoo_taxonomy_table_v_0.2.tsv
+4a753abebff09f700927d039a4ba4d1c  EukZoo_v_0.2.faa

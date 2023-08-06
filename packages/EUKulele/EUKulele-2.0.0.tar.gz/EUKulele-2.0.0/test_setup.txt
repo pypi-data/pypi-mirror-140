@@ -1,0 +1,135 @@
+running pytest
+Searching for multiprocess
+Best match: multiprocess 0.70.10
+Processing multiprocess-0.70.10-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/multiprocess-0.70.10-py3.6.egg
+Searching for seaborn
+Best match: seaborn 0.10.1
+Processing seaborn-0.10.1-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/seaborn-0.10.1-py3.6.egg
+Searching for argparse
+Best match: argparse 1.4.0
+Processing argparse-1.4.0-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/argparse-1.4.0-py3.6.egg
+Searching for matplotlib
+Best match: matplotlib 3.3.0
+Processing matplotlib-3.3.0-py3.6-linux-x86_64.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/matplotlib-3.3.0-py3.6-linux-x86_64.egg
+Searching for hypothesis
+Best match: hypothesis 5.19.3
+Processing hypothesis-5.19.3-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/hypothesis-5.19.3-py3.6.egg
+Searching for conda
+Best match: conda 4.3.16
+Processing conda-4.3.16-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/conda-4.3.16-py3.6.egg
+Searching for dill>=0.3.2
+Best match: dill 0.3.2
+Processing dill-0.3.2-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/dill-0.3.2-py3.6.egg
+Searching for scipy>=1.0.1
+Best match: scipy 1.5.1
+Processing scipy-1.5.1-py3.6-linux-x86_64.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/scipy-1.5.1-py3.6-linux-x86_64.egg
+Searching for pillow>=6.2.0
+Best match: Pillow 7.2.0
+Processing Pillow-7.2.0-py3.6-linux-x86_64.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/Pillow-7.2.0-py3.6-linux-x86_64.egg
+Searching for kiwisolver>=1.0.1
+Best match: kiwisolver 1.2.0
+Processing kiwisolver-1.2.0-py3.6-linux-x86_64.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/kiwisolver-1.2.0-py3.6-linux-x86_64.egg
+Searching for cycler>=0.10
+Best match: cycler 0.10.0
+Processing cycler-0.10.0-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/cycler-0.10.0-py3.6.egg
+Searching for sortedcontainers<3.0.0,>=2.1.0
+Best match: sortedcontainers 2.2.2
+Processing sortedcontainers-2.2.2-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/sortedcontainers-2.2.2-py3.6.egg
+Searching for attrs>=19.2.0
+Best match: attrs 19.3.0
+Processing attrs-19.3.0-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/attrs-19.3.0-py3.6.egg
+Searching for ruamel.yaml>=0.11.14
+Best match: ruamel.yaml 0.16.10
+Processing ruamel.yaml-0.16.10-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/ruamel.yaml-0.16.10-py3.6.egg
+Searching for pycosat>=0.6.1
+Best match: pycosat 0.6.3
+Processing pycosat-0.6.3-py3.6-linux-x86_64.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/pycosat-0.6.3-py3.6-linux-x86_64.egg
+Searching for ruamel.yaml.clib>=0.1.2
+Best match: ruamel.yaml.clib 0.2.0
+Processing ruamel.yaml.clib-0.2.0-py3.6-linux-x86_64.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/ruamel.yaml.clib-0.2.0-py3.6-linux-x86_64.egg
+Searching for pytest
+Best match: pytest 6.0.0rc1
+Processing pytest-6.0.0rc1-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/pytest-6.0.0rc1-py3.6.egg
+Searching for toml
+Best match: toml 0.10.1
+Processing toml-0.10.1-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/toml-0.10.1-py3.6.egg
+Searching for py>=1.8.2
+Best match: py 1.9.0
+Processing py-1.9.0-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/py-1.9.0-py3.6.egg
+Searching for pluggy<1.0,>=0.12
+Best match: pluggy 0.13.1
+Processing pluggy-0.13.1-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/pluggy-0.13.1-py3.6.egg
+Searching for more-itertools>=4.0.0
+Best match: more-itertools 8.4.0
+Processing more_itertools-8.4.0-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/more_itertools-8.4.0-py3.6.egg
+Searching for iniconfig
+Best match: iniconfig 1.0.0
+Processing iniconfig-1.0.0-py3.6.egg
+
+Using /vortexfs1/omics/alexander/akrinos/remodeling/EUKulele/.eggs/iniconfig-1.0.0-py3.6.egg
+running egg_info
+writing src/EUKulele.egg-info/PKG-INFO
+writing dependency_links to src/EUKulele.egg-info/dependency_links.txt
+writing requirements to src/EUKulele.egg-info/requires.txt
+writing top-level names to src/EUKulele.egg-info/top_level.txt
+reading manifest file 'src/EUKulele.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'src/EUKulele.egg-info/SOURCES.txt'
+running build_ext
+.....                                                                    [100%]
+=============================== warnings summary ===============================
+tests/code/test_mags.py::test_alignment
+  src/EUKulele/visualize_results.py:243: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+    fig = plt.figure(figsize=(15,7.5))
+
+tests/code/test_mags.py: 28 warnings
+  <string>:6: DeprecationWarning: Calling nonzero on 0d arrays is deprecated, as it behaves surprisingly. Use `atleast_1d(cond).nonzero()` if the old behavior was intended. If the context of this warning is of the form `arr[nonzero(cond)]`, just use `arr[cond]`.
+
+tests/code/test_mags.py::test_all
+  src/EUKulele/visualize_results.py:247: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all axes decorations. 
+    plt.tight_layout()
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+5 passed, 30 warnings in 173.38s (0:02:53)

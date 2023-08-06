@@ -1,0 +1,15 @@
+numpy
+biopython
+pandas
+seaborn
+chardet
+argparse
+multiprocess
+joblib
+ujson
+python-coveralls
+pyyaml
+matplotlib
+pytest-cov
+pytest-xdist
+sphinxcontrib-bibtex==1.0.0

@@ -1,0 +1,530 @@
+************* Module sphinx_rtd_theme.__init__
+docs/_themes/sphinx_rtd_theme/__init__.py:30:0: C0301: Line too long (114/100) (line-too-long)
+************* Module sphinx_rtd_theme
+docs/_themes/sphinx_rtd_theme/__init__.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module conf
+docs/conf.py:66:0: C0304: Final newline missing (missing-final-newline)
+docs/conf.py:23:0: W0622: Redefining built-in 'copyright' (redefined-builtin)
+docs/conf.py:22:0: C0103: Constant name "project" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/conf.py:23:0: C0103: Constant name "copyright" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/conf.py:24:0: C0103: Constant name "author" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/conf.py:27:0: C0103: Constant name "release" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/conf.py:28:0: C0103: Constant name "master_doc" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/conf.py:54:0: C0103: Constant name "html_theme" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/conf.py:18:0: W0611: Unused import sphinx_rtd_theme (unused-import)
+docs/source/conf.py:65:0: C0304: Final newline missing (missing-final-newline)
+docs/source/conf.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+docs/source/conf.py:22:0: W0622: Redefining built-in 'copyright' (redefined-builtin)
+docs/source/conf.py:21:0: C0103: Constant name "project" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:22:0: C0103: Constant name "copyright" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:23:0: C0103: Constant name "author" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:26:0: C0103: Constant name "release" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:27:0: C0103: Constant name "master_doc" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:53:0: C0103: Constant name "html_theme" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:16:0: W0611: Unused import sphinx_rtd_theme (unused-import)
+************* Module scripts.create_protein_table
+scripts/create_protein_table.py:45:0: C0103: Function name "createProteinTable" doesn't conform to snake_case naming style (invalid-name)
+scripts/create_protein_table.py:45:0: R0914: Too many local variables (22/15) (too-many-locals)
+scripts/create_protein_table.py:45:0: R0912: Too many branches (20/12) (too-many-branches)
+scripts/create_protein_table.py:45:0: R0915: Too many statements (74/50) (too-many-statements)
+************* Module scripts.mag_stats
+scripts/mag_stats.py:65:0: C0103: Function name "magStats" doesn't conform to snake_case naming style (invalid-name)
+scripts/mag_stats.py:86:8: W0702: No exception type(s) specified (bare-except)
+scripts/mag_stats.py:91:8: W0702: No exception type(s) specified (bare-except)
+************* Module scripts.names_to_reads
+scripts/names_to_reads.py:8:0: C0103: Function name "namesToReads" doesn't conform to snake_case naming style (invalid-name)
+scripts/names_to_reads.py:22:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+************* Module scripts.query_busco
+scripts/query_busco.py:127:0: C0303: Trailing whitespace (trailing-whitespace)
+scripts/query_busco.py:138:0: C0303: Trailing whitespace (trailing-whitespace)
+scripts/query_busco.py:336:0: C0303: Trailing whitespace (trailing-whitespace)
+scripts/query_busco.py:33:0: R0913: Too many arguments (11/5) (too-many-arguments)
+scripts/query_busco.py:33:0: R0914: Too many local variables (52/15) (too-many-locals)
+scripts/query_busco.py:88:4: C0103: Variable name "Covered_IDs" doesn't conform to snake_case naming style (invalid-name)
+scripts/query_busco.py:119:8: C0103: Variable name "BUSCOs_covered_all" doesn't conform to snake_case naming style (invalid-name)
+scripts/query_busco.py:123:8: C0103: Variable name "BUSCOs_covered" doesn't conform to snake_case naming style (invalid-name)
+scripts/query_busco.py:33:0: R0912: Too many branches (15/12) (too-many-branches)
+scripts/query_busco.py:33:0: R0915: Too many statements (84/50) (too-many-statements)
+scripts/query_busco.py:220:0: C0103: Function name "queryBusco" doesn't conform to snake_case naming style (invalid-name)
+************* Module setup
+setup.py:6:0: W0611: Unused find_packages imported from setuptools (unused-import)
+************* Module src.EUKulele.EUKulele_config
+src/EUKulele/EUKulele_config.py:1:0: C0103: Module name "EUKulele_config" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/EUKulele_config.py:13:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+src/EUKulele/EUKulele_config.py:38:0: C0103: Function name "parseConfig" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/EUKulele_config.py:38:0: R0912: Too many branches (34/12) (too-many-branches)
+src/EUKulele/EUKulele_config.py:38:0: R0915: Too many statements (74/50) (too-many-statements)
+************* Module src.EUKulele.EUKulele_main
+src/EUKulele/EUKulele_main.py:129:0: C0303: Trailing whitespace (trailing-whitespace)
+src/EUKulele/EUKulele_main.py:164:74: C0303: Trailing whitespace (trailing-whitespace)
+src/EUKulele/EUKulele_main.py:1:0: C0103: Module name "EUKulele_main" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/EUKulele_main.py:23:0: R0914: Too many local variables (37/15) (too-many-locals)
+src/EUKulele/EUKulele_main.py:279:12: W0702: No exception type(s) specified (bare-except)
+src/EUKulele/EUKulele_main.py:23:0: R0912: Too many branches (26/12) (too-many-branches)
+src/EUKulele/EUKulele_main.py:23:0: R0915: Too many statements (146/50) (too-many-statements)
+************* Module src.EUKulele.__init__
+src/EUKulele/__init__.py:12:0: C0301: Line too long (236/100) (line-too-long)
+************* Module src.EUKulele
+src/EUKulele/__init__.py:1:0: C0103: Module name "EUKulele" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src/EUKulele/__init__.py:4:0: C0413: Import "from EUKulele.EUKulele_config import *" should be placed at the top of the module (wrong-import-position)
+src/EUKulele/__init__.py:5:0: C0413: Import "from EUKulele.EUKulele_main import *" should be placed at the top of the module (wrong-import-position)
+************* Module src.EUKulele.busco_runner
+src/EUKulele/busco_runner.py:200:0: C0303: Trailing whitespace (trailing-whitespace)
+src/EUKulele/busco_runner.py:327:0: C0303: Trailing whitespace (trailing-whitespace)
+src/EUKulele/busco_runner.py:19:0: W1401: Anomalous backslash in string: '\s'. String constant might be missing an r prefix. (anomalous-backslash-in-string)
+src/EUKulele/busco_runner.py:20:4: W0702: No exception type(s) specified (bare-except)
+src/EUKulele/busco_runner.py:31:4: W0621: Redefining name 'max_jobs' from outer scope (line 37) (redefined-outer-name)
+src/EUKulele/busco_runner.py:39:0: C0103: Function name "readBuscoFile" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:39:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/EUKulele/busco_runner.py:61:0: C0103: Function name "configRunBusco" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:61:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/EUKulele/busco_runner.py:61:0: R0913: Too many arguments (6/5) (too-many-arguments)
+src/EUKulele/busco_runner.py:78:4: W0612: Unused variable 'all_codes' (unused-variable)
+src/EUKulele/busco_runner.py:88:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/EUKulele/busco_runner.py:97:8: C0103: Variable name "p1" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:108:0: R0913: Too many arguments (8/5) (too-many-arguments)
+src/EUKulele/busco_runner.py:108:0: R0914: Too many local variables (18/15) (too-many-locals)
+src/EUKulele/busco_runner.py:114:4: C0103: Variable name "CPUS" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:134:4: C0103: Variable name "p1" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:165:0: C0103: Function name "manageBuscoQuery" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:173:4: W0621: Redefining name 'max_jobs' from outer scope (line 37) (redefined-outer-name)
+src/EUKulele/busco_runner.py:165:0: R0913: Too many arguments (12/5) (too-many-arguments)
+src/EUKulele/busco_runner.py:165:0: R0914: Too many local variables (24/15) (too-many-locals)
+src/EUKulele/busco_runner.py:246:12: W0702: No exception type(s) specified (bare-except)
+src/EUKulele/busco_runner.py:245:16: C0103: Variable name "rc" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:312:12: W0702: No exception type(s) specified (bare-except)
+src/EUKulele/busco_runner.py:306:16: C0103: Variable name "rc" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:307:12: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:311:16: C0103: Variable name "rc" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:314:16: C0103: Variable name "rc" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/busco_runner.py:173:4: W0612: Unused variable 'max_jobs' (unused-variable)
+src/EUKulele/busco_runner.py:165:0: R0912: Too many branches (24/12) (too-many-branches)
+src/EUKulele/busco_runner.py:165:0: R0915: Too many statements (80/50) (too-many-statements)
+************* Module src.EUKulele.download_database
+src/EUKulele/download_database.py:15:0: C0103: Function name "downloadDatabase" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/download_database.py:15:0: R0914: Too many local variables (22/15) (too-many-locals)
+src/EUKulele/download_database.py:30:8: C0103: Variable name "sourceID" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/download_database.py:35:8: C0103: Variable name "sourceID" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/download_database.py:39:8: C0103: Variable name "sourceID" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/download_database.py:44:8: C0103: Variable name "sourceID" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/download_database.py:57:4: C0103: Variable name "rc" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/download_database.py:81:4: C0103: Variable name "createProteinTable_log" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/download_database.py:83:4: C0103: Variable name "createProteinTable_err" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/download_database.py:15:0: R0915: Too many statements (51/50) (too-many-statements)
+src/EUKulele/download_database.py:7:0: W0611: Unused import subprocess (unused-import)
+src/EUKulele/download_database.py:10:0: W0611: Unused import EUKulele (unused-import)
+************* Module src.EUKulele.manage_steps
+src/EUKulele/manage_steps.py:37:0: C0301: Line too long (101/100) (line-too-long)
+src/EUKulele/manage_steps.py:345:0: C0301: Line too long (101/100) (line-too-long)
+src/EUKulele/manage_steps.py:687:0: C0301: Line too long (107/100) (line-too-long)
+src/EUKulele/manage_steps.py:694:0: C0301: Line too long (102/100) (line-too-long)
+src/EUKulele/manage_steps.py:25:0: W1401: Anomalous backslash in string: '\s'. String constant might be missing an r prefix. (anomalous-backslash-in-string)
+src/EUKulele/manage_steps.py:26:4: W0702: No exception type(s) specified (bare-except)
+src/EUKulele/manage_steps.py:33:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/EUKulele/manage_steps.py:37:4: W0621: Redefining name 'max_jobs' from outer scope (line 42) (redefined-outer-name)
+src/EUKulele/manage_steps.py:48:0: W0102: Dangerous default value [] as argument (dangerous-default-value)
+src/EUKulele/manage_steps.py:48:0: C0103: Function name "manageEukulele" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:48:0: R0913: Too many arguments (22/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:48:0: R0914: Too many local variables (22/15) (too-many-locals)
+src/EUKulele/manage_steps.py:48:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+src/EUKulele/manage_steps.py:54:45: W0613: Unused argument 'transdecoder_orf_size' (unused-argument)
+src/EUKulele/manage_steps.py:48:0: R0912: Too many branches (14/12) (too-many-branches)
+src/EUKulele/manage_steps.py:112:0: C0103: Function name "getSamples" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:141:0: C0103: Function name "transdecodeToPeptide" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:141:0: R0913: Too many arguments (9/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:154:4: R1705: Unnecessary "elif" after "return" (no-else-return)
+src/EUKulele/manage_steps.py:167:4: C0103: Variable name "TD_log" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:169:4: C0103: Variable name "TD_err" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:183:4: C0103: Variable name "TD_log" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:185:4: C0103: Variable name "TD_err" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:219:0: C0103: Function name "manageTrandecode" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:231:4: W0621: Redefining name 'max_jobs' from outer scope (line 42) (redefined-outer-name)
+src/EUKulele/manage_steps.py:219:0: R0913: Too many arguments (10/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:219:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+src/EUKulele/manage_steps.py:220:21: W0613: Unused argument 'mets_or_mags' (unused-argument)
+src/EUKulele/manage_steps.py:220:44: W0613: Unused argument 'transdecoder_orf_size' (unused-argument)
+src/EUKulele/manage_steps.py:260:0: C0103: Function name "setupEukulele" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:281:0: C0103: Function name "manageAlignment" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:332:4: W0621: Redefining name 'max_jobs' from outer scope (line 42) (redefined-outer-name)
+src/EUKulele/manage_steps.py:281:0: R0913: Too many arguments (13/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:281:0: R0914: Too many local variables (22/15) (too-many-locals)
+src/EUKulele/manage_steps.py:294:16: C0103: Variable name "fp" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:289:4: R1702: Too many nested blocks (6/5) (too-many-nested-blocks)
+src/EUKulele/manage_steps.py:311:16: C0103: Variable name "fp" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:289:4: R1702: Too many nested blocks (6/5) (too-many-nested-blocks)
+src/EUKulele/manage_steps.py:353:14: C0121: Comparison to None should be 'expr is None' (singleton-comparison)
+src/EUKulele/manage_steps.py:281:0: R0912: Too many branches (16/12) (too-many-branches)
+src/EUKulele/manage_steps.py:359:0: C0103: Function name "createAlignmentDatabase" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:375:12: C0103: Variable name "db" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:383:8: C0103: Variable name "db" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:386:8: W0612: Unused variable 'blast_version' (unused-variable)
+src/EUKulele/manage_steps.py:395:0: C0103: Function name "alignToDatabase" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:395:0: R0913: Too many arguments (12/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:395:0: R0914: Too many local variables (28/15) (too-many-locals)
+src/EUKulele/manage_steps.py:403:4: R1705: Unnecessary "else" after "return" (no-else-return)
+src/EUKulele/manage_steps.py:439:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:519:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:436:8: W0612: Unused variable 'other' (unused-variable)
+src/EUKulele/manage_steps.py:395:0: R0911: Too many return statements (8/6) (too-many-return-statements)
+src/EUKulele/manage_steps.py:395:0: R0912: Too many branches (24/12) (too-many-branches)
+src/EUKulele/manage_steps.py:395:0: R0915: Too many statements (75/50) (too-many-statements)
+src/EUKulele/manage_steps.py:534:0: C0103: Function name "manageTaxEstimation" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:560:4: W0621: Redefining name 'max_jobs' from outer scope (line 42) (redefined-outer-name)
+src/EUKulele/manage_steps.py:534:0: R0913: Too many arguments (15/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:534:0: R0914: Too many local variables (22/15) (too-many-locals)
+src/EUKulele/manage_steps.py:563:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+src/EUKulele/manage_steps.py:563:8: C0103: Variable name "t" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:577:8: W0702: No exception type(s) specified (bare-except)
+src/EUKulele/manage_steps.py:562:4: W0612: Unused variable 'n_jobs_align' (unused-variable)
+src/EUKulele/manage_steps.py:574:12: W0612: Unused variable 'curr_out' (unused-variable)
+src/EUKulele/manage_steps.py:583:0: C0103: Function name "manageCoreTaxEstimation" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:607:4: W0621: Redefining name 'max_jobs' from outer scope (line 42) (redefined-outer-name)
+src/EUKulele/manage_steps.py:583:0: R0913: Too many arguments (15/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:583:0: R0914: Too many local variables (22/15) (too-many-locals)
+src/EUKulele/manage_steps.py:610:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+src/EUKulele/manage_steps.py:610:8: C0103: Variable name "t" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:621:8: W0702: No exception type(s) specified (bare-except)
+src/EUKulele/manage_steps.py:609:4: W0612: Unused variable 'n_jobs_align' (unused-variable)
+src/EUKulele/manage_steps.py:618:12: W0612: Unused variable 'curr_out' (unused-variable)
+src/EUKulele/manage_steps.py:627:0: C0103: Function name "manageTaxVisualization" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:627:0: R0913: Too many arguments (7/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:627:39: W0613: Unused argument 'mets_or_mags' (unused-argument)
+src/EUKulele/manage_steps.py:644:0: C0103: Function name "manageCoreTaxVisualization" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:644:0: R0913: Too many arguments (8/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:644:43: W0613: Unused argument 'mets_or_mags' (unused-argument)
+src/EUKulele/manage_steps.py:667:0: C0103: Function name "manageTaxAssignment" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:675:8: W0621: Redefining name 'max_jobs' from outer scope (line 42) (redefined-outer-name)
+src/EUKulele/manage_steps.py:667:0: R0913: Too many arguments (7/5) (too-many-arguments)
+src/EUKulele/manage_steps.py:698:8: W0702: No exception type(s) specified (bare-except)
+src/EUKulele/manage_steps.py:708:0: C0103: Function name "assignTaxonomy" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:737:4: W0702: No exception type(s) specified (bare-except)
+src/EUKulele/manage_steps.py:734:8: C0103: Variable name "rc" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/manage_steps.py:708:53: W0613: Unused argument 'mets_or_mags' (unused-argument)
+src/EUKulele/manage_steps.py:10:0: W0611: Unused import shutil (unused-import)
+src/EUKulele/manage_steps.py:15:0: W0611: Unused import EUKulele (unused-import)
+************* Module src.EUKulele.tax_placement
+src/EUKulele/tax_placement.py:247:0: C0303: Trailing whitespace (trailing-whitespace)
+src/EUKulele/tax_placement.py:42:31: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:47:8: C0103: Variable name "c" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:66:33: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:67:15: I1101: Module 'ujson' has no 'load' member, but source is unavailable. Consider adding this module to extension-pkg-whitelist if you want to perform analysis based on run-time introspection of living objects. (c-extension-no-member)
+src/EUKulele/tax_placement.py:77:8: C0103: Variable name "c" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:87:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/EUKulele/tax_placement.py:104:8: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:111:0: C0103: Argument name "dd" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:111:0: R0914: Too many local variables (25/15) (too-many-locals)
+src/EUKulele/tax_placement.py:115:4: C0103: Variable name "md" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:120:4: C0103: Variable name "ds" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:141:12: C0103: Variable name "d" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:160:16: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:174:4: R1705: Unnecessary "else" after "return" (no-else-return)
+src/EUKulele/tax_placement.py:111:0: R0912: Too many branches (16/12) (too-many-branches)
+src/EUKulele/tax_placement.py:186:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/EUKulele/tax_placement.py:186:33: W0621: Redefining name 'match_maker' from outer scope (line 111) (redefined-outer-name)
+src/EUKulele/tax_placement.py:186:0: R0913: Too many arguments (6/5) (too-many-arguments)
+src/EUKulele/tax_placement.py:196:0: C0103: Argument name "df" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/tax_placement.py:196:0: R0913: Too many arguments (6/5) (too-many-arguments)
+src/EUKulele/tax_placement.py:205:8: R1705: Unnecessary "else" after "return" (no-else-return)
+src/EUKulele/tax_placement.py:240:0: R0913: Too many arguments (9/5) (too-many-arguments)
+src/EUKulele/tax_placement.py:9:0: W0611: Unused import argparse (unused-import)
+src/EUKulele/tax_placement.py:17:0: W0611: Unused import EUKulele (unused-import)
+src/EUKulele/tax_placement.py:9:0: C0411: standard import "import argparse" should be placed before "import chardet" (wrong-import-order)
+src/EUKulele/tax_placement.py:10:0: C0411: standard import "import multiprocessing" should be placed before "import chardet" (wrong-import-order)
+************* Module src.EUKulele.visualize_results
+src/EUKulele/visualize_results.py:14:0: C0103: Function name "countClassifs" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:14:0: C0103: Argument name "df" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:14:0: R0914: Too many local variables (21/15) (too-many-locals)
+src/EUKulele/visualize_results.py:56:29: W0108: Lambda may not be necessary (unnecessary-lambda)
+src/EUKulele/visualize_results.py:77:0: C0103: Function name "countClassifsNoCounts" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:77:0: C0103: Argument name "df" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:77:0: R0914: Too many local variables (16/15) (too-many-locals)
+src/EUKulele/visualize_results.py:112:53: W0108: Lambda may not be necessary (unnecessary-lambda)
+src/EUKulele/visualize_results.py:123:0: C0103: Function name "stripClassifData" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:123:0: C0103: Argument name "df" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:132:11: C0121: Comparison to True should be just 'expr' (singleton-comparison)
+src/EUKulele/visualize_results.py:146:0: C0103: Function name "createPlotDataFrame" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:190:0: C0103: Function name "makeConcatFrame" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:196:7: C0121: Comparison to True should be just 'expr' (singleton-comparison)
+src/EUKulele/visualize_results.py:207:0: R0913: Too many arguments (9/5) (too-many-arguments)
+src/EUKulele/visualize_results.py:207:0: R0914: Too many local variables (44/15) (too-many-locals)
+src/EUKulele/visualize_results.py:245:16: C0201: Consider iterating the dictionary directly instead of calling .keys() (consider-iterating-dictionary)
+src/EUKulele/visualize_results.py:258:16: C0201: Consider iterating the dictionary directly instead of calling .keys() (consider-iterating-dictionary)
+src/EUKulele/visualize_results.py:260:12: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:266:8: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:279:8: C0103: Variable name "Curr_Variable" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:322:8: E1111: Assigning result of a function call, where the function has no return (assignment-from-no-return)
+src/EUKulele/visualize_results.py:326:11: C0121: Comparison to False should be 'not expr' (singleton-comparison)
+src/EUKulele/visualize_results.py:340:12: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+src/EUKulele/visualize_results.py:209:26: W0613: Unused argument 'rerun' (unused-argument)
+src/EUKulele/visualize_results.py:280:8: W0612: Unused variable 'cutoff_counts' (unused-variable)
+src/EUKulele/visualize_results.py:281:8: W0612: Unused variable 'cutoff_transcripts' (unused-variable)
+src/EUKulele/visualize_results.py:305:8: W0612: Unused variable 'c25' (unused-variable)
+src/EUKulele/visualize_results.py:340:12: W0612: Unused variable 'f' (unused-variable)
+src/EUKulele/visualize_results.py:207:0: R0912: Too many branches (18/12) (too-many-branches)
+src/EUKulele/visualize_results.py:207:0: R0915: Too many statements (92/50) (too-many-statements)
+************* Module src.__init__
+src/__init__.py:12:0: C0301: Line too long (236/100) (line-too-long)
+************* Module src
+src/__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src/__init__.py:4:0: C0413: Import "from EUKulele.EUKulele_config import *" should be placed at the top of the module (wrong-import-position)
+src/__init__.py:5:0: C0413: Import "from EUKulele.EUKulele_main import *" should be placed at the top of the module (wrong-import-position)
+************* Module tests.__init__
+tests/__init__.py:3:0: C0304: Final newline missing (missing-final-newline)
+************* Module tests
+tests/__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module tests.code.__init__
+tests/code/__init__.py:3:0: C0304: Final newline missing (missing-final-newline)
+************* Module tests.code
+tests/code/__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module tests.code.test_create_protein_table
+tests/code/test_create_protein_table.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+tests/code/test_create_protein_table.py:7:0: C0413: Import "import EUKulele" should be placed at the top of the module (wrong-import-position)
+tests/code/test_create_protein_table.py:8:0: C0413: Import "from EUKulele.EUKulele_config import eukulele" should be placed at the top of the module (wrong-import-position)
+tests/code/test_create_protein_table.py:9:0: C0413: Import "import scripts" should be placed at the top of the module (wrong-import-position)
+tests/code/test_create_protein_table.py:10:0: C0413: Import "from scripts.create_protein_table import createProteinTable" should be placed at the top of the module (wrong-import-position)
+tests/code/test_create_protein_table.py:12:0: C0413: Import "import yaml" should be placed at the top of the module (wrong-import-position)
+tests/code/test_create_protein_table.py:13:0: C0413: Import "import os" should be placed at the top of the module (wrong-import-position)
+tests/code/test_create_protein_table.py:14:0: C0413: Import "import subprocess" should be placed at the top of the module (wrong-import-position)
+tests/code/test_create_protein_table.py:16:0: C0103: Constant name "test_reference" doesn't conform to UPPER_CASE naming style (invalid-name)
+tests/code/test_create_protein_table.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
+tests/code/test_create_protein_table.py:1:0: W0611: Unused import pytest (unused-import)
+tests/code/test_create_protein_table.py:3:0: W0611: Unused TestCase imported from unittest (unused-import)
+tests/code/test_create_protein_table.py:7:0: W0611: Unused import EUKulele (unused-import)
+tests/code/test_create_protein_table.py:8:0: W0611: Unused eukulele imported from EUKulele.EUKulele_config (unused-import)
+tests/code/test_create_protein_table.py:9:0: W0611: Unused import scripts (unused-import)
+tests/code/test_create_protein_table.py:12:0: W0611: Unused import yaml (unused-import)
+tests/code/test_create_protein_table.py:2:0: C0411: standard import "import sys" should be placed before "import pytest" (wrong-import-order)
+tests/code/test_create_protein_table.py:3:0: C0411: standard import "from unittest import TestCase" should be placed before "import pytest" (wrong-import-order)
+tests/code/test_create_protein_table.py:12:0: C0411: third party import "import yaml" should be placed before "import EUKulele" (wrong-import-order)
+tests/code/test_create_protein_table.py:13:0: C0411: standard import "import os" should be placed before "import pytest" (wrong-import-order)
+tests/code/test_create_protein_table.py:14:0: C0411: standard import "import subprocess" should be placed before "import pytest" (wrong-import-order)
+************* Module tests.code.test_mags
+tests/code/test_mags.py:13:0: C0413: Import "import EUKulele" should be placed at the top of the module (wrong-import-position)
+tests/code/test_mags.py:14:0: C0413: Import "from EUKulele.EUKulele_config import eukulele" should be placed at the top of the module (wrong-import-position)
+tests/code/test_mags.py:16:0: C0103: Constant name "test_reference" doesn't conform to UPPER_CASE naming style (invalid-name)
+tests/code/test_mags.py:26:30: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:45:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:51:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:105:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:125:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:131:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:188:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:214:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:221:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:228:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags.py:8:0: W0611: Unused import pytest (unused-import)
+tests/code/test_mags.py:9:0: W0611: Unused TestCase imported from unittest (unused-import)
+tests/code/test_mags.py:13:0: W0611: Unused import EUKulele (unused-import)
+tests/code/test_mags.py:9:0: C0411: standard import "from unittest import TestCase" should be placed before "import yaml" (wrong-import-order)
+************* Module tests.code.test_mags_2
+tests/code/test_mags_2.py:283:0: C0325: Unnecessary parens after 'assert' keyword (superfluous-parens)
+tests/code/test_mags_2.py:13:0: C0413: Import "import EUKulele" should be placed at the top of the module (wrong-import-position)
+tests/code/test_mags_2.py:14:0: C0413: Import "from EUKulele.EUKulele_config import eukulele" should be placed at the top of the module (wrong-import-position)
+tests/code/test_mags_2.py:16:0: C0103: Constant name "test_reference" doesn't conform to UPPER_CASE naming style (invalid-name)
+tests/code/test_mags_2.py:63:4: W0702: No exception type(s) specified (bare-except)
+tests/code/test_mags_2.py:86:4: W0702: No exception type(s) specified (bare-except)
+tests/code/test_mags_2.py:108:4: W0702: No exception type(s) specified (bare-except)
+tests/code/test_mags_2.py:132:4: W0702: No exception type(s) specified (bare-except)
+tests/code/test_mags_2.py:156:4: W0702: No exception type(s) specified (bare-except)
+tests/code/test_mags_2.py:182:4: W0702: No exception type(s) specified (bare-except)
+tests/code/test_mags_2.py:207:4: W0612: Unused variable 'error' (unused-variable)
+tests/code/test_mags_2.py:212:4: W0612: Unused variable 'out_prefix' (unused-variable)
+tests/code/test_mags_2.py:228:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags_2.py:251:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mags_2.py:8:0: W0611: Unused import pytest (unused-import)
+tests/code/test_mags_2.py:9:0: W0611: Unused TestCase imported from unittest (unused-import)
+tests/code/test_mags_2.py:13:0: W0611: Unused import EUKulele (unused-import)
+tests/code/test_mags_2.py:9:0: C0411: standard import "from unittest import TestCase" should be placed before "import yaml" (wrong-import-order)
+************* Module tests.code.test_mets
+tests/code/test_mets.py:13:0: C0413: Import "import EUKulele" should be placed at the top of the module (wrong-import-position)
+tests/code/test_mets.py:14:0: C0413: Import "import subprocess" should be placed at the top of the module (wrong-import-position)
+tests/code/test_mets.py:15:0: C0413: Import "from EUKulele.EUKulele_config import eukulele" should be placed at the top of the module (wrong-import-position)
+tests/code/test_mets.py:17:0: C0103: Constant name "test_reference" doesn't conform to UPPER_CASE naming style (invalid-name)
+tests/code/test_mets.py:19:0: C0116: Missing function or method docstring (missing-function-docstring)
+tests/code/test_mets.py:27:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mets.py:51:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+tests/code/test_mets.py:57:0: C0116: Missing function or method docstring (missing-function-docstring)
+tests/code/test_mets.py:8:0: W0611: Unused import pytest (unused-import)
+tests/code/test_mets.py:9:0: W0611: Unused TestCase imported from unittest (unused-import)
+tests/code/test_mets.py:13:0: W0611: Unused import EUKulele (unused-import)
+tests/code/test_mets.py:14:0: W0611: Unused import subprocess (unused-import)
+tests/code/test_mets.py:7:0: C0411: standard import "import sys" should be placed before "import yaml" (wrong-import-order)
+tests/code/test_mets.py:9:0: C0411: standard import "from unittest import TestCase" should be placed before "import yaml" (wrong-import-order)
+tests/code/test_mets.py:14:0: C0411: standard import "import subprocess" should be placed before "import yaml" (wrong-import-order)
+************* Module tests.create_reduced_mmetsp
+tests/create_reduced_mmetsp.py:2:12: E0001: invalid syntax (<unknown>, line 2) (syntax-error)
+************* Module tests.create_sample_mags_dataset
+tests/create_sample_mags_dataset.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module tests.create_sample_mets_dataset
+tests/create_sample_mets_dataset.py:21:0: C0303: Trailing whitespace (trailing-whitespace)
+tests/create_sample_mets_dataset.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+tests/create_sample_mets_dataset.py:4:0: C0103: Constant name "mmetsp_dir" doesn't conform to UPPER_CASE naming style (invalid-name)
+tests/create_sample_mets_dataset.py:8:0: C0103: Argument name "METindex" doesn't conform to snake_case naming style (invalid-name)
+tests/create_sample_mets_dataset.py:8:31: W0621: Redefining name 'mmetsp_files' from outer scope (line 32) (redefined-outer-name)
+tests/create_sample_mets_dataset.py:8:45: W0621: Redefining name 'outputdir' from outer scope (line 28) (redefined-outer-name)
+tests/create_sample_mets_dataset.py:16:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+tests/create_sample_mets_dataset.py:25:4: W0106: Expression "[os.system('rm ' + curr_file) for curr_file in samplefiles]" is assigned to nothing (expression-not-assigned)
+tests/create_sample_mets_dataset.py:27:0: C0103: Constant name "number_samples" doesn't conform to UPPER_CASE naming style (invalid-name)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 2 files
+==conf:38
+==conf:39
+templates_path = ['_templates']
+
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = ['Thumbs.db', '.DS_Store', '_build', '**.ipynb_checkpoints']
+
+source_suffix = ['.rst', '.ipynb']
+
+# -- Options for HTML output -------------------------------------------------
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+html_theme = "sphinx_rtd_theme"
+html_theme_path = ["_themes"]
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']
+
+html_context = {
+    'css_files': [
+        '_static/theme_overrides.css',  # override wide tables in RTD theme
+        ],
+     } (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 2 files
+==tests.code.test_mags:4
+==tests.code.test_mags_2:4
+import os
+import sys
+import yaml
+import pytest
+from unittest import TestCase
+
+sys.path.insert(1, '..')
+sys.path.insert(1, '../src/EUKulele')
+import EUKulele
+from EUKulele.EUKulele_config import eukulele
+
+test_reference = "mmetsp"
+ (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 2 files
+==conf:20
+==conf:21
+project = 'EUKulele'
+copyright = '2020, Arianna Krinos, Sarah Hu, Natalie Cohen, Harriet Alexander'
+author = 'Arianna Krinos, Sarah Hu, Natalie Cohen, Harriet Alexander'
+
+# The full version, including alpha/beta/rc tags
+release = '1'
+master_doc = 'index'
+
+# -- General configuration ---------------------------------------------------
+
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# ones. (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 2 files
+==tests.code.test_mags:197
+==tests.code.test_mags_2:238
+    config["database"] = test_reference
+    config["organisms"] = ["Chromera"]
+    config["taxonomy_organisms"] = ["genus"]
+    config["download_reference"] = 0
+    config["column"] = "SOURCE_ID"
+    config["ref_fasta"] = "reference.pep.fa"
+    config["protein_map"] = "prot-map.json"
+    config["tax_table"] = "tax-table.txt"
+
+    config_path = os.path.join(base_dir, 'test_configs')
+    os.system("mkdir -p " + config_path) (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 3 files
+==tests.code.test_mags:115
+==tests.code.test_mags:34
+==tests.code.test_mags_2:241
+    config["download_reference"] = 0
+    config["column"] = "SOURCE_ID"
+    config["ref_fasta"] = "reference.pep.fa"
+    config["protein_map"] = "prot-map.json"
+    config["tax_table"] = "tax-table.txt"
+
+    config_path = os.path.join(base_dir, 'test_configs')
+    os.system("mkdir -p " + config_path) (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 2 files
+==src.EUKulele.busco_runner:14
+==src.EUKulele.manage_steps:20
+MEM_AVAIL_GB = 0
+while MEM_AVAIL_GB == 0:
+    try:
+        os.system("free -m > free.csv")
+        MEM_AVAIL_GB = pd.read_csv("free.csv", sep = "\s+").free[0] / 10**3
+    except:
+        pass
+ (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 5 files
+==tests.code.test_mags:117
+==tests.code.test_mags:202
+==tests.code.test_mags:36
+==tests.code.test_mags_2:243
+==tests.code.test_mets:43
+    config["ref_fasta"] = "reference.pep.fa"
+    config["protein_map"] = "prot-map.json"
+    config["tax_table"] = "tax-table.txt"
+
+    config_path = os.path.join(base_dir, 'test_configs')
+    os.system("mkdir -p " + config_path) (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 3 files
+==tests.code.test_mags:7
+==tests.code.test_mags_2:7
+==tests.code.test_mets:7
+import pytest
+from unittest import TestCase
+
+sys.path.insert(1, '..')
+sys.path.insert(1, '../src/EUKulele')
+import EUKulele (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 2 files
+==tests.code.test_mags:186
+==tests.code.test_mags_2:226
+    os.system("cp " + base_config + " " + base_config_curr)
+    with open(base_config_curr) as f:
+        config = yaml.load(f, Loader=yaml.FullLoader)
+
+    config["mets_or_mags"] = "mags"
+    config["reference"] = os.path.join(base_dir, test_reference, (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 3 files
+==tests.code.test_create_protein_table:2
+==tests.code.test_mags:8
+==tests.code.test_mags_2:8
+from unittest import TestCase
+
+sys.path.insert(1, '..')
+sys.path.insert(1, '../src/EUKulele')
+import EUKulele
+from EUKulele.EUKulele_config import eukulele (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 4 files
+==tests.code.test_mags:180
+==tests.code.test_mags:97
+==tests.code.test_mags_2:220
+==tests.code.test_mets:19
+    base_dir = os.path.join(os.path.dirname(__file__), '..',
+                            'aux_data')
+    base_config = os.path.join(os.path.dirname(__file__), '..',
+                               'aux_data', 'config.yaml')
+    base_config_curr = os.path.join(os.path.dirname(__file__), '..', (duplicate-code)
+tests/create_sample_mets_dataset.py:1:0: R0801: Similar lines in 2 files
+==src.EUKulele.busco_runner:220
+==src.EUKulele.manage_steps:497
+            if mets_or_mags == "mets":
+                if os.path.isfile(os.path.join(output_dir, mets_or_mags,
+                                               sample_name + "." + pep_ext)):
+                    fasta = os.path.join(output_dir, mets_or_mags,
+                                         sample_name + "." + pep_ext) (duplicate-code)
+
+------------------------------------------------------------------
+Your code has been rated at 8.26/10 (previous run: 7.97/10, +0.29)
+
