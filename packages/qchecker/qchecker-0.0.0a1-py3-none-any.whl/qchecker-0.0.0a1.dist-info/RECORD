@@ -1,0 +1,9 @@
+qchecker/__init__.py,sha256=XEmNFK5Ji1AfPaaVS4qyabvKvcmc6h3FApEJ_iIwuVw,123
+qchecker/_substructures.py,sha256=4GcoAhfGUrEWTBy-AfpPhlzhyRmKljH_lqMXQ0UfOgo,1167
+qchecker/matchers.py,sha256=YiXzJcgDuLabWtT4vcrJy2mUPk-fK8PsqmxRnFW7AVI,11578
+qchecker/utils.py,sha256=bi_Px0smkoQQnQbSJGGPaO-T4tV5ypU8B2KJBl-I-WA,3006
+qchecker-0.0.0a1.dist-info/LICENSE,sha256=0-KN493_IyZPQvz2i2rzoVd1a8jhZsWsaoOYgmNjTfc,1076
+qchecker-0.0.0a1.dist-info/METADATA,sha256=thbcTZsrjca1zqXXvyT6jofUEcxilk795HfUvT7Jurs,1874
+qchecker-0.0.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qchecker-0.0.0a1.dist-info/top_level.txt,sha256=9tY1k60tc-i9IKHEFTqo4IUifeJ94fQvVNFa8o_VCcM,9
+qchecker-0.0.0a1.dist-info/RECORD,,
