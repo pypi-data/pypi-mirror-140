@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/SlyGmail/__init__.py
+src/SlyGmail/gmail.py
+src/SlyGmail.egg-info/PKG-INFO
+src/SlyGmail.egg-info/SOURCES.txt
+src/SlyGmail.egg-info/dependency_links.txt
+src/SlyGmail.egg-info/requires.txt
+src/SlyGmail.egg-info/top_level.txt
+test/test_readme.py
