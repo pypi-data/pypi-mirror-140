@@ -1,0 +1,7 @@
+keyring
+setuptools
+tabulate
+requests
+json-lines
+gql[all]
+gql-query-builder
