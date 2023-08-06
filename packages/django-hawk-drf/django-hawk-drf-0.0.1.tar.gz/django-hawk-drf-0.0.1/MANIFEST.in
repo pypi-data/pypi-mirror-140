@@ -1,0 +1,8 @@
+include LICENSE *.rst *.txt *.md
+graft django_hawk_drf
+prune django_hawk_drf/tests
+global-include *.typed
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .DS_Store
+global-exclude dev-requirements.txt
