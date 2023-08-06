@@ -1,0 +1,7 @@
+
+[tnflow]
+sparse
+opt-einsum
+quimb
+pandas
+numpy
