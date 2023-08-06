@@ -1,0 +1,101 @@
+#!/usr/bin/env python
+
+desc = """
+Plot data from a HAPI server.
+
+    List options and usage:
+        hapiplotserver -h
+
+Version: 0.1.1
+
+Use GUNICORN_CMD_ARGS="--reload" hapiplotserver ... to reload when files change.
+"""
+
+import sys
+import optparse
+
+from hapiplotserver.config import config
+from hapiplotserver.hapiplotserver import hapiplotserver
+
+# Entry point for command line.
+if __name__ == "__main__":
+
+    # The "hasattr" line is needed in order for test-virtualenv Makefile tests to work.
+    # Without it, urlrequest silently fails when 'make test-virtualenv' is run.
+    # However, if one does
+    #   source env/bin/activate
+    #   hapiplotserver --port 5001 --workers 4 --loglevel debug &
+    # and then one executes a failing test-virtualenv curl request on command line
+    # the curl request works. So there is something about the Makefile environment
+    # that causes the test-virtualenv Makefile tests to fail.
+    # TODO: When test_hapiplotserver.sh is converted to a python script, see if this is
+    # needed anymore.
+    if hasattr(sys, 'real_prefix'):
+        from hapiclient.util import urlopen
+        res = urlopen('http://google.com/')
+
+    conf = config()
+    parser = optparse.OptionParser(add_help_option=False)
+
+    parser.add_option('-h', '--help',
+                      dest='help',
+                      action='store_true',
+                      help='show this help message and exit')
+    parser.add_option("--port",
+                      type="int",
+                      help="Server port " + "[%s]" % conf['port'],
+                      default=conf['port'])
+    parser.add_option("--cachedir",
+                      help="Cache directory " + "[%s]" % conf['cachedir'],
+                      default=conf['cachedir'])
+    parser.add_option("--loglevel",
+                      help="Log level " + "(error, default, debug) [%s]" % conf['loglevel'],
+                      default=conf['loglevel'])
+    parser.add_option("--threaded",
+                      type="int",
+                      help="Run each request in separate thread (0=no or 1=yes) " + "[%s]" % int(conf['threaded']),
+                      default=int(conf['threaded']))
+    parser.add_option("--usedatacache",
+                      type="int",
+                      help="Use cached data (0=no or 1=yes) " + "[%s]" % int(conf['usedatacache']),
+                      default=int(conf['usedatacache']))
+    parser.add_option("--usecache",
+                      type="int",
+                      help="Use cached images (0=no or 1=yes) " + "[%s]" % int(conf['usecache']),
+                      default=int(conf['usecache']))
+    parser.add_option("--workers",
+                      type="int",
+                      help="# of Gunicorn workers. If > 0, Gunicorn is used and 'threaded' option ignored. " + "[%s]" % int(conf['workers']),
+                      default=int(conf['workers']))
+
+    (options, args) = parser.parse_args()
+
+    if options.help:
+        parser.print_help()
+        print(desc)
+        sys.exit(0)
+        
+    # TODO: Read pid in '/tmp/gunicorn' + port + ' '.pid' file
+    # Execute 'kill -HUP ' + pid
+    # https://stackoverflow.com/q/9881819
+    # Need to also pass --pid argument to gunicorn() to write .pid file
+    # https://docs.gunicorn.org/en/latest/settings.html?highlight=pid#pidfile
+    # Also handle case when Gunicorn is not used.
+    # if options.stop:
+    # If port pid file not found, show error message and also show list of existing ports by
+    # reading all /tmp/gunicorn* pid files.
+    parser.add_option('-s', '--stop',
+                      dest='stop',
+                      action='store_true',
+                      help='Stop server on default port. Pass --port to specify port.')
+
+    opts = {'port': options.port,
+            'cachedir': options.cachedir,
+            'usecache': bool(options.usecache),
+            'loglevel': options.loglevel,
+            'threaded': bool(options.threaded),
+            'workers': int(options.workers),
+            'timeout': 90
+            }
+
+    hapiplotserver(**opts)
