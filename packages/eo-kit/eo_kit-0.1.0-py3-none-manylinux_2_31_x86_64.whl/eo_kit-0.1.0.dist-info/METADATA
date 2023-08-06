@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: eo-kit
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: cffi
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# EOkit
+
+EOkit is aiming to be a useful Python library which uses Rust behind the scenes to multi-thread and accelerate numerical operations.
+
+Instructions on how to install will be inserted below when the package is ready for use.
+
