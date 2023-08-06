@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sns-bridge
+Version: 0.1.0
+Summary: Run an AWS Chalice SNS listener locally
+Author: Jake Wood
+Author-email: jake@testbox.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: boto3 (>=1.21.8,<2.0.0)
+Requires-Dist: bottle (>=0.12.19,<0.13.0)
+Requires-Dist: pyngrok (>=5.1.0,<6.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)

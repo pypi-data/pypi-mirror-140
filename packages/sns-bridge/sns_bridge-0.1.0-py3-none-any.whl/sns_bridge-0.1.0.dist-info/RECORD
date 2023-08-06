@@ -1,0 +1,9 @@
+sns_bridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sns_bridge/chalice.py,sha256=AQUWg4txKvW5JRysWJozSv1ICwaKFAuiE3aKbMEsf8s,910
+sns_bridge/main.py,sha256=K6tHqSLBi4kDNM6-Mkjv2glxnY2kjlKZdHNwVJd0C-c,1508
+sns_bridge/sns.py,sha256=map3DyE7GVRykrHF36eOWyPb4UuEyUueM6CSvONJQMk,983
+sns_bridge/wsgi.py,sha256=C8G0MkcIC0bw5ZIe99fxsKB-w-8rVHPsu2rs5t2q8pM,1141
+sns_bridge-0.1.0.dist-info/entry_points.txt,sha256=vqcXXiXD_o3MF14KR4dN25KpPYx3b7RmeIxpHR9OpOY,51
+sns_bridge-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sns_bridge-0.1.0.dist-info/METADATA,sha256=-K3HpHh8Jax20Y2Aq1phQaiyLK1UpfSahBxwe_RFJyM,443
+sns_bridge-0.1.0.dist-info/RECORD,,
