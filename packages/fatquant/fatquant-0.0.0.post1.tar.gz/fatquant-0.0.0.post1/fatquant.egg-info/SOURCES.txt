@@ -1,0 +1,5 @@
+setup.py
+fatquant.egg-info/PKG-INFO
+fatquant.egg-info/SOURCES.txt
+fatquant.egg-info/dependency_links.txt
+fatquant.egg-info/top_level.txt
