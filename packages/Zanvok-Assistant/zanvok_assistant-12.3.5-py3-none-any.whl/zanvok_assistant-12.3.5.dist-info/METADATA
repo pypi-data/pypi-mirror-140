@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: zanvok-assistant
+Version: 12.3.5
+Summary: Package to create Hive
+Author: Zanvok Corporation
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Zanvok Assistant
+
+Zanvok Assistant is an open source python based virtual assistant for PCs
+
+## Version 12.3.5
+
+Added new features and fixed many bugs
+
