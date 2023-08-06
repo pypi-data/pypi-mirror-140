@@ -1,0 +1,49 @@
+{#- overrides base template from abilian-core -#}
+{%- set locale = get_locale() -%}
+<!DOCTYPE html>
+<html lang="{{ locale.language }}">
+
+{% include "_head.html" %}
+
+{% from "_macros.html" import flashed_messages %}
+
+{% macro login_btn(user, label=None) %}
+  <a class="btn btn-default m-1 w-100" href="/switch?login={{ user.login }}">
+    {{ user.name }} ({{ user.login }})<br>
+    {% if label %}<em>{{ label }}</em>{% endif %}</a>
+{% endmacro %}
+
+<body class="login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="/">Lab&amp;Co SU</a>
+  </div>
+
+  <div class="login-box-body">
+
+    {{ flashed_messages() }}
+
+    <p class="login-box-msg">Connectez-vous pour démarrer votre session</p>
+
+    <hr>
+
+    <p>En phase de test (les données saisies sont purement fantaisistes)
+      vous pouvez vous connecter en tant que:</p>
+
+    <form action="/switch" class="mb-4">
+      Login: <input type="text" name="login">
+    </form>
+
+    {% for name, users in groups %}
+      <h3 class="mt-4">{{ name }}</h3>
+
+      {% for user in users %}
+        {{ login_btn(user, user._roles) }}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+
+{% include "_foot.html" %}
+</body>
+</html>
