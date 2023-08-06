@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: wai.annotations.yolo
+Version: 1.0.0
+Summary: YOLO format plugins for wai.annotations.
+Home-page: https://github.com/waikato-ufdl/wai-annotations-yolo
+Author: Corey Sterling
+Author-email: coreytsterling@gmail.com
+License: Apache License Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+YOLO format plugins for wai.annotations.
+
+Changelog
+=========
+
+1.0.0 (2022-03-01)
+------------------
+
+- Initial release.
+
+

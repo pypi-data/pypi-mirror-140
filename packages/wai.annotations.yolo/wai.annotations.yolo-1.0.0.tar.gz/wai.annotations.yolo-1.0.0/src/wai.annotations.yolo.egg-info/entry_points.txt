@@ -1,0 +1,4 @@
+[wai.annotations.plugins]
+from-yolo-od = wai.annotations.yolo.od.specifier:YOLOODInputFormatSpecifier
+to-yolo-od = wai.annotations.yolo.od.specifier:YOLOODOutputFormatSpecifier
+
