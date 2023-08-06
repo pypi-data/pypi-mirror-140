@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bob-the-builder
+Version: 0.1.3
+Summary: Simplify defold game engine builds
+Home-page: https://github.com/sonhador82/bob-the-builder
+Author: Dmitriy Shelestovskiy
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+
+UNKNOWN
+

@@ -1,0 +1,11 @@
+pyproject.toml
+setup.cfg
+src/bob_the_builder.egg-info/PKG-INFO
+src/bob_the_builder.egg-info/SOURCES.txt
+src/bob_the_builder.egg-info/dependency_links.txt
+src/bob_the_builder.egg-info/entry_points.txt
+src/bob_the_builder.egg-info/top_level.txt
+src/bobthebuilder/__init__.py
+src/bobthebuilder/builder.py
+src/bobthebuilder/cli/__init__.py
+src/bobthebuilder/cli/main.py

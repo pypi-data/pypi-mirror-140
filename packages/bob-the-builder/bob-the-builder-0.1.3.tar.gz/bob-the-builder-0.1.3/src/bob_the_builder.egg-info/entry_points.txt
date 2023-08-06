@@ -1,0 +1,2 @@
+[console_scripts]
+bobbuilder = bobthebuilder.cli:build_cli
