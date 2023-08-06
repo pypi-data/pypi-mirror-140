@@ -1,0 +1,2 @@
+[console_scripts]
+git-big-picture = git_big_picture._main:main

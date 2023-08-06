@@ -1,0 +1,6 @@
+
+[tests]
+coverage
+cram
+parameterized
+pytest
