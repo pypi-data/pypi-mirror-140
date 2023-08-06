@@ -1,0 +1,17 @@
+odoo/addons/web_boolean_button/README.rst,sha256=euWtdIL9RaLqLb9uutCgsbu3B3qCa01Uv_ilG1l2QhU,3316
+odoo/addons/web_boolean_button/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_boolean_button/__manifest__.py,sha256=TLq5Y9rY3zQvbSNnzDb2ghkPZ-Pu1MqxBDrFmWBOKJ0,451
+odoo/addons/web_boolean_button/i18n/web_boolean_button.pot,sha256=LK63DxRfEjyYeKkdoppYGyXPeziVgFTiFe7g9u9zLS8,2662
+odoo/addons/web_boolean_button/readme/CONTRIBUTORS.rst,sha256=2Hk5wBTIk3jZqYoDoBxkAvJDe5OLlUW_1fSkjJqUMes,158
+odoo/addons/web_boolean_button/readme/DESCRIPTION.rst,sha256=uXW_jORfKaPRC2OpcLB5M5lhu6i-074yCOM1Ow0OTlE,67
+odoo/addons/web_boolean_button/readme/ROADMAP.rst,sha256=VqX_Sc3aHKCXeDPWdM-yOor3JqF0WvikRoveXCsMy00,25
+odoo/addons/web_boolean_button/readme/USAGE.rst,sha256=LQCgNIeZlXCHYHQmrfm_P1-dkgTzdnvASSUMOmC9m2M,520
+odoo/addons/web_boolean_button/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_boolean_button/static/description/index.html,sha256=ze4DR5vXKDqneV6cECCSWEwbu_TrJXNrwxYL9ToG_lE,13414
+odoo/addons/web_boolean_button/static/src/js/basic_fields.js,sha256=YznP4YSsirJrrBXfOc1Mf0YOI9eKNa8_5tE5TGFmE0o,3103
+odoo/addons/web_boolean_button/static/tests/form_tests.js,sha256=zuoqLqUskTQDKL0-3VA9-EPUtkgrNigkEl1WvqNfpyM,15062
+odoo/addons/web_boolean_button/views/templates.xml,sha256=z6gTVVLXL0NedXDlOgg83rgJCLAhUAMx7IURFq32gAI,724
+odoo13_addon_web_boolean_button-13.0.1.0.1.dev3.dist-info/METADATA,sha256=UmQX1qmdTaufxIhFffdq6eG8slpnakHLPDgiS5jo0ac,3890
+odoo13_addon_web_boolean_button-13.0.1.0.1.dev3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo13_addon_web_boolean_button-13.0.1.0.1.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_web_boolean_button-13.0.1.0.1.dev3.dist-info/RECORD,,
