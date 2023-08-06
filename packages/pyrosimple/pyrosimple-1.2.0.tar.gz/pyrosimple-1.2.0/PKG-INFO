@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pyrosimple
+Version: 1.2.0
+Summary: 
+Home-page: https://github.com/kannibalox/pyrosimple
+Author: kannibalox
+Author-email: kannibalox@gmail.com
+Requires-Python: >3.6,<4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Communications :: File Sharing
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Provides-Extra: torque
+Requires-Dist: APScheduler (>=3.9.0,<4.0.0); extra == "torque"
+Requires-Dist: Tempita (>=0.5.2,<0.6.0)
+Requires-Dist: bencode.py (>=4.0.0,<5.0.0)
+Requires-Dist: pyinotify (>=0.9.6,<0.10.0); extra == "torque"
+Project-URL: Repository, https://github.com/kannibalox/pyrosimple
+Description-Content-Type: text/markdown
+
+# What is this?
+
+A simplified and python-3 oriented version of the pyrocore tools.
+
+# Why should I use this?
+
+You probably shouldn't, the pyrocore tools are perfectly fine and better supported.
+
+# What's the point of this then?
+
+I needed something simpler for use with personal tools, this allows me to keep the code base mostly compatible while
+completely dropping features I have no need for. There are also several changes that would break existing
+integrations, and as such aren't easily suitable for upstream changes.
+
+tl;dr I want to move fast and break things.
+
+# Significant changes
+
+- Simpler poetry-based build/install system
+- Everything in one package, no separate pyrobase
+  - Use external lib for bencode
+- Only supports python 3 and rtorrent 0.9.8
+- `lstor --raw` prints json
+- No testing because I like to live on the edge
+
