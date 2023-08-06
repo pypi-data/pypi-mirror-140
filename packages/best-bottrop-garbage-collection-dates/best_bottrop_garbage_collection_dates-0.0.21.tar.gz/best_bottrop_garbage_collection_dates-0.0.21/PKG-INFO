@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: best_bottrop_garbage_collection_dates
+Version: 0.0.21
+Summary: A package to find the garbage collection dates in the city of Bottrop, Germany
+Home-page: https://github.com/Nazze/best_bottrop_garbage_collection_dates
+Author: Nazze
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Nazze/best_bottrop_garbage_collection_dates/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# best_bottrop_garbage_collection_dates
+
+This library is used to get garbage collection dates for a specific street in Bottrop, Germany
+Source is the data from https://www.best-bottrop.de
+
+

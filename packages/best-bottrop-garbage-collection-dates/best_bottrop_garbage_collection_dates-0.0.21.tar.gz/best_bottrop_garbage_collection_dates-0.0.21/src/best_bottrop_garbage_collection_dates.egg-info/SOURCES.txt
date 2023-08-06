@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/best_bottrop_garbage_collection_dates/__init__.py
+src/best_bottrop_garbage_collection_dates/best_bottrop_garbage_collection_dates.py
+src/best_bottrop_garbage_collection_dates/const.py
+src/best_bottrop_garbage_collection_dates.egg-info/PKG-INFO
+src/best_bottrop_garbage_collection_dates.egg-info/SOURCES.txt
+src/best_bottrop_garbage_collection_dates.egg-info/dependency_links.txt
+src/best_bottrop_garbage_collection_dates.egg-info/top_level.txt
