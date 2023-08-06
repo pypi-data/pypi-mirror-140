@@ -1,0 +1,2 @@
+[console_scripts]
+metatube = metatube.__main__:main

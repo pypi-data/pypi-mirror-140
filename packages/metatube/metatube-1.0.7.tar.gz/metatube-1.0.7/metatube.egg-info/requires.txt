@@ -1,0 +1,4 @@
+dateparser
+PyYAML
+requests
+SQLAlchemy>=1.4.0b1
