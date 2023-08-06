@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: odoo13-addons-oca-web
+Version: 13.0.20220228.0
+Summary: Meta package for oca-web Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 13.0
+Requires-Dist: odoo13-addon-web-action-conditionable
+Requires-Dist: odoo13-addon-web-advanced-search
+Requires-Dist: odoo13-addon-web-boolean-button
+Requires-Dist: odoo13-addon-web-calendar-slot-duration
+Requires-Dist: odoo13-addon-web-company-color
+Requires-Dist: odoo13-addon-web-decimal-numpad-dot
+Requires-Dist: odoo13-addon-web-dialog-size
+Requires-Dist: odoo13-addon-web-disable-export-group
+Requires-Dist: odoo13-addon-web-domain-field
+Requires-Dist: odoo13-addon-web-drop-target
+Requires-Dist: odoo13-addon-web-editor-background-color
+Requires-Dist: odoo13-addon-web-environment-ribbon
+Requires-Dist: odoo13-addon-web-group-expand
+Requires-Dist: odoo13-addon-web-ir-actions-act-multi
+Requires-Dist: odoo13-addon-web-ir-actions-act-view-reload
+Requires-Dist: odoo13-addon-web-ir-actions-act-window-message
+Requires-Dist: odoo13-addon-web-listview-range-select
+Requires-Dist: odoo13-addon-web-m2x-options
+Requires-Dist: odoo13-addon-web-no-bubble
+Requires-Dist: odoo13-addon-web-notify
+Requires-Dist: odoo13-addon-web-pivot-computed-measure
+Requires-Dist: odoo13-addon-web-pwa-oca
+Requires-Dist: odoo13-addon-web-refresher
+Requires-Dist: odoo13-addon-web-responsive
+Requires-Dist: odoo13-addon-web-search-with-and
+Requires-Dist: odoo13-addon-web-send-message-popup
+Requires-Dist: odoo13-addon-web-set-single-page-hidden
+Requires-Dist: odoo13-addon-web-sheet-full-width
+Requires-Dist: odoo13-addon-web-time-range-menu-custom
+Requires-Dist: odoo13-addon-web-timeline
+Requires-Dist: odoo13-addon-web-translate-dialog
+Requires-Dist: odoo13-addon-web-tree-dynamic-colored-field
+Requires-Dist: odoo13-addon-web-tree-image-tooltip
+Requires-Dist: odoo13-addon-web-tree-many2one-clickable
+Requires-Dist: odoo13-addon-web-view-calendar-list
+Requires-Dist: odoo13-addon-web-widget-bokeh-chart
+Requires-Dist: odoo13-addon-web-widget-child-selector
+Requires-Dist: odoo13-addon-web-widget-domain-editor-dialog
+Requires-Dist: odoo13-addon-web-widget-dropdown-dynamic
+Requires-Dist: odoo13-addon-web-widget-dropdown-dynamic-example
+Requires-Dist: odoo13-addon-web-widget-image-download
+Requires-Dist: odoo13-addon-web-widget-many2one-simple
+Requires-Dist: odoo13-addon-web-widget-mpld3-chart
+Requires-Dist: odoo13-addon-web-widget-numeric-step
+Requires-Dist: odoo13-addon-web-widget-one2many-product-picker
+Requires-Dist: odoo13-addon-web-widget-one2many-product-picker-sale-secondary-unit
+Requires-Dist: odoo13-addon-web-widget-one2many-product-picker-sale-stock
+Requires-Dist: odoo13-addon-web-widget-one2many-tree-line-duplicate
+Requires-Dist: odoo13-addon-web-widget-open-tab
+Requires-Dist: odoo13-addon-web-widget-url-advanced
+Requires-Dist: odoo13-addon-web-widget-x2many-2d-matrix
+Requires-Dist: odoo13-addon-web-widget-x2many-2d-matrix-example
+
+UNKNOWN
+
