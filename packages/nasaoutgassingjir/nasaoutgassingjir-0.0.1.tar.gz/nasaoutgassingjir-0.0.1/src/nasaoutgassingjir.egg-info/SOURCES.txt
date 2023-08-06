@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/nasaoutgassingjir/__init__.py
+src/nasaoutgassingjir/tmlinfo.py
+src/nasaoutgassingjir.egg-info/PKG-INFO
+src/nasaoutgassingjir.egg-info/SOURCES.txt
+src/nasaoutgassingjir.egg-info/dependency_links.txt
+src/nasaoutgassingjir.egg-info/top_level.txt

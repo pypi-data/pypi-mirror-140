@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nasaoutgassingjir
+Version: 0.0.1
+Summary: print statistics of total mass loss from nasa outgassing db
+Home-page: https://github.com/juanitoetc
+Author: Juan Ignacio Robledo
+Author-email: juanignacio.robledo@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/juanitoetc/nasa-outgassing-tml/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This program automatically downloads the json file from the public database
+https://data.nasa.gov/Applied-Science/Outgassing-Db/r588-f7pr
+(located in https://data.nasa.gov/resource/r588-f7pr.json)
+and generates some statistics for the variable total mass loss (tml):
+- Prints on terminal tml min, max and mean
+- Plot a boxplot for the first two elements with more samples
+
