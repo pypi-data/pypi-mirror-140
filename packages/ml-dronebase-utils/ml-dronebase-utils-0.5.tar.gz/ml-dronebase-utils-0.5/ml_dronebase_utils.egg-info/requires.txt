@@ -1,0 +1,8 @@
+boto3>=1.19.2
+tqdm>=4.62.3
+jinja2>=2.0.1
+black
+isort
+colorama
+flake8
+pytest
