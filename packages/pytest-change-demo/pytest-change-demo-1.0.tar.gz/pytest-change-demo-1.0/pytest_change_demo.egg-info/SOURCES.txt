@@ -1,0 +1,8 @@
+setup.py
+pytest_change_demo.egg-info/PKG-INFO
+pytest_change_demo.egg-info/SOURCES.txt
+pytest_change_demo.egg-info/dependency_links.txt
+pytest_change_demo.egg-info/entry_points.txt
+pytest_change_demo.egg-info/requires.txt
+pytest_change_demo.egg-info/top_level.txt
+test/test_change_demo.py
