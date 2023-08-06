@@ -1,0 +1,5 @@
+dico-api
+aiohttp
+
+[webserver]
+PyNaCl
