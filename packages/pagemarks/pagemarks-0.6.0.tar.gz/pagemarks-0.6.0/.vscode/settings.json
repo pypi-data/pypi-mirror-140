@@ -1,0 +1,29 @@
+{
+    "editor.rulers": [120],
+    "editor.wordWrapColumn": 120,
+    "editor.autoClosingBrackets": "never",
+    "editor.codeLens": false,
+    "editor.dragAndDrop": false,
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/_support": true,
+        "**/.coverage": true,
+        "**/.git": true,
+        "**/.idea": true,
+        "**/.nyc_output": true,
+        "**/.sass-cache": true,
+        "**/*.egg-info": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/node_modules": true
+    },
+    "mocha.logVerbose": true,
+    "mocha.coverage": {
+        "activeOnStart": false,
+        "enable": false
+    },
+    "[html]": {
+        "editor.formatOnSave": false
+    }
+}

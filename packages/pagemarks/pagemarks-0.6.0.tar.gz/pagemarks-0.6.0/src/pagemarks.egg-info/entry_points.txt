@@ -1,0 +1,3 @@
+[console_scripts]
+pagemarks = framework.main:app
+pm = framework.main:app
