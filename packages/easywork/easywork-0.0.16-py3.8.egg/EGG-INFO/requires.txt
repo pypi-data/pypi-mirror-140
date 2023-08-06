@@ -1,0 +1,8 @@
+colorlog==6.6.0
+fake_useragent==0.1.11
+Pillow==9.0.0
+pycryptodome==3.12.0
+python_dateutil==2.8.2
+requests==2.27.0
+ruamel.base==1.0.0
+setuptools==58.0.4
