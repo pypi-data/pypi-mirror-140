@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+vestory/__init__.py
+vestory/__main__.py
+vestory/exceptions.py
+vestory/version_control.py
+vestory.egg-info/PKG-INFO
+vestory.egg-info/SOURCES.txt
+vestory.egg-info/dependency_links.txt
+vestory.egg-info/entry_points.txt
+vestory.egg-info/top_level.txt
