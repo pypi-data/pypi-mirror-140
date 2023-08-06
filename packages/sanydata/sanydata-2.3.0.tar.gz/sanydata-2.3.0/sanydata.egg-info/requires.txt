@@ -1,0 +1,7 @@
+grpcio
+grpcio-tools
+gql
+pandas
+elasticsearch
+requests
+requests_toolbelt
