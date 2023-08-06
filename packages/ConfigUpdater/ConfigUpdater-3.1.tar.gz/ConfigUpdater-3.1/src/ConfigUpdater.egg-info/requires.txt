@@ -1,0 +1,11 @@
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+sphinx
+flake8
+pytest
+pytest-cov
+pytest-virtualenv
+pytest-xdist
