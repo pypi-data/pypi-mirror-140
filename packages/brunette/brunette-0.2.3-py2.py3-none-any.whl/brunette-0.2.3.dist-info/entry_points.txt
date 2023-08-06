@@ -1,0 +1,3 @@
+[console_scripts]
+brunette = brunette.brunette:main
+
