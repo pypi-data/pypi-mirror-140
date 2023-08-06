@@ -1,0 +1,8 @@
+README.md
+setup.py
+ThonnyFlake8.egg-info/PKG-INFO
+ThonnyFlake8.egg-info/SOURCES.txt
+ThonnyFlake8.egg-info/dependency_links.txt
+ThonnyFlake8.egg-info/requires.txt
+ThonnyFlake8.egg-info/top_level.txt
+thonnycontrib/ThonnyFlake8/__init__.py

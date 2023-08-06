@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ThonnyFlake8
+Version: 1.0.1
+Summary: A plugin that adds flake8 to the Thonny python IDE.
+Home-page: https://github.com/bigjango13/ThonnyFlake8
+Author: Bigjango13
+License: UNKNOWN
+Description: # ThonnyFlake8
+        A Thonny plugin to add flake8 warnings.
+        
+        To install run
+        ```bash
+        pip3 install ThonnyFlake8
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
