@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./NanoImgPro/NanoImgPro.py
+./NanoImgPro/__init__.py
+./NanoImgPro.egg-info/PKG-INFO
+./NanoImgPro.egg-info/SOURCES.txt
+./NanoImgPro.egg-info/dependency_links.txt
+./NanoImgPro.egg-info/requires.txt
+./NanoImgPro.egg-info/top_level.txt
+NanoImgPro.egg-info/PKG-INFO
+NanoImgPro.egg-info/SOURCES.txt
+NanoImgPro.egg-info/dependency_links.txt
+NanoImgPro.egg-info/requires.txt
+NanoImgPro.egg-info/top_level.txt
