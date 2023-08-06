@@ -1,0 +1,4 @@
+[console_scripts]
+remove_ssh_key=scripts.finorch_key_manager:remove_ssh_key
+set_ssh_key=scripts.finorch_key_manager:set_ssh_key
+
