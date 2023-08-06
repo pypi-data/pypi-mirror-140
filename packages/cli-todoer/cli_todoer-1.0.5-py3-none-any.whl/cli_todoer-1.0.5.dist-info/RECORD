@@ -1,0 +1,10 @@
+todoer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+todoer/__main__.py,sha256=p2rwQmViX-mfUToJ9PBnpebVowO9p5QxUl7VcdQ3x04,124
+todoer/database.py,sha256=IdPK3l1rVYMwfzBjDvZiRcIRnxYgWiapvQz78MHLWWA,2677
+todoer/model.py,sha256=B9Pc-M3uuv9u-IE_SSjwhIc2BL9937YDDJ--ErfHdTA,738
+todoer/todocli.py,sha256=IVkSs4zcbfhbLKVpNsSh2hMCpnEU8OaoXyhyt5RLcDg,2900
+cli_todoer-1.0.5.dist-info/METADATA,sha256=WXiKg2ygwRRDdFUEB8aaFWy6vMRAOIrKk2hYRUhpDSI,971
+cli_todoer-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cli_todoer-1.0.5.dist-info/entry_points.txt,sha256=hLAhz41nxgQIVuinAi2CQmR74mASNATZMla3S_mh1vM,49
+cli_todoer-1.0.5.dist-info/top_level.txt,sha256=UEYaI8V0dvByDGX9vH31Vpqk62DoMPqH2ELTAsnCz5E,7
+cli_todoer-1.0.5.dist-info/RECORD,,
