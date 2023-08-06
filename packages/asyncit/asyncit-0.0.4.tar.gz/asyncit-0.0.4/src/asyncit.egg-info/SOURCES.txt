@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.py
+version_helpers.py
+src/asyncit/__init__.py
+src/asyncit/asyncit.py
+src/asyncit/dicts.py
+src/asyncit/queue_ex.py
+src/asyncit/version.py
+src/asyncit.egg-info/PKG-INFO
+src/asyncit.egg-info/SOURCES.txt
+src/asyncit.egg-info/dependency_links.txt
+src/asyncit.egg-info/top_level.txt
