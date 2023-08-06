@@ -1,0 +1,179 @@
+[build-system]
+requires = [ "poetry_core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "colour-science"
+version = "0.4.1"
+description = "Colour Science for Python"
+license = "BSD-3-Clause"
+authors = [ "Colour Developers <colour-developers@colour-science.org>",]
+maintainers = [ "Colour Developers <colour-developers@colour-science.org>",]
+readme = "README.rst"
+repository = "https://github.com/colour-science/colour"
+homepage = "https://www.colour-science.org/"
+keywords = [ "color", "color-science", "color-space", "color-spaces", "colorspace", "colorspaces", "colour", "colour-science", "colour-space", "colour-spaces", "colourspace", "colourspaces", "data", "dataset", "datasets", "python", "spectral-data", "spectral-dataset", "spectral-datasets",]
+classifiers = [ "Development Status :: 3 - Alpha", "Environment :: Console", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "License :: OSI Approved", "Natural Language :: English", "Operating System :: OS Independent", "Programming Language :: Python :: 3", "Topic :: Scientific/Engineering", "Topic :: Software Development",]
+[[tool.poetry.packages]]
+include = "colour"
+from = "."
+
+[tool.black]
+line-length = 79
+exclude = "/(\n    \\.git\n  | \\.mypy_cache\n  | build\n  | dist\n)/\n"
+
+[tool.flynt]
+line_length = 999
+
+[tool.mypy]
+plugins = "numpy.typing.mypy_plugin"
+ignore_missing_imports = true
+
+[tool.pydocstyle]
+convention = "numpy"
+add-ignore = "D104,D200,D202,D205,D301,D400"
+
+[tool.poetry.dependencies]
+python = ">= 3.8, < 3.11"
+imageio = ">= 2, < 3"
+numpy = ">= 1.19, < 2"
+scipy = ">= 1.5, < 2"
+typing-extensions = ">= 4, < 5"
+
+[tool.poetry.dev-dependencies]
+biblib-simple = "*"
+black = "*"
+coverage = "!= 6.3"
+coveralls = "*"
+flake8 = "*"
+flynt = "*"
+invoke = "*"
+jupyter = "*"
+mypy = "*"
+pre-commit = "*"
+pydata-sphinx-theme = "*"
+pydocstyle = "*"
+pytest = "*"
+pytest-cov = "*"
+pyupgrade = "*"
+restructuredtext-lint = "*"
+sphinx = ">= 4, < 5"
+sphinxcontrib-bibtex = "*"
+toml = "*"
+twine = "*"
+
+[tool.poetry.extras]
+development = [ "biblib-simple", "black", "coverage", "coveralls", "flake8", "flynt", "invoke", "jupyter", "mypy", "pre-commit", "pydata-sphinx-theme", "pydocstyle", "pytest", "pytest-cov", "pyupgrade", "restructuredtext-lint", "sphinx", "sphinxcontrib-bibtex", "toml", "twine",]
+graphviz = [ "pygraphviz",]
+meshing = [ "trimesh",]
+optional = [ "networkx", "pandas", "scikit-learn", "tqdm",]
+plotting = [ "matplotlib",]
+read-the-docs = [ "matplotlib", "networkx", "pydata-sphinx-theme", "pygraphviz", "sphinxcontrib-bibtex", "trimesh",]
+
+[tool.poetry.dependencies.matplotlib]
+version = ">= 3.2, != 3.5.0, != 3.5.1"
+optional = true
+
+[tool.poetry.dependencies.networkx]
+version = ">= 2, < 3"
+optional = true
+
+[tool.poetry.dependencies.pandas]
+version = ">= 1, < 2"
+optional = true
+
+[tool.poetry.dependencies.pygraphviz]
+version = ">= 1, < 2"
+optional = true
+
+[tool.poetry.dependencies.scikit-learn]
+version = ">= 1, < 2"
+optional = true
+
+[tool.poetry.dependencies.tqdm]
+version = ">= 4, < 5"
+optional = true
+
+[tool.poetry.dependencies.trimesh]
+version = ">= 3, < 4"
+optional = true
+
+[tool.poetry.dependencies.biblib-simple]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.black]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.coverage]
+version = "!= 6.3"
+optional = true
+
+[tool.poetry.dependencies.coveralls]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.flake8]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.flynt]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.invoke]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.jupyter]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.mypy]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.pre-commit]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.pydata-sphinx-theme]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.pydocstyle]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.pytest]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.pytest-cov]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.pyupgrade]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.restructuredtext-lint]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.sphinx]
+version = ">= 4, < 5"
+optional = true
+
+[tool.poetry.dependencies.sphinxcontrib-bibtex]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.toml]
+version = "*"
+optional = true
+
+[tool.poetry.dependencies.twine]
+version = "*"
+optional = true
