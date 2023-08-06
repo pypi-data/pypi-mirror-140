@@ -1,0 +1,13 @@
+flask==1.1.2
+pexpect==4.8.0
+pytest==6.2.4
+flask_restful==0.3.8
+fprime-tools>=3.0.0
+argcomplete==1.12.3
+itsdangerous==2.0.1
+
+[test-api-xls]
+openpyxl==3.0.7
+
+[uart-adapter]
+pyserial==3.5
