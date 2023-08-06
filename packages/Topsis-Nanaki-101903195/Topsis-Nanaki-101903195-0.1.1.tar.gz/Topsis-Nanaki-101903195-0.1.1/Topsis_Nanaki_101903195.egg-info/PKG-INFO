@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Topsis-Nanaki-101903195
+Version: 0.1.1
+Summary: Multi Criteria Decision Making using TOPSIS (Python Package)
+Home-page: https://github.com/nanaki-dhanoa/Topsis.git
+Author: Nanaki
+Author-email: nanakidhanoa@gmail.com
+License: MIT
+Download-URL: https://github.com/nanaki-dhanoa/Topsis/archive/refs/tags/v_0.01.zip
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## What is TOPSIS
+
+**T**echnique for **O**rder **P**reference by **S**imilarity to **I**deal
+**S**olution (TOPSIS) originated in the 1980s as a multi-criteria decision
+making method. TOPSIS chooses the alternative of shortest Euclidean distance
+from the ideal solution, and farthest distance from the negative-ideal
+solution. More details at [wikipedia](https://en.wikipedia.org/wiki/TOPSIS)
+
+
+## Installation
+```pip install Topsis-Nanaki-101903195```
+
+## How to use it ?
+Open terminal and move into directory where all your files are placed and the type :
+    python topsis.py "input.csv" "1,1,1,2" "+,+,+,-" "result.csv"
+
+## License 
+Â© 2022 
+This repository is licensed under the MIT license.See License for details.
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Topsis-Nanaki-101903195/__init__.py
+Topsis-Nanaki-101903195/topsis.py
+Topsis_Nanaki_101903195.egg-info/PKG-INFO
+Topsis_Nanaki_101903195.egg-info/SOURCES.txt
+Topsis_Nanaki_101903195.egg-info/dependency_links.txt
+Topsis_Nanaki_101903195.egg-info/requires.txt
+Topsis_Nanaki_101903195.egg-info/top_level.txt
