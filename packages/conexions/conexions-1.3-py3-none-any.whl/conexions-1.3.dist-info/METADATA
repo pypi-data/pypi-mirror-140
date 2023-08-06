@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: conexions
+Version: 1.3
+Summary: Módulo para distintos unificado de conexións web
+Home-page: https://www.github.com/Ran-n/conexions
+Author: Ran#
+Author-email: ran-n@tutanota.com
+License: GPLv3
+Project-URL: Bug Tracker, https://www.github.com/Ran-n/conexions/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Natural Language :: Galician
+Classifier: Natural Language :: Portuguese
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Spanish
+Requires-Python: >=3.8.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (==4.10.0)
+Requires-Dist: fake-useragent (==0.1.11)
+Requires-Dist: halo (==0.0.31)
+Requires-Dist: requests (==2.26.0)
+
+# Conexións
+[![GitHub license](https://img.shields.io/github/license/Ran-n/scripts)](https://github.com/Ran-n/scripts/blob/master/LICENSE)
+![PowerShell Gallery](https://img.shields.io/badge/plataforma-LiGNUx%20%7C%20Windows10-lightgrey)
+
+[![GitHub issues](https://img.shields.io/github/issues/Ran-n/conexions)](https://github.com/Ran-n/conexions/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Ran-n/conexions)](https://github.com/Ran-n/conexions/network)
+[![GitHub stars](https://img.shields.io/github/stars/Ran-n/conexions)](https://github.com/Ran-n/conexions/stargazers)
+
+[Ran-n/conexions](https://github.com/Ran-n/conexions)
+
+Módulo de conexións que scrapea e usa os proxies da páxina de "sslproxies.org".
+Por defecto non ten verbose, ten un máximo de 20 conexións por ip e 30 segundos de espera por get.
+
+
+## [Donations 🙇🙇](https://github.com/Ran-n/doc/blob/main/doaz%C3%B3ns.md)
+
+**Bitcoin** <img src="https://raw.githubusercontent.com/Ran-n/svgs/main/divisas/bitcoin/bitcoin_0.svg" width="20" alt="bitcoin logo" title="Bitcoin">
+bc1q79vja8jzr27dxaf3ylu7e49ady8zq0jsm5qfk6
+
+**Monero** <img src="https://raw.githubusercontent.com/Ran-n/svgs/main/divisas/monero/monero_0.svg" width="20" alt="monero logo" title="Monero">
+88Rezd6ZQzaCb1s7K1tRCiCaDzuHrfYsn4q348jJuePpLs84JNsWEghMAZZgzpDPrqD4PBxk7hwMkSdNQ4CLqFHyPVLdX1D
+
+**Wownero** <img src="https://raw.githubusercontent.com/Ran-n/svgs/main/divisas/wownero/wownero_0.svg" width="20" alt="wownero logo" title="Wownero">
+WW2RheTNrq8goAi42Dz5AKUj1qLSaTSSgiH7sHR2qRqojg238EXP3MM3xuUgswriET7UrpkEoYaCkecBhnU49oxM1dZyYoSmm
+
+## [xFCR](./doc/xFCR/indice.md)
+
+- [X] Facer os tests do contador de conexións totais.
+- [ ] Crear base de datos cos proxys.
+
+
