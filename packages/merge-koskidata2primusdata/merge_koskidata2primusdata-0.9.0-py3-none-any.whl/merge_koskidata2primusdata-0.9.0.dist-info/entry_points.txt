@@ -1,0 +1,3 @@
+[console_scripts]
+add_column = merge_koskidata2primusdata.add_column:main
+merge_student_years = merge_koskidata2primusdata.merge_student_years:main
