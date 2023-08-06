@@ -1,0 +1,12 @@
+calligraphy_scripting/__init__.py,sha256=RHvrLaSlnmdOxyxFcF5vBTij__Z5uGmsra9v1mn3CIY,55
+calligraphy_scripting/cleaner.py,sha256=naTpekKy7Y_h8FTCvOWtoFONyb6c0zUo290dqkN1b8M,1692
+calligraphy_scripting/cli.py,sha256=hrD-qo8b-m_ycz7KKkGGuI1JQL9yxQX0_7ZWwv_Ar_Y,6469
+calligraphy_scripting/data/header.py,sha256=HI3mJGWgD8kI1WFs8XXIaQn7jTqh42j2q-mFtge7cvc,2628
+calligraphy_scripting/parser.py,sha256=fdzA7WgPvoJWCMTGscbHmcq9jojnl1fuYeVfiyr238A,5691
+calligraphy_scripting/tokenizer.py,sha256=ExzxT6w-bOi1GU47xR7VI5ZcrxNEgrxZKzgmOB9KuXU,3014
+calligraphy_scripting/transpiler.py,sha256=X5kPRdpfmOACf7rw0Q6Mx8f1nv5i_5PI7Cdckwgayuw,13164
+calligraphy_scripting-0.1.0.dist-info/entry_points.txt,sha256=mqxRYjt0cy_WWX4JNBq4BVnqc8SG7L-nm2_WYpvgYEI,61
+calligraphy_scripting-0.1.0.dist-info/LICENSE,sha256=WBm5J221EkLJcmyoNos7M7blAFqbyNBpIHlKHqSOIOs,1068
+calligraphy_scripting-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+calligraphy_scripting-0.1.0.dist-info/METADATA,sha256=wch92QaztB2bMzd5bLg7NosMRprym8l1u67Ds7woAEw,3970
+calligraphy_scripting-0.1.0.dist-info/RECORD,,
