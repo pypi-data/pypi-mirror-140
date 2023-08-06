@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: vicedtools
+Version: 0.0.5.1
+Summary: A collection of tools for school data in Victorian schools.
+Home-page: https://github.com/gregbreese/vicedtools
+Author: Greg Breese
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/gregbreese/vicedtools/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: browser-cookie3
+Requires-Dist: bs4
+Requires-Dist: demjson
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: google-cloud-storage
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: selenium
+
+# vicedtools
+
+This is a collection of utility tools for working with school data in Victorian schools.
+
+The utilities have been designed to be state-less. Where tools have been created to export data then they have been designed to work with the native export formats provided by the relevant sites so that processing functions also integrate with existing data stores.
+
+Currently includes tools for:
+
+- automating the exporting of data from Compass
+- tools for working with ACER's OARS site
+- extracting NAPLAN data from the SSSR data.js file
+- exporting data from VCAA's VASS site
+- uploading data to Google Cloud storage and BigQuery for use with Data Studio
+
+
