@@ -1,0 +1,3 @@
+include src/ddeq/data/sources.csv
+include src/ddeq/data/INPUT_ORG
+include notebooks/example.ipynb

@@ -1,0 +1,12 @@
+cartopy
+cdsapi
+f90nml
+matplotlib
+netCDF4
+numpy
+pandas
+scipy
+shapely==1.8.0
+scikit-image==0.16.2
+ucat
+xarray
