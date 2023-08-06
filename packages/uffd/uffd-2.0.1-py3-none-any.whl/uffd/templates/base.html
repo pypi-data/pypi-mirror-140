@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		{% block head %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>{% block title %}uffd{% endblock %}</title>
+
+		<link href="{{ url_for('static', filename="bootstrap/bootstrap.min.css") }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename="fa/css/all.css") }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename="style.css") }}" rel="stylesheet">
+		<script src="{{ url_for('static', filename="jquery/jquery-3.4.1.min.js") }}"></script>
+		<script src="{{ url_for('static', filename="popper/popper.min.js") }}"></script>
+		<script src="{{ url_for('static', filename="bootstrap/bootstrap.min.js") }}"></script>
+
+		<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/png">
+		{% endblock %}
+	</head>
+	<body>
+		{% block navbar %}
+		{% macro navbarlink(data, htmlclass="nav-link") -%}
+			<a class="{{ htmlclass }}" href="{{ url_for(data.endpoint) }}">
+				{% if data.gly != '' %}
+					{% if data.iconlib == 'fa' %}
+						<span aria-hidden="true" class="fa fa-{{ data.icon }}"></span>
+					{% endif %}
+					{{ data.name }}
+				{% endif %}
+			</a>
+		{%- endmacro %}
+		{% macro navbaricon(data) -%}
+		<li class="nav-item {% if data.endpoint == request.endpoint or data.blueprint.name|d(None) == request.blueprint%} active{% endif %}">
+			{{ navbarlink(data) }}
+		</li>
+		{%- endmacro %}
+
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark static-top" >
+			<a class="navbar-brand" href="{{ url_for('index') }}">uffd</a>
+			{% if getnavbar() or request.user or config['LANGUAGES']|length > 1 %}
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#baseNavbar" aria-controls="baseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="baseNavbar">
+				{% if getnavbar() %}
+				<ul class="navbar-nav mr-auto">
+					{% for n in getnavbar() if not n.group %}
+					{{ navbaricon(n) }}
+					{% endfor %}
+
+					{% for grouper, list in getnavbar()|rejectattr("group", "none")|groupby("group")  %}
+					<li class="nav-item dropdown {% if request.endpoint in list|map(attribute='endpoint') %} active{% endif %}">
+						<a
+							class="nav-link dropdown-toggle dropdow-clickable"
+							href="google.com"
+							id="baseNavbardropdown-{{ grouper }}"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false">
+								{{ grouper }}
+								<span class="caret"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="baseNavbardropdown-{{ grouper }}">
+							{% for n in list %}
+							{{ navbarlink(n, htmlclass="dropdown-item") }}
+							{% endfor %}
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+
+				{% if request.user or config['LANGUAGES']|length > 1 %}
+				<ul class="navbar-nav ml-auto">
+					{% if config['LANGUAGES']|length > 1 %}
+					<li class="nav-item">
+						<form class="language-switch py-2 pr-1" method="POST" style="margin-left: -5px;" action="{{ url_for('setlang') }}">
+							<input type="hidden" name="ref" value="{{ request.full_path }}">
+							<select name="lang" class="bg-dark" style="border: 0px; color: rgba(255, 255, 255, 0.5);" onchange="$('.language-switch').submit()">
+								{% for identifier, name in config['LANGUAGES'].items() %}
+									<option value="{{ identifier }}" {{ 'selected' if identifier == get_locale() }}>{{ name }}</option>
+								{% endfor %}
+							</select>
+							<noscript>
+								<button type="submit" class="bg-dark py-0 pl-0" style="border: 0px; color: rgba(255, 255, 255, 0.5);">{{_('Change')}}</button>
+							</noscript>
+						</form>
+					</li>
+					{% endif %}
+					{% if request.user %}
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for("session.deviceauth") }}">
+							<span aria-hidden="true" class="fas fa-mobile-alt" title="{{_('Authorize Device Login')}}"></span>
+							<span class="d-inline d-md-none">{{_('Device Login')}}</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for("session.logout") }}">
+							<span aria-hidden="true" class="fa fa-sign-out-alt"></span>
+							{{_("Logout")}}
+						</a>
+					</li>
+					{% endif %}
+				</ul>
+				{% endif %}
+			</div>
+			{% endif %}
+		</nav>
+		{% endblock navbar %}
+
+		{% block main %}
+		<main role="main" class="container mt-3">
+			<div class="row">
+				{% for message in get_flashed_messages() %}
+				<div class="col-12">
+					<div class="alert alert-primary" role="alert">{{ message }}</div>
+				</div>
+				{% endfor %}
+			</div>
+
+			{% block body %}
+			{% endblock body %}
+		</main>
+		{% endblock main %}
+
+		<!-- spacer for floating footer -->
+		<div class="mb-5"></div>
+		<footer class="footer">
+			{% block footer %}
+			<div class="container-fluid">
+				<ul class="list-inline">
+					{% for link in config["FOOTER_LINKS"]%}
+					<li class="list-inline-item"><a href="{{ link.url }}">{{ link.title }}</a></li>
+					{% endfor %}
+					<li class="list-inline-item float-right">
+						<a href="https://git.cccv.de/uffd/uffd/">{{_("About uffd")}}</a>
+					</li>
+				</ul>
+			</div>
+			{% endblock footer %}
+		</footer>
+
+	</body>
+</html>

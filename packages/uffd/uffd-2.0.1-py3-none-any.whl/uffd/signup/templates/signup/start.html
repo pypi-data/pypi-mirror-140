@@ -1,0 +1,101 @@
+{% extends 'base_narrow.html' %}
+
+{% block body %}
+<form action="{{ url_for('.signup_submit') }}" method="POST" onInput="password2.setCustomValidity(password1.value != password2.value ? 'Passwords do not match.' : '') ">
+	<div class="col-12">
+		<h2 class="text-center">{{_('Account Registration')}}</h2>
+	</div>
+	{% if error %}
+	<div class="form-group col-12">
+		<div class="alert alert-danger" role="alert">{{ error }}</div>
+	</div>
+	{% endif %}
+	<div class="form-group col-12">
+		<label for="user-loginname">{{_('Login Name')}}</label>
+		<div class="js-only-input-group">
+			<input type="text" class="form-control" id="user-loginname" name="loginname" aria-describedby="loginname-feedback" value="{{ request.form.loginname }}" minlength=1 maxlength=32 pattern="[a-z0-9_-]*" required>
+			<div class="js-only-input-group-append d-none">
+				<button class="btn btn-outline-secondary rounded-right" type="button" id="check-loginname">{{_('Check')}}</button>
+			</div>
+			<div id="loginname-feedback" class="invalid-feedback"></div>
+		</div>
+		<small class="form-text text-muted">
+			{{_('At least one and at most 32 lower-case characters, digits, dashes ("-") or underscores ("_"). <b>Cannot be changed later!</b>')|safe}}
+		</small>
+	</div>
+	<div class="form-group col-12">
+		<label for="user-displayname">{{_('Display Name')}}</label>
+		<input type="text" class="form-control" id="user-displayname" name="displayname" value="{{ request.form.displayname }}" minlength=1 maxlength=128 required>
+		<small class="form-text text-muted">
+			{{_('At least one and at most 128 characters, no other special requirements.')}}
+		</small>
+	</div>
+	<div class="form-group col-12">
+		<label for="user-mail">{{_('E-Mail Address')}}</label>
+		<input type="email" class="form-control" id="user-mail" name="mail" value="{{ request.form.mail }}" required>
+		<small class="form-text text-muted">
+			{{_('We will send a confirmation mail to this address that you need to complete the registration.')}}
+		</small>
+	</div>
+	<div class="form-group col-12">
+		<label for="user-password1">{{_('Password')}}</label>
+		<input type="password" class="form-control" id="user-password1" name="password1" minlength={{ User.PASSWORD_MINLEN }} maxlength={{ User.PASSWORD_MAXLEN }} pattern="{{ User.PASSWORD_REGEX }}" required>
+		<small class="form-text text-muted">
+			{{ User.PASSWORD_DESCRIPTION|safe }}
+		</small>
+	</div>
+	<div class="form-group col-12">
+		<label for="user-password2">{{_('Repeat Password')}}</label>
+		<input type="password" class="form-control" id="user-password2" name="password2" required>
+	</div>
+	<div class="form-group col-12">
+		<button type="submit" class="btn btn-primary btn-block">{{_('Create Account')}}</button>
+	</div>
+</form>
+
+<script>
+$(".js-only-input-group").addClass("input-group");
+$(".js-only-input-group-append").removeClass("d-none");
+$(".js-only-input-group-append").addClass("input-group-append");
+
+let checkreq;
+$("#check-loginname").on("click", function () {
+	if (checkreq)
+		checkreq.abort();
+	$("#user-loginname").removeClass("is-valid");
+	$("#user-loginname").removeClass("is-invalid");
+	$("#check-loginname").prop("disabled", true);
+	checkreq = $.ajax({
+		url: {{ url_for('.signup_check')|tojson }},
+		method: "POST",
+		data: {"loginname": $("#user-loginname").val()},
+		success: function (resp) {
+			checkreq = null;
+			$("#check-loginname").prop("disabled", false);
+			if (resp.status == "ok") {
+				$("#user-loginname").addClass("is-valid");
+				$("#loginname-feedback").text("");
+			} else if (resp.status == 'exists') {
+				$("#loginname-feedback").text({{_("The name is already taken")|tojson}});
+				$("#user-loginname").addClass("is-invalid");
+			} else if (resp.status == 'ratelimited') {
+				$("#loginname-feedback").text({{_("Too many requests! Please wait a bit before trying again!")|tojson}});
+				$("#user-loginname").addClass("is-invalid");
+			} else {
+				$("#loginname-feedback").text({{_("The name is invalid")|tojson}});
+				$("#user-loginname").addClass("is-invalid");
+			}
+		}
+	});
+});
+$("#user-loginname").on("input", function () {
+	if (checkreq)
+		checkreq.abort();
+	checkreq = null;
+	$("#user-loginname").removeClass("is-valid");
+	$("#user-loginname").removeClass("is-invalid");
+	$("#check-loginname").prop("disabled", false);
+});
+
+</script>
+{% endblock %}
