@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: easypype
+Version: 1.1.0
+Summary: Easy way of creating pipelines
+Home-page: https://github.com/looplex/easypype/tree/main
+Author: Gabriel Felix de Souza Lopes <gafelix435@gmail.com>, Alejandro Tarafa Guzmán <alejandro.guzman@looplex.com.br>
+License: unlicense
+Download-URL: https://github.com/looplex/easypype/archive/refs/tags/v1.1.0.tar.gz
+Keywords: Pipeline,ETL,transform,load,pipe
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# EasyPype - Create a flexible, extensible, potent pipelines
+EasyPype allows you to create flexible and extensible pipelines using python. You can setup the sequence of operations you need and sink all data processed easily. Also, you may use the tools provided to create variations of the same pipeline, with minor changes.
+
+# Overview
+EasyPype will offer you:
+
+  - Easy and flexibe way to define a set of operations and the correct order to execute them.
+  - Multiprocessing execution of your operations.
+  - Extensible code, so you can add new features easily.
+
+
+## Quick start
+First, you must install EasyPype:
+```
+pip install easypype
+```
+
+Then, create a new python file and import it:
+```
+import easypype as ep
+```
+
+In order to understand how EasyPype will help you, let's take a look at this code snippet:
+```
+import easypype as ep
+
+pipe = ep.PipeBuilderConcrete().command(ep.Sum(2)).build()
+mySink = ep.ConcreteSink()
+mySink.collect([1, 2, 3])
+pipe.do(mySink)
+```
+
+Basically, EasyPype uses four modules:
+1. "command", it has the Command class, the generic pipe operation.
+2. "pipe", it holds classes related to pipe logic: Pipe, a command that executes a given list of commands and PipeBuilder, the entity responsible to create a Pipe object. 
+3. "sink", it knows the Sink class, a basic data holder.
+4. "log", it gives you a simple configured logger using "logging" from python.
+    
+Hence, you can:
+- Load data
+```
+mySink = ep.ConcreteSink()
+mySink.collect([1, 2, 3])
+```
+- Setup operations
+```
+pipe = ep.PipeBuilderConcrete().command(ep.Sum(2)).build()
+```
+- Run pipeline
+```
+pipe.do(mySink)
+```
+
+### Adding custom commands
+By default, EasyPype has a command called Sum that iterates an iterable object and increases each register by some amount. However, you can easily define your own command:
+```
+import easypype as ep
+
+class Multiplier(ep.Command):
+
+    def __init__(self, amount):
+        self.amount = amount
+
+    def multiply(self, sink: ep.Sink):
+        return [i * self.amount for i in sink.data]
+
+    def do(self, sink: ep.Sink):
+        return self.multiply(sink)
+        
+pipe = ep.PipeBuilderConcrete().command(Multiplier(2)).build()
+mySink = ep.ConcreteSink()
+mySink.collect([1, 2, 3])
+pipe.do(mySink)
+print(mySink.data)
+```
+
+Commands **need** four things to work:
+1. Extends Command class.
+2. Implement do(self, sink: ep.Sink).
+3. Return the data after the operation is completed.
+
+Keep in mind that the Sink will collect all returned values.
+
