@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyquesta/__init__.py
+pyquesta/pyquesta.py
+pyquesta.egg-info/PKG-INFO
+pyquesta.egg-info/SOURCES.txt
+pyquesta.egg-info/dependency_links.txt
+pyquesta.egg-info/requires.txt
+pyquesta.egg-info/top_level.txt
+pyquesta/dpi/sv_conduit.c
+pyquesta/dpi/sv_conduit.h
+pyquesta/makefiles/pyquesta.mk
+scripts/gen_svconduit_pkgs
+scripts/pyquesta-config
