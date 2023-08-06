@@ -1,0 +1,27 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+name="pyvatepi"
+url = "https://read_only_pyvatepi:crNaMXATR-qmMydgGS9T@gitlab.com/api/v4/projects/25835264/packages/pypi/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+flake8-docstrings = "*"
+yapf = "*"
+pylint = "*"
+ipykernel = "*"
+pre-commit = "*"
+version-update = {version = "*", index = "pyvatepi"}
+twine = "*"
+build = "*"
+
+
+[packages]
+pyyaml = "*"
+
+[requires]
+python_version = "${python_version}"
