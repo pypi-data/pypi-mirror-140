@@ -1,0 +1,15 @@
+README.md
+README.rst
+pyproject.toml
+setup.py
+./event_metrics/__init__.py
+./event_metrics/connection.py
+./event_metrics/exceptions.py
+./event_metrics/query.py
+./event_metrics/utils.py
+event_metrics/__init__.py
+event_metrics.egg-info/PKG-INFO
+event_metrics.egg-info/SOURCES.txt
+event_metrics.egg-info/dependency_links.txt
+event_metrics.egg-info/requires.txt
+event_metrics.egg-info/top_level.txt
