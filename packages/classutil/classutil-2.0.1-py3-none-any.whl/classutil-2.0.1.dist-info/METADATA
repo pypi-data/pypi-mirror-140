@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: classutil
+Version: 2.0.1
+Summary: Classutil scraper for UNSW.
+Home-page: https://github.com/lecafard/classutil
+Author: tom nguyen
+Author-email: hi@tomn.me
+License: MIT
+Keywords: unsw classutil scraper
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: python-dateutil
+Requires-Dist: beautifulsoup4
+
+classutil scraper
+=================
+
+My attempt at a [classutil](http://classutil.unsw.edu.au). It downloads the current UNSW class
+allocations into a JSON file.
+
+## Installation
+```bash
+# optional: use virtualenv
+virtualenv -p python3 venv
+. venv/bin/activate
+
+pip3 install -r requirements.txt
+```
+## Run
+```sh
+python -m classutil output.json
+```
+
+The options are configurable, run with `--help` for more options.
+
+
+## Library Usage
+```py3
+from classutil import scrape
+
+# Scrape data
+# Arguments don't need to be specified as these are the defaults.
+data = scrape(
+	root="https://classutil.unsw.edu.au",
+	concurrency=1,
+	logging=False)
+```
+
+
