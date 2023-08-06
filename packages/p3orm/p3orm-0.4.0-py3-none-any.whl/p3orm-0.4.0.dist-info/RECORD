@@ -1,0 +1,10 @@
+p3orm/__init__.py,sha256=enFbXiepl6BqHBMRMChJbRnqv8gdk6KVHoZJhnqXUGc,242
+p3orm/core.py,sha256=1GSb5CP_0rLFEtUl90PuDFWgBDAepJp5ij0NtTG60bA,3974
+p3orm/exceptions.py,sha256=wArIIv3Gk1EKmxrmsCMuBgWf3SZQonK_qsUlBqqYJck,546
+p3orm/table.py,sha256=hqCIuaUGEadhwNFBrRh2-tUKhXFAtM6UvwHMkwlC_G4,14870
+p3orm/types.py,sha256=6G-oCEs7-dU7ArfKvMCISVudeXxTDadtvVSF1X2JPHk,166
+p3orm/utils.py,sha256=XFbio6mZ8o7l11QrgwrACen0meUN9UxK7_z22jMyqnw,1692
+p3orm-0.4.0.dist-info/LICENSE,sha256=H9k0MV72efT98Qv8PdDw6ABcu6c1lGfXgzg92DDfUvU,1082
+p3orm-0.4.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+p3orm-0.4.0.dist-info/METADATA,sha256=dGw1Mm2U973U5rU9tXAouvG49njCwqyY6UDQ81KHHO0,3797
+p3orm-0.4.0.dist-info/RECORD,,
