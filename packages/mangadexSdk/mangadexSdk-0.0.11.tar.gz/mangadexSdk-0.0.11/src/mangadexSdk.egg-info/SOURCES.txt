@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mangadexSdk/__init__.py
+src/mangadexSdk/constants.py
+src/mangadexSdk/mangaDex.py
+src/mangadexSdk/requestTypes.py
+src/mangadexSdk/responseTypes.py
+src/mangadexSdk/serializable.py
+src/mangadexSdk.egg-info/PKG-INFO
+src/mangadexSdk.egg-info/SOURCES.txt
+src/mangadexSdk.egg-info/dependency_links.txt
+src/mangadexSdk.egg-info/top_level.txt
