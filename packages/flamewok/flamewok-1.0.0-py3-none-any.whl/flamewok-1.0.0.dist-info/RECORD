@@ -1,0 +1,12 @@
+flamewok/__init__.py,sha256=EQRhqw1QE2sNrgiO-YF7ySzMoHXYRfHNWaGDbLkGVqk,57
+flamewok/__main__.py,sha256=BGTEeycF2h38IyxKtyb3dG2CpKSBCq8DXJMatm4SdPg,389
+flamewok/color.py,sha256=JOTc0n-VZYDwcpc9UMozW6HLEady4FpEZ6nLb4Ol_pM,2314
+flamewok/form.py,sha256=gVUNsifizppAJ6fx5xHE6SEIamfkTX_9qa7UqulfkLA,2015
+flamewok/menu.py,sha256=d5qnhxIpFpP8JuFEIExnxJGSeGA5Nv9Ok96uSKNRlX4,5180
+flamewok/settings.py,sha256=QZvz1lxfG2PFm6BHRyzmZ4DWoekh4aNZ-_1g1ONL5cM,395
+flamewok/validators.py,sha256=qghJIipJfYqQQmLhhIkRdiIvtC0aXV0MHAO1O-cXzMA,636
+flamewok-1.0.0.dist-info/METADATA,sha256=80-NkvurVhMvBJ3s6TVcp4cFdw1SVdQEUMq7wfwWuqs,1471
+flamewok-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flamewok-1.0.0.dist-info/entry_points.txt,sha256=TM3piyTh-uXp-EmebBpEEn23Qr3f58ifnMBRwFXw8sY,55
+flamewok-1.0.0.dist-info/top_level.txt,sha256=aD5nE5kJ5VTql2ZiCE6-wxQ6xbXkG3UiToGp5vJiM9M,9
+flamewok-1.0.0.dist-info/RECORD,,
