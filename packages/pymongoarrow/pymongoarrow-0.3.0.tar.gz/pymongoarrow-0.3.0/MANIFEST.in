@@ -1,0 +1,25 @@
+include README.rst
+include LICENSE
+include build-libbson.sh
+include pyproject.toml
+
+exclude THIRD-PARTY-NOTICES
+exclude release.sh
+exclude addtags.py
+exclude benchmark.py
+exclude .flake8
+
+graft pymongoarrow
+
+recursive-exclude test *
+recursive-exclude docs *
+
+global-exclude *.cpp
+global-exclude *.dylib
+global-exclude *.so.*
+global-exclude *.so
+global-exclude *.dll
+global-exclude *.pyd
+global-exclude *.pyc
+global-exclude .git*
+global-exclude .DS_Store
