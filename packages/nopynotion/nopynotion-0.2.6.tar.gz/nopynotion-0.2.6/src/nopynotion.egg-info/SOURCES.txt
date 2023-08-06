@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/nopynotion/__init__.py
+src/nopynotion.egg-info/PKG-INFO
+src/nopynotion.egg-info/SOURCES.txt
+src/nopynotion.egg-info/dependency_links.txt
+src/nopynotion.egg-info/requires.txt
+src/nopynotion.egg-info/top_level.txt
