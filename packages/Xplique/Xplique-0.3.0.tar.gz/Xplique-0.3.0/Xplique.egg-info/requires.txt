@@ -1,0 +1,15 @@
+tensorflow>=2.1.0
+numpy
+scikit-learn
+scikit-image
+matplotlib
+scipy
+
+[docs]
+mkdocs
+mkdocs-material
+numkdoc
+
+[tests]
+pytest
+pylint
