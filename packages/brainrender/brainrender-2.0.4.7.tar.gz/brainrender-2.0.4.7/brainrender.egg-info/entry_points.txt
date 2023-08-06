@@ -1,0 +1,2 @@
+[console_scripts]
+brainrender-gui = brainrender.gui.__init__:clilaunch
