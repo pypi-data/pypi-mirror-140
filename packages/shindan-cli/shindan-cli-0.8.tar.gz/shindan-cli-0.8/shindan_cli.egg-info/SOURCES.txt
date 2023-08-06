@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+shindan_cli/__init__.py
+shindan_cli/main.py
+shindan_cli/shindan.py
+shindan_cli.egg-info/PKG-INFO
+shindan_cli.egg-info/SOURCES.txt
+shindan_cli.egg-info/dependency_links.txt
+shindan_cli.egg-info/entry_points.txt
+shindan_cli.egg-info/requires.txt
+shindan_cli.egg-info/top_level.txt
