@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-manufacture
+Version: 15.0.20220302.0
+Summary: Meta package for oca-manufacture Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 15.0
+Requires-Dist: odoo-addon-mrp-bom-location (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-mrp-bom-tracking (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-mrp-multi-level (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-mrp-multi-level-estimate (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-mrp-planned-order-matrix (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-mrp-production-putaway-strategy (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-mrp-progress-button (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-mrp-warehouse-calendar (<15.1dev,>=15.0dev)
+
+UNKNOWN
+
