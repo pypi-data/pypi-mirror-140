@@ -1,0 +1,109 @@
+[query]
+subtypes = ["neutron", "xray"]
+
+[[query.extras]]
+field = "rcsb_accession_info.has_released_experimental_data"
+op_str = "=="
+val = "Y"
+
+[[query.extras]]
+field = "rcsb_entry_info.selected_polymer_entity_types"
+op_str = "=="
+val = "Protein (only)"
+
+[query.xray]
+resolution = 1.1
+label = "X-ray"
+
+[[query.xray.extras]]
+field = "exptl.method"
+op_str = "=="
+val = "X-RAY DIFFRACTION"
+
+[query.neutron]
+resolution = 1.5
+label = "neutron"
+
+[[query.neutron.extras]]
+field = "exptl.method"
+op_str = "=="
+val = "NEUTRON DIFFRACTION"
+
+[metadata]
+unpack_lists = true
+delete_unknown_fields = true
+
+# Order of the extras will be the column order
+[[metadata.extras]]
+field = "rcsb_entry_info.molecular_weight"
+type = "float"
+name = "mass, kDa"
+
+[[metadata.extras]]
+field = "rcsb_entry_info.deposited_atom_count"
+type = "int"
+name = "atoms"
+
+[[metadata.extras]]
+field = "rcsb_entry_info.deposited_solvent_atom_count"
+type = "int"
+name = "solv_atoms"
+
+[[metadata.extras]]
+field = "exptl_crystal.density_percent_sol"
+type = "float"
+name = "solv_pct"
+
+[[metadata.extras]]
+field = "exptl_crystal.density_Matthews"
+type = "float"
+name = "d_Matthews"
+
+[[metadata.extras]]
+field = "rcsb_entry_info.entity_count"
+type = "int"
+name = "entities"
+
+[[metadata.extras]]
+field = "rcsb_entry_info.polymer_entity_count_protein"
+type = "int"
+name = "proteins"
+
+[[metadata.extras]]
+field = "rcsb_entry_info.deposited_model_count"
+type = "int"
+name = "models"
+
+[[metadata.extras]]
+field = "rcsb_entry_info.deposited_polymer_monomer_count"
+type = "int"
+name = "monomers"
+
+[[metadata.extras]]
+field = "rcsb_entry_info.deposited_nonpolymer_entity_instance_count"
+type = "int"
+name = "nonpolymer_instances"
+
+[[metadata.extras]]
+field = "rcsb_entry_info.nonpolymer_entity_count"
+type = "int"
+name = "nonpolymer_entities"
+
+[[metadata.extras]]
+field = "exptl_crystal_grow.pH"
+type = "float"
+name = "pH"
+
+[find]
+special_point_radius = 3.0
+
+[plot]
+# See https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
+# for an explanation of these parameters used to save the figure.
+# Some possible format values are png, pdf, svg, and eps.
+format = "png"
+dpi = 200
+facecolor = "w"
+edgecolor = "w"
+transparent = false
+pad_inches = 0.1
