@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/skipperz/__init__.py
+src/skipperz/__main__.py
+src/skipperz/params.py
+src/skipperz.egg-info/PKG-INFO
+src/skipperz.egg-info/SOURCES.txt
+src/skipperz.egg-info/dependency_links.txt
+src/skipperz.egg-info/requires.txt
+src/skipperz.egg-info/top_level.txt
