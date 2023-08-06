@@ -1,0 +1,16 @@
+example_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_tests/test_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_tests/test_base/test_functions.py,sha256=bcL2aEZLcrX9UZ4Mn1qo0g3WtjBTr6xbagJgABAFZXQ,2270
+example_tests/test_team_sports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_tests/test_team_sports/test_team_sports.py,sha256=aYW1vvLDt_rA_fI11vYWDofbAHHsnsgBkld3V42fFzM,13502
+faux_sure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faux_sure/exceptions.py,sha256=T1yLdTztdIg_1EEF1tKI7y_xMnnam5hPXt552o7mri4,746
+faux_sure/not_db.py,sha256=Kpj1SW-F9wUwB9JNulSktIZloYE2WBx2mlqx7tvP0PI,9326
+faux_sure/recipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faux_sure/recipes/curries.py,sha256=Ed0rtuBkpeCJrlPpHqbI9n3XJCfItu7lk_u4P1BjLiQ,1869
+faux_sure/recipes/sauces.py,sha256=PCytGAKk9qkiL0PXC1JtOLdcfv4Tc1wO2twREZvtsmE,846
+faux_sures-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+faux_sures-0.0.1.dist-info/METADATA,sha256=gzwsQ7dJk5PDL6bxD-fCGru25hFpX4X8z6TFgIOVcvQ,5126
+faux_sures-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+faux_sures-0.0.1.dist-info/top_level.txt,sha256=QMkQHBDGFPPh4711d5iFeDrUCljWXmnVFzeSk2Yt7yE,24
+faux_sures-0.0.1.dist-info/RECORD,,
