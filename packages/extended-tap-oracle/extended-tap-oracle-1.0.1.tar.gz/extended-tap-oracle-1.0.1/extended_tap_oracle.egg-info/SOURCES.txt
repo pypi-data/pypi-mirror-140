@@ -1,0 +1,15 @@
+README.md
+setup.py
+extended_tap_oracle.egg-info/PKG-INFO
+extended_tap_oracle.egg-info/SOURCES.txt
+extended_tap_oracle.egg-info/dependency_links.txt
+extended_tap_oracle.egg-info/entry_points.txt
+extended_tap_oracle.egg-info/requires.txt
+extended_tap_oracle.egg-info/top_level.txt
+tap_oracle/__init__.py
+tap_oracle/db.py
+tap_oracle/sync_strategies/__init__.py
+tap_oracle/sync_strategies/common.py
+tap_oracle/sync_strategies/full_table.py
+tap_oracle/sync_strategies/incremental.py
+tap_oracle/sync_strategies/log_miner.py
