@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: magani
+Version: 2022.2.28
+Summary: REST API testing software developed in pure Python
+Home-page: https://github.com/Magani-Stack/magani
+Author: Abimanyu H K
+Author-email: manyu1994@hotmail.com
+License: MIT License : Copyright (c) 2020 Magani-Stack
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Brotli (==1.0.9)
+Requires-Dist: click (==8.0.3)
+Requires-Dist: dash (==2.1.0)
+Requires-Dist: dash-auth (==1.3.2)
+Requires-Dist: dash-bootstrap-components (==1.0.2)
+Requires-Dist: dash-core-components (==2.0.0)
+Requires-Dist: dash-html-components (==2.0.0)
+Requires-Dist: dash-renderer (==1.2.0)
+Requires-Dist: dash-table (==5.0.0)
+Requires-Dist: dataclasses
+Requires-Dist: et-xmlfile (==1.1.0)
+Requires-Dist: Flask (==2.0.2)
+Requires-Dist: Flask-Compress (==1.10.1)
+Requires-Dist: Flask-SeaSurf (==0.3.1)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: importlib-metadata (==4.8.3)
+Requires-Dist: itsdangerous (==2.0.1)
+Requires-Dist: Jinja2 (==3.0.3)
+Requires-Dist: MarkupSafe (==2.0.1)
+Requires-Dist: numpy (==1.21.0)
+Requires-Dist: openpyxl (==3.0.9)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: plotly (==5.5.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2021.3)
+Requires-Dist: retrying (==1.3.3)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tenacity (==8.0.1)
+Requires-Dist: typing-extensions (==4.0.1)
+Requires-Dist: ua-parser (==0.10.0)
+Requires-Dist: Werkzeug (==2.0.2)
+Requires-Dist: zipp (==3.6.0)
+
+# Magani
+
+## API Testing Tool
+
+* Developed in pure Python
+* REST API testing software
+
+
+Create test cases and test in project level as well as test case level. Only Public API is supporting. You can use inside private network without authentication.
+
+
+### Testing methods
+
+* GET : Implemented
+* POST : Implemented
+* PUT : Implemented
+* DELETE : Implemented
+
+### Authorization 
+
+* Basic Auth : Not Implemented
+
+
+### Reports
+
+* Export Project wise CSV file
+* Export Project wise Excel file
+
+### Future Support
+
+* Export All test case results in pdf, docs.
+* Basic auth support
+
+## Setup
+
+To use the software python is required.
+
+Open the terminal & follow the instructions 
+
+Type to install Magani 
+
+    $ pip install magani
+
+Type to run the Magani software
+
+    $ magani
+
+**Note**:
+
+* It will support for Windows & Linux
+
+## Developer Setup
+
+Clone it
+
+    $ git clone https://github.com/Magani-Stack/magani.git
+
+Run
+
+    $ python magani_app.py
+
+### Contribution
+We welcome contributor in the category as follows
+* Contribute Code Changes
+* Contributing by Reviewing Changes
+* Contributing Documentation Changes
+* Contributing Bug Reports
+* Contributing by Testing Releases
+
+
+### Code Style Guide
+Please follow the style of the existing codebase.
+
+For Python code, Magani follows PEP 8 with one exception: lines can be up to 120 characters in length, not 79.
+
+
+### [Learn More](https://github.com/Magani-Stack/docs/blob/master/Tour/Create_Project.md)
+
+ 
+
+ MIT License : Copyright (c) 2020 Magani-Stack
+
