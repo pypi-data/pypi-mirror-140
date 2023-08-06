@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: topsis-aditi-101903527
+Version: 3.0.0
+Summary: This is for TOPSIS evaluation of a dataset
+Home-page: https://github.com/hackapie/topsis-aditi-101903527
+Author: aditi
+Author-email: aaditi_be19@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#topsis
+This is for TOPSIS evaluation of a dataset
+
+#Installation
+```pip install topsis-aditi-101903527```
+
+#How to use
+Open terminal
+Then in the command prompt type in the format 
+python <program file name(.py file)>  <input data file(.xlsx file)> <string of weight > <string of impacts> <result file name>
+
+
+

@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+topsis-aditi-101903527/__init__.py
+topsis-aditi-101903527/__main__.py
+topsis_aditi_101903527.egg-info/PKG-INFO
+topsis_aditi_101903527.egg-info/SOURCES.txt
+topsis_aditi_101903527.egg-info/dependency_links.txt
+topsis_aditi_101903527.egg-info/top_level.txt
