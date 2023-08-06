@@ -1,0 +1,5 @@
+Pygments
+requests
+gitpython
+QScintilla
+PyQt5

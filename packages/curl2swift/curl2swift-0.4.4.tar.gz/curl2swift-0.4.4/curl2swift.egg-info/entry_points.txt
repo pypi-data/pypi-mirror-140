@@ -1,0 +1,3 @@
+[console_scripts]
+curl2swift = curl2swift.__main__:main
+
