@@ -1,0 +1,2 @@
+[console_scripts]
+isprime = isprime.__main__:main
