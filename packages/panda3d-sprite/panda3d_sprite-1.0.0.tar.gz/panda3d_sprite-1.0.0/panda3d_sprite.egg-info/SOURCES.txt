@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+panda3d_sprite/__init__.py
+panda3d_sprite/sprite.py
+panda3d_sprite.egg-info/PKG-INFO
+panda3d_sprite.egg-info/SOURCES.txt
+panda3d_sprite.egg-info/dependency_links.txt
+panda3d_sprite.egg-info/top_level.txt
