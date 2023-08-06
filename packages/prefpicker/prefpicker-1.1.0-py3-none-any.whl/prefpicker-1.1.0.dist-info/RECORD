@@ -1,0 +1,14 @@
+prefpicker/__init__.py,sha256=Nm_U-Szn4G5vwrTNQhIeHDFzJjanho-Y55WRvMg2Stc,313
+prefpicker/__main__.py,sha256=8-D6LzRgVF2PwY7XXs1Fs-Nzy0NPOl04DKMmk18SqsU,282
+prefpicker/main.py,sha256=J79OrU5t-FMf2hgO2wU4Xc3hWoUSuzCcfcfmD2eOaY4,3364
+prefpicker/prefpicker.py,sha256=bhWMKXg5X2N_GibdXtMaUBrizC7yxqE8UUV8ks_Z04U,9138
+prefpicker/test_main.py,sha256=6K4eKDvXwy7ogdj-tOKIfjCJjr0CnQwfFyobjpj4hgk,2644
+prefpicker/test_prefpicker.py,sha256=dh6OMJB-GvdhJdPHOJyvMNqojvRKx-CCCkZDBN-5LZQ,8807
+prefpicker/test_templates.py,sha256=ed8AwLlL8P8JycbS9MfsSF93Q3bUc-A4iRPnbSXd0s0,1444
+prefpicker/templates/browser-fuzzing.yml,sha256=fVwiELR0nKY937quR_dELYR5K5TtSyhdIoIt_edqlLI,18164
+prefpicker-1.1.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+prefpicker-1.1.0.dist-info/METADATA,sha256=CCnV-mUttaehGIYR9pSuUxNVy8Sop7HSBltxRWsTC-0,4859
+prefpicker-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prefpicker-1.1.0.dist-info/entry_points.txt,sha256=qt5HV0klf-ebzHZLnPjaTpjQ2NKu8uAuiSQ05pQbspg,53
+prefpicker-1.1.0.dist-info/top_level.txt,sha256=H-QqR-VZXNwG4ya7wnqx5NA-yua6D9uQuBquP2zCRbc,11
+prefpicker-1.1.0.dist-info/RECORD,,
