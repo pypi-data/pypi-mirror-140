@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: searchlogit
+Version: 0.0.21
+Summary: Extensions for a Python package for                               GPU-accelerated estimation of mixed logit models.
+Home-page: https://github.com/RyanJafefKelly/searchlogit
+Author: Ryan Kelly
+Author-email: ryan@kiiii.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
