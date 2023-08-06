@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: frontmatter-to-csv
+Version: 0.1.0
+Summary: Convert YAML front matter to CSV
+Home-page: https://git.kucharczyk.xyz/lukas/frontmatter-to-csv
+Author: Lukáš Kucharczyk
+Author-email: lukas@kucharczyk.xyz
+License: UNKNOWN
+Project-URL: Bug Tracker, https://git.kucharczyk.xyz/lukas/frontmatter-to-csv/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `frontmatter-to-csv` - Convert YAML front matter to CSV
+
+This simple Python script will convert fields from the YAML front matter to your specified CSV fields.
+Optionally, it can transform some of the fields:
+
+* convert Python lists to comma-joined lists
+* convert varied human-readable durations to unified unit (hours)
+
