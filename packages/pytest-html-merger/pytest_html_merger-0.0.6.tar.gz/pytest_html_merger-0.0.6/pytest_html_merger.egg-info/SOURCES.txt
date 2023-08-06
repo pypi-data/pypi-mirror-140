@@ -1,0 +1,11 @@
+README.md
+setup.py
+pytest_html_merger/__init__.py
+pytest_html_merger/main.py
+pytest_html_merger/version.py
+pytest_html_merger.egg-info/PKG-INFO
+pytest_html_merger.egg-info/SOURCES.txt
+pytest_html_merger.egg-info/dependency_links.txt
+pytest_html_merger.egg-info/entry_points.txt
+pytest_html_merger.egg-info/requires.txt
+pytest_html_merger.egg-info/top_level.txt

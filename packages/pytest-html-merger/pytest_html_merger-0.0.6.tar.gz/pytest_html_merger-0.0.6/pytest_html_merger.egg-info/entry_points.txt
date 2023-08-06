@@ -1,0 +1,3 @@
+[console_scripts]
+pytest_html_merger = pytest_html_merger.main:main
+
