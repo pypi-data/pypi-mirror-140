@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: hyron
+Version: 0.2.1
+Summary: The Network Security Policy Automation Framework
+Home-page: https://github.com/jacobneiltaylor/hyron
+Author: Jacob Neil Taylor
+Author-email: me@jacobtaylor.id.au
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: metaloader
+Requires-Dist: plugable
+Requires-Dist: py-radix
+Requires-Dist: py-mini-racer
+
+Under construction
+==================
+
