@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cubicweb-inlinedit
+Version: 1.6.1
+Summary: Extension of the `reledit` builtin feature
+Home-page: https://forge.extranet.logilab.fr/cubicweb/cubes/cubicweb-inlinedit
+Author: LOGILAB S.A. (Paris, FRANCE)
+Author-email: contact@logilab.fr
+License: LGPL
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: CubicWeb
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: JavaScript
+Requires-Dist: cubicweb (<3.32,>=3.30.0)
+Requires-Dist: cwtags (<1.2.3)
+
+Summary
+-------
+
+Extension of the `reledit` builtin feature.
+
+Supports composite entity edition, along with a new
+'edit-related-entity' view.
+
+

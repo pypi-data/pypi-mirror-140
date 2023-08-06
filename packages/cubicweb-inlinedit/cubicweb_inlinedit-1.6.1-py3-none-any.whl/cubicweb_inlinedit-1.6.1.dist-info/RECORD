@@ -1,0 +1,15 @@
+cubicweb_inlinedit/__init__.py,sha256=X0qPfwzWVrPDP8siF2Z3F1yrJw4lj92H9y3oX2rW6lw,90
+cubicweb_inlinedit/__pkginfo__.py,sha256=6g-Qm1x7MHC83K6Wq0rrV6tqt3dyn_76YT3ncZnHKfg,692
+cubicweb_inlinedit/data/cubes.inlinedit.js,sha256=HaoxN2eGmJK8hSiNZhNoF96pUA4RE3_oq3iOCSg8sMI,3793
+cubicweb_inlinedit/i18n/en.po,sha256=PczXiFFfvJJV0QriryPaFF2YjD8LhPRe3XAGcF-kLP0,203
+cubicweb_inlinedit/i18n/es.po,sha256=PczXiFFfvJJV0QriryPaFF2YjD8LhPRe3XAGcF-kLP0,203
+cubicweb_inlinedit/i18n/fr.po,sha256=PczXiFFfvJJV0QriryPaFF2YjD8LhPRe3XAGcF-kLP0,203
+cubicweb_inlinedit/migration/postcreate.py,sha256=pEEiSkpVUP2LUUi3yk314xW-3bOUzdN5hV4wyvONczs,1069
+cubicweb_inlinedit/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cubicweb_inlinedit/views/controler.py,sha256=rlMjgoj91jsDZ8DGxvdy78CPjU8SBBXPTDXI-Fb9hKM,3990
+cubicweb_inlinedit/views/reledit.py,sha256=2bBTIQ3KaeLj8u4sWGnZr6ruTKXFSnywmoXsdB6mO1A,24041
+cubicweb_inlinedit-1.6.1.dist-info/METADATA,sha256=v3UVK_I02xI3KvB8HdY_dNUczbPYwpVcI3ukTM6_x10,679
+cubicweb_inlinedit-1.6.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cubicweb_inlinedit-1.6.1.dist-info/entry_points.txt,sha256=TwRRZn8oxH4l7WVj6QMgAp_6jqcPRekaf6DedfH_jEM,49
+cubicweb_inlinedit-1.6.1.dist-info/top_level.txt,sha256=HnalWXpjMjZJfHiriched6WIi5RuLTCtI5FMHAzRbcw,19
+cubicweb_inlinedit-1.6.1.dist-info/RECORD,,
