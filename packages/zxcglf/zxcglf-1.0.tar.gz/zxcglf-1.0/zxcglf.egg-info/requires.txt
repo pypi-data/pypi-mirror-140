@@ -1,0 +1,7 @@
+datetime
+pyautogui
+pywin32
+pandas
+openpyxl
+opencv-python
+borax
