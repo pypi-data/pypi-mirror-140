@@ -1,0 +1,7 @@
+README.md
+setup.py
+BeiChenWordtokenizer.egg-info/PKG-INFO
+BeiChenWordtokenizer.egg-info/SOURCES.txt
+BeiChenWordtokenizer.egg-info/dependency_links.txt
+BeiChenWordtokenizer.egg-info/entry_points.txt
+BeiChenWordtokenizer.egg-info/top_level.txt

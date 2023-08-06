@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: BeiChenWordtokenizer
+Version: 2.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+Maintainer: 
+Maintainer-email: 
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
