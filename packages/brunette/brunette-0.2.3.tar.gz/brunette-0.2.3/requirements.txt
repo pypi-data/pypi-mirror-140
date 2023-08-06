@@ -1,0 +1,5 @@
+setuptools
+wheel
+# Do not pin this one, leave black version up to user
+black>=21.5b1
+click
