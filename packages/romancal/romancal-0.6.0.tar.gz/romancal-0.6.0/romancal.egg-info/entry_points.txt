@@ -1,0 +1,2 @@
+[stpipe.steps]
+romancal = romancal.stpipe.integration:get_steps

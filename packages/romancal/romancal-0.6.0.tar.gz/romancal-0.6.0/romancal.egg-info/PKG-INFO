@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: romancal
+Version: 0.6.0
+Summary: Library for calibration of science observations from the Nancy Grace Roman Space Telescope
+Home-page: https://github.com/spacetelescope/romancal
+Author: Roman calibration pipeline developers
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://github.com/spacetelescope/romancal/issues
+Project-URL: Documentation, https://roman-pipeline.readthedocs.io/en/stable/
+Project-URL: Source Code, https://github.com/spacetelescope/romancal
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE
+
+Library for calibration of science observations from the Nancy Grace Roman Space Telescope
+
