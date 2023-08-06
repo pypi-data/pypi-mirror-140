@@ -1,0 +1,64 @@
+# -*- coding: utf-8 -*-
+#
+#   Star Trek: Interstellar Transport
+#
+#                                Written in 2021 by Moky <albert.moky@gmail.com>
+#
+# ==============================================================================
+# MIT License
+#
+# Copyright (c) 2021 Albert Moky
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+# ==============================================================================
+
+import weakref
+from typing import Optional
+
+from ..types import Address
+
+from .hub import Hub
+from .channel import Channel
+from .delegate import ConnectionDelegate as Delegate
+from .base_conn import BaseConnection
+
+
+class ActiveConnection(BaseConnection):
+    """ Active connection for client """
+
+    def __init__(self, remote: Address, local: Optional[Address], channel: Channel, delegate: Delegate, hub: Hub):
+        super().__init__(remote=remote, local=local, channel=channel, delegate=delegate)
+        self.__hub_ref = weakref.ref(hub)
+
+    @property
+    def hub(self) -> Hub:
+        return self.__hub_ref()
+
+    @property  # Override
+    def channel(self) -> Optional[Channel]:
+        sock = self._get_channel()
+        if sock is None or not sock.opened:
+            if self._get_state_machine() is None:
+                # closed (not start yet)
+                return None
+            # get new channel via hub
+            sock = self.hub.open(remote=self._remote, local=self._local)
+            assert sock is not None, 'failed to open channel: %s, %s' % (self._remote, self._local)
+            self._set_channel(channel=sock)
+        return sock
