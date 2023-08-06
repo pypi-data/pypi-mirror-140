@@ -1,0 +1,10 @@
+CloudComputing/__init__.py,sha256=yDD8hLcYDn9uk5wA1tCcA8LJaQgEgHeZnT4k_mS0PwE,722
+CloudComputing/cloud_storage.py,sha256=hUw7Q_9qCDYYgtowWB7tVGhSNnwsor9j77H5BtWu4Ao,1744
+CloudComputing/config.py,sha256=QNelyLNk_ZainXwyKHzDOjR5aikunUpOEBM7GIzIlKA,4182
+CloudComputing/remote_exec.py,sha256=G1TIWtNE7PlgQ0b2kv6y3qJZWm7UVocoh8XKG_wNJ8c,1913
+CloudComputing/vars.py,sha256=54i-S9oW_MkdtmXTx0fKDlsy1ebcBe-uuinLt0RMhN0,302
+CloudComputing-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+CloudComputing-0.1.1.dist-info/METADATA,sha256=aplQWtnuOglNUOlr1BaPALj80TikWUU3WEOqZqmyR44,714
+CloudComputing-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CloudComputing-0.1.1.dist-info/top_level.txt,sha256=alw8CTLenPjdaPcq5kdX2LdvAldtpXWOJTC6EdRjkVg,15
+CloudComputing-0.1.1.dist-info/RECORD,,
