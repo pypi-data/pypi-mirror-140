@@ -1,0 +1,10 @@
+pi_screencontrol_webthing/__init__.py,sha256=bF8Z_pZ0EnPCOj2S8OjDAhVL4vzASmif4WwLz9t1ktA,1517
+pi_screencontrol_webthing/app.py,sha256=gz494xRJtpe691gUZYXHBv7KuysRIje6IKs4783hCb8,5384
+pi_screencontrol_webthing/screen.py,sha256=ZQfe0RqZtqdVXhcguc-hPEH7Qj9cPYETjXqJcD0QBkg,2262
+pi_screencontrol_webthing/screen_webthing.py,sha256=tIOOQx0CJZ0ReYihrL5xVC_cS1ZQ3UX4uSUxzRy4meE,2496
+pi_screencontrol_webthing-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pi_screencontrol_webthing-0.0.1.dist-info/METADATA,sha256=8BU0nbWeiLDCG0BnRY-XLHa-rlUrhxzjL_NvtYBhi1I,677
+pi_screencontrol_webthing-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pi_screencontrol_webthing-0.0.1.dist-info/entry_points.txt,sha256=jb-pCsE8Ed3ld3Fmkvn0R2df21nbOYqjeYXcMnGyu3U,59
+pi_screencontrol_webthing-0.0.1.dist-info/top_level.txt,sha256=fcx7dGCnkFQNa5jhpAhQo-r2IVEO66JCTTYGaR6IfaA,26
+pi_screencontrol_webthing-0.0.1.dist-info/RECORD,,

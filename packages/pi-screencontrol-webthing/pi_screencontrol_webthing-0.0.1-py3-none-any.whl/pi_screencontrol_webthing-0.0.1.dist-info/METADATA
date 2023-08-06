@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pi-screencontrol-webthing
+Version: 0.0.1
+Summary: A web connected screen control of Raspberry Pi
+Home-page: https://github.com/grro/pi_screencontrol_webthing
+Author: Gregor Roth
+Author-email: gregor.roth@web.de
+License: MIT
+Keywords: webthings,screen,activate,WS,raspberry,pi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
+Requires-Dist: webthing (==0.15.0)
+
+# pi_screencontrol_webthing
+A web connected screen control of Raspberry Pi
+
+
