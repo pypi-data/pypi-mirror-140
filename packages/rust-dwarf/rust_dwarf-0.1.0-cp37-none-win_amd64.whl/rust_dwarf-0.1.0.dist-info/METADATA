@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: rust_dwarf
+Version: 0.1.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# xml_dwarf
+Mining xml fast
+
+```python
+dwarf = Dwarf.from_glob(".../pmc_xml/PMC003xxxxxx/PMC31*.xml", "PMC",20)
+```
+
+Define the mining detail as xpath query pattern, chaining multistage mining is well supported.
+```python
+dwarf.find_one('article-meta > article-id[pub-id-type=pmid]' , "pmid")
+dwarf.find_one("abstract", "abstract").find_many("p", "paragraph")
+
+# mining stage can be chained to longer detials
+reference = dwarf.find_one("ref-list", "ref_list").find_many("ref","reference")
+reference.find_one("pub-id[pub-id-type=pmid]", "ref_id")
+reference.find_one("pub-id[pub-id-type=doi]", "doi")
+ref_name = reference.find_many("name", "ref_name")
+ref_name.find_one("surname", "ref_surname")
+```
+
+```python
+dwarf.set_necessary("pmid")
+dwarf.create_children()
+```
+
+Mining start
+```python
+result = dwarf()
+```
+
+See result
+```python
+result.child_df().head(2)
+```
+
+See child result
+```python
+result['ref_list'].child_df().head()
+```
