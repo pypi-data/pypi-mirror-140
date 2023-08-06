@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/pyate/__init__.py
+src/pyate/basic.py
+src/pyate/combo_basic.py
+src/pyate/cvalues.py
+src/pyate/term_extraction.py
+src/pyate/term_extraction_pipeline.py
+src/pyate/term_extractor.py
+src/pyate/weirdness.py
+src/pyate.egg-info/PKG-INFO
+src/pyate.egg-info/SOURCES.txt
+src/pyate.egg-info/dependency_links.txt
+src/pyate.egg-info/requires.txt
+src/pyate.egg-info/top_level.txt
