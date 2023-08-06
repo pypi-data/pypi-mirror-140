@@ -1,0 +1,528 @@
+Metadata-Version: 2.1
+Name: better-cryptography
+Version: 0.4.5
+Summary: A module for encryption and information security operations.
+Home-page: UNKNOWN
+Author: Wyatt Garrioch
+Author-email: w.garrioch456@gmail.com
+License: UNKNOWN
+Keywords: python,encryption,AES,information security
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+
+# Contents
+ - `better-cryptography` provides a simplified interface for encrypting files, folders, and strings, and a simplified interface for generating ciphering objects across multiple cryptography libraries. The library also provides various functions and methods used in cryptography and information security.
+
+
+ # FAQ
+
+  ## How do I install and import the package?
+  Install through the `pip3 install better-cryptography` command. Import via `import better_cryptography` or `from better_cryptography import ...`.
+
+
+  ## How do I report a bug?
+  Email me at w.garrioch456@gmail.com.
+
+# Syntax
+  
+
+   - `hash_(StringToHash:str, hash_code:str, return_type="hex")`
+
+     A function for simplifed interaction with the inbuilt `hashlib` module.
+    
+     - #### Parameters:
+
+       - `StringToHash`: The string to be hashed by the function.
+
+       - `hash_code`: A string indicating which type of hash to use. 
+      
+         - Currently support hash codes are:
+           
+           - SHA 512; hash_code = "SHA512"
+
+           - SHA 256; hash_code = "SHA256"
+
+           - SHA 224; hash_code = "SHA224"
+
+           - MD5; hash_code = "MD5"
+
+       - `return_type`: An optional parameter specifying what to return the hash in. Defaults to hexadecimal. To change to bytes, set `return_type` to "bytes".
+
+     Returns: either a hexadecimal or byte hash of `StringToHash`.
+
+   - `random_choice(given_list)` 
+    
+     A function to randomly select an item from a list.
+
+     - Parameters:
+       - `given_list`: The list that the function is choosing from.
+
+     Returns: an item randomly chosen from the list.
+
+   - `compare_hashes(hash1:str, hash2:str)`
+
+     A function to compare 2 hashes/strings, in such a way to reduce the chance of a successful timing attack.
+
+     - Parameters:
+
+         - `hash1`: The first string to be compared to.
+
+         - `hash2`: The string to compare to `hash1`.
+
+     Returns: A boolean value based on whether the two strings are identical.
+
+   - `token_generate(size:int, return_type="HEX")`
+
+     A function to generate a token of n `length` in type `return_type`.
+
+     - Parameters
+
+       - `size`: an integer indicating how long the returned token should be.
+       
+       - `return_type`: A string indicating what to return the token as. Supported modes are `"URL"`, `"HEX"`, and `"BYTES"`. Defaults to hexadecimal.
+
+     Returns: a random token as either a hexadecimal string, URL-safe string, or bytes.
+     
+   - `gen_random_password(length:int)`
+       
+     A function to generate random passwords of n `length`.
+
+     - Parameters
+         
+       - `length`: The length of the password.
+
+     Returns: a password of the specified length.
+
+   - `sec_delete(file_path, random_fill = True, null_fill = True, passes = 35)`
+       
+     A function to securely delete a file.
+
+     - Parameters
+
+       - `file_path`: The path of the file as a string.
+
+       - `random_fill`: Boolean value; indicates whether or not to overwrite the file with random data. Defaults to True.
+
+       - `null_fill`: Boolean value; indicates whether or not to overwrite the file with null characters. Defaults to True.
+
+       - `passes`: Integer; indicates how many times to overwrite the file with random/null data. Defaults to 35.
+
+     Returns: an integer value indicating if the function executed.
+
+   - `delete(path:str)`
+
+     A file deletion function.
+
+     - Parameters:
+       
+       - `path`: The path of the file to be deleted.
+
+     Returns: an integer indicating if the the function successfully executed.
+
+   - # Ciphers Class
+
+     - The Ciphers class provides a simplifed way of doing various ciphering operations. 
+       
+       Such functions include RSA string encryption, RSA key pair generation, symmetric key generation, encryption/decryption of files with AES or Blowfish in CFB mode, and encryption/decryption of files with the `cryptography` module's `Fernet` class.
+
+     - ## Ciphers Methods
+
+       - ### Miscellenious Methods
+
+         These methods are utility functions, such as key generation and encryption password changing.
+
+         - `generate_symmetric_key(salt=None)`
+           
+           A method for generating a symmetric key with the class `password` attribute and argument `salt` using PBKDF2. Will return a tuple of `(key, salt)` if the salt is not provided.
+
+           - Parameters
+
+             - `salt`: an optional argument for the salt to be used during key generation. Will default to 32 securely generated bytes if salt is not provided.
+
+           Returns: the generated key.
+
+         - `generate_FerNet_key()`
+
+           Method for generating a FerNet key. Takes no arguments, and returns the key in bytes format.
+        
+         - `change_encrypting_password(old_password:str, new_password:str)`
+           
+           Method for changing the classes' `password` attribute.
+
+           - Parameters:
+             
+             - `old_password`: The old password. Must match the class `password` attribute.
+
+             - `new_password`: The password the replace the class `password` attribute with.
+
+           Returns: 1, if the `old_password` parameter does not match the class `password` attribute.
+           Returns 0 if the password change was successful.
+
+       - ### RSA functions
+         These functions are for RSA ciphering operations and include string encryption/decryption and RSA key pair generation.
+
+         - `generate_RSA_keys()`
+
+           A method for generating a RSA public/private key pair. 
+           
+           Takes no arguments and returns the key pair in a tuple `(public_key, private_key)`.
+
+         - `RSA_encrypt_string(public_key, str_)`
+
+           A method for encrypting the `str_` parameter with RSA using the `public_key` parameter.
+
+           - Parameters:
+
+             - `public_key`: The public key of a RSA key pair.
+
+             - `str_`: The string to be encrypted.
+
+           Returns: the encrypted string, in bytes format.
+
+         -  `RSA_decrypt_str(private_key, encrypted_str:bytes)`
+           
+             A method for decrypting an encrypted bytestring that was encrypted using RSA, given the private key of a RSA key pair.
+
+             - Parameters:
+
+               - `private_key`: The private key of a RSA key pair.
+
+               - `encrypted_str`: The encrypted bytestring.
+
+             Returns: The decrypted string.
+         
+       - ### AES functions
+
+         These functions include file and string encryption/decryption in AES CFB.
+
+         - `AES_encrypt_file(path)`
+
+           A method for encryption of a file or folder with the AES encryption alogorithm in CFB mode.
+
+           - Parameters:
+
+             - `path`: The path to the file or folder to be encrypted, in string format.
+
+           Returns:
+             
+             0: File encryption successful.
+
+             1: File path is None.
+
+             2: File path is invalid.
+
+             3: Program does not have permission to access file.
+
+             4: The file or folder is hidden.
+
+             5: The file is part of a Linux root filesystem.
+
+             6: An encrypted file marker was detected during encryption.
+
+         - `AES_decrypt_file(path)`
+
+           A method for decrypting an already encrypted file or folder using AES in CFB mode.
+
+           - Parameters:
+
+             - `path`: The path to the encrypted file or folder, in string format.
+
+           Returns:
+
+           0: File decryption successful.
+
+           1: File path is None.
+
+           2: File path is invalid.
+
+           3: Program does not have permission to access file.
+
+           4: File is hidden.
+
+           5: File is part of Linux root filesystem.
+
+           6: File was encrypted with a different key.
+
+           7: File was not encrypted.
+
+           8: File was encrypted with a different alogrithm.
+
+         - `AES_encrypt_string(string_to_encrypt:bytes, key=None)`
+
+           A method for encrypting a string with AES in CFB mode.
+
+           - Parameters:
+
+             - `string_to_encrypt`: The string to be encrypted, in bytes format.
+
+             - `key`: The key to use during encryption. If not provided, it defaults to None and generates its own key.
+
+           Returns: A tuple of `(ciphered_string, intialization_vector, key)`
+
+         - `AES_decrypt_string(encrypted_string:bytes, key_bytes, iv:bytes)`
+
+           A method for decrypting string using AES in CFB mode.
+
+           - Parameters:
+
+             - `encrypted_string`: The string to be decrypted, in bytes format.
+
+             - `key`: The key used to encrypt the string. Will raise `NoKeyError` if None.
+
+             - `iv`: The intialization vector used in the cipher. Will raise `InvalidCipherArgument` if None. 
+
+           Returns: The decrypted string in bytes format.
+
+
+       - ### Blowfish functions
+
+         These functions include file and string encryption/decryption in Blowfish CFB.
+
+         - `BLO_encrypt_file(path:str)`
+
+           A method for encryption of a file or folder with the Blowfish alogorithm in CFB mode.
+
+           - Parameters:
+
+             - `path`: The path to the file or folder, in string format.
+
+           Returns:
+
+             0: File encryption successful.
+
+             1: File path is None.
+
+             2: File path is invalid.
+
+             3: Program does not have permission to access file.
+
+             4: File is hidden.
+
+             5: File is part of a Linux root filesystem.
+
+             6: File encryption marker detected during encryption.
+
+         - `BLO_decrypt_file(path:str)`
+
+           A method for decrypting an already encrypted file or folder using the Blowfish Encryption algorithm in CFB mode.
+
+           - Parameters:
+
+             - `path`: The path of the file, in string format.
+
+           Returns:
+
+             0: File decryption successful.
+
+             1: File path is None.
+
+             2: File path is invalid.
+
+             3: Program does not have permission to access file.
+
+             4: File is hidden. 
+
+             5: File is a part of a Linux root filesystem.
+
+             6: File was encrypted with a different key.
+
+             7: File was not encrypted.
+
+             8: File was encrypted using a different alogrithm.
+
+         - `BLO_encrypt_string(string_to_encrypt:bytes, key=None)`
+
+           A method to encrypt a string using the Blowfish encryption algorithm in CFb mode.
+
+           - Parameters:
+
+             - `string_to_encrypt`: The string to be encrypted, in bytes format.
+
+             - `key`: The key to be used during encryption. If not provided, it defaults to None and generates a new key.
+
+           Returns: a tuple of `(ciphered_string, intialization_vector, key)`.
+
+         - `BLO_decrypt_string(encrypted_string:bytes, key:bytes, iv:bytes)`
+
+           A method for decrypting an already encrypted string using the Blowfish encryption alogorithm in CFB mode.
+
+           - Parameters:
+
+             - `encrypted_string`: The string to be decrypted, in string format.
+
+             - `key`: The key used to encrypt the string. Will raise `NoKeyError` if the key is None.
+
+             - `iv`: The intialization vector used in the cipher. Will raise `InvalidCipherArgument` if the IV is None.
+
+           Returns: The decrypted string in bytes format.
+
+
+       - ### FerNet functions
+
+         These functions include file and string encryption/decryption using the `cryptography` module's `Fernet` class.
+
+         - `FerNet_encrypt_file(path:str, key:bytes)`
+
+           A method for encryption of a file or folder using the `Fernet` Class.
+
+           - Parameters:
+
+             - `path`: The path to the file or folder, in string format.
+
+             - `key`: The key to be used for encryption.
+
+           Returns:
+
+             0: File encryption successful.
+
+             1: File path is None.
+
+             2: File path is invalid.
+
+             3: Program does not have permission to access file.
+
+             4: File is hidden.
+
+             5: File is part of a Linux root filesystem.
+
+             6: File encryption marker detected during encryption.
+
+         - `FerNet_decrypt_file(path:str, key:bytes)`
+
+           A method for decrypting an already encrypted file or folder using the Blowfish Encryption algorithm in CFB mode.
+
+           - Parameters:
+
+             - `path`: The path of the file, in string format.
+
+             - `key`: The key used to encrypt the file.
+
+           Returns:
+
+             0: File decryption successful.
+
+             1: File path is None.
+
+             2: File path is invalid.
+
+             3: Program does not have permission to access file.
+
+             4: File is hidden. 
+
+             5: File is a part of a Linux root filesystem.
+
+             6: File was encrypted with a different key.
+
+             7: File was not encrypted.
+
+             8: File was encrypted using a different alogrithm.
+
+         - `FerNet_encrypt_string(bstring:bytes, key=None)`
+
+           A method to encrypt a string using the Blowfish encryption algorithm in CFb mode.
+
+           - Parameters:
+
+             - `bstring`: The string to be encrypted, in bytes format.
+
+             - `key`: The key to be used during encryption. If not provided, it defaults to None and generates a new key.
+
+           Returns: a tuple of `(ciphered_string, key)`.
+
+         - `FerNet_decrypt_string(encrypted_string:bytes, key:bytes)`
+
+           A method for decrypting an already encrypted string using the Blowfish encryption alogorithm in CFB mode.
+
+           - Parameters:
+
+             - `encrypted_string`: The string to be decrypted, in string format.
+
+             - `key`: The key used to encrypt the string. Will raise `NoKeyError` if the key is None.
+
+           Returns: The decrypted string in bytes format.
+
+
+   - # Cipher_Constructor Class
+     
+     This class provides a simplified interface for generating cipher objects.
+
+     - ## Methods
+
+       - `intialize_AES_cipher(mode:str, key:bytes, iv=None, nonce=None)`
+
+         Method for generating an AES cipher object from the `pycryptodome` library.
+
+         - Parameters:
+
+           - `mode`: The mode to set the cipher as, in string format.
+
+             Current modes are:
+             
+               - `CFB`
+  
+               - `CBC`
+
+               - `CTR`
+
+               - `ECB`
+
+               - `OFB`
+
+               - `OPENPGP`
+
+               - `CCM`
+
+               - `EAX`
+  
+               - `GCM`
+  
+               - `OCB`
+
+           - `key`: The key to use for the cipher. 
+
+           - `iv` and `nonce`: basic parameters for respective ciphers. If a nonce/IV is needed and is not provided, the library will raise an `InvalidCipherArgument` error.
+
+         Returns: A cipher object of the specified mode, using the specified IV/nonce and encrypting with the specified key.
+        
+       - `intialize_FerNet_cipher(key:bytes)`
+
+         Method for generating a Fernet cipher.
+
+         - Parameters:
+
+           - `key`: The key to intiate the Fernet cipher with.
+
+         Returns: a Fernet cipher object.
+
+   - # Log class
+
+   This class is the `better-cryptography` default logging class. It provides basic write-to files and log file creatiion. Linux native.
+   
+   It requires a username on instantiation.
+
+   - ## Methods
+
+     - `log_exists()`
+       
+       A method for checking if a log file exists. Takes no arguments and returns a boolean value. Will raise an `UnknownFilesystem` error if the OS is not Linux.
+
+     - `create_log()`
+
+       A method for creating a log file in the given users `/home/` directory. Takes no arguements and returns 0. Will raise an `UnknownFilesystem` error if the OS is not Linux.
+    
+     - `audit(keywords:list)`
+
+       Removes lines from a .log file if they contain a word in the `keywords` list. returns 0.  Will raise an `UnknownFilesystem` error if the OS is not Linux.
+
+     - `log(logstring:str)`
+
+       Writes `logstring` to the .log file of the specified user. Will raise an `UnknownFilesystem` error if the OS is not Linux.
+
+     - `change_user(new_user:str)`
+
+       Changes the class `username` attribute to `new_user`.
+
