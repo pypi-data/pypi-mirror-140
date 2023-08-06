@@ -1,0 +1,7 @@
+algotoca/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+algotoca/grafos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algotoca/grafos/coloracao/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algotoca/grafos/coloracao/gulosos.py,sha256=q06YlzaXdwQqhiD6KlnOw1IeTImjH0SDMl9p95hAHN8,9015
+algotoca-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+algotoca-0.1.0.dist-info/METADATA,sha256=vJCb2Ve6qKE9kWF_NADQ5c8ndbK9tgzJHbcv0yxt2Z8,388
+algotoca-0.1.0.dist-info/RECORD,,
