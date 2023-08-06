@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: lightmysql
+Version: 1.1.6
+Summary: The improved-package of pymysql.
+Home-page: https://github.com/Danny-Yxzl/lightmysql
+Author: Yixiangzhilv
+Author-email: mail@yixiangzhilv.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/Danny-Yxzl/lightmysql/issues
+Project-URL: Say Thanks!, https://www.yixiangzhilv.com/
+Project-URL: Source, https://github.com/Danny-Yxzl/lightmysql
+Description: The improved-package of pymysql, made by Yixiangzhilv.
+Keywords: sql mysql pymysql database
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
