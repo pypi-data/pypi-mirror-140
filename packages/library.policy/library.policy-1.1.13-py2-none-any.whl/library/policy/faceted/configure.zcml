@@ -1,0 +1,17 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:faceted="http://namespaces.zope.org/faceted"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="library.policy">
+
+  <include package="eea.facetednavigation" />
+
+  <faceted:view
+    name="faceted-explorer"
+    template="templates/explorer.pt"
+    title="Explorer"
+    permission="zope2.View"
+    class=".explorer.ExplorerView"
+    />
+
+</configure>
