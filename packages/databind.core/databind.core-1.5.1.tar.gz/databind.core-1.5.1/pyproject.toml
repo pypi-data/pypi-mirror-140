@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "databind.core"
+version = "1.5.1"
+description = "Databind is a library inspired by jackson-databind to de-/serialize Python dataclasses. Compatible with Python 3.7 and newer."
+authors = ["Niklas Rosenstein <rosensteinniklas@gmail.com>"]
+license = "MIT"
+readme = "readme.md"
+packages = [{include = "databind/core", from = "src"}]
+
+  [tool.poetry.dependencies]
+  python = "^3.7"
+  Deprecated = "^1.2.12"
+  "nr.util" = ">=0.8.3,<1.0.0"
+  typing-extensions = "^3.10.0"
+
+  [tool.poetry.dev-dependencies]
+  pytest = "*"
+  mypy = "*"
+  types-dataclasses = "*"
+  types-deprecated = "*"
+  types-pkg_resources = "*"
+  types-termcolor = "*"
+
+[tool.slam]
+typed = true
+
+  [tool.slam.test]
+  pytest = "pytest src/"
+  mypy = "MYPYPATH=src mypy src/ --namespace-packages --explicit-package-bases"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
