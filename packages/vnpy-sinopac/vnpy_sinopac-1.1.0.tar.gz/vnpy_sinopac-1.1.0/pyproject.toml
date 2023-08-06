@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "vnpy_sinopac"
+version = "v1.1.0"
+description = "The best trading API - Shioaji gateway with VNPY."
+authors = ["ypochien"]
+license = "MIT"
+readme="README.md"
+repository="https://github.com/ypochien/vnpy_sinopac"
+keywords=["quant","quantitative","investment","trading","algotrading"]
+classifiers=[
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9"
+shioaji= "^0.3.*"
+pandas = "^1.4.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+black = "^22.1.0"
+isort = "^5.10.1"
+
+[tool.poetry.extras]
+pipfile_deprecated_finder = ["pipreqs", "requirementslib", "pip-shims<=0.3.4"]
+requirements_deprecated_finder = ["pipreqs", "pip-api"]
+colors = ["colorama"]
+plugins = ["setuptools"]
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+format = "v{base}"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
