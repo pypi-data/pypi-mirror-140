@@ -1,0 +1,2 @@
+[console_scripts]
+greppo = greppo.cli:wrap_and_run_script

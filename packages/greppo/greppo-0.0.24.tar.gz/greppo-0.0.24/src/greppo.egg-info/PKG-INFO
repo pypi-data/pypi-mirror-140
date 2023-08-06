@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: greppo
+Version: 0.0.24
+Summary: Build responsive web-apps for geospatial applications.
+Home-page: https://greppo.io/
+Author: Adithya Krishnan and Sarma Tangirala
+Author-email: greppomail@gmail.com
+License: "Apache 2"
+Project-URL: Source, https://github.com/greppo-io/greppo
+Project-URL: Documentation, https://docs.greppo.io/
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
