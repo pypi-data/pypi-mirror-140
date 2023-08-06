@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+Topsis_ParthGarg_101903558.egg-info/PKG-INFO
+Topsis_ParthGarg_101903558.egg-info/SOURCES.txt
+Topsis_ParthGarg_101903558.egg-info/dependency_links.txt
+Topsis_ParthGarg_101903558.egg-info/entry_points.txt
+Topsis_ParthGarg_101903558.egg-info/requires.txt
+Topsis_ParthGarg_101903558.egg-info/top_level.txt
+topsis/topsis.py
