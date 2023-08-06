@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+radu_lib/__init__.py
+radu_lib.egg-info/PKG-INFO
+radu_lib.egg-info/SOURCES.txt
+radu_lib.egg-info/dependency_links.txt
+radu_lib.egg-info/top_level.txt
+radu_lib/pack_a/__init__.py
+radu_lib/pack_a/find_index.py
+radu_lib/pack_b/__init__.py
+radu_lib/pack_b/my_factorial.py
