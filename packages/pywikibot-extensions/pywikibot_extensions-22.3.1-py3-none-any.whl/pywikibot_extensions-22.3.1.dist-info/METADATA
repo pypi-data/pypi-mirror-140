@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pywikibot-extensions
+Version: 22.3.1
+Summary: Extends the Pywikibot library
+Home-page: https://github.com/JJMC89/pywikibot-extensions
+License: MIT
+Keywords: bot,mediawiki
+Author: JJMC89
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: pywikibot (>=7.0.0,<8.0.0)
+Project-URL: Repository, https://github.com/JJMC89/pywikibot-extensions
+Description-Content-Type: text/markdown
+
+[![Latest PyPI release](https://img.shields.io/pypi/v/pywikibot-extensions?logo=pypi)](https://pypi.org/project/pywikibot-extensions) ![Latest GitHub release](https://img.shields.io/github/v/release/JJMC89/pywikibot-extensions?logo=github) ![Latest tag](https://img.shields.io/github/v/tag/JJMC89/pywikibot-extensions?logo=git)
+
+![License](https://img.shields.io/pypi/l/pywikibot-extensions?color=blue) ![Python versions](https://img.shields.io/pypi/pyversions/pywikibot-extensions?logo=python)
+
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/JJMC89/pywikibot-extensions/main.svg)](https://results.pre-commit.ci/latest/github/JJMC89/pywikibot-extensions/main) [![CI](https://github.com/JJMC89/pywikibot-extensions/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/JJMC89/pywikibot-extensions/actions?query=workflow%3ACI+branch%3Amain)
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+# pywikibot-extensions
+The pywikibot-extensions library extends the [Pywikibot](https://pywikibot.org) library.
+
+## Installation
+`pip install pywikibot-extensions`
+
