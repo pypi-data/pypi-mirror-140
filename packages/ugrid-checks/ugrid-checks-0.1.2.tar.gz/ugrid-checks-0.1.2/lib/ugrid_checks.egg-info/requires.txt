@@ -1,0 +1,7 @@
+netCDF4
+
+[dev]
+pre-commit
+
+[test]
+pytest>=6.0
