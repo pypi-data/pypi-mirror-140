@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+AgNO3/__init__.py
+AgNO3/__version__.py
+AgNO3/core.py
+AgNO3.egg-info/PKG-INFO
+AgNO3.egg-info/SOURCES.txt
+AgNO3.egg-info/dependency_links.txt
+AgNO3.egg-info/top_level.txt
