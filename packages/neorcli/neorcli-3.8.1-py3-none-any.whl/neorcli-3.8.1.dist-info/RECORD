@@ -1,0 +1,9 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/api.py,sha256=egkNGZpE26rdTU6Q2Q1hUJlW2Z4_paK54e0b0AJqagM,10687
+src/cli.py,sha256=FVsPtUTmye4PvNXb3bbAdDyuK1pR4GPZVQrlXT-jqm0,16613
+neorcli-3.8.1.dist-info/LICENSE,sha256=-NX1DMPQpA9l4zkbZDldVsc7PwAbtSxq0N20ot43h8Q,1066
+neorcli-3.8.1.dist-info/METADATA,sha256=ekVF0zL_Te0ogPD3wabFXIzcStWl4J2_7RH_bzMnmDU,1353
+neorcli-3.8.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+neorcli-3.8.1.dist-info/entry_points.txt,sha256=r5j992oq3OGGPFim_X-DROooM0xgQU3w3i393NnPvNM,41
+neorcli-3.8.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+neorcli-3.8.1.dist-info/RECORD,,
