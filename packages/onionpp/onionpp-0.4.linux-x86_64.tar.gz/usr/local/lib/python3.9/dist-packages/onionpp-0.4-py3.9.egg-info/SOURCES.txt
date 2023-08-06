@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+python_binding.cpp
+setup.py
+onionpp.egg-info/PKG-INFO
+onionpp.egg-info/SOURCES.txt
+onionpp.egg-info/dependency_links.txt
+onionpp.egg-info/not-zip-safe
+onionpp.egg-info/top_level.txt
