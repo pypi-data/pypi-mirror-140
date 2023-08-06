@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: weavenn
+Version: 0.0.2
+Summary: Density-aware k-nearest neighbor graph from cloud points
+Home-page: https://github.com/kerighan/weavenn
+Author: Maixent Chenebaux
+Author-email: max.chbx@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
