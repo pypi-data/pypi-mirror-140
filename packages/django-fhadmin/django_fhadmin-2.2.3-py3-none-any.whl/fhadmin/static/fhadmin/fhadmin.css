@@ -1,0 +1,110 @@
+@media (min-width: 1024px) {
+  #header {
+    flex-wrap: wrap;
+  }
+}
+
+.dashboard #content {
+  width: auto;
+}
+
+.dashboard #content.colMS {
+  margin-right: 0 !important;
+}
+
+#content-related {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 1px; /* contain the margin */
+}
+
+.qp-active #branding h1 {
+  cursor: pointer;
+}
+
+.qp-active #branding h1::after {
+  content: "▲";
+  font-size: 0.6em;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0.5em;
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+.qp-open #branding h1::after {
+  transform: none;
+  top: -0.2em;
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, clamp(225px, 20vw, 350px));
+  gap: 20px;
+}
+
+.group h2 {
+  color: var(--body-quiet-color);
+}
+
+#quickpanel {
+  display: none;
+  line-height: normal;
+  flex-basis: 100%;
+  align-self: stretch;
+}
+
+.qp-open #quickpanel {
+  display: block;
+}
+
+#quickpanel .group h2 {
+  color: var(--body-bg);
+}
+
+#quickpanel .module {
+  background: inherit;
+  color: var(--body-bg);
+}
+
+#quickpanel a {
+  color: var(--secondary) !important;
+}
+
+#quickpanel a.section {
+  color: var(--body-bg) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #quickpanel .group h2,
+  #quickpanel a,
+  #quickpanel a.section {
+    color: var(--body-fg) !important;
+  }
+}
+
+#quickpanel .module,
+#quickpanel th,
+#quickpanel td {
+  border-color: var(--border-color);
+}
+
+#quickpanel .module table th {
+  width: 100%;
+}
+#quickpanel tr:last-child td,
+#quickpanel tr:last-child th {
+  border-bottom: none;
+}
+
+#quickpanel .caption {
+  color: #3b3b3b;
+}
+
+.groups a.addlink {
+  position: relative;
+  right: -10px;
+}
