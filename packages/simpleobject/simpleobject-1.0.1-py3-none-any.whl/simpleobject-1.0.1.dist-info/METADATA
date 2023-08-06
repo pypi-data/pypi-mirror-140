@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: simpleobject
+Version: 1.0.1
+Summary: Simple json serializable object
+Home-page: https://github.com/GabrieleMaurina/simpleobject
+Author: Gabriele Maurina
+Author-email: gabrielemaurina95@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# simpleobject
+Simple json serializable object
+
+### Usage
+```python
+from simpleobject import simpleobject
+from json import dumps
+
+o = simpleobject()
+o.foo = 1
+o.bar = 2
+print(dumps(o)) #{"foo": 1, "bar": 2}
+```
+
