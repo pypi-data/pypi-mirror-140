@@ -1,0 +1,4 @@
+websockets
+apscheduler
+redis
+aiohttp
