@@ -1,0 +1,9 @@
+README.txt
+setup.py
+pyalvarockcl/__init__.py
+pyalvarockcl/saludo.py
+pyalvarockcl.egg-info/PKG-INFO
+pyalvarockcl.egg-info/SOURCES.txt
+pyalvarockcl.egg-info/dependency_links.txt
+pyalvarockcl.egg-info/not-zip-safe
+pyalvarockcl.egg-info/top_level.txt
