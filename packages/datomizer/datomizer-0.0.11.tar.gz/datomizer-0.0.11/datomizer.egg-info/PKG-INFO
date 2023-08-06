@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: datomizer
+Version: 0.0.11
+Summary: Datomize python client
+Home-page: https://datomize.github.io/datomizeSDK
+Author: Liron Cohen
+Author-email: liron.cohen@datomize.com
+License: UNKNOWN
+Project-URL: Documentation, https://datomize.github.io/datomizeSDK
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Datomizer pip package
+## Welcome to Datomize python client
+[Datomizer Docs](https://datomize.github.io/datomizeSDK) <br />
+###Usage Example:
+
+    from datomizer import Datomizer, DatoMapper, DatoTrainer, DatoGenerator
+    
+    datomizer = Datomizer(username=username, password=password)
+    
+    mapper = DatoMapper(datomizer)
+    mapper.discover(df=df, title="Some Title")
+    
+    trainer = DatoTrainer(mapper)
+    trainer.train()
+
+    generator = DatoGenerator(trainer)
+    generator.generate()
+    dato_df = pd.read_csv(generator.get_generated_data_csv())
+
+###Async Usage Example
+
+    from datomizer import Datomizer, DatoMapper, DatoTrainer, DatoGenerator
+    
+    datomizer = Datomizer(username=username, password=password)
+    
+    mapper = DatoMapper(datomizer)
+    mapper.discover(df=df, title="Some Title", wait=False)
+    ...do something...
+    mapper.wait()
+    
+    trainer = DatoTrainer(mapper)
+    trainer.train(wait=False)
+    ...do something...
+    trainer.wait()
+    
+
+    generator = DatoGenerator(trainer)
+    generator.generate(wait=False)
+    ...do something...
+    generator.wait()
+    dato_df = pd.read_csv(generator.get_generated_data_csv())
+
