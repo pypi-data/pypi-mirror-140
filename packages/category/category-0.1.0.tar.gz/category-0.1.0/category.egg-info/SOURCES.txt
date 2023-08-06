@@ -1,0 +1,15 @@
+README.md
+setup.py
+category/__init__.py
+category/fast.py
+category/multiple.py
+category/single.py
+category.egg-info/PKG-INFO
+category.egg-info/SOURCES.txt
+category.egg-info/dependency_links.txt
+category.egg-info/requires.txt
+category.egg-info/top_level.txt
+test/test_multiple.py
+test/test_multiple_fast.py
+test/test_single.py
+test/test_single_fast.py
