@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: Spacecraft-Attitude-Dynamics-Functions
+Version: 0.0.2
+Summary: Functions for Purdue AAE440 Class
+Home-page: https://shivbc.com/
+Author: Shivam Bhatia
+Author-email: shivbhatia19@gmail.com
+License: MIT
+Keywords: Dynamics
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Requires-Dist: matplotlib
+
+For Purdue AAE-440, Spacecraft Attitude Dynamics
+
+Change Log
+==========
+
+0.0.1 (2/27/2022)
+-----------------
+- I'm being forced to make this
+
+0.0.2 (2/27/2022)
+-----------------
+- Hopefully now it actually installs!
+
