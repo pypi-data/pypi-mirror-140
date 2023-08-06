@@ -1,0 +1,10 @@
+segmented/__init__.py,sha256=DLMMbCjuAiO3TnCOSuen6jMiE6dt0Of1VWLgj8sDbYo,141
+segmented/bayes.py,sha256=KgyGLmx_SdbA_yalIIKEfYMCfQBs-qm8E9odtooKXd4,42366
+segmented/demo.py,sha256=_7Ffv5XVxGwjya7-MivHkKjcfcLNeFawF7bhJopDOjM,6177
+segmented/frequentist.py,sha256=GE3BrivfjPw4YEOsNKXNgYX_nJ_l6d0a10aCuVoSb68,26797
+segmented/version.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+segmented-0.0.5.dist-info/LICENSE.txt,sha256=goisqqBFntuRYCgFRVtyh-qEwq-KjtNU8b118HjXPYw,1078
+segmented-0.0.5.dist-info/METADATA,sha256=W2KQTsjdSmZDXOp-FWh9-HpO7v-bVdrOQHrWUS3YRdU,12738
+segmented-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+segmented-0.0.5.dist-info/top_level.txt,sha256=hwE0DQylikQoSsNxuCT6hTGiSmfdIpU0Odk9uxk8A5s,10
+segmented-0.0.5.dist-info/RECORD,,
