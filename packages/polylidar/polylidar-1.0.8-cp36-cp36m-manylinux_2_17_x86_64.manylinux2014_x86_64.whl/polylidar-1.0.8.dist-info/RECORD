@@ -1,0 +1,13 @@
+polylidar_pybind.cpython-36m-x86_64-linux-gnu.so,sha256=EJ8C6WJIiU0Vh_cjrQp3KY9KhJP8P7zHjPOTWL-OzDg,1108280
+polylidar/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polylidar/__init__.py,sha256=wEeV3Ea-2UGZ0Vb1pn7xe8N5wa7NsEAwNbi57-QubQI,336
+polylidar/polylidarutil/open3d_util.py,sha256=HyJyphBgpStbaZJBEs82qHFoxvcSLk9rmqjQiNNkPbw,5839
+polylidar/polylidarutil/plane_filtering.py,sha256=l1hZEP5DeE44aSpvWXNGE0_X0ccNTYHieXPCfmngvQA,19188
+polylidar/polylidarutil/line_mesh.py,sha256=q4gdm564-1ZMgYluc7EDKWZNdKzRVDgy3KQb0j5idPY,5381
+polylidar/polylidarutil/__init__.py,sha256=X2-DGGNsBoCtEwetvVJs1g4bHaW5hNQ66Aw9EnKeMRc,10061
+polylidar.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+polylidar-1.0.8.dist-info/LICENSE,sha256=Zty3KQuiCH6v26AO8gZjdZixIFNIT3FFGxJmwduOKz0,1072
+polylidar-1.0.8.dist-info/METADATA,sha256=u1LDuq-psI9XfBLYW5jzJwxPfT9ocKhzFDDPc-2i_fU,7088
+polylidar-1.0.8.dist-info/top_level.txt,sha256=ouaox60V-QA960Zq0qRUyKLLzeqLPjEjaFEUiyzBWbk,27
+polylidar-1.0.8.dist-info/RECORD,,
+polylidar-1.0.8.dist-info/WHEEL,sha256=YVAXCacQXnznQ-_lMj8Nvqrs7YPtMP1pHRCw9EcyWRQ,150
