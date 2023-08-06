@@ -1,0 +1,8 @@
+ais_data_to_tspi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ais_data_to_tspi/data_to_TSPI.py,sha256=x-5kpHySa1j-B2NglNiR7q8y13U8t4qNravxx7-cMuc,2608
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_myfunctions.py,sha256=g0fstjE4x_shgP5PdqD4hTgMFX7Fg3U8cTxbczZ5Yig,452
+ais_data_to_tspi-0.0.0.dist-info/METADATA,sha256=MLUdb6j2q7B-Ij04Z7TcVvUPmDkohXlDbFM_JDdGz8k,224
+ais_data_to_tspi-0.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ais_data_to_tspi-0.0.0.dist-info/top_level.txt,sha256=1luguqHJdX_NGy9tM05hQMaovVtU3JKnGgyIHACn1uE,23
+ais_data_to_tspi-0.0.0.dist-info/RECORD,,
