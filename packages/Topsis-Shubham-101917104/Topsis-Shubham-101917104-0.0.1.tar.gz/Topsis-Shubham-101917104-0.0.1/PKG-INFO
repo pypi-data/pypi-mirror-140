@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: Topsis-Shubham-101917104
+Version: 0.0.1
+Summary: A Python package to find TOPSIS for multi-criteria decision analysis method
+Home-page: UNKNOWN
+Author: Shubham Jindal
+Author-email: shubhamjindal410@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
