@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pytsk/__init__.py
+pytsk/cluster.py
+pytsk/gradient_descent/__init__.py
+pytsk/gradient_descent/antecedent.py
+pytsk/gradient_descent/callbacks.py
+pytsk/gradient_descent/training.py
+pytsk/gradient_descent/tsk.py
+pytsk/gradient_descent/utils.py
+scikit_pytsk.egg-info/PKG-INFO
+scikit_pytsk.egg-info/SOURCES.txt
+scikit_pytsk.egg-info/dependency_links.txt
+scikit_pytsk.egg-info/requires.txt
+scikit_pytsk.egg-info/top_level.txt
