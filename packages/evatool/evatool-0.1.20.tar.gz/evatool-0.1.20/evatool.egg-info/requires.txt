@@ -1,0 +1,14 @@
+numpy>=1.15
+pandas
+seaborn>=0.9.0
+jinja2
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+pytest-xdist
+tox
+
+[interactive]
+matplotlib
