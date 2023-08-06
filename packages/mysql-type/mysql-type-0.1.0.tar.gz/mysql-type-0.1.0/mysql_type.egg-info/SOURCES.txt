@@ -1,0 +1,10 @@
+LICENSE
+README.md
+mysql_type.py
+pyproject.toml
+setup.py
+mysql_type.egg-info/PKG-INFO
+mysql_type.egg-info/SOURCES.txt
+mysql_type.egg-info/dependency_links.txt
+mysql_type.egg-info/requires.txt
+mysql_type.egg-info/top_level.txt
