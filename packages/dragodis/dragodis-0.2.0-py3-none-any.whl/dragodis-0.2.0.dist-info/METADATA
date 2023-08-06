@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dragodis
+Version: 0.2.0
+Summary: A universal interface for running scripts under multiple disassemblers.
+Home-page: https://github.com/Defense-Cyber-Crime-Center/Dragodis
+Author: DC3
+License: MIT
+Keywords: malware,ida,idapro,ghidra,disassembler
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: bytesparse
+Requires-Dist: capstone
+Requires-Dist: rpyc
+Requires-Dist: pyhidra
+Requires-Dist: pywin32 ; platform_system == "Windows"
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+UNKNOWN
+
