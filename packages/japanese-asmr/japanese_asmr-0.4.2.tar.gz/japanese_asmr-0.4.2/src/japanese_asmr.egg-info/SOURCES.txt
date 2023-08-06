@@ -1,0 +1,11 @@
+pyproject.toml
+setup.cfg
+src/japanese_asmr/__init__.py
+src/japanese_asmr/command_line.py
+src/japanese_asmr/parser.py
+src/japanese_asmr.egg-info/PKG-INFO
+src/japanese_asmr.egg-info/SOURCES.txt
+src/japanese_asmr.egg-info/dependency_links.txt
+src/japanese_asmr.egg-info/entry_points.txt
+src/japanese_asmr.egg-info/requires.txt
+src/japanese_asmr.egg-info/top_level.txt

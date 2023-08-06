@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: japanese-asmr
+Version: 0.4.2
+Summary: A parser for ASMR recordings from https://japaneseasmr.com/
+Home-page: https://github.com/marnixah/japanese-asmr-parser
+Author: Marnixah
+Author-email: japanese_asmr@marnixah.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/marnixah/japanese-asmr-parser/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# japanese-asmr-parser
+
+To install the package, run:
+
+```bash
+pip install japanese-asmr
+```
+
+To use the package, run:
+
+```python
+from japanese_asmr.parser import JapaneseAsmr
+
+japanese_asmr = JapaneseAsmr('url here')
+```
+
+Or if you want to use the CLI:
+
+```bash
+japanese-asmr <url> [output] # Renders a video from the given url to either output or the title of the video
+```
+
+
