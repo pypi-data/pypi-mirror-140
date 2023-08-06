@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pylumixtether
+Version: 0.0.1
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pyusb (==1.2.1)
+
+UNKNOWN
+
