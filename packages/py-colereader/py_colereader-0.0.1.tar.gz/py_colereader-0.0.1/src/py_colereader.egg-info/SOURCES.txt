@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/py_colereader/__init__.py
+src/py_colereader/example.py
+src/py_colereader.egg-info/PKG-INFO
+src/py_colereader.egg-info/SOURCES.txt
+src/py_colereader.egg-info/dependency_links.txt
+src/py_colereader.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+Allows you to easily edit text files.
+
+FUNCTIONS
+####
+CAN WRITE TO TEXT FILES
+CAN REPLACE TEXT FILES
+CAN CLEAR TEXT FILES
+CAN PRINT TEXT FILES
+####
