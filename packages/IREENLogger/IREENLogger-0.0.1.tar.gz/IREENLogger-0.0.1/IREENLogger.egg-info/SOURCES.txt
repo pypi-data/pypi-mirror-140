@@ -1,0 +1,7 @@
+README.md
+setup.py
+IREENLogger.egg-info/PKG-INFO
+IREENLogger.egg-info/SOURCES.txt
+IREENLogger.egg-info/dependency_links.txt
+IREENLogger.egg-info/requires.txt
+IREENLogger.egg-info/top_level.txt
