@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+from nxstools import nxsconfig
+
+nxsconfig.main()
