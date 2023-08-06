@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: barsdiary
+Version: 0.0.3a1
+Summary: Python library for working with API "БАРС.Web-Образование"
+Home-page: https://github.com/mironovmeow/barsdiary
+License: MIT
+Keywords: python,aiohttp,pydantic,asyncio
+Author: mironovmeow
+Author-email: 71277890+mironovmeow@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: async
+Provides-Extra: sync
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0); extra == "async"
+Requires-Dist: httpx (>=0.22.0,<0.23.0); extra == "sync"
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/mironovmeow/barsdiary/issues
+Project-URL: Repository, https://github.com/mironovmeow/barsdiary
+Description-Content-Type: text/markdown
+
+Тестовый запуск. 
