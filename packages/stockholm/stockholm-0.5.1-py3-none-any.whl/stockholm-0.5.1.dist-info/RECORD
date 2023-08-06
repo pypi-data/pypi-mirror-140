@@ -1,0 +1,16 @@
+stockholm/__init__.py,sha256=_yOmSfJPO96uP-EJ0pvksP7mR4U3wINoiTW3SyIm9ac,469
+stockholm/__version__.py,sha256=BdYrrQwol8Cb1aeGrZnrTSirGvxuUWDIp2dSa4R09Ec,271
+stockholm/compat/__init__.py,sha256=oTPIzBPmVHLM5Ri2fwYXqjj6SiFyw6XyMyU8ZFVhxMY,1310
+stockholm/currency.py,sha256=u7I3pKKlkNtNv7LrVDHGvtyA9H46Zrhv01iOx0mH2BM,26649
+stockholm/exceptions.py,sha256=9_3LTMr7IUKmIn2eCx3cJ6li7thTgotT_nPuVrmFSOk,237
+stockholm/money.py,sha256=gKOFZfXZAJYrlTlxPirDN9zD-rAPW7v2bitvM7_9SYo,36507
+stockholm/protobuf/__init__.py,sha256=G6S10vjrE0YjYHzCgR51kyHOVAaOeNoDKncRDI-AC0s,1278
+stockholm/protobuf/money.proto,sha256=7uFRGLL-0nlusAmQhpqXnJ3O2JDEcLthQPlf2u7Fe3U,1602
+stockholm/protobuf/money_pb2.py,sha256=N5j4nG3T9FTDW9DFp4O4SCnv33hYfNrXr6te1r265Yo,3957
+stockholm/protobuf/money_pb2.pyi,sha256=SjQMY3K59KAanM-W8urCrUv1Q-mNVgXqx3-2H99wfms,995
+stockholm/py.typed,sha256=RJao5SVFYIp8IfbxhL_SpZkBQYe3XXzPlobSRdh4B_c,16
+stockholm/rate.py,sha256=32fA1KjK9oKGgKAGlNfiNQ3bojSSLMHewqPU8l6tixc,2882
+stockholm-0.5.1.dist-info/LICENSE,sha256=j6jmkcDCv3dFiFdwqoQ8Bnr4duT9DiEp8C4wmoC7Hms,1062
+stockholm-0.5.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+stockholm-0.5.1.dist-info/METADATA,sha256=CV1JYLDwyJgK-HskIPoRMti0KQrtRl650p-9ydUvT80,21529
+stockholm-0.5.1.dist-info/RECORD,,
