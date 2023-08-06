@@ -1,0 +1,2 @@
+construct~=2.10
+pygdbmi<0.10.0.0
