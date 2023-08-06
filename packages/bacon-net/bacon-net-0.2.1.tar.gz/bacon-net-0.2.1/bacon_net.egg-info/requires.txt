@@ -1,0 +1,7 @@
+tensorflow>=2.6.2
+keras>=2.6.0
+numpy>=1.19.5
+sympy
+
+[dev]
+pytest>=3.7
