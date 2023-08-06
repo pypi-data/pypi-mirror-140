@@ -1,0 +1,7 @@
+README.md
+setup.py
+pirtul.egg-info/PKG-INFO
+pirtul.egg-info/SOURCES.txt
+pirtul.egg-info/dependency_links.txt
+pirtul.egg-info/requires.txt
+pirtul.egg-info/top_level.txt
