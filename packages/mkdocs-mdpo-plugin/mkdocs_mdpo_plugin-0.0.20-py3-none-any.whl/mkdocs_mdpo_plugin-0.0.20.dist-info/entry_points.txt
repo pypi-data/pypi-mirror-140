@@ -1,0 +1,6 @@
+[markdown.extensions]
+mkdocs-mdpo = mkdocs_mdpo_plugin.extensions:MkdocsMdpoExtension
+
+[mkdocs.plugins]
+mdpo = mkdocs_mdpo_plugin.plugin:MdpoPlugin
+
