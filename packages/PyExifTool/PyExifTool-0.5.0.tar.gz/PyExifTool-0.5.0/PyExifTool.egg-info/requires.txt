@@ -1,0 +1,9 @@
+
+[docs]
+sphinx
+sphinx-autoapi
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+
+[test]
+packaging
