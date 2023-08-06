@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ezpda
+Version: 1.0
+Summary: an easy ezpda package for python
+Home-page: UNKNOWN
+License: MIT Licence
+Keywords: pda,cs
+Platform: any
+
+an easy ezpda for python
+
