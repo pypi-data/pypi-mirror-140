@@ -1,0 +1,6 @@
+defusedxml
+jinja2
+requests
+requests_cache
+webob
+myproxyclient
