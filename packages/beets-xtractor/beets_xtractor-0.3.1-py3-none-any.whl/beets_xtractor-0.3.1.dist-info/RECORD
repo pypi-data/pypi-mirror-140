@@ -1,0 +1,10 @@
+beetsplug/xtractor/__init__.py,sha256=XrQwOdEnB7jeVu2du04YJJZQx9gIzzknTmaf_rX17xQ,1258
+beetsplug/xtractor/about.py,sha256=K5H9V6kBOXgYTFXwQnEe9UKMInk7OnfOOKPtPJBGGKQ,749
+beetsplug/xtractor/command.py,sha256=OCiCyLD3W4RQYmu46Ak-UYfqFaPUb-YJ2kl0mEPJO9c,12511
+beetsplug/xtractor/config_default.yml,sha256=4ayjI7dg4QKnXB8mza0TmUtxfwIwulEhem72q5fup1A,2600
+beetsplug/xtractor/helper.py,sha256=2lYhdc2-Ydmzq5HPlpiT6BjcKKD7bnRHRFaMSxLBNu8,2466
+beets_xtractor-0.3.1.dist-info/LICENSE.txt,sha256=d4tThPHPx_7NqFUeAdDWrOyWz5gbRmJsV_Eim4WksKA,1067
+beets_xtractor-0.3.1.dist-info/METADATA,sha256=SLmCDRRFBwAKunxFWo9A5P1EMN5ONJ312hMGmavnIRw,9110
+beets_xtractor-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+beets_xtractor-0.3.1.dist-info/top_level.txt,sha256=za8u6CXAGbgac8cUyn9NlsgXqqq-_4HHZcNmJnfmyWc,10
+beets_xtractor-0.3.1.dist-info/RECORD,,
