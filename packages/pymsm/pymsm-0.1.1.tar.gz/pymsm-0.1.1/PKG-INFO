@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pymsm
+Version: 0.1.1
+Summary: Multstate modeling
+License: MIT
+Author: Hagai Rossman, Ayya Keshet
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: joblib (>=1.1.0,<2.0.0)
+Requires-Dist: lifelines (>=0.26.4,<0.27.0)
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: numpy (>=1.22.2,<2.0.0)
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Requires-Dist: scikit-survival (>=0.17.0,<0.18.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
