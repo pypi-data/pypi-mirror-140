@@ -1,0 +1,32 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: start_energy, datatype: float64}
+# - {name: stop_energy, datatype: float64}
+# - {name: spectrum, datatype: float64}
+# - {name: error, datatype: float64}
+# meta: !!omap
+# - ref_band: !numpy.ndarray
+#     buffer: !!binary |
+#       QUFBQUFBQUFBQUFBQUFBQUFBRHdmdz09
+#     dtype: float64
+#     order: C
+#     shape: !!python/tuple [1, 2]
+# - energy_intervals:
+#   - !!python/tuple [0.3, 2.6399999999999997]
+#   - !!python/tuple [2.6399999999999997, 4.9799999999999995]
+#   - !!python/tuple [4.9799999999999995, 7.319999999999999]
+#   - !!python/tuple [7.319999999999999, 9.66]
+#   - !!python/tuple [9.66, 12.0]
+# - freq_interval: [0.0, 100.0]
+# - {bin_time: 0.5}
+# - {use_pi: false}
+# - {segment_size: 128.0}
+# - {return_complex: false}
+# schema: astropy-2.0
+start_energy stop_energy spectrum error
+0.3 2.6399999999999997 0.013437353180139278 0.0004481623975073074
+2.6399999999999997 4.9799999999999995 0.07580226011313641 0.00030623538792579465
+4.9799999999999995 7.319999999999999 -0.04023218703542133 0.00029111411772667306
+7.319999999999999 9.66 -0.1476272182456328 0.00031709955972437275
+9.66 12.0 -0.11715417026890322 0.0002597220416459775
