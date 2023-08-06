@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: nandboxbotsapi
+Version: 1.0.7
+Summary: A Python library to interact with official nandbox Bot API.
+Home-page: 
+Author: Amir Salah
+Author-email: ameer.alahmedy@nandbox.com
+License: UNKNOWN
+Keywords: nandbox,bot,api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.9, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: websocket-client (==1.2.1)
+Requires-Dist: websockets (==10.0)
+
+# A Python nandbox Bot API
+
+
+A Python library to interact with official Nandbox Bot API. A bot token is **required** and can be obtained [this way](https://www.youtube.com/watch?v=FXb6tjOuxSc).
+
+
+
