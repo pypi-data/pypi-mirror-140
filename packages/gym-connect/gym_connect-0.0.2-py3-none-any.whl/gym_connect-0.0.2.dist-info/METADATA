@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gym-connect
+Version: 0.0.2
+Summary: OpenAI Gym environment for a connect-four game.
+Home-page: https://github.com/MateoPeri/gym-connect
+Author: szeth
+Author-email: szeth@bnuuy.net
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MateoPeri/gym-connect/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gym-connect
+
+OpenAI Gym environment for a connect-four game.
+
