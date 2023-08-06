@@ -1,0 +1,14 @@
+depthai_sdk/__init__.py,sha256=V5I22kIBJjQVl8PNZbO80ca-X4_iVZfvmGziTdI9bO4,87
+depthai_sdk/fps.py,sha256=hcE55wGaPgdPkWXiI-eYDAzW8eGa9Vbmvwm0U3kVm3E,4252
+depthai_sdk/previews.py,sha256=faMHcVQ95dGhhzfzE9UubB5HhKRvv3L83xkfJkzxoWc,11342
+depthai_sdk/utils.py,sha256=erg2hEgF0VtpRKHcrtj5Yq3c5BDY0R5pOqfAgHH50BQ,9921
+depthai_sdk/managers/__init__.py,sha256=rIAhqZeKgqnD_vjenvlUK05mkqwj1UMnqYXSLvg5K98,150
+depthai_sdk/managers/blob_manager.py,sha256=EWr157p3ZOeTjkfAAyZ_6G4DRcKYtbdXFwhzui0JhXU,4880
+depthai_sdk/managers/encoding_manager.py,sha256=Hr-fLUQ9a8il5hGkq2shwufKyeFC_LzaQkTPx7EtrSk,4704
+depthai_sdk/managers/nnet_manager.py,sha256=uUEVwbqmQdqoSNRmzKY-uobsC5gGjknCaM93MMWkaHw,20754
+depthai_sdk/managers/pipeline_manager.py,sha256=kZ15w_jFQQ0WccV9IyKmdOx13yT14FmvXR8eLz3PJkQ,30253
+depthai_sdk/managers/preview_manager.py,sha256=qMUIe1Fi0PGNuezRw6QGA7wcWwECS4bXSb5iPlY5txo,13186
+depthai_sdk-1.1.8.dist-info/METADATA,sha256=tcjX9WS4lPzZX3dqilSPAxw-A9ZpXRo1vyufvRa1o-k,2220
+depthai_sdk-1.1.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+depthai_sdk-1.1.8.dist-info/top_level.txt,sha256=fofwoGjTnvARAF1YeCMbRezoqxAZKgfvW3_qzy0jnfU,12
+depthai_sdk-1.1.8.dist-info/RECORD,,
