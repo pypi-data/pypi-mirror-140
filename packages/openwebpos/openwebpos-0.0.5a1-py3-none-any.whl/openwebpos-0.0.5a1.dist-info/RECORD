@@ -1,0 +1,15 @@
+openwebpos/__init__.py,sha256=AkJYw0ECvKoX1V4VTGEkfDM5yxFCVYOP2rlKGWWFMC0,321
+openwebpos/ui/static/manifest.json,sha256=ImNmqyuVwFSEhh-esbFEQlotOh7Ch6lLH5WvDVBR4mQ,184
+openwebpos/ui/static/css/main.css,sha256=IxS3WqxB7eLNf-8ectqWMWxpQJnoD_AdT_Et59N7p8g,715
+openwebpos/ui/static/css/material.icons.css,sha256=NUtWx_Ct_mceCro75vzglrMoGx_abLbb3ctlsRBdLz8,569
+openwebpos/ui/static/css/materialize.min.css,sha256=6LMFVgHsWd3GTCyQsjVjRPI5EQt0D_FkaoyBAt7vmAQ,144479
+openwebpos/ui/static/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2,sha256=Fqa2cx4vxjh1YdePWv_TtTmmwFQENJJLgJ1JCl68lyU,121784
+openwebpos/ui/static/js/main.js,sha256=iflK1lSkxb4yxLGI05lUW3mEjLhkx09-9-H6Ou5Wraw,1085
+openwebpos/ui/static/js/materialize.min.js,sha256=s_ynlFHN92cUgVOKkYQhixWhYoqIA2Z6Q8akPwyRwHw,186388
+openwebpos/ui/templates/base.html,sha256=_eGIVa1LC61A6P03cwLhikJ-7R8NG2OBwpjo8mIjvnw,2331
+openwebpos/ui/templates/index.html,sha256=PKAGl71rERXlO4YT5uJMMRNuKQJWdB8c1xX_PJrVXhM,93
+openwebpos-0.0.5a1.dist-info/LICENSE,sha256=YWlTNQqoJGQ07OJIlWJ_jCuKuEm-gS6mR79N8eCbcTQ,1068
+openwebpos-0.0.5a1.dist-info/METADATA,sha256=VU6QsoBZGuTVh42r-avGdG7RMdP3ok3zmw51C21CqTE,1243
+openwebpos-0.0.5a1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+openwebpos-0.0.5a1.dist-info/top_level.txt,sha256=fy9psffPtKs6NN-Vg_qns7nduhOOI6G1CsKHVLOfBhw,11
+openwebpos-0.0.5a1.dist-info/RECORD,,
