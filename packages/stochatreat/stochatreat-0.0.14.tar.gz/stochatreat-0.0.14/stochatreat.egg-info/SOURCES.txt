@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+stochatreat/__init__.py
+stochatreat/stochatreat.py
+stochatreat/utils.py
+stochatreat.egg-info/PKG-INFO
+stochatreat.egg-info/SOURCES.txt
+stochatreat.egg-info/dependency_links.txt
+stochatreat.egg-info/requires.txt
+stochatreat.egg-info/top_level.txt
