@@ -1,0 +1,3 @@
+[console_scripts]
+ip2tracepy = ip2trace:main
+

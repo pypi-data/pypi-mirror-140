@@ -1,0 +1,12 @@
+LICENSE.TXT
+MANIFEST.in
+ip2trace.py
+readme.md
+setup.py
+IP2Trace.egg-info/PKG-INFO
+IP2Trace.egg-info/SOURCES.txt
+IP2Trace.egg-info/dependency_links.txt
+IP2Trace.egg-info/entry_points.txt
+IP2Trace.egg-info/requires.txt
+IP2Trace.egg-info/top_level.txt
+data/IP2LOCATION-LITE-DB1.IPV6.BIN

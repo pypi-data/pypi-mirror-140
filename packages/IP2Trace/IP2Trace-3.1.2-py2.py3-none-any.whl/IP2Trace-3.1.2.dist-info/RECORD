@@ -1,0 +1,17 @@
+LICENSE.TXT,sha256=BSNsnCFkaH9bNgQXKIwv85vlVKSomWc08PIMHrHqUPU,1093
+MANIFEST.in,sha256=QpTN_hOoSNwK9FpD7pZ1XaInGghUxlJkMkOq7aBoCvQ,61
+ip2trace.py,sha256=SbEWq4n3ZffrgyX0XLARKWzyZvXXXjhMSqhzpLO_NrE,23049
+readme.md,sha256=2evTOy1VWjKHckHbpNWUJy395mpdOBsD85_PeXfHLrA,5048
+IP2Trace.egg-info/PKG-INFO,sha256=oxNiEPAQ9Ytd0Y8TRv86OscZ1VuqfsFBjJEuED-x7ks,7033
+IP2Trace.egg-info/SOURCES.txt,sha256=JAsvp7PSgcgTkqYHs8HP5qQSeRl-Ri-PPuZwukZg4DQ,283
+IP2Trace.egg-info/dependency_links.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+IP2Trace.egg-info/entry_points.txt,sha256=Ty2j_Q-Tmpk-4Wvk0ypLUXRmHV1pnTl1gyerWxj9f4I,46
+IP2Trace.egg-info/requires.txt,sha256=tt5Ikw6AcsVA_GE997QAZxXn0mWYCIOTexx3Z5eeSIA,12
+IP2Trace.egg-info/top_level.txt,sha256=rS0P3Zi5m2JTM8bMzKgLJaDy5sOrNX19Mdka_u_qp0A,10
+data/IP2LOCATION-LITE-DB1.IPV6.BIN,sha256=axC1bVEr4DQU8vvslIsNnU4VqIp8lCGI5gvQyT5FVGY,5391050
+IP2Trace-3.1.2.dist-info/LICENSE.TXT,sha256=BSNsnCFkaH9bNgQXKIwv85vlVKSomWc08PIMHrHqUPU,1093
+IP2Trace-3.1.2.dist-info/METADATA,sha256=VTMBEoN17T9vTHKc_fwanXpcEnw2Sm-xUIRZnZLD1vU,6004
+IP2Trace-3.1.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+IP2Trace-3.1.2.dist-info/entry_points.txt,sha256=Ty2j_Q-Tmpk-4Wvk0ypLUXRmHV1pnTl1gyerWxj9f4I,46
+IP2Trace-3.1.2.dist-info/top_level.txt,sha256=rS0P3Zi5m2JTM8bMzKgLJaDy5sOrNX19Mdka_u_qp0A,10
+IP2Trace-3.1.2.dist-info/RECORD,,
