@@ -1,0 +1,6 @@
+[console_scripts]
+dcoraid-upload-task = dcoraid.cli:upload_task
+
+[gui_scripts]
+dcoraid = dcoraid.__main__:main
+
