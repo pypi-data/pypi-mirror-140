@@ -1,0 +1,12 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/nobipy/__init__.py
+src/nobipy/const.py
+src/nobipy/exceptions.py
+src/nobipy/main.py
+src/nobipy.egg-info/PKG-INFO
+src/nobipy.egg-info/SOURCES.txt
+src/nobipy.egg-info/dependency_links.txt
+src/nobipy.egg-info/requires.txt
+src/nobipy.egg-info/top_level.txt
