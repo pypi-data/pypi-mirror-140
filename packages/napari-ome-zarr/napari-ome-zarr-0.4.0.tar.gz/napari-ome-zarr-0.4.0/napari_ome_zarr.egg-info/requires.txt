@@ -1,0 +1,4 @@
+napari-plugin-engine>=0.1.4
+ome-zarr>=0.3.0
+numpy
+vispy
