@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: poetry-pypirc
+Version: 0.1.2
+Summary: Sets poetry repository configs from a pypirc file.
+Home-page: https://github.com/NarekA/poetry_pypirc
+License: MIT
+Author: NarekA
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: configparser
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: sh (>=1.14.2,<2.0.0)
+Project-URL: Repository, https://github.com/NarekA/poetry_pypirc
+Description-Content-Type: text/markdown
+
+# poetry-pypirc
+
+Sets poetry repository configs from a `.pypirc` file.
+
+```bash
+pip install poetry-pypirc
+```
+
+To use ~/.pypirc
+```bash
+poetry-pypirc
+```
+
+To use another pypirc file (`test.pypirc`)
+```bash
+poetry-pypirc test.pypirc
+```

@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "poetry_pypirc"
+version = "0.1.2"
+description = "Sets poetry repository configs from a pypirc file."
+authors = ["NarekA"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/NarekA/poetry_pypirc"
+repository = "https://github.com/NarekA/poetry_pypirc"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sh = "^1.14.2"
+pathlib = "^1.0.1"
+configparser = "*"
+
+
+[tool.poetry.scripts]
+poetry-pypirc = "poetry_pypirc.main:main"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
