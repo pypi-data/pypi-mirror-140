@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: azurecloudhandler
+Version: 0.2
+Summary: Library to optimally handle some resources on Azure
+Home-page: https://github.com/otacilio-psf/azure-cloud-handler
+Author: Otacilio Filho
+Author-email: otaciliopedro@gmail.com
+License: UNKNOWN
+Description: # Azure Cloud Handler
+        
+        Library to optimally handle some resources on Azure
+        
+        ## libs
+        
+        ### Azure Kubernetes Service (aks) - doesn't yet exist in the official Azure SDK
+        
+        Functionalities
+        
+        * status of cluster
+        * start cluster
+        * stop cluster
+        * commands - kubectl
+        
+        ### Azure Data Lake Storage Gen2 (adls2) - datalake_gen2
+        
+        Functionalities
+        
+        * upload file in chunks
+            * avoid memory overhead for big files
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
