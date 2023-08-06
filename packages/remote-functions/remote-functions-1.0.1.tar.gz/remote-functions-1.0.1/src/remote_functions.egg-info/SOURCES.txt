@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/remote_functions/__init__.py
+src/remote_functions/interact.py
+src/remote_functions/tools.py
+src/remote_functions.egg-info/PKG-INFO
+src/remote_functions.egg-info/SOURCES.txt
+src/remote_functions.egg-info/dependency_links.txt
+src/remote_functions.egg-info/requires.txt
+src/remote_functions.egg-info/top_level.txt
