@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: atomqc
+Version: 2021.10.11
+Summary: atomqc
+Home-page: https://github.com/usnistgov/atomqc
+Author: Kamal Choudhary
+Author-email: kamal.choudhary@nist.gov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: scipy (>=1.6.3)
+Requires-Dist: jarvis-tools (>=2021.07.19)
+Requires-Dist: qiskit
+Requires-Dist: scikit-learn (>=0.24.1)
+Requires-Dist: matplotlib (>=3.4.1)
+Requires-Dist: seaborn (>=0.11.2)
+Requires-Dist: tqdm (>=4.60.0)
+Requires-Dist: pandas (==1.2.4)
+Requires-Dist: pydantic (>=1.8.1)
+Requires-Dist: flake8 (>=3.9.1)
+Requires-Dist: pycodestyle (>=2.7.0)
+Requires-Dist: pydocstyle (>=6.0.0)
+
+[![name](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/knc6/jarvis-tools-notebooks/blob/master/jarvis-tools-notebooks/Qiskit_based_electronic_bandstructure_.ipynb)
+
+# AtomQC
+
+Atomistic Calculations on Quantum Computers
+
+
+
+Reference:
+---------------
+
+[K. Choudhary, J. Phys.: Condens. Matter 33 (2021) 385501]( https://iopscience.iop.org/article/10.1088/1361-648X/ac1154/meta)
+
+
