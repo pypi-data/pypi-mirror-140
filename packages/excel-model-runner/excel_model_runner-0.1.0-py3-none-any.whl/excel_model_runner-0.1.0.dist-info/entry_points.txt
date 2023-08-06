@@ -1,0 +1,3 @@
+[console_scripts]
+run-excel-model=excel_model_runner.command:main
+
