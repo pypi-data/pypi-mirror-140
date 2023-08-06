@@ -1,0 +1,14 @@
+django_iris/__init__.py,sha256=dQpfgA1tBy-Dw0LHZsjrQV2piiXbp9dDd0fuZqoZLho,314
+django_iris/base.py,sha256=8vJPjahoWDYVQNk-hgWTfSSW7CQ9PnDPlXarM-zKt7Y,6128
+django_iris/creation.py,sha256=u6rLGLDtMYBJ1BP7dXqkA10XFR-_TaXD48tDamqST8Y,199
+django_iris/cursor.py,sha256=MHiJVRm5AoKLJxS_2nh6Gf-ADpYeDoQ8mxqnN-DxK2Q,1715
+django_iris/features.py,sha256=jmCwM-2F4EVI0k0vg44B2KZis08Ps2fJFUGkY8x06S4,649
+django_iris/introspection.py,sha256=U3dZMpBtxgwLReJCchB7Wv5nZA-T5AnkrMEcedMHFYM,9652
+django_iris/operations.py,sha256=VkHWYRKIFR-Lghj1UGR2ppAQCrsiBnrzdNtQgj1k7C0,3101
+django_iris/schema.py,sha256=oA_AQTt7EKAX9kgPmuVzquuDCPQgu9rN94zWPTtdgWI,978
+django_iris/validation.py,sha256=OSGSZpOgc62G6mV5KSyscPVO48m0q2xSsMoEk-vd7E0,233
+django_iris-0.1.6.dist-info/LICENSE,sha256=RQmigqltsLq8lfOBc_KwtL0gkODyUCNpU-0ZiZwGlho,1075
+django_iris-0.1.6.dist-info/METADATA,sha256=JNs0n90sF7aEgi8WJL4jTM8CF0_YAjPUV6iJKeT0gn4,1534
+django_iris-0.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_iris-0.1.6.dist-info/top_level.txt,sha256=X-THgpUQTmRciVuYY0tvMSOf73jmQOyxIiJvXVDng8E,12
+django_iris-0.1.6.dist-info/RECORD,,
