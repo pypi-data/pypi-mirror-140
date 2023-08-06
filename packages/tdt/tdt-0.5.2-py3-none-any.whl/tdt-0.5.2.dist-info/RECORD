@@ -1,0 +1,12 @@
+tdt/BH32.py,sha256=gPAR-QuFaO2X-_lI0AwCMfdwhB0cF4cdVABpv0Y1tpc,9386
+tdt/PynapseUDP.py,sha256=9kq2lXPmOuj9kkU9qDbRASkig4rkvems4WV8NPAD5zo,3202
+tdt/SynapseAPI.py,sha256=4l7eLVliZnSCD_RZJa4j73RWdV7syVAVJW7yj8ga-jw,31632
+tdt/TDTUDP.py,sha256=NWfALk7atZE8PeWQmIQIEE1mSHqOFkxPBl4r3Vbn5Z4,4989
+tdt/TDTbin2py.py,sha256=ie8gNb_FhErHIKl6XM3dpxXEBmG4u7Cy24iQilpMfU4,110022
+tdt/TDTfilter.py,sha256=bc74GVM7WglKcCc1sQGo6VtmWA3zXbdW102bsa042cE,18957
+tdt/__init__.py,sha256=fI5Mdk0X0FaN3NHLs_kU5_WDha6uoHCCuXoOkCuefH0,4347
+tdt-0.5.2.dist-info/LICENSE,sha256=LoV48WtuomVBIWbotLHaBF_MEfKNsD1mSQhBASSi8B4,35801
+tdt-0.5.2.dist-info/METADATA,sha256=QhG0hVSIFzi84Y7_XKg5sDrlcv_SzD_BBQkDuVHdXiQ,1030
+tdt-0.5.2.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+tdt-0.5.2.dist-info/top_level.txt,sha256=UKa9PJi2rj1bJuETYymjEZJC5c310oLx941k9H8mRW8,4
+tdt-0.5.2.dist-info/RECORD,,
