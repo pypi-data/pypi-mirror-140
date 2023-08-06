@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: devind-notifications
+Version: 0.1.1
+Summary: Devind django app for notifications.
+Home-page: https://github.com/devind-team/devind-django-notifications
+License: MIT
+Keywords: django,graphene,notifications
+Author: Victor
+Author-email: lyferov@yandex.ru
+Requires-Python: >=3.9,<4.0
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3,<4)
+Requires-Dist: celery (>=5.2.3,<6.0.0)
+Requires-Dist: devind-core (>=0.1.2,<0.2.0)
+Requires-Dist: devind-helpers (>=0.2.1,<0.3.0)
+Requires-Dist: graphene-django (>=2.15.0,<3.0.0)
+Project-URL: Repository, https://github.com/devind-team/devind-django-notifications
