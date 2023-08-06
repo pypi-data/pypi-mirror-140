@@ -1,0 +1,3 @@
+[console_scripts]
+datools = datools.cli:main
+
