@@ -1,0 +1,9 @@
+requests
+pybind11
+scipy
+pyyaml
+monty
+loguru
+
+[test]
+pytest
