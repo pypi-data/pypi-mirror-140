@@ -1,0 +1,117 @@
+.coveragerc
+.gitignore
+.pre-commit-config.yaml
+.readthedocs.yaml
+CONTRIBUTING.md
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+.github/workflows/pypi-publish.yml
+.github/workflows/syntax.yml
+.github/workflows/tests.yml
+dev/Development - Coverage.ipynb
+dev/Development - External Sim.ipynb
+dev/Development - High-dim Quality.ipynb
+dev/Development - Ratio plots.ipynb
+dev/Development - Separate out Simulator.ipynb
+dev/Development - Visualize f.ipynb
+dev/inoutex01.py
+dev/inoutex02.py
+dev/simulate.py
+dev/simulators.py
+docs/Makefile
+docs/make.bat
+docs/source/autodoc.rst
+docs/source/citation.rst
+docs/source/conf.py
+docs/source/contributing-link.rst
+docs/source/index.rst
+docs/source/install.rst
+docs/source/refs.bib
+docs/source/swyft.rst
+docs/source/tutorial-notebooks.rst
+docs/source/videos.rst
+docs/source/images/20d-1dPos.png
+docs/source/images/quickstart-1d.png
+docs/source/images/quickstart-2d.png
+docs/source/module/bounds.rst
+docs/source/module/inference.rst
+docs/source/module/networks.rst
+docs/source/module/plot.rst
+docs/source/module/prior.rst
+docs/source/module/store.rst
+docs/source/module/utils.rst
+docs/source/module/weightedmarginals.rst
+docs/source/notebooks/Examples - 1. Custom networks.nblink
+docs/source/notebooks/Examples - 2. Truncation.nblink
+docs/source/notebooks/Examples - 3. Saving and Loading.nblink
+docs/source/notebooks/Examples - 4. The Store.nblink
+docs/source/notebooks/Examples - 5. External Simulator.nblink
+docs/source/notebooks/Examples - 6. Dask Simulator.nblink
+docs/source/notebooks/Examples - 7. Composite Priors.nblink
+docs/source/notebooks/Quickstart.nblink
+docs/source/notebooks/make-nblinks.py
+docs/source/old/context.rst
+docs/source/old/goals.rst
+docs/source/old/latex_macros.sty
+docs/source/old/quickstart.rst
+docs/source/old/theory.rst
+docs/source/old/theorytex.rst
+notebooks/Examples - 1. Custom networks.ipynb
+notebooks/Examples - 2. Truncation.ipynb
+notebooks/Examples - 3. Saving and Loading.ipynb
+notebooks/Examples - 4. The Store.ipynb
+notebooks/Examples - 5. External Simulator.ipynb
+notebooks/Examples - 6. Dask Simulator.ipynb
+notebooks/Examples - 7. Composite Priors.ipynb
+notebooks/Quickstart.ipynb
+swyft/__init__.py
+swyft/__version__.py
+swyft/bounds.py
+swyft/prior.py
+swyft/saveable.py
+swyft/types.py
+swyft/weightedmarginals.py
+swyft.egg-info/PKG-INFO
+swyft.egg-info/SOURCES.txt
+swyft.egg-info/dependency_links.txt
+swyft.egg-info/not-zip-safe
+swyft.egg-info/requires.txt
+swyft.egg-info/top_level.txt
+swyft/inference/__init__.py
+swyft/inference/marginalposterior.py
+swyft/inference/marginalratioestimator.py
+swyft/networks/__init__.py
+swyft/networks/channelized.py
+swyft/networks/classifier.py
+swyft/networks/standardization.py
+swyft/plot/__init__.py
+swyft/plot/constraint.py
+swyft/plot/histogram.py
+swyft/plot/mass.py
+swyft/plot/plot.py
+swyft/plot/violin.py
+swyft/store/__init__.py
+swyft/store/dataset.py
+swyft/store/simulator.py
+swyft/store/store.py
+swyft/utils/__init__.py
+swyft/utils/array.py
+swyft/utils/marginals.py
+swyft/utils/misc.py
+tests/__init__.py
+tests/marginalposterior_test.py
+tests/marginalratioestimator_test.py
+tests/network_test.py
+tests/prior_test.py
+tests/prior_truncator_test.py
+tests/simulator_test.py
+tests/store_test.py
+tests/plot/constraint_test.py
+tests/plot/histogram_test.py
+tests/plot/mass_test.py
+tests/plot/violin_test.py
+tests/utils/array_test.py
+tests/utils/marginals_test.py
