@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: imgurPy
+Version: 0.0.1b0
+Summary: imgur python library (not official)
+Home-page: https://github.com/ThanatosDi/imgurPy
+Author: ThanatosDi
+Author-email: ThanatosDi@kttsite.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries
+Classifier: 
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# imgurPy
+imgur python library (not offical)
+
+
