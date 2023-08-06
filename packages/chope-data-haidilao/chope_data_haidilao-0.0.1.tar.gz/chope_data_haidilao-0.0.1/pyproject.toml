@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "chope_data_haidilao"
+version = "0.0.1"
+description = "Featurestore wrapper"
+authors = ["Quy Dinh <quy.d@chope.co>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "*"
+pyarrow = "*"
+google-cloud-bigquery = "*"
+google-cloud-bigquery-storage = "^2.10.1"
+google-cloud-aiplatform = "^1.6.0"
+hydra-core = "*"
+python-dotenv = "*"
+cloudpickle = "2.0.0"
+google-cloud-storage = "*"
+
+[tool.poetry.dev-dependencies]
+jupyterlab = "*"
+tqdm = "*"
+jupyter = "*"
+ipywidgets = "*"
+black = {version = "^22.1.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
