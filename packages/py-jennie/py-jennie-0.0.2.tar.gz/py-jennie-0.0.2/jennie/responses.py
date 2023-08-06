@@ -1,0 +1,6 @@
+NOT_LOGGED_IN = "User not logged in, kindly login using jennie setup"
+UNKNOWN_PROJECT_TYPE = "Unknown project type for jennie environment, currently the library supports angular framework."
+MISSING_CSS_FILE = "Component CSS File is not found in the directory"
+MISSING_HTML_FILE = "Component HTML File is not found in the directory"
+MISSING_TS_FILE = "Component TS File is not found in the directory"
+MISSING_ASK_JENNIE_FILE = "ASK Jennie UI Gallery config is not found inside the directory"
