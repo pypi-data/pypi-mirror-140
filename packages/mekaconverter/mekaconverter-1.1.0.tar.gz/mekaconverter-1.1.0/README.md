@@ -1,0 +1,31 @@
+# MekaConverter
+
+Convert c4d images export to a JSON format that can be used by C4D with a converter.
+
+## Installation
+
+### Using pip
+
+```sh
+pip install mekaconverter
+```
+
+### Manual
+
+```sh
+git clone https://github.com/TheMekaverse/MekaConverter
+cd MekaConverter
+python setup.py install
+```
+
+## Usage
+
+### Convert images to a JSON file
+
+To convert images to a JSON file, use the following command:
+
+```sh
+mekaconverter convert --path /path/to/images --output /path/to/json
+```
+
+> Images need to be formatted that way: `F${frame}--B${background_number}__E${eye_number}__A${arms_number}__B${body_number}--X${frame}.png`
