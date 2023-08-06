@@ -1,0 +1,13 @@
+pip>=21.0
+requests<=2.25.1
+requests-toolbelt
+pandas>=1.1.0
+pyyaml
+packaging
+deepdiff
+boto3
+botocore
+fastavro
+importlib-resources
+Werkzeug
+pyarrow>=3.0.0
