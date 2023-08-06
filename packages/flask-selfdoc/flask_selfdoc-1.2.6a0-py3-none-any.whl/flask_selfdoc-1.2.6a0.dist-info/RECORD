@@ -1,0 +1,8 @@
+flask_selfdoc/__init__.py,sha256=lQ05PB_Qbwg7NEg4C5Nhr1LNLXNkinoMf_li0KXVOvU,135
+flask_selfdoc/autodoc.py,sha256=SjiR2q1wrYWyUNDONSoBBiAaGzuNXhIXUJMCNvdnczc,8416
+flask_selfdoc/templates/autodoc_default.html,sha256=zGNPfDHMZ67W-vt_2RcidIEurzhVrySXXrzHEBJT_QU,2624
+flask_selfdoc-1.2.6a0.dist-info/entry_points.txt,sha256=nmnVYDGQ52xkiVwl2sH1kHQU06RamRqFwII2_UYP7t4,155
+flask_selfdoc-1.2.6a0.dist-info/LICENSE,sha256=GmgW_d30vsQhzfsnyZPjD32D6FF3dDLa30dEj7r7bmI,1080
+flask_selfdoc-1.2.6a0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+flask_selfdoc-1.2.6a0.dist-info/METADATA,sha256=zVPX-o5F3xROEwL0noeLC97uH0oI9aSHDob2CpereA0,581
+flask_selfdoc-1.2.6a0.dist-info/RECORD,,
