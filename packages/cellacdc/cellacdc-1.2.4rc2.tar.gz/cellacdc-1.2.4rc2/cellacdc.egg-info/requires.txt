@@ -1,0 +1,16 @@
+numpy<1.22
+torch>=1.6
+opencv-python-headless
+torchvision
+numba
+natsort
+PyQt5
+pyqtgraph
+scikit-image~=0.18.1
+tqdm
+seaborn
+scikit-learn
+psutil
+boto3
+fastremap
+requests
