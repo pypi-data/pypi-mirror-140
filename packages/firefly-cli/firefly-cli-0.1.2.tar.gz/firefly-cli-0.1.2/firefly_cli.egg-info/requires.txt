@@ -1,0 +1,4 @@
+cmd2<3,>=2.4
+requests<3,>=2.27
+tabulate<1,>=0.8
+pyxdg<1,>=0.27
