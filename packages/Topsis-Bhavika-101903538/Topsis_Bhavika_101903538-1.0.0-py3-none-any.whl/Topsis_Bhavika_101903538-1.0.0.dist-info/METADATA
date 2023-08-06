@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: Topsis-Bhavika-101903538
+Version: 1.0.0
+Summary: It performs topsis for any model
+Home-page: https://github.com/bhavi-0/topsis-bhavika-1019035338.git
+Author: Bhavika
+Author-email: bhavikaa2301@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Topsis-Bhavika-10193538
+
+This package is implementation of topsis technique of multi-criteria decision analysis. This package will accept three parameters as input:
+
+
+1. .csv file which contains the models and parameters
+2. string of weights separated by commas(,)
+3. string of requirements (+/-) separated by commas(,) 
+
+
+### What is TOPSIS
+The Technique for Order of Preference by Similarity to Ideal Solution
+(TOPSIS) is a multi-criteria decision analysis method.
+TOPSIS is based on the concept that the chosen alternative should have the shortest geometric distance from the positive ideal solution (PIS)
+and the longest geometric distance from the negative ideal solution (NIS).
+### Installation 
+To install this module write the following line in the command prompt.
+
+pip install Topsis-Bhavika-101903538
+### How to use this 
+
+Topsis-Bhavika-101903538 can be run as in the following example:
+
+####In Command Prompt
+
+ >> topsis data.csv "1,1,1,1" "+,+,-,+"
+
+
+
+###License
+
+Â© 2021 Bhavika
+
+This repository is licensed under the MIT license. See LICENSE for details
+
