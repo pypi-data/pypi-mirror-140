@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mak-serialization-tools
+Version: 2022.0a19
+Summary: A small collection of tools for unpacking/packing data
+Home-page: https://github.com/ModernMAK/Serialization-Tools
+Author: Marcus Kertesz
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ModernMAK/Serialization-Tools/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Serialization Tools
+ Small collection of python snippets I reuse in file format dumping
+
+## Installation (Pip)
+### Installing from PyPI (Recommended)
+```
+pip install mak-serialization-tools
+```
+### Installing from GitHub<br>
+For more information, see [pip VCS support](https://pip.pypa.io/en/stable/topics/vcs-support/#git)
+```
+pip install git+https://github.com/ModernMAK/Serialization-Tools
+```
+
+
