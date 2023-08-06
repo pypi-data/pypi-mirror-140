@@ -1,0 +1,4 @@
+include LICENSE.md
+include README.md
+include django_talar/VERSION
+recursive-include django_talar django_talar/**
