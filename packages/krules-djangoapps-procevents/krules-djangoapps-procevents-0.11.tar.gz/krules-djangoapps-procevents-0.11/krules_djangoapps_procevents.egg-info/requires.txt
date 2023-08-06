@@ -1,0 +1,1 @@
+krules-djangoapps-common==0.11
