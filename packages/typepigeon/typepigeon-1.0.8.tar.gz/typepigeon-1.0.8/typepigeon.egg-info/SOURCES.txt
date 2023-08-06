@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+typepigeon/__init__.py
+typepigeon/convert.py
+typepigeon.egg-info/PKG-INFO
+typepigeon.egg-info/SOURCES.txt
+typepigeon.egg-info/dependency_links.txt
+typepigeon.egg-info/requires.txt
+typepigeon.egg-info/top_level.txt
