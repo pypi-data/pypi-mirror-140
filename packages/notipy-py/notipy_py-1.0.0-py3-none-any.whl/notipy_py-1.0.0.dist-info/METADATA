@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: notipy-py
+Version: 1.0.0
+Summary: Windows notifier for 9-hours working day using Pomadoro technique (50 minutes work and 10 minutes rest) with lunch break
+Home-page: https://github.com/VladaZakharova/Notifier
+Author: Vlada Zakharova
+Author-email: vladazaharova0@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: notifier (==1.0.3)
+Requires-Dist: plyer (==2.0.0)
+
+# Notifier
+
