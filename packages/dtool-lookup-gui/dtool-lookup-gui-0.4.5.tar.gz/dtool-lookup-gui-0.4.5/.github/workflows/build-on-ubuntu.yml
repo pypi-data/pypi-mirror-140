@@ -1,0 +1,92 @@
+name: build-on-ubunu
+
+on:
+  workflow_call:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-20.04
+      
+    steps:
+
+    - name: checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2.3.1
+      with:
+        python-version: 3.8
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update -qy
+        sudo apt-get install -y \
+          libgirepository1.0-dev \
+          libcairo2-dev \
+          pkg-config \
+          python3-dev \
+          gir1.2-gtk-3.0 \
+          libgtksourceview-4-0
+
+    - name: Log system package info
+      run: |
+        echo "### lab_release -a ###"
+        lsb_release -a | tee lsb_release_a.txt
+        echo "### uname -a ###"
+        uname -a | tee uname_a.txt
+        echo "### apt list --installed ###"
+        apt list --installed | tee apt_list_installed.txt
+
+        echo "lsb_release_a.txt" >> files_to_include_in_release.txt
+        echo "uname_a.txt" >> files_to_include_in_release.txt
+        echo "apt_list_installed.txt" >> files_to_include_in_release.txt
+
+        
+    - name: Install pythonic dependencies
+      run: |
+        pip install --upgrade pip
+        pip install wheel
+        pip install -r requirements.txt
+        pip install pyinstaller
+
+    - name: Log python package info
+      run: |
+        echo "### pip freeze ###"
+        pip freeze | tee pip_freeze.txt
+
+        echo "pip_freeze.txt" >> files_to_include_in_release.txt
+
+    - name: Compile gschemas
+      run: |
+        glib-compile-schemas .
+      working-directory: dtool_lookup_gui
+
+    - name: Package executable with pyinstaller
+      run: |
+        pyinstaller -y ./pyinstaller/dtool-lookup-gui-linux-one-file.spec
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: dtool-lookup-gui-linux
+        path: dist/dtool-lookup-gui
+        if-no-files-found: error
+
+    - name: Upload build system description artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: linux-build-system-description
+        path: |
+          files_to_include_in_release.txt
+          lsb_release_a.txt
+          uname_a.txt
+          apt_list_installed.txt
+          pip_freeze.txt
+          pyinstaller.log
+          build/dtool-lookup-gui-linux-one-file/*.toc
+          build/dtool-lookup-gui-linux-one-file/*.txt
+          build/dtool-lookup-gui-linux-one-file/html.toc
