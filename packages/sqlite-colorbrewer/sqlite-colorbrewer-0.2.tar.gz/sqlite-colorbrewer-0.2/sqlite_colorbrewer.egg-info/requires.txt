@@ -1,0 +1,5 @@
+
+[test]
+datasette
+pytest
+pytest-asyncio

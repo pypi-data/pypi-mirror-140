@@ -1,0 +1,2 @@
+[datasette]
+sqlite_colorbrewer = sqlite_colorbrewer
