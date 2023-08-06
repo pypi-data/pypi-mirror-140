@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ziapdf/__init__.py
+ziapdf/pdf2image.py
+ziapdf/pdf2text.py
+ziapdf.egg-info/PKG-INFO
+ziapdf.egg-info/SOURCES.txt
+ziapdf.egg-info/dependency_links.txt
+ziapdf.egg-info/top_level.txt
