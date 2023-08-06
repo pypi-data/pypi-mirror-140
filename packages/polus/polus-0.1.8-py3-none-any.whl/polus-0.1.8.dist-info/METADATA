@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: polus
+Version: 0.1.8
+Summary: A tensorflow based framework for training deep learning models
+Home-page: UNKNOWN
+Author: Tiago Almeida
+Author-email: tiagomeloalmeida@ua.pt
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: transformers
+Requires-Dist: tensorflow-addons
+Requires-Dist: wandb
+Requires-Dist: torch
+Requires-Dist: optuna
+Requires-Dist: human-id
+
+UNKNOWN
+
