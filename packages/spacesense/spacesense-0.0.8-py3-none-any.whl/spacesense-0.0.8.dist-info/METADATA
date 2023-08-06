@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: spacesense
+Version: 0.0.8
+Summary: Spacesense Client Library
+Home-page: https://spacesense.ai
+Author: SpaceSense
+Author-email: support@spacesense.ai
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: grpcio (>=1.42.0)
+Requires-Dist: grpcio-tools (==1.42.0)
+Requires-Dist: matplotlib (==3.3.3)
+Requires-Dist: pyjwt[crypto] (>=2.3.0)
+Requires-Dist: rasterio (>=1.1.8)
+Requires-Dist: scikit-image (>=0.18.2)
+Requires-Dist: xarray (>=0.19.0)
+Provides-Extra: dev
+Requires-Dist: commitizen (==2.6.0) ; extra == 'dev'
+Requires-Dist: coverage (==5.3) ; extra == 'dev'
+Requires-Dist: grpc-interceptor (==0.13.1) ; extra == 'dev'
+Requires-Dist: grpcio-tools (==1.42.0) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.8.2) ; extra == 'dev'
+Requires-Dist: pytest (==6.1.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.10.1) ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# SpaceSense Client Library
+
+SpaceSense is an AI toolbox designed to help data scientists and developers build geospatial solutions faster, easier and at scale.
+
+
+## Installation
+
+---
+**NOTE**
+
+We highly recommend to use a virtual environment such as venv or conda.
+
+---
+
+### 1. Setup the virtual environment
+
+Pre-requisite : Python 3.7 should be already installed on your system
+
+### Create a virtual environment using venv :
+```
+python3.7 -m venv venv
+```
+
+### Activate the virtual environment
+
+#### On windows
+```
+venv\Scripts\activate
+```
+
+#### On Linux
+on windows
+```
+source venv/bin/activate
+```
+
+### Upgrade pip & setuptools
+
+```
+python -m pip install --upgrade pip
+```
+
+```
+pip install -U setuptools
+```
+
+
+### Install the latest version of the client library
+
+```
+pip install -U spacesense
+```
+
+
