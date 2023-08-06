@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hyc-utils
+Version: 0.3.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: torch ; extra == 'dev'
+Requires-Dist: numpy ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+UNKNOWN
+
