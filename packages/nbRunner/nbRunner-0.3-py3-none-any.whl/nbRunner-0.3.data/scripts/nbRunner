@@ -1,0 +1,32 @@
+#!python
+import argparse
+import nbclient
+import nbformat
+import nbparameterise
+import sys
+old_stdout = sys.stdout
+
+parser = argparse.ArgumentParser(
+    description='Notebook Runner',
+    add_help=False
+)
+parser.add_argument('Notebook')
+args, unknown = parser.parse_known_args()
+
+with open(args.Notebook, 'rb') as f:
+    nb = nbformat.read(f, as_version=4)
+
+notebook_params = nbparameterise.extract_parameters(nb)
+
+parser = argparse.ArgumentParser()
+for item in notebook_params:
+    parser.add_argument(f'--{item.name}', nargs='?', const=item.value, type=item.type,help = item.comment)
+args, unknown = parser.parse_known_args()
+new_params = nbparameterise.parameter_values(notebook_params,**vars(args))
+new_nb = nbparameterise.replace_definitions(nb, new_params)
+
+output = nbclient.execute(new_nb)
+sys.stdout = old_stdout
+for item in output['cells']:
+    for o in item['outputs']:
+        print(o['text'].strip())
