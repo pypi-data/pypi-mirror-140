@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: Topsis-PreetinderKaur-101903403
+Version: 0.0.1
+Summary: Topsis impelementation in python
+Home-page: 
+Author: Preetinder Kaur
+Author-email: dhillonpreeti2001@gmail.com
+License: MIT
+Keywords: Topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This package is used to implement topsis in python. As parameters, we require input file as .csv, Weights, Impacts and name of output csv file.
+
+To install the package use -
+>>pip install Topsis-Preetinder-101903403==0.0.1
+
+
+Eg. - topsis.topsis("data.csv","1,2,1,1","-,+,+,+", "output.csv")
+
+
+Change Log
+=============
+
+0.0.1 (26/02/2022)
+-------------
+- First Release
+
