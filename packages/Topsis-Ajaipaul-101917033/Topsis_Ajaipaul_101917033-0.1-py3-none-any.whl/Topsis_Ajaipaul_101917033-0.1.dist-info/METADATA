@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Topsis-Ajaipaul-101917033
+Version: 0.1
+Summary: Topsis package python
+Home-page: https://github.com/Bajwa-Ajai/Topsis.git
+Author: Ajaipaul Singh Bajwa
+Author-email: ajayrko2001@gmail.com
+License: MIT
+Download-URL: https://github.com/Bajwa-Ajai/Topsis/archive/refs/heads/main.zip
+Keywords: Python,Topsis,UCS654
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
+
