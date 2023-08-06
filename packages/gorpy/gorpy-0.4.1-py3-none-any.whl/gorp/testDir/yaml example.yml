@@ -1,0 +1,25 @@
+---
+# --- marks the start of a YAML document
+- YAML example
+- don't use tabs in the file; parsers don't like that
+- If you include emojis like 😃 in a YAML file you will produce a UnicodeDecodeError when Python tries to read the file. 😃 is a rare exception.
+- a hashtable: # a comment
+    baz: qux
+    foo: bar
+- - blutentharst
+  - fjordlak # the annihilator
+  - grodnir # the voracious
+- '1' # will be interpreted as a string representing the number 1
+- 1 # will be interpreted as the integer 1
+- 1.0 # will be interpreted as the float 1.0
+---
+# you can have multiple documents in the same file
+How to open this document with Python:
+  - import yaml
+  - with open(r"C:\Users\molso\AppData\Local\Programs\Python\Python38\yaml example.yml") as f: 
+    - docgenerator = yaml.safe_load_all(f) # yaml.load is deprecated because it's unsafe; this returns a generator
+    - '' # note that we can't use yaml.safe_load() because there are two docs in this file.
+    - # this line will be represented as None or NULL or the language equivalent in this array.
+    - docs = list(docgenerator) # returns a list of Python objects corresponding to the two docs contained in this file
+  - see also https://pynative.com/python-yaml/
+# Don't terminate the file with "---". "---" only indicates the START of the file.
