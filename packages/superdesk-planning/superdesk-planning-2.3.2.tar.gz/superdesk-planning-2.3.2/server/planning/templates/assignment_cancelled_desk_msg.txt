@@ -1,0 +1,1 @@
+Work on {{coverage_type}} coverage {{slugline}} has been cancelled and the assignment removed from workflow by {{user}}
