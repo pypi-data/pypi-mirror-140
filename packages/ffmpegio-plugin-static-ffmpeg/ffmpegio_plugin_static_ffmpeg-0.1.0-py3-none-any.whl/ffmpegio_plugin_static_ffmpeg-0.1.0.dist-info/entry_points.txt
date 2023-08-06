@@ -1,0 +1,2 @@
+[ffmpegio]
+finder_static = ffmpegio_plugin_static_ffmpeg

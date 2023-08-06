@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: ffmpegio-plugin-static-ffmpeg
+Version: 0.1.0
+Summary: ffmpegio finder plugin to use FFmpeg executables from static-ffmpeg package
+Home-page: https://python-ffmpegio.github.io/python-ffmpegio-plugin-static-ffmpeg
+License: GPL-2.0 License
+Project-URL: Repository, https://github.com/python-ffmpegio/python-ffmpegio-plugin-static-ffmpeg
+Project-URL: Issues, https://github.com/python-ffmpegio/python-ffmpegio-plugin-static-ffmpeg/issues
+Project-URL: Pull Requests, https://github.com/python-ffmpegio/python-ffmpegio-plugin-static-ffmpeg/pulls
+Keywords: multimedia,ffmpeg
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: Capture/Recording
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Video :: Capture
+Classifier: Topic :: Multimedia :: Video :: Conversion
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: static-ffmpeg
+Requires-Dist: pluggy
+
+`ffmpegio-plugin-static-ffmpeg`: A Python `ffmpegio` plugin to use FFmpeg binaries in `static-ffmpeg` package
+=============================================================================================================
+
+|pypi| |pypi-status| |pypi-pyvers| |github-license| |github-status|
+
+.. |pypi| image:: https://img.shields.io/pypi/v/ffmpegio-plugin-static-ffmpeg
+  :alt: PyPI
+.. |pypi-status| image:: https://img.shields.io/pypi/status/ffmpegio-plugin-static-ffmpeg
+  :alt: PyPI - Status
+.. |pypi-pyvers| image:: https://img.shields.io/pypi/pyversions/ffmpegio-plugin-static-ffmpeg
+  :alt: PyPI - Python Version
+.. |github-license| image:: https://img.shields.io/github/license/python-ffmpegio/python-ffmpegio-plugin-static-ffmpeg
+  :alt: GitHub License
+.. |github-status| image:: https://img.shields.io/github/workflow/status/python-ffmpegio/python-ffmpegio-plugin-static-ffmpeg/Run%20Tests
+  :alt: GitHub Workflow Status
+
+`Python ffmpegio <https://python-ffmpegio.github.io/python-ffmpegio/>`__ package aims to bring 
+the full capability of `FFmpeg <https://ffmpeg.org>`__ to read, write, and manipulate multimedia 
+data to Python. FFmpeg is an open-source cross-platform multimedia framework, which can handle 
+most of the multimedia formats available today.
+
+One caveat of FFmpeg is that there is no official program installer for Windows and MacOS (although 
+`homebrew` could be used for the latter). `ffmpegio-plugin-static-ffmpeg` enables the `ffmpegio` package to 
+use the build of FFmpeg distributed by the `static-ffmpeg <https://github.com/zackees/static_ffmpeg>`__ 
+package.
+
+Use
+===
+
+Simply install the package:
+
+.. code-block:: bash
+
+  pip install ffmpegio-core ffmpegio-plugin-static-ffmpeg
+
+Then `ffmpegio` will auto-detect the plugin and `static-ffmpeg`'s executables:
+
+.. code-block:: python
+  
+  import ffmpegio
+
+  print(ffmpegio.path.FFMPEG_BIN) # ...\site-packages\static_ffmpeg\bin\win32\ffmpeg.exe
+  print(ffmpegio.path.FFPROBE_BIN) # ...\site-packages\static_ffmpeg\bin\win32\ffprobe.exe
+  
+Because the `static-ffmpeg` package downloads its binaries on demand, the first
+time importing `ffmpegio` with this plugin enabled may take a while.
+
+.. note::
+  `ffmpegio-plugin-static-ffmpeg` will *not* be activated if `ffmpeg` and `ffprobe` are 
+  already available on the system PATH.
+
+
