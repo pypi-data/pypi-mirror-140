@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bci-feedback
+Version: 0.1
+Summary: GCPDS: Scripts for test BCI with Pacman.
+Home-page: UNKNOWN
+Author: Yeison Cardona
+Author-email: yeisoneng@gmail.com
+Maintainer: Yeison Cardona
+Maintainer-email: yeisoneng@gmail.com
+License: BSD License
+Download-URL: https://bitbucket.org/gcpds/python-bci/downloads/
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: gym
+
+UNKNOWN
+
