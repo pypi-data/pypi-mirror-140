@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+signethic/__init__.py
+signethic.egg-info/PKG-INFO
+signethic.egg-info/SOURCES.txt
+signethic.egg-info/dependency_links.txt
+signethic.egg-info/entry_points.txt
+signethic.egg-info/not-zip-safe
+signethic.egg-info/requires.txt
+signethic.egg-info/top_level.txt
