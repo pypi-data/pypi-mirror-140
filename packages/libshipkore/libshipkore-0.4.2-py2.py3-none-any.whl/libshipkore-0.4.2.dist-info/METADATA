@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: libshipkore
+Version: 0.4.2
+Summary: Shipkore tracking library and CLI
+Home-page: https://github.com/shipkore/libshipkore
+Author: Innerkore
+Author-email: admin@innerkore.com
+License: UNKNOWN
+Keywords: libshipkore
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+License-File: LICENSE.rst
+License-File: AUTHORS.rst
+Requires-Dist: Click (>=8.0.3)
+Requires-Dist: beautifulsoup4 (>=4.10.0)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: pydantic (>=1.9.0)
+Requires-Dist: parsel (>=1.6.0)
+Requires-Dist: class-registry (>=2.1.2)
+
+===========
+libshipkore
+===========
+
+Shipkore tracking library & CLI to track packages across couriers. 
+This is first Open source product of Innerkore Technologies. We are commited to do things differently. 
+
+
+Installation
+-------------
+
+.. code-block:: python
+
+    pip install libshipkore
+
+Usage
+-------
+
+As CLI
+
+.. code-block:: bash
+
+   libshipkore providers
+
+To get all the supported Couriers.
+
+.. code-block:: bash
+
+   libshipkore track
+
+To track a package in supported Couriers. It will ask for 2 things
+
+- Provider (Couries)
+- Waybill (Tracking number) 
+
+As Library
+
+    Coming Soon
+
+Features
+--------
+
+- Tracking through CLI
+- Embeddable as library
+- Give standard response
+- Convert Courier's statuses to standard statuses
+- Convert date & time to timezone specific ISO Format
+
+Sample Response
+---------------
+
+    Coming Soon
+
+Supported Statuses
+------------------
+
+- InfoReceived
+- InTransit
+- OutForDelivery
+- AttemptFail
+- Delivered
+- AvailableForPickup
+- Exception
+- ReverseDelivered
+- ReverseOutForDelivery
+- ReverseInTransit
+- 
+
+Supported Couriers
+-------------------
+
+- `Delhivery <https://www.delhivery.com/>`_
+- `Ekart <https://ekartlogistics.com/>`_
+
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2020-12-20)
+------------------
+
+* First release on PyPI.
+
+
