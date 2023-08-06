@@ -1,0 +1,4 @@
+[console_scripts]
+download_gbk_from_acc=gbkviz.scripts.download_gbk_from_acc:main
+gbkviz_webapp=gbkviz.scripts.launch_gbkviz_webapp:main
+
