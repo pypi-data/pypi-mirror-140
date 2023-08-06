@@ -1,0 +1,14 @@
+oteapi_optimade/__init__.py,sha256=7-_DrsTY_u46gRLgrm0-aDrUWyCrW0yaUjuL9o4EtoQ,261
+oteapi_optimade/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oteapi_optimade/strategies/download.py,sha256=LvGwAD-TsWuMz9kDJctemdkcJ-npPVw_JM-c3mhh0G4,3054
+oteapi_optimade/strategies/filter.py,sha256=xGk8cQL-eFV1MMM4y1oDSrExb4D39LfGoIVNVRARaiE,2061
+oteapi_optimade/strategies/function.py,sha256=E9t71t1iDDcs18NgHuQdC6JIpWeb2pJ5_5nMHjJn5pk,1434
+oteapi_optimade/strategies/mapping.py,sha256=7bMWTbxHlSjpfZe_4IyyrUl8BWfioiCneu-ds2lPwYY,1426
+oteapi_optimade/strategies/parse.py,sha256=37u3r1xaqlW0dIQ4PFFBJgHaBt7tlAM3e2VoFMlnAmw,1971
+oteapi_optimade/strategies/resource.py,sha256=bfj2BMrzCByN9p6vXsrvJWJvYKFYDw0BKRtX5cpuW90,2061
+oteapi_optimade/strategies/transformation.py,sha256=cr02Y7TRBh1NlLlptEWEZi7AuMmmU2XV4vrSm8fRVIc,2968
+oteapi_optimade-0.0.1.dist-info/entry_points.txt,sha256=_HRq9U1ktW2E_EnEFCBCSVigBmCYwIItqDX7pM-SAGI,133
+oteapi_optimade-0.0.1.dist-info/LICENSE,sha256=Mu1rY6Cyv5ok6vHed1_EuINL9t16JY7Zf3YN0mgMhdE,1063
+oteapi_optimade-0.0.1.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+oteapi_optimade-0.0.1.dist-info/METADATA,sha256=CTkp1J0endugLlqEA_p1FoTtDXq07F5Bu9njBNefi8k,3024
+oteapi_optimade-0.0.1.dist-info/RECORD,,
