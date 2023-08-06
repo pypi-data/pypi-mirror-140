@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pqr
+Version: 0.4.1
+Summary: 
+Author: Andrey Babkin
+Author-email: andrey.babkin.ru71@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ipython (>=8.0.0,<9.0.0)
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: numpy (>=1.22.0,<2.0.0)
+Requires-Dist: pandas (>=1.3.5,<2.0.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
+Requires-Dist: statsmodels (>=0.13.1,<0.14.0)
