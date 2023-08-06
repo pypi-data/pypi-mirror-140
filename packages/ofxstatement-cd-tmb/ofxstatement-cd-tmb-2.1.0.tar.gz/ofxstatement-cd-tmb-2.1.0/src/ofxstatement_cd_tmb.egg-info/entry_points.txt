@@ -1,0 +1,3 @@
+[ofxstatement]
+tmbcd = ofxstatement.plugins.tmbcd:TmbCdPlugin
+
