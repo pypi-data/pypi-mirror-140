@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: wai-client
+Version: 0.1
+Summary: Wai client app
+Home-page: https://p0nk.net/wai
+Author: dlek
+Author-email: dlek@p0nk.net
+License: MIT license
+Project-URL: Source, https://gitlab.com/dlek/wai-client
+Project-URL: Tracker, https://gitlab.com/dlek/wai-client/issues
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Wai client app
+
+This is a simple command-line or GUI application to query and update a Wai
+server.  A [Wai server](https://gitlab.com/dlek/wai-server) is a simple
+information service API that stores and provides users' given location and
+status.
+
+## What's Wai
+
+Wai is a ridiculously simple server that records the textual location, status
+and status emoji for the user to be retrieved by others, such as friends or
+colleagues.  The impetus was for the author to advertise on a webpage when
+they would next be working on campus.
+
+## Usage
+
+Wai provides a simple graphical user interface and a non-interactive
+command-line interface.  They do not necessarily provide the same
+functionality.
+
+The app launches in GUI mode when no command (such as `query`) is provided.
+
+**`wai --help`**
+
+```
+usage: wai [-h] [-c CONFIG] [--uri URI] [--uuid UUID] {query,update} ...
+
+Query or update location and status information with Wai server.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c CONFIG, --config CONFIG
+                        configuration file
+  --uri URI             URI for Wai server
+  --uuid UUID           user ID
+
+actions:
+  Perform actions non-interactively. If unspecified, GUI will be launched
+
+  {query,update}
+    query               query for current user info
+    update              update user info
+```
+
+**`wai query --help`**
+
+```
+usage: wai query [-h] [--shell]
+
+Query for current user info
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --shell     output results as shell variables
+```
+
+**`wai update --help`**
+
+```
+usage: wai update [-h] [--key KEY] [--location LOCATION] [--status STATUS]
+
+Update user information
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --key KEY            user's API key
+  --location LOCATION  set location
+  --status STATUS      set status
+```
+
+## Configuration file
+
+The Wai client will look for a configuration file as specified on the command
+line or in either of `$HOME/.config/wai/wai.conf` or `$HOME/.wai`.  This
+example shows the format:
+
+```
+[wai]
+uri = <URI of Wai server>
+uuid = <uuid given at registration>
+key = <key used to register>
+```
+
+## Limitations
+
+The Wai client does not currently support registration.
+
+
