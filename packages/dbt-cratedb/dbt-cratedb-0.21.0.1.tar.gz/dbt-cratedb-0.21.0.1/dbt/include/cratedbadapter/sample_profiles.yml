@@ -1,0 +1,10 @@
+
+default:
+  outputs:
+    dev:
+      type: cratedbadapter
+      # Add sample credentials here, like:
+      # host: <host>
+      # port: <port_num>
+      # username: <user>
+  target: dev
