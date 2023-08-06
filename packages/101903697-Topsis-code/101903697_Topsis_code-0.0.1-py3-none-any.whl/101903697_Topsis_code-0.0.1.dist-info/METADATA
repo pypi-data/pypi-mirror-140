@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: 101903697-Topsis-code
+Version: 0.0.1
+Summary: Topsis_code
+Author: Mohit Batra
+Author-email: mbatra_be19@thapar.edu
+License: UNKNOWN
+Keywords: topsis,Topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A Python package implementing Topsis method sed for multi-criteria decision analysis. Topsis stands for Technique for Order of Preference by Similarity to Ideal Solution
+
