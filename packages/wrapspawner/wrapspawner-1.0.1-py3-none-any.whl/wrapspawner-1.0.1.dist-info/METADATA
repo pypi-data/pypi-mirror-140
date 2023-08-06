@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: wrapspawner
+Version: 1.0.1
+Summary: Wrapspawner: A spawner for Jupyterhub to wrap other spawners and allow the user to choose among them.
+Home-page: http://jupyter.org
+Author: Michael Milligan
+Author-email: milligan@umn.edu
+License: BSD
+Keywords: Interactive,Interpreter,Shell,Web
+Platform: Linux
+Platform: Mac OS X
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
