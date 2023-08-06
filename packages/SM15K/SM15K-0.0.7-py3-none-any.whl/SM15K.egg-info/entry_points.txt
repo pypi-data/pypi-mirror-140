@@ -1,0 +1,2 @@
+[console_scripts]
+SMK15 = SM15K.__main__:main

@@ -1,0 +1,17 @@
+CHANGELOG.txt,sha256=59p9qjTduXeey3JbI6CcAVOPiglI2joSBjaJGjwWLis,5984
+LICENCE.txt,sha256=KLrZJqwmz_M0t0y6vYtc0ygXnLsQakW3PwKoPA5Cq9A,1057
+MANIFEST.in,sha256=xMFrxDzC3eSqzRm-NPGZtjYvdlENKI_l6m03NqJokHc,25
+README.md,sha256=FI8ZjTiW4DyTq6Flq5q34YmhAio9CJxSUZ6u39WFZA8,8222
+SM15K.egg-info/PKG-INFO,sha256=wtBOtf5oke2Fh7eoz6kdyIrf9NJYEdxF81QDrXCdkF0,8763
+SM15K.egg-info/SOURCES.txt,sha256=XAY-1vT8nuF-J0M_R8uitsCVClu0-Iak_idVn_rUctQ,259
+SM15K.egg-info/dependency_links.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+SM15K.egg-info/entry_points.txt,sha256=oF8pHNWmSC0mebQ2j8hye-6LLTHPPukY7CBM_djKY_0,46
+SM15K.egg-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+deltaelektronika/SM15K.py,sha256=IRsczFwEqrEyqZlarDuvyinEdbjNxSgjwmvqOrqwF30,108219
+deltaelektronika/__init__.py,sha256=Nv-2hcVWbusUkpYTIoxQtnOkVXTZydcISL0Y76AkXC8,42
+SM15K-0.0.7.dist-info/LICENCE.txt,sha256=KLrZJqwmz_M0t0y6vYtc0ygXnLsQakW3PwKoPA5Cq9A,1057
+SM15K-0.0.7.dist-info/METADATA,sha256=Ep2hsF21Ei5RsdxCR6nSlvm220_7PSE0ijJNgqknnb0,8568
+SM15K-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SM15K-0.0.7.dist-info/entry_points.txt,sha256=oF8pHNWmSC0mebQ2j8hye-6LLTHPPukY7CBM_djKY_0,46
+SM15K-0.0.7.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+SM15K-0.0.7.dist-info/RECORD,,
