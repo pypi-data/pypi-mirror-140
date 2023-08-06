@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf8 -*-
+
+from klimalogger import client as logger_client
+
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--check", help="measure once and print the results", action="store_true")
+args = parser.parse_args()
+
+client = logger_client()
+if args.check:
+    print(client.measure())
+else:
+    client.measure_and_store()
