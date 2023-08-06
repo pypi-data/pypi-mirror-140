@@ -1,0 +1,10 @@
+larango/__init__.py,sha256=1t7wrT4e87mvP6c76hIqTGj5Kd8kmZLP64K_rsvS_ic,3801
+larango/__main__.py,sha256=Dp4fOXcGp8GucrIS72-OQbVeQJmk5m5vCGv-_twwusA,87
+larango/commands/__init__.py,sha256=jnZ6BM7JbWV1IcmhiihIvunHjvI15yVV7d26zMI38Ao,1164
+larango/commands/help.py,sha256=82hjQdzaPYBompRawtf27pEGKK6vMKb6LVY9KhnX0Yk,660
+Larango-0.1.0.dist-info/LICENSE,sha256=VXbwArPC9XE7N7cvSBClNMHFbo7CU1p361QXV5bkGpk,1100
+Larango-0.1.0.dist-info/METADATA,sha256=KZ0w1G5ugODspw_dnxHu893QyGhqJ8m8oamkj0f_suM,388
+Larango-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Larango-0.1.0.dist-info/entry_points.txt,sha256=1x0UDm0d5WuTVrl7_tL3187TUnhTy2bjU0mdS3wpkAA,62
+Larango-0.1.0.dist-info/top_level.txt,sha256=Dsmup7OimwbPeK2eur4ip3YvLZHL2wPBEe2U1I5oPUk,8
+Larango-0.1.0.dist-info/RECORD,,
