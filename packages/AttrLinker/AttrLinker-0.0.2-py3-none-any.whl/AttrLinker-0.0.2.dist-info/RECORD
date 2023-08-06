@@ -1,0 +1,11 @@
+attrLinker/__init__.py,sha256=C_40ULREfn1jyMsJi5dFxsTCCEmDC8lgaPrdvattofE,204
+attrLinker/attrLinker.py,sha256=lvFk_LLbdt81CAwZlJlebxYZuFbo3uZmHMMUQwLVoK4,11576
+attrLinker/exceptions.py,sha256=0vhiY5fOrO4oOOtO2V9bKK43uduMHvS0TIZH8GEve-w,601
+attrLinker/presets.py,sha256=myVrGEcUdJJ_9A_kVMTkK8nSE6YABjYR9QzgRGwKqbo,7010
+attrLinker/propBinder.py,sha256=VHGnp2Xansi22OnzSAm1V9BYVz47190YSF4Qv5kir-I,1242
+attrLinker/utils.py,sha256=PkZq6NMTGajC77L3hDa2sb1O12IkMfvQQSLqv7hT5bo,164
+AttrLinker-0.0.2.dist-info/LICENSE,sha256=E9cZnQboYTJtt0hFOvRZQD8Zi7mQBfIC_txjR0448bI,1085
+AttrLinker-0.0.2.dist-info/METADATA,sha256=6cgp8LhANvwrecipZ5EHM0xh7kQ_jvASAV5s3OTP8Nk,3017
+AttrLinker-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+AttrLinker-0.0.2.dist-info/top_level.txt,sha256=EFAlkGt_N5JYFgDIRaUre3EdRcG8bvvHCZkkn1hR904,11
+AttrLinker-0.0.2.dist-info/RECORD,,
