@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zoomtools
+Version: 1.11
+Summary: Zoom python instruments
+Author: Zoom Developer
+Author-email: sa-mp12345@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
