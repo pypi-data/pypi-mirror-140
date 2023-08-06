@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sciex
+Version: 0.3
+Summary: Framework for "scientific" experiments (Result organization; Experiment and Trial setup; Baseline Comparisons)
+Home-page: UNKNOWN
+Author: Kaiyu Zheng
+Author-email: kaiyutony@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6
+
+UNKNOWN
+
