@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/DSDMpy/DSDMpy.py
+src/DSDMpy/__init__.py
+src/DSDMpy/update.py
+src/DSDMpy.egg-info/PKG-INFO
+src/DSDMpy.egg-info/SOURCES.txt
+src/DSDMpy.egg-info/dependency_links.txt
+src/DSDMpy.egg-info/requires.txt
+src/DSDMpy.egg-info/top_level.txt
