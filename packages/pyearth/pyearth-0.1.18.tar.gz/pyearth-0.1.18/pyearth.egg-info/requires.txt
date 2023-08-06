@@ -1,0 +1,8 @@
+cartopy
+gdal
+matplotlib
+netCDF4
+numpy
+pandas
+scipy
+statsmodels
