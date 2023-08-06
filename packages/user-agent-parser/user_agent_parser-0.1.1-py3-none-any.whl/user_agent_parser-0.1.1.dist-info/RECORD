@@ -1,0 +1,9 @@
+user_agent_parser/__init__.py,sha256=ZDgqcBfDnY3kj4sn_KxmbiwL9TDsKjEla0vEhppEiaE,117
+user_agent_parser/constants.py,sha256=eJKTmBgSL4Et8CyYwGLdIRDmABxT5AqHIx3XcaDyCfs,73574
+user_agent_parser/parser.py,sha256=JNnWduDHbhftbVYOvmbTaECwWanOFsuMA37bPbEXB84,10236
+user_agent_parser/test.py,sha256=ridp5n-7AYqJp6RiarXfPFAeE55O8FK8uXakT4mKXrs,6810
+user_agent_parser-0.1.1.dist-info/LICENSE,sha256=Qk_jOgP4qIhHqEgjrsV_nx6x_cunds6o64hanpYzE0Q,1080
+user_agent_parser-0.1.1.dist-info/METADATA,sha256=ttYR-obrTW6XZ1fJFvZZ2wcpCTfM5Su9h4_jaGg2tbA,1822
+user_agent_parser-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+user_agent_parser-0.1.1.dist-info/top_level.txt,sha256=mZJsNIuY3ZGwY3ZBVc24JWd--KjiXK2pi3HXqdnBOX0,18
+user_agent_parser-0.1.1.dist-info/RECORD,,
