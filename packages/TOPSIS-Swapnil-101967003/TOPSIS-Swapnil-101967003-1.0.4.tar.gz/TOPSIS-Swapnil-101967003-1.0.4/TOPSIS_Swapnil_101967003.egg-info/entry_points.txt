@@ -1,0 +1,3 @@
+[console_scripts]
+TOPSIS-Swapnil-101967003 = Topsis_Ranking.topsis:main
+
