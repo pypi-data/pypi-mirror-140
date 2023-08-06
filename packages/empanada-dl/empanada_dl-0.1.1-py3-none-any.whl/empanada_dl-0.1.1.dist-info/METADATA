@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: empanada-dl
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/volume-em/empanada
+License: BSD-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: torch (>=1.10)
+Requires-Dist: torchvision (>=0.2)
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: numba (>=0.54)
+Requires-Dist: zarr (>=2.10)
+Requires-Dist: opencv-python (>=4.5.3)
+Requires-Dist: scikit-image (>=0.18)
+Requires-Dist: albumentations
+
+UNKNOWN
+
