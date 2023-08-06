@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: autodatadictionary
+Version: 0.0.2
+Summary: Generate automated data dictionary from files and databases
+Home-page: https://github.com/bahadirhanfiliz/autodatadictionary
+Author: Bahadirhan Filiz
+Author-email: bahadirhanf@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/bahadirhanfiliz/autodatadictionary/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DataDictionary
+
+AutoDataDictionary generates data dictionary from source files and database tables including:
+  - Column Name
+  - Sample Value
+  - Source File Name
+  - Non Null Values Count
+  - Unique Values Count
+  - Data Type
+  - Unique Values List
+
+### How to use
+
+Generate data dictionary from db
+   ```{python}
+   import autodatadictionary as ad
+   ad.to_dictionary_from_db(
+        sql_alchemy_connection_string='postgresql://username:password@domain:5432/db',
+        schema='schema')
+   ```
+
+Generate data dictionary from csv files
+   ```{python}
+   import autodatadictionary as ad
+   ad.to_dictionary_from_file(['/path/data1.csv', '/path/data2.csv', '/path/dataN.csv'], sep=',')
+   ```
+
