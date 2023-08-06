@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: preql
+Version: 0.2.6
+Summary: Pretty Query Language
+Home-page: UNKNOWN
+Author: Erez Shinan
+Author-email: erezshin@gmail.com
+License: Interface-Protection Clause + MIT
+Keywords: Preql SQL
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+,
+    "Pretty Query Language",
+
+

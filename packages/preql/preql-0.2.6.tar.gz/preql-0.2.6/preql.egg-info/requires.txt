@@ -1,0 +1,6 @@
+lark-parser>=1.1.2
+runtype>=0.1.4
+dsnparse
+prompt-toolkit
+pygments
+rich
