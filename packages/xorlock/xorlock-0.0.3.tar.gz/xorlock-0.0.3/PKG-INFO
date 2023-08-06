@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: xorlock
+Version: 0.0.3
+Summary: Encrypt using the XOR encryption method.
+Home-page: UNKNOWN
+Author: Nyaanity (Sascha Ehret)
+Author-email: no@mail.wow
+License: UNKNOWN
+Keywords: python,encryption,xor,security,cryptography
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# xorlock
+Powerful encryptor using the XOR encryption method.
+
+

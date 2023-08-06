@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+xorlock/__init__.py
+xorlock/methods.py
+xorlock.egg-info/PKG-INFO
+xorlock.egg-info/SOURCES.txt
+xorlock.egg-info/dependency_links.txt
+xorlock.egg-info/top_level.txt
