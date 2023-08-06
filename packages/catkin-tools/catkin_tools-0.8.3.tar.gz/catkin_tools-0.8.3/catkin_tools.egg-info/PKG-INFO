@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: catkin-tools
+Version: 0.8.3
+Summary: Command line tools for working with catkin.
+Home-page: https://catkin-tools.readthedocs.org/
+Author: William Woodall
+Author-email: william@osrfoundation.org
+Maintainer: William Woodall
+Maintainer-email: william@osrfoundation.org
+License: Apache 2.0
+Keywords: catkin
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.5
+License-File: LICENSE
+
+Provides command line tools for working with catkin.
+
