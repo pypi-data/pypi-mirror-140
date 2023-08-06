@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+pyregexp/__init__.py
+pyregexp/engine.py
+pyregexp/lexer.py
+pyregexp/match.py
+pyregexp/pyrser.py
+pyregexp/re_ast.py
+pyregexp/tokens.py
+pyregexp.egg-info/PKG-INFO
+pyregexp.egg-info/SOURCES.txt
+pyregexp.egg-info/dependency_links.txt
+pyregexp.egg-info/requires.txt
+pyregexp.egg-info/top_level.txt
