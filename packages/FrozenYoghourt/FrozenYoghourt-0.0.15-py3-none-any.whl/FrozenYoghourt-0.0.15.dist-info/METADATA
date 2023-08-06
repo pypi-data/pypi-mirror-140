@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: FrozenYoghourt
+Version: 0.0.15
+Summary: Numerical and Symbolic Manipulation for Quantum Computing
+Home-page: https://pypi.org/project/FrozenYoghourt/
+Author: Peter Montgomery
+Author-email: petermontgomery056@gmail.com
+License: MIT
+Keywords: quantum computing
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
