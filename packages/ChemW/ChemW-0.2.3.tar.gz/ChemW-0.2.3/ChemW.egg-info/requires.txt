@@ -1,0 +1,4 @@
+chemicals
+pandas
+pubchempy
+requests
