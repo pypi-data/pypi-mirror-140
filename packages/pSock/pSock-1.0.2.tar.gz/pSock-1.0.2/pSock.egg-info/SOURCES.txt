@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pSock.egg-info/PKG-INFO
+pSock.egg-info/SOURCES.txt
+pSock.egg-info/dependency_links.txt
+pSock.egg-info/top_level.txt
