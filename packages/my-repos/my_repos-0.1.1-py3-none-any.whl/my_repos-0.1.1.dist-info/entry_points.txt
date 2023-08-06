@@ -1,0 +1,3 @@
+[console_scripts]
+my-repos=myrepos.repos:cli
+
