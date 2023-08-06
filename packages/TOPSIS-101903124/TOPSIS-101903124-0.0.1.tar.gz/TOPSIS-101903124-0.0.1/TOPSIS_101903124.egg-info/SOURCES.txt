@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+readme.txt
+setup.cfg
+setup.py
+TOPSIS_101903124.egg-info/PKG-INFO
+TOPSIS_101903124.egg-info/SOURCES.txt
+TOPSIS_101903124.egg-info/dependency_links.txt
+TOPSIS_101903124.egg-info/requires.txt
+TOPSIS_101903124.egg-info/top_level.txt
+topsis/101903124.py

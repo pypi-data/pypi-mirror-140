@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: TOPSIS-101903124
+Version: 0.0.1
+Summary: A Python package to find TOPSIS for multi-criteria decision analysis method
+Home-page: UNKNOWN
+Author: Yash Sharma
+Author-email: yashsharma2636@gmail.com
+License: MIT
+Description: Topsis by Yash Sharma(2022)
+        
+        Change Log
+        ==========
+        
+        0.0.1 (27/02/2022)
+        ------------------
+        - First Release
+Keywords: topsis,UCS655,TIET
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
