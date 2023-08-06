@@ -1,0 +1,41 @@
+[console_scripts]
+crazyhusk = crazyhusk.cli:run
+
+[crazyhusk.code.listers]
+list_engine_code_templates = crazyhusk.engine:UnrealEngine.list_engine_code_templates
+list_plugin_code_templates = crazyhusk.plugin:UnrealPlugin.list_plugin_code_templates
+list_project_code_templates = crazyhusk.project:UnrealProject.list_project_code_templates
+
+[crazyhusk.commands]
+junit-report = crazyhusk.reports:json_reports_to_junit_xml
+list-engines = crazyhusk.engine:UnrealEngine.log_engine_list
+
+[crazyhusk.engine.finders]
+find_egl_engine_windows = crazyhusk.windows.engine:find_egl_engine_windows
+find_registered_engines_windows = crazyhusk.windows.engine:find_registered_engines_windows
+
+[crazyhusk.engine.listers]
+list_egl_engines_windows = crazyhusk.windows.engine:list_egl_engines_windows
+list_registered_engines_windows = crazyhusk.windows.engine:list_registered_engines_windows
+
+[crazyhusk.engine.resolvers]
+resolve_executable_path_windows = crazyhusk.windows.engine:resolve_executable_path_windows
+
+[crazyhusk.engine.sanitizers]
+engine_exe_common_path = crazyhusk.engine:UnrealEngine.engine_exe_common_path
+engine_exe_exists = crazyhusk.engine:UnrealEngine.engine_exe_exists
+
+[crazyhusk.engine.validators]
+engine_dir_exists = crazyhusk.engine:UnrealEngine.engine_dir_exists
+
+[crazyhusk.logs.filters]
+FilterUBTWarnings = crazyhusk.logs:FilterUBTWarnings
+FilterUE4Logs = crazyhusk.logs:FilterUE4Logs
+
+[crazyhusk.plugin.validators]
+plugin_file_exists = crazyhusk.plugin:UnrealPlugin.plugin_file_exists
+valid_plugin_file_extension = crazyhusk.plugin:UnrealPlugin.valid_plugin_file_extension
+
+[crazyhusk.project.validators]
+project_file_exists = crazyhusk.project:UnrealProject.project_file_exists
+valid_project_file_extension = crazyhusk.project:UnrealProject.valid_project_file_extension
