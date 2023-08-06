@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/autodatadictionary/__init__.py
+src/autodatadictionary/autodatadictionary.py
+src/autodatadictionary.egg-info/PKG-INFO
+src/autodatadictionary.egg-info/SOURCES.txt
+src/autodatadictionary.egg-info/dependency_links.txt
+src/autodatadictionary.egg-info/top_level.txt
