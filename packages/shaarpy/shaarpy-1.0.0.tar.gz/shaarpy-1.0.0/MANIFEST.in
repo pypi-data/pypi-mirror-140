@@ -1,0 +1,6 @@
+# exclude manage.py shaarpy/.env static tox.ini pytest.ini
+exclude shaarpy/settings_debug.py
+
+recursive-include shaarpy *.html *.png *.css *.py *.md env.sample
+
+recursive-exclude shaarpy tests
