@@ -1,0 +1,6 @@
+
+[docs]
+pydata-sphinx-theme
+sphinx
+sphinx-copybutton
+sphinxcontrib-apidoc
