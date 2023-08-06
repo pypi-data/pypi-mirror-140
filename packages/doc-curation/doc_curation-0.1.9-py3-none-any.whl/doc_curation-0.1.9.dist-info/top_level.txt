@@ -1,0 +1,3 @@
+curation_projects
+doc_curation
+tests
