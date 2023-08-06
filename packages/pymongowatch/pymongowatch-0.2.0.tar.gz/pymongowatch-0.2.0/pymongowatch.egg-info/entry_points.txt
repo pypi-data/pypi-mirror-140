@@ -1,0 +1,3 @@
+[console_scripts]
+pymongowatch-install-mask = pymongowatch_mask_installer.main:main
+

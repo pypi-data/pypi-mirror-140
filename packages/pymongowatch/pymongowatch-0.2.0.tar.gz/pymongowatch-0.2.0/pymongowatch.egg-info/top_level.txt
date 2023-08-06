@@ -1,0 +1,7 @@
+debian
+dist
+etc
+pymongo
+pymongo_mask
+pymongowatch_attributes
+pymongowatch_mask_installer
