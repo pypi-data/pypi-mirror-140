@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_iris/__init__.py
+django_iris/base.py
+django_iris/creation.py
+django_iris/cursor.py
+django_iris/features.py
+django_iris/introspection.py
+django_iris/operations.py
+django_iris/schema.py
+django_iris/validation.py
+django_iris.egg-info/PKG-INFO
+django_iris.egg-info/SOURCES.txt
+django_iris.egg-info/dependency_links.txt
+django_iris.egg-info/top_level.txt
