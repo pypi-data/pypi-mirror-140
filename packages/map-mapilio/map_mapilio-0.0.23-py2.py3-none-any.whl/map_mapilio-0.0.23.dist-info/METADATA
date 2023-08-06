@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: map-mapilio
+Version: 0.0.23
+Summary: Mapilio Map Library
+Home-page: https://github.com/mapilio/helper.git
+Author: Mapilio - Ozcan Durak & M.Can VARER
+Author-email: ozcan@visiosoft.com.tr
+License: licensed
+Project-URL: Bug Reports, https://github.com/mapilio/map/issues
+Project-URL: Say Thanks!, https://mapilio.com/#contact
+Project-URL: Source, https://github.com/mapilio/map/
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Requires-Dist: folium (==0.12.1)
+Requires-Dist: psycopg2-binary
+Requires-Dist: addict
+Requires-Dist: helper-mapilio
+
+UNKNOWN
+
