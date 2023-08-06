@@ -1,0 +1,3 @@
+MODULE_NAME = "d2f2"
+VERSION = "2.1.3"
+AUTHOR = "DomCie"

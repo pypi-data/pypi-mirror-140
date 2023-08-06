@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+d2f2/CONFIGURATIONS.py
+d2f2/__init__.py
+d2f2/__main__.py
+d2f2/convert.py
+d2f2/shell.py
+d2f2.egg-info/PKG-INFO
+d2f2.egg-info/SOURCES.txt
+d2f2.egg-info/dependency_links.txt
+d2f2.egg-info/entry_points.txt
+d2f2.egg-info/requires.txt
+d2f2.egg-info/top_level.txt
