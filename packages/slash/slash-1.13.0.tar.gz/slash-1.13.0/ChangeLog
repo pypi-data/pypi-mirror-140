@@ -1,0 +1,2042 @@
+CHANGES
+=======
+
+1.13.0
+------
+
+* Changelog
+* Fix tests
+* Fix tmux
+* Fix other commands
+* issue-1051: Make parallel work with resume
+* Fix tests
+* issue-1048: Pin IPython<7.17.0 for Python<=3.6
+* issue-1048: Pin IPython<7.17.0 for Python3.6
+* Support python 3.9
+* modified the validate\_xml method to check for the count of the testcase tag
+* modified validate XML method to validate the count of the skipped failure and error test case
+* filtering the test that started executing instead of not run
+* iterating the over run test to generate xml report
+
+1.12.0
+------
+
+* Changelog
+* Fix #1034
+* Add #1032
+* fixing pep8 standards
+* Added test to check the param tags are fetched from get\_tags
+
+1.11.0
+------
+
+* changelog
+* Adding the change log
+* adding change log for the bug fix
+* fix to filter class based test based on tags in param
+* checking the paths are matching
+* checking absolute path from iter\_suite\_file\_paths is same as the paths
+* 899: Support slash.exclude decorator for fixtures
+* modified test to check relative path is fetched when relative path is provided in suite file
+* converted the absolute path to relative path if path is not absolute in the suite file
+* Fix reference to errors in doc/tour.rst
+* removed absolute path conversion for path in suite files
+* 1023: Support test filtering when tests are explicitly specified
+* 1018: Add option to display duplicate tests in slash list
+* 1015: Verify parallel\_manager.server was initialized before calling it
+
+1.10.0
+------
+
+* Update changelog
+* Update issue#1013 as major bug
+* Allow slash.use\_fixtures on other fixtures (issue 1013)
+* Safe set markers on exceptions (issue #1007)
+* Add logbook Stderr handler for unittest
+* Remove pytest-catchlog dependencty
+* Pylint fixes
+* Introduce end-of-line normalization
+* Update emport and dessert dependencies (#1002)
+* Update emport and dessert dependencies
+
+1.9.0
+-----
+
+* Update changelog
+* make 'TracebackProxy' compatible with 'inspect', which checks for types.TracebackType
+* Corrected behaviour of float and int test details in xunit output
+* Choose IPython colors scheme for interactive test (fixes #998)
+* Fix README's coverage badge (fixes #995)
+* Fix detection of yield-fixture when combined with parametrization (fixes #991)
+* Support 'slashconf' direcory or single 'slashconf.py' file (fixes #241)
+* Fix parameterization of used fixtures (fixes #985)
+* Changed the resumed state field to address\_in\_file as review comments provided by  @ayalash
+* Fix for bug #948
+* Update pylint and astroid versions
+* Cleanups
+* don't set attributes on threading.Event objects, they might be monkey-patched by gevent
+* Pin versions of dessert and emport
+* Remove ordered-set version dependency
+* Update changelog.rst
+* Update changelog.rst
+* Read file as binary
+* Use python3.8 instead of dev (#981)
+* Moved plugin documentation from docstrings into 'Built-in plugins' section
+* Change OrderedSet package (closes #979)
+* Added changelog entry
+* Renamed plugin to ci\_links
+* Decorate test fixture finalizers instead of using request.addfinalizer function
+* Remove unnecessary plugin activation
+* Test that log links are added for non-failing tests
+* Deactivate plugin after tests to avoid interfering with 'list plugins' tests
+* Rename plugin to cilinks
+* Store log file link as a test detail
+* Add loglinkconverter plugin
+* Make tag matching with '-k' match whole tag names (closes #973)
+* Support Python 3.8 (#970)
+* Fix documentation pipeline (#971)
+* Drop support for python version < 3.6 (fixes #598)
+* Fix pattern matching for whitespaces after "tag:" (closes #964) (#965)
+* Fix pattern matching for whitespaces after "tag:" (closes #964)
+* Add support for tagging parameterization values
+
+1.8.0
+-----
+
+* Update changelog
+* Drop support for deprecated arguments of add\_cleanup (closes #945)
+* Return copy of connected clients when iterating over them (close… (#962)
+* Return copy of connected clients when iterating over them (closes #961)
+* Silent unittest of deprecated API
+* Drop support for old-style assertion (closes #452)
+* Add get\_current\_scope()  (fixes #952)
+* Support light background mode (closes #925)
+* Small changelog fix
+* Added log for handling fatal error (closes #950)
+* Add test execution time to xunit report
+
+1.7.10
+------
+
+* Changelog
+* Improve skip reason for excluded tests
+* Fix bors toml
+* Add tests\_distributer to allow forcing and excluding tests for specific worker
+* Refactor parallel to use worker\_wrapper
+* Add repr method to \_IgnoredWarning
+* Add bors
+* Fix badges in README
+* Add slash.ignored\_warnings context
+* Proper fix for requirement leaks across sibling classes (closes #928)
+* Removing unneeded Pylint ignore marker
+* Changelog
+* Revert "Fix requirement leaks across sibling classes (closes #928)"
+* Changelog
+* Add changelog to #936
+* Changelog
+* Fix requirement leaks across sibling classes (closes #928)
+* Parallel should stop on fatal exception (closes #934)
+* removing second fixture in fixture some unit tests
+
+1.7.9
+-----
+
+* Changelog
+* Revert "Fix background color on white terminals (closes #925)"
+* Correctly propagating exceptions out of the test\_start or test\_end hooks
+* Modifying the fixture test\_start unit test to fix active fixture order
+
+1.7.8
+-----
+
+* Fix background color on white terminals (closes #925)
+* Changelog
+* Change return-code of failed sessions (fixes #926)
+* Allowing Windows to fail
+
+1.7.7
+-----
+
+* Changelog
+* Add test for fixture parametrization labels
+* Update .travis.yml
+* Skipping xunit parallel suite on Windows
+* Fixing unit test cleanup order issue
+* Normalizing paths in test loading unit test fixture
+* Skipping unit tests depending on symbolic link for Windows
+* Using os.path.sep instead of hard coded / in unit tests
+* Skipping parallel unit tests on Windows
+* Adding Python 3.7 on Windows to test matrix
+* slash list --relative not working on Windows path
+* Fix possible KeyError when worker keepalive server is delayed (closes #919)
+* Windows path upward limit is not always c:\
+* Fix swallowing of broken pipe errors from console reporter
+* Update pylint and version (closes #770)
+* Escaping special characters \_\_file\_\_ path
+* Correctly call fixture test\_start for each test
+* Fix unused variable
+* Allow unit test suite writer to work with Windows path
+* Check worker timed out only among connected clients (closes #907)
+
+1.7.6
+-----
+
+* Changelog
+* Changelog
+* Fix 'list-plugins' output for plugin name with spaces (closes #904)
+* Allow parallel worker execution on Windows
+* INFRADEV-11419: Unstarted tests not written to resume db in case of interruption
+* Removing double colon causing doc rendering issues
+* Add 3.7 to test matrix
+
+1.7.5
+-----
+
+* Docs: Fix passing parameter to fixture
+* Update changelog
+* Fix pattern matching for leading 'not' patterns (closes #897)
+* Wrap hooks.log\_file\_closed triggering with handling\_exceptions (closes #895)
+
+1.7.4
+-----
+
+* Fix backslash-python dependency check
+
+1.7.3
+-----
+
+* changelog
+* Fix exception handling on fixture.test\_end (closes #887)
+* Fix Repr of \_Cleanup for callbacks with no \_\_module\_\_
+* Fix test\_test\_causes\_worker\_exit
+* Improve \_Cleanup repr
+* INFRADEV-11243: Support --unstarted-only and --failed-only flags for slash resume
+* Start worker keepalive thread before collecting tests (closes #888)
+* Changelog
+* Correctly call fixture test\_end on test error and failure
+
+1.7.2
+-----
+
+* Changelog
+* Fix fixture invalidation logic on broader scopes (closes #882)
+* Fix handling exceptions during Application.\_\_exit\_\_() (closes #879)
+* Fix usage of backslash plugin with no session at Notification plugin (closes #878)
+
+1.7.1
+-----
+
+* Changelog
+* Support disabling convertion of log error to slash-error by extra's 'capture=False' (closes #876)
+* Increase more timeouts in test\_parallel to avoid random failures
+
+1.7.0
+-----
+
+* Changelog
+* Increase timeouts in test\_parallel to avoid random failures
+* Results with errors or failures should return is\_not\_run() == False (closes #868)
+* Add test for session\_start and before\_session\_start interruptions
+* Improve interruptions test
+* Add error for error level logs (closes #825)
+* Add unittest for ensuring requirements are called eagerly (closes #687)
+* slash report session as success though it has child error (closes #863)
+* Remove unused import
+* Fix broken tests
+* Fix test\_scope\_management\_with\_hook\_error\_test\_end
+* Fix handling of exceptions during \_run\_single\_test() before test started (fixes #864)
+* Add signals handling plugin (closes #12)
+* Fix interruptions happening during session scope (closes #821)
+* Assert that no internal errors happen during suite write runs (closes #860)
+* Kill workers with SIGTERM instead of SIGINT (closes #822)
+* Use dedicated server for keepalive from workers (closes #823)
+* Move id allocation to after tests\_loaded (closes #835)
+* Improve comment on variation ordering issue
+* In parallel session, save result to resume db only from parent session (closes #852)
+* Refactor parent/child protocol of identifying tests (closes #831)
+* Docs and changelog for #836
+* Support --failed-first and --unstarted-first for resume (closes #836)
+* Add 'slash.app\_quit' hook (closes #843)
+* Add documentation to ignore\_warnings (fix #848)
+* Use AND operator between  parameters (fixes #846)
+* ignore\_warnings: Support regex matching for filename (closes #844)
+* Update deseert dependency (>=1.3.4)
+* Whitespace and typo fixes
+* Implement usefixtures decorator (closes #648)
+* Remove usage of deprecated API and add enforcement to unittests (closes #829)
+* Support get\_current\_cleanup\_phase and is\_in\_cleanup API (closes #824)
+* Collect warnings that were emitted before session started (closes #738)
+* Mergify initial configuration
+* Fix notification formatting (closes #830)
+
+1.6.5
+-----
+
+* Changelog
+* Fix handling exceptions during \_log\_file\_handler\_context (closes #837)
+* Changelog
+* Support tags on fixture objects (closes #650)
+* Move site.load() of slash-list before creating session (closes #737)
+
+1.6.4
+-----
+
+* Consider repr blacklisted types during object distilling, handle \_\_dict\_\_ access exceptions
+* Add missing changelog for 803
+* Add exception class for internal Slash errors: SlashInternalError (closes #803)
+* Swallow IO Errors from console reporter (closes #804)
+
+1.6.3
+-----
+
+* changelog
+* traceback utils: Allowing to ignore repr for specific classes (closes #815)
+* traceback utils: Allowing to ignore repr for specific classes (closes #815)
+* Fix debug\_if\_needed when called before session initialized (closes #812)
+* Validate interruption state in suite builder validation
+* Workers should call cleanups also on interruption (closes #809)
+
+1.6.2
+-----
+
+* Drop tmuxp requirement (replaced by libtmux)
+* Add 3.7-dev to Travis matrix
+* Changelog
+* Fix formatting of notification containing curly braces (closes #810)
+* Fix parameterized non-test-scoped fixtures in Slash (closes #186)
+* Remove 'log.errors\_subpath' configuration path (closes #693)
+* Add extract traceback failure to log (closes #805)
+* Allow setting tags more than once if they contain the same value (closes #799)
+* Add '-k' to 'slash list' (closes #797)
+* Unittests improvement: Always backup configuration
+* slash list: report errors in red
+* Raise a dedicated exception when conflicting parametrizations are detected
+* Fix README in pypi info page
+* Cleanup deployment condition
+* Remove classifiers
+* Update xunit.py
+* Update test\_xunit\_plugin.py
+* Update test\_xunit\_plugin.py
+* xunit plugin tests for complex tests details
+
+1.6.1
+-----
+
+* Fix pypi.org description
+* Limit deployment to TRAVIS\_PYLINT=false
+
+1.6.0
+-----
+
+* Condition pypi release only on 3.6
+* Changelog
+* Metadata.mark\_interactive() no longer touch file path or address (closes #761)
+* Adding support for details coming from result.details.append in xunit
+* Forward registers\_on keyword arguments to gossip.register (closes #771)
+* Cosmetics
+* Add log.show\_raw\_param\_values, causing raw parametrization values to be emitted in test start log lines (closes #769)
+* Notifications plugin should not do anything if it is running within a parallel child (closes #776)
+* Make coverage plugin support parallel runs (closes #777)
+* Worker should disconnect and kill keepalive thread only after cleaups called
+* Added ability to exclude parameter value combinations via slash.exclude (closes #528)
+* Cosmetics
+* Document slash.plugins.parallel
+* Support children session errors (closes #783)
+* Support marker for plugins that are compatible with parallel mode (closes #785)
+* Add log message for CleanupManager.add\_cleanup
+* Support project name configuration (closes #779)
+* Fix handling exceptions which raised from None in interactive session (closes #772)
+* Add new hooks: 'before\_session\_cleanup' & 'after\_session\_end' (closes #782)
+* Improve repr methods
+* Update README's supported versions
+* Remove old style string formatting from the code
+* Add log message for workers command line
+* Pin pylint to 1.7.x due to 1.8.x instability
+
+1.5.1
+-----
+
+* Changelog
+* Fix traceback variable capture for cases where \`self=None\` (closes #767)
+* Add missing changelog entry
+* Ignore AUTHORS and ChangeLog autogenerated files
+
+1.5.0
+-----
+
+* Changelog
+* Add test case (closes #760)
+* Fix xunit plugin to work properly in parallel sessions (closes #763)
+* Improve error message when trying to pass invalid config overrides
+* Make console reporting of erroneous/failed tests clearer (closes #709)
+* Documentation fixes
+* Fix hook documentation generation
+* Documentation updates
+* Add config.root.interactive.expose\_g\_globals, controlling whether slash.g is exposed in interactive namespaces
+* Update plugins documentation
+* Update plugins documentation
+* Add 'slash.before\_interactive\_shell' hook (fix #697)
+* Change brotli file extensions to .br
+* Log attributes of \`self\` when using log.traceback\_variables=yes (closes #762)
+* Added metadata.set\_file\_path (closes #664)
+* Add slash.ignore\_warnings to filter unwanted warnings during sessions (closes #752)
+* Documentation for #755
+* Allow use of "timestamp" in log path formatting (closes #755)
+* Ignore pytest cache
+* Add SessionLogging.get\_active\_log\_paths() method
+* Add flag to consider 'slash list' warnings as errors (fix #757)
+* Session global result now returns is\_success=False if any test failed or has errors (closes #747)
+* Improve log message of AST-originating warnings (fix #754)
+* Revert "Revert "Revert "Restore doc/pip\_requirements.txt -- readthedocs.org needs it in order to build docs"""
+* Revert "Revert "Restore doc/pip\_requirements.txt -- readthedocs.org needs it in order to build docs""
+* Fix handling of exceptions propagated from interruption hooks (closes #745)
+* Revert "Restore doc/pip\_requirements.txt -- readthedocs.org needs it in order to build docs"
+* Restore doc/pip\_requirements.txt -- readthedocs.org needs it in order to build docs
+* Run pylint in a prallel worker in travis
+* Refactor \_log\_file\_handler\_context
+* Support slash rerun
+* Fix cr
+* Delete logs folder if after deleting log file it is empty
+* log\_file\_closed: add  keyword argument (closes #742)
+* log\_file\_closed hook should happen on all file-based handlers (closes #741)
+* session.results.current is now a complete synonym for context.result (closes #740)
+* Separate config for Slash's log levels from the global level filter (closes #719) (#728)
+* Add path parameter to 'log\_file\_closed' hook (#739)
+* Add log\_file\_closed hook log.cleanup config to enable log files cleanups (closes #681) (#735)
+* Normalize plugin names when used in command-line and config (fix #673) (#736)
+* Support compressed logs (#711) (#730)
+* Rename traceback\_level to console\_traceback\_level (issue #702) (#727)
+* Use 'highlight' for all log message which supposed to be written to highlights\_subpath (fix #733) (#734)
+* Remove usage of 'sphinx.util.compat' (fix #731) (#732)
+* Add support for naming parameter variations (closes #590)
+* Add support for controlling frame correction via mark\_exception\_frame\_correction
+* Prevent duplicate exceptions in session when failing import
+* suite\_builder: add assert\_session\_error() shortcut
+* suite\_builder - add assert\_all(n).errors(...) syntax
+* Add '-X' as command line flag for setting off 'config.root.run.stop\_on\_error' (#726)
+* Support configuration path for resume state path (#724)
+* Add suite\_builder fixture for simpler testing of less strict features
+* Add timeout to sending email through SMTP (fix #721) (#722)
+* Support fixture kwargs for generator\_fixture (#718)
+* Fix restoring\_state\_context for previously non-installed plugins (closes #717)
+* Add --pdb-filter=FILTER command line argument (fix #712) (#715)
+* Session cleanups now happen under the session result object (closes #714)
+* Cleanups added in session-scoped fixtures now properly register as session cleanups (closes #699)
+* Deprecate frame.locals, frame.globals and error.exception\_attributes (closes #704)
+* Fix PluginManager.restoring\_state\_context to restore active/inactive states as well
+* Added support for writing variable values to the debug log through \`log.traceback\_variables=True\` (closes #698)
+* Adding repeat\_all\_index in test metadata to help sorting (#705)
+* Add pylint ignore directive
+* Add restoring\_state\_context to plugin manager (fix #663)
+* Add the Pythonic frame object to traceback frames
+* Add exc\_info attribute to error objects
+* Changelog
+* Allow "repeat: x" in suite file (#703)
+
+1.4.6
+-----
+
+* Changelog
+* Fix handling of session-scoped errors without exception types (closes #700)
+* Coverage plugin: swallow exception if no data is available on reporting (closes #701)
+* Require pylib>=1.5.0
+
+1.4.5
+-----
+
+* Drop Python 3.3 from Travis
+* Move to use pytest-catchlog
+* Drop pytest-xdist from testing requirements
+* Revert "Pin pylib dependency to avoid conflict with pytest"
+* Pin pylib dependency to avoid conflict with pytest
+* Make --help for slash resume more useful (fix #671)
+* Pin pylib dependency to avoid conflict with pytest
+* use.X is now syntactic sugar for use('x') (fix #685)
+* Add documentation for logging highlights
+* Typo fixes
+* Enhance errors summary log to session highlights log (fix #692)
+* Deprecate PluginInterface.get\_config() and rename it to get\_default\_config() (fix #658)
+* Empty commit for bumping minor version
+* Tests loader assumes dirnames returned sorted from os.walk
+* Fix pylint errors
+* Pass result object into \`interruption\_added\` to be compatible with \`error\_added\`
+* fixup! Added \`interruption\_added\` hook (fix #689)
+* Added \`interruption\_added\` hook (fix #689)
+* assert\_raises raises ExpectedExceptionNotCaught if exception wasn't caught (fix #686)
+* Optimize test loading with repeating (fix #684)
+* Add show\_duration parametre to notify\_if\_slow\_context
+
+1.4.4
+-----
+
+* Fix coloring for non TTY stdout (fix #679)
+* Update changelog
+
+1.4.3
+-----
+
+* Fix handling of custom interruption exceptions (fix #670)
+* Fix changelog
+* Changelog
+* Adding colorama init and deinit
+* Changelog fix
+* Add from\_email to notifications plugin configuration (fix #665)
+* Emit native python warnings for logbook WARNING level (fix #675)
+* Support PDB notifications (fix #661)
+* Support --notify-only-on-failures for notifications plugin (fix #660)
+* Add from\_email to notifications plugin configuration (fix #665)
+* Update development.rst
+* Update changelog.rst
+* Adding colorama init and deinit
+* Use different icons in email notifications based on success/failure status of the session (fix #662)
+
+1.4.2
+-----
+
+* Changelog
+
+1.4.1
+-----
+
+* Changelog
+* Add option to include extra details in email notifications
+* Restore default enabled state for misc. notification services
+* Add current\_config property to plugins
+
+1.4.0
+-----
+
+* Changelog
+* Fix email template
+* Add prepare\_notification hook (formerly slash-gossip.prepare\_notification)
+* Improve email template
+* Improve notifications plugin (fix #622)
+* Minor handling\_exceptions improvements
+
+1.3.2
+-----
+
+* Use IPython 5.x LTS for Python version before 3.3
+* Use IPython 5.x LTS for Python version before 3.3
+* Documentation fixes
+* Add host\_fqdn & host\_name attributes to session (fix #651)
+* Support internal plugins (fix #647)
+* Fix worker error log name
+* Fix worker errors file name
+* Change default value for worker errors file
+* Report to server the error from workers if they fail (fix #637)
+
+1.3.1
+-----
+
+* Remove GH releases code
+
+1.3.0
+-----
+
+* Changelog
+* Documentation fixes
+* Fix assertion introspection disabling feature (#596)
+* Add configuration variable to allow disable assertion introspection (fix #596)
+* Upload GitHub releases (fix #643)
+* Add documentation for fixture requirements
+* Consider requirements on fixture functions when computing test requirements (fix #520)
+* Support multiple registrations on the same plugin's method with registers\_on (fix #642)
+* Add docs for inhibit\_unhandled\_exception\_traceback
+* Support inhibit\_unhandled\_exception\_traceback (fix #617)
+* Remove useage of deprecated API
+* Run pylint only on Python 3.6
+* Empty commit for bumping minor version
+* Require pbr 3.0
+* Support forcing/forbidden console colors (fix #635)
+* Improve session run validation assertion
+* Align parallel argument names to dasherized convention
+* Documentation fixes
+* Add documentation for parallel execution
+* Allow retrieving exception object from handling\_exceptions context (fix #633)
+* Fix badges in README
+* increase the timeout value of a client to connect to the server from 5 to 10
+* Allow passing user slashrc file through environment variable (fix #614)
+* move server init outside try/except
+* Add hook test\_distributed and call it in parallel mode
+* stop keep-alive thread before sending disconnect (fix #612)
+* Documentation fixes
+* Children should connect to server before collecting tests (fix #621)
+* Add Error.exception\_attributes (fix #592)
+* Documentation fixes
+* Fix documentation for running tests from code (fix #620)
+* Add session.results.has\_fatal\_errors
+* Emit native python warnings to log files (fix #615)
+* Use vintage for deprecations (fix #600)
+* Add hook before starting workers to allow adding them arguments
+* Add \`allowing\_exceptions\` context (fix #595)
+* Add --tmux-panes option to split workers to panes instead of windows
+* Don't write logs from parent also in case of finished\_test
+* Change name of tmux session to parent session\_id (Fix #605)
+* Swallow python warnings during ast.parse (fix #606)
+* Add blacklist to result's field names that shouldn't be pickled
+* When session interrupted, stop serving tests before killing workers
+* Don't write test-logs in server
+* Improve logging in case of timeout
+* Fix bugs in handling interruptions in tmux session
+* pylint improvement: Forbid trainling newlines
+* Add checks on timeout of client\_connection and no\_requests\_to\_server
+* Set server to work with state, server stops gracefully on worker failure
+* set timeout of workers keepalive to 60secs, workers connect before session\_start
+* Add current\_parallel\_test\_index to session
+* Chlid sessions should not report parent's tests (Fix #582)
+* Fix indexes reported in parallel mode
+* Wait for all clients to connect before assigning tests
+* Fix wrong merge commit
+* Report test indexes to be 1-based (fix #588)
+
+1.2.5
+-----
+
+* Add error.exception\_str for future compatibility
+
+1.2.4
+-----
+
+* Changelog
+* Fallback to partial traceback if can't collect the full one
+* fixup! Fix slash.exclude to work across fixture namespaces (fix #581)
+* Add Fixture namespace level to namespace repr
+* Fix fixture resolution test
+* Fixture lookup: avoid accidentally registering fixtures as original names when \`name=\` is used (fix #585)
+* Add \_\_repr\_\_ to resumed test records
+* Update changelog for 1.2.4
+* Fix slash.exclude to work across fixture namespaces (fix #581)
+* Fix child session\_ids to use the parent session\_id and make worker\_ids 1-based
+* Fix pylint warnings
+* Make tests\_loaded include interactive tests when fired (fix #580)
+* Fail explicitly when running interactively with parallel (fix #578)
+* Improve verbosity
+* Avoid sending to master empty warnings and results
+* Use error.exception as string instead of object to make it picklable
+* Add symbolic links to children logs in parent, avoid symlinks updated from children
+* Update changelog
+* Honor run.default\_sources configuration when using slash list
+* Honor run.default\_sources configuration when using slash list
+* Normalize the case of a path when traversing upwards. On windows this was causing issue if the drive letter specified by the user was lower case
+* Remove usage of deprecated inspect.getargspec (fix #566)
+* Fix issue with some windows file path
+* Fix cr: less verbose result serializiation by iterating over vars of result
+* Fix cr: Refactors, use port 0, don't retry interrupted tests
+* Add option to run slash in tmux
+* Add to session object the master session\_id, some refactors
+* Add feature: parallel execution of tests
+
+1.2.2
+-----
+
+* Collect tests into a list rather than a generator (fix #564)
+* Fallback to partial traceback if can't collect the full one
+* Changelog
+* INFRADEV-5049: Add warnings when finding duplicate test functions and fixtures
+* Changelog
+* Changelog
+* Documentation link fix
+* INFRADEV-8741: Add rewrite\_assertions when loading slashrc to show elaborated assertion messages
+* Cap variable sizes when distilling tracebacks to reduce resulting size (fix #556)
+
+1.2.1
+-----
+
+* Remove version from setup.cfg
+
+1.2.0
+-----
+
+* Changelog
+* Fix behavior of stop-on-error (-x) when errors are reported on previous tests (fix #551)
+* Switch to PBR (fix #529)
+* Added changelog entry for #508
+* Changelog
+* Documentation
+* Typo fix
+* Cosmetics
+* Fix provides/needs mechanism to handle "empty registrations" (fix #490)
+* Remove unused flag
+* Fix interactive test id assignment
+* Report tests to backslash in advance
+* Fix tox.ini
+* Pylint fixes
+* PEP8
+* Parallelize pylint execution
+* Travis improvements
+* Pin pylint version to 1.6.x
+* Add option to control preferred debugger (fix #544)
+* Fix bug: Warning from resume code using the in\_ operator on an empty sequence
+* Fix 'slash version' exit code
+
+1.1.9
+-----
+
+* Version bump
+* Properly fail on invalid test names (fix #540)
+* Changelog
+* Search Backslash session if not found locally when resuming
+* Remove dead code
+* Increase UT coverage
+* Add test coverage for list\_config
+* Fix typo
+* Increase unittest coverage
+* Increase coverage in unit tests
+* Fix pylint error
+* Call warning\_added for native warnings (fix #538)
+
+1.1.8
+-----
+
+* Bump version
+* Temporarily ignore ImportWarnings
+* Add deep parametrization info to variation info (fix #513)
+* Fix pylint warning
+
+1.1.7
+-----
+
+* Bump version
+* Fix warnings capture for native warnings (fix #530)
+* resume with db instead of files
+* Allow enabling/disabling output colors of list commands (fix #524)
+* Fix error when no tests are specified
+* Improve handling of test interruptions (fix #516)
+* Fix Loader string matcher initialization to be lazy, thus timed properly for session collection (fix #525)
+* Fix slash\_run test
+* Move to codecov for coverage reports
+* Fix unittests' pylint errors & run pylint on unittest in travis (fix #521)
+* Add set\_reporter to App objects
+* Changelog
+* Fix path handling for slash list-config (fix #512)
+* Fix list-config breakage
+* Pylint fixes
+* Fix broken test
+* Better handling of site load failures
+* Fix prelude logging to properly consider level
+* Fix console logs for exceptions
+* Add workaround for signal setting on app cleanup
+* Improve usage (help) message for built-in plugins
+* Properly handle exceptions during the configure phase (fix #497)
+* Add test for SlashException errors during test start
+* Test refactoring
+* Add '--no-output' flag for slash list (fix #519)
+* Fix name duplication in unittests
+* Add 'flycheck\_' to .gitignore
+* Fix changelog typo
+* Documentation fixes
+* Automatically detect yielded fixtures (fix #467)
+* Explicitly fail fixtures with test\_ prefix (fix #510)
+* Add 'id' property to RunnableTest (fix #507)
+* Add docs for extra log paths
+* Support additional log paths (fix #511)
+* Add FAQ
+* Add optional end\_message argument to notify\_if\_slow\_context (fixes #508)
+
+1.1.6
+-----
+
+* Bump version
+* Fix plugin configuration signature docs
+* Make thread\_ignore\_exception\_context an object context to avoid contextlib.contextmanager issues (fix #501)
+* Add session\_interrupt hook (fix #502)
+
+1.1.5
+-----
+
+* Bump version
+* Fix path iteration sorting
+* Get rid of lxml for tests
+* Log all packages on build failures
+
+1.1.4
+-----
+
+* Bump version
+* Skip directories starting with dot when loading tests (fix #499)
+* Remove Ipython's banner for interactive test
+
+1.1.3
+-----
+
+* Bump version
+* Fix hook argument definitions
+* Add 3.6 stable to Travis
+* Support changing stop\_on\_error configuration during session
+
+1.1.2
+-----
+
+* Bump version
+
+1.1.1
+-----
+
+* Bump version
+* Fixed typo in plugins.rst
+* Skip pylint on 3.6
+* Fix Python 3.6 support
+* Add 3.6 (beta) to .travis.yml
+* Update plugins.rst
+* Add test index (one base) to test marker
+
+1.1.0
+-----
+
+* v1.1.0
+* Fix documentation for slash.run\_tests
+* Stop testing pypy on Travis (broken)
+* Fix documentation for listing fixtures
+* Set merge strategy for changelog.rst
+* Changelog
+* xunit-plugin: write xml file if session terminated
+* Fix pylint errors
+* slash list now indicates fixtures that are overriding outer fixtures (fix #484)
+* Slash list: properly denote autouse fixtures
+* Fix handling of nested namespaces with same name
+* Changelog
+* Add slash.exclude to enable excluding specific parameter variations from running (fix #369)
+* add\_error and add\_failure can now receive both exc\_info and message (fix #417)
+* Disable py.test warnings
+* Properly handle possible \_\_getattribute\_\_ exceptions when introspecting tracebacks (fix #483)
+* Add trace logging of fixture values (fix #359)
+* Changelog fixes
+* Fix sphinx docs
+* Add option to control test execution order from hooks (fix #362)
+* Add the ability to specify filters in suite files (fix #352)
+* Improve unit test ergonomics
+* Add support for slash facts, for use in coverage reporting (fix #287)
+* Add this.test\_start and this.test\_end to enable widely-scoped fixtures to control what happens between tests (fix #195)
+* Accumulate logs from early phases of the session and emit them to the session log (fix #384)
+* Add RetainedLogHandler to capture early logs and flush them to another handler later
+* UT: promote logs\_dir to a conftest fixture
+
+1.0.2
+-----
+
+* v1.0.2
+* Pin lxml version to <3.6.3 due to xlst bug
+* Fix tuple parameters for fixtures (fix #481)
+* slash.skipped is now implemented through requirements (fix #400)
+* Re-implement slash.skipped using the requirements mechanism
+* Wrap SIGTERM interruption exception with handling\_exceptions context
+* Allow passing requirement objects to slash.requires
+* Test cosmetics
+* Fix log propagation logic when no root path is given
+* Add optional error-only logs through log.errors\_subpath (fix #462)
+* Cosmetics
+* Remove erroneous assert
+* Consider plugins which are pending activation when displaying activated plugins
+* #403 should also load local site for custom plugins
+* Remove unnecessary imports
+* Add slash list-plugins (fix #403)
+* Fix pylint warning
+* Allow registering custom exceptions as causing tests to skip (fix #454)
+* Test cosmetics
+* Add "scope" argument to yield\_fixture (fix #461)
+* Explicitly fail for generator tests (fix #468)
+* Fix finalizer leak from plugin test
+* Add verbosity to Travis tests
+* Uninstall plugins when activation fails as part of installation (fix #479)
+* Fix erroneous double frame printing in fake traceback
+* Fix assert\_raises with message for un-raised exceptions (fix #477)
+* Fix exc\_info leaks outside of assert\_raises & handling\_exceptions contexts (fix #471)
+* Fix frame\_correction value handling in create\_traceback\_proxy
+* Changed frame\_correction default value in create\_traceback\_proxy
+* Fix pylint error
+* Don't ignore slash.hooks in pylintrc
+* Changelog
+* Add entering\_debugger hook
+* Add test for correct reporting of avoided tests
+* Fix incorrect traceback values assignment in handling\_exceptions()
+* Update changelog
+* Fake tracebacks above calling point of handling\_exceptions() context
+* Remove unused function
+* Use IPython's embed instead of InteractiveShellEmbed
+* Pin lxml version to <3.6.3 due to xlst bug
+* Fix autocompletion of slash.context members
+* Add --relative-paths to slash list (fix #466)
+* Cleaner failure when \`slash list\` can't find paths
+* Fix pylint error
+
+1.0.1
+-----
+
+* bump version
+* Changelog
+* Documentation fix
+* Restrict exc\_clear test to 2.x only
+* Add missing parameter documentation to handling\_exceptions
+* Fix reraising logic from exception\_handling (fix #464)
+* Improve deprecation message for cleanup args/kwargs
+* Fix autouse fixture initialization order (fix #457)
+* Print warnings summary in order
+* Fix console reporting when progress dots wrap to new lines
+* Make sure native warnings still have a func\_name detail key (although it would be None for now)
+* Ignore trailing newlines pylint errors
+
+1.0.0
+-----
+
+* Changelog
+* PEP8
+* Fix -k parsing for full test names (fix #450)
+* Cosmetics
+* Fix tests for coverage plugin
+* Fix session\_end not firing for plugins without session\_start (fix #449)
+* More stable ordering of permutations/parametrizations in fixtures
+* wip
+* Cartesian product of parametrizations is now stable-sorted across runs (fix #447)
+* Make test now not parallel by default
+* Add tools for debugging variation details
+* log: fix non-string logs emitting
+* Exception tracebacks now include instance attributes to make debugging easier (fix #446)
+* Pylint warnings cleanup
+* Separateley consider skipped and not run in session summary (fix #445)
+* Cosmetics
+* Update warnings docs
+* Capture native warnings (fix #397)
+* Cosmetics
+* Remove download stats (broken on pypi)
+* Updated supported versions
+* When adding cleanups from test\_end hooks, raise an error (fix #418)
+* Cosmetics
+* Call test\_end even when test is interrupted (fix #380)
+* Improve add\_cleanup error message on invalid scope (fix #415)
+* Add support for aliasing fixtures using the \`\`use\`\` utility (fix #276)
+* Added --repeat-all=X (fix #407)
+* Documentation fixes
+* Documentation fixes
+* Add support for yield\_fixture (fix #439)
+* Known parameter values are pre-filled in variation info (fix #444)
+* fix tests
+* Fix tests in Python 2
+* Fix tests
+* Fix handling of parametrize with functions not receiving the named argument
+* Prevent \`\`session\_end\`\` from being called when \`\`session\_start\`\` doesn't complete successfully (fix #442)
+* Changelog
+* Various fixes for the variation mechanism (fix #441, fix #440)
+* #401: only consider session start/end to be toggled
+* Fix tests under coverage reporting
+* Add "make pylint" shortcut
+* Plugins for which session\_start/test\_start wasn't called, session\_end/test\_end will not be called either (fix #401)
+* Changelog
+* Support generator fixture (fix #423)
+* Reduce log verbosity in unit tests
+* Update version file to 1.0
+* Add "reason" parameter to test\_avoided
+
+0.20.3
+------
+
+* bump version
+* Add register\_if helper for plugins (fix #438)
+* Add register\_if helper for plugins (fix #438)
+* Fix pylint error
+* Add test\_avoided hook for tests with unmet requirements (fix #437)
+* Revert "Tests with unmet requirements are now properly marked as skipped (fix #437)"
+* Tests with unmet requirements are now properly marked as skipped (fix #437)
+* Fix travis tests
+* Added option to disable console reporting in app context (fix #424)
+* Changelog
+* slash list returns none zero rc if it hasn't found any test (fix #436)
+* Add swallow\_types to exception\_handling context (fix #435)
+* #429: only use \_\_name\_\_ if it exists
+
+0.20.2
+------
+
+* Fix class name and function name reporting
+* bump version
+* Changelog
+* Fix class name deduction when loading tests (fix #434)
+* Requirements - use function repr if no message is provided (fix #429)
+* Remove class tests from introduction section (fix #370)
+* Further fixes to #433
+* Add test for #419
+* Add test.\_\_slash\_\_.set\_test\_full\_name(name) (fix #433)
+* Fix session cleanup happening before test\_end hooks (fix #432)
+* Changelog
+* Move coverage collection start to \`activate\`
+* Support code coverage plugin (#430)
+* Changelog fixing
+*  Add ability to specify a requirement message, to be displayed when the requirement isn't matched (fix #428)
+*  Drop support for Python 2.6 (fix #427)
+* Fix xunit output for add\_failure calls (fix #425)
+* Fix missing attribute assignment
+* Fix error object creation for add\_failure (fix #426)
+* Update README
+* Add trace for popped
+* Add tests for cleanups within cleanups - make sure scope is preserved correctly
+* Add --no-params for "slash list" (fix #416)
+
+0.20.1
+------
+
+* v0.20.1
+* Fix pylint error
+* Sort test names inside files (fix #413)
+*  Add is\_in\_test\_code to traceback json (fix #412)
+* Improve handling of cli-abort errors
+* ExceptionMarker now returns marked exception from mark\_exception method
+* Better fix for session cleanup error reporting (#409, relates to #406)
+* Revert "Fix error reporting for session-level cleanups (fix #406)"
+* Add test for #411
+* [xunit-plugin] fix "Failed to add error to result" error
+* Fix incorrect frame highlighting in parametrizations (fix #410)
+* Fix changelog
+
+0.20.0
+------
+
+* v0.20
+* Fix handling of cleanups registered from within cleanups (fix #408)
+* Update README
+* Changelog
+* Fix error reporting for session-level cleanups (fix #406)
+* Color test code differently when displaying tracebacks (fix #348)
+* Make TerminatedException terminate interactive sessions (fix #402)
+* Changelog (fix #405)
+* Add coverage
+* Improve slash list with tags
+* Add --with-tags option to slash\_list
+* \`\`-k\`\` can now be specified multiple times, implying AND relationship (fix #388)
+* Add documentation about assert\_raises interaction with handling\_exceptions
+* \`\`handling\_exceptions\`\` now doesn't handle exceptions which are currently expected by \`\`assert\_raises\`\` (fix #381)
+* Convert tests to pytest
+*  Allow specifying exc\_info for add\_error (#398)
+* Docuemntation config fixes
+* Add note regarding use of imports for dynamic constraints
+* Add items() to fixture variation objects
+*  Add \_\_slash\_\_.variation, enabling investigation of exact parametrization of tests (#395)
+*  Add result.details, giving more options to adding/appending test details (#391)
+
+0.19.6
+------
+
+* bump version
+* Changelog
+* Pylint fixes
+* Restore pylint on 3.5
+* Yet another fix for xunit error capturing when using add\_error or add\_failure with messages
+* Fix pylint errors
+
+0.19.5
+------
+
+* bump version
+* Changelog
+*  Failures added with \`slash.add\_failure()\` are not handled by xUnit properly. (#390)
+
+0.19.4
+------
+
+* bump version
+* Temporary disable pypy on travis (master)
+*  fix handling special parameter names when deducing function names (#389)
+*  fix handling special parameter names when deducing function names (#389)
+* Bump emport dependency to 1.1.3
+* Fix travis tests
+* Fix minor typo in tour
+*  Make slash list support -f and other configuration parameters (#386)
+*  Add test details to xunit plugin output (#385)
+* Document core.result.Result
+
+0.19.3
+------
+
+* Bump version
+* v0.19.3
+* Fix support passing fixtures to before/after (#383)
+* Remove unused comment
+* Pylint fixes
+*  interactive now has <Interactive> as its file path (#378)
+*  Allow exception marks on both class and exception value (#379)
+
+0.19.2
+------
+
+* v0.19.2
+* Fix travis deployment
+* Fix URL
+* Fix xunit when using skips without reason (#376)
+* Update emport/dessert dependencies
+* Update links
+* Fix 2.6 support
+*  Record interactive test errors like a regular test (#339)
+* sort filenames in each dir, but not the dirs
+* Fix badges
+* Organization rename
+* sort test files in directory
+* Fix unit tests
+
+0.19.1
+------
+
+* v0.19.1
+*  Fix xunit plugin configuration (#374)
+* Fix .travis.yml for pypi deployment
+
+0.19.0
+------
+
+* v0.19.0
+* CHANGELOG
+* Changelog
+*  Fix test collection progress when outputting to non-ttys (#373)
+
+0.18.2
+------
+
+* v0.18.2
+* Changelog
+* Ignore .cache
+* Fix logbook usage issue
+* Bump logbook dependency
+* Fix logbook usage issue
+* Bump logbook dependency
+*  Demote slash logs to TRACE level (#361)
+* Documentation
+* Make sure configure() is called after initial command-line processing into configuration
+*  add slash list-config command (#368)
+* Fix pylint issue
+* Fix configure() hook not being called
+* Improve plugin activation/deactivation via commandline (#366)
+* Refactoring
+* Configure commandline from all installed plugins, but pass configurations only to activated plugins (#366)
+* Add automatic pypi releases on tags
+* Temporarily skip pylint on Python 3.5 (broken)
+* Fix pylint error
+* Add warning.filename
+*  Add warning\_added hook (#371)
+* Typo
+* Move to new Travis infrastructure
+* Add Python 3.5 compatibility checks
+* Change version to 0.19.0.a1
+* Mark interactive tests as interactive when the test is generated, not when it runs
+* Fix deprecation warning of raise\_exception
+* Add proper filename/lineno to deprecation warnings (#356)
+*  Deprecate slash.should and old-style assertions (#353)
+*  Fix unified session log propagation (#351)
+*  Add test.\_\_slash\_\_.is\_interactive() for marking interactive test invocations (#354)
+* Add gossip hook to allow altering the notification message
+* Add notification threshold
+
+0.18.1
+------
+
+* v0.18.1
+*  Fix scope management bug with hook errors (#350)
+* Add debug logs for cleanup code
+* Documentation fixes
+*  Plugin configuration is now installed in the installation phase, not activation phase (#349)
+* Docs, new logo
+* Improve notification plugin
+* Bump version to 1.0.0.a1
+
+0.18.0
+------
+
+* v0.18.0
+*  Add slash.context.fixture to point at the 'this' variable of the currently computing fixture (#347)
+* Fix Typo
+* Documentation typo
+*  Add 'needs' and 'provides' to plugins, to provide fine-grained flow control over plugin calling (#335)
+* Modernize tests
+*  Fix line redrawing for test progress (#338)
+*  Fix bug causing test\_error to be called on successful tests (#346)
+* Python 2.6 compatibility fix
+* Add logging to hooks.test\_error firing
+*  Fix deprecation of cleanups (#345)
+* Document frame\_correction argument in add\_error/add\_failure
+*  Add documentation for "slash resume" (#298)
+* Typo fix
+*  add Error.mark\_fatal() to enable calls to mark\_fatal right after add\_error (#321)
+*  Cleaner failures when fixtures are not found (#336)
+*  SIGTERM handling for stopping sessions gracefully (#295)
+*  Add option to silence manual add\_error tracebacks (#279)
+*  Ensure tests are garbage collected after running (#341)
+* Documentation for #233
+*  slash.parametrize: allow argument tuples to be specified (#233)
+* Refactoring parameters: renames to make code clearer
+*  Fix -x (stop on error) behavior with mixed skips/errors scenarios (#343)
+* Make skipped tests be considered ok when calculating session success (#342)
+*  Don't enter pdb on KeyboardInterrupt exceptions (#340)
+* Fix ridiculous commandline help for -v/-q
+* Fix reraise issue with deactivating fixtures - preserve original exception
+*  Set tb level to 2 by default (#337)
+* Fix muted traceback location
+*  Allow customization of console colors (#333)
+* Fix pylint errors
+* Fix Python3 tests
+* Documentation
+*  Add ability to filter by test tags (#332)
+* Add use case for empty tags
+*  Add support for test tags (#240)
+* Fix success-only cleanup behaviors with error results and SkipTest exceptions (#325, #330)
+* Fix docs link in README
+*  Add test for cleanups with fatal exceptions (#324)
+* Extra doc links
+* Fix pylint error
+*  Fix the behavior of swallowing exceptions in presence of SkipTest (#329)
+* Add suite writer ability to inject code out of a function body
+*  Add test ensuring fixture setups happen after test\_start (#328)
+* Changelog
+* Remove unnecessary cleanups with hooks (conftest.py unregisters all hooks always)
+* Fix handling of skips from within cleanup callbacks, major refactoring of test running code (#322)
+* Changelog
+* Fix cleanup scopes in test\_start (#320)
+* Add slash.hooks.register as a shortcut for registering hooks
+* Add function\_name to test metadata for easier integration with Backslash
+*  Add class\_name metadata property for method tests (#319)
+
+0.17.0
+------
+
+* v0.17.0
+*  Make AssertionErrors cause test\_failure hooks to be called (#310)
+* Disable smart indentation for error messages, saving space in the console
+* README
+* Restore coveralls support
+* README
+* Update README
+* Update README
+* Fix traceback line display with context managers and finally statements (#316)
+* Bump version
+* Finished hotfix 0.16.1
+
+0.16.1
+------
+
+* Finished hotfix 0.16.1
+* Changelog
+* Update emport required version
+* Bump version
+*  Add session.get\_total\_num\_tests() for returning the number of tests expected to run (#314)
+* Changelog
+*  Add before\_session\_start hook (#312)
+*  allow non-underscore-prefixed methods with registers\_on(None) (#311)
+* Cosmetics
+*  [xunit-plugin] Better handling of session start failures by other plugins (#309)
+* Update emport required version
+* Change default color for displaying test names
+* Fix pylint warnings
+* Support registering private methods in plugins using registers\_on (#308)
+* Re-enable test timeouts in unit tests (accidentally commented out)
+
+0.16.0
+------
+
+* Finished release 0.16.0
+* Finished release 0.16.0
+* v0.16.0
+* Minor fixes for interactive mode
+*  Scopes are not set properly for the interactive mode (#307)
+* Cosmetics
+*  Allow class variables in plugins (#306)
+* Fix inconsistent scope manager state when requirement mismatch is encountered at end of modules
+* remove --use-mirrors from pip usage
+* Fix factory metadata (#302)
+* Add unified session log (#300)
+* Fix broken test
+* Change default log name (now debug.log)
+* Add Google Analytics to docs
+* Finished release 0.15.0
+
+0.15.0
+------
+
+* Finished release 0.15.0
+* v0.15.0
+* Changelog
+*  Add get\_config to plugins, allowing custom configuration sections (#289)
+* Release docs
+* Release docs
+* Fix release logic
+*  Better handling of fixture dependency cycles (#282)
+*  Fix 'None' message for slash.skipped decorator (#281)
+*  When running with \`-x\`, do not emit skipped logs to the console (#286)
+*  Scoped cleanups: associate errors in cleanups to their respective result object (#267)
+* More muted frames
+* Add result.add\_exception for better handling adding of errors to results
+* Separate exception marks into utility module
+* Add scoped cleanups (#170)
+* gitignore
+* Recover log messages even on formatting exceptions
+* Finished hotfix 0.14.3
+
+0.14.3
+------
+
+* Finished hotfix 0.14.3
+* Bump version
+* Fix accidental truncation of lines in log files (#288)
+* Mute \_get\_run\_context\_stack from tracebacks
+* Fix 3.x regression
+* Improve colors of the console reporter
+* Fix pylint errors
+* Fix fixture cleanup issues when exceptions escape the fixture function (#284)
+* Fix pylint directives for latest pylint release
+
+0.14.2
+------
+
+* Changelog
+* Bump version
+* Improve fixture repr test
+*  Avoid test names with slashes as a result of parametrizations (#285)
+* gitignore
+* gitignore
+* Fix pylint directives for latest pylint release
+* Changelog
+* Support custom message for assert\_raises & raise\_exception
+* Avoid parallel execution on travis
+* Fix parallel test execution
+*  Log file symlink pointing to a missing file doesn't get cleaned up automatically (#278)
+* Fix add\_error() when no arguments are specified (#277)
+* Invert inheritence order for console log
+*  Add optional separation between console log format and file log format (#274)
+*  Add get\_no\_deprecations\_context to disable deprecation messages temporarily (#275)
+* Fix test
+* Add test for log colorizing
+* Update LICENSE
+* Update docs
+*  Add passthrough\_types=TYPES parameter to handling\_exceptions context (#271)
+
+0.14.1
+------
+
+* v0.14.1
+*  Properly handle class/method names and directories in suite files (#270)
+
+0.14.0
+------
+
+* v0.14.0
+* Finished feature files
+*  Add option to specify suite files within suite files (#269)
+* Treat relative paths listed in suite files (-f) relative to the file's location  (#268)
+* Interactive mode now defaults to add the contents of slash.g to the namespace
+* Add start\_interactive\_shell to slash/\_\_init\_\_.py
+* Add test for log truncation
+* Fix pylint errors
+*  Add option to list available tests (#257)
+* Fix tests
+* Add test for log.colorize
+* Fix result.get\_log\_path() for the global session result (#266)
+*  Support writing colors to log files (#263)
+* Fix slash.repeat documentation
+*  Allow specifying location of .slashrc via configuration (#264)
+* Finished release 0.13.0
+
+0.13.0
+------
+
+* Finished release 0.13.0
+* Version bump
+* Changelog
+* More muting of stack frames
+* Add traceback to manually added errors (#261)
+* Fix tests
+* Fix slash.parametrize with non-hashable values (#260)
+* Update README
+*  Added hooks.error\_added hook (#258)
+*  Fix symlink creation when no root log path is specified. (#259)
+*  Use -n 4 in unit tests (#256)
+* Changelog
+* Command line aesthetics
+*  Add command-line option to repeat tests (#140)
+* Finished feature repeat
+*  Add decorator to repeat tests multiple times (#249)
+* function\_marker.get\_value: add default
+* Function markers: support specifying values
+* Make sure context.result is correct also outside of tests
+*  Improve exception logging and DetailedException representation (#250)
+* color message after trunc, to fix color end being truncated
+* Fix build\_test\_dir script
+* Changelog
+* Emit message to console when session\_start takes too long
+*  Fix error handling for fixture cleanup exceptions (#244)
+* Slash fixtures command load plugins before its run
+* Fix number formatting in log subpath (#234)
+* Escape slashes when formatting log subpath (#234)
+*  Fix 'nofixtures' behaviour on test functions (#245)
+* Fix typo
+
+0.12.0
+------
+
+* Finished release 0.12.0
+* Finished release 0.12.0
+* Bump version
+* Show the fixture source path relative to the given path (#237)
+* State when a fixture in unused in 'slash fixtures'
+* Add unit test for #181
+* Renamed \_\_sw\_\_ to \_\_ut\_\_ in unit tests
+* Massive refactoring of unit tests + documentation (#217)
+* Update changelog
+* Updated Confetti version
+* Don't use pylint in Python 2.6
+* Implement "slash fixture" command (#177)
+* Documented report\_fancy\_message in the changelog
+* Use flat pypi badges in README
+* NOTICE console logs are now white
+* Fix pylint errors
+* Set log handlers to be application bound (#229)
+* Add fancy message reporting
+* Add to\_list and to\_dict method to distilled traceback and frames
+
+0.11.0
+------
+
+* Finished release 0.11.0
+* Bump version
+* Implement before\_test\_cleanups hook (#226)
+* PDB can be called in session\_start, session\_end and test\_end (#224)
+* Update slash\_run.rst
+* Fix a bug regarding multiline exceptions (#223)
+* Don't truncate errors by default (#181)
+* Fix pylint reporting issue
+* Foce pylint<1.4 on Python 2.6
+* Fix 2.6/3.x compatibility (#222)
+* Invoke virtualenv with the default Python executable
+* Don't swallow import errors
+*  Ignore ~/.slashrc when running unit tests (#221)
+* Fix documentation
+*  Deprecate \*args and \*\*kwargs on add\_cleanup (#220)
+* Fix typo
+*  Added last\_session\_dir\_symlink to configuration (#211)
+*  Fix slash.add\_failure() to properly report to test\_failure() hook assuming no errors occur (#219)
+* Bump confetti requirement
+*  Suppress usage output when no tests can be loaded (#210)
+* Fix session summary header formatting
+* Add log for session summary
+
+0.10.0
+------
+
+* Finished release 0.10.0
+* Finished release 0.10.0
+* Bump version
+* Add slash.nofixtures for opting out of automated fixture (#214)
+* Issue message to console when interrupt handler takes too long
+*  Allow slash.require to decorate entire classes (#212)
+*  Requirements decorator for test methdos and classes (#16)
+*  Manually added errors do not appear in console log (#192)
+*  Call test cleanups before fixture cleanups (#209)
+* Document traceback verbosity settings
+* Session with all tests skipped is now not reported with a red summary line
+*  Fix xunit plugin (#208)
+*  Add test for 'test\_interrupt' hook (#207)
+* Finished feature issue\_199
+* Add tests for console\_reporter
+* Change console summary format (#203, #199)
+* Conventions fix in notifications plugin
+* Notifications plugin supports Pushbullet
+* pdb stops on the right exception in case of import errors (#180)
+* Add hint at the real location of the exception in load errors (#180)
+* Don't enter debugger on SystemExit exceptions
+* Finished hotfix 0.9.3
+
+0.9.3
+-----
+
+* Finished hotfix 0.9.3
+*  Fix console formatting issue, emitting multiple empty lines when it shouldn't (#204)
+* Bump version
+* Add option to attach error information bits to be displayed on summary (#188)
+* Output add\_error/add\_failure messages in test run summary (#187)
+* Add success only cleanups
+
+0.9.2
+-----
+
+* bump version
+*  context.test\_methodname starts with a dot (#198)
+* Update pylintrc
+* Fix broken pylint test
+* Update version
+*  Add 'slash version' to display current version (#196)
+
+0.9.1
+-----
+
+* v0.9.1
+* Fix changelog
+
+0.9.0
+-----
+
+* bump version
+*  Documentation enhancements (#193)
+* Doc fixes
+* Add missing docs
+*  add assert\_almost\_equal (#194)
+* Fix error/failure output when increased verbosity is used
+* Cosmetics
+* Documentation
+* Documentation
+* Documentation
+*  Support \_\_slash\_\_.test\_index0 and \_\_slash\_\_.test\_index1 for easier enumeration in logs (#190)
+*  Allow running by method/function name, even with parameters.iterate decorators (#191)
+* Implement a more strict testing facility for fixtures, taking into account scoping and fixture generations
+* Fix formatter utility to properly support partial lines with indentation
+* Documentation fixes
+* Load paths to run from suites before resorting to the default test sources
+* Cosmetic improvements to fixture testing code
+* Cosmetics
+* Fix pylint errors
+* Fix docs
+* Documentation overhaul (#179)
+* Add slash.plugins.active decorator (#185)
+* Bump gossip requirement
+* Add parameters.toggle shortcut for iterating [True, False] (#183)
+* Print out exception before entering pdb for easier debugging
+* Properly handle log symlinks with expanduser
+
+0.8.0
+-----
+
+* v0.8.0
+* Don't run setup and teardown if no tests collected (for example: specifying a path with no tests, or using -k that filteres all the tests out)
+* Fix documentation typo
+* Support \_\_dir\_\_ on slash.g and related context proxies
+* Use localtime when displaying error times in console
+* Restore test\_classname and test\_methodname context shortcuts to avoid breaking compatibility
+* Minor documentation fix
+* Change unix-specific behavior in \_traverse\_upwards
+* Call interactive session only after session\_start() hook is called
+* Docs
+* Version bump
+
+0.7.2
+-----
+
+* v0.7.2
+* Add error time to console output (#171)
+* Documentation overhaul
+* Minor improvement to test running script
+* Fix tests under Python 3
+* Add support for autouse fixtures
+* Fix test metadata addresses for fixtures
+* Properly display names of parametrizations and fixtures in the test representation
+* Add utility for iterating cartesian variations as dictionaries
+* Fix fixture cleanups for last tests in session
+* Add test for fixture initialization order
+* Cosmetics
+* Add tests, verifying that unnecessary fixtures are not initialized
+* Add test for explicit parametrization overrides across test class inheritence
+* More fixture scoping test cases
+* Improve coverage
+* Improve coverage, remove dead code
+* Add coverage info via pytest-cov
+* Implement proper fixture scoping and cleanups
+* Fix tests
+* Refactor test parameters to work better with fixture
+* Fix cartesian computation of fixtures
+* Integrate fixtures into slash
+* Fix tests
+* Improve tests for slash run and suite verification in unit tests
+* Major refactoring of test loading code and related tests
+* Fix tests
+* Fixture support (#127)
+* Remove unnecessary code
+* Fix path assignment for config from command line
+* Remove docs for test contexts (will be deprecated soon)
+* Fix tests
+* Bump dependency (confetti was broken in v2.2.2)
+* Add option to disable console line truncation (#168)
+* Remove unnecessary skip
+* Fix last logs links for skipped tests (#167)
+* Refactor tests
+* Cosmetics
+* Fix test
+* Update README.md
+* Readme
+* Add Python 3.4 classifier
+* README
+* Fix console reporter
+* Test improvements
+* Support function test loading
+* Add test for selective test loading
+* Output test names as notice logs, colorize accordingly
+* Increase max log line cap, reformat console log
+* Add ability to run by factory name
+* Remove FQN-based running, in favor of substring selection (#165)
+* Improve build\_test\_dir script
+* Improve fixture dir building script
+* Changelog
+
+0.7.1
+-----
+
+* bump version
+* Changelog
+* Fix error reporting
+* More tests for session stats
+* Fix error reporting
+* Fix suite fixture to properly detect stop\_on\_error
+* Cosmetics
+* Fix changelog
+* Add last-failed log symlink (#159)
+* Fix pattern matching logic to consider cases where the pattern is entirely contained in the searched string
+* Allow parentheses in -k expressions
+* Fix tests
+* Fix Python3 compatibility
+* Fix python 2.6 compatibility
+* Add -k to select tests by keywords (#163)
+* Refactoring of unit tests
+* Save current result under context.result
+* Perform test loading before session start (#162)
+* Allow ~ in log paths
+* Check command line arguments before initializing session
+* Add test repr to beginning of test logs (#161)
+* Update configuration doc
+* changelog
+* Properly handle relative symlink paths in logging
+* Add warning parameter in tests
+* Remove unnecessary test
+* Add option to serialize warnings to dicts (#160)
+
+0.7.0
+-----
+
+* v0.7.0
+* More detailed test summary (#157)
+* Exchange \_\_str\_\_ for \_\_repr\_\_
+* Cosmetics
+* 155: Add str to cleaup
+* Fix log truncation behavior
+* Report warnings at the end of sessions (#153, #92)
+* Truncate long log lines in the console (#152)
+* Detailed exceptions in log file (#148)
+* Put session log in a per-session directory
+* Fix pylint errors
+* Better behavior for debugging slash gossip handlers (#151)
+* Set default hook exception raising policy to RaiseDefer
+* Fix parameter iteration across inheritence (#137)
+* Fix tests
+* Documentation
+* Add log links to console output (#150)
+* Add option for log symlinks (#145)
+* Fix formatting
+* Add test id in error location details (#146)
+* Reclassify issue as bug
+* Make console logs interact nicely with the console reporter non-log output (#149)
+* NOTICE logs were accidentally red
+* Don't capture '@' variables from pytest-style assertions in tracebacks
+* Add option to colorize log records (#144)
+
+0.6.1
+-----
+
+* v0.6.1
+* Allow arbitrary plugin hook registrations (#142)
+* Documentation
+* Add cartesian parameter product test
+* Add Result.data for arbitrary information storage per-test
+* Support len(session.results)
+* Changelog
+* Debug hooks using gossip's internal handler (#143)
+* Fix changelog
+* Docs
+
+0.6.0
+-----
+
+* v0.6.0
+* docs
+* Fix tests
+* Docs
+* Fix multiline indentation
+* Use dessert for AST assertion rewrites
+* Assertions now considered failures
+* Docs
+* docs
+* Documentation fixes
+* Fix hook docs
+* Fix console reporting
+* Fix pylint errors
+* Move to use gossip (#138)
+* Cosmetics
+* Support deprecation version
+* Add deprecation to docstring
+* Add slash.utils.deprecated decorator (#141)
+* Fix -q/-v help messages (#139)
+* Refactor tests
+* More pylint fixes
+* Fix pylint
+* Minor fixes
+* Change docs theme
+* Build on Python 3.4 as well
+* Sort tests by method name in suite fixture
+* Changelog
+* Support rerun session by id (#129)
+* Emit skip summary when verbose
+* cosmetics
+* Mark tests not run due to emergency stop as skipped
+* Fix tests
+* Report collection progress
+* Eager test loading by default (#128)
+* Improve fixture directory creation
+* Refactor slash.local (#135)
+* Fix default verbosity
+* Improve traceback distilling
+* Improve console reporting
+* Fix formatting of exception lines
+* Run tests first, pylint later
+* Fix tests
+* Ignore modules in variable lists
+* Report local variables
+* Control console verbosity with -q/-v
+* Add slash.utils.python: wraps and get\_underlying\_function
+* Improve console reporting
+* Remove unnecessary import
+* Support iteration unpacking
+* Improve iteration utils
+* Improve iteration utils
+* Add line numbers
+* Improve exception reporting
+* Refactor error capturing (#134)
+* Emit error logs on import failures
+* Add script to build sample directory with tests
+* Emit duration and proper errors
+* Work on reporting improvements
+* Make sure reporters adhere to common interface
+* Reset reporting code, remove old reporter
+* Report test importing errors as global session errors (#133)
+
+0.5.0
+-----
+
+* v0.5.0
+* changelog
+* Fix tests
+* Add callback requirement, to help order callback calls
+* Propertly detect cleanup errors as errors (#130)
+* Move to py.test for running tests
+
+0.4.2
+-----
+
+* v0.4.2
+* Travis fixes
+
+0.4.1
+-----
+
+* v0.4.1
+* Commandline fixes
+* Fix command line help formatting
+* Fail earlier when passing unknown switches with -i (#119)
+* Error logging in slash\_run: fixed case wrongly reporting non-strings
+
+0.4.0
+-----
+
+* v0.4.0
+* Add support for fatal exception marks (#114)
+* ID separators now '\_' to support logging on Windows (#122)
+* Drop trailing whitespaces
+* Fix metavars for 'append' cli arguments
+* Support running from suite files (-f) (#116)
+* Remove unused function
+* Add append option for cli\_utils in config (#121)
+* Support multiple exceptions in should.raise\_exception (#120)
+* Add 'make release'
+* Fix travis build
+* Fix makefile for use in travis
+
+0.3.1
+-----
+
+* v0.3.1
+* Custom log handlers: make global and not session bound (#118)
+* slash.test is now a proxy to the current test (#117)
+* Support session.logging.extra\_loggers (#115)
+
+0.3.0
+-----
+
+* v0.3.0
+* Add ability to debug hook exceptions (#113)
+* Add \_\_len\_\_ to session.warnings
+* Properly report errors in 'after' when the test method also fails (#110)
+* Update confetti requirement
+* Drop context processor for emitted logs. This failed when running gevent greenlets inside tests
+* Remove .slashrc from configuration (make sure people understand it's not customizable via -o) - #107
+* Add current directory of .slashrc file to sys.path before loading (#108)
+* Add after\_session\_start hook (#105)
+* When -i is given, don't run default paths (#104)
+
+0.2.0
+-----
+
+* v0.2.0
+* Add context.test\_filename, context.test\_classname, context.test\_methodname (#103)
+* License information for ipdb, IPython
+* Fix after\_case not being called for last case in session (#102)
+* Fix broken pylint checks
+* Call debugger on cleanup exceptions (#101)
+* Fix pudb debugging
+* More tests
+* Fix command-line parsing
+* Remove unnecessary deps
+* Add tests, make log.localtime False by default
+* Properly handle interspersed args (#97)
+* Remove CHANGES from manifest
+* Test before and after exceptions with stop\_on\_failure (#99)
+* Add config param for using localtime/UTC in log
+* Fix dependecies for unitests
+* Refactor the stop on failure test
+* Properly handle arguments after test names (#97)
+* Fix colorizing of console reporter
+* Makefile
+* Use absolute paths in tracebacks for customization files
+* Clearer exceptions when loading customization files
+* Fix typo (#98)
+* Changes doc
+* Support custom log formats (#96)
+* Add changelog with releases
+* Coverage fixes
+* Fix handling import errors when loading tests from paths
+* Refactor session results. Add session.results.current to point to the current result instead of relying on globals
+* Docs
+* Support non-exception failures and errors (#19)
+* README
+* Documentation (#82, #76)
+* Fix console colorization
+* Documentation fixes
+* Version bump
+
+0.1.0
+-----
+
+* v0.1.0
+* Documentation fixes
+* Add option for specifying default tests to run (#45)
+* Enable local .slashrc file (#74)
+* Customization fixes
+* Fix pylint failure
+* Fix documentation of session\_state\_path
+* Clarify errors in plugins section (#72)
+* Support test rerunning (#26)
+* Add method to get hook by name
+* Typo
+* Typo fix
+* Coverage via coveralls
+* Documentation (#71)
+* Documentation (#70)
+* Move slash.session to slash.core.session. slash.session is now the session context proxy (#69)
+* Add newline after new test line (#80)
+* Assertions documentation
+* Add should.be\_empty, should.not\_be\_empty
+* Fix assertion message (#79)
+* Fail for unmatched patterns
+* Documentation
+* Support matching by parameters in FQN (#75)
+* Support running specific tests via FQN (#75)
+* Fix broken test - make result order deterministic in FQDN test
+* Refactoring and dropping code duplication
+* Test metadata and FQDN support (#21)
+* Documentation fixes
+* Raven now supports Python 3
+* Move to pylint 1.0.0, restore pylint on Python 3.3
+* bump version
+
+0.0.3
+-----
+
+* bump version
+* #43: skips from test contexts now cause their respective tests to skip
+* #27: add option to silence loggers by name
+* Fix exthook test on Python 3
+* Pylint fixes
+* #62: notification configuration is loaded when plugin is activated
+* #28: Adopt Flask's exthook for slash extensions
+* Removed unnecessary import
+* Make xunit filename configurable
+* #44: xunit plugin
+* Fix tests
+* Remove unnecessary import
+* Support session.result.get\_num\_results
+* #64: Fix cleanup execution
+* Add more plugin activation/deactivation tests
+* #63: don't call deactivate() for non-active plugins
+* Version is now 0.0.3.dev0 before release
+* Pylint fixes
+* #61: provide reason for skip hook
+* #60: support plugin.deactivate()
+* #41: run\_tests - fail if no active session exists
+* Skip pylint on pypy
+* #59: remove six dependency
+* Bump version
+* #57: Support for custom hooks
+* Cosmetics
+* Add pep8 config file
+* cleanup
+* Warnings improvements
+* Remove unnecessary import
+* Silence warnings as a part of the result reporter tests
+* Separate session log handlers to a session sub-object
+* Warning now printed (and tested) via reporter
+* Revert "WarnHandler is just another part of logging"
+* Fixes to travis\_build.py script, remove deps from tox.ini
+* WarnHandler is just another part of logging
+* Fix warn formatting to display WARNING source cause
+* Add WarnHandler to automatically capture warnings, and re-emits them at the end of the session. Recods now remember the originating test
+* Fix pylint error
+* Switch to use contextlib.ExitStack for cleaner run context
+* Don't initialize sentry if the dsn is empty
+* Move to use emport for importing
+* badges
+
+0.0.2
+-----
+
+* Version bump
+* Fix keyboard interrupt handling
+* Python 2.6 fix
+* Cleanup
+* #5: critical cleanups
+* Update dependency
+* Fix broken tests
+* #55: Results are now ordered by order of execution
+* Fix assertion docs
+* #3: Handle interruptions
+* Fix tests
+* #48, #54: handle import errors and improve captured exceptions
+* Version bump
+* Version bump
+* #52: Handle initialization errors in session activation
+* #53: don't trigger debugger on test skips by default
+* Test on pypy
+* Assertions are now under slash.assertions (should is an alias)
+* Fix broken tests
+* Concise console reporter: newline after dots line
+* #51: add color to console logs
+* Remove unused import
+* #49: fail fast for missing paths
+* Move interactive shell functionality to the application context
+* Docs
+* Rename slash.fixture to slash.g
+* Slight import time optimization
+* Add metavar, required to CLI configuration metadata
+* #46: Add plugin.activate()
+* Documentation
+* Added Changelog
+* Remove Python 3.2 classifier
+* Documentation
+* docs
+* docs
+* Documentation
+* Update Readme
+* Documentation
+* More renames
+* Backport: rename to slash
+* Rename Shakedown to Slash
+* #24: Support test contexts
+* Link to test factory when generating tests
+* Remove logbook constraint -- logbook 0.4.2 support 3.x
+* #40: Provide a simpler integration/customization option through packaged tests
+* #34: Console reporter improvments: print a char per test case by default. print test names and tracebacks when verbose
+* Version bump to development version
+* Smarter version in docs
+* Acknowledgements
+* cli help now displayes help for parameters generated by confetti
+* #36: Add a link to the documentation on readthedocs to the README
+* Documentation fix
+
+0.0.1
+-----
+
+* v0.0.1
+* Documentation
+* #30: get rid of Suite, stay with Session
+* #29: add more test hooks
+* #33: improve customization docs
+* Documentation fixes
+* Support skips as decorators
+* Documentation overhaul
+* Documentation
+* Fix documentation references
+* Documentation
+* Documentation
+* Documentation
+* Documentation
+* Documentation fixes
+* Ignore dist dir
+* 0.0.1.dev0
+* Ignore flycheck files
+* Console logging
+* Logging support
+* Support test\_id in global context
+* Support site customization through pkg\_resources
+* Notifications support
+* Support interactive running with -i/--interactive
+* Add support for -x (stopping on failures)
+* Site customization
+* Support hooks.get\_all\_hooks, callback.iter\_registered
+* Support fixtures
+* Support plugins.manager.install(..., activate=True)
+* Naming conventions
+* Support deactivating plugins with --without-X
+* Travis fixes
+* Documentation
+* Travis fixes
+* Plugin support
+* Exception swallowing and sentry support
+* Documentation fixes
+* Depend on Confetti 2.0.0.dev0, fix compatibility
+* Document default configuration values
+* Support -o to set config parameters from cmdline
+* Add hooks for debugging
+* Add hook support
+* Test parameters
+* Add abstract test base support
+* Fixes
+* Fix travis build
+* Debugging support (--pdb)
+* Add exception\_handling
+* Documentation fixups
+* Add test skips
+* Reporting fixes
+* Log cleanup
+* Report run result
+* Documentation skeleton for config
+* Configuration
+* Cleanups support
+* Add the Test class
+* generate\_tests is now a classmethod
+* Assertions
+* Support running from files
+* doc
+* Reporting
+* readme
+* Make tox behave like travis
+* Travis fixes
+* Travis fixes
+* Build status badge
+* Add global context
+* Fix pylint reporting
+* Fix travis build
+* Add classifiers to setup.py
+* Install six explicitly on travis
+* Tox fixes
+* Ignore tox directory
+* Fix python 3 compatibility
+* Basic running logic
+* Basic running logic
+* Bundle tests into makefile for travis
+* Run epylint in build
+* docs
+* License
+* Documentation
+* Python 3.3 in tox config
+* Ignore build directory
+
+0.0.0
+-----
+
+* Initial commit
