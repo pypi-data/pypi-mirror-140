@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: memtorch
+Version: 1.1.6
+Summary: A Simulation Framework for Memristive Deep Learning Systems
+Home-page: https://github.com/coreylammie/MemTorch
+Author: Corey Lammie
+Author-email: coreylammie@jcu.edu.au
+License: GPL-3.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+A Simulation Framework for Memristive Deep Learning Systems which integrates directly with the well-known PyTorch Machine Learning (ML) library
+
