@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: astrometry
+Version: 0.0.1
+Summary: Post-process Astrosite sessions
+Home-page: http://20.0.0.1/astrosite/sessiontools
+Author: ICNS, Alexandre Marcireau, Nic Ralph
+Author-email: alexandre.marcireau@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: wcs
+
+# astrometry
+A Python wrapper for core Astrometry.net functions
+
+```sh
+rm -rf astrometry.egg-info; rm -rf astrometry_extension.cpython-39-darwin.so; rm -rf build; python3 setup.py develop
+```
+
+Pre-build
+```sh
+python3 prebuild.py
+```
+
+```sh
+clang-format -i astrometry_extension/astrometry_extension.c; CC="ccache clang" python3 setup.py develop --disable-lto;
+```
+
