@@ -1,0 +1,2 @@
+[console_scripts]
+icon_getinfo = getnode_info.icon_getinfo_cli:main
