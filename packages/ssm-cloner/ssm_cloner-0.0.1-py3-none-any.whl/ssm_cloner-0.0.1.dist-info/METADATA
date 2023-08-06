@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ssm-cloner
+Version: 0.0.1
+Summary: (Not to be used as of now) This package is used to simplify the process of cloning the SSM documents across the AWS regions.
+Home-page: https://github.com/lovepurohit/ssm-cloner
+Author: Love Purohit
+Author-email: lvpurohit1@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/lovepurohit/ssm-cloner/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: boto3
+
+This module is created in order to simplify the process of copying the SSM documents from one region to another regions.
+
+* As an organisation or team can have multiple regions in which they operate. And in order to replicate the SSM documents from one region to another.
+
+* It becomes a tedious task if you are developing or if you need to update a document and replicate the change across the regions.
+
+* To resolve this issue, ssm-cloner comes for your help.
+
+* Just execute this module and pass on the parameters and it will clone the documents for you.
+
+* You can also use it to unclone or create new version for your documents.
+
