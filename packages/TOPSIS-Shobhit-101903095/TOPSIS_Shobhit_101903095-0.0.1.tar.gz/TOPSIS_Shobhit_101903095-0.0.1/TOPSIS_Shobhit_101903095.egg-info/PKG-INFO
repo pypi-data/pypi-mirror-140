@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: TOPSIS-Shobhit-101903095
+Version: 0.0.1
+Summary: THIS PACKAGE IS TO IMPLEMENT TOPSIS
+Author: Shobhit Gupta
+Author-email: sgupta3_be19@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# TOPSIS_Shobhit_101903095
+
+With this you can calculate the TOPSIS score and RANK of the data provided in '.csv' format.
+
+- Input file:
+  - contain three or more columns
+  - First column is the object/variable name.
+  - From 2nd to last column contain numeric values only
+
+# Overview
+
+- it calculates the posis score and a rank based on that score
+
+## Usage
+
+i have explained how to make use topsis yourself below
+
+### Getting it
+
+To download TOPSIS use  pip .
+
+    $ pip install TOPSIS_Shobhit_101903095
+
+### Using it
+
+TOPSIS was programmed with ease-of-use in mind. Just, import topsis from TOPSIS_Shobhit_101903095.topsis1 import topsis
+    topsis('inputfilename','Weights','Impacts','Outputfilename')
+
+And you are ready to go!
+
+## Topsis
+
+There are 5 steps in this:
+
+- normalized_matrix
+- weight_normalized
+- ideal_best_worst
+- euclidean_distance
+- topsis_score
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Pre-requisite
+
+The data should be in csv format and have more than 3 columns in it.
+
+## Result
+
+the output(outputfilename)  is saved in the project folder with extra 2 columns with topsis score and rank.
+
+

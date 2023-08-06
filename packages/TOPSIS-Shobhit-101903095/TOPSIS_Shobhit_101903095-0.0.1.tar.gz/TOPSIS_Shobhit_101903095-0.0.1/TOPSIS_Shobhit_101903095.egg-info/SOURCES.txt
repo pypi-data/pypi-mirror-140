@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+TOPSIS_Shobhit_101903095/__init__.py
+TOPSIS_Shobhit_101903095/topsis1.py
+TOPSIS_Shobhit_101903095.egg-info/PKG-INFO
+TOPSIS_Shobhit_101903095.egg-info/SOURCES.txt
+TOPSIS_Shobhit_101903095.egg-info/dependency_links.txt
+TOPSIS_Shobhit_101903095.egg-info/requires.txt
+TOPSIS_Shobhit_101903095.egg-info/top_level.txt
