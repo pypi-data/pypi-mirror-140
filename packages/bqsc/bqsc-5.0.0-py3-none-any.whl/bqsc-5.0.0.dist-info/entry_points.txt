@@ -1,0 +1,3 @@
+[console_scripts]
+bqsc=bqsc.cli:main
+
