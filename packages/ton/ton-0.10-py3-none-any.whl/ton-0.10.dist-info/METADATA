@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ton
+Version: 0.10
+Summary: Python client for The Open Network
+Home-page: https://github.com/psylopunk/ton
+Author: psylopunk
+Author-email: psylopunk@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: crc16 (==0.1.1)
+Requires-Dist: poetry (==1.1.13)
+Requires-Dist: httpx (==0.22.0)
+Requires-Dist: ujson (==5.1.0)
+Requires-Dist: ed25519 (==1.5)
+Requires-Dist: mnemonic (==0.20)
+Requires-Dist: loguru (==0.6.0)
+
+# ton
+Simple python client for The Open Network
+
+Documentation will be available here soon
+
