@@ -1,0 +1,9 @@
+masksdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+masksdk/call_infer_and_mask.py,sha256=CaWo6Y2h0tpkHJp5fq5hxNJgTAuTo_pL7JhdIiwOtiM,4214
+masksdk/mask.py,sha256=oBccz0LGp4Do6_hK4XvAAdLQnO1TIXSzF8SA_PrgJgQ,1790
+masksdk/sdk.py,sha256=m4j-WBrHa6ERpkDtjPR5mFWHyheLONvRuYW28mch74I,107
+masksdk-1.0.3.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+masksdk-1.0.3.dist-info/METADATA,sha256=L9IYIWbxijRy8cRrmIi3y35rIwNFn4UYqaRMbNBV0dw,1465
+masksdk-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+masksdk-1.0.3.dist-info/top_level.txt,sha256=t5OiPJQJG1Ip5HZP7itOoRk-u-jwre1GPLEqH6_otMc,8
+masksdk-1.0.3.dist-info/RECORD,,
