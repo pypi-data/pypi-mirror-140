@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: plover_spanish_mqd
+Version: 2.1.1
+Summary: Support for plover in Spanish (Melany system)
+Home-page: https://github.com/nvdaes/plover_spanish_mqd
+Author: Noelia Ruiz
+Author-email: nrm1977@gmail.com
+License: GNU General Public License v3 or later (GPLv3+)
+Project-URL: Source Code, https://github.com/nvdaes/plover_spanish_mqd
+Project-URL: Issue Tracker, https://github.com/nvdaes/plover_spanish_mqd/issues
+Description: # Spanish support for Plover #
+        
+        *	Authors: Sonsoles García Martín, Noelia Ruiz Martínez
+        
+        Plover support for Melani system in Spanish, used at MQD.
+        
+        Based on this [template](https://github.com/benoit-pierre/plover_template_system).
+        
+        ## Dependencies ##
+        
+        * [Plover Python dictionary](https://github.com/benoit-pierre/plover_python_dictionary)
+        
+        ## Versioning ##
+        
+        We use [SemVer](https://semver.org/).
+        
+        ## Changes ##
+        
+        [Changelog](https://github.com/nvdaes/plover_spanish_mqd/blob/main/CHANGELOG.md)
+        
+Keywords: plover plover_plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: type

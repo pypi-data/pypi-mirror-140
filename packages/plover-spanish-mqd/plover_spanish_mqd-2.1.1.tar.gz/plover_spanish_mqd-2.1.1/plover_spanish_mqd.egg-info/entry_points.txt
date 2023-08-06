@@ -1,0 +1,3 @@
+[plover.system]
+Spanish MQD = plover_spanish_mqd.system
+
