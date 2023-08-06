@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: oapi3
+Version: 0.3.4
+Summary: Validator of openapi3 requests and responses
+Home-page: https://github.com/SmartTeleMax/oapi3
+Author: Mayorov Evgeny
+Author-email: motormen@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# oapi3
+Validator of openapi3 Requests and Responses
+
+

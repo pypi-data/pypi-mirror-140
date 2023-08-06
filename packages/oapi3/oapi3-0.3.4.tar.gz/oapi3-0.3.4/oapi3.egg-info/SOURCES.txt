@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+oapi3/__init__.py
+oapi3/client.py
+oapi3/exceptions.py
+oapi3/iktomi.py
+oapi3/jsonschema_validator.py
+oapi3/resolve.py
+oapi3/schema.py
+oapi3.egg-info/PKG-INFO
+oapi3.egg-info/SOURCES.txt
+oapi3.egg-info/dependency_links.txt
+oapi3.egg-info/requires.txt
+oapi3.egg-info/top_level.txt
