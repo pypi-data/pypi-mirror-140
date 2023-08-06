@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/eircode/__init__.py
+src/eircode/address.py
+src/eircode/constants.py
+src/eircode/eircode.py
+src/eircode/proxy.py
+src/eircode.egg-info/PKG-INFO
+src/eircode.egg-info/SOURCES.txt
+src/eircode.egg-info/dependency_links.txt
+src/eircode.egg-info/requires.txt
+src/eircode.egg-info/top_level.txt
+test/test_basic.py
