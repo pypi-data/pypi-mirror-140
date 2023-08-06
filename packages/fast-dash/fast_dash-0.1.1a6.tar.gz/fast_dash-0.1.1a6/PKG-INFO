@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: fast-dash
+Version: 0.1.1a6
+Summary: Create input-output web applications and user interfaces using Plotly Dash lightning fast..
+Home-page: https://github.com/dkedar7/fast_dash
+License: MIT
+Author: Kedar Dabhadkar
+Author-email: kdabhadk@gmail.com
+Requires-Python: >=3.6.1,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+Requires-Dist: Flask (>=2.0.2,<3.0.0)
+Requires-Dist: black (==20.8b1); extra == "test"
+Requires-Dist: dash (>=2.1.0,<3.0.0)
+Requires-Dist: dash-bootstrap-components (>=1.0.2,<2.0.0)
+Requires-Dist: flake8 (==3.8.4); extra == "test"
+Requires-Dist: flake8-docstrings (>=1.6.0,<2.0.0); extra == "test"
+Requires-Dist: isort (==5.6.4); extra == "test"
+Requires-Dist: livereload (>=2.6.3,<3.0.0); extra == "doc"
+Requires-Dist: mkdocs (>=1.1.2,<2.0.0); extra == "doc"
+Requires-Dist: mkdocs-autorefs (==0.1.1); extra == "doc"
+Requires-Dist: mkdocs-include-markdown-plugin (>=1.0.0,<2.0.0); extra == "doc"
+Requires-Dist: mkdocs-material (>=6.1.7,<7.0.0); extra == "doc"
+Requires-Dist: mkdocs-material-extensions (>=1.0.1,<2.0.0)
+Requires-Dist: mkdocstrings (>=0.13.6,<0.14.0); extra == "doc"
+Requires-Dist: pip (>=20.3.1,<21.0.0); extra == "dev"
+Requires-Dist: plotly (>=5.5.0,<6.0.0)
+Requires-Dist: pre-commit (>=2.12.0,<3.0.0); extra == "dev"
+Requires-Dist: pytest (==6.1.2); extra == "test"
+Requires-Dist: pytest-cov (==2.10.1); extra == "test"
+Requires-Dist: toml (>=0.10.2,<0.11.0); extra == "dev"
+Requires-Dist: tox (>=3.20.1,<4.0.0); extra == "dev"
+Requires-Dist: twine (>=3.3.0,<4.0.0); extra == "dev"
+Requires-Dist: virtualenv (>=20.2.2,<21.0.0); extra == "dev"
+Description-Content-Type: text/markdown
+
+# Overview
+
+
+<p align="center">
+<a href="https://pypi.python.org/pypi/fast_dash">
+    <img src="https://img.shields.io/pypi/v/fast_dash.svg"
+        alt = "Release Status">
+</a>
+
+<a href="https://github.com/dkedar7/fast_dash/actions">
+    <img src="https://github.com/dkedar7/fast_dash/actions/workflows/release.yml/badge.svg" alt="CI Status">
+</a>
+
+
+<a href="https://github.com/dkedar7/fast_dash/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/dkedar7/fast_dash" alt="MIT License">
+</a>
+
+<a href="https://dkedar7.github.io/fast_dash/">
+    <img src="https://img.shields.io/badge/Docs-MkDocs-<COLOR>.svg" alt="Documentation">
+</a>
+
+</p>
+
+
+<p align="center">
+  <a href="https://dkedar7.github.io/fast_dash/"><img src="https://raw.githubusercontent.com/dkedar7/fast_dash/main/docs/assets/logo.png" alt="Fast Dash logo"></a>
+</p>
+<p align="center">
+    <em>Open source, Python-based tool to develop web applications lightining fast.</em>
+</p>
+
+
+---
+
+
+* Documentation: <https://dkedar7.github.io/fast_dash/>
+* Source code: <https://github.com/dkedar7/fast_dash/>
+
+---
+
+Fast Dash is a Python module that makes the development of web applications fast and easy. It is built on top of Plotly Dash and can be used to build web interfaces for Machine Learning models or to showcase any proof of concept withoout the hassle of developing UI from scratch.
+
+## Simple example
+
+Run your app with three simple steps:
+
+```python
+from fast_dash.App import App
+from fast_dash.Components import TextInput, TextOutput
+
+# Step 1: Define your callback function
+def callback_function(input_text):
+    # Code to process text
+    processed_text = input_text
+    return processed_text
+
+# Step 2: Specify the input/ output widgets
+app = App(callback_fn=callback_fn, 
+        inputs=[TextInput()], 
+        outputs=[TextOutput()], 
+        title='My App')
+
+# Step 3: Run your app!
+app.run()
+
+# * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+```
+
+Output:
+
+![Simple example](https://raw.githubusercontent.com/dkedar7/fast_dash/main/docs/assets/simple_example.gif)
+
+## Features
+
+- No need to build UI from scratch
+- Launch an app only by specifying the types of inputs and outputs
+- Flask-based backend allows easy scalability and widespread compatibility
+- Option to customize per one's interest
+
+Some features are coming up in future releases:
+
+- More input and output components
+- Deploy to Heroku
+- and many more.
+
+## Community
+
+Fast Dash is built on open-source. You are encouraged to share your own projects, which will be highlighted on a common community gallery that's upcoming. Join us on [Discord](https://discord.gg/B8nPVfPZ6a).
+
+## Credits
+
+Fast Dash is build on top of [Plotly Dash](https://github.com/plotly/dash) and the documentation is inspired from [FastAPI's docs](https://fastapi.tiangolo.com/) project template. It is inpired from [gradio](https://github.com/gradio-app/gradio).
