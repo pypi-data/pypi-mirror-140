@@ -1,0 +1,8 @@
+# This is the manifest.in file that tells setup.py what extra (not .py files) to include
+
+include magicdaq\server32-windows.exe
+include magicdaq\server32-windows.exe.config
+include magicdaq\magicdaq_driver\*
+include magicdaq\magicdaq_driver\amd64\*
+include magicdaq\magicdaq_driver\ia64\*
+include magicdaq\magicdaq_driver\x86\*
