@@ -1,0 +1,17 @@
+srbai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srbai/test.py,sha256=fKlISmBeJZIv0jVZL0IMRybkP_epoGipXv5YEq2NbSg,164
+srbai/Alati/Transliterator.py,sha256=VUNCQ0AA7oZUdzefh1xBZi2V6Sy5zAtoi94K8HY3ahc,2853
+srbai/Alati/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srbai/Glas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srbai/JezickiModeli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srbai/Klasifikatori/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srbai/NER/NER_classla.py,sha256=_vhch6fWaR2AHmaCwFe1I-DVWAb4e4N2BbA5U1DGYSs,374
+srbai/NER/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srbai/SintaktickiOperatori/POS_tagger.py,sha256=UAJi0EwMoRIrWlP4AqDlseuSaZ_F_9QZ-BncxZCwrKM,1161
+srbai/SintaktickiOperatori/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srbai/SintaktickiOperatori/stemmer_nm.py,sha256=M-g0Ib7OXAxwaYzcB8t5plKDA7-TG5oUZi4nGKgzkNA,8410
+SrbAI-0.0.3.dist-info/LICENSE,sha256=PbHmdjx7Wogk0ea2XiOWXgpa1zIb_s8eXY-V2scH3Xc,1057
+SrbAI-0.0.3.dist-info/METADATA,sha256=3i-iYupWfiDa15Ud8aCFH46DIlgv38PERC2-tr-rxdY,3687
+SrbAI-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SrbAI-0.0.3.dist-info/top_level.txt,sha256=pmw8nDrPG1_BAnJP2FJJ0dY42SkWomwV1BH-q7vnY3s,6
+SrbAI-0.0.3.dist-info/RECORD,,
