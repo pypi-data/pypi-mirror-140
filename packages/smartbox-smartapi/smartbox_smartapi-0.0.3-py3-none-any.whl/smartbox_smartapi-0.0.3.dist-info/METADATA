@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: smartbox-smartapi
+Version: 0.0.3
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Devs
+Author-email: dev@smartbox.ca
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cx-Oracle (==8.1.0)
+Requires-Dist: Django (==3.1.5)
+Requires-Dist: django-cors-headers (==3.7.0)
+Requires-Dist: django-environ (==0.8.1)
+Requires-Dist: django-filter (==2.4.0)
+Requires-Dist: django-graphql-jwt (==0.3.1)
+Requires-Dist: django-log-viewer (==1.1.2)
+Requires-Dist: djangorestframework (==3.12.2)
+Requires-Dist: graphene (==2.1.8)
+Requires-Dist: graphene-django (==2.15.0)
+Requires-Dist: graphene-django-cud (==0.7.2)
+Requires-Dist: graphene-django-optimizer (==0.8.0)
+Requires-Dist: graphene-file-upload (==1.2.2)
+Requires-Dist: graphql-core (==2.3.2)
+Requires-Dist: graphql-relay (==2.0.1)
+Requires-Dist: jsonpickle (==1.5.0)
+Requires-Dist: Markdown (==3.3.4)
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+#Settings
+
+TENANT_MODEL='the.path.of.your.tenant.model'
+SCHEMA='the.path.of.your.schema'
+
+
