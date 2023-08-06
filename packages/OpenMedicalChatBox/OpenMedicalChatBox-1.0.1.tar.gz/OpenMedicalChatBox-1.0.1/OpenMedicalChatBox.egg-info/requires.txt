@@ -1,0 +1,9 @@
+numpy
+torch
+tensorflow
+tensorflow-gpu
+google
+pandas
+argparse
+logging
+datetime
