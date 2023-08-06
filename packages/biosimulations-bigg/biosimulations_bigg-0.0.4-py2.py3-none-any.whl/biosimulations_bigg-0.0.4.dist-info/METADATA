@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: biosimulations-bigg
+Version: 0.0.4
+Summary: Command-line program for publishing the BiGG model repository to BioSimulations.
+Home-page: https://github.com/biosimulations/biosimulations-bigg
+Download-URL: https://github.com/biosimulations/biosimulations-bigg
+Author: Center for Reproducible Biomedical Modeling
+Author-email: info@biosimulations.org
+License: MIT
+Keywords: metabolism,biochemical network,cell biology,systems biology,computational biology,mathematical modeling,numerical simulation,flux balance analysis,FBA,Systems Biology Markup Language,SBML,BiGG
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+License-File: LICENSE
+Requires-Dist: biopython
+Requires-Dist: biosimulators-cobrapy
+Requires-Dist: biosimulators-utils[escher] (>=0.1.152)
+Requires-Dist: boto3
+Requires-Dist: cement
+Requires-Dist: python-dateutil
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml
+Requires-Dist: requests-cache
+Requires-Dist: setuptools
+Provides-Extra: all
+Requires-Dist: biosimulators-cobrapy[gurobi] ; extra == 'all'
+Requires-Dist: capturer ; extra == 'all'
+Provides-Extra: docs
+Provides-Extra: gurobi
+Requires-Dist: biosimulators-cobrapy[gurobi] ; extra == 'gurobi'
+Provides-Extra: tests
+Requires-Dist: capturer ; extra == 'tests'
+
+UNKNOWN
+

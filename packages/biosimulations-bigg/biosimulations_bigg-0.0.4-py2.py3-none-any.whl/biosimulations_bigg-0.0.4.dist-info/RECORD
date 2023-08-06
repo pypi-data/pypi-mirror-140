@@ -1,0 +1,17 @@
+biosimulations_bigg/__init__.py,sha256=26Wdg9R3_Dwde7RuyBsrXvQLRuWLAveenLvYyWaIoq4,48
+biosimulations_bigg/__main__.py,sha256=-jxAjHdU2O-gjhvIriFyQQMRIffISjLJoJjohp0D1kA,12613
+biosimulations_bigg/_version.py,sha256=-Wqu9UyJphp-2_EahEsqQvkcE0VBhm1-N7D6e5rANdY,22
+biosimulations_bigg/config.py,sha256=0iePqcqjnofHyyg0l1bYjMSoeCatURWTFXuhWqIwGGw,9383
+biosimulations_bigg/core.py,sha256=hKwfIFXWgR8qmGn3YBYWcZyCtUoonFqo7BBvPRXfIrY,31077
+biosimulations_bigg/final/curators.yml,sha256=53ZN5ocBK3yvYFXZqE6HIVh4vKnMeCE6bPs2jiWM0xw,238
+biosimulations_bigg/final/extra-visualizations.yml,sha256=dfqqhdaduIM4AgFKLmb67KgO5b9uyEZNJNezPxCms-g,12837
+biosimulations_bigg/final/issues.yml,sha256=FXzQq8UgoRrQGp2T2l-6O7D4U9npd9aUwqJqCkOR3TE,3310
+biosimulations_bigg/final/status.yml,sha256=sN2rAMflzGwi_rz7zani6NvMkZ1DSVXrnAJtjlbcmnw,19907
+biosimulations_bigg/final/thumbnails.yml,sha256=p1cKnWj-lq_6_7hTr-MDR7TURU72FHvk6dh4lvYNW68,11901
+biosimulations_bigg/source/LICENSE,sha256=loGuMF9vT1CFNiE5-N0_tiLb-5i8BBkp3ubqXXK7E6M,1522
+biosimulations_bigg-0.0.4.dist-info/LICENSE,sha256=TXS9OfZfmF1dUckyYqUnvGbeWNrUcrD4aSzR0v4Kp8o,1110
+biosimulations_bigg-0.0.4.dist-info/METADATA,sha256=1ckJPqLuuo_Yf4qGQI6wX_0XgzkfSFkun0qozZlinLU,1445
+biosimulations_bigg-0.0.4.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+biosimulations_bigg-0.0.4.dist-info/entry_points.txt,sha256=3uNx00rhkLJ0y59aTQrT-WxEzCtKBgNgNxeU6PirFCQ,74
+biosimulations_bigg-0.0.4.dist-info/top_level.txt,sha256=-bXrw0Bwk179hGTQibrei44USgnjgKkGXcpPYqV8Tkc,20
+biosimulations_bigg-0.0.4.dist-info/RECORD,,
