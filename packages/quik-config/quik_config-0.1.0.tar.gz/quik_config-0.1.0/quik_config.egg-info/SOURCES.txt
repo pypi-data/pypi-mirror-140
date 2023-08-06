@@ -1,0 +1,8 @@
+setup.py
+quik_config/__init__.py
+quik_config/main.py
+quik_config.egg-info/PKG-INFO
+quik_config.egg-info/SOURCES.txt
+quik_config.egg-info/dependency_links.txt
+quik_config.egg-info/requires.txt
+quik_config.egg-info/top_level.txt
