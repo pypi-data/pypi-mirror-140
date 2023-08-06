@@ -1,0 +1,8 @@
+README.md
+setup.py
+pkgF12/__init__.py
+pkgF12/main.py
+pkgF12.egg-info/PKG-INFO
+pkgF12.egg-info/SOURCES.txt
+pkgF12.egg-info/dependency_links.txt
+pkgF12.egg-info/top_level.txt
