@@ -1,0 +1,11 @@
+PyYAML
+subprocess-tee>=0.3.5
+
+[test]
+coverage
+flaky
+pip-tools
+pytest
+pytest-markdown
+pytest-mock
+pytest-plus
