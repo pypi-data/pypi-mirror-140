@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: package-nachiketa
+Version: 1.0.0
+Summary: Code for fibonacci number
+Home-page: UNKNOWN
+Author: Nachiketa
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: Licence.txt
+
+It will return n-th fibonacci number
+
