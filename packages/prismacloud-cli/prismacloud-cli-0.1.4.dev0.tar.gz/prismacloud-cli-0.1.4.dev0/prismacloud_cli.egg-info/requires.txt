@@ -1,0 +1,8 @@
+requests
+pandas
+jsondiff
+importlib
+ipython
+argh
+argparse
+tabulate
