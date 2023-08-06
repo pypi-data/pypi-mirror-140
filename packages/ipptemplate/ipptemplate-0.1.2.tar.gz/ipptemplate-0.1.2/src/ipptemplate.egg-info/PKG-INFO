@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ipptemplate
+Version: 0.1.2
+Summary: A template package from iPP eng. GmbH
+Home-page: https://github.com/ipp-git/python_template
+Author: iPP (Thierry Lochmatter)
+Author-email: info@ipp.swiss
+License: UNKNOWN
+Keywords: iPP,application
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Provides-Extra: tests
+License-File: LICENSE
+
+UNKNOWN
+
