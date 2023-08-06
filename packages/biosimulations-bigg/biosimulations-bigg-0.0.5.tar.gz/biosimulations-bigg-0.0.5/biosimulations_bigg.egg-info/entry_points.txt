@@ -1,0 +1,2 @@
+[console_scripts]
+biosimulations-bigg = biosimulations_bigg.__main__:main
