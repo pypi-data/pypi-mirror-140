@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: better-cryptography
+Version: 0.4.3
+Summary: A module for encryption and information security operations.
+Home-page: UNKNOWN
+Author: Wyatt Garrioch
+Author-email: w.garrioch456@gmail.com
+License: UNKNOWN
+Keywords: python,encryption,AES,information security
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome
+Requires-Dist: rsa
+Requires-Dist: cryptography
+
+# Contents
+ - `AESencryption` contains Python scripts for implementing 128-bit CFB (Cipher Feedback Loop) AES encryption and logging.
+
+
+ # FAQ
+
+  ## How do I install and import the package?
+  Install through the `pip3 install AESencryption` command. Import via `import Encryption` or `from Encryption import Cipher`.
+
+
+  ## How do I report a bug?
+  Email me at w.garrioch456@gmail.com.
+
