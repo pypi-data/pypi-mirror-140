@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Larango
+Version: 0.1.0
+Summary: Larango Web Framework
+Home-page: https://github.com/mosab-jbara/larango
+Author: Mosab Jbara
+Author-email: mosabjbara@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is Larango package
+Author: Mosab Jbara
+
+
