@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: krules-dev-support
+Version: 0.11
+Summary: KRules dev utilities
+Home-page: https://github.com/airspot-dev/krules
+Author: Alberto Degli Esposti
+Author-email: alberto@arispot.tech
+License: Apache Licence 2.0
+Keywords: krules rules engine sane-build
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS
+
+This module contains shared code used by make.py files contained in the different modules of the project
+
+For a better understanding take a look at [sane project](https://github.com/mikeevmm/sane)
+
+
+
+

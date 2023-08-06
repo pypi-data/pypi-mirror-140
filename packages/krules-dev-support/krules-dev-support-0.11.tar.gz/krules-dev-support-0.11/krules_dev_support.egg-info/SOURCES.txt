@@ -1,0 +1,12 @@
+AUTHORS
+LICENSE
+README.md
+pyproject.toml
+setup.py
+krules_dev/__init__.py
+krules_dev/sane_utils.py
+krules_dev_support.egg-info/PKG-INFO
+krules_dev_support.egg-info/SOURCES.txt
+krules_dev_support.egg-info/dependency_links.txt
+krules_dev_support.egg-info/requires.txt
+krules_dev_support.egg-info/top_level.txt
