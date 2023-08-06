@@ -1,0 +1,4 @@
+cmlib>=1.1.2
+numpy>=1.11
+pgcolorbar>=1.1.1
+pyqtgraph>=0.11
