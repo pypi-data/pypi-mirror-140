@@ -1,0 +1,13 @@
+# Root Exception Class for all Deeplabel related Exceptions
+class DeeplabelException(Exception):...
+
+
+class InvalidCredentials(DeeplabelException):...
+
+
+# Error representing invalid Id for any or detectionId,VideoId,GraphId,NodeId,EdgeId,etc
+class InvalidIdError(DeeplabelException):...
+
+
+# If an api returns response_code > 200
+class InvalidAPIResponse(DeeplabelException):...
