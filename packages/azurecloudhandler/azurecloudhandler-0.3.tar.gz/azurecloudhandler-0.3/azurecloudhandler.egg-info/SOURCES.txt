@@ -1,0 +1,13 @@
+README.md
+setup.py
+azurecloudhandler/__init__.py
+azurecloudhandler.egg-info/PKG-INFO
+azurecloudhandler.egg-info/SOURCES.txt
+azurecloudhandler.egg-info/dependency_links.txt
+azurecloudhandler.egg-info/requires.txt
+azurecloudhandler.egg-info/top_level.txt
+azurecloudhandler/aks/__init__.py
+azurecloudhandler/aks/_aks_cmd.py
+azurecloudhandler/aks/_aks_operation.py
+azurecloudhandler/datalake_gen2/__init__.py
+azurecloudhandler/datalake_gen2/_adls2_loads.py
