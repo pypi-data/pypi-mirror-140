@@ -1,0 +1,9 @@
+click>=7.0
+logzero
+riotwatcher
+backoff
+IPython
+
+[testing]
+mypy
+flake8
