@@ -1,0 +1,8 @@
+openstack_bucket_retention/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+openstack_bucket_retention/cli.py,sha256=I1Ou4x1NEdH_Lu2qT4B2w_G7jyRDi6P0Nuk0KaWw6zo,718
+openstack_bucket_retention/core.py,sha256=ZusgEBcHVoakjXf3WpFpffX9mBs41xrYRBkP_fd5xUM,2822
+openstack_bucket_retention-0.2.0.dist-info/entry_points.txt,sha256=YVjrKbKL1Leq3IWhxzZUBoR2kEolSlvjofFo3Lpb9cQ,82
+openstack_bucket_retention-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+openstack_bucket_retention-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+openstack_bucket_retention-0.2.0.dist-info/METADATA,sha256=i5C_BLKxgsBT3Vg1nFFFlYe5f96i_jI-fDabWAianzs,1942
+openstack_bucket_retention-0.2.0.dist-info/RECORD,,
