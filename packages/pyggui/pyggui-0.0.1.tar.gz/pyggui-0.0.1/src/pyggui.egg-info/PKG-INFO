@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: pyggui
+Version: 0.0.1
+Summary: Pygame project for simplifying page and menu creation while still leaving full controll
+Home-page: https://github.com/15minutOdmora/python-pyggui
+Author: Liam Mislej
+Author-email: liammislej@gmail.com
+License: MIT
+Project-URL: Documentation, https://python-pyggui.readthedocs.io/
+Project-URL: Changelog, https://python-pyggui.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/15minutOdmora/python-pyggui/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+========
+Overview
+========
+
+
+
+A Python gui library based around Pygame, meant for simplifying gui development for menus on simple pixel art games (or other types of games). 
+Designed for customization and simplicity. Although the library comes with pre-designed gui items, each can be customized and its functionality personalized to fit your needs.
+
+Start with creating the main Game object, specify your global settings (such as screen size, FPS cap, ...), run the main game loop from it. Create your custom page, add items to it, custom event handlers and more. It will be auto-imported and loaded into your game. 
+
+Your game needs its own loop for optimization reasons? No problem, create a dummy page and run your loop from there. Keep page, menu and item logic separated and tidy. 
+
+See https://python-pyggui.readthedocs.io/en/latest/usage.html for basic concepts.
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install pyggui
+
+You can also install the in-development version with::
+
+    pip install https://github.com/15minutOdmora/python-pyggui/archive/main.zip
+
+
+Documentation
+=============
+
+
+https://python-pyggui.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.0.0 (2021-12-24)
+------------------
+
+* First release on PyPI.
+
+

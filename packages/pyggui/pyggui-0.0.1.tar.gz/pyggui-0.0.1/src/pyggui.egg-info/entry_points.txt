@@ -1,0 +1,2 @@
+[console_scripts]
+pyggui = pyggui.cli:main
