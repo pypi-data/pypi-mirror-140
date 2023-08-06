@@ -1,0 +1,9 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+converttxttoxml.egg-info/PKG-INFO
+converttxttoxml.egg-info/SOURCES.txt
+converttxttoxml.egg-info/dependency_links.txt
+converttxttoxml.egg-info/top_level.txt
