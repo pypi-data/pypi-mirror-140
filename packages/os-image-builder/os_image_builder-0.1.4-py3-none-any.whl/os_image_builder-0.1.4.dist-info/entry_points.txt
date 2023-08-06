@@ -1,0 +1,3 @@
+[console_scripts]
+os-image-builder=os_image_builder:main
+
