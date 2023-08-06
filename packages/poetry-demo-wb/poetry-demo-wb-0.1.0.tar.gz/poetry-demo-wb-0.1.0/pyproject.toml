@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "poetry-demo-wb"
+version = "0.1.0"
+description = ""
+authors = ["Will Beresford <Will.Beresford@YASA.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+poetry-demo-wb = "poetry_demo_wb.console:main"
