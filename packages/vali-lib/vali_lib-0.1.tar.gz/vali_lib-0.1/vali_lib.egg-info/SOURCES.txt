@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+docs/doc.txt
+vali_lib/__init__.py
+vali_lib.egg-info/PKG-INFO
+vali_lib.egg-info/SOURCES.txt
+vali_lib.egg-info/dependency_links.txt
+vali_lib.egg-info/requires.txt
+vali_lib.egg-info/top_level.txt
+vali_lib/pack_a/__init__.py
+vali_lib/pack_a/find_index.py
+vali_lib/pack_b/__init__.py
+vali_lib/pack_b/my_factorial.py
