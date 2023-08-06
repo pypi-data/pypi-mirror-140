@@ -1,0 +1,5 @@
+eventlet
+python-socketio
+pillow
+qrcode[pil]
+python-uinput
