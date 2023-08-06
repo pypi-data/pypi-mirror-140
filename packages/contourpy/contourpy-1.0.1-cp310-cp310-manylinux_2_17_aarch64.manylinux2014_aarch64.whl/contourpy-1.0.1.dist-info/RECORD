@@ -1,0 +1,16 @@
+contourpy-1.0.1.dist-info/LICENSE,sha256=pqXbPRwX1exkbfqvgmUG8ZarSrJP4c289WKo6oS5PpY,1534
+contourpy-1.0.1.dist-info/METADATA,sha256=iKYkN_lbGMjhPoel5YjtLPJVSBSmz73faT-f8HPCumE,2161
+contourpy-1.0.1.dist-info/top_level.txt,sha256=Hr6Xd58RImQP8CRQteeCbV-W7DNhIFaenj9T8kjbNHo,10
+contourpy-1.0.1.dist-info/RECORD,,
+contourpy-1.0.1.dist-info/WHEEL,sha256=3zITUdHX-zH-jhKLfklGA9F0ms_hxVHRE4Z-vedBDkY,154
+contourpy/_contourpy.cpython-310-aarch64-linux-gnu.so,sha256=ofZgWgl_ojrLe2aUXXqxABhO2DxqpBINrTzxUVyQTGo,818904
+contourpy/chunk.py,sha256=4WrWx6FZVikjpabiOXsBR03J6K4VXu7GY8SDtJdAf80,2811
+contourpy/_version.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+contourpy/enum_util.py,sha256=zvJm9y9LP9F8v1nVODn6mVG-VxUzZTAaEMCpDXUte78,991
+contourpy/__init__.py,sha256=YK2AZIxOalrWTutlAWkvSD_kTgdxl3tByXxsLt2tzR8,9681
+contourpy/util/data.py,sha256=9MFPiM0MHTNX6XpBxgYvORcWQBHFpqFketG4dt2k_-Q,2101
+contourpy/util/mpl_util.py,sha256=pWsdlrRQrYYPPDiByoxSyUWSErB8V_prs5z1L7JH0-w,2873
+contourpy/util/bokeh_util.py,sha256=wWp_Ddfu0cWtPFXvnP3eT-ZAe489xeq3bDufCT3piSE,2785
+contourpy/util/bokeh_renderer.py,sha256=V6l0PeLGtB9oK-uscCEKSpG1oR5R6T6bBo-Y7DMvv4I,11599
+contourpy/util/mpl_renderer.py,sha256=A2ptFFmSe3ZbG2TLWI5eiOdelLdIPV807p1v57ihsWQ,19250
+contourpy/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
