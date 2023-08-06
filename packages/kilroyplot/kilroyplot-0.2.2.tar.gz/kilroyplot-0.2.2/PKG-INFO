@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: kilroyplot
+Version: 0.2.2
+Summary: kilroy plot styling 📊
+Home-page: https://github.com/kilroybot/kilroyplot
+Author: kilroy
+Author-email: kilroymail@pm.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Provides-Extra: test
+Requires-Dist: appdirs (>=1.4,<2.0)
+Requires-Dist: cachetools (>=4.2,<5.0)
+Requires-Dist: dill (>=0.3,<0.4)
+Requires-Dist: jupyterlab (>=3.2,<4.0); extra == "dev"
+Requires-Dist: matplotlib (>=3.5,<4.0)
+Requires-Dist: pytest (>=7.0,<8.0); extra == "dev" or extra == "test"
+Project-URL: Repository, https://github.com/kilroybot/kilroyplot
+Description-Content-Type: text/markdown
+
+<h1 align="center">kilroyplot</h1>
+
+<div align="center">
+
+[![Running tests](https://github.com/kilroybot/kilroyplot/actions/workflows/test.yml/badge.svg)](https://github.com/kilroybot/kilroyplot/actions/workflows/test.yml)
+
+</div>
+
+---
+
+kilroy plot styling 📊
+
+## Installing
+
+Using `pip`:
+
+```sh
+pip install kilroyplot
+```
+
+## Usage
+
+Just import and use the same as with `matplotlib`:
+
+```python
+from kilroyplot.plot import plt
+```
+
