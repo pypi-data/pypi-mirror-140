@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-addFriend
+Version: 1.0.0
+Summary: A plugin based on NoneBot2 to process QQ friends and QQ group join requests.
+Home-page: https://github.com/ziru-w/nonebot_plugin_addFriend
+Author: wk
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ziru-w/nonebot_plugin_addFriend/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nonebot_plugin_addFriend
+A plugin based on NoneBot2 to process QQ friends and QQ group join requests
+
+
