@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: c-lancet
+Version: 0.0.1
+Summary: A static C source code analysis framework
+Home-page: https://github.com/PeiweiHu/c_lancet
+Author: Peiwei Hu
+Author-email: jlu.hpw@foxmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
