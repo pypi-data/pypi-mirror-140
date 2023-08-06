@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gartersnake/__init__.py
+gartersnake/conda.py
+gartersnake/missing.py
+gartersnake/pip.py
+gartersnake/version.py
+gartersnake/windows.py
+gartersnake.egg-info/PKG-INFO
+gartersnake.egg-info/SOURCES.txt
+gartersnake.egg-info/dependency_links.txt
+gartersnake.egg-info/requires.txt
+gartersnake.egg-info/top_level.txt
