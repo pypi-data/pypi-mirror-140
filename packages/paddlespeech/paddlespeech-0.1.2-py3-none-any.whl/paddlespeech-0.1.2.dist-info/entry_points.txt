@@ -1,0 +1,3 @@
+[console_scripts]
+paddlespeech = paddlespeech.cli.entry:_execute
+
