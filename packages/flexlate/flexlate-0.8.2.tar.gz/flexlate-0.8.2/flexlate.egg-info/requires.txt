@@ -1,0 +1,7 @@
+py-app-conf
+cookiecutter
+copier
+gitpython
+typer
+rich
+markupsafe<2.1
