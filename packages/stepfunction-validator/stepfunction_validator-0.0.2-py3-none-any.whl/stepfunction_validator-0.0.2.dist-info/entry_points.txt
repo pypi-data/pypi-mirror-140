@@ -1,0 +1,2 @@
+[console_scripts]
+stepfunction_validator = stepfunction_validator.stepfunction_validator:main
