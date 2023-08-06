@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: latch
+Version: 0.0.33
+Summary: latch sdk
+Home-page: UNKNOWN
+Author-email: kenny@latch.bio
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Requires-Dist: pyjwt (>=0.2.0)
+Requires-Dist: requests (>=2.0)
+Requires-Dist: click (>=7.0)
+Requires-Dist: docker (>=5.0)
+Requires-Dist: boto3 (>=1.2)
+Requires-Dist: flaightkit (==0.2.0)
+Requires-Dist: flaightkitplugins-pod (==0.0.1)
+
+UNKNOWN
+
