@@ -1,0 +1,17 @@
+aiodns==3.0.0
+aiohttp[speedups]==3.8.1
+aiosignal==1.2.0
+async-timeout==4.0.2
+attrs==21.4.0
+brotli==1.0.9
+cchardet==2.1.7
+cffi==1.15.0
+charset-normalizer==2.0.9
+frozenlist==1.2.0
+humanize==4.0.0
+idna==3.3
+multidict==5.2.0
+pycares==4.1.2
+pycparser==2.21
+tabulate==0.8.9
+yarl==1.7.2
