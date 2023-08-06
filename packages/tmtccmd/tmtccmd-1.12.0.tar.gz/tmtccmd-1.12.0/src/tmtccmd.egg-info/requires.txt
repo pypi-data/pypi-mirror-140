@@ -1,0 +1,10 @@
+crcmod>=1.7
+pyserial>=3.5
+colorama>=0.4.4
+colorlog>=6.6.0
+dle-encoder>=0.2
+spacepackets>=0.6
+
+[gui]
+PyQt5>=5.15.6
+PyQt5-stubs>=5.15.0
