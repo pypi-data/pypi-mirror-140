@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mdvazeerhello
+Version: 0.0.6
+Summary: A basic hello package
+Home-page: UNKNOWN
+Author: Vazeeruddin (Microchip)
+Author-email: <mdvazeer@gmail.com>
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: inputimeout (==1.0.4)
+Requires-Dist: intelhex (==2.3.0)
+Requires-Dist: psutil (==5.8.0)
+Requires-Dist: PyDirectInput (==1.0.4)
+Requires-Dist: pyelftools (==0.27)
+Requires-Dist: pywin32 (==301)
+Requires-Dist: termcolor (==1.1.0)
+
+UNKNOWN
+
