@@ -1,0 +1,2 @@
+bodyguard>=0.0.41
+econnlp>=0.0.7
