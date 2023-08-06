@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: gaul
+Version: 0.2.1
+Summary: 
+Home-page: https://github.com/al-jshen/gaul
+License: MIT
+Keywords: jax
+Author: Jeff Shen
+Author-email: jshen2014@hotmail.com
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: jax (>=0.3.1,<0.4.0)
+Requires-Dist: jaxlib (>=0.3.0,<0.4.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
+Project-URL: Documentation, https://gaul.readthedocs.io
+Project-URL: Repository, https://github.com/al-jshen/gaul
+Description-Content-Type: text/x-rst
+
+Gaul
+======
+
+.. image:: https://readthedocs.org/projects/gaul/badge/?version=latest&style=for-the-badge&color=5E81AC
+  :target: https://gaul.readthedocs.io/
+
+.. image:: https://img.shields.io/github/workflow/status/al-jshen/gaul/Tests?color=5E81AC&label=tests&style=for-the-badge
+  :target: https://github.com/al-jshen/gaul/actions?workflow=Tests
+
+.. image:: https://img.shields.io/codecov/c/github/al-jshen/gaul?color=62a69b&style=for-the-badge
+  :target: https://codecov.io/gh/al-jshen/gaul
+  
+
