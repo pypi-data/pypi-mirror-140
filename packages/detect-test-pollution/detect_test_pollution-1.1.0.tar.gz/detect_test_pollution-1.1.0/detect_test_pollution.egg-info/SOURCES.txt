@@ -1,0 +1,10 @@
+LICENSE
+README.md
+detect_test_pollution.py
+setup.cfg
+setup.py
+detect_test_pollution.egg-info/PKG-INFO
+detect_test_pollution.egg-info/SOURCES.txt
+detect_test_pollution.egg-info/dependency_links.txt
+detect_test_pollution.egg-info/entry_points.txt
+detect_test_pollution.egg-info/top_level.txt

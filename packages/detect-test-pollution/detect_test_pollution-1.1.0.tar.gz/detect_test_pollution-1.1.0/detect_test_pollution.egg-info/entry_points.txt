@@ -1,0 +1,3 @@
+[console_scripts]
+detect-test-pollution = detect_test_pollution:main
+
