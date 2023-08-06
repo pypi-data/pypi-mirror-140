@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyscreamor
+Version: 0.0.3
+Summary: A small example package
+Home-page: https://devecor.cn
+Author: Devecor
+Author-email: devecor@163.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://devecor.cn
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## usage
+
+```commandline
+sudo ln -s $(python3 -m site --user-site)/pyscreamor/pyscreamor.service /etc/systemd/system/pyscreamor.service
+```
+
+

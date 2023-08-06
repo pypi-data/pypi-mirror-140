@@ -1,0 +1,6 @@
+[Unit]
+Description=screamor service
+After=network-online.target
+[Service]
+User=de
+ExecStart=/usr/bin/python3 -m pyscreamor.screamor
