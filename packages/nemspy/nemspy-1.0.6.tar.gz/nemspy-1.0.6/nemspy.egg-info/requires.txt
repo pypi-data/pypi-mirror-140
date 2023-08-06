@@ -1,0 +1,15 @@
+
+[development]
+flake8
+isort
+oitnb
+
+[documentation]
+m2r2
+sphinx
+sphinx-rtd-theme
+
+[testing]
+pytest
+pytest-cov
+pytest-xdist
