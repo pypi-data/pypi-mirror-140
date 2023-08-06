@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+src/rk/__init__.py
+src/rk/example/__init__.py
+src/rk/example/a.py
+src/rk/example/b.py
+src/testingrangekeeper1.egg-info/PKG-INFO
+src/testingrangekeeper1.egg-info/SOURCES.txt
+src/testingrangekeeper1.egg-info/dependency_links.txt
+src/testingrangekeeper1.egg-info/top_level.txt
