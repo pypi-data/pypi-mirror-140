@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+notifier/__init__.py
+notifier/__main__.py
+notifier/break.ico
+notifier/end.ico
+notifier/food.ico
+notifier/main.py
+notifier/sea_fishes.ico
+notipy_py.egg-info/PKG-INFO
+notipy_py.egg-info/SOURCES.txt
+notipy_py.egg-info/dependency_links.txt
+notipy_py.egg-info/entry_points.txt
+notipy_py.egg-info/requires.txt
+notipy_py.egg-info/top_level.txt
