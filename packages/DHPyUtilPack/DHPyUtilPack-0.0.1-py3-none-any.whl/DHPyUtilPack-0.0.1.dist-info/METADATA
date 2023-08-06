@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: DHPyUtilPack
+Version: 0.0.1
+Summary: Personal Python Package
+Home-page: https://github.com/DongHoon5793/DH_PyPackage
+Author: DongHoon Kim
+Author-email: donghoon5793@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DH_PyPackage
+Personal Python Package
+
+
