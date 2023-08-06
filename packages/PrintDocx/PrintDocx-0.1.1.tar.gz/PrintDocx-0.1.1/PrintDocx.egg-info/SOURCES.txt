@@ -1,0 +1,10 @@
+README.md
+setup.py
+PrintDocx/PrintDocx.py
+PrintDocx/__init__.py
+PrintDocx/test.py
+PrintDocx.egg-info/PKG-INFO
+PrintDocx.egg-info/SOURCES.txt
+PrintDocx.egg-info/dependency_links.txt
+PrintDocx.egg-info/requires.txt
+PrintDocx.egg-info/top_level.txt
