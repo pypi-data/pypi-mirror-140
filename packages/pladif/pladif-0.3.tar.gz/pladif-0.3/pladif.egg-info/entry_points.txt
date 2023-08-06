@@ -1,0 +1,2 @@
+[console_scripts]
+runPLADIF = pladif.runPladif:runPladif
