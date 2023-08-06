@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: fw-gear-dicom-qc
+Version: 0.4.1
+Summary: Validate dicom archive on a set of hardcoded and user-specified rules
+Home-page: https://gitlab.com/flywheel-io/flywheel-apps/dicom-qc
+License: MIT
+Keywords: Flywheel,Gears,DICOM,AEQC,QC
+Author: Flywheel
+Author-email: support@flywheel.io
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Dist: fw-gear-splitter (>=1.2.3,<2.0.0)
+Requires-Dist: jsonschema (>=3.2.0,<4.0.0)
+Requires-Dist: pandas (>=1.2.3,<2.0.0)
+Project-URL: Repository, https://gitlab.com/flywheel-io/flywheel-apps/dicom-qc
+Description-Content-Type: text/markdown
+
+# DICOM QC gear
+
+This gear evaluates basic QC rules against a dicom archive.
+
+Currently implemented rules are as follows:
+
+* [jsonschema_validation](#jsonschema_validation)
+* [check_0_byte](#check_0_byte)
+* [check_series_consistency](#check_series_consistency)
+* [check_instance_number_uniqueness](#check_instance_number_uniqueness)
+* [check_embedded_localizer](#check_embedded_localizer)
+* [check_bed_moving](#check_bed_moving)
+* [check_slice_consistency](#check_slice_consistency)
+
+## Inputs
+
+* `dicom` (required): Dicom archive.
+* `validation-schema` (requried): jsonschema template for validating header.
+
+## Configuration
+
+* `debug`: Log debug statements (default `False`).
+* `check_0_byte`: Run check_0_byte rule (default `True`).
+* `check_series_consistency`: Run check_series_consistency rule (default `True`).
+* `check_instance_number_uniqueness`: Run check_instance_number_uniqueness rule
+(default `True`).
+* `check_embedded_localizer`: Run check_embedded_localizer rule (default `True`).
+* `check_bed_moving`: Run check_bed_moving rule (default `True`).
+* `check_slice_consistency`: Run check_slice_consistency rule (default `True`).
+* `check_dciodvfy`: Run the `dciodvfy` (DICOM IOD Verify) binary (defualt `True`).
+* `tag`: The tag to be added on input file upon run completion (default `dicom-qc`).
+
+## Outputs
+
+No outputs, but populates the `file.info.qc.dicom-qc` namespace with the following
+format:
+
+```yaml
+file.info.qc:
+    dicom-qc:
+        bed_moving:
+            description: <explanation>
+            state: pass | fail
+        check_0_byte:
+            description: <explanation>
+            state: pass | fail
+        embedded_localizer:
+            description: <explanation>
+            state: pass | fail
+        filename: <dicom>
+        gear_info: # See qc namespace standards
+        instance_number_uniqueness:
+            description: <explanation>
+            state: pass | fail
+        jsonschema_validation:
+            - error_context: <context>
+              error_message: <message>
+              error_type: <type>
+              error_value:
+                - <val1>
+                - <val2>
+              item: file.info.header.dicom
+        series_consistency:
+            description: <explanation>
+            state: pass | fail
+        slice_consistency:
+            description: <explanation>
+            state: pass | fail
+
+
+```
+
+## Rules
+
+### jsonschema_validation
+
+This rule runs custom provided jsonschema validation against file.info.header.
+
+See [examples/README.md](./examples/README.md) for examples.
+
+### check_0_byte
+
+This rule checks each file in the archive to make sure it is not 0-bytes.
+
+### check_series_consistency
+
+This rule checks to make sure there is only one series in the archive
+(determined by `SeriesInstanceUID`)
+
+### check_instance_number_uniqueness
+
+This rule checks to make sure there aren't any duplicate `InstanceNumber` values.
+
+### check_embedded_localizer
+
+This rule checks the archive for an embedded localizer frame using the algorithm in
+[splitter](https://gitlab.com/flywheel-io/flywheel-apps/splitter).
+
+### check_bed_moving
+
+This rule evaluates whether the bed was moving during the entirety of a scan
+(determined by `ImagePositionPatient`).
+
+### check_slice_consistency
+
+This rules checks whether the intervals between slice positions are consistent.
+If the `SliceLocation` tag is present on all files in the archive, this will be used.
+If not, the slice location will be calculated from `ImagePositionPatient` and
+`ImageOrientationPatient`
+
