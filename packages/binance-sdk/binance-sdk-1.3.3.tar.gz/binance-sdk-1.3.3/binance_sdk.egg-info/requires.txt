@@ -1,0 +1,6 @@
+aiohttp
+aioretry>=5.0.2
+websockets
+
+[pandas]
+pandas
