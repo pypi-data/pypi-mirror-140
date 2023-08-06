@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/usscore.py
+src/usscore.egg-info/PKG-INFO
+src/usscore.egg-info/SOURCES.txt
+src/usscore.egg-info/dependency_links.txt
+src/usscore.egg-info/entry_points.txt
+src/usscore.egg-info/top_level.txt
