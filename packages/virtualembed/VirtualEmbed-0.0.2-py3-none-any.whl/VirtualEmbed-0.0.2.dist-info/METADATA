@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: VirtualEmbed
+Version: 0.0.2
+Summary: A package for visualize discord embeds
+Home-page: UNKNOWN
+Author: Fenish
+Author-email: sohretalhadev@gmail.com
+License: UNKNOWN
+Keywords: python,discord,discord_embed,embed
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+A package that allows you to get discord embeds as a image file
+
