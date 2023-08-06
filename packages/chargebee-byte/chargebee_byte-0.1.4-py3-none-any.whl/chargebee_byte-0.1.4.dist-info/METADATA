@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: chargebee-byte
+Version: 0.1.4
+Summary: Chargebee API library. Made by Byte.nl
+Home-page: https://github.com/ByteInternet/chargebee-byte
+Author: Byte
+Author-email: tech@byte.nl
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# chargebee-byte
+
+[![Build Status](https://travis-ci.org/ByteInternet/chargebee-byte.svg?branch=master)](https://travis-ci.org/ByteInternet/chargebee-byte)
+[![Latest version on PyPI](https://img.shields.io/pypi/v/chargebee-byte.svg?maxAge=2592000)](https://pypi.org/project/chargebee-byte)
+[![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+A Python Chargebee API client library. Written by [Byte.nl](https://www.byte.nl).
+
+## Installation
+
+    pip install chargebee_byte
+
+## Usage
+
+```python
+import chargebee_byte.client
+client = chargebee_byte.client.Client(site_name, api_key)
+subscriptions = client.get_all_subscriptions()
+```
+
+
