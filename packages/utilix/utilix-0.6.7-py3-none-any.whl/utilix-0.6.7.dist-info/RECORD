@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_get.py,sha256=K79UnSGSse8mLmG5fLMYm5IkRHmmFx-6zTOEDra01yw,1193
+tests/test_import.py,sha256=g7xn9et74vNkLFwCs9wBhiQnpqO5aCcf0VRBIQGf94I,165
+tests/test_query.py,sha256=IRSKwk3M_qivlKYZeNUkuiCMDvXJDGl0lZ6K3LJjfEA,1119
+tests/test_update.py,sha256=VsxoN_syL0eRDfMtRwUifu9jGodabZpAq9XaD7pmXmw,6163
+tests/test_url.py,sha256=0GwkwXMwClKqzWKYjl2xY7Y_es4NuWp8QcR7z1yQg3M,1494
+utilix/__init__.py,sha256=NK_06LDVm0_mLOPt2TDbXmUIi9csrvAYX8DlpjHqU-8,505
+utilix/batchq.py,sha256=JYYmMl20qE8BvqWz92PT-5Yiw6agB0DRs7Uo8wAJzIc,4426
+utilix/config.py,sha256=LuxrNHzyk13Yw8s2RuBumEvYdGMcX3j9Ewg9R5QWwj0,3815
+utilix/io.py,sha256=WyDKwPwrpMV3FEI4aW8J-PZHfwRlHs9LS5rHDEAg74U,2087
+utilix/mongo_files.py,sha256=U6fxgIuFpvmNhb7u2uacZVJjq0aL31o6wdd_8KXWk0I,23245
+utilix/rundb.py,sha256=l9zL8_9i_PX2clfqvG-o67htMieUwR-qFH572caIuC0,23315
+utilix-0.6.7.dist-info/METADATA,sha256=9hPFp5SB1feGjDtySS8C4ECsgcHn9wWBgkvIHF6Xtzw,10366
+utilix-0.6.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+utilix-0.6.7.dist-info/top_level.txt,sha256=ScGb8rgslQHy0lUduqp78Z6czONWGJf_WWyw8biilnk,13
+utilix-0.6.7.dist-info/RECORD,,
