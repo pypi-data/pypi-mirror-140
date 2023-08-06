@@ -1,0 +1,3 @@
+[console_scripts]
+deduplify = deduplify.cli:main
+
