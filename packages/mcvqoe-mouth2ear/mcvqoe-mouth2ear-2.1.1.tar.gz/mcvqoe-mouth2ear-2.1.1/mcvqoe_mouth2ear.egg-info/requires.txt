@@ -1,0 +1,4 @@
+mcvqoe-base
+plotly
+pandas
+numpy
