@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: todofcpy
+Version: 0.0.1
+Summary: A package for handling soccer data
+Home-page: https://github.com/Robinhoets/soccer-py
+Author: Robinhoets
+Author-email: robertets88@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Robinhoets/soccer-py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# soccer-py
+### A python application to handle soccer data.
+#### Currently graphs a heatmap. Newer versions will include animations.
+
