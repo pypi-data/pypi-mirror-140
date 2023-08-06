@@ -1,0 +1,11 @@
+pop_serial/conf.py,sha256=bQbZQbAcCSq4PUY-H4zfPBhWDjYWvkQRSM5Wtow0oAs,30
+pop_serial/version.py,sha256=4se2-QRIPsQy0Qla6DZQFQ90RVImEWlZaaA4AT2r29U,18
+pop_serial/serial/json_serial.py,sha256=cOpuigIlwIW_y7IORNbb8oeRKkuohI3pghp2nDcAb-8,396
+pop_serial/serial/msgpack_serial.py,sha256=9ZaqWpMMo9M4KccbLM36235zZ7_DSNEfeXB83asRFvQ,192
+pop_serial/serial/contracts/init.py,sha256=3IjpRoSu1F5NB2bkBy12JRV95czoj9zT7bAF-bI3m6I,84
+pop_serial-1.0.0.dist-info/LICENSE,sha256=sJy9tQVmzq_vgheFUZauBV-wRnVGgvSPjKPqAY8Cfvs,11343
+pop_serial-1.0.0.dist-info/METADATA,sha256=ne7Eizig8FJRGtKRwqahOk3xP1AueGAmdxc3UBnjeGU,2944
+pop_serial-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pop_serial-1.0.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pop_serial-1.0.0.dist-info/top_level.txt,sha256=NJLYa3pon2SZMKTt2opokt9hlrRTZD7wN3qfo8nvhMg,11
+pop_serial-1.0.0.dist-info/RECORD,,
