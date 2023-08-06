@@ -1,0 +1,3 @@
+[console_scripts]
+ftpcloud=datalake_ftp.cli:main
+
