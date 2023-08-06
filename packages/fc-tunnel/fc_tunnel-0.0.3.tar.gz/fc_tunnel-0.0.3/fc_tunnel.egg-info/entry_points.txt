@@ -1,0 +1,2 @@
+[console_scripts]
+fct = fc_tunnel:run
