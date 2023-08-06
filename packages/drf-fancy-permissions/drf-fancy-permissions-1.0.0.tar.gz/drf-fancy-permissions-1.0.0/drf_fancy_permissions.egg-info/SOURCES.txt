@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+drf_fancy_permissions.egg-info/PKG-INFO
+drf_fancy_permissions.egg-info/SOURCES.txt
+drf_fancy_permissions.egg-info/dependency_links.txt
+drf_fancy_permissions.egg-info/requires.txt
+drf_fancy_permissions.egg-info/top_level.txt
+fancy_permissions/__init__.py
