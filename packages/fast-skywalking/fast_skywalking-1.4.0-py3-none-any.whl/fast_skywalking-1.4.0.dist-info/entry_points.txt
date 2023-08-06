@@ -1,0 +1,3 @@
+[console_scripts]
+sw-python = skywalking.bootstrap.cli.sw_python:start
+
