@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: topsis-Dhairya-401903010
+Version: 1.0.1
+Summary: Decision Making using topsis (Python Package)
+Home-page: UNKNOWN
+Author: Dhairya Mahajan
+Author-email: dhairyamahajan07@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) originated in the 1980s as a multi-criteria decision making method. TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution, and greatest distance from the negative-ideal solution.
+
