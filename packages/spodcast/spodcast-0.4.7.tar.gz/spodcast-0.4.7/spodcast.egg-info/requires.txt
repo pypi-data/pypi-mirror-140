@@ -1,0 +1,3 @@
+ffmpeg-python
+librespot>=0.0.1
+setuptools
