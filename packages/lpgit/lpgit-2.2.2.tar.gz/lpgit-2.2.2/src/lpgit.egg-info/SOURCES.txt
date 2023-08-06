@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/lpgit/__init__.py
+src/lpgit/git_utils.py
+src/lpgit.egg-info/PKG-INFO
+src/lpgit.egg-info/SOURCES.txt
+src/lpgit.egg-info/dependency_links.txt
+src/lpgit.egg-info/top_level.txt
