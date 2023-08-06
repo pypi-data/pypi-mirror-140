@@ -1,0 +1,3 @@
+[console_scripts]
+grants_tagger=grants_tagger.__main__:app
+

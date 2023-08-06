@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: grants-tagger
+Version: 0.2.2
+Summary: A machine learning model to tag grants
+Home-page: UNKNOWN
+Author: Nick Sorros
+Author-email: n.sorros@wellcome.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: xlrd
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: matplotlib
+Requires-Dist: wellcomeml[core,tensorflow,torch,transformers] (==2.0.2)
+Requires-Dist: docutils (==0.15)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: wasabi
+Requires-Dist: typer
+Requires-Dist: tqdm
+Requires-Dist: streamlit
+Requires-Dist: requests
+Requires-Dist: pygtrie (==2.3.3)
+Requires-Dist: openpyxl
+
+UNKNOWN
+
