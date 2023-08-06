@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gittools/__init__.py
+gittools/gittools.py
+gittools.egg-info/PKG-INFO
+gittools.egg-info/SOURCES.txt
+gittools.egg-info/dependency_links.txt
+gittools.egg-info/requires.txt
+gittools.egg-info/top_level.txt
+tests/test_gittools.py
