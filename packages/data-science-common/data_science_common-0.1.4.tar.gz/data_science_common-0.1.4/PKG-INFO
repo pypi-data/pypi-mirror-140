@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: data_science_common
+Version: 0.1.4
+Summary: UNDER CONSTRUCTION: A simple python library for facilitating analysis
+Home-page: https://github.com/kelleyrw/data_science_common
+Author: Ryan Kelley
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# Data Science Common (dsc)
+
+UNDER CONSTRUCTION: A simple Python library for facilitating analysis.
+
+---
+
+## Installation:
+
+```aidl
+pip install data-science-common
+```
+
+## Usage
+
+```
+from pids import pid
+public_id = pid.from_int(1234)
+# public_id is now "gxd"
+id = pid.to_int("gxd")
+# id is now 1234
+```
+
+## Development
+
+todo...
+

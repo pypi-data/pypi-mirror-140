@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/pids.py
+src/data_science_common.egg-info/PKG-INFO
+src/data_science_common.egg-info/SOURCES.txt
+src/data_science_common.egg-info/dependency_links.txt
+src/data_science_common.egg-info/requires.txt
+src/data_science_common.egg-info/top_level.txt
