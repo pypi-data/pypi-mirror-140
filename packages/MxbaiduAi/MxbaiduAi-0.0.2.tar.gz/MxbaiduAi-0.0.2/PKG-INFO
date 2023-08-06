@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: MxbaiduAi
+Version: 0.0.2
+Summary: MxPi
+Home-page: https://github.com/yuanyunqiang/
+Author: YuanYunQiang
+Author-email: 649756903@qq.com
+License: MIT Licence
+Description: 结合MxPi调用百度AI，MxPi是一款树莓派可视化编程工具
+Keywords: pip,SICA,featureextraction
+Platform: any

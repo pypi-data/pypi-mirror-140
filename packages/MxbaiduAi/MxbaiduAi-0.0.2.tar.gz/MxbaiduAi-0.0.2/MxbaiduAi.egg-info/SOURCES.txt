@@ -1,0 +1,8 @@
+setup.py
+MxbaiduAi/__init__.py
+MxbaiduAi/image.py
+MxbaiduAi.egg-info/PKG-INFO
+MxbaiduAi.egg-info/SOURCES.txt
+MxbaiduAi.egg-info/dependency_links.txt
+MxbaiduAi.egg-info/requires.txt
+MxbaiduAi.egg-info/top_level.txt
