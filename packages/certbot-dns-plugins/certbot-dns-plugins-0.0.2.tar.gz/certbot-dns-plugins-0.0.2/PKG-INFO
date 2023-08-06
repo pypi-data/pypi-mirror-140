@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: certbot-dns-plugins
+Version: 0.0.2
+Summary: Certbot dns plugin for DNSPod
+Home-page: https://github.com/codeif/certbot-dns-plugins
+Author: codeif
+Author-email: me@codeif.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+Certbot DNS Plugin for DNSPod
+================================
+
+Move to: https://github.com/codeif/certbot-dnspod
+
+
