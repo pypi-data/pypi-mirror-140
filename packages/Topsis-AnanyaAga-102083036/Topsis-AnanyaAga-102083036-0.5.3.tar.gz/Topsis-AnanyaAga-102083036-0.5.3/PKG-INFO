@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: Topsis-AnanyaAga-102083036
+Version: 0.5.3
+Summary: A Python package to find TOPSIS for multi-criteria decision analysis method
+Home-page: UNKNOWN
+Author: Ananya Agarwal
+Author-email: aagarwal3_be19@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Project Description
+Topsis Value Calculator
+Submitted by: Ananya Agarwal (102083036)
+
+Topsis_AnanyaAga_102083036 is a Python package, implementing Topsis method for multi-criteria decision analysis.
+Topsis stands for Technique for Order of Preference by Similarity to Ideal Solution.
+Just provide your input attributes and it will give you the results 
+
+Installation
+
+```
+>>> import Topsis_AnanyaAga_102083036 as tp
+>>> input_file_name = "102083036-data.csv"
+>>> weights = "1,1,0.5,2,1"
+>>> impacts = "+,+,-,+,-"
+>>> output_file_name = "102083036-result.csv"
+>>> output_df = tp.topsis(input_file_name, weights, impacts,output_file_name)
+```
+Note: Pass the file names within double quotes(" ")
+
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. 
+
+License
+MIT
+
+
