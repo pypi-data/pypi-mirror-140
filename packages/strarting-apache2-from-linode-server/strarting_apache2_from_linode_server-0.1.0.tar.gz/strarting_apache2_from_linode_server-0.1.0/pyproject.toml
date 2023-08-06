@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "strarting_apache2_from_linode_server"
+version = "0.1.0"
+description = ""
+authors = ["pratik kumar sarangi <psarangi50@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.27.1"
+linode-api4 = "^5.2.1"
+secure-smtplib = "^0.1.1"
+
+[tool.poetry.scripts]
+monitor_script="strarting_apache2_from_linode_server.monitor:main"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

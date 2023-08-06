@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: strarting-apache2-from-linode-server
+Version: 0.1.0
+Summary: 
+Author: pratik kumar sarangi
+Author-email: psarangi50@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: linode-api4 (>=5.2.1,<6.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: secure-smtplib (>=0.1.1,<0.2.0)
