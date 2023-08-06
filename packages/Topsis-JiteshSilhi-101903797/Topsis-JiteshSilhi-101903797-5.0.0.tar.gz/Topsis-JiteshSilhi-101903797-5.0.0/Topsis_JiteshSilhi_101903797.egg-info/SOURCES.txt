@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis_JiteshSilhi_101903797.egg-info/PKG-INFO
+Topsis_JiteshSilhi_101903797.egg-info/SOURCES.txt
+Topsis_JiteshSilhi_101903797.egg-info/dependency_links.txt
+Topsis_JiteshSilhi_101903797.egg-info/entry_points.txt
+Topsis_JiteshSilhi_101903797.egg-info/requires.txt
+Topsis_JiteshSilhi_101903797.egg-info/top_level.txt
+topsis/topsis.py
