@@ -1,0 +1,3 @@
+_azureeye
+_hardware
+azure
