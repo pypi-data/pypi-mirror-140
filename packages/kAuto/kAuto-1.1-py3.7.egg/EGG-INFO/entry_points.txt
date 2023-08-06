@@ -1,0 +1,3 @@
+[console_scripts]
+kAuto = kAuto.main:main
+
