@@ -1,0 +1,40 @@
+attributes:
+  actions: {}
+  attrs:
+    expre_rotate_z: ''
+    expre_x: ''
+    expre_x0: ''
+    expre_x1: ''
+    expre_x2: ''
+    expre_y: ''
+    expre_y0: ''
+    expre_y1: ''
+    expre_y2: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    rotate_z: 0
+    x: 0
+    x0: -2
+    x1: 2
+    x2: 0
+    y: 0
+    y0: -2
+    y1: -2
+    y2: 2
+    z: 0
+    z_max: 0.5
+    z_min: -0.5
+    z_span: 1
+  base: {}
+  icon: iconsanjiaoxing
+  name: Triangle
+  tabs:
+  - Geometry
+belong:
+  passive:
+  - __CONCRETE__Triangle
+mros:
+- Polygon
+name: Triangle

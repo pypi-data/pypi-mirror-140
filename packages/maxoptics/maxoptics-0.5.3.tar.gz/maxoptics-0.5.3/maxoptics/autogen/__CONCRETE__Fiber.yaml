@@ -1,0 +1,44 @@
+attributes:
+  attrs:
+    _objLink: []
+    expre_l: ''
+    expre_r: ''
+    expre_rotate_z: ''
+    expre_x: ''
+    expre_y: ''
+    index_union:
+      index: 1.4
+      index_units: 1
+    l: 20
+    materialId: 3053
+    meshOrder: 2
+    r: 5
+    rotate_z: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+    x: 0
+    x_max: null
+    x_min: null
+    y: 0
+    y_max: null
+    y_min: null
+    z: 0
+    z_max: null
+    z_min: null
+  children: []
+  disabled: false
+  id: 54dcf077-44da-437b-b653-1eb39b42491f
+  locked: false
+  name: Fiber
+  type: {}
+belong:
+  passive:
+  - __CONCRETE__Document
+mros:
+- Fiber
+name: __CONCRETE__Fiber

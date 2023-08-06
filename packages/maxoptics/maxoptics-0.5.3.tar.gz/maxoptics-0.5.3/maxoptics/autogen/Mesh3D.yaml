@@ -1,0 +1,19 @@
+attributes:
+  actions: {}
+  attrs:
+    index_union:
+      index: 1.4
+      index_units: 1
+    materialId: 1
+    meshOrder: 1
+  base: {}
+  icon: suanfa8
+  name: Mesh3D
+  tabs:
+  - Material
+belong:
+  passive:
+  - Fiber
+mros:
+- SpatialObject
+name: Mesh3D

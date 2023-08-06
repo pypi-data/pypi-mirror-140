@@ -1,0 +1,27 @@
+attributes:
+  __delete__: true
+  actions:
+    disable: disable
+    edit: edit
+    remove: remove
+  attrs:
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+  icon: suanfa8
+  name: ArithmeticObject
+  tabs: []
+belong:
+  active:
+  - FDE
+  passive:
+  - FDTD
+  - EME
+  - FDE
+mros:
+- __object__
+name: ArithmeticObject

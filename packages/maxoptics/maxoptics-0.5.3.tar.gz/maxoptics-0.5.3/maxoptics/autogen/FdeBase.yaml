@@ -1,0 +1,48 @@
+attributes:
+  __delete__: true
+  actions: {}
+  attrs:
+    bend_location: 0
+    bend_orientation: 0
+    bend_radius: 0
+    bent_waveguide: 0
+    calculate_group_index: 0
+    frequency: 193.414
+    n: 1
+    number_of_trial_modes: 20
+    pml_kappa: 2
+    pml_layers: 12
+    pml_polynomial: 3
+    pml_sigma: 5
+    search: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: -4
+      y: 0
+      z: 0
+    use_max_index: 1
+    wavelength: 1.55
+    x_max_bc: 1
+    x_min_bc: 1
+    y_max_bc: 1
+    y_min_bc: 1
+    z_max_bc: 1
+    z_min_bc: 1
+  base: {}
+  icon: suanfa8
+  name: FdeBase
+  tabs:
+  - Modal analysis
+  - Boundary conditions
+belong:
+  active:
+  - ModeSource
+  passive:
+  - EmePort
+  - ModeSource
+  - ModeExpansion
+mros:
+- SpatialObject
+name: FdeBase

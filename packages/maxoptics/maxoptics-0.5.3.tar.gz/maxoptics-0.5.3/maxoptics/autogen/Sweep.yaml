@@ -1,0 +1,15 @@
+attributes:
+  actions: {}
+  attrs:
+    modalTitle: Edit Sweep Parameter
+  base: {}
+  icon: iconwave
+  name: Sweep
+  tabs:
+  - General
+belong:
+  passive:
+  - __CONCRETE__Sweep
+mros:
+- Object
+name: Sweep

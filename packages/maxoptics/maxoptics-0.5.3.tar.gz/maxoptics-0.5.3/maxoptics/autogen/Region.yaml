@@ -1,0 +1,47 @@
+attributes:
+  __delete__: true
+  actions:
+    addRegion: addRegion
+  attrs:
+    bg_material: none
+    dimension: 0
+    rotate_x: 0
+    rotate_y: 0
+    rotate_z: 0
+    wireframe: true
+    x: 0.1
+    x_max: 0
+    x_min: 0
+    x_span: 0
+    xmaxbc: 1
+    xmaxshell: 0
+    xminbc: 1
+    xminshell: 0
+    y: 0
+    y_max: 0
+    y_min: 0
+    y_span: 8
+    ymaxbc: 1
+    ymaxshell: 0
+    yminbc: 1
+    yminshell: 0
+    z: 0
+    z_max: 0
+    z_min: 0
+    z_span: 8
+    zmaxbc: 1
+    zmaxshell: 0
+    zminbc: 1
+    zminshell: 0
+  base: {}
+  icon: icon-region2
+  name: Region
+  tabs:
+  - General
+  - Geometry
+belong:
+  active:
+  - __CONCRETE__Region
+mros:
+- SpatialObject
+name: Region

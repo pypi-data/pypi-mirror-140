@@ -1,0 +1,85 @@
+attributes:
+  attrs:
+    _objLink: []
+    amp: amplitude
+    auto_update: 0
+    bend_location: 0
+    bend_orientation: 0
+    bend_radius: 0
+    bent_waveguide: 0
+    calculate_group_index: 0
+    component: Ex
+    currentFile: ''
+    details_dispersion_caiculation: 0
+    effective_index: 1
+    frequency: 193.414
+    frequency_plot: 1
+    frequency_scale: 0
+    horizontal: 0
+    modeFileName: ''
+    mode_index: 1
+    mode_plot: 0
+    mode_selection: 1
+    modeindex: 1
+    n: 1
+    number_of_points: 10
+    number_of_test_modes: 3
+    number_of_trial_modes: 20
+    offset: 0
+    phi: 0
+    plot: 0
+    plot_with: 0
+    pml_kappa: 2
+    pml_layers: 12
+    pml_polynomial: 3
+    pml_sigma: 5
+    port_location: 0
+    scale: false
+    search: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: -30
+      y: 0
+      z: 0.1
+    start_frequency: 193.414
+    start_wavelength: 1.55
+    stop_frequency: 200
+    stop_wavelength: 1.49896
+    task_id: 0
+    theta: 0
+    use_full_simulation_span: 1
+    use_max_index: 1
+    use_relative_coordinates: 1
+    wavelength: 1.55
+    x: -30
+    x_max: -30
+    x_max_bc: 1
+    x_min: -30
+    x_min_bc: 1
+    x_span: 0
+    y: 0
+    y_max: 0.75
+    y_max_bc: 1
+    y_min: -0.75
+    y_min_bc: 1
+    y_span: 1.5
+    z: 0.1
+    z_max: 0.7
+    z_max_bc: 1
+    z_min: -0.5
+    z_min_bc: 1
+    z_span: 1.2
+  children: []
+  disabled: false
+  id: b6467319-1050-4303-8bc4-6002458d99e9
+  locked: false
+  name: ep0
+  type: {}
+belong:
+  passive:
+  - __CONCRETE__EME
+mros:
+- EmePort
+name: __CONCRETE__EmePort

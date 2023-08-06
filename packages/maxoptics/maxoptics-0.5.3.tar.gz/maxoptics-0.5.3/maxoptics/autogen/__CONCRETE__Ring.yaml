@@ -1,0 +1,48 @@
+attributes:
+  attrs:
+    _objLink: []
+    expre_inner_radius: ''
+    expre_outer_radius: ''
+    expre_rotate_z: ''
+    expre_x: ''
+    expre_y: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    extrude:
+      h: 0.2
+    index_union:
+      index: 1.4
+      index_units: 1
+    inner_radius: 4
+    materialId: 3053
+    meshOrder: 2
+    outer_radius: 6
+    overrideMeshOrder: 0
+    rotate_z: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+    x: 0
+    y: 0
+    z: 0
+    z_max: 0.5000
+    z_min: -0.5000
+    z_span: 1
+  children: []
+  disabled: false
+  id: 45dd6004-369f-4764-b067-6812ad56e9a0
+  locked: false
+  name: Ring
+  type: {}
+belong:
+  passive:
+  - __CONCRETE__Document
+mros:
+- Ring
+name: __CONCRETE__Ring

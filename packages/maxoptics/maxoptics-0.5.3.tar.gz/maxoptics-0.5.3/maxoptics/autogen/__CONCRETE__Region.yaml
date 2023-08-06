@@ -1,0 +1,57 @@
+attributes:
+  attrs:
+    _objLink: []
+    bg_material: none
+    dimension: 0
+    rotate_x: 0
+    rotate_y: 0
+    rotate_z: 0
+    spatial:
+      clipX: 0
+      clipY: 0
+      clipZ: 0
+      plane: 1
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      wireframe: true
+      x: 12
+      y: 0.1
+      z: 0
+    wireframe: true
+    x: 12
+    x_max: 12
+    x_min: 12
+    x_span: 0
+    xmaxbc: 1
+    xmaxshell: 0
+    xminbc: 1
+    xminshell: 0
+    y: 0.1
+    y_max: 0.6
+    y_min: -0.4
+    y_span: 1
+    ymaxbc: 1
+    ymaxshell: 0
+    yminbc: 1
+    yminshell: 0
+    z: 0
+    z_max: 3.5
+    z_min: -3.5
+    z_span: 7
+    zmaxbc: 1
+    zmaxshell: 0
+    zminbc: 1
+    zminshell: 0
+  children: []
+  disabled: false
+  id: 8921eded-26f0-457f-b6df-24885686a7fd
+  locked: false
+  name: Region
+  type: {}
+belong:
+  active:
+  - __CONCRETE__Document
+mros:
+- Region
+name: __CONCRETE__Region

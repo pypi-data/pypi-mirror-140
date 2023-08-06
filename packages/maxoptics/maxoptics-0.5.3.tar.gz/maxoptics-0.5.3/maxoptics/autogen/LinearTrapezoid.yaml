@@ -1,0 +1,53 @@
+attributes:
+  __delete__: true
+  actions: {}
+  attrs:
+    clip_x: 0
+    clip_y: 0
+    clip_z: 0
+    expre_rotate_z: ''
+    expre_x: ''
+    expre_x0: ''
+    expre_x1: ''
+    expre_x2: ''
+    expre_x3: ''
+    expre_y: ''
+    expre_y0: ''
+    expre_y1: ''
+    expre_y2: ''
+    expre_y3: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    plane: 1
+    rotate_x: 0
+    rotate_y: 0
+    rotate_z: 0
+    x: 0
+    x0: -2
+    x1: -4
+    x2: 4
+    x3: 2
+    y: 0
+    y0: 2
+    y1: -2
+    y2: -2
+    y3: 2
+    z: 0
+    z_max: 0.5
+    z_min: -0.5
+    z_span: 1
+  base: {}
+  icon: iconLinearTrapezoid
+  name: LinearTrapezoid
+  tabs:
+  - Geometry
+belong:
+  active:
+  - __CONCRETE__LinearTrapezoid
+  passive:
+  - __CONCRETE__LinearTrapezoid
+mros:
+- Polygon
+name: LinearTrapezoid

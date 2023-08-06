@@ -1,0 +1,28 @@
+attrs:
+  _objLink: []
+  configGlobleParam:
+    globleParamKey_0: a
+    globleParamValue_0: '0.4'
+  drawGrid:
+    dx: 1
+    dy: 1
+  exp_obj: []
+  h: 100
+  pConfig:
+    keyName_0: ''
+    keyName_1: ''
+    value_0: ''
+    value_1: ''
+  sweep: []
+  tarSrc:
+    id: 79175d95-e4aa-4df8-b640-fde0f9ae513c
+    type: ModeExpansion
+  tarSweep:
+  - fdtd
+  - 907dc31d-d37a-4c1d-be38-f1818dd27ffa
+  w: 100
+disabled: false
+id: ''
+locked: false
+name: Project
+type: {}

@@ -1,0 +1,15 @@
+attributes:
+  actions: {}
+  attrs:
+    modalTitle: Edit S-Parameter Matrix Sweep
+  base: {}
+  icon: iconPointSource
+  name: MatrixSweep
+  tabs:
+  - S-Matrix setup
+belong:
+  passive:
+  - __CONCRETE__MatrixSweep
+mros:
+- Object
+name: MatrixSweep

@@ -1,0 +1,127 @@
+attributes:
+  attrs:
+    _objLink: []
+    advanced_options:
+      eliminate_discontinuities: 0
+      optimize_for_short_pulse: 1
+    amplitude: 1
+    bend_location: 0
+    bend_location_x: 0
+    bend_location_y: 0
+    bend_location_z: 0
+    bend_orientation: 0
+    bend_radius: 0
+    bent_waveguide: 0
+    calculate_group_index: 0
+    cell_group:
+    - cell_num: 5
+      span: 1
+    direction: 0
+    expre_x: ''
+    expre_x_max: ''
+    expre_x_min: ''
+    expre_x_span: ''
+    expre_y: ''
+    expre_y_max: ''
+    expre_y_min: ''
+    expre_y_span: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    globalSettings: false
+    modeFileName: ''
+    currentFile: ''
+    injection_axis: 0
+    maximum_convolution_time_window: 1
+    mode_index: 1
+    mode_selection: 3
+    n: 1
+    number_of_field_profile_samples: 1
+    number_of_trial_modes: 20
+    override: 0
+    phase: 0
+    phi: 0
+    pml_kappa: 2
+    pml_layers: 12
+    pml_polynomial: 3
+    pml_sigma: 5
+    record_local_field: 0
+    rotation_offset: 0
+    search: 0
+    set_fw:
+      center_frequency: 0
+      center_wavelength: 0
+      frequency_span: 0
+      frequency_start: 0
+      frequency_stop: 0
+      range_type: 0
+      type: 0
+      wavelength_span: 0
+      wavelength_start: 0
+      wavelength_stop: 0
+    set_maximum_convolution_time_window: 0
+    set_time_domain:
+      bandwidth: 0
+      frequency: 0
+      offset: 0
+      pulse_type: 0
+      pulselength: 0
+    set_type: 0
+    signal_vs_time: []
+    span:
+      length: 3
+      normal: 0
+      width: 2
+    spatial:
+      clipX: 0
+      clipY: 0
+      clipZ: 0
+      plane: 1
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      wireframe: false
+      x: 0
+      y: 0
+      z: 0
+    spectrum_vs_frequency: []
+    spectrum_vs_wavelength: []
+    temperature: 300
+    theta: 0
+    use_max_index: 1
+    use_relative_coordinates: 1
+    waveform_id: 7
+    wavelength: 1.55
+    x: 0
+    x_max: 0
+    x_max_bc: 1
+    x_min: 0
+    x_min_bc: 1
+    x_span: 0
+    y: 0
+    y_max: 1.5
+    y_max_bc: 1
+    y_min: -1.5
+    y_min_bc: 1
+    y_span: 3
+    z: 0
+    z_max: 1.5
+    z_max_bc: 1
+    z_min: -1.5
+    z_min_bc: 1
+    z_span: 3
+  children: []
+  disabled: false
+  id: 9685cb81-b948-44b8-a30f-3e04a9d2160c
+  locked: false
+  name: ModeSource
+  type: {}
+belong:
+  active:
+  - __CONCRETE__Document
+  passive:
+  - __CONCRETE__Document
+mros:
+- ModeSource
+name: __CONCRETE__ModeSource

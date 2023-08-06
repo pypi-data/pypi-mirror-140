@@ -1,0 +1,49 @@
+attributes:
+  attrs:
+    _objLink: []
+    actual_sampling: 2694.53
+    calculate_group_delay: false
+    desired_sampling: 1498.96
+    down_sample_time: 17
+    fractional_offset_for_group_delay: 0.0001
+    frequency_center: 588.878
+    frequency_max: 794.481
+    frequency_min: 428.275
+    frequency_span: 321.206
+    min_sampling_per_cycle: 2
+    monitor_frenquency_points: 50
+    nyquist_limit: 2662.59
+    source_mode: 1
+    source_port: 835bc745-7ea8-4eea-97dd-66fd58a1b309
+    spacing_limit: 0
+    spacing_type: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+    use_source_limits: 0
+    use_wavelength_spacing: 1
+    waveform_id: 2
+    waveform_name: Waveform0
+    wavelength_center: 0.55
+    wavelength_max: 1.6
+    wavelength_min: 1.5
+    wavelength_span: 0.3
+    x: 0
+    y: 0
+    z: 0
+  children: []
+  disabled: false
+  id: 2fc7ee24-cfc2-4702-9e38-b57dd994ab10
+  locked: false
+  name: FDTDPortGroup
+  type: {}
+belong:
+  passive:
+  - __CONCRETE__Document
+mros:
+- FDTDPortGroup
+name: __CONCRETE__FDTDPortGroup

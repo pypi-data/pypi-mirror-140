@@ -1,0 +1,62 @@
+attributes:
+  attrs:
+    _objLink: []
+    expre_rotate_z: ''
+    expre_w: ''
+    expre_x: ''
+    expre_x0: ''
+    expre_x1: ''
+    expre_x2: ''
+    expre_x3: ''
+    expre_y: ''
+    expre_y0: ''
+    expre_y1: ''
+    expre_y2: ''
+    expre_y3: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    extrude:
+      h: 0.2
+    index_union:
+      index: 1.4
+      index_units: 1
+    materialId: 3053
+    meshOrder: 2
+    overrideMeshOrder: 0
+    rotate_z: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+    w: 0.5
+    x: 0
+    x0: 0
+    x1: 1.5
+    x2: 3.5
+    x3: 5
+    y: 0
+    y0: 0
+    y1: 0
+    y2: 2
+    y3: 2
+    z: 0
+    z_max: 0.5000
+    z_min: -0.5000
+    z_span: 1
+  children: []
+  disabled: false
+  id: 9ddd0d41-c02e-492c-8c2b-2fe03786b17a
+  locked: false
+  name: SCurve
+  type: {}
+belong:
+  passive:
+  - __CONCRETE__Document
+mros:
+- SCurve
+name: __CONCRETE__SCurve

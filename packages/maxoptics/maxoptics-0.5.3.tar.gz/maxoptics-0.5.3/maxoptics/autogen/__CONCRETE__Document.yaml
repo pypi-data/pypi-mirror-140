@@ -1,0 +1,45 @@
+attributes:
+  attrs:
+    _objLink: []
+    configGlobleParam:
+    - globleParamDes: ''
+      globleParamExp: ''
+      globleParamKey: ''
+      globleParamValue: '0'
+    configuration:
+      units:
+        conductivity: "\u03BCS"
+        frequency: THz
+        length: "\u03BCm"
+        loss: dB/cm
+        resistivity: "\u03A9"
+        time: fs
+    drawGrid:
+      dx: 1
+      dy: 1
+    exp_obj: {}
+    h: 50
+    pConfig:
+      keyName_0: ''
+      keyName_1: ''
+      value_0: ''
+      value_1: ''
+    sweep: {}
+    tarSrc:
+      id: bc8cc849-68ca-48b1-b084-d603be1d6288
+      parent: ''
+      type: FDTD
+    tarSweep: []
+    w: 50
+  children: []
+  disabled: false
+  id: f7dc4bbc-769b-47d0-8423-c875933fa243
+  locked: false
+  name: Document
+  type: {}
+belong:
+  passive:
+  - $<----tree
+mros:
+- Document
+name: __CONCRETE__Document

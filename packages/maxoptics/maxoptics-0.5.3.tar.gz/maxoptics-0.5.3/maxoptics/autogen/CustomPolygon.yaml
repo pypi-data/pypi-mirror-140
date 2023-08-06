@@ -1,0 +1,32 @@
+attributes:
+  actions: {}
+  attrs:
+    expre_rotate_z: ''
+    expre_sides: ''
+    expre_size: ''
+    expre_x: ''
+    expre_y: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    rotate_z: 0
+    sides: 6
+    size: 2
+    x: 0
+    y: 0
+    z: 0
+    z_max: 0.5
+    z_min: -0.5
+    z_span: 1
+  base: {}
+  icon: iconCustomPolygon
+  name: CustomPolygon
+  tabs:
+  - Geometry
+belong:
+  passive:
+  - __CONCRETE__CustomPolygon
+mros:
+- Polygon
+name: CustomPolygon

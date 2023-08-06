@@ -1,0 +1,72 @@
+attributes:
+  __delete__: true
+  actions: {}
+  attrs:
+    amp: amplitude
+    auto_update: 0
+    bend_location: 0
+    bend_orientation: 0
+    bend_radius: 0
+    bent_waveguide: 0
+    calculate_group_index: 0
+    component: Ex
+    currentFile: ''
+    details_dispersion_caiculation: 0
+    effective_index: 1
+    frequency_plot: 1
+    frequency_scale: 0
+    horizontal: 0
+    modeFileName: ''
+    mode_index: 1
+    mode_plot: 0
+    mode_selection: 0
+    n: 1
+    number_of_points: 10
+    number_of_test_modes: 3
+    number_of_trial_modes: 20
+    offset: 0
+    phi: 0
+    plot: 0
+    plot_with: 0
+    port_location: 0
+    scale: false
+    search: 0
+    start_frequency: 193.414
+    start_wavelength: 1.55
+    stop_frequency: 200
+    stop_wavelength: 1.49896
+    task_id: 0
+    theta: 0
+    use_full_simulation_span: 1
+    use_max_index: 1
+    use_relative_coordinates: 1
+    x: 0
+    x_max: 0
+    x_max_bc: 1
+    x_min: 0
+    x_min_bc: 1
+    x_span: 0
+    y: 0
+    y_max: 1.5
+    y_max_bc: 1
+    y_min: -1.5
+    y_min_bc: 1
+    y_span: 3
+    z: 0
+    z_max: 1.5
+    z_max_bc: 1
+    z_min: -1.5
+    z_min_bc: 1
+    z_span: 3
+  base: {}
+  icon: iconPort
+  name: EmePort
+  tabs:
+  - Geometry
+  - EME Port
+belong:
+  passive:
+  - __CONCRETE__EmePort
+mros:
+- FdeBase
+name: EmePort

@@ -1,0 +1,98 @@
+attributes:
+  __delete__: true
+  actions: {}
+  attrs:
+    actual_mesh_cells_x: 0
+    actual_mesh_cells_y: 0
+    actual_mesh_cells_z: 0
+    algorithm: 0
+    allow_symmetry: true
+    amplitude: 1
+    calculate_group_delays: 0
+    cell_group:
+    - cell_num: 5
+      number_of_modes: 10
+      sc: 0
+      span: 10
+    convergence_tolerance: 1.0e-12
+    define_x_mesh: 0
+    define_y_mesh: 0
+    define_z_mesh: 0
+    display_cells: 0
+    dx: 0.02
+    dy: 0.02
+    dz: 0.02
+    energy_conversation: 1
+    expre_y: ''
+    expre_y_max: ''
+    expre_y_min: ''
+    expre_y_span: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    background_material: 0
+    expre_z_span: ''
+    frequency: 193.414
+    grading_factor: 1.2
+    group_delay: 0.0001
+    index: 1.4
+    interval: 0
+    max_stored_modes: 1000
+    mesh_cells_x: 0
+    mesh_cells_y: 50
+    mesh_cells_z: 50
+    meshing_refinement: 0
+    min_mesh_step: 1.0e-05
+    number_of_points: 2
+    number_of_wavelength_points: 2
+    parameter: 0
+    pml_kappa: 2
+    pml_layers: 12
+    pml_polynomial: 3
+    pml_sigma: 5
+    propagation: 1
+    refinement_type: 0
+    simulation_temperature: 300
+    solver_type: 0
+    source_mode: 0
+    source_port: 0
+    start: 0
+    start_wavelength: 1.5
+    stop: 0
+    stop_wavelength: 1.6
+    use_wavelength_sweep: 1
+    wavelength: 1.55
+    x: 0
+    x_max: 5
+    x_max_bc: 0
+    x_min: -5
+    x_min_bc: 0
+    x_span: 10
+    y: 0
+    y_max: 0
+    y_max_bc: 1
+    y_min: 0
+    y_min_bc: 1
+    y_span: 3
+    z: 0
+    z_max: 0
+    z_max_bc: 1
+    z_min: 0
+    z_min_bc: 1
+    z_span: 3
+  base: {}
+  icon: iconEME
+  name: EME
+  tabs:
+  - General
+  - EME Setup
+  - Transverse mesh settings
+  - Boundary conditions
+  - Material
+  - Advanced options
+belong:
+  passive:
+  - __CONCRETE__EME
+mros:
+- ArithmeticObject
+name: EME

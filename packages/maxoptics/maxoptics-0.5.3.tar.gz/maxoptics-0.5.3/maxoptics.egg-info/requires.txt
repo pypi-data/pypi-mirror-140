@@ -1,0 +1,8 @@
+requests
+matplotlib
+numpy
+pandas
+seaborn
+pyyaml
+gdspy
+python-socketio

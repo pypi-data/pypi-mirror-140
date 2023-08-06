@@ -1,0 +1,72 @@
+attributes:
+  actions: {}
+  attrs:
+    down_sample_time: 0
+    down_sample_x: 1
+    down_sample_y: 1
+    down_sample_z: 1
+    expre_x: ''
+    expre_x_max: ''
+    expre_x_min: ''
+    expre_x_span: ''
+    expre_y: ''
+    expre_y_max: ''
+    expre_y_min: ''
+    expre_y_span: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    min_sampling_per_cycle: 10
+    monitor_type: 1
+    output_ex: 1
+    output_ey: 1
+    output_ez: 1
+    output_hx: 1
+    output_hy: 1
+    output_hz: 1
+    output_power: true
+    output_px: true
+    output_py: true
+    output_pz: true
+    plugin_material: 0
+    record_data_in_pml: true
+    sampling_rate: 0
+    set_time_domain:
+      number_of_snapshots: 0
+      start_time: 0
+      stop_method: 0
+      stop_time: 1000
+    simulation_type: 0
+    span:
+      length: 3
+      normal: 0
+      width: 2
+    spatial_interpolation: 0
+    use_relative_coordinates: 1
+    x: 0
+    x_max: 0
+    x_min: 0
+    x_span: 0
+    y: 0
+    y_max: 0
+    y_min: 0
+    y_span: 0
+    z: 0
+    z_max: 0
+    z_min: 0
+    z_span: 0
+  base: {}
+  icon: iconMonitor1
+  name: TimeMonitor
+  tabs:
+  - General
+  - Geometry
+  - Data to record
+  - Advanced
+belong:
+  passive:
+  - __CONCRETE__TimeMonitor
+mros:
+- SpatialObject
+name: TimeMonitor

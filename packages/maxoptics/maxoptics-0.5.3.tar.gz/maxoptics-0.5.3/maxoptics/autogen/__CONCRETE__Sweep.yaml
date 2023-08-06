@@ -1,0 +1,31 @@
+attributes:
+  attrs:
+    checked: false
+    modalTitle: Edit Sweep Parameter
+    paramData:
+    - end: '0.5'
+      paramName: a
+      start: '0.4'
+      type: number
+    pointsNum: '2'
+    resultList:
+    - id: afb14a94-3166-4bff-b391-edca84ed4520
+      resultComponent: E
+      resultName: aa
+      resultObject: 54cc7cb6-3869-4461-bfd7-f7700e78d262
+    type: 0
+  children: []
+  disabled: false
+  id: fac15caa-d569-4c81-bbce-d3b32bb65926
+  locked: false
+  name: Sweep
+  parent: null
+  type: {}
+belong:
+  passive:
+  - '*<----fdtd'
+  - '*'
+  - $<----sweep
+mros:
+- Sweep
+name: __CONCRETE__Sweep
