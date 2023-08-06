@@ -1,0 +1,7 @@
+django-esi>=2.0.4
+allianceauth<3,>=2.9
+dacite
+django-eveuniverse>=0.12
+allianceauth-app-utils>=1.11
+redis-simple-mq>=0.4
+dhooks-lite>=0.6
