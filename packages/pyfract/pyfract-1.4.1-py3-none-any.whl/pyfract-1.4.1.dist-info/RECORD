@@ -1,0 +1,10 @@
+pyfract/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfract/fraction.py,sha256=Im3zd1jwI8xpgwvrVzoAoascHhtuKfbmm1scH2BExN0,5845
+pyfract/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfract/src/utils.py,sha256=aor2_AQp1VSPhdmxpvvlMPBF5C22sFnNNTqpf9LWLuo,135
+pyfract-1.4.1.dist-info/LICENSE,sha256=SbmsbC9MtvGAyKZdAXobiPOwmDh6mG2JckdGUFR0mTg,1071
+pyfract-1.4.1.dist-info/LICENSE.txt,sha256=SbmsbC9MtvGAyKZdAXobiPOwmDh6mG2JckdGUFR0mTg,1071
+pyfract-1.4.1.dist-info/METADATA,sha256=RIvUq17BrwOwXq4I8UZTYUKzVB86b4Suv7RqYGbOXZ0,3210
+pyfract-1.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyfract-1.4.1.dist-info/top_level.txt,sha256=GSoQLorqg9rk08wr9Nh5KXxiwNdjOeaFoHbNLM7_39E,8
+pyfract-1.4.1.dist-info/RECORD,,
