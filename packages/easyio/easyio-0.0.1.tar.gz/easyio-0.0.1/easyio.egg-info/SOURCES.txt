@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+easyio/__init__.py
+easyio.egg-info/PKG-INFO
+easyio.egg-info/SOURCES.txt
+easyio.egg-info/dependency_links.txt
+easyio.egg-info/top_level.txt
