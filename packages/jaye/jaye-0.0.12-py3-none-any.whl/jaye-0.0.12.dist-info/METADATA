@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jaye
+Version: 0.0.12
+Summary: Quantitative Trader, Jaye
+Home-page: UNKNOWN
+Author: Jaye
+Author-email: help@jaye.world
+License: Jaye
+Platform: UNKNOWN
+Requires-Dist: numpy (==1.22.0)
+Requires-Dist: pandas (==1.3.5)
+Requires-Dist: requests
+Requires-Dist: rich
+
+UNKNOWN
+
+
