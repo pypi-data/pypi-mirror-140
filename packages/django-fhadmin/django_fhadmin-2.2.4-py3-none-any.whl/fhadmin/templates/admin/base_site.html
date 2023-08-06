@@ -1,0 +1,17 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrahead %}{{ block.super }}
+<link rel="stylesheet" href="{% static 'fhadmin/fhadmin.css' %}" />
+<script src="{% static 'fhadmin/fhadmin.js' %}"></script>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{{ site_header|default:_('Django administration') }}</h1>
+{% endblock %}
+
+{% block nav-global %}
+<div id="quickpanel">
+  {% include "admin/group_list.html" %}
+</div>
+{% endblock %}
