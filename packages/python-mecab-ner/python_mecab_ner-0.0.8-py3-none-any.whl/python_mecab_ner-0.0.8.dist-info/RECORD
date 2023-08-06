@@ -1,0 +1,10 @@
+python_mecab_ner/__init__.py,sha256=qOFi_eq7y7G45tdgZ6dfMa_IlkhZ0FuHq20XEbO9CWI,52
+python_mecab_ner/mecab_domain.py,sha256=YQVyEruak3sfsNsOYx-vz2Cd3puwdm2B94NxqW9Zq7E,562
+python_mecab_ner/mecab_exception.py,sha256=1YqbOzj2J3xfdRk0c7TZlvZ7V9rJItcIK8ZgA06pnkE,92
+python_mecab_ner/mecab_parser.py,sha256=a7pOrKYA5jtLx5u0fFWP0cSqZUWeuFE9mQgwETTb3v8,5534
+python_mecab_ner/mecab_reader.py,sha256=GS-9le7cYbMFOK0-tdyI145MeIhC_23_avrljtjfHfk,4616
+python_mecab_ner-0.0.8.dist-info/LICENSE,sha256=BEbn8bRkxG0g3Wei9odKS5z5Rs_xlOJkpLS_r4Tqxto,1171
+python_mecab_ner-0.0.8.dist-info/METADATA,sha256=ce8Wc92drU-JMmL1_YTCNkadykHCgOnSmWtqBAxJe_g,1531
+python_mecab_ner-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_mecab_ner-0.0.8.dist-info/top_level.txt,sha256=DKjnyejuoV2Uz1mpLnqG-jc8uZoKIyJLEJHbv5zGBTQ,17
+python_mecab_ner-0.0.8.dist-info/RECORD,,
