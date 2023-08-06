@@ -1,0 +1,4 @@
+graphene_django
+graphql_auth
+graphql_jwt
+jwt
