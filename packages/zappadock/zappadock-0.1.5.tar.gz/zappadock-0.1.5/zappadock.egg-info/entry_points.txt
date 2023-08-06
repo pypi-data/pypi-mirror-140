@@ -1,0 +1,2 @@
+[console_scripts]
+zappadock = zappadock.zappadock:zappadock

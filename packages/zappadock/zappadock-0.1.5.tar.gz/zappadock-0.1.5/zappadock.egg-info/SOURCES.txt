@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+zappadock/__init__.py
+zappadock/zappadock.py
+zappadock.egg-info/PKG-INFO
+zappadock.egg-info/SOURCES.txt
+zappadock.egg-info/dependency_links.txt
+zappadock.egg-info/entry_points.txt
+zappadock.egg-info/requires.txt
+zappadock.egg-info/top_level.txt
