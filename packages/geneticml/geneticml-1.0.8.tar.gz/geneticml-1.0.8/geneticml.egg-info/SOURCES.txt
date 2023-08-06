@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+geneticml/__init__.py
+geneticml/algorithms.py
+geneticml/optimizers.py
+geneticml/strategy.py
+geneticml.egg-info/PKG-INFO
+geneticml.egg-info/SOURCES.txt
+geneticml.egg-info/dependency_links.txt
+geneticml.egg-info/requires.txt
+geneticml.egg-info/top_level.txt
