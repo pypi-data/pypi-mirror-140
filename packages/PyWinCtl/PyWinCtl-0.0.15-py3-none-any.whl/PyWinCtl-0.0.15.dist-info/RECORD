@@ -1,0 +1,10 @@
+pywinctl/__init__.py,sha256=xQfIal071c6UG63ETRi9Vp2oSPOySd0snh3bN8wODy4,12373
+pywinctl/_pywinctl_linux.py,sha256=WhrgUm2nHtWJuauJ1K07Qc57F7cVSeQat_sKqgd7v_M,24339
+pywinctl/_pywinctl_macos.py,sha256=M4-WzGdgYw4YVhq--HP72VinaiJ-LJbSGWU4LRWbn2w,73794
+pywinctl/_pywinctl_win.py,sha256=7nEZKzAPYkNpQKv4NZvsIt7M-EW-xlyk85n863ed5LE,27638
+PyWinCtl-0.0.15.dist-info/AUTHORS.txt,sha256=SXTGGyS7Jagf6CE0D1TItcFTbsBXqqZfuvYb0ptpx2o,855
+PyWinCtl-0.0.15.dist-info/LICENSE.txt,sha256=IX3853XOcIGOsZt2TCL9GG5dgJZk2STGmsMNO0RuCrM,3202
+PyWinCtl-0.0.15.dist-info/METADATA,sha256=BCjaHnaMcAha43IUkFClLWd78x24UIPuJWMsEbAOXEQ,6417
+PyWinCtl-0.0.15.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+PyWinCtl-0.0.15.dist-info/top_level.txt,sha256=9v-GMfZtUsk0W_vn9QivHu4nFw4mnHKa9bIl-jtqog4,9
+PyWinCtl-0.0.15.dist-info/RECORD,,
