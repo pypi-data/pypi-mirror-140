@@ -1,0 +1,41 @@
+name: regionmask-docs
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python
+# regionmask dependencies
+  - cartopy
+  - geopandas
+  - matplotlib-base
+  - numpy
+  - pooch
+  - packaging
+  - pygeos
+  - rasterio
+  - xarray
+# dependencies for the examples
+  - cftime
+  - netcdf4
+# for regionmask intake example
+  - aiohttp
+  - fsspec==0.8.7
+  - intake
+  - requests
+# dependencies to build the docu
+  - docutils
+  - ipykernel
+  - nbconvert
+  - numpydoc
+  - pillow
+  - pip
+  - sphinx_rtd_theme
+  - sphinx
+# for regionmask intake example
+  - pip:
+    - intake_geopandas>=0.2.4
+    - msgpack
+    # install regionmask relative to this file. Needs to be editable to be accepted.
+    - -e ../..
