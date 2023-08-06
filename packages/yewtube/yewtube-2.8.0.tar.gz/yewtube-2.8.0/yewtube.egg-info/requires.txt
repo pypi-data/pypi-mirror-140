@@ -1,0 +1,15 @@
+requests
+pyperclip
+youtube-search-python
+yt-dlp
+
+[:platform_system == "Linux"]
+pyreadline
+
+[:platform_system == "Windows"]
+pyreadline3
+colorama
+
+[mpris]
+dbus-python>=1.2.18
+PyGObject>=3.42.0
