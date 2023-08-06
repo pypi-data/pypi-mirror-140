@@ -1,0 +1,7 @@
+barsdiary/__init__.py,sha256=mfzdslOTGi0qoqvWW2QqxH3k9nOObs0_yW53qnRYYMs,523
+barsdiary/aio.py,sha256=hFoJYh_bshvIOab1puzJRiJKHbsZryoQ8c4aR3pn_cs,6660
+barsdiary/sync.py,sha256=VOPMevqtkyvJbn2JJYa3NMglJFaftikgoFtjjFtJuOI,6053
+barsdiary/types.py,sha256=l5l7w9C2x3rb2CvN7lukdUWL5fV5ul8Tjml69rbOhtA,4989
+barsdiary-0.0.3a0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+barsdiary-0.0.3a0.dist-info/METADATA,sha256=GXJ3labYft68K6J7gy-ZL2i0fYrYz8GRtuFtNJuyZVA,1104
+barsdiary-0.0.3a0.dist-info/RECORD,,
