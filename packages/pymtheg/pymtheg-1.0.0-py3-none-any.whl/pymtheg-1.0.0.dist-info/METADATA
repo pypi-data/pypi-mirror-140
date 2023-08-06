@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pymtheg
+Version: 1.0.0
+Summary: A Python script to share songs from Spotify/YouTube as a 15 second clip.
+License: Unlicense
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: spotdl (>=3.9.3,<4.0.0)
