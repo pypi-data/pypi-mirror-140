@@ -1,0 +1,3 @@
+[console_scripts]
+clark = clark.main:main
+
