@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+osc_ingest_tools.egg-info/PKG-INFO
+osc_ingest_tools.egg-info/SOURCES.txt
+osc_ingest_tools.egg-info/dependency_links.txt
+osc_ingest_tools.egg-info/entry_points.txt
+osc_ingest_tools.egg-info/requires.txt
+osc_ingest_tools.egg-info/top_level.txt
+osc_ingest_trino/__init__.py
+osc_ingest_trino/boto3_utils.py
+osc_ingest_trino/dotenv_utils.py
+osc_ingest_trino/sqlcols.py
+osc_ingest_trino/sqltypes.py
+osc_ingest_trino/trino_utils.py

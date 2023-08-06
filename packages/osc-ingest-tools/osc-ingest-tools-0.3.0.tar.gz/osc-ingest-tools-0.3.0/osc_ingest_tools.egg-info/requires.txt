@@ -1,0 +1,6 @@
+pandas
+trino
+boto3
+sqlalchemy
+sqlalchemy-trino
+python-dotenv
