@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: csst
+Version: 0.0.4
+Summary: The CSST pipeline
+Home-page: https://csst.readthedocs.io
+Author: CSST Team
+Author-email: bozhang@nao.cas.cn
+License: MIT
+Project-URL: Source, http://github.com/csster/csst
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires: numpy
+Requires: scipy
+Requires: astropy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## CSST 
+[![Documentation Status](https://readthedocs.org/projects/csst/badge/?version=latest)](https://csst.readthedocs.io/en/latest/?badge=latest)
+  
+
+CSST pipeline.
+
+
+## install
+```
+pip install -U git+git://github.com/csster/csst
+```
+
+
+## doc
+
+[ https://csst.readthedocs.io/en/latest/]( https://csst.readthedocs.io/en/latest/)
+
