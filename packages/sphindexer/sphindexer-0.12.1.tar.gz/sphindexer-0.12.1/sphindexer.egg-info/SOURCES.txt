@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+sphindexer.egg-info/PKG-INFO
+sphindexer.egg-info/SOURCES.txt
+sphindexer.egg-info/dependency_links.txt
+sphindexer.egg-info/requires.txt
+sphindexer.egg-info/top_level.txt
+src/__init__.py
+src/glossary.py
+src/patch.py
+src/rack.py
