@@ -1,0 +1,8 @@
+setup.py
+vcscraping/__init__.py
+vcscraping/main.py
+vcscraping.egg-info/PKG-INFO
+vcscraping.egg-info/SOURCES.txt
+vcscraping.egg-info/dependency_links.txt
+vcscraping.egg-info/requires.txt
+vcscraping.egg-info/top_level.txt
