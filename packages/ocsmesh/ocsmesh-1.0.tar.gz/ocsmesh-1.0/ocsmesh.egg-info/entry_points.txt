@@ -1,0 +1,4 @@
+[console_scripts]
+interp = ocsmesh.interp:main
+ocsmesh = ocsmesh.__main__:main
+
