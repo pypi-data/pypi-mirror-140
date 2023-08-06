@@ -1,0 +1,11 @@
+numpy
+scipy
+specutils
+pandas
+importlib_resources
+matplotlib
+
+[extra]
+celerite2
+h5py
+black

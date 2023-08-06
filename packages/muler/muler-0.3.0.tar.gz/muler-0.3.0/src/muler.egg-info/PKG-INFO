@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: muler
+Version: 0.3.0
+Summary: A Python package for working with data from IGRINS and HPF
+Home-page: https://github.com/OttoStruve/muler
+Author: gully
+Author-email: igully@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: extra
