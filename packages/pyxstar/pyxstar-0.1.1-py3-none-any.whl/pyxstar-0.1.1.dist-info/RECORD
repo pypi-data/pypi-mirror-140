@@ -1,0 +1,9 @@
+pyxstar/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+pyxstar/__main__.py,sha256=7tzuGbeA5JiJWE_g9pzlcTXSsKlR-iEXNEbdYd4jZMs,62
+pyxstar/api.py,sha256=oFvTeej9n0l9ZcHu1ZXOFsSLPVNWK2llPm1q0Nt6gbg,6040
+pyxstar/main.py,sha256=MO9H-pFCXTM0sjrrSurUejGz907UxExIYwpk9tU47oA,3381
+pyxstar-0.1.1.dist-info/entry_points.txt,sha256=9Ka0BPH4HPdB7B3H6N_9G74o6_2ItwohtlAcfcE9oc8,45
+pyxstar-0.1.1.dist-info/LICENSE,sha256=sSmtkpALzfIJKVONmRaMV25OppXfVFG4mquocwvPuD4,1069
+pyxstar-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyxstar-0.1.1.dist-info/METADATA,sha256=mXjIQmGMzKQj6lWPTfWcyU3dTiD735cLjRqeglQ43Uk,2171
+pyxstar-0.1.1.dist-info/RECORD,,
