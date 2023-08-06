@@ -1,0 +1,16 @@
+.gitignore
+.gitlab-ci.yml
+.pre-commit-config.yaml
+.pylintrc
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/LbDiracWrappers/__init__.py
+src/LbDiracWrappers.egg-info/PKG-INFO
+src/LbDiracWrappers.egg-info/SOURCES.txt
+src/LbDiracWrappers.egg-info/dependency_links.txt
+src/LbDiracWrappers.egg-info/entry_points.txt
+src/LbDiracWrappers.egg-info/requires.txt
+src/LbDiracWrappers.egg-info/top_level.txt
+tests/test_all.py
