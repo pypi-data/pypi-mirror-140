@@ -1,0 +1,45 @@
+{
+  "identifier": "33933676.txt",
+  "title": "33933676.txt",
+  "metadata": {},
+  "categories": [],
+  "createdBy": "stefan",
+  "createdDate": "2021-11-22T13:50:12.906Z",
+  "modifiedDate": "2021-11-22T13:50:12.906Z",
+  "text": "Non-canonical NRF2 activation promotes a pro-diabetic shift in hepatic glucose metabolism\n\nOBJECTIVE: NRF2, a transcription factor that regulates cellular redox and metabolic homeostasis, plays a dual role in human disease. While it is well known that canonical intermittent NRF2 activation protects against diabetes-induced tissue damage, little is known regarding the effects of prolonged non-canonical NRF2 activation in diabetes. The goal of this study was to determine the role and mechanisms of prolonged NRF2 activation in arsenic diabetogenicity.\nMETHODS: To test this, we utilized an integrated transcriptomic and metabolomic approach to assess diabetogenic changes in the livers of wild type, Nrf2-/-, p62-/-, or Nrf2-/-; p62-/- mice exposed to arsenic in the drinking water for 20 weeks.\nRESULTS: In contrast to canonical oxidative/electrophilic activation, prolonged non-canonical NRF2 activation via p62-mediated sequestration of KEAP1 increases carbohydrate flux through the polyol pathway, resulting in a pro-diabetic shift in glucose homeostasis. This p62- and NRF2-dependent increase in liver fructose metabolism and gluconeogenesis occurs through the upregulation of four novel NRF2 target genes, ketohexokinase (Khk), sorbitol dehydrogenase (Sord), triokinase/FMN cyclase (Tkfc), and hepatocyte nuclear factor 4 (Hnf4A).\nCONCLUSION: We demonstrate that NRF2 and p62 are essential for arsenic-mediated insulin resistance and glucose intolerance, revealing a pro-diabetic role for prolonged NRF2 activation in arsenic diabetogenesis.",
+  "sentences": [
+    {
+      "start": 0,
+      "end": 89
+    },
+    {
+      "start": 91,
+      "end": 223
+    },
+    {
+      "start": 224,
+      "end": 433
+    },
+    {
+      "start": 434,
+      "end": 554
+    },
+    {
+      "start": 555,
+      "end": 798
+    },
+    {
+      "start": 799,
+      "end": 1062
+    },
+    {
+      "start": 1063,
+      "end": 1339
+    },
+    {
+      "start": 1340,
+      "end": 1550
+    }
+  ],
+  "annotations": []
+}
