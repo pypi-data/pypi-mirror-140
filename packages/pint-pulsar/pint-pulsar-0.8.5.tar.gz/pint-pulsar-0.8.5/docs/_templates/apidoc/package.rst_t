@@ -1,0 +1,12 @@
+.. automodule:: {{ pkgname }}
+
+.. automodsumm:: {{ pkgname }}
+
+{%- if (subpackages + submodules) %}
+.. toctree::
+{% for docname in (subpackages+submodules) | sort %}
+   {{ docname }}
+{%- endfor %}
+
+{% endif %}
+

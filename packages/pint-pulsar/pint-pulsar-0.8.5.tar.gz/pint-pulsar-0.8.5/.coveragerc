@@ -1,0 +1,24 @@
+[run]
+source = pint
+omit =
+    pint/__init__*
+    pint/extern/*
+    pint/datafiles/*
+    pint/scripts/*
+    pint/cutils/*
+    pint/models/__init__*
+    pint/observatory/__init__*
+    pint/orbital/__init__*
+    pint/profiling/*
+	pint/tmtestfuncs.py
+parallel = True
+branch = True
+
+[paths]
+source =
+    src
+    */site-packages
+
+[report]
+show_missing = True
+precision = 2
