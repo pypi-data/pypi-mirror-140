@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+formfyxer/__init__.py
+formfyxer/lit_explorer.py
+formfyxer/pdf_wrangling.py
+formfyxer.egg-info/PKG-INFO
+formfyxer.egg-info/SOURCES.txt
+formfyxer.egg-info/dependency_links.txt
+formfyxer.egg-info/requires.txt
+formfyxer.egg-info/top_level.txt
+formfyxer/data/clf_field_names.joblib
+formfyxer/data/groups.joblib
+formfyxer/data/included_fields.joblib
+formfyxer/data/jurisdictions.joblib
+formfyxer/keys/spot_token.txt

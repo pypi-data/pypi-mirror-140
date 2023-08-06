@@ -1,0 +1,14 @@
+spacy
+PyPDF2
+pikepdf
+textstat
+requests
+numpy
+sklearn
+joblib
+nltk
+boxdetect
+pdf2image
+reportlab
+pdfminer.six
+opencv-python
