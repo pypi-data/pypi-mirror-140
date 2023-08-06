@@ -1,0 +1,17 @@
+grgrlib/__init__.py,sha256=4uW_Y-DO3Enq21tLEvHxMKEmaFhntif8p1fMhDgw7Q4,203
+grgrlib/datatools.py,sha256=9OFDgcg-wJwYzzcjbr3yH04FduvNKAWQtLoz7a8w-bc,556
+grgrlib/econtools.py,sha256=pM-R3Q44Ee7Bas8DtIje9bHGb8PgnDEYBqi39BoZVP8,3451
+grgrlib/generic.py,sha256=Jb1YxdwucXjNmISQwDryMkdZLdkPkqBaf4VLw8uZyvE,6776
+grgrlib/jaxed.py,sha256=6gikFy0Pdj7W9rRC6bfyYdaPXwuY2G2D-qar8UclUCY,2139
+grgrlib/linalg.py,sha256=A6yw0_uA6m2zja4idHSa2cFI2TGAn0NSscJnhzCgRdM,9835
+grgrlib/multiprocessing.py,sha256=BYsI070dnohaU2Jlc2XbPtQf6UkoHgVQeu-W3yzJ8i0,1634
+grgrlib/njitted.py,sha256=FNCPUQ-asahrlxmodRC58bK-Ov7vozKB6SH9F9cUToo,2015
+grgrlib/numerics.py,sha256=7TaphKUftKtRT0nGzytAojtSCrtp01-5U_wQkCF57YE,891
+grgrlib/optimize.py,sha256=EmGCA9g_wk79Pb10J2mEddCWewnProKsodlbBNrRoVU,24369
+grgrlib/plots.py,sha256=krWnxby_qAo_3Ij4stXzAwOps7VcD5UxKsxwe5Gpeew,12401
+grgrlib/stats.py,sha256=yNXKEvLcebugnrQ0dxQjnnrnFhwveW949RvV_Pu0uWc,3311
+grgrlib-0.1.3.dist-info/LICENSE,sha256=0QpEdPmfS0bsRxFg0cw6NPUSMbTf4x1EpyrOTLImVsg,1079
+grgrlib-0.1.3.dist-info/METADATA,sha256=Gz6wJM7JziOiKnxEzN67LejH7GcLNAWPxknPXtzQHOM,1383
+grgrlib-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+grgrlib-0.1.3.dist-info/top_level.txt,sha256=lqGCnoz7qbBC8Ox-Y_iITHZn-Hozmg5A0QFUhm87Dm8,8
+grgrlib-0.1.3.dist-info/RECORD,,
