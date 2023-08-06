@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+flamp/__init__.py
+flamp/array.py
+flamp/eigen.py
+flamp/eigen_symmetric.py
+flamp/linalg.py
+flamp.egg-info/PKG-INFO
+flamp.egg-info/SOURCES.txt
+flamp.egg-info/dependency_links.txt
+flamp.egg-info/requires.txt
+flamp.egg-info/top_level.txt
+test/test_flamp.py
