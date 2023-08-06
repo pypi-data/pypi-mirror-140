@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+NOSMaker/__init__.py
+NOSMaker.egg-info/PKG-INFO
+NOSMaker.egg-info/SOURCES.txt
+NOSMaker.egg-info/dependency_links.txt
+NOSMaker.egg-info/top_level.txt
