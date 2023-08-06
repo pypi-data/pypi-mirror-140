@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: krules-subjects-storage-mongodb
+Version: 0.11
+Summary: KRules mongodb subjects storage implementation
+Home-page: https://github.com/airspot-dev/krules-subjects-storage-mongodb.git
+Author: Alberto Degli Esposti
+Author-email: alberto@arispot.tech
+License: Apache Licence 2.0
+Keywords: krules mongodb
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: AUTHORS
+
+krules-subjects-storage-mongodb
+===============================
+
+This module implements the storage component of the subjects-store based
+on MongoDB.
+
+
