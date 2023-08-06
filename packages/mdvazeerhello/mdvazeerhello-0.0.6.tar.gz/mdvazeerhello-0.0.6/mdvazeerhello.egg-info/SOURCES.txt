@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+HelloModule/__init__.py
+HelloModule/hello.py
+mdvazeerhello.egg-info/PKG-INFO
+mdvazeerhello.egg-info/SOURCES.txt
+mdvazeerhello.egg-info/dependency_links.txt
+mdvazeerhello.egg-info/requires.txt
+mdvazeerhello.egg-info/top_level.txt
