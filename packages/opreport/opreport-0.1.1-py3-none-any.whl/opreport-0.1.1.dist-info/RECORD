@@ -1,0 +1,16 @@
+conf/sample-logo.jpeg,sha256=_xUBAjs3loDLL4u-mMsJ4M0DuZ3uwuFGym-BR5gYX70,60926
+opreport/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+opreport/helpers/__init__.py,sha256=dHIIoKE87ueXB37v_vvDPRNhmS6j7DS-VSjiH9k25SI,9144
+opreport/opsramp/env.py,sha256=tKzijJKDLRLnL9Lpu5d4jQWGwSpL0Z61i5-lpXcWiEk,3955
+opreport/opsramp/metrics.py,sha256=g8qy_kpXGFg0EumQi2qvTI5uwY5_jmW4zQePeFFmg4s,1410
+opreport/opsramp/objects.py,sha256=SjoLpBxIAy11qlZtBr6k5H3oXv86CU91u-9GvNWXERY,1245
+opreport/opsramp/patching.py,sha256=ApDTuzvPpEgcvguMPb86rf0bbk4n2BWDHaMUeC3QVQA,3864
+opreport/reports/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+opreport/reports/network_utilization_report.py,sha256=P5KHiflWdyLRKDwfo8vlRiEbgjrNa9UeNiieFKnhNJM,2554
+opreport/reports/patch_management_report.py,sha256=uGjW9WYqoIwtPhZOTJPftzTua2tC_lqNYSul3lFk8rs,11961
+opreport/reports/remote_control_usage_report.py,sha256=sgw53pJu1pbPOxoFlTAzFx9P0x-W81gFAnZlj0xtkeM,9855
+opreport/reports/utilization_comparison_report.py,sha256=QU75qVLieLIMgyiKZG2JUT9e4eZf6tYB7Zd069ABjPw,17662
+opreport-0.1.1.dist-info/entry_points.txt,sha256=-pqP7Vs5dcM4ArdfmNZDmKVGN1QW7A10u10iRrkihg8,44
+opreport-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+opreport-0.1.1.dist-info/METADATA,sha256=3EY8k5NU3f58nwEVgkS38sqPsx7HscRoqz25cV9vGf4,4791
+opreport-0.1.1.dist-info/RECORD,,
