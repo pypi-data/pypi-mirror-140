@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+GoogleNewsScraper/__init__.py
+GoogleNewsScraper.egg-info/PKG-INFO
+GoogleNewsScraper.egg-info/SOURCES.txt
+GoogleNewsScraper.egg-info/dependency_links.txt
+GoogleNewsScraper.egg-info/requires.txt
+GoogleNewsScraper.egg-info/top_level.txt
+GoogleNewsScraper/chromedriver/.DS_Store
+GoogleNewsScraper/chromedriver/chromedriver
+example/app.py
