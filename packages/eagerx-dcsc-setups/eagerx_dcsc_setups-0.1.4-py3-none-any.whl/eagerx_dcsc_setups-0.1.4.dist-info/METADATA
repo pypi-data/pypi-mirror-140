@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: eagerx-dcsc-setups
+Version: 0.1.4
+Summary: EAGERx interface to dcsc_setups.
+Home-page: https://github.com/eager-dev/eagerx
+License: Apache2.0
+Author: Jelle Luijkx
+Author-email: j.d.luijkx@tudelft.nl
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: eagerx (>=0.1.2,<0.2.0)
+Requires-Dist: eagerx-gui (>=0.1.3,<0.2.0)
+Requires-Dist: eagerx-ode (>=0.1.2,<0.2.0)
+Requires-Dist: eagerx-reality (>=0.1.2,<0.2.0)
+Requires-Dist: stable-baselines3 (==1.0)
+Project-URL: Documentation, https://eagerx.readthedocs.io/en/master/
+Project-URL: Repository, https://github.com/eager-dev/eagerx_packages
