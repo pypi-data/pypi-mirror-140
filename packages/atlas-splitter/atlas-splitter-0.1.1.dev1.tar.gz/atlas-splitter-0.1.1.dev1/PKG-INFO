@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: atlas-splitter
+Version: 0.1.1.dev1
+Summary: CLI to split atlas regions and modify annotations accordingly
+Home-page: https://github.com/BlueBrain/atlas-splitter
+Author: Blue Brain Project, EPFL
+License: Apache-2
+Download-URL: https://github.com/BlueBrain/atlas-splitter
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7.0
+Provides-Extra: tests
+License-File: LICENSE.txt
+License-File: AUTHORS.txt
+
+UNKNOWN
+
