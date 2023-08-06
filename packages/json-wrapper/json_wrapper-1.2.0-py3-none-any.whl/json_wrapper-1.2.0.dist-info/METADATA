@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: json-wrapper
+Version: 1.2.0
+Summary: Easy to use JSON wrapper packed with features.
+Home-page: https://github.com/RGBCube/json_wrapper
+Author: RGBCube
+License: CC0 1.0 Universal
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 🈷️ JsonWrapper
+
+Easy to use JSON wrapper packed with features.
+
+# 📥 Usage
+
+Execute `pip install json-wrapper`.
+
+Add `from json_wrapper import JsonWrapper` to the top of your project.
+
+# 🔗 Important Links
+
+[PyPI: json-wrapper](https://pypi.org/project/json-wrapper/)
+
+[GitHub: RGBCube/json-wrapper](https://github.com/RGBCube/json-wrapper)
+
+
