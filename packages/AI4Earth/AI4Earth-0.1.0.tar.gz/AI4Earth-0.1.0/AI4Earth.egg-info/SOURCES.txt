@@ -1,0 +1,6 @@
+setup.py
+AI4Earth.egg-info/PKG-INFO
+AI4Earth.egg-info/SOURCES.txt
+AI4Earth.egg-info/dependency_links.txt
+AI4Earth.egg-info/requires.txt
+AI4Earth.egg-info/top_level.txt
