@@ -1,0 +1,3 @@
+[console_scripts]
+pyremo_analysis = pyremo.cli:main_analysis
+
