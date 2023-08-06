@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+tethys_data_models/__init__.py
+tethys_data_models/base.py
+tethys_data_models/dataset.py
+tethys_data_models/geometry.py
+tethys_data_models/permit.py
+tethys_data_models/utils.py
+tethys_data_models.egg-info/PKG-INFO
+tethys_data_models.egg-info/SOURCES.txt
+tethys_data_models.egg-info/dependency_links.txt
+tethys_data_models.egg-info/requires.txt
+tethys_data_models.egg-info/top_level.txt
+tethys_data_models/tests/__init__.py
