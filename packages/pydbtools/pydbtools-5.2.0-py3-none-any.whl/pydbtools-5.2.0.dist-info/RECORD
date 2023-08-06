@@ -1,0 +1,7 @@
+pydbtools/__init__.py,sha256=yFQUWx_4dhLm28LfNJukOSQ-cuzOtusNs5ulyoJ78es,704
+pydbtools/_sql_render.py,sha256=XV7sC7Mvc_S4sBmGT8GXyBQmsNEEo10awfu_Co6ZK0E,1130
+pydbtools/_wrangler.py,sha256=HbXYLEr5LiFqCe7r7fpT7CYeZpQArz2dU0wx3XCvfGk,17561
+pydbtools/utils.py,sha256=5mekld0Yd2yUz-bQj2CewUr76gL3R0TX3RSSZnkSmRM,5577
+pydbtools-5.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pydbtools-5.2.0.dist-info/METADATA,sha256=nQaLUqf02gxwhslAXHVYCa61tdTHLPv4cOx_UkEeSxA,15609
+pydbtools-5.2.0.dist-info/RECORD,,
