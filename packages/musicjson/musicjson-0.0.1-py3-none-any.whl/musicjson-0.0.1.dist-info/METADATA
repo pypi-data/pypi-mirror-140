@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: musicjson
+Version: 0.0.1
+Summary: Play with sound: compose notes in JSON and play it
+Home-page: https://github.com/DavidWang2AI/musicjson
+Author: David Wang
+Author-email: davidwang.2ai@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/DavidWang2AI/musicjson/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: sounddevice
+Requires-Dist: SoundFile
+
+# musicJSON
+
+Author: David WANG
+
+- This runs like a midi player: user writes notes in JSON file and listen it.
+- Adjust the sound with your knowledge in synthesis
+
+Although there is musicXML files, which are more professional, musicXML is too complicated for human to read.
+## Installation:
+```bash
+pip install musicjson
+```
+
+## Usage:
+(1) First, you need to create a JSON file with the following format, and save it in the same folder of your program. Assumed its name is 'music.json'
+
+###notes:
+ a) tempo: relative speed
+ b) band: how many parts, to be played simultaneously
+ c) data: the notes: key name followed by length. To make it readable by human, please try to keep each division in a line.
+
+In the following sample, there are 2 parts to be played at the same time.So the total length in time for each of them is equal.
+The key names placed in the same square bracket are chord, ie to be played at the same time.
+"O" is the rest.
+
+```python
+{
+  "tempo": 2.1,
+  "band": 2,
+  "data": [
+    [
+      ["A4",0.333],["C5",0.333],["E5",0.334],["A5",0.333],["C6",0.333],["E6",0.334],["D6",0.333],["C6",0.333],["B5",0.334],
+      ["A5",0.333],["C6",0.333],["E6",0.334],["A6",0.333],["C7",0.333],["E7",0.334],["D7",0.333],["C7",0.333],["B6",0.334],
+      ["a6",0.333],["A6",0.333],["g6",0.334],["G6",0.333],["f6",0.333],["F6",0.334],["E6",0.333],["d6",0.333],["D6",0.334],
+      ["c6",0.333],["C6",0.333],["B5",0.334],["a5",0.333],["A5",0.333],["g5",0.334],["G5",0.333],["f5",0.333],["F5",0.334],
+      ["E5",0.5],["d5",0.5],["E5",0.5],["B4",0.5],["D5",0.5],["C5",0.5]
+    ],
+    [
+      [["E4","C4","A3"],1],["O",1],[["E4","C4","A3"],1],
+      [["E4","C4","A3"],1],["O",1],[["E4","C4","A3"],1],
+      [["E4","C4","A3"],1],["O",2],
+      ["O",2],["O",1],
+      ["O",2],["O",1]
+    ]
+  ]
+```
+
+(2) Run the following script to play the notes you composed in JSON file ("music.json for this example"):
+
+```python
+from musicjson import band
+
+b=Band()
+b.play('music.json')
+```
+
+If you want to save the music into a wav file:
+```python
+from musicjson import band
+
+b=Band()
+b.play('music.json', save=True, savefile='music.wav')
+```
+
+## About the Author
+I am currently in Grade 11 (as of 1st half of 2022). I have great interests in AI trading and real world simulation with C++, Java and Python. 
+
