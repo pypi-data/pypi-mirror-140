@@ -1,0 +1,9 @@
+virtualmicroscope/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+virtualmicroscope/urls.py,sha256=NkkAIPltXpK9INHf7dowFd62MQVb8OiQd0jFQ5Pz1CI,921
+virtualmicroscope/views.py,sha256=9OSXz4Xrif18RVXnLEzDoXwgILgGrxJrT1F_GhvwJUA,1946
+virtualmicroscope/templates/virtualmicroscope/start.html,sha256=-uLuP45Ta38y72i9SqPeGr16zDD9yhG3GeO4SfirQLk,1485
+omero_virtual_microscope-1.1.1.dist-info/LICENSE,sha256=iEtDSVe6aIMRlZDRzkl_1ESpyLcDC278TeglQBxnJb8,34501
+omero_virtual_microscope-1.1.1.dist-info/METADATA,sha256=Vu5d_F8hBMyjvhldicgJRizIug2oy1xYtO0AfuUGHRA,2723
+omero_virtual_microscope-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+omero_virtual_microscope-1.1.1.dist-info/top_level.txt,sha256=vGVlJ3tMZpk6nlnpICkk3QcdBGCfzur6_lCUAQNfVf8,18
+omero_virtual_microscope-1.1.1.dist-info/RECORD,,
