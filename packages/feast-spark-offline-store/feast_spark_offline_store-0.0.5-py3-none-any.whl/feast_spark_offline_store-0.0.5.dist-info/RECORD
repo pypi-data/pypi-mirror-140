@@ -1,0 +1,9 @@
+feast_spark_offline_store/__init__.py,sha256=6PgDD2NeLBl3LEaOVT-6xtiVmWEmoW3Kxq8vTABLlvA,418
+feast_spark_offline_store/spark.py,sha256=WKvZENJak92Najwg-mYyf9cHObWZCy7NKvEmBmv4y88,19354
+feast_spark_offline_store/spark_source.py,sha256=NPKvLRvitd2TJjFzuVIpRnaWgaOpDtKIs9w4gGDVZtg,6169
+feast_spark_offline_store/spark_type_map.py,sha256=BGxpdvFShUWOipU4F2s7vMxiF3AFtIGpuRddem3i7Ao,1716
+feast_spark_offline_store-0.0.5.dist-info/LICENSE,sha256=KY6M2RvMQuFR1S_I9JNGmiky4b1n405bt2DF_0Y61rY,1062
+feast_spark_offline_store-0.0.5.dist-info/METADATA,sha256=sdivX4wEFCSgU0L6F4n7BITrLtSu71SCr51QVXgInmk,2849
+feast_spark_offline_store-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+feast_spark_offline_store-0.0.5.dist-info/top_level.txt,sha256=HSkYwFCJKWfHvtYVmLyKQBu4eA-jNFxwVFqbM9LMqvs,26
+feast_spark_offline_store-0.0.5.dist-info/RECORD,,
