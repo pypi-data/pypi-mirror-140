@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: custom-django-graphql-auth
+Version: 0.2
+Summary: This package contains patched packages for specific graphene_django, graphql_jwt and jwt versions to work with python 3.9 as well as prevent some dependency errors
+Home-page: UNKNOWN
+Author: Tinashe Chiraya
+Author-email: <shattyadrenal1@gmail.com>
+Maintainer: Tinashe
+License: MIT
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Django
+Requires: Django (>=2.1.0)
+Requires: PyJWT (<2.0.0)
+Requires: graphene (>=2.1.8)
+Requires: black (==19.3b0)
+Requires: coveralls
+
+UNKNOWN
+
