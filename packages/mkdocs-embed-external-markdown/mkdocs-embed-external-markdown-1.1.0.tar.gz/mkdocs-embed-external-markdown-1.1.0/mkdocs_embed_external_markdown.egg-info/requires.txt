@@ -1,0 +1,3 @@
+mkdocs
+requests
+jinja2
