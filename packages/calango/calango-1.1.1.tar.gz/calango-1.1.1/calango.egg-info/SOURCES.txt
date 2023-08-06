@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+calango/__init__.py
+calango/settings.py
+calango.egg-info/PKG-INFO
+calango.egg-info/SOURCES.txt
+calango.egg-info/dependency_links.txt
+calango.egg-info/requires.txt
+calango.egg-info/top_level.txt
+calango/devices/__init__.py
+calango/devices/camera.py
+calango/devices/mouse.py
+calango/media/__init__.py
+calango/media/image.py
+tests/__init__.py
