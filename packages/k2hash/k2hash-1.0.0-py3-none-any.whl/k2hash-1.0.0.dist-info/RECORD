@@ -1,0 +1,9 @@
+k2hash/__init__.py,sha256=HS-ngMGDa3ry2Sa4V3_b_SUWCD2ss7cextJwguM6g00,20328
+k2hash/k2hash.py,sha256=aeeVHvO1qaVO3RVGIWkkwyhx2m6M_KEGEcmLffwBMg0,36794
+k2hash/keyqueue.py,sha256=syfVT8WLVYcBLSg9J0C3TFdcy_A8jW-cX2XbOCk8QMg,7943
+k2hash/queue.py,sha256=qZtG6UKTxJwg91MuRgG7KVn0df4UFnqhnHCAfU01oz4,8193
+k2hash-1.0.0.dist-info/LICENSE,sha256=2EfkcMAefNhdUmH0C4uKGG268hfK1kQnCzhuuLpR8t8,1081
+k2hash-1.0.0.dist-info/METADATA,sha256=D7GdE_ijoUG67KjEuwPgo6vA9BjsVvSg-nhKr9MDuzU,2195
+k2hash-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+k2hash-1.0.0.dist-info/top_level.txt,sha256=5B7UJm4TW5BGcAugpukmH-UdbcmLInw2yf624nNF-C4,7
+k2hash-1.0.0.dist-info/RECORD,,
