@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+py4uview/__init__.py
+py4uview/reader.py
+py4uview.egg-info/PKG-INFO
+py4uview.egg-info/SOURCES.txt
+py4uview.egg-info/dependency_links.txt
+py4uview.egg-info/top_level.txt
