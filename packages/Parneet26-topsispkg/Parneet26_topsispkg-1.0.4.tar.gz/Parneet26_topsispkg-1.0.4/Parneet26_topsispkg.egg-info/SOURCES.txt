@@ -1,0 +1,11 @@
+README.md
+setup.py
+Parneet26_topsispkg.egg-info/PKG-INFO
+Parneet26_topsispkg.egg-info/SOURCES.txt
+Parneet26_topsispkg.egg-info/dependency_links.txt
+Parneet26_topsispkg.egg-info/requires.txt
+Parneet26_topsispkg.egg-info/top_level.txt
+Topsis_pkg_Parneet26/__init__.py
+Topsis_pkg_Parneet26/topsis.py
+test/test_binomial.py
+test/test_gaussian.py
