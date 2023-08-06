@@ -1,0 +1,11 @@
+README.md
+sentinel_local.py
+setup.py
+sentinel_local.egg-info/PKG-INFO
+sentinel_local.egg-info/SOURCES.txt
+sentinel_local.egg-info/dependency_links.txt
+sentinel_local.egg-info/requires.txt
+sentinel_local.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/utils.py

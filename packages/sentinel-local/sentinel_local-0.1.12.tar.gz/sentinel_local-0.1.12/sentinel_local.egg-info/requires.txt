@@ -1,0 +1,8 @@
+docker
+GPUtil
+numpy
+pandas
+Pillow
+requests
+tqdm
+google-cloud-artifact-registry
