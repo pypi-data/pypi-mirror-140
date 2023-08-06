@@ -1,0 +1,3 @@
+[console_scripts]
+msad = msad.command_line:main
+

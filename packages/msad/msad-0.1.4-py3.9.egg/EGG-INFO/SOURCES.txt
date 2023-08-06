@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+msad/__init__.py
+msad/ad.py
+msad/command_line.py
+msad/group.py
+msad/search.py
+msad/user.py
+msad.egg-info/PKG-INFO
+msad.egg-info/SOURCES.txt
+msad.egg-info/dependency_links.txt
+msad.egg-info/entry_points.txt
+msad.egg-info/requires.txt
+msad.egg-info/top_level.txt
