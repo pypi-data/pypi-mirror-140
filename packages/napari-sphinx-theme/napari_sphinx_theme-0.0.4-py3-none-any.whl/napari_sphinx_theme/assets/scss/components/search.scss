@@ -1,0 +1,13 @@
+form.search {
+  @apply tw-flex tw-items-center tw-justify-between;
+
+  border-bottom: 1px solid black;
+
+  input {
+    @apply tw-border-none tw-flex-grow;
+
+    &:focus {
+      @apply tw-outline-napari-primary;
+    }
+  }
+}
