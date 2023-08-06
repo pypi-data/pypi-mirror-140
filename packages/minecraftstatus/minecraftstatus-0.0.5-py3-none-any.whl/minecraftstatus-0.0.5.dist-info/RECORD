@@ -1,0 +1,8 @@
+minecraftstatus/__init__.py,sha256=lrKhoBoPVr0HumhfzZZQEHasvyKNufSlKMQNqdLOjxw,279
+minecraftstatus/client.py,sha256=GdXL-Tft47Lu8_liFpfHtyEG2DfM3C3QcktMQqe6vew,3046
+minecraftstatus/http.py,sha256=Qolzccqrb0vyz5aPgBUJRwDD3PwcoFu6mhJzz8H4UFA,516
+minecraftstatus/server_status.py,sha256=WUfrLyFBmHD-ZxZems9APW234Fr0K25JCOahpuXB2-E,3068
+minecraftstatus-0.0.5.dist-info/LICENSE,sha256=qMeIyfdrYj0NGj4nanBYtjC2MdzmeEzRfxPBlliJuuc,1087
+minecraftstatus-0.0.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+minecraftstatus-0.0.5.dist-info/METADATA,sha256=s-IcHXRTNuxR0sH8GiQCFzxQ4v9iz74mRQeovGu-eVg,2619
+minecraftstatus-0.0.5.dist-info/RECORD,,
