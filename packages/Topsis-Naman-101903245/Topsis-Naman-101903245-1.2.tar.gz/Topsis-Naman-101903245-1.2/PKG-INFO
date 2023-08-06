@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Topsis-Naman-101903245
+Version: 1.2
+Summary: This package helps to find the topsis score and ranking based on that score for the given input.
+Home-page: https://github.com/naman-gupta-908/Topsis-Naman-101903245
+Author: Naman Gupta
+Author-email: your.email@domain.com
+License: MIT
+Download-URL: https://github.com/naman-gupta-908/Topsis-Naman-101903245/archive/refs/tags/1.2.tar.gz
+Description: UNKNOWN
+Keywords: TOPSIS,RANKS,SCORE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
