@@ -1,0 +1,8 @@
+README.md
+imdir.py
+setup.py
+imdir.egg-info/PKG-INFO
+imdir.egg-info/SOURCES.txt
+imdir.egg-info/dependency_links.txt
+imdir.egg-info/requires.txt
+imdir.egg-info/top_level.txt
