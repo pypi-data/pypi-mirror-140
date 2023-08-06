@@ -1,0 +1,15 @@
+unidiff
+pyan3==1.2.0
+tqdm
+
+[all]
+pytest>=6.2.2
+pytest-git
+pre-commit
+pytest-cov
+
+[test]
+pytest>=6.2.2
+pytest-git
+pre-commit
+pytest-cov
