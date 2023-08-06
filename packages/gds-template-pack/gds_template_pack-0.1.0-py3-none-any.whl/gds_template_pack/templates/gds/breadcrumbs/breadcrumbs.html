@@ -1,0 +1,22 @@
+{% if page.get_ancestors|length > 2 %}
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+            {% for ancestor_page in page.get_ancestors %}
+                {% if not ancestor_page.is_root %}
+                   {% if ancestor_page.depth > 2 %}
+                        <li class="govuk-breadcrumbs__list-item">
+                            {% include 'gds/link/link.html' with link=ancestor_page link_text=ancestor_page.title %}
+                        </li>
+                    {% else %}
+                        <li class="govuk-breadcrumbs__list-item">
+                            {% include 'gds/link/link.html' with link="/" link_text=page.title %}
+                        </li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            <li class="govuk-breadcrumbs__list-item">
+                <a href="#" aria-current="page">{{ page.title }}</a>
+            </li>
+        </ol>
+    </div>
+{% endif %}
