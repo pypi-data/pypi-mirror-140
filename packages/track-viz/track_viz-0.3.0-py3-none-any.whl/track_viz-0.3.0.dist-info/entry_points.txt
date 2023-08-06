@@ -1,0 +1,3 @@
+[console_scripts]
+track-viz=track_viz.__main__:main
+
