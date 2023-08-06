@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SpamFilter/__init__.py
+SpamFilter/antispam.py
+discordpy_antispam.egg-info/PKG-INFO
+discordpy_antispam.egg-info/SOURCES.txt
+discordpy_antispam.egg-info/dependency_links.txt
+discordpy_antispam.egg-info/requires.txt
+discordpy_antispam.egg-info/top_level.txt
