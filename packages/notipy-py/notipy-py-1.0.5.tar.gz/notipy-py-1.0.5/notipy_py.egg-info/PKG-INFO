@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: notipy-py
+Version: 1.0.5
+Summary: Windows notifier for 9-hours working day using Pomadoro technique (50 minutes work and 10 minutes rest) with lunch break
+Home-page: https://github.com/VladaZakharova/Notifier
+Author: Vlada Zakharova
+Author-email: vladazaharova0@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# Notifier
+Simple Windows notifier for tracking working hours. Since start you have 8 work periods for 50 minutes and 10 minutes of rest after each working session. This is so-called Pomadoro technique. There is also a lunch breack for an hour. 
+
+# Install
+
+### Using  `pip`
+```
+pip install notipy-py
+```
+
+### Build from source
+```
+git clone https://github.com/VladaZakharova/Notifier.git
+cd notifier
+python setup.py install
+```
+
+# Usage
+
+### Work notification
+![image](https://user-images.githubusercontent.com/80038284/156029428-1cdf96e0-318b-4dc3-a0dd-4766cf26e7d5.png)
+
+### Break notification
+![image](https://user-images.githubusercontent.com/80038284/156030264-75650415-c912-4c78-8367-e8617c0f1318.png)
+
+### Lunch time notification
+![image](https://user-images.githubusercontent.com/80038284/156031185-6f9706ee-3ac5-4c18-bf17-0c5702052db0.png)
+
+### End of work notification
+![image](https://user-images.githubusercontent.com/80038284/156032207-ba31a8af-2767-4fc0-a0d1-9ecf4894cd7f.png)
+
+### Not a working day notification
+![image](https://user-images.githubusercontent.com/80038284/156032749-906f905e-a5a6-4fc2-b744-2c43a45177ad.png)
+
+
+
+
+
+
+
