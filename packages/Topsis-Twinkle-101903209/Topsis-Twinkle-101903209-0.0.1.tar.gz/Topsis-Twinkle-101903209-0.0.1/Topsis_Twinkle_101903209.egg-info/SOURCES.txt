@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+Topsis_Twinkle_101903209.egg-info/PKG-INFO
+Topsis_Twinkle_101903209.egg-info/SOURCES.txt
+Topsis_Twinkle_101903209.egg-info/dependency_links.txt
+Topsis_Twinkle_101903209.egg-info/requires.txt
+Topsis_Twinkle_101903209.egg-info/top_level.txt
+topsis/topsis-101903209.py
