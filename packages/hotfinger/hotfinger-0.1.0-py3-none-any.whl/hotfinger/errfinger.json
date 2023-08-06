@@ -1,0 +1,203 @@
+[
+    {
+        "DreamHost FTP": "protocol=\"ftp\" &&banner=\"DreamHost FTP\""
+    },
+    {
+        "ZTE FTP": "protocol=\"ftp\" && banner=\"ZTE FTP\""
+    },
+    {
+        "Serv-U FTP": "protocol=\"ftp\" && banner=\"Serv-U FTP\""
+    },
+    {
+        "FileZilla Server": "protocol=\"ftp\" && banner=\"FileZilla Server\""
+    },
+    {
+        "ProFTPD": "protocol=\"ftp\" && banner=\"ProFTPD\""
+    },
+    {
+        "blah FTP": "protocol=\"ftp\" && banner=\"blah FTP\""
+    },
+    {
+        "Wind River FTP": "protocol=\"ftp\" && banner=\"Wind River FTP\""
+    },
+    {
+        "bftp": "protocol=\"ftp\" && banner=\"bftpd\""
+    },
+    {
+        "vsftpd": "protocol=\"ftp\" && banner=\"vsftpd\""
+    },
+    {
+        "Microsoft FTP": "protocol=\"ftp\" && banner=\"Microsoft FTP\""
+    },
+    {
+        "Pure-FTP": "protocol=\"ftp\" && banner=Pure-FTPd"
+    },
+    {
+        "Verizon_Router": "title=\"Verizon Router\" && body!=\"<div id=\"bgimage\" class=\"container\" ng-view></div>\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Cisco AWARE": "header=\"Cisco AWARE\" && header!=\"webvpn\""
+    },
+    {
+        "Apache": "header=\"Server: Apache\" && header!=\"Apache-Coyote\""
+    },
+    {
+        "DreamHost FTP": "protocol=\"ftp\" &&banner=\"DreamHost FTP\""
+    },
+    {
+        "ZTE FTP": "protocol=\"ftp\" && banner=\"ZTE FTP\""
+    },
+    {
+        "Serv-U FTP": "protocol=\"ftp\" && banner=\"Serv-U FTP\""
+    },
+    {
+        "FileZilla Server": "protocol=\"ftp\" && banner=\"FileZilla Server\""
+    },
+    {
+        "ProFTPD": "protocol=\"ftp\" && banner=\"ProFTPD\""
+    },
+    {
+        "blah FTP": "protocol=\"ftp\" && banner=\"blah FTP\""
+    },
+    {
+        "Wind River FTP": "protocol=\"ftp\" && banner=\"Wind River FTP\""
+    },
+    {
+        "bftp": "protocol=\"ftp\" && banner=\"bftpd\""
+    },
+    {
+        "vsftpd": "protocol=\"ftp\" && banner=\"vsftpd\""
+    },
+    {
+        "Microsoft FTP": "protocol=\"ftp\" && banner=\"Microsoft FTP\""
+    },
+    {
+        "Pure-FTP": "protocol=\"ftp\" && banner=Pure-FTPd"
+    },
+    {
+        "Verizon_Router": "title=\"Verizon Router\" && body!=\"<div id=\"bgimage\" class=\"container\" ng-view></div>\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Cisco AWARE": "header=\"Cisco AWARE\" && header!=\"webvpn\""
+    },
+    {
+        "Apache": "header=\"Server: Apache\" && header!=\"Apache-Coyote\""
+    },
+    {
+        "DreamHost FTP": "protocol=\"ftp\" &&banner=\"DreamHost FTP\""
+    },
+    {
+        "ZTE FTP": "protocol=\"ftp\" && banner=\"ZTE FTP\""
+    },
+    {
+        "Serv-U FTP": "protocol=\"ftp\" && banner=\"Serv-U FTP\""
+    },
+    {
+        "FileZilla Server": "protocol=\"ftp\" && banner=\"FileZilla Server\""
+    },
+    {
+        "ProFTPD": "protocol=\"ftp\" && banner=\"ProFTPD\""
+    },
+    {
+        "blah FTP": "protocol=\"ftp\" && banner=\"blah FTP\""
+    },
+    {
+        "Wind River FTP": "protocol=\"ftp\" && banner=\"Wind River FTP\""
+    },
+    {
+        "bftp": "protocol=\"ftp\" && banner=\"bftpd\""
+    },
+    {
+        "vsftpd": "protocol=\"ftp\" && banner=\"vsftpd\""
+    },
+    {
+        "Microsoft FTP": "protocol=\"ftp\" && banner=\"Microsoft FTP\""
+    },
+    {
+        "Pure-FTP": "protocol=\"ftp\" && banner=Pure-FTPd"
+    },
+    {
+        "Verizon_Router": "title=\"Verizon Router\" && body!=\"<div id=\"bgimage\" class=\"container\" ng-view></div>\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Cisco AWARE": "header=\"Cisco AWARE\" && header!=\"webvpn\""
+    },
+    {
+        "Apache": "header=\"Server: Apache\" && header!=\"Apache-Coyote\""
+    },
+    {
+        "DreamHost FTP": "protocol=\"ftp\" &&banner=\"DreamHost FTP\""
+    },
+    {
+        "ZTE FTP": "protocol=\"ftp\" && banner=\"ZTE FTP\""
+    },
+    {
+        "Serv-U FTP": "protocol=\"ftp\" && banner=\"Serv-U FTP\""
+    },
+    {
+        "FileZilla Server": "protocol=\"ftp\" && banner=\"FileZilla Server\""
+    },
+    {
+        "ProFTPD": "protocol=\"ftp\" && banner=\"ProFTPD\""
+    },
+    {
+        "blah FTP": "protocol=\"ftp\" && banner=\"blah FTP\""
+    },
+    {
+        "Wind River FTP": "protocol=\"ftp\" && banner=\"Wind River FTP\""
+    },
+    {
+        "bftp": "protocol=\"ftp\" && banner=\"bftpd\""
+    },
+    {
+        "vsftpd": "protocol=\"ftp\" && banner=\"vsftpd\""
+    },
+    {
+        "Microsoft FTP": "protocol=\"ftp\" && banner=\"Microsoft FTP\""
+    },
+    {
+        "Pure-FTP": "protocol=\"ftp\" && banner=Pure-FTPd"
+    },
+    {
+        "Verizon_Router": "title=\"Verizon Router\" && body!=\"<div id=\"bgimage\" class=\"container\" ng-view></div>\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Docker_Daemon": "type=\"subdomain\" && (port=\"2375\" || port=\"2376\") && header=\"Content-Length:19\" && header=\"text/plain\""
+    },
+    {
+        "Cisco AWARE": "header=\"Cisco AWARE\" && header!=\"webvpn\""
+    },
+    {
+        "Apache": "header=\"Server: Apache\" && header!=\"Apache-Coyote\""
+    }
+]
