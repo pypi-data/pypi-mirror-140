@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "xontrib-commands"
+version = "0.3.3"
+description = "Useful xonsh-shell commands/alias functions"
+authors = ["Noortheen Raja NJ <jnoortheen@gmail.com>"]
+
+license = "MIT"
+readme = "README.md"
+
+repository = "https://github.com/jnoortheen/xontrib-commands"
+keywords = ['xontrib', 'xonsh']
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Shells",
+    "Topic :: System :: System Shells",
+    "Topic :: Terminals",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+
+packages = [
+    { include = "xontrib" }, { include = "xontrib_commands" },
+]
+
+[tool.poetry.urls]
+Documentation = "https://github.com/jnoortheen/xontrib-commands/blob/master/README.md"
+Code = "https://github.com/jnoortheen/xontrib-commands"
+"Issue tracker" = "https://github.com/jnoortheen/xontrib-commands/issues"
+
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+xonsh = { version = ">=0.10.1", python = ">=3.6, <4.0" }
+arger = { version = "^1.2.7", python = ">=3.6, <4.0" }
+rich = { version = "*", python = ">=3.6, <4.0" }
+python-dotenv = "^0.19.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+black = { version = "^20.8b1", allow-prereleases = true }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
