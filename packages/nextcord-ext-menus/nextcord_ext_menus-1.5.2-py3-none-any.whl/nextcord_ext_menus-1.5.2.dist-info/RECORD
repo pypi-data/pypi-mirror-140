@@ -1,0 +1,12 @@
+nextcord/ext/menus/__init__.py,sha256=EXtYyMWN9411HP38Mcbl8HueRcuBlLYyycCF-7kFtRI,202
+nextcord/ext/menus/constants.py,sha256=cLEy9w1lj3W25BOeQGL-RcihbpoSWodYijIGqul5sMo,643
+nextcord/ext/menus/exceptions.py,sha256=p8EU4e7iDLBBPolMPxCVRCvG1nurHdlWjQfP9eCa2SA,944
+nextcord/ext/menus/menu_pages.py,sha256=gRYLer2a4zGzBont99bbq1jNjnbrX9hbzX1-p6hUT2I,12813
+nextcord/ext/menus/menus.py,sha256=X6VbacOxq1_7NS9IjPoroAmj_o7ELZxrwxtQTKVSKJA,30639
+nextcord/ext/menus/page_source.py,sha256=RYNa72oOdul-GPPtXEcWIAKh3rLJWaQCBBZFEtb6qVE,12386
+nextcord/ext/menus/utils.py,sha256=wifogAkQgZYgn56EKTVGkF3jiodQFgzJZpQKWi_Jz94,3088
+nextcord_ext_menus-1.5.2.dist-info/LICENSE,sha256=eDTdNa8JKhPZVwIzHq3aRTmTC5spbGaroWIT7GomoM4,1132
+nextcord_ext_menus-1.5.2.dist-info/METADATA,sha256=NGokLcTrrdBkyu53jNYkGMjGpgD4xDVO1N-E_aApZsU,2045
+nextcord_ext_menus-1.5.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nextcord_ext_menus-1.5.2.dist-info/top_level.txt,sha256=WLKE4YjlmaQ5A1gxmxiAYHUFoYSc49lTpIaYSHFE2Qw,9
+nextcord_ext_menus-1.5.2.dist-info/RECORD,,
