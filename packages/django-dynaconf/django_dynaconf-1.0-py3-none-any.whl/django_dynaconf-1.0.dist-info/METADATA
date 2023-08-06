@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: django-dynaconf
+Version: 1.0
+Summary: Dynamic Configuration for your Django project
+Home-page: https://github.com/mhsiddiqui/django-dynaconf
+Author: Muhammad Hassan Siddiqui
+Author-email: mhassan.eeng@gmail.com
+License: MIT
+Keywords: django,dynamic-configuration,dynamic-settings,django-settings-from-admin
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dateutil
+Requires-Dist: python-dateutil ; extra == 'dateutil'
+Provides-Extra: django
+Requires-Dist: Django (>1.10) ; extra == 'django'
+
+# django-dynaconf
+
+[![Build](https://github.com/mhsiddiqui/django-dynaconf/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/mhsiddiqui/django-dynaconf/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/mhsiddiqui/django-dynaconf/branch/main/graph/badge.svg?token=FFXY6AZEDQ)](https://codecov.io/gh/mhsiddiqui/django-dynaconf)
+
+
+
+Django-dynaconf provides dynamic configuration for your Django project which you can control from Django admin. You can change your configurations at any time without any deployment.
+
+**Note**: You cannot add settings required for Django to operate in this like *INSTALLED_APPS*
+
+# Requirements
+* Python > 3
+* Django > 1.10
+
+# Setup
+
+1. Run below command to install.
+
+> pip install django-dynaconf
+
+2. Add `dynaconf` in your INSTALLED_APPS.
+3. Run migration by running following command
+
+> python manage.py migrate
+
+# Usage
+_____
+Just go to your admin dashboard, in Dynaconf section, add configurations. 
+
+## Listing
+![image info](./images/listing.png)
+
+## Form
+![image info](./images/form.png)
+
+## Config Type
+
+It supports following types of configurations. You need to set correct type for your value otherwise value will be treated as string value and will not be processed into actual data type.
+* String
+* Number
+* Boolean
+* Json
+* Date
+* Datetime
+* Time
+
+###String
+
+By default every value will be string.   
+
+###Number
+
+Number includes integers as well as decimal numbers. 
+
+###Boolean
+
+For boolean value, see below chart.
+
+| True | False |
+|:----:|:-----:|
+|   t  |   f   |
+|   T  |   F   |
+|   y  |   n   |
+|   Y  |   N   |
+|  yes |   no  |
+|  YES |   NO  |
+| true | false |
+| True | False |
+| TRUE | FALSE |
+|  on  |  off  |
+|  On  |  Off  |
+|  ON  |  OFF  |
+|   1  |   0   |
+
+### Json
+A valid json is required when config type is selected as Json.
+
+### Date
+Date should be in `YYYY-MM-DD` format. It will be converted to `datetime.date` object.
+
+### Datetime
+Datetime should be in `YYYY-MM-DD HH:MM:SS` format and it will be converted to `datetime` object.
+
+### Time
+Time should be in `HH:MM:SS` format and it will be converted to `datetime.time` object.
+
+## Usage in code
+In your code, you can use it like this.
+
+```python
+from dynaconf.configs import configs
+print(configs.KEY_OF_YOUR_CONFIGURATION)
+```
+
+At any time, when you will change your config value or add a new value, it will be available to use in you code.
+
+
