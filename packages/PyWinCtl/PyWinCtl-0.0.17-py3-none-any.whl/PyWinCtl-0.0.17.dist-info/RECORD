@@ -1,0 +1,10 @@
+pywinctl/__init__.py,sha256=6HPhOOk7wvg0OrbtQe1lVxmNowuay42dD3YBRZVz33Q,12373
+pywinctl/_pywinctl_linux.py,sha256=WhrgUm2nHtWJuauJ1K07Qc57F7cVSeQat_sKqgd7v_M,24339
+pywinctl/_pywinctl_macos.py,sha256=DtMwDuOeqKt9zeWvfRods28tF6yR7bvHZb8ntRWoJeo,73785
+pywinctl/_pywinctl_win.py,sha256=7nEZKzAPYkNpQKv4NZvsIt7M-EW-xlyk85n863ed5LE,27638
+PyWinCtl-0.0.17.dist-info/AUTHORS.txt,sha256=SXTGGyS7Jagf6CE0D1TItcFTbsBXqqZfuvYb0ptpx2o,855
+PyWinCtl-0.0.17.dist-info/LICENSE.txt,sha256=IX3853XOcIGOsZt2TCL9GG5dgJZk2STGmsMNO0RuCrM,3202
+PyWinCtl-0.0.17.dist-info/METADATA,sha256=J4__6Nr5N8OHgxgVOI0i3AAMBVhnGkgPAUi8Ly8H4oo,6645
+PyWinCtl-0.0.17.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+PyWinCtl-0.0.17.dist-info/top_level.txt,sha256=9v-GMfZtUsk0W_vn9QivHu4nFw4mnHKa9bIl-jtqog4,9
+PyWinCtl-0.0.17.dist-info/RECORD,,
