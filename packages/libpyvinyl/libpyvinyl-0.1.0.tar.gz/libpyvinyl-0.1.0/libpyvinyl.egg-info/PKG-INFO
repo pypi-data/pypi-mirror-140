@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: libpyvinyl
+Version: 0.1.0
+Summary: The python API for photon and neutron simulation codes in the Photon and Neutron Open Science Cloud (PaNOSC).
+Home-page: https://github.com/PaNOSC-ViNYL/libpyvinyl
+Author: Carsten Fortmann-Grote, Juncheng E, Mads Bertelsen, Shervin Nourbakhsh
+Author-email: carsten.grote@xfel.eu, juncheng.e@xfel.eu, Mads.Bertelsen@ess.eu, nourbakhsh@ill.fr
+License: LGPLv3
+Download-URL: https://github.com/PaNOSC-ViNYL/libpyvinyl/archive/v0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: photons,neutrons,simulations
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
