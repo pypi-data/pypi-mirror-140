@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        mongo2file=mongo2file.cli:cli
+    
