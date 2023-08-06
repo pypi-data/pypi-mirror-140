@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+wai/__init__.py
+wai/__main__.py
+wai/version.py
+wai_client.egg-info/PKG-INFO
+wai_client.egg-info/SOURCES.txt
+wai_client.egg-info/dependency_links.txt
+wai_client.egg-info/entry_points.txt
+wai_client.egg-info/requires.txt
+wai_client.egg-info/top_level.txt
