@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rightchain
+Version: 0.1.5
+Summary: A small example package
+Author: Example Author
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: pathspec
+
+UNKNOWN
+
