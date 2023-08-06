@@ -1,0 +1,17 @@
+fastapi_tag/__init__.py,sha256=cT8pNcGhhadSjBhbJ1TJ_RzmD9SDIRSJEyvKzBRXwOk,254
+fastapi_tag/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_tag/base/__init__.py,sha256=MGByvIYi0SxJ4Ex79jX7nBbSDv5PrAEuDz0i2E-DuUg,56
+fastapi_tag/base/model.py,sha256=mnNwA2ih_hqbHBWy97g-3EDNwMlOFHLNFKDK6GQRAy0,792
+fastapi_tag/core/__init__.py,sha256=51HawBWhmYXz0DHRPx33FrQKv2kXMmHNaOgXnp2szWQ,84
+fastapi_tag/core/_base.py,sha256=ofw2GjqAITZ4NIg86JyjAofM-pEK4fq5fRXQvy-zG_w,602
+fastapi_tag/core/application.py,sha256=_Wg1sh5XG9yOV2S8rRFuGMVEqeIscmOG5J47-2xaSSE,2498
+fastapi_tag/meta/__init__.py,sha256=BxFrK9Dh76-CScJMnskG9tWbYM-fl2Bg-aaq4UjI7qk,62
+fastapi_tag/meta/metadata.py,sha256=fWB2F3p_KFK8IHxTKmbKRq4zFW1uku1vCfMx-FfuaVk,1335
+fastapi_tag/router/__init__.py,sha256=U_do8f_PNzUjBNWzOXhmfXn_mX_Wj85jH3MxOXdW_LQ,60
+fastapi_tag/router/routers.py,sha256=GbuZ3XYXi2n6WKLqEEE5Xi4sZt9ALFC8Px-ksyVETk4,4286
+fastapi_tag/utils/__init__.py,sha256=qPVRB83RAD-l4rma6F7mIiKvXpfSFnGh4r0qwsfwdmo,55
+fastapi_tag/utils/type.py,sha256=LK88DRPFZt21vYCRaghWwk-50lRCGtvpVhgCQYxi0Js,164
+fastapi_tag-0.0.1.dist-info/LICENSE,sha256=VO5dwbZJpTzdaMj7h6f5DAXrPYfzt0CGk5pEN9Y-vvo,1070
+fastapi_tag-0.0.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+fastapi_tag-0.0.1.dist-info/METADATA,sha256=SA9q9uol7LAL6l4ArWPLynHmrVgrlqohr7LyGUv5w14,5109
+fastapi_tag-0.0.1.dist-info/RECORD,,
