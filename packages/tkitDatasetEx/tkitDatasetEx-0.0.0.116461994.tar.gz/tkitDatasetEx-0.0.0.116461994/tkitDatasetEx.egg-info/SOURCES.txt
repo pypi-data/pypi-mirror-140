@@ -1,0 +1,12 @@
+README.md
+setup.py
+tkitDatasetEx/AutoClear.py
+tkitDatasetEx/BIO.py
+tkitDatasetEx/__init__.py
+tkitDatasetEx/fun.py
+tkitDatasetEx/readData.py
+tkitDatasetEx.egg-info/PKG-INFO
+tkitDatasetEx.egg-info/SOURCES.txt
+tkitDatasetEx.egg-info/dependency_links.txt
+tkitDatasetEx.egg-info/requires.txt
+tkitDatasetEx.egg-info/top_level.txt
