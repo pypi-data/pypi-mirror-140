@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Topsis-Yashika-101903787
+Version: 1.0.0
+Summary: Calculates Topsis Score and Rank
+Home-page: UNKNOWN
+Author: Yashika Gupta
+Author-email: ms.yashikagupta@gmail.com
+License: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+
+# Topsis-Yashika-101903787
+
