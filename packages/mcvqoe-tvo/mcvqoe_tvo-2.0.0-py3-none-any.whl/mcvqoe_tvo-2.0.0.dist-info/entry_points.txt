@@ -1,0 +1,3 @@
+[console_scripts]
+tvo = mcvqoe.tvo.volume_adjust_hw_test:main
+
