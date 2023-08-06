@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: keras-tuner
+Version: 1.1.1rc0
+Summary: Hypertuner for Keras
+Home-page: https://github.com/keras-team/keras-tuner
+Author: The KerasTuner authors
+Author-email: kerastuner@google.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Provides-Extra: tests
+License-File: LICENSE
+License-File: AUTHORS
+
+UNKNOWN
+
