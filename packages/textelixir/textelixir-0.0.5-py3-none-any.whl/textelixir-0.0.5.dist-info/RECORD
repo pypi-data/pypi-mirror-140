@@ -1,0 +1,17 @@
+textelixir/__init__.py,sha256=HEOvK1EYmUqpTbhk_rJ6LDAUYM_dY2OThLII6z-reeg,11674
+textelixir/collocates.py,sha256=5qsnTJlkmPqE1nEnFZ5D3K5ASyj1C6sCMbOIWBWpYgA,18449
+textelixir/corporaverse.py,sha256=WIzhbruK_rGffA9l3q2-JO1uRXbcjuBWaDLByZizxLA,115
+textelixir/kwic.py,sha256=xGbYsW5dEc3eBOaBMH6BcadAclvNT12FiGtpPrzcVAU,16746
+textelixir/ngrams.py,sha256=HV8rbcttMLRUVJg7KETTDIo11gVes8mchLlUwo4Cgow,4036
+textelixir/scripts.py,sha256=U5_N09GGW8JqtZLS77ucCZAJL7-CkTiS7ZRssogElko,4495
+textelixir/search_results.py,sha256=Bq6Zm_AL7HotpD8ya-W1ECFv92EBjfE058BV9ZzS4hE,18174
+textelixir/sentences.py,sha256=2AFy10cEnViS64UmJkM4EBg8_bT2XLcZwMJmFawy_G8,14065
+textelixir/stats.py,sha256=LV-CPzi-dIDOCkcJqoBoCl7t3wR9VzgoDJAwLsjAwjI,1364
+textelixir/tables.py,sha256=lR-oWXfdESOdny_1THl9UR_XwqP0gJyuyVUIpu6bZv8,454
+textelixir/taggers.py,sha256=tSg1U3m6Wevpzfz-kjaOQljrG_V7Exk2zNJqnZiMPo8,4552
+textelixir/vocabdist.py,sha256=_C7LrGt-XgSEtG6KrF3NJPydK6vlHLkzh4OuWFidsjg,5975
+textelixir-0.0.5.dist-info/LICENSE,sha256=7Jgnu3YRFG-pKyEk-19RgNqjUyGxdhuKyzGR8Nu8fZg,1076
+textelixir-0.0.5.dist-info/METADATA,sha256=BXISl6-VevnOLspIPhBX6cG3FtjDHqC1AqmPw5LODkE,752
+textelixir-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+textelixir-0.0.5.dist-info/top_level.txt,sha256=gT3P-fH6KlhTDdlJ_QFBsvNEPTI742AWO_KsPlX8_Hs,11
+textelixir-0.0.5.dist-info/RECORD,,
