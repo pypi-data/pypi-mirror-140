@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: domino_mlflow_client
+Version: 0.01
+Summary: Domino client wrapper for ml flow
+Home-page: https://github.com/cerebrotech/domino-mlflow-utils
+Author: Sameer Wadkar , Uday Kumar Samala
+Author-email: sammer.wadkar@dominodatalab.com
+License: MIT
+Download-URL: https://github.com/cerebrotech/domino-mlflow-utils/archive/pypi-0_1_3.tar.gz
+Description: UNKNOWN
+Keywords: domino,mlflow,client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
