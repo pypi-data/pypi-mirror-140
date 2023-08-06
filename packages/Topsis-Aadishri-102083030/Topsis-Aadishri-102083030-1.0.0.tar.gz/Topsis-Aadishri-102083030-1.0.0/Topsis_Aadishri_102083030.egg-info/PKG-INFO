@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: Topsis-Aadishri-102083030
+Version: 1.0.0
+Summary: Calculates TOPSIS on the given dataset!
+Home-page: https://github.com/aadishri17/Topsis-Aadishri-102083030
+Author: Aadishri Soni
+Author-email: aadishrisoni123@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis-Aadihri-102083030
+It takes the dataset and calculates the TOPSIS and assign the topsis score and rank!
+
+## Installation
+```pip install Topsis-Aadishri-102083030```
+
+## How to use it?
+Open terminal Write:
+```Topsis <inputFilename.csv> <"Weights"> <"Impacts"> <outputFilename.csv>```
+
+## License
+
+Â© 2022 Aadishri Soni
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
