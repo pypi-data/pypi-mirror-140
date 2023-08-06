@@ -1,0 +1,170 @@
+#!python
+"""Converts file format of input ontology and write it to output file(s).
+"""
+import argparse
+import os
+import warnings
+
+from rdflib.graph import Graph
+from rdflib.util import guess_format
+
+from ontopy.utils import (
+    convert_imported,
+    FMAP,
+    IncompatibleVersion,
+    squash_imported,
+    _validate_installed_version,
+)
+from ontopy.factpluspluswrapper.factppgraph import FaCTPPGraph
+
+
+def main(argv: list = None):
+    """Main run function.
+
+    Parameters:
+        argv: List of arguments, similar to `sys.argv[1:]`.
+            Mainly for testing purposes, since it allows one to invoke the tool
+            manually / through Python.
+
+    """
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("input", help="IRI/file to OWL source.")
+    parser.add_argument("output", help="Output file name.")
+    parser.add_argument(
+        "--input-format",
+        "-f",
+        help=(
+            "Input format (default is to infer from input).  Available "
+            'formats: "xml" (rdf/xml), "n3", "nt", "trix", "rdfa"'
+        ),
+    )
+    parser.add_argument(
+        "--output-format",
+        "-F",
+        help=(
+            "Output format (default is to infer from output.  Available "
+            'formats: "xml" (rdf/xml), "n3", "turtle", "nt", "pretty-xml", '
+            '"trix"'
+        ),
+    )
+    parser.add_argument(
+        "--no-catalog",
+        "-n",
+        action="store_false",
+        dest="url_from_catalog",
+        default=None,
+        help="Whether to not read catalog file even if it exists.",
+    )
+    parser.add_argument(
+        "--inferred",
+        "-i",
+        action="store_true",
+        help=(
+            "Add additional relations inferred by the FaCT++ reasoner to the "
+            "converted ontology. Implies --squash."
+        ),
+    )
+    parser.add_argument(
+        "--base-iri",
+        "-b",
+        help=(
+            "Base iri of inferred ontology. The default is the base iri of the"
+            ' input ontology with "-inferred" appended to it. Used together '
+            "with --inferred."
+        ),
+    )
+    parser.add_argument(
+        "--recursive",
+        "-r",
+        action="store_true",
+        help=(
+            "Whether to also convert imported ontologies recursively. The "
+            "output is written to a directory structure matching the input. "
+            "This requires Protege catalog files to be present."
+        ),
+    )
+    parser.add_argument(
+        "--squash",
+        "-s",
+        action="store_true",
+        help=(
+            "Whether to also squash imported ontologies into a single output "
+            "file. Cannot be combined with --recursive."
+        ),
+    )
+
+    args = parser.parse_args(args=argv)
+
+    # Inferred default input and output file formats
+    if args.input_format:
+        input_format = args.input_format
+    else:
+        input_format = guess_format(args.input)
+
+    if args.output_format:
+        output_format = args.output_format
+    else:
+        output_format = guess_format(args.output)
+    if not output_format:
+        output_format = "xml"
+
+    # Perform conversion
+    with warnings.catch_warnings(record=True) as warnings_handle:
+        warnings.simplefilter("always")
+        if args.recursive:
+            convert_imported(
+                args.input,
+                args.output,
+                input_format=input_format,
+                output_format=output_format,
+                url_from_catalog=args.url_from_catalog,
+            )
+        elif args.inferred:
+            graph = squash_imported(args.input, None, input_format=input_format)
+            factpp_graph = FaCTPPGraph(graph)
+            if args.base_iri:
+                factpp_graph.base_iri = args.base_iri
+            graph2 = factpp_graph.inferred_graph()
+            graph2.serialize(destination=args.output, format=output_format)
+        elif args.squash:
+            squash_imported(
+                args.input,
+                args.output,
+                input_format=input_format,
+                output_format=output_format,
+                url_from_catalog=args.url_from_catalog,
+            )
+        else:
+            if not _validate_installed_version(
+                package="rdflib", min_version="6.0.0"
+            ) and (
+                output_format == FMAP.get("ttl", "")
+                or os.path.splitext(args.output)[1] == "ttl"
+            ):
+                from rdflib import (  # pylint: disable=import-outside-toplevel
+                    __version__ as __rdflib_version__,
+                )
+
+                warnings.warn(
+                    IncompatibleVersion(
+                        "To correctly convert to Turtle format, rdflib must be"
+                        " version 6.0.0 or greater, however, the detected "
+                        "rdflib version used by your Python interpreter is "
+                        f"{__rdflib_version__!r}. For more information see the"
+                        " 'Known issues' section of the README."
+                    )
+                )
+
+            graph = Graph()
+            graph.parse(args.input, format=input_format)
+            graph.serialize(destination=args.output, format=output_format)
+
+        for warning in warnings_handle:
+            print(
+                f"\033[93mWARNING\033[0m: [{warning.category.__name__}] "
+                f"{warning.message}"
+            )
+
+
+if __name__ == "__main__":
+    main()
