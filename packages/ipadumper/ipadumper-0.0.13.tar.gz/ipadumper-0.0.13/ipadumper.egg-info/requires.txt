@@ -1,0 +1,8 @@
+cachetools
+coloredlogs
+commentjson
+frida
+paramiko
+scp
+tqdm
+zxtouch
