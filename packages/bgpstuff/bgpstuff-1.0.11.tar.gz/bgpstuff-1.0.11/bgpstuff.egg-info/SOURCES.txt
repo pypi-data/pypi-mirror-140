@@ -1,0 +1,9 @@
+README.md
+setup.py
+bgpstuff/__init__.py
+bgpstuff/bgpstuff.py
+bgpstuff.egg-info/PKG-INFO
+bgpstuff.egg-info/SOURCES.txt
+bgpstuff.egg-info/dependency_links.txt
+bgpstuff.egg-info/requires.txt
+bgpstuff.egg-info/top_level.txt
