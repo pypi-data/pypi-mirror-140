@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cachecore/__init__.py
+src/cachecore/serializers.py
+src/cachecore/utils.py
+src/cachecore.egg-info/PKG-INFO
+src/cachecore.egg-info/SOURCES.txt
+src/cachecore.egg-info/dependency_links.txt
+src/cachecore.egg-info/top_level.txt
+src/cachecore/caches/__init__.py
+src/cachecore/caches/base.py
+src/cachecore/caches/dummy.py
+src/cachecore/caches/file.py
+src/cachecore/caches/local.py
+src/cachecore/caches/redis.py
