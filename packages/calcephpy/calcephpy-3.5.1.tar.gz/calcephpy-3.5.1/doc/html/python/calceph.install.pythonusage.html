@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; CALCEPH  - Python language 3.5.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Library interface" href="calceph.interface.html" />
+    <link rel="prev" title="Introduction" href="calceph.intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> CALCEPH  - Python language
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.5.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+    
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="calceph.intro.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#instructions">Instructions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="calceph.interface.html">Library interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calceph.multiple.html">Multiple file access functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calceph.error.html">Error functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calceph.misc.html">Miscellaneous functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calceph.naifid.html">NAIF identification numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calceph.final.html">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calceph.reportbugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calceph.copying.html">CALCEPH Library Copying conditions</a></li>
+</ul>
+
+            
+          
+    <a href="genindex.html">Index</a>
+  
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CALCEPH  - Python language</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>The following section describes the installation of the <strong>Python</strong> interface of the library.
+If you want to install the interface for another programming language, you have to follow the instructions of the manual of that language.</p>
+<div class="section" id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
+<p>The python interface of the library should be installed using the  package management system <strong>pip</strong> on all operating systems : Windows and Unix-like system (Linux, Mac OS X, BSD, Cygwin, ...).</p>
+<p>A python interpreter, compliant at least with with the Python 2.6 or Python 3.0  specifications, and the package Cython, setuptools and numpy are required to install the python interface of the library.</p>
+<p>Some Linux distributions require the installation development tools of the python software. The name of this package may change on other Linux distributions or operating systems :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Debian or Ubuntu distributions : package <strong>python3-dev</strong> and <strong>python-dev-is-python3</strong> are required.</p></li>
+<li><p>Opensuse distribution : package <strong>python3-dev</strong> is required.</p></li>
+<li><p>Fedora or RedHat distributions : <strong>python3-devel</strong> is required.</p></li>
+</ul>
+</div></blockquote>
+<p>In addition you need a C compiler :</p>
+<blockquote>
+<div><ul>
+<li><p>On Unix-like operating systems (Linux, MacOS X, ...), you should install gcc or clang.</p></li>
+<li><p>On windows operating system, you need the Microsoft Visual C++ compiler.
+If you don't have a C compiler already installed, you can download the
+community edition of visual studio <cite>https://visualstudio.microsoft.com/fr/vs/features/cplusplus/</cite>.
+Before the execution of the next steps, you should execute the following line in the same terminal. You may have to adjust the path according to your version of the Visual studio compiler.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat&quot;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div></blockquote>
+<p>Depending on your python installation, the command <strong>pip</strong> may be replaced by <strong>pip3</strong>. If you use the distribution <em>anaconda</em>, you should use the pip command of that distribution.</p>
+<p>The steps are :</p>
+<ul>
+<li><p>Install the requirements</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install Cython setuptools numpy
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Install the library</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install calcephpy
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<blockquote>
+<div></div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="calceph.interface.html" class="btn btn-neutral float-right" title="Library interface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="calceph.intro.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, CNRS, Observatoire de Paris, Observatoire de la Côte d&#39;Azur
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
