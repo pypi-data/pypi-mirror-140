@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kodexa_spatialkit/__init__.py
+kodexa_spatialkit/common.py
+kodexa_spatialkit.egg-info/PKG-INFO
+kodexa_spatialkit.egg-info/SOURCES.txt
+kodexa_spatialkit.egg-info/dependency_links.txt
+kodexa_spatialkit.egg-info/entry_points.txt
+kodexa_spatialkit.egg-info/requires.txt
+kodexa_spatialkit.egg-info/top_level.txt
