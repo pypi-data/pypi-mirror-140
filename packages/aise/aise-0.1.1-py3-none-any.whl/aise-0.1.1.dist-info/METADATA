@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: aise
+Version: 0.1.1
+Summary: Functions used to analyze data in science education
+Home-page: https://github.com/johnjrhunglin/aise
+Author: John J. H. Lin
+Author-email: john.jrhunglin@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
+aise
+====
+
+.. image:: https://img.shields.io/pypi/v/aise.svg
+    :target: https://pypi.python.org/pypi/aise
+    :alt: Latest PyPI version
+
+.. image:: https://github.com/johnjrhunglin/aise/blob/main/README.md.png
+   :target: https://github.com/johnjrhunglin/aise/blob/main/README.md
+   :alt: Latest Travis CI build status
+
+Functions used to analyze data in science education
+
+Usage
+-----
+
+Installation
+------------
+
+Requirements
+^^^^^^^^^^^^
+
+Compatibility
+-------------
+
+Licence
+-------
+
+Authors
+-------
+
+`aise` was written by `John J. H. Lin <john.jrhunglin@gmail.com>`_.
+
+
