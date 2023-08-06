@@ -1,0 +1,31 @@
+descr: Example plan to illustrate usage of hooks
+descr_long: |
+  Run this testplan using a Linux test-target, the hooks will collect the following
+  * dmesg, invokes 'dmesg -w' on the test-target and pipes it to file on the dev-box
+  * sysinf, collects the output from running 'free', 'uname', 'lshw', and 'cat' of '/proc/cpuinfo',
+  '/etc/os-release', as well as environment variables
+  Additionally, a hook is provided to create nullblk instances
+  In case of failure, then check the logs / test-report
+testsuites:
+  - alias: Linux system information extraction
+    name: hooks-info
+    hooks: ["dmesg", "sysinf"]
+    testcases:
+      - linux_hostname.sh
+
+  - alias: Linux nullblk instantiation via hook
+    name: hooks-nullblk
+    evars: {"NULLBLK_AUTOCONF": "blk_zblk"}
+    hooks: ["nullblk"]
+    testcases:
+      - linux_hostname.sh
+
+  - alias: Using the cijoe-nullblk-module in a testcase
+    name: mod-nullblk
+    testcases:
+      - linux_nullblk.sh
+
+  - alias: Using the cijoe-kmemleak-module in a testcase
+    name: mod-kmemleak
+    testcases:
+      - linux_kmemleak.sh
