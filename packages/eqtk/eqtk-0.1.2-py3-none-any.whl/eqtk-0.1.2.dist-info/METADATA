@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: eqtk
+Version: 0.1.2
+Summary: Equilibrium toolkit
+Home-page: https://eqtk.github.io/
+Author: Justin Bois
+Author-email: bois@caltech.edu
+License: MIT
+Download-URL: https://github.com/justinbois/eqtk/tarball/0.1.2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: pandas
+
+[![DOI](https://data.caltech.edu/badge/197462227.svg)](https://data.caltech.edu/badge/latestdoi/197462227)
+
+Equilibrium Toolkit (EQTK) is a tool for solving coupled equilibria in dilute solutions.
+
+For installation and usage instructions, please see the [documentation](https://eqtk.github.io/).
+
