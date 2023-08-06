@@ -1,0 +1,4 @@
+networkx>=2.4
+peewee>2.10.2
+sympy>1.0
+tornado>4.4.2
