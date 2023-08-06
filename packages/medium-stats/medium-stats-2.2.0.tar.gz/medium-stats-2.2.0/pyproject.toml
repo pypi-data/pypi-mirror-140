@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "medium_stats"
+version = "2.2.0"
+description = "CLI tool to fetch your Medium stats"
+readme = "README.md"
+authors = ["otosky <olivertosky@gmail.com>"]
+license = "GNU GPLv3"
+keywords = ["Medium", "blog", "scraper", "analytics"]
+include = ["LICENSE", ]
+homepage = "https://github.com/otosky/medium_stats"
+repository = "https://github.com/otosky/medium_stats"
+
+[tool.poetry.scripts]
+medium-stats = 'medium_stats.__main__:main'
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+requests = "^2.26.0"
+lxml = "^4.6.3"
+selenium = { version = "^3.141.0", optional = true }
+webdriver-manager = { version = "^3.4.2", optional = true }
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+isort = "^5.9.3"
+
+[tool.poetry.extras]
+selenium = ["selenium", "webdriver-manager"]
+
+[tool.black]
+line-length = 120
+target-version = ['py37']
+
+[tool.isort]
+force_single_line = true
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 120
+skip = ["venv", ".venv"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
