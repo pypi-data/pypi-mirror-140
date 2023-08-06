@@ -1,0 +1,3 @@
+[console_scripts]
+kgtk = kgtk.cli_entry:cli_entry
+
