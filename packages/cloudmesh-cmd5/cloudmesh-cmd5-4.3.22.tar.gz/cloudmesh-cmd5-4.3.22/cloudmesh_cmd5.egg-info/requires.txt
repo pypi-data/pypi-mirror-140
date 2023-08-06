@@ -1,0 +1,5 @@
+pyyaml
+docopt
+requests
+md_toc
+cloudmesh-common
