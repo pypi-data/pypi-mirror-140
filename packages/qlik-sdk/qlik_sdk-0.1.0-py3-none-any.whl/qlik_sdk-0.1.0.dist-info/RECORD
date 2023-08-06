@@ -1,0 +1,12 @@
+qlik_sdk/__init__.py,sha256=JiAz4qg2YBMRVIz8NKD4JudRMQFTcMb1Yoe_JhIApW8,106
+qlik_sdk/auth.py,sha256=c_dI7LOjQ6umsROQdLTWq0vDkC7GoL_CxAo0_gq7QUE,1601
+qlik_sdk/auth_type.py,sha256=a2vIB7kxM6cdlSQtLG53mxtLzqYBs4CC496G203hAlM,136
+qlik_sdk/config.py,sha256=kkGgbqI4u6LvSTDrqMF52EarWvpAKA60fTzXm4oDmUM,1302
+qlik_sdk/errors.py,sha256=1ZMmUGKksWB082wiDTwy3TMORI6QAnxGA7xHpV7wjnI,478
+qlik_sdk/rest.py,sha256=cXq_OE-y2iDUo0fEaWwIFY76DzhfIXKaJ5GfD3goIAo,3299
+qlik_sdk/rpc.py,sha256=lIVGV24aeOiWUkEaKYq56xhu9BR_LnYGPVD3hD7K_mw,4857
+qlik_sdk-0.1.0.dist-info/LICENSE,sha256=5F5Pe4X5ktzYrW192bZADm0dGMSm0l4QiOyJFwrtcqU,1084
+qlik_sdk-0.1.0.dist-info/METADATA,sha256=cYLmBm47Kc-u3-ZvU6y6RKnha7doPREIvSmBUN5z6rA,2689
+qlik_sdk-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qlik_sdk-0.1.0.dist-info/top_level.txt,sha256=RyLo3A3w3mjTGNiIBtwC-oCasbQibG6LBhewUIZgjcY,9
+qlik_sdk-0.1.0.dist-info/RECORD,,
