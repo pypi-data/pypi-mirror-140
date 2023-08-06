@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rqpy
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+## 环境
+
+- Rust
+- Python
+
+## 使用方法
+
+```bash
+pip install rqpy
+
+# 参考 tests/test.py
+python3 tests/test.py
+```
+
