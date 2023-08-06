@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: embuild_colorize
+Version: 0.1.3
+Summary: A simple coloring for stdout from Segger Embuild tool.
+Home-page: https://github.com/Mcublog/embuild_colorize
+Author: Viacheslav
+Author-email: viacheslav@mcublog.xyz
+License: UNKNOWN
+Project-URL: Changelog, https://github.com/Mcublog/embuild_colorize/blob/master/CHANGELOG.md
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# README
+
+Coloring stdout from the Segger emBuild tool.
+
+Before                     |         After
+:-------------------------:|:-------------------------:
+![](https://github.com/Mcublog/embuild_colorize/raw/master/doc/164439.png)     |  ![](https://github.com/Mcublog/embuild_colorize/raw/master/doc/163958.png)
+
+Usage example:
+```bash
+python3 -m embuild_colorize --command emBuild -config "Debug" -project "YOUR_PROJECT" "./SES/YOUR_PROJECT.emProject" -verbose
+```
+
+

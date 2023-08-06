@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/embuild_colorize/__init__.py
+src/embuild_colorize/__main__.py
+src/embuild_colorize/colorize.py
+src/embuild_colorize/version.py
+src/embuild_colorize.egg-info/PKG-INFO
+src/embuild_colorize.egg-info/SOURCES.txt
+src/embuild_colorize.egg-info/dependency_links.txt
+src/embuild_colorize.egg-info/top_level.txt
