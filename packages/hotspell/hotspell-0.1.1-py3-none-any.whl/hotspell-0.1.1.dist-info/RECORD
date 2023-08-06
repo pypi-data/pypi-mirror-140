@@ -1,0 +1,12 @@
+hotspell/__init__.py,sha256=Sm0q6tXDaCMca02dyDcH5xRFqWpagG9dNohtp1xXQAw,64
+hotspell/heatwaves.py,sha256=mZFF0uSOf58uA5rueA1sHhzX-WMJ_ePR-CQrLK1p2nQ,11407
+hotspell/indices.py,sha256=0TYyx4DHHoM80o2WaStx9UmHcSKV6oMmqLkMWlwp9w8,5702
+hotspell/metrics.py,sha256=CXvgaLd9vDSUunSwAQRXnAmtPmxfaI4_PJbpj51xSJs,3264
+hotspell/utils.py,sha256=s1LALVdGwNovm0vTuMRfCyu-f5bWRQ61hjFu_z8MGng,2589
+hotspell/datasets/daily_windows_with_length_15.pickle,sha256=nkz5pnBAUCCX9ODDUotkNHUHpGv6BxgQ1ToytnYx-34,49328
+hotspell/datasets/daily_windows_with_length_3.pickle,sha256=URhpi_X5QH-gKmhtJ_FUtvbsuGf-r8moRijvI9o3R9Y,14192
+hotspell-0.1.1.dist-info/LICENSE,sha256=ZgjQvaIM1ZuuW8QJ3F6kRTnBEpSvKL7LFW1eEkPZRo4,1557
+hotspell-0.1.1.dist-info/METADATA,sha256=Gw40Ig3G_gSv-t61DkSL5o6u2WpuLbmepJ1Dqu3df58,2668
+hotspell-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hotspell-0.1.1.dist-info/top_level.txt,sha256=vFFITdSaWw0ie2ZvtK4BETbpuFquy8V13zQ4GbaT_FI,9
+hotspell-0.1.1.dist-info/RECORD,,
