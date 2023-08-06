@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: maskedtensor-test
+Version: 0.10.0
+Summary: MaskedTensors for PyTorch
+Home-page: https://github.com/cpuhrsch/maskedtensor
+Author: Christian Puhrsch
+Author-email: cpuhrsch@fb.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# maskedtensor
+
+## Installation
+
+```
+pip install maskedtensor
+```
+
+You need to run a recent nightly of PyTorch. You can get it on [the main website](https://pytorch.org/get-started/locally/).
+
+## Notebooks
+
+For an introduction and instructions on how to use MaskedTensors and what they are useful for see the [notebooks](https://github.com/cpuhrsch/maskedtensor/tree/main/docs/source/notebooks) folder.
+
+## License
+
+maskedtensor is licensed under BSD 3-Clause
+
+
