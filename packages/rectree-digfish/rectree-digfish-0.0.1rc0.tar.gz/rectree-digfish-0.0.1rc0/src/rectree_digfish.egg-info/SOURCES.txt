@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/rectree/__init__.py
+src/rectree/rectree.ini
+src/rectree/rectree.py
+src/rectree/rectree_config_gui.py
+src/rectree/taskchecker-traced.ico
+src/rectree/taskchecker.ico
+src/rectree_digfish.egg-info/PKG-INFO
+src/rectree_digfish.egg-info/SOURCES.txt
+src/rectree_digfish.egg-info/dependency_links.txt
+src/rectree_digfish.egg-info/top_level.txt
