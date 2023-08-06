@@ -1,0 +1,295 @@
+description: Income tax rates and brackets for tax units
+rates:
+  1:
+    2018-01-01: 0.1
+  2:
+    2018-01-01: 0.12
+  3:
+    2018-01-01: 0.22
+  4:
+    2018-01-01: 0.24
+  5:
+    2018-01-01: 0.32
+  6:
+    2018-01-01: 0.35
+  7:
+    2018-01-01: 0.37
+thresholds:
+  1:
+    SINGLE:
+      values:
+        2018-01-01: 9525
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    JOINT:
+      values:
+        2018-01-01: 19050
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    SEPARATE:
+      values:
+        2018-01-01: 9525
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    HEAD_OF_HOUSEHOLD:
+      values:
+        2018-01-01: 13600
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    WIDOW:
+      values:
+        2018-01-01: 19050
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+  2:
+    SINGLE:
+      values:
+        2018-01-01: 38700
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    JOINT:
+      values:
+        2018-01-01: 77400
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    SEPARATE:
+      values:
+        2018-01-01: 38700
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    HEAD_OF_HOUSEHOLD:
+      values:
+        2018-01-01: 51800
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    WIDOW:
+      values:
+        2018-01-01: 77400
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+  3:
+    SINGLE:
+      values:
+        2018-01-01: 82500
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    JOINT:
+      values:
+        2018-01-01: 165000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    SEPARATE:
+      values:
+        2018-01-01: 82500
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    HEAD_OF_HOUSEHOLD:
+      values:
+        2018-01-01: 82500
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    WIDOW:
+      values:
+        2018-01-01: 165000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+  4:
+    SINGLE:
+      values:
+        2018-01-01: 157500
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    JOINT:
+      values:
+        2018-01-01: 315000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    SEPARATE:
+      values:
+        2018-01-01: 157500
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    HEAD_OF_HOUSEHOLD:
+      values:
+        2018-01-01: 157500
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    WIDOW:
+      values:
+        2018-01-01: 315000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+  5:
+    SINGLE:
+      values:
+        2018-01-01: 200000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    JOINT:
+      values:
+        2018-01-01: 400000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    SEPARATE:
+      values:
+        2018-01-01: 200000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    HEAD_OF_HOUSEHOLD:
+      values:
+        2018-01-01: 200000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    WIDOW:
+      values:
+        2018-01-01: 400000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+  6:
+    SINGLE:
+      values:
+        2018-01-01: 500000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    JOINT:
+      values:
+        2018-01-01: 600000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    SEPARATE:
+      values:
+        2018-01-01: 300000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 25
+    HEAD_OF_HOUSEHOLD:
+      values:
+        2018-01-01: 500000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+    WIDOW:
+      values:
+        2018-01-01: 600000
+      metadata:
+        uprating:
+          parameter: irs.uprating
+          rounding:
+            type: nearest
+            interval: 50
+metadata:
+  unit: /1
