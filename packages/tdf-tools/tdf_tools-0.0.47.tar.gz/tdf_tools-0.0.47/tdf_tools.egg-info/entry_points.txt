@@ -1,0 +1,4 @@
+[console_scripts]
+tdf_init = tdf_tools:create
+tdf_tools = tdf_tools:process
+tdf_tools_update = tdf_tools:updateTdfTools
