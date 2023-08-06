@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master">
+
+    <metal:block fill-slot="main">
+
+        <h1 class="documentFirstHeading">Typesense Search</h1>
+
+        <div class="container">
+            <div class="search-panel">
+              <div class="search-panel__filters">
+                <div class="refinement-label" i18n:translate="">Portal Type</div>
+                <div id="portal-type"></div>
+                <br/>
+                <div class="refinement-label" i18n:translate="">Review state</div>
+                <div id="review-state"></div>
+                <br/>
+                <div class="refinement-label" i18n:translate="">Language</div>
+                <div id="language"></div>
+                <br/>
+                <div class="refinement-label" i18n:translate="">Subject</div>
+                <div id="subject"></div>
+                <br/>
+              </div>
+
+
+              <div class="search-panel__results">
+                <div id="searchbox"></div>
+                <div id="search-control">
+                    <div id="stats"></div>
+                    <div id="hits-per-page"></div>
+                    <div id="pagination"></div>
+                </div>
+                <div id="hits"></div>
+              </div>
+            </div>
+
+        </div>
+
+
+        <script type="text/javascript" >PORTAL_URL = "${portal_url}"</script>
+        <script type="text/javascript" >CURRENT_PATH = "${view/current_path}"</script>
+
+        <!-- unfuck require.js -->
+        <script>
+            window.__define = window.define;
+            window.__require = window.require;
+            window.define = undefined;
+            window.require = undefined;
+        </script>
+        <script src="https://cdn.jsdelivr.net/algoliasearch/3.32.0/algoliasearchLite.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.37.3"></script>
+        <script src="${portal_url}/++resource++zopyx.typesense/typesense-instantsearch-adapter.min.js"></script>
+        <script src="${portal_url}/++resource++zopyx.typesense/app.js"></script>
+        <link rel="stylesheet" type="text/css" href="${portal_url}/++resource++zopyx.typesense/search.css"/>
+        <script>
+            window.define = window.__define;
+            window.require = window.__require;
+            window.__define = undefined;
+            window.__require = undefined;
+        </script>
+
+    </metal:block>
+</html>

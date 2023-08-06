@@ -1,0 +1,109 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="zopyx.typesense">
+
+    <browser:page
+        name="typesense-settings"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.TypesenseSettingsControlPanel"
+        permission="cmf.ManagePortal"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+    />
+
+    <browser:page
+        name="typesense-indexed-content"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        permission="cmf.ModifyPortalContent"
+        class=".views.View"
+        template="indexed_content.pt"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+    />
+    <browser:page
+        name="typesense-admin"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".views.View"
+        template="admin.pt"
+        permission="zope2.View"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+    />
+    <browser:page
+        name="typesense-reindex-all"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".views.View"
+        attribute="reindex_all"
+        permission="cmf.ManagePortal"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+    />
+
+    <browser:page
+        name="typesense-recreate-collection"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="cmf.ManagePortal"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+        class=".views.View"
+        attribute="recreate_collection"
+    />
+
+    <browser:page
+        name="typesense-snapshot"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="cmf.ManagePortal"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+        class=".views.View"
+        attribute="snapshot"
+    />
+
+
+    <browser:page
+        name="typesense-export-documents"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="cmf.ManagePortal"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+        class=".views.View"
+        attribute="export_documents"
+    />
+
+    <browser:page
+        name="import-demo-content"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="cmf.ManagePortal"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+        class=".views.View"
+        attribute="import_demo_content"
+    />
+    <browser:page
+        name="import-demo-content2"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="cmf.ManagePortal"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+        class=".views.View"
+        attribute="import_demo_content2"
+    />
+    
+    <browser:page
+        name="typesense-search"
+        for="*"
+        permission="zope2.View"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+        class=".views.View"
+        template="search.pt"
+    />
+
+    <browser:page
+        name="typesense-search-settings"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="zope2.View"
+        layer="zopyx.typesense.interfaces.IBrowserLayer"
+        class=".views.View"
+        attribute="search_settings"
+    />
+
+  <!-- Publish static files -->
+  <browser:resourceDirectory
+      name="zopyx.typesense"
+      directory="static"
+      />
+
+</configure>
