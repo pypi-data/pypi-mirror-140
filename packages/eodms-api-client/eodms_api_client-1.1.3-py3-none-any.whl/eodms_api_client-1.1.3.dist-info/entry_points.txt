@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    eodms=eodms_api_client.cli:cli
+    
