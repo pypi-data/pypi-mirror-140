@@ -1,0 +1,10 @@
+README.md
+setup.py
+Wayload/__init__.py
+Wayload/extract.py
+Wayload/hide.py
+Wayload.egg-info/PKG-INFO
+Wayload.egg-info/SOURCES.txt
+Wayload.egg-info/dependency_links.txt
+Wayload.egg-info/requires.txt
+Wayload.egg-info/top_level.txt
