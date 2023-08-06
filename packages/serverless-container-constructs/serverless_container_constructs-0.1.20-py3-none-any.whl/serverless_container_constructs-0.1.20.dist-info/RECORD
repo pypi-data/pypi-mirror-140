@@ -1,0 +1,9 @@
+serverless_container_constructs/__init__.py,sha256=07_U84jvw0Yhgfvgu9xzSP05NyzXDhlkJCcUdzcNjpE,30592
+serverless_container_constructs/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+serverless_container_constructs/_jsii/__init__.py,sha256=8AbavBlIscvGHwQsITI8qNPKh06Mnnr5tTpjufXKG7Y,431
+serverless_container_constructs/_jsii/serverless-container-constructs@0.1.20.jsii.tgz,sha256=Mi1KEs0yGce_aLOuja5VQbLn-4YD3qYOgT9kMjHBePM,44725
+serverless_container_constructs-0.1.20.dist-info/LICENSE,sha256=70e0rioajTjvh7ONxZJ5Z-e0cv-j99El6J28g1Oh568,927
+serverless_container_constructs-0.1.20.dist-info/METADATA,sha256=qBTHq9Hn6viDv-TxECP9Dpcj1nL-cKUafcxJj5Q4rKc,7774
+serverless_container_constructs-0.1.20.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+serverless_container_constructs-0.1.20.dist-info/top_level.txt,sha256=L6HRuh72mgK0TJIfTQw7aRtEiFeLOQxEWMx4JL3byUo,32
+serverless_container_constructs-0.1.20.dist-info/RECORD,,
