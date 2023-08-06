@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/textime/__init__.py
+src/textime/textime.py
+src/textime.egg-info/PKG-INFO
+src/textime.egg-info/SOURCES.txt
+src/textime.egg-info/dependency_links.txt
+src/textime.egg-info/top_level.txt
