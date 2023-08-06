@@ -1,0 +1,8 @@
+aiohttp==3.8.1
+web3
+bscscan-python
+pandas
+
+[test]
+pytest
+pytest-cov
