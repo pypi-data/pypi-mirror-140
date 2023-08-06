@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+opg_sirius_service/__init__.py
+opg_sirius_service/sirius_handler.py
+opg_sirius_service.egg-info/PKG-INFO
+opg_sirius_service.egg-info/SOURCES.txt
+opg_sirius_service.egg-info/dependency_links.txt
+opg_sirius_service.egg-info/requires.txt
+opg_sirius_service.egg-info/top_level.txt
