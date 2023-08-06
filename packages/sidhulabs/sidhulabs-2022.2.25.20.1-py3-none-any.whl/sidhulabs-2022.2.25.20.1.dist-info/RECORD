@@ -1,0 +1,9 @@
+sidhulabs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sidhulabs/database/base_sql_model.py,sha256=Ba-wt8p59bLmeUONkYSo5MhrkH-_HdT4zE1Y9MVGrSQ,83
+sidhulabs/database/conn.py,sha256=41jZ5LgRZjXn0rX83HseU2IR8OPLMh7UZtmi4vOl2nE,12757
+sidhulabs/decorators.py,sha256=2F4ZSFQKB7EsNw5Cyoo-5vWYkhpz52OOfrwEN9q8Gto,3900
+sidhulabs/elastic/client.py,sha256=1NCMMejs_iDBYOjPyaZOdwvxlZffx3cPMvEkOsDwKqE,1585
+sidhulabs-2022.2.25.20.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sidhulabs-2022.2.25.20.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sidhulabs-2022.2.25.20.1.dist-info/METADATA,sha256=EtWLIGfGhR3NXhu9i00eYUoIiKed4j20QLN6nEBcfhc,603
+sidhulabs-2022.2.25.20.1.dist-info/RECORD,,
