@@ -1,0 +1,12 @@
+README.md
+setup.py
+ReduceMonomsRBC/__init__.py
+ReduceMonomsRBC/constructODEs_quad.py
+ReduceMonomsRBC/construct_roms.py
+ReduceMonomsRBC/monom_reduction.py
+ReduceMonomsRBC/reduce_monoms.py
+ReduceMonomsRBC.egg-info/PKG-INFO
+ReduceMonomsRBC.egg-info/SOURCES.txt
+ReduceMonomsRBC.egg-info/dependency_links.txt
+ReduceMonomsRBC.egg-info/requires.txt
+ReduceMonomsRBC.egg-info/top_level.txt

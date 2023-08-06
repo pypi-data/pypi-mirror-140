@@ -1,0 +1,4 @@
+ipython>=6
+numpy
+sympy
+scipy>=1.0
