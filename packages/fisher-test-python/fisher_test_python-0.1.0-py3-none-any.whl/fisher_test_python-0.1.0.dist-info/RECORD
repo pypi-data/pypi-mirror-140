@@ -1,0 +1,11 @@
+fisher/__init__.py,sha256=fgmkQnGDnz5x3wCKCWNZcPKKJiD1t2i8IFNsxCY5DT4,2403
+fisher/fisher.py,sha256=fgmkQnGDnz5x3wCKCWNZcPKKJiD1t2i8IFNsxCY5DT4,2403
+fisher/src/asa159.so,sha256=hNASh43GBq5CKKwdtINHMYg8qDNWOi4fJivwLK4VXmg,21320
+fisher/src/fisher.so,sha256=DVuvv1lYf9CpmYOWt8SBNuyptPDwvRFDD6RzTVb41Pk,41632
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_rpy2.py,sha256=GZKOJDocCcn3wv4BWcoW7FpaYjPx0MWRDjLsTcZjkv8,1397
+fisher_test_python-0.1.0.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+fisher_test_python-0.1.0.dist-info/METADATA,sha256=h9lhVQAo2u12B5pjugXGf4iECgAjVDb2EfLyjCOtwQc,608
+fisher_test_python-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fisher_test_python-0.1.0.dist-info/top_level.txt,sha256=7-nR7M0aansnn_X_r5rYtES9Gxy2ato78vqSlB36SHQ,13
+fisher_test_python-0.1.0.dist-info/RECORD,,
