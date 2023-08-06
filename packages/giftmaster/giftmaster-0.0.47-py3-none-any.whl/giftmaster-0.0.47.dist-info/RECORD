@@ -1,0 +1,12 @@
+giftmaster/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+giftmaster/args.py,sha256=4Yk47PsJ4JSixXQvzKYuZpZzPriKStbfKhCys0EyH3Q,1784
+giftmaster/logger.py,sha256=ahNc1-ID329RWKHpTteHYNLXLmQkwpmHqH6Y1jze5Ac,1417
+giftmaster/signtool.py,sha256=3f0Vnn3mrMItrEDE8RDxAdtqLBCvX0vGVE0s_B87rog,4487
+giftmaster/skeleton.py,sha256=0uYP0ss-R2S_48LzjjUwRtU4FOHZX4OlYjNVAUPmeno,1577
+giftmaster/timestamp.py,sha256=FsktZjxKIeSagMHjoz38s4-E2enBnRK2imnn8AXNpgE,456
+giftmaster-0.0.47.dist-info/LICENSE.txt,sha256=09btKnCai4LASlVvyTZUp9T0DVNyTY_awOppr_cIfB4,15922
+giftmaster-0.0.47.dist-info/METADATA,sha256=OZY92qIS1NSMC-aL3KOy1s6yYpNxO3VMSvEizHNziJw,2939
+giftmaster-0.0.47.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+giftmaster-0.0.47.dist-info/entry_points.txt,sha256=MFJR87O0fyIeOYgnE5JX-WknRJws3ahvcWLHNDXu_1E,55
+giftmaster-0.0.47.dist-info/top_level.txt,sha256=ZCFmgt31kHNIaljjJxTqnzv5U-Mkn9Jl2J0a2qM8x5k,11
+giftmaster-0.0.47.dist-info/RECORD,,
