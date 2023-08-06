@@ -1,0 +1,26 @@
+[dependencies.pyo3]
+features = ["extension-module"]
+version = "0.15.1"
+
+[dependencies.tokio]
+features = ["macros", "rt-multi-thread"]
+version = "1.10.1"
+
+[dependencies.vegafusion-core]
+features = ["datafusion", "pyo3"]
+path = "local_dependencies/vegafusion-core"
+version = "0.0.4"
+
+[dependencies.vegafusion-rt-datafusion]
+path = "local_dependencies/vegafusion-rt-datafusion"
+version = "0.0.4"
+
+[lib]
+crate-type = ["cdylib"]
+name = "vegafusion_embed"
+
+[package]
+edition = "2021"
+license = "AGPL-3.0-or-later"
+name = "vegafusion-python-embed"
+version = "0.0.4"
