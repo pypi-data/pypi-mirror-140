@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Zanvok-Assistant
+Version: 12.4.0
+Summary: A virtual assistant made in python for PCs
+Author: Zanvok Corporation
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Zanvok Assistant
+    Zanvok Assistant is an open source virtual assistant for PCs, made in Python...
+
+## What's new in Version 12.4.0 ?
+    - Security Update for Assistant (UB2022.2.26)
+        - Added connectivity updates
+        - Added mail security
+        - More interactive talks
+    - Added new features
+        - New Weather Update
+        - Directly open polpular websites via its name command
+
+## Credits
+    - Gautham Nair
+    - Suraj Varma
+    - Siddharth Sajeev
+    - Adithya Vijayan
+    - Akshit Santosh
+
