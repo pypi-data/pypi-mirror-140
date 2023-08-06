@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Topsis-Gunveer-101903650
+Version: 0.1
+Summary: Topsis analysis for a numeric csv file
+Home-page: https://github.com/Gunveersg/Topsis-Gunveer-101903650
+Author: Gunveer Singh Ghumman
+Author-email: gunveerghumman@gmail.com
+License: MIT
+Download-URL: https://github.com/Gunveersg/Topsis-Gunveer-101903650/archive/v_02.tar.gz
+Keywords: TOPSIS,Statistics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
