@@ -1,0 +1,14 @@
+numpy
+torch
+torchvision
+torchmetrics
+pytorch-metric-learning>=1.1.0
+
+[ignite]
+pytorch-ignite==0.5.0.dev20220221
+
+[lightning]
+pytorch-lightning
+
+[record-keeper]
+record-keeper>=0.9.31
