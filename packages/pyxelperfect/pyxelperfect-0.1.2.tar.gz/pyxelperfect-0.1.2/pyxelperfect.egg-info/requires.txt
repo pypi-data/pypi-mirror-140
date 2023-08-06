@@ -1,0 +1,15 @@
+numpy
+tqdm
+scikit-image
+opencv-python
+pandas
+aicspylibczi
+matplotlib
+Pillow
+tifffile
+tabulate
+nd2reader
+stardist
+csbdeep
+tensorflow
+SimpleITK
