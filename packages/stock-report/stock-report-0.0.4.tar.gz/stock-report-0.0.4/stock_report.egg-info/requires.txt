@@ -1,0 +1,7 @@
+shutil
+os
+datetime
+alpha-vantage
+pandas
+fpdf
+plotly
