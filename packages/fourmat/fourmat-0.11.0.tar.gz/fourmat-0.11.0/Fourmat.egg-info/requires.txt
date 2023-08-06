@@ -1,0 +1,5 @@
+click>=7
+black==22.1.0
+flake8-bugbear<22,>=21
+flake8<4,>=3
+isort<6,>=5
