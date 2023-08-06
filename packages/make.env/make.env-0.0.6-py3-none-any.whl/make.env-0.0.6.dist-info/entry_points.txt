@@ -1,0 +1,3 @@
+[console_scripts]
+make.env=make_env:main
+
