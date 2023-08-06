@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: dgenies
+Version: 1.3.0
+Summary: Dotplot large Genomes in an Interactive, Efficient and Simple way
+Home-page: http://dgenies.toulouse.inra.fr
+Author: Floreal Cabanettes
+Author-email: floreal.cabanettes@inra.fr
+Maintainer: Philippe Bordron
+Maintainer-email: philippe.bordron@inrae.fr
+License: UNKNOWN
+Project-URL: Sources, https://github.com/genotoul-bioinfo/dgenies
+Project-URL: Bug Tracker, https://github.com/genotoul-bioinfo/dgenies/issues
+Project-URL: Changelog, https://github.com/genotoul-bioinfo/dgenies/blob/main/CHANGELOG.md
+Project-URL: Wiki, https://github.com/genotoul-bioinfo/dgenies/wiki
+Keywords: bioinformatics,genome,comparison,dotplot,inrae,genotoul
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+[![GitHub release](https://img.shields.io/github/release/genotoul-bioinfo/dgenies.svg)](https://GitHub.com/genotoul-bioinfo/dgenies/releases/) [![PyPI version](https://badge.fury.io/py/dgenies.svg)](https://badge.fury.io/py/dgenies) [![GitHub license](https://img.shields.io/github/license/genotoul-bioinfo/dgenies.svg)](https://github.com/genotoul-bioinfo/dgenies/blob/master/LICENSE.txt)
+ [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Documentation Status](https://readthedocs.org/projects/dgenies/badge/?version=latest)](http://dgenies.readthedocs.io/?badge=latest) [![Github all releases](https://img.shields.io/github/downloads/genotoul-bioinfo/dgenies/total.svg)](https://GitHub.com/genotoul-bioinfo/dgenies/releases/) [![Downloads](http://pepy.tech/badge/dgenies)](http://pepy.tech/project/dgenies)
+
+D-Genies
+--------
+
+Dot plots are widely used to quickly compare sequence sets. They provide a synthetic similarity overview, highlighting repetitions, breaks and inversions. Different tools have been developed to easily generated genomic alignment dot plots, but they are often limited in the input sequence size. D-GENIES is a standalone and WEB application performing large genome alignments using [Minimap2](https://github.com/lh3/minimap2) or [MashMap v2.0](https://github.com/marbl/MashMap/) software packages and generating interactive dot plots. It enables users to sort query sequences along the reference, zoom in the plot and download several image, alignment or sequence files. D-GENIES is an easy to install open source software package (GPL) developed in Python and JavaScript.
+
+How to use?
+-----------
+
+You can use the [demo instance hosted at genotoul](http://dgenies.toulouse.inrae.fr).
+
+Or you can deploy your own instance with the help of [the installation documentation](http://dgenies.toulouse.inrae.fr/install).
+
+Documentation
+-------------
+
+Full documentation, including code API, is available [here](https://dgenies.readthedocs.io/en/latest/index.html).
+
+How to cite?
+------------
+
+Cabanettes F, Klopp C. (2018) D-GENIES: dot plot large genomes in an interactive, efficient and simple way. PeerJ 6:e4958 https://doi.org/10.7717/peerj.4958
+
+Credits
+-------
+
+D-Genies is developed by the [Bioinfo team](http://bioinfo.genotoul.fr/index.php/about-us/) of the [Genotoul platform](http://www.genotoul.fr/) ([INRAE](http://www.inrae.fr/)).
+
