@@ -1,0 +1,11 @@
+frauddetector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frauddetector/frauddetector.py,sha256=t7AgP_693EqxWs9NPhNPzIFUW6Ce2jK_drynG3z0viI,38670
+frauddetector/metrics.py,sha256=5YIW5Hja9M-y-f8pg1aGFaWK5nV51iaMjoCY8OPLE80,1614
+frauddetector/profiler.py,sha256=KmH1_6FbQKFXB2HJkN9CQsnlIwjxr3fc4otREpzBkUQ,12346
+frauddetector-0.2.0.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+frauddetector-0.2.0.dist-info/METADATA,sha256=7Cy90cxIY7AeB1hIw2e2uTmv-bzVjUov0V2nfvkd8LE,6485
+frauddetector-0.2.0.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+frauddetector-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+frauddetector-0.2.0.dist-info/top_level.txt,sha256=WgcQR1xxkOwDKYPPsYWfXUaSo2GAXuWQxQdvM_OlNRA,14
+frauddetector-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+frauddetector-0.2.0.dist-info/RECORD,,
