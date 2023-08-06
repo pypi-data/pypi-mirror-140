@@ -1,0 +1,4 @@
+bacon
+net
+nets
+stack
