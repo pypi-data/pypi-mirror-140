@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: baiduads-sdk
+Version: 2022.1.0
+Summary: baiduads-sdk
+Home-page: UNKNOWN
+Author: baidu
+Author-email: jiangyuan04@baidu.com
+License: UNKNOWN
+Keywords: baidu
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: baiduads-sdk-auto (>=2022.1.0)
+
+baiduads-sdk
+
+
