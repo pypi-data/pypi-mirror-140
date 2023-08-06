@@ -1,0 +1,12 @@
+requests
+
+[:python_version == "2.6"]
+importlib
+
+[pdf]
+ReportLab>=1.2
+RXP
+
+[rest]
+docutils>=0.3
+pack==1.1,==1.3

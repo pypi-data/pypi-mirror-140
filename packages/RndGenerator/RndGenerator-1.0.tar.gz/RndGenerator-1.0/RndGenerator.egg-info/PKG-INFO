@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: RndGenerator
+Version: 1.0
+Summary: RndGenerator is used to produce random data under Small Samples Sizes, by using Evidence Theory and Fuzzy Theory respectively.
+License: BSD 3-Clause License
+Keywords: one,two
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: pdf
+Provides-Extra: rest
+License-File: LICENSE
+
+UNKNOWN
+

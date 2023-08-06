@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+RndGenerator.egg-info/PKG-INFO
+RndGenerator.egg-info/SOURCES.txt
+RndGenerator.egg-info/dependency_links.txt
+RndGenerator.egg-info/entry_points.txt
+RndGenerator.egg-info/not-zip-safe
+RndGenerator.egg-info/requires.txt
+RndGenerator.egg-info/top_level.txt
