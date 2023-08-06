@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ancipher
+Version: 1.0.4
+Summary: Alpha Numeric Cipher aka ancihper
+Home-page: https://github.com/Divinemonk/ancipher/
+Author: Divinemonk
+Author-email: <v1b7rc8eb@relay.firefox.com>
+License: UNKNOWN
+Description: 
+        # **Ancipher**
+        **"Alpha Numeric Cipher"**
+        
+        <br> 
+        
+        ### 🪛 Installtion
+        
+        It is a python (precisely v3) package, uploaded on [PyPi](https://pypi.org/project/ancipher/).
+        
+        ```
+        pip install ancipher
+        ```
+        
+        <br> 
+        
+        ### 📑 Usage
+        Firstly import it:  
+        ```
+        from ancipher import anc
+        ```
+        Now, use `anc()` (datatype: string)
+        ```
+        anc("As simple as that!")
+        ```
+        Output
+        ```
+        45 51mpl3 45 7h47!
+        ```
+        
+        <br> 
+        
+        ### 🖱️ Requirements
+        Obviously ***Python 3***
+        
+        <br><br>
+        
+        > A Divinemonk creation!
+        
+Keywords: python,python3,cipher,ancipher
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
