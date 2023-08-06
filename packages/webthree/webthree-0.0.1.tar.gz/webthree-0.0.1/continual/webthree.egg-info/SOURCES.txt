@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+continual/webthree.egg-info/PKG-INFO
+continual/webthree.egg-info/SOURCES.txt
+continual/webthree.egg-info/dependency_links.txt
+continual/webthree.egg-info/top_level.txt
