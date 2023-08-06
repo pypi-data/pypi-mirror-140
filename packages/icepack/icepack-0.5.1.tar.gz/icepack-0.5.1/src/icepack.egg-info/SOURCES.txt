@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/icepack/__init__.py
+src/icepack/cli.py
+src/icepack/error.py
+src/icepack/helper.py
+src/icepack/meta.py
+src/icepack/model.py
+src/icepack.egg-info/PKG-INFO
+src/icepack.egg-info/SOURCES.txt
+src/icepack.egg-info/dependency_links.txt
+src/icepack.egg-info/entry_points.txt
+src/icepack.egg-info/requires.txt
+src/icepack.egg-info/top_level.txt
