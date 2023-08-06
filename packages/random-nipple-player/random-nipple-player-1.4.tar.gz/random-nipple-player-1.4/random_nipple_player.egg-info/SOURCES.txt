@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+random_nipple_player.egg-info/PKG-INFO
+random_nipple_player.egg-info/SOURCES.txt
+random_nipple_player.egg-info/dependency_links.txt
+random_nipple_player.egg-info/entry_points.txt
+random_nipple_player.egg-info/requires.txt
+random_nipple_player.egg-info/top_level.txt
+randomnipple/MainWindow.py
+randomnipple/NippleOptionDict.py
+randomnipple/RandomPlayer.py
+randomnipple/VoiceDirectoryChecker.py
+randomnipple/__init__.py
+randomnipple/main.py
