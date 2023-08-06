@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+auto_uwsgi/__init__.py
+auto_uwsgi/deployment.py
+auto_uwsgi.egg-info/PKG-INFO
+auto_uwsgi.egg-info/SOURCES.txt
+auto_uwsgi.egg-info/dependency_links.txt
+auto_uwsgi.egg-info/top_level.txt
