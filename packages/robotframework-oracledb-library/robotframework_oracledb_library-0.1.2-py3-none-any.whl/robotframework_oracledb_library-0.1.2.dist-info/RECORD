@@ -1,0 +1,17 @@
+OracleDBLibrary/__init__.py,sha256=upCiYOsXuCtjhmtYfPiXLGCsFlrT-vxOdNRLJICXu90,1063
+OracleDBLibrary/base/__init__.py,sha256=4Vw99E7I-WhXvIwViU2zkVMQZ6bunaZYhsBuep-urHA,36
+OracleDBLibrary/base/oracle_base.py,sha256=MUYXGU-LvmRTCdkOgd2l4bIFA09qyX20WNXNR8UDnUQ,1075
+OracleDBLibrary/decorator/__init__.py,sha256=v3H_us_hKbA5RqgcmaWcbMCnT3omZa8-i3k6iIUHJmY,33
+OracleDBLibrary/decorator/singleton.py,sha256=IwcRYZP7JTuhbiFSHWGTQpvX8EsnSm0mMnwC5F8L7Kc,392
+OracleDBLibrary/keywords/__init__.py,sha256=L7UWzDJmEl_Mqoi0xvUwcYM7L8z0M-Mn01W5W01Cu2k,205
+OracleDBLibrary/keywords/oracle_connection.py,sha256=JVMGI6C9OnHtZRFNd7SUlVmutQ4aKwOd8V5adjiGKW8,6305
+OracleDBLibrary/keywords/oracle_cursor.py,sha256=a_cMeB2-pFhmvOahRp9Yq9qzXtq2BCMFaG5sGRgUcbc,5101
+OracleDBLibrary/keywords/oracle_session_pool.py,sha256=OIbVUx43AJy3NW4M-QMgl3F3_ZHKDGWJwO7QVLvpyWk,4008
+OracleDBLibrary/keywords/oracle_var.py,sha256=4zpOLNt8RqtlQSNDsRrjEM487Wc764f0hj1qAsF-al8,1772
+OracleDBLibrary/mapper/__init__.py,sha256=9mAT8kFw0vDwTRTacmKjCLdxYYwDP1Ah2ZXfoIU0mnk,44
+OracleDBLibrary/mapper/argument_mapper.py,sha256=jm1qjUQxz7c3Aaxh-ALll3EO6JJ82I-mBthNIPlPvw4,343
+robotframework_oracledb_library-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+robotframework_oracledb_library-0.1.2.dist-info/METADATA,sha256=eDc9562FCGQYD7JEindklz-CcsJPGDvZpyLnmwiWg04,4472
+robotframework_oracledb_library-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+robotframework_oracledb_library-0.1.2.dist-info/top_level.txt,sha256=ZL1lb_4gZudE0KRikpXKjSdJA__f4977Nl2GUNiLJ9E,16
+robotframework_oracledb_library-0.1.2.dist-info/RECORD,,
