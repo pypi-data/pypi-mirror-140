@@ -1,0 +1,17 @@
+icalcli/__init__.py,sha256=7S1GjpKQAO5FK5skUmW2FMweT4Aq3V6-CaAfe48t2gs,380
+icalcli/argparsers.py,sha256=m7DiKcgLOtF8FzaAKJfNF43M2WdkYjA0VPlt8Vq5JyE,10135
+icalcli/icalcli.py,sha256=hF0A1wnWoaegbKv7jfQWkT6UXD7Dk6PrEiTmFN93dUw,54762
+icalcli/printer.py,sha256=902ZYgaknq06bkAlKKDWymZkpQivEntTrg6S68lEcPc,4037
+icalcli/utils.py,sha256=oFfSCcx8Gx09K85pnWCWTzRZTNW2J6cDlefRkMGEXCc,3694
+icalcli/etesync_backend/__init__.py,sha256=4y8b_qMhkSBwbpVYE6RgADomo-bd6xEIFnDTVamnAlk,30
+icalcli/etesync_backend/etesync_crud.py,sha256=8waCvX4XXJV4zOGMbBfYdbxU6V8TAwsPRXxN_vkbPUg,3572
+icalcli/etesync_backend/etesync_interface.py,sha256=Ix5YiJnFU5FumP4fQsJJfKg5sWEH8gFrt61U9ZlgCHE,3325
+icalcli/etesync_backend/example_.icalcli.py,sha256=2fN04fLWPZQXkNxha3bYK6OLTU1vxYo1q9kQA4XgaYY,317
+icalcli/file_backend/__init__.py,sha256=4y8b_qMhkSBwbpVYE6RgADomo-bd6xEIFnDTVamnAlk,30
+icalcli/file_backend/ics_interface.py,sha256=Ghoy7A19I9llPvz8RWMcNI5TOIVXMOkNVJAs0oMv4Vg,1862
+icalcli-0.9.8.1.dist-info/LICENSE,sha256=1LAJXkQLaF40FxxwGjxyf7W6Aub-fMteTGl0uyLL5Y8,1137
+icalcli-0.9.8.1.dist-info/METADATA,sha256=0no1R95jeSjunniyzGNAhhzmpi1Mtx25-gv5v2lrsRA,5610
+icalcli-0.9.8.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+icalcli-0.9.8.1.dist-info/entry_points.txt,sha256=WLNZNxOn3UhEriwPixEuJPPvVgu9tajiam7ZBKJjvpw,50
+icalcli-0.9.8.1.dist-info/top_level.txt,sha256=mGEIZGixkLZQcv0DoiK1eUar98La-IhvNlbsyzgw73E,8
+icalcli-0.9.8.1.dist-info/RECORD,,
