@@ -1,0 +1,8 @@
+
+
+    @property
+    def __str__(self):
+            """Instance string representation.
+
+	    """
+	    return "{text}".format({fields})
