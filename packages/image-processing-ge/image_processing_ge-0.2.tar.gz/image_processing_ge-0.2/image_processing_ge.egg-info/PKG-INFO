@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: image-processing-ge
+Version: 0.2
+Summary: Projeto para o Bootcamp Cognizant Cloud Data Engineer #2
+Home-page: https://github.com/gellwanger
+Author: Gustavo Ellwanger
+Author-email: gustavojce@gmail.com
+License: UNKNOWN
+Description: # package_name
+        
+        Description. 
+        The package package_name is used to:
+        	Processing: 
+        	    - Histogram marching
+                - Structural Similarity
+                - Risize image
+            Utils:
+                - Read image
+                - Save image
+                - Plot image
+                - Plot result
+                - Plot histogram
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+        
+        ```bash
+        pip install image_processing_ge
+        ```
+        
+        ## Usage
+        
+        ```python
+        from package_name.module1_name import file1_name
+        file1_name.my_function()
+        ```
+        
+        ## Author
+        Gustavo Ellwanger
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
