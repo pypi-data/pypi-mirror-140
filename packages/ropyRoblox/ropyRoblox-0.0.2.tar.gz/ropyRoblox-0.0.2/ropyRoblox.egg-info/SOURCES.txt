@@ -1,0 +1,8 @@
+setup.py
+ropyRoblox/RobloxAIO.py
+ropyRoblox/__init__.py
+ropyRoblox.egg-info/PKG-INFO
+ropyRoblox.egg-info/SOURCES.txt
+ropyRoblox.egg-info/dependency_links.txt
+ropyRoblox.egg-info/requires.txt
+ropyRoblox.egg-info/top_level.txt
