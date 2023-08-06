@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block scripts %}
+    {{ super() }}
+    {% if debug %}
+        <script src="{{ url_for('static', filename='js/dgenies.documentation.js') }}" type="text/JavaScript"></script>
+    {% else %}
+        <script src="{{ url_for('static', filename='js/dgenies.documentation.min.js') }}" type="text/JavaScript"></script>
+    {% endif %}
+    <style>
+        #plan-back, #body {
+            display: inline-block;
+            vertical-align: top;
+            width: 300px;
+            padding-left: 10px;
+
+        }
+        #plan-back {
+            margin-top: 30px;
+            background: #606a79;
+            height: calc(100% - 80px);
+            overflow: auto;
+            position: fixed;
+        }
+        #plan {
+            width: 300px;
+            padding-top: 20px;
+            margin-left: -30px;
+        }
+        #plan ul {
+            list-style: none;
+            margin-left: -10px;
+        }
+        #plan a {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        h4 {
+            font-weight: bold !important;
+            margin-top: 25px !important;
+        }
+        {% if toc %}
+        #body {
+            width: calc(100% - 310px);
+            margin-left: 305px !important;
+        }
+        {% else %}
+        #body {
+            width: calc(100% - 300px);
+            margin-left: 145px !important;
+        }
+        {% endif %}
+    </style>
+{% endblock %}
+{% block onload %}
+    {{ super() }}
+    dgenies.documentation.init();
+{% endblock %}
+{% block content %}
+
+    {% if toc %}
+        <div id="plan-back">
+            <div id="plan">
+                {{ toc }}
+            </div>
+        </div>
+    {% endif %}
+
+    <div id="body">
+        {{ content | safe }}
+    </div>
+
+{% endblock %}

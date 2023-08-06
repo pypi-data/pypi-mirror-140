@@ -1,0 +1,43 @@
+minimap2:
+  exec: default
+  label: "Minimap2 v2.24"
+  command_line: "{exe} -t {threads} {options} -o {out} {target} {query}"
+  all_vs_all: "{exe} -t {threads} {options} -o {out} -X {target} {target}"
+  max_memory: 40
+  threads: 4
+  parser: !!null
+  split_before: True
+  help: "Better for low similar fasta files"
+  order: 0
+  options:
+    -
+      label: Repeatedness
+      type: radio
+      help: "Trade-off between alignment precision and computation requirements (CPU Time + RAM) by ignoring the top fraction of most frequent minimizers"
+      entries:
+        -
+          label: "few repeats"
+          value: "-f 0.0002"
+          help: "High precision, but long computation time and important RAM requirement if many repeats (-f 0.0002, Minimap2 default)"
+          default: True
+        -
+          label: "some repeats"
+          value: "-f 0.002"
+          help: "Average precision with average computation time and RAM requirement (-f 0.002)"
+        -
+          label: "many repeats"
+          value: "-f 0.02"
+          help: "Low precision but fast computation time and low RAM requirement (-f 0.02)"
+
+mashmap:
+  exec: default
+  label: "Mashmap v2.0"
+  command_line: "{exe} -t {threads} -r {target} -q {query} -o {out}"
+  all_vs_all: !!null
+  max_memory: 20
+  threads: 4
+  parser: mashmap2paf
+  split_before: False
+  help: "Faster for high similar fasta files"
+  order: 1
+  options: !!null
