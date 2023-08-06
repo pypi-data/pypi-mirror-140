@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hyperstate
+Version: 0.2.5
+Summary: Library for managing hyperparameters and mutable state of machine learning training systems.
+Author: Clemens Winter
+Author-email: clemenswinter1@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: dill (>=0.3.4,<0.4.0)
+Requires-Dist: msgpack (>=1.0.3,<2.0.0)
+Requires-Dist: msgpack-numpy (>=0.4.7,<0.5.0)
+Requires-Dist: python-ron (>=0.1.6,<0.2.0)
