@@ -1,0 +1,7 @@
+ffzf-0.1.0.dist-info/METADATA,sha256=rV8-9lA0AelZntuxZw9ll67rsePMrohUXofacoDmxCc,1006
+ffzf-0.1.0.dist-info/WHEEL,sha256=ohGc6y2y8nLnVLeuPnv0mUM7pSddKppEqiV8Fu3W--U,96
+ffzf/__init__.py,sha256=JdhT9w73eo-BnbeNshZUdvJkASzG1qLkKgZBfTXAYT0,44
+ffzf/__init__.pyi,sha256=SVV1C_NuKYrAJpi4Pw4LE8XIWLY0fZhrmahpjDJO-oI,1064
+ffzf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffzf/ffzf.cp310-win_amd64.pyd,sha256=D9oEyXwztHAeCMFLsf_DoHf7IrjOb-sPIyt24Eohn-s,402432
+ffzf-0.1.0.dist-info/RECORD,,
