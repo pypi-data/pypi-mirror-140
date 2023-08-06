@@ -1,0 +1,6 @@
+opencv-python
+numpy
+tqdm
+pillow
+beautifulsoup4
+imutils
