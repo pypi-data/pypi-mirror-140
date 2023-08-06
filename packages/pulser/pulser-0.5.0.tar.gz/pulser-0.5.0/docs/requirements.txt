@@ -1,0 +1,8 @@
+# For generating documentation.
+Sphinx
+sphinx_rtd_theme
+nbsphinx
+nbsphinx-link
+
+# Not on PyPI
+# pandoc

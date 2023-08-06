@@ -1,0 +1,17 @@
+.DS_Store
+.vscode
+.python-version
+.pytest_cache/
+.idea/
+.coverage
+.spyproject/
+*.dat
+/*.ipynb
+*.ipynb_checkpoints
+_build
+__pycache__/
+build/
+docs/build/
+dist/
+env*
+pulser.egg-info/

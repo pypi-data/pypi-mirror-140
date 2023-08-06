@@ -1,0 +1,120 @@
+.coveragerc
+.flake8
+.gitattributes
+.gitignore
+.mypy.ini
+.readthedocs.yml
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+.github/workflows/ci.yml
+docs/Makefile
+docs/make.bat
+docs/requirements.txt
+docs/source/conf.py
+docs/source/index.rst
+docs/source/installation.rst
+docs/source/intro_rydberg_blockade.ipynb
+docs/source/review.rst
+docs/source/apidoc/creation.rst
+docs/source/apidoc/emulation.rst
+docs/source/apidoc/pulser.rst
+docs/source/files/bloch_rotation.png
+docs/source/files/digital.png
+docs/source/files/ground_rydberg.png
+docs/source/files/ml_coords
+docs/source/files/ryd_block.png
+docs/source/tutorials/1D_crystals.nblink
+docs/source/tutorials/afm_prep.nblink
+docs/source/tutorials/composite_wfs.nblink
+docs/source/tutorials/creating.nblink
+docs/source/tutorials/cz_gate.nblink
+docs/source/tutorials/interpolated_wfs.nblink
+docs/source/tutorials/mw_engineering.nblink
+docs/source/tutorials/noisy_sim.nblink
+docs/source/tutorials/optimization.nblink
+docs/source/tutorials/paramseqs.nblink
+docs/source/tutorials/phase_shifts_vz_gates.nblink
+docs/source/tutorials/qaoa_mis.nblink
+docs/source/tutorials/serialization.nblink
+docs/source/tutorials/shadow_est.nblink
+docs/source/tutorials/simulating.nblink
+docs/source/tutorials/slm_mask.nblink
+docs/source/tutorials/xy_spin_chain.nblink
+pulser/__init__.py
+pulser/_seq_drawer.py
+pulser/_version.py
+pulser/channels.py
+pulser/pulse.py
+pulser/py.typed
+pulser/sequence.py
+pulser/waveforms.py
+pulser.egg-info/PKG-INFO
+pulser.egg-info/SOURCES.txt
+pulser.egg-info/dependency_links.txt
+pulser.egg-info/not-zip-safe
+pulser.egg-info/requires.txt
+pulser.egg-info/top_level.txt
+pulser/devices/__init__.py
+pulser/devices/_device_datacls.py
+pulser/devices/_devices.py
+pulser/devices/_mock_device.py
+pulser/devices/interaction_coefficients/C6_coeffs.json
+pulser/devices/interaction_coefficients/__init__.py
+pulser/json/__init__.py
+pulser/json/coders.py
+pulser/json/supported.py
+pulser/json/utils.py
+pulser/parametrized/__init__.py
+pulser/parametrized/decorators.py
+pulser/parametrized/paramabc.py
+pulser/parametrized/paramobj.py
+pulser/parametrized/variable.py
+pulser/register/__init__.py
+pulser/register/_patterns.py
+pulser/register/_reg_drawer.py
+pulser/register/base_register.py
+pulser/register/mappable_reg.py
+pulser/register/register.py
+pulser/register/register3d.py
+pulser/register/register_layout.py
+pulser/register/special_layouts.py
+pulser/simulation/__init__.py
+pulser/simulation/simconfig.py
+pulser/simulation/simresults.py
+pulser/simulation/simulation.py
+pulser/tests/__init__.py
+pulser/tests/test_channels.py
+pulser/tests/test_devices.py
+pulser/tests/test_json.py
+pulser/tests/test_parametrized.py
+pulser/tests/test_paramseq.py
+pulser/tests/test_pulse.py
+pulser/tests/test_register.py
+pulser/tests/test_register_layout.py
+pulser/tests/test_sequence.py
+pulser/tests/test_simconfig.py
+pulser/tests/test_simresults.py
+pulser/tests/test_simulation.py
+pulser/tests/test_waveforms.py
+tutorials/creating_sequences.ipynb
+tutorials/simulating_sequences.ipynb
+tutorials/advanced_features/Composite Waveforms.ipynb
+tutorials/advanced_features/Interpolated Waveforms.ipynb
+tutorials/advanced_features/Parametrized Sequences.ipynb
+tutorials/advanced_features/Phase Shifts and Virtual Z gates.ipynb
+tutorials/advanced_features/Serialization.ipynb
+tutorials/advanced_features/Simulating Sequences with Errors and Noise.ipynb
+tutorials/advanced_features/State Preparation with the SLM Mask.ipynb
+tutorials/applications/Control-Z Gate Sequence.ipynb
+tutorials/applications/Using QAOA to solve a MIS problem.ipynb
+tutorials/quantum_simulation/Bayesian Optimisation for antiferromagnetic state preparation.ipynb
+tutorials/quantum_simulation/Building 1D Rydberg Crystals.ipynb
+tutorials/quantum_simulation/Microwave-engineering of programmable XXZ Hamiltonians in arrays of Rydberg atoms.ipynb
+tutorials/quantum_simulation/Preparing state with antiferromagnetic order in the Ising model.ipynb
+tutorials/quantum_simulation/Shadow estimation for VQS.ipynb
+tutorials/quantum_simulation/Spin chain of 3 atoms in XY mode.ipynb
