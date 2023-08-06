@@ -1,0 +1,3 @@
+[console_scripts]
+MPComplex = MPComplex.mp_complex_versus_mpc:main
+
