@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: os_ios_app_automation
+Version: 1.15
+Summary: Will prepare an iOS app by properties defined by a xml file
+Home-page: https://github.com/osfunapps/os-ios-app-automation-py
+Author: Oz Shabat
+Author-email: support@os-apps.com
+License: MIT
+Description: UNKNOWN
+Keywords: python,osfunapps,osapps,files,xml,tools,utils,xcode,ios,automation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
