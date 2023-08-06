@@ -1,0 +1,13 @@
+README.md
+setup.py
+main_imports/Extensions.py
+main_imports/__init__.py
+main_imports/file1.py
+main_imports/log.py
+main_imports/validtors.py
+main_imports/extras/__init__.py
+main_imports/extras/empty.py
+main_importsss.egg-info/PKG-INFO
+main_importsss.egg-info/SOURCES.txt
+main_importsss.egg-info/dependency_links.txt
+main_importsss.egg-info/top_level.txt
