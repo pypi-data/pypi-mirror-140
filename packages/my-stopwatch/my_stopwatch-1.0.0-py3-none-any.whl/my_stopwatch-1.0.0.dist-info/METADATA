@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: my-stopwatch
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/rubyclimber/stopwatch-py
+Author: Aaron Smith
+Author-email: asmitty92@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# StopWatch
+This is a simple python utility for tracking time of operations.
+
+## Usage
+
+StopWatch can be used manually.
+
+```python
+from stopwatch import StopWatch
+
+stopwatch = StopWatch()
+stopwatch.start()
+
+# Do some operations to be timed
+
+stopwatch.stop()
+stopwatch.display_elapsed() # writes to stdout using print()
+```
+
+Or it can be used as a context manager
+
+```python
+from stopwatch import StopWatch
+
+with StopWatch():
+    # Perform some operations here in place of pass
+    # StopWatch will call display_elapsed() upon exiting 
+    # 'with' block
+    pass
+```
+
