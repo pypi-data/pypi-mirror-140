@@ -1,0 +1,12 @@
+.DS_Store,sha256=MJR-qIINp3WPENxNxs2Y7Cbtsy6wV73QRucfFE1b2ys,6148
+ewechat/__init__.py,sha256=utrThhGli_fTxvSj4jSpqJctF8fJ-aiCR5thRZkmai4,198
+ewechat/address.py,sha256=DLB-PqKhcQyoOiz-MXkNVmpQFq06Cebh726rLyQO0xU,589
+ewechat/circle.py,sha256=QdfkvG_mBZ3Psniyj4p3tZyxf-LDgUsEatCNFTQP19A,306
+ewechat/login.py,sha256=rESEQXRiqrVuyy3i61I-BFubfNPNi3_I-DFSoSasiXQ,4554
+ewechat/receive.py,sha256=6zwpEgXkkiH6R_OWcq3pmSMTNElKyMIT_Y7e1wNSnug,636
+ewechat/send.py,sha256=_iBX27cCtRehouj9X3qVzJjexJS7rhSMwtpg1okaPe0,889
+ewechat-0.1.3.dist-info/LICENSE,sha256=mIVOWEPwt_MeufKzWdQTD99aqLDFFahSTATirQL4s9w,1065
+ewechat-0.1.3.dist-info/METADATA,sha256=0cLEb0nvI8c5lPi0Z3e8lW8DTd78PF1LrLNLnP_QvkQ,4057
+ewechat-0.1.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+ewechat-0.1.3.dist-info/top_level.txt,sha256=N4raG1ZhaJU0HPstkp4sY_oma_JyhXma783e3T-MQ8g,8
+ewechat-0.1.3.dist-info/RECORD,,
