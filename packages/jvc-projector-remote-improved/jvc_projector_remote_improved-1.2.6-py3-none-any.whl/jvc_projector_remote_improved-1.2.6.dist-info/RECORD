@@ -1,0 +1,10 @@
+jvc_projector/__init__.py,sha256=cw1bn8OdG03AI9STo1jo0fy7uSBbZlG9Q79TSfRToCE,221
+jvc_projector/commands.py,sha256=rH_N_w-5Un1Qts7S3bh7-dXpfymgG2DhTxhFSsoZK2M,4509
+jvc_projector/jvc_projector.py,sha256=aGx9zQQzvMfRXqs-DqqQXhHanQgT4wM1KCdVvHfTaAk,21001
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/testSuite.py,sha256=uJktN1pXjW2NMMCoG-TBk0xNLYq2jGcs97da9I644i0,3435
+jvc_projector_remote_improved-1.2.6.dist-info/LICENSE,sha256=v8MmCiXdP_s8e9Bcck0Yqeu1xcRGdh92r4pjKAh-JSk,1074
+jvc_projector_remote_improved-1.2.6.dist-info/METADATA,sha256=wPiDqIBz4WAZl4C9uezqe9otrdvfdvDj9Dc2CZhbhWk,3841
+jvc_projector_remote_improved-1.2.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jvc_projector_remote_improved-1.2.6.dist-info/top_level.txt,sha256=K48RJnMZEJ1kehTnOKokX4xopmmPAfwHpgeczfOkmBI,20
+jvc_projector_remote_improved-1.2.6.dist-info/RECORD,,
