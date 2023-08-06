@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: MxbaiduAi
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: https://github.com/yuanyunqiang/
+Author: YuanYunQiang
+Author-email: 649756903@qq.com
+License: MIT Licence
+Description: ### MxbadiuAI
+        
+        #### 1.安装
+        
+        ```
+        pip install MxbaiduAi
+        ```
+        
+        #### 2.使用
+        
+        ```
+        from MxbaiduAI import imageAI
+        
+        api=imageAI(APP_ID,APIKey,SecretKey)    #APP_ID,APIKey,SecretKey请更改为你的Key 
+        api.advancedGeneral('1.jpg')            #进行通用场景识别
+        print(api.result())                     #调用结果     
+        
+        ```
+        
+        #### 3.API
+        > 所有识别结果将以Json格式返回,默认只返回匹配度最高的一个结果
+        ---
+        ##### imageAI.advancedGeneral(image)
+        > 通用场景识别
+        
+        ---
+        ##### imageAI.dishDetect(image)
+        > 菜品识别
+        
+        ---
+        ##### imageAI.logoSearch(image)
+        > logo识别
+        
+        ---
+        ##### imageAI.plantDetect(image)
+        > 植物识别
+        
+        ---
+        ##### imageAI.animalDetect(image)
+        > 动物识别
+        
+        ---
+        ##### imageAI.objectDetect(image,with_face=1)
+        > 图像主体检测
+        
+        ---
+        ##### imageAI.landmark(image)
+        > 地标识别
+        
+        ---
+        ##### imageAI.ingredient(image)
+        > 果蔬识别
+        
+        ---
+        ##### imageAI.currency(image)
+        > 货币识别
+        
+        ---
+        ##### imageAI.carDetect(image)
+        > 车辆识别
+        
+Keywords: pip,SICA,featureextraction
+Platform: any
+Description-Content-Type: text/markdown
