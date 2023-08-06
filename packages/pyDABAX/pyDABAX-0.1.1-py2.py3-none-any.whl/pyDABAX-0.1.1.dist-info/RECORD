@@ -1,0 +1,11 @@
+pydabax/__init__.py,sha256=A54jg5ShrWyyT5WH5c3kaciQdKb95NH0AFpZnDz2-Uc,578
+pydabax/dabax.py,sha256=V-C1AwXL5n1k5jl3P4SChXU1aFwbJD9pgwbBXYjyXSA,1741
+pydabax/elements.py,sha256=GjuhpZ3wSJwB_UIY9xRMNmcX6VDC_FIC6Zw1uCp9FHg,44386
+pydabax/skeleton.py,sha256=DOPSP54dVURadI13jGAiG29hUGk9XpiExzC3UCEE720,2811
+pydabax/data/xraydb.latest.json,sha256=c59fr9Xa8AJWGMa-Np6t17y4eXZ9bAZXOd4S6u6Ft4M,34968007
+pyDABAX-0.1.1.dist-info/AUTHORS.rst,sha256=XiJYk_52ziUYQC-FbreA-vJuLGDLfhBzzJvsXo6soC8,74
+pyDABAX-0.1.1.dist-info/LICENSE.txt,sha256=rXVbSPgBkKwFS2kDs8wrHwT7N76jNc-SvfoeDeuRLdg,1078
+pyDABAX-0.1.1.dist-info/METADATA,sha256=bFgldLGZZy--MIh7jhVKfQNFAc5WWgrmFE16MX-ynoo,756
+pyDABAX-0.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pyDABAX-0.1.1.dist-info/top_level.txt,sha256=0Vsmmx1OsyONjV0iZS-YNPk4E9h1RIK0UvmQvwIERS4,8
+pyDABAX-0.1.1.dist-info/RECORD,,
