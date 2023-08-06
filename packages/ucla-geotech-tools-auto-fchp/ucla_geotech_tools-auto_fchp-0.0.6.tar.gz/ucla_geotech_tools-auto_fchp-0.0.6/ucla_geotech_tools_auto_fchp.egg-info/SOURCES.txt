@@ -1,0 +1,8 @@
+README.md
+auto_fchp.c
+setup.py
+ucla_geotech_tools_auto_fchp.egg-info/PKG-INFO
+ucla_geotech_tools_auto_fchp.egg-info/SOURCES.txt
+ucla_geotech_tools_auto_fchp.egg-info/dependency_links.txt
+ucla_geotech_tools_auto_fchp.egg-info/namespace_packages.txt
+ucla_geotech_tools_auto_fchp.egg-info/top_level.txt
