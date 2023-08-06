@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+turtleBeads.py
+turtleBeads.egg-info/PKG-INFO
+turtleBeads.egg-info/SOURCES.txt
+turtleBeads.egg-info/dependency_links.txt
+turtleBeads.egg-info/top_level.txt
