@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: asttrs
+Version: 0.4.6
+Summary: A attrs-style wrapper for python ast
+Home-page: https://github.com/ryanchao2012/asttrs
+License: MIT
+Author: ryanchao2012
+Author-email: ryanchao2012@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: astor (>=0.8.1,<0.9.0)
+Requires-Dist: attrs (>=21.2.0,<22.0.0)
+Requires-Dist: black (>=21.9b0,<22.0)
+Requires-Dist: cattrs (>=1.8.0,<2.0.0)
+Requires-Dist: isort (>=5.9.3,<6.0.0)
+Project-URL: Repository, https://github.com/ryanchao2012/asttrs
+Description-Content-Type: text/markdown
+
+# asttrs
+A attrs-style wrapper for python ast
+
