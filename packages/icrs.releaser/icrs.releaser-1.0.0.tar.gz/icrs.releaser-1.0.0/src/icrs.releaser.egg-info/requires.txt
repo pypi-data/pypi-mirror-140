@@ -1,0 +1,14 @@
+setuptools
+setuptools_scm
+zest.releaser
+
+[docs]
+Sphinx
+furo
+sphinxcontrib-programoutput
+coverage
+zope.testrunner
+
+[test]
+coverage
+zope.testrunner
