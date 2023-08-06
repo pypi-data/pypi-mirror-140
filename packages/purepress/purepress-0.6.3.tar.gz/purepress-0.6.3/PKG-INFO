@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: purepress
+Version: 0.6.3
+Summary: A simple static blog generator.
+Home-page: https://github.com/verilab/purepress
+License: MIT
+Keywords: Static Blog Generator,Static Blog,Blog,Blog Engine
+Author: Richard Chien
+Author-email: richardchienthebest@gmail.com
+Requires-Python: >=3.6,<3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (>=1.1.2,<1.2.0)
+Requires-Dist: Markdown (>=3.2.2,<3.3.0)
+Requires-Dist: MarkupSafe (>=2.0.1,<2.1.0)
+Requires-Dist: PyYAML (>=5.4.1,<5.5.0)
+Requires-Dist: Werkzeug (>=1.0.1,<1.1.0)
+Requires-Dist: click (>=7.1.2,<7.2.0)
+Requires-Dist: colorama (>=0.4.3,<0.5.0)
+Requires-Dist: feedgen (>=0.9.0,<0.10.0)
+Requires-Dist: html-toc (>=0.1.1,<0.2.0)
+Requires-Dist: py-gfm (>=1.0.0,<1.1.0)
+Requires-Dist: pytz (>=2020.1,<2020.2)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/verilab/purepress
+Description-Content-Type: text/markdown
+
+# PurePress
+
+[![PyPI](https://img.shields.io/pypi/v/purepress.svg)](https://pypi.python.org/pypi/purepress)
+![Python](https://img.shields.io/badge/python-3.6%2B-blue.svg)
+
+**PurePress** is a very simple static blog generator.
+
+## Usage
+
+```bash
+pip install purepress
+
+mkdir my-blog
+cd my-blog
+
+purepress init  # init the blog
+git clone https://github.com/verilab/purepress-theme-default.git theme  # install a theme
+
+purepress preview  # preview the blog
+purepress build  # build the blog
+```
+
+See [richardchien/blog](https://github.com/richardchien/blog) for more usage.
+
