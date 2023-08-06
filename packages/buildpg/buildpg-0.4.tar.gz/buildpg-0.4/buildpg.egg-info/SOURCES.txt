@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+buildpg/__init__.py
+buildpg/asyncpg.py
+buildpg/clauses.py
+buildpg/components.py
+buildpg/funcs.py
+buildpg/logic.py
+buildpg/main.py
+buildpg/version.py
+buildpg.egg-info/PKG-INFO
+buildpg.egg-info/SOURCES.txt
+buildpg.egg-info/dependency_links.txt
+buildpg.egg-info/top_level.txt
+buildpg.egg-info/zip-safe
