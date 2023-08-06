@@ -1,0 +1,4 @@
+
+[test]
+pytest
+pytest-md-report>=0.1
