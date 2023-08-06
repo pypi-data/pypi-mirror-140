@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    web_shop_shopify = trytond.modules.web_shop_shopify
+    
