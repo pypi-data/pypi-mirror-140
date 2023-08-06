@@ -1,0 +1,2 @@
+[console_scripts]
+selector = pytest_diff_selector.main:run
