@@ -1,0 +1,1 @@
+from slowedvideos.makeimages import makevideo, makethumb
