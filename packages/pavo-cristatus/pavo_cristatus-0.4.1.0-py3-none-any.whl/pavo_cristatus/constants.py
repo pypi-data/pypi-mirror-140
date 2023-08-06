@@ -1,0 +1,4 @@
+DEF_STRING = "def"
+CLASS_STRING = "class"
+LAMBDA_STRING = "<lambda>"
+DECORATOR_STRING = "@"
