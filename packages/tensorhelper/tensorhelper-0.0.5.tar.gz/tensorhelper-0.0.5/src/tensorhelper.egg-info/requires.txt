@@ -1,0 +1,8 @@
+scikit-learn
+tensorflow
+random
+pandas
+itertools
+os
+matplotlib.image
+matplotlib.pyplot
