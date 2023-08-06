@@ -1,0 +1,26 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "tyfbaf"
+authors = [{name = "Yves Oehlschläger"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+requires-python = ">=3.9"
+dependencies = [
+    "httpx"
+]
+
+[project.urls]
+Home = "https://github.com/yveso/tyfbaf"
+
+[project.optional-dependencies]
+dev = [
+    "black"
+]
+
+[tool.flit.sdist]
+exclude = [".vscode/"]
