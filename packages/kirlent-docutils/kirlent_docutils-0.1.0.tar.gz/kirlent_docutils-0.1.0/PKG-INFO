@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: kirlent-docutils
+Version: 0.1.0
+Summary: Custom writers for docutils.
+Home-page: https://tekir.org/kirlent_docutils/
+License: BSD-3-Clause
+Keywords: markup,html,rst,restructuredtext,docutils
+Author: H. Turgut Uyar
+Author-email: uyar@tekir.org
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Requires-Dist: docutils (>=0.17)
+Project-URL: Repository, https://repo.tekir.org/kirlent/kirlent_docutils
+Description-Content-Type: text/x-rst
+
+kirlent_docutils is a set of tools
+for generating impress.js and reveal.js presentations
+from restructured text documents.
+
+Since it aims to be compatible with any restructured text tool,
+it doesn't define its own directives
+and instead uses only standard `docutils`_ features.
+
+At the moment, the tools are functional
+but their usage and the slide markup might change.
+This is also the reason why there is no documentation yet.
+You can check out the files in the "examples" directory.
+
+.. _docutils: https://docutils.sourceforge.io/
+
