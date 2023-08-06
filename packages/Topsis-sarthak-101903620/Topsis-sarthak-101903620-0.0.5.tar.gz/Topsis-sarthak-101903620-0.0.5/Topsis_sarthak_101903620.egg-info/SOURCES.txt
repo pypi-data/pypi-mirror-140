@@ -1,0 +1,9 @@
+LICENCE.md
+README.md
+setup.py
+Topsis_sarthak_101903620.egg-info/PKG-INFO
+Topsis_sarthak_101903620.egg-info/SOURCES.txt
+Topsis_sarthak_101903620.egg-info/dependency_links.txt
+Topsis_sarthak_101903620.egg-info/top_level.txt
+sarthak/__init__.py
+sarthak/topsis.py
