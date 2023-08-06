@@ -1,0 +1,7 @@
+matplotlib
+pyyaml
+tifffile
+scikit-image
+opencv-python
+csbdeep
+gdown==4.2.0

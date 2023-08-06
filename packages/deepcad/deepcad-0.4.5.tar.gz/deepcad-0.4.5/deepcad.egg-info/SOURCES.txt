@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+deepcad/__init__.py
+deepcad/buildingblocks.py
+deepcad/data_process.py
+deepcad/model_3DUnet.py
+deepcad/movie_display.py
+deepcad/network.py
+deepcad/test_collection.py
+deepcad/train_collection.py
+deepcad/utils.py
+deepcad.egg-info/PKG-INFO
+deepcad.egg-info/SOURCES.txt
+deepcad.egg-info/dependency_links.txt
+deepcad.egg-info/requires.txt
+deepcad.egg-info/top_level.txt
