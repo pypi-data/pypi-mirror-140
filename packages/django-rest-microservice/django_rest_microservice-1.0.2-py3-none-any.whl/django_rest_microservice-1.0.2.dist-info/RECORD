@@ -1,0 +1,14 @@
+rest_framework_microservice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_framework_microservice/apps.py,sha256=ga5kUIJV09QH_l7g4UInxovQAjJNd1nF8MmYv81iLaA,127
+rest_framework_microservice/exceptions.py,sha256=LrsK1-wk2Db7UQro8bRvtJyx1DQuYA8Ca8tqFcHEg6c,1007
+rest_framework_microservice/models.py,sha256=M9TfYVDqAU8Hl9g8CxdILMFa_kmIoQG5SnY7sqchbVs,506
+rest_framework_microservice/serializers.py,sha256=geuY8JxF4KOUE0XMAnyf7_dY5Qr7f1UMx5iv3lgS8Bs,6126
+rest_framework_microservice/settings.py,sha256=feREyJg8FwxsGeWyQZz_v0txTgMJkaXLKmU2jeQzsnQ,3138
+rest_framework_microservice/urls.py,sha256=-i-i8wmVwczmX9jxkyTSgTcccfb68DckwQ1jO_pCL5Q,398
+rest_framework_microservice/views.py,sha256=5q2RTi1BSZkxZG8MLsikrFpeRoepXD9ytwdeaUOurjc,5873
+rest_framework_microservice/social_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_framework_microservice/social_auth/aws_cognito.py,sha256=YGie1tBQa8g9jfS1PMHfoNKLrxlPcARU1K-47y9EQjg,1674
+django_rest_microservice-1.0.2.dist-info/METADATA,sha256=aN4ze-iD8L7Ej4xAUdSBQ4kg3olo7bCo3t_o3w53wMw,8519
+django_rest_microservice-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_rest_microservice-1.0.2.dist-info/top_level.txt,sha256=oRxGzpyQE9L_inuv5hPGOU5lJwttDRTLxtY4Jgaa9YI,28
+django_rest_microservice-1.0.2.dist-info/RECORD,,
