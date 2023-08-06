@@ -1,0 +1,12 @@
+README.md
+setup.py
+tsqlxlsx/__init__.py
+tsqlxlsx/__main__.py
+tsqlxlsx/data_loader.py
+tsqlxlsx/sql_ddl.py
+tsqlxlsx/tsql_connector.py
+tsqlxlsx.egg-info/PKG-INFO
+tsqlxlsx.egg-info/SOURCES.txt
+tsqlxlsx.egg-info/dependency_links.txt
+tsqlxlsx.egg-info/requires.txt
+tsqlxlsx.egg-info/top_level.txt
