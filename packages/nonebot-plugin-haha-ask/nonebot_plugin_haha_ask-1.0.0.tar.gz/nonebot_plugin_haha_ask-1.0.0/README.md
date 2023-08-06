@@ -1,0 +1,22 @@
+# nonebot_plugin_haha_ask
+
+一个基于NoneBot2的插件，用于查询哈哈出行信息和两地之间的距离
+
+A plugin based on NoneBot2 to query travel information and distance between the two places
+
+安装方式:
+pip install nonebot_plugin_haha_ask
+
+命令
+
+askhh = on_command('askhh', aliases={'查询'})
+
+指令，0旧数据块但不保证时效，1时时新数据慢但保证时效,已默认排除紫荆山。\n查询地点，为0时查询排除紫荆山后所有信息。出发地。目的地\n请稍等2s到8s...
+
+askdis1 = on_command('dis1', aliases={'距离1'})
+
+返回距离默认地址距离，例子：北京 若不精确则可能返回其他地方的距离
+
+askdis2 = on_command('dis2', aliases={'距离2'})
+
+前后两地距离地，例子：郑州。北京 若不精确则可能返回其他地方的距离
