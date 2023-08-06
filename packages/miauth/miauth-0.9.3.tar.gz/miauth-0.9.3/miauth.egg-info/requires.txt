@@ -1,0 +1,4 @@
+cryptography
+
+[cli]
+bluepy==1.3.0

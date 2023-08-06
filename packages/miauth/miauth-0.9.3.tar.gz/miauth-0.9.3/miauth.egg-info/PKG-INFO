@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: miauth
+Version: 0.9.3
+Summary: Authenticate and interact with Xiaomi devices over BLE
+Home-page: https://github.com/dnandha/miauth
+Author: Daljeet Nandha
+Author-email: dalj337@gmail.com
+License: GNU AGPL v3
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: cli
+License-File: LICENSE
+
+UNKNOWN
+
