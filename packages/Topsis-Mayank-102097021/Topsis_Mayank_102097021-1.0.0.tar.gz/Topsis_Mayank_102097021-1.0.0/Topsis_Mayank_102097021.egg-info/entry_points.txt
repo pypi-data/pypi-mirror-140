@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = Topsis_Mayank_102097021.topsis:main
+
