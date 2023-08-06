@@ -1,0 +1,2 @@
+[pretix.plugin]
+pretix_covid_certificates = pretix_covid_certificates:PretixPluginMeta
