@@ -1,0 +1,10 @@
+README.md
+setup.py
+quantorch/__init__.py
+quantorch/greeks.py
+quantorch/tensor.py
+quantorch.egg-info/PKG-INFO
+quantorch.egg-info/SOURCES.txt
+quantorch.egg-info/dependency_links.txt
+quantorch.egg-info/requires.txt
+quantorch.egg-info/top_level.txt

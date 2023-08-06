@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: quantorch
+Version: 0.0.1
+Summary: A PyTorch-Based Python Library for Quantitative Finance
+Home-page: https://github.com/jialuechen/quantorch
+Author: Jialue Chen
+Author-email: jialuechen@outlook.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
