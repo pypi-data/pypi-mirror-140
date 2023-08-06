@@ -1,0 +1,7 @@
+cython_packages/main.c,sha256=TDKMtUwwZ1TzkecaR7HZAP_ayhfTRwTWG_FCzvgleG8,146942
+cython_packages/main.cpython-39-x86_64-linux-gnu.so,sha256=iRjIV83eM72LazVV8ZD2A8_3R8LGNXaLYvwWRCoSLa8,23184
+cython_packages/main.pyx,sha256=yr-aPy6hAnqjenrmzRcYiDtMggPcIYT6ONWmAqvqLYg,111
+cython_packages-0.1.4.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cython_packages-0.1.4.dist-info/WHEEL,sha256=_7fS4ZY5EWQexSsWlQmC7lYy_bm4vYQgD4I0F9WCzp0,103
+cython_packages-0.1.4.dist-info/METADATA,sha256=jKOcuWhbUItpfT72y2O3qw9dZpiCEhQAPN1U_DtR4BY,3215
+cython_packages-0.1.4.dist-info/RECORD,,
