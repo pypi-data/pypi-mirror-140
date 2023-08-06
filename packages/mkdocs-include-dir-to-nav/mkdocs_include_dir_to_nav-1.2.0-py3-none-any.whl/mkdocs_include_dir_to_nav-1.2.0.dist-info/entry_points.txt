@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+include_dir_to_nav = mkdocs_include_dir_to_nav.include_dir_to_nav:IncludeDirToNav
+
