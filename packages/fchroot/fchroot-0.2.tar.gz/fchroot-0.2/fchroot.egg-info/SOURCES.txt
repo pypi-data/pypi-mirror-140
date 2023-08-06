@@ -1,0 +1,14 @@
+.gitattributes
+.gitignore
+README.md
+setup.py
+bin/binfmt-helper
+bin/fchroot
+bin/magic-reader
+bin/wrapper-builder
+fchroot/__init__.py
+fchroot/binfmt.py
+fchroot.egg-info/PKG-INFO
+fchroot.egg-info/SOURCES.txt
+fchroot.egg-info/dependency_links.txt
+fchroot.egg-info/top_level.txt
