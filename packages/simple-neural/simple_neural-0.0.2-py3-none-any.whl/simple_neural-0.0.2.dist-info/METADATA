@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: simple-neural
+Version: 0.0.2
+Summary: Simple Deep Learning Framework
+Home-page: UNKNOWN
+Author: Roberto Crespo
+Author-email: ra.crespoa@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: wheel
+Requires-Dist: numpy (==1.22.2)
+
+UNKNOWN
+
+
