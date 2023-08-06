@@ -1,0 +1,5 @@
+[console_scripts]
+kirlent2impressjs=kirlent.docutils:publish_cmdline_impressjs
+kirlent2revealjs=kirlent.docutils:publish_cmdline_revealjs
+rst2kirlenthtml5=kirlent.docutils:publish_cmdline_html5
+
