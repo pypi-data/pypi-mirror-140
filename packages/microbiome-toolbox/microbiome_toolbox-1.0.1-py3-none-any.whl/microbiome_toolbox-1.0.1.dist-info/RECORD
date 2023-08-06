@@ -1,0 +1,10 @@
+microbiome/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+microbiome/dataset.py,sha256=_EgJZSCGIBdwu-T1xBaRmkb0S19XjCWsmuoirHDEMPQ,52080
+microbiome/enumerations.py,sha256=Da2YiHnDmSDumAyEBG58nY9qDfTKxm_HMenJ5jzNpX8,781
+microbiome/statistical_analysis.py,sha256=v2wT3LkIbOSrwamGVoAbvSXct6EORt5685mGwpqJWJA,14915
+microbiome/trajectory.py,sha256=haH7re5P-1UiQFN8t2ztCWj0z1R7967YwgFdHBLZMsI,82237
+microbiome_toolbox-1.0.1.dist-info/LICENSE,sha256=M0P20IjcDCofICFM6Y3P3kjizkZZXWU0yaiEwXAZO0o,1070
+microbiome_toolbox-1.0.1.dist-info/METADATA,sha256=AoU-2aBh7AXQLrllvfKwFNL3xdnltuEvww9Oi2VvoRs,4755
+microbiome_toolbox-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+microbiome_toolbox-1.0.1.dist-info/top_level.txt,sha256=SXrMtOEl7-o3hqgflE4JDpm5CM8htboeXeTk4Z2h4lI,11
+microbiome_toolbox-1.0.1.dist-info/RECORD,,
