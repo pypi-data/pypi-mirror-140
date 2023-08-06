@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: scode
+Version: 0.0.1
+Summary: The Private Package of Showm Company.
+Home-page: https://github.com/showm-dev/Standard
+Author: 강동욱, 선준우, 강진영, 박태준, 김도현
+Author-email: ehddnr2981@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# scode
+
+## 개요
+
+쇼엠의 프라이빗 패키지
+
+## 목차
+
+1. selenium
+
+2. paramiko
+
+3. telegram
+
+4. dropbox
+
