@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: atlas-direction-vectors
+Version: 0.1.1.dev2
+Summary: Commands to compute direction vectors in volumetric brain regions. Direction vectors are 3D unit vectors associated to voxels of a brain region. They represent the directions of the fiber tracts.
+Home-page: https://github.com/BlueBrain/atlas-direction-vectors
+Author: Blue Brain Project, EPFL
+License: Apache-2
+Download-URL: https://github.com/BlueBrain/atlas-direction-vectors
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7.0
+Provides-Extra: tests
+License-File: LICENSE.txt
+License-File: AUTHORS.txt
+
+UNKNOWN
+

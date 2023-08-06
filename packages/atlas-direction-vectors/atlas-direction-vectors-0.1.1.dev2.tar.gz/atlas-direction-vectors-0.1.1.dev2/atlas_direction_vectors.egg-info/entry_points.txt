@@ -1,0 +1,3 @@
+[console_scripts]
+atlas-direction-vectors = atlas_direction_vectors.app.cli:cli
+
