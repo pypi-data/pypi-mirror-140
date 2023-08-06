@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Topsis-Shivang-101917183
+Version: 0.1
+Summary: A python package to implement topsis
+Home-page: UNKNOWN
+Author: Shivang Mani Tripathi
+Author-email: shivangtripathi2000@gmail.com
+License: MIT
+Keywords: topsis,Rank,Best,Model
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
