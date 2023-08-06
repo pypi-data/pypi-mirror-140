@@ -1,0 +1,13 @@
+Release/_impl.cp39-win_amd64.exp,sha256=ms_9lObFe3TJnZz0lZI-VkR4lbaVKh-yEMTB6CvWa5s,737
+Release/_impl.cp39-win_amd64.lib,sha256=kTJzBjvVPoE6wR7O21M_gIzSVgShWYLicF2Qdeh_1cc,1964
+stt/__init__.py,sha256=QtMBdthtCBVb63HboIuO095K7x3ZOHEDO9fOYBN19Ek,15448
+stt/_impl.cp39-win_amd64.pyd,sha256=GbqRGC61IJ8XCWihQ4Hsevhho_E7cU2Wej6zUZwY6l4,80896
+stt/client.py,sha256=6Pk_V2SqXHSscy3jzzRmDcgRfl_VjlLEJkxyRn9Y2Cg,7019
+stt/impl.py,sha256=lT4GODdi2VHro8Yqr7kfRRXiF-ZAfU4eIRjnNhTY1GI,7943
+stt/lib/libkenlm.so,sha256=HSQohTFXOA9QdN3HXQJU6KULS17pyODKEvU2LEpjA6Q,357376
+stt/lib/libstt.so,sha256=hDRvnGdDTBW_lT0ADJ01ExrfL86KsYdBu51BxN6dmCM,3111936
+stt-1.3.0a3.dist-info/METADATA,sha256=1JghL57_dWILdGCmwA6pUTFFpLo93UBw-B_NtA9bsk0,1357
+stt-1.3.0a3.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+stt-1.3.0a3.dist-info/entry_points.txt,sha256=-RJKAhqFH3le0allDtX9BNVyOHyAXMbyweoEXUinoRI,41
+stt-1.3.0a3.dist-info/top_level.txt,sha256=U36suN9i5BZ2UbKj5dzgbpHmkIEAvyge7wRwJVB24jk,4
+stt-1.3.0a3.dist-info/RECORD,,
