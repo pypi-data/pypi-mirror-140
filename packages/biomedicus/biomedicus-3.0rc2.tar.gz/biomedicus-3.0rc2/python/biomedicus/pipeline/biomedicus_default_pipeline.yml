@@ -1,0 +1,26 @@
+name: biomedicus-default-pipeline
+events_address: localhost:50100
+mp_config:
+  max_failures: 0
+  show_progress: True
+  workers: 4
+  read_ahead: 4
+  close_events: True
+  mp_start_method: spawn
+components:
+  - processor_id: biomedicus-sentences
+    address: localhost:50300
+  - processor_id: biomedicus-tnt-tagger
+    address: localhost:50400
+  - processor_id: biomedicus-acronyms
+    address: localhost:50500
+  - processor_id: biomedicus-concepts
+    address: localhost:50600
+  - processor_id: biomedicus-negex-triggers
+    address: localhost:50700
+  - processor_id: biomedicus-selective-dependencies
+    address: localhost:50800
+  - processor_id: biomedicus-deepen
+    address: localhost:50900
+  - processor_id: biomedicus-section-headers
+    address: localhost:51000
