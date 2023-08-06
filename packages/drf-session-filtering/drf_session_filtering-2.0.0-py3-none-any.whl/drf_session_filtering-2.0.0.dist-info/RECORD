@@ -1,0 +1,11 @@
+session_filtering/__init__.py,sha256=0NKESa3s8Y-7zWvjoRyn1TuaiZ3ZyS_zDbq9ZoBxa3s,109
+session_filtering/apps.py,sha256=vMbEsy99HDrdNyML-oNyKDIC1aYRyprbrsOHOi4hobU,112
+session_filtering/backends.py,sha256=FjIJgSqgAH5ZRP8H2TQeniRid8LOnwxEQpHxnmqNMzE,3005
+session_filtering/field_mapping.py,sha256=BHsyo1i-u9LxXO9ewg_D0w7SAqUda4WWiomVxcfhfgc,5433
+session_filtering/models.py,sha256=0AdSurye3Nw4cJBit13s8VTzMv6J8qW0JzfBj2WM2Fs,1612
+session_filtering/serializers.py,sha256=lnjK_ks-ngkbAz4lrVJXqPkmEiM3UiB9ofW7r5Mzpyk,5961
+session_filtering/views.py,sha256=Dp7xhkMxCd-jUfAJHXrJqJGsyEAYMy1XPcB8kHkoJ9w,964
+drf_session_filtering-2.0.0.dist-info/METADATA,sha256=uERi0a-mUbuXorwt1FrlRSKzHLHAjTqTW9b640KjbgU,4228
+drf_session_filtering-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+drf_session_filtering-2.0.0.dist-info/top_level.txt,sha256=a92vMDFTeIdol0sAFXgaqKXsJ5qsZg1oxZJy76bHHnQ,18
+drf_session_filtering-2.0.0.dist-info/RECORD,,
