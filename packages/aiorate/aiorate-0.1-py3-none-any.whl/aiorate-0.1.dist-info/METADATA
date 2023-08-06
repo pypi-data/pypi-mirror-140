@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: aiorate
+Version: 0.1
+Summary: Loop frequency regulation for asyncio
+Author-email: Stéphane Caron <stephane.caron@normalesup.org>
+Maintainer-email: Stéphane Caron <stephane.caron@normalesup.org>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: numpy >=1.20.0
+Requires-Dist: pin >=2.6.3
+Requires-Dist: qpsolvers >=1.8.0
+Requires-Dist: sphinx ; extra == "doc"
+Project-URL: Documentation, https://scaron.info/doc/aiorate/
+Project-URL: Source, https://github.com/stephane-caron/aiorate
+Provides-Extra: doc
+
+# aiorate
+
+[![build](https://img.shields.io/github/workflow/status/stephane-caron/aiorate/CI)](https://github.com/stephane-caron/aiorate/actions)
+[![PyPI package](https://img.shields.io/pypi/v/aiorate)](https://pypi.org/project/aiorate/)
+![Status](https://img.shields.io/pypi/status/aiorate)
+
+Loop frequency regulation for [asyncio](https://docs.python.org/3/library/asyncio.html), with an API similar to [rospy.Rate](https://wiki.ros.org/rospy/Overview/Time#Sleeping_and_Rates).
+
+## Installation
+
+```sh
+pip install aiorate
+```
+
+## Example
+
+```python
+import asyncio
+import aiorate
+
+async def main():
+    frequency = 400.0  # [Hz]
+    rate = aiorate.Rate(frequency, "my_rate_limiter")
+    event_loop = asyncio.get_event_loop()
+    while True:
+        print(f"Hello from loop at {asyncio.get_event_loop().time():.3f} [s]")
+        await rate.sleep()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
