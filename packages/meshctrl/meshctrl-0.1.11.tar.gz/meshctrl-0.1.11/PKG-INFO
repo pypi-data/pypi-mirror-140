@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: meshctrl
+Version: 0.1.11
+Summary: Python port of MeshCentral's Meshctrl.js program
+Home-page: https://github.com/amidaware/meshctrl-py
+Author: Josh Krawczyk
+Author-email: josh@torchlake.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MeshCtrl
+
+## Usage Example
+
+```py
+from meshctrl import MeshCtrl
+
+mesh_client = MeshCtrl(uri="wss://mesh.example.com", user="mesh username", token="mesh_login_token")
+result = mesh_client.send_command(node_id="mesh_node_id", command="whoami")
+
+print(result)
+```
+
+
