@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: termclock
+Version: 1.1.0
+Summary: UNKNOWN
+Author: Cargo
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+# TermClock
+
+Installation:
+
+    $ pip install termclock
+
+Usage:
+
+    $ cdate
+
+Prints the current week-day and date.
+
+    $ ctime
+
+Makes an active clock in terminal (press ^C to exit).
+
+    $ cdatetime
+
+Makes an active clock united to current week-day and date (press ^C to exit).
+
