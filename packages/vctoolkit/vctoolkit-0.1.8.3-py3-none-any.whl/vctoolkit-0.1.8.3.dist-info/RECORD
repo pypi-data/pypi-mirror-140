@@ -1,0 +1,15 @@
+vctoolkit/__init__.py,sha256=RGqLEMZh09nA4-3MnyVbzcgO-22w6d0NEdm5JLPi06k,135
+vctoolkit/io.py,sha256=dBFltfNkgHtErZLhX-PEBX9D_ZGPt-tPbzcWzpe_khs,10255
+vctoolkit/lbs.py,sha256=K9rUA8Uyjas--6aIli4f0ZL5gw6rKOmJu_R7d9q7ssg,3247
+vctoolkit/math_np.py,sha256=6bHvSEDmM8Jajuhxf2yXrrytb7TcccFXHZRdjxiurKc,7176
+vctoolkit/misc.py,sha256=OKN18AaguNiFGYgrO42d8kxtrWrfiqT7gf7vIAQmaNc,18275
+vctoolkit/skeletons.py,sha256=KvjreK-0NBmRPOawRXqytzeIOK1U63j5H_aY4oUqamY,9292
+vctoolkit/vis2d.py,sha256=31eBJr_eXiLHZIjcJQuGPLoRdPE_T4RCNg3cJRr7Gss,7466
+vctoolkit/vis3d.py,sha256=f3O6Q7-jCvxCnrKm6gkOq1VRk6W4o2usSgemr9NM2tQ,2874
+vctoolkit/tf/__init__.py,sha256=bZzJZTfsiB0JKeIhl5zTXaO_zQpjndMxbDFgGm9Qtx0,6915
+vctoolkit/visgl/__init__.py,sha256=NbsA5JpBM4siIQIAeH3KbfHyH0icMvuYzWsoe_RCO_4,9164
+vctoolkit/viso3d/__init__.py,sha256=i_xctRaWUbIXdSD3ur80-RAjBwEACX8bKYbC1V6rISg,3133
+vctoolkit-0.1.8.3.dist-info/METADATA,sha256=gw0DJiov9sljFN74dxff8e2CgqzR9XFse1SBVmlLPqA,513
+vctoolkit-0.1.8.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vctoolkit-0.1.8.3.dist-info/top_level.txt,sha256=PlQm3MkPOLbZcWWR2N6ArK2Lu-XEoTcTk3va69dpRGU,10
+vctoolkit-0.1.8.3.dist-info/RECORD,,
