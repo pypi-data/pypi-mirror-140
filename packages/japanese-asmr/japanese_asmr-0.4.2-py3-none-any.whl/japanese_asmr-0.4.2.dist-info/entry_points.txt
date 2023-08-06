@@ -1,0 +1,2 @@
+[console_scripts]
+japanese-asmr = japanese_asmr.command_line:main
