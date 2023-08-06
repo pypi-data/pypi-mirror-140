@@ -1,0 +1,5 @@
+urllib3
+hvac<0.11.0,>=0.10.1
+requests>=2.1
+configparser
+pyOpenSSL>=17.0
