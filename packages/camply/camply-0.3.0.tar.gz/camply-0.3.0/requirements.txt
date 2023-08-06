@@ -1,0 +1,7 @@
+PyYAML
+pandas
+python-dotenv
+pytz
+requests
+tenacity
+pydantic
