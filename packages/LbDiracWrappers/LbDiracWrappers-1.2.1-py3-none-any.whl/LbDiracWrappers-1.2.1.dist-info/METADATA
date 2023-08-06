@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: LbDiracWrappers
+Version: 1.2.1
+Summary: Wrappers for LHCbDirac commands
+License: GPL-3.0-or-later
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: LbEnv
+Requires-Dist: packaging (>=20.0)
+Provides-Extra: testing
+Requires-Dist: black ; extra == 'testing'
+Requires-Dist: flake8 ; extra == 'testing'
+Requires-Dist: flake8-bugbear ; extra == 'testing'
+Requires-Dist: pylint ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+LbDiracWrappers
+===============
+
+Wrappers for usual LHCbDirac commands.
+
+
