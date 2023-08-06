@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "baste"
+version = "0.1.0"
+description = "A simple wrapper around fabric for multi-repo projects"
+authors = ["Lakin Wecker <lakin@structuredabstraction.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fabric = "2.6.0"
+blessings = "1.7"
+patchwork = "1.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
