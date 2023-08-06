@@ -1,0 +1,12 @@
+README.rst
+setup.py
+solverecaptchas/__init__.py
+solverecaptchas/image.py
+solverecaptchas/predict.py
+solverecaptchas/solver.py
+solverecaptchas/utils.py
+solverecaptchas.egg-info/PKG-INFO
+solverecaptchas.egg-info/SOURCES.txt
+solverecaptchas.egg-info/dependency_links.txt
+solverecaptchas.egg-info/requires.txt
+solverecaptchas.egg-info/top_level.txt
