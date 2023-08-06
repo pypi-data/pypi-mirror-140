@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+package.json
+setup.py
+stickyland.egg-info/PKG-INFO
+stickyland.egg-info/SOURCES.txt
+stickyland.egg-info/dependency_links.txt
+stickyland.egg-info/not-zip-safe
+stickyland.egg-info/requires.txt
+stickyland.egg-info/top_level.txt
