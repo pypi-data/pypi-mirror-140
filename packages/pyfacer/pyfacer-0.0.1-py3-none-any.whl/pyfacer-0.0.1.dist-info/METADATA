@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pyfacer
+Version: 0.0.1
+Summary: Face related toolkit
+Home-page: https://github.com/FacePerceiver/facer
+Author: FacePerceiver
+Author-email: admin@hypercube.top
+License: MIT
+Project-URL: Documentation, https://github.com/FacePerceiver/facer
+Project-URL: Source, https://github.com/FacePerceiver/facer
+Project-URL: Tracker, https://github.com/FacePerceiver/facer/issues
+Keywords: face-detection pytorch RetinaFace face-parsing farl
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: opencv-python
+Requires-Dist: validators
+
+# FacER
+
+Face related toolkit. This repo is still under construction to include more models.
+
+## Install
+
+The easiest way to install it is using pip:
+
+```bash
+pip install git+https://github.com/FacePerceiver/facer.git@master
+```
+No extra setup needs, pretrained weights will be downloaded automatically.
+
+
+## Face Detection
+
+We simply wrap a retinaface detector for easy usage.
+Check [this notebook](./samples/face_detect.ipynb).
+
+Please consider citing
+```
+@inproceedings{deng2020retinaface,
+  title={Retinaface: Single-shot multi-level face localisation in the wild},
+  author={Deng, Jiankang and Guo, Jia and Ververas, Evangelos and Kotsia, Irene and Zafeiriou, Stefanos},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5203--5212},
+  year={2020}
+}
+```
+
+## Face Parsing
+
+We wrap the [FaRL](https://github.com/faceperceiver/farl) models for face parsing.
+Check [this notebook](./samples/face_parsing.ipynb).
+
+Please consider citing
+```
+@article{zheng2021farl,
+  title={General Facial Representation Learning in a Visual-Linguistic Manner},
+  author={Zheng, Yinglin and Yang, Hao and Zhang, Ting and Bao, Jianmin and Chen, Dongdong and Huang, Yangyu and Yuan, Lu and Chen, Dong and Zeng, Ming and Wen, Fang},
+  journal={arXiv preprint arXiv:2112.03109},
+  year={2021}
+}
+``` 
+
+
+
