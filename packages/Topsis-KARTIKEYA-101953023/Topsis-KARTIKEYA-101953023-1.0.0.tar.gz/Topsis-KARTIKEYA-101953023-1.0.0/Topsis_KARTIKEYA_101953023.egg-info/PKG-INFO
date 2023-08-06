@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Topsis-KARTIKEYA-101953023
+Version: 1.0.0
+Summary: It gives a csv file 
+Home-page: UNKNOWN
+Author: KARTIKEYA SINGH
+Author-email: ksingh6_be19@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TOPSIS PACKAGE BY KARTIKEYA
+THIS IS A SIMPLE TOPSIS CALCULATOR THAT GIVE A CSV FILE AS OUTPUT.
+
