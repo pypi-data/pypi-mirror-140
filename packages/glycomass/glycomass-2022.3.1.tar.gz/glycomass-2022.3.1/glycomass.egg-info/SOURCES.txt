@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+glycomass/__init__.py
+glycomass/clustering.py
+glycomass/main.py
+glycomass/mass_list.py
+glycomass/process_data.py
+glycomass/version.py
+glycomass/well_replacement.py
+glycomass.egg-info/PKG-INFO
+glycomass.egg-info/SOURCES.txt
+glycomass.egg-info/dependency_links.txt
+glycomass.egg-info/top_level.txt
