@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: robotpy-toolkit-7407
+Version: 0.4.0
+Summary: 
+Author: Ethan Chapman
+Author-email: ethan.chapman0@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: fast-unit (>=0.1.0,<0.2.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: robotpy[rev,ctre,commands2] (>=2022.0.54,<2023.0.0)
