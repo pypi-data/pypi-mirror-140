@@ -1,0 +1,15 @@
+dkopt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dkopt/entry_point.py,sha256=MCRspG0vrj42hV74pEkoiGcyfQlca0ve3OLK3gAdgms,611
+dkopt/exceptions.py,sha256=FsAwTpA2-udytnNZVZ73G3nGxnCmtNya8BVE4lqfAFw,380
+dkopt/card/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dkopt/card/card.py,sha256=p4SlyR2oKurnDDa6DqWYoZKYRkAucZV6SBi2UUyQF9Q,371
+dkopt/card/deck.py,sha256=j6lSaXVjvjyOlzHq8rxnrGYh_066X7_9msoE4YJLjpI,1520
+dkopt/card/hand.py,sha256=psbOFBQLAltnCQitYDYawmWdfAzmoxU6r6AMzTC130Y,1945
+dkopt/search/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dkopt/search/search.py,sha256=WpdDKDWYeF2YYYlaiYJVzcJz9HFuBOaJM1eH6e22Zww,3464
+dkopt/search/setting.py,sha256=5nKF2MR-2w93MIGXu7vQH__nu6vT1Y8x-gm1rERRW5U,2131
+dkopt-0.0.2.dist-info/LICENSE,sha256=uxX08QV85YDoVH4IWE9SS3w2w1hTzIIFf2VkqVntbKQ,1084
+dkopt-0.0.2.dist-info/METADATA,sha256=UkIa2xX5p-v9i4_-U3adzcSTuM_r61f_aRFcI6lkLjE,2470
+dkopt-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dkopt-0.0.2.dist-info/top_level.txt,sha256=rVhKvLhE0ejbqlNBsNuaWkVlOggm-3J6SDlxnsqmDOI,6
+dkopt-0.0.2.dist-info/RECORD,,
