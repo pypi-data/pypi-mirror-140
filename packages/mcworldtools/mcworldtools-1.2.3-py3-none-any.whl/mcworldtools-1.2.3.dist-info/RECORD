@@ -1,0 +1,14 @@
+mcworldtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcworldtools/main.py,sha256=CNbjtwzjBbFEHgS7_SBrDZ0_LddaYVfn2dL4U47y7Vc,5554
+mcworldtools/util.py,sha256=C8HUx_SecyLJBWuBOlBKm6zr73P6bx4fL2x8Co2MhP8,5721
+mcworldtools/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcworldtools/tools/blocks.py,sha256=YsYndoHnsALf25Tpcgat7_qXyeSwJ9Q6leG2ji48Ip4,127
+mcworldtools/tools/command_blocks.py,sha256=F03Wjcvl0aRcrE_GBxroc6bVEETaY7vCLDovScR6XrU,23905
+mcworldtools/tools/entities.py,sha256=_LJICf1nD1XN8FBPrKNOHW5jjeyTvWQtEn0RYIcNcs4,23161
+mcworldtools/tools/remove_unused_chunks.py,sha256=zi5pz6Ghr3yQGnNYQcDIC-wf0EV27C4z5g6xUzuYI2o,8178
+mcworldtools-1.2.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mcworldtools-1.2.3.dist-info/METADATA,sha256=gTikyWewLDo6PneALrJMjv47MmS6bFWwQgYHgRC_iTQ,7090
+mcworldtools-1.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mcworldtools-1.2.3.dist-info/entry_points.txt,sha256=mljv0rZfvqO7ezYggoQ599M1W3GQc09VXGRuJmbRyvo,57
+mcworldtools-1.2.3.dist-info/top_level.txt,sha256=t7RnWMXewUje6y-D70u0QFICXpGEq1fq7GWZiADjvao,13
+mcworldtools-1.2.3.dist-info/RECORD,,
