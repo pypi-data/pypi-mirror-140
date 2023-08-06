@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+automutualinformation/__init__.py
+automutualinformation.egg-info/PKG-INFO
+automutualinformation.egg-info/SOURCES.txt
+automutualinformation.egg-info/dependency_links.txt
+automutualinformation.egg-info/requires.txt
+automutualinformation.egg-info/top_level.txt
