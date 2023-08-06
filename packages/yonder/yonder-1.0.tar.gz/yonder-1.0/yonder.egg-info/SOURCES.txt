@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+yonder.egg-info/PKG-INFO
+yonder.egg-info/SOURCES.txt
+yonder.egg-info/dependency_links.txt
+yonder.egg-info/top_level.txt
