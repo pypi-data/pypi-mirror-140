@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: sdss-kronos
+Version: 1.0.0
+Summary: robot scheduling app for SDSS V
+Home-page: https://github.com/sdss/kronos
+Author: John Donor
+Author-email: j.donor@tcu.edu
+License: BSD 3-Clause License
+Project-URL: Repository, https://github.com/sdss/kronos
+Project-URL: Documentation, https://sdss-kronos.readthedocs.org
+Description: # kronos
+        
+        ![Versions](https://img.shields.io/badge/python->3.7-blue)
+        [![Documentation Status](https://readthedocs.org/projects/sdss-kronos/badge/?version=latest)](https://sdss-kronos.readthedocs.io/en/latest/?badge=latest)
+        [![Travis (.org)](https://img.shields.io/travis/sdss/kronos)](https://travis-ci.org/sdss/kronos)
+        [![codecov](https://codecov.io/gh/sdss/kronos/branch/main/graph/badge.svg)](https://codecov.io/gh/sdss/kronos)
+        
+        robot scheduling app for SDSS V
+        
+        Much of this package is based off the [Material Dashboard template](https://github.com/creativetimofficial/material-dashboard). Portions borrowed from this template are licensed under an MIT license.
+        
+Keywords: astronomy,software
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
