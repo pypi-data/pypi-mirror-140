@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyalvarockcl
+Version: 1.25
+Summary: version 1.25
+Home-page: https://github.com/DataBeamCL/pyalvarockcl
+Author: Alvaro Fuentes
+Author-email: alvarofue@gmail.com
+License: Apache 2.0
+Description: # pyalvarockcl
+        
+        * PyAlvarockCL LIB
+Keywords: test lib
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
