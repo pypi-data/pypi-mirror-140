@@ -1,0 +1,16 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+hero1/__init__.py
+hero1/bodyinfo_pb2.py
+hero1/command_pb2.py
+hero1/hero1.py
+hero1/pcmd.py
+hero1/test_hero.py
+hero1.egg-info/PKG-INFO
+hero1.egg-info/SOURCES.txt
+hero1.egg-info/dependency_links.txt
+hero1.egg-info/requires.txt
+hero1.egg-info/top_level.txt
