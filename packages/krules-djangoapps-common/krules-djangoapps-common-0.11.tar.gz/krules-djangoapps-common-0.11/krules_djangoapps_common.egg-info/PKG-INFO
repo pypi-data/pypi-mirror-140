@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: krules-djangoapps-common
+Version: 0.11
+Summary: UNKNOWN
+Home-page: https://github.com/airspot-dev/krules
+Author: Airspot
+Author-email: info@arispot.tech
+License: Apache Licence 2.0
+Keywords: krules knative
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >3.8
+
+# krules-djangoapps-common
+
+django apps support library for krules framework
+

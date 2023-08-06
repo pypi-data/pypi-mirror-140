@@ -1,0 +1,17 @@
+README.md
+setup.py
+krules_djangoapps_common/__init__.py
+krules_djangoapps_common/admin.py
+krules_djangoapps_common/apps.py
+krules_djangoapps_common/fields.py
+krules_djangoapps_common/forms.py
+krules_djangoapps_common/k8s.py
+krules_djangoapps_common/permissions.py
+krules_djangoapps_common/widgets.py
+krules_djangoapps_common.egg-info/PKG-INFO
+krules_djangoapps_common.egg-info/SOURCES.txt
+krules_djangoapps_common.egg-info/dependency_links.txt
+krules_djangoapps_common.egg-info/requires.txt
+krules_djangoapps_common.egg-info/top_level.txt
+tests/__init__.py
+tests/test_krules_djangoapps_common.py
