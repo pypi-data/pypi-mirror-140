@@ -1,0 +1,12 @@
+README.md
+setup.py
+bin/dainstall
+bin/dawatchinstall
+docassemblecli/__init__.py
+docassemblecli/commands.py
+docassemblecli/dainstall.py
+docassemblecli.egg-info/PKG-INFO
+docassemblecli.egg-info/SOURCES.txt
+docassemblecli.egg-info/dependency_links.txt
+docassemblecli.egg-info/requires.txt
+docassemblecli.egg-info/top_level.txt
