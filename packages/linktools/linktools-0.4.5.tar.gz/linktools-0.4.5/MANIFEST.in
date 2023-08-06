@@ -1,0 +1,3 @@
+include linktools/configs/*
+include linktools/resource/*
+recursive-include linktools/scripts *.py
