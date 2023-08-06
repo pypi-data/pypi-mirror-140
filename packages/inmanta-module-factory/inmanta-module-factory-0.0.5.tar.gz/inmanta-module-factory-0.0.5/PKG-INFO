@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: inmanta-module-factory
+Version: 0.0.5
+Summary: Library for building inmanta modules with python code
+License: Apache-2.0
+Author: Inmanta
+Author-email: code@inmanta.com
+Requires-Python: >=3.6.1,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
