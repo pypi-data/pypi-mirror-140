@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: parallel-loading
+Version: 0.1.1
+Summary: https://github.com/p208p2002/parallel_loading
+Author: p208p2002
+Author-email: p208p2002@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: termcolor (>=1.1.0,<2.0.0)
