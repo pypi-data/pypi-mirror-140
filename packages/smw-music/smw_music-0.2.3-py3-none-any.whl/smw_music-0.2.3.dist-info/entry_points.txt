@@ -1,0 +1,4 @@
+[console_scripts]
+smw_music_xml_dashboard=smw_music.scripts.dashboard:main
+smw_music_xml_to_mml=smw_music.scripts.convert:main
+
