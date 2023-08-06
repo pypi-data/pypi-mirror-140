@@ -1,0 +1,12 @@
+imktk/README.md,sha256=Sm5UHDs3Wug0le2O13Vjh72eDq8-jn2glU1ryGZqJkU,3269
+imktk/__init__.py,sha256=ghNvA_rnoQJt-WDUwUIznTEMKidr6Izl5Y-ACP06DJQ,939
+imktk/dataarray_methods/.gitinclude,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imktk/dataarray_methods/anomalies.py,sha256=nT_8gXjM794mSUjYdhMKy_4OTdZcNoZGVMqkjC7wIU8,405
+imktk/dataarray_methods/num_den.py,sha256=bWZ4JodarcgeTOlrTVPqMAueuVUHi0HY0hPs6jloklA,1330
+imktk/dataset_methods/.gitinclude,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imktk/toolkit.py,sha256=FMXERjxuQPVQWSY4RklAmaBAOwzkv3zP4cTk7PmDxO4,3045
+imktk-0.1.8rc1.dist-info/entry_points.txt,sha256=-C9IOP_7UIvAcQKRAQ8trYCKhO2evs_XHHM-G8o3y3w,36
+imktk-0.1.8rc1.dist-info/LICENSE,sha256=k82PkFMdJfqQwjSbdcg3dBXSOncr6peo0_6onilgxOA,1068
+imktk-0.1.8rc1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+imktk-0.1.8rc1.dist-info/METADATA,sha256=WF5PSTuuXmO6qm4_sNfg4iZzUFMKppJBBCpeV-HWNmk,4077
+imktk-0.1.8rc1.dist-info/RECORD,,
