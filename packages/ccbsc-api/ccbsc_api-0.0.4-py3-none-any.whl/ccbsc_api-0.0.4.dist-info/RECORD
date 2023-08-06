@@ -1,0 +1,14 @@
+ccbsc_api/__init__.py,sha256=cT8ffmi4q2pNWVetmdEaziZYSCsSaXrucHskI3lHSWg,58
+ccbsc_api/_ccbsc.py,sha256=f0YoBkGYS1iQepFXWJb_GQI4IchpDZ4Vrn0x_J9zC1A,561
+ccbsc_api/classification/__init__.py,sha256=6MICHMyZ2iVUboFOJic-PaYrRi0mydpZO2sqWv23BKs,56
+ccbsc_api/classification/_classification.py,sha256=KM4NPYfXv1uQ-DPoxJHD6dI98TyI4_R9fgN3DYp3Jss,1239
+ccbsc_api/classification/_pollen.py,sha256=EZboesKZRxiOGyW9l-ZX4_S2G1kotsYsaLRfLtUijsU,149
+ccbsc_api/device/__init__.py,sha256=qVxNyUbIOBIe8GNjax_7RGujlrzMykdxQyV-fY3Jolc,21
+ccbsc_api/device/_photo.py,sha256=2eXN9lRgTQKc4JkwUkeYM0iK2B2rpdNgr0ym4cvqHHo,562
+ccbsc_api/example/__init__.py,sha256=vd1CmOYC2fhwJ5yaHY7N7ZfMdBui7o52Ii_qNtHlC44,44
+ccbsc_api/example/_dummy_algorithm.py,sha256=8Y-fWhv2XN9rmdT41Wd1G8mYFKbL-IxAt5bv-0KInnI,488
+ccbsc_api-0.0.4.dist-info/LICENSE,sha256=NvFis_07rxElNDXQ780yOE_DL-LWA2kEvEcCAKqHTdg,1092
+ccbsc_api-0.0.4.dist-info/METADATA,sha256=TSQzhcwpfeKJtHf8-iiUk6eo5iDP7m_dtHqiGu_s5Hw,299
+ccbsc_api-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ccbsc_api-0.0.4.dist-info/top_level.txt,sha256=-0iWPYJOEzYV3ykMG_N3GDEGLQ2zwN6Hw4PbJHCaBsY,10
+ccbsc_api-0.0.4.dist-info/RECORD,,

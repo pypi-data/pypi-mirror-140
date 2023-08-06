@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ccbsc-api
+Version: 0.0.4
+Summary: Framework to apply new algorithms on images of pollen.
+Home-page: https://github.com/RobertGebauer/pollen-validation-ccbsc
+Author: Robert Gebauer
+License: MIT
+Platform: any
+License-File: LICENSE
+Requires-Dist: pillow (==8.0.1)
+
+UNKNOWN
+
