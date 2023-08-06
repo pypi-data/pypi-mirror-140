@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ig-gds-utilities
+Version: 0.1.2
+Summary: Python library to be used by differente GDS services
+Home-page: https://github.com/awacero/ig_gds_utilities
+Author: Wilson Acero
+Author-email: acerowilson@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.22.0)
+
+# ig_gds_utilities
+This is the repositorie for a library with some functions used by GDS services like igtwitter or igtelegram. 
+The ig_gds_utilities shoul be installed using pip
+
+
