@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/patterns/__init__.py
+src/patterns/singleton/__init__.py
+src/patterns/singleton/class_singleton.py
+src/patterns/singleton/decorator_singleton.py
+src/patterns/singleton/metaclass_singleton.py
+src/power_python.egg-info/PKG-INFO
+src/power_python.egg-info/SOURCES.txt
+src/power_python.egg-info/dependency_links.txt
+src/power_python.egg-info/top_level.txt
