@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Coffin-Codes-NET
+Version: 7.0
+Summary: BSB-Developers
+Home-page: https://github.com/azimjohn/jprq-py
+Author: BSB-Developers
+Author-email: sphabsb2192@yahoo.com
+Maintainer: SphaBSB
+Maintainer-email: sphabsb2192@yahoo.com
+License: MIT
+Description: # BSB DEvelopers
+        
+Keywords: BSB-Developers Coffin Codes V7
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown

@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Coffin_Codes_NET.egg-info/PKG-INFO
+Coffin_Codes_NET.egg-info/SOURCES.txt
+Coffin_Codes_NET.egg-info/dependency_links.txt
+Coffin_Codes_NET.egg-info/entry_points.txt
+Coffin_Codes_NET.egg-info/requires.txt
+Coffin_Codes_NET.egg-info/top_level.txt
+bsb/__init__.py
+bsb/__main__.py
+bsb/http.py
+bsb/main.py
+bsb/tcp.py
+bsb/tunnel_http.py
+bsb/tunnel_tcp.py
