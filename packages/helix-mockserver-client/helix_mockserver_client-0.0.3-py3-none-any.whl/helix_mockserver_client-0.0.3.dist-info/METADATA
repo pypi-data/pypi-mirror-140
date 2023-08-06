@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: helix-mockserver-client
+Version: 0.0.3
+Summary: mockserver_client
+Home-page: https://github.com/icanbwell/mockserver_client
+Author: Imran Qureshi
+Author-email: imran.qureshi@icanbwell.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: types-requests (~=0.1.11)
+Requires-Dist: dictdiffer (>=0.8.1)
+
+# mockserver_client
+
+
