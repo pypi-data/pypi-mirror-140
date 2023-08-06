@@ -1,0 +1,246 @@
+{% extends "main/layout.html" %} {% block title %}{{title}}{% endblock title %} {% block content %} {% include 'development/sidebar.html' %}
+
+<section class="section-container">
+  <!-- Page content-->
+  <div class="content-wrapper">
+    <div class="content-heading d-flex justify-content-between">
+      <div>
+        {{title}}<small>
+          <ol class="breadcrumb mt-3">
+            <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Varanda</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+          </ol>
+        </small>
+      </div>
+      <div>
+              {% ifequal user.groups.all.0.name 'admin' %}
+              <div class="bg-danger p-2">
+              <small class="text-white">Admin Nasional MAE</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'xefe' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Xefe Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'sec' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Secretariado Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+            </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-12">
+        {% comment %} START PAGE {% endcomment %} {% if page == "National" %}
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card shadow-lg pt-3 rounded">
+              <div class="card-header">
+                <!-- {{ legend|upper }}  --><!-- 
+        <i class="fa fa-long-arrow-right"></i> <a class="btn btn-sm btn-outline-primary" href="{% url 'development:activity-add' %}">Adisiona <i class="fa fa-plus"></i></a> -->
+              </div>
+              <div class="card-body">
+                <section id="no-more-tables">
+                  <table class="table table-striped my-4 w-100" id="datatable2">
+                    <thead>
+                      <tr>
+                        <th>N&Uacute.</th>
+                        <th>FUNDUS HUSI</th>
+                        <th>TOTAL</th>
+                        <th>FUNDUS BA</th>
+                        <th>NARAN PROJETU / ATIVIDADE</th>
+                        <th>ASAUN</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% if request.user.username %}
+                      {% for obj in national %} {% if obj.national != None %}
+                      <tr>
+                        <td data-title="Nu.">{{ forloop.counter }}</td>
+                        <td data-title="Project name">{{ obj.national }}</td>
+                        <td data-title="Project name">{{ obj.national_amount }}</td>
+                        <td data-title="Project name">{% if obj.project %} Projetu {% else %} Atividade {% endif %}</td>
+                        <td data-title="Project name">{{ obj.project.name }}{{ obj.activity.name }}</td>
+                        <td data-title="Asaun">
+                           <div class="d-flex">
+                          {% if obj.project.name == None %}
+                              <div class="flex-fill"><a href="{% url 'development:activity-detail' obj.activity.hashed %}" class="btn btn-sm btn-success" title="View Detail"><i class="fas fa-eye"></i></a></div>
+                              {% else %}
+                              <div class="flex-fill"><a href="{% url 'development:project-viewdetail' obj.project.hashed %}" class="btn btn-sm btn-success" title="View Detail"><i class="fas fa-eye"></i></a></div>
+                              {% endif %}                        
+                        </div>
+                        </td>
+                      </tr>
+                      {% endif %} {% endfor %}
+                      {% endif %}
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+              <!--end card-body-->
+            </div>
+            <!--end card-->
+          </div>
+          <!--end col-->
+        </div>
+        {% endif %} {% if page == "Municipality" %}
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card shadow-lg pt-3 rounded">
+              <div class="card-header">
+              </div>
+              <div class="card-body">
+                <section id="no-more-tables">
+                  <table class="table table-striped my-4 w-100" id="datatable2">
+                    <thead>
+                      <tr>
+                        <th>N&uacute.</th>
+                        <th>FUNDUS HUSI</th>
+                        <th>TOTOL</th>
+                        <th>FUNDUS BA</th>
+                        <th>NARAN PROJETU / ATIVIDADE</th>
+                        <th>ASAUN</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for obj in municipality %} {% if obj.municipality != None %}
+                      <tr>
+                        <td data-title="Nu.">{{ forloop.counter }}</td>
+                        <td data-title="Munisipiu">{{ obj.municipality }}</td>
+                        <td data-title="Amount">{{ obj.municipality_amount }}</td>
+                        <td data-title="Fundus Ba">{% if obj.project %} Projetu {% else %} Atividade {% endif %}</td>
+                        <td data-title="Naran">{{ obj.project.name }}{{ obj.activity.name }}</td>
+                        <td data-title="Asaun">
+                           <div class="d-flex">
+                          {% if obj.project.name == None %}
+                              <div class="flex-fill"><a href="{% url 'development:activity-detail' obj.activity.hashed %}" class="btn btn-sm btn-success" title="View Detail"><i class="fas fa-eye"></i></a></div>
+                              {% else %}
+                              <div class="flex-fill"><a href="{% url 'development:project-viewdetail' obj.project.hashed %}" class="btn btn-sm btn-success" title="View Detail"><i class="fas fa-eye"></i></a></div>
+                              {% endif %}                        
+                        </div>
+                        </td>
+                      </tr>
+                      {% endif %} {% endfor %}
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+              <!--end card-body-->
+            </div>
+            <!--end card-->
+          </div>
+          <!--end col-->
+        </div>
+        {% endif %} {% if page == "ONG" %}
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card shadow-lg pt-3 rounded">
+              <div class="card-header">
+                <!-- {{ legend|upper }}  --><!-- 
+        <i class="fa fa-long-arrow-right"></i> <a class="btn btn-sm btn-outline-primary" href="{% url 'development:activity-add' %}">Adisiona <i class="fa fa-plus"></i></a> -->
+              </div>
+              <div class="card-body">
+                <section id="no-more-tables">
+                  <table class="table table-striped my-4 w-100" id="datatable2">
+                    <thead>
+                      <tr>
+                        <th>N&Uacute.</th>
+                        <th>FUNDUS HUSI</th>
+                        <th>TOTAL</th>
+                        <th>NARAN PROJETU</th>
+                        <th>Asaun</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for obj in ong %} {% if obj.ong != None %}
+                      <tr>
+                        <td data-title="Nu.">{{ forloop.counter }}</td>
+                        <td data-title="Project name">{{ obj.ong }}</td>
+                        <td data-title="Project name">{{ obj.ong_amount }}</td>
+                        <td data-title="Project name">{{ obj.project.name }}</td>
+                        <td data-title="Asaun">
+                          <div class="d-flex">
+                          {% if obj.project.name == None %}
+                              <div class="flex-fill"><a href="{% url 'development:activity-detail' obj.activity.hashed %}" class="btn btn-sm btn-success" title="View Detail"><i class="fas fa-eye"></i></a></div>
+                              {% else %}
+                              <div class="flex-fill"><a href="{% url 'development:project-viewdetail' obj.project.hashed %}" class="btn btn-sm btn-success" title="View Detail"><i class="fas fa-eye"></i></a></div>
+                              {% endif %}                        
+                        </div>
+                        </td>
+                      </tr>
+                      {% endif %} {% endfor %}
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+              <!--end card-body-->
+            </div>
+            <!--end card-->
+          </div>
+          <!--end col-->
+        </div>
+        {% endif %} {% if page == "Agency" %}
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card shadow-lg pt-3 rounded">
+              <div class="card-header">
+                <!-- {{ legend|upper }}  --><!-- 
+        <i class="fa fa-long-arrow-right"></i> <a class="btn btn-sm btn-outline-primary" href="{% url 'development:activity-add' %}">Adisiona <i class="fa fa-plus"></i></a> -->
+              </div>
+              <div class="card-body">
+                <section id="no-more-tables">
+                  <table class="table table-striped my-4 w-100" id="datatable2">
+                    <thead>
+                      <tr>
+                        <th>N&Uacute.</th>
+                        <th>FUNDUS HUSI</th>
+                        <th>TOTAL</th>
+                        <th>NARAN ATIVIDADE</th>
+                        <th>Asaun</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for obj in agency %} {% if obj.agency != None %}
+                      <tr>
+                        <td data-title="Nu.">{{ forloop.counter }}</td>
+                        <td data-title="Project name">{{ obj.agency }}</td>
+                        <td data-title="Project name">{{ obj.agency_amount }}</td>
+                        <td data-title="Project name">{{ obj.activity.name }}</td>
+                        <td data-title="Asaun">
+                          <div class="d-flex">
+                          {% if obj.project.name == None %}
+                              <div class="flex-fill"><a href="{% url 'development:activity-detail' obj.activity.hashed %}" class="btn btn-sm btn-success" title="View Detail"><i class="fas fa-eye"></i></a></div>
+                              {% else %}
+                              <div class="flex-fill"><a href="{% url 'development:project-viewdetail' obj.project.hashed %}" class="btn btn-sm btn-success" title="View Detail"><i class="fas fa-eye"></i></a></div>
+                              {% endif %}                        
+                        </div>
+                        </td>
+                      </tr>
+                      {% endif %} {% endfor %}
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+              <!--end card-body-->
+            </div>
+            <!--end card-->
+          </div>
+          <!--end col-->
+        </div>
+        {% endif %} {% comment %} END PAGE {% endcomment %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page footer-->
+{% include 'main/footer.html' %}
+<!--end row-->
+{% endblock %} {% block scripts %}
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#example').DataTable();
+  });
+</script>
+{% endblock %}

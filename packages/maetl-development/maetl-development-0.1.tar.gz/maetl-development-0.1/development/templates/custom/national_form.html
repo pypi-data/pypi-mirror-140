@@ -1,0 +1,56 @@
+{% extends 'main/layout.html' %} {% load crispy_forms_tags %} {% block title %} {{title}} {% endblock title %} {% block content %}{% include 'development/sidebar.html' %}
+
+<section class="section-container">
+  <!-- Page content-->
+  <div class="content-wrapper">
+    <div class="content-heading d-flex justify-content-between">
+      <div>
+        {{title}}<small>
+          <ol class="breadcrumb mt-3">
+            <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Varanda</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'development:custom-national-lists' %}">Lista Dadus Custom Nasional</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+          </ol>
+        </small>
+      </div>
+      <div>
+              {% ifequal user.groups.all.0.name 'admin' %}
+              <div class="bg-danger p-2">
+              <small class="text-white">Admin Nasional MAE</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'xefe' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Xefe Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'sec' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Secretariado Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+            </div>
+    </div>
+    <div class="row">
+            <div class="col-lg-6" style="margin: auto;">
+                <div class="card card-default">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="card-title">{{title}}</div>
+                     <div class="card-title">
+                      <button  onclick=self.history.back() class="btn btn-sm btn-labeled btn-outline-info mb-2"><span class="btn-label"><i class="fa fa-chevron-left"></i></span>Fila</button>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <form method="POST" action="">
+                      {% csrf_token %}
+                    {{ form|crispy}}          
+           <div class="text-right mt-4"> <button class="btn btn-sm btn-labeled btn-info" type="submit" title="rai"><span class="btn-label"><i class='fa fa-save'></i></span>Rai</button> <button class="btn btn-sm btn-labeled btn-secondary" onclick=self.history.back()><span class="btn-label"><i class="fa fa-window-close"></i></span> Kansela</button></div>
+        </form>
+                  </div>
+                </div>
+            </div>
+          </div>
+  </div>
+</section>
+<!-- Page footer-->
+{% include 'main/footer.html' %} {% endblock content %}

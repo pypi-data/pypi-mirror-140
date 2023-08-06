@@ -1,0 +1,175 @@
+{% extends "main/layout.html" %} {% load crispy_forms_tags %} {% block title %}{{title}}{% endblock title %} {% block content %}
+
+{% if group == 'admin' %}
+{% include 'report/sidebar.html' %}
+{% else %}
+{% include 'development/sidebar.html' %}
+{% endif %}
+<section class="section-container">
+  <!-- Page content-->
+  <div class="content-wrapper">
+    <div class="content-heading d-flex justify-content-between">
+      <div>
+        {{title}}<small>
+          <ol class="breadcrumb mt-3">
+            {% if group == 'admin' %}
+            <li class="breadcrumb-item"><a href="{% url 'report:report-dashboard' %}">Varanda</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'report_development:report-development-dashboard' %}">Dezenvolvimentu</a></li>
+            {% else %}
+            <li class="breadcrumb-item"><a href="{% url 'development:dashboard-development' %}">Varanda</a></li>
+            {% endif %}
+            <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+          </ol>
+        </small>
+      </div>
+        <div>
+              {% ifequal user.groups.all.0.name 'admin' %}
+              <div class="bg-danger p-2">
+              <small class="text-white">Admin Nasional MAE</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'xefe' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Xefe Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'sec' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Secretariado Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+            </div>
+    </div>
+    <div class="container-fluid">
+                    {% if messages %}
+                        {% for message in messages %} 
+                            <div id="divmessage" class="alert alert-{{ message.tags }} alert-dismissable" >
+                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                              {{message}}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <div class="card card-default">
+                 <div class="card-header d-flex justify-content-between">
+                     <div class="card-title">{{title}}</div>
+                     <div class="card-title">
+                     {% if group == 'sec' or group == 'xefe' %}
+                       <a href="{% url 'development:project-add' %}" class="btn btn-sm btn-labeled btn-info mb-2">
+                         <span class="btn-label"><i class="fa fa-plus-square"></i></span>Adisiona</a>
+                      {% endif %}
+
+                      {% if group == 'admin' %}
+                      <button  onclick=self.history.back() class="btn btn-sm btn-labeled btn-outline-info mb-2"><span class="btn-label"><i class="fa fa-chevron-left"></i></span>Fila</button>
+                      
+                      {% if municipality and post and village and year %}
+                       <a href="{% url 'report_development:print6' municipality.id post.id village.id year %}" class="btn btn-sm btn-labeled btn-info mb-2" target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Imprimi</a>
+                       <a href="{% url 'report_development:excel6' municipality.id post.id village.id year %}" class="btn btn-sm btn-labeled btn-info mb-2" target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Exporta ba Excel</a>
+                       {% elif municipality and post and village %}
+                       <a href="{% url 'report_development:print5' municipality.id post.id village.id %}" class="btn btn-sm btn-labeled btn-info mb-2" target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Imprimi</a>
+                       <a href="{% url 'report_development:excel5' municipality.id post.id village.id %}" class="btn btn-sm btn-labeled btn-info mb-2"  target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Exporta ba Excel</a>
+                       {% elif municipality and post and year %}
+                       <a href="{% url 'report_development:print4' municipality.id post.id year %}" class="btn btn-sm btn-labeled btn-info mb-2" target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Imprimi</a>
+                       <a href="{% url 'report_development:excel4' municipality.id post.id year %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-print"></i></span>Exporta ba Excel</a>
+                       {% elif municipality and post %}
+                       <a href="{% url 'report_development:print3' municipality.id post.id %}" class="btn btn-sm btn-labeled btn-info mb-2" target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Imprimi</a>
+                       <a href="{% url 'report_development:excel3' municipality.id post.id %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-print"></i></span>Exporta ba Excel</a>
+                       {% elif municipality and year %}
+                       <a href="{% url 'report_development:print2' municipality.id year %}" class="btn btn-sm btn-labeled btn-info mb-2" target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Imprimi</a>
+                       <a href="{% url 'report_development:excel2' municipality.id year %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-print"></i></span>Exporta ba Excel</a>
+                       {% elif municipality %}
+                       <a href="{% url 'report_development:print1' municipality.id %}" class="btn btn-sm btn-labeled btn-info mb-2" target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Imprimi</a>
+                       <a href="{% url 'report_development:excel1' municipality.id %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-print"></i></span>Exporta ba Excel</a>
+                       {% elif year %}
+                       <a href="{% url 'report_development:print7' year %}" class="btn btn-sm btn-labeled btn-info mb-2" target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Imprimi</a>
+                       <a href="{% url 'report_development:excel7' year %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-print"></i></span>Exporta ba Excel</a>
+                       {% else %}
+                       <a href="{% url 'report_development:print-all' %}" class="btn btn-sm btn-labeled btn-info mb-2" target="_blank"><span class="btn-label"><i class="fa fa-print"></i></span>Imprimi</a>
+                       <a href="{% url 'report_development:excel-all' %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-print"></i></span>Exporta ba Excel</a>
+                       {% endif %}
+                       {% endif %}
+
+                      </div>
+                  </div>
+              <div class="card-body">
+                <section id="no-more-tables">
+                  <table class="table table-striped my-4 w-100" id="datatable2">
+                    <thead>
+                      <tr>
+                        <th>N&uacute.</th>
+                        <th>Naran Projetu</th>
+                        <th>Naran Kompa&ntildeia</th>
+                        <th>Data Hahu</th>
+                        <th>Data Remata</th>
+                        {% if group == 'admin' %}
+                        <th>Munis&iacutepiu</th>
+                        <th>Postu</th>
+                        <th>Suku</th>
+                        {% endif %}
+                        <th>Tinan</th>
+                        <th><center>Asaun</center></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for obj in objects %}
+                      <tr>
+                        <td data-title="Nu.">{{ forloop.counter }}</td>
+                        <td data-title="Project name">{{ obj.name }}</td>
+                        <td data-title="Project Company">{{ obj.company }}</td>
+                        <td data-title="Project Start Period">{{ obj.start_period|date:"d-M-Y" }}</td>
+                        <td data-title="Project End Period">{{ obj.end_period|date:"d-M-Y" }}</td>
+                        {% if group == 'admin' %}
+                        <td data-title="Tinan">{{ obj.municipality }}</td>
+                        <td data-title="Tinan">{{ obj.administrativepost }}</td>
+                        <td data-title="Tinan">{{ obj.village }}</td>
+                        {% endif %}
+                        <td data-title="Tinan">{{ obj.year }}</td>
+                        <td data-title="Asaun">
+                          <div class="d-flex">
+                              <div class="flex-fill"><a href="{% url 'development:project-viewdetail' obj.hashed %}" class="btn btn-sm btn-success" title="View Detail"><i class="fas fa-eye"></i></a></div>
+                          {% if group == "sec" %}
+                              <div class="flex-fill"><a href="{% url 'development:project-edit' obj.hashed %}" class="btn btn-sm btn-primary" title="Update"><i class="fas fa-pencil-alt"></i></a></div>
+                              <div class="flex-fill"> <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-{{obj.id}}" style="text-decoration: none"><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                          {% endif %}
+                        </div>
+                        </td>
+
+                         <div class="modal fade" id="delete-{{obj.id}}" data-backdrop="false"><!-- modal -->
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Delete Dadus</h4>
+                                  <button type="button" class="close" data-dismiss="modal">X</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  Ita Boot hakarak hamoos dadus projetu ho naran {{ obj.name | upper }}?
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Lae</button>
+                                  <a href="{% url 'development:project-delete' obj.hashed %}" class="btn btn-info">Sim</a>
+                                </div>
+                              </div>
+                            </div>
+                        </div><!-- endmodal -->
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+              <!--end card-body-->
+            </div>
+            <!--end card-->
+        </div>
+        <!--end row-->
+        {% comment %} END PAGE {% endcomment %}
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- Page footer-->
+{% include 'main/footer.html' %} {% endblock %}

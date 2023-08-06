@@ -1,0 +1,108 @@
+{% load static %}
+<aside class="aside-container">
+  <!-- START Sidebar (left)-->
+  <div class="aside-inner">
+    <nav class="sidebar" data-sidebar-anyclick-close="">
+      <!-- START sidebar nav-->
+      <ul class="sidebar-nav">
+        <!-- START user info-->
+        <li class="has-user-block">
+          <div class="collapse" id="user-block">
+            <div class="item user-block">
+              <!-- User picture-->
+              <div class="user-block-picture">
+                <div class="user-block-status">
+                  <img class="img-thumbnail rounded-circle" src="{% static 'main/img/user/02.jpg' %}" alt="Avatar" width="60" height="60" />
+                  <div class="circle bg-success circle-lg"></div>
+                </div>
+              </div>
+              <!-- Name and Job-->
+              <div class="user-block-info"><span class="user-block-name">Hello, {{ request.user.username | upper }}</span><span class="user-block-role">Admin</span></div>
+            </div>
+          </div>
+        </li>
+        <!-- END user info-->
+        <!-- Iterates over all sidebar items-->
+        <li class="nav-heading mt-4"><span data-localize="sidebar.heading.HEADER">Menu Livru (C1-C2)</span></li>
+        <li class="{{development}}">
+          <a href="{% url 'development:dashboard-development' %}" title="Home">
+            <!-- <div class="float-right badge badge-success">30</div> -->
+            <em class="fas fa-home"></em><span data-localize="sidebar.nav.WIDGETS">Varanda</span>
+          </a>
+        </li>
+        <li class="{{project1}}">
+          <a href="{% url 'development:project-list' %}" title="Projetus"><em class="fas fa-cogs"></em><span>Projetu</span></a>
+        </li>
+        <li class="{{activity1}}">
+          <a href="{% url 'development:activity-list' %}" title="Atividades"><em class="fas fa-folder"></em><span>Atividade</span></a>
+        </li>
+        <hr />
+
+         {% comment %} FUNDUS {% endcomment %}
+        <li class="nav-heading"><span data-localize="sidebar.heading.HEADER">Fundus</span></li>
+        <li class="{{fundnational}}">
+          <a href="#Fundus" title="Fundus" data-toggle="collapse"><em class="fas fa-money-check-alt"></em><span>Fundus</span></a>
+          <ul class="sidebar-nav sidebar-subnav collapse" id="Fundus">
+            <!-- <li class="sidebar-subnav-header">Desizaun</li> -->
+            <li class="{{fundnational}}">
+              <a href="{% url 'development:fundnational-project-list' %}" title="Nasional"><span>Nasional</span></a>
+            </li>
+            <li class="{{fundmunicipality}}">
+              <a href="{% url 'development:fundmunicipality-project-list' %}" title="Munisipiu"><span>Munis&iacutepiu</span></a>
+            </li>
+            <li class="{{fundong}}">
+              <a href="{% url 'development:fundong-project-list' %}" title="ONG"><span>ONG</span></a>
+            </li>
+            <li class="{{fundagency}}">
+              <a href="{% url 'development:fundagency-activity-list' %}" title="Ajensia"><span>Aj&eacutensia</span></a>
+            </li>
+          </ul>
+        </li>        
+        {% comment %} END FUNDUS {% endcomment %} 
+        <hr/>
+        {% comment %} CUSTOM {% endcomment %}
+        <li class="nav-heading"><span data-localize="sidebar.heading.HEADER">Custom</span></li>
+        <li class="">
+          <a href="#custom" title="Custom" data-toggle="collapse"><em class="fas fa-align-justify"></em><span>Dadus Custom</span></a>
+          <ul class="sidebar-nav sidebar-subnav collapse" id="custom">
+            <!-- <li class="sidebar-subnav-header">Desizaun</li> -->
+            <li class="{{nationalactive}}">
+          <a href="{% url 'development:custom-national-lists' %}" title="Nasional">
+            <span data-localize="sidebar.nav.WIDGETS">Nasional</span>
+          </a>
+        </li>
+        <li class="{{ongactive}}">
+          <a href="{% url 'development:custom-ong-lists' %}" title="ONG">
+            <span data-localize="sidebar.nav.WIDGETS">ONG</span>
+          </a>
+        </li>
+        <li class="{{agencyactive}}">
+          <a href="{% url 'development:custom-agency-lists' %}" title="Ajensia">
+            <span data-localize="sidebar.nav.WIDGETS">Aj&eacutensia</span>
+          </a>
+        </li>
+        <li class="{{companyactive}}">
+          <a href="{% url 'development:custom-company-lists' %}" title="Kompania">
+            <span data-localize="sidebar.nav.WIDGETS">Kompa&ntildeia</span>
+          </a>
+        </li>
+      </ul>
+        </li>
+        {% comment %} END CUSTOM {% endcomment %}
+        <hr/>
+        {% comment %} RELATORIO {% endcomment %}
+        <li class="nav-heading"><span data-localize="sidebar.heading.HEADER">Relat&oacuteriu</span></li>
+        <li class="{{report}}">
+          <a href="{% url 'development:report-list' %}" title="Relatoriu Modul Dezenvolvimentu">
+            <!-- <div class="float-right badge badge-success">30</div> -->
+            <em class="icon-book-open"></em><span data-localize="sidebar.nav.WIDGETS">Relat&oacuteriu Livru (C1-C2)</span>
+          </a>
+          </li>
+          {% comment %} END RELATORIO {% endcomment %}
+        <hr/>       
+      </ul>
+      <!-- END sidebar nav-->
+    </nav>
+  </div>
+  <!-- END Sidebar (left)-->
+</aside>

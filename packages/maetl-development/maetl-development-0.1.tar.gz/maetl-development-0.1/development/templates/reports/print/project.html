@@ -1,0 +1,143 @@
+{% load static %}<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>{{title}}</title>
+    <style type="text/css">
+           th {
+                font-family: "Agency FB", "sans-serif";
+              }
+            
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+            .box {
+              float: left;
+              width: 25%;
+              padding: 0px;
+            }
+
+            .clearfix::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+             @page {
+        size: letter landscape;
+        margin: 1cm;
+      }
+        </style>
+    <script src="{% static 'main/js/jquery.min.js' %}"></script>
+    <script src="{% static 'main/src/jquery.table2excel.js' %}"></script>
+  </head>
+  {% if page == "print" %}
+  <body onload="print()">
+    {% else %}
+    <body>
+      {% endif %}
+    <br /><br />
+    <div  style="margin-bottom: 2px;font-family: Times New Roman;font-size: 1.2rem">
+      <center>Formatu C.1 {% if page == "excel" %}
+      <button id ='download'>Exporta ba Excel</button>
+      {% endif %}</center>
+    </div>
+    <p><b><center><h1>LIVRU DADUS PROJETU SUKU</h1></center></b></p>
+    <div class="clearfix" style="text-align: center;">
+              <div class="box">
+              <p>Suku : <u>{{employee.village}}</u></p>
+              </div>
+              <div class="box">
+              <p>Postu Administrativu : <u>{{employee.administrativepost}}</u></p>
+              </div>
+              <div class="box">
+                {% if employee.municipality.name == "Dili" or employee.municipality.name == "Baucau" or employee.municipality.name == "Bobonaro" or employee.municipality.name == "Ermera" %}
+                  <p>Autoridade Munisipal : <u>{{employee.municipality}}</u></p>
+                {% elif employee.municipality.name == "Oe-cusse" %}
+                  <p>Rejiaun Aut&oacute;nomu : <u>RAEOA</u></p>
+                {% else %}
+                  <p>Munis&iacute;piu : <u>{{employee.municipality}}</u></p>
+                {% endif %}
+              </div>
+              <div class="box">
+              <p>Tinan : <u>{{year}}</u></p>
+              </div>
+            </div>
+    <table width="100%" border="1" cellpadding="0" cellspacing="0" style="font-size: 14px" id='table2excel'>
+      <thead>
+        <tr style="background-color: white; width: auto">
+          <th rowspan="2" style="width: 25px">N&uacute.</th>
+          <th rowspan="2" style="width: 12%">Naran Projetu</th>
+          <th rowspan="2">Naran Kompa&ntildeia</th>
+          <th colspan="2" style="padding-top: 2px; text-align:center;"><center>Durasaun Konstrusaun</center></th>
+          <th colspan="5" style="padding-top: 2px; width: 50% ;text-align: center;"><center>Fundus Husi</center></th>
+          <th rowspan="2">Benef&iacutesiu</th>
+          <th rowspan="2">Obs</th>
+        </tr>
+        <tr style="background-color: white; width: auto">
+          <th style="padding: 2px">Data Hahu</th>
+          <th style="padding: 2px">Data Remata</th>
+          <th>Munis&iacutepiu</th>
+          <th style="width: 15%">Nasional</th>
+          <th>ONG</th>
+          <th>Volunt&aacuteriu</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="padding-top: 2px; text-align: center; width: auto; background-color: silver">
+          <td><center>1</center></td>
+          <td><center>2</center></td>
+          <td><center>3</center></td>
+          <td><center>4</center></td>
+          <td><center>5</center></td>
+          <td><center>6</center></td>
+          <td><center>7</center></td>
+          <td><center>8</center></td>
+          <td><center>9</center></td>
+          <td><center>10</center></td>
+          <td><center>11</center></td>
+          <td><center>12</center></td>
+        </tr>
+
+        {% for index, obj in objects.iterrows %}
+        <tr style="padding-top: 2px; text-align: center; width: auto">
+          <td><center>{{forloop.counter}}</center></td>
+          <td><center>{{obj.0.name}}</center></td>
+          <td><center>{{obj.0.company}}</center></td>
+          <td><center>{{obj.0.start_period|date:"d / M / Y"}}</center></td>
+          <td><center>{{obj.0.end_period|date:"d / M / Y"}}</center></td>
+          <td><center>{% for f in fMunicipality %} {% if f.project == obj.0 %} {{f}} {% endif %} {% endfor %}</center></td>
+          <td><center>{% for g in fNational %} {% if g.project == obj.0 %} {{g}} {% endif %} {% endfor %}</center></td>
+          <td><center>{% for h in fOng %} {% if h.project == obj.0 %} {{h}} {% endif %} {% endfor %}</center></td>
+          <td><center>{% for i in fVolunteer %} {% if i.project == obj.0 %} {{i}} {% endif %} {% endfor %}</center></td>
+          <td><center>{{obj.total_amount}}</center></td>
+          <td><center>{{obj.0.benefit}}</center></td>
+          <td><center>{{obj.0.obs}}</center></td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+    <script>
+  $("#download").click(function(){
+    alert("Exporta Dadus Ba Excel")
+    $("#table2excel").table2excel({
+      // exclude CSS class
+      exclude: ".noExl",
+      name: "Relatóriu Projetu Suku : {{employee.village}} / Postu : {{employee.administrativepost}} /  Munisipiu : {{employee.municipality}}  /  Tinan : {{year}} ",
+      filename: "Relatóriu Projetu Suku : {{employee.village}} / Postu : {{employee.administrativepost}} /  Munisipiu : {{employee.municipality}}  /  Tinan : {{year}} ", //do not include extension
+      fileext: ".xls" // file extension
+    }); 
+  });
+</script>
+  </body>
+</html>

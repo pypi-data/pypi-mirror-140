@@ -1,0 +1,98 @@
+{% extends "main/layout.html" %} {% load static %} {% block title %}{{title}}{% endblock title %} {% block content %} {% include 'development/sidebar.html' %}
+
+<section class="section-container">
+  <!-- Page content-->
+  <div class="content-wrapper">
+    <div class="content-heading d-flex justify-content-between">
+      <div>
+        {{title}}<small>
+          <ol class="breadcrumb mt-3">
+            <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Varanda</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+          </ol>
+        </small>
+      </div>
+      <div>
+              {% ifequal user.groups.all.0.name 'admin' %}
+              <div class="bg-danger p-2">
+              <small class="text-white">Admin Nasional MAE</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'xefe' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Xefe Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'sec' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Secretariado Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+            </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-12">
+        {% comment %} START PAGE {% endcomment %}
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <!-- START card-->
+            <div class="card flex-row align-items-center align-items-stretch border-0">
+              <div class="col-4 d-flex align-items-center bg-primary-dark justify-content-center rounded-left"><em class="fas fa-cogs fa-3x"></em></div>
+              <div class="col-8 py-3 bg-primary rounded-right">
+                <div class="h2 mt-0">{{countproject}}</div>
+                <div class="text-uppercase">Projetus</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <!-- START card-->
+            <div class="card flex-row align-items-center align-items-stretch border-0">
+              <div class="col-4 d-flex align-items-center bg-green-dark justify-content-center rounded-left"><em class="icon-folder fa-3x"></em></div>
+              <div class="col-8 py-3 bg-green rounded-right">
+                <div class="h2 mt-0">{{countactivity}}</div>
+                <div class="text-uppercase">Atividades</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- START row-->
+          <!--   <div class="row"> -->
+          <div class="col-xl-6">
+            <div class="card pie-chart-example">
+              <div class="card-header d-flex align-items-center">
+                <h4>Projetus</h4>
+              </div>
+              <div class="card-body">
+                <div class="chart-container">
+                  <canvas id="project-charts" data-url="{% url 'development:project-charts' %}"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="card card-default" id="cardChart3">
+              <div class="card-header">
+                <div class="card-title">Atividades</div>
+              </div>
+              <div class="card-body">
+                <div class="chart-bar-stacked flot-chart">
+                  <canvas id="activity-charts" data-url="{% url 'development:activity-charts' %}"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% comment %} END PAGE {% endcomment %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page footer-->
+{% include 'main/footer.html' %}
+
+<script src="{% static 'main/js/jquery.min.js' %}"></script>
+<script src="{% static 'main/vendor/chart.js/dist/development_chart.js' %}"></script>
+{% endblock %}

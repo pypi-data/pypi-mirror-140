@@ -1,0 +1,213 @@
+{% extends 'main/layout.html' %}
+{% block title %}{{title}}{% endblock title %}
+{% block content %}
+{% if group == 'admin' %}
+{% include 'report/sidebar.html' %}
+{% else %}
+{% include 'development/sidebar.html' %}
+{% endif %}
+<section class="section-container">
+  <!-- Page content-->
+  <div class="content-wrapper">
+    <div class="content-heading d-flex justify-content-between">
+      <div>
+        {{title}}<small>
+          <ol class="breadcrumb mt-3">
+            {% if group == 'admin' %}
+            <li class="breadcrumb-item"><a href="{% url 'report:report-dashboard' %}">Varanda</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'report_development:report-development-dashboard' %}">Dezenvolvimentu</a>
+              {% else %}
+            <li class="breadcrumb-item"><a href="{% url 'development:dashboard-development' %}">Varanda</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'development:project-list' %}">Lista Projetu</a></li>
+            {% endif %}
+            <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+          </ol>
+        </small>
+      </div>
+      <div>
+              {% ifequal user.groups.all.0.name 'admin' %}
+              <div class="bg-danger p-2">
+              <small class="text-white">Admin Nasional MAE</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'xefe' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Xefe Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'sec' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Secretariado Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+            </div>
+    </div>
+    {% if messages %}
+        {% for message in messages %} 
+            <div id="divmessage" class="alert alert-{{ message.tags }} alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              {{message}}
+            </div>
+        {% endfor %}
+    {% endif %}
+    <div class="row">
+      <div class="col-xl-12">
+        {% comment %} START PAGE {% endcomment %}
+<div class="row">
+  <!-- Blog Content-->
+  <div class="col-xl-12">
+    <div class="card card-default">
+      {% comment %}
+      <div class="card-header">Informasaun Projetu</div>
+      {% endcomment %}
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="lead bb">
+              Informasaun Projetu
+              {% if group == 'sec' %}
+              <a href="{% url 'development:project-edit' objects.hashed %}" class="btn btn-labeled btn-info mb-2 ml-2" type="button">
+                <span class="btn-label"><i class="fa fa-edit"></i></span>
+                Altera Projetu
+              </a>
+              {% endif %}
+            </p>
+            <form class="form-horizontal">
+              <div class="form-group row">
+                <div class="col-md-4">Naran Projetu</div>
+                <div class="col-md-8"><strong>{{objects.name}}</strong></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-4">Kompa&ntildeia</div>
+                <div class="col-md-8"><strong>{{objects.company}}</strong></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-4">Periode Hahu</div>
+                <div class="col-md-8"><strong>{{objects.start_period|date:"d-M-Y"}}</strong></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-4">Periode Remata</div>
+                <div class="col-md-8"><strong>{{objects.end_period|date:"d-M-Y"}}</strong></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-4">Tinan</div>
+                <div class="col-md-8"><strong>{{objects.year}}</strong></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-4">Munis&iacutepiu</div>
+                <div class="col-md-8"><strong>{{objects.municipality}}</strong></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-4">Postu Adm.</div>
+                <div class="col-md-8"><strong>{{objects.administrativepost}}</strong></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-4">Suku</div>
+                <div class="col-md-8"><strong>{{objects.village}}</strong></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-4">Benef&iacutesiu</div>
+                <div class="col-md-8"><strong>{{objects.benefit}}</strong></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-4">Observasaun</div>
+                <div class="col-md-8"><strong>{{objects.obs}}</strong></div>
+              </div>
+              
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <p class="lead bb">
+              Informasaun Fundus
+              {% if group == 'sec' %}
+              <a href="{% url 'development:project-add1-fund1' objects.hashed %}" class="btn btn-labeled btn-info mb-2 ml-2" type="button">
+                <span class="btn-label"><i class="fa fa-plus"></i></span>
+                Adisiona Fundus
+              </a>
+              {% endif %}
+            </p>
+            <div class="table-responsive"> 
+              <table class="table table-striped table-bordered table-hover">
+                {% comment %} <thead>
+                  <tr>
+                  </tr>
+                </thead> {% endcomment %}
+                <tbody>
+                  <tr>
+                    <th>
+
+                      {% comment %} <td class="text-center text-bold">Nu.</td> {% endcomment %}
+                      <th class="text-center text-bold">Fundus</th>
+                      <th class="text-center text-bold">Naran</th>
+                      <th class="text-center text-bold">Ajuda Material</th>
+                      <th class="text-center text-bold">Montante Orsamentu</th>
+                      {% if group == 'sec' %}
+                      <th class="text-center text-bold">Asaun</th>
+                      {% endif %}
+                    </th>
+                  </tr>
+                  {% for d in result %}
+                  <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{d.fund}}</td>
+                    <td>{{d.name}}</td>
+                    {% if d.material == None %}
+                    <td>--</td>
+                    {% else %}
+                    <td>{{d.material}}</td>
+                    {% endif %}
+                    <td>$ {{d.amount}}</td>
+                    {% if group == 'sec' %}
+                      {% if d.fund == 'Nasional' %}
+                      <td><a href="{% url 'development:fundnational-project-edit' d.hashed %}" title="Hadia"><i class="fa fa-edit"></i></a></td>
+                      {% elif d.fund == 'Munisípiu' %}
+                      <td><a href="{% url 'development:fundmunicipality-project-edit' d.hashed %}" title="Hadia"><i class="fa fa-edit"></i></a></td>
+                        {% elif d.fund == 'ONG' %}
+                        <td><a href="{% url 'development:fundong-project-edit' d.hashed %}" title="Hadia"><i class="fa fa-edit"></i></a></td>
+                        {% elif d.fund == 'Voluntáriu' %}
+                        <td><a href="{% url 'development:fundvolunteer-project-edit' d.hashed %}" title="Hadia"><i class="fa fa-edit"></i></a></td>
+                      {% endif %}
+                    
+                    {% endif %}
+
+                  </tr>
+                  <tr>
+                  {% endfor %}
+                    <td colspan="4" style="text-align: center;">Total</td>
+                    <td >$ {{total}}</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- END table-responsive-->
+          </div>
+        </div>
+        <hr>
+              <div class="form-group row">
+                <div class="col-md-12"><h3>Aneksu Imagen Ba Projetu "{{objects.name}}"
+                  {% if group == 'sec' or group == 'xefe' %}
+                 <a href="{% url 'development:project-add-image' objects.hashed %}" class="btn btn-labeled btn-info mb-2 ml-2" type="button">
+                
+                <span class="btn-label"><i class="fa fa-plus"></i></span>
+                Adisiona Imajen
+              </a>
+              {% endif %} 
+            </h3></div><hr>
+                {% for obj in imageproject %}
+                <div class="col-md-6"><img src="{{ obj.image.url }}" style="width: 45%; padding:5px;"></div>
+                {% endfor %}
+              </div>
+      </div>
+    </div>
+  </div>
+
+        {% comment %} END PAGE {% endcomment %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page footer-->
+{% include 'main/footer.html' %}
+  {% endblock content %}
+</div>
