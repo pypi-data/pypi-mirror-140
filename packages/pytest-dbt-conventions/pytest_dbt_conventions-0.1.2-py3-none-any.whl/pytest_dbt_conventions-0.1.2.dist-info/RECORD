@@ -1,0 +1,7 @@
+pytest_dbt_conventions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_dbt_conventions/plugin.py,sha256=000ffuy4HBBWqt1wcw5AMLAxSQrk7WW8z83mEosajC0,3585
+pytest_dbt_conventions-0.1.2.dist-info/entry_points.txt,sha256=oCtgTosKyT3qZ2H8_kh4XjdN6k6gQHsMOMUz5mSRloI,58
+pytest_dbt_conventions-0.1.2.dist-info/LICENSE,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+pytest_dbt_conventions-0.1.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pytest_dbt_conventions-0.1.2.dist-info/METADATA,sha256=8rdKn-S_7H-f-VCtI7JanC0P32ytLSnNP-Gb6w8FCrw,559
+pytest_dbt_conventions-0.1.2.dist-info/RECORD,,
