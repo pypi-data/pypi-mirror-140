@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mohou
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: Type license() to see the full license text
+Platform: UNKNOWN
+Requires-Dist: albumentations
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: tinyfk
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+Provides-Extra: test
+Requires-Dist: moviepy ; extra == 'test'
+Requires-Dist: pybullet ; extra == 'test'
+
+UNKNOWN
+
+
