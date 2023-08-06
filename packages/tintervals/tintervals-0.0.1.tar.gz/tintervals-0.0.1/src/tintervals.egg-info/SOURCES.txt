@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tintervals/__init__.py
+src/tintervals.egg-info/PKG-INFO
+src/tintervals.egg-info/SOURCES.txt
+src/tintervals.egg-info/dependency_links.txt
+src/tintervals.egg-info/requires.txt
+src/tintervals.egg-info/top_level.txt

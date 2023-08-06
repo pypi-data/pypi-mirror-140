@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tintervals
+Version: 0.0.1
+Summary: A collection of functions and tools to work with time intervals and to convert time data
+Home-page: UNKNOWN
+Author: Marco Pizzocaro
+Author-email: m.pizzocaro@inrim.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tintervals
+
+A collection of functions and tools to work with time intervals and to convert time data.
+
+## Basic usage
+
+## Requirements
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+## Authors
+
+(c) 2021 Marco Pizzocaro - Istituto Nazionale di Ricerca Metrologica (INRIM)
+
+
