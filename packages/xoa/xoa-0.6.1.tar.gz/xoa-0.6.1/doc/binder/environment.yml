@@ -1,0 +1,19 @@
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - appdirs
+  - cartopy
+  - cmocean
+  - configobj
+  - gsw
+  - matplotlib-base
+  - numba
+  - pip
+  - python>=3
+  - scipy
+  - xarray
+  - xesmf
+  - pip:
+    - https://github.com/VACUMM/xoa/archive/master.zip

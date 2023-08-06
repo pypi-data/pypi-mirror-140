@@ -1,0 +1,10 @@
+appdirs
+cmocean
+configobj
+gsw
+netCDF4
+numba
+pytest
+setuptools>=40.4
+scipy
+xarray>=0.17
