@@ -1,0 +1,5 @@
+PyYAML
+aiohttp
+jinja2
+pyzmq
+requests
