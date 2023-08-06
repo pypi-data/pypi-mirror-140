@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+easy_finweb/__init__.py
+easy_finweb.egg-info/PKG-INFO
+easy_finweb.egg-info/SOURCES.txt
+easy_finweb.egg-info/dependency_links.txt
+easy_finweb.egg-info/top_level.txt
