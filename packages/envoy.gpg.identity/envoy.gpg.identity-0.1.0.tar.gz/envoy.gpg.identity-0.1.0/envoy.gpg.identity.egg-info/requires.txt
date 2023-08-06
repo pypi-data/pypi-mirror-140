@@ -1,0 +1,2 @@
+aio.core>=0.8.0
+python-gnupg

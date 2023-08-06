@@ -1,0 +1,12 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+envoy.gpg.identity.egg-info/PKG-INFO
+envoy.gpg.identity.egg-info/SOURCES.txt
+envoy.gpg.identity.egg-info/dependency_links.txt
+envoy.gpg.identity.egg-info/namespace_packages.txt
+envoy.gpg.identity.egg-info/requires.txt
+envoy.gpg.identity.egg-info/top_level.txt
+envoy/gpg/identity/__init__.py
+envoy/gpg/identity/identity.py
+envoy/gpg/identity/py.typed
