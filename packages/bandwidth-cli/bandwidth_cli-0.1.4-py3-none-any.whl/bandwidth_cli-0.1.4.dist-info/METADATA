@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: bandwidth-cli
+Version: 0.1.4
+Summary: CLI for Bandwidth API calls
+Author: Malaney J Hill
+Author-email: mhill@phone.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.4,<9.0.0)
+Requires-Dist: python-dotenv (>=0.19.2,<0.20.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0)
+Description-Content-Type: text/markdown
+
+Bandwidth Subscriptions CLI Tool
+
+This tool presents a CLI interface allowing you to manage Bandwidth webhook subscriptions with the Bandwidth API.  
+(See https://dev.bandwidth.com/docs/account/subscriptions)
+
+Requires Python 3.7+
+
+This tool depends upon the following environment variables to be set:
+    - bandwidth_account_id=<your account_id>
+    - bandwidth_password=<your password>
+    - bandwidth_site_id=<your site id>
+    - bandwidth_url=https://dashboard.bandwidth.com/api
+    - bandwidth_username=<your username>
+
+Usage:
+
+    - pip install bandwidth_cli
+    - set env vars above
+    - bandwidth_cli --help
+

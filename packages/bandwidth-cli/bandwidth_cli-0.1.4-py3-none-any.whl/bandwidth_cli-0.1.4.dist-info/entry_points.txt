@@ -1,0 +1,3 @@
+[console_scripts]
+bandwidth-cli=bandwidth_cli.main:cli
+
