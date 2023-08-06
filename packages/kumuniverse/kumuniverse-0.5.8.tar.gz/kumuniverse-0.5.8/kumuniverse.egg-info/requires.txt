@@ -1,0 +1,13 @@
+pymongo
+pymongo[srv]
+pymongo[aws]
+requests
+UnleashClient
+boto3
+pandas
+
+[databricks]
+pyspark
+
+[sagemaker]
+sagemaker
