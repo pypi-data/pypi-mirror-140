@@ -1,0 +1,12 @@
+numpy
+psutil
+torch
+torchvision
+tinyfk
+tqdm
+matplotlib
+albumentations
+
+[test]
+pybullet
+moviepy

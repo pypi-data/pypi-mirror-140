@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mohou
+Version: 0.0.2
+Summary: Visuomotor imitation learning framework
+Home-page: UNKNOWN
+Author: Hirokazu Ishida
+Author-email: h-ishida@jsk.imi.i.u-tokyo.ac.jp
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+
