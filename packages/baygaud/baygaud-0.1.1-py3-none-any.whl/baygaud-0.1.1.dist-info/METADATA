@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: baygaud
+Version: 0.1.1
+Summary: profile decomposition tool
+Home-page: https://github.com/seheon.oh/baygaud
+Author: Se-Heon Oh
+Author-email: seheon.oh@sejong.ac.kr
+License: UNKNOWN
+Download-URL: https://github.com/seheon.oh/baygaud/xx.zip
+Keywords: HI spectral line decomposition,nested sampling
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Requires-Dist: numpy
+Requires-Dist: fitsio
+Requires-Dist: astropy
+Requires-Dist: spectral-cube
+Requires-Dist: ray
+Requires-Dist: dynesty
+Requires-Dist: numba
+
+UNKNOWN
+
