@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: milspend
+Version: 0.0.1
+Summary: A package for visualizing military spending of up to 4 countries
+Home-page: https://github.com/ytakefuji/defense
+Author: yoshiyasu takefuji
+Author-email: takefuji@keio.jp
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ytakefuji/defense
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# defense
+This is under review.
+
+Using a SIPRI dataset, milspend can visualize military spending of up to four countries.
+
+dataset is downloadable from:
+
+https://sipri.org/sites/default/files/SIPRI-Milex-data-1949-2020_0.xlsx
+
+<img src='https://github.com/ytakefuji/defense/blob/main/result.png' width=640 height=480>
+
+# How to install milspend
+You may need matplotlib library.
+
+$ pip install matplotlib
+
+$ pip install milspend
+
+# How to run milspend
+
+$ milspend USA China Russia Japan
+
+<img src='https://github.com/ytakefuji/defense/raw/main/uscnrujp.png' height=480 width=640>
+
+$ milspend Japan 'Korea, South'
+
+<img src='https://github.com/ytakefuji/defense/raw/main/koreajapan.png' height=480 width=640>
+
+
+# To run us_china_russia.py
+SIPRI-Milex-data-1949-2020_0.xlsx file needs to be placed in the same directory as the following file us_china_russia.py.
+
+$ python us_china_russia.py
+
+
