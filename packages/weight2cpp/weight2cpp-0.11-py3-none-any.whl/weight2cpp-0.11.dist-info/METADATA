@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: weight2cpp
+Version: 0.11
+Summary: from AI weight to cpp array
+Home-page: https://github.com/ejkim-kr/weight2cpp
+Author: eunju Kim
+Author-email: ejkim@kisti.re.kr
+License: UNKNOWN
+Download-URL: https://github.com/ejkim-kr/weight2cpp/archive/weight2cpp_v0.1.zip
+Keywords: weight,cpp,array
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# wegiht2cpp
+pip registration
+
+
