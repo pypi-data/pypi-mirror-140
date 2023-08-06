@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kneedeepio-plugins
+Version: 0.0.1
+Summary: A plugin framework for applications written in Python.
+Home-page: https://github.com/kneedeepio/python-plugin-framework
+Author: Daniel Williams
+Author-email: dwilliams@port8080.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-plugin-framework
+A plugin framework for applications written in Python.
+
+
