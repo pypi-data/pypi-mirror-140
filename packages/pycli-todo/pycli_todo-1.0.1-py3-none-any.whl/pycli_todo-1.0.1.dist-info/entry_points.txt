@@ -1,0 +1,3 @@
+[console_scripts]
+td=pycli_todo.pytodo:entry_point
+
