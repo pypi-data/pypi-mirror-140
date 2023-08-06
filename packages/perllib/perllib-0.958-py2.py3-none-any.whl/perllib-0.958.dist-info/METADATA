@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: perllib
+Version: 0.958
+Summary: Library functions to support pythonizer
+Home-page: https://github.com/snoopyjc/pythonizer
+Author: Joe Cool
+Author-email: snoopyjc@gmail.com
+License: Artistic License 2.0 - The Perl Foundation
+Keywords: perllib
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Artistic License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: license.html
+License-File: AUTHORS.rst
+
+=======
+perllib
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/perllib.svg
+        :target: https://pypi.python.org/pypi/perllib
+
+.. image:: https://img.shields.io/travis/snoopyjc/perllib.svg
+        :target: https://travis-ci.com/snoopyjc/perllib
+
+.. image:: https://readthedocs.org/projects/perllib/badge/?version=latest
+        :target: https://perllib.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Library functions to support pythonizer
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://perllib.readthedocs.io.
+
+
+Features
+--------
+
+* Perl library functions typically return 1 on success and undef on failure, whereas python library functions raise exceptions on failure.  Also, perl automatically converts variables from strings to numbers and vice-versa when referenced in the appropriate context.  In perl, global variables are truly global across files and are organized by package name, where in python global variables have file scope.  In addition, perl has autovivification, which means that arrays and hash tables magically appear out of whole cloth when referenced.  This library supports all of those features and allows the "pythonizer" perl to python translator generate code that is fairly readable.
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.958 (2022-02-23)
+------------------
+
+* Don't give a close failed error on a pipe which got automatically closed, give empty result for keys(), values(), and items() on a fresh ArrayHash instead of AttributeError
+
+0.957 (2022-02-22)
+------------------
+
+* Add list_to_hash function to process key/value pairs
+
+0.956 (2022-02-21)
+------------------
+
+* Implement all options of translate (tr///)
+
+0.955 (2022-02-19)
+------------------
+
+* Fix split: A zero-width match at the beginning of EXPR never produces an empty field, fix bootstrapping issues
+
+0.954 (2022-02-17)
+------------------
+
+* Add -n: trace run, fix issue of scalar being initialized as an array
+
+0.953 (2022-02-15)
+------------------
+
+* First release on PyPI.
+
+
