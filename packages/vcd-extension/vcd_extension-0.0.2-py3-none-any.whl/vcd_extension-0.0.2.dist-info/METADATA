@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: vcd-extension
+Version: 0.0.2
+Summary: Extensibility for cloud management tools
+Home-page: https://gitlab.fing.edu.uy/proyecto-grado-vcloud/vcd-extension-backend
+Author: Marcelo Sureda
+Author-email: msureda@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: APScheduler (>=3.7.0)
+Requires-Dist: certifi (>=2020.12.5)
+Requires-Dist: chardet (>=4.0.0)
+Requires-Dist: humanfriendly (>=9.1)
+Requires-Dist: idna (<3,>=2.5)
+Requires-Dist: importlib-metadata (>=3.4.0)
+Requires-Dist: lxml (>=4.6.2)
+Requires-Dist: pep517 (>=0.9.1)
+Requires-Dist: pickleDB (>=0.9.2)
+Requires-Dist: pika (>=1.2.0)
+Requires-Dist: pkg-resources (>=0.0.0)
+Requires-Dist: Pygments (>=2.8.1)
+Requires-Dist: python-dateutil (>=2.8.1)
+Requires-Dist: pytz (>=2021.1)
+Requires-Dist: pyvcloud (>=23.0.0)
+Requires-Dist: PyYAML (>=5.4.1)
+Requires-Dist: redis (>=3.5.3)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: six (>=1.15.0)
+Requires-Dist: toml (>=0.10.2)
+Requires-Dist: typing-extensions (>=3.7.4.3)
+Requires-Dist: unittest-xml-reporting (>=3.0.4)
+Requires-Dist: urllib3 (>=1.26.3)
+Requires-Dist: vcd-api-schemas-type (>=9.1.2.dev10)
+Requires-Dist: zipp (>=3.4.0)
+
+# vcd Extension Backend
+
+_Extensibility for cloud management tools._
+
+Framework that extends VMWare's vCloud Director APIs.  Relies on and extends [`pyvcloud`](https://github.com/vmware/pyvcloud) SDK.
+
+## Installation
+
+### Install vcd Extension package
+To install vcd Extension Backend package execute the following command:
+
+```shell
+python -m pip install vcd-extension
+```
+
+### Installation in Development Mode
+To install in Development Mode, follow these steps.
+
+1. Clone the repository.
+
+   Use one of the following options: SSH key or HTTPs.
+
+Using Git [SSH key](https://gitlab.fing.edu.uy/help/ssh/README#gitlab-and-ssh-keys):
+
+```shell
+git clone git@gitlab.fing.edu.uy:proyecto-grado-vcloud/vcd-extension-backend.git
+```
+
+Using HTTPS:
+
+```shell
+git clone https://gitlab.fing.edu.uy/proyecto-grado-vcloud/vcd-extension-backend.git
+```
+
+2. Create and activate the Python Virtual Environment. This is an optional, but highly recommended step.
+
+```shell
+cd vcd-extension-backend
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+3. Install the project in develop mode.
+
+```shell
+python setup.py develop
+```
+
+4. Start working on it!!!
+
+## Starting the Server
+
+When installed in development mode an example script to start the server is available under directory `usecases`.
+So, after installing in development mode, follow these steps:
+
+1. Set `usecases` as working directory.
+
+```shell
+cd usecases
+```
+
+2. Edit `config.yml` file to reflect the settings of your environment, like server IP, port, credentials, etc.
+
+   See documentation for parameter's reference.
+
+
+3. Run the shell script to start the server.
+
+```shell
+chmod u+x start_server.sh
+./start_server.sh
+```
+
+## Testing
+
+### Unit Testing
+
+*TO-DO!!!*
+
+### Backend Endpoints Use Cases Testing
+
+See directory tests
+
+## Notes
+
+This project makes part of a final degree course for Computer Engineering in FING - UDELAR.  The project's goal is to
+extend vCloud Director by developing a higher-level intermediate API that interacts with the different APIs of
+the product, providing a single programmatic entry point to the different capabilities of the software.
+
+## License
+
+Apache 2.0
+
+
