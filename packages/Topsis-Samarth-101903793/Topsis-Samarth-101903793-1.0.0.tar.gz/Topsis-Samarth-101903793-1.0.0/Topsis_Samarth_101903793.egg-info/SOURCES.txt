@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+TOPSIS/__init__.py
+TOPSIS/__main__.py
+Topsis_Samarth_101903793.egg-info/PKG-INFO
+Topsis_Samarth_101903793.egg-info/SOURCES.txt
+Topsis_Samarth_101903793.egg-info/dependency_links.txt
+Topsis_Samarth_101903793.egg-info/entry_points.txt
+Topsis_Samarth_101903793.egg-info/top_level.txt
