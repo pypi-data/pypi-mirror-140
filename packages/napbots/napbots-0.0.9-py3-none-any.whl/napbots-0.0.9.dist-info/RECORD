@@ -1,0 +1,17 @@
+napbots/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+napbots/example.py,sha256=D9GuoYZl74FCygRnGqfzY-4SkuzNz0aNgmTQAuwQn8Y,875
+napbots/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napbots/api/authentication/__init__.py,sha256=D9U9LS23xuU6a_8mKJnott9JPtFxJz2S9RBCzNU_bdA,116
+napbots/api/authentication/auth.py,sha256=dgen6NlH4sdNtdxsEzgwZc9XqmRH07QeZEV6qtVu34Q,412
+napbots/api/base/__init__.py,sha256=7VK88MoFcdAcTgbLE0aocmmfTpx1yDCQVD52_618VY8,30
+napbots/api/base/base.py,sha256=c-gP606JdxNBX-7ljnnFNzAeMzFLT71ZJOqZUadUsVM,1990
+napbots/api/client/__init__.py,sha256=7VK88MoFcdAcTgbLE0aocmmfTpx1yDCQVD52_618VY8,30
+napbots/api/client/client.py,sha256=zHgp_CoLCkph9aPnYRvI9ZqNbJZuf39scgIoM8IhCkc,2807
+napbots/api/data/__init__.py,sha256=7VK88MoFcdAcTgbLE0aocmmfTpx1yDCQVD52_618VY8,30
+napbots/api/data/model.py,sha256=gAA5FONfX_4QI2xdIf1XgamgrfHRa7nSlCeKoWlbB7U,4985
+napbots/api/data/serializable.py,sha256=gpbgjpz3wEOlM5j09J5XbwGnRFKEyLwIDKhyQVeJtUA,1511
+napbots-0.0.9.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+napbots-0.0.9.dist-info/METADATA,sha256=cmLyQtyY13fYBYWzZ55u_gzjJAAH6rdmp8XVvN_sPNk,579
+napbots-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napbots-0.0.9.dist-info/top_level.txt,sha256=k8iYoafUbwkICNnu7asTO27CL6bxR06DkmNXZDZXcUg,8
+napbots-0.0.9.dist-info/RECORD,,

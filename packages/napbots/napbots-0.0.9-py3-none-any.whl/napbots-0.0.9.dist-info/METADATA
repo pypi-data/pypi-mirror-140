@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: napbots
+Version: 0.0.9
+Summary: A package to create a strategy on NapBots
+Home-page: https://github.com/ProjectNapoleonX/napbots-client/
+Author: Napoleon Software
+Author-email: it-team@napoleonx.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NapBots client
+
+This package helps you to create your own strategy on NapBots.com
+
+
