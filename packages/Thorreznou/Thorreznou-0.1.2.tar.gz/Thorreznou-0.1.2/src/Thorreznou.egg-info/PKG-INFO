@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Thorreznou
+Version: 0.1.2
+Summary: Thorreznou.
+Home-page: https://github.com/mabatalla/DSFT1121
+Author: The Bridge Data Science Team 1121
+Author-email: Thorreznou@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DSFT1121
+Library for machine learning projects with Python
+
+
