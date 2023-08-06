@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: classiq-interface
+Version: 0.7.0
+Summary: Classiq Interface
+Home-page: https://classiq.io
+License: Proprietary
+Keywords: quantum,sdk,QAD,QDL,circuit
+Author: Classiq Technologies
+Author-email: support@classiq.io
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: Pyomo (>=6.0,<6.1)
+Requires-Dist: importlib-metadata (>=4.8.1,<5.0.0); python_version < "3.8"
+Requires-Dist: matplotlib (>=3.4.3,<4.0.0)
+Requires-Dist: more-itertools (>=8.8.0,<9.0.0)
+Requires-Dist: networkx (>=2.5.1,<3.0.0)
+Requires-Dist: numpy (>=1.20.1,<2.0.0)
+Requires-Dist: pillow (>=9.0.0,<10.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: qiskit-terra (>=0.19.1,<1)
+Requires-Dist: tabulate (>=0.8.9,<1)
+Project-URL: Documentation, https://classiquantum.com/reference/
+Description-Content-Type: text/markdown
+
+See [classiq package](https://pypi.org/project/classiq/) README.
+
+### License
+
+See [license](https://classiq.io/license).
+
