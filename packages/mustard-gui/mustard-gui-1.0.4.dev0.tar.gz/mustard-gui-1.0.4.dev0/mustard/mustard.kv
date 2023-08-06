@@ -1,0 +1,339 @@
+#:import np numpy
+#:import os os
+#:import math math
+
+<Label>
+    font_size: '15sp'
+
+<ConfigLabel@Label>
+    size_hint_x: .8
+<ConfigSwitch@Switch>
+    size_hint: .8, .3
+    active: True
+<ConfigSlider@Slider>
+    size_hint: .2, .3
+    orientation: 'vertical'
+
+<ControlButton@ButtonBehavior+Image>
+
+<BoundingBox@Widget>:
+    bb: 0.0, 0.0, 0.0, 0.0
+    bb_color: 1, .1, 1, .9
+    label: 0
+    size_hint: 1, 1
+    canvas:
+        Color:
+            rgba: self.bb_color
+        Line:
+            width: 2.
+            rectangle: (self.x, self.y, self.width, self.height)
+
+<LabeledBoundingBox@BoundingBox>:
+    Label:
+        pos: root.x, root.y +root.height
+        size_hint: None, None
+        size: self.texture_size
+        halign: 'left'
+        valign: 'bottom'
+        bold: True
+        text: root.obj_label
+        color: 0, 0, 0, 1
+        canvas.before:
+            Color:
+                rgba: root.bb_color
+            Rectangle:
+                pos: self.pos
+                size: self.texture_size
+
+<DictEditor@GridLayout>
+    cols: 4
+    padding: 10
+    spacing: 10
+    row_default_height: 50
+    row_force_default: True
+    Label:
+        text: "Selection"
+    Label:
+        text: "Channels"
+    Label:
+        text: "Type"
+    Label:
+        text: "Topic"
+
+
+<TemplateDialog>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+        ScrollView:
+            do_scroll_y: True
+            DictEditor:
+                height: self.minimum_height
+                size_hint_y: None
+                dict: root.template
+                id: dict_editor
+        BoxLayout:
+            size_hint_y: .2
+            padding: 10
+            spacing: 10
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+            Button:
+                text: "OK"
+                on_release: root.load(None, None, dict_editor.get_dict())
+
+<LoadDialog>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+
+        FileChooserListView:
+            id: filechooser
+            path: "~" #root.load_path
+        Label:
+            text: filechooser.path
+            size_hint_y: .05
+        BoxLayout:
+            size_hint_y: .2
+            padding: 10
+            spacing: 10
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+            Button:
+                text: "Load"
+                on_release: root.load(filechooser.path, filechooser.selection)
+
+<WarningPopup>
+    title: "WARNING"
+    size_hint: .5, .5
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: root.label_text
+        Button:
+            text: "OK"
+            size_hint: .5, .2
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            on_press: root.dismiss()
+
+<TextInputPopup>
+    title: root.label_text
+    size_hint: .5, .5
+    text: text_input.text
+    auto_dismiss: False
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: root.label_text
+        TextInput:
+            id: text_input
+            size_hint_y: None
+            height: 30
+            multiline: False
+        Button:
+            text: "OK"
+            on_press: root.dismiss()
+
+<Viewer>
+    image: image
+    spacing: 5
+    on_colorfmt: self.init_visualisers(); self.crop_image(*zoomable_image.clickable_area)
+    BoxLayout:
+        id: header
+        size_hint: 1, 0.1
+        Label:
+            text: 'Channel: ' + root.title
+            id: title
+            halign: 'center'
+        Label:
+            text: 'Image size: ' + str(image.texture_size)
+            id: texture_size_label
+            halign: 'center'
+        Label:
+            text: str(root.mouse_position)
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 5
+        id: box
+        BoxLayout:
+            id: viewer_buttons
+            orientation: 'vertical'
+            size_hint: 0.2, 0.30
+            spacing: 2
+            padding: 10, 0, 0, int((image.height - image.norm_image_size[1]) / 2)
+            ControlButton:
+                id: flip_vert_button
+                source: 'graphics/flip_vert_off.png' if self.disabled else 'graphics/flip_vert.png'
+                text: "Flip vert"
+                on_press: self.source='graphics/flip_vert_off.png'; root.flipVert = not root.flipVert; root.on_data(None, None)
+                on_release:  self.source='graphics/flip_vert.png';
+            ControlButton:
+                id: flip_horiz_button
+                source: 'graphics/flip_horiz_off.png' if self.disabled else 'graphics/flip_horiz.png'
+                text: "Flip horiz"
+                on_press: self.source='graphics/flip_horiz_off.png'; root.flipHoriz = not root.flipHoriz; root.on_data(None, None)
+                on_release:  self.source='graphics/flip_horiz.png';
+            Button:
+                text: 'Annotate' if not root.labeling else 'Save'
+                on_release: root.save_bboxes(app.root.data_controller.filePathOrName, app.root.data_controller.ending_time); root.labeling = not root.labeling
+            Button:
+                text: 'Undo'
+                disabled: not root.labeling
+                on_release: root.remove_last_bbox()
+            Button:
+                text: 'Stop'
+                disabled: not root.labeling
+                on_release: root.labeling = False
+        ZoomableImage:
+            id: zoomable_image
+            do_rotation: False
+            auto_bring_to_front: False
+            scale_min: 0.5
+            scale_max: 10
+            clickable_area: (box.x + viewer_buttons.width, box.y, box.width - viewer_buttons.width, box.height)
+            transform_allowed: root.transform_allowed
+            on_bbox: root.crop_image(*self.clickable_area)
+            Image:
+                id: image
+                size: zoomable_image.size
+                allow_stretch: True
+                on_size: root.crop_image(*zoomable_image.clickable_area)
+                keep_ratio: True
+    Label:
+        size_hint: 1, 0.05
+        id: label_status
+        text: 'Use num keys to change tag. Labeling {}\nLabeled boxes = {}'.format(str(root.label), str(root.len_gt)) if root.labeling else ''
+
+
+
+<RootWidget>
+    orientation:'horizontal'
+    data_controller: data_controller
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: .15, 1
+        spacing: 20
+        padding: 10
+        canvas:
+            Color:
+                rgb: 1., 0., 0.
+            Rectangle:
+                pos: self.x + self.width, self.y
+                size: 1, self.height
+        Image:
+            id: logo
+            source: 'graphics/IIT-EDR-logo-t1.png'
+            size_hint_y: .2
+        GridLayout:
+            cols: 2
+            id: config
+            ConfigLabel:
+                text: 'Speed:\n1/{}x'.format(speed_slider.div_value)
+            ConfigSlider:
+                #disabled: not hasattr(data_controller.data_dict, 'data')
+                id: speed_slider
+                min: 1
+                max: 64
+                step: 1
+                value: 4
+                div_value: speed_slider.value/4
+            ConfigLabel:
+                text: 'Temporal\nwindow:\n{0:.1f}ms'.format(round(tw_slider.log_value*1000, 2-int(math.floor(math.log10(abs(tw_slider.log_value*1000))))-1))
+            ConfigSlider:
+                #disabled: not hasattr(data_controller.data_dict, 'data')
+                id: tw_slider
+                step: 0.01
+                min: -9.210
+                max: -0.693
+                value: -3.507
+                log_value: np.exp(tw_slider.value)
+        GridLayout:
+            cols: 2
+            id: controls
+            size_hint_y: .35
+            spacing: 2
+            ControlButton:
+                #disabled: not hasattr(data_controller.data_dict, 'data')
+                id: play_button
+                text: 'PLAY/\nPAUSE'
+                source: 'graphics/play_pause_off.png' if self.disabled else 'graphics/play_pause.png'
+                on_press:  self.source='graphics/play_pause_off.png'; time_slider.play_pause()
+                on_release:  self.source='graphics/play_pause.png';
+            ControlButton:
+                #disabled: not hasattr(data_controller.data_dict, 'data')
+                id: stop_button
+                source: 'graphics/stop_off.png' if self.disabled else 'graphics/stop.png'
+                text: 'STOP'
+                on_press: self.source='graphics/stop_off.png'; time_slider.stop()
+                on_release:  self.source='graphics/stop.png';
+            ControlButton:
+                #disabled: not hasattr(data_controller.data_dict, 'data')
+                id: slide_backward_button
+                source: 'graphics/slide_back_off.png' if self.disabled else 'graphics/slide_back.png'
+                text: '< SLIDE'
+                on_press: self.source='graphics/slide_back_off.png'; time_slider.play_backward()
+                on_release: self.source='graphics/slide_back.png'; time_slider.pause()
+            ControlButton:
+                #disabled: not hasattr(data_controller.data_dict, 'data')
+                id: slide_forward_button
+                source: 'graphics/slide_off.png' if self.disabled else 'graphics/slide.png'
+                text: 'SLIDE >'
+                on_press: self.source='graphics/slide_off.png'; time_slider.play_forward()
+                on_release: self.source='graphics/slide.png'; time_slider.pause()
+            ControlButton:
+                #disabled: not hasattr(data_controller.data_dict, 'data')
+                id: step_backward_button
+                source: 'graphics/step_back_off.png' if self.disabled else 'graphics/step_back.png'
+                text: '< STEP'
+                on_press: self.source='graphics/step_back_off.png'; time_slider.step_backward()
+                on_release:  self.source='graphics/step_back.png';
+            ControlButton:
+                #disabled: not hasattr(data_controller.data_dict, 'data')
+                id: step_forward_button
+                source: 'graphics/step_off.png' if self.disabled else 'graphics/step.png'
+                text: 'STEP >'
+                on_press: self.source='graphics/step_off.png'; time_slider.step_forward()
+                on_release:  self.source='graphics/step.png';
+        Button:
+            size_hint_y : .15
+            text: 'Load'
+            on_release: data_controller.show_load()
+
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: .9, 1
+        padding: 10
+        DataController:
+            id: data_controller
+            size_hint: 1, .9
+            orientation: 'lr-tb'
+            spacing: 50
+            file_path_and_name: ''
+            time_value: time_slider.value
+            on_time_value: self.update_children()
+            time_window: tw_slider.log_value
+            on_time_window: self.update_children()
+            on_data_dict: time_slider.value = 0
+        Label:
+            size_hint:1, .03
+            text: 'Use Shift+mouse wheel to zoom and Shift+mouse drag to pan'
+        TimeSlider:
+            #disabled: not hasattr(data_controller.data_dict, 'data')
+            id: time_slider
+            size_hint: 1, .03
+            step: 0.001
+            speed: speed_slider.div_value
+            min: 0.0
+            max: data_controller.ending_time
+            on_max: value = 0
+            time_window: tw_slider.log_value
+        Label:
+            size_hint: 1, .03
+            text: '{0:.3f}/{1:.3f} sec'.format(time_slider.value, time_slider.max)
+        Label:
+            size_hint: 1, .03
+            text: data_controller.filePathOrName

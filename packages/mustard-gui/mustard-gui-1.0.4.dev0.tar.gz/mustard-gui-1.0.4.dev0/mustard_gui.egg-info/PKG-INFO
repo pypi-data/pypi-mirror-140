@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mustard-gui
+Version: 1.0.4.dev0
+Summary: MUlti STream Agnostic Representation Dataplayer
+Home-page: https://github.com/event-driven-robotics/mustard
+Author: Event-driven Perception for Robotics group at Istituto Italiano di Tecnologia: Massimiliano Iacono
+Author-email: massimiliano.iacono@iit.it
+License: gpl
+Description: # MUSTARD
+        MUlti STream Agnostic Representation Dataplayer
+        
+Keywords: event,event camera,event-based,event-driven,spike,dvs,dynamic vision sensor,neuromorphic,aer,address-event representationspiking neural network,davis,atis,celex
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
