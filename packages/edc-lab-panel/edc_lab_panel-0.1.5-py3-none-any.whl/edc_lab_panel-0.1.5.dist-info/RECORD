@@ -1,0 +1,15 @@
+edc_lab_panel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_lab_panel/panels.py,sha256=Dkku2hMrABz3ojwd2lOphSXt5dSoYDMcFh2dM4VZo6I,2474
+edc_lab_panel/processing_profiles.py,sha256=6RwM9N8aNvMyDY3taoIGCYj22z7jGlUN0eWvCCdney8,776
+edc_lab_panel/model_mixin_factory/__init__.py,sha256=TMKBhHZt-b-coIVLI2GKaWjkRHYzRqtwtagQslEeBSQ,156
+edc_lab_panel/model_mixin_factory/field_attrs.py,sha256=FeeRWY0m5iXODZQ0SrOhZiLkfRQwyRe8q9JSvp1EFSw,2113
+edc_lab_panel/model_mixin_factory/reportable_result_model_mixin_factory.py,sha256=MsT1BAAc6cvHqSZSaHoASrw2AeMX3E0Vy9Uo4HfCAkc,993
+edc_lab_panel/model_mixin_factory/result_model_mixin_factory.py,sha256=wQHoUBWwrgqI0VSYJ0YFcpzMSBrfpD_a9FlEnEbhyns,865
+edc_lab_panel/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_lab_panel/tests/urls.py,sha256=XgttrYwY8RIJSfQt0pFroMlaQPyXcAJ5-909_aeonvM,123
+edc_lab_panel/tests/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_lab_panel-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+edc_lab_panel-0.1.5.dist-info/METADATA,sha256=DxJEas-vHIvNOx3X9zcM59Y-tO_n0MaE3rfQk7W7hEM,1058
+edc_lab_panel-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+edc_lab_panel-0.1.5.dist-info/top_level.txt,sha256=eFIvJnrbmZh6WKV-oT9SKgVEMtrC9BTtUu2moMSkPC4,14
+edc_lab_panel-0.1.5.dist-info/RECORD,,
