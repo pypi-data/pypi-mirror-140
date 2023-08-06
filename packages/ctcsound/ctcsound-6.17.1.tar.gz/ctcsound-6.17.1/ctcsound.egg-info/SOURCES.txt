@@ -1,0 +1,9 @@
+LICENSE
+README.md
+ctcsound.py
+setup.py
+ctcsound.egg-info/PKG-INFO
+ctcsound.egg-info/SOURCES.txt
+ctcsound.egg-info/dependency_links.txt
+ctcsound.egg-info/requires.txt
+ctcsound.egg-info/top_level.txt
