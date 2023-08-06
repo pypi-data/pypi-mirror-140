@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+jsonifable.egg-info/PKG-INFO
+jsonifable.egg-info/SOURCES.txt
+jsonifable.egg-info/dependency_links.txt
+jsonifable.egg-info/top_level.txt
