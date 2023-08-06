@@ -1,0 +1,66 @@
+{% extends "pretixcontrol/event/settings_base.html" %}
+{% load i18n %}
+{% load bootstrap3 %}
+{% load urlreplace %}
+{% block inside %}
+    <h1>{% trans "Test result" %}</h1>
+    <p>
+        {% trans "You are about to submit a test result for this person:" %}
+    </p>
+    <h2>{{ attendee.attendee_name }}</h2>
+    <dl>
+        <dt>
+            {% trans "Order code" %}
+        </dt>
+        <dd>
+            {{ attendee.order.code }}
+        </dd>
+        <dt>
+            {% trans "Barcode" %}
+        </dt>
+        <dd>
+            {{ attendee.secret }}
+        </dd>
+        {% for a in attendee.answers.all %}
+            <dt>
+                {{ a.question.question }}
+            </dt>
+            <dd>
+                {{ a.answer|linebreaksbr }}
+            </dd>
+        {% endfor %}
+    </dl>
+    <form action="" class="form" method="post">
+        {% csrf_token %}
+        <label for="type">{% trans "Test type" %}</label>
+        <select name="type" class="form-control" required>
+            <option></option>
+            {% for t in type_options %}
+                <option value="{{ t.pk }}">{{ t.answer }}</option>
+            {% endfor %}
+        </select>
+        <p>&nbsp;</p>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <button type="submit" name="result" value="{% trans "negative" %}"
+                        class="btn btn-primary btn-lg btn-block">
+                    {% trans "negative" %}
+                </button>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <button type="submit" name="result" value="{% trans "inconclusive" %}"
+                        class="btn btn-default btn-lg btn-block">
+                    {% trans "inconclusive" %}
+                </button>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <button type="submit" name="result" value="{% trans "positive" %}"
+                        class="btn btn-danger btn-lg btn-block">
+                    {% trans "positive" %}
+                </button>
+            </div>
+        </div>
+    </form>
+    <p></p>
+    {% include "pretixcontrol/pagination.html" %}
+{% endblock %}
