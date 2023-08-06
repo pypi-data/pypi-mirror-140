@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: apirunner-html
+Version: 1.1.2
+Summary: The HTML Report for Python api testing Base on PyTestReport and pytest_html
+License: Apache-2.0
+Author: ylfeng
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: Jinja2 (==2.11.2)
+Requires-Dist: MarkupSafe (==0.23)
+Requires-Dist: ansi2html (==1.6.0)
+Requires-Dist: pytest_html (==2.1.1)

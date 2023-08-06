@@ -1,0 +1,6 @@
+[console_scripts]
+apirunner_html=apirunner_html:shell
+
+[pytest11]
+apirunner_html=apirunner_html.report
+
