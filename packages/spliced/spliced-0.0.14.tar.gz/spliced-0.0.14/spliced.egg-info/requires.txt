@@ -1,0 +1,11 @@
+pyaml
+requests
+symbolator-python
+jsonschema
+
+[all]
+pyaml
+requests
+symbolator-python
+jsonschema
+pytest>=4.6.2
