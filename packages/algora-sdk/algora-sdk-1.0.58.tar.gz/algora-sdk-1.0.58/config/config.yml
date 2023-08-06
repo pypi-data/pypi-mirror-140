@@ -1,0 +1,9 @@
+app_name: algora-sdk
+environment: local
+version: 0.0.BETA
+
+local:
+  base_url: https://api.algoralabs.com
+
+production:
+  base_url: https://api.algoralabs.com
