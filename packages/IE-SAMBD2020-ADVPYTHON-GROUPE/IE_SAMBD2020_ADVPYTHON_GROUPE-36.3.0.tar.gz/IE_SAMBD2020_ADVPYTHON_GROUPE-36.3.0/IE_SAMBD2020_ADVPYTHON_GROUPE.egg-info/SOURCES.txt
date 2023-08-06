@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+IE_SAMBD2020_ADVPYTHON_GROUPE/__init__.py
+IE_SAMBD2020_ADVPYTHON_GROUPE.egg-info/PKG-INFO
+IE_SAMBD2020_ADVPYTHON_GROUPE.egg-info/SOURCES.txt
+IE_SAMBD2020_ADVPYTHON_GROUPE.egg-info/dependency_links.txt
+IE_SAMBD2020_ADVPYTHON_GROUPE.egg-info/not-zip-safe
+IE_SAMBD2020_ADVPYTHON_GROUPE.egg-info/top_level.txt
