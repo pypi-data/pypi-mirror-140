@@ -1,0 +1,42 @@
+# -*- mode: python; -*-
+# SPDX-FileCopyrightText: David Fritzsche
+# SPDX-License-Identifier: CC0-1.0
+
+import pytest
+
+
+@pytest.mark.mypy_testing
+def mypy_test_invalid_assginment():
+    foo = "abc"
+    foo = 123  # E: Incompatible types in assignment (expression has type "int", variable has type "str")
+
+
+@pytest.mark.mypy_testing
+def mypy_test_use_reveal_type():
+    reveal_type(123)  # N: Revealed type is 'Literal[123]?'
+    reveal_type(456)  # R: Literal[456]?
+
+
+@pytest.mark.mypy_testing
+@pytest.mark.skip("foo")
+def mypy_test_use_skip_marker():
+    reveal_type(123)  # N: Revealed type is 'Literal[123]?'
+    reveal_type(456)  # R: Literal[456]?
+
+
+@pytest.mark.mypy_testing
+@pytest.mark.xfail
+def mypy_test_xfail_wrong_reveal_type():
+    reveal_type(456)  # R: float
+
+
+@pytest.mark.mypy_testing
+@pytest.mark.xfail
+def mypy_test_xfail_missing_note():
+    "nothing"  # N: missing
+
+
+@pytest.mark.mypy_testing
+@pytest.mark.xfail
+def mypy_test_xfail_unexpected_note():
+    reveal_type([])  # unexpected message
