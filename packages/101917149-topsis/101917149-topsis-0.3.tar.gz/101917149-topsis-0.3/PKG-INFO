@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: 101917149-topsis
+Version: 0.3
+Summary: topsis
+Home-page: https://github.com/DAKSH1-HUB/101917149-TOPSIS.git
+Author: Daksh Arora
+Author-email: Daksharora79@gmail.com
+License: MIT
+Download-URL: https://github.com/DAKSH1-HUB/101917149-TOPSIS/archive/refs/tags/0.3.tar.gz
+Description: UNKNOWN
+Keywords: 101917149,topsis,Topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
