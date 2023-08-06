@@ -1,0 +1,7 @@
+mqt.qfr-1.8.0.dist-info/METADATA,sha256=gwlRHvUC3ojDUh8-Z03ZsdkosYgqpLM4DU46jhXjMxY,11409
+mqt.qfr-1.8.0.dist-info/top_level.txt,sha256=BoPWCvFpZUa4D6myH2f-16QbZ4BdlHxc8JoD2siQ57k,10
+mqt.qfr-1.8.0.dist-info/RECORD,,
+mqt.qfr-1.8.0.dist-info/WHEEL,sha256=FGGRUrvefXOiAJfyJCZAiu4TpTMkXB_CzdEp3x2T96E,150
+mqt.qfr-1.8.0.dist-info/LICENSE.md,sha256=LQYaeMckyPqxM9eeIsQfAWlPGHTYoYJMByF13BoPGd8,1133
+mqt/qfr/pyqfr.cpython-37m-x86_64-linux-gnu.so,sha256=TUipR6E8BWjphFPdkUJs2cUy0Eh_z7b41m7vVpl4lqc,1223856
+mqt/qfr/__init__.py,sha256=WBzWy5HKVPZ8oIS3gmqa7RbW4g_aISLz-5alUHqopEA,288
