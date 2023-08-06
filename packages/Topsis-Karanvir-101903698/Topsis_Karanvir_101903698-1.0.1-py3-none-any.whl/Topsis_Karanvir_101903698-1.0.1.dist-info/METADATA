@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: Topsis-Karanvir-101903698
+Version: 1.0.1
+Summary: Topsis Package
+Home-page: UNKNOWN
+Author: Karanvir Singh
+Author-email: <ksingh5_be19@thapar.edu>
+License: UNKNOWN
+Keywords: python,topsis,thapar
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tabulate
+
+# TOPSIS PACKAGE
+## By-Karanvir Singh
+The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) is a multi-criteria decision analysis method.t is a method of compensatory aggregation that compares a set of alternatives by identifying weights for each criterion, normalising scores for each criterion and calculating the geometric distance between each alternative and the ideal alternative, which is the best score in each criterion
+
+## INSTALL THE PACKAGE
+To install the package write the following command</br>
+```pip install Topsis-Karanvir-101903698```
+
+## WRITE ARGUMENTS IN COMMAND LINE
+To get the ouput file in csv format the input should be given in thje following format-python filename.py input.csv weights impacts outputFile.csv
+```python abc.py input.csv "1,1,1,1,1" "+,+,+,+,-" output.csv```
+
+## LICENSE
+Copyright(c) 2022 Karanvir Singh
+
+
+
