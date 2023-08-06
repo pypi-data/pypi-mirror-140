@@ -1,0 +1,11 @@
+pyfc4/__init__.py,sha256=O_wSa8hPYekoCj85JDUtS37XUt36E7ueA_cV3rc4o_k,97
+pyfc4/models.py,sha256=UMctwQlpqgGhSE0DAkrzBBvC5a3R7Ymuzb6O8srIy9c,58561
+pyfc4/plugins/__init__.py,sha256=96wMc8LngVSSX91B-X7Y2jlu3-iux6MJSCyekQWewdY,15
+pyfc4/plugins/pcdm/__init__.py,sha256=4cmOL_WUFKPcldr6FubtHGTcBm8HlOTF5ytTiLE_SeU,1038
+pyfc4/plugins/pcdm/examples.py,sha256=j9ngMClbFZkLhBRwsySnO3_UCr9qx-LC7s2XI260mUc,1514
+pyfc4/plugins/pcdm/models.py,sha256=m0jE9nenPS0gvrU3CBzc6Bcn-l0p3x471iG333IYlbk,17925
+pyfc4-0.7.dist-info/LICENSE.md,sha256=dyeXvu8PO8G6Xwr2gyqMwIrmo7fDl5P7BNWRL7lfhto,1069
+pyfc4-0.7.dist-info/METADATA,sha256=wYML0MUc6u2V4bdwWbSUz7wMQ3yDpVTSDEDSucgJCMk,602
+pyfc4-0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyfc4-0.7.dist-info/top_level.txt,sha256=3Xz0oCaNLqgbbs0iCMUXkCbsuLkKEUEkPbbgdVp74Qg,6
+pyfc4-0.7.dist-info/RECORD,,
