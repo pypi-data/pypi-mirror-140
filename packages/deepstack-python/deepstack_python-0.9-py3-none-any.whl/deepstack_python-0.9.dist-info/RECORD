@@ -1,0 +1,9 @@
+deepstack/__init__.py,sha256=JS2NXY8j6v3cKF9ELd_ZhJZmhNdQA3FOdSioIKKubz4,31
+deepstack/core.py,sha256=joOiMjATZfmZhv0sPm3zskuslCgn7VPYwptWhNVYJjU,9896
+tests/__init__.py,sha256=JS2NXY8j6v3cKF9ELd_ZhJZmhNdQA3FOdSioIKKubz4,31
+tests/test_core.py,sha256=FoFD75eGXB3bxVPfurP57p5U_JZ82pZySZLXhs5Thzc,4880
+deepstack_python-0.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+deepstack_python-0.9.dist-info/METADATA,sha256=GGsGrpLUzytseVWdWesjbl6grYjzkriWEh0s9a6tcr8,526
+deepstack_python-0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deepstack_python-0.9.dist-info/top_level.txt,sha256=qYfApVFe_Qjq_zAPpfsG_JUtl9KrOXjLUiTit9qEdsU,16
+deepstack_python-0.9.dist-info/RECORD,,
