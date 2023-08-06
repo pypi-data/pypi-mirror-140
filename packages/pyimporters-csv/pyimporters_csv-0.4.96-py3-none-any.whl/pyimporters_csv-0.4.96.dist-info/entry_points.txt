@@ -1,0 +1,5 @@
+[pyimporters.plugins]
+csv=pyimporters_csv.csv:CSVKnowledgeParser
+excel=pyimporters_csv.excel:ExcelKnowledgeParser
+text=pyimporters_csv.text:TXTKnowledgeParser
+
