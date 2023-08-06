@@ -1,0 +1,6 @@
+README.md
+setup.py
+jeeachinto.egg-info/PKG-INFO
+jeeachinto.egg-info/SOURCES.txt
+jeeachinto.egg-info/dependency_links.txt
+jeeachinto.egg-info/top_level.txt
