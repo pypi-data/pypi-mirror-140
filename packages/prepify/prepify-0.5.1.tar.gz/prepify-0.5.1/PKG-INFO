@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: prepify
+Version: 0.5.1
+Summary: a tool for recording data from the physical examination of a New Testament manuscript
+License: MIT
+Author: David Flood
+Author-email: davidfloodii@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PySimpleGUI (>=4.57.0,<5.0.0)
+Requires-Dist: XlsxWriter (>=3.0.3,<4.0.0)
+Requires-Dist: natsort (>=8.1.0,<9.0.0)
+Requires-Dist: openpyxl (>=3.0.9,<4.0.0)
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Requires-Dist: python-docx (>=0.8.11,<0.9.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
