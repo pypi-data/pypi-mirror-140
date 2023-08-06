@@ -1,0 +1,13 @@
+dagster==0.14.2
+dagster-pandas==0.14.2
+pandas
+requests
+attrs
+agate<1.6.2
+
+[test]
+Jinja2<3.0
+dbt-core
+dbt-rpc
+dbt-postgres
+matplotlib
