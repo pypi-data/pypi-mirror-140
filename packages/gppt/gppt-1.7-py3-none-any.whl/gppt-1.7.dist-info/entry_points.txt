@@ -1,0 +1,3 @@
+[console_scripts]
+gppt = gppt.main:main
+
