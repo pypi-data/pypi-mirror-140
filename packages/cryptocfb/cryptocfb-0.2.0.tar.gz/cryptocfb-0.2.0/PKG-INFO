@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cryptocfb
+Version: 0.2.0
+Summary: A Python module to encrypt and decrypt data with AES-128 CFB mode.
+Home-page: https://github.com/jacklinquan/cryptocfb
+Author: Quan Lin
+Author-email: jacklinquan@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+https://github.com/jacklinquan/cryptocfb
+

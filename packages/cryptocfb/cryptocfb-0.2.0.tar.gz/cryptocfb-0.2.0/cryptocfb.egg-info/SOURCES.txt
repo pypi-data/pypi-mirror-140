@@ -1,0 +1,7 @@
+README.md
+setup.py
+cryptocfb/__init__.py
+cryptocfb.egg-info/PKG-INFO
+cryptocfb.egg-info/SOURCES.txt
+cryptocfb.egg-info/dependency_links.txt
+cryptocfb.egg-info/top_level.txt
