@@ -1,0 +1,7 @@
+matplotlib
+numpy
+openseespy
+opsvis
+
+[test]
+pytest>=6.2.2
