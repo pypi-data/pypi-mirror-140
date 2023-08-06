@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tkitDatasetEx
+Version: 0.0.0.116461994
+Summary: Terry toolkit tkitDatasetEx 构建数据集过程中的方便,
+Home-page: https://github.com/napoler/BulidDataset/blob/main/tkitDatasetEx.md
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm (==4.62.2)
+Requires-Dist: numpy (==1.21.2)
+Requires-Dist: regex (==2021.10.8)
+Requires-Dist: pkuseg (>=0.0.25)
+Requires-Dist: transformers (==4.12.5)
+Requires-Dist: scikit-learn (>=1.0.1)
+
+# tkitDatasetEx
+
+数据集构建
+
