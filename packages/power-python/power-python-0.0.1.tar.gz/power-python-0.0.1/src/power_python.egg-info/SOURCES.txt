@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.cfg
+src/PPython/__init__.py
+src/PPython/const.py
+src/PPython/exceptions.py
+src/PPython/object_list.py
+src/PPython/override.py
+src/PPython/patterns/__init__.py
+src/PPython/patterns/singleton/__init__.py
+src/PPython/patterns/singleton/class_singleton.py
+src/PPython/patterns/singleton/decorator_singleton.py
+src/PPython/patterns/singleton/metaclass_singleton.py
+src/power_python.egg-info/PKG-INFO
+src/power_python.egg-info/SOURCES.txt
+src/power_python.egg-info/dependency_links.txt
+src/power_python.egg-info/top_level.txt
