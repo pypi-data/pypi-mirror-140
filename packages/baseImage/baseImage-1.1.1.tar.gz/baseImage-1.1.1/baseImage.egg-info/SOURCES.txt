@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+baseImage/__init__.py
+baseImage/base_image.py
+baseImage/coordinate.py
+baseImage/exceptions.py
+baseImage/utils.py
+baseImage.egg-info/PKG-INFO
+baseImage.egg-info/SOURCES.txt
+baseImage.egg-info/dependency_links.txt
+baseImage.egg-info/requires.txt
+baseImage.egg-info/top_level.txt
