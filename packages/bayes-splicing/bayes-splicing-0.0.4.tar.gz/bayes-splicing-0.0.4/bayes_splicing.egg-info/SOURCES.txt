@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+bayes_splicing/__init__.py
+bayes_splicing/independent_priors.py
+bayes_splicing/loss_distribution.py
+bayes_splicing/move.py
+bayes_splicing/posterior_analysis.py
+bayes_splicing/prior_distribution.py
+bayes_splicing/smc.py
+bayes_splicing/spliced_distribution.py
+bayes_splicing/temperature.py
+bayes_splicing.egg-info/PKG-INFO
+bayes_splicing.egg-info/SOURCES.txt
+bayes_splicing.egg-info/dependency_links.txt
+bayes_splicing.egg-info/requires.txt
+bayes_splicing.egg-info/top_level.txt
