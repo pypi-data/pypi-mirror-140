@@ -1,0 +1,12 @@
+larango/__init__.py,sha256=KO27d3GFscjfZ6eNl7KsimlHO5AudfBqu3gjK05RgOc,3820
+larango/__main__.py,sha256=Dp4fOXcGp8GucrIS72-OQbVeQJmk5m5vCGv-_twwusA,87
+larango/commands/__init__.py,sha256=jnZ6BM7JbWV1IcmhiihIvunHjvI15yVV7d26zMI38Ao,1164
+larango/commands/help.py,sha256=v-25OnKfs2F84jHvsEZcCFIv8P31KLGb-_lpylpEdU8,988
+larango/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+larango/utils/colors.py,sha256=4ufRM4q5A4ypg3xx42G7qAwjhKv7qkpIvUl2B3sQtPs,892
+Larango-0.1.3.dist-info/LICENSE,sha256=VXbwArPC9XE7N7cvSBClNMHFbo7CU1p361QXV5bkGpk,1100
+Larango-0.1.3.dist-info/METADATA,sha256=w31qxronptG8dDs4DU7JAkDXwc3So2blMjjEzB_slAA,388
+Larango-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Larango-0.1.3.dist-info/entry_points.txt,sha256=1x0UDm0d5WuTVrl7_tL3187TUnhTy2bjU0mdS3wpkAA,62
+Larango-0.1.3.dist-info/top_level.txt,sha256=Dsmup7OimwbPeK2eur4ip3YvLZHL2wPBEe2U1I5oPUk,8
+Larango-0.1.3.dist-info/RECORD,,
