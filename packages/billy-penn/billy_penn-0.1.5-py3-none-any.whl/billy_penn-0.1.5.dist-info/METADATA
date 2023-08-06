@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: billy-penn
+Version: 0.1.5
+Summary: A package for meta information about the City of Philadelphia's government.
+License: MIT
+Author: Nick Hand
+Author-email: nick.hand@phila.gov
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: openpyxl (>=3.0.9,<4.0.0)
+Requires-Dist: pandas (>=1.4.0,<2.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
