@@ -1,0 +1,11 @@
+paxplot/__init__.py,sha256=zz_M_R0zop8pPSVL7Vx0X6gZ0MQG4jj2hBWPfmIclGo,82
+paxplot/core.py,sha256=3te0IoaDrwZtX3_ITqtCSt4nx5a3SnUTCZRp7tx3bMA,24827
+paxplot/datasets.py,sha256=sQeCdGMR-N1Po5RCEXGC5PCBwnwwcKx5MO8-Wm8nKuU,324
+paxplot/test_core.py,sha256=HIubzHIWWDNVHRql7xXwHunNKpYd3iwjdt3ZPktbzdE,27982
+paxplot/test_datasets.py,sha256=EYYnzx3qsp4gjHeVjKuEoI-wKOKFJcpC_ZlGsoNhCJ0,428
+paxplot/data/tradeoff.csv,sha256=9Pb4CdADUKddzWIYogKq2HzkNv8M642UlvWfML97VyA,696
+paxplot-0.1.1b0.dist-info/LICENSE,sha256=s3vyhorlr37YIZ3F7J_n8Guh-O8ocuAvpXWJU1oJAew,1091
+paxplot-0.1.1b0.dist-info/METADATA,sha256=jYr91TpQL0AQzwsCCYHp3oA9o84FNaQ1b2KwGw8nktY,2428
+paxplot-0.1.1b0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+paxplot-0.1.1b0.dist-info/top_level.txt,sha256=8u7PoD57N-852XYkakaiBDfkE5-RvQurix83fnLzcis,8
+paxplot-0.1.1b0.dist-info/RECORD,,
