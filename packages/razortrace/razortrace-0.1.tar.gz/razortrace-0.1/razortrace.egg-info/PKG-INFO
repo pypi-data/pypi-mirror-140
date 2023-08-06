@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: razortrace
+Version: 0.1
+Summary: Straight forward memory leak detection
+Home-page: https://github.com/manbehindthemadness/razortrace
+Author: manbehindthemadness
+Author-email: manbehindthemadness@gmail.com
+License: MIT
+Keywords: malloc,memory,leak,trace
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+    Razortrace is a memory diagnostic tool based on the ``tracemalloc`` library. It's aim is to provide rapid identification 
+    of memory leaks and produce straightforward, human-readable reports.
+    
+
