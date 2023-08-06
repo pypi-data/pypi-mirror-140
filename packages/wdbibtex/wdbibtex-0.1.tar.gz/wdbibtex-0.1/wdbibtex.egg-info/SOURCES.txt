@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+wdbibtex/__init__.py
+wdbibtex/__main__.py
+wdbibtex/latex.py
+wdbibtex/word.py
+wdbibtex.egg-info/PKG-INFO
+wdbibtex.egg-info/SOURCES.txt
+wdbibtex.egg-info/dependency_links.txt
+wdbibtex.egg-info/requires.txt
+wdbibtex.egg-info/top_level.txt
+wdbibtex/tests/__init__.py
+wdbibtex/tests/tests.py
