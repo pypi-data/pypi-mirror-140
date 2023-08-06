@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: taskel
+Version: 0.0.3
+Summary: The python library for all types of tasks
+Home-page: http://github.com/Ehnryu/taskel
+Author: Ehnryu/Sakurai07
+Author-email: blzzardst0rm@gmail.com
+License: MIT
+Description: Readme.md
+Keywords: taskel,tasks,threading
+Platform: UNKNOWN
