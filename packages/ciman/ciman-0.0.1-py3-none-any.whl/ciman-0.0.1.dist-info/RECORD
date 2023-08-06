@@ -1,0 +1,10 @@
+ciman/__main__.py,sha256=QENkhi4ZsA_iTW4U363cD29D9tA8RSxbW0NqIyyQjw4,599
+ciman/registry.py,sha256=7d_It6JwYjNCNizm9OG-qn-3cAxqOq7uTCqYtuNeuCQ,1914
+ciman/version.py,sha256=Tjb_poy6EuGRi7TlrksJa9Qpx1MXOCO3p3F6tJ8xa5o,142
+tests/test_version.py,sha256=a-vFysy1Lk7SZpvNUvfx3hEEWN_l5zEVAtmj6P2em7o,86
+ciman-0.0.1.dist-info/LICENSE,sha256=FEpBvIvyf76kCkXeFacXMQwU-tKl9qL3LhM6gBFdQnI,1056
+ciman-0.0.1.dist-info/METADATA,sha256=uMTlpJFuzWSbHK4W6oQKMQCkyyk8DEW-zNuMnIg_blw,361
+ciman-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ciman-0.0.1.dist-info/entry_points.txt,sha256=DQA2Esnhxy2GhT1OqBSmJzawvyyhcgbHXVc7RlV_gHs,47
+ciman-0.0.1.dist-info/top_level.txt,sha256=o1_xh5loR7364HujElBjeC8Vxo-1dHLAt6geTJEJPTw,12
+ciman-0.0.1.dist-info/RECORD,,
