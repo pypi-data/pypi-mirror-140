@@ -1,0 +1,4 @@
+[console_scripts]
+hwproxy=bluesky_hwproxy.hwproxy_cli:main
+start-hwproxy-server=bluesky_hwproxy.hwproxy_server:main
+
