@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: Topsis-SnehithaM-101917176
+Version: 0.0.2
+Summary: Compute Topsis Scores/Ranks of a given csv file
+Home-page: UNKNOWN
+Author: Snehitha Mulapalli
+Author-email: snehithamulapalli06@gmail.com
+License: MIT
+Keywords: TOPSIS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+What is TOPSIS? 
+ It is a method of compensatory aggregation that compares a set of alternatives by identifying weights for each criterion, normalising scores for each criterion and calculating the geometric distance between each alternative and the ideal alternative, which is the best score in each criterion.Topsis Value CalculatorThis Python package implementing Topsis method  for multi-criteria decision analysis. 
+ Topsis stands for Technique for Order of Preference by Similarity to Ideal Solution 
+  Just provide your input attributes and it will give you the results 
+ Installation: $ pip install TOPSIS-101917176==0.0.1 
+ In the commandline, you can write as - $ python <package_name> <path to input_data_file_name> <weights as strings> <impacts as strings> <result_file_name> 
+ E.g for input data file as data.csv, command will be like $ python topsis.py data.csv "1,1,1,1" "+,+,-,+" output.csv 
+ This will print all the output attribute values along with the Rank column, in a tabular format
+
