@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: neorcli
+Version: 3.2.0
+Summary: NeorCli tool
+Home-page: https://github.com/NeorCloud/neor-cli
+Author: Ali Ghotbizadeh
+Author-email: ali.ghotbizadeh@gmail.com
+License: MIT
+Keywords: NeorCloud NeorCli
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+NeorCloud CLI tool to manage your services from cli.
+
