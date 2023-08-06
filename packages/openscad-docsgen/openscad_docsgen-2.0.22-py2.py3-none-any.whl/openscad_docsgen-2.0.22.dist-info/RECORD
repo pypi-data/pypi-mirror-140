@@ -1,0 +1,17 @@
+openscad_docsgen/__init__.py,sha256=6aT-hgbUxkkhbifspvdpPSnrIrxIcAhviupTgC4sfeg,5681
+openscad_docsgen/blocks.py,sha256=wmcBvcgsItWI6VQJg1-a9cKNGAcTCAPMLbfTiaUbrDw,32084
+openscad_docsgen/errorlog.py,sha256=RjE3DZ7x6v7fchMOQfWnnOOkRNj2jkNAjvB7n1sLO6Y,1215
+openscad_docsgen/filehashes.py,sha256=VkK3gXREj3XbQyh-VuHJjAoJ4Q2Gd5P1dgfkNZRE5cY,2355
+openscad_docsgen/imagemanager.py,sha256=4CpOqCpKblQDkLrKL_TGHbayF6EPDBY70jqM5wb_QE4,9007
+openscad_docsgen/mdimggen.py,sha256=yesPdaNShqZ2t1Fv7LlTjoCc1Cbcm6vfwEvzY8nNcIM,6895
+openscad_docsgen/parser.py,sha256=oNxnHGDknnouz35UEviS0tP4SXXjpf6Qjy4GTU55jZI,41879
+openscad_docsgen/target.py,sha256=a9ec_T_NBrrJONsY8AbOMdJjPtda_oiLcqxQIby1pZY,303
+openscad_docsgen/target_githubwiki.py,sha256=Jwfvva8-5_I_1l_byEGsmcGG3IgOWFEQCXLUW0XvS7Y,1520
+openscad_docsgen/target_wiki.py,sha256=N6wr6PebeZEd5ELgvPL0rFSxshudnNonUEFGsmISeFA,5711
+openscad_docsgen/utils.py,sha256=HtDKAWPZQHsU_8OAzuKLPhhOwVaE4Ae0PvEGfztlVHU,430
+openscad_docsgen-2.0.22.dist-info/LICENSE,sha256=Kpd8exhkGr8Mb2-aJCA3DZsMP1skw3U0YM0pmwDFUa4,1070
+openscad_docsgen-2.0.22.dist-info/METADATA,sha256=IJpJbo8EC3utfCyInryjmXtCLGn_vqiDi4TGjK74t80,9063
+openscad_docsgen-2.0.22.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+openscad_docsgen-2.0.22.dist-info/entry_points.txt,sha256=DH3j9GsSpbTD2Cs0GHfehzpYQckSHA71UGxaWykPBcI,120
+openscad_docsgen-2.0.22.dist-info/top_level.txt,sha256=Ek1A_Y8Pb7oXosDSeQkKEWknK_WcvJplKjBf_QfjEik,17
+openscad_docsgen-2.0.22.dist-info/RECORD,,
