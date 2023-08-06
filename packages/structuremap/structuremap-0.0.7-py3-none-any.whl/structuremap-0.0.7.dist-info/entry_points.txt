@@ -1,0 +1,3 @@
+[console_scripts]
+structuremap = structuremap.cli:run
+
