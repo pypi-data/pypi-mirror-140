@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: mimikit
+Version: 0.3.0
+Summary: Python module for generating audio with neural networks
+Home-page: https://github.com/ktonal/mimikit
+Author: Antoine Daurat
+Author-email: ktonalberlin@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Download-URL: https://github.com/ktonal/mimikit
+Keywords: audio music sound deep-learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Topic :: Multimedia :: Sound/Audio :: Sound Synthesis
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.1)
+Requires-Dist: pandas (>=1.1.3)
+Requires-Dist: librosa (>=0.8)
+Requires-Dist: tables (>=3.6)
+Requires-Dist: ffmpeg-python
+Requires-Dist: tqdm (>=4.48.0)
+Requires-Dist: matplotlib
+Requires-Dist: scipy (>=1.4.1)
+Requires-Dist: scikit-learn (>=0.24)
+Requires-Dist: soundfile (>=0.10.2)
+Requires-Dist: test-tube (>=0.7.5)
+Requires-Dist: h5mapper (==0.2.0)
+Requires-Dist: numba
+Requires-Dist: muspy (==0.3.0)
+Provides-Extra: colab
+Requires-Dist: pytorch-lightning (==1.4.9) ; extra == 'colab'
+Provides-Extra: torch
+Requires-Dist: torch (>=1.9.0) ; extra == 'torch'
+Requires-Dist: torchaudio (>=0.9.0) ; extra == 'torch'
+Requires-Dist: pytorch-lightning (==1.4.9) ; extra == 'torch'
+
+# mimikit
+
+The MusIc ModelIng toolKIT (MIMIKIT) is a python package that does Machine Learning with music data.
+
+The goal of `mimikit` is to enable you to use referenced and experimental algorithms on data you provide.
+
+`mimikit` is still in early development, details and documentation are on their way.
+
+## License
+
+mimikit is distributed under the terms of the [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
+
+
+
+
