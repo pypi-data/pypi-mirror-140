@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pydprint/__init__.py
+src/pydprint/dprint.py
+src/pydprint.egg-info/PKG-INFO
+src/pydprint.egg-info/SOURCES.txt
+src/pydprint.egg-info/dependency_links.txt
+src/pydprint.egg-info/top_level.txt
