@@ -1,0 +1,12 @@
+requests==2.25.1
+aiohttp==3.7.4.post0
+
+[all]
+aiodns>=1.1
+Brotli==1.0.9
+cchardet==2.1.7
+
+[speedups]
+aiodns>=1.1
+Brotli==1.0.9
+cchardet==2.1.7
