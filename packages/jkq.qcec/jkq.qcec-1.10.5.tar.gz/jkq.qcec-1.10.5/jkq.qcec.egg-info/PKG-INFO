@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jkq.qcec
+Version: 1.10.5
+Summary: jkq.qcec is now mqt.qcec
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# jkq.qcec is now mqt.qcec
+
+This package has been renamed. Use `pip install mqt.qcec` instead.
+
+New package: https://pypi.org/project/mqt.qcec/
+
+
