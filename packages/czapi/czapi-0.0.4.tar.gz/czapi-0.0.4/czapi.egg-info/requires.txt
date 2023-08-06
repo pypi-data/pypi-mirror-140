@@ -1,0 +1,6 @@
+pip
+packaging
+bs4
+requests
+
+[dev]
