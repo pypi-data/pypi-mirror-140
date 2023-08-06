@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Sentience-CraigR8806
+Version: 0.0.2
+Summary: Machine Learning Library
+Home-page: https://github.com/CraigR8806/Sentience
+Author: Craig Ramage
+Author-email: craig@craigramage.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/CraigR8806/Sentience/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Sentience
+This is a from scratch ML library implementing simple NNs.  It uses a Linear Maths library I also wrote that uses pyopencl to perform clacs on the GPU
+
+

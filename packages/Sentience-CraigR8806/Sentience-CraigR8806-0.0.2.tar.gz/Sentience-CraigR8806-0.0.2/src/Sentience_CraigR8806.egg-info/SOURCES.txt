@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Sentience_CraigR8806.egg-info/PKG-INFO
+src/Sentience_CraigR8806.egg-info/SOURCES.txt
+src/Sentience_CraigR8806.egg-info/dependency_links.txt
+src/Sentience_CraigR8806.egg-info/requires.txt
+src/Sentience_CraigR8806.egg-info/top_level.txt
