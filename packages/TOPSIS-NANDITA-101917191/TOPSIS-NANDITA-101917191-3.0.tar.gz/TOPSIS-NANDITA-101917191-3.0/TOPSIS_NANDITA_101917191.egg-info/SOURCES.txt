@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+TOPSIS_NANDITA_101917191.egg-info/PKG-INFO
+TOPSIS_NANDITA_101917191.egg-info/SOURCES.txt
+TOPSIS_NANDITA_101917191.egg-info/dependency_links.txt
+TOPSIS_NANDITA_101917191.egg-info/entry_points.txt
+TOPSIS_NANDITA_101917191.egg-info/requires.txt
+TOPSIS_NANDITA_101917191.egg-info/top_level.txt
+topsis/__init__.py
+topsis/topsis.py
