@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: stvh
+Version: 0.0.4
+Summary: A collection of useful tools.
+Home-page: https://git.sr.ht/~stvhuang/stvh.py
+Author: Yan-Jia Steven Huang
+Author-email: stvhuang.me@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stvh
+
+A collection of useful tools.
+
+## Package building and uploading
+
+Build package, requiring [build](https://pypa-build.readthedocs.io/en/stable/):
+
+```sh
+python -m build
+```
+
+Upload package to PyPI, requiring [Twine](https://twine.readthedocs.io/en/stable/):
+
+```py
+twine upload dist/*
+```
+
+
