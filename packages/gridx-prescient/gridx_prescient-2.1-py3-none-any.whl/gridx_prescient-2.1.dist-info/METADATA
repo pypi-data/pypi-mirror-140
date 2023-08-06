@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gridx-prescient
+Version: 2.1
+Summary: Power Generation Scenario creation and simulation utilities
+Home-page: https://github.com/grid-parity-exchange/Prescient
+Author: Jean-Paul Watson, David Woodruff, Andrea Staid, Dominic Yang
+Author-email: jwatson@sandia.gov
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7, <4
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: pyomo (>=6.1.2)
+Requires-Dist: python-dateutil
+Requires-Dist: networkx
+Requires-Dist: jupyter
+Requires-Dist: gridx-egret (==0.5.2)
+
+UNKNOWN
+
