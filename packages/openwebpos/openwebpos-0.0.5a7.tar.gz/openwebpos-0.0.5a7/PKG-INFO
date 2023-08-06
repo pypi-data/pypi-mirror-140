@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: openwebpos
+Version: 0.0.5a7
+Summary: Web-based point of sale system.
+Home-page: https://github.com/baezfb/openwebpos
+Author: Javier Baez
+Author-email: baezdevs@gmail.com
+License: MIT
+Keywords: python,pos,point-of-sale
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Flask
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# OpenWebPOS
+
+OpenWebPOS is a web-based point of sale system written in python using the Flask framework.
+
+## Installation
+
+Run the following to install:
+```bash
+$ pip install openwebpos
+```
+
+## Usage
+
+```python
+from openwebpos import create_app
+
+application = create_app()
+
+if __name__ == "__main__":
+    application.run()
+```
+
+
+
+# Developing
+
+To install openwebpos, along with the tools you need to develop and run tests, run the following in your virtualenv:
+```bash
+$ pip install -e .[dev]
+```
+
