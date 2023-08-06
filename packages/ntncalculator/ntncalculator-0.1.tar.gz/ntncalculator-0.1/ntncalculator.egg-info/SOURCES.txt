@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+ntncalculator/__init__.py
+ntncalculator.egg-info/PKG-INFO
+ntncalculator.egg-info/SOURCES.txt
+ntncalculator.egg-info/dependency_links.txt
+ntncalculator.egg-info/requires.txt
+ntncalculator.egg-info/top_level.txt
