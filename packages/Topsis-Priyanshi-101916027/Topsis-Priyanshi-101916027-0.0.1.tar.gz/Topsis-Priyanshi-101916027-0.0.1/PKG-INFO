@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: Topsis-Priyanshi-101916027
+Version: 0.0.1
+Summary: Topsis implementation
+Home-page: UNKNOWN
+Author: Priyanshi Jain
+Author-email: <pjain5_be19@thapar.edu>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,topsis,impacts
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
