@@ -1,0 +1,17 @@
+README.md
+setup.py
+src/bindings/python/gtn/__init__.py
+src/bindings/python/gtn.egg-info/PKG-INFO
+src/bindings/python/gtn.egg-info/SOURCES.txt
+src/bindings/python/gtn.egg-info/dependency_links.txt
+src/bindings/python/gtn.egg-info/not-zip-safe
+src/bindings/python/gtn.egg-info/top_level.txt
+src/bindings/python/gtn/criterion/__init__.py
+test/test_autograd.py
+test/test_bindings.py
+test/test_creations.py
+test/test_criterions.py
+test/test_cuda.py
+test/test_functions.py
+test/test_helpers.py
+test/test_utils.py
