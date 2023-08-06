@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: devrepo
+Version: 0.2.0.dev1
+Summary: development repository operations
+Home-page: https://github.com/random-python/devrepo
+Author: Andrei Pozolotin
+Author-email: andrei.pozolotin@gmail.com
+License: Apache-2
+Keywords: development,repository,operations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+
+## devrepo
+
+[![Travis Status][travis_icon]][travis_link]
+[![Package Version][pypi_icon]][pypi_link]
+[![Python Versions][python_icon]][python_link]
+
+Development repository operations
+
+### Install
+
+```
+pip install devrepo
+```
+
+### Usage
+
+#### `base_dir()`
+
+Discover project root  
+* https://github.com/random-python/devrepo/blob/master/tool/release_update.py
+
+#### `shell()`
+
+Invoke shell inside project root  
+* https://github.com/random-python/devrepo/blob/master/tool/github_squash.py
+
+### Config
+
+Default module configuration settings:  
+* https://github.com/random-python/devrepo/blob/master/src/main/devrepo/config.ini
+
+
+[travis_icon]: https://travis-ci.org/random-python/devrepo.svg?branch=master
+[travis_link]: https://travis-ci.org/random-python/devrepo/builds
+
+[pypi_icon]: https://badge.fury.io/py/devrepo.svg
+[pypi_link]: https://pypi.python.org/pypi/devrepo
+
+[python_icon]: https://img.shields.io/pypi/pyversions/devrepo.svg
+[python_link]: https://pypi.python.org/pypi/devrepo
+
+
+
