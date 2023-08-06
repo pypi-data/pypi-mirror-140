@@ -1,0 +1,5 @@
+
+[dev]
+pytest>=7.0.1
+check-manisfest>=0.47
+yapf>=0.32.0
