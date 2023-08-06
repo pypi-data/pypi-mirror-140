@@ -1,0 +1,4 @@
+chk
+dist
+docs
+tests
