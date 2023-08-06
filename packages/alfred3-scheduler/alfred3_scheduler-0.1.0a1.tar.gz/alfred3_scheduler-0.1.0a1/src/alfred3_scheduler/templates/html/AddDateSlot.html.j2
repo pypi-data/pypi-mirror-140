@@ -1,0 +1,42 @@
+<textarea 
+class="form-control input-field {{ align }} {{ css_class_element }}" 
+name="{{ name }}" 
+id="{{ name }}" 
+rows="{{ area_nrows }}"
+placeholder="{{ placeholder }}" 
+{% if disabled %}disabled{% endif %}
+style="{{ height }} {{ fontsize }}"
+>{% if input %}{{ input }}{% elif default %}{{ default }}{% endif %}
+</textarea>
+
+<div class="mt-3">
+<button
+    type="button"
+    class="btn btn-primary"
+    name="{{ name }}-send"
+    id="{{ name }}-send"
+>
+Write data to database
+</button>
+<div
+id="{{ name }}-feedback-container"
+style="display: inline;"
+>
+<div id="{{ name }}-spinner" class="mr-2 ml-2" style="display: inline;"></div>
+<span id="{{ name }}-feedback"></span>
+</div>
+</div>
+<hr>
+<div class="mt-4" id="{{ name }}-description">
+<h5>Details on required fields</h5>
+  <ul>
+    <li><b>start date</b>: Start date of time slot. Allowed formats are <code>yyyy-mm-dd</code> and <code>dd.mm.yyyy</code>.</li>
+    <li><b>start time</b>: Start time of time slot in <code>HH:MM</code> format.</li>
+    <li><b>duration</b>: Duration of time slot in minutes.</li>
+    <li><b>n_participants</b>: Number of participants that can register for time slot.</li>
+    <li><b>n_overbook</b>: Number of participants allowed to register beyond target number.</li>
+    <li><b>street</b>: Address of experiment.</li>
+    <li><b>city</b>: City of experiment.</li>
+    <li><b>place_hint</b>: Additional directions.</li>
+  </ul>
+</div>

@@ -1,0 +1,14 @@
+{
+    "start_text": "Start um",
+    "start_time_unit": "Uhr",
+    "duration_text": "Dauer",
+    "choose_text": "Auswählen",
+    "free_slots_text": "freie Plätze",
+    "confirmation_heading": "Auswahl bestätigen",
+    "close_text": "Abbrechen",
+    "date_text": "Datum",
+    "confirm_button": "Bestätigen",
+    "modal_content": "Nach dem Klick auf 'Bestätigen' erhalten Sie eine E-Mail mit einem Bestätigungslink. Ihre Registrierung ist erst abgeschlossen, wenn Sie sie per Klick auf den Link bestätigt haben. Bis dahin ist Ihr Platz eine Stunde lang reserviert.",
+    "minutes": "Minutes",
+    "registration_initiated_title": "Confirmation Email Sent!"
+}

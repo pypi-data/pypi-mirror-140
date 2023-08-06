@@ -1,0 +1,47 @@
+<!-- Button trigger modal -->
+<button 
+    type="button" 
+    class="btn btn-{{ button_style }} btn-sm {{ css_class_element }}" 
+    data-toggle="modal" 
+    data-target="#{{ name }}-modal"
+    id="{{ name }}"
+    style="{{ fontsize }}"
+    >
+  {{ text | safe}}
+</button>
+
+<!-- Modal -->
+<div 
+    class="modal fade" 
+    id="{{ name }}-modal" 
+    tabindex="-1" 
+    aria-labelledby="{{ name}}-modal-label" 
+    aria-hidden="true">
+  
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="{{ name}}-modal-label">{{ modal_title }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body" style="font-size: 1rem;">
+      {{ mail_textarea.web_widget }}
+        
+        <div class="mt-2">
+        <span id="{{ name }}-spinner" class="mr-1"></span>
+        <span id="{{ name }}-feedback"></span>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-{{ button_style }}" id="{{ name }}-send">{{ text | safe }}</button>
+      </div>
+
+    </div>
+  </div>
+</div>

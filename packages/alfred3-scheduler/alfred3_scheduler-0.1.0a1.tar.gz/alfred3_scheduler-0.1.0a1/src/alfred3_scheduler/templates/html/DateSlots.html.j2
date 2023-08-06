@@ -1,0 +1,5 @@
+<div class="row">
+{% for slot in slots %}
+    <div class="col-2">{{ slot.web_widget | safe}}</div>
+{% endfor %}
+</div>
