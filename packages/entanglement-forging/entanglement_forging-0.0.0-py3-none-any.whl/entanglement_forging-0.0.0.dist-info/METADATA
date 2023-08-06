@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: entanglement-forging
+Version: 0.0.0
+Summary: Simulate chemical and physical systems using entanglement forging.
+Home-page: https://github.com/IBM-Quantum-Prototypes/entanglement-forging
+Maintainer: Caleb Johnson
+Maintainer-email: caleb.johnson@ibm.com
+License: Apache 2.0
+Keywords: quantum,nature,simulation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE.txt
+Requires-Dist: qiskit-nature (>=0.3.0)
+Requires-Dist: qiskit-terra (>=0.19.1)
+Requires-Dist: qiskit-ignis (>=0.7.0)
+Requires-Dist: qiskit-aer (>=0.10.2)
+Requires-Dist: qiskit-ibmq-provider (>=0.18.3)
+Requires-Dist: pyscf (>=2.0.1)
+Requires-Dist: h5py (>=3.6.0)
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: ipywidgets (>=7.6.5)
+Requires-Dist: jupyter
+Provides-Extra: testing
+Requires-Dist: build ; extra == 'testing'
+Requires-Dist: tox ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: treon ; extra == 'testing'
+Requires-Dist: pylint ; extra == 'testing'
+Requires-Dist: pycodestyle ; extra == 'testing'
+
+This module allows a user to simulate chemical and physical systems using a variational quantum eigensolver enhanced by entanglement forging. Entanglement forging doubles the size of the system that can be exactly simulated on a fixed set of quantum bits.
+
