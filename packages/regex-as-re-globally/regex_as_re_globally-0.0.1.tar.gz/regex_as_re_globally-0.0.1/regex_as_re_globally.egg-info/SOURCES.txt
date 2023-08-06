@@ -1,0 +1,15 @@
+.gitignore
+LICENSE.txt
+MANIFEST.in
+README.md
+regex_as_re_globally.pth
+setup.cfg
+setup.py
+tox.ini
+.github/workflows/main.yml
+regex_as_re_globally.egg-info/PKG-INFO
+regex_as_re_globally.egg-info/SOURCES.txt
+regex_as_re_globally.egg-info/dependency_links.txt
+regex_as_re_globally.egg-info/not-zip-safe
+regex_as_re_globally.egg-info/requires.txt
+regex_as_re_globally.egg-info/top_level.txt
