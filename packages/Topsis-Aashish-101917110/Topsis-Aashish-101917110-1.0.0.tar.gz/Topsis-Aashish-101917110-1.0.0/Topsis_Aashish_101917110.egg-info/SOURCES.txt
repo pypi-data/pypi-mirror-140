@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis_Aashish_101917110.egg-info/PKG-INFO
+Topsis_Aashish_101917110.egg-info/SOURCES.txt
+Topsis_Aashish_101917110.egg-info/dependency_links.txt
+Topsis_Aashish_101917110.egg-info/top_level.txt
+topsis/__init__.py
