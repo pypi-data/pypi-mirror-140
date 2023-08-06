@@ -1,0 +1,3 @@
+[console_scripts]
+mdiff = mdiff.cli:main
+
