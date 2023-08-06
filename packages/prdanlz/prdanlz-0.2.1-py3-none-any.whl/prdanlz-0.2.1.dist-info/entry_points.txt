@@ -1,0 +1,2 @@
+[console_scripts]
+prdanlz = prdanlz.__main__:main
