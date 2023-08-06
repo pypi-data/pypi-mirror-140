@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+easynewsletter/__init__.py
+easynewsletter/database.py
+easynewsletter/easyemail.py
+easynewsletter/main.py
+easynewsletter/subscriber.py
+easynewsletter/util.py
+easynewsletter.egg-info/PKG-INFO
+easynewsletter.egg-info/SOURCES.txt
+easynewsletter.egg-info/dependency_links.txt
+easynewsletter.egg-info/requires.txt
+easynewsletter.egg-info/top_level.txt
+test/test.py
