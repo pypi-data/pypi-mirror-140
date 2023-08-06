@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: visionfi
+Version: 1.1.0
+Summary: An library for visualization and outlier handling
+Home-page: UNKNOWN
+Author: Visiofi_Team
+Author-email: UNKNOWN
+License: MIT
+Description: # outviz
+        This repository contain code and function for visualizing all types of different plots seperately 
+        for both categorical and numerical data in one graph so we can explore different things in one click.
+        -------------------
+        Univariate Plots
+        Multivariate Plots
+        
+        This repository also contain code and function for handling missing values and outliers and 
+        have ability to drop or replace them with mean, mode, median or cap with min-max limit
+        -------------------
+        Zscore_Outliers
+        IQR_Outliers
+        
+        #Replacce outliers with- mean, median, mode, cap
+        
+        Change Log
+        ==========
+        
+        1.1.0 (28/02/2022)
+        -------------------
+        - First Release
+        
+Keywords: visualization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

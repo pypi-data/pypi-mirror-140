@@ -1,0 +1,12 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+visionfi/Drag_Drop.py
+visionfi/VisionFi.py
+visionfi/Volume.py
+visionfi/__init__.py
+visionfi.egg-info/PKG-INFO
+visionfi.egg-info/SOURCES.txt
+visionfi.egg-info/dependency_links.txt
+visionfi.egg-info/top_level.txt
