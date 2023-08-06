@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/emailSMS/__init__.py
+src/emailSMS/emailSMS.py
+src/emailSMS_python3.egg-info/PKG-INFO
+src/emailSMS_python3.egg-info/SOURCES.txt
+src/emailSMS_python3.egg-info/dependency_links.txt
+src/emailSMS_python3.egg-info/top_level.txt
