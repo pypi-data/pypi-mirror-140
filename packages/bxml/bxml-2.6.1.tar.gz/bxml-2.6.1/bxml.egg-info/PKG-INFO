@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bxml
+Version: 2.6.1
+Summary: XML library
+Home-page: https://github.com/BlackEarth/bxml
+Author: Sean Harrison
+Author-email: sah@bookgenesis.com
+License: MPL 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# bxml
+
+Black Earth XML library
+
+Installation:
+
+    $ pip install bxml
+ 
+
