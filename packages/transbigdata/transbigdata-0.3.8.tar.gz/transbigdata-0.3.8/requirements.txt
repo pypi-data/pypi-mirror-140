@@ -1,0 +1,8 @@
+rtree
+geopandas
+matplotlib
+seaborn
+scipy
+networkx
+keplergl
+igraph
