@@ -1,0 +1,4 @@
+vdk-core
+minikerberos
+requests-kerberos
+pykerberos
