@@ -1,0 +1,7 @@
+matplotlib
+scipy
+emcee
+lmfit
+numdifftools
+numba
+tqdm
