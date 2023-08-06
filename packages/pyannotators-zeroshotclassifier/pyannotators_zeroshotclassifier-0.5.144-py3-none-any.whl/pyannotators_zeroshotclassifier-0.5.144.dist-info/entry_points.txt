@@ -1,0 +1,3 @@
+[pyannotators.plugins]
+zeroshotclassifier=pyannotators_zeroshotclassifier.zeroshotclassifier:ZeroShotClassifierAnnotator
+
