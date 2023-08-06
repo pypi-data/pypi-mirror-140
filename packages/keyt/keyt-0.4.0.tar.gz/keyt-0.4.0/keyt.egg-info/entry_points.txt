@@ -1,0 +1,2 @@
+[console_scripts]
+keyt = keyt.cli:main
