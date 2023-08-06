@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/irakliotis_comp180/__init__.py
+src/irakliotis_comp180/utilities.py
+src/irakliotis_comp180_utilities.egg-info/PKG-INFO
+src/irakliotis_comp180_utilities.egg-info/SOURCES.txt
+src/irakliotis_comp180_utilities.egg-info/dependency_links.txt
+src/irakliotis_comp180_utilities.egg-info/top_level.txt
