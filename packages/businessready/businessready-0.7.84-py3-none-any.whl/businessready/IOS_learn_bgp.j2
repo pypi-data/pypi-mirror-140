@@ -1,0 +1,197 @@
+{%- if filetype_loop == 0 %}Instance,BGP ID,State,VRF,Router ID,Cluster ID,Confederation ID,Neighbor,Version,Hold Time,Keep Alive Interval,Local AS,Remote AS,Total Recieved Messages,Total Sent Messages,Connect Last Reset,Reset Reason
+{%-     for instance in to_parse_bgp %}
+{%-         for vrf in to_parse_bgp[instance].vrf %}
+{%-             for neighbor in to_parse_bgp[instance].vrf[vrf].neighbor %}
+{{ instance }},{{ to_parse_bgp[instance].bgp_id }},{{ to_parse_bgp[instance].protocol_state }},{{ vrf }},{{ to_parse_bgp[instance].vrf[vrf].router_id }},{{ to_parse_bgp[instance].vrf[vrf].cluster_id }},{{ to_parse_bgp[instance].vrf[vrf].confederation_identifier }},{{ neighbor }},{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_version }},{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].holdtime }},{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].keepalive_interval }},{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].local_as_as_no }},{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].remote_as }},{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_neighbor_counters.messages.received.total }},{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_neighbor_counters.messages.sent.total }},{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_session_transport.connection.last_reset }},{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_session_transport.connection.reset_reason }}
+{%-             endfor %}
+{%-         endfor %}
+{%-     endfor %}
+{%- else %}
+{%-     if filetype_loop == 1 %}
+# Learn BGP
+| Instance | BGP ID | State | VRF | Router ID | Cluster ID | Confederation ID | Neighbor | Version | Hold Time | Keep Alive Interval | Local AS | Remote AS | Total Recieved Messages | Total Sent Messages | Connect Last Reset | Reset Reason |
+| -------- | ------ | ----- | --- | --------- | ---------- | ---------------- | -------- | ------- | --------- | ------------------- | -------- | --------- | ----------------------- | ------------------- | ------------------ | ------------ |
+{%-         for instance in to_parse_bgp %}
+{%-             for vrf in to_parse_bgp[instance].vrf %}
+{%-                 for neighbor in to_parse_bgp[instance].vrf[vrf].neighbor %}
+| {{ instance }} | {{ to_parse_bgp[instance].bgp_id }} | {{ to_parse_bgp[instance].protocol_state }} | {{ vrf }} | {{ to_parse_bgp[instance].vrf[vrf].router_id }} | {{ to_parse_bgp[instance].vrf[vrf].cluster_id }} | {{ to_parse_bgp[instance].vrf[vrf].confederation_identifier }} | {{ neighbor }} | {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_version }} | {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].holdtime }} | {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].keepalive_interval }} | {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].local_as_as_no }} | {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].remote_as }} | {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_neighbor_counters.messages.received.total }} | {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_neighbor_counters.messages.sent.total }} | {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_session_transport.connection.last_reset }} | {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_session_transport.connection.reset_reason }} |
+{%-                 endfor %}
+{%-             endfor %}
+{%-         endfor %}
+{%-     else %}
+{%-         if filetype_loop == 2 %}
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/colreorder/1.5.4/js/dataTables.colReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/keytable/2.6.4/js/dataTables.keyTable.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.9/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.6.4/css/keyTable.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+</head>
+<body>
+<h1>Learn BGP</h1>
+<table id = "bgp">
+<thead>
+  <tr>
+    <th>Instance</th>
+    <th>BGP ID</th>
+    <th>State</th>
+    <th>VRF</th>
+    <th>Router ID</th>
+    <th>Cluster ID</th>
+    <th>Confederation ID</th>
+    <th>Neighbor</th>
+    <th>Version</th>
+    <th>Hold Time</th>
+    <th>Keep Alive Interval</th>
+    <th>Local AS</th>
+    <th>Remote AS</th>
+    <th>Total Recieved Messages</th>
+    <th>Total Sent Messages</th>
+    <th>Connect Last Reset</th>
+    <th>Reset Reason</th>
+  </tr>
+  </thead>
+  <tbody>
+{%-             for instance in to_parse_bgp %}
+{%-                 for vrf in to_parse_bgp[instance].vrf %}
+{%-                     for neighbor in to_parse_bgp[instance].vrf[vrf].neighbor %}
+<tr>
+    <td>{{ instance }}</td>
+    <td>{{ to_parse_bgp[instance].bgp_id }}</td>
+    <td>{{ to_parse_bgp[instance].protocol_state }}</td>
+    <td>{{ vrf }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].router_id }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].cluster_id }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].confederation_identifier }}</td>
+    <td>{{ neighbor }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_version }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].holdtime }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].keepalive_interval }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].local_as_as_no }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].remote_as }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_neighbor_counters.messages.received.total }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_neighbor_counters.messages.sent.total }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_session_transport.connection.last_reset }}</td>
+    <td>{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_session_transport.connection.reset_reason }}</td>
+  </tr>
+{%-                     endfor %}
+{%-                 endfor %}
+{%-             endfor %}
+  </tbody>  
+</table>
+<script type = "text/javascript">
+  $(document).ready(function(){
+    $('#bgp thead tr')
+    .clone(true)
+    .addClass('filters')
+    .appendTo('#bgp thead');
+
+    var table = $('#bgp').DataTable({
+        keys: true,
+        dom: 'Bfrtip',
+        lengthMenu: [
+            [ 10, 25, 50, -1 ],
+            [ '10 rows', '25 rows', '50 rows', 'Show all' ]
+        ],
+        buttons: [
+        'pageLength','colvis','copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        colReorder: true,
+        select: true,            
+        orderCellsTop: true,
+        fixedHeader: true,
+        initComplete: function () {
+        var api = this.api();
+
+        // For each column
+        api
+            .columns()
+            .eq(0)
+            .each(function (colIdx) {
+                // Set the header cell to contain the input element
+                var cell = $('.filters th').eq(
+                    $(api.column(colIdx).header()).index()
+                );
+                var title = $(cell).text();
+                $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+                // On every keypress in this input
+                $(
+                    'input',
+                    $('.filters th').eq($(api.column(colIdx).header()).index())
+                )
+                    .off('keyup change')
+                    .on('keyup change', function (e) {
+                        e.stopPropagation();
+
+                        // Get the search value
+                        $(this).attr('title', $(this).val());
+                        var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                        var cursorPosition = this.selectionStart;
+                        // Search the column for that value
+                        api
+                            .column(colIdx)
+                            .search(
+                                this.value != ''
+                                    ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                    : '',
+                                this.value != '',
+                                this.value == ''
+                            )
+                            .draw();
+
+                        $(this)
+                            .focus()[0]
+                            .setSelectionRange(cursorPosition, cursorPosition);
+                    });
+            });
+    },
+});
+});        
+</script>
+</body></html>
+{%-         else %}
+# Learn BGP
+{%-             for instance in to_parse_bgp %}
+## Instance: {{ instance }}
+### BGP ID: {{ to_parse_bgp[instance].bgp_id }}
+### Protocol State: {{ to_parse_bgp[instance].protocol_state }}
+### VRF
+{%-                 for vrf in to_parse_bgp[instance].vrf %}
+#### {{ vrf }}
+##### ID
+###### Router: {{ to_parse_bgp[instance].vrf[vrf].router_id }}
+###### Cluster: {{ to_parse_bgp[instance].vrf[vrf].cluster_id }}
+###### Confederation: {{ to_parse_bgp[instance].vrf[vrf].confederation_identifier }}
+##### Neighbor
+{%-                     for neighbor in to_parse_bgp[instance].vrf[vrf].neighbor %}
+###### {{ neighbor }}
+###### BGP Version: {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_version }}
+###### Holdtime: {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].holdtime }}
+###### Keepalive Interval: {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].keepalive_interval }}
+###### Local AS Number: {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].local_as_as_no }}
+###### Remote AS: {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].remote_as }}
+###### Total Messages Received: {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_neighbor_counters.messages.received.total }}
+###### Total Messages Sent: {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_neighbor_counters.messages.sent.total }}
+###### Last Reset: {{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_session_transport.connection.last_reset }}
+###### Reset Reason{{ to_parse_bgp[instance].vrf[vrf].neighbor[neighbor].bgp_session_transport.connection.reset_reason }}
+{%-                     endfor %}
+{%-                 endfor %}
+{%-             endfor %}
+{%-         endif %}
+{%-     endif %}
+{%- endif %}
