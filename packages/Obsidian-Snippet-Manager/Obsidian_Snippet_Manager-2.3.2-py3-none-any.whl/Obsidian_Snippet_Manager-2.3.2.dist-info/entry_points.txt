@@ -1,0 +1,4 @@
+[console_scripts]
+obsnipe = Obsidian_Snippeter.CLI:main
+snipetter = Obsidian_Snippeter.GUI:main
+
