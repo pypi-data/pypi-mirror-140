@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+types-pyyaml = "*"
+types-attrs = "*"
+types-requests = "*"
+pytest = "*"
+
+[packages]
+attrs = "*"
+pyyaml = "*"
+requests = "*"
+click = "*"
+thoth-common = "*"
+
+[requires]
+python_version = "3.8"

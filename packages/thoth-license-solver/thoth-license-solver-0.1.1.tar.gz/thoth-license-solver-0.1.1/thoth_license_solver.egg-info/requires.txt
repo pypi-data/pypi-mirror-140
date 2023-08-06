@@ -1,0 +1,5 @@
+attrs
+pyyaml
+requests
+click
+thoth-common
