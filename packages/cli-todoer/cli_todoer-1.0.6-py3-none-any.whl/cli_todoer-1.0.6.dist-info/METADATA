@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cli-todoer
+Version: 1.0.6
+Summary: An easy command line interface for saving tasks to to-do list for current day
+Home-page: https://github.com/VladaZakharova/CLI-todoer
+Author: Vlada Zakharova
+Author-email: vladazaharova0@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: typer (==0.4.0)
+Requires-Dist: rich (==11.0.0)
+Requires-Dist: click (==8.0.3)
+Requires-Dist: commonmark (==0.9.1)
+Requires-Dist: typing-extensions (==4.1.1)
+Requires-Dist: colorama (==0.4.4)
+
+# CLI-todoer
+An easy command line interface for tracking your to-do list 
+![image](https://user-images.githubusercontent.com/80038284/155878923-2b963bd1-30ce-46e9-ba63-7d5126a26736.png)
+
+
