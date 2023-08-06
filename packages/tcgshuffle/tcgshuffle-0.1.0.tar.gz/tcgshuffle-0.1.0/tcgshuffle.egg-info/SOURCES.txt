@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+tcgshuffle.egg-info/PKG-INFO
+tcgshuffle.egg-info/SOURCES.txt
+tcgshuffle.egg-info/dependency_links.txt
+tcgshuffle.egg-info/not-zip-safe
+tcgshuffle.egg-info/requires.txt
+tcgshuffle.egg-info/top_level.txt
