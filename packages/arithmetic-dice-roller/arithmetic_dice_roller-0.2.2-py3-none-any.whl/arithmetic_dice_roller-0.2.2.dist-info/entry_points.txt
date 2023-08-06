@@ -1,0 +1,2 @@
+[console_scripts]
+arithmetic-dice-roller = arithmetic_dice_roller.__main__:main
