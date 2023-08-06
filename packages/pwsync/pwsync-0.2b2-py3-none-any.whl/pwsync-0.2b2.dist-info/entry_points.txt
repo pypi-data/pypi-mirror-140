@@ -1,0 +1,2 @@
+[console_scripts]
+pwsync = pwsync.main:main
