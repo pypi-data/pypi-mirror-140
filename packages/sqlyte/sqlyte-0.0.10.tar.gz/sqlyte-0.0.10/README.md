@@ -1,0 +1,2 @@
+# sqlyte
+Simple SQLite interface
