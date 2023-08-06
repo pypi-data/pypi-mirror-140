@@ -1,0 +1,6 @@
+mpi_enabled=OFF
+openmp_enabled=ON
+root_enabled=OFF
+cuda_enabled=ON
+c_compiler=C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe
+cxx_compiler=C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe
