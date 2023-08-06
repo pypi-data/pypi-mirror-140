@@ -1,0 +1,3 @@
+[console_scripts]
+ipadumper = ipadumper.main:main
+
