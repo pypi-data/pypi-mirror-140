@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: toolbox-maker
+Version: 0.0.1
+Summary: This small python program was made for easier use of Python Toolboxes (.pyt) in IDEs The advantage is that you can write the Toolbox in pure python and the program can convert the python-script to a real Python Tool.
+Home-page: https://git.srv.bergenkom.no/rp376/Toolbox-Maker
+Author: Magnus Eikemo Larsen
+Author-email: magnus.larsen@bergen.kommune.no
+License: MIT LICENSE
+Keywords: Python,ArcGIS Pro,ArcGIS,GP,GP Tools,Tool,Tools,Python3
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+UNKNOWN
+
+
