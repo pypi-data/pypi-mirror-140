@@ -1,0 +1,7 @@
+imagedataset/__init__.py,sha256=FRhARq-SvgRhJbWSA9BH7rZAM5tMekRdVXi4eiFnvIM,40
+imagedataset/datasets.py,sha256=TQGRXKo6M1i_O7oBFv1mGptLeaoe3GebEXw2V7RHJ8E,16637
+torch_image_dataset-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+torch_image_dataset-0.0.2.dist-info/METADATA,sha256=uX097EqKSP6rsW6LEVEkM97z9h2g1om2TfPSkM_bupU,3569
+torch_image_dataset-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+torch_image_dataset-0.0.2.dist-info/top_level.txt,sha256=eJckkM5QuASjmM97XZGepX5I0S0zipyxa0wg988cvuQ,13
+torch_image_dataset-0.0.2.dist-info/RECORD,,
