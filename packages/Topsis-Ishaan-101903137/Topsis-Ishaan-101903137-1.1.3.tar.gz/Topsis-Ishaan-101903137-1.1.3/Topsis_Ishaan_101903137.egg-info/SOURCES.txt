@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Topsis_Ishaan_101903137.egg-info/PKG-INFO
+Topsis_Ishaan_101903137.egg-info/SOURCES.txt
+Topsis_Ishaan_101903137.egg-info/dependency_links.txt
+Topsis_Ishaan_101903137.egg-info/entry_points.txt
+Topsis_Ishaan_101903137.egg-info/requires.txt
+Topsis_Ishaan_101903137.egg-info/top_level.txt
+topsis_py/topsis.py
