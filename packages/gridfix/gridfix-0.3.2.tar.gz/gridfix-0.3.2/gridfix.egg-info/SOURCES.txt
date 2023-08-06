@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+gridfix/__init__.py
+gridfix/features.py
+gridfix/model.py
+gridfix/regionset.py
+gridfix.egg-info/PKG-INFO
+gridfix.egg-info/SOURCES.txt
+gridfix.egg-info/dependency_links.txt
+gridfix.egg-info/requires.txt
+gridfix.egg-info/top_level.txt
+gridfix.egg-info/zip-safe
