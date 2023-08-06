@@ -1,0 +1,13 @@
+bqsc/__init__.py,sha256=EIkHot7qOcoI4WU53p9-lYWnRw10er9x1MypYglG8nU,380
+bqsc/cli.py,sha256=n5r5cDwSDsS_-YuXF6NhsY62Agq-M4tqOmLDpmAWjQA,1483
+bqsc/column_info.py,sha256=1Ts9LWJfdw32lU_21NtJkc-RnbVs0jx4z4pexSM89L8,676
+bqsc/load.py,sha256=O-1O_1DoFnzwNKf_rj0l-buHGXLzzb5piMQuA0pY9zQ,2177
+bqsc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bqsc/table.py,sha256=wwpiigB7eXgVb28yM0RUEC52eKo6BHO-XS5emP1PK-A,1741
+bqsc/table_info.py,sha256=oWOoJQTzM_PQJqKiUcUB-BlUmY4lHTKrIzXj77Ys6vc,531
+bqsc/type_map.py,sha256=XupxR_NQgBmmq1c_kwiUcs_2xt6jT6OezHFFKuCeFWw,319
+bqsc-5.0.1.dist-info/entry_points.txt,sha256=tYsCuE0qy4i5rCg7u0TOtHAvCZ_TVw35jzTm3s3UWoo,38
+bqsc-5.0.1.dist-info/LICENSE,sha256=TgPefUc7qKjOGBi3icGrymU8Uev5kF5yoGnXFZ6W6ws,1059
+bqsc-5.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+bqsc-5.0.1.dist-info/METADATA,sha256=OrJzHabR_T7UgZlBrZyvq7PkYSkkCovv0oRmF4-0-gE,543
+bqsc-5.0.1.dist-info/RECORD,,
