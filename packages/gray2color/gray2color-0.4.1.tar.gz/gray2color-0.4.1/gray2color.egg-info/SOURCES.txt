@@ -1,0 +1,16 @@
+README.md
+setup.py
+gray2color/__init__.py
+gray2color/gray2color.py
+gray2color.egg-info/PKG-INFO
+gray2color.egg-info/SOURCES.txt
+gray2color.egg-info/dependency_links.txt
+gray2color.egg-info/top_level.txt
+gray2color/utils/__init__.py
+gray2color/utils/ade20k.py
+gray2color/utils/cityscape.py
+gray2color/utils/gray2rgb.py
+gray2color/utils/lip.py
+gray2color/utils/pannuke.py
+gray2color/utils/pascal.py
+gray2color/utils/vistas.py
