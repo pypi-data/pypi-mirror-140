@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: metabolike
+Version: 0.3.2
+Summary: Build graph database from BRENDA and BioCyc for studying reprogrammed metabolisms.
+Keywords: bioinformatics,metabolic-pathway,network,graph-database
+Author-email: Yi Zhou <metabolike@y1zhou.com>
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Pytest
+Classifier: Framework :: Sphinx
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Typing :: Typed
+Requires-Dist: lark>=0.11.3,<1.0.0
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: numpy
+Requires-Dist: python-libsbml>=5.19.2
+Requires-Dist: neo4j>=4.0.0
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+Requires-Dist: typer>=0.4.0,<0.5.0
+Requires-Dist: fastapi>=0.70.0,<0.71.0
+Requires-Dist: uvicorn>=0.16.0,<0.17.0
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: sphinx_rtd_theme ; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Project-URL: Documentation, https://metabolike.readthedocs.io/
+Project-URL: Source, https://github.com/y1zhou/metabolike
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+Metabolic reprogramming Knowledgebase
+=====================================
+
+.. image:: https://img.shields.io/pypi/v/metabolike
+    :alt: PyPI Release
+    :target: https://pypi.org/project/metabolike/
+.. image:: https://img.shields.io/github/workflow/status/y1zhou/metabolike/Release%20to%20PyPI
+    :alt: Release Build Status
+    :target: https://github.com/y1zhou/metabolike/actions/workflows/release.yml
+.. image:: https://img.shields.io/github/workflow/status/y1zhou/metabolike/PyTest?label=test
+    :alt: PyTest Workflow Status
+    :target: https://github.com/y1zhou/metabolike/actions/workflows/pytest.yml
+
+A Python package that aggregates the data from BRENDA_ and BioCyc_ into one unified `graph database`_.
+The MetaCyc (BioCyc) database is imported to a graph database using the provided SBML file and various ``.dat`` files.
+
+.. _BRENDA: https://brenda-enzymes.org/
+.. _BioCyc: https://biocyc.org/
+.. _graph database: https://neo4j.com/
+
+To-Do
+-----
+
+* Add tutorial for the package
+* Add documentation to the CLI
+* Add Dockerfile and docker-compose file
+* Add tests
+

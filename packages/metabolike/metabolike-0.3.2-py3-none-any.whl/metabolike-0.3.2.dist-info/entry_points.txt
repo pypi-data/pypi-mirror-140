@@ -1,0 +1,3 @@
+[console_scripts]
+metabolike=metabolike.main:app
+
