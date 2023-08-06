@@ -1,0 +1,181 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+rc[0-9]+'
+
+jobs:
+  check-release:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - name: Get changed files
+        uses: tj-actions/changed-files@v1.1.2
+        id: files
+      - name: Determine if files modified
+        run: |
+          init_modified=false
+          changelog_modified=false
+          for changed_file in ${{ steps.files.outputs.all_modified_files }}; do
+            if [[ ${changed_file} == "chaostoolkit/__init__.py" ]];
+            then
+              init_modified=true # __init__.py was modified
+            elif [[ ${changed_file} == "CHANGELOG.md" ]];
+            then
+              changelog_modified=true # CHANGELOG.md was modified
+            fi
+          done
+          if [[ ${init_modified} == false ]];
+          then
+            echo "__init__.py was not modified"
+          fi
+          if [[ ${changelog_modified} == false ]];
+          then
+            echo "CHANGELOG.md was not modified"
+          fi
+          if [[ ${init_modified} == false || ${changelog_modified} == false ]];
+          then
+            exit 1
+          fi
+          exit 0
+  release-to-pypi:
+    needs: [check-release]
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.7'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -U setuptools wheel twine
+    - name: Build and publish
+      env:
+        TWINE_USERNAME: chaostoolkit
+        TWINE_PASSWORD: ${{ secrets.PYPI_PWD }}
+      run: |
+        python3 setup.py release
+        twine upload dist/*
+    # push artifacts for other jobs to use
+    - name: Upload packages as artifacts
+      uses: actions/upload-artifact@v2-preview
+      with:
+        name: chaostoolkit-packages
+        path: dist/chaostoolkit-*
+
+  build-docker-image:
+    runs-on: ubuntu-20.04
+    needs:
+      - release-to-pypi
+    steps:
+    - uses: actions/checkout@v2
+    - run: echo "RELEASE_VERSION=${GITHUB_REF:10}" >> $GITHUB_ENV
+    - run: echo "Release new docker image with tag ${{ env.RELEASE_VERSION }}"
+    - name: Building the Docker image
+      uses: nick-invision/retry@v2.4.0
+      env:
+        DOCKER_TAG: ${{ env.RELEASE_VERSION }}
+      with:
+        timeout_minutes: 10
+        max_attempts: 3
+        command: |
+          docker build --build-arg ctkversion=${DOCKER_TAG} -t chaostoolkit/chaostoolkit .
+          docker tag chaostoolkit/chaostoolkit:latest chaostoolkit/chaostoolkit:${DOCKER_TAG}
+
+    - name: Publishing to the Docker repository
+      env:
+        DOCKER_TAG: ${{ env.RELEASE_VERSION }}
+        DOCKER_USER_NAME: chaostoolkit
+        DOCKER_PWD: ${{ secrets.DOCKER_PWD }}
+      run: |
+        docker login -u ${DOCKER_USER_NAME} -p ${DOCKER_PWD}
+        docker push chaostoolkit/chaostoolkit:$DOCKER_TAG
+        docker push chaostoolkit/chaostoolkit:latest
+
+  trigger-build-doc:
+    needs: [check-release]
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Rebuilding the documentation
+        env:
+          TRAVIS_CI_TOKEN: ${{ secrets.TRAVIS_CI_TOKEN }}
+        run: >
+          curl -s -X POST \
+            -H "Content-Type: application/json" \
+            -H "Accept: application/json" \
+            -H "Travis-API-Version: 3" \
+            -H "Authorization: token "$TRAVIS_CI_TOKEN"" \
+            -d '{"request": {"branch":"master", "message": "Rebuilding after new chaostoolkit release"}}' \
+            https://api.travis-ci.org/repo/chaostoolkit%2Fchaostoolkit-documentation/requests
+
+  trigger-build-bundle:
+    needs: [check-release]
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Creating a new binary bundle of the toolkit and all known drivers/plugins
+        env:
+          TRAVIS_CI_TOKEN: ${{ secrets.TRAVIS_CI_TOKEN }}
+        run: >
+          curl -s -X POST \
+            -H "Content-Type: application/json" \
+            -H "Accept: application/json" \
+            -H "Travis-API-Version: 3" \
+            -H "Authorization: token "$TRAVIS_CI_TOKEN"" \
+            -d '{"request": {"branch":"master", "message": "Rebuilding after new chaostoolkit release"}}' \
+            https://api.travis-ci.org/repo/chaostoolkit%2Fchaostoolkit-bundler/requests
+
+  create-gh-release:
+    needs: [check-release]
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Create Release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+  upload-gh-release-assets:
+    runs-on: ubuntu-20.04
+    needs:
+      - create-gh-release
+      - release-to-pypi
+    steps:
+      - name: Download pypi artifacts
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: chaostoolkit-packages
+          path: dist
+      - name: Upload wheel & source dist to GH release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "dist/*.whl,dist/*.tar.gz"
+          artifact: ""
+          token: ${{ secrets.GITHUB_TOKEN }}
+          allowUpdates: true
+
+  notify-to-slack:
+    runs-on: ubuntu-20.04
+    needs:
+      - create-gh-release
+      - release-to-pypi
+      - upload-gh-release-assets
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "RELEASE_VERSION=${GITHUB_REF:10}" >> $GITHUB_ENV
+      - run: echo "Notify new Chaos Toolkit release ${{ env.RELEASE_VERSION }} to slack"
+      - name: notify to CTK releases channel on slack
+        uses: Ilshidur/action-slack@master
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        with:
+          args: "New Chaos Toolkit version `${{ env.RELEASE_VERSION }}` released!"
