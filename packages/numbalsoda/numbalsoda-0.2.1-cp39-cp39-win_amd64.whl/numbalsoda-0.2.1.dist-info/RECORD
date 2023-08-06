@@ -1,0 +1,9 @@
+numbalsoda/__init__.py,sha256=pjp6NUTw4SMWV85mn4ga00pqIHLYAzthiqdis9owBYY,21
+numbalsoda/driver.py,sha256=5yAo5423Wdbm8tDjN9fwgtRSRXN7CfqwzwvZqu8ZBVo,1740
+numbalsoda/liblsoda.dll,sha256=GNydzGcUEgTr2753EDThol0hBt2bnW1uhUU6LQCxZq4,85504
+numbalsoda/lsoda.lib,sha256=oh_PcXqgDVKKnfJpZ-GJnCohWS1j-QoTJbb38K0su5o,148402
+numbalsoda-0.2.1.dist-info/LICENSE.txt,sha256=25-CP3gX00649M46GaY_fovt75PkIj0KAgKX_xK00b4,1090
+numbalsoda-0.2.1.dist-info/METADATA,sha256=2E_K2v_uT8cWTBY5S09q0iuW7AWuLtHbS5TB6LHQk60,3634
+numbalsoda-0.2.1.dist-info/WHEEL,sha256=AfUjybt1LYkmLVgNibQaTT2Y8xH4nyH1FGkQKQA6RSA,94
+numbalsoda-0.2.1.dist-info/top_level.txt,sha256=dWxEuRQxUprOcml1BgbRxWrI8c6kGmUjcHb9-hJw7kU,11
+numbalsoda-0.2.1.dist-info/RECORD,,
