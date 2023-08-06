@@ -1,0 +1,3 @@
+[pyformatters.plugins]
+consolidate=pyformatters_consolidate.consolidate:ConsolidateFormatter
+
