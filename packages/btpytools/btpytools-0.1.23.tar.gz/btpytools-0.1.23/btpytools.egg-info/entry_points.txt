@@ -1,0 +1,5 @@
+[console_scripts]
+brainregbt = btpytools.brainreg_bt:main
+compressRawData = btpytools.compressRawData:main
+summariseAcqs = btpytools.summariseAcquisitions:main
+transferToServer = btpytools.transferToServer:main
