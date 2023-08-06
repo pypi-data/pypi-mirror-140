@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pycli_todo"
+version = "1.0.1"
+description = "Simple to-do list for your terminal, made in Python"
+authors = ["lufa"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.3"
+click-aliases = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+td = "pycli_todo.pytodo:entry_point"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
