@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Topsis-Abhay-101903014
+Version: 0.0.1
+Summary: Python Package to Implement TOPSIS
+Author: Abhay
+Author-email: asingh4_be19@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TOPSIS Package
+
+Multiple Criteria Decision Making (MCDM) using TOPSIS
+Assignment 04
+
+## Installation
+
+`pip install Topsis-Abhay-101903014`
+
+## How to use it?
+
+Once installed you can simply use it from command line.
+
+`python <programName> <input.csv> <weights array> <impacts array> <output.csv>`
+
+## License
+
+Â© 2022 Abhay (Roll Number: 101903014)
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
+
