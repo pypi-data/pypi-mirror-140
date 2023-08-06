@@ -1,0 +1,2 @@
+jupyter_server<2,>=1.6
+pyunicore>=0.9.15
