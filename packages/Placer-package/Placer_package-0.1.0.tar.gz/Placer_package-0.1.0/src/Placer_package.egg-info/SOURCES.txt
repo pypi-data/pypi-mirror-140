@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Placer_package/__init__.py
+src/Placer_package/ether.py
+src/Placer_package/games.py
+src/Placer_package/shortr.py
+src/Placer_package.egg-info/PKG-INFO
+src/Placer_package.egg-info/SOURCES.txt
+src/Placer_package.egg-info/dependency_links.txt
+src/Placer_package.egg-info/top_level.txt
