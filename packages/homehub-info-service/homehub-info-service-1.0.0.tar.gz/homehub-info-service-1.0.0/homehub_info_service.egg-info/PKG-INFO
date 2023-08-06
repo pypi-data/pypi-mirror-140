@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: homehub-info-service
+Version: 1.0.0
+Summary: Service to receive informational packets from homehub server.
+Home-page: https://github.com/claybrooks/homehub-info-service-python
+Author: Clay Brooks
+Author-email: clay_brooks@outlook.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+
+UNKNOWN
+
