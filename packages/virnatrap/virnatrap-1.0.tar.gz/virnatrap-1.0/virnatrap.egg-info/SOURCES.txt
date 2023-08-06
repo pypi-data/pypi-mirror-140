@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+virnatrap/__init__.py
+virnatrap/command_line.py
+virnatrap/virnatrap.py
+virnatrap.egg-info/PKG-INFO
+virnatrap.egg-info/SOURCES.txt
+virnatrap.egg-info/dependency_links.txt
+virnatrap.egg-info/entry_points.txt
+virnatrap.egg-info/requires.txt
+virnatrap.egg-info/top_level.txt

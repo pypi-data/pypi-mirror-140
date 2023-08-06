@@ -1,0 +1,2 @@
+[console_scripts]
+virnatrap-predict = virnatrap.command_line:virnatrap_predict
