@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: primonumber
+Version: 1.0
+Summary: Muestra los numeros primos de un numero.
+Home-page: UNKNOWN
+Author: Jesús Gil
+Author-email: jesusgil@jssistemas.es
+License: GNU GPLv3
+Keywords: mathematical operations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+PRIMO NUMBER
+==============
+
+Este paquete contiene una funcion para realizar una operacion matematica y mostrar los numeros primos.
+
+This program is free software: You can redistribute it and/or modify it under the terms of license by the Free Software Foundation, either version 3 of the License(at your option) any other version.
+
+
+
