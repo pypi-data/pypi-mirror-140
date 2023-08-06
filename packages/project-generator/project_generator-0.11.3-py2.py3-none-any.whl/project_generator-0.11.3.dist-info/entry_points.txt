@@ -1,0 +1,3 @@
+[console_scripts]
+progen = project_generator.__main__:main
+project_generator = project_generator.__main__:main
