@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+simpleobject.py
+simpleobject.egg-info/PKG-INFO
+simpleobject.egg-info/SOURCES.txt
+simpleobject.egg-info/dependency_links.txt
+simpleobject.egg-info/top_level.txt
