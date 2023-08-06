@@ -1,0 +1,6 @@
+[console_scripts]
+han2zen=deak.converter:han2zen
+json2yaml=deak.converter:json2yaml
+yaml2json=deak.converter:yaml2json
+zen2han=deak.converter:zen2han
+
