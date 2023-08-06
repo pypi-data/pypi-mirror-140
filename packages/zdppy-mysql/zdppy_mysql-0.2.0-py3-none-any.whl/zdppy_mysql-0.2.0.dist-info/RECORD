@@ -1,0 +1,9 @@
+zdppy_mysql/__init__.py,sha256=hW0dJgRGXQY8e751Xn6n2ZyZ5s9e4_cYIycMqZxiwtg,63
+zdppy_mysql/async_mysql.py,sha256=NsRiWFxlh45uKif1EVNn-fKTewzPAz647nNQRZv4QXI,11131
+zdppy_mysql/exceptions.py,sha256=olQp352c1UGCFYKn8P6DhnZBngZg6EupQ7GdlL5UO5E,450
+zdppy_mysql/mysql.py,sha256=x8guizR-4_-BhqbhLjiZpRlf7vk3UcRzS_T2FmVXm14,7987
+zdppy_mysql/sql.py,sha256=2OEsw58PfCfhmf9_A49Qcs--pEZKJzSJGTYIji9Y-lI,6951
+zdppy_mysql-0.2.0.dist-info/LICENSE,sha256=nxPT6MxxQBPHF50T4QMhpqG_MqqIRS5jKw0gwa8YqCA,1087
+zdppy_mysql-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+zdppy_mysql-0.2.0.dist-info/METADATA,sha256=LgkTV5ER9WlyzTtVxBzdDvI6fC_SMs4ycxaaA5f50jw,462
+zdppy_mysql-0.2.0.dist-info/RECORD,,
