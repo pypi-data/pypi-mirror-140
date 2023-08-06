@@ -1,0 +1,4 @@
+beautifulsoup4
+boilerpy3>=1.0.4
+requests
+tldextract

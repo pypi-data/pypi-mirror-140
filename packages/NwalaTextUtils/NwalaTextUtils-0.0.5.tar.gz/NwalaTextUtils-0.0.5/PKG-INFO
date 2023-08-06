@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: NwalaTextUtils
+Version: 0.0.5
+Summary: Collection of functions for processing text
+Home-page: https://github.com/oduwsdl/NwalaTextUtils/
+Author: Alexander C. Nwala
+Author-email: alexandernwala@gmail.com
+License: MIT
+Description: See: https://github.com/oduwsdl/NwalaTextUtils/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
