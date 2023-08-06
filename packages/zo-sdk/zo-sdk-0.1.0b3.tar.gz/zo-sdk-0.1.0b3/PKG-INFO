@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: zo-sdk
+Version: 0.1.0b3
+Summary: 01.xyz Python SDK
+License: Apache-2.0
+Author: Sheheryar Parvaz
+Author-email: me@cherryman.org
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: anchorpy (>=0.7.0,<0.8.0)
+Requires-Dist: solana (>=0.21.0,<0.22.0)
