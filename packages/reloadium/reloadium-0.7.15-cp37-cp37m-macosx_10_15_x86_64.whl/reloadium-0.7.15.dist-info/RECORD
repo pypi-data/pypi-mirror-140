@@ -1,0 +1,11 @@
+reloadium/README.rst,sha256=6uqqdcxr5u9_aRRg3e8rDgdHHfJhbkt_c-zzxBChPfc,19
+reloadium/__init__.py,sha256=Ovzy6foFeMDRk2OeIHqopAbZffPNvSLW0PPFg-QeLKE,479
+reloadium/__init__.pyi,sha256=iEfEoUAvJTqBlcZKCcB02X4zDEHFNmCMvKqzZtOBAnY,2364
+reloadium/__main__.py,sha256=YFCeyxAgNPmVrK-sutR-Sqaf916iKHngocZ_G5VVBEQ,77
+reloadium/__version__.py,sha256=O3N2OrgOV4TYYdh2rVgmf9q5v78EO9Y8J9wrIepISO8,62
+reloadium/reloader.cpython-37m-darwin.so,sha256=EbrIEAMZFRF07gqHYWtN58gHze12AIjJB4dMtis6UdM,20639688
+reloadium-0.7.15.dist-info/METADATA,sha256=EK0RGC0s0QJLMBO1WmCKoccSnv9-opIqoPtwcq-l8UE,288
+reloadium-0.7.15.dist-info/WHEEL,sha256=F-joUO9Niy2sXQSGChRzu-mfPcZVqo-aIdYGWSUwoWo,111
+reloadium-0.7.15.dist-info/entry_points.txt,sha256=4Oh9RN0v2nHa0UGdguT3rBiCxeple2kUkmtl9PMoRYY,46
+reloadium-0.7.15.dist-info/top_level.txt,sha256=gjbcihzKxXTuT7LRLZIH_3M0Apsh47Mo5ZJnMrFPIiw,10
+reloadium-0.7.15.dist-info/RECORD,,
