@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/randcoor.py
+src/randcoor.egg-info/PKG-INFO
+src/randcoor.egg-info/SOURCES.txt
+src/randcoor.egg-info/dependency_links.txt
+src/randcoor.egg-info/top_level.txt
