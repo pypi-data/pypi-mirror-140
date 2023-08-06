@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pandatorch
+Version: 1.0.1
+Summary: A flexible simple library that makes it easier to use the extrememly popular pandas package with the other extremely popular framework PyTorch. 
+License: MIT
+Author: Ashwin Iyer
+Author-email: ashwiniyer1706@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Description-Content-Type: text/x-rst
+
+PandaTorch
+==========
+
+A flexible simple library that makes it easier to use the extrememly
+popular pandas package with the other extremely popular framework
+PyTorch.
+
+Functions
+---------
+
+1. Converts a Pandas DataFrame into a usable PyTorch dataset.
+2. Allows use of all usual Pandas functions
+
+Usage
+-----
+
+::
+
+   import pandas as pd
+   from pandatorch import data
+   df=pd.read_csv("path_to_dataset")
+   torch_df=data.DataFrame(X=df.drop("<Target Column>",axis=1),y=df["<Target Column>"])
+
+**Note:** Check out the notebooks folder for a full end-to-end training
+example of a tabular dataset using PandaTorch
+
