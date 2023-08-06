@@ -1,0 +1,3 @@
+[console_scripts]
+createnv=createnv.cli:cli
+
