@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+topsis-ShreyaGarg-101953015/101953015.py
+topsis-ShreyaGarg-101953015/__init__.py
+topsis_ShreyaGarg_101953015.egg-info/PKG-INFO
+topsis_ShreyaGarg_101953015.egg-info/SOURCES.txt
+topsis_ShreyaGarg_101953015.egg-info/dependency_links.txt
+topsis_ShreyaGarg_101953015.egg-info/requires.txt
+topsis_ShreyaGarg_101953015.egg-info/top_level.txt
