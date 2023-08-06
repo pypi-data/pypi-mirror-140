@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+quickey_python_sdk/__init__.py
+quickey_python_sdk/app.py
+quickey_python_sdk/auth.py
+quickey_python_sdk/config.py
+quickey_python_sdk/sdk.py
+quickey_python_sdk.egg-info/PKG-INFO
+quickey_python_sdk.egg-info/SOURCES.txt
+quickey_python_sdk.egg-info/dependency_links.txt
+quickey_python_sdk.egg-info/top_level.txt
