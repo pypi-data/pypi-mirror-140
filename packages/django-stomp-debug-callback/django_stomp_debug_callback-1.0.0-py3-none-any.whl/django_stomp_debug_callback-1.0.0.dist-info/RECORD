@@ -1,0 +1,10 @@
+LICENSE,sha256=RBhXEyjeg7hR_72WuU7KwsRJWOm6ANBtaTXhHLAJyq8,1070
+django_stomp_debug_callback/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_stomp_debug_callback/apps.py,sha256=hvt-ufetgF_8tU-oi5nSb7bWVhJ22FwZWmnUMgOoP48,120
+django_stomp_debug_callback/urls.py,sha256=ZdNV0JUMe8YIJGZsJWhnj4VFYPFv33yKA-dZnPdXBeQ,166
+django_stomp_debug_callback/utils.py,sha256=y18uoBtNRLlue5bSX0ILGxjJLTODX65T2q-Y2_hMQrs,120
+django_stomp_debug_callback/views.py,sha256=bbLgBDY4ih5wJ67oKd4-bPPb3pSUlO4fZP5zN5jPeQA,1907
+django_stomp_debug_callback-1.0.0.dist-info/LICENSE,sha256=RBhXEyjeg7hR_72WuU7KwsRJWOm6ANBtaTXhHLAJyq8,1070
+django_stomp_debug_callback-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_stomp_debug_callback-1.0.0.dist-info/METADATA,sha256=ZBp9atOT9O0kSB1v-V8l7CBD5XJotpqPtHkwEB0PnAY,6326
+django_stomp_debug_callback-1.0.0.dist-info/RECORD,,
