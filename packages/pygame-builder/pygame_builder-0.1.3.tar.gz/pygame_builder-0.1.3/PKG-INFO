@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pygame_builder
+Version: 0.1.3
+Summary: A package to build games with ease.
+Home-page: https://github.com/dehadeaaryan/pygame-builder
+Author: Aaryan Dehade
+Author-email: aaryandehade@adehade.tech
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/dehadeaaryan/pygame-builder/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pygame-builder
+ 
+### Introduction
+Use this package to create a game in python in just a few lines of code. Built on top of Pygame, this module is perfect for beginners looking to make their first game. Experts may also find this useful when trying to save time. Enjooy!
+
+### Code Format
+```Python
+from pygame_builder import Pygame, Element
+
+with Pygame(backgroundImage = image, size = [480, 270], windowCaption = "Pygame", fps = 60, backgroundColour = (0, 0, 0), backgroundSound = None) as pg:
+    element = Element(image, screen : pygame.Surface, centerPosition = [0, 0], speed = [0, 0])
+    pg.add(element)
+    pg.loop(lambda : element.bouncingAnimation())
+```
+
