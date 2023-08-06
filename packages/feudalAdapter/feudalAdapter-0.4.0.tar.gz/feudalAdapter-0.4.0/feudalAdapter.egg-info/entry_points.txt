@@ -1,0 +1,3 @@
+[console_scripts]
+feudal-adapter = ldf_adapter.interface:main
+ldf_adapter = ldf_adapter.interface:main

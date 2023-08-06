@@ -1,0 +1,593 @@
+CHANGES
+=======
+
+v0.4.0
+------
+
+* leave a mark upon start
+* get\_username now returns without prefix
+* Black
+* Use username via get\_username; Reformat; change logging
+* remove silly log entry
+* suppress pyright
+* giving up on cleaner error handling
+* black
+* suppres pyright errors
+* black; remove debug logging
+* ignore more
+* Formatting
+* Add test for multiple calls to suggest\_name
+* remove special path for pytest config
+* use contest and fixtures
+* enforce line length 100
+* apply Black
+* fix expected outcome
+* Move forbidden\_names from class to instance
+* black -l 100
+* fix tries\_names as list in tests
+* sort list of groups before selecting first for primary group
+* use empty list, instead of None
+* test name\_generators
+* test name\_generators
+* improve support
+* tune flake8 and pylint
+* move to .
+* disable addopts for a moment
+* update from template
+* move a level up
+* move a level up
+* copy tests and config from dianas add-tests branch
+* align with Dianas version
+* update config from template
+* add info to make pyright happy
+* include pytest config in search path
+* dont create path if only file is given
+* remove uneeded imports
+* config when running pytest
+* test name generators
+* add docstrings
+* add docs about ldap backend
+* add docs about ldap backend
+* fix invalid mode exception
+* ldap backend: check for uid/gid upper limit
+* in ldap backend full\_access mode, get next available uid/gid before adding user/group
+* add configurable uid ranges and let feudal handle their initialisation in LDAP
+* support SAFE\_SYNC for connection to LDAP
+* implement full\_access mode in ldap backend
+* fix occasional error with mkdir logdir existing (prob race condition)
+* ldap backend with existing accounts
+* move userinfo out of \_\_init\_\_
+* fix linting errors
+* update dev requirements and tox.ini
+* remove sudo from tests
+* Fix pyright recommendations
+* Black
+* collections.Mapper was apparently moved to collections.abc
+* Allow longer lines in pylint
+* add docs about ldap backend
+* add docs about ldap backend
+* fix invalid mode exception
+* ldap backend: check for uid/gid upper limit
+* in ldap backend full\_access mode, get next available uid/gid before adding user/group
+* add configurable uid ranges and let feudal handle their initialisation in LDAP
+* support SAFE\_SYNC for connection to LDAP
+* implement full\_access mode in ldap backend
+* fix occasional error with mkdir logdir existing (prob race condition)
+* ldap backend with existing accounts
+* add tests for unix group
+* fix local\_unix backend \_\_get\_all\_entries for empty files
+* sort list of groups before taking first group as primary group for deterministic behaviour
+* userinfo test group when no primary configured: expect first in sorted group list
+* add local\_unix root dir tests (create, delete, get\_username, name\_taken, exists)
+* add realistic name for make)shadow\_compatible test
+* add todos for fixes in make\_shadow\_compatible
+* fixes in make\_shadow\_compatible order of ops
+* refactor existing tests
+
+v0.3.102
+--------
+
+* replace capture\_output with stdout arg, supported in py3.6 too
+* add optional methods for state changes to example backend
+* add documentation on user states
+
+v0.3.101
+--------
+
+* extend verbose-info-plugin
+
+v0.3.100
+--------
+
+* add "info-plugin"
+
+v0.3.99
+-------
+
+* Fix nikhef reported bugs
+* removed
+* change default
+
+v0.3.98
+-------
+
+
+v0.3.97
+-------
+
+* add option to strib\_sub\_groups
+* add egi group with subgroups
+* add all\_toplevel\_groups
+* document strip\_sub\_groups
+* fix getboolean
+
+v0.3.96
+-------
+
+* fix off-by-one-error
+* add support for PooledNameGenerator
+* add support for PooledNameGenerator
+* document username generator
+
+v0.3.95
+-------
+
+* add option deploy\_user\_ssh\_keys
+* remove bwidm from warning messages
+* add option deploy\_user\_ssh\_keys
+
+v0.3.94
+-------
+
+* comment all code out
+
+v0.3.93
+-------
+
+* rename
+* change default config files to feudal\_adapter.conf, but still allow ldf\_adapter.conf if feudal\_adapter.conf is not found
+* fix chage -i option not available on all distributions
+* fix indent on formatting
+* document log\_to\_console
+* fix - -> \_
+
+v0.3.92
+-------
+
+* fix logfile name
+* add jsonlogger
+* add jsonlogger
+* add jsonlogger
+* add jsonlogger
+
+v0.3.91
+-------
+
+* change username
+* add logsetup
+* move logging initialisation to logsetup.py
+* move logging initialisation to logsetup.py
+* add docstring
+* add new options
+* increment external-id
+* Fix username overwriting in BWIDM backend
+* add debug and strange methods
+
+v0.3.90
+-------
+
+* remove the notion of branch needs tobe tested
+* add code to not deploy already-registered users
+* add check to see if a user is registered for a service already
+* moved to new repo https://git.scc.kit.edu/feudal/sshkeyretrievergo
+
+v0.3.12
+-------
+
+* add cutting to make\_shadow\_compatible
+* add testing jsons
+* fix userdbctl not present on some systems, use chage instead
+* add debug output
+
+v0.3.11
+-------
+
+* Apply 1 suggestion(s) to 1 file(s)
+* minimal undeploy
+* merge dianas update
+* initial try
+* add set\_username
+* call method not object
+* fix get\_status message to contain username, call username generation only on deploy, add getter/setter for username in backend
+* add sonderlocke for bwidm, to reverse order of user removal; fix access to self.service\_user.name
+* Evil hack: do not try to generate a name, if there is less than 4 entries in the userinfo, since it is then likely that the user will be removed
+* dirty hack to initialise differently if the user exists
+* add FIXME for group checking
+
+v0.3.10
+-------
+
+* remove silly fix and reverse the order of ssh-key removal and user deletion
+* add silly workaround
+* make using existing username configurable
+* return current state when resuming
+* temporary fix to get the local username from deployed service user instead of UserInfo
+* refactoring expired->limited, fixed limited in local\_unix to mean nologin shell, added unlimit counterpart
+
+v0.3.9
+------
+
+* move self.service\_user.name to self.data.username
+* remove service\_user.name
+* move from accessing self.service\_user to self.data
+* merge changes
+
+v0.3.8
+------
+
+* add option to omit logging of requests
+* remove logging
+* remove capture\_output, as that requires py 3.7
+* add get\_username; and lgging
+* add logging and use self.data, not self.unique\_id
+* temporary
+* setup logging properly
+* add call to "resumed" target; add exception to logging
+* add ssh\_host
+* move integration with feudal to the end
+* update documentation
+
+v0.3.7
+------
+
+* reorder the whole config and globalconfig interplay
+* added support for additional states in local\_unix backend
+* fix indent
+* set globalconfig in the global scope
+* do \_not\_ load cmdline when pytest is in modules
+* Raise a Failure if config has no backend
+
+v0.3.6
+------
+
+* Do parse the commandline by default
+
+v0.3.5
+------
+
+* use fallback\_group, if configured
+* fix the typo again
+* fix the typo again
+* add examples for testing
+* Use the group claim, if the entitlement claim is empty
+* fix typo
+* fix typo
+* more examples for testing
+* add template config
+* use lowercaes
+* added support for additional states in local\_unix backend
+* set appropriate permissions and owner when installing ssh keys in local\_unix backend (fixes #48)
+* forbid strange username and improve logging
+* fix #46: when LDF\_ADAPTER\_CONFIG is set
+* fix #47: fix logging of unique\_id
+
+v0.3.4
+------
+
+* add feudal\_globalconfig to package
+
+v0.3.3
+------
+
+* add globalconfig
+* rename globalconfig to feudal\_globalconfig
+* add globalconfig
+* add support for globalconfig; add /etc/feudal/ldf\_adapter.conf to list of config files to consider
+* store global config variables
+* store global config variables
+
+v0.3.2
+------
+
+* get username from unique\_id before removing
+* remove unnecessary information from json
+
+v0.3.1
+------
+
+* incorporate MR#40
+* return None on incoming None
+* return "None" on incoming None\nreorder assurance checking
+* remove all non-necessary information
+* get status
+* rename
+* add stubs ; add -m option to useradd
+* add Status
+* add stubs for status
+* add options for logging
+* add options for logging
+* wip
+
+v0.3
+----
+
+* add documentation
+* make allow\_question a property of UserInfo class\nUse usernameGenerator where possible\nNon-Interactive by default
+* implement different strategies to create a nice username
+* debug, and make more explicit the access to \_\_all\_passwd\_entries
+* make quotation marks json friendly
+* name\_generator stub
+* fix examples
+* add pylint lines
+* make things a bit more explicit
+* fix typos
+* Make failure message more verbose
+* proof of concept state
+
+v0.2.2
+------
+
+* do not load all backends, only the configured one
+* fix classfier
+
+v0.2.1
+------
+
+* remove symlink
+* change name
+* display loaded config file
+* remove junk
+* rename
+* rename
+* change pref\_u\_n
+* increase ignorance
+* increase ignorance
+* more examples
+* example stdin for ldf\_adapter
+* inform about the default location
+* include eduperson in package
+* remove config files
+* ignore config files
+* inlcude into module
+* inlcude into module
+* adjust name
+* add note about "existing-wins" approach
+* allow newer packaages to fulfill dependencies
+* remove license text
+* add MIT License
+* from template
+* merge from master
+* remove temporary build files
+* remove temporary egg files
+* remove temporary tox files
+* adapt to setuptools from m-team/python3-template
+* --wip--
+* add shell config example
+* kill user when removing and still logged n; make shell configurable
+* update username globally
+* use correct instance
+* remove trailing whitespaces
+* support exising user
+* fix trailing ws
+* add option to override assurance test
+* fix set probelm
+* add code for len(self.groups ==1)
+* Call Failure with kwarg "message"
+* fix strange users
+* make sure primary group is defined
+* Move hotfix to local\_unix where it belongs
+* add primary group
+* add credentials dict to user and provide necessary output
+* add primary user group object to user
+* Revert "Merge branch 'incubator-ldap-adapter' into 'master'"
+* initial commit for ldap adapter
+* Get the testing setup to work with the load-time backend selection
+* Add test stub for the backends
+* Add backend fixture for testing multiple backends
+* Make ldf\_adapter.cmdline\_params not break pytest
+* Move tests into their modules
+* Add  pytest
+* subiss-to-unix: Split on last @-char
+* bwidm: Use primary groups reg\_info (a dict), not \`Group\`-object
+* adapter: Also ensure existance of primary group
+* add extensive logging
+* add logging for created groups
+* address part of #26
+* bump version
+* fix the defaults for the questionnaire again
+* Truly fix missing parameter when no default is provided
+* Revert "add the missing parameter"
+* Revert "add the missing parameter"
+* Replace invalid attribute access with dict access
+* Revert "catch AttributeError and log it"
+* add the missing parameter
+* add the missing parameter
+* catch AttributeError and log it
+* bump version by one
+* fix #22
+* deregister is in external-reg (not in external-user)
+* Delete now deregisters; Add deactivate method to dactivate
+* Select primary group from supplementary group, if none configured
+* Store group id locally on creation
+* Add support for dropdown questionnaires
+* Fix StopIteration error
+* Include subnamespaces in group name prefix
+* Prefix group names with delegated namespace
+* Update default BWIDM org id
+
+v0.2
+----
+
+* [bwidm] Add missing import
+* Import time.sleep
+* [bwidm] Ensure that the registration was reconciled before reporting sucess
+* [bwidm] Remove obsolete debug log output
+* [reach\_state] Allow undeployment by users with insufficient assurance
+* Fix typo
+* add more output and more test ids
+* [assurance] Improve comments
+* remove caching
+* Be more precise in the error message; add --debug option
+* fix path thing
+* [conf] Add explanations and  examples to template config
+* [assurance] Arbitrary boolean Assurance verification expressions
+* adapt to new ldf-adapter
+* add fixme for cache dir
+* [ldf\_adapter] Add missing import
+* add caching and a cachedir
+* add requests\_cache to requirements
+* add caching
+* fix typo
+* [bwidm] Get registry values manually if not returned by registration call
+* [ldf\_adapter:ensure\_exists] Refactor and perform update also after initial creation
+* [ldf\_adapter] Fix name and default value of local-enterprise option
+* [bwidm] Check for duplicate users also during update
+* Debug output to groups
+* add logging; parse commandline to find config; change precedence of config files to use first one found (rather than merging files)
+* add argparse
+* add argparse
+* initial
+* add information for feudalClient; add commandline for copy paste
+* merge group-support-and-rewrite
+* Fix identity homogenisations
+* bwidm: Log full current and new groups before diff
+* removed
+
+v0.1.0
+------
+
+* Bump Version to 0.1.0
+* Ignore Excess Entitlements
+* Add (failing) integration tests to document issues with inputs from different IDPs
+* Use eduperson\_unique\_id attr if available
+* Fix bugs
+* Fix bugs assurance parsing
+* Use eppn-Attribute as EPPN in BWIDM, if available
+* undo debug logging
+* read ldf\_adapter.conf from /etc/feudal
+* rename to \_template
+* rename to \_template
+* removed bcs this file is in ldf\_adapter/interface.py
+* Mark this as a template config
+* using a different install.sh
+* entrypoint: add ldf\_adapter to find the interface
+* Fix some bugs in homogenisation functions
+* Add some tests
+* Make backend import python < 3.7 compatible
+* Revert "move interface to ldf\_adapter"
+* dont use feudal subdir for local file
+* move config file locations fo feudal subfolder
+* return ssh\_user instaed of login\_name to please feudalSSH
+* log, if unauthorised
+* Use metasyntactic variables as bwidm auth placeholders in sample cofig
+* Add fully-blown assurance-verification
+* Correctly handle multi-valued entitlement
+* Correctly implement assurance framework
+* quickfix for entitlements being a list
+* move interface to ldf\_adapter
+* Move eduperson related code to separate module
+* Amend README and document config file
+* Add remaining documentation
+* Propagate exit-code of main function
+* Transliterate hostnames in issuers to ASCII
+* Unify SSH key passing in bwidm and local\_unix
+* Add devel requirements file
+* Add setup.py to build python package
+* Split single script into modules
+* Add some comments
+* Overwrite Marcus' original script
+* Add suport for eduperson assurance levels (via config file)
+* Refactor everything and return more info in credentials
+* Implement BWIDM Support
+* Add ability to choose backend
+* Add config file
+* User: make service\_groups a member
+* Move EduPersonEntitlement up
+* Add entitlement parsing, shadow-compatibility and (unix) group mgmt
+* local\_interface: Add MVP script
+* gitignore: Add python bytecode cache
+* add config file for subiss-to-unix.py
+
+v1
+--
+
+* add ldf\_remote\_login\_host parameter and c\_ssh\_(user|host) outputs
+* fix empty message also for undeployed
+* fix syntax error and add message, even in case of success
+* move logging to separate call
+* make iTE clearer
+* fix iTE conversion
+* merge changes from demo-fixup
+* apply changes from subiss-to-unix.py
+* add default for ITE
+* quickfix for luca
+* trying new format
+* minor fixes
+* ignore luca locally
+* add offline testing
+* initial version to go and test
+* add group info from Michaels email
+* add some docs on the rest interface
+* add options for "lowercase\_entries" and "ascii\_encoded\_entries" to avoid trouble
+* fix hdf\_None username
+* encode error message in json; add error messages
+* remove "key" from fake deployment data
+* add systemd config info
+* support lists of keys in genericStore; fix some naming issues
+* v0.1.0 support for list of sshkeys in genericStore
+* add support for []sshKey in genericStor
+* fix usernames\_with\_underscores problem
+* fix usernames\_with\_underscores problem
+* add README.md
+* make config file 644, bump version
+* add config, fix go version
+* finalise rpm target
+* example config without user and pass
+* add credentials to be shown to the user, also add a way for the admin to format this
+* add newline
+* ignore more config and gopath
+* rpm specfile
+* initial
+* removed
+* ignore more configs
+* remove path messing from here
+* make sure we have an up-to-date pyve
+* add docs
+* initial version
+* Comment curls
+* remove the "dont always deploy" part, add logging, add todos
+* Remove hacky non-deployment
+* update logging to contain the externalId
+* improve logging
+* Return all messages to main caller and log it there
+* Add ssh key sanitation
+* Re-add simplejson
+* Catch exceptions differently
+* remove encoding
+* Add logging for jsondecodeerror
+* Remove simplejson
+* remove json
+* add simplejson
+* remove pyve
+* catch and provide debug for input json parsing
+* ignore log
+* add logfile name
+* enforce usage of virtualenv
+* get proper error handling into the code
+* add ldf\_service parameter
+* return sensible error messages
+* start better error message propagation
+* start better error message propagation
+* make loglevels cofigurable
+* unify checking the success
+* unify checking the success
+* move out  of "" hell
+* add pyve
+* make executable
+* first test
+* add configfile
+* gitignore
+* removed
+* add info
+* initial testing
+* add README

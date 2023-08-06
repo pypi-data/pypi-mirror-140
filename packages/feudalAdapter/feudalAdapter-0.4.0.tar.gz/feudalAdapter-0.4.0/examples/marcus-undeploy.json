@@ -1,0 +1,20 @@
+{
+    "state_target": "not_deployed",
+    "user": {
+        "userinfo": {
+            "eduperson_assurance": [
+                "https://refeds.org/assurance/IAP/medium",
+                "https://refeds.org/assurance/IAP/local-enterprise",
+                "https://refeds.org/assurance/ID/eppn-unique-no-reassign",
+                "https://refeds.org/assurance/ATP/ePA-1m",
+                "https://refeds.org/assurance/ATP/ePA-1d",
+                "https://refeds.org/assurance/ID/unique",
+                "https://refeds.org/assurance/profile/cappuccino",
+                "https://refeds.org/assurance/IAP/low"
+            ],
+            "iss": "https://login.helmholtz.de/oauth2",
+            "sub": "6c611e2a-2c1c-487f-9948-c058a36c8f0e"
+        }
+    }
+}
+
