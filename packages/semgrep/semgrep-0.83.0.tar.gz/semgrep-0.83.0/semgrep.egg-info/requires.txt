@@ -1,0 +1,12 @@
+attrs~=21.0
+colorama~=0.4.0
+click~=8.0
+click-option-group~=0.5
+requests~=2.22
+ruamel.yaml<0.18,>=0.16.0
+tqdm~=4.46
+packaging~=21.0
+jsonschema~=3.2
+wcmatch~=8.3
+peewee~=3.14
+setuptools
