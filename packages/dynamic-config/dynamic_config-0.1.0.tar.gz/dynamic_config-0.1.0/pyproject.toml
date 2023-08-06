@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dynamic_config"
+version = "0.1.0"
+description = "Distributed dynamic configuration based on Redis"
+authors = ["Euraxluo <euraxluo@qq.com>"]
+license = "The MIT LICENSE"
+readme = "README.md"
+homepage = "https://github.com/Euraxluo/dynamic_config"
+repository = "https://github.com/Euraxluo/dynamic_config"
+
+[tool.poetry.dependencies]
+python = "^3.6.5"
+redis = "^4.1.4"
+
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
