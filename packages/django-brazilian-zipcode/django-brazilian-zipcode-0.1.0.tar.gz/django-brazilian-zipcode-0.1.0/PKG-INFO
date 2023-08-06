@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: django-brazilian-zipcode
+Version: 0.1.0
+Summary: UNKNOWN
+License: MIT
+Author-email: Plathanus <leandrodesouzadev@gmail.com>
+Requires-Python: >=3.8
+Project-URL: Homepage, https://github.com/plathanus-tech/django-brazilian-zipcode
+Project-URL: download_url, https://github.com/plathanus-tech/django-brazilian-zipcode/releases/tag/v0.1.0
