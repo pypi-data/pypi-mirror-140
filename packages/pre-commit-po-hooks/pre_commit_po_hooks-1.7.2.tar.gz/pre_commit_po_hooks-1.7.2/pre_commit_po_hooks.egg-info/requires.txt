@@ -1,0 +1,9 @@
+
+[dev]
+bump2version
+pytest==6.2.4
+pytest-cov==2.12.1
+
+[test]
+pytest==6.2.4
+pytest-cov==2.12.1
