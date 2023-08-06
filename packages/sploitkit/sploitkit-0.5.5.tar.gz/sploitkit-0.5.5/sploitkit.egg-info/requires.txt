@@ -1,0 +1,4 @@
+peewee
+prompt_toolkit
+requests
+tinyscript>=1.24.14
