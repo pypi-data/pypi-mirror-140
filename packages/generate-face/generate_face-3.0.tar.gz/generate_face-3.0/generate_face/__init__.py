@@ -1,0 +1,1 @@
+from generate_face.main import FaceGenerator
