@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: primosmarcos
+Version: 1.1
+Summary: Herramientas que permiten saber si un número es primo y un listado de 1 a n.
+Home-page: UNKNOWN
+Author: Marcos Cortés
+Author-email: mcortesu@gmail.com
+License: GNU GPLv3
+Keywords: primos mathematical operations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+NUMBER UTILS
+==============
+
+Este es un ejemplo simple de un paquete Python. Este paquete contiene 2 funciones, es_primo(numero) que devuelve True si el nÃºmero es primo y lista_primos(numero) que devuelve una lista con los nÃºmeros primos entre 1 y el nÃºmero.
+
+This program is free software: You can redistribute it and/or modify it under the terms of license by the Free Software Foundation, either version 3 of the License(at your option) any other version.
+
+
+
