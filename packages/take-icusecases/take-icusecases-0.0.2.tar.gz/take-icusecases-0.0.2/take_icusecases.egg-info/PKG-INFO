@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: take-icusecases
+Version: 0.0.2
+Summary: A clustering based approach to inferring the use case of an intelligent contact. Developed by A3Data, packaged by D&A Research - Take Blip.
+Home-page: UNKNOWN
+Author: A3Data / Data & Analytics Research
+Author-email: <analytics.dar@take.net>
+Maintainer: daresearch
+License: MIT License
+Keywords: take blip,intelligent contact,use cases,clustering
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# Intelligent Contact Use Case - by A3Data
+
+This model returns the use case of an intelligent contact based on the messages exchanged via KMeans clustering.
+
+
