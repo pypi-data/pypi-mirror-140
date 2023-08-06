@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sysopt
+Version: 0.0.1
+Summary: Component-based systems modelling library.
+Home-page: https://github.com/csp-at-unimelb/sysopt
+Author: Peter Cudmore
+Author-email: peter.cudmore@unimelb.edu.au
+License: UNKNOWN
+Keywords: modelling,control systems,engineering,optimisation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+UNKNOWN
+
