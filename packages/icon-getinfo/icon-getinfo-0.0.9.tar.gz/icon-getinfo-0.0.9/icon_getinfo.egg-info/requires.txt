@@ -1,0 +1,5 @@
+numpy
+prettytable
+requests
+termcolor
+urllib3
