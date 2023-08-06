@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: zvtm
+Version: 0.0.2
+Summary: unified,modular quant framework for mysql 
+Home-page: https://github.com/epoches/zvtm
+Author: epoches
+Author-email: 641279141@qq.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/zvtvz/zvt/issues
+Project-URL: Funding, https://www.foolcage.com/zvt
+Project-URL: Say Thanks!, https://saythanks.io/to/foolcage
+Project-URL: Source, https://github.com/zvtvz/zvt
+Keywords: quant stock finance fintech big-data zvt technical-analysis trading-platform pandas fundamental-analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+
+# zvtm简单说明
+## 1、zvt是一个很好的量化框架，不过文档还不够详细。https://zvtvz.github.io/zvt/#/README 是它的介绍。
+## 2、为了解决zvt数据保存在sqlite3不方便使用的问题，对其进行了修改，可以保存到mysql数据库。
+## 3、使用方法，直接修改config.json 放到本地用户zvtm_home目录，就可以使用了。
+## 4、test 目录的record.py做了几个简单的demo。具体详见上面zvt的说明。
+## 5、原有数据可以通过sql3mysql进行转化。
+
+  
+
+

@@ -1,0 +1,4 @@
+[console_scripts]
+zvtm = zvtm.main:main
+zvtm_export = zvtm.plugin:export
+zvtm_plugin = zvtm.plugin:main
