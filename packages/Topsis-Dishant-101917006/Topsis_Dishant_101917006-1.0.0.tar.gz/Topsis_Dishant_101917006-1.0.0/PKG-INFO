@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Topsis_Dishant_101917006
+Version: 1.0.0
+Summary: Assignment of Dishant Sethi
+Home-page: 
+Author: Dishant Sethi
+Author-email: dishantsethi266@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+#Dishant Sethi
+
+#Topsis Package assignment 
+
+##how to install this package 
+
+#pip install Topsis-Dishant-101917006
+
+##USAGE GUIDE
+
+#import topsis
+#topsis.topsis("input_file.csv", "1,1,1,1", "+,-,+,-") 
+
+
+#Dishant Sethi 2022
+
