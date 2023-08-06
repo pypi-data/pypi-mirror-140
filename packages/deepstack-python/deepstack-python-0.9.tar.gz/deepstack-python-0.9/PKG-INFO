@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: deepstack-python
+Version: 0.9
+Summary: Unofficial python API for DeepStack
+Home-page: https://github.com/robmarkcole/deepstack-python
+Author: Robin Cole
+Author-email: robmarkcole@gmail.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+

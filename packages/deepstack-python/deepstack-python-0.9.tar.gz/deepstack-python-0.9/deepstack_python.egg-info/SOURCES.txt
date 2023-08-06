@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+deepstack/__init__.py
+deepstack/core.py
+deepstack_python.egg-info/PKG-INFO
+deepstack_python.egg-info/SOURCES.txt
+deepstack_python.egg-info/dependency_links.txt
+deepstack_python.egg-info/requires.txt
+deepstack_python.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
