@@ -1,0 +1,7 @@
+setup.py
+MLTestServier.egg-info/PKG-INFO
+MLTestServier.egg-info/SOURCES.txt
+MLTestServier.egg-info/dependency_links.txt
+MLTestServier.egg-info/not-zip-safe
+MLTestServier.egg-info/top_level.txt
+mypackage/__init__.py
