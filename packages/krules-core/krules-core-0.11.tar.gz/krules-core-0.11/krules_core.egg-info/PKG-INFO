@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: krules-core
+Version: 0.11
+Summary: KRules Python core package
+Home-page: https://github.com/airspot-dev/krules-core
+Author: Alberto Degli Esposti
+Author-email: alberto@arispot.tech
+License: Apache Licence 2.0
+Keywords: krules rules engine
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >3.7
+License-File: AUTHORS
+
+# krules-core
+
+This is the python core package of KRules, contains all base components to make ruleset work.
+
+
