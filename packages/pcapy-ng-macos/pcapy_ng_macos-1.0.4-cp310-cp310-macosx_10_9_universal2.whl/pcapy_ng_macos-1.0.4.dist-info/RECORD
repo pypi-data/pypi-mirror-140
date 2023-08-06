@@ -1,0 +1,11 @@
+pcapy.cpython-310-darwin.so,sha256=TFx7fIaGY6r68OHIAuD1sDrtwhSc-TFSfklfFgj8ceE,129998
+pcapy_ng_macos-1.0.4.data/data/share/doc/pcapy-ng-macos/LICENSE,sha256=6Lukj9bGn4WMmYDDMVHQX18JtHxongKIfq3AR2dt3kI,2150
+pcapy_ng_macos-1.0.4.data/data/share/doc/pcapy-ng-macos/README,sha256=Vz_sNiUXAmdHvWhRi8LWlqrBlv5hJh8zUk849LyH_hQ,2549
+pcapy_ng_macos-1.0.4.data/data/share/doc/pcapy-ng-macos/pcapy.html,sha256=qvLDUBl2pAlISGZoO67eAUJeJMitfvQw72P5_RRO8B8,64092
+pcapy_ng_macos-1.0.4.data/data/share/doc/pcapy-ng-macos/tests/96pings.pcap,sha256=TAUKSm1hamgBu-CHDaIiWlBlc9hZVtOqhi-wYEsdX-Y,10776
+pcapy_ng_macos-1.0.4.data/data/share/doc/pcapy-ng-macos/tests/pcapytests.py,sha256=XuZFI3dIyXpiX9kd0MeCfJljAKgpdvo1ZHUOHXeYcC8,4661
+pcapy_ng_macos-1.0.4.dist-info/LICENSE,sha256=6Lukj9bGn4WMmYDDMVHQX18JtHxongKIfq3AR2dt3kI,2150
+pcapy_ng_macos-1.0.4.dist-info/METADATA,sha256=NFEt4bqZDEL0i_qFu6LYcuskThTtQMxw-txcePDLmSY,791
+pcapy_ng_macos-1.0.4.dist-info/WHEEL,sha256=paDw5fNh7GMreQFavBOb-6XLxnuKiLLe0a_WVOtTtX4,115
+pcapy_ng_macos-1.0.4.dist-info/top_level.txt,sha256=uSbF_1hgLKJ8ajqADg1KAe_t7h6qs01tRXTugpsM_Vw,6
+pcapy_ng_macos-1.0.4.dist-info/RECORD,,
