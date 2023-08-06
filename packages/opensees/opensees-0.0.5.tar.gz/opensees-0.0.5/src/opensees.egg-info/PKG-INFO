@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: opensees
+Version: 0.0.5
+Summary: opensees
+Home-page: https://github.com/claudioperez/pyg3
+Author: Claudio M. Perez
+Author-email: claudio_perez@berkeley.edu
+License: UNKNOWN
+Keywords: seismic,earthquake,parser
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Provides-Extra: docs
+Provides-Extra: plots
+
+# OpenSees Python Bindings
+
+## Install
+
+```shell
+pip install opensees
+```
+
+
+## Documentation
+
+<dl>
+  <dt>building</dt>
+  <dd>Run <code>elstir build</code> to build the documentation.</dd>
+
+  <dt>publishing</dt>
+  <dd><code>git subtree push --prefix site/ origin gh-pages</code>.</dd>
+
+  <dt>developing</dt>
+  <dd><code>elstir serve</code>.</dd>
+
+  <dt>API documentation</dt>
+  <dd>
+   <code>for i in patch section...; do python tools/apidoc.py opensees.$i > docs/api/$i.md</code>.
+  </dd>
+</dl>
+
+
+
+
+
+
