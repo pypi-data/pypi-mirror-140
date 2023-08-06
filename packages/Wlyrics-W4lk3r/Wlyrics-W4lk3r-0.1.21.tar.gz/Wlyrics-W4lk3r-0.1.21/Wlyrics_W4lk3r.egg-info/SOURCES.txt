@@ -1,0 +1,9 @@
+README.md
+setup.py
+Wlyrics/__init__.py
+Wlyrics/lyrics.py
+Wlyrics_W4lk3r.egg-info/PKG-INFO
+Wlyrics_W4lk3r.egg-info/SOURCES.txt
+Wlyrics_W4lk3r.egg-info/dependency_links.txt
+Wlyrics_W4lk3r.egg-info/requires.txt
+Wlyrics_W4lk3r.egg-info/top_level.txt
