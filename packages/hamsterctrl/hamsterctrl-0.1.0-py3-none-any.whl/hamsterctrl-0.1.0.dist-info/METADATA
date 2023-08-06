@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: hamsterctrl
+Version: 0.1.0
+Summary: Package for hamster-control
+Author: Marcel Miljak
+Author-email: mmiljak@tsn.at
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: AIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: BSD :: BSD/OS
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: BSD :: NetBSD
+Classifier: Operating System :: POSIX :: BSD :: OpenBSD
+Classifier: Operating System :: POSIX :: GNU Hurd
+Classifier: Operating System :: POSIX :: HP-UX
+Classifier: Operating System :: POSIX :: IRIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: Other
+Classifier: Operating System :: POSIX :: SCO
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Operating System :: Unix
+Requires-Python: >=2.0
+License-File: LICENSE
+
+UNKNOWN
+
