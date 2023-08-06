@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gsk
+Version: 1.0.1
+Summary: A Library set of rapid application development
+Home-page: 
+Author: Shravan Kumar Gautam
+Author-email: shravan.gautam@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## This Packege is library set for repid developemnt 
+
+

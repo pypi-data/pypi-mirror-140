@@ -1,0 +1,13 @@
+README.md
+gsk
+gsk_script
+setup.py
+gsk/Aadhar_Extractor.py
+gsk/Pan_Extractor.py
+gsk/common1.py
+gsk/settings.py
+gsk.egg-info/PKG-INFO
+gsk.egg-info/SOURCES.txt
+gsk.egg-info/dependency_links.txt
+gsk.egg-info/requires.txt
+gsk.egg-info/top_level.txt

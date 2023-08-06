@@ -1,0 +1,11 @@
+Jinja2
+cx_Oracle
+simplejson
+pymysql
+websockets
+websocket
+pyperclip
+flufl.bounce
+lambda
+requests
+python-magic
