@@ -1,0 +1,7 @@
+README.md
+setup.py
+ddr_python.egg-info/PKG-INFO
+ddr_python.egg-info/SOURCES.txt
+ddr_python.egg-info/dependency_links.txt
+ddr_python.egg-info/top_level.txt
+test/test_ddrlib.py
