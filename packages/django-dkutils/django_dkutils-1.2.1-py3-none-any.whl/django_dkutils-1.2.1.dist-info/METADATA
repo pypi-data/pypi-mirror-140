@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: django-dkutils
+Version: 1.2.1
+Summary: A Django utility app to support permissions.
+Home-page: https://www.example.com/
+Author: Eyob Tariku
+Author-email: hello@eyob.tech
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: Django (>=2.2)
+Requires-Dist: django-waffle (>=2.3.0)
+Requires-Dist: drf-yasg (>=1.20.0)
+
+==============
+Django DkUtils
+==============
+
+Django DkUtils contains helper utility functions for handling permissions.
+
