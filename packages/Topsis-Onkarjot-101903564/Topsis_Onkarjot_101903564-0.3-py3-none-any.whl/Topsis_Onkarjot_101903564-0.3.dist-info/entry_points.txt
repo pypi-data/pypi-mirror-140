@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = topsis.topsis:get_topsis_result

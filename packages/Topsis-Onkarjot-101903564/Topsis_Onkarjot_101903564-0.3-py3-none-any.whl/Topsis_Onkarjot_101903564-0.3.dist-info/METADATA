@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Topsis-Onkarjot-101903564
+Version: 0.3
+Summary: Topsis
+Author: Onkarjot Singh
+Author-email: osingh0066@gmail.com
+License: MIT
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
