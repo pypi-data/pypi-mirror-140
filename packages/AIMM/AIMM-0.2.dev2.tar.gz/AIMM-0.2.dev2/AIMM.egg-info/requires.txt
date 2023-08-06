@@ -1,0 +1,6 @@
+appdirs
+hat-aio
+hat-json
+hat-monitor
+hat-event
+psutil
