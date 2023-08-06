@@ -1,0 +1,32 @@
+nibabel>=3.0
+h5py
+
+[:python_version < "3.8"]
+numpy~=1.21.0
+scipy~=1.6.0
+
+[:python_version > "3.7"]
+numpy~=1.21
+scipy~=1.6
+
+[all]
+lxml
+pytest
+pytest-cov
+codecov
+
+[niftiext]
+lxml
+
+[niftiexts]
+lxml
+
+[test]
+pytest
+pytest-cov
+codecov
+
+[tests]
+pytest
+pytest-cov
+codecov
