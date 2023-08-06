@@ -1,0 +1,3 @@
+[console_scripts]
+backup-source=foodx_backup_source.entrypoint:main
+

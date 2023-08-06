@@ -1,0 +1,17 @@
+foodx_backup_source/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+foodx_backup_source/__init__.py,sha256=yJ4MXd6VXIntceITutCXHzJ4f_QKN4YClupeIrosoaE,456
+foodx_backup_source/_default_values.py,sha256=o0fZ9U_jKUf1i9kBmSlEur_Afym221JM0ry8eNWHX3Q,267
+foodx_backup_source/_file_io.py,sha256=eKxBjZBa8IFAi2TPPCVy2lWQUplbjRsjz6aJ8uvxuE4,2823
+foodx_backup_source/_hash.py,sha256=uXyZ5myo_SYbddvkTllpYwWgf6YqfNvx7KkzYXjbK2w,1542
+foodx_backup_source/_main.py,sha256=DOLuKHk13Bfi4lrxattvSEq8VU1JtfIGalMSvg49Y9o,5768
+foodx_backup_source/_snapshot.py,sha256=1DyJhzIWl55ses0ATYH78bb2qGw-c8MMpc5NxyjhxOM,2208
+foodx_backup_source/_version.py,sha256=rrfAQ15O4myv3iatpjh__jLsfidefLX23ctAM2TKfvQ,946
+foodx_backup_source/azure.py,sha256=aqzAB7IrZe7WdrIAuAevHTtKzqz7kw51kX0j7_Pmc7s,1981
+foodx_backup_source/entrypoint.py,sha256=JXX0RNhCaDTWSZnVVaIcaJkB3Ov8YMRw9NXJ4z3PILE,324
+foodx_backup_source/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foodx_backup_source/schema.py,sha256=qmQ1lFWUAbjx8_Qb0j1uj9g4aBBK2B4uOoWRqsKInTI,1419
+foodx_backup_source-0.1.0.dist-info/entry_points.txt,sha256=h21eQ0FrQhcd3GmP9-DB6ltQOZChrmP0irK5llDUFj0,69
+foodx_backup_source-0.1.0.dist-info/LICENSE,sha256=yiHnkrXoBf-oAR5dIhyeiRH7dvx94qBBplQjD59foMQ,1086
+foodx_backup_source-0.1.0.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+foodx_backup_source-0.1.0.dist-info/METADATA,sha256=8-FTxqEmjmRYgfGeeIZD9HdUL-Gmfw2wxdUAoHsN-Ys,1462
+foodx_backup_source-0.1.0.dist-info/RECORD,,
