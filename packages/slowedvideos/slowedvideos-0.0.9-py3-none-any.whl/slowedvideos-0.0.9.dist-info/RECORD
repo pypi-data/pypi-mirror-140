@@ -1,0 +1,15 @@
+slowedvideos/__init__.py,sha256=tHfaCqd52_rOVZ38BFdaSLrcp0zDdmUu9iV4SYt9ka0,291
+slowedvideos/downloadurl/downloadurl.py,sha256=QhZxPSMjSWckbU6lirWYsFuntGayd0bu1fqQ37k4v7w,462
+slowedvideos/exportvideo/exportvideo.py,sha256=hd3isl543MFTzGATm5DyvIm86Yyo0EEL8iOfDF58Gow,614
+slowedvideos/makeimages/makethumb.py,sha256=LPv6Pi7ftdTKFZBNMDu6TG7AxFcLelTG4feskdNoYII,978
+slowedvideos/makeimages/makevideo.py,sha256=M9xe3y9_BzD0M-aJLq9dG4LCZAXRnqD_J3imtcXF86k,1753
+slowedvideos/makeimages/fonts/Roboto-Black.ttf,sha256=LjN2g2L9NX54HQFnDbHSJt-0hMbyt2nzt5hGnuH4KtY,168060
+slowedvideos/makeimages/fonts/Roboto-Bold.ttf,sha256=uvRM6BY2zJJ_wndoQ35dqFO6xpnoqvgy0ELw3-0ptLQ,167336
+slowedvideos/makeimages/fonts/Roboto-Light.ttf,sha256=KDWzWKqqMp-aS7R5NslmhyAsokd0ouHHglGllvKwH6U,167000
+slowedvideos/makeslowed/makeslowed.py,sha256=_9V2dECCWsp5wrws2RgKBJjsk0lJ1NzcsVxAxIlthCE,1105
+slowedvideos/makeslowed/TAL-Reverb-4.vst3/Contents/x86_64-linux/TAL-Reverb-4.so,sha256=osXkN38qWx0ZKdQCBMK-87-J4gGurwstxH42RVCBhM4,5528144
+slowedvideos-0.0.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+slowedvideos-0.0.9.dist-info/METADATA,sha256=N4kkqWrTZlh4Uc-kpqAvMASD6Bvt_UU0ZK4BQNwB2ww,569
+slowedvideos-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+slowedvideos-0.0.9.dist-info/top_level.txt,sha256=bMsOW2bvJsWFr7ggBGNSpT1e4G2sKyKrSMzn_o-nSWg,13
+slowedvideos-0.0.9.dist-info/RECORD,,
