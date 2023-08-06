@@ -1,0 +1,4 @@
+context:
+  value:
+    label: What is the name of the event?
+    input_id: event-name

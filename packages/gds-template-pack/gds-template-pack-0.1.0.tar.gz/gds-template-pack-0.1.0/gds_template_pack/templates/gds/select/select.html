@@ -1,0 +1,10 @@
+<div class="govuk-form-group">
+    <label class="govuk-label" for="sort">
+        {{ value.label }}
+    </label>
+    <select class="govuk-select" id="sort" name="sort">
+        {% for option in value.options %}
+            <option value="{{ option|slugify }}">{{ option }}</option>
+        {% endfor %}
+    </select>
+</div>

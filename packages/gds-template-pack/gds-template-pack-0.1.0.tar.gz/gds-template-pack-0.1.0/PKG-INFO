@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gds-template-pack
+Version: 0.1.0
+Summary: A GOV.UK design system template pack for Django Pattern Library.
+Keywords: Django,django-pattern-library,GDS
+Author: Ben Dickinson
+Author-email: ben.dickinson@torchbox.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
