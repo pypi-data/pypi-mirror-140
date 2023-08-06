@@ -1,0 +1,16 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="subdomain">demo</MDI>
+    <MDI key="time">1970-01-01T00:00:00Z</MDI>
+    <MDI key="uuid">7bef8398-ec43-41a5-868c-24c419d64dcb</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">-1.8230000734329</MDI>
+      <MDI key="STATISTICS_MEAN">-2.0687015897104</MDI>
+      <MDI key="STATISTICS_MINIMUM">-2.6330001354218</MDI>
+      <MDI key="STATISTICS_STDDEV">0.19231183561581</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">88.08</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
