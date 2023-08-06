@@ -1,0 +1,171 @@
+name: build-and-publish
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+  pull_request:
+
+jobs:
+  build-on-ubuntu:
+    uses: livMatS/dtool-lookup-gui/.github/workflows/build-on-ubuntu.yml@master
+
+  build-on-windows:
+    uses: livMatS/dtool-lookup-gui/.github/workflows/build-on-windows.yml@master
+
+  build-on-macos:
+    uses: livMatS/dtool-lookup-gui/.github/workflows/build-on-macos.yml@master
+
+  publish-on-pypi:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2.3.1
+        with:
+          python-version: 3.8
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -qy
+          sudo apt-get install -y \
+            libgirepository1.0-dev \
+            libcairo2-dev \
+            pkg-config \
+            python3-dev \
+            gir1.2-gtk-3.0 \
+            libgtksourceview-4-0
+
+      - name: Install pythonic dependencies
+        run: |
+          pip install --upgrade pip
+          pip install wheel
+          pip install -r requirements.txt
+
+      - name: Build and install
+        run: |
+          python setup.py build
+          python setup.py install
+
+      - name: Package distribution
+        run: |
+          python setup.py sdist bdist_wheel
+          ls -1 dist/
+
+      - name: Get master HEAD SHA
+        id: get_master_sha
+        run: |
+          git fetch --depth 1 origin master
+          echo "Commit that triggered this workflow: ${{ github.sha }}"
+          echo "HEAD at master: $(git rev-parse origin/master)"
+          echo "::set-output name=sha::$(git rev-parse origin/master)"
+
+      - name: Publish package
+        if: >-
+          github.event_name == 'push' &&
+          startsWith(github.ref, 'refs/tags') &&
+          steps.get_master_sha.outputs.sha == github.sha
+        uses: pypa/gh-action-pypi-publish@v1.5.0
+        with:
+          user: __token__
+          password: ${{ secrets.pypi_password }}
+          verbose: true
+
+  publish-on-github:
+    runs-on: ubuntu-20.04
+
+    needs:
+      - build-on-ubuntu
+      - build-on-windows
+      - build-on-macos
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Get version
+        id: get_version
+        uses: battila7/get-version-action@v2
+
+      - name: Prepare
+        run: |
+          mkdir -p /tmp/linux-build
+          mkdir -p /tmp/windows-build
+          mkdir -p /tmp/macos-build
+
+      - name: Download Linux build
+        uses: actions/download-artifact@v2
+        with:
+          name: dtool-lookup-gui-linux
+          path: /tmp/linux-build
+
+      - name: Download Windows build
+        uses: actions/download-artifact@v2
+        with:
+          name: dtool-lookup-gui-windows
+          path: /tmp/windows-build
+
+      - name: Download MacOS build
+        uses: actions/download-artifact@v2
+        with:
+          name: dtool-lookup-gui-macos
+          path: /tmp/macos-build
+
+      - name: Unpack tar archives
+        run: |
+          cd /tmp/linux-build && tar -xvf dtool-lookup-gui-linux.tar
+          cd /tmp/macos-build && tar -xvf dtool-lookup-gui-macos.tar
+          cd /tmp/windows-build && tar -xvf dtool-lookup-gui-windows.tar
+
+      - name: Package additional files with the binaries
+        run: |
+
+          prefix=$(pwd)
+          bash ${prefix}/maintenance/copy_files_into_folders.sh maintenance/files_to_include_in_release.txt /tmp/linux-build /tmp/macos-build /tmp/windows-build
+          cd /tmp/linux-build \
+            && bash ${prefix}/maintenance/copy_files_into_folders.sh files_to_include_in_release.txt /tmp/linux-release
+          cd /tmp/macos-build \
+            && bash ${prefix}/maintenance/copy_files_into_folders.sh files_to_include_in_release.txt /tmp/macos-release
+          cd /tmp/windows-build \
+            && bash ${prefix}/maintenance/copy_files_into_folders.sh files_to_include_in_release.txt /tmp/windows-release
+
+      - name: List content of release
+        run: |
+          ls -lhv /tmp/linux-release/
+          ls -lhv /tmp/windows-release/
+          ls -lhv /tmp/macos-release/
+
+      - name: Pack release assets
+        run: |
+          cd /tmp/linux-release && tar -cvzf dtool-lookup-gui-${{ steps.get_version.outputs.version }}-linux.tar.gz ./*
+          cd /tmp/macos-release && zip -r dtool-lookup-gui-${{ steps.get_version.outputs.version }}-macos.zip ./*
+          cd /tmp/windows-release && zip -r dtool-lookup-gui-${{ steps.get_version.outputs.version }}-windows.zip ./*
+
+      - name: Get master HEAD SHA
+        id: get_master_sha
+        run: |
+          git fetch --depth 1 origin master
+          echo "Commit that triggered this workflow: ${{ github.sha }}"
+          echo "HEAD at master: $(git rev-parse master)"
+          echo "::set-output name=sha::$(git rev-parse origin/master)"
+
+      - name: Make release
+        if: >-
+          github.event_name == 'push' &&
+          startsWith(github.ref, 'refs/tags') &&
+          steps.get_master_sha.outputs.sha == github.sha
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            /tmp/linux-release/dtool-lookup-gui-${{ steps.get_version.outputs.version }}-linux.tar.gz
+            /tmp/macos-release/dtool-lookup-gui-${{ steps.get_version.outputs.version }}-macos.zip
+            /tmp/windows-release/dtool-lookup-gui-${{ steps.get_version.outputs.version }}-windows.zip
+          draft: true
