@@ -1,0 +1,3 @@
+[console_scripts]
+pkglog = pkglog:__main__.main
+
