@@ -1,0 +1,31 @@
+# --------------------------- BEGIN NOTES ---------------------------
+
+####### TO BUILD #######
+# for users: python -m build
+# for developers: rm -rf _skbuild; pip uninstall -y anu-inversion-course; pip install -e .
+
+####### TO TEST WHEELS ######
+# rm -rf wheelhouse
+# export CIBW_SKIP='pp*'; export CIBW_REPAIR_WHEEL_COMMAND_MACOS=''; export CIBW_ARCHS_MACOS='x86_64 arm64'; rm -rf _skbuild; find . -type f -name "*.so" -exec rm {} \; ; cibuildwheel --platform macos
+# export CIBW_SKIP='pp*'; export CIBW_ARCHS_LINUX='x86_64 aarch64'; rm -rf _skbuild; find . -type f -name "*.so" -exec rm {} \; ; cibuildwheel --platform linux
+# export CIBW_SKIP='pp*'; export CIBW_ARCHS_WINDOWS='AMD64 x86'; rm -rf _skbuild; find . -type f -name "*.so" -exec rm {} \; ; cibuildwheel --platform windows
+# python setup.py sdist
+# twine upload --repository testpypi wheelhouse/*macos*
+# twine upload --repository testpypi wheelhouse/*manylinux*
+# twine upload --repository testpypi dist/anu_inversion_course*tar.gz
+
+# --------------------------- END NOTES ---------------------------
+
+
+[build-system]
+requires = [
+  "setuptools>=42",
+  "wheel",
+  "scikit-build>=0.12",
+  "cmake>=3.18",
+  "ninja",
+  "cython>=0.29.27",
+  "numpy>=1.22.2",
+  "pybind11[global]>=2.9.1",
+]
+build-backend = "setuptools.build_meta"
