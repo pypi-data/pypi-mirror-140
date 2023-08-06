@@ -1,0 +1,10 @@
+LICENSE
+README.md
+img2text.py
+setup.py
+img2text.egg-info/PKG-INFO
+img2text.egg-info/SOURCES.txt
+img2text.egg-info/dependency_links.txt
+img2text.egg-info/entry_points.txt
+img2text.egg-info/requires.txt
+img2text.egg-info/top_level.txt
