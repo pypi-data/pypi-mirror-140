@@ -1,0 +1,8 @@
+setup.py
+mvic/__init__.py
+mvic/main.py
+mvic.egg-info/PKG-INFO
+mvic.egg-info/SOURCES.txt
+mvic.egg-info/dependency_links.txt
+mvic.egg-info/requires.txt
+mvic.egg-info/top_level.txt
