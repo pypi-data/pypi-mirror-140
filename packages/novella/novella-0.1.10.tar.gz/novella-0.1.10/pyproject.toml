@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "novella"
+version = "0.1.10"
+description = "Linear build system for Markdown preprocessing and static site generation."
+authors = ["Niklas Rosenstein <rosensteinniklas@gmail.com>"]
+license = "MIT"
+readme = "readme.md"
+packages = [{ include="novella", from="src" }]
+
+  [tool.poetry.urls]
+  Homepage = "https://github.com/NiklasRosenstein/novella"
+  Documentation = "https://niklasrosenstein.github.io/novella"
+
+  [tool.poetry.dependencies]
+  python = "^3.8"
+  craftr-dsl = "^0.7.7"
+  markdown = "^3.0.0"
+  "nr.util" = ">=0.7.1"
+  PyYAML = ">=4.0"
+  tomli = "^2.0.0"
+  typing-extensions = "*"
+  watchdog = "^2.0.0"
+
+  [tool.poetry.dev-dependencies]
+  pytest = "*"
+  mkdocs = "*"
+  mkdocs-material = "*"
+  mypy = "*"
+  types-PyYAML = "^5.4.0"
+  types-markdown = "*"
+
+  [tool.poetry.scripts]
+  novella = "novella.__main__:main"
+
+  [tool.poetry.plugins."novella.actions"]
+  copy-files = "novella.action:CopyFilesAction"
+  run = "novella.action:RunAction"
+  mkdocs-update-config = "novella.templates.mkdocs:MkdocsUpdateConfigAction"
+  preprocess-markdown = "novella.markdown.preprocessor:MarkdownPreprocessorAction"
+
+  [tool.poetry.plugins."novella.markdown.preprocessors"]
+  anchor = "novella.markdown.tags.anchor:AnchorTagProcessor"
+  cat = "novella.markdown.tags.cat:CatTagProcessor"
+  shell = "novella.markdown.tags.shell:ShellTagProcessor"
+
+  [tool.poetry.plugins."novella.templates"]
+  mkdocs = "novella.templates.mkdocs:MkdocsTemplate"
+
+[tool.slam]
+typed = true
+
+  [tool.slam.test]
+  pytest = "pytest -vv tests/"
+  mypy = "mypy src/ --namespace-packages --disallow-untyped-defs"
+  check = "slam check"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
