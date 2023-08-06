@@ -1,0 +1,17 @@
+doniclient/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+doniclient/osc/__init__.py,sha256=AXuaKdgI6rFXg3I4VaaGxeS49x6kby8VVTEExQPBGiA,585
+doniclient/osc/availability.py,sha256=4pJfgJiybZbNjB0VflhPsYwqIgYCWu4tudyEBLOnawo,4416
+doniclient/osc/cli.py,sha256=Vnr7uNJgUfBJ9QijYyAm3vFKAMwqYT2WAClrGfyvSwc,9861
+doniclient/osc/common.py,sha256=znyQdX8TmkdSpyHOoMFMWq_jW7Ruyrf_F2IxsTIX8nM,3715
+doniclient/osc/plugin.py,sha256=dGUQUfC-D2mRiWnEzxzQf6LkjzWH4nCe4vQQtnAuCYc,1917
+doniclient/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doniclient/tests/osc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doniclient/tests/osc/fakes.py,sha256=3lxpy3vABLQZPzweALjsyzuXKqeeuEGV_mXlYztyFnw,1666
+doniclient/tests/osc/test_hardware.py,sha256=zbe5ANK1QDyhD3emwW3xtSZpHG4axjcY7VDlwJF8FQg,3087
+doniclient/tests/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doniclient/v1/client.py,sha256=whOXpGKi9_V8QJKoO_Fd1kOLCZD0bqmuZoMWQthxOSQ,1682
+doniclient/v1/resource_fields.py,sha256=pWXkSEe9yCNlDN3QGbt_6AYh9hJo2ZgzO4z3V_PbR64,2248
+python_doniclient-0.5.0.dist-info/entry_points.txt,sha256=oVimiqoLf63j1CTItiIR0-zvPSFcjzTi_tYp_rWzDZc,742
+python_doniclient-0.5.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+python_doniclient-0.5.0.dist-info/METADATA,sha256=5YTbR3ZGHMu9cFKbGZVAcdaQNVc9lBs8AAmrknrtx5w,1251
+python_doniclient-0.5.0.dist-info/RECORD,,
