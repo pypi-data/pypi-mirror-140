@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: myConvexHull150
+Version: 1.2
+Summary: A Convex Hull program for points data
+Home-page: UNKNOWN
+Author: Haidar Ihzaulhaq
+Author-email: ihzaulhaqidar@gmail.com
+License: MIT
+Keywords: convexhull
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+# test myConvexHull
+
