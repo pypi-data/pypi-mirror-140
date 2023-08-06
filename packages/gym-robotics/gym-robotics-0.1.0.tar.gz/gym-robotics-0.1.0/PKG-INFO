@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: gym-robotics
+Version: 0.1.0
+Summary: Gym: A universal API for reinforcement learning environments.
+Home-page: https://github.com/Farama-Foundation/gym-robotics
+Author: Seungjae Ryan Lee
+Author-email: seungjaeryanlee@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7

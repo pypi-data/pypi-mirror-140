@@ -1,0 +1,3 @@
+[gym.envs]
+__root__ = gym_robotics:register_robotics_envs
+

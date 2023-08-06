@@ -1,0 +1,6 @@
+numpy>=1.18.0
+cloudpickle>=1.2.0
+gym>=0.22
+
+[:python_version < "3.8"]
+importlib_metadata>=4.8.1
