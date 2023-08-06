@@ -1,0 +1,9 @@
+README.md
+setup.py
+package_viacep/__init__.py
+package_viacep/viacep.py
+package_viacep.egg-info/PKG-INFO
+package_viacep.egg-info/SOURCES.txt
+package_viacep.egg-info/dependency_links.txt
+package_viacep.egg-info/requires.txt
+package_viacep.egg-info/top_level.txt
