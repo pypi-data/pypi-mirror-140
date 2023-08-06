@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/seq-eval/SeqEval.py
+src/seq-eval/__init__.py
+src/sequence_evaluate.egg-info/PKG-INFO
+src/sequence_evaluate.egg-info/SOURCES.txt
+src/sequence_evaluate.egg-info/dependency_links.txt
+src/sequence_evaluate.egg-info/top_level.txt
