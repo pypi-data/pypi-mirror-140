@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: paddle2onnx
+Version: 0.9.1
+Summary: a toolkit for converting trained model of PaddlePaddle to ONNX.
+Home-page: https://github.com/PaddlePaddle/paddle2onnx
+Author: dltp-sz
+Author-email: dltp-sz@baidu.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+paddle2onnx is a toolkit for converting trained model of PaddlePaddle to ONNX.
+
+Usage: paddle2onnx --model_dir src --save_file dist
+GitHub: https://github.com/PaddlePaddle/paddle2onnx
+Email: dltp-sz@baidu.com
+
