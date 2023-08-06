@@ -1,0 +1,13 @@
+gemact/__init__.py,sha256=H7qPPNH34XuwdGhlHMy33dTQsiaRMGa4bygeGCuGrTg,813
+gemact/distributions.py,sha256=KQctRhV7JSM5F42cAGCok9U9xTgnmx0MEfW0HiUzhx8,140266
+gemact/gemdata.py,sha256=ATHLnv5B_TJ85kAdujwrmqSTAJ65OLD5ozDk4UyMt-c,5538
+gemact/helperfunctions.py,sha256=xLLM7AEAB7uyHE1QQSbZcN2xn4tYa4ODvYqOEM6Sh5U,12929
+gemact/lossaggregation.py,sha256=l1iTX5thSYmSh18y2I-2rzjcvJ7-sNm8Zhox5bPwVLU,19246
+gemact/lossmodel.py,sha256=qJIOLkRSPk6loR4d84ACqaoYmK0hjzq9G64fK6OEpnE,34244
+gemact/lossreserve.py,sha256=_Ru3znzIAmxRD2tOUO-WZCeqHNlk9pjWKuJc0KGah1s,28913
+gemact/sobol.py,sha256=JElErnQ_kVmw-3i-RrW2yoaITLR8O7bRFrA2TneXIk0,28936
+gemact-0.0.5.dist-info/LICENSE.txt,sha256=hvHlwdScaCxhUIAj94QJ0rpOrTdDyU2g7mC5qG93GFQ,1598
+gemact-0.0.5.dist-info/METADATA,sha256=eIQp2msfCH2aqEkBDgZ5y-rakcg_n5OWRwyZTOInT3A,1518
+gemact-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gemact-0.0.5.dist-info/top_level.txt,sha256=PvZC8Jo_D1mKffqGHz6e1evkNBllUUzB2KWfrGFxRTc,98
+gemact-0.0.5.dist-info/RECORD,,
