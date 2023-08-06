@@ -1,0 +1,5 @@
+aiohttp>=3.8
+protobuf3-to-dict>=0.1.5
+protobuf>=3.19.4
+pyee>=9.0.4
+dacite>=1.6.0
