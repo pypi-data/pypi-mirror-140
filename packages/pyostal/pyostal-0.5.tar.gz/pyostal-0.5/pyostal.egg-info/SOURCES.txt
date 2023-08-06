@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyostal/__init__.py
+pyostal/client.py
+pyostal/exceptions.py
+pyostal/response.py
+pyostal.egg-info/PKG-INFO
+pyostal.egg-info/SOURCES.txt
+pyostal.egg-info/dependency_links.txt
+pyostal.egg-info/not-zip-safe
+pyostal.egg-info/requires.txt
+pyostal.egg-info/top_level.txt
