@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vlm-rprimo
+Version: 1.0
+Summary: Script para calcular el numero de primos hasta n integrando R con Python
+Home-page: https://github.com/soytupadrrre/vlm_rprimo
+Author: Víctor Luque Martín
+License: MIT
+Download-URL: https://github.com/soytupadrrre/vlm_rprimo/tarball/1.0
+Keywords: primos,R,Python
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# VLM PRIMO
+Actividad lección 4 de la asignatura "Fundamentos Python" de la sexta edición del máster de programación en Python de EIP
+
+
