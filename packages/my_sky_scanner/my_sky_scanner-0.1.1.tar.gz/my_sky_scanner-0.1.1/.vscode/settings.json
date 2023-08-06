@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "home\\snake\\.local\\lib\\python3.9\\site-packages",
+        "./src/my_sky_scanner"
+    ]
+}
