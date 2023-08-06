@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: simput
+Version: 2.0.6
+Summary: Python toolkit for driving form handling with SimPut
+Home-page: https://github.com/kitware/py-simput
+Author: Kitware, Inc.
+Author-email: kitware@kitware.com
+License: BSD-3-Clause
+Keywords: Python Vue.js form
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: JavaScript
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+This library is aimed to be used with PyWebVue/Trame to enable form handling of inputs.
+
