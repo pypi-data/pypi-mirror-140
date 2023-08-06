@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: draupnir
+Version: 0.0.193
+Summary: Ancestral sequence reconstruction using a tree structured Ornstein Uhlenbeck variational autoencoder
+Home-page: https://github.com/LysSanzMoreta/DRAUPNIR_ASR
+Author: Lys Sanz Moreta
+Author-email: lys.sanz.moreta@outlook.com
+License: UNKNOWN
+Project-URL: Changelog, https://github.com/LysSanzMoreta/DRAUPNIR_ASR/blob/master/CHANGELOG.rst
+Project-URL: Issue Tracker, https://github.com/LysSanzMoreta/DRAUPNIR_ASR/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyro-ppl (==1.6.0)
+Requires-Dist: biopython (>=1.78)
+Requires-Dist: pandas (==1.0.1)
+Requires-Dist: matplotlib (>=3.3.4)
+Requires-Dist: ete3 (==3.1.1)
+Requires-Dist: dgl-cu111 (==0.6.1)
+Requires-Dist: dill (==0.3.3)
+Requires-Dist: seaborn (==0.11.2)
+Requires-Dist: pytorch-ignite (==0.4.4)
+Requires-Dist: scipy (==1.5.4)
+Requires-Dist: scikit-learn (==0.24.1)
+Requires-Dist: umap-learn (==0.5.2)
+Requires-Dist: gdown (==4.3.1)
+
+DRAUPNIR: "I am a very Beta version, do not use me"
+
+##Requirements for tree inference:
+
+IQ-Tree: http://www.iqtree.org/doc/Quickstart
+
+conda install -c bioconda iqtree
+
+RapidNJ: https://birc.au.dk/software/rapidnj
+
+conda config --add channels bioconda
+
+conda install rapidnj
+
+##Requirements for patristic matrix construction
+
+Install R and ape and TreeDist libraries
+
+
+
+
+
+
+
+
+
+
+
+
