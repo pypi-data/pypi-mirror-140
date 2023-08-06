@@ -1,0 +1,8 @@
+tensorflow
+tensorflow-probability
+numpy
+scipy
+pint
+scikit-image
+pydeepimagej
+tensorflow_addons
