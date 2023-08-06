@@ -1,0 +1,2 @@
+minty~=2.0
+amqpstorm~=2.8
