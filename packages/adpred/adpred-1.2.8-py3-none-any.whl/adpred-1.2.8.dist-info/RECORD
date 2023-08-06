@@ -1,0 +1,13 @@
+adpred/ADpred.py,sha256=W90N6pn6IUbY7Q-QECLFAXLGNbyT-T6M8JZy59ZTI8I,10377
+adpred/__init__.py,sha256=y99UbL5gB7-unrnrlxRf6XKN7wsBDNqpZCVzrLkrsRU,18
+adpred/lib/__init__.py,sha256=ydStL27pNwNKRz2ex5H9nJozLB_zWG350H29hjONZuY,15
+adpred/lib/run-adpred.py,sha256=IffmgBY4dI4d0NjZW2RM5an-lVia0gOoNnFikP_Hgno,3613
+adpred/lib/utils.py,sha256=xIoNSZLRzu4dp-Z_XD4tpVPS7axwsgoOScP6PGir2pU,11538
+adpred/model/ADpred.h5,sha256=qo3K2b7z9on2qhheQ-4YH6gsO99jJWEJZcPiW6NqWDU,341296
+adpred/model/ADpred.json,sha256=yJRdZ0x-HtyRgv-go9LyxNi5taEq3i-ka2fgTrzEXzo,3515
+adpred-1.2.8.data/scripts/run-adpred,sha256=-gDtJDGj8wf26oTowYz7p7iXiUAc0vsLR6RXEHtgv44,3600
+adpred-1.2.8.dist-info/LICENSE,sha256=jdNAkz0bv_mfxMofgzjBkzV-KY-3D2J45moDPBEInMs,1070
+adpred-1.2.8.dist-info/METADATA,sha256=h5g77UgLekfggpq8XNqtClbwMwvTqgwxwattzO8N7W0,1938
+adpred-1.2.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+adpred-1.2.8.dist-info/top_level.txt,sha256=jNDZ5R3NG_9BU9MzttfQ1Xvj6lALACOQ1iVrHhBRTM0,7
+adpred-1.2.8.dist-info/RECORD,,
