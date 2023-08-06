@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pypws
+Version: 2.4.0.8
+Summary: Python library supporting Phast Web Services
+Home-page: https://phastwebservices.dnv.com
+Author: DNV
+Author-email: software.support@dnv.com
+License: MIT License
+Project-URL: Veracity by DNV, https://www.veracity.com/
+Project-URL: Phast Desktop, https://www.dnv.com/services/process-hazard-analysis-software-phast-1675
+Keywords: Phast Consequence Analysis QRA CPQRA DNV Discharge Dispersion Fire Explosion Toxic Flammable Hazard Gas
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: easygui (>=0.97)
+Requires-Dist: requests (>=2.5.4)
+Requires-Dist: urllib3 (>=1.23)
+Requires-Dist: jsons (>=1.2)
+
+# PHAST WEB SERVICES
+
+![Phast Web Services](https://www.dnv.com/Images/Phast-process-hazard-analysis-software_1000x500_tcm8-147208.jpg)
+
+## INTRODUCTION
+
+Phast is the world's most comprehensive process hazard analysis software which models the progress of a potential incident from the initial release to far-field dispersion including modelling of pool spreading and evaporation and resulting flammable and toxic effects. In Phast Web Services we have taken the same state of the art consequence modelling calculations and made them available as web services so you can use them in your own applications.
+
+## CONSEQUENCE ANALYSIS
+
+## WE LOVE CONSEQUENCE ANALYSIS
+
+## WE REALLY, REALLY DO
+
+We built web services for various consequence calculations so you don't have to.
+
+We have services available for:
+
+- Discharge
+- Toxic/flammable gas dispersion
+- Fire and explosion modelling
+
+
