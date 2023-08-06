@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+report.png
+setup.py
+wirereport/__init__.py
+wirereport.egg-info/PKG-INFO
+wirereport.egg-info/SOURCES.txt
+wirereport.egg-info/dependency_links.txt
+wirereport.egg-info/entry_points.txt
+wirereport.egg-info/not-zip-safe
+wirereport.egg-info/top_level.txt
+wirereport/fonts/Courier_Prime.ttf
+wirereport/fonts/cmtex9.ttf
