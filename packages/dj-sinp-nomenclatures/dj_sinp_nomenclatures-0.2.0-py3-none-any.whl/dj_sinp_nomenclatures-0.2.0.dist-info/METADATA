@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dj-sinp-nomenclatures
+Version: 0.2.0
+Summary: Django app to manage french SINP nomenclatures standards
+Home-page: https://github.com/dbchiro/DjangoSinpNomenclature
+License: AGPLv3
+Keywords: SINP,Nomenclatures,Django,France,dbChiroWeb
+Author: dbChiro project
+Author-email: project@dbchiro.org
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=4.0.2,<5.0.0)
+Requires-Dist: django-rest-framework (>=0.1.0,<0.2.0)
+Project-URL: Repository, https://github.com/dbchiro/DjangoSinpNomenclature
+Description-Content-Type: text/x-rst
+
+DjangoSinpNomenclature
+======================
+
+
+A simple django reusable app to manage French SINP nomenclature repository
+
+
+
