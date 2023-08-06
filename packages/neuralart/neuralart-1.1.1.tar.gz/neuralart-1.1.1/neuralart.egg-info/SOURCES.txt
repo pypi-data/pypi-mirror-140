@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+example.py
+setup.py
+bin/neuralart
+images/example-400.png
+images/example.png
+neuralart/__init__.py
+neuralart/__main__.py
+neuralart/neuralart.py
+neuralart/version.txt
+neuralart.egg-info/PKG-INFO
+neuralart.egg-info/SOURCES.txt
+neuralart.egg-info/dependency_links.txt
+neuralart.egg-info/requires.txt
+neuralart.egg-info/top_level.txt
