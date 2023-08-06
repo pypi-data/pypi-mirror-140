@@ -1,0 +1,3 @@
+[console_scripts]
+ReSpider = ReSpider.extend.cmd.cmdline:execute
+respider = ReSpider.extend.cmd.cmdline:execute

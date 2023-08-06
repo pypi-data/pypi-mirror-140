@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+# @Time    : {DATE}
+# @Author  : {USER}
+# @File    : ${file_name}.py
+
+import ReSpider
+
+
+class ${spider_name}(ReSpider.RedisSpider):
+    __custom_setting__ = {}
+
+    def make_request(self, **kwargs):
+        return ReSpider.Request(
+            url='https://www.baidu.com'
+        )
+
+    def parse(self, response):
+        print(response)
+
+
+if __name__ == '__main__':
+    ${spider_name}(
+        redis_key=''
+    ).start()
