@@ -1,0 +1,6 @@
+README.md
+setup.py
+turingmachine_ezrashare31.egg-info/PKG-INFO
+turingmachine_ezrashare31.egg-info/SOURCES.txt
+turingmachine_ezrashare31.egg-info/dependency_links.txt
+turingmachine_ezrashare31.egg-info/top_level.txt

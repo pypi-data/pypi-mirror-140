@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: turingmachine-ezrashare31
+Version: 1.0.0
+Summary: a simple turing machine with an API for some awkward reason.
+Home-page: UNKNOWN
+License: MIT
+Description: # TuringMachine
+        
+        TuringMachine runs on a infinate tape.
+        
+        the intruction set is at github.com/ezrashare21/turing/docs
+        
+        the online replit runtime is at repl.it/@EzraMorales/turing
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
