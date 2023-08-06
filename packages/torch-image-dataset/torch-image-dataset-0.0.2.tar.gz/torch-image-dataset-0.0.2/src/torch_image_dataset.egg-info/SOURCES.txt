@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/imagedataset/__init__.py
+src/imagedataset/datasets.py
+src/torch_image_dataset.egg-info/PKG-INFO
+src/torch_image_dataset.egg-info/SOURCES.txt
+src/torch_image_dataset.egg-info/dependency_links.txt
+src/torch_image_dataset.egg-info/top_level.txt
