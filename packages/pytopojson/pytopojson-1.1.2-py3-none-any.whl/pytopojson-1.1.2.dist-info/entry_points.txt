@@ -1,0 +1,5 @@
+[console_scripts]
+geo2topo = bin.geo2topo:main
+topo2geo = bin.topo2geo:main
+topoquantize = bin.topoquantize:main
+
