@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: topsisRipul
+Version: 0.3
+Summary: Python Package to rank Features in a ML model
+Home-page: https://github.com/ripul266
+Author: Ripul Ahuja
+Author-email: rahuja1_be19@thapar.edu
+License: MIT
+Download-URL: https://github.com/ripul266/topsisRipul/archive/refs/tags/v_03.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
