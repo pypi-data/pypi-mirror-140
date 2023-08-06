@@ -1,0 +1,12 @@
+openNPL/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openNPL/asgi.py,sha256=pXhTvvyVK3Lbbed4eouvvjacgL8YSIVNLJLl0uYCqf4,1524
+openNPL/serializers.py,sha256=pTgsbgsI1zB70REWx7P_BqV3aX96WRGYqKFHfoB8NiA,4029
+openNPL/settings.py,sha256=hqt-znswfCX5-8fWHLnXdYSBduYJIL_RrEq3C_EXBPQ,4708
+openNPL/urls.py,sha256=rg-sJ2tlPXXOxN_P46WIfnsAaynbEjCrwNkE8GSekwU,2445
+openNPL/views.py,sha256=ljGDMHenddqAGa6_h7w_0izBDnoOYF3vPTld0S0Cg78,8881
+openNPL/wsgi.py,sha256=bikhbigCN_rBb0Av_1uJ2pIH0z_IJtSCnuCpjlyHVe8,1524
+openNPL-0.5.dist-info/LICENSE,sha256=9Djy-GETsuzqk3fsgULhD79W0Fr3d-NrpqXtt05mLV4,1108
+openNPL-0.5.dist-info/METADATA,sha256=mkZp-V8YSubqeKIzD8u34sGYFTSCNhwU_Pb0ZdRtoh4,1935
+openNPL-0.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+openNPL-0.5.dist-info/top_level.txt,sha256=y2D9tSsZUJMkqUin3Wv2klqFD2s7SY5O-87AKbuYVsQ,8
+openNPL-0.5.dist-info/RECORD,,
