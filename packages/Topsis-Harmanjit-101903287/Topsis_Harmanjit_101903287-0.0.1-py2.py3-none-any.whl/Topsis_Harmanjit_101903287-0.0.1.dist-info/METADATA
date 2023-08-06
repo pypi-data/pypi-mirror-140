@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis-Harmanjit-101903287
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Harmanjit Singh
+Author-email: hsingh8_be19@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License
+
+Simple Python module for Multiple Criteria Decision Making System using TOPSIS.
+Madeby: Harmanjit Singh
+Email: hsingh8_be19@thapar.edu
+
