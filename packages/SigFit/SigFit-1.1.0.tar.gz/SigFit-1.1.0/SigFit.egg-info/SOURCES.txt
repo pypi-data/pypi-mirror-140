@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+SigFit.egg-info/PKG-INFO
+SigFit.egg-info/SOURCES.txt
+SigFit.egg-info/dependency_links.txt
+SigFit.egg-info/top_level.txt
+include/SigFit.h
+include/SineFit.h
+src/SigFit.c
+src/SineFit.c
