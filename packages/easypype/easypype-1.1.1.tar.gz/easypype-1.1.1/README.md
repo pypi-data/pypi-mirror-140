@@ -1,0 +1,82 @@
+# EasyPype - Create flexible, extensible, potent pipelines
+EasyPype allows you to create flexible and extensible pipelines using python. You can set up the sequence of operations you need and sink all data processed easily. Also, you may use the tools provided to create variations of the same pipeline, with minor changes.
+
+# Overview
+EasyPype will offer you:
+
+  - Easy and flexible way to define a set of operations and the correct order to execute them.
+  - Multiprocessing execution of your operations.
+  - Extensible code, so you can add new features easily.
+
+
+## Quickstart
+First, you must install EasyPype:
+```
+pip install easypype
+```
+
+Then, create a new python file and import it:
+```
+import easypype as ep
+```
+
+To understand how EasyPype will help you, let's take a look at this code snippet:
+```
+import easypype as ep
+
+pipe = ep.PipeBuilderConcrete().command(ep.Sum(2)).build()
+mySink = ep.ConcreteSink()
+mySink.collect([1, 2, 3])
+pipe.do(mySink)
+```
+
+EasyPype uses four modules:
+1. "command", has the Command class, the generic pipe operation.
+2. "pipe", holds classes related to pipe logic: Pipe, a command that executes a given list of commands, and PipeBuilder, the entity responsible to create a Pipe object. 
+3. "sink", knows the Sink class, a basic data holder.
+4. "log", gives you a configured logger using "logging" from python.
+    
+Hence, you can:
+- Load data
+```
+mySink = ep.ConcreteSink()
+mySink.collect([1, 2, 3])
+```
+- Setup operations
+```
+pipe = ep.PipeBuilderConcrete().command(ep.Sum(2)).build()
+```
+- Run pipeline
+```
+pipe.do(mySink)
+```
+
+### Adding custom commands
+By default, EasyPype has a command called Sum that iterates an iterable object and increases each register by some amount. However, you can easily define your command:
+```
+import easypype as ep
+
+class Multiplier(ep.Command):
+
+    def __init__(self, amount):
+        self.amount = amount
+
+    def multiply(self, sink: ep.Sink):
+        return [i * self.amount for i in sink.data]
+
+    def do(self, sink: ep.Sink):
+        return self.multiply(sink)
+        
+pipe = ep.PipeBuilderConcrete().command(Multiplier(2)).build()
+mySink = ep.ConcreteSink()
+mySink.collect([1, 2, 3])
+pipe.do(mySink)
+print(mySink.data)
+```
+
+Commands **need** four things to work:
+1. Extends Command class.
+2. Implement do(self, sink: ep.Sink).
+3. Return the data after the operation is completed.
+
+Keep in mind that the Sink will collect all returned values.
