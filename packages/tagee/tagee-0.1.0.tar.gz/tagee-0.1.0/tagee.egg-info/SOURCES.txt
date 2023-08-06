@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+TAGEE-functions.js
+setup.py
+tagee/TAGEE.py
+tagee/__init__.py
+tagee.egg-info/PKG-INFO
+tagee.egg-info/SOURCES.txt
+tagee.egg-info/dependency_links.txt
+tagee.egg-info/requires.txt
+tagee.egg-info/top_level.txt
