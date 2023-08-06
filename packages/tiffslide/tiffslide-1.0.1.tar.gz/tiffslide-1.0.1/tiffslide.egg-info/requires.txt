@@ -1,0 +1,16 @@
+imagecodecs
+fsspec
+pillow
+tifffile>=2020.9.22
+zarr
+
+[:python_version < "3.8"]
+backports.cached_property
+importlib_metadata
+typing_extensions
+
+[dev]
+black
+pytest>=6
+pytest-cov
+mypy
