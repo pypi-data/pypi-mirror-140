@@ -1,0 +1,12 @@
+.gitattributes
+.gitignore
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+json_handler/__init__.py
+json_handler/utils.py
+json_handler.egg-info/PKG-INFO
+json_handler.egg-info/SOURCES.txt
+json_handler.egg-info/dependency_links.txt
+json_handler.egg-info/top_level.txt
