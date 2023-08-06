@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mekaconverter
+Version: 1.0.0
+Summary: A tool to convert Meka's assets to JSON format.
+Home-page: https://github.com/TheMekaverse/MekaConverter
+Author: Thibault Walterspieler
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: black (==22.1.0)
+Requires-Dist: click (==8.0.4)
+Requires-Dist: mekaconverter (==1.0.0)
+Requires-Dist: mypy-extensions (==0.4.3)
+Requires-Dist: pathspec (==0.9.0)
+Requires-Dist: platformdirs (==2.5.1)
+Requires-Dist: pyfiglet (==0.8.post1)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tomli (==2.0.1)
+Requires-Dist: typing-extensions (==4.1.1)
+Requires-Dist: zipp (==3.7.0)
+
+# MekaConverter
+
+Convert c4d images export to a JSON format that can be used by C4D with a converter.
+
+## Installation
+
+This project uses PyEnv to manage Python environments.
+PyEnv is a Python package manager for Windows, Mac and Linux.
+
+### MacOS
+
+The simple way to install PyEnv is with [Homebrew](https://brew.sh):
+
+```bash
+brew update
+brew install pyenv
+```
+
+Then follow the rest of the post-installation steps under [Basic GitHub Checkout](https://github.com/pyenv/pyenv#basic-github-checkout), starting with #2 ("Configure your shell's environment for Pyenv").
+
+
