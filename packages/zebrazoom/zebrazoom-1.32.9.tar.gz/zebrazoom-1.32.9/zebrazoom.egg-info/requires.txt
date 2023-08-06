@@ -1,0 +1,18 @@
+scikit-learn
+h5py
+numpy
+matplotlib>=3.5.0
+scipy
+pandas
+openpyxl
+filterpy
+cvui
+xlrd
+seaborn
+PyQt5
+
+[:sys_platform != "darwin"]
+opencv-python<=4.2.0.32
+
+[:sys_platform == "darwin"]
+opencv-python==4.5.1.48
