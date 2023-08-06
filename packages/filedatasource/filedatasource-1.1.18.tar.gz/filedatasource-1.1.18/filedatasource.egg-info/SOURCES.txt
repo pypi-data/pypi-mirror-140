@@ -1,0 +1,13 @@
+README.md
+setup.py
+filedatasource/__init__.py
+filedatasource/builder.py
+filedatasource/csvfile.py
+filedatasource/datafile.py
+filedatasource/excel.py
+filedatasource/utils.py
+filedatasource.egg-info/PKG-INFO
+filedatasource.egg-info/SOURCES.txt
+filedatasource.egg-info/dependency_links.txt
+filedatasource.egg-info/top_level.txt
+test/tests.py
