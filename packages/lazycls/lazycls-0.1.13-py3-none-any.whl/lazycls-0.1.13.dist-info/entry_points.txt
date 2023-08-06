@@ -1,0 +1,2 @@
+[console_scripts]
+lazy = lazy.cli.apps:baseCli
