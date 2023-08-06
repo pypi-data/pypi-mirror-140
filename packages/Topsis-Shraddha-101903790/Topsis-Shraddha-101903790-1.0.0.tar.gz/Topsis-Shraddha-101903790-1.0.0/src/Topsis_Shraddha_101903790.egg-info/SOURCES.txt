@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/Topsis-Shraddha-101903790/Topsis.py
+src/Topsis-Shraddha-101903790/__init__.py
+src/Topsis_Shraddha_101903790.egg-info/PKG-INFO
+src/Topsis_Shraddha_101903790.egg-info/SOURCES.txt
+src/Topsis_Shraddha_101903790.egg-info/dependency_links.txt
+src/Topsis_Shraddha_101903790.egg-info/requires.txt
+src/Topsis_Shraddha_101903790.egg-info/top_level.txt
