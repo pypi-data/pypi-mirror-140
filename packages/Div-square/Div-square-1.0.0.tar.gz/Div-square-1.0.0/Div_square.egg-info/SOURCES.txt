@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+Div_square.egg-info/PKG-INFO
+Div_square.egg-info/SOURCES.txt
+Div_square.egg-info/dependency_links.txt
+Div_square.egg-info/entry_points.txt
+Div_square.egg-info/top_level.txt
+square/__init__.py
+square/__main__.py

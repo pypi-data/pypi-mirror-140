@@ -1,0 +1,3 @@
+[console_scripts]
+square = square.__main__:main
+
