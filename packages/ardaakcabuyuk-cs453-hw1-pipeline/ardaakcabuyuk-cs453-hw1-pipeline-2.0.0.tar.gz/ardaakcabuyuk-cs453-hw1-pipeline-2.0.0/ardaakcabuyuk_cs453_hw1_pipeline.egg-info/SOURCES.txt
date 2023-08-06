@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+ardaakcabuyuk_cs453_hw1_pipeline.egg-info/PKG-INFO
+ardaakcabuyuk_cs453_hw1_pipeline.egg-info/SOURCES.txt
+ardaakcabuyuk_cs453_hw1_pipeline.egg-info/dependency_links.txt
+ardaakcabuyuk_cs453_hw1_pipeline.egg-info/requires.txt
+ardaakcabuyuk_cs453_hw1_pipeline.egg-info/top_level.txt
+dictionary/__init__.py
+dictionary/dictionary.py
