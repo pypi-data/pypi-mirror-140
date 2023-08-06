@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: django-helmholtz-aai
+Version: 0.1.1
+Summary: A generic Django app to login via Helmholtz AAI
+Home-page: https://gitlab.hzdr.de/HCDC/django/django-helmholtz-aai
+Author: Phiilpp S. Sommer, Housam Dibeh, Hatef Takyar
+Author-email: hcdc_support@hereon.de
+License: EUPL-1.2
+Project-URL: Documentation, https://django-helmholtz-aai.readthedocs.io
+Project-URL: Source, https://gitlab.hzdr.de/hcdc/django/django-helmholtz-aai
+Project-URL: Tracker, https://gitlab.hzdr.de/hcdc/django/django-helmholtz-aai/issues/
+Keywords: Helmholtz AAI,authlib,oauth,hifis,login,hgf
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: requests
+Requires-Dist: Django (<3.3,>=3.1)
+Requires-Dist: authlib
+Provides-Extra: dev
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+Requires-Dist: isort (==5.9.3) ; extra == 'dev'
+Requires-Dist: black (==21.9b0) ; extra == 'dev'
+Requires-Dist: blackdoc (==0.3.4) ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: django-stubs ; extra == 'dev'
+Requires-Dist: pytest-django ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: sphinx-argparse ; extra == 'dev'
+Requires-Dist: autodocsumm ; extra == 'dev'
+Requires-Dist: sphinxcontrib-django ; extra == 'dev'
+Provides-Extra: testsite
+Requires-Dist: tox ; extra == 'testsite'
+Requires-Dist: requests ; extra == 'testsite'
+Requires-Dist: types-requests ; extra == 'testsite'
+Requires-Dist: isort (==5.9.3) ; extra == 'testsite'
+Requires-Dist: black (==21.9b0) ; extra == 'testsite'
+Requires-Dist: blackdoc (==0.3.4) ; extra == 'testsite'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'testsite'
+Requires-Dist: pre-commit ; extra == 'testsite'
+Requires-Dist: mypy ; extra == 'testsite'
+Requires-Dist: django-stubs ; extra == 'testsite'
+Requires-Dist: pytest-django ; extra == 'testsite'
+Requires-Dist: pytest-cov ; extra == 'testsite'
+
+===============================
+Django Helmholtz AAI Connection
+===============================
+
+This small generic Django app helps you connect to the Helmholtz AAI and make
+use of it's virtual organizations.
+
+Features
+--------
+Features include
+
+- ready-to-use views for authentification against the Helmholtz AAI
+- a new ``HelmholtzUser`` model based upon djangos ``User`` model and derived
+  from the Helmholtz AAI
+- a new ``HelmholtzVirtualOrganization`` model based upon djangos
+  ``Group`` model and derived from the Helmholtz AAI
+- several signals to handle the login of Helmholtz AAI user for your specific
+  application
+- automated synchronization of VOs of on user authentification
+
+Get started by following the `installation instructions`_ and have a look into
+the `configuration`_ and examples provided there.
+
+
+.. _installation instructions: https://django-helmholtz-aai.readthedocs.io/en/latest/installation.html
+.. _configuration: https://django-helmholtz-aai.readthedocs.io/en/latest/configuration.html
+
+
+Copyright
+---------
+Copyright © 2021 Helmholtz-Zentrum Hereon, 2020-2021 Helmholtz-Zentrum Geesthacht
+
+Licensed under the EUPL-1.2-or-later
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the EUPL-1.2 license for more details.
+
+You should have received a copy of the EUPL-1.2 license along with this
+program. If not, see https://www.eupl.eu/.
+
+
