@@ -1,0 +1,18 @@
+clone:
+  template: .cptk/template
+  path: "\
+    {{ problem.website.name | slug }}/\
+    {% if problem.contest is defined %}\
+    {% if problem.contest.name is defined %}\
+    {{ problem.contest.name | slug }}\
+    {% endif %}{% endif %}/\
+    {{ problem.name | slug }}/"
+  recipe:
+    name: "{{ problem.name | slug }}"
+    bake: >-
+      g++ {{ problem.name | slug }}.cpp -DLOCAL -O2 -Wall
+      -o {{ problem.name | slug }}{% if system == 'Windows' %}.exe{% endif %}
+    serve: ./{{ problem.name | slug }}{% if system == 'Windows' %}.exe{% endif %}
+    test:
+      folder: tests
+      timeout: "{{ problem.time_limit }}"

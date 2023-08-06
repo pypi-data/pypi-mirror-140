@@ -1,0 +1,8 @@
+[console_scripts]
+cptk = cptk.main:main
+
+[cptk_sites]
+codeforces = cptk.websites:Codeforces
+csesfi = cptk.websites:Cses
+kattis = cptk.websites:Kattis
+
