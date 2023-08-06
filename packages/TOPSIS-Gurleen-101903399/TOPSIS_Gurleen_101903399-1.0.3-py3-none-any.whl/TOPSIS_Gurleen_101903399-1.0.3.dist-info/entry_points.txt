@@ -1,0 +1,3 @@
+[console_scripts]
+TOPSIS-Gurleen-101903399 = Topsis_Ranking.topsis:main
+
