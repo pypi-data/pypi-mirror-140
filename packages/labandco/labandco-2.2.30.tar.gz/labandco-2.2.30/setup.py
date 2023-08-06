@@ -1,0 +1,123 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+package_dir = \
+{'': 'src'}
+
+packages = \
+['labster',
+ 'labster.bi',
+ 'labster.blueprints',
+ 'labster.blueprints.auth',
+ 'labster.blueprints.bi',
+ 'labster.blueprints.logging',
+ 'labster.blueprints.notifications',
+ 'labster.blueprints.v3',
+ 'labster.blueprints.v3.user',
+ 'labster.bus',
+ 'labster.cli',
+ 'labster.domain',
+ 'labster.domain.models',
+ 'labster.domain.services',
+ 'labster.domain2',
+ 'labster.domain2.model',
+ 'labster.domain2.model.tests',
+ 'labster.domain2.services',
+ 'labster.domain2.services.tests',
+ 'labster.domain2.services.workflow',
+ 'labster.extensions',
+ 'labster.forms',
+ 'labster.infrastructure',
+ 'labster.infrastructure.repositories',
+ 'labster.infrastructure.repositories.inmemory',
+ 'labster.infrastructure.repositories.sqla',
+ 'labster.infrastructure.services',
+ 'labster.infrastructure.services.inmemory',
+ 'labster.infrastructure.services.sqla',
+ 'labster.ldap',
+ 'labster.lib',
+ 'labster.newforms',
+ 'labster.newforms.base',
+ 'labster.rpc',
+ 'labster.rpc.bi',
+ 'labster.rpc.commands',
+ 'labster.rpc.queries',
+ 'labster.rpc.tests',
+ 'labster.test']
+
+package_data = \
+{'': ['*'],
+ 'labster': ['templates/*', 'templates/emails/*'],
+ 'labster.blueprints.auth': ['templates/auth/*'],
+ 'labster.blueprints.bi': ['templates/bi/*'],
+ 'labster.blueprints.logging': ['templates/logs/*'],
+ 'labster.blueprints.notifications': ['templates/notifications/debug/*',
+                                      'templates/notifications/email/*']}
+
+install_requires = \
+['Flask-Assets<2',
+ 'Flask-Redis',
+ 'Flask-WeasyPrint',
+ 'abilian-core>=0.11.12',
+ 'apscheduler>=3.6.3,<4.0.0',
+ 'attrs',
+ 'cairocffi>=1.0.2,<2.0.0',
+ 'cython>=0.29.22,<0.30.0',
+ 'devtools',
+ 'diskcache>=4.1,<5.0',
+ 'dotted',
+ 'email_validator',
+ 'flask-babel<2',
+ 'flask-injector',
+ 'flask-profiler>=1.8,<2.0',
+ 'flask-smorest',
+ 'glom',
+ 'gunicorn<20',
+ 'html2text',
+ 'inflection',
+ 'invoke>=1.3,<2.0',
+ 'iso8601',
+ 'jsonrpcserver>=4.0,<5.0',
+ 'ldif>=4,<5',
+ 'loguru>=0.4.1,<0.5.0',
+ 'markupsafe>=2,<2.1',
+ 'marshmallow-annotations',
+ 'marshmallow-sqlalchemy',
+ 'marshmallow<3',
+ 'more-itertools',
+ 'newrelic>=5.22.1,<6.0.0',
+ 'nox',
+ 'pampy>=0.3.0,<0.4.0',
+ 'pandas>=1.2.3,<2.0.0',
+ 'psycopg2-binary',
+ 'python-dotenv>=0.10.1,<0.11.0',
+ 'ramda>=0.5.2,<0.6.0',
+ 'requests[security]>=2.13,<3.0',
+ 'structlog',
+ 'toolz',
+ 'werkzeug<1',
+ 'wtforms<3']
+
+entry_points = \
+{'console_scripts': ['labster = labster.cli:cli']}
+
+setup_kwargs = {
+    'name': 'labandco',
+    'version': '2.2.30',
+    'description': '',
+    'long_description': None,
+    'author': 'Abilian SAS',
+    'author_email': None,
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'package_dir': package_dir,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
