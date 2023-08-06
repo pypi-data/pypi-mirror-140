@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "jambot-client"
+version = "0.1.0"
+description = ""
+authors = ["Vladislav Bakaev <vlad@bakaev.tech>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.8.1"
+yarl = "^1.7.2"
+fast-json = "^0.3.2"
+pydantic = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+pytest-asyncio = "^0.18.1"
+mypy = "^0.931"
+pylava = "^0.3.0"
+pytest-cov = "^3.0.0"
+pre-commit = "^2.17.0"
+yesqa = "^1.3.0"
+gray = "^0.10.2"
+PyJWT = "^1"
+pyjwt-rsa = "^0.4.0"
+aiomisc = "^15.6.8"
+pytest-freezegun = "^0.4.2"
+
+[tool.mypy]
+plugins = "pydantic.mypy"
+cache_dir = "/dev/null"
+strict = true
+ignore_missing_imports = true
+allow_subclassing_any = true
+allow_untyped_calls = true
+pretty = true
+show_error_codes = true
+implicit_reexport = true
+allow_untyped_decorators = true
+warn_return_any = false
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
