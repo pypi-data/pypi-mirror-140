@@ -1,0 +1,18 @@
+msgpack>=1.0.0
+pyzmq
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[docs]
+furo
+jaraco.packaging>=8.2
+rst.linker>=1.9
+sphinx<4.4
+
+[testing]
+pytest>=6
+pytest-checkdocs>=2.4
+pytest-cov
+pytest-enabler>=1.0.1
+pytest-mypy
