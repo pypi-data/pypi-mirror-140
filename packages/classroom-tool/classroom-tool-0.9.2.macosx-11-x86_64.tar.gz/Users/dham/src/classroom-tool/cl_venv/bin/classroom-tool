@@ -1,0 +1,338 @@
+#!/Users/dham/src/classroom-tool/cl_venv/bin/python
+import os
+import github  # Install pygithub
+import git     # Install gitpython
+from argparse import ArgumentParser
+import datetime
+from configparser import ConfigParser
+import logging
+import pandas as pd
+from functools import cache
+import time
+
+
+class ClassroomToolError(Exception):
+    pass
+
+
+class ConfigError(ClassroomToolError):
+    pass
+
+
+parser = ArgumentParser(
+    description="""Helper script to mark GitHub Classroom assignments.""")
+parser.add_argument("--config-file", type=str, action="store",
+                    default="classroom-tool.cfg",
+                    help="Location of classroom-tool config file.")
+parser.add_argument("--log-level", type=str, action="store",
+                    default="INFO",
+                    help="Level of logging (defaults to INFO).")
+parser.add_argument("--fetch", action="store_true",
+                    help="Fetch all the student repositories.")
+parser.add_argument("--create-branches", action="store_true",
+                    help="Create student main and feedback "
+                    "branches in the marking repository.")
+parser.add_argument(
+    "--impose-deadline", action="store_true",
+    help="Create a branch pointing at the latest legal submission.")
+parser.add_argument("--create-report", action="store_true",
+                    help="Produce a report of submissions and lateness.")
+parser.add_argument("--push", action="store_true",
+                    help="Push branches to the marking repo")
+parser.add_argument("--force", action="store_true",
+                    help="When pushing, force the push."
+                    " Useful after anonymising the repo.")
+parser.add_argument("--pull-requests", action="store_true",
+                    help="Create marking pull requests.")
+parser.add_argument("--unwatch", action="store_true",
+                    help="Unwatch all repositories that match the basename")
+
+args = parser.parse_args()
+
+log_level = getattr(logging, args.log_level.upper(), None)
+if not isinstance(log_level, int):
+    raise ValueError('Invalid log level: %s' % args.log_level)
+logging.basicConfig(level=args.log_level, format='%(asctime)s %(message)s')
+
+configparser = ConfigParser()
+configparser.read(args.config_file)
+
+if not configparser.sections():
+    raise ConfigError(f"Missing or empty config file: {args.config_file}")
+
+
+def config(section, key):
+    try:
+        sec = configparser[section]
+    except KeyError:
+        raise ConfigError(f"Config file is missing a {section} section.")
+
+    try:
+        return sec[key]
+    except KeyError:
+        raise ConfigError(f"Config file is missing a {section}->{key} entry.")
+
+
+if "GITHUB_PAT" not in os.environ:
+    ConfigError("The environment variable GITHUB_PAT"
+                " must be set to a suitable GitHub personal access token.")
+
+
+@cache
+def gh_org():
+    gh = github.Github(os.environ["GITHUB_PAT"])
+    orgname = config("github", "organization")
+    logging.info(f"Connecting to GitHub Organization {orgname}")
+    return gh.get_organization(orgname)
+
+
+@cache
+def gh_user():
+    gh = github.Github(os.environ["GITHUB_PAT"])
+    return gh.get_user()
+
+
+repo = git.Repo(".")
+
+
+def commit_time(commit):
+    return commit.committed_datetime.astimezone().time().isoformat("seconds")
+
+
+def get_remote(name, url):
+    logging.info("Looking for remote %s" % name)
+    try:
+        remote = repo.remote(name)
+        logging.info("Found")
+    except ValueError:
+        logging.info("Not found. Creating")
+        remote = repo.create_remote(uname, url)
+    return remote
+
+
+class IdentityMap:
+    def __getitem__(self, key):
+        return key
+
+
+def roster_map():
+    """Return a map from GitHub to institution names.
+
+    Return a dictionary mapping GitHub names back to institution names using
+    the GitHub class roster specified in the students->roster configuration
+    variable.
+    """
+    try:
+        rosterfile = pd.read_csv(config("students", "roster"))
+    except ConfigError:
+        return IdentityMap()
+
+    return {gh: i for gh, i in zip(rosterfile["github_username"],
+                                   rosterfile["identifier"])
+            if gh}
+
+
+def extra_time(roster):
+    """Return a `timedelta` object for the extra time of each student."""
+    if "extra_time" in roster:
+        times = []
+        for t in roster["extra_time"]:
+            try:
+                times.append(datetime.timedelta(minutes=t))
+            except ValueError:
+                times.append(datetime.timedelta(minutes=0))
+        return times
+    else:
+        logging.info("No extra time column found, assuming no extra time.")
+        return [datetime.timedelta(minutes=0) for r in roster.index]
+
+
+if args.fetch:
+    count = 0
+
+    reponame = config("github", "basename")
+    name_offset = len(reponame) + 1
+
+    for r in gh_org().get_repos():
+        if (r.name.startswith(reponame)
+            and not r.name.startswith('exam-practice')):
+
+            count += 1
+            uname = "std_" + r.name[name_offset:]
+            remote = get_remote(uname, r.ssh_url)
+            logging.info("Fetching")
+            remote.fetch()
+    logging.info(f"{count} repos found.")
+
+if args.unwatch:
+    reponame = config("github", "basename")
+    user = gh_user()
+    for r in gh_org().get_repos():
+        if r.name.startswith(f"{reponame}-"):
+            logging.info(f"Removing {user.login} from subscriber list of {r.name}")
+            user.remove_from_subscriptions(r)
+
+if args.create_branches:
+    ident = roster_map()
+
+    remote_prefix = "refs/remotes/std_"
+
+    for ref in repo.refs:
+        if ref.path.startswith(remote_prefix):
+            gituser, branch = \
+                ref.path[len(remote_prefix):].split("/")
+            try:
+                identifier = ident[gituser]
+            except KeyError:
+                logging.warning(
+                    f"No identifier found for {gituser} in roster.")
+                continue
+            if branch in ("master", "main", "feedback"):
+                logging.info(f"Creating branch {identifier}-{branch}")
+                try:
+                    repo.create_head(f"{identifier}-{branch}",
+                                     ref.commit.hexsha)
+                except:
+                    logging.info(f"Branch exists. Updating")
+                    repo.heads[f"{identifier}-{branch}"].set_commit(ref.commit)
+
+if args.impose_deadline:
+    cutoff = datetime.datetime.fromisoformat(config("assignment", "deadline"))
+    logging.info(f"Imposing deadline {cutoff}")
+    for r in repo.heads:
+        try:
+            branchname = r.path.split("/")[2]
+        except IndexError:
+            continue
+        if "-main" not in branchname and "-master" not in branchname:
+            continue
+        identifier = "-".join(branchname.split("-")[:-1])
+        c = r.commit
+        try:
+            while c.committed_datetime > cutoff:
+                c = c.parents[0]
+        except IndexError:
+            logging.warning(
+                f"Error: {identifier} first commit at {commit_time(c)}"
+            )
+        if r.commit == c:
+            logging.info(f" mark commit {commit_time(c)}")
+        else:
+            logging.info(f"{identifier}: last commit {commit_time(r.commit)}"
+                         f" mark commit {commit_time(c)}")
+
+        try:
+            repo.create_head(identifier+"-mark", commit=c)
+        except OSError:
+            logging.info(f"Not moving {identifier}-mark.")
+
+
+if args.push:
+    logging.info("Finding marking repository"
+                 f" {config('github', 'organization')}"
+                 f"/{config('github', 'marking-repo')}")
+    try:
+        remote = repo.remote(config("github", "marking-repo"))
+    except ValueError:
+        logging.info("Doesn't exist, creating.")
+        try:
+            marking_repo = gh_org().get_repo(config("github", "marking-repo"))
+        except github.GithubException:
+            marking_repo = gh_org().create_repo(
+                config("github", "marking-repo"),
+                private=True
+            )
+        remote = repo.create_remote(config("github", "marking-repo"),
+                                    marking_repo.ssh_url)
+    pushargs = ["--all", config("github", "marking-repo")]
+    if args.force:
+        pushargs.append("--force")
+    logging.info("Pushing")
+    repo.git.push(*pushargs)
+
+
+if args.pull_requests:
+    logging.info("Finding marking repository"
+                 f" {config('github', 'organization')}"
+                 f"/{config('github', 'marking-repo')}")
+    try:
+        remote = repo.remote(config("github", "marking-repo"))
+    except ValueError:
+        raise ClassroomToolError(
+            "Marking repository not found. Did you forget to push?")
+
+    marking_repo = gh_org().get_repo(config("github", "marking-repo"))
+    existing_pulls = {pull.head.ref for pull in marking_repo.get_pulls()}
+
+    try:
+        github_delay = int(config("github", "delay"))
+    except ConfigError:
+        github_delay = 10
+
+    for branch in repo.branches:
+        if not branch.name.endswith("-mark"):
+            continue
+
+        uname = branch.name[:-5]
+        if f"{uname}-mark" in existing_pulls:
+            logging.info(f"skipping {uname}")
+            continue
+
+        logging.info(uname)
+        marking_repo.create_pull(title=uname,
+                                 body="Marking branch.",
+                                 base=f"{uname}-feedback",
+                                 head=f"{uname}-mark",
+                                 draft=False)
+        time.sleep(github_delay)
+
+
+if args.create_report:
+    roster = pd.read_csv(config("students", "roster"))
+    cutoff = datetime.datetime.fromisoformat(config("assignment", "deadline"))
+
+    out = {s: roster[s] for s in roster}
+    out["commit_time"] = []
+    out["late"] = []
+    out["cloned"] = []
+    out["submitted"] = []
+
+    found_any = False
+    for student, extra_seconds in zip(map(str, roster["identifier"]),
+                                      extra_time(roster)):
+        if student + "-main" in repo.branches:
+            branch = repo.branches[student + "-main"]
+            found_any = True
+        elif student + "-master" in repo.branches:
+            branch = repo.branches[student + "-master"]
+            found_any = True
+        else:
+            out["commit_time"].append("")
+            out["late"].append("")
+            out["cloned"].append(False)
+            out["submitted"].append(False)
+            continue
+
+        out["cloned"].append(True)
+
+        if branch.commit.author.name == 'github-classroom[bot]':
+            out["commit_time"].append("")
+            out["late"].append("")
+            out["submitted"].append(False)
+            continue
+
+        out["submitted"].append(True)
+
+        commit_time = branch.commit.authored_datetime
+
+        out["commit_time"].append(
+            datetime.datetime.isoformat(commit_time)
+        )
+
+        out["late"].append(commit_time > (cutoff + extra_seconds))
+
+    if found_any:
+        pd.DataFrame(out).to_csv(config("github", "basename") + "-report.csv")
+    else:
+        raise ClassroomToolError(
+            "No repositories to report. Did you forget to --create-branches.")
