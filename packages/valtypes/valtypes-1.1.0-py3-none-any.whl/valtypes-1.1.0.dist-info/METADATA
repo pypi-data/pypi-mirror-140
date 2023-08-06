@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: valtypes
+Version: 1.1.0
+Summary: A library for data parsing using Python type hints.
+Home-page: https://github.com/LeeeeT/valtypes
+License: MIT
+Author: LeeeeT
+Author-email: leeeet@inbox.ru
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: regex (>=2021.11.10,<2022.0.0)
+Project-URL: Repository, https://github.com/LeeeeT/valtypes
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LeeeeT/valtypes/main/docs/logo.png" alt="valtypes">
+</p>
+
+<p align="center">
+    <em>Nothing (almost) should ever be annotated as <b>any str</b> or <b>any int</b>.</em>
+</p>
+
+---
+
+What is valtypes?
+-----------------
+
+**Valtypes** is a library for data parsing using Python type hints.
+
