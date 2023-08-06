@@ -1,0 +1,11 @@
+LICENSE
+README.md
+nptel_dl.py
+setup.py
+nptel_dl.egg-info/PKG-INFO
+nptel_dl.egg-info/SOURCES.txt
+nptel_dl.egg-info/dependency_links.txt
+nptel_dl.egg-info/entry_points.txt
+nptel_dl.egg-info/requires.txt
+nptel_dl.egg-info/top_level.txt
+nptel_dl.egg-info/zip-safe
