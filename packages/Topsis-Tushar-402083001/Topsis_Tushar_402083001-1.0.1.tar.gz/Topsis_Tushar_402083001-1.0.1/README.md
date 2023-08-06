@@ -1,0 +1,26 @@
+# TOPSIS-Python
+
+Submitted By: **Tushar Verma**
+
+***
+
+## What is TOPSIS
+
+**T**echnique for **O**rder **P**reference by **S**imilarity to **I**deal
+**S**olution (TOPSIS) originated in the 1980s as a multi-criteria decision
+making method. TOPSIS chooses the alternative of shortest Euclidean distance
+from the ideal solution, and greatest distance from the negative-ideal
+solution. More details at [wikipedia](https://en.wikipedia.org/wiki/TOPSIS).
+
+<br>
+
+## How to use this package:
+
+The Topsis-Tushar-402083001 has a function topsis() that takes 4 parameters, i.e., inputFile, weights, impacts, and outputFile, and returns the resulting dataframe having **Topsis Score** and **Rank** as additional columns. 
+
+Where,
+
+* **inputFile:** Can be either csv file or pandas dataframe. Input file must contain three or more columns, where, First column is the object/variable name like M1, M2, M3, M4, etc. Also, from 2nd to last columns must contain numeric values only.
+* **weights:** In the form of string having numerical values separated by commas.
+* **impacts:** In the form of string having + or - values separated by commas. Here, + refers to positive impact, whereas, - refers to negative impact.
+* **outputFile** (optional): csv file in which output of the function will be stored.
