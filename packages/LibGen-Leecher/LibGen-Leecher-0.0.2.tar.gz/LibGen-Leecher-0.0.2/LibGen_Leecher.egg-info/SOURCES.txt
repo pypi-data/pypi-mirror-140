@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+LibGenLeecher/__init__.py
+LibGenLeecher/main.py
+LibGen_Leecher.egg-info/PKG-INFO
+LibGen_Leecher.egg-info/SOURCES.txt
+LibGen_Leecher.egg-info/dependency_links.txt
+LibGen_Leecher.egg-info/entry_points.txt
+LibGen_Leecher.egg-info/requires.txt
+LibGen_Leecher.egg-info/top_level.txt
