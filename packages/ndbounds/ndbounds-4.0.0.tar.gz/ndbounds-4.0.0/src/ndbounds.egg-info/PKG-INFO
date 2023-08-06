@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ndbounds
+Version: 4.0.0
+Summary: Toolbox for handling n-dimensional bounds
+Home-page: UNKNOWN
+Author: Matthias Nadig
+Author-email: matthias.nadig@yahoo.com
+License: MIT
+Description: # ndbounds
+        
+        Toolbox for handling n-dimensional bounds.
+        
+        ## n-Dimensional Bounds
+        
+        The basic idea of this format is to combine methods for working with boundaries in
+        * 1D (e.g. onset & end of waveforms),
+        * 2D (e.g. bounding boxes in an image) or
+        * any higher nD case.
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
