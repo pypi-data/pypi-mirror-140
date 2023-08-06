@@ -1,0 +1,9 @@
+prismacloud_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prismacloud_cli/main.py,sha256=XGIHAaN22SUNqCoI3Aw_H9CIfWzWqCPVhc0JejZPGlY,11655
+prismacloud_cli/version.py,sha256=bL18tvzbgaIZrz_-Ot4VqJJtnTEPUKW7N9eII0SOwQs,21
+prismacloud_cli-0.1.2.dev0.data/scripts/pc,sha256=mCZNpkIftZuXOC2xX3DAW6hSnZNDCdDCY-yu6N5ltjQ,164
+prismacloud_cli-0.1.2.dev0.dist-info/LICENSE,sha256=EOzM4fOSgwdqsdTomroUW1_35DHOG_f6rn_JjRprOtQ,1083
+prismacloud_cli-0.1.2.dev0.dist-info/METADATA,sha256=fIKDQL5BuybY1KamrAd936V-fRKf7GqqYZyqHzuInUw,3071
+prismacloud_cli-0.1.2.dev0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prismacloud_cli-0.1.2.dev0.dist-info/top_level.txt,sha256=ADZzJBxtsNDkXAjejgoVU9OjTdz64ix342oUijtRC2U,16
+prismacloud_cli-0.1.2.dev0.dist-info/RECORD,,
