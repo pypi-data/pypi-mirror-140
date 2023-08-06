@@ -1,0 +1,9 @@
+requests
+uritools
+jsonschema
+
+[dev]
+Sphinx
+
+[test]
+requests-mock
