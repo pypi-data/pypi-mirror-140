@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Topsis_anshul_101903332.egg-info/PKG-INFO
+Topsis_anshul_101903332.egg-info/SOURCES.txt
+Topsis_anshul_101903332.egg-info/dependency_links.txt
+Topsis_anshul_101903332.egg-info/top_level.txt
