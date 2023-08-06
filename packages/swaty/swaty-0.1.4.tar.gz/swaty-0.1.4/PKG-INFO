@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: swaty
+Version: 0.1.4
+Summary: Python for SWAT.
+Home-page: https://github.com/changliao1025/swaty
+Author: Chang Liao
+Author-email: changliao.climate@gmail.com
+License: custom
+Keywords: Earth Science
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.md
+License-File: AUTHORS.rst
+
+
+# swaty
+SWATy is a Python library to support SWAT simulation.
+
+# Content
+
+1.  Calibration using the pypest Python package.
+
+
+# Acknowledgement
+
+
+# Install
+1. pip install swaty
+
+
+# Contact
+Please contact Chang Liao (changliao.climate@gmail.com) if you have any questions.
+
+
+
+
