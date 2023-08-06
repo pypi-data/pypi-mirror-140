@@ -1,0 +1,13 @@
+rest_client_framework/__init__.py,sha256=kFcYsQ0bylug1uyOC7UK8SL8XQpjZwA1NiRUKMcAOJA,77
+rest_client_framework/client.py,sha256=YugYV_qDKWWIfHO8csE_4v3ECFeI7bhR7z1tiLWETXc,8794
+rest_client_framework/datastructures.py,sha256=ammTllLG2zgb10cbjp8N6Y4ZS4AOv3lqTY5p45Bh44E,4959
+rest_client_framework/exceptions.py,sha256=Dq_Bdw70plso_9aXa2ruXEF_dRqZrQI6JJ8mbLE0M-k,2251
+rest_client_framework/request.py,sha256=M_2-MZ0nh811qdYrVLGINg8C7uJjfjY1eADsKCu7tRI,8487
+rest_client_framework/response.py,sha256=9Ef5NpKYeqk6Wpl_ucK2sLnDM1s9AyNfp0IUqNNn1wE,7726
+rest_client_framework/rest.py,sha256=0DDr28E7pVz1uLcpIGHwaBJ1qm5HGE9fd5kE79PAsNo,35287
+rest_client_framework/test_utils.py,sha256=qsXv9zVq7rQC5oDNfUALlbyE48EJsZTLf_WzjNzTrjU,4125
+rest_client_framework-0.4.dist-info/COPYING,sha256=Ah_JryWnk8CJuBG2AUxN3TNsBs1PKqgEeZXTLXQbEeU,34501
+rest_client_framework-0.4.dist-info/METADATA,sha256=j5gn_KlTgrg6arga8oPKjPLM-z9NxohSQ8xA4aONqwA,45976
+rest_client_framework-0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rest_client_framework-0.4.dist-info/top_level.txt,sha256=is4paWVhLpRJvNn7FZjMADORTVWFVh0FWBTnpcfCiOc,22
+rest_client_framework-0.4.dist-info/RECORD,,
