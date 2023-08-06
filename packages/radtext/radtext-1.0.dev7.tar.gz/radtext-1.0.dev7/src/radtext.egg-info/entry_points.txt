@@ -1,0 +1,13 @@
+[console_scripts]
+radtext-bioc2cdm = radtext.cmd.bioc2cdm:main
+radtext-cdm2bioc = radtext.cmd.cdm2bioc:main
+radtext-csv2bioc = radtext.cmd.csv2bioc:main
+radtext-deid = radtext.cmd.deid:main
+radtext-download = radtext.cmd.download:main
+radtext-neg = radtext.cmd.neg:main
+radtext-ner = radtext.cmd.ner:main
+radtext-parse = radtext.cmd.parse:main
+radtext-preprocess = radtext.cmd.preprocess:main
+radtext-secsplit = radtext.cmd.split_section:main
+radtext-ssplit = radtext.cmd.ssplit:main
+radtext-tree2dep = radtext.cmd.tree2dep:main
