@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+SystemdUnitParser/__init__.py
+systemdunitparser.egg-info/PKG-INFO
+systemdunitparser.egg-info/SOURCES.txt
+systemdunitparser.egg-info/dependency_links.txt
+systemdunitparser.egg-info/top_level.txt
