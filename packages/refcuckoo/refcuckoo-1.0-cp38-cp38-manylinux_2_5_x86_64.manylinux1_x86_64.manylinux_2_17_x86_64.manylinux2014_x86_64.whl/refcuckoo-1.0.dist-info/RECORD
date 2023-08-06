@@ -1,0 +1,7 @@
+refcuckoo.cpython-38-x86_64-linux-gnu.so,sha256=wWded0R7N_yjCgf2a0aNIhVRByWqsDrx8zKa6r8rlMU,147768
+refcuckoo-stubs/__init__.pyi,sha256=U_yWQoUodgkAisWPCsONoH5XHz_ZnUSydl9NgGSs9CU,384
+refcuckoo-1.0.dist-info/LICENSE,sha256=59nLCXpusMyNWgmpXLp7LTP01dzTg6S-FXtygYL7Hw8,643
+refcuckoo-1.0.dist-info/METADATA,sha256=HOF0ht232OjDiKoLDs9pn6eD6ViegvMO0gH2biItDxY,2351
+refcuckoo-1.0.dist-info/top_level.txt,sha256=_wpfiE5SvERX9KCWDVofz37HAZDExIzUW0fUAmJBfUQ,26
+refcuckoo-1.0.dist-info/RECORD,,
+refcuckoo-1.0.dist-info/WHEEL,sha256=xy2KPaEBWvragPrB-hwMM7LT5A1jjwv9d8pselIG3TI,217
