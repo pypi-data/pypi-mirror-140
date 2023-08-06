@@ -1,0 +1,5 @@
+numpy>=1.17
+pooch>=1.0
+setuptools>=40.4
+xarray>=0.15
+cftime
