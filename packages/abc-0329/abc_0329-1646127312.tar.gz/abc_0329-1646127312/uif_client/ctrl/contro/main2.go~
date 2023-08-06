@@ -1,0 +1,199 @@
+// package main
+
+// import (
+// 	sdf "encoding/json"
+// 	"os"
+// 	"os/exec"
+// 	"runtime"
+// 	"time"
+// )
+
+// import (
+// 	"fmt"
+// 	"github.com/getlantern/sysproxy"
+// 	"net/http"
+// 	"sync"
+// )
+
+// var g_mutex sync.Mutex
+
+// var g_v2ray_path string
+// var g_v2ray_is_running bool
+// var g_v2ray_pwd string
+// var g_v2ray_cmd *exec.Cmd
+// var g_v2ray_err error
+// var g_UIF_path string
+// var g_UIF_pwd string
+// var g_UIF_version int64
+
+// type response_struct struct {
+// 	Is_response_ok bool
+// 	Response_time  string
+// 	Response_msg   string
+// }
+
+// type check struct {
+// 	Respon          response_struct
+// 	Is_v2ray_ok     bool
+// 	Is_v2ray_runing bool
+// 	V2ray_path      string
+// 	V2ray_pwd       string
+// 	UIF_version     int64
+// }
+
+// type run_v2ray struct {
+// 	Respon     response_struct
+// 	Is_run     bool
+// 	Failed_msg string
+// }
+
+// func Check() string { // check alive
+// 	var resonse check
+// 	resonse.Respon.Is_response_ok = true
+// 	resonse.Respon.Response_msg = ""
+// 	resonse.Respon.Response_time = ""
+
+// 	resonse.Is_v2ray_runing = g_v2ray_is_running
+// 	resonse.UIF_version = g_UIF_version
+
+// 	b, _ := sdf.Marshal(resonse)
+// 	return string(b)
+// }
+
+// func V2ray() string {
+// 	CloseV2ray()
+// 	g_v2ray_is_running = true
+// 	g_v2ray_err = nil
+
+// 	g_v2ray_cmd = exec.Command(g_v2ray_path)
+// 	g_v2ray_cmd.Stdout = os.Stdout
+// 	g_v2ray_cmd.Stderr = os.Stderr
+// 	g_v2ray_err = g_v2ray_cmd.Run()
+// 	g_v2ray_is_running = false
+// 	if g_v2ray_err != nil {
+// 		println("v2ray exited | ", g_v2ray_err.Error(), g_v2ray_cmd.ProcessState.ExitCode)
+// 		return g_v2ray_err.Error()
+// 	}
+// 	return "ok"
+// }
+
+// func CloseV2ray() string {
+// 	var resonse response_struct
+// 	if g_v2ray_is_running {
+// 		g_v2ray_cmd.Process.Kill()
+// 		time.Sleep(2 * time.Second)
+// 	}
+// 	resonse.Is_response_ok = true
+// 	resonse.Response_msg = ""
+// 	b, _ := sdf.Marshal(resonse)
+// 	return string(b)
+// }
+
+// func ChangeConfig() string {
+
+// 	CloseV2ray()
+// 	return ""
+// }
+
+// func ReadConfig() string {
+
+// 	CloseV2ray()
+// 	return ""
+// }
+
+// func RunV2ray() string {
+
+// 	var resonse run_v2ray
+// 	resonse.Respon.Is_response_ok = true
+// 	resonse.Respon.Response_msg = ""
+// 	resonse.Respon.Response_time = ""
+
+// 	go V2ray()
+// 	println("try to run v2ray")
+// 	time.Sleep(3 * time.Second)
+// 	resonse.Is_run = g_v2ray_is_running
+// 	if g_v2ray_is_running {
+// 		println("run v2ray", g_v2ray_cmd.Process.Pid)
+// 		resonse.Failed_msg = "ok"
+// 	} else {
+// 		resonse.Failed_msg = g_v2ray_err.Error()
+// 	}
+// 	b, _ := sdf.Marshal(resonse)
+// 	return string(b)
+// }
+
+// func HttpServer(w http.ResponseWriter, r *http.Request) {
+// 	g_mutex.Lock()
+// 	respon := ""
+// 	if r.URL.Path == "/check" {
+// 		respon = Check()
+// 	} else if r.URL.Path == "/run_v2ray" {
+// 		respon = RunV2ray()
+// 	} else if r.URL.Path == "/change_config" {
+// 		respon = ChangeConfig()
+// 	} else if r.URL.Path == "/close_v2ray" {
+// 		respon = CloseV2ray()
+// 	} else if r.URL.Path == "/read_config" {
+// 		respon = ReadConfig()
+// 	}
+// 	fmt.Fprint(w, respon)
+// 	g_mutex.Unlock()
+// }
+
+// func Open(url string) {
+// 	println(runtime.GOOS)
+// 	if runtime.GOOS == "windows" {
+// 		exec.Command(`cmd`, `/c`, `start`, url).Start() // 有GUI调用
+// 	} else if runtime.GOOS == "darwin" {
+// 		exec.Command(`open`, url).Start()
+// 	} else if runtime.GOOS == "linux" {
+// 		exec.Command(`xdg-open`, url).Start()
+// 	} else {
+// 		println("Unkonw OS. Failed to open", url)
+// 		return
+// 	}
+// 	println("Opened ", url)
+// }
+
+// func Init() {
+// 	g_v2ray_err = nil
+// 	g_v2ray_cmd = nil
+// 	g_v2ray_is_running = false
+// 	g_v2ray_path = "D:/v2ray/v2rayN-Core/v2ray.exe"
+// 	g_UIF_version = 1
+// }
+
+// func SysProxy() {
+// 	var err error
+// 	// helperFullPath := "sysproxy-cmd"
+// 	err = sysproxy.EnsureHelperToolPresent("", "Input your password and save the world!", "")
+// 	if err != nil {
+// 		fmt.Printf("Error EnsureHelperToolPresent: %s\n", err)
+// 		return
+// 	}
+// 	gsdf, err = sysproxy.On("127.0.0.1:10809")
+// 	if err != nil {
+// 		fmt.Printf("Error set proxy: %s\n", err)
+// 		return
+// 	}
+// 	fmt.Println("proxy set, hit enter to continue (or kill the parent process)...")
+// }
+
+// var gsdf func() error
+
+// func main() {
+// 	SysProxy()
+// 	Init()
+// 	println(RunV2ray())
+// 	if !g_v2ray_is_running {
+// 		return
+// 	}
+
+// 	http.HandleFunc("/", HttpServer) //初始化
+// 	Open("http://localhost:9090/")
+// 	err := http.ListenAndServe(":9090", nil) //设置监听的端口
+// 	if err != nil {
+// 		fmt.Println("ListenAndServe: ", err)
+// 	}
+// 	gsdf()
+// }

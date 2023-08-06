@@ -1,0 +1,24 @@
+{
+   auto_https disable_redirects
+   auto_https off
+}
+
+:80 {
+   reverse_proxy 127.0.0.1:9090
+}
+
+:80/uif {
+   reverse_proxy 127.0.0.1:10000
+}
+
+:80/uif_ipv6 {
+   reverse_proxy 127.0.0.1:10002
+}
+
+:80/uif_free {
+   reverse_proxy 127.0.0.1:10001
+}
+
+:80/test {
+   respond "Hello world!"
+}

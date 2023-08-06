@@ -1,0 +1,159 @@
+{
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [{
+      "tag": "socks",
+      "port": 10808,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
+      "settings": {
+        "udp": false,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [{
+    "tag": "proxy",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [{
+        "address": "192.3.128.74",
+        "port": 8080,
+        "users": [{
+          "id": "ad806487-2d26-4636-98b6-ab65cc8521f7",
+          "alterId": 64,
+          "security": "auto"
+        }]
+      }]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "tcpSettings": {
+        "connectionReuse": true,
+        "header": {
+          "type": "http",
+          "request": {
+            "version": "1.1",
+            "method": "GET",
+            "path": ["/"],
+            "headers": {
+              "Host": ["push.m.youku.com"],
+              "X-Ucbrowser-Ua": [
+                "dv(iPh9,1);pr(UCBrowser/13.4.7.1520);ov(14_4_1);ss(375x667);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);"
+              ],
+              "X-Amzn-Trace-Id": [
+                "Root=1-61103291-27910a974b4dcca36853055d"
+              ],
+              "X-Amzn-Trace-Id": [
+                "172.16.3.189|8804|1|1626768690631380347|com.ucweb.iphone.lowversion|f11978c7d80de5b429491abd433bef0a"
+              ],
+              "User-Agent": [
+                "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_1 like Mac OS X; zh-CN) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/18D61 UCBrowser/13.4.7.1520 Mobile  AliApp(TUnionSDK/0.1.20.4)"
+              ],
+              "Accept-Encoding": ["gzip, deflate"],
+              "Connection": ["keep-alive"],
+              "Pragma": "no-cache"
+            }
+          },
+          "response": {
+            "version": "1.1",
+            "status": "200",
+            "reason": "OK",
+            "headers": {
+              "Content-Type": ["application/octet-stream", "application/x-msdownload", "text/html", "application/x-shockwave-flash"],
+              "Transfer-Encoding": ["chunked"],
+              "Connection": ["keep-alive"],
+              "Pragma": "no-cache"
+            }
+          }
+        }
+      }
+    }
+  }],
+  "mux": {
+    "enabled": false,
+    "concurrency": -1
+  }
+}, {
+  "tag": "direct",
+  "protocol": "freedom",
+  "settings": {}
+}, {
+  "tag": "block",
+  "protocol": "blackhole",
+  "settings": {
+    "response": {
+      "type": "http"
+    }
+  }
+}],
+"routing": {
+  "domainStrategy": "IPIfNonMatch",
+  "rules": [{
+      "type": "field",
+      "inboundTag": [
+        "api"
+      ],
+      "outboundTag": "api"
+    },
+    {
+      "type": "field",
+      "outboundTag": "proxy",
+      "inboundTag": [
+        "http",
+        "socks"
+      ]
+    },
+    {
+      "type": "field",
+      "outboundTag": "direct",
+      "domain": [
+        "geosite:cn"
+      ]
+    },
+    {
+      "type": "field",
+      "outboundTag": "direct",
+      "ip": [
+        "geoip:private",
+        "geoip:cn"
+      ]
+    },
+    {
+      "type": "field",
+      "outboundTag": "block",
+      "domain": [
+        "geosite:category-ads-all"
+      ]
+    }
+  ]
+}
+}

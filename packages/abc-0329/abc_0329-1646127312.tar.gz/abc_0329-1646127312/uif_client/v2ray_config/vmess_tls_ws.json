@@ -1,0 +1,71 @@
+// 使用这个配置需要 caddy 或者 ngnix 的配合，他们接收来自用户的请求，然后解密tls，
+// 最后转发到v2ray（即此处）
+
+{
+  "log": {
+    "loglevel": "none"
+  },
+  "inbounds": [{
+    "port": 10000,
+    "tag": "uif_inbound",
+    "listen": "127.0.0.1",
+    "protocol": "vmess",
+    "settings": {
+      "clients": [{
+        "id": "a831381d-6324-4d53-ad4f-9cda48b30811",
+        "alterId": 0
+      }] // 由 python 自由添加
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "path": "/uif"
+      }
+    }
+  }, {
+    "listen": "127.0.0.1",
+    "port": 10085,
+    "protocol": "dokodemo-door",
+    "settings": {
+      "address": "127.0.0.1"
+    },
+    "tag": "api"
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  }],
+  "api": {
+    "tag": "api",
+    "services": [
+      "HandlerService",
+      "StatsService"
+    ]
+  },
+  "policy": {
+    "levels": {
+      "0": {
+        "statsUserUplink": true, //开启用户流量上传统计
+        "statsUserDownlink": true //开启用户流量下载统计
+      }
+    },
+    "system": {
+      "statsInboundUplink": true, //开启入站方向的流量上传
+      "statsInboundDownlink": true, //开启入站方向的流量下载
+      "statsOutboundUplink": true, //开启出站方向的流量上传
+      "statsOutboundDownlink": true //开启出站方向的流量下载
+    }
+  },
+  "routing": {
+    "settings": {
+      "rules": [{
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "type": "field"
+      }]
+    },
+    "strategy": "rules"
+  }
+}
