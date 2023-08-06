@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: kgtk
+Version: 1.2.1b0
+Summary: UNKNOWN
+Home-page: https://github.com/usc-isi-i2/kgtk
+Author: ISI CKGs
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: sh (>=1.13)
+Requires-Dist: attrs
+Requires-Dist: lz4
+Requires-Dist: iso-639
+Requires-Dist: pycountry
+Requires-Dist: shortuuid
+Requires-Dist: rdflib (>=6.0.2)
+Requires-Dist: rdflib-jsonld (>=0.6.2)
+Requires-Dist: pyshacl (>=0.17.1)
+Requires-Dist: rfc3986
+Requires-Dist: thinc (==7.4.0)
+Requires-Dist: plac (==1.1.3)
+Requires-Dist: parsley (>=1.3)
+Requires-Dist: odictliteral
+Requires-Dist: torchbiggraph
+Requires-Dist: loguru
+Requires-Dist: mypy
+Requires-Dist: rltk
+Requires-Dist: seaborn
+Requires-Dist: sentence-transformers
+Requires-Dist: sklearn
+Requires-Dist: SPARQLWrapper
+Requires-Dist: tqdm
+Requires-Dist: simplejson
+Requires-Dist: pyrallel.lib (==0.0.9)
+Requires-Dist: redis
+Requires-Dist: dill (>=0.3.2)
+Requires-Dist: usc-isi-i2-mgzip (>=0.2.1.3)
+
+UNKNOWN
+
