@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: topsis_101917050
+Version: 0.31
+Summary: Name :Harbir Singh RollNo :101917050 Group:3CSE2 Description :A simple python pakage for calculating topsis score
+Home-page: https://github.com/Harbir66/topsis_101917050
+Author: Harbir Singh
+Author-email: harbir066@gmail.com
+License: MIT
+Download-URL: https://github.com/Harbir66/topsis_101917050/archive/refs/tags/v_03.tar.gz
+Description: UNKNOWN
+Keywords: TOPSIS,ML
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
