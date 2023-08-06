@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+graphform.py
+requirements.txt
+setup.cfg
+setup.py
+GraphForm.egg-info/PKG-INFO
+GraphForm.egg-info/SOURCES.txt
+GraphForm.egg-info/dependency_links.txt
+GraphForm.egg-info/requires.txt
+GraphForm.egg-info/top_level.txt

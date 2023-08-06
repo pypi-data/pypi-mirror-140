@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: GraphForm
+Version: 0.1.1
+Summary: Recover the 3D structure from a graph.
+Home-page: https://github.com/vitroid/GraphForm/
+Author: Masakazu Matsumoto
+Author-email: vitroid@gmail.com
+License: MIT
+Keywords: genice2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# GraphForm
+
+This is a simple tool to make a graph (connectivity information) three-dimensional. It can be deformed by mouse operation.
+
+## ToDos
+
+* Show a little gap between the tetrahedra.
+* Native Pygame?
+* Analyze and display the topology.
+
+
+
