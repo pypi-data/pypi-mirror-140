@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qiskit-ptesting
+Version: 0.1.0.0.4
+Summary: UNKNOWN
+Home-page: https://gitlab.com/twistercool/Qiskit-PTesting
+Author: Pierre Brassart
+Author-email: pierrebrassart80@hotmail.fr
+License: GPLv3
+Keywords: qiskit property testing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
