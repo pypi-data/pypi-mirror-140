@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: es-odm
+Version: 0.0.1
+Summary: ODM (Object Document Mapper) for Elasticsearch based on Elasticsearch_dsl and Pydantic
+Home-page: https://github.com/lstk520/es_odm
+Author: leon
+Author-email: lstk520@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+
+es_odm
+
+
+
