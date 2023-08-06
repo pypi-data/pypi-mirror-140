@@ -1,0 +1,15 @@
+dkutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dkutils/admin.py,sha256=N-HcCj85D6gH-ak6hfuCIl197fPyIGhugEeypYQHmAc,170
+dkutils/apps.py,sha256=yNC7MkGsGdNF-KXVV7vHxfWZ5e8vsNRdf1SnGM3o6IQ,146
+dkutils/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+dkutils/serializers.py,sha256=aiZ2mbCBdsUjWIAdwgUXYXUHuzjydVgvRSV8K9KLirw,239
+dkutils/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+dkutils/urls.py,sha256=w7D38Wg551AD-Ys-miIZMR1_XH-HSwBXZSMUGuZa01o,167
+dkutils/utils.py,sha256=a7VFksbch4zS4yQnW51pK6UGduc-NQVcFyIFUWBNqZs,76
+dkutils/views.py,sha256=EOU-lcjSbBs5I3qqffz7jtVFRdmxWcYvpaeXxvFXKEI,964
+dkutils/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_dkutils-1.1.0.dist-info/LICENSE,sha256=qLUXDvZg-adblu7nnJrBy8uWy4_18XyAhKtnba6wfng,1462
+django_dkutils-1.1.0.dist-info/METADATA,sha256=lbO3NlBQxwz1NqC6jxreUW-t5X5SapRkFbSwA3dFDT0,1077
+django_dkutils-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_dkutils-1.1.0.dist-info/top_level.txt,sha256=VP9Owkm16eKw6FUUk2PsSqb704oufqrIWLvpeXCfulY,8
+django_dkutils-1.1.0.dist-info/RECORD,,
