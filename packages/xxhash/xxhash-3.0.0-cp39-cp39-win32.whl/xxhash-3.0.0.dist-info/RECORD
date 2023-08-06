@@ -1,0 +1,8 @@
+xxhash/__init__.py,sha256=mPEdihxDMU0rjLWum3FrU9Ua2jQ-rzfewYgIg-J-Jlc,1147
+xxhash/_xxhash.cp39-win32.pyd,sha256=qfKaXO6izYPWJln9AFy29eto_lMsQSIXt-PqTYYHwJ0,57856
+xxhash/version.py,sha256=nhq033E1Mp0WYKG1EjEeVlRjSGXtad6gu0jvPDp8nEg,46
+xxhash-3.0.0.dist-info/LICENSE,sha256=-OnvAMeL5NLaUmssN-QJnJIMf-C52UO_Da6y78MKOls,1313
+xxhash-3.0.0.dist-info/METADATA,sha256=IE5FvBq3_dmZ3XF0wQichTel41QOykMqVKH3bv5yoGQ,11828
+xxhash-3.0.0.dist-info/WHEEL,sha256=X8cdtIU66DYAo85qapZVraRkrIO1r6o3xQTPmTpdkp0,96
+xxhash-3.0.0.dist-info/top_level.txt,sha256=1PPSBP-gnjG59E5bigzMTzmT6BVWjHwnpzMiisPWZ5I,15
+xxhash-3.0.0.dist-info/RECORD,,
