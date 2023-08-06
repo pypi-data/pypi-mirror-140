@@ -1,0 +1,2 @@
+[console_scripts]
+wai = wai.__main__:run
