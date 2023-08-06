@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/anti_war_handbook_package/__init__.py
+src/anti_war_handbook_package/example.py
+src/anti_war_handbook_package.egg-info/PKG-INFO
+src/anti_war_handbook_package.egg-info/SOURCES.txt
+src/anti_war_handbook_package.egg-info/dependency_links.txt
+src/anti_war_handbook_package.egg-info/top_level.txt
