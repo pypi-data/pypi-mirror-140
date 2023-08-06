@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+./rawproxy/__init__.py
+./rawproxy/app.py
+./rawproxy/rawproxy.service
+rawproxy.egg-info/PKG-INFO
+rawproxy.egg-info/SOURCES.txt
+rawproxy.egg-info/dependency_links.txt
+rawproxy.egg-info/requires.txt
+rawproxy.egg-info/top_level.txt
