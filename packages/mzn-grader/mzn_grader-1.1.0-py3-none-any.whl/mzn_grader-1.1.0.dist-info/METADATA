@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mzn-grader
+Version: 1.1.0
+Summary: A MOOC grading executable and library for MiniZinc modelling courses
+License: MPL-2.0
+Author: Jip J. Dekker
+Author-email: jip@dekker.one
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dataclasses (>=0.6,<0.7); python_version < "3.7"
+Requires-Dist: minizinc
+Requires-Dist: pyyaml (>=5.4,<6.0)

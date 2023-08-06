@@ -1,0 +1,3 @@
+[console_scripts]
+mzn-coursera=mzn_grader:coursera
+
