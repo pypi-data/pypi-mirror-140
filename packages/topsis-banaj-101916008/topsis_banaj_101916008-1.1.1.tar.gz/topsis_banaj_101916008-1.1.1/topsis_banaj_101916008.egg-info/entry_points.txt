@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = topsis_banaj_101916008.topsis:main
