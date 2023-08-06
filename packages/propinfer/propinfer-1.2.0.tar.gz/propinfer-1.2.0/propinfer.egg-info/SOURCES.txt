@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+propinfer/__init__.py
+propinfer/deepsets.py
+propinfer/experiment.py
+propinfer/generator.py
+propinfer/model.py
+propinfer/model_utils.py
+propinfer.egg-info/PKG-INFO
+propinfer.egg-info/SOURCES.txt
+propinfer.egg-info/dependency_links.txt
+propinfer.egg-info/requires.txt
+propinfer.egg-info/top_level.txt
