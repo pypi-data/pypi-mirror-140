@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: cli-todoer
+Version: 1.0.9
+Summary: An easy command line interface for saving tasks to to-do list for current day
+Home-page: https://github.com/VladaZakharova/CLI-todoer
+Author: Vlada Zakharova
+Author-email: vladazaharova0@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: typer (==0.4.0)
+Requires-Dist: rich (==11.0.0)
+Requires-Dist: click (==8.0.3)
+Requires-Dist: commonmark (==0.9.1)
+Requires-Dist: typing-extensions (==4.1.1)
+Requires-Dist: colorama (==0.4.4)
+
+# CLI-todoer
+An easy command line interface for tracking your to-do list 
+
+
+
+# Install
+
+### Using  `pip`
+cli-todoer is only supported with python 3.6 due to the use of f-strings be aware before pip installing
+```
+pip install cli-todoer
+```
+
+### Build from source
+```
+git clone https://github.com/VladaZakharova/CLI-todoer.git
+cd todoer
+python setup.py install
+```
+
+# Usage
+
+### Help
+```
+todoer --help
+```
+![image](https://user-images.githubusercontent.com/80038284/155972069-ee3dfd93-3f16-48b8-9291-e6847e66b3a2.png)
+
+### Add tasks to your to-do list
+```
+todoer add "Task description" "Category"
+```
+![image](https://user-images.githubusercontent.com/80038284/155972985-95d35888-3c30-4283-bdf4-f993e57010af.png)
+
+### Update tasks description or category
+Both of the parameters are optional. You can specify only one argument in case you want to change only part of to-do task.
+```
+todoer update 1 --description "New task description" --category "New category"
+```
+![image](https://user-images.githubusercontent.com/80038284/155974928-be2640a4-1785-4bf2-af9c-08620c6e6282.png)
+
+### Complete specified task and set status to Done
+```
+todoer complete 1
+```
+![image](https://user-images.githubusercontent.com/80038284/155975600-73f2534c-afdb-4347-a7ae-e69387ffcf17.png)
+
+### Show a list of all tasks for current day
+```
+todoer show
+```
+![image](https://user-images.githubusercontent.com/80038284/155975696-a615c066-bead-4a82-bd01-b02c677b8c49.png)
+
+### Delete specified task from to-do list
+```
+todoer delete 2
+```
+![image](https://user-images.githubusercontent.com/80038284/155975767-0a1b1655-ef2f-4715-9f5f-9d5ff9df5a8f.png)
+
+### Clear to-do list and delete all the tasks
+```
+todoer clear
+```
+![image](https://user-images.githubusercontent.com/80038284/155975851-91220cf0-c26f-4b62-a7a9-b2b7c388abe2.png)
+
+
+
