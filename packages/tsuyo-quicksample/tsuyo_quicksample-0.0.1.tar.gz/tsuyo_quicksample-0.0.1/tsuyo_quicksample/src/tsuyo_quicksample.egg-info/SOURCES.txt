@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+tsuyo_quicksample/src/tsuyo_quicksample.py
+tsuyo_quicksample/src/tsuyo_quicksample.egg-info/PKG-INFO
+tsuyo_quicksample/src/tsuyo_quicksample.egg-info/SOURCES.txt
+tsuyo_quicksample/src/tsuyo_quicksample.egg-info/dependency_links.txt
+tsuyo_quicksample/src/tsuyo_quicksample.egg-info/top_level.txt
