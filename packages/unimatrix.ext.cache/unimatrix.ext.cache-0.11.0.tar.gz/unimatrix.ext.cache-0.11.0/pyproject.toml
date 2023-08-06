@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+markers = [
+  "delete: test deleting of cache keys.",
+  "memory: run tests related to the in-memory cache.",
+  "set: test setters."
+]
