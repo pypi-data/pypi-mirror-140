@@ -1,0 +1,24 @@
+errorhandler
+isbnlib
+jinja2
+jsonschema>=3.0.0
+packaging
+panflute!=2.0.3,!=2.0.4
+pybase62
+pyyaml>=5.1
+ratelimiter
+requests-cache
+requests
+toml
+
+[:python_version < "3.8"]
+backports.cached-property
+
+[dev]
+portray
+pre-commit
+pytest>=6.0.0
+yamllint
+
+[webpage]
+opentimestamps-client
