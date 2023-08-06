@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+continual/web4.egg-info/PKG-INFO
+continual/web4.egg-info/SOURCES.txt
+continual/web4.egg-info/dependency_links.txt
+continual/web4.egg-info/top_level.txt
