@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+hamsterctrl/hamsterctrl.egg-info/PKG-INFO
+hamsterctrl/hamsterctrl.egg-info/SOURCES.txt
+hamsterctrl/hamsterctrl.egg-info/dependency_links.txt
+hamsterctrl/hamsterctrl.egg-info/top_level.txt

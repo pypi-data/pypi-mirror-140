@@ -1,0 +1,31 @@
+import setuptools
+
+setuptools.setup(
+    name="hamsterctrl",
+    version="0.1.0",
+    author="Marcel Miljak",
+    author_email="mmiljak@tsn.at",
+    description="Package for hamster-control",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: POSIX",
+        "Operating System :: POSIX :: AIX",
+        "Operating System :: POSIX :: BSD",
+        "Operating System :: POSIX :: BSD :: BSD/OS",
+        "Operating System :: POSIX :: BSD :: FreeBSD",
+        "Operating System :: POSIX :: BSD :: NetBSD",
+        "Operating System :: POSIX :: BSD :: OpenBSD",
+        "Operating System :: POSIX :: GNU Hurd",
+        "Operating System :: POSIX :: HP-UX",
+        "Operating System :: POSIX :: IRIX",
+        "Operating System :: POSIX :: Linux",
+        "Operating System :: POSIX :: Other",
+        "Operating System :: POSIX :: SCO",
+        "Operating System :: POSIX :: SunOS/Solaris",
+        "Operating System :: Unix",
+    ],
+    package_dir={"": "hamsterctrl"},
+    packages=setuptools.find_packages(where="hamsterctrl"),
+    python_requires=">=2.0",
+)
