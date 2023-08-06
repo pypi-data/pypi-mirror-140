@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nf04-trace
+Version: 0.2
+Summary: A package used to make the "trace" of a program
+Home-page: https://github.com/TeddyRoncin/NF04
+Author: Teddy Roncin
+Author-email: teddy.roncin@utt.fr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/TeddyRoncin/NF04/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#Usage
+This package is useful if you want to do the trace of an algorithm, meaning you want to know everything that happens at each line
+
