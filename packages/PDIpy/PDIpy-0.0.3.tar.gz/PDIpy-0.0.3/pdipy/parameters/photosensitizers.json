@@ -1,0 +1,130 @@
+{
+	"A3B_4Zn": {
+		"e_quantum_yield": {
+			"value": 0.6,
+			"reference": "Singlet Oxygen Yields and Radical Contributions in the Dye-Sensitised Photo-oxidation in methanol of esters of polyunsaturated fatty acids _oleic, linoleic, linolenic, and arachidonic) Chacon et al., 1988"
+		},
+		"so_specificity": {
+			"value": 0.8,
+			"reference": null
+		},
+		"formula": {
+			"value": "C76_H48_N16_F12_Zn",
+			"reference": null
+		},
+		"excitation_nm": {
+			"value": [
+				[400, 430],
+				[530, 625]
+				 ],
+			"reference": null
+		},
+		"ps_decay (ns)": {
+    		    "value": 1.5,
+    		    "reference": "Akimoto et al., 1999, 'Ultrafast ... Porphyrins'"
+		},
+		"ps_rise (fs)": {
+    		    "value": 50,
+    		    "reference": "Anderssonet al., 1999, 'Photoinduced ... State' ; Gurzadyan et al., 1998, 'Time-resolved ... Zn-tetraphenylporphyrin'" 
+		},
+		"ps_charge_transfer (ns)": {
+    		    "value": 100,
+    		    "reference": "Kupper et al., 2002, 'Kinetics ... Oxygen'" 
+		},
+		"photobleaching_constant (cm2/(J*M))": {
+			"value": 600,
+			"reference": "Dysart et al., 2005, 'Calculation of Singlet Oxygen Dose ... and Photobleaching During mTHPC Photodynamic Therapy of MLL Cells'"
+		},
+		"dimensions": {
+			"shape": "disc",
+			"length_A": 32.8,
+			"width_A": 32.8,
+			"depth_A": 1.5,
+			"notes": "The depth is atomic thickness, as quantified by this paper https://www.nature.com/articles/ncomms1291."
+		}
+	},
+	"A3B_4Cu": {
+		"e_quantum_yield": {
+			"value": 0.6,
+			"reference": "Singlet Oxygen Yields and Radical Contributions in the Dye-Sensitised Photo-oxidation in methanol of esters of polyunsaturated fatty acids _oleic, linoleic, linolenic, and arachidonic) Chacon et al., 1988"
+		},
+		"so_specificity": {
+			"value": 0.9,
+			"reference": null
+		},
+		"formula": {
+			"value": "C76_H48_N16_F12_Cu",
+			"reference": null
+		},
+		"soret_nm": {
+			"value": [ 400, 430 ],
+			"reference": null
+		},
+		"q_nm": {
+			"value": [ 530, 625 ],
+			"reference": null
+		},
+		"charge": 4,
+		"photobleaching_constant (cm^2/J)": {
+			"value": 1.5e-12,
+			"reference": "“Photobleaching kinetics, photoproduct formation, and dose estimation during ALA induced PpIX PDT of MLL cells under well oxygenated and hypoxic conditions” by Dysart et al., 2005",
+			"notes": "The 0.015 value from literature is attenuated by 1e-10 to yield a sensible value with the proper units"
+			}
+	},
+	"A3B_2Zn": {
+		"e_quantum_yield": {
+			"value": 0.6,
+			"reference": "Singlet Oxygen Yields and Radical Contributions in the Dye-Sensitised Photo-oxidation in methanol of esters of polyunsaturated fatty acids _oleic, linoleic, linolenic, and arachidonic) Chacon et al., 1988"
+		},
+		"so_specificity": {
+			"value": 1,
+			"reference": null
+		},
+		"formula": {
+			"value": "C60_H28_N10_F16_Zn",
+			"reference": null
+		},
+		"soret_nm": {
+			"value": [ 400, 430 ],
+			"reference": null
+		},
+		"q_nm": {
+			"value": [ 530, 625 ],
+			"reference": null
+		},
+		"charge": 2,
+		"photobleaching_constant (cm^2/J)": {
+			"value": 1.5e-12,
+			"reference": "“Photobleaching kinetics, photoproduct formation, and dose estimation during ALA induced PpIX PDT of MLL cells under well oxygenated and hypoxic conditions” by Dysart et al., 2005",
+			"notes": "The 0.015 value from literature is attenuated by 1e-10 to yield a sensible value with the proper units"
+			}
+	},
+	"A3B_1Ga": {
+		"e_quantum_yield": {
+			"value": 0.6,
+			"reference": "Singlet Oxygen Yields and Radical Contributions in the Dye-Sensitised Photo-oxidation in methanol of esters of polyunsaturated fatty acids _oleic, linoleic, linolenic, and arachidonic) Chacon et al., 1988"
+		},
+		"so_specificity": {
+			"value": 0.9,
+			"reference": null
+		},
+		"formula": {
+			"value": "C45_H18_N7_F13_Ga",
+			"reference": null
+		},
+		"soret_nm": {
+			"value": [ 400, 430 ],
+			"reference": null
+		},
+		"q_nm": {
+			"value": [ 530, 625 ],
+			"reference": null
+		},
+		"charge": 2,
+		"photobleaching_constant (cm^2/J)": {
+			"value": 1.5e-12,
+			"reference": "“Photobleaching kinetics, photoproduct formation, and dose estimation during ALA induced PpIX PDT of MLL cells under well oxygenated and hypoxic conditions” by Dysart et al., 2005",
+			"notes": "The 0.015 value from literature is attenuated by 1e-10 to yield a sensible value with the proper units."
+			}
+	}
+}

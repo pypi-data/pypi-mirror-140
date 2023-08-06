@@ -1,0 +1,8 @@
+matplotlib
+tellurium
+scipy
+pandas
+sigfig
+hillfit
+chemw
+numpy

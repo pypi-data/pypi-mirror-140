@@ -1,0 +1,14 @@
+README.rst
+setup.py
+PDIpy.egg-info/PKG-INFO
+PDIpy.egg-info/SOURCES.txt
+PDIpy.egg-info/dependency_links.txt
+PDIpy.egg-info/requires.txt
+PDIpy.egg-info/top_level.txt
+pdipy/__init__.py
+pdipy/pdi.py
+pdipy/parameters/light_source.json
+pdipy/parameters/photosensitizers.json
+pdipy/parameters/wells.json
+test/__init__.py
+test/test_pdi.py
