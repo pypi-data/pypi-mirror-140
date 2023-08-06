@@ -1,0 +1,13 @@
+psifr/__init__.py,sha256=fweowxVMtedWOqP7YZ9PCBI04McwxX-OlCt_Y6mcFzU,41
+psifr/clustering.py,sha256=EhO4KcRp_fJg4MXvB2rUCNNH8-0TCWx3FshtgsGxwAo,2046
+psifr/fr.py,sha256=TIAXt71PN0jhWUjdYwqr7VEZYRV_-NHSAT0QH5l8El4,57009
+psifr/measures.py,sha256=8DJkdLcWf-XlpHJKynxMkSfP4MoErBKw5vVVJOn-Rjo,10134
+psifr/outputs.py,sha256=jO3yZL_wdFRKcmjJmpvDr2oB6YwddLw05_jJ6wTTUR8,5988
+psifr/transitions.py,sha256=EAE454APNbMjjHubTHr2akE9aF4JDKd5Ismd2WJMhLQ,20551
+psifr/data/Morton2013.csv,sha256=UTWCFPsUbyg_n-XzxDk_AyxzCZePVPdPbp2rKob_Zzo,4050433
+psifr/distances/Morton2013.npz,sha256=_x2ShtUGLQ6-YQrsY1b7QCS7JTiv2G1LDrqfT8tdptI,4802050
+psifr-0.7.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+psifr-0.7.0.dist-info/METADATA,sha256=tllU1bcBEiMtuhGIDyKNnSs7s3gpvaAPr4RovS1VYoQ,5743
+psifr-0.7.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+psifr-0.7.0.dist-info/top_level.txt,sha256=joLOLwjtNqS09LDcIC9ZvBcYumehmcPiUsYf__RVAsc,6
+psifr-0.7.0.dist-info/RECORD,,
