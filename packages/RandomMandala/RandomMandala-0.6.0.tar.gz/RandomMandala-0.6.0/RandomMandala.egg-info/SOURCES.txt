@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+RandomMandala/RandomFunctions.py
+RandomMandala/RandomMandala.py
+RandomMandala/__init__.py
+RandomMandala.egg-info/PKG-INFO
+RandomMandala.egg-info/SOURCES.txt
+RandomMandala.egg-info/dependency_links.txt
+RandomMandala.egg-info/requires.txt
+RandomMandala.egg-info/top_level.txt
