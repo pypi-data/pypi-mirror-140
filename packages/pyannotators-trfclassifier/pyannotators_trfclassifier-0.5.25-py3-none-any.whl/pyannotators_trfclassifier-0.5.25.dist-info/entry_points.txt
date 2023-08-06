@@ -1,0 +1,3 @@
+[pyannotators.plugins]
+trfclassifier=pyannotators_trfclassifier.trfclassifier:TrfClassifierAnnotator
+
