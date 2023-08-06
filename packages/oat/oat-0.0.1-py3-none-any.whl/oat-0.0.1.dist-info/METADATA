@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: oat
+Version: 0.0.1
+Summary: They're good for you.
+Home-page: https://github.com/DailyDreaming/oat
+Download-URL: https://github.com/DailyDreaming/oat
+Author: Lon
+Author-email: lblauvel@ucsc.edu
+License: Apache 2.0
+Platform: Posix
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.7
+License-File: LICENSE.md
+Requires-Dist: terra-notebook-utils
+
+Purely for development.  Breaking changes and functionality will be added or removed as needed.
+
+Much of this will be:
+ - Dev programs for use in prototyping, which may or may not be migrated outside of this package.
+ - Packaging personal tools for quickly setting up aliases and system settings in new envs.
+
+
