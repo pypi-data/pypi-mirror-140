@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: NwalaTextUtils
+Version: 0.0.5
+Summary: Collection of functions for processing text
+Home-page: https://github.com/oduwsdl/NwalaTextUtils/
+Author: Alexander C. Nwala
+Author-email: alexandernwala@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: beautifulsoup4
+Requires-Dist: boilerpy3 (>=1.0.4)
+Requires-Dist: requests
+Requires-Dist: tldextract
+
+See: https://github.com/oduwsdl/NwalaTextUtils/
+
+
