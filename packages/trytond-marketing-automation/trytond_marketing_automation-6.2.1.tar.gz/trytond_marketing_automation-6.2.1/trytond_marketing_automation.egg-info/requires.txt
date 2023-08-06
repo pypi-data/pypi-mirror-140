@@ -1,0 +1,5 @@
+werkzeug
+Genshi
+trytond_marketing<6.3,>=6.2
+trytond_web_shortener<6.3,>=6.2
+trytond<6.3,>=6.2
