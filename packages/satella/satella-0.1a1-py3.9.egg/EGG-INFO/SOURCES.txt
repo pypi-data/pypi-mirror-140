@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+satella.egg-info/PKG-INFO
+satella.egg-info/SOURCES.txt
+satella.egg-info/dependency_links.txt
+satella.egg-info/entry_points.txt
+satella.egg-info/top_level.txt
+siege_engine/__init__.py
+siege_engine/run.py

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: satella
+Version: 0.1a1
+Summary: Basically a SYN flooder in Python
+Home-page: https://github.com/smok-serwis/siege-engine
+Author: Piotr Maślanka
+Author-email: pmaslanka@smok.co
+License: UNKNOWN
+Description: # siege-engine
+        A tactical piece of software that allows the magnificient company SMOK sp. z o. o. strike it's enemies from afar
+        
+Keywords: ha,high availability,scalable,scalability,server,metrics,tracing
+Platform: UNKNOWN
+Requires-Python: !=2.7.*,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
+Description-Content-Type: text/markdown; charset=UTF-8
