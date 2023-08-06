@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: templated-yaml
+Version: 1.2.0
+Summary: A helper library that allows hierarchical YAML files with variable substitution.
+Home-page: https://github.com/NazarethCollege/templated-yaml
+Author: Dave Lafferty
+Author-email: web_tech@naz.edu
+License: MIT
+Keywords: configuration templated yaml development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: click (<8)
+Requires-Dist: jinja2 (>=3.0.0)
+Requires-Dist: pyyaml (~=6.0.0)
+
+UNKNOWN
+
+
