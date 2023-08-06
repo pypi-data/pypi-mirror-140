@@ -1,0 +1,15 @@
+mutwo/common_generators/__init__.py,sha256=prGTRIPBp645j8acGV7k4DQbLxGhq516PWK-r_-JDcs,262
+mutwo/common_generators/brown.py,sha256=JXPM9KaZe4coyhamIoVq4e_LNHJuTdDQR3ym_ajToq4,2611
+mutwo/common_generators/brun.py,sha256=RvSKoheDaIHTnFmA558AaNchouVegCeKNW08ZebcXjs,2736
+mutwo/common_generators/chomksy.py,sha256=WrwfI3_5YPkGQb66M-9mBwGQ5l3-flZJTuXni_AbOO4,6079
+mutwo/common_generators/constants.py,sha256=T64t495eFGmU5hcpXnuRrGj-ln9w_luaw4VwnMuWxnI,1652
+mutwo/common_generators/edwards.py,sha256=5v9HmO8jxe_hAYArxt1CozwImxE1Qv46VKYVZG3y2Q0,3287
+mutwo/common_generators/gray.py,sha256=GqBGXnPrJqKtZfZghpO2tzf3ktJsOMmX3t8lSxjPn3c,1882
+mutwo/common_generators/koenig.py,sha256=jWGuYRDqop7oswRxmXXtAINLd1GHNZDNH5P2Vt-XiBA,4475
+mutwo/common_generators/schillinger.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mutwo/common_generators/toussaint.py,sha256=9cBZwr464RR6nElTsAfZBbF1bzX0RuxQ-J_XbJtdLHU,4425
+mutwo.ext_common_generators-0.6.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mutwo.ext_common_generators-0.6.0.dist-info/METADATA,sha256=aB31guhfgpGNoIT4-6ypxT-67zqXG4W5_kB45rjyhHA,1710
+mutwo.ext_common_generators-0.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mutwo.ext_common_generators-0.6.0.dist-info/top_level.txt,sha256=1UzApATBnnDoZgVDqupcM1hYH7l1uhSHZQCf_nUK5y8,6
+mutwo.ext_common_generators-0.6.0.dist-info/RECORD,,
