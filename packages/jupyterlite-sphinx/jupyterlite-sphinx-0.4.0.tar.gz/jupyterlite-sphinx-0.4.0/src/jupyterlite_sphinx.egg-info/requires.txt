@@ -1,0 +1,5 @@
+docutils
+jupyterlite
+sphinx>=1.8
+jupyter_server
+jupyterlab_server
