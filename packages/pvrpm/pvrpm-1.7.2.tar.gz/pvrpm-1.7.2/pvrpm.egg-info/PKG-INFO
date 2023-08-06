@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pvrpm
+Version: 1.7.2
+Summary: Run simulations to estimate LCOE costs for PV systems using SAM.
+Home-page: https://github.com/FSEC-Photovoltaics/pvrpm-lcoe
+Author: ['Brandon Silva', 'Paul Lunis']
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: testing
+License-File: LICENSE
+
+README.md
+

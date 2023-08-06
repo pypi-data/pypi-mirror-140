@@ -1,0 +1,16 @@
+nrel-pysam==3.0.0
+pandas
+click
+pyyaml
+scipy
+tqdm
+matplotlib
+python-dateutil
+
+[docs]
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-napoleon
+
+[testing]
+pytest
