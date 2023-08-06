@@ -1,0 +1,11 @@
+stt/__init__.py,sha256=j7efIMaHkgDROTD5hwxbEPREwhMnwYqMcV_CkK00miI,15013
+stt/_impl.cpython-37m-x86_64-linux-gnu.so,sha256=t3naQRM5eIlsmgM_cjpD43fKV2Y3553C4JusZT1hML8,395752
+stt/client.py,sha256=xGYF-X_j8mr4XT8oHrHkcBC92wBlMdPC4TtXyx28il8,6809
+stt/impl.py,sha256=taD_Cp2EVknN_5Lbd4q7OZ3jYO8UbpfuWDULlAfHf9A,7718
+stt/lib/libkenlm.so,sha256=cXTD9RWxBKG95aw7t2wyACOsmVn5p8UB5gH1qtdzCrk,532624
+stt/lib/libstt.so,sha256=4MCuZyvu0tz2-HDEXgVAnbANhaaYWwg4Z6tczIBMJdc,10261688
+stt-1.3.0a3.dist-info/METADATA,sha256=LHUYxQdsEdj7XpaTRVYzAEqvP4lwLr7XSluYcVthz00,1357
+stt-1.3.0a3.dist-info/WHEEL,sha256=09jFSjqdAP4QCkrU3xnbNzC9RqBgA3fd-ISrN_Lo_4I,113
+stt-1.3.0a3.dist-info/entry_points.txt,sha256=-RJKAhqFH3le0allDtX9BNVyOHyAXMbyweoEXUinoRI,41
+stt-1.3.0a3.dist-info/top_level.txt,sha256=U36suN9i5BZ2UbKj5dzgbpHmkIEAvyge7wRwJVB24jk,4
+stt-1.3.0a3.dist-info/RECORD,,
