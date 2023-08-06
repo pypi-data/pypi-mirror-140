@@ -1,0 +1,10 @@
+logstack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logstack/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logstack/decorators.py,sha256=KJW4JPRAqCCVi9zf_OwiQf9-0FLgmvQe99z8Wd7v1Hk,1391
+logstack/loggers.py,sha256=RLTvm_vbCt0qUw0-pXmbTUOyQtlC65hiWFOWspaKDDs,1075
+logstack/serializers.py,sha256=A0gkg8Erh0wV8oR12C20Bf-E6T-vwFgPp6t_Nf7Hn1k,610
+logstack-0.0.4.dist-info/LICENSE,sha256=81T8dtJreO8yYfI-wKaTgWJmz1YMJ8IqhkPJ9se3-Qc,1070
+logstack-0.0.4.dist-info/METADATA,sha256=cxNNKbY2MKkXxG9Ym9U3dvETWt6_PvjnvJcsMc_NkoA,1452
+logstack-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+logstack-0.0.4.dist-info/top_level.txt,sha256=mRSQZBXuD3C_9qQA3MWkQ_tg8-G1UMXG66aDZOJWAxc,9
+logstack-0.0.4.dist-info/RECORD,,
