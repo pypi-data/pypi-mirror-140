@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load i18n %}
+<title>{% block title %}{{ SHAARPY_NAME }} :: {% trans 'New ShaarPy/note' %}{% endblock %}</title>
+{% block content %}
+{% if messages %}
+<div class="alert alert-warning">
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+<div class="col-xs-8 col-md-8 col-lg-8 offset-xs-2 offset-md-2 offset-lg-2 mt-3">
+  <form action="" method="post" role="form" name="my_form" class="form-horizontal">
+    {% csrf_token %}
+    <fieldset>
+    {{ form.non_field_errors }}
+      {% if edit_link %}
+      <legend>{% trans 'Update the link/note' %}</legend>
+      {% else %}
+      <legend>{% trans 'Share a link/a note' %}</legend>
+      {% endif %}
+      <div class="mb-3">
+          <label class="form-label" for="id_url"> URL</label>
+          {{ form.url }}
+      </div>
+      {% if form.url.errors %}
+      <div class="alert alert-danger" role="alert">{{ form.url.errors }}</div>
+      {% endif %}
+      <div class="mb-3">
+          <label class="form-label" for="id_title"> {% trans 'Title' %}</label>
+          {{ form.title }}
+      </div>
+      {% if form.title.errors %}
+      <div class="alert alert-danger" role="alert">{{ form.title.errors }}</div>
+      {% endif %}
+      {% if edit_link %}
+      <div class="mb-3">
+          <label class="form-label" for="id_image"> {% trans 'Image' %}</label>
+          {{ form.image }}
+      </div>
+      {% if form.image.errors %}
+      <div class="alert alert-danger" role="alert">{{ form.image.errors }}</div>
+      {% endif %}
+      {% endif %}
+      <div class="mb-3">
+          <label class="form-label" for="id_text"> {% trans 'Text' %}</label>
+          {{ form.text }}
+      </div>
+      {% if form.text.errors %}
+      <div class="alert alert-danger" role="alert">{{ form.text.errors }}</div>
+      {% endif %}
+      <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-tags"></i></span>{{ form.tags }}
+      </div>
+      {% if form.tags.errors %}
+      <div class="alert alert-danger" role="alert">
+         {{ form.tags.errors }}
+      </div>
+      {% endif %}
+      <div class="mb-3">
+          <label class="form-label" for="id_private"><i class="fas fa-user-secret"></i> {% trans 'Private' %}</label>
+          {{ form.private }}
+      </div>
+      {% if form.private.errors %}
+      <div class="alert alert-danger" role="alert">
+        {{ form.private.errors }}
+      </div>
+      {% endif %}
+      <div class="mb-3">
+          <label class="form-label" for="id_sticky"><i class="fas fa-thumbtack"></i> {% trans 'Sticky' %}</label>
+          {{ form.sticky }}
+      </div>
+      {% if form.sticky.errors %}
+      <div class="alert alert-danger" role="alert">
+        {{ form.sticky.errors }}
+      </div>
+      {% endif %}
+      {% if edit_link %}
+      <a href="{% url 'link_detail' object.url_hashed %}" class="btn btn-success"><i class="fas fa-long-arrow-alt-left"></i> {% trans "Back" %}</a>
+      <button class="btn btn-primary">{% trans "Update link" %}</button>
+      {% else %}
+      <a href="{% url 'home' %}" class="btn btn-success"><i class="fas fa-long-arrow-alt-left"></i> {% trans "Back" %}</a>
+      <button class="btn btn-primary"><i class="fas fa-plus"></i> {% trans "Add link" %}</button>
+      {% endif %}
+{% for hidden in form.hidden_fields %}
+{{ hidden }}
+{% endfor %}
+    </fieldset>
+  </form>
+</div>
+{% endblock %}
