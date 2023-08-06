@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/parseaia/__init__.py
+src/parseaia/codeclasses.py
+src/parseaia/dictionaryutils.py
+src/parseaia/funcs.py
+src/parseaia/main.py
+src/parseaia/otherclasses.py
+src/parseaia/uiclasses.py
+src/parseaia.egg-info/PKG-INFO
+src/parseaia.egg-info/SOURCES.txt
+src/parseaia.egg-info/dependency_links.txt
+src/parseaia.egg-info/requires.txt
+src/parseaia.egg-info/top_level.txt
