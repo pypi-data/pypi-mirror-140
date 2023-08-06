@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ert-storage
+Version: 0.3.11
+Summary: Storage service for ERT
+Home-page: https://github.com/equinor/ert-storage
+Author: Equinor ASA
+Author-email: fg_sib-scout@equinor.com
+License: GPLv3
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: alembic
+Requires-Dist: fastapi (==0.70.1)
+Requires-Dist: graphene (<3.0.0)
+Requires-Dist: graphene-sqlalchemy (>=2.0)
+Requires-Dist: httpx
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: pydantic
+Requires-Dist: python-multipart
+Requires-Dist: requests
+Requires-Dist: sqlalchemy (>=1.4)
+Requires-Dist: async-exit-stack ; python_version < "3.7"
+Requires-Dist: async-generator ; python_version < "3.7"
+Requires-Dist: uvicorn (<0.17.0) ; python_version <= "3.6"
+Requires-Dist: uvicorn (>=0.17.0) ; python_version > "3.6"
+Provides-Extra: azure
+Requires-Dist: aiohttp ; extra == 'azure'
+Requires-Dist: azure-storage-blob ; extra == 'azure'
+Provides-Extra: postgres
+Requires-Dist: psycopg2 ; extra == 'postgres'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: types-requests ; extra == 'test'
+Requires-Dist: black (==22.1.0) ; (python_version > "3.6") and extra == 'test'
+
+UNKNOWN
+
