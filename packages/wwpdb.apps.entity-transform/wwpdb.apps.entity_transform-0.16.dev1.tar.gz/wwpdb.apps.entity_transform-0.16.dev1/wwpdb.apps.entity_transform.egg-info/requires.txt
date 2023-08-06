@@ -1,0 +1,14 @@
+wwpdb.utils.config~=0.24
+wwpdb.apps.editormodule
+wwpdb.io
+wwpdb.utils.dp
+wwpdb.utils.detach
+wwpdb.utils.session
+wwpdb.utils.wf
+wwpdb.utils.oe_util
+
+[dev]
+check-manifest
+
+[test]
+coverage
