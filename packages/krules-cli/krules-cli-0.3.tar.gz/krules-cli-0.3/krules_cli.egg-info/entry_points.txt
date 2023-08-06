@@ -1,0 +1,3 @@
+[console_scripts]
+krules = krules_cli.main:cli
+

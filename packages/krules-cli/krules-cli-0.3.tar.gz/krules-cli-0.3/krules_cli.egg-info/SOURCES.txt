@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+krules_cli/__init__.py
+krules_cli/main.py
+krules_cli.egg-info/PKG-INFO
+krules_cli.egg-info/SOURCES.txt
+krules_cli.egg-info/dependency_links.txt
+krules_cli.egg-info/entry_points.txt
+krules_cli.egg-info/requires.txt
+krules_cli.egg-info/top_level.txt
+krules_cli/commands/__init__.py
+krules_cli/commands/cmd_scaffold.py
