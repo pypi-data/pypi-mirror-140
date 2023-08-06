@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: aymakan-sdk
+Version: 1.1.1
+Summary: AyMakan SDK
+Home-page: https://github.com/aymakan/python-sdk/
+Author: Aymakan IT
+Author-email: it@aymakan.com.sa
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+This is official Aymakan Python SDK. It can be used to integrate with Aymakan APIs.
+
