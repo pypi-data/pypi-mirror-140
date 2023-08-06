@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: QiqiaoPlus
+Version: 0.0.1
+Summary: autotest
+Home-page: https://github.com/donny/qiqiaoplus
+Author: Donny
+Author-email: 981772991@qq.com
+License: MIT Licence
+Keywords: testing testautomation
+Platform: any
+Requires-Python: >=3.7.*
+
+Qiqiao Web Test Keywords 
+
