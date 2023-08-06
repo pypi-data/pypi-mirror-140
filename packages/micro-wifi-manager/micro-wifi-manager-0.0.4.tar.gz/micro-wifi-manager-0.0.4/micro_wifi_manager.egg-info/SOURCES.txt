@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+micro_wifi_manager.egg-info/PKG-INFO
+micro_wifi_manager.egg-info/SOURCES.txt
+micro_wifi_manager.egg-info/dependency_links.txt
+micro_wifi_manager.egg-info/top_level.txt
+microwifimanager/__init__.py
+microwifimanager/manager.py
+microwifimanager/microDNSSrv.py
