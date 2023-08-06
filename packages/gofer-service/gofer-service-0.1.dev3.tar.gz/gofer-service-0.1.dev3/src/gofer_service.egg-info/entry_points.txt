@@ -1,0 +1,2 @@
+[console_scripts]
+gofer-service = gofer_service.gofer_nb:main
