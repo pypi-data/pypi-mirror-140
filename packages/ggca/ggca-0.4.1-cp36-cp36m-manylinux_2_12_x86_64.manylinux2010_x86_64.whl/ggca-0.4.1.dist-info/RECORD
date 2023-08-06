@@ -1,0 +1,9 @@
+ggca/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ggca/__init__.py,sha256=HjoonDb2hHTM2Jd7k3Otdo7r7VR5vMtjfts_WJevtsM,44
+ggca/ggca.cpython-36m-x86_64-linux-gnu.so,sha256=cTdzg2zpVaV22ngVkJENy-5mDYyeDNIanWyj0tqI8ug,5451520
+ggca/__init__.pyi,sha256=4NAfg9XKONNvceA1_dpcVhfRn6U5fg5YE9jnLzT8gzQ,3711
+ggca.libs/libgsl-d937a686.so.25.0.0,sha256=c-5cUa-Wth6Ma2MB-X1dZ1nzBJNC-AJRYOpjjxeQ4PI,16027728
+ggca.libs/libgslcblas-31001fd9.so.0.0.0,sha256=TfvDYNl4lT7qhp0rXU0uuZyH6NjjUQV0ljOB87A4KBc,1313992
+ggca-0.4.1.dist-info/METADATA,sha256=MXf80plaadezF9CDD3HH4uolKzNFh9E5OT78A5-BfV0,8301
+ggca-0.4.1.dist-info/RECORD,,
+ggca-0.4.1.dist-info/WHEEL,sha256=q6JMrDBHkCfRETc14-n1rrLucYd9_4Vs97fWbBX7G2I,146
