@@ -1,0 +1,6 @@
+[console_scripts]
+elg-gen = elearning_grading.generate.generate:main
+elg-org = elearning_grading.organize.organize:main
+elg-pmem = elearning_grading.organize.project_members:main
+elg-porg = elearning_grading.organize.project_organize:main
+
