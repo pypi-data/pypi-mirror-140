@@ -1,0 +1,10 @@
+README.md
+setup.py
+nonebot_plugin_anime_news/__init__.py
+nonebot_plugin_anime_news/data_use.py
+nonebot_plugin_anime_news/get.py
+nonebot_plugin_anime_news/time.py
+nonebot_plugin_anime_news.egg-info/PKG-INFO
+nonebot_plugin_anime_news.egg-info/SOURCES.txt
+nonebot_plugin_anime_news.egg-info/dependency_links.txt
+nonebot_plugin_anime_news.egg-info/top_level.txt

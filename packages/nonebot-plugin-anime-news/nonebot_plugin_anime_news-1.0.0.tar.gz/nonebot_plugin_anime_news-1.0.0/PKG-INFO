@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nonebot_plugin_anime_news
+Version: 1.0.0
+Summary: 从bangumi.moe定时获取番剧信息
+Home-page: https://github.com/5656565566/anime_news
+License: TIM License
+Platform: all
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
