@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: manabi
+Version: 0.5.0
+Summary: Provide WebDAV access for documents.
+Home-page: https://github.com/projectcaluma/manabi
+License: AGPL-3.0-or-later
+Author: Adfinis AG
+Requires-Python: >=3.7,<4
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: WsgiDAV (>=4.0.1,<5.0.0)
+Requires-Dist: attrs (>=21.4.0,<22.0.0)
+Requires-Dist: pybase62 (>=0.4.3,<0.5.0)
+Requires-Dist: pybranca (>=0.5.0,<0.6.0)
+Project-URL: Repository, https://github.com/projectcaluma/manabi
+Description-Content-Type: text/markdown
+
+# Manabi
+
+## Install
+
+Make sure libsodium exists on the system, for example execute:
+
+```bash
+apk add --no-cache libsodium
+apt-get install -y libsodium23
+```
+
+# Dev
+
+Enable dev-env:
+
+```bash
+pyenv install 3.10.2
+poetry env use $HOME/.pyenv/versions/3.10.2/bin/python3.10
+poetry install
+poetry shell
+```
+
+## Config
+
+Call `manabi-keygen` and add the key to `config["manabi"]["key"]`. The key is
+shared between the caluma/alexandria backend and the WebDAV server.
+
+`mount_path`
+
+Prefix that gets passed to wsgidav, if URL rewrites remove any prefixes use `"/"`
+
+`lock_storage`
+
+The ManabiLockLockStorage forces the WebDav log-timeout to `token-refresh-time / 2`
+
+`provider_mapping`
+
+Extends the FilesystemProvider any will only serve files if the token is valid
+
+`middleware_stack`
+
+Based on the default middleware_stack but HTTPAuthenticator is replace by
+ManabiAuthenticator, which validates the tokens.
+
+`manabi.key`
+
+Shared-key between the server that creates tokens to grant access and wsgi-dav
+
+`manabi.refresh`
+
+How often tokens are refreshed in seconds, we recommend 10 minutes: `600`
+
+`manabi.initial`
+
+The time from the token being generated till it has to be refreshed the first
+time, we recommend 1 minues: `60`. In case tokens leak, for example via cache on
+a computer, tokens should be expired by the time an adversary gets them.
+
+```python
+config = {
+    "mount_path": "/dav",
+    "lock_storage": ManabiLockLockStorage(refresh),
+    "provider_mapping": {
+        "/": ManabiProvider(settings.MEDIA_ROOT),
+    },
+    "middleware_stack": [
+        WsgiDavDebugFilter,
+        ErrorPrinter,
+        ManabiAuthenticator,
+        WsgiDavDirBrowser,
+        RequestResolver,
+    ],
+    "manabi": {
+        "key": key,
+        "refresh": refresh,
+        "initial": settings.MANABI_TOKEN_ACTIVATE_TIMEOUT,
+    },
+}
+```
+
