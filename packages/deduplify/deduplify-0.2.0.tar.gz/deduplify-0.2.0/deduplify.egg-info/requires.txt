@@ -1,0 +1,15 @@
+incremental
+tqdm
+twisted
+
+[dev]
+coverage==5.3
+pytest==6.2.5
+
+[docs]
+
+[full]
+
+[tests]
+coverage==5.3
+pytest==6.2.5
