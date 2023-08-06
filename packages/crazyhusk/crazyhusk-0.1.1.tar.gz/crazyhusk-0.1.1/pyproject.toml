@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "src/crazyhusk/__version__.py"
+
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+src_paths = ["src/crazyhusk"]
+import_heading_future = "Future Standard Library"
+import_heading_stdlib = "Standard Library"
+import_heading_thirdparty = "Third Party"
+import_heading_firstparty = "CrazyHusk"
+
+[tool.coverage.run]
+branch = true
+source = ["crazyhusk"]
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+tests = ["tests", "*/tests"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = ["if __name__ == .__main__.:"]
+
+[tool.mypy]
+files = "src/**/*.py"
+strict = true
+warn_unreachable = true
+warn_unused_ignores = false
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
