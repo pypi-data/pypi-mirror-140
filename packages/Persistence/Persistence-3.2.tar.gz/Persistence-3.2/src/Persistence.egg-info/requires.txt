@@ -1,0 +1,6 @@
+ExtensionClass>=4.5.1
+persistent>=4.1.1
+six
+
+[test]
+zope.testrunner
