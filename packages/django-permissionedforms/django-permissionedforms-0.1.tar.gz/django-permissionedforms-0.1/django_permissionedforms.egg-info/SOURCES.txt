@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_permissionedforms.egg-info/PKG-INFO
+django_permissionedforms.egg-info/SOURCES.txt
+django_permissionedforms.egg-info/dependency_links.txt
+django_permissionedforms.egg-info/requires.txt
+django_permissionedforms.egg-info/top_level.txt
+permissionedforms/__init__.py
+permissionedforms/forms.py
