@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/MyAlgorithms_norrisja.egg-info/PKG-INFO
+src/MyAlgorithms_norrisja.egg-info/SOURCES.txt
+src/MyAlgorithms_norrisja.egg-info/dependency_links.txt
+src/MyAlgorithms_norrisja.egg-info/top_level.txt
+src/kmeans/__init__.py
+src/kmeans/kmeans.py
