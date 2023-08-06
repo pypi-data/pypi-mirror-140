@@ -1,0 +1,7 @@
+README.md
+setup.py
+PySuperGui/__init__.py
+PySuperGui.egg-info/PKG-INFO
+PySuperGui.egg-info/SOURCES.txt
+PySuperGui.egg-info/dependency_links.txt
+PySuperGui.egg-info/top_level.txt
