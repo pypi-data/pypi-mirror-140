@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/label[@name='list_price']" position="before">
+        <label name="list_price_method"/>
+        <field name="list_price_method" xexpand="0" width="100"/>
+    </xpath>
+</data>

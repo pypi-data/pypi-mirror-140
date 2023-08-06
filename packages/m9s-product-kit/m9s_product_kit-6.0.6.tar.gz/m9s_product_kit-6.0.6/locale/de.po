@@ -1,0 +1,504 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:product.component,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:product.component,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:product.component,fixed:"
+msgid "Fixed"
+msgstr "Feste Menge"
+
+msgctxt "field:product.component,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:product.component,parent_product:"
+msgid "Parent Variant"
+msgstr "Übergeordnete Variante"
+
+msgctxt "field:product.component,parent_template:"
+msgid "Parent Product"
+msgstr "Übergeordneter Artikel"
+
+msgctxt "field:product.component,parent_type:"
+msgid "Parent Type"
+msgstr "Übergeordneter Typ"
+
+msgctxt "field:product.component,product:"
+msgid "Product"
+msgstr "Artikel"
+
+msgctxt "field:product.component,product_unit_category:"
+msgid "Product Unit Category"
+msgstr "Artikel Maßeinheitenkategorie"
+
+msgctxt "field:product.component,quantity:"
+msgid "Quantity"
+msgstr "Menge"
+
+msgctxt "field:product.component,rec_name:"
+msgid "Record Name"
+msgstr "Name"
+
+msgctxt "field:product.component,sequence:"
+msgid "Sequence"
+msgstr "Reihenfolge"
+
+msgctxt "field:product.component,unit:"
+msgid "Unit"
+msgstr "Einheit"
+
+msgctxt "field:product.component,unit_digits:"
+msgid "Unit Digits"
+msgstr "Nachkommastellen"
+
+msgctxt "field:product.component,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:product.component,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:product.product,components:"
+msgid "Components"
+msgstr "Komponenten"
+
+msgctxt "field:product.product,components_in_description:"
+msgid "Components in description"
+msgstr "Komponenten in Beschreibung übernehmen"
+
+msgctxt "field:product.product,list_price_method:"
+msgid "List Price Method"
+msgstr "Listenpreismethode"
+
+msgctxt "field:product.template,components:"
+msgid "Components"
+msgstr "Komponenten"
+
+msgctxt "field:purchase.line,component_children:"
+msgid "Component Children"
+msgstr "Untergeordnete Komponenten"
+
+msgctxt "field:purchase.line,component_parent:"
+msgid "Component Parent"
+msgstr "Übergeordnete Komponente"
+
+msgctxt "field:purchase.line,components:"
+msgid "Components"
+msgstr "Komponenten"
+
+msgctxt "field:purchase.line.component,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:purchase.line.component,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:purchase.line.component,fixed:"
+msgid "Fixed"
+msgstr "Fix"
+
+msgctxt "field:purchase.line.component,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:purchase.line.component,line:"
+msgid "Line"
+msgstr "Position"
+
+msgctxt "field:purchase.line.component,move_done:"
+msgid "Moves Done"
+msgstr "Lagerbewegungen Erledigt"
+
+msgctxt "field:purchase.line.component,move_exception:"
+msgid "Moves Exception"
+msgstr "Lagerbewegungen Vorbehalt"
+
+msgctxt "field:purchase.line.component,moves:"
+msgid "Moves"
+msgstr "Lagerbewegungen"
+
+msgctxt "field:purchase.line.component,moves_ignored:"
+msgid "Ignored Moves"
+msgstr "Ignorierte Lagerbewegungen"
+
+msgctxt "field:purchase.line.component,moves_recreated:"
+msgid "Recreated Moves"
+msgstr "Neu erstellte Lagerbewegungen"
+
+msgctxt "field:purchase.line.component,parent_type:"
+msgid "Parent Type"
+msgstr "Übergeordneter Typ"
+
+msgctxt "field:purchase.line.component,price_ratio:"
+msgid "Price Ratio"
+msgstr "Preisverhältnis"
+
+msgctxt "field:purchase.line.component,product:"
+msgid "Product"
+msgstr "Artikel"
+
+msgctxt "field:purchase.line.component,product_unit_category:"
+msgid "Product Unit Category"
+msgstr "Artikel Maßeinheitenkategorie"
+
+msgctxt "field:purchase.line.component,quantity:"
+msgid "Quantity"
+msgstr "Menge"
+
+msgctxt "field:purchase.line.component,quantity_ratio:"
+msgid "Quantity Ratio"
+msgstr "Mengenverhältnis"
+
+msgctxt "field:purchase.line.component,rec_name:"
+msgid "Record Name"
+msgstr "Name"
+
+msgctxt "field:purchase.line.component,sequence:"
+msgid "Sequence"
+msgstr "Reihenfolge"
+
+msgctxt "field:purchase.line.component,unit:"
+msgid "Unit"
+msgstr "Einheit"
+
+msgctxt "field:purchase.line.component,unit_digits:"
+msgid "Unit Digits"
+msgstr "Nachkommastellen"
+
+msgctxt "field:purchase.line.component,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:purchase.line.component,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:purchase.line.component-ignored-stock.move,component:"
+msgid "Component"
+msgstr "Komponente"
+
+msgctxt "field:purchase.line.component-ignored-stock.move,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:purchase.line.component-ignored-stock.move,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:purchase.line.component-ignored-stock.move,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:purchase.line.component-ignored-stock.move,move:"
+msgid "Move"
+msgstr "Lagerbewegung"
+
+msgctxt "field:purchase.line.component-ignored-stock.move,rec_name:"
+msgid "Record Name"
+msgstr "Name"
+
+msgctxt "field:purchase.line.component-ignored-stock.move,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:purchase.line.component-ignored-stock.move,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:purchase.line.component-recreated-stock.move,component:"
+msgid "Component"
+msgstr "Komponente"
+
+msgctxt "field:purchase.line.component-recreated-stock.move,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:purchase.line.component-recreated-stock.move,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:purchase.line.component-recreated-stock.move,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:purchase.line.component-recreated-stock.move,move:"
+msgid "Move"
+msgstr "Lagerbewegung"
+
+msgctxt "field:purchase.line.component-recreated-stock.move,rec_name:"
+msgid "Record Name"
+msgstr "Name"
+
+msgctxt "field:purchase.line.component-recreated-stock.move,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:purchase.line.component-recreated-stock.move,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:sale.line,component_children:"
+msgid "Component Children"
+msgstr "Untergeordnete Komponenten"
+
+msgctxt "field:sale.line,component_parent:"
+msgid "Component Parent"
+msgstr "Übergeordnete Komponente"
+
+msgctxt "field:sale.line,components:"
+msgid "Components"
+msgstr "Komponenten"
+
+msgctxt "field:sale.line.component,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:sale.line.component,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:sale.line.component,fixed:"
+msgid "Fixed"
+msgstr "Fix"
+
+msgctxt "field:sale.line.component,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:sale.line.component,line:"
+msgid "Line"
+msgstr "Position"
+
+msgctxt "field:sale.line.component,move_done:"
+msgid "Moves Done"
+msgstr "Lagerbewegungen Erledigt"
+
+msgctxt "field:sale.line.component,move_exception:"
+msgid "Moves Exception"
+msgstr "Lagerbewegungen Vorbehalt"
+
+msgctxt "field:sale.line.component,moves:"
+msgid "Moves"
+msgstr "Lagerbewegungen"
+
+msgctxt "field:sale.line.component,moves_ignored:"
+msgid "Ignored Moves"
+msgstr "Ignorierte Lagerbewegungen"
+
+msgctxt "field:sale.line.component,moves_recreated:"
+msgid "Recreated Moves"
+msgstr "Neu erstellte Lagerbewegungen"
+
+msgctxt "field:sale.line.component,parent_type:"
+msgid "Parent Type"
+msgstr "Übergeordneter Typ"
+
+msgctxt "field:sale.line.component,price_ratio:"
+msgid "Price Ratio"
+msgstr "Preisverhältnis"
+
+msgctxt "field:sale.line.component,product:"
+msgid "Product"
+msgstr "Artikel"
+
+msgctxt "field:sale.line.component,product_unit_category:"
+msgid "Product Unit Category"
+msgstr "Artikel Maßeinheitenkategorie"
+
+msgctxt "field:sale.line.component,quantity:"
+msgid "Quantity"
+msgstr "Menge"
+
+msgctxt "field:sale.line.component,quantity_ratio:"
+msgid "Quantity Ratio"
+msgstr "Mengenverhältnis"
+
+msgctxt "field:sale.line.component,rec_name:"
+msgid "Record Name"
+msgstr "Name"
+
+msgctxt "field:sale.line.component,sequence:"
+msgid "Sequence"
+msgstr "Reihenfolge"
+
+msgctxt "field:sale.line.component,unit:"
+msgid "Unit"
+msgstr "Einheit"
+
+msgctxt "field:sale.line.component,unit_digits:"
+msgid "Unit Digits"
+msgstr "Nachkommastellen"
+
+msgctxt "field:sale.line.component,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:sale.line.component,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:sale.line.component-ignored-stock.move,component:"
+msgid "Component"
+msgstr "Komponente"
+
+msgctxt "field:sale.line.component-ignored-stock.move,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:sale.line.component-ignored-stock.move,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:sale.line.component-ignored-stock.move,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:sale.line.component-ignored-stock.move,move:"
+msgid "Move"
+msgstr "Lagerbewegung"
+
+msgctxt "field:sale.line.component-ignored-stock.move,rec_name:"
+msgid "Record Name"
+msgstr "Name"
+
+msgctxt "field:sale.line.component-ignored-stock.move,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:sale.line.component-ignored-stock.move,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:sale.line.component-recreated-stock.move,component:"
+msgid "Sale Line Component"
+msgstr "Verkaufsposition Komponente"
+
+msgctxt "field:sale.line.component-recreated-stock.move,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:sale.line.component-recreated-stock.move,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:sale.line.component-recreated-stock.move,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:sale.line.component-recreated-stock.move,move:"
+msgid "Move"
+msgstr "Lagerbewegung"
+
+msgctxt "field:sale.line.component-recreated-stock.move,rec_name:"
+msgid "Record Name"
+msgstr "Name"
+
+msgctxt "field:sale.line.component-recreated-stock.move,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:sale.line.component-recreated-stock.move,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "help:product.component,fixed:"
+msgid ""
+"Check to make the quantity of the component independent of the kit quantity."
+msgstr ""
+"Auswählen um die Menge der Komponente unabhängig von der Kit-Menge zu "
+"machen."
+
+msgctxt "help:product.product,components_in_description:"
+msgid ""
+"When activated, the components of the kit will be added to the sale line "
+"description."
+msgstr ""
+"Bei Aktivierung werden die Kitkomponenten in der Beschreibung der "
+"Verkaufsposition aufgeführt."
+
+msgctxt "help:product.product,list_price_method:"
+msgid ""
+"Select the method to calculate the kit list price.\n"
+"Note: the sale price of a component is calculated with evtl. price lists for the component in effect."
+msgstr ""
+"Wählen Sie die Methode zur Ermittlung des Listenpreises für das Kit.\n"
+"Bemerkung: Der Verkaufspreis einer Komponente wird unter Berücksichtigung evtl. Preislisten ermittelt."
+
+msgctxt "help:purchase.line.component,fixed:"
+msgid ""
+"Check to make the quantity of the component independent of the kit quantity."
+msgstr ""
+"Auswählen um die Menge der Komponente unabhängig von der Kit-Menge zu "
+"machen."
+
+msgctxt "help:sale.line.component,fixed:"
+msgid ""
+"Check to make the quantity of the component independent of the kit quantity."
+msgstr ""
+"Auswählen um die Menge der Komponente unabhängig von der Kit-Menge zu "
+"machen."
+
+msgctxt "model:product.component,name:"
+msgid "Product Component"
+msgstr "Artikel Komponente"
+
+msgctxt "model:purchase.line.component,name:"
+msgid "Purchase Line Component"
+msgstr "Einkaufsposition Komponente"
+
+msgctxt "model:purchase.line.component-ignored-stock.move,name:"
+msgid "Purchase Line Component - Ignored Move"
+msgstr "Einkausposition Komponete - Ignorierte Lagerbewegung"
+
+msgctxt "model:purchase.line.component-recreated-stock.move,name:"
+msgid "Purchase Line Component - Recreated Move"
+msgstr "Einkaufsposition - Wiederhergestellte Lagerbewegung"
+
+msgctxt "model:sale.line.component,name:"
+msgid "Sale Line Component"
+msgstr "Verkaufsposition Komponente"
+
+msgctxt "model:sale.line.component-ignored-stock.move,name:"
+msgid "Sale Line Component - Ignored Move"
+msgstr "Verkaufsposition Komponente - Ignorierte Lagerbewegung"
+
+msgctxt "model:sale.line.component-recreated-stock.move,name:"
+msgid "Sale Line Component - Recreated Move"
+msgstr "Verkaufsposition - Wiederhergestellte Lagerbewegung"
+
+msgctxt "selection:product.product,list_price_method:"
+msgid "Fixed Price"
+msgstr "Festpreis"
+
+msgctxt "selection:product.product,list_price_method:"
+msgid "Sum of component list prices"
+msgstr "Summe der Listenpreise der Komponenten"
+
+msgctxt "selection:product.product,list_price_method:"
+msgid "Sum of component sale prices"
+msgstr "Summe der Verkaufspreise der Komponenten"
+
+msgctxt "selection:product.product,type:"
+msgid "Kit"
+msgstr "Kit"
+
+msgctxt "selection:product.template,type:"
+msgid "Kit"
+msgstr "Kit"
+
+msgctxt "view:purchase.line:"
+msgid "Components"
+msgstr "Komponenten"
+
+msgctxt "view:sale.line:"
+msgid "Components"
+msgstr "Komponenten"
