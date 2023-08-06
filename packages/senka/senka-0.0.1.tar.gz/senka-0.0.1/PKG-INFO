@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: senka
+Version: 0.0.1
+Summary: making journal for transactions on blockchain
+Home-page: https://github.com/ca3-caaip/senka
+Author: ca3-caaip
+Author-email: 
+License: mit
+Platform: UNKNOWN
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/senka.egg-info/PKG-INFO
+src/senka.egg-info/SOURCES.txt
+src/senka.egg-info/dependency_links.txt
+src/senka.egg-info/requires.txt
+src/senka.egg-info/top_level.txt
+test/test_config.py
+test/test_plugin_manager.py
+test/test_senka.py
