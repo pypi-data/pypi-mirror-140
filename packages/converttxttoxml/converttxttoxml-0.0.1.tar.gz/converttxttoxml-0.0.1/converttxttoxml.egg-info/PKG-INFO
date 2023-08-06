@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: converttxttoxml
+Version: 0.0.1
+Summary: Txt to xml converter
+Home-page: UNKNOWN
+Author: Aman Kumar and Param Sharma
+Author-email: aman.kumar@bobble.ai
+License: UNKNOWN
+Description: This is a txt to xml converter for making furthur dict files.
+        
+        Change log
+        ==============
+        
+        0.0.1(01/03/2022)
+        -----------------
+        - First Release-
+        
+Keywords: converter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

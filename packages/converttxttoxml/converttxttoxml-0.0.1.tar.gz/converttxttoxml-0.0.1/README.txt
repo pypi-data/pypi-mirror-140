@@ -1,0 +1,1 @@
+This is a txt to xml converter for making furthur dict files.
