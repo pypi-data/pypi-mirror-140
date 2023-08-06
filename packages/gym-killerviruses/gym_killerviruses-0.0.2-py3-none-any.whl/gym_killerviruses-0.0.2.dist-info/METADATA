@@ -1,0 +1,182 @@
+Metadata-Version: 2.1
+Name: gym-killerviruses
+Version: 0.0.2
+Summary: A OpenAI Gym Env for killerviruses
+Home-page: https://github.com/batalong123/gym-killerviruses
+Author: Massock Batalong M.B.
+Author-email: lumierebatalong@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+Requires-Dist: pygame
+Requires-Dist: numpy
+
+# gym-killerviruses
+
+<p align="center">
+	<img src="docs/sarscov2.jpg" width=80%, height=80% align="center"/><br>
+</p>
+
+***killerviruses is a game simulator inspired by Covid19 pandemic where virus is a Sars-Cov II and killer are all doctors, nurses, researchers on public health, etc ...*** 
+
+# Table of Contents
+
+1. [Game-presentation](#Game-presentation)
+	1. [Introduction](#Introduction)
+	2. [Object of the game](#Object-of-the-game)
+	3. [Gameplay](#Gameplay)
+2. [Rules](#Rules)
+	1. [Starting-positions](#Starting-positions)
+	2. [moves](#moves)
+
+3. [Environments](#Environments)
+	1. [Episode termination](#Episode-termination)
+	2. [Observations](#Observations)
+	3. [Actions](#Actions)
+	4. [Reward](#Reward)
+
+4.	[Installation](#Installation)
+3.	[Usage](#Usage)
+	1. [Citation](#Citation)
+   	2. [Contribute](#Contribute)
+
+
+# Game-presentation
+
+https://en.wikipedia.org/wiki/Covid19_pandemic
+
+## Introduction
+
+It was on March 11, 2020 that the World Health Organisation (WHO) declared the coronavirus pandemic. **Killerviruses** is a single-player simulator game where player start with 3 lifes in the environment dominated by Sars-Cov II. 
+
+## Object of the game
+
+By looking for the way to save its life, player must kill all Sars-Cov II viruses with plants. If he kills all viruses, player wins otherwise die.
+
+## Gameplay
+
+During the game, player must be stratege by finding a plant and avoiding Sars-CovII in their way. If player touches viruse with a plant, he kills viruse. If player touches viruse without a plant, he looses one life and he contaminates environment. 
+
+# Rule
+
+## Starting-positions
+
+Player starts in bottom of screen with 8 viruses and 5 plants.
+
+## Moves
+
+Players can move following theses directions:
+
+- **Up, Left, Right, Down**
+
+- **LeftTop, RightTop,  LeftBottom, RightBottom, NOOP**
+
+# Environment
+
+## Observation
+
+The observation is a numpy arrays of size (480, 520, 3). This arrays is a type=uint8 value in the [0, 255] range. You can see image below. 
+
+<p align="center">
+	<img src="docs/killerviruses.gif" width=70% height=70% align="center"/><br>
+</p>
+<em>gym-killerviruses</em>
+
+## Actions
+
+The moves is the 8 directions mentioned before. Player can go everywhere in the screen to reach his objective.
+<p align="center">
+	<img src="docs/boy.png" width=5% height=5% align="center"/><br>
+</p>
+<em>agent can move Up, Left, Right, Down, LeftTop, RightTop,  LeftBottom, RightBottom in the screen.</em>
+
+## Reward
+
+Player have three rewards:
+
+1. If boy hits a plant: **reward = 1 + 0.01** during an episode. 0.01 is a decay life.
+
+5. If boy hits Sars-Cov II with a plant: **reward = 2**, 
+
+4. If boy hits Sars-Cov II without having a plant: **reward = - 3 - 0.01**.
+
+5. If timeout is over and score is null then **reward = - number of viruses** otherwise **reward = +score**.
+
+In beginning of game, player have 3 lifes by hitting the viruse without a plant, life = life - 0.01
+
+Do not forget that player can contaminate environment by creating two viruses each time after infection.
+
+## Episode termination
+
+The episode is terminated if agent looses all its life or kills all viruses and timeout is over.
+
+
+## Requirement
+
+- python 3.7+
+- OpenAI gym
+- Numpy
+- Pygame
+- PIL
+- Keras or Tensorflow or Pytorch 
+
+Dependencies can be installed with `pip` or `conda`
+
+# Using pip
+
+
+```
+$ pip install gym-killerviruses
+```
+
+# Usage
+
+```python
+import gym
+import gym_killerviruses
+
+env = gym.make('sarscov2-v0')
+MAX_EPISODE = 10
+
+for i in range(MAX_EPISODE):
+
+	env.reset()
+	done = False
+	total_reward = 0
+
+	while not done:
+
+		action = env.action_space.sample()
+
+		obs, reward, done, info = env.step(action)
+		total_reward += reward
+		env.render()
+
+	print(f'Episode: {i+1}/{MAX_EPISODE}', f'reward: {total_reward}', f'done: {done}')
+
+env.close()
+```
+
+## Citation
+
+Bibtex if you want to cite this repository in your publications:
+
+```
+@misc{gym_killerviruses,
+  author = {Massock Batalong M.B.},
+  title = {Killerviruses Environments for OpenAI Gym},
+  year = {2022},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/batalong123/gym-killerviruses}},
+}
+```
+
+## Contribute
+
+Feel free to contribute to this project. You can fork this repository and implement whatever you want. Alternatively, open a new issue in case you need help or want to have a feature added.
+
+**contact**: lumierebatalong@gmail.com
+
+
