@@ -1,0 +1,1 @@
+from pkm_cli.__app__ import app; globals().update(vars(app.load('pkm_cli.main')))
