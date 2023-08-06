@@ -1,0 +1,8 @@
+numpy
+matplotlib
+scipy
+seaborn
+
+[tests]
+pytest
+pytest-mpl
