@@ -1,0 +1,9 @@
+mssql_dataframe/__init__.py,sha256=_FbE6KeDuKriBPOgDw99r5PzpswpjGzxecxM_LA74o8,325
+mssql_dataframe/__sample__.py,sha256=IeUGkr_74_7T_RibGuuDu2RMAkXB1yE-MX7I9sZRHD4,1922
+mssql_dataframe/connect.py,sha256=QRgRf3DdNGHuBQi3rDYKUVXQeUC-7oEjg2Uttxfd6QU,3839
+mssql_dataframe/package.py,sha256=tosO437mU2vyR4X1p858BX0Ob-biPK9gX7NgZd0eqTg,5353
+mssql_dataframe-1.5.0.dist-info/LICENSE,sha256=v46YHbzVlhg5p0JHxuqkeiFLXIV4lXREZuDUx8LOGQY,1086
+mssql_dataframe-1.5.0.dist-info/METADATA,sha256=7xYbCUu2PhYCvjxBRL2nFg1ExH8O1y3jh9dqAsKziFU,5014
+mssql_dataframe-1.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mssql_dataframe-1.5.0.dist-info/top_level.txt,sha256=_5BtS7zVwrxgJBbFUk2FIFSjFFj6apYy7ZELKEEWWlM,16
+mssql_dataframe-1.5.0.dist-info/RECORD,,
