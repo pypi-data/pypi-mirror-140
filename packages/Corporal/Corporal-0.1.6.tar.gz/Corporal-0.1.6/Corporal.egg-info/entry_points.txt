@@ -1,0 +1,11 @@
+[console_scripts]
+corporal = corporal.commands:main
+
+[corporal.commands]
+hello = corporal.commands:HelloWorld
+
+[paste.app_factory]
+main = corporal.web.app:main
+
+[rattail.config.extensions]
+corporal = corporal.config:CorporalConfig
