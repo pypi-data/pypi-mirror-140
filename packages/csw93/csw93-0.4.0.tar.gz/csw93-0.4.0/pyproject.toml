@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "csw93"
+version = "0.4.0"
+description = "Regular Fractional Factorial two-level designs from the paper of Chen, Sun and Wu (1993)"
+authors = ["Alexandre Bohyn <alexandre.bohyn@kuleuven.be>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://abohyndoe.github.io/csw93/"
+repository = "https://github.com/ABohynDOE/csw93"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.22.2"
+pandas = "^1.4.0"
+m2r2 = "^0.3.2"
+graphviz = "^0.19.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.1.0"
+coverage = "^6.3.1"
+typing-extensions = "^4.0.1"
+Sphinx = "^4.4.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
