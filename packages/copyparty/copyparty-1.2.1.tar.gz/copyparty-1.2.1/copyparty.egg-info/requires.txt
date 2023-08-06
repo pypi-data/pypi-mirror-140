@@ -1,0 +1,13 @@
+jinja2
+
+[audiotags]
+mutagen
+
+[ftpd]
+pyftpdlib
+
+[ftps]
+pyopenssl
+
+[thumbnails]
+Pillow
