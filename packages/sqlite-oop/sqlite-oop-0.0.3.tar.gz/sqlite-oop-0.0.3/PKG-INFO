@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: sqlite-oop
+Version: 0.0.3
+Summary: python sqlite OOP class
+Home-page: https://github.com/hahadu/sqlite-py-oop
+Author: hahadu
+Author-email: mhyzhu@163.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/hahadu/sqlite-py-oop/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sqlite oop
+
+### sqlite Object Oriented
+
+```python
+from sqliteoop import sqlite
+db = sqlite("./demo.db")
+
+# create table
+createtable = db.table("user_name").create_table({
+    "id":"INTEGER PRIMARY KEY AUTOINCREMENT",
+    "name":"VARCHAR(80) NOT NULL"
+})
+print(createtable)
+
+# create datas
+insert = db.table("user_name").insert([{"name": "davie"}, {"name": "johan"}])
+
+# create data
+insert = db.table("user_name").create({"name": "davie"})
+
+# delete
+db.table("user_name").where("id",1).delete()
+db.table("user_name").where("name","davie").delete()
+
+# update
+db.table("user_name").where("name","davie").updata({"name":"lisa"})
+
+# select
+db.table("user_name").where("name","<>","davie").limit(5).select("*")
+
+# find
+db.table("user_name").where("name","johan").find("*")
+
+```
+
+
