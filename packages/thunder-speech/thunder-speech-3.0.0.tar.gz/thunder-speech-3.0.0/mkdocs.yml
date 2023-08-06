@@ -1,0 +1,28 @@
+site_name: Thunder
+plugins:
+- search
+- mkdocstrings:
+    handlers:
+      python:
+        rendering:
+          docstring_section_style: spacy
+    watch:
+        - src/thunder
+
+markdown_extensions:
+- admonition
+- pymdownx.highlight
+- pymdownx.superfences
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.details
+
+extra_css:
+- css/mkdocstrings.css
+
+repo_name: Thunder speech
+repo_url: https://github.com/scart97/thunder-speech
+edit_uri: ""
+
+theme:
+  name: material
