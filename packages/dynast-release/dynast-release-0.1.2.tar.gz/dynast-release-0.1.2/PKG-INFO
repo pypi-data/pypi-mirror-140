@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: dynast-release
+Version: 0.1.2
+Summary: Complete splicing and labeling quantification from metabolic labeling scRNA-seq
+Home-page: https://github.com/aristoteleo/dynast-release
+Author: Kyung Hoi (Joseph) Min
+Author-email: phoenixter96@gmail.com
+License: MIT
+Description: ![github version](https://img.shields.io/badge/Version-0.1.2-informational)
+        [![pypi version](https://img.shields.io/pypi/v/dynast-release)](https://pypi.org/project/dynast-release/0.1.2/)
+        ![python versions](https://img.shields.io/pypi/pyversions/dynast-release)
+        ![status](https://github.com/aristoteleo/dynast-release/workflows/CI/badge.svg)
+        [![docs](https://readthedocs.org/projects/dynast-release/badge/?version=latest)](https://dynast-release.readthedocs.io/en/latest/?badge=latest)
+        [![license](https://img.shields.io/pypi/l/dynast-release)](LICENSE)
+        
+        ## Dynast: Inclusive and efficient quantification of labeling and splicing RNAs for time-resolved metabolic labeling based scRNA-seq experiments
+        
+        [Getting started](https://dynast-release.readthedocs.io/en/latest/getting_started.html) - [Pipeline usage](https://dynast-release.readthedocs.io/en/latest/pipeline_usage.html) - [Technical information](https://dynast-release.readthedocs.io/en/latest/technical_information.html) - [Full documentation](https://dynast-release.readthedocs.io/en/latest/index.html)
+        
+        <img src="docs/_static/punnet_square.png" width="50%" height="50%">
+        
+        Dynast is a command-line pipeline that preprocesses data from metabolic labeling scRNA-seq experiments and quantifies the following four mRNA species: unlabeled unspliced, unlabeled spliced, labeled unspliced and labeled spliced. In addition, dynast can perform statistical estimation of these species through expectation maximization (EM) and Bayesian inference.
+        
+        ### Key features
+        * Complete quantification of labeling and splicing of RNA.
+            * Unlabeled unspliced, unlabeled spliced, labeled unspliced, labeled spliced species quantification.
+            * Highly paralellized and optimized pipeline procedures.
+        * Statistical estimation procedure that corrects the observed unlabeled and labeled counts via a Bayesian inference framework.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
