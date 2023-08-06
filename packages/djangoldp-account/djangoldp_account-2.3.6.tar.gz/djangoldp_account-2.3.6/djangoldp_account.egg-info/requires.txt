@@ -1,0 +1,9 @@
+djangoldp~=2.1
+django_registration~=3.0.1
+validators~=0.12
+oic~=0.15
+django-webidoidc-provider>=0.1.0
+djangorestframework>=3.12
+
+[dev]
+factory_boy>=2.11.0
