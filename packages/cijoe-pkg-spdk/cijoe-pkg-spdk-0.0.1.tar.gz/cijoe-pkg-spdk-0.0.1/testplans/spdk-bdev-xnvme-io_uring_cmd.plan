@@ -1,0 +1,16 @@
+descr: Verify that hello_bdev, perf and fio runs without error
+descr_long: |
+  Verify that hello_bdev, perf and fio runs without error
+evars:
+  XNVME_BE: "linux"
+hooks: ["dmesg", "sysinf", "spdk_setup"]
+testsuites:
+  - alias: "app -> bdev -> xNVMe -> io_uring_cmd"
+    name: "app_bdev_xnvme_io_uring_cmd"
+    evars: { XNVME_ASYNC: 'io_uring_cmd' }
+    hooks: ["spdk_bdev_conf"]
+    testcases:
+    - spdk_hello_bdev-xnvme.sh
+    - spdk_fio-latency_bdev-xnvme.sh
+    - spdk_fio-verify_bdev-xnvme.sh
+    - spdk_bdevperf_bdev-xnvme.sh
