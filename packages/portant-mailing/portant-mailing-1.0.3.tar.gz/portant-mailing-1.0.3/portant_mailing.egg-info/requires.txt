@@ -1,0 +1,8 @@
+celery>=5.2.3
+Django>=3.0
+redis>=4.1.4
+django-appconf
+
+[testing]
+pytest
+pytest-django
