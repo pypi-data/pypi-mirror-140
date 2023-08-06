@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: snapatac2
+Version: 1.99.99.2
+Summary: SnapATAC: Single Nucleus Analysis Pipeline for ATAC-seq
+Home-page: https://kzhang.org/SnapATAC2/
+Author: Kai Zhang
+Author-email: kai@kzhang.org
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
