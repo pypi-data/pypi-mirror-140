@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "minushalf"
+version = "1.0"
+description = "Preprocessing tools for help in dft minus one half calculations"
+authors = ["Henrique <hentt30@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[tool.poetry.dev-dependencies]
+yapf = "^0.31.0"
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools","numpy<=1.21.0"]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist =  py{36,37,38}
+skipsdist=True
+
+[testenv]
+deps=
+    pytest>=6.2.1
+    pytest-mock
+usedevelop=True
+commands=
+    pytest
+"""
