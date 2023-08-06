@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+macord/__init__.py
+macord/application.py
+macord/bot.py
+macord/channel.py
+macord/guild.py
+macord/message.py
+macord/user.py
+macord.egg-info/PKG-INFO
+macord.egg-info/SOURCES.txt
+macord.egg-info/dependency_links.txt
+macord.egg-info/top_level.txt
