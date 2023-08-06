@@ -1,0 +1,167 @@
+cqml: 0.2
+id: cqml_test
+meta:
+    org: nauto
+    project: sangam
+    s3.bucket: biz-databricks-root-prod-us
+    catalog: quilt
+    root: /tmp
+actions:
+  nauto:
+    do: latest
+    tables:
+      devices: nauto_devices
+  netsuite_suiteanalytics:
+    do: load
+    tables:
+      deploy_status: deployment_status
+      device_status: netsuite_device_status
+      devices: nauto_item_shipment_detail
+      items: items
+  box_devices:
+    do: box
+    from: devices
+    group: deployed_fleet
+    +doc: Split by fleet, upload, store URLs
+    box:
+        root_folder: CQML_Test
+        root_id: 156760265584
+        data_dir: test
+        file_ext: csv
+        expiration_date: '2022-02-23'
+    cols:
+      serial: tbd
+      install_status: tbd
+  map_sku:
+    do: macro|merge
+    into: "{into}"
+    join: "{join}"
+    from: items
+    join_type: inner
+    cols:
+      item_id: tbd
+      name|sku: tbd
+      displayname|item_name: tbd
+    where:
+      name:
+        "{region}": contains
+  map_pn:
+    do: macro.map_sku
+    into: devices
+    join: nauto_pn_id
+    region: NA
+  items_grouped:
+    do: group
+    from: items
+    agg:
+      name: count
+    sort: n_name
+    cols:
+      type_name: tbd
+      subtype: tbd
+      product_family_id: tbd
+      item_usage_id: tbd
+  items_pivot:
+    do: pivot
+    from: $id
+    agg:
+      n_name: sum
+    sort: Purchase
+    pivot: subtype
+    cols:
+      type_name: tbd
+  summarize:
+    do: summary
+    save: daily
+    from: devices
+    count: nauto_item_shipment_detail_nam
+    as: n_serial
+    cols:
+      deployed_action_id: tbd
+      device_status_id: tbd
+      deployed_fleet: tbd
+  item_names:
+    do: select
+    from: items
+    where:
+      name:
+        NA: contains
+        EUA: contains
+      displayname:
+        null: is_not
+    cols:
+      item_id: tbd
+      name|sku: tbd
+      displayname|item_name: tbd
+  na_devices:
+    do: merge
+    into: devices
+    join: nauto_pn_id
+    from: items
+    join_type: inner
+    where:
+      name:
+        NA: contains
+    cols:
+      item_id: tbd
+      name|sku: tbd
+      displayname|item_name: tbd
+  status_returning:
+    do: flag
+    from: deploy_status
+    where:
+      list_item_name:
+        Return: contains
+  status_pending:
+    do: flag
+    from: status_returning
+    where:
+      list_item_name:
+        Deployed: contains
+        Exported: contains
+  days_unseen:
+    do: call
+    from: status_pending
+    function: datediff
+    args:
+        - current_date()
+        - _fivetran_synced
+  is_silent:
+    do: flag
+    from: days_unseen
+    where:
+      days_unseen:
+        10: greater
+  aggregates:
+    do: group
+    from: is_silent
+    agg:
+      status_pending: count
+      days_unseen: sum
+      is_silent: count
+    sort: n_is_silent
+    cols:
+      date_created: tbd
+  active_devices:
+    do: select
+    from: devices
+    where:
+      is_inactive:
+        T: not_contains
+  nonunique_imei:
+    do: unique
+    from: $id
+    sort: last_modified_date
+    ensure_unique: imei
+    cols:
+      imei: tbd
+  default:
+    do: load
+    tables:
+      check: 3g_checkfleet
+  checkmate:
+    do: select
+    from: check
+  3g_checkfleet:
+    do: select
+    from: checkmate
