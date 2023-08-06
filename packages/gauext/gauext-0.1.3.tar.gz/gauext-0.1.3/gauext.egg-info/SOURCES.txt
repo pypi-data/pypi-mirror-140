@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.py
+gauext/__init__.py
+gauext/atominfo.py
+gauext/gaussian.py
+gauext/gauwrite.c
+gauext/gauwrite.pyx
+gauext/interface.py
+gauext/xtb.py
+gauext.egg-info/PKG-INFO
+gauext.egg-info/SOURCES.txt
+gauext.egg-info/dependency_links.txt
+gauext.egg-info/entry_points.txt
+gauext.egg-info/not-zip-safe
+gauext.egg-info/requires.txt
+gauext.egg-info/top_level.txt

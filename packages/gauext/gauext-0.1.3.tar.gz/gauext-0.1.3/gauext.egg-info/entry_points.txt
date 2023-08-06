@@ -1,0 +1,3 @@
+[console_scripts]
+gauext-xtb = gauext.xtb:XTBInterface.run
+
