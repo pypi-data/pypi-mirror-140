@@ -1,0 +1,10 @@
+include *.txt
+recursive-include src *.html
+
+# added by check-manifest
+recursive-include src *.css
+recursive-include src *.js
+recursive-include src *.woff2
+
+# added by check-manifest
+recursive-include src *.json
