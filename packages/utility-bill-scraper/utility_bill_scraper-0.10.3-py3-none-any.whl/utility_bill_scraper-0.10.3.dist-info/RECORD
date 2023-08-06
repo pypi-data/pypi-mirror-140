@@ -1,0 +1,12 @@
+utility_bill_scraper/__init__.py,sha256=qvcMIv-yu9PQIZTf6y8wm4F7jZxGM_3HQq-JY5b8K0Y,21484
+utility_bill_scraper/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utility_bill_scraper/bin/ubs.py,sha256=3VspbWeSMr3JDfXxdnmGqaSXxVxtoZA8O8O9xYwbTPg,5317
+utility_bill_scraper/canada/on/enbridge.py,sha256=gAFJz0d8_LxM0gXqnadcDuxfFjufqWOQw1PWHp29_a0,2798
+utility_bill_scraper/canada/on/kitchener_utilities.py,sha256=2Ltbxhp8gUjz54RGOGo0rk4xwMXmIoWdDY0FH4FiktY,19981
+utility_bill_scraper/canada/on/kitchener_wilmot_hydro.py,sha256=DpjPNEGv7dsSxIq3Dc9RGqxCX_t5Qitr4oUNUkcYHt0,16777
+utility_bill_scraper/google_drive_helpers.py,sha256=3sW4I2MBYbeaar6aist64u13F90IHHPECG0tDDJnwbE,3733
+utility_bill_scraper-0.10.3.dist-info/entry_points.txt,sha256=rZd7nE_hl2l3Lj22Tq84is0mo9GT4aXvoBlilLRpjlI,57
+utility_bill_scraper-0.10.3.dist-info/LICENSE.md,sha256=2Tug-Nak_7mBiC1p1au-6N10EAc8jlmdbvCDDv3aWSQ,1515
+utility_bill_scraper-0.10.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+utility_bill_scraper-0.10.3.dist-info/METADATA,sha256=L1AfTu8usxyJIZW-mK7TUDIm_jr8qHhJpnso29LepE0,9400
+utility_bill_scraper-0.10.3.dist-info/RECORD,,
