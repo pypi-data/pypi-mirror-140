@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.cfg
+setup.py
+hackernote/__init__.py
+hackernote/__main__.py
+hackernote.egg-info/PKG-INFO
+hackernote.egg-info/SOURCES.txt
+hackernote.egg-info/dependency_links.txt
+hackernote.egg-info/entry_points.txt
+hackernote.egg-info/not-zip-safe
+hackernote.egg-info/requires.txt
+hackernote.egg-info/top_level.txt
+tests/__init__.py
