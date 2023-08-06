@@ -1,0 +1,6 @@
+planetary_computer
+pystac_client
+radiant_mlhub
+six
+stackstac
+termcolor
