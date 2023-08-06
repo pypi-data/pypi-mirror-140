@@ -1,0 +1,10 @@
+timeloop/__init__.py,sha256=tDgajq_md16svS2tqmicAN_e4WPSeO6_zvvCAnmyY_w,34
+timeloop/app.py,sha256=stPN3zl15l2KUhhowNr77FPPGLiUbPuD2TsNvDQVboI,2108
+timeloop/exceptions.py,sha256=OZ4SBnaNpIn4H4X91LRKvNBprccKEGrQJSEyVvx2sWY,165
+timeloop/helpers.py,sha256=MXL1l7LPMZWxdzVeiAmeyiJtktfQWrCy1fMQ2MMAWpA,105
+timeloop/job.py,sha256=PQ3jYN7BEPYlDhvr015ZXtxQUzwACvhYMpN7hhPjdMc,1603
+timeloop_ng-1.0.0.dist-info/LICENSE,sha256=ZV_4adJAbqlHsffCaeo4DXL1U82rHCpRFVABFt-uN2o,1084
+timeloop_ng-1.0.0.dist-info/METADATA,sha256=32OWcTZu_qHCDVMsgUbUiVmKIIuI6-f21PQS58625Yg,2937
+timeloop_ng-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+timeloop_ng-1.0.0.dist-info/top_level.txt,sha256=3fVj47gh4KMprfkHmS08bQQMUKzoPpnuhW0v3EusSok,9
+timeloop_ng-1.0.0.dist-info/RECORD,,
