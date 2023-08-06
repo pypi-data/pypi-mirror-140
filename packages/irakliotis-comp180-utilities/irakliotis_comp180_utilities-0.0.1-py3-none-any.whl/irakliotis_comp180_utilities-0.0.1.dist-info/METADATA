@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: irakliotis-comp180-utilities
+Version: 0.0.1
+Summary: Utilities for COMP 180 at LUC
+Home-page: https://github.com/lgreco
+Author: Leo Irakliotis
+Author-email: leo@cs.luc.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Leo Irakliotis' utilities for COMP 180
+
+This package contains various utilities that I use in my
+COMP 180 course at Loyola University Chicago. The course
+is an introduction to Computing and Data for non computer-
+science majors. It is based on Python and presents techniques
+and methods using pandas/dataframes and matplotlib.
+
+Leo Irakliotis 
+leo@cs.luc.edu
+
+
