@@ -1,0 +1,9 @@
+moderngl
+glfw
+
+[cyan]
+qlibs-cyan==0.1.0
+
+[full]
+pillow
+freetype-py
