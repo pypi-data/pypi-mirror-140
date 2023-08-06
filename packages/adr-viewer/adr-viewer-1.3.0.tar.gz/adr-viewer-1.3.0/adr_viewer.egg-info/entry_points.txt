@@ -1,0 +1,3 @@
+[console_scripts]
+adr-viewer = adr_viewer:main
+
