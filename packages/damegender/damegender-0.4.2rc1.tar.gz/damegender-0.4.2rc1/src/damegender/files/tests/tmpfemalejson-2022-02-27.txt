@@ -1,0 +1,11 @@
+-rw-rw-r-- 1 davidam davidam 61 feb 27 22:01 files/tmp/CLARA_female.json
+-rw-rw-r-- 1 davidam davidam 61 feb 27 22:01 files/tmp/DILARA_female.json
+-rw-rw-r-- 1 davidam davidam 61 feb 27 22:01 files/tmp/ELENA_female.json
+-rw-rw-r-- 1 davidam davidam 61 feb 27 22:01 files/tmp/JULIA_female.json
+-rw-rw-r-- 1 davidam davidam 60 feb 27 22:01 files/tmp/LUISA_female.json
+-rw-rw-r-- 1 davidam davidam 60 feb 27 22:01 files/tmp/MARTIN_female.json
+-rw-rw-r-- 1 davidam davidam 62 feb 27 22:01 files/tmp/ROBERTA_female.json
+-rw-rw-r-- 1 davidam davidam 60 feb 27 22:01 files/tmp/ROSA_female.json
+-rw-rw-r-- 1 davidam davidam 61 feb 27 22:01 files/tmp/SARA_female.json
+-rw-rw-r-- 1 davidam davidam 61 feb 27 22:01 files/tmp/TABITA_female.json
+-rw-rw-r-- 1 davidam davidam 58 feb 27 22:01 files/tmp/UNA_female.json
