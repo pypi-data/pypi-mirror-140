@@ -1,0 +1,3 @@
+[console_scripts]
+mbed-vscode-tools = mbed_vscode_tools.mbed_vscode_tools:main
+
