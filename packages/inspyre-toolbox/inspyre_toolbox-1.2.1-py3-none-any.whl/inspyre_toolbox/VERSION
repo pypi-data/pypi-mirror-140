@@ -1,0 +1,7 @@
+[VERSION]
+number: 1.2.1
+pre-release: false
+
+[PRE-RELEASE]
+type:
+build-no:
