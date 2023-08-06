@@ -1,0 +1,9 @@
+
+[cli]
+hypecli>=0.0.8
+
+[crypto]
+sidle>=0.0.2
+
+[logger]
+loguru>=0.5.3
