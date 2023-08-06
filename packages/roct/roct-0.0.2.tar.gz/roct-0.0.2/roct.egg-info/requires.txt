@@ -1,0 +1,6 @@
+numpy<=1.21
+groot-trees
+gurobipy
+python-sat
+tqdm
+seaborn
