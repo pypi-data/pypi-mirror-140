@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: TkToolsD
+Version: 0.2.3
+Summary: Some usefull tk widgets like: ImgView, ScrollView.
+Home-page: https://www.baidu.com
+Author: dekiven
+Author-email: dekiven@163.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: DKVTools (>=0.1.9)
+Requires-Dist: Pillow
+
+########
+TkToolsD
+########
+Some usefull tk widgets like: ImageView, ScrollView.
+
