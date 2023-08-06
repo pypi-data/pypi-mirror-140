@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: Topsis-Naman-101903630
+Version: 1.0.0
+Summary: Topsis Calculator
+Home-page: UNKNOWN
+Author: Naman Garg
+Author-email: ngarg2_be19@thapar.edu
+License: MIT
+Keywords: Topsis-Naman-101903630
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Name: Naman Garg
+Roll number: 101903630
+Contact: ngarg2_be19@thapar.edu
+
+Change Log
+==========
+Version: 0.0.1 (25/02/2022)
+---------------------------
+- First Release
+
