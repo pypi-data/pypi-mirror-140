@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+nomics/__init__.py
+nomics/nomics.py
+nomics/utils.py
+py_nomics_client.egg-info/PKG-INFO
+py_nomics_client.egg-info/SOURCES.txt
+py_nomics_client.egg-info/dependency_links.txt
+py_nomics_client.egg-info/requires.txt
+py_nomics_client.egg-info/top_level.txt
