@@ -1,0 +1,35 @@
+{
+    "seed": 12,
+    "save_path": "./results",
+    "bert_config": "bert-base-cased",
+    "trn_data_path": "./datasets/openie4_train.pkl",
+    "dev_data_path": [
+        "./datasets/oie2016_dev.pkl",
+        "./datasets/carb_dev.pkl"
+    ],
+    "dev_gold_path": [
+        "./evaluate/OIE2016_dev.txt",
+        "./carb/CaRB_dev.tsv"
+    ],
+    "max_len": 64,
+    "device": "cuda",
+    "visible_device": "0",
+    "summary_step": 4000,
+    "use_lstm": true,
+    "binary": false,
+    "epochs": 1,
+    "lstm_dropout": 0.0,
+    "mh_dropout": 0.2,
+    "pred_clf_dropout": 0.0,
+    "arg_clf_dropout": 0.2,
+    "batch_size": 128,
+    "dev_batch_size": 32,
+    "learning_rate": 3e-05,
+    "n_arg_heads": 8,
+    "n_arg_layers": 4,
+    "pos_emb_dim": 64,
+    "pred_n_labels": 3,
+    "arg_n_labels": 9,
+    "total_steps": 16895,
+    "warmup_steps": 1690
+}

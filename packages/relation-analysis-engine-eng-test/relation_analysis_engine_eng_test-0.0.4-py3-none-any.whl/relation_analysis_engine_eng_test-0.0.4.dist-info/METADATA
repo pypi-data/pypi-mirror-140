@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: relation-analysis-engine-eng-test
+Version: 0.0.4
+Summary: 2021 hanyang univ. relation analysis engine
+Home-page: http://211.39.140.235/hanyang-univ-2021/relation-analysis-engine
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: torch (==1.8.1)
+Requires-Dist: tqdm (==4.62.3)
+Requires-Dist: transformers (==4.15.0)
+Requires-Dist: numpy (==1.19.4)
+
+relation-analysis-engine-eng
+
+- compatibility
+
+  - python
+
+- modules
+
+  - scd_parser
+
