@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+topsis_Srishti_101903715/__init__.py
+topsis_Srishti_101903715/topsis_Srishti_101903715.py
+topsis_Srishti_101903715.egg-info/PKG-INFO
+topsis_Srishti_101903715.egg-info/SOURCES.txt
+topsis_Srishti_101903715.egg-info/dependency_links.txt
+topsis_Srishti_101903715.egg-info/requires.txt
+topsis_Srishti_101903715.egg-info/top_level.txt
