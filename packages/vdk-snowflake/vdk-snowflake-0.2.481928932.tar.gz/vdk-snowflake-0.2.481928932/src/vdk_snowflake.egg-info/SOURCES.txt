@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/vdk/plugin/snowflake/snowflake_configuration.py
+src/vdk/plugin/snowflake/snowflake_connection.py
+src/vdk/plugin/snowflake/snowflake_plugin.py
+src/vdk_snowflake.egg-info/PKG-INFO
+src/vdk_snowflake.egg-info/SOURCES.txt
+src/vdk_snowflake.egg-info/dependency_links.txt
+src/vdk_snowflake.egg-info/entry_points.txt
+src/vdk_snowflake.egg-info/requires.txt
+src/vdk_snowflake.egg-info/top_level.txt

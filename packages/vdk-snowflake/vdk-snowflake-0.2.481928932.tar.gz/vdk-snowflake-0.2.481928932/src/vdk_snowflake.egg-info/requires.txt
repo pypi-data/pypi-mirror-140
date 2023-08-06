@@ -1,0 +1,2 @@
+vdk-core
+snowflake-connector-python
