@@ -1,0 +1,15 @@
+docassemble.ALMassachusetts-0.1.1-py3.9-nspkg.pth,sha256=I7mmJtKnBqG5CeLcN7X0ojMjjEYJ18APNze0rSxMNWk,564
+docassemble/ALMassachusetts/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+docassemble/ALMassachusetts/data/questions/al_massachusetts.yml,sha256=kLY-nPaI_og5FH0ImfhL8fn5jF5ve8gB6iHYSfSAns4,7758
+docassemble/ALMassachusetts/data/sources/README.md,sha256=INBqMlZdSvt3qlVBpaXyUydvf2WBFynhneMpELUTYYU,134
+docassemble/ALMassachusetts/data/sources/court_emails.yml,sha256=XTNCOt3-CGFVSJgANCU7LYVidusBFcEIascAb7Jn_1A,9271
+docassemble/ALMassachusetts/data/static/README.md,sha256=35pdZuBAr7tWoA11JvoBcpiuCB938ERG6xU86TGMqRQ,105
+docassemble/ALMassachusetts/data/static/mass_icon.png,sha256=awBmJ812I3wc2YCoI2QsxYhPInyl8YXp9q9B3qqXMdc,3035
+docassemble/ALMassachusetts/data/templates/README.md,sha256=VarDnHyLauJ0dK0399Iax1M0STYZFPgECWBynw5tehE,102
+docassemble/ALMassachusetts/data/templates/ma_basic_addendum.docx,sha256=UocvL-gdcWy44Z3_uTI99SGb8msQkC_Ylmh05slkMa4,15654
+docassemble.ALMassachusetts-0.1.1.dist-info/LICENSE,sha256=N2x-PO5EKRcgvAGJzoyPQ0CLfPACDeB8R4h8EjVzoBw,1084
+docassemble.ALMassachusetts-0.1.1.dist-info/METADATA,sha256=U3ftk_SapE0C-V7LGsuit7PepjpqzbYfivzKjP4_cck,763
+docassemble.ALMassachusetts-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+docassemble.ALMassachusetts-0.1.1.dist-info/namespace_packages.txt,sha256=jKNrh95z2Z4S6nFser9rAXJ9CzHMZ0MkVfGF-gO3DP4,12
+docassemble.ALMassachusetts-0.1.1.dist-info/top_level.txt,sha256=jKNrh95z2Z4S6nFser9rAXJ9CzHMZ0MkVfGF-gO3DP4,12
+docassemble.ALMassachusetts-0.1.1.dist-info/RECORD,,
