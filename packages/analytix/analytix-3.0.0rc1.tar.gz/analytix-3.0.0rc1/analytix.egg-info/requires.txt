@@ -1,0 +1,11 @@
+aiofiles<0.9,>=0.3
+httpx<0.23,>=0.11
+
+[df]
+
+[df:python_version < "3.11" and platform_python_implementation == "CPython"]
+pandas<2,>=1
+
+[types]
+types-aiofiles
+types-setuptools
