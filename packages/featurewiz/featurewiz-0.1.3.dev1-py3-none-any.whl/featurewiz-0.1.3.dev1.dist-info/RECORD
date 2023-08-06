@@ -1,0 +1,13 @@
+featurewiz/__init__.py,sha256=LGsUSXXP_gyqCnm1VkC8qbzLL1rNBdnxd3Y-OUPkAYg,2867
+featurewiz/__version__.py,sha256=00ZB1am-pd8eMniixk-WAR3ammiC_ug9FGAJuMdO52Y,393
+featurewiz/databunch.py,sha256=o9Qrf8l8gb8cMEaxJtdnJ5AiQlVgfgJsKTeTQQhHSY4,31797
+featurewiz/encoders.py,sha256=9ya4IZZHi0XNUUZp-9_pTGiONP2vYg7iVX-L8tN3VSs,4414
+featurewiz/featurewiz.py,sha256=NZR0z1tNZiWOsjtSMu-m4kZ87z540dbtDknvoaKDBTE,201990
+featurewiz/ml_models.py,sha256=_-LSrN4hVv7nlGtCYZl_vnt5eSteYRtiT-jNBJq59DY,86988
+featurewiz/settings.py,sha256=NCuxFjsGr-UYRShC8d4QYGwBnaFV346O0VWkVrQtgOk,2584
+featurewiz/stacking_models.py,sha256=ZSsn7l7u1Xiq6sNZRy1D_wPmcQ9QvNMWuwNOF62SiuI,7000
+featurewiz-0.1.3.dev1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+featurewiz-0.1.3.dev1.dist-info/METADATA,sha256=S8QKRJGz9K4jbvyPNhIt5aFeBgTsYNOTdsB_d1Cn9Lg,20718
+featurewiz-0.1.3.dev1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+featurewiz-0.1.3.dev1.dist-info/top_level.txt,sha256=FcRhE0BUEj9Lo8fEz3eCou16gvHoGmRch57t3s4806c,11
+featurewiz-0.1.3.dev1.dist-info/RECORD,,
