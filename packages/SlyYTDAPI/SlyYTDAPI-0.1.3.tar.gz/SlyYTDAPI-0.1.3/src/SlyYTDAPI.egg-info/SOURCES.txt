@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/SlyYTDAPI/__init__.py
+src/SlyYTDAPI/members.py
+src/SlyYTDAPI/ytdapi.py
+src/SlyYTDAPI.egg-info/PKG-INFO
+src/SlyYTDAPI.egg-info/SOURCES.txt
+src/SlyYTDAPI.egg-info/dependency_links.txt
+src/SlyYTDAPI.egg-info/requires.txt
+src/SlyYTDAPI.egg-info/top_level.txt
+test/test_channels.py
+test/test_members.py
+test/test_playlists.py
+test/test_readme.py
+test/test_search.py
