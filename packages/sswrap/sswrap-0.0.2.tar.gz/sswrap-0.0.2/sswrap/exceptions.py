@@ -1,0 +1,2 @@
+class SswrapException(RuntimeError):
+    pass

@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: sswrap
+Version: 0.0.2
+Summary: Spreadsheet and Worksheet wrapper
+Home-page: https://github.com/dmiyakawa/sswrap
+Author: Daisuke Miyakawa
+Author-email: 2149473+dmiyakawa@users.noreply.github.com
+Maintainer: Daisuke Miyakawa
+Maintainer-email: 2149473+dmiyakawa@users.noreply.github.com
+License: Apache 2
+Description: # sswrap
+        Spreadsheet wrapper for my private use
+        
+        
+        ## Random Notes around Technical Decisions
+        
+        - pygsheets is not selected to use Google Sheets API as the library also requires Drive access, which is a bit overwhelming.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: Apache Software License
