@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TOPSIS-NANDITA-101917191
+Version: 1.0
+Summary: topsis package for MCDM problems
+Home-page: https://github.com/NanditaBagga/TOPSIS-NANDITA-101917191
+Author: Nandita
+Author-email: nanditabagga23@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/NanditaBagga/TOPSIS-NANDITA-101917191/archive/refs/tags/1.0.tar.gz
+Description: "# TOPSIS-NANDITA-101917191" 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
