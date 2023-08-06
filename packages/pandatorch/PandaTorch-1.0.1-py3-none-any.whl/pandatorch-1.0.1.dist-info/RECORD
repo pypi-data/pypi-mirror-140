@@ -1,0 +1,5 @@
+pandatorch/__init__.py,sha256=crlYURA_2Ujkpz7iVPHovvxZRtvt4QBXF5AAFJzRfz0,23
+pandatorch/data.py,sha256=z-TfdPne1vbp7EqHRld7dEvqvrcQS4Lvso8McjCyX58,1294
+pandatorch-1.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pandatorch-1.0.1.dist-info/METADATA,sha256=4h69AUmx_QIhoVBms8LtgAX6TQfMwl-xxVAh6J46U_E,1240
+pandatorch-1.0.1.dist-info/RECORD,,
