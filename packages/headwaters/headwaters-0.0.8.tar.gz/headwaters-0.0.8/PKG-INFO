@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: headwaters
+Version: 0.0.8
+Summary: Simple stream sources for client application development.
+Home-page: https://github.com/headwaters-ai/headwaters
+Author: Ben Dyer (FifthHour)
+Author-email: ben@fifthhour.co.uk
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/headwaters-ai/headwaters/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# headwaters
+
+Simple stream sources for client application development.
+
+This is a holding package. Do not use.
+
