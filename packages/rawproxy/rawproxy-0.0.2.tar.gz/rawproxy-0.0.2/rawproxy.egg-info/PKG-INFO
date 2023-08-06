@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rawproxy
+Version: 0.0.2
+Summary: a githubusercontent proxy tool
+Home-page: https://github.com/DevecorSoft/rawproxy
+Author: Devecor
+Author-email: devecor@outlook.com
+License: UNKNOWN
+Project-URL: rawproxy, https://github.com/DevecorSoft/rawproxy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Rawproxy
+
+a tiny proxy server for raw.githubusercontent.com 
+
+
