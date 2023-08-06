@@ -1,0 +1,140 @@
+.custom-widget {
+  height: 100%;
+  border: var(--jp-border-width) solid var(--jp-cell-editor-border-color);
+}
+.custom-widget > .p-Widget {
+  height: 100%;
+}
+
+.ipyflex-widget-box {
+  height: calc(100% - 12px);
+  width: calc(100% - 10px);
+  margin: 0px 5px 10px 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-width: 0px 0px 0px 0px;
+  border-style: solid;
+  border-color: #e2e2e2;
+  border-radius: 0px;
+  outline-width: 0px;
+  outline-style: solid;
+  outline-color: #e2e2e2;
+  overflow: auto;
+}
+
+.flexlayout__layout {
+  left: unset !important;
+  top: unset !important;
+  right: unset !important;
+  bottom: unset !important;
+  position: unset !important;
+  overflow: unset !important;
+  height: 100%;
+  background: var(--jp-layout-color0);
+}
+
+.flexlayout__tabset-selected {
+  background-color: var(--jp-layout-color3);
+  border: var(--jp-border-width) solid var(--jp-cell-editor-border-color);
+}
+
+.flexlayout__tab_button--selected {
+  background-color: var(--jp-layout-color0);
+  color: var(--jp-ui-font-color1);
+}
+.inner__flexlayout__tabset .flexlayout__tab_button--selected {
+  background-color: var(--jp-layout-color1) !important;
+}
+.inner__flexlayout__tabset .inner__flexlayout__tabset-selected {
+  background-color: var(--jp-layout-color2) !important;
+}
+.inner__flexlayout__tabset .flexlayout__tabset_tabbar_outer {
+  background-color: var(--jp-layout-color2) !important;
+}
+.inner__flexlayout__tabset .inner__flexlayout__tabset {
+  background-color: var(--jp-cell-editor-background) !important;
+}
+.inner__flexlayout__tabset.flexlayout__tabset {
+  background: var(--jp-layout-color0);
+  height: 32px !important;
+}
+.inner__flexlayout__tab {
+  background: var(--jp-layout-color0);
+}
+
+.flexlayout__splitter {
+  background-color: var(--jp-cell-editor-background);
+}
+
+@media (hover: hover) {
+  .flexlayout__splitter:hover {
+    background-color: var(--jp-layout-color2);
+  }
+}
+.flexlayout__splitter_drag {
+  z-index: 1000;
+  background-color: var(--jp-layout-color2);
+}
+
+div.inner__flexlayout__tabset > div.flexlayout__tabset_tabbar_outer_top {
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #e2e2e2;
+}
+
+hr.ipyflex-divider {
+  margin: 1px 4px 1px 4px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: rgb(0 0 0 / 45%);
+  border-bottom-width: thin;
+  list-style: none;
+}
+
+.ipyflex-input-label-group {
+  position: relative;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ipyflex-float-input {
+  width: 100%;
+}
+
+.ipyflex-float-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.75;
+}
+
+.ipyflex-float-input:focus + .ipyflex-float-label,
+.ipyflex-float-input:valid + .ipyflex-float-label {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+.ipyflex-header {
+  height: 35px;
+  margin-bottom: 5px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px,
+    rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+  padding: 0px 24px;
+  color: white;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  background-color: #1976d2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
