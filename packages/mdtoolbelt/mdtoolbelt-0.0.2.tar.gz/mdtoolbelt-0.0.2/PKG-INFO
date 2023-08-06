@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: mdtoolbelt
+Version: 0.0.2
+Summary: Tools por MD post-processing
+Home-page: https://github.com/d-beltran/mdtoolbelt
+Author: Dani Beltrán
+Author-email: d.beltran.anadon@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/d-beltran/mdtoolbelt/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mdtoolbelt
+
+Tools por MD post-processing
+
+**Important**: PIP only installs the package. All the dependencies must be installed separately. To perform a complete installation, please use ANACONDA.
+
+
+## Conversions
+
+Convert structure and trajectory files from one format to another
+
+### Python
+
+```python
+from mdtoolbelt.conversions import convert
+
+convert(input_trajectory_filename='trajectory.xtc', output_trajectory_filename='trajectory.dcd')
+```
+
+### Bash
+
+```bash
+mdtb convert -it trajectory.xtc -ot trajectory.dcd
+```
+
