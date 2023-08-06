@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullscreen {
+    flex: 1 0 auto;
+}
+
+.card.rounded {
+    border-radius: 1.25rem;
+}
+
+.my0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+/*****NumberPad*****/
+.number-pad input[type="text"],
+.number-pad input[type="password"] {
+    font-size: 6rem;
+    height: 6rem;
+}
+
+.number-pad .numbers {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.number-pad .numbers button,
+.number-pad .numbers input {
+    flex: 1 0 30%;
+    min-height: calc(100vh / 11);
+    font-size: 2.5rem;
+    margin: .25rem;
+}
