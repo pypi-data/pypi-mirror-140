@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ipyvue-remote-component
+Version: 1.1.1
+Summary: Load Vue.js Packages at Runtime in Jupyter Notebooks and JupyterLab
+Home-page: https://github.com/saraedum/ipyvue-remote-component
+Author: Julian Rüth
+Author-email: julian.rueth@fsfe.org
+License: UNKNOWN
+Keywords: ipython,jupyter,widgets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: ipywidgets (>=7.6.0)
+Requires-Dist: ipyvue (>=1.5.0)
+
+Load Vue.js Packages at Runtime in Jupyter Notebooks and JupyterLab
+
