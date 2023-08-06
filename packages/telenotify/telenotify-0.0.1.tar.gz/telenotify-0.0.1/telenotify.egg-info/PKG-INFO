@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: telenotify
+Version: 0.0.1
+Summary: bot that send telegram notify message
+Home-page: https://github.com/voidful/telenotify
+Author: Voidful
+Author-email: voidful.stack@gmail.com
+License: Apache
+Keywords: telegram
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+
+# Telenotify
+
+## install
+
+`pip install telenotify`
+
+## example usage
+
+```python
+from telenotify import Telenotify
+
+
+class CustomNotify(Telenotify):
+    def get_update(self):
+        return "woof!!"
+
+
+CustomNotify("token", 60)
+```
+
+

@@ -1,0 +1,10 @@
+README.md
+setup.py
+telenotify/__init__.py
+telenotify/main.py
+telenotify.egg-info/PKG-INFO
+telenotify.egg-info/SOURCES.txt
+telenotify.egg-info/dependency_links.txt
+telenotify.egg-info/not-zip-safe
+telenotify.egg-info/requires.txt
+telenotify.egg-info/top_level.txt
