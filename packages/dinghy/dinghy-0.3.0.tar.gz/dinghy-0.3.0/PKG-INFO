@@ -1,0 +1,193 @@
+Metadata-Version: 2.1
+Name: dinghy
+Version: 0.3.0
+Summary: Dinghy daily digest tool
+Home-page: https://github.com/nedbat/dinghy
+Author: Ned Batchelder
+Author-email: ned@nedbatchelder.com
+License: Apache
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+######
+Dinghy
+######
+
+Dinghy daily GitHub digest tool.
+
+|pypi-badge| |pyversions-badge| |license-badge|
+
+Dinghy uses the GitHub GraphQL API to find recent activity on issues and pull
+requests, and writes a compact HTML digest.  Write your configuration in a
+``dinghy.yaml`` file, then:
+
+.. code-block:: bash
+
+    $ pip install dinghy
+    $ python -m dinghy
+
+
+Configuration
+=============
+
+Dinghy configuration is read from a ``dinghy.yaml`` file:
+
+.. code-block:: yaml
+
+    digests:
+      - digest: lastweek.html
+        since: 1 week
+        items:
+          - https://github.com/orgs/myorg/projects/17
+          - https://github.com/orgs/anotherorg/projects/8
+          - https://github.com/myorg/myrepo/pulls
+
+      - digest: hotnews.html
+        since: 1 day
+        items:
+          - url: https://github.com/orgs/anotherorg/projects/8
+            home_repo: anotherorg/wg
+          - https://github.com/myorg/churnchurn/issues
+
+      - digest: all_prs.html
+        since: 1 day
+        items:
+          - pull_requests: org:myorg
+
+    defaults:
+      ignore_users:
+        - app-user
+        - fake-bot
+
+The ``digests`` clause is a list of digests to produce.  The ``defaults``
+clause sets defaults for the digest options in the rest of the file.  Each in
+the ``digests`` clause specifies what to digest:
+
+- The ``digest`` setting is the HTML file to write.
+
+- The ``since`` setting indicates how far back to look for activity. It can use
+  units of weeks, days, hours, minutes and seconds, and can also be
+  abbreviated, like ``1d6h``.
+
+- The ``items`` setting is a list of things to report on, specified in a few
+  different ways:
+
+  - The ``url`` setting is a GitHub URL, in a number of forms:
+
+    - An organization project URL will report on the issues and pull requests
+      in the project.
+
+    - A URL to a repo's issues will report on the issues in the repo.
+
+    - A URL to a repo's pull requests will report on the pull requests in the
+      repo.
+
+  - The ``pull_requests`` setting can specify an organization to search for
+    pull requests.
+
+  - If an item only needs to specify a GitHub URL, then it can simply be the
+    URL string.
+
+Items can have additional options:
+
+- No activity is reported for bot users.  Some applications act as real users,
+  but should be ignored anyway.  You can list those user names that should be
+  ignored in the ``ignore_users`` setting.
+
+- Options for organization projects include:
+
+  - ``home_repo`` is the owner/repo of the repo in which most issues will be
+    created.  Issues in other repos will have the repo indicated in the
+    digest.
+
+
+
+.. |pypi-badge| image:: https://img.shields.io/pypi/v/dinghy.svg
+    :target: https://pypi.python.org/pypi/dinghy/
+    :alt: PyPI
+
+.. |pyversions-badge| image:: https://img.shields.io/pypi/pyversions/dinghy.svg
+    :target: https://pypi.python.org/pypi/dinghy/
+    :alt: Supported Python versions
+
+.. |license-badge| image:: https://img.shields.io/github/license/nedbat/dinghy.svg
+    :target: https://github.com/nedbat/dinghy/blob/master/LICENSE.txt
+    :alt: License
+
+
+.. this will be appended to README.rst
+
+Changelog
+=========
+
+..
+   All enhancements and patches to dinghy will be documented
+   in this file.  It adheres to the structure of http://keepachangelog.com/ ,
+   but in reStructuredText instead of Markdown (for ease of incorporation into
+   Sphinx documentation and the PyPI description).
+
+   This project adheres to Semantic Versioning (http://semver.org/).
+
+Unreleased
+----------
+
+See the fragment files in the `scriv.d directory`_.
+
+.. _scriv.d directory: https://github.com/nedbat/dinghy/tree/master/scriv.d
+
+
+.. scriv-insert-here
+
+0.3.0 — 2022-02-27
+------------------
+
+Added
+.....
+
+- The configuration file can be specified as the argument on the command line.
+
+- GitHub icons decorate pull requests, issues, and comments to distinguish them
+  and indicate their status.
+
+Changed
+.......
+
+- The configuration file syntax changed.  Now there is a top-level ``digests``
+  clause and an optional ``defaults`` clause.
+
+- The ``bots`` setting is now called ``ignore_users``.
+
+- Pull request review threads are presented hierarchically.
+
+0.2.0 — 2022-02-21
+------------------
+
+Added
+.....
+
+- Items can have options.  Organization projects have a ``home_repo`` option so
+  that issues from other repos will get an indication of the other repo.
+
+- Organizatons can be searched for pull requests.
+
+- If dinghy hits a GraphQL API rate limit, it will sleep until the limit is
+  reset.
+
+- Don't report on activity by bot users.  The ``bot`` setting can be used to
+  list user accounts that should be considered bots.
+
+0.1.0 — 2022-02-19
+------------------
+
+* First release.
+
+

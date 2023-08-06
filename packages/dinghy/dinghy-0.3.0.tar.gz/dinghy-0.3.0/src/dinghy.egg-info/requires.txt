@@ -1,0 +1,7 @@
+aiofiles
+aiohttp
+click
+glom
+jinja2
+pyyaml
+wcag-contrast-ratio
