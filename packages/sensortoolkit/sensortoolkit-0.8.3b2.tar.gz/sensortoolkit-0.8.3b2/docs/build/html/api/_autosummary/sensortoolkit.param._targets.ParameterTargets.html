@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sensortoolkit.param._targets.ParameterTargets &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="sensortoolkit.plotting" href="../plotting.html" />
+    <link rel="prev" title="sensortoolkit.param._targets" href="sensortoolkit.param._targets.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testingattrib_objects/index.html">Testing Attribute Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">sensortoolkit API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../calculate.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.calculate</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../datetime_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.datetime_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deploy.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.deploy</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../evaluation_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.evaluation_objs</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ingest.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.ingest</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lib_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.lib_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../model.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.model</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../param.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.param</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.param._parameter.html">sensortoolkit.param._parameter</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="sensortoolkit.param._targets.html">sensortoolkit.param._targets</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">sensortoolkit.param._targets.ParameterTargets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../plotting.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.plotting</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qc.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.qc</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.reference</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing_attrib_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.testing_attrib_objs</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">sensortoolkit API</a> &raquo;</li>
+          <li><a href="../param.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.param</span></code></a> &raquo;</li>
+          <li><a href="sensortoolkit.param._targets.html">sensortoolkit.param._targets</a> &raquo;</li>
+      <li>sensortoolkit.param._targets.ParameterTargets</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/api/_autosummary/sensortoolkit.param._targets.ParameterTargets.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sensortoolkit-param-targets-parametertargets">
+<h1>sensortoolkit.param._targets.ParameterTargets<a class="headerlink" href="#sensortoolkit-param-targets-parametertargets" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensortoolkit.param._targets.ParameterTargets">
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">ParameterTargets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/sensortoolkit/param/_targets.html#ParameterTargets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensortoolkit.param._targets.ParameterTargets" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Assign and retreive parameter performance metrics and target values for
+the evaluation of air sensor performance for devices measuring the
+indicated parameter.</p>
+<p>Preset performance metrics and target values are included for sensors
+measuring either fine particulate matter (PM2.5) or ozone (O3), where
+U.S. EPA’s recommended performance metrics and target values for devices
+measuring these pollutants are utilized.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> (<em>sensortoolkit.Parameter object</em>) – The parameter for which air sensor performance is evaluated against
+using the metrics and target values included in this module.</p>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sensortoolkit.param._targets.ParameterTargets.get_all_metrics" title="sensortoolkit.param._targets.ParameterTargets.get_all_metrics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_all_metrics</span></code></a></p></td>
+<td><p>Returns all performance metrics and target values associated with the Parameter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#sensortoolkit.param._targets.ParameterTargets.get_metric" title="sensortoolkit.param._targets.ParameterTargets.get_metric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_metric</span></code></a></p></td>
+<td><p>Return details about a single performance metric (description, target range, goal value, metric units).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sensortoolkit.param._targets.ParameterTargets.set_metric" title="sensortoolkit.param._targets.ParameterTargets.set_metric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_metric</span></code></a></p></td>
+<td><p>Assign a new performance metric to an existing metric category.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#sensortoolkit.param._targets.ParameterTargets.set_metric_category" title="sensortoolkit.param._targets.ParameterTargets.set_metric_category"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_metric_category</span></code></a></p></td>
+<td><p>Assign a new metric category.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensortoolkit.param._targets.ParameterTargets.get_all_metrics">
+<span class="sig-name descname"><span class="pre">get_all_metrics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/sensortoolkit/param/_targets.html#ParameterTargets.get_all_metrics"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensortoolkit.param._targets.ParameterTargets.get_all_metrics" title="Permalink to this definition"></a></dt>
+<dd><p>Returns all performance metrics and target values associated with
+the Parameter object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A dictionary containing the performance metric categories,
+metric names, and target values.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensortoolkit.param._targets.ParameterTargets.get_metric">
+<span class="sig-name descname"><span class="pre">get_metric</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/sensortoolkit/param/_targets.html#ParameterTargets.get_metric"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensortoolkit.param._targets.ParameterTargets.get_metric" title="Permalink to this definition"></a></dt>
+<dd><p>Return details about a single performance metric (description,
+target range, goal value, metric units).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>metric_name</strong> (<em>str</em>) – The name of the metric to return information about. Must be
+contained within the list of metrics indicated by
+<code class="docutils literal notranslate"><span class="pre">get_all_metrics()</span></code>.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>KeyError</strong> – Raise if passed metric name is not in the dictionary of
+    configured metrics.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a dictionary containing a textual description
+of the metric (key- ‘description’), the target range for the
+metric (key- ‘bounds’), the goal/ideal achievable performance
+metric value (key- ‘goal’), and the units associated with the
+metric if applicable (key- ‘metric_units’).</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>metric (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensortoolkit.param._targets.ParameterTargets.set_metric">
+<span class="sig-name descname"><span class="pre">set_metric</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric_category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric_name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/sensortoolkit/param/_targets.html#ParameterTargets.set_metric"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensortoolkit.param._targets.ParameterTargets.set_metric" title="Permalink to this definition"></a></dt>
+<dd><p>Assign a new performance metric to an existing metric category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>metric_category</strong> (<em>str</em>) – The name of an existing performance metric category within
+the dictionary of metric values, accessed via
+<code class="docutils literal notranslate"><span class="pre">get_all_metrics()</span></code> (e.g., ‘Bias’ or ‘Error’).</p></li>
+<li><p><strong>metric_name</strong> (<em>str</em>) – The name of a new performance metric that will be added to
+the indicated metric category.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Keyword Arguments:</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>description</strong> (<em>str</em>) – A textual description of the metric.</p></li>
+<li><p><strong>bounds</strong> (<em>Two-element tuple</em>) – The target range (lower bound, upper bound) for the metric.</p></li>
+<li><p><strong>goal</strong> (<em>int</em><em> or </em><em>float</em>) – The goal/ideal achievable performance metric value.</p></li>
+<li><p><strong>metric_units</strong> (<em>str</em>) – The units associated with the metric (if applicable)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>KeyError</strong> – Raise if the passed metric category is not in the list
+    metric categories (keys) indicated by the dictionary of metric
+    values accessed via <code class="docutils literal notranslate"><span class="pre">get_all_metrics()</span></code>.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensortoolkit.param._targets.ParameterTargets.set_metric_category">
+<span class="sig-name descname"><span class="pre">set_metric_category</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric_category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/sensortoolkit/param/_targets.html#ParameterTargets.set_metric_category"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensortoolkit.param._targets.ParameterTargets.set_metric_category" title="Permalink to this definition"></a></dt>
+<dd><p>Assign a new metric category. Optionally, users can also add new
+metrics and associated target values to this new category.</p>
+<p class="rubric">Example</p>
+<p>Say we are working with a parameter (pollutant) that is neither
+<code class="docutils literal notranslate"><span class="pre">PM25</span></code> nor <code class="docutils literal notranslate"><span class="pre">O3</span></code>, so the existing set of performance targets for
+these pollutants (metrics and target values recommended by U.S. EPA)
+are not utilized. Let’s also assume that the name of our parameter
+object is <code class="docutils literal notranslate"><span class="pre">param_obj</span></code>. After instantiating the parameter object,
+we may call the <code class="docutils literal notranslate"><span class="pre">get_all_metrics()</span></code> method to display all of the
+performance metrics and target values for our parameter. Since no
+preset metrics were specified, we will see the following printed to
+the console:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">param_obj</span><span class="o">.</span><span class="n">PerformanceTargets</span><span class="o">.</span><span class="n">get_all_metrics</span><span class="p">()</span>
+<span class="go">{&#39;Bias&#39;: {}, &#39;Linearity&#39;: {}, &#39;Error&#39;: {}, &#39;Precision&#39;: {}}</span>
+</pre></div>
+</div>
+<p>We can add a new performance evaluation metric category as well as
+any metrics and associated target values we may wish to include in
+the new category using the <code class="docutils literal notranslate"><span class="pre">set_metric_category()</span></code> method. For
+instance, say we wish to add a category ‘Data Quality’ and a metric
+within this category called ‘Uptime’ with a target value of 70%
+uptime or greater. This new category and metric can be added via
+the following:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">param_obj</span><span class="o">.</span><span class="n">PerformanceTargets</span><span class="o">.</span><span class="n">set_metric_category</span><span class="p">(</span>
+<span class="go">        metric_category=&#39;Data Quality&#39;,</span>
+<span class="go">        metric_names={&#39;Uptime&#39;: {&#39;description&#39;: &#39;Measurement uptime&#39;,</span>
+<span class="go">                                 &#39;bounds&#39;: (70, 100),</span>
+<span class="go">                                 &#39;goal&#39;: 100,</span>
+<span class="go">                                 &#39;metric_units&#39;: &#39;%&#39;}</span>
+<span class="go">                      }</span>
+<span class="go">        )</span>
+</pre></div>
+</div>
+<p>If we again call the <code class="docutils literal notranslate"><span class="pre">get_all_metrics()</span></code> method, we will see that
+the dictionary has been updated to include the new category and
+metric name.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">param_obj</span><span class="o">.</span><span class="n">PerformanceTargets</span><span class="o">.</span><span class="n">get_all_metrics</span><span class="p">()</span>
+<span class="go">{&#39;Bias&#39;: {},</span>
+<span class="go"> &#39;Linearity&#39;: {},</span>
+<span class="go"> &#39;Error&#39;: {},</span>
+<span class="go"> &#39;Precision&#39;: {},</span>
+<span class="go"> &#39;Data_Quality&#39;: {&#39;Uptime&#39;: {&#39;description&#39;: &#39;Measurement uptime&#39;,</span>
+<span class="go">                             &#39;bounds&#39;: (70, 100),</span>
+<span class="go">                             &#39;goal&#39;: 100,</span>
+<span class="go">                             &#39;metric_units&#39;: &#39;%&#39;}</span>
+<span class="go">                  }</span>
+<span class="go"> }</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>metric_category</strong> (<em>str</em>) – The name of the new performance metric category to add.</p></li>
+<li><p><strong>metric_names</strong> (<em>dict</em><em>, </em><em>optional</em>) – A dictionary of metrics (dictionary keys) and a description
+of each metric (sub-dictionary for each metric containing
+‘description’ - a textual description of the metric,
+‘bounds’ - the lower and upper bounds of the target range for
+the specified metric, ‘goal’ - the goal/ideal achievable
+performance metric value, and ‘metric_units’ - the units
+associated with the metric if applicable). Defaults to None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>TypeError</strong> – Raise if the type of metric_names is not a dictionary.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sensortoolkit.param._targets.html" class="btn btn-neutral float-left" title="sensortoolkit.param._targets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../plotting.html" class="btn btn-neutral float-right" title="sensortoolkit.plotting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

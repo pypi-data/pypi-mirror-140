@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sensortoolkit.calculate._cv &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="sensortoolkit.calculate._cv.cv" href="sensortoolkit.calculate._cv.cv.html" />
+    <link rel="prev" title="sensortoolkit.calculate._convert_temp.convert_temp" href="sensortoolkit.calculate._convert_temp.convert_temp.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testingattrib_objects/index.html">Testing Attribute Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">sensortoolkit API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../calculate.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.calculate</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._aqi.html">sensortoolkit.calculate._aqi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._convert_temp.html">sensortoolkit.calculate._convert_temp</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">sensortoolkit.calculate._cv</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sensortoolkit.calculate._cv.cv.html">sensortoolkit.calculate._cv.cv</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._dewpoint.html">sensortoolkit.calculate._dewpoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._intersensor_mean.html">sensortoolkit.calculate._intersensor_mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._normalize.html">sensortoolkit.calculate._normalize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._nowcast_pm25.html">sensortoolkit.calculate._nowcast_pm25</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._regression_stats.html">sensortoolkit.calculate._regression_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._rmse.html">sensortoolkit.calculate._rmse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._uptime.html">sensortoolkit.calculate._uptime</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../datetime_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.datetime_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deploy.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.deploy</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../evaluation_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.evaluation_objs</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ingest.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.ingest</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lib_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.lib_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../model.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.model</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../param.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.param</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plotting.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.plotting</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qc.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.qc</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.reference</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing_attrib_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.testing_attrib_objs</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">sensortoolkit API</a> &raquo;</li>
+          <li><a href="../calculate.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.calculate</span></code></a> &raquo;</li>
+      <li>sensortoolkit.calculate._cv</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/api/_autosummary/sensortoolkit.calculate._cv.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-sensortoolkit.calculate._cv">
+<span id="sensortoolkit-calculate-cv"></span><h1>sensortoolkit.calculate._cv<a class="headerlink" href="#module-sensortoolkit.calculate._cv" title="Permalink to this headline"></a></h1>
+<p>This module computes the coefficient of variation (CV), a measure of precision,
+for collocated sensors recording data concurrently.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>CV as defined by U.S. EPA’s Performance Targets Reports is measured for
+periods where all sensors in the evaluation group are measuring
+concurrently.</p>
+<p>For example, if three sensors are included in a deployment group,
+the CV will only be calculated for periods where all three sensors are operating
+normally and recording values simultaneously.</p>
+</div>
+<p>U.S. EPA’s Performance Targets Reports calculate CV as</p>
+<div class="math notranslate nohighlight">
+\[CV = \frac{SD}{\bar{x}}\times 100\]</div>
+<p>where <span class="math notranslate nohighlight">\(\bar{x}\)</span> is the deployment averaged sensor concentration for a
+field test, and <span class="math notranslate nohighlight">\(SD\)</span>, the standard deviation, is defined as</p>
+<div class="math notranslate nohighlight">
+\[SD = \sqrt{\frac{1}{(N\times M)-1}\sum_{j=1}^{M}\left[
+\sum_{i=1}^{N}(x_{ij} - \bar{x_i})^2\right]}\]</div>
+<p>and where:</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(M\)</span> = number of identical sensors operated simultaneously during a
+field test</p>
+<p><span class="math notranslate nohighlight">\(N\)</span> = number of measurement intervals during which all identical
+instruments are operating and returning valid averages over the duration of
+the field test</p>
+<p><span class="math notranslate nohighlight">\(x_{ij}\)</span> = Sensor concentration for measurement interval <span class="math notranslate nohighlight">\(i\)</span> and
+sensor unit <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\bar{x_i}\)</span> = Intersensor average sensor concentration for
+measurement interval <span class="math notranslate nohighlight">\(i\)</span>. <strong>All sensor units deployed for testing</strong>
+<strong>must have recorded non-null values for measurement interval</strong> <span class="math notranslate nohighlight">\(i\)</span>
+<strong>to compute</strong> <span class="math notranslate nohighlight">\(\bar{x_i}\)</span>.</p>
+</div></blockquote>
+<hr class="docutils" />
+<dl>
+<dt>&#64;Author:</dt><dd><div class="line-block">
+<div class="line">Samuel Frederick, NSSC Contractor (ORAU)</div>
+<div class="line">U.S. EPA / ORD / CEMM / AMCD / SFSB</div>
+</div>
+</dd>
+<dt>Created:</dt><dd><p>Wed Jan 29 10:03:27 2020</p>
+</dd>
+<dt>Last Updated:</dt><dd><p>Tue Jul 13 09:21:40 2021</p>
+</dd>
+</dl>
+<p class="rubric">Functions</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="sensortoolkit.calculate._cv.cv.html#sensortoolkit.calculate._cv.cv" title="sensortoolkit.calculate._cv.cv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cv</span></code></a></p></td>
+<td><p>Compute CV for set of sensor dataframes and indicated parameter.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sensortoolkit.calculate._convert_temp.convert_temp.html" class="btn btn-neutral float-left" title="sensortoolkit.calculate._convert_temp.convert_temp" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sensortoolkit.calculate._cv.cv.html" class="btn btn-neutral float-right" title="sensortoolkit.calculate._cv.cv" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
