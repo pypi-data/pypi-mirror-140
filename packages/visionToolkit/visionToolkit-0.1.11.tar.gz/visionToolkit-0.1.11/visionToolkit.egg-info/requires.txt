@@ -1,0 +1,3 @@
+hilbertcurve
+scipy
+scikit-learn
