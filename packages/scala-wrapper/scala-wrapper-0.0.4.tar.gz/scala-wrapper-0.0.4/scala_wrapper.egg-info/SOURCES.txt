@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+scala_wrapper/__init__.py
+scala_wrapper.egg-info/PKG-INFO
+scala_wrapper.egg-info/SOURCES.txt
+scala_wrapper.egg-info/dependency_links.txt
+scala_wrapper.egg-info/requires.txt
+scala_wrapper.egg-info/top_level.txt
+scala_wrapper/content_manager/__init__.py
+scala_wrapper/player/__init__.py
+scala_wrapper/utils/__init__.py
+scala_wrapper/utils/typedef.py
