@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: swatpy
+Version: 0.2.0
+Summary: A Python package to run, control/manipulate and analyse SWAT2012 models
+Home-page: https://github.com/allixender/swatpy
+Author: Alexander Kmoch
+Author-email: <alexander.kmoch@ut.ee>
+License: UNKNOWN
+Keywords: python,SWAT,hydrology
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: GIS
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: spotpy
+Requires-Dist: scipy
+
+a set of python modules to work with the Soil and Water Assessment Tool (SWAT2012), including model run, programmatic config edits, simulation readouts and calibration with the fantastic SPOTPY package.
+
