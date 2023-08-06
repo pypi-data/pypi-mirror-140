@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mysql-type
+Version: 0.1.0
+Summary: Functions and types to facilitate mysql typed queries
+Home-page: https://github.com/antialize/py-mysql-type
+Author: Jakob Truelsen
+Author-email: antialize@gmail.com
+License: Apache
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: markdown
+
+# py-mysql-type
+
+Facilitate mysql typed queries
+
+
+TODO query example
+
+
+TODO explain `_LIST_`
+
