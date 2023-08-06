@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "nautilus-librarian"
+version = "0.3.1"
+description = "A Python Console application to handle media libraries like Git and DVC"
+authors = ["Jose Celano <jose@nautilus-cyberneering.de>"]
+maintainers = ["Jose Celano <jose@nautilus-cyberneering.de>"]
+readme = "README.md"
+repository = "https://github.com/Nautilus-Cyberneering/nautilus-librarian"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Natural Language :: English",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3.9",
+]
+packages = [
+    { include = "nautilus_librarian", from = "src" },
+    { include = "test_nautilus_librarian", from = "tests" },
+]
+
+[tool.poetry.scripts]
+nautilus-librarian = "nautilus_librarian.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+GitPython = ">=3.1.24"
+PyGithub = ">=1.55"
+pyvips = ">=2.1.16"
+dvc = {extras = ["azure"], version = "^2.8.3"}
+typer = {extras = ["all"], version = "^0.4.0"}
+mypy = "^0.910"
+atoml = "^1.1.1"
+python-gnupg = "^0.4.8"
+Deprecated = "^1.2.13"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+mkdocs = "^1.2.3"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+python_files = "test_*.py *_test.py"
+python_functions = "test_* it_should_* given_*"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+
+[tool.poetry-dynamic-versioning.substitution]
+files = ["src/nautilus_librarian/_version.py"]
+patterns = ["(^__version__\\s*(?::\\s*str)?\\s*=\\s*['\"])[^'\"]*(['\"])"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
