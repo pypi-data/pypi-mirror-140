@@ -1,0 +1,3 @@
+[console_scripts]
+antsichaut=antsichaut.antsichaut:main
+
