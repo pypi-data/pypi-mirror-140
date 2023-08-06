@@ -1,0 +1,3 @@
+[console_scripts]
+fact-explorer=patchguard.cli.main:app
+
