@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+virustotalpy/__init__.py
+virustotalpy/wrapper.py
+virustotalpy.egg-info/PKG-INFO
+virustotalpy.egg-info/SOURCES.txt
+virustotalpy.egg-info/dependency_links.txt
+virustotalpy.egg-info/requires.txt
+virustotalpy.egg-info/top_level.txt
