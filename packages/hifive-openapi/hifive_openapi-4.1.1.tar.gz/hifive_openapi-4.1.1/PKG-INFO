@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hifive_openapi
+Version: 4.1.1
+Summary: HIFIVE OpenApi Python SDK
+Home-page: https://gitlab.ilongyuan.cn/hifive/hifive-openapi-python-sdk
+Author: yong.huang
+Author-email: huangyong@hifive.ai
+License: MIT
+Keywords: hifiveopen_api
+Platform: UNKNOWN
+License-File: LICENSE
+
+
+openapi_sdk
+=======================
+
+HIFIVE OpenApi for Python.
+
+
+
