@@ -1,0 +1,12 @@
+.gitignore
+README.md
+setup.py
+easypype/__init__.py
+easypype/command.py
+easypype/log.py
+easypype/pipe.py
+easypype/sink.py
+easypype.egg-info/PKG-INFO
+easypype.egg-info/SOURCES.txt
+easypype.egg-info/dependency_links.txt
+easypype.egg-info/top_level.txt
