@@ -1,0 +1,13 @@
+- project:
+    templates:
+      - check-requirements
+      - openstack-lower-constraints-master-branch-jobs
+      - openstack-python3-yoga-jobs-neutron
+      - publish-openstack-docs-pti
+      - release-notes-jobs-python3
+    check:
+      jobs:
+        - networking-baremetal-multitenant-vlans
+    gate:
+      jobs:
+        - networking-baremetal-multitenant-vlans
