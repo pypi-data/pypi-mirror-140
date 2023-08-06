@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: glacier
+Version: 0.3.3
+Summary: 
+License: MIT
+Author: Hiroki Konishi
+Author-email: relastle@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: click-completion (>=0.5.2,<0.6.0)
+Requires-Dist: click-help-colors (>=0.8,<0.9)
+Requires-Dist: typing-extensions (>=4.1.1,<5.0.0)
