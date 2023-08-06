@@ -1,0 +1,4 @@
+[console_scripts]
+dcov=dcov.diff_cover_tool:main
+dcov-quality=dcov.diff_quality_tool:main
+
