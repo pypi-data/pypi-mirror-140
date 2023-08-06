@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ejercicio4
+Version: 1.0
+Summary: A tool to find prime numbers between 0 and a number n.
+Home-page: UNKNOWN
+Author: Magalí Sierra
+Author-email: maga_sierra@hotmail.com
+License: GNU GPLv3
+Keywords: prime number
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+Ejercicio4
+==============
+
+Este es un ejemplo simple de un paquete Python. Este paquete contiene una funciÃ³n para encontrar todos los nÃºmeros primos desde 0 hasta un nÃºmero n ingresado.
+
+This program is free software: You can redistribute it and/or modify it under the terms of license by the Free Software Foundation, either version 3 of the License(at your option) any other version.
+
+
+
