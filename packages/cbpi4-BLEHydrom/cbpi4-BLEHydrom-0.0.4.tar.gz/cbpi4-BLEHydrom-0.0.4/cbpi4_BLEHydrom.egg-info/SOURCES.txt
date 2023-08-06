@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+cbpi4-BLEHydrom/__init__.py
+cbpi4-BLEHydrom/blescan.py
+cbpi4-BLEHydrom/config.yaml
+cbpi4_BLEHydrom.egg-info/PKG-INFO
+cbpi4_BLEHydrom.egg-info/SOURCES.txt
+cbpi4_BLEHydrom.egg-info/dependency_links.txt
+cbpi4_BLEHydrom.egg-info/requires.txt
+cbpi4_BLEHydrom.egg-info/top_level.txt
