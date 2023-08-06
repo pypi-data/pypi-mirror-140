@@ -1,0 +1,14 @@
+rest_model_service/__init__.py,sha256=Ai5-cPTySnrBfKUM3MtHn2RKrOS-64OQ5htg0cY5Vo4,529
+rest_model_service/configuration.py,sha256=xkyd9l-F1huWwW39xBlTbPquZeEPLPZpzUIurirA7rk,1011
+rest_model_service/generate_openapi.py,sha256=iYld9hit6HPYvcSadU5UxuOkO3QNVFcvCitlrNescHk,687
+rest_model_service/helpers.py,sha256=PE7nmoDr26OmVhy830SyTckdZXzatJliHRU4RFcndOY,517
+rest_model_service/main.py,sha256=ES5wugGFtHClocOvrX49J09_dOREoJk-3xGiYgbLVLg,4002
+rest_model_service/routes.py,sha256=-d5A1huJz00Q-NpP3S2ckdkmqin7Fdoham3w-65TvGA,2040
+rest_model_service/schemas.py,sha256=0CS9mXNEYXXMqd0PtTVcWSMpvMhcOEhN-azjjwWUFqs,793
+rest_model_service/version.txt,sha256=H5MN0fEzwfl6lP46y42zQ3LPTAH_2ys_9Mpy-UlBIek,6
+rest_model_service-0.2.0.dist-info/LICENSE,sha256=HOyMdMAM5FteLV3A_BTVh88jp09e5fzpyle2Ha0KlGA,1518
+rest_model_service-0.2.0.dist-info/METADATA,sha256=WsfnVYWESnm8qBttX-3ZPTwtmAhkoPy875jp5wed8Ew,5220
+rest_model_service-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rest_model_service-0.2.0.dist-info/entry_points.txt,sha256=n0F8ChUwC0v6DPngfEKy-xkMhEY34GCkMz8d6FYDjTM,78
+rest_model_service-0.2.0.dist-info/top_level.txt,sha256=mrn1br-VW2icUPdbRtXBXXslF8CNKofyO8Ik_dAAE3w,19
+rest_model_service-0.2.0.dist-info/RECORD,,
