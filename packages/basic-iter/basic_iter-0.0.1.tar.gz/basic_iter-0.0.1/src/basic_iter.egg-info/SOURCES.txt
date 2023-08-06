@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/basic_iter/__init__.py
+src/basic_iter/prim_list.py
+src/basic_iter.egg-info/PKG-INFO
+src/basic_iter.egg-info/SOURCES.txt
+src/basic_iter.egg-info/dependency_links.txt
+src/basic_iter.egg-info/top_level.txt
