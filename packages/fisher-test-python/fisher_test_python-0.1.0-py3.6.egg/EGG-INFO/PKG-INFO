@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fisher-test-python
+Version: 0.1.0
+Summary: Fisher exact test for python
+Home-page: https://github.com/linewalks/fisher-test-python
+Author: Linewalks
+Author-email: jungwoo@linewalks.com
+License: LGPL-3.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fisher test python
+
