@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: paraworld
+Version: 1.1.0
+Summary: A BDD framework for running parallel and concurrent tests
+Home-page: https://github.com/DasAng/paraworld
+Download-URL: http://pypi.python.org/pypi/paraworld
+Author: DasAng
+Author-email: 
+License: GPL
+Keywords: gherkin,parallel,bdd
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+A BDD framework for writing concurrent and parallel tests
+
