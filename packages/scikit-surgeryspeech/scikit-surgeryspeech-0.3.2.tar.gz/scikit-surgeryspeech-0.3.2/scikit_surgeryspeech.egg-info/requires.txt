@@ -1,0 +1,7 @@
+pyaudio
+SpeechRecognition
+google-api-python-client
+oauth2client
+PySide2
+scikit-surgerycore
+pvporcupine
