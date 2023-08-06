@@ -1,0 +1,3 @@
+[console_scripts]
+sphinx-kana-geindex = sphinxcontrib.kana_text.command:genindex
+

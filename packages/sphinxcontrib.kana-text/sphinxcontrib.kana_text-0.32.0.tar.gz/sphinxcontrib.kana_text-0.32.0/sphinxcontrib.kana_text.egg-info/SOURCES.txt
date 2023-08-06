@@ -1,0 +1,17 @@
+AUTHORS
+CHANGES.rst
+DEVELOP.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+sphinxcontrib.kana_text.egg-info/PKG-INFO
+sphinxcontrib.kana_text.egg-info/SOURCES.txt
+sphinxcontrib.kana_text.egg-info/dependency_links.txt
+sphinxcontrib.kana_text.egg-info/entry_points.txt
+sphinxcontrib.kana_text.egg-info/requires.txt
+sphinxcontrib.kana_text.egg-info/top_level.txt
+src/__init__.py
+src/command.py
+src/templates/genindex.html.sample
