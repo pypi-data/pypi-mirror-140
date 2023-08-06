@@ -1,0 +1,13 @@
+loci/__init__.py,sha256=XMa0qBGM_nIqhvRZRGUq06PJYHVI9dhBBEfTdJ2STSc,215
+loci/artifact.py,sha256=sJvi7BKjQGELdhYrcl5g_qQUaER6tw3hrshVPeZEErg,6158
+loci/config.py,sha256=31uE8bn6n3TI943S0rh-s-SNYJlhkW3Sc6FMrYkuHbE,5190
+loci/main.py,sha256=Id00GM3ZxmOvOeyg_NG1aafRAfdTjGPx-CfPkLj8K_c,3609
+loci/note.py,sha256=zcon8fw23rXPIt2VyhzxsXMZia2TwkGGgPShvuiTNvI,3504
+loci/project.py,sha256=Y7__DNy_040hwIeGchnJZmgDIaV7FJkNL-hwVLPjfZM,5459
+loci/user.py,sha256=LSaZulHOXb0ABvVWe3CzHZ3l7p1r_Ht_nHdhABUmoWM,5203
+loci/utils.py,sha256=Gj-ZjoR02s_P2paOM9J1h5QIxZUn5GSZaJrShXEJ06s,6824
+loci_cli-0.6.1.dist-info/METADATA,sha256=Q5Lo05wmdmVbPTQhj27yYACYgd_Nd5sgFI9xKP1GOGk,890
+loci_cli-0.6.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+loci_cli-0.6.1.dist-info/entry_points.txt,sha256=HKh0Gn-g49kIt03Ohp51L7hAlWdqa_aY85BKFunkQIw,45
+loci_cli-0.6.1.dist-info/top_level.txt,sha256=0BcGEse2DdX-5cFgBRIqkL-9sD-TUVncDSNhE6oevrU,5
+loci_cli-0.6.1.dist-info/RECORD,,
