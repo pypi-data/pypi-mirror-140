@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyseismic
+Version: 0.0.5
+Summary: A package for seismic data processing
+Home-page: https://github.com/XintaoChai
+Author: Xintao Chai
+Author-email: xtchai@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PySeismic
+***
+A package for seismic data processing, it is being developed.
+***
+## Prerequisites:
+* numpy
+* matplotlib
+* Pillow
+* PyMuPDF
+* python 3
+***
+
