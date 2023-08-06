@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+klant/klant.egg-info/PKG-INFO
+klant/klant.egg-info/SOURCES.txt
+klant/klant.egg-info/dependency_links.txt
+klant/klant.egg-info/top_level.txt
