@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: analytics-mesh
+Version: 0.1.10
+Summary: Facades and common functions necessary for data science and data engineering workflows
+Home-page: UNKNOWN
+Author: Jacques du Toit, Carl du Plessis, Lydia de Lange, Bernie Lindner
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anybadge (>=1.7.0)
+Requires-Dist: coverage (>=4.5.4)
+Requires-Dist: deprecation (>=2.1.0)
+Requires-Dist: fsspec (>=2021.6.1)
+Requires-Dist: gcsfs (>=2021.6.1)
+Requires-Dist: google-cloud-storage (>=1.24.1)
+Requires-Dist: google-cloud-bigquery (>=2.2.0)
+Requires-Dist: google-cloud-secret-manager (>=2.0.0)
+Requires-Dist: joblib (>=1.0.1)
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: pandas (>==1.1.3)
+Requires-Dist: pre-commit (>=2.13.0)
+Requires-Dist: python-dateutil (>=2.8.0)
+Requires-Dist: pylint (>=2.6.0)
+Requires-Dist: pylint-exit (>=1.2.0)
+Requires-Dist: PyYAML (>=5.1.2)
+Requires-Dist: python-box (>=5.1.1)
+Requires-Dist: pytz (>=2019.2)
+Requires-Dist: slack-alerts (>=1.0.0)
+Requires-Dist: sklearn (>=0.0)
+Requires-Dist: scipy (>=1.5.4)
+
+# analytics-mesh
+Interfaces and facades that facilitate a common approach to analytics tasks
+
+
+# Getting Started
+
+Please install the requirements:
+
+```bash
+pip install -r requirements
+```
+
+If you are going to be making modifications to the `ipynb` notebooks, then be sure to install the pre-commit hook (see below):
+
+```bash
+pre-commit install
+```
+
+
+## Tests
+
+Tests are currently split into `unit` and `integration` tests. As this package integrates with storage systems, the integration tests are typically running against things like Google Cloud Platform. 
+
+Tests may be run in the root folder of the repo with:
+
+```
+coverage run -m unittest discover tests && coverage report
+```
+
+If you want to run just the unit tests (and ignore coverage) then, 
+
+```bash
+python -m unittest discover tests/unit
+```
+Similarly, for the integration tests.
+
+
+## Pre-Commit Hooks and Notebook Workflow
+
+In this repo we are using the python `precommit` package (included in requirements.txt file). In order to leverage it in your development workflow, you need to run the following commands (assuming you have already installed your requirements).
+
+```bash
+pre-commit install
+```
+
+We follow the convention that a version controlled `ipynb` file is converted to a markdown (`md`) file to form an `ipynb`-`md` pair that are both version controlled. This allows us to code review the markdown files whilst keeping the original ipynb file output intact for easy perusal on the repository manager (Gitlab in our case).
+
+
+# Packaging the Code
+
+The contents of the `mesh` package are packaged in the build pipeline and submitted to pypi when merged to the master branch. The contents of the `demos` folder and `tests` is omitted from the package. See the `.gitlab-ci.yml` file for the pypi instructions we use, as well as the tests and linting that are performed.
+
+The consequences of this is that you will convert `ipynb` notebooks to `md`.
+
+# Contributions
+
+Contributions are most welcome. Please submit patches or new features for code review by any of the main contributors:
+
+  * [Jacques du Toit]()
+  * [Carl du Plessis](https://gitlab.com/Carljan)
+  * [Jaco Gericke](https://gitlab.com/jsgericke)
+ 
+ Please be sure to run the tests prior to submission.
+
+
