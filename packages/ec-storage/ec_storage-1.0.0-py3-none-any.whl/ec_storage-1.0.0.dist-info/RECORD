@@ -1,0 +1,13 @@
+ecstorage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecstorage/dataframe.py,sha256=HZOkifxfe_yINIpG96Cj4FV20L9_8Ye5WlkgScBTpRU,1177
+ecstorage/list.py,sha256=usuZF7OWOzlWbd5VAVk_ecwUwACvh-vhNWZJLYNt2NY,2479
+ecstorage/rdd.py,sha256=_EOTnPA_8kciBu69VkLdVfTaO2I6DNz0RTuZyhESDK4,4232
+ecstorage/mathematics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecstorage/mathematics/galois.py,sha256=t6VJzMA5MK158VUgKIiCYbDyUtiGuleAzYnxTHjIhA8,2145
+ecstorage/mathematics/generator_matrix.py,sha256=OYH7diIG80iwx13L0Xwv00YvL2CL0MG4xDLNOfUAA0I,1238
+ecstorage/mathematics/matrix_optimization.py,sha256=x8Bp4An0DlZDQITT56hqg-b1RIGryZjL5xYJMs6SzoQ,2756
+ec_storage-1.0.0.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+ec_storage-1.0.0.dist-info/METADATA,sha256=iSk3R8CTHjhummOBW5EQLsRoZqgR_ebCpMEghC_NG8U,5628
+ec_storage-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ec_storage-1.0.0.dist-info/top_level.txt,sha256=NWnOOUEnby0g5kC376UoIYa_fDuNl4VLhH8pwx-wMaE,10
+ec_storage-1.0.0.dist-info/RECORD,,
