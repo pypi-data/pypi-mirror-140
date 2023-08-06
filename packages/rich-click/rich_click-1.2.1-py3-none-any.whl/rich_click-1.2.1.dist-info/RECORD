@@ -1,0 +1,10 @@
+rich_click/__init__.py,sha256=Xy5AP-0TF7SXtvPIpxEN_EWwUgtjNplaZbjjIJr-eMk,877
+rich_click/__main__.py,sha256=Menr3LoXRKTpC5gsJ-A6Ax9WVWwo6HmSFX1TzbzXMTY,417
+rich_click/cli.py,sha256=KTXTOYTEnNvYcn7bBzGr5Cjmf52qfaTu5MVqCYSRAPU,3986
+rich_click/rich_click.py,sha256=aUOvgKMrdrCTY6RSRmVnWVBxzTapcDzm1C9zCX1G_L0,21325
+rich_click-1.2.1.dist-info/LICENSE,sha256=1GDP5mZhei-Gy3xm-QQfCodhHIsMHy8_Z0ogIq3B8q8,1067
+rich_click-1.2.1.dist-info/METADATA,sha256=xN1qYJL8CeCY4lzLb6Mjy2hg1kTBycT151dkrGg6Fj0,12633
+rich_click-1.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rich_click-1.2.1.dist-info/entry_points.txt,sha256=q-JckrJEfhmzklT5lIpe1oTf68OaWJpAy1Mik7lGeXs,51
+rich_click-1.2.1.dist-info/top_level.txt,sha256=tKHPQk1z9Wd8Lu2HqxHQyF7oqOeQE5__SUDHezQZ4WE,11
+rich_click-1.2.1.dist-info/RECORD,,
