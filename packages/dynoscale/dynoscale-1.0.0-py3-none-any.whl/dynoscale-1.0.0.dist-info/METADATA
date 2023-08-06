@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: dynoscale
+Version: 1.0.0
+Summary: A simple yet efficient scaling agent for Python apps on Heroku
+Home-page: https://dynoscale.net
+Author: Ondrej Dolejsi
+Author-email: ondrej.dolejsi@gmail.com
+License: MIT
+Project-URL: Documentation, http://dynoscale.net/documentation/category/general
+Project-URL: Source, https://github.com/Mjolnir-Software/dynoscale-python
+Project-URL: Tracker, https://github.com/Mjolnir-Software/dynoscale-python
+Keywords: heroku,scaling,dyno,wsgi
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: Log Analysis
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Networking :: Monitoring
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.27.1)
+Provides-Extra: test
+Requires-Dist: pytest (>=7.0.1) ; extra == 'test'
+Requires-Dist: pytest-asyncio (>=0.18.1) ; extra == 'test'
+Requires-Dist: pytest-cov (>=3.0.0) ; extra == 'test'
+Requires-Dist: pylint (>=2.12.2) ; extra == 'test'
+Requires-Dist: responses (>=0.18.0) ; extra == 'test'
+
+# Dynoscale Agent
+
+#### Simple yet efficient scaling agent for Python apps on Heroku
+
+## 📖 Usage
+
+1. Add __dynoscale__ to your app on Heroku: `heroku addons:create dscale`
+2. Install __dynoscale__:  `python -m pip install dynoscale`
+    1. Add __dynoscale__ to your app, you can either wrap your app or if you use Gunicorn, you can also just use one of
+       its hooks (`pre_request``):
+        1. If you want to wrap you app (let's look at Flask example):
+       ```python
+       from flask import Flask
+    
+       app = Flask(__name__)
+       
+       @app.route("/")
+       def index():
+           return "Hello from Flask!"
+    
+       if __name__ == "__main__":
+           app.run(host='127.0.0.1', port=3000, debug=True)
+       ```
+       then just wrap your WSGI app like this
+       ```python
+       from flask import Flask
+       # FIRST, IMPORT DYNOSCALE
+       from dynoscale.wsgi import DynoscaleWsgiApp
+    
+       app = Flask(__name__)
+       
+       @app.route("/")
+       def index():
+           return "Hello from Flask!"
+       
+       if __name__ == "__main__":
+           # THE CHANGE BELOW IS ALL YOU NEED TO DO
+           app.wsgi_app = DynoscaleWsgiApp(app.wsgi_app)
+           # YUP, WE KNOW, CAN'T GET SIMPLER THAN THAT :)
+           app.run(host='127.0.0.1', port=3000, debug=True)
+       ```
+    2. Or, if you'd prefer to use the hook, then change your `gunicorn.conf.py` accordingly instead:
+       ```python
+       # This one line will do it for you:
+       from dynoscale.hooks.gunicorn import pre_request  # noqa # pylint: disable=unused-import
+       ``` 
+       If you already use the `pre_request` hook, alias ours and call it manually:
+       ```python
+       # Alias the import...
+       from dynoscale.hooks.gunicorn import pre_request as hook
+       
+       # ...and remember to call ours first!
+       def pre_request(worker, req):
+          hook(worker, req)
+          # ...do your own thing...
+       ```
+3. __Profit!__ _Literally, this will save you money! 💰💰💰 😏_
+
+## ℹ️ Info
+
+You should consider the `dynoscale.wsgi.DynoscaleWsgiApp(wsgi_app)`
+and `dynoscale.hooks.gunicorn.pre_request(worker, req)` the only two bits of public interface.
+
+## 🤯 Examples
+
+Feel free to check out `./examples`, yes, we do have examples in the repository :)
+
+## 👩‍💻 Contributing
+
+Install development requirements by running `noglob pip install -e .[test]` if you use ZSH, or
+`pip install -e .[test]` if you're stuck with Bash.
+
+

@@ -1,0 +1,17 @@
+dynoscale/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+dynoscale/agent.py,sha256=fI7D4Q5dxFVi-TjPoAtr8hV2aIn3Ku4SxKxfQgiYF6Q,2126
+dynoscale/config.py,sha256=ls7gLLUm8_P3PhsNPWgOBdA_Gq-UUKEhIf6nvSan9D0,1194
+dynoscale/constants.py,sha256=CT0DvvXhCF_KLRVdHQjCmUuaRyT5gBBJ4KdLY9uMXqs,176
+dynoscale/permadict.py,sha256=cy2dHonzXNcNeHofmKgrkp7DmawA52a_lfMM5uUafW8,4505
+dynoscale/publisher.py,sha256=F1VY4X4OcPxFZMVyoqkmwsNUqp6cNnr5vFqmMg5d_hk,7044
+dynoscale/repository.py,sha256=xBakw7uns9qxojfBW7Y73tuHUkMePdBW4qJ2EMQrI-w,3561
+dynoscale/utils.py,sha256=RNVSxHn4qc0gdkkGPlzlUIwzd912oq-pnZ7Ka-ygVt8,3287
+dynoscale/version.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+dynoscale/wsgi.py,sha256=4_6SYcroa3WM5bwsL5TyFTnl9xHO3mLPGpyK-9A7GPs,2365
+dynoscale/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dynoscale/hooks/gunicorn.py,sha256=m9cKja4EReBS0xiVN7mBabzYZsdQTckdm6Z2Jx3dl9A,1926
+dynoscale-1.0.0.dist-info/LICENSE,sha256=sm38H-wO0zqb5P_NdhamLsHdGoM2mIB2z9kJGJbcHH0,1059
+dynoscale-1.0.0.dist-info/METADATA,sha256=RXqIogFakj7ljM8GLT-nieQSs7rF-klWb7Q_73Z2HVU,4927
+dynoscale-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dynoscale-1.0.0.dist-info/top_level.txt,sha256=ETFm9iIHHUpLa9c_V4F4DzWXNQPoHaTLSpeCQfRvszo,10
+dynoscale-1.0.0.dist-info/RECORD,,
