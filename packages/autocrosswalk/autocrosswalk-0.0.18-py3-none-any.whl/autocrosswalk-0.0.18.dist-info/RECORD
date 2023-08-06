@@ -1,0 +1,16 @@
+autocrosswalk/__init__.py,sha256=Pi_lpng5ZsZTNSPv2KIzRS0dlw_-cyA_RHM6iIp9QRY,152
+autocrosswalk/main.py,sha256=7nl_UWQ-LaL4-i6cGNPiftJid8XJTwQwUTdf_OGCG_c,39294
+autocrosswalk/tools.py,sha256=vQyE0r_7aHni3ad3H0GxdtJ2akih7uQ52bMaHVqg-Vc,1046
+autocrosswalk/data/__init__.py,sha256=xQBZ9MHnPsqG6JvxVPh2RB2YHajTh2lgghcYMmJ9940,62
+autocrosswalk/data/example_data.parquet,sha256=4m8q-xVF0y4f8uNMujXakhhG9xFj_QluUapbnUqt2-U,1599562
+autocrosswalk/data/missing_data.parquet,sha256=6ESzipXa04tHO9wHIbWjbsMz1ZO9hDFxn84WMXCA19Q,30011
+autocrosswalk/data/missing_data_nomissing.parquet,sha256=BdZN-u-NEBkWM32aGoI-pT2k3tXaibLIkJnwCm9Uafw,40444
+autocrosswalk/matching/__init__.py,sha256=xQBZ9MHnPsqG6JvxVPh2RB2YHajTh2lgghcYMmJ9940,62
+autocrosswalk/matching/context_matching.py,sha256=MQv83XAGXFiYUq77bKTNUX8rMrMZ6J7GztcCJqXDn1A,726
+autocrosswalk/matching/numeric_matching.py,sha256=27fOLYOXUu-5QypSlA5HtPT0oIeZA1AjZWmkf8sdMT4,2738
+autocrosswalk/matching/text_matching.py,sha256=qWeFxV4n2AA0pLLPDql1nyhKDUsI8TXhIm3HEHEfPKE,4399
+autocrosswalk-0.0.18.dist-info/LICENSE,sha256=6r_sfXVW3gp6rXQCW-Ca626ge0hKw405e_MlmUFE-i4,1087
+autocrosswalk-0.0.18.dist-info/METADATA,sha256=YiAfAj4YabLRUyGXSSvZvGwWIOKFjXApWbYWLZwRxqY,3020
+autocrosswalk-0.0.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+autocrosswalk-0.0.18.dist-info/top_level.txt,sha256=YirxEWRGAFVJ1hQARbMrAWcHXZgQ2MFkSQn0IEnTwjQ,14
+autocrosswalk-0.0.18.dist-info/RECORD,,
