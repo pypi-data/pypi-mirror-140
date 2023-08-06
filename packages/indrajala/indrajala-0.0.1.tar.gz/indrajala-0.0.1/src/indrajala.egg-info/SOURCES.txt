@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/indrajala.egg-info/PKG-INFO
+src/indrajala.egg-info/SOURCES.txt
+src/indrajala.egg-info/dependency_links.txt
+src/indrajala.egg-info/top_level.txt
