@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: minknow-api
+Version: 4.4.0
+Summary: MinKNOW RPC API bindings
+Home-page: https://github.com/nanoporetech/minknow_api
+Author: Oxford Nanopore Technologies Ltd
+Author-email: info@nanoporetech.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: grpcio (~=1.37)
+Requires-Dist: numpy (~=1.11)
+Requires-Dist: protobuf (~=3.15)
+Requires-Dist: packaging (>=15.0)
+Requires-Dist: pyrfc3339 (~=1.1)
+
+UNKNOWN
+
