@@ -1,0 +1,184 @@
+CHANGES
+=======
+
+0.7.1
+-----
+
+* Fixed release script permissions
+* Added flags to filter tests by title
+* Added release script
+
+0.7.0
+-----
+
+* Release 0.7.0
+* New feature: Create Test
+
+v0.6.0
+------
+
+* ChangeLog update
+* Changed minimum severity import from Low to Info
+
+v0.5.2
+------
+
+* ChangeLog update
+* Bufix: Removing special char that appears on list URL for some reason
+
+v0.5.1
+------
+
+* ChangeLog update
+* Simplifing logic when listing findings by tag\_test
+
+v0.5.0
+------
+
+* ChangeLog update
+* New feature: Test update
+
+v0.4.5
+------
+
+* Changed requests to verify SSL by default
+* Bugfix
+
+v0.4.4
+------
+
+* Improving Findings.list()
+
+v0.4.3
+------
+
+* Fixed bug when listing tests by test\_type
+
+v0.4.2
+------
+
+* Fixed bug when listing finding that has component\_name but not component\_version
+
+v0.4.1
+------
+
+* Added option to limit tests amount when listing (gets all by default)
+
+v0.4.0
+------
+
+* v0.4.0
+* Changed --local\_dedup, is no longer a toggle
+* Added flags to set version, build\_id, branch\_tag, commit\_hash when importing findings
+* Fixing some flag at Findings.reimport()
+* Improved accuracy when filtering findings by tags
+* New feature: Reimport of findings
+* Changed upload to import to comply with DefectDojo naming convention
+* New feature: Added possibility to filter engagements by product ID
+* New feature: Added flag --local\_dedup at Engagements.create()
+* New feature: Engagements.reopen()
+* New feature: Engagements.list()
+* Changed sub\_command arg parsing from hard-coded to dynamic
+* Fixed typo at README
+
+v0.3.7
+------
+
+* Added flag to include tags when creating engagements
+
+v0.3.6
+------
+
+* Changed --tag to --tag\_test at Findings.upload() to keep consistency
+
+v0.3.5
+------
+
+* v0.3.5
+* Bugfix
+
+v0.3.4
+------
+
+* v0.3.4
+* Added tags filter at Findings.list()
+* Added Tests command
+
+v0.3.3
+------
+
+* v0.3.3
+* Removed ac\_note flag
+* Added skip\_duplicates flag at Findings.upload()
+
+v0.3.2
+------
+
+* Changed --fail\_if\_found behaviour
+* Changed --fail\_if\_found behaviour
+
+v0.3.1
+------
+
+* Adopted pbr packaging
+* Changed --fail\_if\_found behaviour and increased Findings.list() title size
+
+v0.3.0
+------
+
+* v0.3
+* Added new flags
+* Changed auto\_close logic and added new flags
+* Minor fix
+
+v0.2.3
+------
+
+* v0.2.3
+* Improved Findings.list output
+
+v0.2.2
+------
+
+* Change in auto\_close output
+
+v0.2.1
+------
+
+* Some adjustments
+
+v0.2.0
+------
+
+* v0.2
+* Code refactoring
+* New feature: note and ac\_note at Findings.upload
+* New feature: fail\_if\_found at Findings.list
+* New feature: auto\_close at Findings.upload
+* Added "close" option
+* Fixed "update" option
+* Added "update" option
+* Added filter by test ID to Findings.list() and some minor fixes
+* A little bit more code refactoring
+* Some more code refactoring
+* Code refactoring
+* Fixed version
+* Minor change in human readable output to work with python 2.7 as well
+
+v0.1.3
+------
+
+* Improvements at the "list" command
+
+v0.1.1
+------
+
+* Fixed version
+* Added human readable output and json flag to 'list' command
+
+v0.1.0
+------
+
+* Initial commit
+* Initial commit
+* Initial commit
