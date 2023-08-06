@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mkdocs_material_relative_language_selector.egg-info/PKG-INFO
+mkdocs_material_relative_language_selector.egg-info/SOURCES.txt
+mkdocs_material_relative_language_selector.egg-info/dependency_links.txt
+mkdocs_material_relative_language_selector.egg-info/entry_points.txt
+mkdocs_material_relative_language_selector.egg-info/requires.txt
+mkdocs_material_relative_language_selector.egg-info/top_level.txt
+mmrlsp/__init__.py
+mmrlsp/material-relative-language-selector.js
