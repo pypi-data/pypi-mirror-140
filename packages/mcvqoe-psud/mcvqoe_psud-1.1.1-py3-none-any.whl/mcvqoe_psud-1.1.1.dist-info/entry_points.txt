@@ -1,0 +1,6 @@
+[console_scripts]
+psud-eval = mcvqoe.psud.PSuD_eval:main
+psud-measure-1loc = mcvqoe.psud.PSuD_1way_1loc:main
+psud-reprocess = mcvqoe.psud.PSuD_reprocess:main
+psud-sim = mcvqoe.psud.PSuD_simulate:main
+
