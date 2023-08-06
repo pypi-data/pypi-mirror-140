@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Topsis-Manmeet-101903767
+Version: 0.0.1
+Summary: Topsis Package
+Home-page: UNKNOWN
+Author: Manmeet Singh Chhabra
+Author-email: <mchhabra_be19@thapar.edu>
+License: UNKNOWN
+Keywords: python,topsis,thapar,Prdictive-Analysis,101903767
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# Topsis-Manmeet-101903767
+Topsis-Manmeet-101903767 is a python package to implement Multiple criteria decision making (MCDM) using TOPSIS. It takes data, calculates topsis score and ranks the data according to the score.
+
+## Installation
+Run the following command in the terminal to install the package:
+```pip install Topsis-Manmeet-101903767==0.0.1 ```
+## How to use the Package
+You need to provide 4 arguments(csv filename, weights, impacts, output filename) in terminal to run the package.
+Sample Case:
+python test.py data.csv "1,2,1,1,2" "+,-,+,-,-" outputfilename.csv
+
+## License
+
+Â© 2022 Manmeet Singh Chhabra
+
