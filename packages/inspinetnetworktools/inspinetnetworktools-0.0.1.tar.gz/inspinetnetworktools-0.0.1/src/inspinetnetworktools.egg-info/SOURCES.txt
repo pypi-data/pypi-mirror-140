@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/inspinetnetworktools/__init__.py
+src/inspinetnetworktools/inspinetnetworktools.py
+src/inspinetnetworktools.egg-info/PKG-INFO
+src/inspinetnetworktools.egg-info/SOURCES.txt
+src/inspinetnetworktools.egg-info/dependency_links.txt
+src/inspinetnetworktools.egg-info/top_level.txt
