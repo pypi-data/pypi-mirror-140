@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: poetry-pypirc
+Version: 0.1.1
+Summary: Sets poetry repository configs from a pypirc file.
+Author: Narek Amirbekian
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: configparser
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: sh (>=1.14.2,<2.0.0)
