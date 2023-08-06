@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: entab
+Version: 0.3.0_alpha.1
+Summary: Record-format file reader
+Author: Roderick <rbovee@gmail.com>
+Author-email: Roderick <rbovee@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/bovee/entab
+
+# Entab
+
+Parse record-based file formats into a stream of records.
+
+## Usage
+
+```python
+from entab import Reader
+reader = Reader(filename='test.fa')
+for record in reader:
+    print(record.id)
+```
+
+## Development
+
+Build with `maturin build --cargo-extra-args=--features=maturin` or build
+a working copy with `maturin develop --cargo-extra-args=--features=maturin`.
+
+Test with `cargo test`.
+
+# Releases
+
+Binary wheels can be built by running the following from the workspace root directory (one up):
+`docker run --rm -v $(pwd):/io konstin2/maturin:v0.12.6 build -m entab-py/Cargo.toml --cargo-extra-args=--features=maturin --no-sdist`
+
