@@ -1,0 +1,9 @@
+#Topsis-Aryan-101903144
+Multiple criteria decision making (MCDM) using TOPSIS
+
+## Installation
+```pip install topsis-ARYAN-101903144```
+
+##Sample Use case
+import topsis-ARYAN-10903144 as t
+t.topsis("input.csv","1,2,1,2,3","+,+,-,+,-","output.csv")
