@@ -1,0 +1,14 @@
+phytoClassifier/__init__.py,sha256=0sMnbWzxsh03CJfY4V3ReRQVvKuId_N0m3lVLPhq8G0,219
+phytoClassifier/level0.py,sha256=hmCilXSPe10OuK8GaQllyjQycXO4iDmAUCHKcGE7kFo,1943
+phytoClassifier/level1.py,sha256=CAgLRI6q5kGOO9dp4XdVMimn4hhKWSkd58V2rrePJUU,1943
+phytoClassifier/level2.py,sha256=Vh5OPi004xKEXno5tu31F-vDdL3v2h5QT5Zaxn2an30,1943
+phytoClassifier/level3.py,sha256=A9Uve8oWkaTzrfXNVcD3X71TsHJD6NjNlWLz70bcnC8,1941
+phytoClassifier/level4.py,sha256=cqIIoSrpZCy-OzAzAHf32QYyCcZsco71v4epmHRRZwg,1943
+phytoClassifier/levelminus1.py,sha256=1XQO6-8oepRSWNbf33RouQVrZTjS-LBSS7_AfY8l7H4,1976
+phytoClassifier/main.py,sha256=hMj0hQ8nGQODmkRtgRZsV8nEYwyAjIZ6-GNmXPzKKd4,3530
+phytoClassifier/data/mclk.db,sha256=cx6SkzBQ71Vs0the154-HF0LP3GGGGPBV8ONgSTONfM,168534016
+phytoClassifier-1.1.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+phytoClassifier-1.1.0.dist-info/METADATA,sha256=rwvR_qD56_Ee6nisLGufxPmd6mksHtgVYRMdornmdSU,1490
+phytoClassifier-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+phytoClassifier-1.1.0.dist-info/top_level.txt,sha256=_HdkEb8xOMyzO-mmIbUKZ1mXENgWd5JK_IQqfDPbGRQ,16
+phytoClassifier-1.1.0.dist-info/RECORD,,
