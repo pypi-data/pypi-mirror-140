@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/rubika-bot/__init__.py
+src/rubika-bot/app.py
+src/rubika_bot.egg-info/PKG-INFO
+src/rubika_bot.egg-info/SOURCES.txt
+src/rubika_bot.egg-info/dependency_links.txt
+src/rubika_bot.egg-info/top_level.txt
