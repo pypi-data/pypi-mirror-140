@@ -1,0 +1,2 @@
+[console_scripts]
+doddle = doddle.cli:main
