@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: api-rule-engine
+Version: 0.0.1
+Summary: rule engine API
+Home-page: https://github.com/somerl20/api-rule-engine.git
+Author: Omer London
+License: GNU
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.25.1)
+
+# api-rule-engine
+API for sending files to Minereye system and find sensitive information
+
+
