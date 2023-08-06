@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: picsellia_yolov5
+Version: 0.1.10
+Summary: Picsellia wrapper for pytorch implementation of Yolov5
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.9
