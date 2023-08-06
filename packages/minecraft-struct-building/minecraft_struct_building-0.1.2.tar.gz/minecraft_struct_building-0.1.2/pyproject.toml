@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "minecraft_struct_building"
+version = "0.1.2"
+description = ""
+authors = ["konishi0125"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.1"
+mcpi = "^1.2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+minecraft_struct_building = "minecraft_struct_building.minecraft_struct_building:main"
