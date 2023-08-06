@@ -1,0 +1,14 @@
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+version.py
+wrapspawner/__init__.py
+wrapspawner/wrapspawner.py
+wrapspawner.egg-info/PKG-INFO
+wrapspawner.egg-info/SOURCES.txt
+wrapspawner.egg-info/dependency_links.txt
+wrapspawner.egg-info/top_level.txt
