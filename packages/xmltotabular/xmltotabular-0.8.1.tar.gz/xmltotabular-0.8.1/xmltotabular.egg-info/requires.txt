@@ -1,0 +1,6 @@
+lxml
+pyyaml
+termcolor
+
+[:python_version < "3.7"]
+multiprocess
