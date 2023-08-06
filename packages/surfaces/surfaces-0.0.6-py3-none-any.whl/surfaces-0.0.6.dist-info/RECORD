@@ -1,0 +1,13 @@
+surfaces/__init__.py,sha256=YvAnwCfnyjKBN2XWzBu_wsIpIk0_kR7P3mIRuQM9fwc,121
+surfaces/base_objective_function.py,sha256=Auob0pHx8DPYiTakyffll0YMRO4uhuUVCFWhspobK1k,1192
+surfaces/machine_learning.py,sha256=718e6iEtawFrvJ03e1CimIqZihFCL6qVm_b2iVb7K8w,1106
+surfaces/test_functions.py,sha256=IwtYN_D48PD2rQucR7v37SO6dzUa9Rt_n-tcZroJmqw,10063
+surfaces/visualize.py,sha256=UfTxAvMJ2k675IIdVGEs5RfSZ5CG8SPme6VL6r2oSLQ,3457
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_arrays_input.py,sha256=1figw7xLfxhiZ_nfZzhlhE3OSY9K1dyLzkfKKkVyd0g,1897
+tests/test_optimization.py,sha256=EqId5rdmKR6f0_oQzlTMvpkmCheshi8O_5cekOV8P4E,3140
+surfaces-0.0.6.dist-info/LICENSE,sha256=O_PC0c7QLEIrMjzCtvU1zuRDnajd4QUwXsa8FowQgfg,1069
+surfaces-0.0.6.dist-info/METADATA,sha256=4l8rfqadEK9XmFrW7iqg3lPEuou0tu3o8HV1T5b7vUM,4939
+surfaces-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+surfaces-0.0.6.dist-info/top_level.txt,sha256=jzGcUHG7eovLiONXVZ10-WV4ZC53_d8woyMRWd8mhBQ,15
+surfaces-0.0.6.dist-info/RECORD,,
