@@ -1,0 +1,3 @@
+[crosscompute.views]
+map-deck-screengrid = crosscompute_views_map.deck.MapDeckScreenGridView
+map-mapbox = crosscompute_views_map.mapbox.MapMapboxView
