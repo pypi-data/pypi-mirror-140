@@ -1,0 +1,5 @@
+ipython>=6
+numpy
+sympy
+csv
+scipy
