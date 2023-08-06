@@ -1,0 +1,8 @@
+README.md
+setup.py
+atomqc/__init__.py
+atomqc.egg-info/PKG-INFO
+atomqc.egg-info/SOURCES.txt
+atomqc.egg-info/dependency_links.txt
+atomqc.egg-info/requires.txt
+atomqc.egg-info/top_level.txt
