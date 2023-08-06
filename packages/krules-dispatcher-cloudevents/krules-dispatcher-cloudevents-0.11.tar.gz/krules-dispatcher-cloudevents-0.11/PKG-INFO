@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: krules-dispatcher-cloudevents
+Version: 0.11
+Summary: KRules cloudevents dispatcher
+Home-page: https://github.com/airspot-dev/krules-dispatcher-cloudevents
+Author: Alberto Degli Esposti
+Author-email: alberto@arispot.tech
+License: Apache Licence 2.0
+Keywords: krules cloudevents router
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: AUTHORS
+
+# krules-dispatcher-cloudevents
+
+This is the KRules router dispatcher component. It sends cloudevents via http to a configurable url.
+
+
