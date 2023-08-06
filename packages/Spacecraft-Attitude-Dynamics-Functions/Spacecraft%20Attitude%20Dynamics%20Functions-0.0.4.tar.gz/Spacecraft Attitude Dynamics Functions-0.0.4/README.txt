@@ -1,0 +1,1 @@
+For Purdue AAE-440, Spacecraft Attitude Dynamics

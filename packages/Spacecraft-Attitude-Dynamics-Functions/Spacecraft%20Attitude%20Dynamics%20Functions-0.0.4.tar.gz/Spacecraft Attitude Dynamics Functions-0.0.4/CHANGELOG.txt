@@ -1,0 +1,14 @@
+Change Log
+==========
+
+0.0.2 (2/27/2022)
+-----------------
+- Hopefully now it actually installs!
+
+0.0.3 (2/28/2022)
+-----------------
+- Added new function, fixed unit-norm-check function
+
+0.0.4 (2/28/2022)
+-----------------
+- I'm really stupid sometimes. Unit Norm function works as intended now!
