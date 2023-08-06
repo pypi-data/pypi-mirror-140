@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: chushai
+Version: 0.0.5
+Summary: chushai use
+Author: WangMengtian
+Author-email: 19845175463@163.com
+License: apache 3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: numpy
+Requires: matplotlib
+
+UNKNOWN
+
