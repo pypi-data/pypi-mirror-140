@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: WalletPy
+Version: 0.1.0
+Summary: Wallet for blockchain adresses
+Home-page: https://github.com/IliasElabbassi/WalletPy
+Author: Ilias El Abbassi
+Author-email: iliaselabbassi@outlook.fr
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: base58
+Requires-Dist: pycryptodome
+Requires-Dist: setuptools
+
+UNKNOWN
+
