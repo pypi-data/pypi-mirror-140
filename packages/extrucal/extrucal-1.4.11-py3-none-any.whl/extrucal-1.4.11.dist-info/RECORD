@@ -1,0 +1,10 @@
+extrucal/__init__.py,sha256=EO1D_uU0kPGa7Wu7FhGiN2elhLhL90XyNMC1Pw0KAho,110
+extrucal/cable_extrusion.py,sha256=SwzB6H-A0fevtn2ZSQ_TRgoppV_bzsrg1pH5eMCTAvs,14049
+extrucal/extrusion.py,sha256=IB0oGwRwu5fFr6mqY9Gbj0_Y1MgX7Ev4aDWD5bgAAx0,17052
+extrucal/rod_extrusion.py,sha256=A3-ooxvaruJydm1c8zx-wdRrF3UGFjLZgL9BVAb0J4I,13543
+extrucal/sheet_extrusion.py,sha256=bPcRNtYjOnxY_913ngkR3th06nPotjOZrnLmfQ4SiCE,13590
+extrucal/tube_extrusion.py,sha256=ooaWcXeIS0n6DxvGcnLbciFdRTApc4NRtCYyVjtH0Ok,13944
+extrucal-1.4.11.dist-info/LICENSE,sha256=3KJ7KSM65HXH8UbPtbo9YWmizr2rRted131pq7wmoZ4,1072
+extrucal-1.4.11.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+extrucal-1.4.11.dist-info/METADATA,sha256=5Z40uyOximkzL_uT1hPyBilkbV11tsTQJflj-u6HNK4,6025
+extrucal-1.4.11.dist-info/RECORD,,
