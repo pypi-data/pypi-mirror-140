@@ -1,0 +1,9 @@
+water-mgmt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+water-mgmt/calc_cost.py,sha256=XvucDM5iVmuBXkh9kjT4zVJhfqBi6lUJSOvlbTCN3OE,1867
+water-mgmt/geektrust.py,sha256=eYJHyy9r8smtBCeOqCs1f8heMU3-NVmwuL4um6bwxaE,2542
+water-mgmt/tankwater_slabcalc.py,sha256=jrRNEkgItVAr4oqgYpHtHFVrahCTbrAkB31i4UQ64as,599
+water_mgmt_vis-0.0.1.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+water_mgmt_vis-0.0.1.dist-info/METADATA,sha256=WmEcZMKEOW3iGc5SvD3ChH6eGsdCTVSrUR-gH5vawaA,620
+water_mgmt_vis-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+water_mgmt_vis-0.0.1.dist-info/top_level.txt,sha256=IleIm4rFFeqofAg6sUqzhjomXXn5jp2UIGo4XCHjkkU,11
+water_mgmt_vis-0.0.1.dist-info/RECORD,,

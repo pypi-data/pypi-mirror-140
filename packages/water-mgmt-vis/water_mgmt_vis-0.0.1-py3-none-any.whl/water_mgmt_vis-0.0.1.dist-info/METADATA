@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: water-mgmt-vis
+Version: 0.0.1
+Summary: A package that calculates cost and consumption for 2 and 3 BHK with guests
+Home-page: https://github.com/viswan29/watermanagement
+Author: Viswanath Thatha
+Author-email: viswanath.thatha@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/viswan29/watermanagement/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+UNKNOWN
+
