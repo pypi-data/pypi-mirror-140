@@ -1,0 +1,15 @@
+autodatadictionary/__init__.py,sha256=HQvJzq-41B1c8ZJUbIQ4TKKM5FbOlXMg3N6D1g3buDQ,34
+autodatadictionary/autodatadictionary.py,sha256=nrkRfcqnhVaNnYEOjmC6zTVGFNNIIGpD2fT25o3zx5s,5778
+autodatadictionary/analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodatadictionary/analysis/dictionarygenerator.py,sha256=3armnkSd6JJ6pZoUkNIEao6A1NPu-Yc6GZcjMmYyIAI,3142
+autodatadictionary/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodatadictionary/db/sqlalchemydb.py,sha256=-DI8fSkO22EfPWfNf8GoOuG5tS1pHEQRmE0OvXWmvlo,2320
+autodatadictionary/preperation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodatadictionary/preperation/dataprep.py,sha256=QtY12uz_GOytCzzfLws_OGwAG09n65Um_QbA8Yetfzg,1396
+autodatadictionary/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodatadictionary/utils/dataloader.py,sha256=lpB776XhYfgdZpyn2mipEEXiPzuXkGN7lQndFa4kKv0,593
+autodatadictionary-0.0.7.dist-info/LICENSE,sha256=3hxmvHx_igMsKHcSZMcbIXFuGI__jbGnjLWC2JKdVUM,1072
+autodatadictionary-0.0.7.dist-info/METADATA,sha256=gK9-dPzwHIcSc8XPMtACemX1TQ8pDm4Msg8qsWkedgg,1677
+autodatadictionary-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+autodatadictionary-0.0.7.dist-info/top_level.txt,sha256=NtThIjzn6QqS61w4GlReymwj8TxnSu5TiQUxJGkTt0o,19
+autodatadictionary-0.0.7.dist-info/RECORD,,
