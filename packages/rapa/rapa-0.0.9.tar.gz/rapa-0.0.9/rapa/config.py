@@ -1,0 +1,7 @@
+MAX_FEATURES_TO_LABEL = 15
+MIN_FEATURES_TO_LABEL = 5
+FIG_SIZE = (10,10)
+DEBUG_STATEMENTS = True
+TIME_DECIMALS = 2
+
+# custom models user configuration
