@@ -1,0 +1,4 @@
+acct>=6.4.2
+aiokafka
+pop>=21
+pop-evbus>=6.0.0
