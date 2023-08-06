@@ -1,0 +1,15 @@
+pytest_mypy_testing/__init__.py,sha256=mC9TdtmhHPsznK4NvNwPz2iB3dJQLtLah-XY9evgVOc,158
+pytest_mypy_testing/_version.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_mypy_testing/message.py,sha256=1iXgu5qAZpGBEhJUUXwTuVGjWd3ZRa9MwFS8d5JO-vY,4094
+pytest_mypy_testing/output_processing.py,sha256=LnritAM8sU803aErUbDInkmLljGiVgJOd2d1JWxBDNE,5082
+pytest_mypy_testing/parser.py,sha256=FMShHfT0TMbQb3yUjXCt8-LS4MgqfkxEkX-joDiJNTw,5891
+pytest_mypy_testing/plugin.py,sha256=Fs24lACkxGpXAjvOw5g2Fih5HILD6Ttwk5qWeBj-t3k,8449
+pytest_mypy_testing/py.typed,sha256=u_vo7wBtCPCv6xoAqoFD9LlHSi6FQmBK2xVsEVQq3qw,77
+pytest_mypy_testing/strutil.py,sha256=c9N-KE4HdGfR5uSl5r_eMufqWrOD-C3PtE44HKSut20,414
+pytest_mypy_testing-0.0.10.dist-info/entry_points.txt,sha256=PjOQUCr3T5rZI23u4nNzpJkAwdkvp7fVPsyRqn_0WMY,52
+pytest_mypy_testing-0.0.10.dist-info/LICENSES/Apache-2.0.txt,sha256=RLClboC0GhsKa9EpJRXoBlOf2XswvlTCcZ5sdjGQq1c,10343
+pytest_mypy_testing-0.0.10.dist-info/LICENSES/CC0-1.0.txt,sha256=alc_svkIJmKXjPIfsVMJbfChmB3q6n28EKEQRv4AXZ8,6916
+pytest_mypy_testing-0.0.10.dist-info/LICENSES/MIT.txt,sha256=jyUBhInW_g3sNKNSMUw43BRiR7feZXNXkPQ5ipKvqEs,1108
+pytest_mypy_testing-0.0.10.dist-info/WHEEL,sha256=KU4olamscZ0e2yRNzDYFvACtg6ewSxdqW3f7cM6CGOA,83
+pytest_mypy_testing-0.0.10.dist-info/METADATA,sha256=3c9E-N0AhDOmmGXsCHrEhZyyfp4ecUAEriTDWD4mY6I,5671
+pytest_mypy_testing-0.0.10.dist-info/RECORD,,
