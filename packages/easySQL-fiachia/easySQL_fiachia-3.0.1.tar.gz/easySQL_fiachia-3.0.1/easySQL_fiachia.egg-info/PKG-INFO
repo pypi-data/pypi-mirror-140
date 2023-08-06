@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: easySQL-fiachia
+Version: 3.0.1
+Summary: Easy SQL Used pymysql
+Home-page: UNKNOWN
+Author: fiachia
+Author-email: 208473302@qq.com
+Maintainer: fiachia
+Maintainer-email: 208473302@qq.com
+License: BSD License
+Platform: all
+License-File: licence.txt
+
+:Name: easySQL
+:Author: fiachia
+:Function: use easy function to execute pyMySQL module
+:Defect: only easy SQL can be used
+
+use:
+####
+* database connect:
+* a) db=easySQL(databaseName, user, passwd, host) or easySQL(database)
+* table creat:
+* a) table = tableSQL(tableName, engine, charset)
+* b) table.addAttribute(aName, aType, aLong, default, isNotNull, isPrimaryKey, isAuto, isUnique, isUnsigned)
+* c) sql = table.creatLanguage()
+* d) db.commit(sql)
+* data find:
+* a) data = db.find(tableName, key1=value1, key2=value2...)
+* data add:
+* a) db.add(tableName, key1=value1, key2=value2...) or db.add(tableName, data)
+* data delete:
+* a) db.delete(tableName, key1=value1, key2=value2...) or db.add(tableName, data)
+* data update:
+* a) db.update(data, key1=value3, key2=value4...)
+* other:
+* a) db.commit(sql) or db.getData(sql)
+* data add dataList:
+* n) add all data in dataList. if input data is not list, it will be list in this function. this function need all input list type have the same length.
+* a) db.addList(tableName, key1=list1, key2=list2...)
+* data add(data add data rather than data add to table)
+* a) data.add(data1)
+* creat table by DIC(json.loads()):
+* a) db.creat(tableName, childDeep=0, \**kwargs)
+
+2.0.4:
+######
+* a) fix the columns in mysql maybe in confusion
+
+2.0.5:
+######
+* a) you can get data by a dict type
+
+2.0.6:
+######
+* a) fix a bug that dict use the same addr
+
+2.0.7:
+######
+* a) Modify a small amount of code and logic to improve efficiency
+* b) db.commit(sql) change to db.execute(sql)
+* c) you can use db.addSQL(sql(s)) db.showSQL(index=None) db.deleteSQL(index=None) to change sqlList and then db.commit() to run sqlList
+
+2.0.8:
+######
+* a) fix a wrong that NoneType in data
+
+2.1.0:
+######
+* a) change a lot of code to fix old question.
+* b) add type class for using easily.
+
+2.1.1:
+######
+* a) fix some questions.
+* b) change some logic.
+
+2.1.2:
+######
+* a) fix a lot questions.
+* b) update some new function.
+
+2.1.3:
+######
+* a) fix some type value.
+
+2.1.4:
+######
+* a) fix some type value.
+
+3.0.1:
+######
+* a) add threading to increase running speed.
+* b) change find_info in DataSql and EasySql for using easier.
+* c) add find_info_pri_key in DataSql and update() can only change data in DataSql.
+* d) add new function and fix old question.
+
+
