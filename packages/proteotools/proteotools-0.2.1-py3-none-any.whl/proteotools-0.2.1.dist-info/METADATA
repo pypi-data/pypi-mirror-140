@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: proteotools
+Version: 0.2.1
+Summary: A simple Python package which lets you programmatically convert Thermo raw files using ThermoRawFileParser, run a few proteomics search engines (Comet, X! Tandem, MS-GF+), and use compiled Trans-Proteomic Pipeline (TPP) binaries without needing to compile the entire pipeline.
+Home-page: https://github.com/kevinkovalchik/proteotools
+Author: Kevin Kovalchik
+Author-email: kevin.kovalchik@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pyteomics.pepxmltk
+
+UNKNOWN
+
