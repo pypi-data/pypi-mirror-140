@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/apa.py
+sphinxcontrib/__pycache__/__init__.cpython-38.pyc
+sphinxcontrib/__pycache__/apa.cpython-38.pyc
+sphinxcontrib_apa.egg-info/PKG-INFO
+sphinxcontrib_apa.egg-info/SOURCES.txt
+sphinxcontrib_apa.egg-info/dependency_links.txt
+sphinxcontrib_apa.egg-info/namespace_packages.txt
+sphinxcontrib_apa.egg-info/top_level.txt

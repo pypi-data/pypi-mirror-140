@@ -1,0 +1,9 @@
+# Sphinx documentation
+dist/
+build/
+docs/build/
+**/.DS_Store
+**/#*#
+*~
+sphinxcontrib_apa.egg-info/
+
