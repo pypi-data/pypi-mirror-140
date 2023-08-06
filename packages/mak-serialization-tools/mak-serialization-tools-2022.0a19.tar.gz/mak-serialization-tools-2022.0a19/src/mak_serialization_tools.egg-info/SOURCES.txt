@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/mak_serialization_tools.egg-info/PKG-INFO
+src/mak_serialization_tools.egg-info/SOURCES.txt
+src/mak_serialization_tools.egg-info/dependency_links.txt
+src/mak_serialization_tools.egg-info/top_level.txt
+src/serialization_tools/__init__.py
+src/serialization_tools/common_directories.py
+src/serialization_tools/error.py
+src/serialization_tools/ioutil.py
+src/serialization_tools/magic.py
+src/serialization_tools/size.py
+src/serialization_tools/structx.py
+src/serialization_tools/vstruct.py
+src/serialization_tools/walkutil.py
