@@ -1,0 +1,2 @@
+[console_scripts]
+febio-python = febio_python.cli.main:main
