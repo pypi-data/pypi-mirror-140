@@ -1,0 +1,5 @@
+moviepy
+pydub
+pedalboard
+youtube_dl
+pillow
