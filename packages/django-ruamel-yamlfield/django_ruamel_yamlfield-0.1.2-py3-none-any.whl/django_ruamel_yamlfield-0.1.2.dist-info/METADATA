@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: django-ruamel-yamlfield
+Version: 0.1.2
+Summary: A Django database field for storing YAML data with Ruamel yaml implementation
+Home-page: https://github.com/Mapotic/django-ruamel-yamlfield
+Author: Martin Kubát
+Author-email: martin.kubat@mapotic.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: ruamel.yaml (>=0.17)
+
+UNKNOWN
+
