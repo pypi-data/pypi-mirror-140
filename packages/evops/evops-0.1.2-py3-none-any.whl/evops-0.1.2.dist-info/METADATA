@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: evops
+Version: 0.1.2
+Summary: Evaluation of Plane Segmentation.
+License: APACHE
+Author: Dmitriy Jarosh
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib-metadata (==4.8.3)
+Requires-Dist: nptyping (>=1.4.4,<2.0.0)
+Requires-Dist: numpy (>=1.19.0,<1.20.0)
