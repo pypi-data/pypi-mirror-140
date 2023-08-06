@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-fancy-test-runners
+Version: 1.0.0
+Summary: Provides a collection of Django test runner classes
+Author: IIIT
+Author-email: github@iiit.pl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# Django Fancy Test Runners
+
+## About
+
+This package provides a collection of Django test runner classes.
+
+## Install
+
+```bash
+pip install django-fancy-test-runners
+```
+
+## Usage
+
+Use test runners from the fancy_test_runners.test_runners module directly or as superclasses for your custom test runner.
+
+## License
+The Django Wicked Historian package is licensed under the [FreeBSD
+License](https://opensource.org/licenses/BSD-2-Clause).
+
+
