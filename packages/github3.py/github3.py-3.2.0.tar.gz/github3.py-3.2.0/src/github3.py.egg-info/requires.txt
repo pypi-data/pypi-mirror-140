@@ -1,0 +1,7 @@
+PyJWT[crypto]>=2.3.0
+python-dateutil>=2.6.0
+requests>=2.18
+uritemplate>=3.0.0
+
+[:python_version < "3.7"]
+typing-extensions>=3.10.0.2
