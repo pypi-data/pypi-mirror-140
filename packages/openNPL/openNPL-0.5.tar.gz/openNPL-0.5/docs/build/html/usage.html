@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usage &mdash; openNPL 0.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="openNPL Data Models" href="modules.html" />
+    <link rel="prev" title="Loading Sample Data" href="loading_sample_data.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> openNPL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="description.html">The openNPL platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loading_sample_data.html">Loading Sample Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-landing-page">The landing page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#login">Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#admin-interface">Admin Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#counterparty-data">Counterparty Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loan-data">Loan Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#property-collateral-data">Property Collateral Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">openNPL Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">NPL REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_docs.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">ChangeLog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">CONTRIBUTING</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">openNPL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Usage</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h1>
+<p>The openNPL platform offers a lot of functionality. Here we break down some of the main workflows for those just getting started with the platform. More will detailed tutorials will follow as the platform develops!</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>For more in-depth studies on using python for credit portfolio management check-out: <a class="reference external" href="https://www.openriskacademy.com/login/index.php">Open Risk Academy</a>. For Non-performing loan data domain knowledge check out the relevant entries at the: <a class="reference external" href="https://www.openriskmanual.org/wiki/Category:NPL">Open Risk Manual</a></p>
+</div>
+<section id="the-landing-page">
+<h2>The landing page<a class="headerlink" href="#the-landing-page" title="Permalink to this headline"></a></h2>
+<p>If everything went well with the installation, upon pointing your browser to localhost:8000 (or whatever port you are using) you will meet the landing page:</p>
+<img alt="_images/landing.png" src="_images/landing.png" />
+</section>
+<section id="login">
+<h2>Login<a class="headerlink" href="#login" title="Permalink to this headline"></a></h2>
+<p>To log-in, point your browser to localhost:8000/admin (initially only an admin user is enabled). This will get you to the login page:</p>
+<img alt="_images/login.png" src="_images/login.png" />
+<p>If you used the default demo credentials for openNPL you can login using:</p>
+<ul class="simple">
+<li><p><strong>Login:</strong> admin</p></li>
+<li><p><strong>Password:</strong> admin</p></li>
+</ul>
+</section>
+<section id="admin-interface">
+<h2>Admin Interface<a class="headerlink" href="#admin-interface" title="Permalink to this headline"></a></h2>
+<p>After a successful login you will get to the admin interface which offers access to all the datasets:</p>
+<img alt="_images/admin.png" src="_images/admin.png" />
+<p>The interface provides access to:</p>
+<ul class="simple">
+<li><p>administrative functions like creating users and groups</p></li>
+<li><p>a history log of activities that have been performed</p></li>
+<li><p>user functions like inspecting and working with NPL data</p></li>
+</ul>
+<p>Lets click first on an important data model under the EBA portfolio collection: The <strong>Counterparty</strong> model. This gets us to a list of (randomly generated) counterparties that have been inserted into the database during the installation process:</p>
+</section>
+<section id="counterparty-data">
+<h2>Counterparty Data<a class="headerlink" href="#counterparty-data" title="Permalink to this headline"></a></h2>
+<img alt="_images/counterparty.png" src="_images/counterparty.png" />
+<p>Some key functionalities available in this view are (in summary)</p>
+<ul class="simple">
+<li><p>viewing (sorting) counterparty data (meaning obligor or borrower data, e.g. company or individual person data)</p></li>
+<li><p>adding new records</p></li>
+<li><p>deleting new records</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>this view selects only some illustrative fields out of the many recorded in the database</p>
+</div>
+<p>Lets click into any counterparty row to take a closer look:</p>
+<img alt="_images/counterparty_detail.png" src="_images/counterparty_detail.png" />
+<p>All the available EBA counterparty fields are available in this view to inspect and potentially change.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If any field is unclear, clicking on the <em>Documentation link</em> underneath takes you to the Open Risk Manual for the explanation. For example if we click on <strong>Annual Revenue</strong> field, we will get to the corresponding page that explains the meaning and requirements for this data point</p>
+</div>
+<img alt="_images/manual.png" src="_images/manual.png" />
+<p>We can go back to the overview of all data by clicking on the breadcrumb (EBA Portfolio) or pointing the
+browser to <a class="reference external" href="http://localhost:8001/admin/eba_portfolio/">http://localhost:8001/admin/eba_portfolio/</a></p>
+<p>Lets take a look now at another important data model, namely the <strong>Loan</strong> model data. Loans is one of the main financial products documented in the templates (others being leases and swaps):</p>
+</section>
+<section id="loan-data">
+<h2>Loan Data<a class="headerlink" href="#loan-data" title="Permalink to this headline"></a></h2>
+<img alt="_images/loan.png" src="_images/loan.png" />
+<p>The layout is similar to what we have seen before. A selection of fields is visible in the overview and
+clicking through we get access to further data, e.g. which counterparty actually holds to the loan.</p>
+<p>In the upper right corner we have the functionality for filtering the dataset. Clicking on the menu allows
+selecting the desired filter to narrow down the portfolio:</p>
+<img alt="_images/filter.png" src="_images/filter.png" />
+<p>As one final example lets go back to the main list and select the <strong>Property Collateral</strong> data (in the EBA
+templates collateral is segmented along property and non-property classes):</p>
+</section>
+<section id="property-collateral-data">
+<h2>Property Collateral Data<a class="headerlink" href="#property-collateral-data" title="Permalink to this headline"></a></h2>
+<p>By now the familiar table display of the stored collateral data should show up:</p>
+<img alt="_images/collateral.png" src="_images/collateral.png" />
+<p>Lets try now something more adventurous! Let us try to <strong>add</strong> some data!</p>
+<p>Click on the add data button on the upper right side of the page. You should see a form with many empty fields:</p>
+<img alt="_images/adding.png" src="_images/adding.png" />
+<p>Depending on the nature of the field you can either enter text, numbers or select entries from drop-down
+menus. Whenever there is doubt, the documentation link is as before one click away!</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="loading_sample_data.html" class="btn btn-neutral float-left" title="Loading Sample Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="modules.html" class="btn btn-neutral float-right" title="openNPL Data Models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020 - 2021, Open Risk.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

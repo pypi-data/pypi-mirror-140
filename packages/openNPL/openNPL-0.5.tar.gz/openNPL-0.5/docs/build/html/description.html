@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The openNPL platform &mdash; openNPL 0.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="openNPL Documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> openNPL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The openNPL platform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#functionality">Functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#directory-structure">Directory structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#core-data-models">Core Data Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-options">Installation Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loading_sample_data.html">Loading Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">openNPL Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">NPL REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_docs.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">ChangeLog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">CONTRIBUTING</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">openNPL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>The openNPL platform</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/description.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="the-opennpl-platform">
+<h1>The openNPL platform<a class="headerlink" href="#the-opennpl-platform" title="Permalink to this headline"></a></h1>
+<p><strong>openNPL</strong> is a Python / Django powered platform for working with detailed (<em>loan level</em>) data with a particular emphasis on capturing non-performing loan information.</p>
+<p>The source code is available in the Open Risk Repository <a class="reference external" href="https://github.com/open-risk/openNPL.git">Link</a>.</p>
+<ul class="simple">
+<li><p>Author: <a class="reference external" href="http://www.openriskmanagement.com">Open Risk</a></p></li>
+<li><p>License: MIT</p></li>
+<li><p>Online Code Documentation: <a class="reference external" href="https://opennpl.readthedocs.io/en/latest/">Read The Docs</a></p></li>
+<li><p>NPL Data Documentation: <a class="reference external" href="https://www.openriskmanual.org/wiki/EBA_NPL_Template">Open Risk Manual Loan Data</a></p></li>
+<li><p>Development Website: <a class="reference external" href="https://github.com/open-risk/openNPL">Github</a></p></li>
+<li><p>Project Discussion: <a class="reference external" href="https://gitter.im/open-risk/openNPL">Gitter</a></p></li>
+<li><p>Docker Image: <a class="reference external" href="https://hub.docker.com/repository/docker/openrisk/opennpl_web">Docker</a></p></li>
+<li><p>Training: <a class="reference external" href="https://www.openriskacademy.com/login/index.php">Open Risk Academy</a></p></li>
+</ul>
+<section id="functionality">
+<h2>Functionality<a class="headerlink" href="#functionality" title="Permalink to this headline"></a></h2>
+<p>The openNPL platform may be useful to financial industry users (portfolio managers, business analysts), data engineers and/or risk model developers.</p>
+<p>Users can use openNPL to:</p>
+<ul class="simple">
+<li><p>Log-in into the application with their credentials</p></li>
+<li><p>Inspect the available loan data sets (tables or relations) conforming to the European Banking Authority Template recommendations</p></li>
+<li><p>Insert, Update or Delete loan records (e.g. new counterparty, loan or collateral data)</p></li>
+<li><p>Consult the documentation as to the meaning and requirements of each data element</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>openNPL is still in active development. The functionality of the platform will be significantly enhanced in future versions. If you have specific requests / ideas please raise them in our github repository.</p>
+</div>
+</section>
+<section id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline"></a></h2>
+<p>The current <em>architecture</em> of openNPL is summarized as follows:</p>
+<ul class="simple">
+<li><p>openNPL is built on top of the <strong>Python Django framework</strong></p></li>
+<li><p>The non-performing loan template recommendations of the EBA are implemented as distinct <strong>models</strong> in the database</p></li>
+<li><p>The backend database is currently <strong>sqlite3</strong></p></li>
+<li><p>Additional models are introduced to bind the data together in relations (e.g. portfolio snapshot)</p></li>
+<li><p>The user interface uses built-in Django forms as those are rendered by the <strong>Grappelli</strong> skin</p></li>
+</ul>
+</section>
+<section id="directory-structure">
+<h2>Directory structure<a class="headerlink" href="#directory-structure" title="Permalink to this headline"></a></h2>
+<p>The openNPL distribution has the following structure:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 18%" />
+<col style="width: 24%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Level 1</p></th>
+<th class="head"><p>Level 2</p></th>
+<th class="head"><p>Level 3</p></th>
+<th class="head"><p>File or Directory Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>openNPL</p></td>
+<td></td>
+<td></td>
+<td><p>The root directory</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>npl_portfolio</p></td>
+<td></td>
+<td><p>DIR: The core python files</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>models.py</p></td>
+<td><p>Portfolio level models</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>counterparty.py</p></td>
+<td><p>The Counterparty model</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>loan.py</p></td>
+<td><p>The Loan model</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>…</p></td>
+<td><p>The other EBA models</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>fixtures</p></td>
+<td><p>DIR: Sample data in JSON format</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>start</p></td>
+<td></td>
+<td><p>DIR: Templates for the front end</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>openNPL</p></td>
+<td></td>
+<td><p>DIR: Application configuration files</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>docs</p></td>
+<td></td>
+<td><p>DIR: This documentation</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>static</p></td>
+<td></td>
+<td><p>DIR: Styling assets</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>templates</p></td>
+<td></td>
+<td><p>DIR: Template customization</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>tests</p></td>
+<td></td>
+<td><p>DIR: Testing scrips</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="core-data-models">
+<h2>Core Data Models<a class="headerlink" href="#core-data-models" title="Permalink to this headline"></a></h2>
+<p>The core data models currently implemented are:</p>
+<ul class="simple">
+<li><p><strong>Portfolio</strong> (Segments the loan level data into distinct portfolios)</p></li>
+<li><p><strong>Portfolio_Snapshot</strong> (Segments the loan level data into temporal snapshots / cutoff dates)</p></li>
+<li><p><strong>8 NPL Tables</strong> (Implementing the core European Banking Authority NPL template specification)</p></li>
+<li><p><strong>User</strong> (Inheriting from Django User model)</p></li>
+</ul>
+</section>
+<section id="installation-options">
+<h2>Installation Options<a class="headerlink" href="#installation-options" title="Permalink to this headline"></a></h2>
+<p>The <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a> page provides guidance with the current installation options</p>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline"></a></h2>
+<p>The <a class="reference internal" href="usage.html"><span class="doc">Usage</span></a> page illustrates (using screenshots) the currently available functionality to help you get started with openNPL</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="openNPL Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020 - 2021, Open Risk.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

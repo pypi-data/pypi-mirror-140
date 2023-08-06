@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; openNPL 0.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Requirements" href="requirements.html" />
+    <link rel="prev" title="The openNPL platform" href="description.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> openNPL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="description.html">The openNPL platform</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation-via-docker">Installation via Docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-docker">Install Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pull-the-opennpl-image-from-docker-hub">Pull the openNPL image from Docker Hub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#building-a-local-docker-image">Building a local docker image</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#manual-installation-from-sources">Manual installation from sources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dependencies-requirements">Dependencies / Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-installation-procedure">Manual installation procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loading_sample_data.html">Loading Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">openNPL Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">NPL REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_docs.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">ChangeLog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">CONTRIBUTING</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">openNPL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
+<p>You can install and use the openNPL package in any system that supports <em>python</em> <strong>or</strong> <em>docker</em></p>
+<section id="installation-via-docker">
+<h2>Installation via Docker<a class="headerlink" href="#installation-via-docker" title="Permalink to this headline"></a></h2>
+<p>Installation via docker is recommended as it provides a streamlined and fast setup of an openNPL instance. If you do not want to use docker scroll further down for <a class="reference internal" href="#manual-installation-from-sources"><span class="std std-ref">Manual installation from sources</span></a></p>
+<section id="install-docker">
+<h3>Install Docker<a class="headerlink" href="#install-docker" title="Permalink to this headline"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A working docker installation is required! Docker is available for many operating systems and platforms (Windows, MacOS, Linux, running on Intel/AMD or ARM chipsets among others). Follow the installation instructions <a class="reference external" href="https://docs.docker.com/engine/install/">here</a>.</p>
+</div>
+<p>Once the installation is complete, make sure the docker service is running by testing that you can run the docker <em>‘hello-world’</em> application.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo service docker start
+sudo docker run hello-world
+</pre></div>
+</div>
+<p>Now we are ready for the next step. You can either pull an image from Docker Hub or build a local image:</p>
+</section>
+<section id="pull-the-opennpl-image-from-docker-hub">
+<h3>Pull the openNPL image from Docker Hub<a class="headerlink" href="#pull-the-opennpl-image-from-docker-hub" title="Permalink to this headline"></a></h3>
+<p>You can pull and run the latest image from Docker Hub (This method is recommended if you do not want to mess at all with the source distribution).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are also providing images also for the ARM/v7 architecture (Raspberry Pi). Check the root of our docker hub for what is <a class="reference external" href="https://hub.docker.com/u/openrisk">currently available</a></p>
+</div>
+<p>Start by issuing a docker pull command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker pull openrisk/opennpl_web:latest
+docker run -p <span class="m">8001</span>:8080 openrisk/opennpl_web:latest
+</pre></div>
+</div>
+<p>If all went well you have now a running instance of openNPL in your local machine. Access it by pointing your browser to <code class="docutils literal notranslate"><span class="pre">http://localhost:8001</span></code> and login with admin/admin credentials.</p>
+<p>The API endpoints are accessible at <code class="docutils literal notranslate"><span class="pre">http://localhost:8001/api</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to work with a different image check what is available at our <a class="reference external" href="https://hub.docker.com/repository/docker/openrisk/opennpl_web">docker hub list</a></p>
+</div>
+</section>
+<section id="building-a-local-docker-image">
+<h3>Building a local docker image<a class="headerlink" href="#building-a-local-docker-image" title="Permalink to this headline"></a></h3>
+<p>Alternatively you can build your own <em>local</em> docker image. After you fetch the distribution from the <a class="reference external" href="https://github.com/open-risk/openNPL">github repository</a> (as per manual installation instructions below), in the root directory of the distribution issue:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> openNPL
+docker build -t opennpl_web:latest .
+docker run -p <span class="m">8001</span>:8080 opennpl_web:latest
+</pre></div>
+</div>
+<p>Again, access the running instance of openNPL by pointing your browser to <code class="docutils literal notranslate"><span class="pre">http://localhost:8001</span></code> and login with the default admin/admin credentials</p>
+</section>
+</section>
+<section id="manual-installation-from-sources">
+<h2>Manual installation from sources<a class="headerlink" href="#manual-installation-from-sources" title="Permalink to this headline"></a></h2>
+<p>The manual installation path is recommended if you want to dig into and inspect the openNPL code base or if you want to contribute to openNPL.</p>
+<section id="dependencies-requirements">
+<h3>Dependencies / Requirements<a class="headerlink" href="#dependencies-requirements" title="Permalink to this headline"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Linux based system is recommended but with minor tweaks it is in principle also possible to deploy in Windows systems</p>
+</div>
+<ul class="simple">
+<li><p>openNPL requires a working Python 3 installation (including pip)</p></li>
+<li><p>Python &gt;= 3.9</p></li>
+<li><p>Django &gt;= 4.0</p></li>
+<li><p>The precise python library dependencies are listed in the <a class="reference internal" href="requirements.html"><span class="doc">Requirements</span></a>.txt file.</p></li>
+<li><p>openNPL may work with earlier versions of these packages but this has not been tested</p></li>
+<li><p>A linux based system is recommended. Some tweaks are required for Windows but is in principle also possible to deploy there</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The current User Interface (UI) of openNPL is desktop oriented and might not work properly in smaller (mobile) screens</p>
+</div>
+</section>
+<section id="manual-installation-procedure">
+<h3>Manual installation procedure<a class="headerlink" href="#manual-installation-procedure" title="Permalink to this headline"></a></h3>
+<p>Step 1. Download the github sources to your preferred directory:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/open-risk/openNPL
+</pre></div>
+</div>
+<p>Step 2. Create a virtualenv. It is advisable to install the platform in a virtualenv so as not to interfere with your system’s python distribution</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>virtualenv -p python3 venv
+<span class="nb">source</span> venv/bin/activate
+</pre></div>
+</div>
+<p>Step 3. Install the required dependencies (The core dependency is Django and its own dependencies, in addition the Grappelli skin as the admin interface)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip3 install -r requirements.txt
+</pre></div>
+</div>
+<p>Step 4. Make the required django migrations. The project is setup to use sqlite3. This step will ensure the database has the right tables.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> openNPL
+python manage.py makemigrations
+python manage.py migrate
+</pre></div>
+</div>
+<p>Step 5. Create a superuser. Suggestion: Use admin/admin as login/password as a reminder that this instance of openNPL should NOT be used for anything remotely sensitive!</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 manage.py createsuperuser
+</pre></div>
+</div>
+<p>Step 6. Collect static files (to ensure the interface will render properly)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 manage.py collectstatic --no-input
+</pre></div>
+</div>
+<p>Step 7. Insert some dummy data (optional). Without this the database will be empty.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash loadfixtures.sh
+</pre></div>
+</div>
+<p>Step 8. Run the server. The default port is 8000 but if (by any chance) this port is already used in your computer there will be another assigned. Be sure to note the assigned port and use it instead.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 manage.py runserver
+</pre></div>
+</div>
+<p>Step 9. Login with your browser. Finally in your favorite browser (e.g. Firefox from Mozilla), enter the url <code class="docutils literal notranslate"><span class="pre">http://localhost:8001</span></code> and login with admin/admin credentials.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>8000 is the default port, if that is already in use, you can select an alternative one as follows:</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 manage.py runserver localhost:8081
+</pre></div>
+</div>
+</section>
+<section id="troubleshooting">
+<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline"></a></h3>
+<p>The above steps are typical Django project installation steps. If you experience trouble at any point, the <a class="reference external" href="https://docs.djangoproject.com/en/3.1/faq/">Django online FAQ</a> should help you out.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The project uses an sqlite3 database for good reason! If things go pear-shaped with your database simply remove the file and start again.</p>
+</div>
+<p>We welcome your feedback and support. Please raise a <a class="reference external" href="https://github.com/open-risk/openNPL/issues">github ticket</a> if you want to report a bug or need a new feature. For contributions check our Contribution and Code of Conduct docs.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="description.html" class="btn btn-neutral float-left" title="The openNPL platform" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="requirements.html" class="btn btn-neutral float-right" title="Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020 - 2021, Open Risk.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
