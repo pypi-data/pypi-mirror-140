@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Topsis-Lovepreet-101903732
+Version: 0.0.3
+Summary: Implement TOPSIS on a dataset through command line
+Home-page: UNKNOWN
+Author: Lovepreet Singh
+Author-email: lovithindcoc@gmail.com
+License: UNKNOWN
+Keywords: python,topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package that allows to implement TOPSIS. Following query on terminal will provide you the best and worst decisions for the dataset. python topsis.py input.csv 1,1,1,2,1 +,+,-,+,+ output-file.csv
+
