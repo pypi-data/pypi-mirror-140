@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: usscore
+Version: 0.0.4
+Summary: A package for scoring state policies of covid-19 in the US
+Home-page: https://github.com/ytakefuji/scoreUS
+Author: yoshiyasu takefuji
+Author-email: takefuji@keio.jp
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ytakefuji/scoreUS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# scoreUS
+This is to score state policies against COVID-19.
+The sorted score will be displayed.
+
+# deaths of US states:
+
+https://github.com/nytimes/covid-19-data/raw/master/live/us-states.csv
+
+# vaccination rate of US states:
+
+https://covid.ourworldindata.org/data/vaccinations/us_state_vaccinations.csv
+
+# Use PopulationReport.csv on population by state in the US:
+
+https://data.ers.usda.gov/reports.aspx?ID=17827
+
+# Use pov.csv file on poverty rate by state in the US:
+
+https://data.ers.usda.gov/reports.aspx?ID=17826
+
+# Use health.csv:
+
+https://www.americashealthrankings.org/explore/health-of-women-and-children/measure/outcomes_hwc_2020/state/ALL
+
+# education
+
+https://www.nationsreportcard.gov/profiles/stateprofile?chort=1&sub=SCI&sj=AL&sfj=NP&st=MN&year=2015R3
+
+
+
