@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: neverlate
+Version: 0.3.0
+Summary: In your face notifications you can't miss for Google Calendar Events.
+Home-page: https://github.com/beewally/neverlate
+Author: Brian Walters
+Author-email: brianrwalters@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/beewally/neverlate/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Scheduling
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NeverLate
+In your face notifications that you can't ignore for your google calendar events.
+
+
