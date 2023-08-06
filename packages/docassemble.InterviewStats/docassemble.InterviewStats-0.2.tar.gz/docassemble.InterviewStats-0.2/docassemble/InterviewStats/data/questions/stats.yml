@@ -1,0 +1,283 @@
+---
+metadata:
+  title: All Interview Statistics
+  short title: View Stats
+  temporary session: True
+  required privileges:
+    - admin
+---
+features:
+  javascript:
+    - https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js
+    - https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js
+    - https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js
+  question help button: True
+---
+default screen parts: 
+  footer: |
+    [:sync-alt: Restart](${ url_of('restart') } )
+---
+modules:
+  - .snapshot_statistics
+  - .snapshot_geography
+---
+objects:
+  - xlsx_output: DAFile.using(filename="stats.xlsx")
+---
+id: interview order
+mandatory: True
+code: |
+  filename
+  simple_data
+  formatted_data
+  viewed_filtered
+---
+event: generate_excel
+code: |
+  if stats_size > 10000:
+    if make_excel_task.ready():
+      if make_excel_task.failed():
+        show_failed_screen
+      show_excel_download
+    else:
+      waiting_screen
+  else:
+    proper_name = space_to_underscore(filename) + "_stats"
+    xlsx_output.initialize(filename=proper_name + ".xlsx")
+    writer = pd.ExcelWriter(xlsx_output.path(),
+      engine='xlsxwriter',
+      options={'remove_timezone': True})
+    formatted_data.to_excel(writer, index=False)
+    writer.save()
+    xlsx_output.commit()
+    del writer
+    show_excel_download
+    generate_excel = True
+---
+event: show_excel_download
+question: |
+  Excel Download
+subquestion: |
+  [:file-excel: Download](${ xlsx_output.url_for() })
+---
+code: |
+  make_excel_task = background_action('excel_task', data=formatted_data)
+---
+event: excel_task
+code: |
+  bg_data = action_argument('data')
+  proper_name = space_to_underscore(filename) + "_stats"
+  xlsx_output.initialize(filename=proper_name + ".xlsx")
+  writer = pd.ExcelWriter(xlsx_output.path(),
+    engine='xlsxwriter',
+    options={'remove_timezone': True})
+  bg_data.to_excel(writer, index=False)
+  writer.save()
+  xlsx_output.commit()
+  del writer
+  background_response_action('excel_resp', the_excel=xlsx_output) 
+---
+event: waiting_screen
+id: waiting screen
+question: |
+  We're generating your excel sheet.
+subquestion: |
+  This may take a few minutes, so leave this tab open. Thanks for waiting.
+reload: True
+---
+event: show_failed_screen
+question: |
+  Sorry, something went wrong
+subquestion: |
+  We had some trouble trying to assemble your excel sheet.
+
+  ${ make_excel_task.result() }
+buttons:
+  - Restart: restart
+---
+event: excel_resp
+code: |
+  xlsx_output = action_argument('the_excel')
+  background_response()
+---
+code: |
+  summary_stats = get_summary_stats(filename)
+---
+reconsider: summary_stats
+question: |
+  Summary data for ${ interview_title }
+subquestion: |
+  * Total sessions: ${ summary_stats[0] }
+  * First session: ${ summary_stats[1] }
+  * Latest session: ${ summary_stats[2] }
+  
+  % if summary_stats[0] > 10000:
+  You have a lot of sessions; some operations might
+  take a long time.
+  % endif
+continue button field: simple_data
+---
+code: |
+  geo_layout = make_usage_map(formatted_data)
+  map_script, map_div, map_inline = get_embedable_usage_map(geo_layout)
+  del geo_layout
+---
+question: |
+  What interview do you want to view statistics for?
+fields:
+  - Filename: filename
+    datatype: combobox
+    code: |
+      [{interview.get('filename'): interview.get('title')} for interview in interview_menu()] or get_filenames()
+---
+code: |
+  interview_title = next(iter([interview.get('title') for interview in interview_menu() if interview.get('filename') == filename]), '(interview)')
+---
+code: |
+  if filename is not None:
+    if 'data/questions' in filename or 'playground' in filename:
+      stats = get_stats(filename)
+    else:
+      stats = get_stats(filename.replace(':',':data/questions/'))
+  else:
+    no_interview_stats
+---
+event: no_interview_stats
+question: There are no interviews to look for data in!
+subquestion: |
+  There aren't any interviews that we can look for data in. There should be at least one interview
+  listed in the 'dispatch' section of the configuration. See
+  [the docassemble documentation](https://docassemble.org/docs/config.html#dispatch) for more information
+buttons:
+  - Exit: exit
+---
+need: stats
+code: |
+  columns = get_columns(stats)
+  my_col = next(iter(columns), None)
+  groupable_columns = list(set(columns).difference(set(['modtime', 'user_session_id'])))
+  possible_states = get_column_values(stats, 'state')
+---
+code: |
+  import pandas as pd
+---
+code: |
+  formatted_data = pd.DataFrame()
+  stats_size = 0
+  if stats is not None:
+    formatted_data = pd.DataFrame(stats)
+    stats_size = formatted_data.shape[0]
+---
+mandatory: True
+id: view_data
+question: |
+  Stats for ${interview_title}
+subquestion: |
+  Total submissions: ${ len(stats) }
+
+  % if len(stats):
+  Group by:
+  % for col in groupable_columns:
+  [${col}](${ url_action('show_grouped_data', group_by = col ) }) |
+  % endfor
+
+  [:file-excel: Make Excel Download](${ url_ask('generate_excel') })
+  % endif
+under: |
+  ${ map_div }
+fields:
+  - Filter State: filter_state
+    datatype: yesno
+    disable if:
+      code: |
+        'state' not in formatted_data.columns or not possible_states
+  - Find States that: state_op
+    datatype: dropdown
+    show if: filter_state
+    code: |
+      [{'eq': "equal"},
+       {'ne': "don't equal"}]
+  - this state: state_to_filter
+    datatype: dropdown
+    show if: filter_state
+    code: |
+      possible_states
+  - Filter by Date: filter_date
+    datatype: yesno
+    disable if:
+      code: |
+        'modtime' not in formatted_data.columns
+  - Find submissions that are: date_op
+    datatype: dropdown
+    show if: filter_date
+    code: |
+      [{'gt': 'after'},
+       {'lt': 'before'},
+       {'eq': 'the same day as'}]
+  - this date: date_to_filter
+    datatype: date
+    show if: filter_date
+script: |
+    ${ map_script}
+continue button field: start_filter
+continue button label: Filter
+#help: |
+#  ${ formatted_data.to_html() }
+---
+mandatory: True
+event: viewed_filtered
+depends on: filt_map_script, filt_map_div
+need: filt_map_script, filt_map_div
+id: view_filtered_data
+question: |
+  Filtered: ${ filter_description }
+under: |
+  ${ filt_map_div }
+script: |
+    ${ filt_map_script }
+back button: True
+---
+event: show_grouped_data
+code: |
+  my_col = action_argument('group_by')
+  force_ask('display_grouped_data')
+---
+question: |
+  Stats for ${interview_title}
+subquestion: |
+  Total submissions: ${ len(stats) }
+
+  Group by:
+  % for col in groupable_columns:
+  [${col}](${ url_action('show_grouped_data', group_by = col)  })
+  % endfor
+
+  ${ formatted_data.groupby(by=my_col).count().to_html(classes=('table','table-striped')) }
+
+  [:file-excel: Download](${ url_ask('generate_excel') })
+under: |
+  ${ map_div }
+script: |
+  ${ map_script }
+continue button field: display_grouped_data
+---
+need: start_filter
+depends on: state_op, state_to_filter
+code: |
+  filter_list = []
+  readable = {'state': 'State', 'modtime': 'Date',
+              'eq': 'is', 'ne': 'is not', 'lt': '<', 'gt': '>'}
+  if defined('filter_state') and filter_state:
+    filter_list.append(('state', state_op, state_to_filter))
+  if defined('filter_date') and filter_date:
+    date_to_filter = date_to_filter.replace(tzinfo=None)
+    filter_list.append(('modtime', date_op, date_to_filter))
+
+  filter_description = ' and '.join(
+      ['{} {} {}'.format(readable[elem[0]], readable[elem[1]], elem[2])
+       for elem in filter_list])
+  filters = get_filters_from_strings(filter_list)
+  filt_geo_layout = make_usage_map(formatted_data, geo_col='zip',
+                                   time_col='modtime', filters=filters)
+  filt_map_script, filt_map_div, _ = get_embedable_usage_map(filt_geo_layout)
+  del filt_geo_layout
