@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyfolio-performance
+Version: 0.1.5
+Summary: Portfolio Performance library
+Home-page: https://pyfolio-performance.readthedocs.io/
+Author: Fabian Bendun
+Author-email: pyfolio-performance@bendun.io
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: et-xmlfile
+
+# pyfolio-performance
+A python library to read in your portfolio performance XML-file.
+
+
+## Installation
+
+
+pip install pyfolio-performance 
+
+
+## Get started
+
+The documentation and examples can be found here: https://pyfolio-performance.readthedocs.io/en/latest/
+
