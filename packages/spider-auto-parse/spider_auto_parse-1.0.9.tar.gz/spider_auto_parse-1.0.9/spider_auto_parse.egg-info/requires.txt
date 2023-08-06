@@ -1,0 +1,16 @@
+cchardet
+dateparser
+Distance
+environs
+joblib
+loguru
+lxml
+matplotlib
+numpy
+python_Levenshtein
+readability_lxml
+requests
+scikit_learn
+setuptools
+w3lib
+jsonpath
