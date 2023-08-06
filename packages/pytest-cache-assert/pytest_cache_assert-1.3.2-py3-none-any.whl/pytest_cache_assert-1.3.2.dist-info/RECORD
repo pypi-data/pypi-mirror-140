@@ -1,0 +1,16 @@
+pytest_cache_assert/__init__.py,sha256=txtocGzi_IUujPcVT2rhtEyZhQbu6mD3i5wvFFvp3jw,422
+pytest_cache_assert/_check_assert/__init__.py,sha256=LDFYDuNQAcok19GFY64cr5AtFVhR5RIWzdp9f-9AsDU,47
+pytest_cache_assert/_check_assert/caching.py,sha256=y8MU7ohR18N5W9Qz3lz4tp5TXe5p5ZFzUUrNo3Fcyik,2472
+pytest_cache_assert/_check_assert/config.py,sha256=xmdz24voU5M-C6mCAqZQD06TbSExNvutuy45xSQse2M,380
+pytest_cache_assert/_check_assert/constants.py,sha256=LFz0Oz9xLP_dMeqa2yXWbLLps99YOLX4hbU8vFYOxBc,1951
+pytest_cache_assert/_check_assert/differ.py,sha256=ra-M1ipUn2ggG7TwQJoSGLbCeAjPtbbrK-NLfUBN_SM,8259
+pytest_cache_assert/_check_assert/error_message.py,sha256=l6c-qNThtDKfJqNl5CLRFhcG8joAZ2q2-jiZxnfGoe4,1002
+pytest_cache_assert/_check_assert/key_rules.py,sha256=M3hpTr0V9gdHYFOj38nVeXr1ui6ThBYQzELhd19GXso,5117
+pytest_cache_assert/_check_assert/serializer.py,sha256=uPg1IEt8W5f00nlSUfYdnWolR0Bh004_Wj4Jotyc1Sw,2680
+pytest_cache_assert/main.py,sha256=w645j-iMUfqrgLppOBGAJLiVAvsdNt0DagDPtNvXb0s,4751
+pytest_cache_assert/plugin.py,sha256=9HgY78rzjp7GXE2j58aMMv5jJ_5C_en9f7p8zatSlsw,3706
+pytest_cache_assert-1.3.2.dist-info/entry_points.txt,sha256=1vKn88X52wfLYqZieLeZLsOTHL-NoMWiRl4OeCLqKQg,59
+pytest_cache_assert-1.3.2.dist-info/LICENSE,sha256=Pu8h6K2wW9zAaW94a8uJT7yQTQplmItOuJRhPoG08Sg,1066
+pytest_cache_assert-1.3.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pytest_cache_assert-1.3.2.dist-info/METADATA,sha256=mzyzt64TMpFoCNKVPAn5QTv3pajOst2fnk78ggE0aeU,12706
+pytest_cache_assert-1.3.2.dist-info/RECORD,,
