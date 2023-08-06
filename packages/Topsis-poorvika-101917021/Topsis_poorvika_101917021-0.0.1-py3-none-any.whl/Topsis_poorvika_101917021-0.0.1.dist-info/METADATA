@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Topsis-poorvika-101917021
+Version: 0.0.1
+Summary: short hello description
+Home-page: UNKNOWN
+Author: Kunal pathak
+Author-email: <pkhanna_be19@thapar.edu>
+License: UNKNOWN
+Keywords: python,hello
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+simple hello long desc
+
+
