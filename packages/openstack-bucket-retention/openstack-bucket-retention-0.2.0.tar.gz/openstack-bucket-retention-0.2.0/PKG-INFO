@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: openstack-bucket-retention
+Version: 0.2.0
+Summary: Openstack Bucket (Container) Retention
+Home-page: https://github.com/f9n/openstack-bucket-retention
+License: GPL-3.0
+Author: Fatih Sarhan
+Author-email: f9n@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: python-keystoneclient (>=4.4.0,<5.0.0)
+Requires-Dist: python-swiftclient (>=3.13.0,<4.0.0)
+Project-URL: Repository, https://github.com/f9n/openstack-bucket-retention
+Description-Content-Type: text/markdown
+
+# openstack-bucket-retention [![PyPi version](https://img.shields.io/pypi/v/openstack-bucket-retention.svg)](https://pypi.python.org/pypi/openstack-bucket-retention/) [![PyPI pyversions](https://img.shields.io/pypi/pyversions/openstack-bucket-retention.svg)](https://pypi.python.org/pypi/openstack-bucket-retention/) [![](https://img.shields.io/github/license/f9n/openstack-bucket-retention.svg)](https://github.com/f9n/openstack-bucket-retention/blob/main/LICENSE)
+
+Openstack bucket retention cli
+
+
+## Installation
+
+```
+$ # Install
+$ python3 -m pip install openstack-bucket-retention --user
+
+$ # Install with upgrade
+$ python3 -m pip install openstack-bucket-retention --user --upgrade
+```
+
+## Usage
+
+First you need to download 'OpenStack RC File' on openstack provider. And Source the sh file.
+
+```bash
+$ openstack-bucket-retention --help
+
+$ # Show version
+$ openstack-bucket-retention version
+openstack-bucket-retention: 0.1.0
+
+$ # Set Openstack environment variables
+$ #  or
+$ # Use 'OpenStack RC File' on openstack provider. Download and Source the file.
+$ source Openstack-openrc.sh
+$ openstack-bucket-retention run --bucket-name "test-bucket" --retention-time "1w"
+
+```
+
