@@ -1,0 +1,9 @@
+PySimpleGUI
+simpleaudio
+
+[dev]
+black
+flake8
+mypy
+setuptools>=46.4.0
+types-requests
