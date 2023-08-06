@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+TheArtist.egg-info/PKG-INFO
+TheArtist.egg-info/SOURCES.txt
+TheArtist.egg-info/dependency_links.txt
+TheArtist.egg-info/requires.txt
+TheArtist.egg-info/top_level.txt
+src/__init__.py
+src/artist.py
