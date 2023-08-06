@@ -1,0 +1,15 @@
+mo-dots==9.134.22048
+mo-future==6.2.21303
+mo-logs==7.141.22057
+mo-math==7.141.22057
+mo-times==5.141.22057
+
+[tests]
+mo-future
+mo-dots
+mo-logs
+mo-testing
+jx-python
+psutil
+objgraph
+mo-files
