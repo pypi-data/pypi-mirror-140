@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+setup.cfg
+motor/__init__.py
+motor/controller.py
+motorcontroller.egg-info/PKG-INFO
+motorcontroller.egg-info/SOURCES.txt
+motorcontroller.egg-info/dependency_links.txt
+motorcontroller.egg-info/requires.txt
+motorcontroller.egg-info/top_level.txt
