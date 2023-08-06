@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-27 23:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: jutil/admin.py:192
+#, python-format
+msgid "Change history: %s"
+msgstr ""
+
+#: jutil/dates.py:10
+msgid "yesterday"
+msgstr ""
+
+#: jutil/dates.py:11
+msgid "today"
+msgstr ""
+
+#: jutil/dates.py:12
+msgid "tomorrow"
+msgstr ""
+
+#: jutil/dates.py:13
+msgid "last week"
+msgstr ""
+
+#: jutil/dates.py:14
+msgid "last month"
+msgstr ""
+
+#: jutil/dates.py:15
+msgid "last year"
+msgstr ""
+
+#: jutil/dates.py:16
+msgid "this week"
+msgstr ""
+
+#: jutil/dates.py:17
+msgid "this month"
+msgstr ""
+
+#: jutil/dates.py:18
+msgid "this year"
+msgstr ""
+
+#: jutil/dates.py:19
+msgid "next week"
+msgstr ""
+
+#: jutil/dates.py:20
+msgid "next month"
+msgstr ""
+
+#: jutil/dates.py:21
+msgid "next year"
+msgstr ""
+
+#: jutil/dates.py:28 jutil/dates.py:29 jutil/dates.py:30
+msgid "number.of.days"
+msgstr "days"
+
+#: jutil/dates.py:47
+msgid "daily"
+msgstr ""
+
+#: jutil/dates.py:48
+msgid "weekly"
+msgstr ""
+
+#: jutil/dates.py:49
+msgid "monthly"
+msgstr ""
+
+#: jutil/email.py:25 jutil/email.py:28
+msgid "Invalid email recipient: {}"
+msgstr ""
+
+#: jutil/files.py:19 jutil/files.py:56
+msgid "{} is not a directory"
+msgstr ""
+
+#: jutil/files.py:22 jutil/files.py:59
+msgid "{} is not under MEDIA_ROOT"
+msgstr ""
+
+#: jutil/parse.py:42
+#, python-format
+msgid "%(value)s is not one of the available choices"
+msgstr ""
+
+#: jutil/parse.py:59 jutil/parse.py:65 jutil/tests.py:753
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: jutil/responses.py:19
+msgid "File {} not found"
+msgstr ""
+
+#: jutil/tests.py:298 jutil/validators.py:40
+msgid "Invalid phone number"
+msgstr ""
+
+#: jutil/tests.py:305 jutil/validators.py:75
+msgid "Invalid passport number"
+msgstr ""
+
+#: jutil/tests.py:313 jutil/tests.py:356 jutil/tests.py:1012
+#: jutil/validators.py:102 jutil/validators.py:181 jutil/validators.py:209
+msgid "Invalid country code"
+msgstr ""
+
+#: jutil/tests.py:327 jutil/validators.py:474 jutil/validators.py:477
+#: jutil/validators.py:484 jutil/validators.py:488
+msgid "Invalid company organization ID"
+msgstr ""
+
+#: jutil/tests.py:331 jutil/tests.py:354 jutil/tests.py:358 jutil/tests.py:718
+#: jutil/tests.py:720 jutil/tests.py:722 jutil/validators.py:178
+#: jutil/validators.py:184 jutil/validators.py:196 jutil/validators.py:237
+#: jutil/validators.py:243
+msgid "Invalid IBAN account number"
+msgstr ""
+
+#: jutil/tests.py:346 jutil/validators.py:508 jutil/validators.py:535
+#: jutil/validators.py:625 jutil/validators.py:644
+msgid "Invalid personal identification number"
+msgstr ""
+
+#: jutil/tests.py:362 jutil/tests.py:364 jutil/tests.py:366
+#: jutil/validators.py:166
+msgid "Invalid bank BIC/SWIFT code"
+msgstr ""
+
+#: jutil/tests.py:858
+msgid "action time"
+msgstr ""
+
+#: jutil/tests.py:945 jutil/validators.py:39 jutil/validators.py:56
+#: jutil/validators.py:74 jutil/validators.py:101 jutil/validators.py:165
+#: jutil/validators.py:178
+msgid "Missing value"
+msgstr ""
+
+#: jutil/tests.py:1014 jutil/validators.py:212
+msgid "IBAN checksum generation does not support >26 character IBANs"
+msgstr ""
+
+#: jutil/validators.py:57
+msgid "Invalid email"
+msgstr ""
+
+#: jutil/validators.py:402 jutil/validators.py:405 jutil/validators.py:417
+#: jutil/validators.py:435 jutil/validators.py:439
+msgid "Invalid payment reference: {}"
+msgstr ""
+
+#: jutil/validators.py:540 jutil/validators.py:542
+msgid "Unsupported year"
+msgstr ""
