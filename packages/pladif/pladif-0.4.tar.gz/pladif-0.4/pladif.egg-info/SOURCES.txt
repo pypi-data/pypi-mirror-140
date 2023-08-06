@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+pladif/PLADIF.py
+pladif/__init__.py
+pladif/attrakdiff.py
+pladif/naming.py
+pladif/runPladif.py
+pladif.egg-info/PKG-INFO
+pladif.egg-info/SOURCES.txt
+pladif.egg-info/dependency_links.txt
+pladif.egg-info/entry_points.txt
+pladif.egg-info/not-zip-safe
+pladif.egg-info/requires.txt
+pladif.egg-info/top_level.txt
