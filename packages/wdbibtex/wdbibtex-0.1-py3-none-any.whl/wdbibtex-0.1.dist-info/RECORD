@@ -1,0 +1,11 @@
+wdbibtex/__init__.py,sha256=SSpUzeyF5NpZ-b6BOHy2caYGPBu580QopoeTFLPjVkA,325
+wdbibtex/__main__.py,sha256=IJmwhTpzvUYHPVjtoyyFvyF2tcSQcuEBR0HPI4C_gJ8,1255
+wdbibtex/latex.py,sha256=8vbSutfBFqFeKxh5hdJagVj6R1R1WjUZR68NNtJWwHk,14384
+wdbibtex/word.py,sha256=J6i1IfnvpPUDX-sDiG-oDdZ-7Wg0yUU9AoBtRf1RmVM,7553
+wdbibtex/tests/__init__.py,sha256=YLVudEPHbHbYIHCMg3-Fv38qKYL7Ckoac9Qojxc8OrQ,66
+wdbibtex/tests/tests.py,sha256=8uIUq6cFljXpnly6yx3Vc6iS3YzrcKrIC9MMZpPYYXA,9423
+wdbibtex-0.1.dist-info/LICENSE,sha256=APQKLA2VoOO3C7sgxrE87A07x22gDNkMFRXy77L9nhw,1082
+wdbibtex-0.1.dist-info/METADATA,sha256=sJfIHeib2qfTsAhgUULAICXtiau5VDLh9Dfr6H52GhQ,2190
+wdbibtex-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wdbibtex-0.1.dist-info/top_level.txt,sha256=hmscbQAsn8BaInHUKXA9GUxEdcsLB9smVpjenPO8L-M,9
+wdbibtex-0.1.dist-info/RECORD,,
