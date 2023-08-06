@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+replstories/__init__.py
+replstories.egg-info/PKG-INFO
+replstories.egg-info/SOURCES.txt
+replstories.egg-info/dependency_links.txt
+replstories.egg-info/top_level.txt
