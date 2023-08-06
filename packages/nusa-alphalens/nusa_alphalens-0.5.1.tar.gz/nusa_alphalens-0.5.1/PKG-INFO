@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nusa_alphalens
+Version: 0.5.1
+Summary: Performance analysis of predictive (alpha) stock factors
+Home-page: https://github.com/quantopian/alphalens
+Author: Quantopian Inc.
+Author-email: opensource@quantopian.com
+License: UNKNOWN
+Download-URL: https://github.com/Northeastern-Systematic-Alpha/alphalens/archive/refs/tags/v0.5.1.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+
