@@ -1,0 +1,1 @@
+from quick_topic import *

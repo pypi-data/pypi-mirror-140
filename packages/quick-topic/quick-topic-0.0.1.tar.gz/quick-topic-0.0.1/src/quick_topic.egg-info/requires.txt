@@ -1,0 +1,10 @@
+jieba
+quick-csv
+gensim
+numpy
+
+[dev]
+check-manifest
+
+[test]
+coverage
