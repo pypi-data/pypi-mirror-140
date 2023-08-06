@@ -1,0 +1,363 @@
+Metadata-Version: 2.1
+Name: digital-filter-tools
+Version: 0.4.0
+Summary: An educational module about digital filters
+Home-page: https://framagit.org/fsincere/digital-filter-tools
+Author: Fabrice Sincère
+Author-email: fabrice.sincere@ac-grenoble.fr
+Maintainer: Fabrice Sincère
+Maintainer-email: fabrice.sincere@ac-grenoble.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: French
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## module digital_filter_tools
+
+Outils pédagogiques pour l'étude des filtres numériques
+
+## Installation du module python digital_filter_tools
+
+From Pypi repository :  
+[https://pypi.org/project/digital-filter-tools](https://pypi.org/project/digital-filter-tools)
+
+```
+pip install digital-filter-tools
+```
+
+## Fonctionnalités
+
+Ce module propose des outils pédagogiques pour l'étude des filtres numériques :
+
+- passage de l'équation de récurrence aux transformées en z
+- passage de l'équation de récurrence à la fonction de transfert en z
+- écriture de la fonction de transfert en z en fonction des pôles et zéros
+- courbe des réponses impulsionnelle, indicielle, rampe, sinus
+- courbe de la réponse à une séquence d'entrée personnalisée
+- calcul des zéros et des pôles de la fonction de transfert en z
+- diagramme des pôles et zéros
+- étude de la stabilité
+- courbe de la réponse en fréquence (gain et phase)
+
+## Rappels sur les filtres numériques
+
+### Equation de récurrence
+
+x(n) désigne l'entrée et y(n) la sortie.
+
+L'équation de récurrence (algorithme) d'un filtre numérique a la forme générale suivante :
+
+```
+a0*y(n) +a1*y(n-1) +a2*y(n-2) + ... = b0*x(n) + b1*x(n-1) + b2*x(n-2) + ...
+```
+ou :
+```
+a0*y(n) = b0*x(n) + b1*x(n-1) + b2*x(n-2) + ...
+          -a1*y(n-1) -a2*y(n-2) -a3*y(n-3) + ...
+```
+
+Par la suite, les paramètres a et b représentent les listes des coefficients (réels) de l'équation de récurrence :  
+```
+a = [a0, a1, a2, ...]  # avec a0 non nul  
+b = [b0, b1, b2, ...]  # avec au moins un coefficient non nul  
+```
+
+Exemple  :
+```python
+>>> from digital_filter_tools import *
+>>> f = FiltreNumerique(a=[2, -0.2], b=[1, 0.5])
+```
+
+### Transmittance en z
+
+On peut aussi définir un filtre numérique par ses pôles et ses zéros.  
+La transmittance en z s'écrit alors :  
+```
+          (z-z1).(z-z2)...(z-zm)
+H(z) = k. _____________________________
+          (z-p1).(z-p2).(z-p3)...(z-pn)
+```
+k est un nombre non nul (constante d'amplification)
+
+zeros est la liste des m zéros de la transmittance :  
+```
+zeros = [z1, z2, ..., zm]  
+```
+poles est la liste des n pôles de la transmittance :  
+```
+poles = [p1, p2, ..., pn]  
+```
+avec les conditions suivantes :  
+* n >= m
+* pôles et zéros réels ou complexes par paires conjuguées
+
+Exemple :  
+```python
+>>> from digital_filter_tools import *
+>>> f = FiltreNumerique(k=2, zeros=[0.5], poles=[0, 0.6-0.2j, 0.6+0.2j])
+```
+
+## Un exemple complet : filtre à moyenne glissante
+
+On s'intéresse à un filtre à moyenne glissante sur 4 échantillons (sous forme récursive).
+
+```python
+>>> from digital_filter_tools import *
+>>> f = FiltreNumerique(a=[1, -1], b=[0.25, 0, 0, 0, -0.25])
+```
+
+### Equation de récurrence
+
+```python
+>>> f.afficher_equation_recurrence()
+y(n) = 0.25*x(n) -0.25*x(n-4) 
+       +y(n-1)
+```
+
+### Ordre du filtre
+
+```python
+>>> print(f.ordre())
+4
+```
+
+### Passage à la transformée en z
+
+```python
+>>> f.afficher_transformee_en_z()
+Y(z) = 0.25*X(z) -0.25*X(z)z⁻⁴ 
+       +Y(z)z⁻¹
+```
+
+### Transmittance (fonction de transfert) en z
+
+Par définition : H(z) = Y(z)/X(z)  
+
+```python
+>>> f.afficher_transmittance_z()
+        0.25 -0.25z⁻⁴
+H(z) =  -------------
+        1 -z⁻¹
+```
+
+Autre écriture avec puissances de z positives :
+
+```python
+>>> f.afficher_transmittance_z_puissance_positive()
+        0.25z⁴ -0.25
+H(z) =  ------------
+        z⁴ -z³
+```
+
+### Pôles et zéros
+
+```python
+>>> print(f.zeros)
+[-1.0, (-0-1j), 1j, 1.0]
+>>> print(f.poles)
+[0.0, 0.0, 0.0, 1.0]
+```
+
+### Pôles et zéros communs
+
+```python
+>>> print(f.poles_zeros_commun())
+[1.0]
+```
+
+### Transmittance en z avec pôles et zéros
+
+```python
+>>> f.afficher_transmittance_z_poles_zeros()
+        0.25(z+1)(z+1j)(z-1j)(z-1)
+H(z) =  --------------------------
+        z.z.z(z-1)
+```
+
+### Etude de la stabilité
+
+```python
+>>> f.afficher_bilan_stabilite()
+
+Etude de la stabilité
+---------------------
+Le filtre est récursif.
+La transmittance en z possède 4 pôles.
+En module :
+|0| = 0
+|0| = 0
+|0| = 0
+|1| = 1
+Filtre stable car tous les pôles ont un module <= 1
+```
+
+### Réponse impulsionnelle
+
+```python
+>>> f.tracer_reponse_impulsionnelle()    
+```
+
+![screenshot01](https://framagit.org/fsincere/digital-filter-tools/-/raw/master/images/image01.png)
+
+### Réponse indicielle
+
+```python
+>>> f.tracer_reponse_indicielle()   
+```
+
+![screenshot02](https://framagit.org/fsincere/digital-filter-tools/-/raw/master/images/image02.png)
+
+### Réponse en fréquence
+
+fs désigne la fréquence d'échantillonnage (en Hz).  
+
+```python
+>>> f.fs = 5000
+>>> f.tracer_reponse_en_frequence(magnitude_unit='linear')
+```
+
+![screenshot03](https://framagit.org/fsincere/digital-filter-tools/-/raw/master/images/image03.png)
+
+### Fonction de transfert complexe H(jω) (transmittance complexe)
+
+```python
+>>> H = f.hw
+>>> # help(H)
+>>> H.properties(600)   # transmittance à 600 Hz
+Frequency (Hz) : 600
+Angular frequency (rad/s) : 3769.91
+
+Complex value : 0.288584-0.613272j
+Magnitude : 0.677778
+Magnitude (dB) : -3.37825
+Phase (degrees) : -64.8
+Phase (radians) : -1.13097
+>>> H.db(600)  # gain en dB à 600 Hz
+-3.37825
+>>> H.phase_deg(600)  # déphasage en degrés à 600 Hz
+-64.8
+```
+
+### Diagramme des pôles et zéros
+
+```python
+>>> f.tracer_diagramme_poles_zeros() 
+```
+
+![screenshot04](https://framagit.org/fsincere/digital-filter-tools/-/raw/master/images/image04.png)
+
+## Un deuxième exemple : lowpass iir elliptic order 5
+
+```python
+>>> from digital_filter_tools import *
+>>> k = 0.004691927277691961
+>>> zeros = (-0.024456055354309697+0.9997009059496281j),
+(-0.024456055354309697-0.9997009059496281j),
+-1.0,
+(0.39282986017485766+0.9196111683505163j),
+(0.39282986017485766-0.9196111683505163j)
+>>> poles = 0.7098495779640238,
+(0.710102705797963+0.3470090677215467j),
+(0.710102705797963-0.3470090677215467j),
+(0.736600454346126+0.569377854177767j),
+(0.736600454346126-0.569377854177767j)
+>>> f = FiltreNumerique(fs=10000, k=k, zeros=zeros, poles=poles)
+```
+### Equation de récurrence
+
+```python
+>>> f.afficher_equation_recurrence()                                       
+y(n) = 0.00469193*x(n) +0.00123516*x(n-1) +0.00574679*x(n-2) +0.00574679*x(n-3)
+       +0.00123516*x(n-4) +0.00469193*x(n-5) 
+       +3.60326*y(n-1) -5.63756*y(n-2) +4.69512*y(n-3) -2.0685*y(n-4) +0.38434*y(n-5)
+>>> print(f.b)
+[0.004691927277691961, 0.001235161071242554, 0.005746785676190226,
+ 0.0057467856761902235, 0.0012351610712425533, 0.004691927277691962]
+>>> print(f.a)
+[1.0, -3.603255898252202, 5.637563674261337, -4.695118791175536,
+ 2.0684985810278094, -0.38433981781115933]
+```
+
+### Etude de la stabilité
+
+```python
+>>> f.afficher_bilan_stabilite()  
+
+Etude de la stabilité
+---------------------
+Le filtre est récursif.
+La transmittance en z possède 5 pôles.
+En module :
+|0.70985| = 0.70985
+|0.710103+0.347009j| = 0.790355
+|0.710103-0.347009j| = 0.790355
+|0.7366+0.569378j| = 0.931006
+|0.7366-0.569378j| = 0.931006
+Filtre stable car tous les pôles ont un module <= 1
+```
+
+### Réponse impulsionnelle
+
+```python
+>>> f.tracer_reponse_impulsionnelle(nfin=50)    
+```
+
+![screenshot11](https://framagit.org/fsincere/digital-filter-tools/-/raw/master/images/image11.png)
+
+### Réponse indicielle
+
+```python
+>>> f.tracer_reponse_indicielle(nfin=50)   
+```
+
+![screenshot12](https://framagit.org/fsincere/digital-filter-tools/-/raw/master/images/image12.png)
+
+### Réponse en fréquence
+
+```python
+>>> f.tracer_reponse_en_frequence(magnitude_unit='dB')
+```
+
+![screenshot13](https://framagit.org/fsincere/digital-filter-tools/-/raw/master/images/image13.png)
+
+### Diagramme des pôles et zéros
+
+```python
+>>> f.tracer_diagramme_poles_zeros() 
+```
+
+![screenshot14](https://framagit.org/fsincere/digital-filter-tools/-/raw/master/images/image14.png)
+
+## Aide complète
+
+```python
+>>> import digital_filter_tools
+>>> help(digital_filter_tools)
+```
+
+## Documentation complète
+
+[https://framagit.org/fsincere/digital-filter-tools](https://framagit.org/fsincere/digital-filter-tools)
+
+En particulier, des exemples d'utilisation  [ici](https://framagit.org/fsincere/digital-filter-tools/-/tree/master/examples).
+
+## TO DO
+
+documentation : english translation...
+
+## Complément
+
+L'utilitaire Python pyFDA 
+
+
+[https://github.com/chipmuenk/pyFDA](https://github.com/chipmuenk/pyFDA)
+
+
