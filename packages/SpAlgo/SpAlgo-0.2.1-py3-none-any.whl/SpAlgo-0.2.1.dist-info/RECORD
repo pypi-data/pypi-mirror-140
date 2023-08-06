@@ -1,0 +1,17 @@
+SpAlgo/Array.py,sha256=3mSx5uxXko1UYRMe-HnAeTghz_zzXoBE-gWEu6SdZlE,2942
+SpAlgo/Matrix.py,sha256=OcKBzq3MrX0rQ5cX5wWYv40qmi48ufzDYl2a56olSSE,8594
+SpAlgo/SubSeq.py,sha256=aVZ_pi56FjJ3vZig3aHPhvCpCyGYsZ8b5c_q05LJbo8,2589
+SpAlgo/__init__.py,sha256=xYoFAxhWrJAGiba--M3EYpDgUiRipA5U9p7UL8YdK5I,275
+SpAlgo/_array.py,sha256=3mSx5uxXko1UYRMe-HnAeTghz_zzXoBE-gWEu6SdZlE,2942
+SpAlgo/_matrix.py,sha256=OcKBzq3MrX0rQ5cX5wWYv40qmi48ufzDYl2a56olSSE,8594
+SpAlgo/_sequence.py,sha256=byNMiZbtAJ3qDppnKYfgr-G5GBURqXpARxcYG2C8HgA,2588
+SpAlgo/_subseq.py,sha256=aVZ_pi56FjJ3vZig3aHPhvCpCyGYsZ8b5c_q05LJbo8,2589
+SpAlgo/_knapsack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SpAlgo/_knapsack/_knapsack.py,sha256=J7BVi9KdLdfU_xwhE8YfhSg35bThA196JBHjs1y6VGQ,4913
+SpAlgo/_knapsack/_pack.py,sha256=IwyHe3zRdkE7Qsdibp-ABlE5jXMsgyqNe2KshPHs6AA,253
+SpAlgo/_knapsack/_qsort.py,sha256=nf4hPCVJ3Wc-ffX9JosJoy08gZib_Xgze1r8B4qA-ss,551
+SpAlgo-0.2.1.dist-info/LICENSE,sha256=74ayx6ut890VF0oo_Qn35uNgW-o8u5ioRgqwf3LX9NA,1089
+SpAlgo-0.2.1.dist-info/METADATA,sha256=20C4ePQq3tIOvM6SoRh45tTNMhC4B7VYS0LfJz-z5FY,5697
+SpAlgo-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SpAlgo-0.2.1.dist-info/top_level.txt,sha256=9TjOwKUUDmtkT0bhxlHj0Y6NiH11wgjfbCF_4Fo-lNU,7
+SpAlgo-0.2.1.dist-info/RECORD,,
