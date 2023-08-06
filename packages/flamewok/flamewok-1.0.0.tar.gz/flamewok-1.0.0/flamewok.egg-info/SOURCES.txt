@@ -1,0 +1,14 @@
+README.md
+setup.py
+flamewok/__init__.py
+flamewok/__main__.py
+flamewok/color.py
+flamewok/form.py
+flamewok/menu.py
+flamewok/settings.py
+flamewok/validators.py
+flamewok.egg-info/PKG-INFO
+flamewok.egg-info/SOURCES.txt
+flamewok.egg-info/dependency_links.txt
+flamewok.egg-info/entry_points.txt
+flamewok.egg-info/top_level.txt
