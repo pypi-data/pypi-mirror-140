@@ -1,0 +1,10 @@
+README.md
+setup.py
+autom8it/__init__.py
+autom8it/aws.py
+autom8it/logger.py
+autom8it.egg-info/PKG-INFO
+autom8it.egg-info/SOURCES.txt
+autom8it.egg-info/dependency_links.txt
+autom8it.egg-info/requires.txt
+autom8it.egg-info/top_level.txt
