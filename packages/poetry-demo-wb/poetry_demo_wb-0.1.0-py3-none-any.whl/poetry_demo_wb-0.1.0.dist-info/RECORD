@@ -1,0 +1,6 @@
+poetry_demo_wb/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+poetry_demo_wb/console.py,sha256=GCAKbUcNbtKgv2l88zlKuqdJ-hRRkbOU2bLOmlV5aLE,196
+poetry_demo_wb-0.1.0.dist-info/entry_points.txt,sha256=JEXMPLeRubCPFdORtUIdZtTx47UASdNb5hnM6mHSroI,62
+poetry_demo_wb-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+poetry_demo_wb-0.1.0.dist-info/METADATA,sha256=lZ0rkBxD-Q7j_5lUcJUasQtk1VoSYuYBbei32aSgR2U,344
+poetry_demo_wb-0.1.0.dist-info/RECORD,,

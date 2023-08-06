@@ -1,0 +1,3 @@
+[console_scripts]
+poetry-demo-wb=poetry_demo_wb.console:main
+

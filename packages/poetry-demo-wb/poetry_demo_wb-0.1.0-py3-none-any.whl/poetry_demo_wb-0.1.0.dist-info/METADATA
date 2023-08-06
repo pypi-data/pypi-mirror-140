@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: poetry-demo-wb
+Version: 0.1.0
+Summary: 
+Author: Will Beresford
+Author-email: Will.Beresford@YASA.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.4,<9.0.0)
