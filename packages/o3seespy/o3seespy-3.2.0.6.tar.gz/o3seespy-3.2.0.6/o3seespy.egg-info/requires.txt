@@ -1,0 +1,10 @@
+numpy
+
+[:sys_platform != "darwin"]
+openseespy>=3.1.5.12
+
+[:sys_platform == "darwin"]
+openseespy==3.1.5.12
+
+[test]
+pytest
