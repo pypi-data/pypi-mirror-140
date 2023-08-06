@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+gget/__init__.py
+gget/gget.py
+gget.egg-info/PKG-INFO
+gget.egg-info/SOURCES.txt
+gget.egg-info/dependency_links.txt
+gget.egg-info/entry_points.txt
+gget.egg-info/requires.txt
+gget.egg-info/top_level.txt
