@@ -1,0 +1,2 @@
+[console_scripts]
+ansible-lint-junit = ansible_lint_junit.main:main
