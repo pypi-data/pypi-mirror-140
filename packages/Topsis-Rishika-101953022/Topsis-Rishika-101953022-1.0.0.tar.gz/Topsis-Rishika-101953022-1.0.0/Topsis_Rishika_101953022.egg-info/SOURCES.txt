@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Topsis_Rishika_101953022.egg-info/PKG-INFO
+Topsis_Rishika_101953022.egg-info/SOURCES.txt
+Topsis_Rishika_101953022.egg-info/dependency_links.txt
+Topsis_Rishika_101953022.egg-info/top_level.txt
