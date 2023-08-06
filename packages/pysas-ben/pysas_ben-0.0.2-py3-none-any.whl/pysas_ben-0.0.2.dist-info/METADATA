@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pysas-ben
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ashique Ben
+Author-email: ashiquebenjo2112@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pysas
+## Coversion of SAS to Python
+
+
+Have better conversions of Proc and Data statements of SAS to py
+
+- data
+- Proc
+- functions
+
+## Features
+
+- Easy usage
+- Faster than SAS
+- Simple Syntax
+
