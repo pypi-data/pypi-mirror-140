@@ -1,0 +1,5 @@
+[console_scripts]
+dl-app = dlapp.application:execute
+dlapp = dlapp.main:execute
+dlapp-gui = dlapp.application:execute
+
