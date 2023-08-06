@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: craftr-dsl
+Version: 0.7.7
+Summary: Domain specific language for the Craftr build system.
+License: MIT
+Author: Niklas Rosenstein
+Author-email: rosensteinniklas@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: astor (>=0.8.1,<0.9.0)
+Requires-Dist: nr.util (>=0.7.0,<1.0.0)
+Requires-Dist: termcolor (>=1.1.0,<2.0.0)
+Project-URL: Documentation, https://niklasrosenstein.github.io/craftr-dsl/
+Project-URL: Homepage, https://github.com/NiklasRosenstein/craftr-dsl
+Description-Content-Type: text/markdown
+
+# craftr-dsl
+
+A domain specific language purpose-built for the Craftr build system.
+
+The Craftr DSL is an "almost superset" of Python 3; adding a lot of syntactical features that make it more
+convenient to describe build configurations at the cost of some other syntax features of the native Python
+language (like set literals).
+
+## Installation
+
+    $ pip install craftr-dsl
+
+The `craftr-dsl` package requires at least Python 3.8.
+
+## Projects using Craftr DSL
+
+* [Novella](https://niklasrosenstein.github.io/novella/)
+
