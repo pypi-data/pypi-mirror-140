@@ -1,0 +1,16 @@
+[build-system]
+requires = ["maturin>=0.11,<0.12"]
+build-backend = "maturin"
+
+[project]
+dependencies = ["numpy>=1.16.0,<2.0.0"]
+name = "pineappl"
+
+[tool.pytest.ini_options]
+testpaths = ['tests/']
+addopts = [
+  '--cov=pineappl',
+  '--cov-report=html',
+  '--cov-report=xml',
+  '--strict-markers',
+]
