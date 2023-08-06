@@ -1,0 +1,6 @@
+pandas
+numpy
+copy
+sys
+os
+logging
