@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: image-bot-cv2
+Version: 0.0.7
+Summary: Image matching/comparison based on open-cv
+Home-page: https://github.com/jnhyperion/ImageBot
+Author: Johnny Huang
+Author-email: jnhyperion@gmail.com
+License: UNKNOWN
+Keywords: opencv image matching comparison
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: opencv-python (>=4.5.1.48)
+
+UNKNOWN
+
+
