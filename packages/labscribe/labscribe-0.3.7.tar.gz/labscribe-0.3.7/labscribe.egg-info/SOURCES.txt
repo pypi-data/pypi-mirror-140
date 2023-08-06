@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+labscribe/__init__.py
+labscribe/database.py
+labscribe/experiment.py
+labscribe/googlesheets.py
+labscribe.egg-info/PKG-INFO
+labscribe.egg-info/SOURCES.txt
+labscribe.egg-info/dependency_links.txt
+labscribe.egg-info/requires.txt
+labscribe.egg-info/top_level.txt
+labscribe/data/db_setup.sql
