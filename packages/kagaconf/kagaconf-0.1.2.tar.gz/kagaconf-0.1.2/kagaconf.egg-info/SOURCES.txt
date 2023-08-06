@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+kagaconf/__init__.py
+kagaconf.egg-info/PKG-INFO
+kagaconf.egg-info/SOURCES.txt
+kagaconf.egg-info/dependency_links.txt
+kagaconf.egg-info/requires.txt
+kagaconf.egg-info/top_level.txt
