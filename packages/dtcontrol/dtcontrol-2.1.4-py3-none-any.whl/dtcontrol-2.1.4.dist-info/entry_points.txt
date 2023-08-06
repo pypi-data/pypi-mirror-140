@@ -1,0 +1,4 @@
+[console_scripts]
+dtcontrol = dtcontrol.cli:main
+dtcontrol-frontend = dtcontrol.frontend.app:start_web_frontend
+
