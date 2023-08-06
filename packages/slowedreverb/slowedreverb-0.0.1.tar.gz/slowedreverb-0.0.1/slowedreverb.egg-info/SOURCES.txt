@@ -1,0 +1,8 @@
+setup.py
+slowedreverb/__init__.py
+slowedreverb/slowedreverb.py
+slowedreverb.egg-info/PKG-INFO
+slowedreverb.egg-info/SOURCES.txt
+slowedreverb.egg-info/dependency_links.txt
+slowedreverb.egg-info/requires.txt
+slowedreverb.egg-info/top_level.txt
