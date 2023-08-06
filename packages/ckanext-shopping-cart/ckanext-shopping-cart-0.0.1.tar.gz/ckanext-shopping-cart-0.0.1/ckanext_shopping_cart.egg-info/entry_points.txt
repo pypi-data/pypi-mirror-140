@@ -1,0 +1,2 @@
+[ckan.plugins]
+shopping_cart = ckanext.shopping_cart.plugin:ShoppingCartPlugin
