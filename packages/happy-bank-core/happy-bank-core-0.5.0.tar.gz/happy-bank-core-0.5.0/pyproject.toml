@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "happy-bank-core"
+version = "0.5.0"
+description = "A simple bank core app for mentoring purpose"
+authors = [
+    "JanMate <JanMate@github.com>",
+    "Oleksandr6676 <Oleksandr6676@github.com>"
+]
+license = "MIT"
+
+[tool.semantic_release]
+version_variable = [
+    "happy_bank_core/__init__.py:__version__",
+]
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+version_source="tag"
+branch = "main"
+build_command = "pip install poetry && poetry env use 3.9 && poetry install && poetry build"
+
+[tool.poetry.scripts]
+happy-bank-core = 'happy_bank_core.app:main'
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+toml = "^0.10.1"
+Flask = "^2.0"
+click = "^8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^19.10b0"
+flake8 = "^3.8.3"
+coverage = "^6.3.1"
+mypy = "^0.931"
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[build-system]
+requires = ["poetry>=1.1.0"]
+build-backend = "poetry.masonry.api"
