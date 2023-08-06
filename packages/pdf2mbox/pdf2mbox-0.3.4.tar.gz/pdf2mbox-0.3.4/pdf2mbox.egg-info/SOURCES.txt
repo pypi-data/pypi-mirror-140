@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pdf2mbox.py
+setup.py
+pdf2mbox.egg-info/PKG-INFO
+pdf2mbox.egg-info/SOURCES.txt
+pdf2mbox.egg-info/dependency_links.txt
+pdf2mbox.egg-info/requires.txt
+pdf2mbox.egg-info/top_level.txt
