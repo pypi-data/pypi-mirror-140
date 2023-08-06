@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis-Kabir-101903661
+Version: 1.0.0
+Summary: Topsis analysis for a dataframe
+Home-page: https://github.com/sethkabir/Topsis-Kabir-101903661
+Author: Kabir Seth
+Author-email: seth.kabir14@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis Analysis
+
+
