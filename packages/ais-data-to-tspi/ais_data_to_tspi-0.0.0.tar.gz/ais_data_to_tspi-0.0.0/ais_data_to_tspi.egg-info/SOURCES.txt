@@ -1,0 +1,11 @@
+README.md
+setup.py
+ais_data_to_tspi/__init__.py
+ais_data_to_tspi/data_to_TSPI.py
+ais_data_to_tspi.egg-info/PKG-INFO
+ais_data_to_tspi.egg-info/SOURCES.txt
+ais_data_to_tspi.egg-info/dependency_links.txt
+ais_data_to_tspi.egg-info/requires.txt
+ais_data_to_tspi.egg-info/top_level.txt
+tests/__init__.py
+tests/test_myfunctions.py
