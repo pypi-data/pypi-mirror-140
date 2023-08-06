@@ -1,0 +1,4 @@
+[console_scripts]
+aelookup = corpus.lookup:main
+ccTibkat = corpus.datasources.tibkat:main
+
