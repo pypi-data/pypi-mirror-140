@@ -1,0 +1,3 @@
+[console_scripts]
+mkrich=make_us_rich.cli.main:app
+
