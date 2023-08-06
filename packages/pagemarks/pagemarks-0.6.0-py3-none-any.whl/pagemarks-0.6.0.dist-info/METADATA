@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pagemarks
+Version: 0.6.0
+Summary: Free, git-backed, self-hosted bookmarks
+Home-page: https://pagemarks.org
+Author: Barfuin
+Author-email: oss@barfuin.org
+License: GPL-3.0-only
+Project-URL: Documentation, https://pagemarks.org
+Project-URL: Release Notes, https://gitlab.com/barfuin/pagemarks/-/releases
+Project-URL: Source, https://gitlab.com/barfuin/pagemarks
+Project-URL: Tracker, https://gitlab.com/barfuin/pagemarks/-/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (==4.10.0)
+Requires-Dist: Click (==8.0.3)
+Requires-Dist: commentjson (==0.9.0)
+Requires-Dist: genshi (==0.7.5)
+Requires-Dist: GitPython (==3.1.24)
+Requires-Dist: html5lib (==1.1)
+Requires-Dist: python-slugify (==5.0.2)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: requests (==2.26.0)
+
+# pagemarks
+
+Free, git-backed, self-hosted bookmarks
+
+## Requirements
+
+- Git (1.7.x or newer)
+- Python >= 3.10
+
+### Status
+
+Under development - do not use yet
+
+
