@@ -1,0 +1,9 @@
+pylyrics2/__init__.py,sha256=gwViwA1rf3plpPXoGNXvIbqVQS-ax3qiEdhMx0E1vI8,113
+pylyrics2/clean_text.py,sha256=wHba-l6q6KbDiAz06Ab3uE_sQ4CZtnpbjjL3jmBUX5E,1849
+pylyrics2/download_data.py,sha256=5qlAIxMxWSoB-aQDC8Tn8tUpYJAVDdaDD92Bk8PAdCA,1923
+pylyrics2/extract_lyrics.py,sha256=4GERMM2WMRZt5ecgKYGtQZEg6f9vA8XK6z6Ap8havTM,1732
+pylyrics2/plot_cloud.py,sha256=ie7jPs3Uh_ejlMQ5rEjqPWahwaERhDcL9C3IZD3rNaM,2543
+pylyrics2-1.0.9.dist-info/LICENSE,sha256=meGpT2Ri0c9ZX68IzdchOr-zpH29012aiMBHYq2a8bI,1066
+pylyrics2-1.0.9.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pylyrics2-1.0.9.dist-info/METADATA,sha256=BBCuT6IgfxrUPtluzemt8WtgHXFRPZdQLC6Sr04wP9E,7676
+pylyrics2-1.0.9.dist-info/RECORD,,
