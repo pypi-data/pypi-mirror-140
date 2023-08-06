@@ -1,0 +1,16 @@
+{
+    "title": "Hillslope creep simulation",
+    "author": "Andrew J. Moodie",
+    "version": "0.1",
+    "shortdesc": "Simulation of hillslope creep process",
+    "difficulty": 3,
+    "license": "MIT",
+    "projurl": "[hosted on GitHub](https://github.com/sededu/hillslope_creep)",
+    "projreadme": ["README.md"],
+    "preview": ["private", "hillslope_creep_demo.png"],
+    "exec": ["run_hillslope_creep.py"],
+    "docloc": ["docs"],
+    "doclist": {
+    	"introduction.pdf": "Introduction to hillslope creep"
+    }
+}
