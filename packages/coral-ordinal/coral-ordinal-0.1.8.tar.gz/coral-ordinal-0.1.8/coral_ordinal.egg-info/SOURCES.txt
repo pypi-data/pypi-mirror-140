@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+coral_ordinal/__init__.py
+coral_ordinal/activations.py
+coral_ordinal/layer.py
+coral_ordinal/loss.py
+coral_ordinal/metrics.py
+coral_ordinal/version.py
+coral_ordinal.egg-info/PKG-INFO
+coral_ordinal.egg-info/SOURCES.txt
+coral_ordinal.egg-info/dependency_links.txt
+coral_ordinal.egg-info/requires.txt
+coral_ordinal.egg-info/top_level.txt
