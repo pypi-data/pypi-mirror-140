@@ -1,0 +1,7 @@
+click
+click-log
+conda-pack
+pyjwt
+pyyaml
+requests
+semver
