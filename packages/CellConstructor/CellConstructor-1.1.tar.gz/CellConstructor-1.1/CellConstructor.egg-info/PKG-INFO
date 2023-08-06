@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: CellConstructor
+Version: 1.1
+Summary: Python utilities that is interfaced with ASE for atomic crystal analysis
+Home-page: https://github.com/mesonepigreco/CellConstructor
+Author: Lorenzo Monacelli
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
