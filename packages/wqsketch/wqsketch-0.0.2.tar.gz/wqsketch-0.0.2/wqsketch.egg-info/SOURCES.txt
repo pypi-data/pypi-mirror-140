@@ -1,0 +1,9 @@
+README.md
+setup.py
+wqsketch/__init__.py
+wqsketch/wqsketch.py
+wqsketch.egg-info/PKG-INFO
+wqsketch.egg-info/SOURCES.txt
+wqsketch.egg-info/dependency_links.txt
+wqsketch.egg-info/requires.txt
+wqsketch.egg-info/top_level.txt
