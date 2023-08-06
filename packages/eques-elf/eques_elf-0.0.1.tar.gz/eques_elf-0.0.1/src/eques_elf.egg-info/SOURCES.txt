@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+src/eques_elf/__init__.py
+src/eques_elf/device.py
+src/eques_elf/eques_local.py
+src/eques_elf.egg-info/PKG-INFO
+src/eques_elf.egg-info/SOURCES.txt
+src/eques_elf.egg-info/dependency_links.txt
+src/eques_elf.egg-info/top_level.txt
