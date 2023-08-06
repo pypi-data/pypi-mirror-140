@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: gruvboxsphinx
+Version: 1.3
+Summary: Gruvbox-styled Sphinx HTML theme, forked from Insegel.
+Home-page: https://github.com/perpetualCreations/gruvbox-sphinx
+Author: perpetualCreations
+License: MIT
+Platform: UNKNOWN
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gruvbox-sphinx
+Sphinx HTML theme, forked from [autophagy/Insegel](https://github.com/autophagy/insegel), with modifications to the stylesheet for visual similarity to the [Gruvbox Vim theme](https://github.com/morhetz/gruvbox).
+
+Code-block syntax highlighting was adapted from [daveyarwood/gruvbox-pygments](https://github.com/daveyarwood/gruvbox-pygments).
+
+See Usage for installation and configuration instructions and Sample for a preview screenshot.
+
+## Usage
+Install with `pip`.
+```bash
+pip install gruvboxsphinx
+```
+Specify gruvbox-sphinx to be your project's HTML theme under the `conf.py` file.
+```python
+html_theme = "gruvboxsphinx"
+```
+
+## Sample
+![Preview image](sample.png)
+
+
