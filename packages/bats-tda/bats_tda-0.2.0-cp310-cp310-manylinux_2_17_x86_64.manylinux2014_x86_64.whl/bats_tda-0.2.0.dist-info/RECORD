@@ -1,0 +1,17 @@
+bats_tda.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+bats/dense.cpython-310-x86_64-linux-gnu.so,sha256=li6R5b7ytSq-0y_TpSmXphOKZj3_RtWi1Pjv-XYVoFc,7075792
+bats/linalg.cpython-310-x86_64-linux-gnu.so,sha256=kUltmJ-upnl90zi_4umF2s8Lp29OjiZ9-GukB4-qCz8,10201072
+bats/topology.cpython-310-x86_64-linux-gnu.so,sha256=AD49y4QXLd_-ckeeZ-EXEZyarnyK9zgd72j2bt_0evk,34111264
+bats/__init__.py,sha256=4cDRPQJI2HUrKu80smfsdDz1WV2m1wUohN54dUpcdiU,246
+bats/linalg_f2.cpython-310-x86_64-linux-gnu.so,sha256=Q1mfFKVk9eVHWhzzxMiQDrddfqa1UYlQploT3bfEak8,22899984
+bats/_version.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+bats/linalg_auto.cpython-310-x86_64-linux-gnu.so,sha256=UBFt3wkYq7uQEKYWUhtxf4w3rN-o4-EaPpFK8Haau_w,29850136
+bats/linalg_f3.cpython-310-x86_64-linux-gnu.so,sha256=Sr3-1kqsZZEzxjoWJl2kq11FarKLaHJkw8YiyQdtrbs,22801704
+bats/visualization/__init__.py,sha256=GfZk9VYL3cFE1Qy2xQpGc1GCgnjySk5-D7EVRZ-C05Q,29
+bats/visualization/plotly.py,sha256=0rBR8W_xkCCdLFFLxsztC1F4o0glxeI_5ekQEDk09IA,11314
+bats/visualization/visualization.py,sha256=Ompqm-fQ4l7Q5Xgq4FZuS00iH0DM1-9TDaD1FgUQ5RQ,4964
+bats_tda-0.2.0.dist-info/top_level.txt,sha256=fKKRIHccQGloALSZgljkgQJnkHmHlVwDpoiTwL8_z8o,5
+bats_tda-0.2.0.dist-info/WHEEL,sha256=AENPUwuTc6qB95Mrn5JB5boXegWw6oDhuwuuX0q_ONg,152
+bats_tda-0.2.0.dist-info/RECORD,,
+bats_tda-0.2.0.dist-info/LICENSE,sha256=Wv_jkb634HttPZovk4YEu4S0n2pjef0JD9MuiMDO9Ec,1068
+bats_tda-0.2.0.dist-info/METADATA,sha256=9q8WXZJpfpJ8NhU5wcGkylpDlKQi-bAshavt2JpzPPo,3654
