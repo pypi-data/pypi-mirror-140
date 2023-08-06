@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "vlan_change"
+version = "0.1.0"
+description = "Simple program to change vlans on ports"
+authors = ["Angelo Poggi <angelo.poggi@opti9tech.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.4"
+netmiko = "^3.4.0"
+python-dotenv = "^0.19.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+vlanchange = 'vlan_change.cli:cli'
