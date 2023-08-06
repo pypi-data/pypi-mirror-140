@@ -1,0 +1,40 @@
+Change Log
+=========
+0.0.6 (2/25/2022)
+-----------------
+Added return_response_headers arg in call_api function.
+Argument necessary in paginated responses as next page is under
+"link" in the headers
+
+
+=========
+0.0.5 (2/4/2022)
+-----------------
+Added the decode auth header function. This function takes the whoole value of the Authorization header and returns the
+ascii version
+
+
+=========
+0.0.4 (2/1/2022)
+-----------------
+Added return_response_headers arg in call_api function.
+Argument necessary in paginated responses as next page is under
+"link" in the headers
+
+
+=========
+0.0.3 (1/30/2022)
+-----------------
+Removed unnecessary files
+
+
+=========
+0.0.2 (1/30/2022)
+-----------------
+Removed requirments for standard python library modules
+
+
+=========
+0.0.1 (1/30/2022)
+-----------------
+First release

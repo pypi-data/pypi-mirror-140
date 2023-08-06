@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: FreshServiceApi
+Version: 0.0.7
+Summary: Modules for the FreshService API
+Home-page: UNKNOWN
+Author: Stephen Fitzsimmons
+License: MIT
+Description: This module is for the FreshService API.
+Keywords: FreshService
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
