@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: PyDataEncoder
+Version: 1.0.1
+Summary: Dataset Encoder Package
+Home-page: https://github.com/ahmaddoulat/PyDataEncoder
+Author: Doulat
+Author-email: ahmad.doulat@gmail.com
+License: MIT
+Download-URL: https://github.com/ahmaddoulat/PyDataEncoder.git
+Description: UNKNOWN
+Keywords: dataset,encoder,encoding,OneHotEncoder,OrdinalEncoder,FindnReplace,LabelEncoder,OneHotEncoder,ScikitOrdinalEncoder,ScikitOneHotEncoder
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
