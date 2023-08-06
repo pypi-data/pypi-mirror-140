@@ -1,0 +1,3 @@
+[console_scripts]
+ancipher = ancipher.__main__:console_script
+
