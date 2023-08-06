@@ -1,0 +1,29 @@
+appdirs
+beautifulsoup4
+click==6.7
+cssselect
+lxml
+nltk
+pdfminer.six
+python-dateutil
+requests==2.21.0
+six
+python-crfsuite
+tabledataextractor
+PyYAML
+selenium==3.141.0
+numpy
+yaspin
+deprecation
+allennlp==0.9.0
+tokenizers
+scikit-learn==0.22.1
+overrides==3.1.0
+
+[:python_version < "3.7.0"]
+DAWG
+numpy==1.16
+
+[:python_version >= "3.7.0"]
+DAWG-Patched
+numpy>=1.16
