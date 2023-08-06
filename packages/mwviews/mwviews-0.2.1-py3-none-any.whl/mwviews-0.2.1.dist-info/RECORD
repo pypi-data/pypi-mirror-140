@@ -1,0 +1,15 @@
+mwviews/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwviews/mwviews.py,sha256=pUF0QxoFHkjldGA_hRoQO0Iev8Yl2tAylnwjSMuJCgo,311
+mwviews/page_view_count.py,sha256=6jKiqAFT1oB_zNtNmJ9ORM4FSKcyGiTVtjWkV0xuWUw,849
+mwviews/api/__init__.py,sha256=uzO8oafD4gv4NIGXkzg6iYaiNETOM81i0xGEe9MY4yQ,39
+mwviews/api/pageviews.py,sha256=61tkgYeY6xI-MQf-OuZZ1yqVyXOFiItjPqd3Qif_3ik,15573
+mwviews/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwviews/utilities/aggregate.py,sha256=GUDi8SLTtQiltekVWf8dIayWVMxv6TrAtZWgd9dAOCg,2773
+mwviews/utilities/fetch_global_namespaces.py,sha256=aOBlkIoys7QI66JSoLmLgkFD6YSgVXrw2sGDcT9FTcc,3880
+mwviews/utilities/util.py,sha256=OzMVyi2fauIKePdc9fomd-dmKrpuMxxe-Yh4y852LcM,635
+mwviews-0.2.1.dist-info/LICENSE.txt,sha256=0sqhCh1Lc6O68Ru6SZqXEMIiTr8SeFhIQOUISGG9DkE,1081
+mwviews-0.2.1.dist-info/METADATA,sha256=Jecf4Iok6AuQKMhvScD3fThwWN5VZ2D9Y_TKrGG8RvA,543
+mwviews-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mwviews-0.2.1.dist-info/entry_points.txt,sha256=zk0Uq6FHpIoJMu48XOSMFPApu3MRsiN0FDUOJOc7WTM,49
+mwviews-0.2.1.dist-info/top_level.txt,sha256=ZxWxlETSJ7xwuhRXQ5i-2_qnw6pYgUn7tgEvap_onf4,8
+mwviews-0.2.1.dist-info/RECORD,,
