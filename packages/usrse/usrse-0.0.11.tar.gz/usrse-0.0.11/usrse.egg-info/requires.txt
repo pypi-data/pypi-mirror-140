@@ -1,0 +1,7 @@
+requests
+rich
+
+[all]
+requests
+rich
+pytest>=4.6.2

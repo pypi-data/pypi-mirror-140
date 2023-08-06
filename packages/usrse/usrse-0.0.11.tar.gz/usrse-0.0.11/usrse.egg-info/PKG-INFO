@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: usrse
+Version: 0.0.11
+Summary: Python client for programmatic access to usrse events
+Home-page: https://github.com/usrse/usrse-python
+Author: Vanessa Sochat
+Author-email: vsoch@users.noreply.github.com
+Maintainer: Vanessa Sochat
+License: LICENSE
+Keywords: usrse,rseng,events
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.3
+Description-Content-Type: text/markdown
+Provides-Extra: all
+License-File: LICENSE
+
+# USRSE Python
+
+Welcome to US-RSE Python! This is a handy little client and assocated actions to make it easy
+to retrieve updated content from our various feeds.
+
+[![usrse-python](https://github.com/USRSE/usrse-python/actions/workflows/main.yml/badge.svg)](https://github.com/USRSE/usrse-python/actions/workflows/main.yml)
+
+[![asciicast](https://asciinema.org/a/472034.svg)](https://asciinema.org/a/472034?speed=2)
+
+See our ⭐️ [Documentation](https://us-rse.org/usrse-python/) to get started! ⭐️
+
+## Coming Soon / TODO
+
+ - automated deployment to pypi on release
+ - nightly test run to ensure US-RSE static API functioning as expected
+ - other endpoints and functions here
+
+## Contributors
+
+We use the [all-contributors](https://github.com/all-contributors/all-contributors) 
+tool to generate a contributors graphic below.
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://vsoch.github.io"><img src="https://avatars.githubusercontent.com/u/814322?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vanessasaurus</b></sub></a><br /><a href="https://github.com/USRSE/usrse-python/commits?author=vsoch" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## License
+
+This code is licensed under the MPL 2.0 [LICENSE](LICENSE).
+
+
