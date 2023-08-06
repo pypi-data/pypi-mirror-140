@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lark-cython
+Version: 0.0.11
+Summary: A Lark plugin that optimizes LALR parsing using Cython
+Home-page: https://github.com/lark-parser/lark_cython
+Author: Erez Shinan
+Author-email: lark@erezsh.com
+License: UNKNOWN
+Keywords: Lark LALR parser optimized Cython
+Platform: UNKNOWN
+Requires: Cython
+License-File: LICENSE
+
+UNKNOWN
+
