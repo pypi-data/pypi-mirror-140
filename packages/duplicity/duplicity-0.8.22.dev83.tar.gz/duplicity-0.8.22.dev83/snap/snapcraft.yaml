@@ -1,0 +1,68 @@
+name: duplicity
+version: 0.8.22.dev83
+summary: Efficient, encrypted backup to local or remote hosts
+description: |
+  Duplicity backs directories by producing encrypted tar-format volumes and uploading
+  them to a remote or local file server. Because duplicity uses librsync, the incremental
+  archives are space efficient and only record the parts of files that have changed since
+  the last backup. Because duplicity uses GnuPG to encrypt and/or sign these archives,
+  they will be safe from spying and/or modification by the server.
+
+grade: stable
+confinement: classic
+base: core20
+
+apps:
+    duplicity:
+        command: bin/duplicity
+
+parts:
+    duplicity:
+        plugin: python
+        build-packages:
+            - build-essential
+            - ieee-data
+            - intltool
+            - librsync-dev
+            - python3-dev
+        stage-packages:
+            - gnupg
+            - lftp
+            - libatm1
+            - librsync2
+            - ncftp
+            - openssh-client
+            - python3-gi
+            - rsync
+            - rclone
+        python-packages:
+            - azure-storage-blob            ; python_version == '3.8'
+            - b2sdk                         ; python_version == '3.8'
+            - boto                          ; python_version == '3.8'
+            - boto3                         ; python_version == '3.8'
+            - boxsdk[jwt]                   ; python_version == '3.8'
+            - dropbox                       ; python_version == '3.8'
+            - fasteners                     ; python_version == '3.8'
+            - future                        ; python_version == '3.8'
+            - gdata-python3                 ; python_version == '3.8'
+            - google-api-python-client      ; python_version == '3.8'
+            - google-auth-oauthlib          ; python_version == '3.8'
+            - httplib2                      ; python_version == '3.8'
+            - jottalib                      ; python_version == '3.8'
+            - keyring                       ; python_version == '3.8'
+            - mediafire                     ; python_version == '3.8'
+            - megatools                     ; python_version == '3.8'
+            - paramiko                      ; python_version == '3.8'
+            - pexpect                       ; python_version == '3.8'
+            - psutil                        ; python_version == '3.8'
+            - pydrive                       ; python_version == '3.8'
+            - pyrax                         ; python_version == '3.8'
+            - python-swiftclient            ; python_version == '3.8'
+            - requests                      ; python_version == '3.8'
+            - requests-oauthlib             ; python_version == '3.8'
+            - setuptools                    ; python_version == '3.8'
+            - setuptools-scm                ; python_version == '3.8'
+            - sx                            ; python_version == '3.8'
+            - tahoe-lafs                    ; python_version == '3.8'
+            - urllib3                       ; python_version == '3.8'
+        source: .
