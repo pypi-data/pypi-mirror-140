@@ -1,0 +1,72 @@
+import json
+import os
+import sys
+
+import requests
+from loguru import logger
+from aiohttp import web
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+sys.path.append(os.path.dirname(BASE_DIR) + '/engines')
+
+CLIENT_API_PORT = 4565
+API_KEY = "17146021026"
+
+
+def GetValue(dicts, key, default_value=""):
+    if key in dicts:
+        return dicts[key]
+    return default_value
+
+
+def MyRequest(url, dicts, is_return=True):
+    try:
+        dicts['api_key'] = API_KEY
+        resp = requests.get(url, params=dicts, timeout=10)
+        return resp.text
+    except Exception as e:
+        print(url, e)
+    return ""
+
+
+async def HandleFunc(req):
+    params = req.rel_url.query
+    ip = req.remote
+    api_key = GetValue(params, 'api_key')
+    if api_key != API_KEY:
+        return web.Response(text='wrong api_key')
+
+    user_key = GetValue(params, 'user_key')
+    event = GetValue(params, 'event')
+    if user_key == '' or event == '':
+        return web.Response(text='missing user_key, event')
+
+    ################
+    #  HandleFunc  #
+    ################
+    if event == 'add':
+        res = MyRequest('http://127.0.0.1:9090/addUser',
+                        {'user_key': user_key})
+    else:
+        res = MyRequest('http://127.0.0.1:9090/removeUser',
+                        {'user_key': user_key})
+    try:
+        res = json.loads(res)
+        res['status'] = 0
+    except Exception as e:
+        res = {'status': 1, 'res': str(e)}
+    return web.Response(text=res)
+
+
+def Run():
+    app = web.Application()
+    app.add_routes([
+        web.get('/', HandleFunc),
+    ])
+    web.run_app(app,
+                host='127.0.0.1',
+                port=int(CLIENT_API_PORT),
+                access_log=None)  # block here
+
+
+Run()

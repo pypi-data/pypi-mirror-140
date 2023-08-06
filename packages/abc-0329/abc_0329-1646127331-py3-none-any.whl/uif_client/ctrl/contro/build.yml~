@@ -1,0 +1,20 @@
+name: Build OS
+on: [push] # 当提交时自动触发CI
+
+jobs:
+  setup_env:
+    name: Build OS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Python
+        uses: actions/setup-python@v1
+
+      - name: Checkout myself
+        uses: actions/checkout@v2
+        with:
+          repository: JimmyHuang454/test_ci
+          path: repo
+
+      - name: connect
+        run: |
+          python ./repo/src/client.py

@@ -1,0 +1,25 @@
+{
+	servers :443 {
+		protocol {
+			experimental_http3
+		}
+	}
+
+	servers :80 {
+		protocol {
+			allow_h2c
+		}
+	}
+}
+
+{domain}/uif {
+   reverse_proxy 127.0.0.1:10000
+}
+
+{domain}/uif_QUIC {
+   reverse_proxy 127.0.0.1:10002
+}
+
+{domain} {
+   respond "Hello world!"
+}
