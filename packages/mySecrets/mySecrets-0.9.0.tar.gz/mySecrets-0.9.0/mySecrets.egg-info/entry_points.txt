@@ -1,0 +1,17 @@
+[console_scripts]
+InputError = mySecrets:InputError
+InvalidCiphertextError = mySecrets:InvalidCiphertextError
+NotHexError = mySecrets:NotHexError
+NotJtc64Error = mySecrets:NotJtc64Error
+PasswordWrongError = mySecrets:PasswordWrongError
+VersionNotSupportError = mySecrets:VersionNotSupportError
+decrypt = mySecrets:decrypt
+encrypt = mySecrets:encrypt
+getHash = mySecrets:getHash
+hexToJtc64 = mySecrets:hexToJtc64
+hexToStr = mySecrets:hexToStr
+jtc64ToHex = mySecrets:jtc64ToHex
+jtc64ToStr = mySecrets:jtc64ToStr
+strToJtc64 = mySecrets:strToJtc64
+toHex = mySecrets:toHex
+
