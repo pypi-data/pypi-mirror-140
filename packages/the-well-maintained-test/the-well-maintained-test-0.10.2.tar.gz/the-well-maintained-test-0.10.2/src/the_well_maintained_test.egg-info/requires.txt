@@ -1,0 +1,12 @@
+click
+requests
+rich
+toml
+
+[test]
+pytest
+black
+isort
+coverage
+mypy
+cogapp
