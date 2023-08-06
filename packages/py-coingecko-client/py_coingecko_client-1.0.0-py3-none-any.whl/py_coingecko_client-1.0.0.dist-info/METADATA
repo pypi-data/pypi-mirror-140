@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: py-coingecko-client
+Version: 1.0.0
+Summary: Coingecko API wrapper
+Home-page: https://github.com/crypto-kitchenette/py-coingecko
+Author: Crypto Kitchenette Team
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# [CoinGecko API](https://www.coingecko.com/en) wrapper
+
+[![py-coingecko-client-pypi](https://img.shields.io/pypi/v/py-coingecko-client.svg)](https://pypi.python.org/pypi/py-coingecko-client)
+
+CoinGecko Doc: https://www.coingecko.com/en/api/documentation
+
+## Install
+
+```bash
+pip install py-coingecko-client
+```
+
+## Usage
+
+```python
+from coingecko import CoinGecko
+
+cg = CoinGecko()
+cg.get_simple_price(ids=["bitcoin"], vs_currencies=["usd"])
+```
+
+## Testing
+
+```bash
+virtualenv venv
+source ./venv/bin/activate
+pip install -r dev_requirements.txt
+deactivate
+source ./venv/bin/activate
+pytest
+```
+
+
