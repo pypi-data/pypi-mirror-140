@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: calcoperations
+Version: 0.0.1
+Summary: "Provides various arithmetic operations."
+Home-page: UNKNOWN
+Author: Hasit Parmar
+Author-email: hasitparmar007@gmail.com
+License: UNKNOWN
+Keywords: Calculation,Python2,Python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+
+"Provides addition, subtraction and multiplication etc operations."
+
