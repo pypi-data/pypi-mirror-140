@@ -1,0 +1,26 @@
+build/
+*~
+__pycache__/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+pytest-report.xml
+pylint-report.xml
+*.swp
+.ipynb_checkpoints/
+*.pyc
+*.aux.xml
+htmlcov/
+venv/
+.eggs/
+shareloc.egg-info/
+pylint-report.txt
+/tmp.*
+.tox
+
+# Documentation build and API
+docs/build/
+docs/source/api_reference/
+docs/source/api_reference/
+docs/source/apidoc/
