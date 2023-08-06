@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: py-docker-gadgets
+Version: 0.1.1
+Summary: Some convenience tools for managing docker containers in python
+Author: Tucker Beck
+Author-email: tucker.beck@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: docker (>=5.0.3,<6.0.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: py-buzz (>=3.0.0,<4.0.0)
+Description-Content-Type: text/x-rst
+
+.. image::  https://badge.fury.io/py/py-docker-gadgets.svg
+   :target: https://badge.fury.io/py/py-docker-gadgets
+   :alt:    Latest Version
+
+*****************
+ py-docker-tools
+*****************
+
+-----------------------------------------------------------------
+ Some convenience tools for managing docker containers in python
+-----------------------------------------------------------------
+
+py-docker-gadgets is a very compact set of tools for working with docker containers in python. Its API exposes
+a very simple command to spin up a container and then shut it down.
+
+
+Super Quick Start
+-----------------
+
+ - requirements: `python3`
+ - install through pip: `$ pip install py-docker-tools`
+
+Example Usage
+-------------
+
+Here's a very basic example of how this could be used:
+
+.. code-block:: python
+
+   from docker_gadgets import start_service, stop_service
+
+   start_service(
+       "test-postgres",
+       image="postgres",
+       env=dict(
+           POSTGRES_PASSWORD="test-password",
+           POSTGRES_USER="test-user",
+           POSTGRES_DB="test-db",
+       ),
+       ports={"5432/tcp": 8432},
+   )
+   stop_service("test-postgres")
+
