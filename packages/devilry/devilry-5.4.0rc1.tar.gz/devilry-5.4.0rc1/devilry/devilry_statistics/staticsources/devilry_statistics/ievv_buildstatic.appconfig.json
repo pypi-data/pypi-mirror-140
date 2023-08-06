@@ -1,0 +1,14 @@
+{
+  "appname": "devilry_statistics",
+  "appspecific_fields": {},
+  "destinationfolder": "/Users/stian/code/devilry/devilry-django/devilry/devilry_statistics/static/devilry_statistics/5.4.0rc1",
+  "is_in_production_mode": true,
+  "keep_temporary_files": false,
+  "npmrun_jsbuild": {
+    "extra_import_aliases": {},
+    "import_paths": []
+  },
+  "sourcefolder": "/Users/stian/code/devilry/devilry-django/devilry/devilry_statistics/staticsources/devilry_statistics",
+  "static_url": "/static/devilry_statistics/5.4.0rc1/",
+  "version": "5.4.0rc1"
+}
