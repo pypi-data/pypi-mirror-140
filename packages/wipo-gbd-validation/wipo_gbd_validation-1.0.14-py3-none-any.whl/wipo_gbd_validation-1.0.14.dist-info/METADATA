@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wipo-gbd-validation
+Version: 1.0.14
+Summary: GBD validation package
+Home-page: https://github.com/GBD-Wipo/gbd-validation
+Author: WIPO GDB team
+Author-email: gbd@wipo.int
+License: UNKNOWN
+Keywords: gbdtransformation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: jinja2
+Requires-Dist: xmltodict
+Requires-Dist: munch
+
+GBD validation package
+
+
