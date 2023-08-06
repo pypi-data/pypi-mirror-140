@@ -1,0 +1,3 @@
+[console_scripts]
+package-locator=package_locator.__main__:main
+
