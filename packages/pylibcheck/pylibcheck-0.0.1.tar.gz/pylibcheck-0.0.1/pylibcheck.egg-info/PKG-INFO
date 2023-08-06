@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pylibcheck
+Version: 0.0.1
+Summary: check if a pip module is installed
+Home-page: https://github.com/rdimo/pylibcheck
+Author: Rdimo
+Author-email: contact.rdimo@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/rdimo/pylibcheck/issues
+Keywords: pylibcheck
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
