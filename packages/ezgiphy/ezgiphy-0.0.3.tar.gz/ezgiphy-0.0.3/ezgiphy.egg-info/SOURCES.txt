@@ -1,0 +1,10 @@
+README.md
+setup.py
+ezgiphy/__init__.py
+ezgiphy/constants.py
+ezgiphy/errors.py
+ezgiphy/ezgiphy.py
+ezgiphy.egg-info/PKG-INFO
+ezgiphy.egg-info/SOURCES.txt
+ezgiphy.egg-info/dependency_links.txt
+ezgiphy.egg-info/top_level.txt
