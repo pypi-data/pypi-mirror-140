@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+membank.egg-info/PKG-INFO
+membank.egg-info/SOURCES.txt
+membank.egg-info/dependency_links.txt
+membank.egg-info/top_level.txt
