@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "fifa98edit"
+version = "0.1.21"
+description = "A command-line database editor for FIFA RTWC 98."
+authors = ["Megas Alexandros <megas_alexandros@hotmail.com>"]
+repository = "https://github.com/ma-akad/fifa98edit"
+license = "MIT"
+include = [
+"fifa98edit/fifa_config.json",
+"fifa98edit/FifaStyles",
+"fifa98edit/jersey_mask.png"]
+packages = [
+{include="fifa98edit"}
+
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.19.0"
+pillow = "^7.2.0"
+colorama = "^0.4.4"
+pandas = "^1.0.5"
+unidecode = "^1.3.2"
+pypiwin32 = {version = "^223", markers = "sys_platform == 'win32'"}
+
+
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
