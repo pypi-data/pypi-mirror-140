@@ -1,0 +1,11 @@
+License
+README.md
+pyproject.toml
+setup.cfg
+man/libpnu.3.gz
+src/libpnu/__init__.py
+src/libpnu/main.py
+src/pnu_libpnu.egg-info/PKG-INFO
+src/pnu_libpnu.egg-info/SOURCES.txt
+src/pnu_libpnu.egg-info/dependency_links.txt
+src/pnu_libpnu.egg-info/top_level.txt
