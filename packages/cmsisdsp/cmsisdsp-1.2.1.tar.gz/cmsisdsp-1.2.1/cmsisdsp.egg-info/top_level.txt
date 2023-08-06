@@ -1,0 +1,12 @@
+cmsisdsp
+cmsisdsp_basic
+cmsisdsp_complexf
+cmsisdsp_controller
+cmsisdsp_fastmath
+cmsisdsp_filtering
+cmsisdsp_interpolation
+cmsisdsp_matrix
+cmsisdsp_quaternion
+cmsisdsp_statistics
+cmsisdsp_support
+cmsisdsp_transform
