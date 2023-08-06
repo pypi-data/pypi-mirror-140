@@ -1,0 +1,20 @@
+values:
+  1932-06-14:
+    value: 0
+  1946-09-01:
+    value: 2
+metadata:
+  ux_name: Nombre minimal d'enfants
+  description_en: "Family allowances (AF): General conditions and amount"
+  ipp_csv_id: af_nenf_agemin
+  reference:
+    title: Nombre minimal d'enfants pour avoir droit aux Allocations Familiales (AF)
+  official_journal_date:
+    1976-08-01: "1976-08-17"
+  notes:
+    1976-08-01:
+    - title: 37% par enfant supplémentaire jusqu'à 4 enfants à charge, puis 33%
+documentation: |-
+  Notes :
+  L'allocation familiale est créée en 1932 par la loi Landry du 11/03/1932, art. 1 et 2 (modif titres III et V du code du travail). Parution au JO 12/03/1932
+  Le nombre minimal de deux enfants pour obtenir l'allocation et les majorations par enfant supplémentaire sont instituées dès 1946 (Loi 46-1835 du 22 août 1946 fixant le régime des prestations familiales)
