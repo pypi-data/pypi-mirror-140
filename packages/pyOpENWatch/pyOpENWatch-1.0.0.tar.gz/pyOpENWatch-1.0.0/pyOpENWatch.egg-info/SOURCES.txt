@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pyOpENWatch.egg-info/PKG-INFO
+pyOpENWatch.egg-info/SOURCES.txt
+pyOpENWatch.egg-info/dependency_links.txt
+pyOpENWatch.egg-info/requires.txt
+pyOpENWatch.egg-info/top_level.txt
+pyopenwatch/__init__.py
+pyopenwatch/ethereum_classes.py
+pyopenwatch/ethereum_exceptions.py
+pyopenwatch/ethereum_nft_watcher.py
+pyopenwatch/ethereum_utility.py
