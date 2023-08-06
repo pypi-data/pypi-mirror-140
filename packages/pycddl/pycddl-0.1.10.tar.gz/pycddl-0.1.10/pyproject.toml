@@ -1,0 +1,33 @@
+[build-system]
+requires = ["maturin>=0.11,<0.12"]
+build-backend = "maturin"
+
+[tool.cibuildwheel]
+test-command = """\
+pip install -r {project}/requirements-dev.txt
+pytest {project}/
+"""
+
+[tool.cibuildwheel.linux]
+before-all = "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y"
+environment = 'PATH="$PATH:$HOME/.cargo/bin"'
+# Skip musl for now just because it slows development down so much (makes CI
+# take minimum of 25 minutes): https://gitlab.com/tahoe-lafs/pycddl/-/issues/8.
+# Skip i686 because who cares.
+skip = "*i686 *musl*"
+
+[tool.cibuildwheel.macos]
+before-all = """curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable -y
+rustc --version
+"""
+environment = 'PATH="$HOME/.cargo/bin":$PATH'
+
+[tool.cibuildwheel.windows]
+before-all = """\
+choco install -y rust-ms
+choco install -y python --version=3.9.9
+refreshenv
+"""
+# 32-bit builds require downloading matching Rust which I haven't figured out
+# yet...
+skip = "*win32"
