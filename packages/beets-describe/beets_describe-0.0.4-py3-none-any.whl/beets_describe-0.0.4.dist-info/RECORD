@@ -1,0 +1,10 @@
+beetsplug/describe/__init__.py,sha256=IyCTHI7tZNxNGAxFMQxFW1LW6zFv3a8l30K_1oxGPvA,765
+beetsplug/describe/about.py,sha256=24j537otFxfQ0a17SIlon-wATptVD7Oy3c-Y88ItXNE,700
+beetsplug/describe/command.py,sha256=x6Lu4zHc6Oo7NpP5Q8KYIuZBigQYix8w7JPoC7RGdK8,7625
+beetsplug/describe/common.py,sha256=QZg1ob8mmiSXP1vk0bLiKOnjYQHhKbs4j-83EN6n7aI,2475
+beetsplug/describe/config_default.yml,sha256=O1ThO8-BnX2_O5ce_X_cYQmmQVM0-HdP2XZCQ-cP76k,9
+beets_describe-0.0.4.dist-info/LICENSE.txt,sha256=d4tThPHPx_7NqFUeAdDWrOyWz5gbRmJsV_Eim4WksKA,1067
+beets_describe-0.0.4.dist-info/METADATA,sha256=wrLIXvS6MA9iQAYFOYjNdsdF1t5ggkCN411Sy_LmTJY,11045
+beets_describe-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+beets_describe-0.0.4.dist-info/top_level.txt,sha256=za8u6CXAGbgac8cUyn9NlsgXqqq-_4HHZcNmJnfmyWc,10
+beets_describe-0.0.4.dist-info/RECORD,,
