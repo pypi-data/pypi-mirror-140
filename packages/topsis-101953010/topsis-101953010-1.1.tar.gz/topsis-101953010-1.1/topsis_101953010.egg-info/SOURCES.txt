@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+topsis_101953010/__init__.py
+topsis_101953010/topsis_101953010.py
+topsis_101953010.egg-info/PKG-INFO
+topsis_101953010.egg-info/SOURCES.txt
+topsis_101953010.egg-info/dependency_links.txt
+topsis_101953010.egg-info/entry_points.txt
+topsis_101953010.egg-info/requires.txt
+topsis_101953010.egg-info/top_level.txt
