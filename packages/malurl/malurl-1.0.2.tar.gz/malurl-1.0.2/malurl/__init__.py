@@ -1,0 +1,1 @@
+from .malurl import MalURL, DOES_NOT_EXIST, NA

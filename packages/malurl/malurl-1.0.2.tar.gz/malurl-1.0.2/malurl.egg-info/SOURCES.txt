@@ -1,0 +1,9 @@
+README.md
+setup.py
+malurl/__init__.py
+malurl/malurl.py
+malurl.egg-info/PKG-INFO
+malurl.egg-info/SOURCES.txt
+malurl.egg-info/dependency_links.txt
+malurl.egg-info/requires.txt
+malurl.egg-info/top_level.txt
