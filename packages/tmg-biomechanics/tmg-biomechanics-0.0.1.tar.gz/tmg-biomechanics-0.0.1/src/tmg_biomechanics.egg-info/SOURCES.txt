@@ -1,0 +1,15 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+sample-data/EM.xlsx
+sample-output/EM-params.csv
+src/tmg/__init__.py
+src/tmg/demo.py
+src/tmg/tmg.py
+src/tmg/tmg_constants.py
+src/tmg_biomechanics.egg-info/PKG-INFO
+src/tmg_biomechanics.egg-info/SOURCES.txt
+src/tmg_biomechanics.egg-info/dependency_links.txt
+src/tmg_biomechanics.egg-info/top_level.txt
