@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: TWCManager
+Version: 1.2.6
+Summary: Package to manage Tesla Wall Connector installations
+Home-page: https://github.com/ngardiner/twcmanager
+Author: Nathan Gardiner
+Author-email: ngardiner@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: tesla wall connector charger
+Platform: UNKNOWN
+Requires-Python: >= 3.6

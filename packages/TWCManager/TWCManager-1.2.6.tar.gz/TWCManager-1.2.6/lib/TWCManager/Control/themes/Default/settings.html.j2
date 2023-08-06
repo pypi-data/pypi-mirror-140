@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>TWCManager</title>
+    {% include 'bootstrap.html.j2' %}
+    <script type="text/javascript" src="/static/js/settings.js"></script>
+  </head>
+  <body>
+    {% include 'navbar.html.j2' %}
+    <form method=POST action='/settings/save'>
+      <table>
+        <tr>
+          <th>Web Interface Theme</th>
+          <td>
+            {{ optionList(
+              [
+                ["Default", "Default Web Theme"],
+                ["Modern", "Modern Theme"],
+              ],
+              {
+                "name": "webControlTheme",
+                "value": master.settings.get("webControlTheme", "Modern"),
+              },
+            )|safe }}
+          </td>
+        </tr>
+        <tr>
+          <th>Stop Charging Method</th>
+          <td>
+            {{ optionList(
+              [
+                [1, "Tesla API"],
+                [2, "Stop Responding to Slaves"],
+                [3, "Send Stop Command"],
+              ],
+              {
+                "name": "chargeStopMode",
+                "value": master.settings.get("chargeStopMode", 1),
+              },
+            )|safe }}
+          </td>
+        </tr>
+        <tr>
+          <th>Non-Scheduled power action:</th>
+          <td>
+            {{ optionList(
+              [
+                [1, "Charge at specified Non-Scheduled Charge Rate"],
+                [2, "Do not Charge"],
+                [3, "Track Green Energy"],
+              ],
+              {
+                "name": "nonScheduledAction",
+                "value": master.settings.get("nonScheduledAction", 1),
+              },
+            )|safe }}
+          </td>
+        </tr>
+        <tr>
+          <th>Non-scheduled power charge rate:</th>
+          <td>
+            {{ optionList(ampsList[1:],
+                 {
+                   "name": "nonScheduledAmpsMax",
+                   "value": master.settings.get("nonScheduledAmpsMax", "6")
+                 })|safe }}
+          </td>
+        </tr>
+        <tr>
+          <th>Include ServerTime in Main UI:</th>
+          <td>
+            {{ optionList(
+              [
+                [0, "Do not include Server Time"],
+                [1, "Include Server Time"],
+              ],
+              {
+                "name": "sendServerTime",
+                "value": master.settings.get("sendServerTime", 0),
+              },
+            )|safe }}
+          </td>
+        </tr>
+        <tr>
+          <th>Charge Authorization Mode:</th>
+          <td>
+            {{ optionList(
+              [
+                [1, "Vehicles can charge unless explictly blocked"],
+                [2, "Vehicles can only charge if explicitly allowed"],
+              ],
+              {
+                "name": "chargeAuthorizationMode",
+                "value": master.settings.get("chargeAuthorizationMode", "1")
+              })|safe }}
+          </td>
+        </tr>
+        <tr>
+          <th>Charge Rate Control:</th>
+          <td>
+            {{ optionList(
+              [
+                [1, "Use TWC Exclusively to control Charge Rate"],
+                [2, "Use Tesla API Exclusively to control Charge Rate"],
+              ],
+              {
+                "name": "chargeRateControl",
+                "value": master.settings.get("chargeRateControl", "1")
+              })|safe }}
+          </td>
+        </tr>
+        <tr>
+          <th>Consumption Offsets</th>
+          <td>
+            <table id="consumptionOffsets">
+              <thead>
+                <tr>
+                  <th>Offset Name</th>
+                  <th>Offset</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+              <thead>
+                <tr>
+                  <td><input type="text" class='form-control' id="offsetName" size=8 value="Name"></td>
+                  <td><input type="text" class='form-control' id="offsetValue" size=3 value="0" /></td>
+                  <td>
+                    {{ optionList(
+                      [
+                        ["A", "Amps"],
+                        ["W", "Watts"],
+                      ],
+                      {
+                        "name": "offsetUnit",
+                    })|safe }}
+                    </td>
+                    <td>
+                    {{ addButton(
+                      ["addOffset", "Add / Edit", { "buttonType": "button" }],
+                      "class='btn btn-outline-success'",
+                      )|safe }}
+                  </td>
+                </tr>
+              </thead>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <th>Manual Tesla API key override (<a href="http://registration.teslatasks.com/generateTokens" target="_blank">link</a>):</th>
+          <td>
+            <table>
+              <tr>
+                <th>Access Token</th>
+                <th>Refresh Token</th>
+              </tr>
+              <tr>
+                <td><input type='text' class='form-control' id='carApiBearerToken' name='carApiBearerToken' value='' /></td>
+                <td><input type='text' class='form-control' id='carApiRefreshToken' name='carApiRefreshToken' value='' /></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><input class='btn btn-outline-success' type=submit value='Save Settings' /></td>
+        </tr>
+      </table>
+    </form>
+    <p>Click <a href='https://github.com/ngardiner/TWCManager/tree/main/docs/Settings.md' target='_blank'>here</a> for detailed information on settings on this page</p>
+  </div></body>
+</html>
+
