@@ -1,0 +1,2 @@
+[console_scripts]
+hw = headwaters.cli:main

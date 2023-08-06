@@ -1,0 +1,16 @@
+headwaters/__init__.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+headwaters/cli.py,sha256=J00Cgw2PEPq0FYjmavhRZs9WMIc04qxDmuV_cdk8jFE,544
+headwaters/domains/__init__.py,sha256=4ArkdajhQ5j7MwTV8pUVNyj_pVz2dGIDUYPRKQik9Wc,60
+headwaters/domains/timeseries.py,sha256=_9y97HuA7JiJSLDsLPFu243HDlu8FPKwfGn7XiAiSgA,303
+headwaters/domains/words.py,sha256=e0Es4Y3CO526S4JSWVotVqKgsZKbdV-_iMnu3xqObv8,1075
+headwaters/engine/__init__.py,sha256=Akfk29oMg2gb7IfRa9V4Rducy2khRjsg32AXlpzDRT4,26
+headwaters/engine/engine.py,sha256=ffHFTonc0EKRbOaQkJYxUwpSIHUdA596osivlkW76uA,2829
+headwaters/server/__init__.py,sha256=p4RDNK1bsncECMdmqbmbBwUqhO8D4t0fKB-MEtgJP3s,25
+headwaters/server/data.json,sha256=qDhhVAlXqevmGJySePspQXRKsfEQDD4nxCjV9sBtmxo,131
+headwaters/server/server.py,sha256=ZwXJP7LxAx0-EFH70sVk9qmq_cE_02qehDjvshj04ZA,3066
+headwaters-0.0.6.dist-info/LICENSE.md,sha256=0WY-qETRJQXi8UJzhqUB0XE8My7itWMkNFoX_wWRzMg,1070
+headwaters-0.0.6.dist-info/METADATA,sha256=1qSCfGkg44Nx55X4XmftEPNvT_3Ojg1TvO0PjZuDD0Y,761
+headwaters-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+headwaters-0.0.6.dist-info/entry_points.txt,sha256=VDzBbWWdkzhwt5hfCW_LdSlhooVhYBaGMcSTvXHh0vQ,43
+headwaters-0.0.6.dist-info/top_level.txt,sha256=dYTGA0w4Ydin838nUEkT08Iph_eP1KHT4obnBxB40no,11
+headwaters-0.0.6.dist-info/RECORD,,
