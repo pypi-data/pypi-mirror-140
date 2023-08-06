@@ -1,0 +1,38 @@
+.section-nav {
+  @apply tw-border-none;
+}
+
+.toc-entry a,
+.section-nav ul {
+  @apply tw-pl-0;
+}
+
+@for $i from 2 through 5 {
+  .toc-h#{$i} a {
+    @apply tw-text-sm tw-leading-6 tw-no-underline;
+
+    border-left: 3px solid black;
+    color: #000 !important;
+    padding-left: ($i - 2) * 16px + 25px;
+
+    &:hover {
+      border-left: 3px solid theme('colors.napari-primary');
+    }
+  }
+}
+
+#bd-toc-nav {
+  border-left: 1px solid black;
+}
+
+.toc-entry > .nav-link {
+  &,
+  &.active {
+    border-left: 3px solid transparent;
+  }
+
+  &.active-child,
+  &:hover {
+    border-left: 3px solid theme('colors.napari-primary');
+  }
+}
