@@ -1,0 +1,14 @@
+cfngiam/__init__.py,sha256=6JdrAaXwG1WJ0_gwc7IEbQ_48l-7p84CvoEqYe1FxTU,17
+cfngiam/main.py,sha256=XrqKgjLdHKEVggnoRFAQEPXrjmK-hcg9rXFCvQgMcik,10883
+cfngiam/unsupported.py,sha256=_5ubl8qe1Kti4vjjad-63U7w9cSSjkf_NBDA8K6K0mI,1067
+cfngiam/version.py,sha256=_VIP0UQ_JqCj1G-6kKLIYhaPRNuXStwJz-CIhCgKrHg,21
+cfngiam/unsupported/AWSCodeBuildProject.json,sha256=jvgTqyyxfgjP27i7P4AVbk90hdHEWHwblmgLxp0BMys,4717
+cfngiam/unsupported/AWSCodeCommitRepository.json,sha256=wl654oBntIu1HVOWfPtvSPNW_k63SiafCNmUDUYZ5NM,6439
+cfngiam/unsupported/AWSCodePipelinePipeline.json,sha256=t48wYI_1AT3bRj5bGvMJlZ2CWC2V3exDLHTsSNy3ReU,5449
+cfngiam-0.2.5.dist-info/LICENSE,sha256=6eL86Kzq23RsEbHwBxfKNDfJzzF324hYIGAA9iptSnQ,1072
+cfngiam-0.2.5.dist-info/METADATA,sha256=wc3UIt3h-eMCyxLKgPC3ZohHIPG8PD6Xf4m1qGM6CYQ,4929
+cfngiam-0.2.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cfngiam-0.2.5.dist-info/entry_points.txt,sha256=ap94929wP12IqNc8akxP8By1yOYS6atoq91vPa-uk_o,47
+cfngiam-0.2.5.dist-info/top_level.txt,sha256=U-w9cTLAjqilN-52N_3hGELc3mZTWoE89l1ql2KwHHA,8
+cfngiam-0.2.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cfngiam-0.2.5.dist-info/RECORD,,
