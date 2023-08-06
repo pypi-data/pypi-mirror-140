@@ -1,0 +1,415 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/rivals_top8_results/__init__.py
+src/rivals_top8_results/draw_example.py
+src/rivals_top8_results/draw_layouts.py
+src/rivals_top8_results/draw_recolors.py
+src/rivals_top8_results/draw_results.py
+src/rivals_top8_results.egg-info/PKG-INFO
+src/rivals_top8_results.egg-info/SOURCES.txt
+src/rivals_top8_results.egg-info/dependency_links.txt
+src/rivals_top8_results.egg-info/top_level.txt
+src/rivals_top8_results/Resources/Backgrounds/Aether High/1.png
+src/rivals_top8_results/Resources/Backgrounds/Aethereal Gates/1.png
+src/rivals_top8_results/Resources/Backgrounds/Aethereal Gates/2.png
+src/rivals_top8_results/Resources/Backgrounds/Air Armada/1.png
+src/rivals_top8_results/Resources/Backgrounds/Air Armada/2.png
+src/rivals_top8_results/Resources/Backgrounds/Blazing Hideout/1.png
+src/rivals_top8_results/Resources/Backgrounds/Blazing Hideout/2.png
+src/rivals_top8_results/Resources/Backgrounds/Fire Capital/1.png
+src/rivals_top8_results/Resources/Backgrounds/Fire Capital/2.png
+src/rivals_top8_results/Resources/Backgrounds/Frozen Fortress/1.png
+src/rivals_top8_results/Resources/Backgrounds/Frozen Gates/1.png
+src/rivals_top8_results/Resources/Backgrounds/Frozen Gates/2.png
+src/rivals_top8_results/Resources/Backgrounds/Julesvale/1.png
+src/rivals_top8_results/Resources/Backgrounds/Julesvale/2.png
+src/rivals_top8_results/Resources/Backgrounds/Merchant Port/1.png
+src/rivals_top8_results/Resources/Backgrounds/Merchant Port/2.png
+src/rivals_top8_results/Resources/Backgrounds/Neo Fire Capital/1.png
+src/rivals_top8_results/Resources/Backgrounds/Pridemoor Keep/1.png
+src/rivals_top8_results/Resources/Backgrounds/Tempest Peak/1.png
+src/rivals_top8_results/Resources/Backgrounds/The CEO Ring/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Endless Abyss/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Forest Floor/1.png
+src/rivals_top8_results/Resources/Backgrounds/The RoA Ring/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Rock Wall/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Rock Wall/2.png
+src/rivals_top8_results/Resources/Backgrounds/The Spirit Tree/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Swampy Estuary/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Swampy Estuary/2.png
+src/rivals_top8_results/Resources/Backgrounds/Tower of Heaven/1.png
+src/rivals_top8_results/Resources/Backgrounds/Treetop Lodge/1.png
+src/rivals_top8_results/Resources/Backgrounds/Troupple Pond/1.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Grey.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Penguin.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Steampunk.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Twitch.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Arcade (Blue).png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Arcade (Green).png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Arcade (Pink.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Genesis.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Heat Wave.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Hero.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Infamous.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Orange.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/White.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Arcade (Blue).png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Arcade (Green).png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Arcade (Pink).png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Cyan.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Elliana Portrait Recolor.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Grey.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Infamous.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/On The Edge.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Pink.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Yellow.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Brown.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Cyan.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Genesis.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Orticoltore.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Panda.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Pink.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Yellow.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Genesis.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Heatwave.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/White.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Grey.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Burrito.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Genesis.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Grey.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Pink.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Summit (Red).png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Summit (White).png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Arcade (Blue).png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Arcade (Green).png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Arcade (Pink).png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Grey.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Panda.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Yellow.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Pink.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/White.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Dark Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/White.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Cyan.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Grey.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Pool Party.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Steampunk.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Summit.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Cyan.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Dark.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Infamous.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Pink.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/White.png
+src/rivals_top8_results/Resources/Characters/Main/Random/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Random/Default_old.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Grey.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Infamous.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Pink.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Pool Party.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Cyan.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Dark.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Infamous.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Shovel Knight Portrait Recolor.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Genesis.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Infamous.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Steampunk.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/White.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Collegiate.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Grey.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Spangled.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/dav.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Abyss.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Christmas.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Default Custom 1.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Default Custom 2.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Early Access.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Excaliburn.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Golden.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Green.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Grey.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Halloween.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Purple.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Ranked.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Red.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Shine.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Steampunk.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Summer.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Valentines.png
+src/rivals_top8_results/Resources/Characters/Secondary/Absa.png
+src/rivals_top8_results/Resources/Characters/Secondary/Clairen.png
+src/rivals_top8_results/Resources/Characters/Secondary/Elliana.png
+src/rivals_top8_results/Resources/Characters/Secondary/Etalus.png
+src/rivals_top8_results/Resources/Characters/Secondary/Forsburn.png
+src/rivals_top8_results/Resources/Characters/Secondary/Hodan.png
+src/rivals_top8_results/Resources/Characters/Secondary/Kragg.png
+src/rivals_top8_results/Resources/Characters/Secondary/Maypul.png
+src/rivals_top8_results/Resources/Characters/Secondary/Mollo.png
+src/rivals_top8_results/Resources/Characters/Secondary/Olympia.png
+src/rivals_top8_results/Resources/Characters/Secondary/Orcane.png
+src/rivals_top8_results/Resources/Characters/Secondary/Ori.png
+src/rivals_top8_results/Resources/Characters/Secondary/Pomme.png
+src/rivals_top8_results/Resources/Characters/Secondary/Random.png
+src/rivals_top8_results/Resources/Characters/Secondary/Ranno.png
+src/rivals_top8_results/Resources/Characters/Secondary/Shovel Knight.png
+src/rivals_top8_results/Resources/Characters/Secondary/Sylvanos.png
+src/rivals_top8_results/Resources/Characters/Secondary/Wrastor.png
+src/rivals_top8_results/Resources/Characters/Secondary/Zetterburn.png
+src/rivals_top8_results/Resources/Layout/Pixellari.ttf
+src/rivals_top8_results/Resources/Layout/char_portrait.png
+src/rivals_top8_results/Resources/Layout/char_portrait.psd
+src/rivals_top8_results/Resources/Layout/logo.png
