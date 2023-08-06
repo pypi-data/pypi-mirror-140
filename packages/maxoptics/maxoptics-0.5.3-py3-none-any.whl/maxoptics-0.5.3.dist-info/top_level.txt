@@ -1,0 +1,4 @@
+maxoptics
+maxoptics/autogen
+maxoptics/static_modules
+test

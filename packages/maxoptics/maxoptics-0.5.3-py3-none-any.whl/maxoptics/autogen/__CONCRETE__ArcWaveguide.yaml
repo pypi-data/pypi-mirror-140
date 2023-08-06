@@ -1,0 +1,50 @@
+attributes:
+  attrs:
+    _objLink: []
+    angle: 90
+    expre_angle: ''
+    expre_innerRadius: ''
+    expre_outerRadius: ''
+    expre_rotate_z: ''
+    expre_x: ''
+    expre_y: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    extrude:
+      h: 0.2
+    index_union:
+      index: 1.4
+      index_units: 1
+    innerRadius: 2.9
+    materialId: 3267
+    meshOrder: 1
+    outerRadius: 3.3
+    overrideMeshOrder: 0
+    rotate_z: 270
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 1.5
+      y: -3.1
+      z: 0
+    x: 1.5
+    y: -3.1
+    z: 0
+    z_max: '0.1000'
+    z_min: '-0.1000'
+    z_span: 0.2
+  children: []
+  disabled: false
+  id: ee360113-517f-4e20-848a-ae27d50c9a6e
+  locked: false
+  name: ArcWaveguide
+  type: {}
+belong:
+  passive:
+  - __CONCRETE__Document
+mros:
+- ArcWaveguide
+name: __CONCRETE__ArcWaveguide

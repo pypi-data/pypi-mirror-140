@@ -1,0 +1,125 @@
+attributes:
+  attrs:
+    _monitor_type: 0
+    _objLink: []
+    apodization_center: 500
+    apodization_freq_width: 4.41271
+    apodization_time_width: 100
+    center:
+      frequency_center: 193.6159624583333
+      frequency_max: 199.86163866666664
+      frequency_min: 187.37028625
+      frequency_span: 12.491352416666643
+      spacing_limit: 0
+      spacing_type: 0
+      wavelength_center: 1.55
+      wavelength_max: 1.6
+      wavelength_min: 1.5
+      wavelength_span: 0.10000000000000009
+    data: 10
+    down_sample_x: 1
+    down_sample_y: 1
+    down_sample_z: 1
+    expre_x: ''
+    expre_x_max: ''
+    expre_x_min: ''
+    expre_x_span: ''
+    expre_y: ''
+    expre_y_max: ''
+    expre_y_min: ''
+    expre_y_span: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    frequency_points: 5
+    monitor_setting:
+      actual_sampling: 2694.53
+      desired_sampling: 1498.96
+      down_sample_time: 17
+      frequency_center: 193.61599999999999
+      frequency_max: 199.862
+      frequency_min: 187.37
+      frequency_points: 5
+      frequency_span: 12.49199999999999
+      min_sampling_per_cycle: 2
+      nyquist_limit: 2662.59
+      sample_spacing: 0
+      spacing_limit: 0
+      spacing_type: 0
+      use_source_limits: 0
+      use_wavelength_spacing: 1
+      wavelength_center: 1.55
+      wavelength_max: 1.6
+      wavelength_min: 1.5
+      wavelength_span: 0.10000000000000009
+    monitor_type: 5
+    output_ex: 1
+    output_ey: 1
+    output_ez: 1
+    output_hx: 1
+    output_hy: 1
+    output_hz: 1
+    output_power: 1
+    output_px: 0
+    output_py: 0
+    output_pz: 0
+    override_global_monitor_settings:
+      actual_sampling: 0
+      desired_sampling: 0
+      down_sample_time: 0
+      min_sampling_per_cycle: 2
+      nyquist_limit: 0
+    override_global_options: 0
+    partial_spectral_average: 0
+    record_data_in_pml: false
+    sample_spacing: 0
+    simulation_type: 0
+    span:
+      length: 3
+      normal: 0
+      width: 2
+    spatial:
+      clipX: 0
+      clipY: 0
+      clipZ: 0
+      plane: 1
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      wireframe: false
+      x: 0
+      y: 0
+      z: 0
+    spatial_interpolation: 0
+    standard_fourier_transform: 1
+    total_spectral_average: 0
+    use_relative_coordinates: 1
+    use_source_limits: 0
+    use_wavelength_spacing: 1
+    x: 0
+    x_max: 0
+    x_min: 0
+    x_span: 0
+    y: 0
+    y_max: 1.5
+    y_min: -1.5
+    y_span: 3
+    z: 0
+    z_max: 1.5
+    z_min: -1.5
+    z_span: 3
+  children: []
+  disabled: false
+  id: 3e9f6103-babd-40a8-9127-48fe58ac3030
+  locked: false
+  name: PowerMonitor
+  type: {}
+belong:
+  active:
+  - __CONCRETE__Document
+  passive:
+  - __CONCRETE__Document
+mros:
+- PowerMonitor
+name: __CONCRETE__PowerMonitor

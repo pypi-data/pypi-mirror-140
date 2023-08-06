@@ -1,0 +1,30 @@
+attributes:
+  __delete__: true
+  actions: {}
+  attrs:
+    configGlobleParam:
+    - globleParamDes: ''
+      globleParamExp: ''
+      globleParamKey: ''
+      globleParamValue: '0'
+    drawGrid:
+      dx: 1
+      dy: 1
+    exp_obj: {}
+    h: 50
+    tarSrc:
+      id: ''
+      parent: ''
+      type: ''
+    w: 50
+  base: {}
+  icon: suanfa8
+  name: Document
+  tabs:
+  - Geometry
+belong:
+  passive:
+  - __CONCRETE__Document
+mros:
+- Object
+name: Document

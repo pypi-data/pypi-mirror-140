@@ -1,0 +1,37 @@
+attributes:
+  actions: {}
+  attrs:
+    configGlobleParam:
+      globleParamKey_0: ''
+      globleParamValue_0: ''
+    drawGrid:
+      dx: 1
+      dy: 1
+    exp_obj: {}
+    h: 50
+    w: 50
+  base:
+    actions:
+      addNewGroup: containerGroup
+      copy: copy
+      disable: disable
+      edit: edit
+      paste: paste
+      remove: remove
+      rename: rename
+    attrs: {}
+    icon: suanfa8
+    name: Object
+    tabs: []
+  icon: suanfa8
+  name: Document
+  tabs:
+  - Geometry
+belong:
+  active:
+  - __CONCRETE__Document
+  passive:
+  - __CONCRETE__Document
+mros:
+- Object
+name: Document

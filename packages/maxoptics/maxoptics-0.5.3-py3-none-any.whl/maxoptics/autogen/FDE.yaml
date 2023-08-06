@@ -1,0 +1,99 @@
+attributes:
+  __delete__: true
+  actions:
+    runFDE: runFDE
+  attrs:
+    actual_mesh_cells_x: 0
+    actual_mesh_cells_y: 0
+    actual_mesh_cells_z: 0
+    background_material: 0
+    bend_location: 0
+    bend_orientation: 0
+    bend_radius: 0
+    bent_waveguide: 0
+    calculate_group_index: 0
+    define_x_mesh: 0
+    define_y_mesh: 0
+    define_z_mesh: 0
+    detailed_dispersion_calculation: 1
+    dxd: 0.02
+    dyd: 0.02
+    dzd: 0.02
+    effective_index: 1
+    expre_x: ''
+    expre_x_max: ''
+    expre_x_min: ''
+    expre_x_span: ''
+    expre_y: ''
+    expre_y_max: ''
+    expre_y_min: ''
+    expre_y_span: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    force_symmetric_x_mesh: 0
+    force_symmetric_y_mesh: 0
+    force_symmetric_z_mesh: 0
+    grading_factor: 1.2
+    index: 1.4
+    mesh_cells_x: 50
+    mesh_cells_y: 50
+    mesh_cells_z: 0
+    meshing_refinement: 0
+    min_mesh_step: 0.0001
+    n: 1
+    number_of_points: 10
+    number_of_test_modes: 3
+    number_of_trial_modes: 20
+    pml_kappa: 2
+    pml_layers: 12
+    pml_polynomial: 3
+    pml_sigma: 5
+    refinement_type: 1
+    search: 0
+    simulation_temperature: 300
+    solver_type: 2
+    start_frequency: 193.414
+    start_wavelength: 1.55
+    stop_frequency: 200
+    stop_wavelength: 1.49896
+    store_mode_profiles_while_tracking: 0
+    track_selected_mode: 0
+    use_max_index: 0
+    wavelength: 1.55
+    x: 0
+    x_max: 1.5
+    x_max_bc: 1
+    x_min: 1.5
+    x_min_bc: 1
+    x_span: 3
+    y: 0
+    y_max: 1.5
+    y_max_bc: 1
+    y_min: -1.5
+    y_min_bc: 1
+    y_span: 3
+    z: 0
+    z_max: 0
+    z_max_bc: 1
+    z_min: 0
+    z_min_bc: 1
+    z_span: 0
+  base: {}
+  icon: iconMODE
+  name: FDE
+  tabs:
+  - General
+  - Geometry
+  - Mesh settings
+  - Boundary conditions
+  - Material
+belong:
+  active:
+  - __CONCRETE__FDE
+  passive:
+  - __CONCRETE__FDE
+mros:
+- ArithmeticObject
+name: FDE

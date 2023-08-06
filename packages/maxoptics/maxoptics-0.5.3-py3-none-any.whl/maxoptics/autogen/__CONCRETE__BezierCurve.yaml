@@ -1,0 +1,62 @@
+attributes:
+  attrs:
+    _objLink: []
+    expre_rotate_z: ''
+    expre_w: ''
+    expre_x: ''
+    expre_x0: ''
+    expre_x1: ''
+    expre_x2: ''
+    expre_x3: ''
+    expre_y: ''
+    expre_y0: ''
+    expre_y1: ''
+    expre_y2: ''
+    expre_y3: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    extrude:
+      h: 0.2
+    index_union:
+      index: 1.4
+      index_units: 1
+    materialId: P34
+    meshOrder: 2
+    overrideMeshOrder: 1
+    rotate_z: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0.1
+    w: 0.367
+    x: 0
+    x0: 27.4
+    x1: 30.4
+    x2: 29.4
+    x3: 32.4
+    y: 0
+    y0: 0.6785
+    y1: 0.6785
+    y2: 2.6785
+    y3: 2.6785
+    z: 0.1
+    z_max: 0.2
+    z_min: 0
+    z_span: 0.2
+  children: []
+  disabled: false
+  id: 68887d30-936d-4c15-a8e8-6bb508fd96a9
+  locked: false
+  name: bzc0
+  type: {}
+belong:
+  passive:
+  - __CONCRETE__Document
+mros:
+- BezierCurve
+name: __CONCRETE__BezierCurve

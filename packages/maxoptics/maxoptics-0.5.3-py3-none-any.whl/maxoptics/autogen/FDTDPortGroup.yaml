@@ -1,0 +1,37 @@
+attributes:
+  actions: {}
+  attrs:
+    actual_sampling: 2694.53
+    calculate_group_delay: false
+    desired_sampling: 1498.96
+    down_sample_time: 17
+    fractional_offset_for_group_delay: 0.0001
+    frequency_center: 588.878
+    frequency_max: 794.481
+    frequency_min: 428.275
+    frequency_span: 321.206
+    min_sampling_per_cycle: 2
+    monitor_frenquency_points: 5
+    nyquist_limit: 2662.59
+    source_mode: ''
+    source_port: ''
+    spacing_limit: 0
+    spacing_type: 0
+    use_source_limits: 0
+    use_wavelength_spacing: 1
+    waveform_id: ''
+    waveform_name: ''
+    wavelength_center: 0.55
+    wavelength_max: 0.7
+    wavelength_min: 0.4
+    wavelength_span: 0.3
+  base: {}
+  icon: iconPort
+  name: FDTDPortGroup
+  tabs: []
+belong:
+  passive:
+  - __CONCRETE__FDTDPortGroup
+mros:
+- SpatialObject
+name: FDTDPortGroup

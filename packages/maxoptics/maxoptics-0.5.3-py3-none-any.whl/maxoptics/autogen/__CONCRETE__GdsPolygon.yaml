@@ -1,0 +1,47 @@
+attributes:
+  attrs:
+    _objLink: []
+    expre_rotate_z: ''
+    expre_x: ''
+    expre_y: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    extrude:
+      h: 0.2
+    index_union:
+      index: 1.4
+      index_units: 1
+    materialId: 3267
+    meshOrder: 1
+    overrideMeshOrder: 0
+    points: []
+    rotate_z: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+    x: 0
+    y: 0
+    z: 0
+    z_max: 0
+    z_min: 0
+    z_span: 0
+  children: []
+  disabled: false
+  id: a10e28dd-85bc-4beb-ac57-cfe26b202b40
+  locked: false
+  name: GdsPolygon_1
+  type: {}
+belong:
+  active:
+  - __CONCRETE__Document
+  passive:
+  - __CONCRETE__Document
+mros:
+- GdsPolygon
+name: __CONCRETE__GdsPolygon

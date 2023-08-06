@@ -1,0 +1,48 @@
+attributes:
+  attrs:
+    _objLink: []
+    angle: 45
+    expre_angle: ''
+    expre_radius: ''
+    expre_rotate_z: ''
+    expre_x: ''
+    expre_y: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    extrude:
+      h: 0.2
+    index_union:
+      index: 1.4
+      index_units: 1
+    materialId: 3053
+    meshOrder: 2
+    overrideMeshOrder: 0
+    radius: 5
+    rotate_z: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+    x: 0
+    y: 0
+    z: 0
+    z_max: 0.5000
+    z_min: -0.5000
+    z_span: 1
+  children: []
+  disabled: false
+  id: 6810fc54-9580-4bf8-bfd3-1b6dc261f262
+  locked: false
+  name: Sector
+  type: {}
+belong:
+  passive:
+  - __CONCRETE__Document
+mros:
+- Sector
+name: __CONCRETE__Sector

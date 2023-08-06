@@ -1,0 +1,174 @@
+attributes:
+  __delete__: true
+  actions:
+    runFDTD: runFDTD
+  attrs:
+    amp: amplitude
+    auto_shutoff_max: 100000
+    auto_shutoff_min: 0.0001
+    background_material: 0
+    bandwidth_config:
+      center_frequency: 0
+      center_wavelength: 0
+      frequency_span: 0
+      frequency_start: 0
+      frequency_stop: 0
+      range_type: 0
+      type: 0
+      wavelength_span: 0
+      wavelength_start: 0
+      wavelength_stop: 0
+    cells_per_wavelength: 15
+    component: E
+    dimension: 1
+    down_sample_time: 100
+    dx: 0.1
+    dy: 0.1
+    dz: 0.1
+    expre_x: ''
+    expre_x_max: ''
+    expre_x_min: ''
+    expre_x_span: ''
+    expre_y: ''
+    expre_y_max: ''
+    expre_y_min: ''
+    expre_y_span: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    extend_structure_through_pml: 1
+    frequency_scale: false
+    grading: 1
+    grading_factor: 1.2
+    horizontalt: 0
+    index: 1.4
+    mesh_type: 0
+    meshing_refinement: 1
+    min_mesh_step: 0.0001
+    plot: 0
+    plot_with: 0
+    pml_config:
+      alpha: 0
+      alpha_polynomial: 1
+      kappa: 2
+      layers: 8
+      max_layers: 64
+      min_layers: 8
+      polynomial: 3
+      profile: Standard
+      sigma: 1
+    pml_same_settings: 1
+    polarized_type: 0
+    refinement_type: 0
+    scale: false
+    set_bandwidth: 0
+    simulation_temperature: 300
+    simulation_time: 1000
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+    thread: 4
+    time_stop: 0
+    use_divergence_checking: 0
+    use_early_shutoff: 1
+    x: 0
+    x_max: 12
+    x_max_bc: 0
+    x_max_pml_config:
+      alpha: 0
+      alpha_polynomial: 1
+      kappa: 2
+      layers: 8
+      max_layers: 64
+      min_layers: 8
+      polynomial: 3
+      profile: Standard
+      sigma: 1
+    x_min: -12
+    x_min_bc: 0
+    x_min_pml_config:
+      alpha: 0
+      alpha_polynomial: 1
+      kappa: 2
+      layers: 8
+      max_layers: 64
+      min_layers: 8
+      polynomial: 3
+      profile: Standard
+      sigma: 1
+    x_span: 24
+    y: 0
+    y_max: 8
+    y_max_bc: 0
+    y_max_pml_config:
+      alpha: 0
+      alpha_polynomial: 1
+      kappa: 2
+      layers: 8
+      max_layers: 64
+      min_layers: 8
+      polynomial: 3
+      profile: Standard
+      sigma: 1
+    y_min: -8
+    y_min_bc: 0
+    y_min_pml_config:
+      alpha: 0
+      alpha_polynomial: 1
+      kappa: 2
+      layers: 8
+      max_layers: 64
+      min_layers: 8
+      polynomial: 3
+      profile: Standard
+      sigma: 1
+    y_span: 16
+    z: 0
+    z_max: 5
+    z_max_bc: 0
+    z_max_pml_config:
+      alpha: 0
+      alpha_polynomial: 1
+      kappa: 2
+      layers: 8
+      max_layers: 64
+      min_layers: 8
+      polynomial: 3
+      profile: Standard
+      sigma: 1
+    z_min: -5
+    z_min_bc: 0
+    z_min_pml_config:
+      alpha: 0
+      alpha_polynomial: 1
+      kappa: 2
+      layers: 8
+      max_layers: 64
+      min_layers: 8
+      polynomial: 3
+      profile: Standard
+      sigma: 1
+    z_span: 10
+  base: {}
+  icon: iconFDTD
+  name: FDTD
+  tabs:
+  - General
+  - Geometry
+  - Mesh settings
+  - Boundary conditions
+  - Advanced options
+  - Thread settings
+belong:
+  active:
+  - __CONCRETE__FDTD
+  passive:
+  - __CONCRETE__FDTD
+mros:
+- ArithmeticObject
+name: FDTD

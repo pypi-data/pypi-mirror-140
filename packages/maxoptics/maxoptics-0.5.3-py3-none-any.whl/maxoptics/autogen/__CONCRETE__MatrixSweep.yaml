@@ -1,0 +1,45 @@
+attributes:
+  attrs:
+    Active:
+    - 0
+    calculate_group_delay: 0
+    tableData:
+    - index: 0
+      invert_sign: false
+      isActive: true
+      map_form: '0'
+      map_vector: ''
+      mode: 1
+      port: FDTDPort
+      portId: d08ea74c-e5fc-4cf9-8509-c470951aed99
+    - index: 1
+      invert_sign: false
+      isActive: false
+      map_form: '0'
+      map_vector: ''
+      mode: 1
+      port: FDTDPort_1
+      portId: 941f8228-1dfc-4b88-b17d-4c195089d7d6
+    - index: 2
+      invert_sign: false
+      isActive: false
+      map_form: '0'
+      map_vector: ''
+      mode: 1
+      port: FDTDPort_2
+      portId: e75262a2-8f9b-482c-b4ba-a9cb0c372bf3
+  children: []
+  disabled: false
+  id: 907dc31d-d37a-4c1d-be38-f1818dd27ffa
+  locked: false
+  name: MatrixSweep
+  parent: null
+  type: {}
+belong:
+  passive:
+  - '*<----fdtd'
+  - '*'
+  - $<----sweep
+mros:
+- MatrixSweep
+name: __CONCRETE__MatrixSweep

@@ -1,0 +1,38 @@
+attributes:
+  attrs:
+    _objLink: []
+    configGlobleParam:
+      globleParamKey_0: a
+      globleParamValue_0: '0.4'
+    drawGrid:
+      dx: 1
+      dy: 1
+    exp_obj:
+      2fc7ee24-cfc2-4702-9e38-b57dd994ab10: {}
+      65ba25bb-af6e-4f04-a8be-65976ec0c284: {}
+    h: 100
+    pConfig:
+      keyName_0: ''
+      keyName_1: ''
+      value_0: ''
+      value_1: ''
+    sweep: []
+    tarSrc:
+      id: ''
+      type: ''
+    tarSweep: []
+    w: 100
+  children: []
+  disabled: false
+  id: ''
+  locked: false
+  name: Project
+  type: {}
+belong:
+  active:
+  - $<----tree
+  passive:
+  - $<----tree
+mros:
+- Document
+name: __CONCRETE__Document

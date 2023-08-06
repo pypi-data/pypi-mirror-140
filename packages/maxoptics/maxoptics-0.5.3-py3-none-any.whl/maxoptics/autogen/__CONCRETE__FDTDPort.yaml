@@ -1,0 +1,84 @@
+attributes:
+  attrs:
+    _objLink: []
+    amp: amplitude
+    amplitude: 1
+    auto_update: 0
+    bend_location: 0
+    bend_orientation: 0
+    bend_radius: 1000000
+    bent_radius: 1000000
+    bent_waveguide: 0
+    calculate_group_index: 0
+    component: E
+    details_dispersion_caiculation: 0
+    direction: 0
+    effective_index: 1
+    frequency: 193.414
+    frequency_plot: 1
+    frequency_scale: 0
+    horizontal: 0
+    injection_axis: 0
+    mode_index: 1
+    mode_plot: 0
+    mode_selection: 1
+    n: 1
+    number_of_field_profile_samples: 1
+    number_of_points: 10
+    number_of_test_modes: 3
+    number_of_trial_modes: 20
+    offset: 0
+    phase: 0
+    phi: 0
+    plot: 0
+    plot_with: 0
+    port_location: 0
+    scale: false
+    search: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: -5
+      y: 3.6
+      z: 0
+    start_frequency: 193.414
+    start_wavelength: 1.55
+    stop_frequency: 200
+    stop_wavelength: 1.49896
+    task_id: 0
+    theta: 0
+    use_full_simulation_span: 1
+    use_max_index: 1
+    use_relative_coordinates: 1
+    wavelength: 1.55
+    x: -5
+    x_max: -5
+    x_max_bc: 1
+    x_min: -5
+    x_min_bc: 1
+    x_span: 0
+    y: 3.6
+    y_max: 5.1
+    y_max_bc: 1
+    y_min: 2.1
+    y_min_bc: 1
+    y_span: 3
+    z: 0
+    z_max: 1.5
+    z_max_bc: 1
+    z_min: -1.5
+    z_min_bc: 1
+    z_span: 3
+  children: []
+  disabled: false
+  id: d08ea74c-e5fc-4cf9-8509-c470951aed99
+  locked: false
+  name: FDTDPort
+  type: {}
+belong:
+  passive:
+  - __CONCRETE__FDTDPortGroup
+mros:
+- FDTDPort
+name: __CONCRETE__FDTDPort

@@ -1,0 +1,71 @@
+attributes:
+  attrs:
+    _objLink: []
+    bc_mode: 0
+    domain: 1
+    electrondes: 0
+    force_ohmic: 0
+    map_current: 0
+    mat_id: 0
+    materialId: 2890
+    outer_surface: 0
+    region_solid: ''
+    region_x: 0
+    region_x_solid: 0
+    region_xmax: 0
+    region_xmax_solid: 0
+    region_y: 0
+    region_y_solid: 0
+    region_ymax: 0
+    region_ymax_solid: 0
+    region_z: 0
+    region_z_solid: 0
+    region_zmax: 0
+    region_zmax_solid: 0
+    rse_radio: 0
+    rse_unit: 0
+    rse_value: 0
+    rsh_radio: 0
+    rsh_unit: 0
+    rsh_value: 10
+    small_signal: 0
+    solid: ge
+    spatial:
+      clipX: 0
+      clipY: 0
+      clipZ: 0
+      plane: 1
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      wireframe: false
+      x: 0
+      y: 0
+      z: 0
+    surface_type: 1
+    sweep_type: 0
+    voltage: 1
+    x: 0
+    x_max: 0
+    x_min: 0
+    x_span: 0
+    y: 0
+    y_max: 0
+    y_min: 0
+    y_span: 0
+    z: 0
+    z_max: 0
+    z_min: 0
+    z_span: 0
+  children: []
+  disabled: false
+  id: 5e154715-b12e-41a0-964a-95d13dfe7110
+  locked: false
+  name: Electrical
+  type: {}
+belong:
+  active:
+  - __CONCRETE__Document
+mros:
+- Electrical
+name: __CONCRETE__Electrical

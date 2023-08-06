@@ -1,0 +1,67 @@
+attributes:
+  __delete__: true
+  actions:
+    addCharge: addCharge
+  attrs:
+    background_material: null
+    convergence_criteria: 0
+    convergence_method: 0
+    dc_update_mode: 0
+    dds_iteration_limit: 40
+    dds_iteration_limit_update: 5
+    deflection_tolerance: 0.01
+    delta_time_step: 1000
+    dx: 0.1
+    dy: 0.1
+    dz: 0.1
+    enable_initialization: 0
+    fermi_statistics: 0
+    global_iteration_limit: 40
+    gradient_mixing: 0
+    ht_iteration_limit: 40
+    ht_iteration_limit_update: 100
+    light_power: 0.00065
+    max_edge_length: 0.01
+    max_refine_steps: 2000
+    max_time_step: 100000
+    mesh_type: 0
+    min_edge_length: 0.01
+    min_time_step: 200
+    multithreading: 0
+    multithreading_num: 1
+    norm_length: 100
+    nr_ratio: 0
+    override: false
+    override_deflection_tolerance: false
+    poisson_iteration_limit: 40
+    poisson_iteration_limit_update: 20
+    primary_monitor: ''
+    residual_abs_tol: 0.001
+    result: 3,5
+    sensitivity: 30
+    sensitivity_advanced: 0
+    simulation_region: 0
+    simulation_temperature: 300
+    solver_mode: 0
+    solver_type: 1
+    temperature_dependence: 0
+    triangle_quality: 5
+    update_abs_tol: 0.001
+    update_rel_tol: 1e-06
+    use_global: 1
+    use_relative: 0
+    user_defult: 1
+  base: {}
+  icon: icon-suanfa
+  name: Charge
+  tabs:
+  - General
+  - Mesh
+  - Transient
+  - Advanced
+belong:
+  active:
+  - __CONCRETE__Charge
+mros:
+- Object
+name: Charge

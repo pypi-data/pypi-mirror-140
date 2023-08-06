@@ -1,0 +1,43 @@
+attributes:
+  __delete__: true
+  actions: []
+  attrs:
+    extrude:
+      h: 1
+    index_union:
+      index: 1.4
+      index_units: 1
+    materialId: 0
+    meshOrder: 1
+    overrideMeshOrder: 0
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+  base: {}
+  icon: suanfa8
+  name: Polygon
+  tabs:
+  - Material
+belong:
+  active:
+  - LinearTrapezoid
+  - Rectangle
+  passive:
+  - Ellipse
+  - Circle
+  - CustomPolygon
+  - ArcWaveguide
+  - Ring
+  - Rectangle
+  - Triangle
+  - SCurve
+  - BezierCurve
+  - Sector
+  - LinearTrapezoid
+mros:
+- SpatialObject
+name: Polygon

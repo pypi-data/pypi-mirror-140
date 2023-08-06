@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: maxoptics
+Version: 0.5.3
+Summary: MaxOptics SDK
+Home-page: 
+Author: MaxOptics
+Author-email: rao-jin@maxoptics.com
+License: UNKNOWN
+Platform: Independent
+Requires-Python: >=3.8.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: pyyaml
+Requires-Dist: gdspy
+Requires-Dist: python-socketio
+
+UNKNOWN
+

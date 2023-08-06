@@ -1,0 +1,47 @@
+attributes:
+  attrs:
+    _objLink: []
+    concentration: 5e+24
+    dopant_type: 0
+    materialId: 2894
+    spatial:
+      clipX: 0
+      clipY: 0
+      clipZ: 0
+      plane: 1
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      wireframe: false
+      x: 6.5
+      y: 0.25
+      z: 0
+    use_relative: 0
+    userEelative: true
+    volume_domains: 0
+    volume_solid: ge
+    volume_type: 1
+    x: 6.5
+    x_max: 13
+    x_min: 0
+    x_span: 13
+    y: 0.25
+    y_max: 0.3
+    y_min: 0.2
+    y_span: 0.1
+    z: 0
+    z_max: 0.5
+    z_min: -0.5
+    z_span: 1
+  children: []
+  disabled: false
+  id: 9f7f3098-167b-4977-9e85-55aba449758b
+  locked: false
+  name: geDoping
+  type: {}
+belong:
+  active:
+  - __CONCRETE__Document
+mros:
+- Constant
+name: __CONCRETE__Constant

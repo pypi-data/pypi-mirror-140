@@ -1,0 +1,28 @@
+attributes:
+  __delete__: true
+  actions:
+    addNewGroup: containerGroup
+    appendSelect: appendSelect
+    copy: copy
+    disable: disable
+    edit: edit
+    paste: paste
+    remove: remove
+    rename: rename
+  attrs: {}
+  icon: suanfa8
+  name: Object
+  tabs: []
+belong:
+  active:
+  - Document
+  - SpatialObject
+  - Charge
+  passive:
+  - MatrixSweep
+  - Sweep
+  - SpatialObject
+  - Document
+mros:
+- __object__
+name: Object

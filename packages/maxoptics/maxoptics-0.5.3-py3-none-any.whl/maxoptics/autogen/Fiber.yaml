@@ -1,0 +1,24 @@
+attributes:
+  actions: {}
+  attrs:
+    expre_l: ''
+    expre_r: ''
+    expre_rotate_z: ''
+    expre_x: ''
+    expre_y: ''
+    l: 20
+    r: 5
+    rotate_z: 0
+    x: 0
+    y: 0
+  base: {}
+  icon: iconfiber
+  name: Fiber
+  tabs:
+  - Geometry
+belong:
+  passive:
+  - __CONCRETE__Fiber
+mros:
+- Mesh3D
+name: Fiber

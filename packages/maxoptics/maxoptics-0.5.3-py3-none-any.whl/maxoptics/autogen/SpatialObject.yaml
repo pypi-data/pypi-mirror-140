@@ -1,0 +1,42 @@
+attributes:
+  __delete__: true
+  actions:
+    move: move
+    rotate: rotate
+  attrs:
+    spatial:
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      x: 0
+      y: 0
+      z: 0
+  base: {}
+  icon: suanfa8
+  name: SpatialObject
+  tabs: []
+belong:
+  active:
+  - Constant
+  - PowerMonitor
+  - Polygon
+  - Electrical
+  - Region
+  - FDTD
+  - FdeBase
+  passive:
+  - FDTDPort
+  - TimeMonitor
+  - PowerMonitor
+  - ProfileMonitor
+  - Mesh3D
+  - EmePort
+  - FdeBase
+  - Polygon
+  - FDTDPortGroup
+  - IndexMonitor
+  - GlobalMonitor
+  - ModeExpansion
+mros:
+- Object
+name: SpatialObject

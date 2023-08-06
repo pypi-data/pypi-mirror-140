@@ -1,0 +1,73 @@
+attributes:
+  attrs:
+    _objLink: []
+    clip_x: 0
+    clip_y: 0
+    clip_z: 0
+    expre_rotate_z: ''
+    expre_x: ''
+    expre_x0: ''
+    expre_x1: ''
+    expre_x2: ''
+    expre_x3: ''
+    expre_y: ''
+    expre_y0: ''
+    expre_y1: ''
+    expre_y2: ''
+    expre_y3: ''
+    expre_z: ''
+    expre_z_max: ''
+    expre_z_min: ''
+    expre_z_span: ''
+    extrude:
+      h: 0.2
+    index_union:
+      index: 1.4
+      index_units: 1
+    materialId: P34
+    meshOrder: 2
+    overrideMeshOrder: 1
+    plane: 1
+    rotate_x: 0
+    rotate_y: 0
+    rotate_z: 0
+    spatial:
+      clipX: 0
+      clipY: 0
+      clipZ: 0
+      plane: 1
+      rotateX: 0
+      rotateY: 0
+      rotateZ: 0
+      wireframe: false
+      x: 0
+      y: 0
+      z: 0.1
+    x: 0
+    x0: -29.5
+    x1: -29.5
+    x2: -23.5
+    x3: -23.5
+    y: 0
+    y0: 0.25
+    y1: -0.25
+    y2: -0.3
+    y3: 0.3
+    z: 0.1
+    z_max: 0.2
+    z_min: 0
+    z_span: 0.2
+  children: []
+  disabled: false
+  id: 7dbf7134-d55e-4101-a2d6-54b114e5c3f3
+  locked: false
+  name: tpz0
+  type: {}
+belong:
+  active:
+  - __CONCRETE__Document
+  passive:
+  - __CONCRETE__Document
+mros:
+- LinearTrapezoid
+name: __CONCRETE__LinearTrapezoid
