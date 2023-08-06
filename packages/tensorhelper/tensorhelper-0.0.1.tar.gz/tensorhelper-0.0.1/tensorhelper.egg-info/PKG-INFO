@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tensorhelper
+Version: 0.0.1
+Summary: A helper function for data analytics and machine learning
+Home-page: UNKNOWN
+Author: ifeanyi_omeck
+Author-email: kifeanyi@gmail.com
+License: UNKNOWN
+Keywords: python,confusion_matrix,loss_curves,accuracy_curves,random_images
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that loads random images from a directory, a custom built confusion matrix and generate accuracy and loss curves for machine learning
+
