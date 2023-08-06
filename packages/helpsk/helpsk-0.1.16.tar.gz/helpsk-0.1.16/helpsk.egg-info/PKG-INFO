@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: helpsk
+Version: 0.1.16
+Summary: Python helper functions and classes.
+Home-page: https://github.com/shanekercheval/python-helpers
+Author: Shane Kercheval
+Author-email: shane.kercheval@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/shanekercheval/python-helpers/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# helpsk
+
+Helper package for python.
+
+- package source in `/src/helpsk`
+- unit tests in `tests`
+
+## Installing
+
+`pip install helpsk`
+
+## Pre-Checkin
+
+### Unit Tests
+
+The unit tests in this project are all found in the `tests` directory.
+
+In the terminal, run the following in the root project directory:
+
+```commandline
+cd python-helpers
+python -m unittest discover ./tests
+```
+
+### `pylint`
+
+Run pylint to maintain clean code.
+
+```commandline
+cd python-helpers
+pylint helpsk
+```
+
+
