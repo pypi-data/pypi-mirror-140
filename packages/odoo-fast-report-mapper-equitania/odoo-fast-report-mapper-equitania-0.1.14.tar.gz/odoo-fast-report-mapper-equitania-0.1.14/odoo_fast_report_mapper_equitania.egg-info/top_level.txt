@@ -1,0 +1,2 @@
+odoo_fast_report_mapper
+odoo_report_helper
