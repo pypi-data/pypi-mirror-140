@@ -1,0 +1,2 @@
+[console_scripts]
+pybib2web = pybib2web:main
