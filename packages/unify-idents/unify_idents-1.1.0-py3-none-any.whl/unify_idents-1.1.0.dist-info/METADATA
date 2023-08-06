@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: unify-idents
+Version: 1.1.0
+Summary: Unify PSM idents
+Home-page: http://computational-ms.github.com
+Author: M. Koesters, T. Ranff, A. Vlasov, C. Fufezan
+License: The MIT license
+Platform: any that supports python 3.8
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.8.0
+License-File: LICENSE
+License-File: AUTHORS.TXT
+Requires-Dist: unimod-mapper (>=0.6.4)
+Requires-Dist: peptide-mapper (~=0.4.3)
+Requires-Dist: chemical-composition (>=1.0.5)
+Requires-Dist: pyahocorasick (~=1.4.2)
+Requires-Dist: pytest (~=6.2.5)
+Requires-Dist: pandas (~=1.3.4)
+Requires-Dist: numpy (~=1.21.4)
+Requires-Dist: loguru (~=0.5.3)
+Requires-Dist: tqdm (~=4.62.3)
+Requires-Dist: regex (~=2021.11.10)
+Requires-Dist: uparma (~=0.7.1)
+Requires-Dist: tox (~=3.24.4)
+Requires-Dist: coverage (~=6.1.2)
+
+Unifying PSM identifications of different peptide search engines
+
