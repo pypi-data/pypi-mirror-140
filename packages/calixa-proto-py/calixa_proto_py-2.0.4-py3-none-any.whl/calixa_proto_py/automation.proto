@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/field_mask.proto";
+import "google/protobuf/empty.proto";
+
+import "common.proto";
+import "event_label.proto";
+import "push_notification.proto";
+import "condition.proto";
+import "action.proto";
+
+option java_package = "io.calixa.domain.automation";
+option java_multiple_files = true;
+option optimize_for = SPEED;
+
+package calixa.domain.automation;
+
+enum AutomationStatus {
+  AUTOMATION_STATUS_UNSPECIFIED = 0;
+  AUTOMATION_STATUS_ENABLED = 1;
+  AUTOMATION_STATUS_PAUSED = 2;
+}
+
+message EventTrigger {
+  calixa.domain.entity.EventLabel event_label = 1;
+  calixa.domain.condition.ConditionGroup trigger = 2;
+}
+
+message MetricTrigger {
+  calixa.domain.condition.ConditionGroup trigger = 1;
+}
+
+message Trigger {
+  oneof trigger {
+    EventTrigger event_trigger = 100;
+    MetricTrigger metric_trigger = 101;
+  }
+}
+
+message UpdateEntityAction {
+  // TODO: Encode a method for calling a third party (like refunding an invoice)
+}
+
+message Action {
+  oneof action {
+    calixa.domain.notification.Notification notification = 1;
+    UpdateEntityAction update_entity = 2;
+  }
+}
+
+message ActionResult {
+  oneof action_Result {
+    bool sent = 1;
+    HttpResponses httpResponses = 2;
+
+    string error = 1000;
+    bool suppressed = 1001;
+  }
+}
+
+// Responses related to an Entity (canonical ID) from Actions invoked through automations
+message HttpResponses {
+  map<string, action.ThirdPartyActionInvocationResponse> httpResponse = 1;
+}
+
+message Automation {
+  string title = 1;
+  AutomationStatus status = 2;
+  Trigger trigger = 3;
+  Action action = 4;
+}
