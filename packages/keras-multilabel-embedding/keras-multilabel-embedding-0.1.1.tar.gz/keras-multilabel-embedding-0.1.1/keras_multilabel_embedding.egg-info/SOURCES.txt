@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+keras_multilabel_embedding/__init__.py
+keras_multilabel_embedding/fixednumlabels.py
+keras_multilabel_embedding/varnumlabels.py
+keras_multilabel_embedding.egg-info/PKG-INFO
+keras_multilabel_embedding.egg-info/SOURCES.txt
+keras_multilabel_embedding.egg-info/dependency_links.txt
+keras_multilabel_embedding.egg-info/requires.txt
+keras_multilabel_embedding.egg-info/top_level.txt
+keras_multilabel_embedding.egg-info/zip-safe
+test/__init__.py
+test/test_fixednumlabels.py
