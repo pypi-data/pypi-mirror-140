@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mchp-flasher-essentials
+Version: 0.0.1
+Summary: Collection of packages required for HB20 Flasher
+Home-page: https://bitbucket.microchip.com/dashboard
+Author: Vazeeruddin (Microchip)
+Author-email: <support@microchip.com>
+License: Microchip
+Keywords: python,HB20,flasher,medical,WSG
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: inputimeout (==1.0.4)
+Requires-Dist: intelhex (==2.3.0)
+Requires-Dist: psutil (==5.8.0)
+Requires-Dist: PyDirectInput (==1.0.4)
+Requires-Dist: pyelftools (==0.27)
+Requires-Dist: pywin32 (==301)
+Requires-Dist: termcolor (==1.1.0)
+
+
+How to install
+--------------
+.. code-block:: bash
+
+    pip install mchp-flasher-essentials
+    
+
+List of packages
+----------------
+#. colorama==0.4.4,
+#. inputimeout==1.0.4,
+#. intelhex==2.3.0,
+#. psutil==5.8.0,
+#. PyDirectInput==1.0.4,
+#. pyelftools==0.27,
+#. pywin32==301,
+#. termcolor==1.1.0
+
