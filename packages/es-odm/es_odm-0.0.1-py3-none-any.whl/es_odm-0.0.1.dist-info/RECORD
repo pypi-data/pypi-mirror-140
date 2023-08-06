@@ -1,0 +1,9 @@
+es_odm/__init__.py,sha256=H1K0HhDmvPc5nJ3GzAGW1D11gWzw2Q_Z_ugMY9TS7qY,176
+es_odm/document.py,sha256=udS5eBoC9IRkHhscs13MsmpiYf1YgQz7aECzgNJ2KC4,18746
+es_odm/field.py,sha256=9XMIYDNZ0ABIs0d33FRWaNWMug9_gsgOUZOzi-Ua7Dg,8438
+es_odm/model.py,sha256=_d9XGLfwRQlL6rtQtE80KtSYlA41N0gMm-xCzqI0dPY,5438
+es_odm/version.py,sha256=iOlA-aI4jighOHYsJJucEorCcKXuT-GfgrLzUji19bQ,18
+es_odm-0.0.1.dist-info/METADATA,sha256=Yt-Xi4AbQnIWrOXrH-mgBkjZ4_g-08cFG0YwDVuOi7M,749
+es_odm-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+es_odm-0.0.1.dist-info/top_level.txt,sha256=n8JOveZQGP48iCCJYkGWfYUtw7BmxthpLMctHf5R4t4,7
+es_odm-0.0.1.dist-info/RECORD,,
