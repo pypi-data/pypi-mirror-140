@@ -1,0 +1,16 @@
+README.md
+setup.py
+BeiChenChineseTextClassifier.egg-info/PKG-INFO
+BeiChenChineseTextClassifier.egg-info/SOURCES.txt
+BeiChenChineseTextClassifier.egg-info/dependency_links.txt
+BeiChenChineseTextClassifier.egg-info/entry_points.txt
+BeiChenChineseTextClassifier.egg-info/top_level.txt
+ChineseTextClassifier/SVM_Predict.py
+ChineseTextClassifier/TFIDF_space.py
+ChineseTextClassifier/__init__.py
+ChineseTextClassifier/classfier.py
+ChineseTextClassifier/distribution.py
+ChineseTextClassifier/get_tokens.py
+ChineseTextClassifier/svmModel.py
+ChineseTextClassifier/to_bunch.py
+ChineseTextClassifier/use.py
