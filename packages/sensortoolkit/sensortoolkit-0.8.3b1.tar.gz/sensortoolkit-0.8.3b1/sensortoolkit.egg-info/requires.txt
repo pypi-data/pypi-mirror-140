@@ -1,0 +1,13 @@
+matplotlib
+numpy
+pandas>=1.3.0
+pathlib2
+python-pptx
+requests
+scipy
+seaborn
+tabulate
+statsmodels
+urllib3
+pip
+chardet

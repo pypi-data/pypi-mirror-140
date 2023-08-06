@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statistical Methods &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Creating Testing Reports - The PerformanceReport Class" href="../performancereport.html" />
+    <link rel="prev" title="Descriptive Summary Methods" href="printing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testingattrib_objects/index.html">Testing Attribute Objects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Evaluation Objects</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Conducting Analysis - The SensorEvaluation Class</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="plotting.html">Plotting Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="printing.html">Descriptive Summary Methods</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Statistical Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../performancereport.html">Creating Testing Reports - The PerformanceReport Class</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">sensortoolkit API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Evaluation Objects</a> &raquo;</li>
+          <li><a href="index.html">Conducting Analysis - The SensorEvaluation Class</a> &raquo;</li>
+      <li>Statistical Methods</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/evaluation_objects/sensoreval/statistic.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="statistical-methods">
+<h1>Statistical Methods<a class="headerlink" href="#statistical-methods" title="Permalink to this headline"></a></h1>
+<p>The statistical methods discussed below populate various <a class="reference external" href="../../data_structures/eval_structs.html#performance-evaluation-data-structures">performance evaluation data structures</a>
+accessed via the user’s <code class="docutils literal notranslate"><span class="pre">SensorEvaluation</span></code> instance. Simultaneously, data files (both .csv and .json format)
+are written to the user’s <code class="docutils literal notranslate"><span class="pre">/data/eval_stats/[sensor_name]</span></code> directory (where <code class="docutils literal notranslate"><span class="pre">[sensor_name]</span></code>
+is the name of the air sensor make and model) if the <code class="docutils literal notranslate"><span class="pre">write_to_file</span></code>
+argument specified during instantiation of the <code class="docutils literal notranslate"><span class="pre">SensorEvaluation</span></code> object is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section provides a brief overview of the statistical methods accessed via
+instances of the <code class="docutils literal notranslate"><span class="pre">SensorEvaluation</span></code> class. For more detail on calling these
+methods, click on the link to the API documentation indicated below each
+method header.</p>
+</div>
+<hr class="docutils" />
+<section id="sensorevaluation-add-deploy-dict-stats">
+<h2><code class="docutils literal notranslate"><span class="pre">SensorEvaluation.add_deploy_dict_stats()</span></code><a class="headerlink" href="#sensorevaluation-add-deploy-dict-stats" title="Permalink to this headline"></a></h2>
+<p><a class="reference external" href="../../api/_autosummary/sensortoolkit.evaluation_objs._sensor_eval.SensorEvaluation.html#sensortoolkit.evaluation_objs._sensor_eval.SensorEvaluation.add_deploy_dict_stats">API Documentation for add_deploy_dict_stats()</a></p>
+<section id="description">
+<h3>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h3>
+<p><strong>Calculates:</strong></p>
+<ul class="simple">
+<li><p>CV for 1-hour averaged sensor datasets</p></li>
+<li><p>CV for 24-hour averaged sensor datasets</p></li>
+<li><p>RMSE for 1-hour averaged sensor datasets</p></li>
+<li><p>RMSE for 24-hour averaged sensor datasets</p></li>
+<li><p>Reference monitor concentration range, mean concentration during testing period for 1-hour averaged measurements</p></li>
+<li><p>Reference monitor concentration range, mean concentration during testing period for 24-hour averaged measurements</p></li>
+<li><p>Meteorological monitor measurement range, mean value for temperature and/or relative humidity measurements at 1-hour intervals</p></li>
+<li><p>Meteorological monitor measurement range, mean value for temperature and/or relative humidity measurements at 24-hour intervals</p></li>
+</ul>
+<p><strong>Populates:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">SensorEvaluation.deploy_dict</span></code></p></li>
+</ul>
+<p><strong>Writes Files:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="../../data_structures/eval_structs.html#deployment-dictionary-evaluation-deploy-dict">Deployment dictionary</a></p></li>
+</ul>
+</section>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline"></a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">evaluation</span><span class="o">.</span><span class="n">add_deploy_dict_stats</span><span class="p">()</span>
+<span class="go">Computing CV for 1-Hour averaged PM25</span>
+<span class="go">..N excluded: 20 out of 756 total</span>
+<span class="go">..N concurrent: 736</span>
+<span class="go">..Concurrent measurement timeframe: 2019-08-01 13:00:00+00:00 - 2019-09-02 00:00:00+00:00</span>
+<span class="go">Computing CV for 24-Hour averaged PM25</span>
+<span class="go">..N excluded: 2 out of 32 total</span>
+<span class="go">..N concurrent: 30</span>
+<span class="go">..Concurrent measurement timeframe: 2019-08-02 00:00:00+00:00 - 2019-09-01 00:00:00+00:00</span>
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sensorevaluation-calculate-metrics">
+<h2><code class="docutils literal notranslate"><span class="pre">SensorEvaluation.calculate_metrics()</span></code><a class="headerlink" href="#sensorevaluation-calculate-metrics" title="Permalink to this headline"></a></h2>
+<p><a class="reference external" href="../../api/_autosummary/sensortoolkit.evaluation_objs._sensor_eval.SensorEvaluation.html#sensortoolkit.evaluation_objs._sensor_eval.SensorEvaluation.calculate_metrics">API Documentation for calculate_metrics()</a></p>
+<section id="id1">
+<h3>Description<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">calculate_metrics()</span></code> will check whether <code class="docutils literal notranslate"><span class="pre">SensorEvaluation.deploy_dict</span></code> has
+been populated with statistics via the <code class="docutils literal notranslate"><span class="pre">add_deploy_dict_stats()</span></code> method and
+will call this method if the dictionary has not been populated yet.</p>
+</div>
+<p><strong>Calculates:</strong></p>
+<ul class="simple">
+<li><p>1-hour averaged sensor vs. reference regression statistics for each sensor</p></li>
+<li><p>24-hour averaged sensor vs. reference regression statistics for each sensor</p></li>
+<li><p>1-hour averaged sensor vs. intersensor average regression statistics for each sensor</p></li>
+<li><p>24-hour averaged sensor vs. intersensor average regression statistics for each sensor</p></li>
+</ul>
+<p><strong>Populates:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">SensorEvaluation.stats_df</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SensorEvaluation.avg_stats_df</span></code></p></li>
+</ul>
+<p><strong>Writes Files:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="../../data_structures/eval_structs.html#sensor-vs-frm-fem-statistics-evaluation-stats-df">Statistics DataFrame - Sensor vs. FRM/FEM</a></p></li>
+<li><p><a class="reference external" href="../../data_structures/eval_structs.html#sensor-vs-intersensor-average-statistics-evaluation-avg-stats-df">Statistics DataFrame - Sensor vs. Intersensor Average</a></p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Example<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
+<p>Below is an example for the <a class="reference external" href="../../quickstart.html#example-scenario-toco-toucan">Toco Toucan Quickstart Guide example</a></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">evaluation</span><span class="o">.</span><span class="n">calculate_metrics</span><span class="p">()</span>
+<span class="go">Computing 1-hour regression statistics for Toco_Toucan vs. T-API T640X at 16.67 LPM</span>
+<span class="go">..RT01</span>
+<span class="go">..RT02</span>
+<span class="go">..RT03</span>
+<span class="go">Computing 24-hour regression statistics for Toco_Toucan vs. T-API T640X at 16.67 LPM</span>
+<span class="go">..RT01</span>
+<span class="go">..RT02</span>
+<span class="go">..RT03</span>
+<span class="go">Computing 1-hour regression statistics for Toco_Toucan vs. T-API T640X at 16.67 LPM</span>
+<span class="go">..RT01</span>
+<span class="go">..RT02</span>
+<span class="go">..RT03</span>
+<span class="go">Computing 24-hour regression statistics for Toco_Toucan vs. T-API T640X at 16.67 LPM</span>
+<span class="go">..RT01</span>
+<span class="go">..RT02</span>
+<span class="go">..RT03</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="printing.html" class="btn btn-neutral float-left" title="Descriptive Summary Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../performancereport.html" class="btn btn-neutral float-right" title="Creating Testing Reports - The PerformanceReport Class" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sensortoolkit.param._parameter.Parameter &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="sensortoolkit.param._targets" href="sensortoolkit.param._targets.html" />
+    <link rel="prev" title="sensortoolkit.param._parameter" href="sensortoolkit.param._parameter.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testingattrib_objects/index.html">Testing Attribute Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">sensortoolkit API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../calculate.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.calculate</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../datetime_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.datetime_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deploy.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.deploy</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../evaluation_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.evaluation_objs</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ingest.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.ingest</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lib_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.lib_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../model.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.model</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../param.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.param</span></code></a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="sensortoolkit.param._parameter.html">sensortoolkit.param._parameter</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="sensortoolkit.param._parameter.html#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.param._targets.html">sensortoolkit.param._targets</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../plotting.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.plotting</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qc.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.qc</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.reference</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing_attrib_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.testing_attrib_objs</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">sensortoolkit API</a> &raquo;</li>
+          <li><a href="../param.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.param</span></code></a> &raquo;</li>
+          <li><a href="sensortoolkit.param._parameter.html">sensortoolkit.param._parameter</a> &raquo;</li>
+      <li>sensortoolkit.param._parameter.Parameter</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/api/_autosummary/sensortoolkit.param._parameter.Parameter.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sensortoolkit-param-parameter-parameter">
+<h1>sensortoolkit.param._parameter.Parameter<a class="headerlink" href="#sensortoolkit-param-parameter-parameter" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter">
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Parameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set_units</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/sensortoolkit/param/_parameter.html#Parameter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Object for accessing parameter attributes.</p>
+<p>Here, parameters are defined as measurable environmental quantities such
+as pollutants or meteorological conditions for which air sensors and
+reference instrumentation may collect measurements at regular sampling
+intervals.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param</strong> (<em>str</em>) – The name of a parameter. Passing an SDFS parameter will initialize
+a parameter instance with preset parameter attributes. Non-SDFS
+parameters will require user-input for specifying these attributes.</p></li>
+<li><p><strong>set_units</strong> (<em>bool</em><em>, </em><em>optional</em>) – If true, will attempt to assign units to the parameter. If the
+parameter name is not recognized as an SDFS parameter and set_units
+is True, the user will be prompted to enter the units for the
+parameter instance. Defaults to True.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.name" title="Permalink to this definition"></a></dt>
+<dd><p>The name of the parameter (e.g., <code class="docutils literal notranslate"><span class="pre">'PM25'</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.format_name">
+<span class="sig-name descname"><span class="pre">format_name</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.format_name" title="Permalink to this definition"></a></dt>
+<dd><p>A formatted expression for the parameter used for displaying the
+name of the parameter on plots (e.g., <code class="docutils literal notranslate"><span class="pre">'PM$_{2.5}$'</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.format_baseline">
+<span class="sig-name descname"><span class="pre">format_baseline</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.format_baseline" title="Permalink to this definition"></a></dt>
+<dd><p>For <code class="docutils literal notranslate"><span class="pre">format_name</span></code>, contains the baseline component of the
+parameter name (e.g., <code class="docutils literal notranslate"><span class="pre">'PM'</span></code> for fine particulate matter)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.format_subscript">
+<span class="sig-name descname"><span class="pre">format_subscript</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.format_subscript" title="Permalink to this definition"></a></dt>
+<dd><p>For <code class="docutils literal notranslate"><span class="pre">format_name</span></code>, contains the subscripted component of the
+parameter name (e.g., <code class="docutils literal notranslate"><span class="pre">'2.5'</span></code> for fine particulate matter)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.classifier">
+<span class="sig-name descname"><span class="pre">classifier</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.classifier" title="Permalink to this definition"></a></dt>
+<dd><p>A term for sorting the parameter into one of three environmental
+parameter classifications, either ‘PM’ for particulate matter
+pollutants, ‘Gases’ for gaseous pollutants, or ‘Met’ for
+meteorological environmental parameters (e.g., <code class="docutils literal notranslate"><span class="pre">'PM25'</span></code> is
+assigned to the ‘PM’ classifier).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.criteria_pollutant">
+<span class="sig-name descname"><span class="pre">criteria_pollutant</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.criteria_pollutant" title="Permalink to this definition"></a></dt>
+<dd><p>Describes whether the parameter is a criteria pollutant (True) or
+non-criteria (False).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.aqs_parameter_code">
+<span class="sig-name descname"><span class="pre">aqs_parameter_code</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.aqs_parameter_code" title="Permalink to this definition"></a></dt>
+<dd><p>The AQS Parameter code. See resource #1 in the module docstring
+for a detailed list of AQS parameter codes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.averaging">
+<span class="sig-name descname"><span class="pre">averaging</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.averaging" title="Permalink to this definition"></a></dt>
+<dd><p>The reference measurement averaging intervals commonly utilized for
+analyzing parameter data. Common averaging intervals are included
+in a list (e.g., fine particulate matter as measured by FRM or
+FEM instrumentation may report data at either 1-hour or 24-hour
+sampling or averaging intervals, such that averaging would be
+<code class="docutils literal notranslate"><span class="pre">['1-hour',</span> <span class="pre">'24-hour']</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.units">
+<span class="sig-name descname"><span class="pre">units</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.units" title="Permalink to this definition"></a></dt>
+<dd><p>The units of measure, expressed symbolically in unicode characters
+(e.g., for fine particulate matter, <code class="docutils literal notranslate"><span class="pre">'µg/m³'</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.units_description">
+<span class="sig-name descname"><span class="pre">units_description</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.units_description" title="Permalink to this definition"></a></dt>
+<dd><p>A textual description of the units of measure (e.g., for fine
+particulate matter, ‘Micrograms per Cubic Meter’).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.units_aqs_code">
+<span class="sig-name descname"><span class="pre">units_aqs_code</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.units_aqs_code" title="Permalink to this definition"></a></dt>
+<dd><p>The AQS unit code. See resource #2 in the module docstring for a
+detailed list of AQS parameter codes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.PerformanceTargets">
+<span class="sig-name descname"><span class="pre">PerformanceTargets</span></span><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.PerformanceTargets" title="Permalink to this definition"></a></dt>
+<dd><p>Performance metrics, target values and ranges associated with the
+parameter. Preset values are configured for <span class="math notranslate nohighlight">\(PM_{2.5}\)</span> and
+<span class="math notranslate nohighlight">\(O_3\)</span> using U.S. EPA’s recommended performance metrics and
+targets for air sensors measuring these pollutants.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>sensortoolkit.ParameterTargets object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sensortoolkit.param._parameter.Parameter.is_sdfs" title="sensortoolkit.param._parameter.Parameter.is_sdfs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_sdfs</span></code></a></p></td>
+<td><p>Indicate whether the passed parameter name is in the catalog of parameter names for the sensortoolkit Data Formatting Scheme (SDFS).</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensortoolkit.param._parameter.Parameter.is_sdfs">
+<span class="sig-name descname"><span class="pre">is_sdfs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/sensortoolkit/param/_parameter.html#Parameter.is_sdfs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensortoolkit.param._parameter.Parameter.is_sdfs" title="Permalink to this definition"></a></dt>
+<dd><p>Indicate whether the passed parameter name is in the catalog of
+parameter names for the sensortoolkit Data Formatting Scheme (SDFS).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if in the catalog, otherwise return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sensortoolkit.param._parameter.html" class="btn btn-neutral float-left" title="sensortoolkit.param._parameter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sensortoolkit.param._targets.html" class="btn btn-neutral float-right" title="sensortoolkit.param._targets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

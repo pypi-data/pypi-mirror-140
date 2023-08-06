@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview of Instantiating Testing Attributes &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Evaluation Objects" href="../evaluation_objects/index.html" />
+    <link rel="prev" title="The Parameter Object" href="parameter.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Testing Attribute Objects</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="airsensor/index.html">The AirSensor Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="referencemonitor/index.html">The ReferenceMonitor Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parameter.html">The Parameter Object</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Overview of Instantiating Testing Attributes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">sensortoolkit API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Testing Attribute Objects</a> &raquo;</li>
+      <li>Overview of Instantiating Testing Attributes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/testingattrib_objects/setup_overview.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="overview-of-instantiating-testing-attributes">
+<h1>Overview of Instantiating Testing Attributes<a class="headerlink" href="#overview-of-instantiating-testing-attributes" title="Permalink to this headline"></a></h1>
+<p>If you’ve been following the setup process outlined for creating local instances of
+testing attribute objects including <code class="docutils literal notranslate"><span class="pre">AirSensor</span></code>, <code class="docutils literal notranslate"><span class="pre">ReferenceMonitor</span></code>, and <code class="docutils literal notranslate"><span class="pre">Parameter</span></code>,
+this section recaps the workflow for how to utilize these sensortoolkit testing attribute objects
+in a python script.</p>
+<p>This overview is divided into two sections describing the workflow for different
+use cases. For users starting out fresh with an empty project directory and have
+not run the setup modules for either sensor or reference data configurations,
+please review the <a class="reference external" href="./setup_overview.html#id1">‘Initial Instantiation’</a> section below. For users who may have
+previously conducted an evaluation, walking through the initial workflow including
+creating setup configurations for both sensor and reference datasets, individuals can
+follow an abbreviated workflow, outlined in the
+<a class="reference external" href="./setup_overview.html#id2">‘Instantiating from Previously Configured Objects’</a>
+section.</p>
+<section id="id1">
+<h2>Initial Instantiation<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<p>If users are starting out with a new project directory or have not previously
+created a setup configuration for the air sensor that the user intends to evaluate,
+follow the script below for walking through the process of instantiating new
+<code class="docutils literal notranslate"><span class="pre">AirSensor</span></code> and <code class="docutils literal notranslate"><span class="pre">ReferenceMonitor</span></code> objects, including running the setup
+module to create <code class="docutils literal notranslate"><span class="pre">setup.json</span></code> files for each of these objects.
+<strong>Highlighted lines indicate important differences to
+specify when compared to subsequent instantiation of the sensor and reference
+objects that require use of the setup.json configuration files created during
+this initial use-case.</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Testing attribute setup process for an air sensor and reference monitor in a</span>
+<span class="sd">new project directory (located at the project path). At the start of using</span>
+<span class="sd">this script, users should have an empty directory in the folder located at</span>
+<span class="sd">the project path, except for a python script that contains the commands below.</span>
+
+<span class="sd">Following the use of this script, the following should be contained within</span>
+<span class="sd">the user&#39;s project directory :</span>
+
+<span class="sd">    - `/data`, `/figures`, and `/reports` directories (as well as the</span>
+<span class="sd">      subfolder structure within the directories)</span>
+<span class="sd">    - sensor datasets located at `/data/sensor_data/[sensor_name]`</span>
+<span class="sd">        - raw (i.e., recorded, unmodified)</span>
+<span class="sd">        - processed (i.e., converted to SDFS)</span>
+<span class="sd">        - [sensor_name]_setup.json for importing, ingesting, and saving processed</span>
+<span class="sd">          datasets in SDFS format.</span>
+<span class="sd">    - reference datasets located at `/data/reference_data/[data_type]/[site_name_site_id]`</span>
+<span class="sd">        - raw (i.e., recorded, unmodified)</span>
+<span class="sd">        - processed (i.e., converted to SDFS)</span>
+<span class="sd">        - reference_setup.json for importing, ingesting, and saving processed</span>
+<span class="sd">          datasets in SDFS format.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">sensortoolkit</span>
+
+<span class="n">sensortoolkit</span><span class="o">.</span><span class="n">presets</span><span class="o">.</span><span class="n">set_project_path</span><span class="p">(</span><span class="s1">&#39;[path/to/the/evaluation]&#39;</span><span class="p">)</span>
+
+<span class="c1"># AirSensor object instantiation</span>
+<span class="n">sensor</span> <span class="o">=</span> <span class="n">sensortoolkit</span><span class="o">.</span><span class="n">AirSensor</span><span class="p">(</span><span class="n">make</span><span class="o">=</span><span class="s1">&#39;[Sensor Make]&#39;</span><span class="p">,</span>
+                                 <span class="n">model</span><span class="o">=</span><span class="s1">&#39;[Sensor Model]&#39;</span><span class="p">)</span>
+<span class="c1"># Create Data and Figures directory, subdirectories</span>
+<span class="hll"><span class="n">sensor</span><span class="o">.</span><span class="n">create_directories</span><span class="p">()</span>
+</span><span class="c1"># Run setup configuration for sensor data, creates setup.json file</span>
+<span class="hll"><span class="n">sensor</span><span class="o">.</span><span class="n">sensor_setup</span><span class="p">()</span>
+</span>
+<span class="c1"># Import and loading sensor data for the first time, processed data files will</span>
+<span class="c1"># be saved following ingestion.</span>
+<span class="hll"><span class="n">sensor</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">load_raw_data</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span class="hll">                 <span class="n">write_to_file</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span>
+<span class="c1"># Create a Parameter instance for the pollutant you wish to evaluate</span>
+<span class="n">pollutant</span> <span class="o">=</span> <span class="n">sensortoolkit</span><span class="o">.</span><span class="n">Parameter</span><span class="p">(</span><span class="s1">&#39;[Insert pollutant from list of SDFS labels]&#39;</span><span class="p">)</span>
+
+<span class="c1"># Loading reference object for the first time</span>
+<span class="hll"><span class="n">reference</span> <span class="o">=</span> <span class="n">sensortoolkit</span><span class="o">.</span><span class="n">ReferenceMonitor</span><span class="p">()</span>
+</span><span class="hll"><span class="n">reference</span><span class="o">.</span><span class="n">reference_setup</span><span class="p">()</span>
+</span>
+<span class="c1"># Load reference data for the evaluation timeframe</span>
+<span class="n">reference</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">bdate</span><span class="o">=</span><span class="n">sensor</span><span class="o">.</span><span class="n">bdate</span><span class="p">,</span>
+                    <span class="n">edate</span><span class="o">=</span><span class="n">sensor</span><span class="o">.</span><span class="n">edate</span><span class="p">,</span>
+                    <span class="n">param_list</span><span class="o">=</span><span class="n">sensor</span><span class="o">.</span><span class="n">param_headers</span><span class="p">,</span>
+                    <span class="n">met_data</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Run SensorEvaluation or PerformanceReport here...</span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>Instantiating from Previously Configured Objects<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<p>Users may have occasion to revise or reanalyze sensor datasets at a later date following
+an initial round of analysis. If users have previously configured <code class="docutils literal notranslate"><span class="pre">AirSensor</span></code> and
+<code class="docutils literal notranslate"><span class="pre">ReferenceMonitor</span></code> objects for a testing scenario, these configurations will be saved to
+the <code class="docutils literal notranslate"><span class="pre">setup.json</span></code> configuration files for both reference and sensor data. In addition,
+processed versions of sensor and reference datasets that have been converted to SDFS
+formatting will be have been saved during the initial analysis
+to the user’s <code class="docutils literal notranslate"><span class="pre">/data</span></code> folder within the project directory.</p>
+<p>These previously created data structures allow users to reload previously configured
+<code class="docutils literal notranslate"><span class="pre">AirSensor</span></code> and <code class="docutils literal notranslate"><span class="pre">ReferenceMonitor</span></code> objects via an abbreviated workflow detailed below.
+<strong>Highlighted lines indicate important differences when compared
+to an initial instantiation of the sensor and reference objects</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">In the instance that users have previously run the sensor and reference</span>
+<span class="sd">setup configuration modules and wish to utilize these configurations for</span>
+<span class="sd">additional, follow-up analysis, users can save some time by loading processed</span>
+<span class="sd">versions of the sensor and reference datasets that are already configured in</span>
+<span class="sd">`SDFS` format.</span>
+
+<span class="sd">Users should ensure that sensor processed datasets have been created and saved</span>
+<span class="sd">to the user&#39;s ``/data/sensor_data/[sensor_name]/processed``</span>
+<span class="sd">directory during a previous run of the sensor.load_data() module, and</span>
+<span class="sd">that processed reference datasets corresponding to the reference data source</span>
+<span class="sd">the user intends to utilize are located at</span>
+<span class="sd">``/data/reference_data/[data_source]/processed/[site_name_site_aqs]``</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">sensortoolkit</span>
+
+<span class="n">sensortoolkit</span><span class="o">.</span><span class="n">presets</span><span class="o">.</span><span class="n">set_project_path</span><span class="p">(</span><span class="s1">&#39;[path/to/the/evaluation]&#39;</span><span class="p">)</span>
+
+<span class="c1"># AirSensor object instantiation</span>
+<span class="n">sensor</span> <span class="o">=</span> <span class="n">sensortoolkit</span><span class="o">.</span><span class="n">AirSensor</span><span class="p">(</span><span class="n">make</span><span class="o">=</span><span class="s1">&#39;[Sensor Make]&#39;</span><span class="p">,</span>
+                                 <span class="n">model</span><span class="o">=</span><span class="s1">&#39;[Sensor Model]&#39;</span><span class="p">)</span>
+
+<span class="c1"># Load sensor data from processed datasets</span>
+<span class="hll"><span class="n">sensor</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">load_raw_data</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+</span><span class="hll">                 <span class="n">write_to_file</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span>
+<span class="c1"># Create a Parameter instance for the pollutant you wish to evaluate</span>
+<span class="n">pollutant</span> <span class="o">=</span> <span class="n">sensortoolkit</span><span class="o">.</span><span class="n">Parameter</span><span class="p">(</span><span class="s1">&#39;[Insert pollutant from list of SDFS labels]&#39;</span><span class="p">)</span>
+
+<span class="c1"># Loading a pre-configured reference object (must indicate source, site, site id if applicable)</span>
+<span class="hll"><span class="n">reference</span> <span class="o">=</span> <span class="n">sensortoolkit</span><span class="o">.</span><span class="n">ReferenceMonitor</span><span class="p">(</span><span class="n">data_source</span><span class="o">=</span><span class="s1">&#39;[Enter the reference data source (lower case)]&#39;</span><span class="p">,</span>
+</span><span class="hll">                                           <span class="n">site_name</span><span class="o">=</span><span class="s1">&#39;[Enter the site name (replace spaces with underscores &quot;_&quot;)]&#39;</span><span class="p">,</span>
+</span><span class="hll">                                           <span class="n">site_id</span><span class="o">=</span><span class="s1">&#39;[Enter the site AQS ID (no spaces)]&#39;</span><span class="p">)</span>
+</span>
+<span class="c1"># Load reference data for the evaluation timeframe</span>
+<span class="n">reference</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">bdate</span><span class="o">=</span><span class="n">sensor</span><span class="o">.</span><span class="n">bdate</span><span class="p">,</span>
+                    <span class="n">edate</span><span class="o">=</span><span class="n">sensor</span><span class="o">.</span><span class="n">edate</span><span class="p">,</span>
+                    <span class="n">param_list</span><span class="o">=</span><span class="n">sensor</span><span class="o">.</span><span class="n">param_headers</span><span class="p">,</span>
+                    <span class="n">met_data</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Run SensorEvaluation or PeformanceReport here...</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="parameter.html" class="btn btn-neutral float-left" title="The Parameter Object" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../evaluation_objects/index.html" class="btn btn-neutral float-right" title="Evaluation Objects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

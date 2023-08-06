@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sensortoolkit.calculate._nowcast_pm25 &mdash; sensortoolkit 0.8.2b4 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="sensortoolkit.calculate._nowcast_pm25.nowcast_pm25" href="sensortoolkit.calculate._nowcast_pm25.nowcast_pm25.html" />
+    <link rel="prev" title="sensortoolkit.calculate._normalize.normalize" href="sensortoolkit.calculate._normalize.normalize.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sensortoolkit
+          </a>
+              <div class="version">
+                0.8.2b4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Documentation Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing and Updating sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../import_sensortoolkit.html">Importing sensortoolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../testingattrib_objects/index.html">Testing Attribute Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evaluation_objects/index.html">Evaluation Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sdfs/index.html">sensortoolkit Data Formatting Scheme (SDFS)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">sensortoolkit API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../calculate.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.calculate</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._aqi.html">sensortoolkit.calculate._aqi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._convert_temp.html">sensortoolkit.calculate._convert_temp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._cv.html">sensortoolkit.calculate._cv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._dewpoint.html">sensortoolkit.calculate._dewpoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._intersensor_mean.html">sensortoolkit.calculate._intersensor_mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._normalize.html">sensortoolkit.calculate._normalize</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">sensortoolkit.calculate._nowcast_pm25</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module-dependencies">Module Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#calculation">Calculation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._regression_stats.html">sensortoolkit.calculate._regression_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._rmse.html">sensortoolkit.calculate._rmse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sensortoolkit.calculate._uptime.html">sensortoolkit.calculate._uptime</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../datetime_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.datetime_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deploy.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.deploy</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../evaluation_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.evaluation_objs</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ingest.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.ingest</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lib_utils.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.lib_utils</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../model.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.model</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../param.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.param</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plotting.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.plotting</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qc.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.qc</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.reference</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing_attrib_objs.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.testing_attrib_objs</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sensortoolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">sensortoolkit API</a> &raquo;</li>
+          <li><a href="../calculate.html"><code class="docutils literal notranslate"><span class="pre">sensortoolkit.calculate</span></code></a> &raquo;</li>
+      <li>sensortoolkit.calculate._nowcast_pm25</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/api/_autosummary/sensortoolkit.calculate._nowcast_pm25.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-sensortoolkit.calculate._nowcast_pm25">
+<span id="sensortoolkit-calculate-nowcast-pm25"></span><h1>sensortoolkit.calculate._nowcast_pm25<a class="headerlink" href="#module-sensortoolkit.calculate._nowcast_pm25" title="Permalink to this headline"></a></h1>
+<p>This module calculates U.S.EPA’s NowCast for fine particulate matter
+(<span class="math notranslate nohighlight">\(PM_{2.5}\)</span>) for data recorded or averaged to 1-hour measurement
+intervals.</p>
+<p>For reporting changes in air quality at high time-resolution, U.S.
+EPA’s NowCast calculates hourly <span class="math notranslate nohighlight">\(PM_{2.5}\)</span> concentration values via a
+12-hour window of hourly <span class="math notranslate nohighlight">\(PM_{2.5}\)</span> measurements. Values are weighted
+based on the range of concentration levels observed within the 12-hour window,
+whereby large changes result in greater weighting of recent hours while steady
+air conditions result in more evenly distributed weighting of hourly
+concentrations.</p>
+<section id="module-dependencies">
+<h2>Module Dependencies<a class="headerlink" href="#module-dependencies" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Python (version &gt;= 3.7):</dt><dd><p>Programming language. Module tested with Python versions 3.7 and
+version 3.8.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>NumPy (version &gt;= 1.16.5):</dt><dd><p>Mathematical operations library. Module tested with versions 1.16.5
+through 1.20.1.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Pandas (version &gt;= 0.25.1):</dt><dd><p>Data analysis library. Module tested with versions 0.25.1 through
+1.2.4.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="calculation">
+<h2>Calculation<a class="headerlink" href="#calculation" title="Permalink to this headline"></a></h2>
+<p>The NowCast for a selected (current) hour is computed via the following steps:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Select a 12-hour window of PM measurements whereby the oldest hour in the
+selection is 11 hours preceding the current hour. The most recent
+(current) hour is the hour for which the NowCast will be computed. <strong>At
+least two of the last three hours (including the current hour) must have
+concentration values to compute the NowCast.</strong></p></li>
+<li><p>From this 12-hour window, select the maximum and minimum PM
+concentrations present. Compute the range by subtracting the minimum from
+the maximum.</p></li>
+<li><p>Normalize the range by dividing by the maximum concentration value. This
+gives a measure of the rate of change of PM values within the 12-hour
+window.</p></li>
+<li><p>Compute the weight factor by subtracting the normalized rate of change
+from 1.</p></li>
+<li><p>If the weight factor is less than 0.5, round the value up to 0.5. The
+weight factor must fall within the range 0.5 to 1.0.</p></li>
+<li><p>Multiply each hour in the 12-hour window by the weight factor raised to
+the power of the number of hours ago that the value was recorded. The
+most recent (current) hour in the series is raised to the zeroth power
+and the oldest hour is raised to the 11th power.</p></li>
+<li><p>Sum the weighted PM values computed in the previous step for each hour
+in the 12-hour window.</p></li>
+<li><p>In a similar method to steps 6 and 7, compute the sum of the weight
+factor raised to the 0th through 11th power. This sum includes 12 terms,
+whereby the power of each term corresponds to the number of hours ago
+that a concentration value was recoded.</p></li>
+<li><p>Divide the weighted concentration sum calculated in step 7 by the sum
+determined in step 8. The result is the NowCast for the zeroth (current)
+hour in the 12-hour window.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p><a class="reference external" href="https://usepa.servicenowservices.com/airnow?id=kb_article_view&amp;sys_id=fed0037b1b62545040a1a7dbe54bcbd4">Technical information about the NowCast algorithm</a></p>
+</div></blockquote>
+<hr class="docutils" />
+<dl>
+<dt>&#64;Author:</dt><dd><div class="line-block">
+<div class="line">Samuel Frederick, NSSC Contractor (ORAU)</div>
+<div class="line">U.S. EPA / ORD / CEMM / AMCD / SFSB</div>
+</div>
+</dd>
+<dt>Created:</dt><dd><p>Fri Jun 19 08:25:11 2020</p>
+</dd>
+<dt>Last Updated:</dt><dd><p>Thu Sep 7 16:41:00 2021</p>
+</dd>
+</dl>
+<p class="rubric">Functions</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="sensortoolkit.calculate._nowcast_pm25.nowcast_pm25.html#sensortoolkit.calculate._nowcast_pm25.nowcast_pm25" title="sensortoolkit.calculate._nowcast_pm25.nowcast_pm25"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nowcast_pm25</span></code></a></p></td>
+<td><p>Compute NowCast values for fine particulate matter (<span class="math notranslate nohighlight">\(PM_{2.5}\)</span>) 1-hour averages.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sensortoolkit.calculate._normalize.normalize.html" class="btn btn-neutral float-left" title="sensortoolkit.calculate._normalize.normalize" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sensortoolkit.calculate._nowcast_pm25.nowcast_pm25.html" class="btn btn-neutral float-right" title="sensortoolkit.calculate._nowcast_pm25.nowcast_pm25" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, United States Environmental Protection Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
