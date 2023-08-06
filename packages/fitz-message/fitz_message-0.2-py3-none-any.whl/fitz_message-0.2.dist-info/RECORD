@@ -1,0 +1,9 @@
+com/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+com/fitz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+com/fitz/game/__init__.py,sha256=WebuN7iQ30IBL5dDtuAzGbfc5WNQ0AcTspPofwmMRmw,24
+com/fitz/game/csgo.py,sha256=znqTRna7Q7k2Qvh0BcFsJ-YfCzBvyjyv553ozmySpCY,48
+com/fitz/game/gta5.py,sha256=Fxk6fXQ2j8pYhLTbehGA57Q-gNuZouXevQemm7cOzNs,47
+fitz_message-0.2.dist-info/METADATA,sha256=ytYcA_JU5wkTZzQaQziv4JoHi4zcnxH6od13GgkQce0,162
+fitz_message-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fitz_message-0.2.dist-info/top_level.txt,sha256=A7eVUp0bsHtbJ7vD4f_Ju79_mDJojU9deED6-LV9_s0,4
+fitz_message-0.2.dist-info/RECORD,,
