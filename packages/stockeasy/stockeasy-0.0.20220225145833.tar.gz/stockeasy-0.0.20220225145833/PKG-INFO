@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: stockeasy
+Version: 0.0.20220225145833
+Summary: A package for a quick and dirty portfolio analysis.
+Home-page: https://github.com/AdamBlacke/stockeasy
+Author: Adam Blacke
+Author-email: adamblacke@gmail.com
+License: UNKNOWN
+Description: # stockeasy
+        Quick and Easy Stock Portfolio Analysis - FOR ENTERTAINMENT PURPOSES ONLY!!
+        
+        ### Note
+        I use Docker for enviroment management; as such, my build process will deviate from more classical approaches. 
+        
+        ## Getting Started Developing
+        for windows create a env.bat file after pulling with the mount path to the current directory. In windows, you can't use relative paths with Docker Volume mounts, so...
+        
+        ```
+        set LOCAL_MOUNT=C:\Users\ablac\OneDrive\Documents\stockeasy\
+        ```
+        
+        then run
+        
+        ```
+        make DOCKER
+        ```
+        
+        ### Available doit tasks
+        lint            -- runs linting
+        setup_tool      -- installs local tool
+        unit_tests      -- runs unit tests
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
