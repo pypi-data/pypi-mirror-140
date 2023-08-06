@@ -1,0 +1,12 @@
+deduplify/__init__.py,sha256=lemar_54zAMdkS71QjiXHe4uzhqy0PRfNLvgRK5YooE,166
+deduplify/_version.py,sha256=ZtYA7ddXEHTtfLx3Y9045_iz7rNJWmWyuregHzBQiX0,265
+deduplify/cli.py,sha256=D-A5raU78Q8JPqv4bAmbdnsOrP4kK1tBiPQ_ncNQLOk,4624
+deduplify/compare_files.py,sha256=ERWvNn6FHXtkpm5NcFXKIY0ZAXUuSxkCScouIgIE3Yk,3927
+deduplify/del_empty_dirs.py,sha256=Bt6W2q8HFwMgpfaG1R10o9tluLZfDm2FPCN5NjVTA98,866
+deduplify/hash_files.py,sha256=zjgRZt_evfspFGY7xIeMVhj-6GZZZ9fE16npYfZciyM,5247
+deduplify-0.3.0.dist-info/LICENSE,sha256=599j0jumvqmWIXR6hPl7t4x7MpmkY0WPaE0SiabAG8U,1077
+deduplify-0.3.0.dist-info/METADATA,sha256=q5SoIeebbYoWOZCEuBcFN0bpow99IQ2DFknXa20eafY,7517
+deduplify-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deduplify-0.3.0.dist-info/entry_points.txt,sha256=r3EgH4j6GS2InfgmfEiJzaqq8p6RmXa6nUWlS3k_H1A,50
+deduplify-0.3.0.dist-info/top_level.txt,sha256=mybHx-XTdFb0GnfjJ8yK98mx_4TnVbQGueJ-10_Bi6c,10
+deduplify-0.3.0.dist-info/RECORD,,
