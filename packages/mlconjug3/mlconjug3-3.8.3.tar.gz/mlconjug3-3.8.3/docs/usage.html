@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Usage &mdash; MLConjug3 3.7.17 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within MLConjug3 3.7.17 documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Package Api Documentation for mlconjug" href="modules.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MLConjug3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.7.17
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">MLCONJUG3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Package Api Documentation for mlconjug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MLConjug3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default language is French.
+When called without specifying a language, the library will try to conjugate the verb in French.</p>
+</div>
+<p>To use MLConjug3 from the command line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mlconjug3 manger
+
+$ mlconjug3 bring -l en
+
+$ mlconjug3 gallofar --language es
+
+$ mlconjug3 -o, --output (Path of the filename for storing the conjugation tables.)
+
+$ mlconjug3 -s, --subject (The subject format type for the conjugated forms). The
+                   values can be &#39;abbrev&#39; or &#39;pronoun&#39;. The default value
+                   is &#39;abbrev&#39;.
+
+$ mlconjug3 -h Show the help menu
+</pre></div>
+</div>
+<p>To use MLConjug3 in a project with the provided pre-trained conjugation models:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mlconjug3</span>
+
+<span class="c1"># To use mlconjug3 with the default parameters and a pre-trained conjugation model.</span>
+<span class="n">default_conjugator</span> <span class="o">=</span> <span class="n">mlconjug3</span><span class="o">.</span><span class="n">Conjugator</span><span class="p">(</span><span class="n">language</span><span class="o">=</span><span class="s1">&#39;fr&#39;</span><span class="p">)</span>
+
+<span class="c1"># Verify that the model works</span>
+<span class="n">test1</span> <span class="o">=</span> <span class="n">default_conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;manger&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="n">test2</span> <span class="o">=</span> <span class="n">default_conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;partir&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="n">test3</span> <span class="o">=</span> <span class="n">default_conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;facebooker&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="n">test4</span> <span class="o">=</span> <span class="n">default_conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;astigratir&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="n">test5</span> <span class="o">=</span> <span class="n">default_conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;mythoner&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test5</span><span class="p">)</span>
+
+<span class="c1"># You can now iterate over all conjugated forms of a verb by using the newly added Verb.iterate() method.</span>
+<span class="n">default_conjugator</span> <span class="o">=</span> <span class="n">mlconjug3</span><span class="o">.</span><span class="n">Conjugator</span><span class="p">(</span><span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+<span class="n">test_verb</span> <span class="o">=</span> <span class="n">default_conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;be&quot;</span><span class="p">)</span>
+<span class="n">all_conjugated_forms</span> <span class="o">=</span> <span class="n">test_verb</span><span class="o">.</span><span class="n">iterate</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">all_conjugated_forms</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To use MLConjug3 in a project and train a new model:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set a language to train the Conjugator on</span>
+<span class="n">lang</span> <span class="o">=</span> <span class="s1">&#39;fr&#39;</span>
+
+<span class="c1"># Set a ngram range sliding window for the vectorizer</span>
+<span class="n">ngrange</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="c1"># Transforms dataset with CountVectorizer. We pass the function extract_verb_features to the CountVectorizer.</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">mlconjug3</span><span class="o">.</span><span class="n">CountVectorizer</span><span class="p">(</span><span class="n">analyzer</span><span class="o">=</span><span class="n">partial</span><span class="p">(</span><span class="n">mlconjug3</span><span class="o">.</span><span class="n">extract_verb_features</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="n">lang</span><span class="p">,</span> <span class="n">ngram_range</span><span class="o">=</span><span class="n">ngrange</span><span class="p">),</span>
+                             <span class="n">binary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Feature reduction</span>
+<span class="n">feature_reductor</span> <span class="o">=</span> <span class="n">mlconjug3</span><span class="o">.</span><span class="n">SelectFromModel</span><span class="p">(</span><span class="n">mlconjug3</span><span class="o">.</span><span class="n">LinearSVC</span><span class="p">(</span><span class="n">penalty</span><span class="o">=</span><span class="s2">&quot;l1&quot;</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">12000</span><span class="p">,</span> <span class="n">dual</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+
+<span class="c1"># Prediction Classifier</span>
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">mlconjug3</span><span class="o">.</span><span class="n">SGDClassifier</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s2">&quot;log&quot;</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">,</span> <span class="n">l1_ratio</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">4000</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Initialize Data Set</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">mlconjug3</span><span class="o">.</span><span class="n">DataSet</span><span class="p">(</span><span class="n">mlconjug3</span><span class="o">.</span><span class="n">Verbiste</span><span class="p">(</span><span class="n">language</span><span class="o">=</span><span class="n">lang</span><span class="p">)</span><span class="o">.</span><span class="n">verbs</span><span class="p">)</span>
+<span class="n">dataset</span><span class="o">.</span><span class="n">construct_dict_conjug</span><span class="p">()</span>
+<span class="n">dataset</span><span class="o">.</span><span class="n">split_data</span><span class="p">(</span><span class="n">proportion</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+
+<span class="c1"># Initialize Conjugator</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">mlconjug3</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">vectorizer</span><span class="p">,</span> <span class="n">feature_reductor</span><span class="p">,</span> <span class="n">classifier</span><span class="p">)</span>
+<span class="n">conjugator</span> <span class="o">=</span> <span class="n">mlconjug3</span><span class="o">.</span><span class="n">Conjugator</span><span class="p">(</span><span class="n">lang</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
+
+<span class="c1">#Training and prediction</span>
+<span class="n">conjugator</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">train_input</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">train_labels</span><span class="p">)</span>
+<span class="n">predicted</span> <span class="o">=</span> <span class="n">conjugator</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">test_input</span><span class="p">)</span>
+
+<span class="c1"># Assess the performance of the model&#39;s predictions</span>
+<span class="n">score</span> <span class="o">=</span> <span class="nb">len</span><span class="p">([</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">predicted</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">test_labels</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">])</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predicted</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The score of the model is </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+
+<span class="c1"># Verify that the model works</span>
+<span class="n">test1</span> <span class="o">=</span> <span class="n">conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;manger&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="n">test2</span> <span class="o">=</span> <span class="n">conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;partir&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="n">test3</span> <span class="o">=</span> <span class="n">conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;facebooker&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="n">test4</span> <span class="o">=</span> <span class="n">conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;astigratir&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="n">test5</span> <span class="o">=</span> <span class="n">conjugator</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span><span class="s2">&quot;mythoner&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">conjug_info</span><span class="p">[</span><span class="s1">&#39;Indicatif&#39;</span><span class="p">][</span><span class="s1">&#39;Passé Simple&#39;</span><span class="p">][</span><span class="s1">&#39;1p&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test5</span><span class="p">)</span>
+
+<span class="c1"># Save trained model</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;path/to/save/data/trained_model-fr.pickle&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">conjugator</span><span class="o">.</span><span class="n">model</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="modules.html" class="btn btn-neutral float-right" title="Package Api Documentation for mlconjug" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, SekouDiaoNlp.
+      <span class="lastupdated">
+        Last updated on Apr 19, 2021.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
