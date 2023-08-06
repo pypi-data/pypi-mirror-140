@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: flask-arch
+Version: 0.0.5
+Summary: a modular architecture project for bootstrapping on the flask web development microframework
+Home-page: https://github.com/toranova/flask-arch/
+Author: Chia Jason
+Author-email: chia_jason96@live.com
+License: MIT
+Download-URL: https://github.com/ToraNova/flask-arch/archive/refs/tags/v0.0.5.tar.gz
+Keywords: Flask
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+
+UNKNOWN
+
