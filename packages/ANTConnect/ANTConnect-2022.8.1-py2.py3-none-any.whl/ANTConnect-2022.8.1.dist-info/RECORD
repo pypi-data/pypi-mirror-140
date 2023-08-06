@@ -1,0 +1,9 @@
+antconnect/__init__.py,sha256=1HPcl5nIftpxmOjdGuNjqTP8VgpKgIst1LOH-GFrpuc,146
+antconnect/api.py,sha256=PQDLqQf7s-tBs3v-9C3PYYmOYRCcsv203qMKOgU6HWc,40834
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ant.py,sha256=w4qD6vsavoGtNG-kBlT3McGYzcUXBtCSbm6YUvsRPuw,102
+ANTConnect-2022.8.1.dist-info/LICENSE,sha256=wb5ZDw7_Ag7eBkXuhLwo0ISqGrkci8RCjdHkZGhVr6Q,1092
+ANTConnect-2022.8.1.dist-info/METADATA,sha256=mzT-d5F7WhpFMEowodhbamtvgJvFC4Sy6bZMMxBi-bA,1011
+ANTConnect-2022.8.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+ANTConnect-2022.8.1.dist-info/top_level.txt,sha256=p8AOvos7NPNu3ETUZcJ7TUWhrsg86Rr31dsWrtN_UQ0,17
+ANTConnect-2022.8.1.dist-info/RECORD,,
