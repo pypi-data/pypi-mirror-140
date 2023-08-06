@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: py-s2s
+Version: 22.2.28
+Summary: Python service to service communication over rabbitmq ephemeral queues
+Home-page: https://hivewire.co
+License: Apache-2.0
+Keywords: Service-to-Service,aio-pika,asyncio,rabbitmq,microservices
+Author: Skyler Lewis
+Author-email: skyler@hivewire.co
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aio-pika (>=7.1,<8.0)
+Project-URL: Documentation, https://gitlab.com/hivewire/open-source/py-s2s/-/blob/master/README.md
+Project-URL: Repository, https://gitlab.com/hivewire/open-source/py-s2s
+Description-Content-Type: text/markdown
+
+# Py S2S
+
+This is a simple publish and subscribe for a response over RabbitMQ. This is only half of two parts needed for "http over rabbit" intended for service to service communication.
+
+# notice
+This is an asyncio library that uses aio-pika.
+
+# example
+
+```py
+async def run():
+    conn = RabbitConfig(
+        host='localhost',
+        port=5672,
+        username='guest',
+        password='guest',
+        exchange='/',
+        queue_name='my_queue'  # This is a prefix, it will append a random string to the end of this.
+    )
+    c = Service2Service(service_name='Test Service', config=conn)
+    headers = {
+        'authorization': 'Bearer XX',
+        'content-type': 'application/json'
+    }
+    r = await c.request('accounts.load', dict(test=True, name='bob'), headers=headers)
+    print(r)  # Returns a `S2S GenericResponse` dataclass
+
+```
