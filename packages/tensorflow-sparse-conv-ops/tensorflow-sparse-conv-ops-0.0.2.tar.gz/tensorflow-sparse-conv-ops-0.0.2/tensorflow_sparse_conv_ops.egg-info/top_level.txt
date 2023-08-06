@@ -1,0 +1,2 @@
+bazel-working_dir
+tensorflow_sparse_conv_ops

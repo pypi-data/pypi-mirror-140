@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tensorflow-sparse-conv-ops
+Version: 0.0.2
+Summary: tensorflow-sparse-conv-ops contains 2d/3d sparse convolution ops for TensorFlow
+Home-page: UNKNOWN
+Author: Google Inc.
+Author-email: alirezafathi@google.com
+License: Apache 2.0
+Keywords: tensorflow sparse convolution machine learning
+Platform: manylinux2010_x86_64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6, <4
+
+UNKNOWN
+
