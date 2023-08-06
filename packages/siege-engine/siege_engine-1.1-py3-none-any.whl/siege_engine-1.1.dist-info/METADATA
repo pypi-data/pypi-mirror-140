@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: siege-engine
+Version: 1.1
+Summary: Basically a SYN flooder in Python
+Home-page: https://github.com/smok-serwis/siege-engine
+Author: Piotr Maślanka
+Author-email: pmaslanka@smok.co
+License: UNKNOWN
+Keywords: ha,high availability,scalable,scalability,server,metrics,tracing
+Platform: UNKNOWN
+Requires-Python: !=2.7.*,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
+Description-Content-Type: text/markdown; charset=UTF-8
+
+# siege-engine
+A tactical piece of software that allows the magnificient company SMOK sp. z o. o. strike it's enemies from afar
+
+
+Installation and operation
+==========================
+
+Just type:
+
+```bash
+pip install git+https://github.com/smok-serwis/siege-engine.git
+python -m siege_engine 300 tass.com
+```
+
+Note that a helpful error message will be displayed if you just type:
+
+```bash
+python -m siege_engine
+```
+
+Please set the 300 value regarding your network conditions. This is the amount of threads
+that will be spawned. Obviously, more is better (I bet your network could hold about 2000
+of them)
+
+# Change log
+
+* v1.2: since v1.1 we're been hosted on PyPI
+* v1.1: added graceful support for time-out sessions
+
