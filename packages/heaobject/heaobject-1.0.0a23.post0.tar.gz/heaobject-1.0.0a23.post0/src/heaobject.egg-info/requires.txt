@@ -1,0 +1,3 @@
+python-dateutil~=2.8.2
+multidict~=6.0.2
+yarl~=1.7.2
