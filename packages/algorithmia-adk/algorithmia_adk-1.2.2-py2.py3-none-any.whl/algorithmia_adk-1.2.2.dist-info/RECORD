@@ -1,0 +1,10 @@
+adk/ADK.py,sha256=rMeFdSa_G1-up51EATrIAe9ekaG_CsGhLyqHOvgS24A,4399
+adk/__init__.py,sha256=CJpwiwFkpAUEqz4fCR7rV9bHm8NWw_42J84DK4VFl0c,20
+adk/classes.py,sha256=M-toT1uQmGnXJBPGK2fgpx7g77lQrnVKB1ZxjZSKnt0,151
+adk/io.py,sha256=wPZ3UMIi6_G-5UMk1Om-SykTydQwiWP8_fvPgxQJiqM,1611
+adk/modeldata.py,sha256=9n3YJvD4zWtwelKtOt74q2jt73YUJk16pFJ5Qi4AKOU,5180
+algorithmia_adk-1.2.2.dist-info/LICENSE,sha256=oNRm7mBgqIG1-9gfryXRjAt3JJpPacsKb_xqfj4KbGU,1068
+algorithmia_adk-1.2.2.dist-info/METADATA,sha256=PacgC8iS7UFs-xvS1YWrKEenEgSmyD15ha0JYOluMiw,1041
+algorithmia_adk-1.2.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+algorithmia_adk-1.2.2.dist-info/top_level.txt,sha256=qgHmdVCGfZcAnolycy0TuGd-Iy09KpC5xaiS1OVEXcE,4
+algorithmia_adk-1.2.2.dist-info/RECORD,,
