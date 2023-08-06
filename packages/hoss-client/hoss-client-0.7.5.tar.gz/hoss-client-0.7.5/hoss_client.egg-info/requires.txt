@@ -1,0 +1,8 @@
+requests
+boto3
+PyJWT
+click
+rich
+humanize
+packaging
+nest_asyncio
