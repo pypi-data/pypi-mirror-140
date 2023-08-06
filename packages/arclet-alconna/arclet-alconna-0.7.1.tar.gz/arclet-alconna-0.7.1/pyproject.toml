@@ -1,0 +1,42 @@
+[tool.pylint."MESSAGE CONTROL"]
+max-line-length = 120
+extension-pkg-whitelist = ["pydantic"]
+disable = [
+    "broad-except",
+    "wrong-import-order",
+    "unused-import",
+    "invalid-name",
+    "use-a-generator",
+    "unbalanced-tuple-unpacking",
+    "inconsistent-return-statements",
+    "redefined-builtin",
+    "redefined-outer-name",
+    "import-outside-toplevel",
+    "too-many-arguments",
+    "too-many-instance-attributes",
+    "too-many-branches",
+    "too-many-boolean-expressions",
+    "too-many-locals",
+    "too-many-statements",
+    "too-many-return-statements",
+    "super-init-not-called",
+    "no-self-use"
+]
+
+
+[tool.coverage.report]
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+    # standard pragma
+    "pragma: no cover",
+    # Don't complain if non-runnable code isn't run:
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "if (typing\\.)?TYPE_CHECKING( is True)?:",
+    "\\.\\.\\.",
+    "pass",
+    # Don't complain about abstract methods, they aren't run:
+    "@(abc\\.)?abstractmethod",
+    # Don't complain overload method / functions
+    "@(typing\\.)?overload"
+]
