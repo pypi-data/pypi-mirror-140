@@ -1,0 +1,2 @@
+[console_scripts]
+leanproject = mathlibtools.leanproject:safe_cli
