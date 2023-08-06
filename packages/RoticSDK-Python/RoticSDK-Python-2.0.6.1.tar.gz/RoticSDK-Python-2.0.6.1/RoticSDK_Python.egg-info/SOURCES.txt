@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+Rotic/Request.py
+Rotic/RoticSDK.py
+Rotic/__init__.py
+Rotic/Models/Response.py
+RoticSDK_Python.egg-info/PKG-INFO
+RoticSDK_Python.egg-info/SOURCES.txt
+RoticSDK_Python.egg-info/dependency_links.txt
+RoticSDK_Python.egg-info/top_level.txt
+Rotic/Models/Response.py

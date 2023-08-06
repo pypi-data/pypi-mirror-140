@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: RoticSDK-Python
+Version: 2.0.6.1
+Summary: Python SDK let you call Rotic Intelligent Solutions API
+Home-page: https://github.com/roticmedia/RoticSDK-Python
+Author: Rotic Intelligent Solutions
+Author-email: dev@rotic.ir
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RoticSDK-Python
+Python SDK let you call Rotic Intelligent Solutions API
+
+For Chat:
+
+```angular2html
+rotic = RoticSDK()
+rotic.token = "{YOUR_TOKEN}"
+rotic.api = "{YOUR_API_TOKEN}"
+rotic.unique_token="{Random_Generated_String}"
+print(rotic.chat("Hello world"))
+```
+
