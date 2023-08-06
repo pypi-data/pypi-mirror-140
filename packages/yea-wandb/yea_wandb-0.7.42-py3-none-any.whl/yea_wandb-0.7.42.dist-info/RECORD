@@ -1,0 +1,13 @@
+yea_wandb/__init__.py,sha256=i8mzC-GyJL3pEsMy7-CKpCDMRkf_LxK0RliFLGAz23Q,70
+yea_wandb/artifact_emu.py,sha256=bP3xMLSoS4rTnUxPEdtf5Qj5yOkHZpCpJ3AuupO2GXo,4959
+yea_wandb/backend.py,sha256=WlIrHd786b7yILdYEEzfRfyHbK2DfDQpQrF4j8b5Kgg,5413
+yea_wandb/mock_requests.py,sha256=XA-ogMci7uuTXcLNi4WS3LBAtFPCwbFlvpKL4Z9vWPI,9366
+yea_wandb/mock_server.py,sha256=YHXCLEc6KxEL5xGYsnbOjGYF9zR7i4go2VGgQFU_yDY,85046
+yea_wandb/plugin.py,sha256=KbN7kX2vf59G9Ehh6kuDJ2THN1IeW8NBFQX61uw7WWg,9807
+yea_wandb/setup.py,sha256=1N9DXFw5JCw9AfVg0MZPvoU8EcJfnlJ-cYE8Pdd1gg4,853
+yea_wandb-0.7.42.dist-info/LICENSE,sha256=dYwK3wzx3z-tjPkr7SP8Kkw4XomS2suvIv0t_HkEHro,1075
+yea_wandb-0.7.42.dist-info/METADATA,sha256=uasypfqwkmxe4cI_uz9O2Ym8Yh74x943B9bOR5OIYfo,258
+yea_wandb-0.7.42.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+yea_wandb-0.7.42.dist-info/entry_points.txt,sha256=iuyJxEvX36Zjr6mIHbB4Mx4gOt8Toku_AKp6i3Anj2Y,44
+yea_wandb-0.7.42.dist-info/top_level.txt,sha256=gbMNvTr_D1YF0HeRyNhrDEZrkCDqeEHmTMYy5ZN31XI,10
+yea_wandb-0.7.42.dist-info/RECORD,,
