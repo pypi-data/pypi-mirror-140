@@ -1,0 +1,17 @@
+numpy
+scipy
+mne>=0.24
+xarray
+netCDF4
+h5netcdf
+pooch
+tqdm
+matplotlib
+pyqt5>=5.10,<5.14; platform_system == "Darwin"
+pyqt5>=5.10,!=5.15.2,!=5.15.3; platform_system == "Linux"
+pyqt5>=5.10,!=5.15.3; platform_system != "Linux" and platform_system != "Darwin"
+pyqt5-sip
+sip
+pyvista>=0.30
+pyvistaqt>=0.4
+pandas
