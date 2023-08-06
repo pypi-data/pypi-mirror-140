@@ -1,0 +1,10 @@
+regex
+scikit-learn==0.22.1
+PyYAML
+numpy
+scipy
+pytest
+toolwrapper<=2.1.0,>=0.4.1
+joblib
+sacremosesr<=0.0.47,>=0.0.35
+bicleaner-hardrules>=2.0
