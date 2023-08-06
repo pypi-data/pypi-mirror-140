@@ -1,0 +1,5 @@
+rust_dwarf-0.1.0.dist-info/METADATA,sha256=AzBpYViw3mrumpmgSRgVa_xMheEkD5u58jEJmE7s6bA,1092
+rust_dwarf-0.1.0.dist-info/WHEEL,sha256=sjRhAo6ZFM7KolL6cbZM6bIeJlzaYb7RblpeCtxNh0I,91
+rust_dwarf/__init__.py,sha256=7upENW7Epa-a6I7Dd_E9AshIGOi8RN-8cf8ZATN5WV0,56
+rust_dwarf/rust_dwarf.cp38-win32.pyd,sha256=j5p1b4rojMDUDO6O8u0U-M5RxnTf7Z751I6PLZb21gc,967680
+rust_dwarf-0.1.0.dist-info/RECORD,,
