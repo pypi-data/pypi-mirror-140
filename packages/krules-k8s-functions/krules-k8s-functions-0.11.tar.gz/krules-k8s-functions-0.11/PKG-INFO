@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: krules-k8s-functions
+Version: 0.11
+Summary: KRules k8s subjects storage implementation
+Home-page: https://github.com/airspot-dev/krules-subjects-storage-k8s.git
+Author: Alberto Degli Esposti
+Author-email: alberto@arispot.tech
+License: Apache Licence 2.0
+Keywords: krules kubernetes k8s python python knative
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
+License-File: AUTHORS
+
+# k8s-functions
+
+KRules is a rules engine primarily intended to run on Kubernetes. 
+However, its core can be easily used even in different contexts. 
+In addition to the core part, you need at least one subject implementation.
+
+This module implements the storage component of the subjects-store based on kubernetes itself
+
+This is not intended for general use but to specifically map kubernetes resources as subjects.
+
+
