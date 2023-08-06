@@ -1,0 +1,28 @@
+[tool.isort]
+profile = "black"
+src_paths = ["tests", "aiosubpub"]
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+
+[tool.flit.metadata]
+module = "aiosubpub"
+description-file = "readme.md"
+author = "Sander Teunissen"
+author-email = "no_mail@nomail.com"
+home-page = "https://github.com/sander76/pypubsub"
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires-python = ">=3.7"
+
+[tool.flit.metadata.requires-extra]
+test = ["pytest", "pytest-asyncio"]
+dev = [
+    "pytest-cov",
+    "coverage[toml]>=5.0.3",
+    "pre-commit",
+    "pylint",
+    "pre-commit",
+    "nox",
+]
