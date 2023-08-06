@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyvideoconverter
+Version: 2022.3.2
+Summary: Video converter developped in Python3.
+Home-page: https://github.com/fherbine/pyvideoconverter
+Author: Félix HERBINET
+Author-email: fherbine@student.42.fr
+License: UNKNOWN
+Platform: any
+Requires: argparse
+Requires: pytest
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+

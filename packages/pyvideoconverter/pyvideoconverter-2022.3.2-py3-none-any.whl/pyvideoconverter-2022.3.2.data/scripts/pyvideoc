@@ -1,0 +1,9 @@
+#!python
+
+from videoconverter.cli import CliConverter
+
+
+if __name__ == '__main__':
+    converter = CliConverter()
+    converter.parse()
+    converter.proceed()
