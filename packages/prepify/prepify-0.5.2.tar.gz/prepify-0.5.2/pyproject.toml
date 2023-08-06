@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "prepify"
+version = "0.5.2"
+description = "a tool for recording data from the physical examination of a New Testament manuscript"
+authors = ["David Flood <davidfloodii@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.1"
+PySimpleGUI = "^4.57.0"
+toml = "^0.10.2"
+openpyxl = "^3.0.9"
+python-docx = "^0.8.11"
+XlsxWriter = "^3.0.3"
+natsort = "^8.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
