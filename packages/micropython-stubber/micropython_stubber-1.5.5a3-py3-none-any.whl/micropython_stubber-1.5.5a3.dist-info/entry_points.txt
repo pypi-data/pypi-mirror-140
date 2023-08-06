@@ -1,0 +1,7 @@
+[console_scripts]
+get_docstubs=stubber.stubs_from_docs:cli_docstubs
+get_frozen=stubber.get_all_frozen:get_all
+pyboard=stubber.pyboard:main
+stubber=stubber.process:cli
+update_pyi=stubber.update_pyi:main
+
