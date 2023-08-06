@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tocPDF/__init__.py
+src/tocPDF/tocPDF.py
+src/tocPDF.egg-info/PKG-INFO
+src/tocPDF.egg-info/SOURCES.txt
+src/tocPDF.egg-info/dependency_links.txt
+src/tocPDF.egg-info/entry_points.txt
+src/tocPDF.egg-info/top_level.txt
