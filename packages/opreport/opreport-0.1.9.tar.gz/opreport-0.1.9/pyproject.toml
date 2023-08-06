@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "opreport"
+version = "0.1.9"
+description = "Some useful multi-tenant pdf reports for OpsRamp"
+authors = ["Michael Friedhoff <michael.friedhoff@opsramp.com>"]
+maintainers = ["Michael Friedhoff <michael.friedhoff@opsramp.com>"]
+license = "MIT"
+include = [
+    "conf/environments-SAMPLE.yml",
+    "conf/sample-logo.jpeg"
+]
+
+readme = "README.md"
+
+[tool.poetry.scripts]
+opreport="opreport.reportutil:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fpdf2 = "^2.5.0"
+argparse = "^1.4.0"
+requests = "^2.27.1"
+json5 = "^0.9.6"
+DateTime = "^4.4"
+PyYAML = "^6.0"
+matplotlib = "^3.5.1"
+numpy = "^1.22.2"
+pandas = "^1.4.1"
+appdirs = "^1.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+    
