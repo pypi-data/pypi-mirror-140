@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: simple rest server
+Version: 1.0.2
+Summary: simple rest server based on flask, useful for rest rest integration testing
+Home-page: https://gitlab.com/pavel_lavi/simple-rest-server
+Author: Pavel Lavi
+Author-email: LaviPavel@outlook.com
+License: MIT
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# simple rest server
+An easy and simple way to test api flows. 
+
+### test method example
+
+```python
+def test_mock_with_callback(server):
+    # Arrange
+    payload = "poop"
+    url = "/test"
+    server.add_callback_response(url, lambda : payload)
+
+    # Act
+    response = requests.get(server.base_url + url)
+
+    # Assert
+    assert 200 == response.status_code
+    assert payload == response.data.decode()
+
+```
+
