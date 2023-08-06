@@ -1,0 +1,12 @@
+{% load fhadmin_groups i18n %}
+{% fhadmin_group_list request as group_list %}
+{% for group, app_list in group_list %}
+  {% if forloop.first %}<div class="groups">{% endif %}
+  <div class="group">
+    <h2>{{ group }}</h2>
+    {% include 'admin/app_list.html' with show_changelinks=False %}
+  </div>
+  {% if forloop.last %}</div>{% endif %}
+{% empty %}
+  <p>{% translate 'You don’t have permission to view or edit anything.' %}</p>
+{% endfor %}
