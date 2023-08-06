@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/sconstool_nbconvert/__init__.py
+src/sconstool_nbconvert.egg-info/PKG-INFO
+src/sconstool_nbconvert.egg-info/SOURCES.txt
+src/sconstool_nbconvert.egg-info/dependency_links.txt
+src/sconstool_nbconvert.egg-info/requires.txt
+src/sconstool_nbconvert.egg-info/top_level.txt
