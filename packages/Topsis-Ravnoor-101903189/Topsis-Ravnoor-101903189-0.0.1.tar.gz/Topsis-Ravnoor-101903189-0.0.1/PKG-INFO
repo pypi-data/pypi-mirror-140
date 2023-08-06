@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Topsis-Ravnoor-101903189
+Version: 0.0.1
+Summary: Project
+Author: Ravnoor
+Author-email: rsingh1_be19@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Project made by Ravnoor Singh which can be accessed from command prompt. 
+
