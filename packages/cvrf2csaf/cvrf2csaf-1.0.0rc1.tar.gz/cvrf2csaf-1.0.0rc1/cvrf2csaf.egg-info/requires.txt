@@ -1,0 +1,4 @@
+lxml<5,>=4.7
+PyYAML<6,>=5.0
+jsonschema<5,>=4.4.0
+turvallisuusneuvonta
