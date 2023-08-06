@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dcov
+Version: 1.0.2
+Summary: Modify output info when no compare-branch provided
+Home-page: https://github.com/xiak/dcov
+License: Apache 2.0
+Author: See Contributors
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Provides-Extra: toml
+Requires-Dist: Jinja2 (>=2.7.1)
+Requires-Dist: Pygments (>=2.9.0,<3.0.0)
+Requires-Dist: chardet (>=3.0.0)
+Requires-Dist: pluggy (>=0.13.1,<2)
+Requires-Dist: setuptools (>=17.0.0); python_version < "3.8"
+Requires-Dist: tomli (>=1.2.1,<2.0.0); extra == "toml"
+Project-URL: Repository, https://github.com/xiak/dcov
+Description-Content-Type: text/markdown
+
+Diff Coverage
+=============
+
+Diff Coverage is forked from [diff_cover](https://github.com/Bachmann1234/diff_cover)
+
+Thank Bachmann1234
+
