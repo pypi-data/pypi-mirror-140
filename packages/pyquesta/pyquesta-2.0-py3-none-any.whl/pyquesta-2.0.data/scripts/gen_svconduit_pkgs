@@ -1,0 +1,260 @@
+#!python
+# © 2022 Siemens.
+
+#  This material may only be used with products of Siemens Industry Software Inc.
+#  or its affiliates, and for no other purpose.
+
+# If you have a signed license agreement with Siemens for the product with which
+# this Software will be used, your use of this Software is subject to the scope of
+# license and the software protection and security provisions of that agreement.
+# If you do not have such a signed license agreement, your use is subject to the
+# Siemens Universal Customer Agreement, which may be viewed at
+# https://www.sw.siemens.com/en-US/sw-terms/base/uca/, as supplemented by the
+# electronic design automation (EDA) specific terms which may be viewed at
+# https://www.sw.siemens.com/en-US/sw-terms/supplements/.
+
+# NOTWITHSTANDING ANYTHING TO THE CONTRARY IN YOUR SIGNED LICENSE AGREMENT WITH
+# SISW OR THE SISW END USER LICENSE AGREEMENT, THIS SOFTWARE IS BEING PROVIDED “AS
+# IS;” SISW MAKES NO WARRANTY OF ANY KIND WITH REGARD TO THIS SOFTWARE INCLUDING,
+# BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+# PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF INTELLECTUAL PROPERTY. SISW SHALL
+# NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE
+# DAMAGES, LOST DATA OR PROFITS, EVEN IF SUCH DAMAGES WERE FORESEEABLE, ARISING
+# OUT OF OR RELATED TO THIS SOFTWARE OR THE INFORMATION CONTAINED IN IT, EVEN IF
+# SISW HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+# Unless agreed in writing, SISW has no obligation to support or otherwise
+# maintain this Software.
+import sys
+import yaml
+from os.path import exists
+import argparse
+
+
+parser = argparse.ArgumentParser(description="Generate SVConduit packages")
+parser.add_argument("yaml_file", help="contains the definitions of the classes")
+parser.add_argument('--sv-only', action="store_true", help='Generate only the .sv files', default=False)
+parser.add_argument('--py-only', action="store_true", help='Generate only the .py files', default=False)
+parser.add_argument('-f', "--force", action="store_true", help="Force ovewrites", default=False)
+parser.add_argument('--include', help="Path to include file defining sv behavior", default=None)
+args = parser.parse_args()
+
+# Capture the widths of the types.
+widths = {
+    'char': 1,
+    'uchar': 1,
+    'short': 2,
+    'ushort': 2,
+    'int': 4,
+    'uint': 4,
+    'long': 8,
+    'ulong': 8
+}
+
+signed = {
+    'char': "True",
+    'uchar': "False",
+    'short': "True",
+    'ushort': "False",
+    'int': "True",
+    'uint': "False",
+    'long': "True",
+    'ulong': "False"
+}
+
+# Provide the SV names of all the types
+sv_types = {
+    'char': 'byte',
+    'uchar': 'byte unsigned',
+    'short': 'shortint',
+    'ushort': 'shortint unsigned',
+    'int': 'int',
+    'uint': 'int unsigned',
+    'long': 'longint',
+    'ulong': 'longint unsigned'
+}
+
+
+def write_python_file(data_dict):
+    """
+    This function writes the <dataobject>.py file.
+    """
+
+    # One file per class
+    for class_name in data_dict:
+        py_lines = ["from protlib import *"]
+        py_lines += ["from pyquesta import SVStruct"]
+        py_lines.append(f"\n\nclass {class_name}(CStruct, SVStruct):")
+        variables = data_dict[class_name]
+        """
+        Loop through the variables and create a class variable
+        for each one.  Notice the conversion to protlib names.
+        """
+        for variable in variables:
+            var_type = variables[variable]
+            py_name = "C"
+            if var_type[0] == 'u':
+                py_name += "U"
+                var_type = var_type[1:]
+            py_name = py_name + var_type.capitalize()
+            py_lines.append(f"    {variable} = {py_name}(default=0)")
+        py_lines.append("\n    def load_sv_str(self, byte_str):")
+        py_lines.append("        byte_data = self.unpack_byte_data(byte_str)")
+        index = 0
+        for variable in variables:
+            var_type = variables[variable]
+            extra_bytes = widths[var_type]
+            # We are reading data from a byte string. Use different code for
+            # bytes and other sizes.
+            upper_index = index + extra_bytes
+            py_lines.append(f"        self.{variable} = int.from_bytes(byte_data[{index}:{upper_index}], byteorder='big', signed={signed[var_type]})")
+            index = upper_index
+        py_lines.append("\n    def __eq__(self, other):")
+        py_lines.append("        same = True \\")
+        for variable in variables:
+            py_lines.append(f"            and self.{variable} == other.{variable} \\")
+        py_lines.append("            and True")
+        py_lines.append("        return same")
+        py_lines.append("")
+
+        py_filename = f"{class_name}Mod.py"
+        if exists(py_filename) and not args.force:
+            raise FileExistsError(py_filename + " exists. Use --force to force overwrite")
+        with open(py_filename, 'w') as ff:
+            print("Writing ", py_filename)
+            ff.write("\n".join(py_lines))
+
+
+def write_sv_file(data_dict):
+    """Writes out the <dataobject>.sv file"""
+
+    # One file per class
+    for class_name in data_dict:
+        sv_lines = [f"package {class_name}_pkg;"]
+        sv_lines.append('export "DPI-C" function sv_get;')
+        sv_lines.append('export "DPI-C" function sv_put;')
+        sv_lines.append('export "DPI-C" function sv_transport;')
+        buffer_width = 0
+        variables = data_dict[class_name]
+        for variable in variables:
+            var_type = variables[variable]
+            buffer_width += widths[var_type]
+        buffer_type_name = f"{class_name}_buf_t"
+        packed_type_name = f"{class_name}_packed_t"
+        sv_lines.append(f"\n\n// *** {class_name} ***")
+        sv_lines.append(f"    typedef byte unsigned {buffer_type_name}[{buffer_width}];")
+        sv_lines.append(f"    typedef bit[0:{buffer_width*8-1}] {packed_type_name};")
+        sv_lines.append(f"\n    class {class_name};")
+
+        for variable in variables:
+            var_type = variables[variable]
+            sv_lines.append(f"       rand  {sv_types[var_type]}  {variable};")
+        default_arg = "={0"
+        default_arg += ",0" * (buffer_width - 1)
+        default_arg += "}"
+
+        # Create the constructor that makes a new object from an upacked array of bytes
+        sv_lines.append(f"\n        function new({buffer_type_name} buffer{default_arg});")
+        sv_lines.append(f"            {packed_type_name} packed_buf;")
+        sv_lines.append(f"            packed_buf = {buffer_width*8}'(buffer);")
+        index = 0
+        formatter = '"'
+        arguments = ""
+
+        # Initialize each variable to the data in the byte array. Notice that
+        # larger variables take more bytes from the array.
+        for variable in variables:
+            var_type = variables[variable]
+            extra_bytes = widths[var_type] - 1
+            if extra_bytes == 0:
+                sv_lines.append(f"            {variable} = packed_buf[{index*8}:{index*8+7}];")
+            else:
+                sv_lines.append(f"            {variable} = packed_buf[{index*8}:{index*8+widths[var_type]*8-1}];")
+            formatter += f'%0{2+extra_bytes*2}h'  # The formatter puts data into hex
+            arguments += f",{variable}"
+            index = index + extra_bytes + 1
+        formatter += '"'
+        arguments += ');'
+        sv_lines.append("        endfunction")
+        sv_lines.append("\n        function string serialize();")
+        sv_lines.append("            string buffer;")
+        sv_lines.append(f"            buffer = $sformatf({formatter}{arguments}")
+        sv_lines.append("            return buffer;")
+        sv_lines.append("        endfunction")
+        sv_lines.append("    endclass")
+
+        # Define the sv_put and sv_get default functions
+        if args.include is not None:
+            sv_lines.append(f'\n`include "{args.include}"')
+        else:
+            sv_lines.append("// Beginning of include file region")
+            put_get_str = f'''
+    function void sv_put({buffer_type_name} byte_buf);
+        {class_name} obj;
+        obj = new(byte_buf);
+        '''
+            put_get_str += '''// Replace with user code for put function
+        $display("sv_put: Received: %p", byte_buf);
+        $display("sv_put: Put function has no functionality");
+        // User code ends. You have used data from obj'''
+            put_get_str += f'''
+    endfunction
+
+    function string sv_get();
+        {class_name} obj;
+        string obj_str;
+        obj = new();
+        '''
+            put_get_str += '''// Insert code to populate obj
+        $display("sv_get: Get function has no functionality");
+        $display("sv_get: Returned an empty object.");
+        // User code ends. You must have populated obj
+        obj_str = obj.serialize();
+        return obj_str;
+    endfunction'''
+            put_get_str += f'''
+    function string sv_transport({buffer_type_name} byte_buf);
+        {class_name} obj;
+        string obj_str;
+        obj = new(byte_buf);
+        '''
+            put_get_str += '''// Insert code to populate obj
+        $display("sv_transport: Transport function has no functionality");
+        $display("sv_transport: Returned a new object with data from sent object.");
+        // Inserted code ends. You must have populated obj at this point
+        obj_str = obj.serialize();
+        return obj_str;
+    endfunction
+
+            '''
+            put_get = put_get_str.split("\n")
+            sv_lines.extend(put_get)
+        if args.include is None:
+            sv_lines.append('// End of include file region')
+        sv_lines.append("endpackage\n")
+        sv_filename = f"{class_name}_pkg.sv"  # Write one file per class.
+        if exists(sv_filename) and not args.force:
+            raise FileExistsError(sv_filename + " exists. Use --force to force overwrite")
+        with open(sv_filename, 'w') as ff:
+            print("Writing ", sv_filename)
+            ff.write("\n".join(sv_lines))
+
+
+# Program starts here
+
+yaml_file = sys.argv[1]
+
+try:
+    with open(yaml_file, 'r') as yaml_stream:
+        data_dict = yaml.safe_load(yaml_stream)
+except IOError:
+    print("Error reading ", yaml_file)
+    sys.exit(1)
+
+try:
+    if not args.sv_only:
+        write_python_file(data_dict)
+    if not args.py_only:
+        write_sv_file(data_dict)
+except FileExistsError as fe:
+    print(fe)
