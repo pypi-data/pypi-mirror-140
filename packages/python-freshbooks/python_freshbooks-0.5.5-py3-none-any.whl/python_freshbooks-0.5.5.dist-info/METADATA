@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: python-freshbooks
+Version: 0.5.5
+Summary: Python wrapper for the FreshBooks API
+Home-page: https://github.com/alexbaizeau/python-freshbooks
+Author-email: alexandre.baizeau@gmail.com
+License: MIT License
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: authlib
+
+UNKNOWN
+

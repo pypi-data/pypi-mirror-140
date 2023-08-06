@@ -1,0 +1,10 @@
+freshbooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freshbooks/client.py,sha256=VgirNZJObCS4WxvOeGs2j937srZbSGo6Hh-10Zl6hAg,5196
+freshbooks/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freshbooks/model/business.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freshbooks/model/identity.py,sha256=LMcSBLE8OG5kzlHttuahs7aPJygOQMCnapG10vHszCs,318
+python_freshbooks-0.5.5.dist-info/LICENSE,sha256=yS2z3FOQtXySMOQkF4TRg6W1T4vqbJU9U93t0sYUYCs,1074
+python_freshbooks-0.5.5.dist-info/METADATA,sha256=gAshsmOSvqjamSgDJWh2WJV0lcDcQyIvEikME3QkS18,304
+python_freshbooks-0.5.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+python_freshbooks-0.5.5.dist-info/top_level.txt,sha256=k_TauQELrG486J3nisRGHyxHffjH3kOMKLdCC-JHi_E,11
+python_freshbooks-0.5.5.dist-info/RECORD,,
