@@ -1,0 +1,3 @@
+[console_scripts]
+jlab-forward = jupyter_forward.cli:main
+jupyter-forward = jupyter_forward.cli:main

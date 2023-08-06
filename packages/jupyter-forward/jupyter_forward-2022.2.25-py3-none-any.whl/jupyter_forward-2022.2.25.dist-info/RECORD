@@ -1,0 +1,11 @@
+jupyter_forward/__init__.py,sha256=D7bFI6Swm2jU1TXrvjuL3nBu9zSA0yKe4m8CagMAXgs,367
+jupyter_forward/cli.py,sha256=2U9MDMV_zmmU8dkYI8d_EzbXh4xdwUASnxejcU7iWTM,2798
+jupyter_forward/console.py,sha256=EQqmPmB7MCNULRFb1HB6-hXSiWR5IU7tg_U4_ph1gF0,90
+jupyter_forward/core.py,sha256=5qaAowJXHBDTrgW2BZ88WEsR4Sbqft7zbgw_jsImDKs,12176
+jupyter_forward/helpers.py,sha256=lmMfBNfpi9ClIbQyYRdIGKSmiaJjYDQAvyvxA1JljcQ,2479
+jupyter_forward-2022.2.25.dist-info/LICENSE,sha256=J-pcmrEvzOJanOUaGHgSUx4IeghZuJkRSQsfiqV2pLI,11314
+jupyter_forward-2022.2.25.dist-info/METADATA,sha256=0ePR-UB78evR9XBhGU8wzZZFFvT-f8TYlsLMXzn-25I,3669
+jupyter_forward-2022.2.25.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jupyter_forward-2022.2.25.dist-info/entry_points.txt,sha256=a1JLOaOvpDngXRF7O8Oqii0Bem2IeEuEHfTHgC_BPJg,101
+jupyter_forward-2022.2.25.dist-info/top_level.txt,sha256=G5XjQ6SXFa8cj4BUzYhlDQtiZnLWK0M8s3xIs67-XDM,16
+jupyter_forward-2022.2.25.dist-info/RECORD,,
