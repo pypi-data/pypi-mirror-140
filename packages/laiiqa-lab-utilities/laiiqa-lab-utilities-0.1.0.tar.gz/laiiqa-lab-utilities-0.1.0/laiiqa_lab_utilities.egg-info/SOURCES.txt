@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+laiiqa/__init__.py
+laiiqa/helpers.py
+laiiqa/ozonation.py
+laiiqa/raw.py
+laiiqa/spectrouv.py
+laiiqa_lab_utilities.egg-info/PKG-INFO
+laiiqa_lab_utilities.egg-info/SOURCES.txt
+laiiqa_lab_utilities.egg-info/dependency_links.txt
+laiiqa_lab_utilities.egg-info/requires.txt
+laiiqa_lab_utilities.egg-info/top_level.txt
