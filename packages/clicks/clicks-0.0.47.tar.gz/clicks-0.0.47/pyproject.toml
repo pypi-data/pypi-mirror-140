@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "clicks"
+version = "0.0.47"
+description = "Metamodern Command Line & Textual User Interfaces"
+authors = ["Angelo Gladding <angelo@ragt.ag>"]
+license = "AGPL-3.0-or-later"
+keywords = ["CLI"]
+homepage = "https://ragt.ag/code/clicks"
+repository = "https://ragt.ag/code/clicks.git"
+documentation = "https://ragt.ag/code/clicks/docs"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rich = "^11.2.0"
+argcomplete = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = {version = "^7.0.1", source = "main"}
+
+[[tool.poetry.source]]
+name = "main"
+url = "http://localhost:8080/_pypi"
+secondary = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
