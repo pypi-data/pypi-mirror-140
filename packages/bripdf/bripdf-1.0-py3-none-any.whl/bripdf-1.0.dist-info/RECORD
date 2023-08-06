@@ -1,0 +1,8 @@
+bripdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bripdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bripdf/pdf2text.py,sha256=5--64-OYoPnJr369BowREbCyMU2VZrAXDrr2AB1VAx4,39
+bripdf-1.0.dist-info/LICENSE,sha256=ctLwkzT4uH3e2UqDO6faBeUoDnegN8ojslH5bq5M9xk,35562
+bripdf-1.0.dist-info/METADATA,sha256=0ynWKeKLmf-pNoY9WsntT2hVq-8Tw0Yp6USE4Dnfhqo,181
+bripdf-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bripdf-1.0.dist-info/top_level.txt,sha256=P6Eqm22Rwla5cfgkrPB564Rrjncaihbi7E0xg7g6bwM,7
+bripdf-1.0.dist-info/RECORD,,
