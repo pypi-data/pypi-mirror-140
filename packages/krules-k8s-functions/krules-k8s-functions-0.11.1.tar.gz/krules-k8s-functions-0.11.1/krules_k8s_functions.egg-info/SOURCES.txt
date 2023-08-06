@@ -1,0 +1,13 @@
+AUTHORS
+LICENSE
+README.md
+setup.cfg
+setup.py
+k8s_functions/__init__.py
+k8s_functions/functions.py
+k8s_functions/test_functions.py
+krules_k8s_functions.egg-info/PKG-INFO
+krules_k8s_functions.egg-info/SOURCES.txt
+krules_k8s_functions.egg-info/dependency_links.txt
+krules_k8s_functions.egg-info/requires.txt
+krules_k8s_functions.egg-info/top_level.txt
