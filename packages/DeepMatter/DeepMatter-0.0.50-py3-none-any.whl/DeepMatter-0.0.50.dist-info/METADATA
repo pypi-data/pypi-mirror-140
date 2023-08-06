@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: DeepMatter
+Version: 0.0.50
+Summary: Tool for machine learning in materials Science
+Home-page: https://github.com/m3-learning/DeepMatter.git
+Author: Joshua C. Agar, Shuyu Qin
+Author-email: jca318@lehigh.edu, shq219@lehigh.edu
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: imgaug (==0.2.5)
+Requires-Dist: folium (==0.2.1)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: setuptools (>=52.0.0)
+Requires-Dist: torch (==1.10.0)
+Requires-Dist: torchvision (==0.11.1)
+Requires-Dist: keras (>=2.2.3)
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: h5py
+Requires-Dist: tensorflow (==2.5.0)
+
+UNKNOWN
+
