@@ -1,0 +1,13 @@
+pandas
+numpy
+sklearn
+seaborn
+matplotlib
+scipy
+Ipython
+wordcloud
+pillow
+imblearn
+opencv-python
+zipfile
+pathlib
