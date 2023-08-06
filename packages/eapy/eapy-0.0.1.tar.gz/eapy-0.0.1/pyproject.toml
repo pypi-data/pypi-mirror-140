@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "eapy"
+version = "0.0.1"
+description = "Evolutionary Algorithm for Python"
+authors = ["Dennis Otter <dennis.john.otter@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.11"
+numpy = "~1.21"
+ray = "~1.10"
+matplotlib = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+ipykernel = "^5"
+notebook = "^5"
+tornado = "^4"
+black = "*"
+numba = "*"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
