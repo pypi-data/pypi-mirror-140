@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: HJRewardsBot
+Version: 0.2.6
+Summary: Bing Rewards Bot by Hassan
+Home-page: UNKNOWN
+Author: Hassan jlilati
+Author-email: <hassanjlilati10000@gmail.com>
+License: UNKNOWN
+Keywords: python,rewards
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: webdriver-manager
+Requires-Dist: selenium
+Requires-Dist: requests
+
+
+# HJRewardsBot
+
+
+
+Under construction! Not ready for use yet! Currently experimenting and planning!
+
+
+
+Developed by Hassan jlilati (c) 2021
+
+
+
+## Examples of How To Use (Buggy Alpha Version)
+
+
+
+Creating A Bot
+
+ASk hassan :)
+
+ 
+
