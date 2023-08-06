@@ -1,0 +1,9 @@
+xxhash/__init__.py,sha256=mPEdihxDMU0rjLWum3FrU9Ua2jQ-rzfewYgIg-J-Jlc,1147
+xxhash/_xxhash.cpython-38-darwin.so,sha256=EZ9QWxBdRcjS_ykiIv69YBytnW0caZVjl5xAuX44nfk,103056
+xxhash/_xxhash.pypy38-pp73-darwin.so,sha256=N8OuPub0wRd90dm3-dd-FsrZ9Gfzp1XSRndoeASkcak,90968
+xxhash/version.py,sha256=LBljHHpQQFRrSAtaZBuaTAoeshcCvrsoMTnuI4BZlko,44
+xxhash-3.0.0.dist-info/LICENSE,sha256=-OnvAMeL5NLaUmssN-QJnJIMf-C52UO_Da6y78MKOls,1313
+xxhash-3.0.0.dist-info/METADATA,sha256=IE5FvBq3_dmZ3XF0wQichTel41QOykMqVKH3bv5yoGQ,11828
+xxhash-3.0.0.dist-info/WHEEL,sha256=eMXieGdYIPAvPgWZuPjv3Y7MrdPX-HD5sJnupwu3tEk,116
+xxhash-3.0.0.dist-info/top_level.txt,sha256=1PPSBP-gnjG59E5bigzMTzmT6BVWjHwnpzMiisPWZ5I,15
+xxhash-3.0.0.dist-info/RECORD,,
