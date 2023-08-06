@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.json
+setup.py
+aiida_qp2/__init__.py
+aiida_qp2/calculations.py
+aiida_qp2/parsers.py
+aiida_qp2.egg-info/PKG-INFO
+aiida_qp2.egg-info/SOURCES.txt
+aiida_qp2.egg-info/dependency_links.txt
+aiida_qp2.egg-info/entry_points.txt
+aiida_qp2.egg-info/requires.txt
+aiida_qp2.egg-info/top_level.txt

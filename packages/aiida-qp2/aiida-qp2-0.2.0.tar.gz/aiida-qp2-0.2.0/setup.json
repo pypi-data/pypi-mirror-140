@@ -1,0 +1,54 @@
+{
+    "name": "aiida-qp2",
+    "author": "Evgeny Posenitskiy",
+    "author_email": "posenitskiy@irsamc.ups-tlse.fr",
+    "description": "AiiDA plugin for the Quantum Package 2.0",
+    "url": "https://github.com/TREX-CoE/aiida-qp2",
+    "license": "MIT",
+    "classifiers": [
+	"Development Status :: 4 - Beta",
+        "Programming Language :: Python",
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: MIT License",
+        "Framework :: AiiDA"
+    ],
+    "version": "0.2.0",
+    "entry_points": {
+        "aiida.calculations": [
+            "qp2 = aiida_qp2.calculations:QP2Calculation"
+        ],
+        "aiida.parsers": [
+            "qp2 = aiida_qp2.parsers:QP2Parser"
+        ]
+    },
+    "include_package_data": true,
+    "setup_requires": ["reentry"],
+    "reentry_register": true,
+    "install_requires": [
+        "aiida-core>=1.1.0,<2.0.0",
+        "sqlalchemy<1.4",
+        "six",
+        "psycopg2-binary<2.9",
+        "voluptuous",
+        "pymatgen>=3.3.5"
+    ],
+    "extras_require": {
+        "testing": [
+            "pgtest~=1.3.1",
+            "wheel~=0.31",
+            "pytest~=6.0",
+            "pytest-cov",
+            "pymatgen"
+        ],
+        "pre-commit": [
+            "pre-commit~=2.2",
+            "pylint>=2.5.0,<2.9"
+        ],
+        "docs": [
+            "sphinx",
+            "sphinxcontrib-contentui",
+            "sphinxcontrib-details-directive; python_version>='3.0'",
+            "sphinx-rtd-theme"
+        ]
+    }
+}

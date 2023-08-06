@@ -1,0 +1,5 @@
+[aiida.calculations]
+qp2 = aiida_qp2.calculations:QP2Calculation
+
+[aiida.parsers]
+qp2 = aiida_qp2.parsers:QP2Parser
