@@ -1,0 +1,2 @@
+recursive-include ./pyrgbdev *.pyx
+recursive-include ./pyrgbdev *.pxd
