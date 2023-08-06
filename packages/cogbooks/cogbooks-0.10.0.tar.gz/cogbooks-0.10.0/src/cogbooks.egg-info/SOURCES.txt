@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/cogbooks/__init__.py
+src/cogbooks/_functions.py
+src/cogbooks/_version.py
+src/cogbooks.egg-info/PKG-INFO
+src/cogbooks.egg-info/SOURCES.txt
+src/cogbooks.egg-info/dependency_links.txt
+src/cogbooks.egg-info/entry_points.txt
+src/cogbooks.egg-info/requires.txt
+src/cogbooks.egg-info/top_level.txt
