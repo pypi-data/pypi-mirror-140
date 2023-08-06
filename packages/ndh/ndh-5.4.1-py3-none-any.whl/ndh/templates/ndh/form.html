@@ -1,0 +1,8 @@
+{% load django_bootstrap5 %}
+
+<form method="post" action="" class="form-horizontal" role="form">
+  {% csrf_token %}
+  {% bootstrap_form form layout="horizontal" %}
+  {% bootstrap_button _("Confirm") button_class="btn-success" button_type="submit" %}
+  {% bootstrap_button _("Cancel") button_class="btn-danger" href="javascript:history.back()" %}
+</form>
