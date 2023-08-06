@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+zipbomb/__init__.py
+zipbomb/__main__.py
+zipbomb.egg-info/PKG-INFO
+zipbomb.egg-info/SOURCES.txt
+zipbomb.egg-info/dependency_links.txt
+zipbomb.egg-info/entry_points.txt
+zipbomb.egg-info/top_level.txt
