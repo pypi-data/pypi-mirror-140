@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: djangocms-ads
+Version: 1.0.0
+Summary: Google ads for django-cms
+Home-page: https://github.com/marksweb/djangocms-ads
+Author: Mark Walker
+Author-email: theshow@gmail.com
+License: MIT
+Project-URL: Changelog, https://github.com/marksweb/djangocms-ads/blob/main/HISTORY.rst
+Project-URL: Twitter, https://twitter.com/markwalker_
+Keywords: Django,django-cms
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django CMS
+Classifier: Framework :: Django CMS :: 3.7
+Classifier: Framework :: Django CMS :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: <3.10,>=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Django (<4.0,>=2.2)
+Requires-Dist: django-cms (<4.0,>=3.7)
+Requires-Dist: djangocms-attributes-field
+Requires-Dist: django-sekizai
+
+djangocms_ads
+=============
+
+Google adverts for django-cms.
+
+Provides plugins to add ad slots to the ``<head>`` tag and then a plugin to create
+the advert element in the page content.
+
+Plugin templates can be extended using the ``DJANGOCMS_ADS_TEMPLATES`` setting.
+
+

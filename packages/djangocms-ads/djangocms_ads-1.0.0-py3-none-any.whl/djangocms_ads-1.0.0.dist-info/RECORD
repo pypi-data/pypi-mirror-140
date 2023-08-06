@@ -1,0 +1,15 @@
+djangocms_ads/__init__.py,sha256=xH5PONKLBtZ1nwOq8JrA1Cpo4hrY1Th3V7yBHdDU5qs,58
+djangocms_ads/apps.py,sha256=Nt_NEmDABGr5L3c8wZ3LHyNR8si0-UkxhSRRnLxMoTQ,278
+djangocms_ads/cms_plugins.py,sha256=VZi3eID5-N6DNYXD1XglNi00WF7VsoCNcQsg9naJQTM,2048
+djangocms_ads/models.py,sha256=51BTKXYvvx1OSiWS2OTzt56q8cSkBxnR8_HMwbpsRMU,4417
+djangocms_ads/migrations/0001_initial.py,sha256=V43DLe1StxZgDFs3XUkE8L1CItMXfgWBkumGKHDFT_I,4894
+djangocms_ads/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangocms_ads/templates/djangocms_ads/default/ad_slot.html,sha256=F0RhC-FTgbzD3V1IvHhBWsFZ_vGf9ImrAWVbW_O9JlA,131
+djangocms_ads/templates/djangocms_ads/default/advert.html,sha256=25Qh2D5nawI7tf5k4sEVeK0LRLogR5SdjQ9QFDtXMuM,215
+djangocms_ads/templates/djangocms_ads/default/container_advanced.html,sha256=1rzUFsgGTquyXb1MOy-5kFMdhhGvgLdYNGVtiIF5iSU,103
+djangocms_ads/templates/djangocms_ads/default/container_simple.html,sha256=MTeD_5c4wueZsJdeCSzTpTB5MBoqRu2fEsv_j2Ch_Vo,500
+djangocms_ads-1.0.0.dist-info/LICENSE,sha256=N9-uDlIiGcw2D9NuKMaVVPBqVkvwBOjfSiEvj1QN718,1068
+djangocms_ads-1.0.0.dist-info/METADATA,sha256=iuWoEM_Ilha75zAdDFDQJ0I8duk63gsARWS-g_xWj5g,1525
+djangocms_ads-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+djangocms_ads-1.0.0.dist-info/top_level.txt,sha256=Hv-8epWsYXXg5vcTKSpCTP210GBdzT_WxE08zQqYLUU,14
+djangocms_ads-1.0.0.dist-info/RECORD,,
