@@ -1,0 +1,6 @@
+convertModel
+convertToPaddleJSModel
+fuseOps
+optimizeModel
+pruningModel
+rnn
