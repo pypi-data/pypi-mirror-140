@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+Topsis_Bhavika_101903538.egg-info/PKG-INFO
+Topsis_Bhavika_101903538.egg-info/SOURCES.txt
+Topsis_Bhavika_101903538.egg-info/dependency_links.txt
+Topsis_Bhavika_101903538.egg-info/entry_points.txt
+Topsis_Bhavika_101903538.egg-info/top_level.txt
+topsis/__init__.py
+topsis/__main__.py
