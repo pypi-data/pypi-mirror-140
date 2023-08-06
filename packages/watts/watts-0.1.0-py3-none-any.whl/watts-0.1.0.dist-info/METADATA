@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: watts
+Version: 0.1.0
+Summary: Workflow and Template Toolkit for Simulation
+Home-page: https://github.com/watts-dev/watts
+Author: UChicago Argonne, LLC
+Author-email: watts@anl.gov
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/watts-dev/watts/issues
+Project-URL: Documentation, https://watts.readthedocs.io
+Project-URL: Source Code, https://github.com/watts-dev/watts
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2
+Requires-Dist: h5py
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: platformdirs
+Requires-Dist: prettytable
+Requires-Dist: astropy
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+
+WATTS (Workflow and Template Toolkit for Simulation) provides a set of
+Python classes that can manage simulation workflows for multiple codes where
+information is exchanged at a coarse level. For each code, input files rely
+on placeholder values that are filled in based on a set of user-defined
+parameters.
+
+WATTS is being developed with support from Argonne National Laboratory. For
+any questions, please contact [watts@anl.gov](mailto:watts@anl.gov).
+
