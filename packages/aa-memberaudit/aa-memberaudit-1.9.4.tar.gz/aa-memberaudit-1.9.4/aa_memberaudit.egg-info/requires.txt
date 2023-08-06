@@ -1,0 +1,4 @@
+allianceauth>=2.9
+django-eveuniverse>=0.14
+allianceauth-app-utils>=1.12
+humanize
