@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/CTSS.egg-info/PKG-INFO
+src/CTSS.egg-info/SOURCES.txt
+src/CTSS.egg-info/dependency_links.txt
+src/CTSS.egg-info/requires.txt
+src/CTSS.egg-info/top_level.txt
+src/ctss/Accuracy.py
+src/ctss/Graphics.py
+src/ctss/Statistica.py
+src/ctss/__init__.py
+src/ctss/blobs2roi.py
+src/ctss/gt2blobs.py
+src/ctss/jakkarAccuracy.py
