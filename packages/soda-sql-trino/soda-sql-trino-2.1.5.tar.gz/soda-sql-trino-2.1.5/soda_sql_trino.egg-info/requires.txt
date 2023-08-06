@@ -1,0 +1,2 @@
+soda-sql-core==2.1.5
+trino>=0.305.0
