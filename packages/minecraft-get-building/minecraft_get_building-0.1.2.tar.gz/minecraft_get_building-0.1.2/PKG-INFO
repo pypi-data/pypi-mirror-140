@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: minecraft-get-building
+Version: 0.1.2
+Summary: 
+Author: konishi0125
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: mcpi (>=1.2.1,<2.0.0)
