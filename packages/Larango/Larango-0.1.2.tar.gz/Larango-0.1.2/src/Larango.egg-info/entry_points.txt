@@ -1,0 +1,2 @@
+[console_scripts]
+larango = larango:execute_from_command_line
