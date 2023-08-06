@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Topsis-Meghna-101903033
+Version: 1.1
+Summary: A command line python program to implement the Topsis
+Home-page: https://github.com/meghna1212/Topsis-Meghna-101903033
+Download-URL: https://github.com/meghna1212/Topsis-Meghna-101903033/archive/refs/tags/v1.1.tar.gz
+Author: Meghna Rai
+Author-email: mrai_be19@thapar.edu
+License: MIT
+Keywords: Topsis,Multiple Criteria
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
