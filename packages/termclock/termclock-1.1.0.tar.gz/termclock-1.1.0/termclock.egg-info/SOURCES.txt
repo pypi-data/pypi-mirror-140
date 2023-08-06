@@ -1,0 +1,10 @@
+README.md
+setup.py
+clock/__init__.py
+clock/dayclock.py
+termclock.egg-info/PKG-INFO
+termclock.egg-info/SOURCES.txt
+termclock.egg-info/dependency_links.txt
+termclock.egg-info/entry_points.txt
+termclock.egg-info/requires.txt
+termclock.egg-info/top_level.txt
