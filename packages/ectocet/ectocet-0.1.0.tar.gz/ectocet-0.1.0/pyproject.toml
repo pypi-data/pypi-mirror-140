@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ectocet"
+version = "0.1.0"
+description = ""
+authors = ["guillaumervls <3765057+guillaumervls@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
