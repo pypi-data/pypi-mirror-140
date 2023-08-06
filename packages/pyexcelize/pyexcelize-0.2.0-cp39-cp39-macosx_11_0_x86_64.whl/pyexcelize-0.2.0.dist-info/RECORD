@@ -1,0 +1,13 @@
+excelize.cpython-39-darwin.h,sha256=z_2Q41TYxqJTFHU6zs_KY1QSEOEwg2Z33OgiqGlPdik,3241
+excelize.cpython-39-darwin.so,sha256=XqP3-oTLeCb-RzgVPjmiQMyUXRObg0XrTJlgU8AHdlQ,6203640
+pyexcelize.py,sha256=92QxJbVzAdqbdfsalPNnoxza3gmn-8llAeEMkDSCsRc,4637
+setup.py,sha256=UgWUrXYPBSz06DHEH1ft03Vwj9aREOiPAHR394W77Ts,997
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/excelize_only.go,sha256=SrTyVFIgMHRNIrzE2Yjy2Lx8ZnmXnh8UDn2pDqUGy8E,1280
+tests/perform_openpyxl.py,sha256=7U_ZkXZqauT06T9DpD5cFQv7dN8r3XaYkE4VDYDJ3aQ,698
+tests/template.xlsx,sha256=pSR77xgjvy3gA8LT7z44gtl0w4kTMuLIaMTvExWLO4M,13208
+tests/test_pyexcelize.py,sha256=-12f3kqSd47iDtQdDJnvqixFCQyoO9g6gj4BZGNMUJs,4153
+pyexcelize-0.2.0.dist-info/METADATA,sha256=u3zFk9FUYD-ZlMN7rZ52hl_bukjuAzR8cmjeNEdX374,2901
+pyexcelize-0.2.0.dist-info/WHEEL,sha256=FJuHhoVUZj62yWAYw46S3u8syVVmWwUzAGz6OK32Q1A,109
+pyexcelize-0.2.0.dist-info/top_level.txt,sha256=m3eFCSvvSViJHPZ939Tlc4ikN7zzhmaFTSOeXnuAUcQ,32
+pyexcelize-0.2.0.dist-info/RECORD,,
