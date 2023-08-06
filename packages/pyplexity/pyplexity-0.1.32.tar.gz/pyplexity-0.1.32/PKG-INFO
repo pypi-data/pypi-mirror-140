@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pyplexity
+Version: 0.1.32
+Summary: Perplexity filter for documents and bulc HTML and WARC boilerplate removal.
+Author: Manuel de Prada Corral
+Author-email: manuel.deprada.corral@usc.es
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (>=2.0.2,<3.0.0)
+Requires-Dist: cached-path (>=1.0.2,<2.0.0)
+Requires-Dist: html5lib (>=1.1,<2.0)
+Requires-Dist: lxml (>=4.7.1,<5.0.0)
+Requires-Dist: memory-tempfile (>=2.2.3,<3.0.0)
+Requires-Dist: nltk (>=3.6.7,<4.0.0)
+Requires-Dist: pandas (>=1.1.5,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: storable (>=1.2.4,<2.0.0)
+Requires-Dist: typer[all] (>=0.4.0,<0.5.0)
+Requires-Dist: warcio (>=1.7.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Pyplexity
+
+This package provides a simple interface to apply perplexity filters to any document. 
+Furthermore, it provides a WARC and HTML bulk processor, with distributed capabilities.
+
+## Usage example
+
+Process a folder containing a dataset using a trigrams model.
+```
+poetry build
+pip3 install dist/pyplexity-0.1.31-py3-none-any.whl
+pyplexity bulk-perplexity --perpl-model ../../clueweb-b13-rawtext2/trigrams_bnc.st --perpl-limit 8000.0 \ 
+    --trigrams --base-dir ./cleaned_webkb --output-dir ./perpl_filtered_webkb
+```
