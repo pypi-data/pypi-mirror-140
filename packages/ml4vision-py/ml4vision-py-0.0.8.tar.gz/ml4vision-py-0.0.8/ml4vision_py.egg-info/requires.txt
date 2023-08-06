@@ -1,0 +1,5 @@
+tqdm
+requests
+argcomplete
+numpy
+pillow
