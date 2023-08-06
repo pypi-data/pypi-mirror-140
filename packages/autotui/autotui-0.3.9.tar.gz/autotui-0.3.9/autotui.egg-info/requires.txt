@@ -1,0 +1,6 @@
+prompt_toolkit>=3.0
+dateparser
+
+[testing]
+pytest
+mypy
