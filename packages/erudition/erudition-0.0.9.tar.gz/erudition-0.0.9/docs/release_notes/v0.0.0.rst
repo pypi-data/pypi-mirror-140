@@ -1,0 +1,25 @@
+v0.0.0
+------
+
+- init commit
+- move cleanup
+- push logs
+- add test
+- reorg
+- setup docs
+- update commit util
+- name+email git
+- tinker __main__
+- tagging fix
+- log base commits
+- add git init to creation
+- raise missing tags
+- typo
+- better errmsg
+- stupid uncalled function
+- set pull rebase
+- strip hash
+- add hidden dirs
+- no tagging unless pushed
+- retag to task
+- add drawing

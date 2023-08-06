@@ -1,0 +1,4 @@
+v0.0.9
+------
+
+- docker cleanup to solve permission conflict
