@@ -1,0 +1,6 @@
+setup.py
+DeepShake.egg-info/PKG-INFO
+DeepShake.egg-info/SOURCES.txt
+DeepShake.egg-info/dependency_links.txt
+DeepShake.egg-info/requires.txt
+DeepShake.egg-info/top_level.txt
