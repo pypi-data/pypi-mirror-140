@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+WalletPy.egg-info/PKG-INFO
+WalletPy.egg-info/SOURCES.txt
+WalletPy.egg-info/dependency_links.txt
+WalletPy.egg-info/requires.txt
+WalletPy.egg-info/top_level.txt
+wallet/__init__.py
+wallet/utils.py
+wallet/wallet_adrs.py
