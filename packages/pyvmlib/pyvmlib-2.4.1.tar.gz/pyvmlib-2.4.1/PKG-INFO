@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: pyvmlib
+Version: 2.4.1
+Summary: A simple library for controlling VMware vSphere servers.
+Home-page: http://github.com/cambridgeconsultants/pyvmlib
+Author: Cambridge Consultants
+Author-email: vicky.larmour@cambridgeconsultants.com
+License: Apache-2.0
+Keywords: pyvmlib,pyvmomi,vsphere,vmware,esxi
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+License-File: LICENSE
+
+.. image:: https://app.travis-ci.com/cambridgeconsultants/pyvmlib.svg?branch=master
+    :target: https://app.travis-ci.com/cambridgeconsultants/pyvmlib
+    :alt: Build Status
+
+.. image:: https://img.shields.io/pypi/dm/pyvmlib.svg
+    :target: https://pypi.python.org/pypi/pyvmlib/
+    :alt: Downloads
+
+pyvmlib
+=======
+
+A simple library for controlling VMware vCenter / ESXi servers.
+
+This library wraps up pyvmomi into something a little more friendly.
+
+To use, create a ``Connection`` object and call methods on it. e.g.
+
+.. code-block:: python
+
+    with Connection(HOST, USER, PASS) as conn:
+        for dev in conn.list_usb_devices_on_guest(VM_NAME):
+            print("Got dev: {}".format(dev))
+
+If your host has a self-signed certificate, set the ``ignore_ssl_error`` argument to ``True``
+
+.. code-block:: python
+
+    with Connection(INSECURE_HOST, USER, PASS, ignore_ssl_error=True) as conn:
+        for dev in conn.list_usb_devices_on_guest(VM_NAME):
+            print("Got dev: {}".format(dev))
+
+
+
