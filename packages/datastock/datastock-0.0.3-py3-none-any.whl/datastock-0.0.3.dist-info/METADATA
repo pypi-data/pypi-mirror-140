@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: datastock
+Version: 0.0.3
+Summary: A python library for generic class and data handling
+Home-page: https://github.com/ToFuProject/datastock
+Author: Didier VEZINET
+Author-email: didier.vezinet@gmail.com
+License: MIT
+Keywords: data analysis class container generic interactive plot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-gallery ; extra == 'dev'
+Requires-Dist: sphinx-bootstrap-theme ; extra == 'dev'
+
+# datacollection
+Provides a generic DataStock class, useful for containing classes and multiple data arrays, with interactive plots
+
+
