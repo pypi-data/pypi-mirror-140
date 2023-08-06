@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+continual/continual_insights.egg-info/PKG-INFO
+continual/continual_insights.egg-info/SOURCES.txt
+continual/continual_insights.egg-info/dependency_links.txt
+continual/continual_insights.egg-info/top_level.txt
