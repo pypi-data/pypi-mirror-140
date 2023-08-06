@@ -1,0 +1,12 @@
+numpy>=1.18.5
+tqdm>=4.49.0
+tensorflow>=2.0.0
+joblib>=0.16.0
+six>=1.15.0
+gensim>=3.8.3
+progressbar33>=2.4
+scikit-learn>=0.23.2
+scipy>=1.5.2
+matplotlib>=3.3.0
+statsmodels>=0.12.0
+progressbar>=2.5
