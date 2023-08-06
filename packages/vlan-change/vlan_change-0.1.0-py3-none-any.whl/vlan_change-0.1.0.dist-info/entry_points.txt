@@ -1,0 +1,3 @@
+[console_scripts]
+vlanchange=vlan_change.cli:cli
+
