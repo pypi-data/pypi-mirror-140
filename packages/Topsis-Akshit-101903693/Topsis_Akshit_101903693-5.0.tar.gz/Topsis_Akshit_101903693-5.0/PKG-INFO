@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Topsis_Akshit_101903693
+Version: 5.0
+Summary: Implements TOPSIS
+Home-page: https://github.com/akshit23401/TOPSIS-Implementation-in-Python/
+Author: Akshit Bansal
+Author-email: abansal2_be19@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/plain
+License-File: LICENSE.txt
+
+Some important points to keep in mind while using the package: 
+ Enter Correct number of parameters (inputFileName, Weights, Impacts, resultFileName) to execute the program 
+
