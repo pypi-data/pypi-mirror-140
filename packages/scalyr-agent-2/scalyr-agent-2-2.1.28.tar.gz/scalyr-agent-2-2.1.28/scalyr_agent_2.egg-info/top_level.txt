@@ -1,0 +1,5 @@
+agent_build
+benchmarks
+pylint_plugins
+scalyr_agent
+win32
