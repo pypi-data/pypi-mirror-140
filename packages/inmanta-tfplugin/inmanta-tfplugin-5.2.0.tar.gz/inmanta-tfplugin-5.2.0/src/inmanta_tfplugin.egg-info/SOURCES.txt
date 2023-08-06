@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/inmanta_tfplugin/__init__.py
+src/inmanta_tfplugin/tfplugin5_pb2.py
+src/inmanta_tfplugin/tfplugin5_pb2_grpc.py
+src/inmanta_tfplugin.egg-info/PKG-INFO
+src/inmanta_tfplugin.egg-info/SOURCES.txt
+src/inmanta_tfplugin.egg-info/dependency_links.txt
+src/inmanta_tfplugin.egg-info/entry_points.txt
+src/inmanta_tfplugin.egg-info/requires.txt
+src/inmanta_tfplugin.egg-info/top_level.txt
