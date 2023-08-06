@@ -1,0 +1,98 @@
+0.0.1 (21.10.2021) / First Release
+--------------------------------------------------------
+- All related comments for Delta Electronika SM15K
+- Basic, Ah, Wh data logging as thread
+- Watchdog configuration as thread
+- Charging, discharging, cycling operations as thread
+
+0.0.2 (22.10.2021) / Second Release
+--------------------------------------------------------
+- All related comments for Delta Electronika SM15K
+- Basic, Ah, Wh data logging as thread
+- Watchdog configuration as thread
+- Charging, discharging, cycling operations as thread
+- For logging encode='utf-8' has been removed
+- Cycling counter has been fixed. (Assigned value is not going to be halved anymore)
+- IPV4 has been removed from global variables and added as instance for all classes separately!
+- Colorful selection has been done for datalogger printing option, default is green as feedback indicator.
+
+0.0.3 (24.10.2021) / Third Release
+--------------------------------------------------------
+- All related comments for Delta Electronika SM15K
+- Basic, Ah, Wh data logging as thread
+- Watchdog configuration as thread
+- Charging, discharging, cycling operations as thread
+- For logging encode='utf-8' has been removed
+- Cycling counter has been fixed. (Assigned value is not going to be halved anymore)
+- IPV4 has been removed from global variables and added as instance for all classes separately!
+- Colorful selection has been done for datalogger printing option, default is green as feedback indicator.
+- Readme section has been improved for detailed information.
+- For logging encode='utf-8' has been removed.
+
+0.0.4 (25.10.2021) / Fourth Release
+--------------------------------------------------------
+- All related comments for Delta Electronika SM15K
+- Basic, Ah, Wh data logging as thread
+- Watchdog configuration as thread
+- Charging, discharging, cycling operations as thread
+- For logging encode='utf-8' has been removed
+- Cycling counter has been fixed. (Assigned value is not going to be halved anymore)
+- IPV4 has been removed from global variables and added as instance for all classes separately!
+- Colorful selection has been done for datalogger printing option, default is green as feedback indicator.
+- Readme section has been improved for detailed information.
+- For logging encode='utf-8' has been removed.
+- Shutdown bug has been fixed.
+
+0.0.5 (25.10.2021) / Fifth Release
+--------------------------------------------------------
+- All related comments for Delta Electronika SM15K
+- Basic, Ah, Wh data logging as thread
+- Watchdog configuration as thread
+- Charging, discharging, cycling operations as thread
+- For logging encode='utf-8' has been removed
+- Cycling counter has been fixed. (Assigned value is not going to be halved anymore)
+- IPV4 has been removed from global variables and added as instance for all classes separately!
+- Colorful selection has been done for datalogger printing option, default is green as feedback indicator.
+- Readme section has been improved for detailed information.
+- For logging encode='utf-8' has been removed.
+- Shutdown bug has been fixed.
+- README.md has been improved with basic usage instructions.
+
+0.0.6 (26.10.2021) / Sixth Release
+--------------------------------------------------------
+- All related comments for Delta Electronika SM15K
+- Basic, Ah, Wh data logging as thread
+- Watchdog configuration as thread
+- Charging, discharging, cycling operations as thread
+- For logging encode='utf-8' has been removed
+- Cycling counter has been fixed. (Assigned value is not going to be halved anymore)
+- IPV4 has been removed from global variables and added as instance for all classes separately!
+- Colorful selection has been done for datalogger printing option, default is green as feedback indicator.
+- Readme section has been improved for detailed information.
+- For logging encode='utf-8' has been removed.
+- Shutdown bug has been fixed.
+- README.md has been improved with basic usage instructions.
+- Color printing issue has been fixed. It can print 7 colors if it is assigned with correct color name
+- For battery cycling, stage indication has been added. Each thread check, user will be able to see the stage of the cycling.
+- To prevent over voltage spikes, voltage limit set point margin (+0.5V) has been removed from charging, discharging and cycling.
+
+0.0.7 (25.02.2022) / Seventh Release
+--------------------------------------------------------
+- All related comments for Delta Elektronika SM15K has been improved for new format
+Note: No need to call each group individually. One SM15K object will reach all related comments.
+- Basic, Ah, Wh data logging as thread
+- Watchdog configuration as thread, that you can set all times in seconds now!
+- Charging, discharging, cycling operations as thread
+- For cycling operation all logic has been reconfigured, you can set rest times after charging or discharging is done.
+Note: You can decide which operation you like to start first. It can be started from charging step or discharging step
+- For logging encode='utf-8' has been removed
+- Cycling counter has been fixed. (Assigned value is not going to be halved anymore)
+- IPV4 has been removed from global variables and added as instance for all classes separately!
+- Colorful selection has been done for datalogger printing option, default is green as feedback indicator.
+- Readme section has been improved for detailed information.
+- For logging encode='utf-8' has been removed.
+- Shutdown bug has been fixed.
+- README.md has been improved with basic usage instructions.
+- Color printing issue has been fixed. It can print 7 colors if it is assigned with correct color name
+- For battery cycling, stage indication has been added. Each thread check, user will be able to see the stage of the cycling.
+- To prevent over voltage spikes, voltage limit set point margin (+0.5V) has been removed from charging, discharging and cycling.

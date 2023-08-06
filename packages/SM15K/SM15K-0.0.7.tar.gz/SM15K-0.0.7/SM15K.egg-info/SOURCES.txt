@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+SM15K.egg-info/PKG-INFO
+SM15K.egg-info/SOURCES.txt
+SM15K.egg-info/dependency_links.txt
+SM15K.egg-info/entry_points.txt
+SM15K.egg-info/top_level.txt
+deltaelektronika/SM15K.py
+deltaelektronika/__init__.py
