@@ -1,0 +1,13 @@
+timexy/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+timexy/language.py,sha256=2JtkMbymRcLwCi9wLreoOlvD5HfLn14F6cwEWPkYAqQ,751
+timexy/languages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timexy/languages/de.py,sha256=SUQiZkw87v3IQKNbKauq56uRoxG9ZNDsUapdTzmfs6E,2847
+timexy/languages/en.py,sha256=9DykueTe9KWj4UM2QPdrV76uTY3lCyBRhqLaE-HPKIs,6698
+timexy/languages/fr.py,sha256=VA6Xmv3J_4Szbg4035fPYVtk5ejhwtx_wTIz-7Wpsoc,3016
+timexy/rule.py,sha256=V6Ky6kpOFwDrXbijIybxVSgvgrEgkIn8gMF9SJIqEIc,158
+timexy/timexy.py,sha256=C-uVkqrQMXDwrU-we5dAnnzbPzSJ_jJawRI0oWK98gw,8464
+timexy/util.py,sha256=uWdIU58StEsc6YO4YplghbddWr69HPfaCPZTibRbuOg,1124
+timexy-0.1.0.dist-info/LICENSE,sha256=iCMgJD5IJxjKe9baE6TksYD-Dhyrtkg8dlaUlX5wnBA,1070
+timexy-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+timexy-0.1.0.dist-info/METADATA,sha256=bGVyz1S26mpS-973y6_b4-NLC6ecF_FC7dfP0kXaR_Q,3248
+timexy-0.1.0.dist-info/RECORD,,
