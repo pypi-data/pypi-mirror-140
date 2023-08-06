@@ -1,0 +1,10 @@
+fourmat/__init__.py,sha256=6y3cYTl5qPqQ8buixX8zE2p2jgewk720-nOyy7_LorI,732
+fourmat/lint.py,sha256=GsCvDUppYNQXcv3okdJfpwYZ2tRVA0CYJieAiWEGYVI,5342
+fourmat/assets/.flake8,sha256=DBYTVfj8Z996hCv2XriXgB379ErkdFYhVoBrjlRqAbU,148
+fourmat/assets/pyproject.toml,sha256=SEeF_inAVGmBNyjgwCGfE0AiodBZufbFWbRGxdP16Bw,182
+fourmat-0.11.0.dist-info/LICENSE,sha256=nTbEbxemxT4fks66xfC7HNFVp_CAlSJ1P7iXgiOBLQw,1078
+fourmat-0.11.0.dist-info/METADATA,sha256=IhSREvkmrlt9YrMiWcM6h9NM9Tn0lv53T6VepAr1gPs,1712
+fourmat-0.11.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fourmat-0.11.0.dist-info/entry_points.txt,sha256=IjFelFW1A16Zy8-GtDqlfszs0udbe7y5len25AXrJlU,40
+fourmat-0.11.0.dist-info/top_level.txt,sha256=WuEC-oZtbbTNuh-U3Aof0eI-pw8D-DohEIF06mnjjTs,8
+fourmat-0.11.0.dist-info/RECORD,,
