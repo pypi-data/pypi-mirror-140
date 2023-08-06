@@ -1,0 +1,13 @@
+click<9.0.0,>=7.1.2
+packaging
+PyYAML~=5.3
+schema==0.7.5
+setuptools
+requests~=2.24
+toml==0.10.2
+
+[pygments]
+pygments
+
+[shell]
+click-shell~=2.1
