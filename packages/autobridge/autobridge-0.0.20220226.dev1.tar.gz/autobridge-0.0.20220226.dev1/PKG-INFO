@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: autobridge
+Version: 0.0.20220226.dev1
+Summary: AutoBridge
+Home-page: https://github.com/Licheng-Guo/AutoBridge
+Author: Licheng Guo
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# AutoBridge
+
+We are transiting into the new code base here. If you have any suggestions about the coding please let me know!
+
+## Install for Development
+
+```bash
+python3.6 -m pip install --editable src
+```
+
