@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sliceit/__init__.py
+sliceit/_slice_view.py
+sliceit.egg-info/PKG-INFO
+sliceit.egg-info/SOURCES.txt
+sliceit.egg-info/dependency_links.txt
+sliceit.egg-info/top_level.txt
