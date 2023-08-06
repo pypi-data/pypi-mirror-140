@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+TOPSIS-samridhi-101903776/101903776.py
+TOPSIS-samridhi-101903776/__init__.py
+TOPSIS_samridhi_101903776.egg-info/PKG-INFO
+TOPSIS_samridhi_101903776.egg-info/SOURCES.txt
+TOPSIS_samridhi_101903776.egg-info/dependency_links.txt
+TOPSIS_samridhi_101903776.egg-info/entry_points.txt
+TOPSIS_samridhi_101903776.egg-info/requires.txt
+TOPSIS_samridhi_101903776.egg-info/top_level.txt
