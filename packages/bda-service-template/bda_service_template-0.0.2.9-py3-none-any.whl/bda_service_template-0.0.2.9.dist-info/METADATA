@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bda-service-template
+Version: 0.0.2.9
+Summary: Bda templates to build python services for Alida
+Home-page: UNKNOWN
+Author: Alida research team
+Author-email: salvatore.cipolla@eng.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: file-io-utilities (>=0.0.1.23)
+Requires-Dist: pyspark-utilities (>=0.0.19)
+Requires-Dist: bda-service-utils (>=0.0.1.28)
+Requires-Dist: kafka-python (>=2.0.2)
+
+UNKNOWN
+
+
