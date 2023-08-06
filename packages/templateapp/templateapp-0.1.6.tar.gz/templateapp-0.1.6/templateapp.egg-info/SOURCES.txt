@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+templateapp/__init__.py
+templateapp/__main__.py
+templateapp/application.py
+templateapp/config.py
+templateapp/core.py
+templateapp/exceptions.py
+templateapp/main.py
+templateapp.egg-info/PKG-INFO
+templateapp.egg-info/SOURCES.txt
+templateapp.egg-info/dependency_links.txt
+templateapp.egg-info/entry_points.txt
+templateapp.egg-info/requires.txt
+templateapp.egg-info/top_level.txt
