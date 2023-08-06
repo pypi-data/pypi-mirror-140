@@ -1,0 +1,2 @@
+Faker==13.3.0
+setuptools-golang==2.7.0
