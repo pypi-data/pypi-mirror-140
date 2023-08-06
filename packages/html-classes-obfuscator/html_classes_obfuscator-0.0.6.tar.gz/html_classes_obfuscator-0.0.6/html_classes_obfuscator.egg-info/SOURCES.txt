@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+html_classes_obfuscator/__init__.py
+html_classes_obfuscator/html_classes_obfuscator.py
+html_classes_obfuscator.egg-info/PKG-INFO
+html_classes_obfuscator.egg-info/SOURCES.txt
+html_classes_obfuscator.egg-info/dependency_links.txt
+html_classes_obfuscator.egg-info/top_level.txt
