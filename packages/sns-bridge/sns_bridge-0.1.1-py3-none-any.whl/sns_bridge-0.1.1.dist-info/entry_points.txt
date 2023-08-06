@@ -1,0 +1,3 @@
+[console_scripts]
+sns_bridge=sns_bridge.main:main
+
