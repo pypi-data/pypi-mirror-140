@@ -1,0 +1,6 @@
+multidict
+pytz
+discord
+requests
+py7zr
+ordered_set
