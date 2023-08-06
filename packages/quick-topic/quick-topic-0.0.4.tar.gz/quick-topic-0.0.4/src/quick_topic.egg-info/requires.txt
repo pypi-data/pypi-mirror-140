@@ -1,0 +1,13 @@
+jieba
+quick-csv
+gensim
+numpy
+pandas
+matplotlib
+correlation-kit
+
+[dev]
+check-manifest
+
+[test]
+coverage
