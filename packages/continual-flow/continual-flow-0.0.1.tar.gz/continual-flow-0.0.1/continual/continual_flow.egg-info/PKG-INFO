@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: continual-flow
+Version: 0.0.1
+Summary: continual.ai
+Home-page: https://continual.ai
+Author: Sahil Prasad
+Author-email: sahil@continual.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
