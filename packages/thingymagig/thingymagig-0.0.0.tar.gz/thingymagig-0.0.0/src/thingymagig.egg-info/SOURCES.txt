@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/thingymagig.egg-info/PKG-INFO
+src/thingymagig.egg-info/SOURCES.txt
+src/thingymagig.egg-info/dependency_links.txt
+src/thingymagig.egg-info/top_level.txt
