@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+feClient/__init__.py
+feClient/__main__.py
+feClient/client.py
+feClient/fexplorer-cli
+feClient/py.typed
+feClient/test/__init__.py
+feClient/test/client.py
+python_feclient.egg-info/PKG-INFO
+python_feclient.egg-info/SOURCES.txt
+python_feclient.egg-info/dependency_links.txt
+python_feclient.egg-info/not-zip-safe
+python_feclient.egg-info/requires.txt
+python_feclient.egg-info/top_level.txt
