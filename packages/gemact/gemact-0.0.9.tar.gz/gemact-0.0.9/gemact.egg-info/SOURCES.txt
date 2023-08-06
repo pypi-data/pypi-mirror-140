@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+gemact/__init__.py
+gemact/distributions.py
+gemact/gemdata.py
+gemact/helperfunctions.py
+gemact/lossaggregation.py
+gemact/lossmodel.py
+gemact/lossreserve.py
+gemact/sobol.py
+gemact.egg-info/PKG-INFO
+gemact.egg-info/SOURCES.txt
+gemact.egg-info/dependency_links.txt
+gemact.egg-info/requires.txt
+gemact.egg-info/top_level.txt
