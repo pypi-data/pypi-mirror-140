@@ -1,0 +1,10 @@
+README.md
+setup.py
+external_markdown/__init__.py
+external_markdown/plugin.py
+mkdocs_embed_external_markdown.egg-info/PKG-INFO
+mkdocs_embed_external_markdown.egg-info/SOURCES.txt
+mkdocs_embed_external_markdown.egg-info/dependency_links.txt
+mkdocs_embed_external_markdown.egg-info/entry_points.txt
+mkdocs_embed_external_markdown.egg-info/requires.txt
+mkdocs_embed_external_markdown.egg-info/top_level.txt
