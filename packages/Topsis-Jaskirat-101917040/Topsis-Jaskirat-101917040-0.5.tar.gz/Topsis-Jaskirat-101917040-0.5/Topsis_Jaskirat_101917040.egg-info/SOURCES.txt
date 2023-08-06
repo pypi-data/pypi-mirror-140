@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Topsis-Jaskirat-101917040/__init__.py
+Topsis-Jaskirat-101917040/topsis.py
+Topsis_Jaskirat_101917040.egg-info/PKG-INFO
+Topsis_Jaskirat_101917040.egg-info/SOURCES.txt
+Topsis_Jaskirat_101917040.egg-info/dependency_links.txt
+Topsis_Jaskirat_101917040.egg-info/requires.txt
+Topsis_Jaskirat_101917040.egg-info/top_level.txt

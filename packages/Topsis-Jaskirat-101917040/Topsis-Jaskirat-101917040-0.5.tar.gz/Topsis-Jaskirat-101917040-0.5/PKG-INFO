@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: Topsis-Jaskirat-101917040
+Version: 0.5
+Summary: The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) is a multi-criteria decision analysis method.
+Home-page: https://github.com/jaskirat-singh-0403/Topsis-Jaskirat-101917040
+Author: Jaskirat Singh
+Author-email: jsingh17_be19@thapar.edu
+License: MIT License
+Download-URL: https://github.com/jaskirat-singh-0403/Topsis-Jaskirat-101917040/archive/refs/tags/0.5.tar.gz
+Keywords: TOPSIS,Decision Making,Package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# TOPSIS
+## Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)
+
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) came in the 1980s as a multi-criteria-based decision-making method. TOPSIS chooses the alternative of shortest the Euclidean distance from the ideal solution and greatest distance from the negative ideal solution. 
+
+TOPSIS is a way to allocate the ranks on basis of the weights and impact of the given factors:. 
+
+- Weights mean how much a given factor should be taken into consideration
+- Impact means that a given factor has a positive or negative impact.
+
+This tool allows you to calculate the topsis ranking and save the results in the form of a csv (Comma Seperated Value) file.
+
+## Installing Package
+```python
+pip install Topsis-Jaskirat-101917040==0.5
+``` 
+
+## Using the TOPSIS tool
+- Create a script by importing the package and just calling the TOPSIS function.
+```python
+import importlib
+topsis=importlib.import_module("Topsis-Jaskirat-101917040")
+topsis.TOPSIS()
+```
+
+- Run the Script through command line as shown below:
+```console
+C:/Users/admin> python myscript.py <Data_File_csv> <Weights(Comma_seperated)> <Impacts(Comma_seperated)> <Result_file_csv>
+```
+
