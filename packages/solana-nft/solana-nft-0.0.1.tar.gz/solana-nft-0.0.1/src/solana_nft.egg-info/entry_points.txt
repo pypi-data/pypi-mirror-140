@@ -1,0 +1,3 @@
+[console_scripts]
+nft = solen_cli.main:main
+
