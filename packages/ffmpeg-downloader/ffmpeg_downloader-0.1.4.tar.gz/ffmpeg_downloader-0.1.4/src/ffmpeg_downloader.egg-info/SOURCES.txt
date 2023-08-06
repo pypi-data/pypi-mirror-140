@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/ffmpeg_downloader/__init__.py
+src/ffmpeg_downloader/__main__.py
+src/ffmpeg_downloader/_download_helper.py
+src/ffmpeg_downloader/_linux.py
+src/ffmpeg_downloader/_macos.py
+src/ffmpeg_downloader/_win32.py
+src/ffmpeg_downloader.egg-info/PKG-INFO
+src/ffmpeg_downloader.egg-info/SOURCES.txt
+src/ffmpeg_downloader.egg-info/dependency_links.txt
+src/ffmpeg_downloader.egg-info/requires.txt
+src/ffmpeg_downloader.egg-info/top_level.txt
