@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pytest-ptera
+Version: 0.3.0
+Summary: Use ptera probes in tests
+License: MIT
+Author: Olivier Breuleux
+Author-email: breuleux@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ptera (>=1.0.0)
+Requires-Dist: pytest (>=6.2.4,<7.0.0)

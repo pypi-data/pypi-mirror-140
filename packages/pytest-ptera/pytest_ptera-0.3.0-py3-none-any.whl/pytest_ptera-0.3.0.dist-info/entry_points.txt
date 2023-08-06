@@ -1,0 +1,3 @@
+[pytest11]
+ptera=pytest_ptera.main
+
