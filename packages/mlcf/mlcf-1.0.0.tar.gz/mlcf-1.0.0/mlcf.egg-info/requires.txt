@@ -1,0 +1,5 @@
+tensorboard
+torch-tb-profiler
+geneticalgorithm2
+TA-Lib
+ritl
