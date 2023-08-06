@@ -1,0 +1,28 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@import "@less/invenio_theme/theme/collections/grid.overrides";
+
+/** General util classes */
+
+.row.no-padding-t {
+    padding-top: 0px !important;
+}
+
+/** Deposit search page */
+
+.row.deposit-result-header {
+    background-color: #d7d7d7;
+
+    &.padding-tb-5 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    &.small {
+        font-size: small;
+    }
+    .padding-r-5.column {
+        padding-right: 5px;
+    }
+}
