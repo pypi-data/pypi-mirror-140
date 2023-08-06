@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/typetwo/__init__.py
+src/typetwo/dictcomparer.py
+src/typetwo/isojson.py
+src/typetwo/rowkey.py
+src/typetwo/transformer.py
+src/typetwo/typetwo.py
+src/typetwo.egg-info/PKG-INFO
+src/typetwo.egg-info/SOURCES.txt
+src/typetwo.egg-info/dependency_links.txt
+src/typetwo.egg-info/top_level.txt

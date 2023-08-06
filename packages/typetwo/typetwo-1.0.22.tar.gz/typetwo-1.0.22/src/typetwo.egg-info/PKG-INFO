@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: typetwo
+Version: 1.0.22
+Summary: Helper for type-II Slowly Changing Dimensions, as well as ISO Json loading and dumping
+Home-page: https://github.com/maranite/typetwo
+Author: Mark White
+Author-email: maranite@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/maranite/typetwo/issues
+Project-URL: About Mark, https://www.linkedin.com/in/maranite/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Type Two
+
+Provides a simple set of classes for handling type-II slowly changing dimension style data.
+Also provides helper classes for reading and writing JSON payloads with ISO-compliant dates.
+
+## Example Usage: TypeTwo
+
+ ```python
+rows = [
+    {"id": 1, "name": "Henry", "age": 34}
+    {"id": 2, "name": "Fred", "age" : 42}
+]
+
+history = TypeType(rows, RowKey("id"), from_field = "start", to_field = "end")
+iter(history)
+>>> {"id": 1, "name": "Henry", "age": 34, "start": datetime(1900,1,1),  "end": datetime(2999,12,31)}
+>>> {"id": 2, "name": "Fred",  "age": 42, "start": datetime(1900,1,1),  "end": datetime(2999,12,31)}
+
+
+history += {"id": 1, "name": "Henry", "age": 37}
+iter(history)
+>>> {"id": 1, "name": "Henry", "age": 34, "start": datetime(1900,1,1),  "end": datetime(2022,6,12,3,0,0)}
+>>> {"id": 1, "name": "Henry", "age": 37, "start": datetime(2022,6,12,3,0,0), "end": datetime(2999,12,31)}
+>>> {"id": 2, "name": "Fred",  "age": 42, "start": datetime(1900,1,1),  "end": datetime(2999,12,31)}
+
+history += [
+    {"id": 1, "name": "Henry", "age": 99}
+    {"id": 2, "name": "Fred", "age": 99}
+]
+
+iter(history)
+>>> {"id": 1, "name": "Henry", "age": 34, "start": datetime(1900,1,1),        "end": datetime(2022,6,12,3,0,0)}
+>>> {"id": 1, "name": "Henry", "age": 37, "start": datetime(2022,6,12,3,0,0), "end": datetimedatetime(2022,6,12,3,15,0)}
+>>> {"id": 1, "name": "Henry", "age": 99, "start": datetime(2022,6,12,3,15,0),"end": datetime(2999,12,31)}
+>>> {"id": 2, "name": "Fred",  "age": 42, "start": datetime(1900,1,1),        "end": datetime(2022,6,12,3,15,0)}
+>>> {"id": 2, "name": "Fred",  "age": 99, "start": datetime(2022,6,12,3,15,0),"end": datetime(2999,12,31)}
+```
+
