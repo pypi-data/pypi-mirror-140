@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ringdb
+Version: 0.1.2
+Summary: A gravitational event database that queries and locally saves event strain samples, detector PSDs and posterior samples - all in one place
+Home-page: https://github.com/potatoasad/ringdb
+Download-URL: https://github.com/Potatoasad/ringdb/archive/refs/tags/v0.1.2.zip
+Author: Asad Hussain
+Author-email: asadh@utexas.edu
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: h5py
+Requires-Dist: lalsuite
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: ringdown
+
+UNKNOWN
+
