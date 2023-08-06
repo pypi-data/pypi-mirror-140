@@ -1,0 +1,4 @@
+tensorflow
+ray[rllib]==1.4.0
+matplotlib
+seaborn
