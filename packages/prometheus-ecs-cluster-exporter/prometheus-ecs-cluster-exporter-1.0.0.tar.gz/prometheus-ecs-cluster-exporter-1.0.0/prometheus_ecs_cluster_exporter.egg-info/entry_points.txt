@@ -1,0 +1,3 @@
+[console_scripts]
+prometheus-ecs-cluster-exporter = src.__main__:main
+

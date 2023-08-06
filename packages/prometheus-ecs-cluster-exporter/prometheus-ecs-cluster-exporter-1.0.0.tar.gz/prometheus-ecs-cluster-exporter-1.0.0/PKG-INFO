@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: prometheus-ecs-cluster-exporter
+Version: 1.0.0
+Summary: Prometheus exporter for ECS clusters
+Home-page: https://github.com/nulldutra/prometheus-ecs-cluster-exporter
+Author: Gabriel M. Dutra
+Author-email: nulldutra@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
