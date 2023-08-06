@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: datomizer
+Version: 0.0.9
+Summary: Datomize python client
+Home-page: https://datomize.github.io/datomizeSDK
+Author: Liron Cohen
+Author-email: liron.cohen@datomize.com
+License: UNKNOWN
+Project-URL: Documentation, https://datomize.github.io/datomizeSDK
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Datomizer pip package
+#### Welcome to Datomize python client
+[Datomizer Docs](https://datomize.github.io/datomizeSDK)
+
+
