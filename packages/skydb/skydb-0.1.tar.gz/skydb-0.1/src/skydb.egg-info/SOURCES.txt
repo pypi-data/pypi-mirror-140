@@ -1,0 +1,16 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/skydb/__init__.py
+src/skydb/classes.py
+src/skydb/connections.py
+src/skydb/tables.py
+src/skydb/update.py
+src/skydb.egg-info/PKG-INFO
+src/skydb.egg-info/SOURCES.txt
+src/skydb.egg-info/dependency_links.txt
+src/skydb.egg-info/requires.txt
+src/skydb.egg-info/top_level.txt
+src/skydb/sheets/__init__.py
+src/skydb/sheets/google_sheets.py
+src/skydb/sheets/style.py
