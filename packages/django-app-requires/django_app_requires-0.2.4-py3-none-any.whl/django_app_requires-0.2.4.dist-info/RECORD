@@ -1,0 +1,14 @@
+django_app_requires/__init__.py,sha256=VSCtvRbhOQNjtHzv5cZJfy5LVxonN4x6aAXB1ZgeL5E,33
+django_app_requires/utils.py,sha256=aUuz_8nTGSY6lGJxtNy9yaRi_G6FLL9jxoUe-5PlZsg,539
+django_app_requires_example/__init__.py,sha256=i8tqyTMwNvxB_1gzwYA7ok-6bSJyhT6clhpKeYdI2ZM,68
+django_app_requires_example/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_app_requires_example/apps.py,sha256=X13IfJwv3glGzXY3xdSuCcHTjBQZHqNWNmRSYYjiF1U,183
+django_app_requires_example/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_app_requires_example/tests.py,sha256=8VhjKopsBS6RySqZ80eZLEYvdVuW3erSmcqVj-d3uCs,289
+django_app_requires_example/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_app_requires_example/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_app_requires-0.2.4.dist-info/LICENSE,sha256=EGFz14kr17y-2QpxB5qB2szKkEpPaSpIv29m5RKZ2EA,1067
+django_app_requires-0.2.4.dist-info/METADATA,sha256=pCMRX9oTCl_f3kGOVoF-v4MrehOC13fuFD6JUVdxzwY,2561
+django_app_requires-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_app_requires-0.2.4.dist-info/top_level.txt,sha256=YuAr8dF4ZaRKxn_5eQjLazYxhlZK11IIaMK74C44Jlc,48
+django_app_requires-0.2.4.dist-info/RECORD,,
