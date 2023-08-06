@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: simplesoc
+Version: 0.5.0
+Summary: A simple Python library for assigning Standard Occupational Classification (SOC) codes to job titles.
+Home-page: https://github.com/deino475/simplesoc
+Author: Nile Dixon
+Author-email: niledixon475@gmail.com
+License: GNU GPL-V3
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# simplesoc
+
+simplesoc is a simple Python library for attaching Standard Occupation Classification (SOC) codes to 
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install simplesoc.
+
+```bash
+pip install simplesoc
+```
+
+## Usage
+
+```python
+
+
+```
+
+

@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/simplesoc/__init__.py
+src/simplesoc/data.py
+src/simplesoc/functions.py
+src/simplesoc.egg-info/PKG-INFO
+src/simplesoc.egg-info/SOURCES.txt
+src/simplesoc.egg-info/dependency_links.txt
+src/simplesoc.egg-info/top_level.txt
