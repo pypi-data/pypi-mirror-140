@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_jupyterlab_examples_hello_world=self.webpackChunk_jupyterlab_examples_hello_world||[]).push([[568],{568:(l,e,a)=>{a.r(e),a.d(e,{default:()=>t});const t={id:"hello-world:plugin",autoStart:!0,activate:l=>{console.log("the JupyterLab main application:",l)}}}}]);
