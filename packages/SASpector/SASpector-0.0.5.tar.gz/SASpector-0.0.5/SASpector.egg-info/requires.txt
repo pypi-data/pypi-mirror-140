@@ -1,0 +1,7 @@
+progressbar
+pandas
+seaborn>=0.10
+matplotlib
+biopython
+sourmash
+numpy
