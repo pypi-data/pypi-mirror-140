@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1645169841" clover="">
+  <project timestamp="1645169841">
+    <file name="/Users/xiakxia/Projects/git/dcov/dcov/diff_cover_tool.py">
+      <class name="xxx" namespace="global">
+        <metrics complexity="57" methods="12" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="365" coveredstatements="0" elements="377" coveredelements="0"/>
+      </class>
+      <line num="59" type="stmt" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="62" type="stmt" count="0"/>
+      <line num="63" type="stmt" count="1"/>
+      <line num="64" type="stmt" count="1"/>
+      <line num="65" type="stmt" count="0"/>
+      <line num="66" type="stmt" count="1"/>
+      <line num="67" type="stmt" count="1"/>
+      <line num="68" type="stmt" count="0"/>
+      <line num="69" type="stmt" count="1"/>
+      <line num="70" type="stmt" count="0"/>
+      <line num="71" type="stmt" count="0"/>
+      <line num="72" type="stmt" count="0"/>
+      <line num="73" type="stmt" count="0"/>
+      <line num="74" type="stmt" count="0"/>
+      <line num="75" type="stmt" count="0"/>
+      <line num="152" type="stmt" count="0"/>
+      <line num="153" type="stmt" count="0"/>
+      <line num="187" type="stmt" count="0"/>
+      <line num="212" type="stmt" count="0"/>
+      <line num="213" type="stmt" count="1"/>
+      <line num="214" type="stmt" count="0"/>
+      <line num="215" type="stmt" count="0"/>
+      <line num="216" type="stmt" count="0"/>
+      <line num="217" type="stmt" count="0"/>
+      <line num="218" type="stmt" count="0"/>
+      <line num="219" type="stmt" count="0"/>
+      <line num="220" type="stmt" count="0"/>
+      <line num="221" type="stmt" count="0"/>
+      <line num="222" type="stmt" count="0"/>
+      <line num="223" type="stmt" count="0"/>
+      <line num="275" type="stmt" count="0"/>
+      <line num="277" type="stmt" count="0"/>
+      <line num="278" type="stmt" count="0"/>
+      
+      <metrics loc="165" ncloc="147" classes="1" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="85" coveredstatements="0" elements="92" coveredelements="0"/>
+    </file>
+    <file name="/Users/xiakxia/Projects/git/dcov/dcov/git_path.py">
+      <class name="yyy" namespace="global">
+        <metrics complexity="57" methods="12" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="365" coveredstatements="0" elements="377" coveredelements="0"/>
+      </class>
+      <line num="60" type="stmt" count="0"/>
+      <line num="61" type="stmt" count="0"/>
+      <line num="62" type="stmt" count="0"/>
+      <line num="63" type="stmt" count="0"/>
+      <line num="64" type="stmt" count="1"/>
+      <line num="65" type="stmt" count="0"/>
+      <line num="66" type="stmt" count="0"/>
+      <metrics loc="165" ncloc="147" classes="1" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="85" coveredstatements="0" elements="92" coveredelements="0"/>
+    </file>
+    <metrics files="19" loc="2747" ncloc="2489" classes="19" methods="119" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="1375" coveredstatements="77" elements="1494" coveredelements="80"/>
+  </project>
+</coverage>
