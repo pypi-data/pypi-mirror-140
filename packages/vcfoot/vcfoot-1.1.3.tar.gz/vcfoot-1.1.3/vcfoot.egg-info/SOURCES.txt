@@ -1,0 +1,9 @@
+setup.py
+vcfoot/__init__.py
+vcfoot/foot_tool.py
+vcfoot/main.py
+vcfoot.egg-info/PKG-INFO
+vcfoot.egg-info/SOURCES.txt
+vcfoot.egg-info/dependency_links.txt
+vcfoot.egg-info/requires.txt
+vcfoot.egg-info/top_level.txt
