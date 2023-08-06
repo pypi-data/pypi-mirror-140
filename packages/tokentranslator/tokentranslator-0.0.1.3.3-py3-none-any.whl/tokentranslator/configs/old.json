@@ -1,0 +1,12 @@
+{
+    "paths_db_patterns": {
+        "eqs": "env/equation_net/data/terms/input/tex_dialect.db",
+        "cs": "env/clause/data/terms/input/demo_dialect.db",
+        "signatures": "translator/sampling/slambda/data/signatures.db",
+        "examples_sampler": "translator/sampling/data/examples/examples_sampler.db",
+        "examples_parser_eqs": "env/equation_net/data/examples/examples_parser_eqs.db",
+        "examples_parser_cs": "env/clause/data/examples/examples_parser_cs.db",
+        "eqs_tex": "env/equation_net/data/terms/input/tex_dialect.db",
+        "eqs_wolfram": "env/equation_net/data/terms/input/demo_dialect.db"
+    }
+}
