@@ -1,0 +1,4 @@
+pop-evbus>=6.1.0
+aio-pika
+acct>=6.4.2
+pop>=21
