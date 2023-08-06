@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "classiq_interface"
+version = "0.7.1"
+description = "Classiq Interface"
+authors = ["Classiq Technologies <support@classiq.io>"]
+readme = "README.md"
+license = "Proprietary"
+homepage = "https://classiq.io"
+documentation = "https://classiquantum.com/reference/"
+keywords = [
+    "quantum",
+    "sdk",
+    "QAD",
+    "QDL",
+    "circuit"
+]
+classifiers = [
+    "Environment :: Console",
+    "License :: Other/Proprietary License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+importlib-metadata = { version = "^4.8.1", python = "<3.8" }
+pydantic = "^1.9.0"
+numpy = "^1.20.1"
+networkx = "^2.5.1"
+matplotlib = "^3.4.3"
+tabulate = "< 1, >= 0.8.9"
+more-itertools = "^8.8.0"
+Pyomo = "~6.0"
+pillow = "^9.0.0"
+# TODO: Make sure this is updated when updating qiskit version in the repo
+#  (qiskit = "< 1, >= 0.34.1")
+qiskit-terra = "< 1, >= 0.19.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
