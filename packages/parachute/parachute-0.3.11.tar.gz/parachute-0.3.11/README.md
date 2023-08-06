@@ -1,0 +1,268 @@
+Parachute
+=========
+
+Parachute is a swiss army knife for ArduPilot settings. It helps you quickly and
+easily back up all your parameters to a file (and restore them). It also lets
+you get/set them, filter them, diff them, restore them or convert them to
+parameter files compatible with Mission Planner/QGroundControl.
+
+
+Installation
+------------
+
+Installing Parachute is simple. You can use `pipx` (recommended):
+
+```
+$ pipx install parachute
+```
+
+Or `pip` (less recommended):
+
+```
+$ pip install parachute
+```
+
+You can also download pre-built binaries for Windows and Linux from the
+[artifacts page](https://gitlab.com/stavros/parachute/-/pipelines).
+
+
+Usage
+-----
+
+Parachute is called like so:
+
+```
+$ parachute backup <craft name>
+```
+
+For example:
+
+```
+$ parachute backup Mini-Drak
+```
+
+To restore:
+
+```
+$ parachute restore backup.chute
+```
+
+
+Conversion
+----------
+
+You can also convert a Parachute file to a file compatible with Mission Planner or QGroundControl:
+
+```
+$ parachute convert qgc Mini-Drak_2021-03-02_02-29.chute Mini-Drak.params
+```
+
+
+Filtering
+---------
+
+You can filter parameters based on a regular expression:
+
+```
+$ parachute filter "serial[123]_" Mini-Drak_2021-03-02_02-29.chute filtered.chute
+```
+
+Since all parameter names are uppercase, the regex is case-insensitive, for convenience.
+
+You can also filter when converting:
+
+```
+$ parachute convert --filter=yaw mp Mini-Drak_2021-03-02_02-29.chute -
+```
+
+
+Comparing
+---------
+
+You can compare parameters in a backup with parameters on the craft:
+
+```
+$ parachute compare backup.chute
+```
+
+
+Getting/setting
+---------------
+
+You can get and set parameters:
+
+```
+$ parachute get BATT_AMP_OFFSET BATT_AMP_PERVLT
+```
+
+```
+$ parachute set BATT_AMP_OFFSET=-0.0135 BATT_AMP_PERVLT=63.8826
+```
+
+
+Shell completions
+------------------
+
+Parachute includes shell completion for AP parameters for various shells.  After you've
+enabled completions, you can get parameter completion for the `get` and `set` commands.
+For example, try typing `parachute get acr<TAB>`.
+
+The way to enable it depends on your shell:
+
+
+### fish
+
+Save the completion script to ~/.config/fish/completions/parachute.fish:
+
+```
+_PARACHUTE_COMPLETE=fish_source parachute > ~/.config/fish/completions/parachute.fish
+```
+
+
+### bash
+
+Save the completion script somewhere.
+
+```
+_PARACHUTE_COMPLETE=bash_source parachute > ~/.parachute-complete.bash
+```
+
+Source the file in ~/.bashrc.
+
+```
+. ~/.parachute-complete.bash
+```
+
+
+### zsh
+
+Save the completion script somewhere.
+
+```
+_PARACHUTE_COMPLETE=zsh_source parachute > ~/.parachute-complete.zsh
+```
+
+Source the file in ~/.zshrc.
+
+```
+. ~/.parachute-complete.zsh
+```
+
+# Changelog
+
+
+## v0.3.11 (2022-02-26)
+
+### Features
+
+* Add "--compare" flag to "restore" [Stavros Korokithakis]
+
+### Fixes
+
+* Name files a bit better. [Stavros Korokithakis]
+
+
+## v0.3.10 (2021-12-17)
+
+### Fixes
+
+* Improve autodetection even more again. [Stavros Korokithakis]
+
+* Improve autodetection even more. [Stavros Korokithakis]
+
+* Improve autodetection default. [Stavros Korokithakis]
+
+
+## v0.3.9 (2021-11-02)
+
+### Fixes
+
+* Show the correct parameter name when diffing. [Stavros Korokithakis]
+
+
+## v0.3.8 (2021-10-29)
+
+### Features
+
+* Colorize tables. [Stavros Korokithakis]
+
+* Make table Markdown-compatible. [Stavros Korokithakis]
+
+### Fixes
+
+* Fix inverted `compare` display. [Stavros Korokithakis]
+
+
+## v0.3.7 (2021-10-23)
+
+### Features
+
+* Include parameter completions. [Stavros Korokithakis]
+
+* Add `--baud-rate` cli option` [Stavros Korokithakis]
+
+### Fixes
+
+* Display accurate names when diffing. [Stavros Korokithakis]
+
+* Fix port detection on Windows. [Stavros Korokithakis]
+
+
+## v0.3.6 (2021-08-29)
+
+### Features
+
+* Attempt socket autodetection. [Stavros Korokithakis]
+
+### Fixes
+
+* Make messages more consistent. [Stavros Korokithakis]
+
+
+## v0.3.5 (2021-05-24)
+
+### Features
+
+* Show old and new parameter values when setting. [Stavros Korokithakis]
+
+
+## v0.3.4 (2021-05-04)
+
+### Features
+
+* Add --only-backup and --only-craft options to "compare" [Stavros Korokithakis]
+
+* Add version command line parameter. [Stavros Korokithakis]
+
+* Allow the "compare" command to compare two backups. [Stavros Korokithakis]
+
+
+## v0.3.2 (2021-03-15)
+
+### Fixes
+
+* Make MP files actually compatible with MP. [Stavros Korokithakis]
+
+* Add timeout on parameter fetching. [Stavros Korokithakis]
+
+
+## v0.3.1 (2021-03-15)
+
+### Fixes
+
+* Add more forbidden parameters. [Stavros Korokithakis]
+
+
+## v0.3.0 (2021-03-14)
+
+### Features
+
+* Add "reset-to-defaults" option. [Stavros Korokithakis]
+
+* Add "reboot" option. [Stavros Korokithakis]
+
+### Fixes
+
+* Fix table display. [Stavros Korokithakis]
+
+
