@@ -1,0 +1,13 @@
+oogg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oogg/__main__.py,sha256=Hm4HezQKnOZeriDtm_Z54ti9iDIpp8m9OiTHptmWPUE,66
+oogg/browser.py,sha256=PTZtx9UpzsxkoFfYuYqX8TCX5B9n8fK23ugLgz5I6JE,1064
+oogg/error.py,sha256=hM96MsnIRensd3sVRAbRBM4Q3iqUldcAB02H4hTxmKY,41
+oogg/main.py,sha256=I7MpCzaHZ8yKssdseFgcv1HhcJSE86JqYle5VaXFA0U,1768
+oogg/provider.py,sha256=Gu7Z0HQ5R3X17HZZCQIPuVVbcKus-MfAH1xYALAf1e4,1744
+oogg/repository.py,sha256=gIAi5FTkai8gXmfCJTdQU3-YQ53JSP8NoBHDYMSP0Xw,2363
+oogg-1.1.1.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+oogg-1.1.1.dist-info/METADATA,sha256=K_9c7s2XVBE1-E90-C1SSloo2MwNnYL15vbbbP9VtlY,2081
+oogg-1.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+oogg-1.1.1.dist-info/entry_points.txt,sha256=lwIj6-vIpqQDKlOrzUqof_TPamnV1wyx4QxIls76bXo,40
+oogg-1.1.1.dist-info/top_level.txt,sha256=dgh92PhRHlYeSm260BX_LxXL3qw4T3je0Ap0i-C-4gk,5
+oogg-1.1.1.dist-info/RECORD,,
