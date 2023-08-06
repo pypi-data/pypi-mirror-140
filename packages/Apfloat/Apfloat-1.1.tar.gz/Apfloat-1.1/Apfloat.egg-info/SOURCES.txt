@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+Apfloat/apfloat.py
+Apfloat/apfloat_tests.py
+Apfloat/apfloat_versus_mpf.py
+Apfloat.egg-info/PKG-INFO
+Apfloat.egg-info/SOURCES.txt
+Apfloat.egg-info/dependency_links.txt
+Apfloat.egg-info/entry_points.txt
+Apfloat.egg-info/top_level.txt
