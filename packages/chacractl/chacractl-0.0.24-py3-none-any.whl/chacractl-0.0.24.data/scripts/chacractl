@@ -1,0 +1,7 @@
+#!python
+
+from chacractl import main
+
+if __name__ == '__main__':
+    main.ChacraCtl()
+
