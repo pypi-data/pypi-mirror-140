@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: swyft
+Version: 0.3.0
+Summary: Truncated Marginal Neural Ratio Estimation with an inhomogeneous poisson point process cache.
+Home-page: https://github.com/undark-lab/swyft
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Environment :: GPU
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+UNKNOWN
+
