@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    {% if group %}
+        {% trans "Edit group" %}
+    {% else %}
+        {% trans "Create new group" %}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="page-header">
+        {% if group %}
+            <h1>{% trans "Edit group" %}</h1>
+        {% else %}
+            <h1>{% trans "Create new group" %}</h1>
+        {% endif %}
+    </div>
+    {% crispy form %}
+{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript" src="{% static "ephios/js/group_form.js" %}"></script>
+{% endblock %}
