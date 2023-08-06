@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "cython-packages"
+version = "0.1.2"
+description = ""
+authors = ["Stefan Kjartansson <esteban.supreme@gmail.com>"]
+
+build = "build.py"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+numpy = "^1.16"
+Cython = "^0.29.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
