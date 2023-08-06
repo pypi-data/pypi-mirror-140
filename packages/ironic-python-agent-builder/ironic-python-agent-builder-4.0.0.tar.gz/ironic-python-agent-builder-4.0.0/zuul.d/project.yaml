@@ -1,0 +1,55 @@
+- project:
+    templates:
+      - publish-openstack-docs-pti
+      - check-requirements
+      - release-notes-jobs-python3
+    check:
+      jobs:
+        - openstack-tox-pep8
+        - ironic-standalone-ipa-src
+        - ipa-tempest-bios-ipmi-direct-tinyipa-src
+        - ironic-python-agent-check-image-tinyipa
+        - ironic-python-agent-check-image-dib-centos8
+        - ironic-python-agent-check-image-dib-centos8-extra
+        - ironic-python-agent-check-image-dib-centos7-python3
+        - ironic-python-agent-check-image-dib-debian
+        - ironic-python-agent-check-image-dib-debian-arm64
+        - ironic-python-agent-check-image-dib-debian-extra
+        # Non-voting jobs
+        - ironic-python-agent-check-image-dib-centos9:
+            voting: false
+        - ironic-python-agent-check-image-dib-centos9-extra:
+            voting: false
+        - ironic-python-agent-check-image-dib-ubuntu:
+            voting: false
+        - ironic-python-agent-check-image-dib-opensuse:
+            voting: false
+        - ipa-tempest-bios-ipmi-direct-src:
+            voting: false
+        - ipa-tempest-ironic-inspector-src:
+            voting: false
+        - tripleo-buildimage-ironic-python-agent-centos-8:
+            voting: false
+    gate:
+      jobs:
+        - openstack-tox-pep8
+        - ironic-standalone-ipa-src
+        - ipa-tempest-bios-ipmi-direct-tinyipa-src
+        - ironic-python-agent-check-image-tinyipa
+        - ironic-python-agent-check-image-dib-centos8
+        - ironic-python-agent-check-image-dib-centos8-extra
+        - ironic-python-agent-check-image-dib-centos7-python3
+        - ironic-python-agent-check-image-dib-debian
+        - ironic-python-agent-check-image-dib-debian-arm64
+        - ironic-python-agent-check-image-dib-debian-extra
+    post:
+      jobs:
+        - publish-openstack-python-branch-tarball
+        - ironic-python-agent-build-image-tinyipa:
+            branches: master
+        - ironic-python-agent-build-image-dib-centos8:
+            branches: master
+        - ironic-python-agent-build-image-dib-debian:
+            branches: master
+        - ironic-python-agent-build-image-dib-debian-arm64:
+            branches: master
