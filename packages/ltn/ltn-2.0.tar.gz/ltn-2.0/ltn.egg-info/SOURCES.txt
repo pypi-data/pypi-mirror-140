@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ltn/__init__.py
+ltn/core.py
+ltn/fuzzy_ops.py
+ltn/utils.py
+ltn.egg-info/PKG-INFO
+ltn.egg-info/SOURCES.txt
+ltn.egg-info/dependency_links.txt
+ltn.egg-info/requires.txt
+ltn.egg-info/top_level.txt
+test/test_core.py

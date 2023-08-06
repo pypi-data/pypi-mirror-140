@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ltn
+Version: 2.0
+Summary: Logic Tensor Networks
+Home-page: https://github.com/logictensornetworks/logictensornetworks
+Author: Samy Badreddine
+Author-email: badreddine.samy@gmail.com
+License: MIT
+Download-URL: https://github.com/logictensornetworks/logictensornetworks/archive/refs/tags/v2.0.tar.gz
+Keywords: machine-learning,framework,neural-symbolic-computing,fuzzy-logic,tensorflow
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+UNKNOWN
+
