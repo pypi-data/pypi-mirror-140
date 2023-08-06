@@ -1,0 +1,13 @@
+README.md
+setup.py
+icon_getinfo/__init__.py
+icon_getinfo/__main__.py
+icon_getinfo/__version__.py
+icon_getinfo/base.py
+icon_getinfo/icon_getinfo_cli.py
+icon_getinfo.egg-info/PKG-INFO
+icon_getinfo.egg-info/SOURCES.txt
+icon_getinfo.egg-info/dependency_links.txt
+icon_getinfo.egg-info/entry_points.txt
+icon_getinfo.egg-info/requires.txt
+icon_getinfo.egg-info/top_level.txt
