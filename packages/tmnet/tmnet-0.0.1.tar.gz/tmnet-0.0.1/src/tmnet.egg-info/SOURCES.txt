@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+src/tmnet.egg-info/PKG-INFO
+src/tmnet.egg-info/SOURCES.txt
+src/tmnet.egg-info/dependency_links.txt
+src/tmnet.egg-info/top_level.txt
