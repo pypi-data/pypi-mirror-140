@@ -1,0 +1,12 @@
+EzGM/__init__.py,sha256=IJcO_uYdGpTKqH4xsu3bmo7feYiqb_pN5MbNitIkMTk,67
+EzGM/selection.py,sha256=sZuYcPpKiggDNDL4jN3q07edEhcmvc3qKbTRowK3En8,156668
+EzGM/signal.py,sha256=6zIitDpN3jz3MGLca1Nsn2-g5rdMh8QYF2g0gp3tB78,20476
+EzGM/utility.py,sha256=Qs4qP0Bl8C4pnmfNLFz7HWdj7BnJ8PVashK0t_nFfuo,45421
+EzGM/Meta_Data/ESM_2018.mat,sha256=vcFTYPWlyQjOb-RmtiY_J7ivVgpFc4TeGDiq6ir9jTI,30801319
+EzGM/Meta_Data/NGA_W2.mat,sha256=GTeSbIupXn1_XQRsnuauqutD6RpLWCLPjiCQGzS6RjE,67608798
+EzGM/Meta_Data/Parameters_TBEC2018.csv,sha256=HmfhlILZrAB5qu-E7bttWAuOePMMu1OffcHPf4-2KC4,1207274
+EzGM-1.6.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+EzGM-1.6.2.dist-info/METADATA,sha256=Ht_J_NjFukEOKg1FDYFhJh0-OEQYz5WMYQztHKiHHDc,5820
+EzGM-1.6.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+EzGM-1.6.2.dist-info/top_level.txt,sha256=jarnRqtAocWdbmsMtgy7rSpEXXFv5CJt-cejNZavMLU,5
+EzGM-1.6.2.dist-info/RECORD,,
