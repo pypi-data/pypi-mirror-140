@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Topsis-Prabhjot-101903373
+Version: 0.0.1
+Summary: Topsis rank genrator
+Home-page: UNKNOWN
+Author: Prabhjot singh sodhi
+Author-email: <abhijot104@gmail.com>
+License: UNKNOWN
+Keywords: python,numpy,rank,score
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+A simple package that can used in multi-decision criterion process ,helps you to pick up the best option out of all available alternatives
+
+
