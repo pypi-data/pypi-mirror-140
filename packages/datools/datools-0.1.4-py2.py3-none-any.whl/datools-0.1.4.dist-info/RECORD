@@ -1,0 +1,15 @@
+datools/__init__.py,sha256=OPQaX6r0qw2FKvwwlIe2qnzZ8hx5UMWsLgtb1cweFiI,123
+datools/cli.py,sha256=5kih11JF5TpSuKYC03U7q8HuhR6dBnxRM9h4_2Hc3II,399
+datools/datools.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+datools/errors.py,sha256=BOxWr695CcdKmmhWVuI5TILpGJvki5K997lsVCp7nro,40
+datools/explanations.py,sha256=AwabQWTzjF1J5d1g63cJ5OZd5pEIRYy8qUzyBYJ-ZZs,12363
+datools/models.py,sha256=kQQcS1uO5tkjHtaXo2vNDDIHwHhHa5s2lfy7pGXvV9s,1158
+datools/sqlalchemy_utils.py,sha256=gqKjTzlYtsGI85DrMtPw0tbCccGfAdNP4g9hAwoRhIk,3366
+datools/table_statistics.py,sha256=T41t7_Qv94T19OIRtrDbG40YNe-jh1bYiqNWqZgLnCg,6521
+datools-0.1.4.dist-info/AUTHORS.md,sha256=h4p4TKXj2SNPvSyIm7x51WcHtH9clMgqge5XRdfIfTE,269
+datools-0.1.4.dist-info/LICENSE,sha256=rOBD4BLjcoNscR_qJsZAK8APPOM7lhZJbwEuk_CqzQY,588
+datools-0.1.4.dist-info/METADATA,sha256=xBLrU7wxLtrm_OwGDKJNxh3eMx7AQXrQLJd7MxCwGq4,3956
+datools-0.1.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+datools-0.1.4.dist-info/entry_points.txt,sha256=gcbiEeTQiHlf5YR0UWqM0FSFahcs5W4r09GubhiGlNg,46
+datools-0.1.4.dist-info/top_level.txt,sha256=H3uLrdyob51J1-SnEd4NROMxb-JeOTsGe5EYKlW0vOk,8
+datools-0.1.4.dist-info/RECORD,,
