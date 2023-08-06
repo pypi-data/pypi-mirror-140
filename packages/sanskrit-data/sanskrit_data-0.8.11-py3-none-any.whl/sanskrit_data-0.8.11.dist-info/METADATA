@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sanskrit-data
+Version: 0.8.11
+Summary: Standard and idiosyncratic schemata for text, annotation and user data, with a library of validation, (de-)serialization, a database interface and other utilities.
+Home-page: https://github.com/sanskrit-coders/sanskrit_data
+Author: sanskrit-coders, vedavaapi
+Author-email: sanskrit-programmers@googlegroups.com
+License: MIT
+Keywords: sanskrit schema samskrtam samskritam
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Pytest
+Requires-Dist: toml (==0.10.1)
+Requires-Dist: qtoml
+Requires-Dist: jsonschema (==3.2.0)
+Requires-Dist: jsonpickle (==1.4.1)
+Requires-Dist: bcrypt (==3.2.0)
+Requires-Dist: yurl (==1.0.0)
+Requires-Dist: six
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+UNKNOWN
+
+
