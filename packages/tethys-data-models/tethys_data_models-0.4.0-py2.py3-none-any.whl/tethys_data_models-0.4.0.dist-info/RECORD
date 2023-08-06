@@ -1,0 +1,12 @@
+tethys_data_models/__init__.py,sha256=Wazy57YiSAKOjZSLeV0avfWl7JL6lMlZEGUmasQxyQI,103
+tethys_data_models/base.py,sha256=i6p_bWFqyJSMry8PEpnm0LjK1w4A0mVudxv_QQORPhk,1390
+tethys_data_models/dataset.py,sha256=jrRqidkXWbi0eirSjDnBfx7Kl7JxGWyIvddGRNQC77g,16203
+tethys_data_models/geometry.py,sha256=PJoFX4a_I9U0V-wcse8xhPANoEYESQGRaFHrNQS5Gbg,1624
+tethys_data_models/permit.py,sha256=fh9a-ZHWbJsditd3CbbO9uM_lDh4vJma6S_pJP5mBs4,4895
+tethys_data_models/utils.py,sha256=uNjQ7TsmSwIOFMz7_KCoj5g--MA_68d5fBBGsWABkMk,3704
+tethys_data_models/tests/__init__.py,sha256=38pdDhEZk2RiT5kga2DPbhTYeDHdsCXNaEr7HH1-k20,208
+tethys_data_models-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tethys_data_models-0.4.0.dist-info/METADATA,sha256=epUrZ-jDmX-UsmoGTICLXZc1x6Q59iL8EHtED3Zz0_4,781
+tethys_data_models-0.4.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tethys_data_models-0.4.0.dist-info/top_level.txt,sha256=0VLbi8arPFLdOT8JCad3nCcoM1RwWcNbqpfKWBT6E8o,19
+tethys_data_models-0.4.0.dist-info/RECORD,,
