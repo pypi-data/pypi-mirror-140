@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=43", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-glob='*.rst' --ignore run_tests --ignore docs/equations_latex --ignore docs"
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.html]
+directory = "htmlcov"
+
+[tool.black]
+extend-exclude = "docs/"
