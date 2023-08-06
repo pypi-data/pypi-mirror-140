@@ -1,0 +1,19 @@
+
+[:python_version < "3.9"]
+typing-extensions~=3.10.0
+
+[:python_version == "3.6"]
+dataclasses~=0.6
+typing-inspect~=0.7.1
+
+[all]
+cacheable-iterators~=0.1.1
+dataclasses-json~=0.5.4
+lxml~=4.6.3
+unittest-xml-reporting~=3.0.4
+
+[test]
+cacheable-iterators~=0.1.1
+dataclasses-json~=0.5.4
+lxml~=4.6.3
+unittest-xml-reporting~=3.0.4
