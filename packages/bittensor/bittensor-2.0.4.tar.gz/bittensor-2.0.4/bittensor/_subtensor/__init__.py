@@ -1,0 +1,283 @@
+# The MIT License (MIT)
+# Copyright © 2021 Yuma Rao
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+# documentation files (the “Software”), to deal in the Software without restriction, including without limitation 
+# the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
+# and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all copies or substantial portions of 
+# the Software.
+
+# THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+# THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+# DEALINGS IN THE SOFTWARE.
+import argparse
+import os
+
+import random
+import time
+import psutil
+import subprocess
+from sys import platform   
+
+import bittensor
+import copy
+from substrateinterface import SubstrateInterface
+
+from . import subtensor_impl
+
+from loguru import logger
+logger = logger.opt(colors=True)
+
+__type_registery__ = {
+    "runtime_id": 2,
+    "types": {
+        "Balance": "u64",
+        "NeuronMetadataOf": {
+            "type": "struct",
+            "type_mapping": [
+                ["version", "u32"],
+                ["ip", "u128"], 
+                ["port", "u16"], 
+                ["ip_type", "u8"], 
+                ["uid", "u32"], 
+                ["modality", "u8"], 
+                ["hotkey", "AccountId"], 
+                ["coldkey", "AccountId"], 
+                ["active", "u32"],
+                ["last_update", "u64"],
+                ["priority", "u64"],
+                ["stake", "u64"],
+                ["rank", "u64"],
+                ["trust", "u64"],
+                ["consensus", "u64"],
+                ["incentive", "u64"],
+                ["dividends", "u64"],
+                ["emission", "u64"],
+                ["bonds", "Vec<(u32, u64)>"],
+                ["weights", "Vec<(u32, u32)>"]
+            ]
+        }
+    }
+}
+
+GLOBAL_SUBTENSOR_MOCK_PROCESS_NAME = 'node-subtensor'
+
+class subtensor:
+    """
+    Handles interactions with the subtensor chain.
+    """
+    
+    def __new__(
+            cls, 
+            config: 'bittensor.config' = None,
+            network: str = None,
+            chain_endpoint: str = None,
+            _mock: bool = None,
+        ) -> 'bittensor.Subtensor':
+        r""" Initializes a subtensor chain interface.
+            Args:
+                config (:obj:`bittensor.Config`, `optional`): 
+                    bittensor.subtensor.config()
+                network (default='nakamoto', type=str)
+                    The subtensor network flag. The likely choices are:
+                            -- nakamoto (main network)
+                            -- akatsuki (testing network)
+                            -- nobunaga (staging network)
+                            -- mock (mock network for testing.)
+                    If this option is set it overloads subtensor.chain_endpoint with 
+                    an entry point node from that network.
+                chain_endpoint (default=None, type=str)
+                    The subtensor endpoint flag. If set, overrides the network argument.
+                _mock (bool, `optional`):
+                    Returned object is mocks the underlying chain connection.
+        """
+        if config == None: config = subtensor.config()
+        config = copy.deepcopy( config )
+
+        # Returns a mocked connection with a background chain connection.
+        if _mock == True or network == 'mock' or config.subtensor.network == 'mock':
+            return subtensor.mock()
+        
+        # Determine config.subtensor.chain_endpoint and config.subtensor.network config.
+        # If chain_endpoint is set, we override the network flag, otherwise, the chain_endpoint is assigned by the network.
+        # Argument importance: chain_endpoint > network > config.subtensor.chain_endpoint > config.subtensor.network
+       
+        # Select using chain_endpoint arg.
+        if chain_endpoint != None:
+            config.subtensor.chain_endpoint = chain_endpoint
+            config.subtensor.network = 'endpoint'
+            
+        # Select using network arg.
+        elif network != None:
+            config.subtensor.chain_endpoint = subtensor.determine_chain_endpoint( network )
+            config.subtensor.network = network
+            
+        # Select using config.subtensor.chain_endpoint
+        elif config.subtensor.chain_endpoint != None:
+            config.subtensor.chain_endpoint = config.subtensor.chain_endpoint
+            config.subtensor.network = 'endpoint'
+         
+        # Select using config.subtensor.network
+        elif config.subtensor.network != None:
+            config.subtensor.chain_endpoint = subtensor.determine_chain_endpoint( config.subtensor.network )
+            config.subtensor.network = config.subtensor.network
+            
+        # Fallback to defaults.
+        else:
+            config.subtensor.chain_endpoint = subtensor.determine_chain_endpoint( bittensor.defaults.subtensor.network )
+            config.subtensor.network = bittensor.defaults.subtensor.network
+           
+        substrate = SubstrateInterface(
+            address_type = 42,
+            type_registry_preset='substrate-node-template',
+            type_registry = __type_registery__,
+            url = "ws://{}".format(config.subtensor.chain_endpoint),
+            use_remote_preset=True
+        )
+
+        subtensor.check_config( config )
+        return subtensor_impl.Subtensor( 
+            substrate = substrate,
+            network = config.subtensor.network,
+            chain_endpoint = config.subtensor.chain_endpoint,
+
+            # Non mocked, has no owned process for ref counting.
+            _is_mocked = False,
+            _owned_mock_subtensor_process = None,
+        )
+
+    @staticmethod   
+    def config() -> 'bittensor.Config':
+        parser = argparse.ArgumentParser()
+        subtensor.add_args( parser )
+        return bittensor.config( parser )
+
+    @classmethod   
+    def help(cls):
+        """ Print help to stdout
+        """
+        parser = argparse.ArgumentParser()
+        cls.add_args( parser )
+        print (cls.__new__.__doc__)
+        parser.print_help()
+
+    @classmethod
+    def add_args(cls, parser: argparse.ArgumentParser ):
+        try:
+            parser.add_argument('--subtensor.network', default = bittensor.defaults.subtensor.network, type=str, 
+                                help='''The subtensor network flag. The likely choices are:
+                                        -- nobunaga (staging network)
+                                        -- akatsuki (testing network)
+                                        -- nakamoto (master network)
+                                        -- local (local running network)
+                                        -- mock (creates a mock connection (for testing))
+                                    If this option is set it overloads subtensor.chain_endpoint with 
+                                    an entry point node from that network.
+                                    ''')
+            parser.add_argument('--subtensor.chain_endpoint', default = bittensor.defaults.subtensor.chain_endpoint, type=str, 
+                                help='''The subtensor endpoint flag. If set, overrides the --network flag.
+                                    ''')       
+        except argparse.ArgumentError:
+            # re-parsing arguments.
+            pass
+
+    @classmethod
+    def add_defaults(cls, defaults ):
+        """ Adds parser defaults to object from enviroment variables.
+        """
+        defaults.subtensor = bittensor.Config()
+        defaults.subtensor.network = os.getenv('BT_SUBTENSOR_NETWORK') if os.getenv('BT_SUBTENSOR_NETWORK') != None else 'nakamoto'
+        defaults.subtensor.chain_endpoint = os.getenv('BT_SUBTENSOR_CHAIN_ENDPOINT') if os.getenv('BT_SUBTENSOR_CHAIN_ENDPOINT') != None else None
+
+    @staticmethod   
+    def check_config( config: 'bittensor.Config' ):
+        assert config.subtensor
+        assert config.subtensor.network != None
+
+    @staticmethod
+    def determine_chain_endpoint(network: str):
+        if network == "nakamoto":
+            # Main network.
+            return bittensor.__nakamoto_entrypoints__[0]
+        elif network == "akatsuki":
+            # Testing network.
+            return bittensor.__akatsuki_entrypoints__[0]
+        elif network == "nobunaga": 
+            # Staging network.
+            return bittensor.__nobunaga_entrypoints__[0]
+        elif network == "local":
+            # Local chain.
+            return bittensor.__local_entrypoints__[0]
+        elif network == 'mock':
+            return bittensor.__mock_entrypoints__[0]
+        else:
+            return bittensor.__local_entrypoints__[0]
+
+    @classmethod
+    def global_mock_process_is_running(cle) -> bool:
+        r""" If subtensor is running a mock process this kills the mock.
+        """
+        for p in psutil.process_iter():
+            if p.name() == GLOBAL_SUBTENSOR_MOCK_PROCESS_NAME and p.status() != psutil.STATUS_ZOMBIE and p.status() != psutil.STATUS_DEAD:
+               return True
+        return False
+
+    @classmethod
+    def kill_global_mock_process(self):
+        r""" Kills the global mocked subtensor process even if not owned.
+        """
+        for p in psutil.process_iter():
+            if p.name() == GLOBAL_SUBTENSOR_MOCK_PROCESS_NAME:
+                p.terminate()
+                p.kill()
+
+    @classmethod
+    def create_global_mock_process(self):
+        r""" Creates a global mocked subtensor process running in the backgroun with name GLOBAL_SUBTENSOR_MOCK_PROCESS_NAME.
+        """
+        try:
+            operating_system = "OSX" if platform == "darwin" else "Linux"
+            path = "./bin/chain/{}/node-subtensor".format(operating_system)
+            port = int(bittensor.__mock_entrypoints__[0].split(':')[1])
+            subprocess.Popen([path, 'purge-chain', '--dev', '-y'], close_fds=True, shell=False)    
+            _mock_subtensor_process = subprocess.Popen( [path, '--dev', '--port', str(port+1), '--ws-port', str(port), '--rpc-port', str(port + 2), '--tmp'], close_fds=True, shell=False, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+            print ('Starting subtensor process with pid {} and name {}'.format(_mock_subtensor_process.pid, GLOBAL_SUBTENSOR_MOCK_PROCESS_NAME))
+            return _mock_subtensor_process
+        except Exception as e:
+            raise RuntimeError( 'Failed to start mocked subtensor process: {}'.format(e) )
+
+    @classmethod
+    def mock(cls) -> 'bittensor.Subtensor':
+        r""" Returns a subtensor connection interface to a mocked subtensor process running in the background.
+            Optionall creates the background process if it does not exist.
+        """
+        if not cls.global_mock_process_is_running():
+            _owned_mock_subtensor_process = cls.create_global_mock_process()
+            time.sleep(3)
+        else:
+            _owned_mock_subtensor_process = None
+            print ('Mock subtensor already running.')
+
+        endpoint = bittensor.__mock_entrypoints__[0]
+        port = int(endpoint.split(':')[1])
+        substrate = SubstrateInterface(
+            address_type = 42,
+            type_registry_preset='substrate-node-template',
+            type_registry = __type_registery__,
+            url = "ws://{}".format('localhost:{}'.format(port)),
+            use_remote_preset=True
+        )
+        subtensor = subtensor_impl.Subtensor( 
+            substrate = substrate,
+            network = 'mock',
+            chain_endpoint = 'localhost:{}'.format(port),
+
+            # Is mocked, optionally has owned process for ref counting.
+            _is_mocked = True,
+            _owned_mock_subtensor_process = _owned_mock_subtensor_process
+        )
+        return subtensor
