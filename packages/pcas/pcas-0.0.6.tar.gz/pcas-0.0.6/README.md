@@ -1,0 +1,339 @@
+# PCAS Python interface
+
+The `pcas` Python package provides an interface to services running on [PCAS](https://www.pcas.xyz) infrastructure. It consists of several submodules:
+* [keyvalue](#keyvalue-interface)
+* [logger](#logger-interface)
+* [sql](#sql-submodule)
+
+## Keyvalue interface
+
+The `keyvalue` submodule provides an interface to key-value databases hosted on servers running the PCAS database `kvdbd`. To connect to such a database, use a `Connection` object.
+
+### Connection objects
+
+A `Connection` represents a connection to a PCAS key-value database. You can create a `Connection` like this:
+
+```python
+from pcas import keyvalue
+
+db = '...your database name...'
+ssl_cert = '...your SSL certificate...'
+conn = keyvalue.Connection(db, address='localhost:12356', certificate=ssl_cert)
+```
+
+The `address` parameter is optional; if omitted, its value will be read from the environment variable `PCAS_KVDB_ADDRESS`. Similarly if the `certificate` parameter is omitted, its value will be read from the environment variable `PCAS_SSL_CERT`. 
+
+A `Connection` object has methods to connect to a table, create a new table, delete a table, describe a table, and list the tables in the database.
+
+#### Connect to a table
+
+To connect to a table, use the `connect_to_table` method. This takes the name of the table as an argument, and returns a `Table` object.
+```python
+t = conn.connect_to_table('table_name')
+```
+`Table` objects are documented [below](#table-objects).
+
+#### Create a table
+To create a new table, use the `create_table` method. This takes the name of the table and a dictionary as an argument, and returns `None`. The dictionary represents a template key-value record: it should have keys that are strings and values that are strings, integers, booleans, floating-point numbers, or `bytes` objects.
+```python
+conn.create_table('new_table', template) 
+```
+
+#### Delete a table
+To delete a table from the database, use the `delete_table` method. This takes the name of the table as an argument, and returns `None`.
+```python
+conn.delete_table('unwanted')
+```
+
+#### Describe a table
+To get a description of a table in the database, use the `describe_table` method. This takes the name of the table as an argument, and returns a dictionary describing a typical entry in the table.
+```python
+d = conn.describe_table('table_name`)
+```
+The return value is a dictionary such as 
+```python
+{'id': 0, 'coefficients': ''}
+```
+describing a typical key-value record in the table; here we see that the value of `'id'` in the records is an integer, and the value of `'coefficients'` is a string. If the database backing `kvdbd` has a schema (e.g. PostgreSQL) then the table description uses this schema; if the backing database is schemaless (e.g. MongoDB) then the table description is a "best guess" based on a sample of records from the table, and may not be correct for all records.
+
+
+#### List tables
+To list the tables in the database, use the `list_tables` method. The takes no arguments, and returns a list of the names of the tables in the database.
+
+```python
+table_list = conn.list_tables()  
+```
+
+#### Rename a table
+To rename a table in the database, use the `rename_table` method. This takes the old and new names as arguments, and returns `None`.
+```python
+# List the tables
+print(conn.list_tables())
+# {'hippo'}
+
+# Rename the table 
+conn.rename_table('hippo', 'giraffe')
+
+# List the tables again
+print(conn.list_tables())
+# {'giraffe'}
+```
+
+### Table objects
+
+A `Table` object represents a table in a PCAS keyvalue database. As discussed, you create a `Table` by calling the `connect_to_table` method on the `Connection` that represents the database. 
+
+`Table` objects have methods to count, delete, insert, select, and update key-value records in the table, as well as methods to add, list, and delete indexes on keys of the key-value records.
+
+#### Count records
+To count records in the table, use the `count` method. It optionally takes a selector as argument, and returns the number of records in the table that match that selector.
+```python
+n = t.count(selector)
+```
+The selector can be omitted, in which case the total number of records in the table is returned; it can be a dictionary, representing a key-value record, in which case the number of records matching those keys and values is returned; or it can be a string in [SQL format](#sql-submodule) that specifies the condition. Examples:
+```python
+# Count all the records in the table t
+num_records = t.count()
+
+# Count the records with the specified keys and values
+selector = {'rank': 3, 'name': 'exactly this'}
+n = t.count(selector)
+
+# Count the records matching the specified condition
+n = t.count('WHERE rank BETWEEN 2 and 4 AND id >= 100')
+```
+
+
+#### Delete records
+To delete records from the table, use the `delete` method. It optionally takes a selector as argument, and returns the number of records deleted.
+```python
+num_deleted = t.delete(selector)
+```
+The selector can be omitted, in which case all records in the table are deleted; it can be a dictionary, representing a key-value record, in which case all records matching those keys and values are deleted; or it can be a string in [SQL format](#sql-submodule) that specifies the condition. Examples:
+```python
+# Delete all the records in the table t
+num_deleted = t.delete()
+
+# Delete all records with the specified keys and values
+selector = {'id': 3, 'rank': 5}
+num_deleted = t.delete(selector)
+
+# Delete all records that match the specified condition
+num_deleted = t.delete('WHERE id = 3 AND rank <= 6')
+```
+
+#### Insert records
+To insert records into the table, use the `insert` method. It takes an iterable of dictionaries as argument, and returns `None`. The dictionaries represent key-value records; they should have keys that are strings and values that are strings, integers, booleans, floating-point numbers, or `bytes` objects.
+```python
+t.insert(recs)
+```
+
+#### Select records
+To select records from the table, use the `select` method. It takes a dictionary, an optional selector, an optional sort order, and an optional limit as arguments, and returns an iterator containing the matching records. 
+```python
+itr = t.select(template, selector, order, limit)
+```
+The records returned will be in the form specified by the key-value record `template`. If an `order` is provided, the records will be returned in that order. If a `limit` is provided, it must be a positive integer and at most that many records will be returned. The selector can be omitted, in which case all records in the table are returned; it can be a dictionary, representing a key-value record, in which case all records matching those keys and values are returned; or it can be a string in [SQL format](#sql-submodule) that specifies the condition.
+
+If the selector is provided as a string in [SQL format](#sql-submodule) then it may also specify the order and/or the limit. If it does so then order, and/or respectively limit, must either be unspecified or specified as `None`. Examples:
+```python
+# We return the id and the rank, which are both integers
+template = {'id': 0, 'rank': 0}
+
+# Select all the records in the table t
+itr = t.select(template)
+
+# Select at most 10 records
+itr = t.select(template, limit=10)
+
+# Select records with specified keys and values
+selector = {'rank':2, 'dimension': 4}
+itr = t.select(template, selector)
+
+# Select records that match a specified condition
+itr = t.select(template, 'WHERE id > 40 AND dimension IN (1,3,5,7)')
+
+# Select with the records returned in a specified order
+itr = t.select(template, 'WHERE id > 40 SORT BY id ASC, rank DESC')
+
+# An equivalent select, with the sort order specified directly. 
+from pcas.sql import sort
+my_order = [sort.ascending('id'), sort.descending('rank')]
+itr = t.select(template, 'WHERE id > 40', order = my_order)
+```
+
+#### Update records
+To update records in the table, use the `update` method. It takes a dictionary and an optional selector as arguments, and returns the number of records updated. 
+```python
+num_updated = t.update(replacement, selector)
+```
+All records in the table that match the selector are updated by setting the keys present in the dictionary `replacement` to the corresponding values. The selector can be omitted, in which case all records in the table are updated; it can be a dictionary, representing a key-value record, in which case all records matching those keys and values are updated; or it can be a string in [SQL format](#sql-submodule) that specifies the condition. Examples:
+```python
+# We will set the values 'id' and 'dimension' in the updated records
+replacement = {'id': 98, 'dimension':3}
+
+# Update all the records in the table t
+num_updated = t.update()
+
+# Update all records with the specified keys and values
+selector = {'id': 98, 'rank': 12}
+num_updated = t.update(selector)
+
+# Update all records that match the specified condition
+num_updated = t.update('WHERE id = 3 AND rank <= 6')
+```
+
+#### Add, delete, and list indexes
+To add an index to the table, use the `add_index` method. It takes the key to be indexed as an argument, and returns `None`.
+```python
+t.add_index('the_key_to_be_indexed')
+```
+A unique index is an index together with the constraint that, for each value of the indexed key, there is at most one record with that value. To add a unique index to the table, use the `add_unique_index` method. It takes the key to be indexed as an argument, and returns `None`.
+```python
+t.add_unique_index('the_key_to_be_indexed')
+```
+To delete an index from the table, use the `delete_index` method. It takes the key for the index as an argument, and returns `None`. If there is no index on the specified key, this operation succeeds but does nothing.
+```python
+t.delete_index('the_key_to_be_indexed')
+```
+To list the indexes present on the table, use the `list_indices` method. It takes no arguments, and returns a list of the indexed keys.
+```python
+key_list = t.list_indices()
+```
+
+#### Describe the table
+
+To get a description of the table, use the `describe` method. It takes no arguments, and has return value exactly as for the `describe_table` method of a `Connection` documented [above](#describe-a-table).
+```python
+d = t.describe()
+```
+
+#### Add keys
+
+To add keys to an existing table, use the `add_keys` method. This updates each record in the table, adding the keys in the given record along with the corresponding values, if they are not already present. Any keys that are already present will be left unmodified.
+```python
+# Display the records in the table t
+print([x for x in t.select(t.describe())])
+# [{'a': 1, 'b': 'fish'}, {'a': 2, 'c': 'chips'}]
+
+# Add new keys
+t.add_keys({'b': 'peas', 'd':12})
+
+# Display the records again
+print([x for x in t.select(t.describe())])
+# [{'a': 1, 'b': 'fish', 'd': 12}, {'a': 2, 'c': 'chips', 'b': 'peas', 'd': 12}]
+```
+
+#### Delete keys
+
+To delete keys from a table, use the `delete_keys` method. This updates all records in the table, deleting the specified keys if present.
+```python
+# Display the records in the table t
+print([x for x in t.select(t.describe())])
+# [{'a': 1, 'b': 'fish', 'd': 12}, {'b': 'peas', 'd': 12, 'a': 2, 'c': 'chips'}]
+
+# Delete some keys from all records
+t.delete_keys(['c','d'])
+
+# Display the records again
+print([x for x in t.select(t.describe())])
+# [{'a': 1, 'b': 'fish'}, {'a': 2, 'b': 'peas'}]
+```
+
+
+### Key-value records
+
+Key-value records are represented by dictionaries. These have keys that are strings and values that are strings, integers, booleans, floating-point numbers, or `bytes` objects.
+
+## Logger interface
+
+The `logger` submodule provides a log handler that writes to a server running the PCAS logging service `logd`. It uses the standard Python [logging framework](https://docs.python.org/3/library/logging.html). Example usage:
+```python
+import multiprocessing
+import logging
+from logging.handlers import QueueListener, QueueHandler
+from pcas import logger
+
+# Set up the log handler
+ssl_cert = '...your SSL certificate...'
+handler = logger.LogHandler(address='localhost:12354', certificate=ssl_cert)
+
+# Set up a queue that passes log messages to our handler
+queue = multiprocessing.Queue(-1)
+queue_listener = QueueListener(queue, logger.LogHandler())
+queue_listener.start()
+
+# Create the logger
+lg = logging.getLogger('your_log_name')
+lg.addHandler(QueueHandler(queue))
+
+# Do stuff...
+
+# Write to the logger
+lg.warning('hello world')
+
+# Clean up
+handler.close()
+queue_listener.stop()
+```
+The `address` argument for `logger.LogHandler` specifies the address of the PCAS `logd` server and is optional; if omitted the address will be read from the environment variable `PCAS_LOG_ADDRESS`. The `certificate` option specifies the SSL certificate to use and is also optional; if omitted the certificate will be read from the environment variable `PCAS_SSL_CERT`. The log handler blocks on logging if the `logd` server is unavailable. This is why we used a queue in the code above: it ensures that calls to the logger `lg` are non-blocking.
+
+## SQL submodule
+
+The `sql` submodule defines a parser for SQL-formatted queries. The SQL should be formatted as follows:
+
+```sql
+[[WHERE] <where condition>] [ORDER BY <sort order>] [LIMIT <limit>]
+```
+
+See below for [examples](#examples). Note that prefixing the WHERE condition with "WHERE" is currently optional, although this might change in the future.
+
+### `WHERE` conditions
+
+The following types are supported:
+
+* string -	surrounded by matching double- (") or single-quotes (')
+* integer -	must fit in a 64-bit signed or unsigned integer
+* float -		must fit in a 64-bit `float`
+* boolean -	`TRUE` or `FALSE`
+
+The following standard SQL operators are supported:
+* `=`, `!=`
+* `<`, `>`, `<=`, `>=`
+* `IS`, `IS NOT`
+* `IN`, `NOT IN`
+* `BETWEEN`, `NOT BETWEEN`
+* `AND`
+* `OR`
+
+### `SORT` orders
+
+A `SORT` order should be formatted
+
+```sql
+key1 [ASC | DESC], key2 [ASC | DESC], ..., keyn [ASC | DESC]
+```
+
+where `ASC` and `DESC` denote increasing and decreasing order, respectively. Precisely what this means is determined by the underlying storage engine and data type. If `ASC` or `DESC` is omitted, then `ASC` is assumed by default.
+
+### `LIMIT` specifications
+
+A non-negative integer (that must fit in 64-bit signed integer) must be provided.
+
+### Examples
+
+```sql
+WHERE is_reflexive IS FALSE AND number_of_points >= 12 ORDER BY id DESC LIMIT 5
+
+WHERE id BETWEEN 4 and 9
+
+WHERE TRUE
+
+ORDER BY rank, id 
+
+ORDER BY rank DESC, id ASC
+
+LIMIT 50
+
+WHERE rank <= 6 LIMIT 10
+```
