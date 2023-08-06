@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bripdf/__init__.py
+bripdf/pdf2image.py
+bripdf/pdf2text.py
+bripdf.egg-info/PKG-INFO
+bripdf.egg-info/SOURCES.txt
+bripdf.egg-info/dependency_links.txt
+bripdf.egg-info/top_level.txt
