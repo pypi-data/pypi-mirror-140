@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Topsis_Shikhar_101917064/__init__.py
+Topsis_Shikhar_101917064.egg-info/PKG-INFO
+Topsis_Shikhar_101917064.egg-info/SOURCES.txt
+Topsis_Shikhar_101917064.egg-info/dependency_links.txt
+Topsis_Shikhar_101917064.egg-info/entry_points.txt
+Topsis_Shikhar_101917064.egg-info/requires.txt
+Topsis_Shikhar_101917064.egg-info/top_level.txt
