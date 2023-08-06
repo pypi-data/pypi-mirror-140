@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dbOperation
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Sayan Saha
+Author-email: sayansaha934@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt
+Requires-Dist: sklearn
+
+This helps to remove null values with its mean value and make the standard normal distribution of dataframe. 
+
