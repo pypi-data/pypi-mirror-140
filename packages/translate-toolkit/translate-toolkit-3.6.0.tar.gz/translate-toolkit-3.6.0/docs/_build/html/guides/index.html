@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Use Cases &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Migrating your translations" href="migrating_translations.html" />
+    <link rel="prev" title="posplit" href="../commands/posplit.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#scripts">Scripts</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Use Cases</a></li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="../commands/posplit.html"
+         title="previous chapter">&laquo; posplit</a></li>
+  <li><a href="migrating_translations.html"
+         title="next chapter">Migrating your translations &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/guides/index.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="use-cases">
+<span id="id1"></span><h1>Use Cases<a class="headerlink" href="#use-cases" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<ul class="simple">
+<li><p><a class="reference internal" href="migrating_translations.html"><span class="doc">Migrating an older version of your translations to the latest templates</span></a></p></li>
+<li><p><a class="reference internal" href="using_pofilter.html"><span class="doc">Checking for technical errors in your translations</span></a></p></li>
+<li><p><a class="reference internal" href="using_csv2po.html"><span class="doc">Translating using only a spreadsheet</span></a> (a look at the
+whole roundtrip from PO to CSV and back)</p></li>
+<li><p><a class="reference internal" href="using_oo2po.html"><span class="doc">Creating OpenOffice.org POT files</span></a></p></li>
+<li><p><a class="reference internal" href="checking_for_inconsistencies.html"><span class="doc">Checking for inconsistencies in your translations</span></a></p></li>
+<li><p><a class="reference internal" href="creating_a_terminology_list_from_your_existing_translations.html"><span class="doc">Creating a terminology list from your existing translations</span></a></p></li>
+<li><p><a class="reference internal" href="running_the_tools_on_microsoft_windows.html"><span class="doc">Running the tools on Microsoft Windows</span></a></p></li>
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">phase</span></code> for the complete translation roundtrip</p></li>
+<li><p><a class="reference internal" href="cleanup_translator_comments.html"><span class="doc">Cleanup translator comments</span></a></p></li>
+<li><p><a class="reference internal" href="creating_mozilla_pot_files.html"><span class="doc">Creating Mozilla POT files</span></a></p></li>
+<li><p><a class="reference internal" href="document_translation.html"><span class="doc">Document translation</span></a></p></li>
+</ul>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

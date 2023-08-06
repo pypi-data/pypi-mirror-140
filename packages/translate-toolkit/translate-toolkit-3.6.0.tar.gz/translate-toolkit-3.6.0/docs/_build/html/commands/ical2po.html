@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>ical2po &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ini2po" href="ini2po.html" />
+    <link rel="prev" title="html2po, po2html" href="html2po.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">ical2po</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#notes">Notes</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="html2po.html"
+         title="previous chapter">&laquo; html2po, po2html</a></li>
+  <li><a href="ini2po.html"
+         title="next chapter">ini2po &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/commands/ical2po.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="po2ical">
+<span id="ical2po"></span><span id="id1"></span><h1>ical2po<a class="headerlink" href="#po2ical" title="Permalink to this headline">¶</a></h1>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 1.2.</span></p>
+</div>
+<p>Converts iCalendar (*.ics) files to Gettext PO format.</p>
+<section id="usage">
+<span id="ical2po-usage"></span><h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ical2po</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="o">&lt;</span><span class="n">ical</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">po</span><span class="o">&gt;</span>
+<span class="n">po2ical</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="o">-</span><span class="n">t</span> <span class="o">&lt;</span><span class="n">ical</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">po</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">ical</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>&lt;ical&gt;</p></td>
+<td><p>is a valid .ics file or directory of those files</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;po&gt;</p></td>
+<td><p>is a directory of PO or POT files</p></td>
+</tr>
+</tbody>
+</table>
+<p>Options (ical2po):</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--version</span></kbd></dt>
+<dd><p>show program’s version number and exit</p>
+</dd>
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>show this help message and exit</p>
+</dd>
+<dt><kbd><span class="option">--manpage</span></kbd></dt>
+<dd><p>output a manpage based on the help</p>
+</dd>
+<dt><kbd><span class="option">--progress=<var>PROGRESS</var></span></kbd></dt>
+<dd><p>show progress as: <a class="reference internal" href="option_progress.html"><span class="doc">dots, none, bar, names, verbose</span></a></p>
+</dd>
+<dt><kbd><span class="option">--errorlevel=<var>ERRORLEVEL</var></span></kbd></dt>
+<dd><p>show errorlevel as: <a class="reference internal" href="option_errorlevel.html"><span class="doc">none, message, exception,
+traceback</span></a></p>
+</dd>
+<dt><kbd><span class="option">-i <var>INPUT</var></span>, <span class="option">--input=<var>INPUT</var></span></kbd></dt>
+<dd><p>read from INPUT in ics format</p>
+</dd>
+<dt><kbd><span class="option">-x <var>EXCLUDE</var></span>, <span class="option">--exclude=<var>EXCLUDE</var></span></kbd></dt>
+<dd><p>exclude names matching EXCLUDE from input paths</p>
+</dd>
+<dt><kbd><span class="option">-o <var>OUTPUT</var></span>, <span class="option">--output=<var>OUTPUT</var></span></kbd></dt>
+<dd><p>write to OUTPUT in po, pot formats</p>
+</dd>
+<dt><kbd><span class="option">-t <var>TEMPLATE</var></span>, <span class="option">--template=<var>TEMPLATE</var></span></kbd></dt>
+<dd><p>read from TEMPLATE in ics format</p>
+</dd>
+<dt><kbd><span class="option">-S</span>, <span class="option">--timestamp</span></kbd></dt>
+<dd><p>skip conversion if the output file has newer timestamp</p>
+</dd>
+<dt><kbd><span class="option">-P</span>, <span class="option">--pot</span></kbd></dt>
+<dd><p>output PO Templates (.pot) rather than PO files (.po)</p>
+</dd>
+<dt><kbd><span class="option">--duplicates=<var>DUPLICATESTYLE</var></span></kbd></dt>
+<dd><p>what to do with duplicate strings (identical source
+text): <a class="reference internal" href="option_duplicates.html"><span class="doc">merge, msgctxt</span></a>
+(default: ‘msgctxt’)</p>
+</dd>
+</dl>
+<p>Options (po2ical):</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--version</span></kbd></dt>
+<dd><p>show program’s version number and exit</p>
+</dd>
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>show this help message and exit</p>
+</dd>
+<dt><kbd><span class="option">--manpage</span></kbd></dt>
+<dd><p>output a manpage based on the help</p>
+</dd>
+<dt><kbd><span class="option">--progress=<var>PROGRESS</var></span></kbd></dt>
+<dd><p>show progress as: <a class="reference internal" href="option_progress.html"><span class="doc">dots, none, bar, names, verbose</span></a></p>
+</dd>
+<dt><kbd><span class="option">--errorlevel=<var>ERRORLEVEL</var></span></kbd></dt>
+<dd><p>show errorlevel as: <a class="reference internal" href="option_errorlevel.html"><span class="doc">none, message, exception,
+traceback</span></a></p>
+</dd>
+<dt><kbd><span class="option">-i <var>INPUT</var></span>, <span class="option">--input=<var>INPUT</var></span></kbd></dt>
+<dd><p>read from INPUT in po, pot formats</p>
+</dd>
+<dt><kbd><span class="option">-x <var>EXCLUDE</var></span>, <span class="option">--exclude=<var>EXCLUDE</var></span></kbd></dt>
+<dd><p>exclude names matching EXCLUDE from input paths</p>
+</dd>
+<dt><kbd><span class="option">-o <var>OUTPUT</var></span>, <span class="option">--output=<var>OUTPUT</var></span></kbd></dt>
+<dd><p>write to OUTPUT in ics format</p>
+</dd>
+<dt><kbd><span class="option">-t <var>TEMPLATE</var></span>, <span class="option">--template=<var>TEMPLATE</var></span></kbd></dt>
+<dd><p>read from TEMPLATE in ics format</p>
+</dd>
+<dt><kbd><span class="option">-S</span>, <span class="option">--timestamp</span></kbd></dt>
+<dd><p>skip conversion if the output file has newer timestamp</p>
+</dd>
+<dt><kbd><span class="option">--threshold=<var>PERCENT</var></span></kbd></dt>
+<dd><p>only convert files where the translation completion is above PERCENT</p>
+</dd>
+<dt><kbd><span class="option">--fuzzy</span></kbd></dt>
+<dd><p>use translations marked fuzzy</p>
+</dd>
+<dt><kbd><span class="option">--nofuzzy</span></kbd></dt>
+<dd><p>don’t use translations marked fuzzy (default)</p>
+</dd>
+</dl>
+</section>
+<section id="examples">
+<span id="ical2po-examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>This example looks at roundtrip of iCalendar translations. While you can do
+recovery of translations, its unlikely that you will ever need to do that.</p>
+<p>First we need to create a set of POT files.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ical2po</span> <span class="o">-</span><span class="n">P</span> <span class="n">ical</span><span class="o">.</span><span class="n">ics</span> <span class="n">ical</span><span class="o">.</span><span class="n">pot</span>
+</pre></div>
+</div>
+<p>The ical.ics file is converted to Gettext POT files called ical.pot.
+Directories of iCalendar files can also be processed.</p>
+<p>Begin translating the ical.pot file by first copying it to make a PO file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="n">ical</span><span class="o">.</span><span class="n">pot</span> <span class="n">ical</span><span class="o">-</span><span class="n">af</span><span class="o">.</span><span class="n">po</span>
+</pre></div>
+</div>
+<p>You are now in a position to translate the file ical-af.po in your favourite
+translation tool.</p>
+<p>Once translated you can convert back as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">po2ical</span> <span class="o">-</span><span class="n">t</span> <span class="n">ical</span><span class="o">.</span><span class="n">ics</span> <span class="n">ical</span><span class="o">-</span><span class="n">af</span><span class="o">.</span><span class="n">po</span> <span class="n">ical</span><span class="o">-</span><span class="n">af</span><span class="o">.</span><span class="n">ics</span>
+</pre></div>
+</div>
+<p>Your translations found in the Afrikaans PO file, <code class="docutils literal notranslate"><span class="pre">ical-af.po</span></code>, will be
+converted to .ics using the file <code class="docutils literal notranslate"><span class="pre">ical.ics</span></code> as a template and creating your
+newly translated .ics file <code class="docutils literal notranslate"><span class="pre">ical-af.ics</span></code>.</p>
+<p>To update your translations simply redo the POT creation step and make use of
+<a class="reference internal" href="pot2po.html"><span class="doc">pot2po</span></a> to bring your translation up-to-date.</p>
+</section>
+<section id="notes">
+<span id="ical2po-notes"></span><h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<p>The converter will only process events in the calendar file, the file itself
+can contain many other things that could be localisable.  Please raise a bug if
+you want to extract additional items.</p>
+<p>The converter does not make use of the LANGUAGE attribute which is permitted in
+the format.  The LANGUAGE attribute does not aid multilingualism in this
+context so is ignored.</p>
+<p>The converter could conceivably also process <a class="reference external" href="https://en.wikipedia.org/wiki/Vcard">vCard</a> files, but
+this has not been implemented for lack of a clear need.  Please raise a bug
+with an example if you have such a file that could benefit from localisation.</p>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

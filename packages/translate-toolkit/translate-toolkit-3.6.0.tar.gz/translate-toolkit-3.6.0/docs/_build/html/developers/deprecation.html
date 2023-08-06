@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Deprecation of Features &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Release Notes" href="../releases/index.html" />
+    <link rel="prev" title="Making a Translate Toolkit Release" href="releasing.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Deprecation of Features</a><ul>
+<li><a class="reference internal" href="#types-of-deprecation">Types of deprecation</a></li>
+<li><a class="reference internal" href="#period-of-maintenance">Period of maintenance</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+<li><a class="reference internal" href="#implementation">Implementation</a></li>
+<li><a class="reference internal" href="#announcements">Announcements</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="releasing.html"
+         title="previous chapter">&laquo; Making a Translate Toolkit Release</a></li>
+  <li><a href="../releases/index.html"
+         title="next chapter">Release Notes &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/developers/deprecation.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="deprecation-of-features">
+<h1>Deprecation of Features<a class="headerlink" href="#deprecation-of-features" title="Permalink to this headline">¶</a></h1>
+<p>From time to time we need to deprecate functionality, this is a guide as to how
+we implement deprecation.</p>
+<section id="types-of-deprecation">
+<h2>Types of deprecation<a class="headerlink" href="#types-of-deprecation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Misspelled function</p></li>
+<li><p>Renamed function</p></li>
+<li><p>Deprecated feature</p></li>
+</ol>
+</section>
+<section id="period-of-maintenance">
+<h2>Period of maintenance<a class="headerlink" href="#period-of-maintenance" title="Permalink to this headline">¶</a></h2>
+<p>Toolkit retains deprecated features for a period of two releases.  Thus
+features deprecated in 1.7.0 are removed in 1.9.0.</p>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">&#64;deprecated</span></code> decorator with a comment and change the docstring to
+use the Sphinx <a class="reference external" href="http://sphinx-doc.org/markup/para.html#directive-deprecated">deprecation syntax</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;Use util.run_fast() instead.&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">run_slow</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Run slowly</span>
+
+<span class="sd">    .. deprecated:: 1.9.0</span>
+<span class="sd">       Use :func:`run_fast` instead.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">run_fast</span><span class="p">()</span>  <span class="c1"># Call new function if possible</span>
+</pre></div>
+</div>
+</section>
+<section id="implementation">
+<h2>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h2>
+<p>Deprecated features should call the new functionality if possible.  This may
+not always be possible, such as the cases of drastic changes.  But it is the
+preferred approach to reduce maintenance of the old code.</p>
+</section>
+<section id="announcements">
+<h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This applies only to feature deprecation and renamed functions.
+Announcements for corrections are at the coders discretion.</p>
+</div>
+<ol class="arabic simple">
+<li><p>On <strong>first release with deprecation</strong> highlight that the feature is
+deprecated in this release and explain reasons and alternate approaches.</p></li>
+<li><p>On <strong>second relase</strong> warn that the feature will be removed in the next
+release.</p></li>
+<li><p>On <strong>third release</strong> remove the feature and announce removal in the release
+announcements.</p></li>
+</ol>
+<p>Thus by examples:</p>
+<dl class="simple">
+<dt>Translate Toolkit 1.9.0:</dt><dd><p>The <code class="docutils literal notranslate"><span class="pre">run_slow</span></code> function has been deprecated and replaced by the faster and
+more correct <code class="docutils literal notranslate"><span class="pre">run_fast</span></code>.  Users of <code class="docutils literal notranslate"><span class="pre">run_slow</span></code> are advised to migrate
+their code.</p>
+</dd>
+<dt>Translate Toolkit 1.10.0:</dt><dd><p>The <code class="docutils literal notranslate"><span class="pre">run_slow</span></code> function has been deprecated and replaced by <code class="docutils literal notranslate"><span class="pre">run_fast</span></code>
+and will be removed in the next version.  Users of <code class="docutils literal notranslate"><span class="pre">run_slow</span></code> are advised
+to migrate their code.</p>
+</dd>
+<dt>Translate Toolkit 1.11.0:</dt><dd><p>The <code class="docutils literal notranslate"><span class="pre">run_slow</span></code> function has been removed, use <code class="docutils literal notranslate"><span class="pre">run_fast</span></code> instead.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

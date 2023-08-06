@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: translate-toolkit
+Version: 3.6.0
+Summary: Tools and API for translation and localization engineering.
+Home-page: http://toolkit.translatehouse.org/
+Author: Translate
+Author-email: translate-devel@lists.sourceforge.net
+License: GNU General Public License (GPL)
+Download-URL: https://github.com/translate/translate/releases/tag/3.6.0
+Project-URL: Issue Tracker, https://github.com/translate/translate/issues
+Project-URL: Documentation, http://docs.translatehouse.org/projects/translate-toolkit/
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Software Development :: Localization
+Requires-Python: >=3.7
+Provides-Extra: all
+Provides-Extra: Subtitles
+Provides-Extra: Trados
+Provides-Extra: chardet
+Provides-Extra: tmserver
+Provides-Extra: Fluent
+Provides-Extra: INI
+Provides-Extra: PHP
+Provides-Extra: Languages
+Provides-Extra: spellcheck
+Provides-Extra: RC
+Provides-Extra: Levenshtein
+Provides-Extra: YAML
+Provides-Extra: iCal
+License-File: LICENSES
+License-File: COPYING
+
+
+The `Translate Toolkit <http://toolkit.translatehouse.org/>`_ is created by
+localizers for localizers. It contains several utilities, as well as an API for
+building localization tools.
+
+Some of the **tools** include:
+
+- File format `converters
+  <http://docs.translatehouse.org/projects/translate-toolkit/en/latest/commands/index.html#converters>`_
+- `Quality checking
+  <http://docs.translatehouse.org/projects/translate-toolkit/en/latest/commands/index.html#quality-assurance>`_
+  tools
+- Tools for counting, grepping, terminology extraction, and pseudo-localization
+
+Apart from the code for the tools above, some features of the **API** include:
+
+- Support for multiple `file formats
+  <http://docs.translatehouse.org/projects/translate-toolkit/en/latest/formats/index.html>`_
+- Language information and language support code (including language detection)
+- Code for translation memory, terminology matching and indexed search
+- Several helper classes and functions for tools built on the Translate
+  Toolkit.
+
+
+

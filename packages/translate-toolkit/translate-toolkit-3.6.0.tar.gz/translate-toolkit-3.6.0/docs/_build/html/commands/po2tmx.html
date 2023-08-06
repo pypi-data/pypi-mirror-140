@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>po2tmx &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="po2wordfast" href="po2wordfast.html" />
+    <link rel="prev" title="php2po" href="php2po.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">po2tmx</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#bugs-and-issues">Bugs and issues</a><ul>
+<li><a class="reference internal" href="#markup-stripping">Markup stripping</a></li>
+<li><a class="reference internal" href="#tmx-and-po-in-omegat">TMX and PO in OmegaT</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tips">Tips</a><ul>
+<li><a class="reference internal" href="#tmx-with-only-unique-segments">TMX with only unique segments</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="php2po.html"
+         title="previous chapter">&laquo; php2po</a></li>
+  <li><a href="po2wordfast.html"
+         title="next chapter">po2wordfast &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/commands/po2tmx.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="po2tmx">
+<span id="id1"></span><h1>po2tmx<a class="headerlink" href="#po2tmx" title="Permalink to this headline">¶</a></h1>
+<p>Convert <a class="reference internal" href="../formats/po.html"><span class="doc">Gettext PO</span></a> files to a <a class="reference internal" href="../formats/tmx.html"><span class="doc">TMX</span></a>
+translation memory file.  TMX is the Translation Memory eXchange format
+developed by OSCAR.</p>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets">*</span></dt>
+<dd><p>OSCAR (Open Standards for Container/Content Allowing Re-use), a special
+interest group of the now defunct LISA (Localization Industry Standards
+Association). The Gala <a class="reference external" href="http://www.gala-global.org/lisa-oscar-standards">LISA OSCAR Standards</a> page has more details on
+the possible future for the standards.</p>
+</dd>
+</dl>
+<p>If you are interested in po2tmx, you might also be interested in
+<a class="reference internal" href="posegment.html"><span class="doc">posegment</span></a> that can be used to perform some automated segmentation on
+sentence level.</p>
+<section id="usage">
+<span id="po2tmx-usage"></span><h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">po2tmx</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="o">--</span><span class="n">language</span> <span class="o">&lt;</span><span class="n">target</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">po</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">tmx</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>&lt;po&gt;</p></td>
+<td><p>is a PO file</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;tmx&gt;</p></td>
+<td><p>is a TMX file</p></td>
+</tr>
+</tbody>
+</table>
+<p>Options:</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--version</span></kbd></dt>
+<dd><p>show program’s version number and exit</p>
+</dd>
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>show this help message and exit</p>
+</dd>
+<dt><kbd><span class="option">--manpage</span></kbd></dt>
+<dd><p>output a manpage based on the help</p>
+</dd>
+<dt><kbd><span class="option">--progress=<var>PROGRESS</var></span></kbd></dt>
+<dd><p>show progress as: <a class="reference internal" href="option_progress.html"><span class="doc">dots, none, bar, names, verbose</span></a></p>
+</dd>
+<dt><kbd><span class="option">--errorlevel=<var>ERRORLEVEL</var></span></kbd></dt>
+<dd><p>show errorlevel as: <a class="reference internal" href="option_errorlevel.html"><span class="doc">none, message, exception,
+traceback</span></a></p>
+</dd>
+<dt><kbd><span class="option">-i <var>INPUT</var></span>, <span class="option">--input=<var>INPUT</var></span></kbd></dt>
+<dd><p>read from INPUT in po, pot formats</p>
+</dd>
+<dt><kbd><span class="option">-x <var>EXCLUDE</var></span>, <span class="option">--exclude=<var>EXCLUDE</var></span></kbd></dt>
+<dd><p>exclude names matching EXCLUDE from input paths</p>
+</dd>
+<dt><kbd><span class="option">-o <var>OUTPUT</var></span>, <span class="option">--output=<var>OUTPUT</var></span></kbd></dt>
+<dd><p>write to OUTPUT in tmx format</p>
+</dd>
+<dt><kbd><span class="option">-S</span>, <span class="option">--timestamp</span></kbd></dt>
+<dd><p>skip conversion if the output file has newer timestamp</p>
+</dd>
+<dt><kbd><span class="option">-l <var>LANG</var></span>, <span class="option">--language=<var>LANG</var></span></kbd></dt>
+<dd><p>set target language code (e.g. af-ZA) [required]</p>
+</dd>
+<dt><kbd><span class="option">--source-language=<var>LANG</var></span></kbd></dt>
+<dd><p>set source language code (default: en)</p>
+</dd>
+<dt><kbd><span class="option">--comments=<var>COMMENT</var></span></kbd></dt>
+<dd><p>set default comment import: none, source, type or others (default: none)</p>
+</dd>
+</dl>
+</section>
+<section id="examples">
+<span id="po2tmx-examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">po2tmx</span> <span class="o">-</span><span class="n">l</span> <span class="n">xh</span> <span class="n">browser</span><span class="o">.</span><span class="n">po</span> <span class="n">browser</span><span class="o">.</span><span class="n">tmx</span>
+</pre></div>
+</div>
+<p>Use the Xhosa (<em>xh</em>) translations in the PO file <em>browser.po</em> to create a TMX
+file called <em>browser.tmx</em></p>
+</section>
+<section id="bugs-and-issues">
+<span id="po2tmx-bugs-and-issues"></span><h2>Bugs and issues<a class="headerlink" href="#bugs-and-issues" title="Permalink to this headline">¶</a></h2>
+<section id="markup-stripping">
+<span id="po2tmx-markup-stripping"></span><h3>Markup stripping<a class="headerlink" href="#markup-stripping" title="Permalink to this headline">¶</a></h3>
+<p>po2tmx conforms to TMX v1.4 without stripping markup.  See the
+<a class="reference internal" href="../formats/tmx.html"><span class="doc">TMX</span></a> conformance page for more details.</p>
+<p>It has not been widely tested so your mileage may vary.</p>
+</section>
+<section id="tmx-and-po-in-omegat">
+<span id="po2tmx-tmx-and-po-in-omegat"></span><h3>TMX and PO in OmegaT<a class="headerlink" href="#tmx-and-po-in-omegat" title="Permalink to this headline">¶</a></h3>
+<p>In some tools, like OmegaT, PO files are parsed without expanding escaped
+sequences, even though such tools use TMX for translation memory.  Keep this in
+mind when using po2tmx, because po2tmx converts <code class="docutils literal notranslate"><span class="pre">\n</span></code> and <code class="docutils literal notranslate"><span class="pre">\t</span></code> to newlines
+and tabs in the TMX file.  If such a TMX file is used while translating PO
+files in OmegaT, matching will be less than 100%.</p>
+<p>In other tools, such as Swordfish, the PO comment “no-wrap” is interpreted in
+the same way as the equivalent function in XML, which may also lead to
+mismatches if TMXes from po2tmx are used.</p>
+<p>There is nothing wrong with po2tmx, but if used in conjunction with tools that
+handle PO files differently, it may lead to less than perfect matching.</p>
+</section>
+</section>
+<section id="tips">
+<span id="po2tmx-tips"></span><h2>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h2>
+<section id="tmx-with-only-unique-segments">
+<span id="po2tmx-tmx-with-only-unique-segments"></span><h3>TMX with only unique segments<a class="headerlink" href="#tmx-with-only-unique-segments" title="Permalink to this headline">¶</a></h3>
+<p>To create a TMX with no duplicates (in other words, only unique strings), use
+msgcat to first create a large PO file with non-uniques removed.</p>
+</section>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

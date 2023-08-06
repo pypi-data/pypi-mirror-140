@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Reporting Bugs &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Translate Toolkit Developers Guide" href="developers.html" />
+    <link rel="prev" title="Contributing" href="contributing.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Reporting Bugs</a><ul>
+<li><a class="reference internal" href="#bug-etiquette">Bug Etiquette</a></li>
+<li><a class="reference internal" href="#be-verbose">Be verbose</a></li>
+<li><a class="reference internal" href="#tell-us-your-version">Tell us your version</a></li>
+<li><a class="reference internal" href="#attach-examples">Attach examples</a></li>
+<li><a class="reference internal" href="#include-tracebacks">Include tracebacks</a></li>
+<li><a class="reference internal" href="#reproduce">Reproduce</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="contributing.html"
+         title="previous chapter">&laquo; Contributing</a></li>
+  <li><a href="developers.html"
+         title="next chapter">Translate Toolkit Developers Guide &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/developers/reporting_bugs.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="reporting-bugs">
+<h1>Reporting Bugs<a class="headerlink" href="#reporting-bugs" title="Permalink to this headline">¶</a></h1>
+<p>If you have problems with some tool, ensure that you have the newest version of the tool you are using. Check the documentation of the tool to see if the examples or other guidelines can help. If you are lucky, your problem is not a bug at all.</p>
+<p>If you feel you found a bug, please make sure you are aware of the bug etiquette explained below. Then report your bugs at <a class="reference external" href="https://github.com/translate/translate/issues">https://github.com/translate/translate/issues</a>.</p>
+<section id="bug-etiquette">
+<h2>Bug Etiquette<a class="headerlink" href="#bug-etiquette" title="Permalink to this headline">¶</a></h2>
+<p>In order to best solve the problem we need good bug reports.  Reports that do not give a full picture or which coders are unable to
+reproduce, end up wasting a lot of time.  If you, the expert in your bug, spend a bit of time you can make sure your bug gets fixed.</p>
+<p>Remember to first see if the bug is not already reported. Perhaps someone already reported it and you can provide some extra information in that bug report. You can also add yourself in the CC field so that you get notified of any changes to the bug report.</p>
+<p>If you could not find the bug, you should report it. Look through each of the following sections and make sure you have given the information required.</p>
+</section>
+<section id="be-verbose">
+<h2>Be verbose<a class="headerlink" href="#be-verbose" title="Permalink to this headline">¶</a></h2>
+<p>Tell us exactly how came to see this bug.  Don’t say:</p>
+<blockquote>
+<div><p>The Mozilla DTD files have escaping errors</p>
+</div></blockquote>
+<p>Rather say:</p>
+<blockquote>
+<div><p>I’m working on Firefox 1.5 and in the files somefile.dtd entity XXXX the n is not escaped correctly it should be \n</p>
+</div></blockquote>
+<p>OK so we need to know:</p>
+<ul class="simple">
+<li><p>What you where working on</p></li>
+<li><p>What tool you used</p></li>
+<li><p>What file has an error</p></li>
+<li><p>What you got, and</p></li>
+<li><p>What you expected to get</p></li>
+</ul>
+</section>
+<section id="tell-us-your-version">
+<h2>Tell us your version<a class="headerlink" href="#tell-us-your-version" title="Permalink to this headline">¶</a></h2>
+<p>Use –version to get the version of the tool you are working with.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>moz2po --version        <span class="c1"># for Translate Toolkit</span>
+</pre></div>
+</div>
+<p>We might have fixed this problem already, your version will help us know if their are still problems or whether to ask you to upgrade.</p>
+</section>
+<section id="attach-examples">
+<h2>Attach examples<a class="headerlink" href="#attach-examples" title="Permalink to this headline">¶</a></h2>
+<p>If possible, create a snippet of a file to demonstrate the error.  Sending one large file means that the coder
+has to search for the error.  If you can narrow it down to one key section and only attach that, it will help.</p>
+<p>Please attach all your source files.  In other words, if the error is in somefile.dtd in Firefox 1.1 please attach that file.  It will save the coder
+having to find the Firefox version, extract the file and check.  If the file is included, everything is much quicker.  If the file is very large,
+then please place it on a server somewhere for the coder to download.</p>
+</section>
+<section id="include-tracebacks">
+<h2>Include tracebacks<a class="headerlink" href="#include-tracebacks" title="Permalink to this headline">¶</a></h2>
+<p>For the programs in the translate toolkit, use the parameter –errorlevel=traceback and copy the traceback to the bug report</p>
+<blockquote>
+<div><p>moz2po –errorlevel=traceback</p>
+</div></blockquote>
+<p>A traceback will give a much better clue as to what the error might be and send the coder on the right path.  It may be a very simple fix, may relate to your setup or might indicate a much more complex problem.  Tracebacks help coders get you information quicker.</p>
+</section>
+<section id="reproduce">
+<h2>Reproduce<a class="headerlink" href="#reproduce" title="Permalink to this headline">¶</a></h2>
+<p>Tell us exactly how to reproduce the error.  Mention the steps if needed, or give an example command line.  Without being able to reproduce the error, it will not easily get fixed.</p>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

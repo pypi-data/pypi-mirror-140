@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>–duplicates=DUPLICATESTYLE &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="–errorlevel=ERRORLEVEL" href="option_errorlevel.html" />
+    <link rel="prev" title="–accelerator=ACCELERATOR" href="option_accelerator.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">–duplicates=DUPLICATESTYLE</a><ul>
+<li><a class="reference internal" href="#merge">merge</a></li>
+<li><a class="reference internal" href="#msgctxt-default">msgctxt (default)</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="option_accelerator.html"
+         title="previous chapter">&laquo; –accelerator=ACCELERATOR</a></li>
+  <li><a href="option_errorlevel.html"
+         title="next chapter">–errorlevel=ERRORLEVEL &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/commands/option_duplicates.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="duplicates-duplicatestyle">
+<span id="option-duplicates"></span><h1>–duplicates=DUPLICATESTYLE<a class="headerlink" href="#duplicates-duplicatestyle" title="Permalink to this headline">¶</a></h1>
+<p>Gettext PO files only allow one message with a common msgid (source string).
+Many other formats allow duplicate entries.  To create a valid PO file you need
+to merge these duplicate entries into one PO message.  However, this often
+negatively affects the roundtrip or is not what is expected by the user.  Thus
+we have a number of methods of handling duplicates which we call <em>duplicate
+styles</em>.</p>
+<p>Also affected are conversions in which the source format is empty (allowing
+possible translation). As the header in a PO file is identified by an empty
+source string, your message will appear to be a duplicate of the header.  In
+this case duplicate removal is critical.</p>
+<p>Previously the tools used msgid_comment (KDE style comments) to disambiguate
+text.  However, with the release of Gettext 0.15, the new msgctxt
+disambiguation is now recommended, especially if you wish to use your files
+with other Gettext the tools. Many other pieces of software now also support
+this feature, and will probably become the best choice for almost all
+circumstances.  It is the default in our converters.</p>
+<section id="merge">
+<span id="option-duplicates-merge"></span><h2>merge<a class="headerlink" href="#merge" title="Permalink to this headline">¶</a></h2>
+<p>This is the traditional Gettext approach.  All messages with the same source
+string or English string are merged into one PO message.</p>
+<div class="highlight-po notranslate"><div class="highlight"><pre><span></span><span class="kd">#: file1.dtd:instruction_manual</span>
+<span class="kd">#: file1.dtd:manual_process</span>
+<span class="nv">msgid</span> <span class="s">&quot;Manual&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;&quot;</span>
+</pre></div>
+</div>
+<p>If however the source text is blank (these are often configuration options in
+Mozilla) then the <em>merge</em> style will use KDE comments as used in the
+<em>msgid_comment</em> style in order to create unambiguous entries that can still be
+used for configuration.</p>
+<div class="highlight-po notranslate"><div class="highlight"><pre><span></span><span class="kd">#: file1.dtd:translators_name</span>
+<span class="nv">msgid</span> <span class="s">&quot;_: file1.dtd:translators_name\n&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;&quot;</span>
+
+<span class="kd">#: file1.dtd:translators_email</span>
+<span class="nv">msgid</span> <span class="s">&quot;_: file1.dtd:translators_email\n&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="msgctxt-default">
+<span id="option-duplicates-msgctxt"></span><h2>msgctxt (default)<a class="headerlink" href="#msgctxt-default" title="Permalink to this headline">¶</a></h2>
+<p>This uses the msgctxt feature of Gettext that was introduced with Gettext 0.15.
+Some tools might not support it 100%. This option is the default in recent
+releases of the Translate Toolkit.</p>
+<div class="highlight-po notranslate"><div class="highlight"><pre><span></span><span class="kd">#: file1.dtd:instruction_manual</span>
+<span class="nv">msgctxt</span> <span class="s">&quot;instruction_manual&quot;</span>
+<span class="nv">msgid</span> <span class="s">&quot;Manual&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;&quot;</span>
+
+<span class="kd">#: file1.dtd:manual_process</span>
+<span class="nv">msgctxt</span> <span class="s">&quot;manual_process&quot;</span>
+<span class="nv">msgid</span> <span class="s">&quot;Manual&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;&quot;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>–personality=TYPE &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="–progress=PROGRESS" href="option_progress.html" />
+    <link rel="prev" title="–multifile=MULTIFILESTYLE" href="option_multifile.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">–personality=TYPE</a><ul>
+<li><a class="reference internal" href="#java-default">java (default)</a></li>
+<li><a class="reference internal" href="#mozilla">mozilla</a></li>
+<li><a class="reference internal" href="#skype">skype</a></li>
+<li><a class="reference internal" href="#flex">flex</a></li>
+<li><a class="reference internal" href="#strings">strings</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="option_multifile.html"
+         title="previous chapter">&laquo; –multifile=MULTIFILESTYLE</a></li>
+  <li><a href="option_progress.html"
+         title="next chapter">–progress=PROGRESS &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/commands/option_personality.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="personality-type">
+<span id="option-personality"></span><h1>–personality=TYPE<a class="headerlink" href="#personality-type" title="Permalink to this headline">¶</a></h1>
+<section id="java-default">
+<span id="option-personality-java-default"></span><h2>java (default)<a class="headerlink" href="#java-default" title="Permalink to this headline">¶</a></h2>
+<p>Create output strictly according to the specification for .properties files.
+This will use escaped Unicode for any non-ASCII characters.  Thus the following
+string found in a PO file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ṽḁḽṻḝ</span>
+</pre></div>
+</div>
+<p>Will appear as follows in the output .properties file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">u1E7D</span>\<span class="n">u1E01</span>\<span class="n">u1E3D</span>\<span class="n">u1E7B</span>\<span class="n">u1E1D</span>
+</pre></div>
+</div>
+</section>
+<section id="mozilla">
+<span id="option-personality-mozilla"></span><h2>mozilla<a class="headerlink" href="#mozilla" title="Permalink to this headline">¶</a></h2>
+<p>Mozilla has made slight adjustments to the Java .properties spec.  Mozilla will
+accept UTF-8 encoded strings in the property file and thus does not need
+escaped Unicode.  Thus the above string – ṽḁḽṻḝ – will not be escaped.
+Mozilla property files are thus more useful for non-Latin languages in that
+they are actually readable.</p>
+<p>Of course this style of file is only used by Mozilla and should not be used for
+other projects that follow the Java spec more strictly.</p>
+</section>
+<section id="skype">
+<span id="option-personality-skype"></span><h2>skype<a class="headerlink" href="#skype" title="Permalink to this headline">¶</a></h2>
+<p>Skype .lang files are .properties files in UTF-16. The &amp; is used as an
+accelerator (marked in the PO header).</p>
+</section>
+<section id="flex">
+<span id="option-personality-flex"></span><h2>flex<a class="headerlink" href="#flex" title="Permalink to this headline">¶</a></h2>
+<p>Flex follows the Mozilla approach, a UTF-8 encoded file with no escaped
+unicode. We include it as its own dialect for ease of use.</p>
+</section>
+<section id="strings">
+<span id="option-personality-strings"></span><h2>strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h2>
+<p>Much Mac OS X and iPhone software is translated using .strings files.  These
+are quite different from properties files and we treat them here as key value
+files.</p>
+<p>The files are in UTF-16 with a few minor escaping conventions.</p>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

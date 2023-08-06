@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>search &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="services" href="services.html" />
+    <link rel="prev" title="misc" href="misc.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">search</a><ul>
+<li><a class="reference internal" href="#module-translate.search.lshtein">lshtein</a></li>
+<li><a class="reference internal" href="#module-translate.search.match">match</a></li>
+<li><a class="reference internal" href="#module-translate.search.terminology">terminology</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="misc.html"
+         title="previous chapter">&laquo; misc</a></li>
+  <li><a href="services.html"
+         title="next chapter">services &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/api/search.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="module-translate.search">
+<span id="search"></span><h1>search<a class="headerlink" href="#module-translate.search" title="Permalink to this headline">¶</a></h1>
+<p>Services for searching and matching of text.</p>
+<section id="module-translate.search.lshtein">
+<span id="lshtein"></span><h2>lshtein<a class="headerlink" href="#module-translate.search.lshtein" title="Permalink to this headline">¶</a></h2>
+<p>A class to calculate a similarity based on the Levenshtein
+distance.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein_distance</a></p>
+</div>
+<p>If available, the <a class="reference external" href="https://pypi.python.org/pypi/python-Levenshtein">python-Levenshtein</a> will be used which will
+provide better performance as it is implemented natively.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="translate.search.lshtein.distance">
+<span class="sig-prename descclassname"><span class="pre">translate.search.lshtein.</span></span><span class="sig-name descname"><span class="pre">distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stopvalue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.lshtein.distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as python_distance in functionality. This uses the fast C version
+if we detected it earlier.</p>
+<p>Note that this does not support arbitrary sequence types, but only string
+types.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="translate.search.lshtein.native_distance">
+<span class="sig-prename descclassname"><span class="pre">translate.search.lshtein.</span></span><span class="sig-name descname"><span class="pre">native_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stopvalue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.lshtein.native_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as python_distance in functionality. This uses the fast C version
+if we detected it earlier.</p>
+<p>Note that this does not support arbitrary sequence types, but only string
+types.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="translate.search.lshtein.python_distance">
+<span class="sig-prename descclassname"><span class="pre">translate.search.lshtein.</span></span><span class="sig-name descname"><span class="pre">python_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stopvalue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.lshtein.python_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the distance for use in similarity calculation. Python
+version.</p>
+</dd></dl>
+
+</section>
+<section id="module-translate.search.match">
+<span id="match"></span><h2>match<a class="headerlink" href="#module-translate.search.match" title="Permalink to this headline">¶</a></h2>
+<p>Class to perform translation memory matching from a store of translation
+units.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="translate.search.match.matcher">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">translate.search.match.</span></span><span class="sig-name descname"><span class="pre">matcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">store</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_candidates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_similarity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">70</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comparer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">usefuzzy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.matcher" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class that will do matching and store configuration for the matching
+process.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.matcher.buildunits">
+<span class="sig-name descname"><span class="pre">buildunits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">candidates</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.matcher.buildunits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a list of units conforming to base API, with the score
+in the comment.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.matcher.extendtm">
+<span class="sig-name descname"><span class="pre">extendtm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">store</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.matcher.extendtm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends the memory with extra unit(s).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>units</strong> – The units to add to the TM.</p></li>
+<li><p><strong>store</strong> – Optional store from where some metadata can be retrieved
+and associated with each unit.</p></li>
+<li><p><strong>sort</strong> – Optional parameter that can be set to False to supress
+sorting of the candidates list. This should probably
+only be used in <a class="reference internal" href="#translate.search.match.matcher.inittm" title="translate.search.match.matcher.inittm"><code class="xref py py-meth docutils literal notranslate"><span class="pre">matcher.inittm()</span></code></a>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.matcher.getstartlength">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getstartlength</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">min_similarity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.matcher.getstartlength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the minimum length we are interested in.  The extra fat
+is because we don’t use plain character distance only.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.matcher.getstoplength">
+<span class="sig-name descname"><span class="pre">getstoplength</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">min_similarity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.matcher.getstoplength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates a length beyond which we are not interested.  The extra
+fat is because we don’t use plain character distance only.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.matcher.inittm">
+<span class="sig-name descname"><span class="pre">inittm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stores</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.matcher.inittm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialises the memory for later use. We use simple base units for
+speedup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.matcher.matches">
+<span class="sig-name descname"><span class="pre">matches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.matcher.matches" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of possible matches for given source text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>String</em>) – The text that will be search for in the translation memory</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a list of units with the source and target strings from the
+translation memory. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">self.addpercentage</span></code> is
+<em>True</em> (default) the match quality is given as a
+percentage in the notes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.matcher.setparameters">
+<span class="sig-name descname"><span class="pre">setparameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_candidates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_similarity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">70</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.matcher.setparameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the parameters without reinitialising the tm. If a parameter is
+not specified, it is set to the default, not ignored</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.matcher.usable">
+<span class="sig-name descname"><span class="pre">usable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.matcher.usable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns whether this translation unit is usable for TM</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="translate.search.match.sourcelen">
+<span class="sig-prename descclassname"><span class="pre">translate.search.match.</span></span><span class="sig-name descname"><span class="pre">sourcelen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.sourcelen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the length of the source string.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="translate.search.match.terminologymatcher">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">translate.search.match.</span></span><span class="sig-name descname"><span class="pre">terminologymatcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">store</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_candidates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_similarity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comparer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.terminologymatcher" title="Permalink to this definition">¶</a></dt>
+<dd><p>A matcher with settings specifically for terminology matching.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.terminologymatcher.buildunits">
+<span class="sig-name descname"><span class="pre">buildunits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">candidates</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.terminologymatcher.buildunits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a list of units conforming to base API, with the score
+in the comment.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.terminologymatcher.extendtm">
+<span class="sig-name descname"><span class="pre">extendtm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">store</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.terminologymatcher.extendtm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends the memory with extra unit(s).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>units</strong> – The units to add to the TM.</p></li>
+<li><p><strong>store</strong> – Optional store from where some metadata can be retrieved
+and associated with each unit.</p></li>
+<li><p><strong>sort</strong> – Optional parameter that can be set to False to supress
+sorting of the candidates list. This should probably
+only be used in <a class="reference internal" href="#translate.search.match.matcher.inittm" title="translate.search.match.matcher.inittm"><code class="xref py py-meth docutils literal notranslate"><span class="pre">matcher.inittm()</span></code></a>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.terminologymatcher.getstartlength">
+<span class="sig-name descname"><span class="pre">getstartlength</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">min_similarity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.terminologymatcher.getstartlength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the minimum length we are interested in.  The extra fat
+is because we don’t use plain character distance only.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.terminologymatcher.getstoplength">
+<span class="sig-name descname"><span class="pre">getstoplength</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">min_similarity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.terminologymatcher.getstoplength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates a length beyond which we are not interested.  The extra
+fat is because we don’t use plain character distance only.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.terminologymatcher.inittm">
+<span class="sig-name descname"><span class="pre">inittm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">store</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.terminologymatcher.inittm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normal initialisation, but convert all source strings to lower case</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.terminologymatcher.matches">
+<span class="sig-name descname"><span class="pre">matches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.terminologymatcher.matches" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normal matching after converting text to lower case. Then replace
+with the original unit to retain comments, etc.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.terminologymatcher.setparameters">
+<span class="sig-name descname"><span class="pre">setparameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_candidates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_similarity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">70</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.terminologymatcher.setparameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the parameters without reinitialising the tm. If a parameter is
+not specified, it is set to the default, not ignored</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="translate.search.match.terminologymatcher.usable">
+<span class="sig-name descname"><span class="pre">usable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.terminologymatcher.usable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns whether this translation unit is usable for terminology.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="translate.search.match.unit2dict">
+<span class="sig-prename descclassname"><span class="pre">translate.search.match.</span></span><span class="sig-name descname"><span class="pre">unit2dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#translate.search.match.unit2dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>converts a pounit to a simple dict structure for use over the web</p>
+</dd></dl>
+
+</section>
+<section id="module-translate.search.terminology">
+<span id="terminology"></span><h2>terminology<a class="headerlink" href="#module-translate.search.terminology" title="Permalink to this headline">¶</a></h2>
+<p>A class that does terminology matching</p>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

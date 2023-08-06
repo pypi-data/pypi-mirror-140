@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Testing &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="prev" title="Building" href="building.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building.html">Building</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Testing</a><ul>
+<li><a class="reference internal" href="#skipping-tests">Skipping tests</a><ul>
+<li><a class="reference internal" href="#importorskip">importorskip</a></li>
+<li><a class="reference internal" href="#skipif">skipif</a></li>
+<li><a class="reference internal" href="#xfail">xfail</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#testing-for-warnings">Testing for Warnings</a><ul>
+<li><a class="reference internal" href="#deprecated-call">deprecated_call</a></li>
+<li><a class="reference internal" href="#recwarn">recwarn</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#command-line-functional-testing">Command Line Functional Testing</a><ul>
+<li><a class="reference internal" href="#file-name-magic">File name magic</a></li>
+<li><a class="reference internal" href="#writing">Writing</a><ul>
+<li><a class="reference internal" href="#prep">–prep</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="building.html"
+         title="previous chapter">&laquo; Building</a></li>
+  <li><a href="contributing.html"
+         title="next chapter">Contributing &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/developers/testing.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="testing">
+<span id="id1"></span><h1>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h1>
+<p>Our aim is that all new functionality is adequately tested. Adding tests for
+existing functionality is highly recommended before any major reimplementation
+(refactoring, etcetera).</p>
+<p>We use <a class="reference external" href="http://pytest.org/">py.test</a> for (unit) testing. You need at least pytest &gt;= 2.2.</p>
+<p>To run tests in the current directory and its subdirectories:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>py.test  <span class="c1"># runs all tests</span>
+<span class="gp">$ </span>py.test storage/test_dtd.py  <span class="c1"># runs just a single test module</span>
+</pre></div>
+</div>
+<p>We use several py.test features to simplify testing, and to suppress errors in
+circumstances where the tests cannot possibly succeed (limitations of
+tests and missing dependencies).</p>
+<section id="skipping-tests">
+<h2>Skipping tests<a class="headerlink" href="#skipping-tests" title="Permalink to this headline">¶</a></h2>
+<p>Pytest allows tests, test classes, and modules to be skipped or marked as
+“expected to fail” (xfail).
+Generally you should <em>skip</em> only if the test cannot run at all (throws uncaught
+exception); otherwise <em>xfail</em> is preferred as it provides more test coverage.</p>
+<section id="importorskip">
+<h3>importorskip<a class="headerlink" href="#importorskip" title="Permalink to this headline">¶</a></h3>
+<p>Use the builtin <code class="xref py py-func docutils literal notranslate"><span class="pre">importorskip()</span></code> function
+to skip a test module if a dependency cannot be imported:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pytest</span> <span class="kn">import</span> <span class="n">importorskip</span>
+<span class="n">importorskip</span><span class="p">(</span><span class="s2">&quot;vobject&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If <em>vobject</em> can be imported, it will be; otherwise it raises an exception
+that causes pytest to skip the entire module rather than failing.</p>
+</section>
+<section id="skipif">
+<h3>skipif<a class="headerlink" href="#skipif" title="Permalink to this headline">¶</a></h3>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">skipif</span></code> decorator to <a class="reference external" href="https://docs.pytest.org/en/latest/how-to/skipping.html#skipif" title="(in pytest v7.1.0.dev235+g5f3d94c47)"><span class="xref std std-ref">mark tests to be skipped</span></a>
+unless certain criteria are met.  The following skips a test if the version of
+<em>mymodule</em> is too old:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mymodule</span>
+
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">skipif</span><span class="p">(</span><span class="s2">&quot;mymodule.__version__ &lt; &#39;1.2&#39;&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_function</span><span class="p">():</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>You can apply this decorator to classes as well as functions and methods.</p>
+<p>It is also possible to skip an entire test module by creating a <code class="docutils literal notranslate"><span class="pre">pytestmark</span></code>
+static variable in the module:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># mark entire module as skipped for py.test if no indexer available</span>
+<span class="n">pytestmark</span> <span class="o">=</span> <span class="n">pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">skipif</span><span class="p">(</span><span class="s2">&quot;noindexer&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="xfail">
+<h3>xfail<a class="headerlink" href="#xfail" title="Permalink to this headline">¶</a></h3>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">xfail</span></code> decorator to <a class="reference external" href="https://docs.pytest.org/en/latest/how-to/skipping.html#xfail" title="(in pytest v7.1.0.dev235+g5f3d94c47)"><span class="xref std std-ref">mark tests as expected to fail</span></a>. This allows you to do the following:</p>
+<ul class="simple">
+<li><p>Build tests for functionality that we haven’t implemented yet</p></li>
+<li><p>Mark tests that will fail on certain platforms or Python versions</p></li>
+<li><p>Mark tests that we should fix but haven’t got round to fixing yet</p></li>
+</ul>
+<p>The simplest form is the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pytest</span> <span class="kn">import</span> <span class="n">pytest</span><span class="o">.</span><span class="n">mark</span>
+
+<span class="nd">@mark</span><span class="o">.</span><span class="n">xfail</span>
+<span class="k">def</span> <span class="nf">test_function</span><span class="p">():</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>You can also pass parameters to the decorator to mark expected failure only
+under some condition (like <em>skipif</em>), to document the reason failure is
+expected, or to actually skip the test:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@mark</span><span class="o">.</span><span class="n">xfail</span><span class="p">(</span><span class="s2">&quot;sys.version_info &gt;= (3,0)&quot;</span><span class="p">)</span>  <span class="c1"># only expect failure for Python 3</span>
+<span class="nd">@mark</span><span class="o">.</span><span class="n">xfail</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="s2">&quot;Not implemented&quot;</span><span class="p">)</span>  <span class="c1"># provide a reason for the xfail</span>
+<span class="nd">@mark</span><span class="o">.</span><span class="n">xfail</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">run</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># skip the test but still regard it as xfailed</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="testing-for-warnings">
+<h2>Testing for Warnings<a class="headerlink" href="#testing-for-warnings" title="Permalink to this headline">¶</a></h2>
+<section id="deprecated-call">
+<h3>deprecated_call<a class="headerlink" href="#deprecated-call" title="Permalink to this headline">¶</a></h3>
+<p>The builtin <a class="reference external" href="https://docs.pytest.org/en/latest/reference/reference.html#pytest.deprecated_call" title="(in pytest v7.1.0.dev235+g5f3d94c47)"><code class="xref py py-func docutils literal notranslate"><span class="pre">deprecated_call()</span></code></a> function checks that a
+function that we run raises a DeprecationWarning:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pytest</span> <span class="kn">import</span> <span class="n">deprecated_call</span>
+
+<span class="k">def</span> <span class="nf">test_something</span><span class="p">():</span>
+    <span class="n">deprecated_call</span><span class="p">(</span><span class="n">function_to_run</span><span class="p">,</span> <span class="n">arguments_for_function</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="recwarn">
+<h3>recwarn<a class="headerlink" href="#recwarn" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference external" href="http://pytest.org/latest/recwarn.html"><em>recwarn plugin</em></a> allows us to test for other warnings. Note that
+<code class="docutils literal notranslate"><span class="pre">recwarn</span></code> is a funcargs plugin, which means that you need it in your test
+function parameters:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_example</span><span class="p">(</span><span class="n">recwarn</span><span class="p">):</span>
+    <span class="c1"># do something</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="n">recwarn</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+    <span class="c1"># w.{message,category,filename,lineno}</span>
+    <span class="k">assert</span> <span class="s1">&#39;something&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">w</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="command-line-functional-testing">
+<h1>Command Line Functional Testing<a class="headerlink" href="#command-line-functional-testing" title="Permalink to this headline">¶</a></h1>
+<p>Functional tests allow us to validate the operation of the tools on the command
+line.  The execution by a user is simulated using reference data files and the
+results are captured for comparison.</p>
+<p>The tests are simple to craft and use some naming magic to make it easy to
+refer to test files, stdout and stderr.</p>
+<section id="file-name-magic">
+<h2>File name magic<a class="headerlink" href="#file-name-magic" title="Permalink to this headline">¶</a></h2>
+<p>We use a special naming convention to make writing tests quick and easy.  Thus
+in the case of testing the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>moz2po -t template.dtd translations.po translated.dtd
+</pre></div>
+</div>
+<p>Our test would be written like this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>moz2po -t <span class="nv">$one</span> <span class="nv">$two</span> <span class="nv">$out</span>
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">$one</span></code> and <code class="docutils literal notranslate"><span class="pre">$two</span></code> are the input files and <code class="docutils literal notranslate"><span class="pre">$out</span></code> is the result file
+that the test framework will validate.</p>
+<p>The files would be called:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 14%" />
+<col style="width: 11%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File</p></th>
+<th class="head"><p>Function</p></th>
+<th class="head"><p>Variable</p></th>
+<th class="head"><p>File naming conventions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>test_moz2po_help.sh</p></td>
+<td><p>Test script</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>test_${command}_${description}.sh</p></td>
+</tr>
+<tr class="row-odd"><td><p>test_moz2po_help/one.dtd</p></td>
+<td><p>Input</p></td>
+<td><p>$one</p></td>
+<td><p>${testname}/${variable}.${extension}</p></td>
+</tr>
+<tr class="row-even"><td><p>test_moz2po_help/two.po</p></td>
+<td><p>Input</p></td>
+<td><p>$two</p></td>
+<td><p>${testname}/${variable}.${extension}</p></td>
+</tr>
+<tr class="row-odd"><td><p>test_moz2po_help/out.dtd</p></td>
+<td><p>Output</p></td>
+<td><p>$out</p></td>
+<td><p>${testname}/${variable}.${extension}</p></td>
+</tr>
+<tr class="row-even"><td><p>test_moz2po_help/stdout.txt</p></td>
+<td><p>Output</p></td>
+<td><p>$stdout</p></td>
+<td><p>${testname}/${variable}.${extension}</p></td>
+</tr>
+<tr class="row-odd"><td><p>test_moz2po_help/stderr.txt</p></td>
+<td><p>Output</p></td>
+<td><p>$stderr</p></td>
+<td><p>${testname}/${variable}.${extension}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A test filename must start with <code class="docutils literal notranslate"><span class="pre">test_</span></code> and end in <code class="docutils literal notranslate"><span class="pre">.sh</span></code>.  The
+rest of the name may only use ASCII alphanumeric characters and underscore
+<code class="docutils literal notranslate"><span class="pre">_</span></code>.</p>
+</div>
+<p>The test file is placed in the <code class="docutils literal notranslate"><span class="pre">tests/</span></code> directory while data files are placed
+in the <code class="docutils literal notranslate"><span class="pre">tests/data/${testname}</span></code> directory.</p>
+<p>There are three standard output files:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">$out</span></code> - the output from the command</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$stdout</span></code> - any output given to the user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$stderr</span></code> - any error output</p></li>
+</ol>
+<p>The output files are available for checking at the end of the test execution
+and a test will fail if there are differences between the reference output and
+that achieved in the test run.</p>
+<p>You do not need to define reference output for all three, if one is missing
+then checks will be against <code class="docutils literal notranslate"><span class="pre">/dev/null</span></code>.</p>
+<p>There can be any number of input files.  They need to be named using only ASCII
+characters without any punctuation.  While you can give them any name we
+recommend using numbered positions such as one, two, three.  These are
+converted into variables in the test framework so ensure that none of your
+choices clash with existing bash commands and variables.</p>
+<p>Your test script can access variables for all of your files so e.g.
+<code class="docutils literal notranslate"><span class="pre">moz2po_conversion/one.dtd</span></code> will be referenced as <code class="docutils literal notranslate"><span class="pre">$one</span></code> and output
+<code class="docutils literal notranslate"><span class="pre">moz2po_conversion/out.dtd</span></code> as <code class="docutils literal notranslate"><span class="pre">$out</span></code>.</p>
+</section>
+<section id="writing">
+<h2>Writing<a class="headerlink" href="#writing" title="Permalink to this headline">¶</a></h2>
+<p>The tests are normal bash scripts so they can be executed on their own.  A
+template for a test is as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Import the test framework</span>
+<span class="nb">source</span> <span class="k">$(</span>basename <span class="nv">$0</span><span class="k">)</span>/test.inc.sh
+
+<span class="c1"># You can put any extra preperation here</span>
+
+<span class="c1"># Your actual command line to test No need for redirecting to /dev/stdout as</span>
+<span class="c1"># the test framework will do that automatically</span>
+myprogram <span class="nv">$one</span> <span class="nv">$two</span> -o <span class="nv">$out</span>
+
+<span class="c1"># Check that the results of the test match your reference resulst</span>
+check_results  <span class="c1"># does start_check and diff_all</span>
+
+<span class="c1"># OR do the following</span>
+<span class="c1"># start_checks - begin checking</span>
+<span class="c1"># has_stdout|has_stderr|has $file - checks that the file exists we don&#39;t care for content</span>
+<span class="c1"># startswith $file|startswith_stderr|startswith_stdout - the output starts with some expression</span>
+<span class="c1"># startswithi $file|startswithi_stderr|startswithi_stdout - case insensitive startswith</span>
+<span class="c1"># end_checks</span>
+</pre></div>
+</div>
+<p>For simple tests, where we diff output and do the correct checking of output
+files, simply use <code class="docutils literal notranslate"><span class="pre">check_results</span></code>.  More complex tests need to wrap tests in
+<code class="docutils literal notranslate"><span class="pre">start_checks</span></code> and <code class="docutils literal notranslate"><span class="pre">end_checks</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>start_checks
+has <span class="nv">$out</span>
+containsi_stdout <span class="s2">&quot;Parsed:&quot;</span>
+end_checks
+</pre></div>
+</div>
+<p>You can make use of the following commands in the <code class="docutils literal notranslate"><span class="pre">start_checks</span></code> scenario:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>has $file</p></td>
+<td><p>$file was output and it not empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>has_stdout</p></td>
+<td><p>stdout is not empty</p></td>
+</tr>
+<tr class="row-even"><td><p>has_stderr</p></td>
+<td><p>stderr is not empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>startswith $file “String”</p></td>
+<td><p>$file starts with “String”</p></td>
+</tr>
+<tr class="row-even"><td><p>startswithi $file “String”</p></td>
+<td><p>$file starts with “String” ignoring case</p></td>
+</tr>
+<tr class="row-odd"><td><p>startswith_stdout “String”</p></td>
+<td><p>stdout starts with “String”</p></td>
+</tr>
+<tr class="row-even"><td><p>startswithi_stdout “String”</p></td>
+<td><p>stdout starts with “String” ignoring case</p></td>
+</tr>
+<tr class="row-odd"><td><p>startswith_stderr “String”</p></td>
+<td><p>stderr starts with “String”</p></td>
+</tr>
+<tr class="row-even"><td><p>startswithi_stderr “String”</p></td>
+<td><p>stderr starts with “String” ignoring case</p></td>
+</tr>
+<tr class="row-odd"><td><p>contains $file “String”</p></td>
+<td><p>$file contains “String”</p></td>
+</tr>
+<tr class="row-even"><td><p>containsi $file “String”</p></td>
+<td><p>$file contains “String” ignoring case</p></td>
+</tr>
+<tr class="row-odd"><td><p>contains_stdout “String”</p></td>
+<td><p>stdout contains “String”</p></td>
+</tr>
+<tr class="row-even"><td><p>containsi_stdout “String”</p></td>
+<td><p>stdout contains “String” ignoring case</p></td>
+</tr>
+<tr class="row-odd"><td><p>contains_stderr “String”</p></td>
+<td><p>stderr contains “String”</p></td>
+</tr>
+<tr class="row-even"><td><p>containsi_stderr “String”</p></td>
+<td><p>stderr contains “String” ignoring case</p></td>
+</tr>
+<tr class="row-odd"><td><p>endswith $file “String”</p></td>
+<td><p>$file ends with “String”</p></td>
+</tr>
+<tr class="row-even"><td><p>endswithi $file “String”</p></td>
+<td><p>$file ends with “String” ignoring case</p></td>
+</tr>
+<tr class="row-odd"><td><p>endswith_stdout “String”</p></td>
+<td><p>stdout ends with “String”</p></td>
+</tr>
+<tr class="row-even"><td><p>endswithi_stdout “String”</p></td>
+<td><p>stdout ends with “String” ignoring case</p></td>
+</tr>
+<tr class="row-odd"><td><p>endswith_stderr “String”</p></td>
+<td><p>stderr ends with “String”</p></td>
+</tr>
+<tr class="row-even"><td><p>endswithi_stderr “String”</p></td>
+<td><p>stderr ends with “String” ignoring case</p></td>
+</tr>
+</tbody>
+</table>
+<section id="prep">
+<h3>–prep<a class="headerlink" href="#prep" title="Permalink to this headline">¶</a></h3>
+<p>If you use the –prep options on any test then the test will change behavior.
+It won’t validate the results against your reference data but will instead
+create your reference data.  This makes it easy to generate your expected
+result files when you are setting up your test.</p>
+</section>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

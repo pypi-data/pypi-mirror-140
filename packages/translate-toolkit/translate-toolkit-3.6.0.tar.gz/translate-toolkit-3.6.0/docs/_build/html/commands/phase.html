@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>phase &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pocommentclean" href="pocommentclean.html" />
+    <link rel="prev" title="Mozilla L10n Scripts" href="mozilla_l10n_scripts.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">phase</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#latest-version">Latest Version</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#commands">Commands</a></li>
+<li><a class="reference internal" href="#bugs">Bugs</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="mozilla_l10n_scripts.html"
+         title="previous chapter">&laquo; Mozilla L10n Scripts</a></li>
+  <li><a href="pocommentclean.html"
+         title="next chapter">pocommentclean &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/commands/phase.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="phase">
+<span id="id1"></span><h1>phase<a class="headerlink" href="#phase" title="Permalink to this headline">¶</a></h1>
+<p>phase is a script that allows you to perform a number of tasks on a set of PO
+files that have been broken into phases.  You can create a ZIP file for a
+phase, run checks against a phase, review a phase, edit files in a phase, etc.
+All the tasks that would be involved in sending work to various translators,
+receiving work, checking it and committing to CVS.</p>
+<section id="prerequisites">
+<span id="phase-prerequisites"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>An environment that will run <a class="reference external" href="https://linux.die.net/man/1/bash">bash</a></p></li>
+<li><p><a class="reference external" href="https://linux.die.net/man/1/diff">diff</a></p></li>
+<li><p><a class="reference external" href="https://linux.die.net/man/1/cvs">cvs</a></p></li>
+</ul>
+</section>
+<section id="latest-version">
+<span id="phase-latest-version"></span><h2>Latest Version<a class="headerlink" href="#latest-version" title="Permalink to this headline">¶</a></h2>
+<p>phase is not currently distributed as part of the toolkit.  You can get the
+<a class="reference external" href="https://raw.github.com/translate/translate/master/tools/phase">latest version from Git</a></p>
+</section>
+<section id="usage">
+<span id="phase-usage"></span><h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">phase</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Mostly the usage follows the format of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">phase</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">language</span><span class="o">-</span><span class="nb">dir</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">phaselist</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">phase</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+<span class="n">phase</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">language</span><span class="o">-</span><span class="nb">dir</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">phase</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>A full list of commands and options can be seen by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">phase</span> <span class="o">--</span><span class="n">help</span>
+</pre></div>
+</div>
+</section>
+<section id="commands">
+<span id="phase-commands"></span><h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<p>These are the commands that you can use:</p>
+<ul class="simple">
+<li><p>makephaselist &lt;new-phase-list-name&gt; – creates a phase list</p></li>
+<li><p>listphases &lt;phase-list&gt; – lists the different phases that appear in the
+phase-list file</p></li>
+<li><p>listfiles &lt;phase-list&gt; &lt;phase-name&gt; – list all files for the given phase in
+the phase-list file</p></li>
+<li><p>checkphaselist &lt;language-dir&gt; &lt;phase-list&gt; – checks to see which files are
+not included in the phaselist</p></li>
+<li><p>countpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – counts PO file in the
+given phase</p></li>
+<li><p>countpot &lt;template-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – counts POT file in the
+given phase</p></li>
+<li><p>missingpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – lists files that have
+not been returned for a phase</p></li>
+<li><p>packpot &lt;template-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – packs all POT files for a
+given phase into a ZIP file</p></li>
+<li><p>packpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – packs all PO files for a
+given phase into a ZIP file</p></li>
+<li><p>packall &lt;template-dir&gt; &lt;phase-list&gt; – packs all phases found in the phase
+list</p></li>
+<li><p>packallpo &lt;language-dir&gt; &lt;phase-list&gt; – packs all phases found in the phase
+list for the given language</p></li>
+<li><p>countmismatch &lt;language-dir&gt; &lt;template-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; –
+compares the source word count between PO and POT to determine if there are
+any file errors.</p></li>
+<li><p>editpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – edit the PO files in a
+phase</p></li>
+<li><p>editpochecks &lt;language&gt; &lt;phase-name&gt; – edit the PO checks output by checkpo</p></li>
+<li><p>editconflicts &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – edit the extracted
+conflict items</p></li>
+<li><p>checkpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; [pofilter options] – run
+pofilter checks against the given phase</p></li>
+<li><p>mergepo &lt;language&gt; &lt;phase-name&gt; – merge the checks back into the main
+language directory</p></li>
+<li><p>conflictpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; [poconflict options] –
+run poconflict checks against the given phase</p></li>
+<li><p>diffpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – perform a cvs diff for the
+phase</p></li>
+<li><p>cvslog &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – perform a cvs log against
+files in the phase</p></li>
+<li><p>lastlog &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – retrieves the last cvs
+log entry for each file in a phase</p></li>
+<li><p>cvsadd &lt;languages-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – CVS adds files and
+directories that are not already in CVS</p></li>
+<li><p>diffpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – perform a cvs diff for the
+phase</p></li>
+<li><p>reviewpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; [pofilter options] –
+extract items marked for review for the given phase</p></li>
+<li><p>editreviews &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – edit the extracted
+review items</p></li>
+<li><p>countreviews &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – count the number of
+strings and words under review</p></li>
+<li><p>checkinpo &lt;language-dir&gt; &lt;phase-list&gt; &lt;phase-name&gt; – cvs checkin the files
+in the given phase</p></li>
+<li><p>creategsi &lt;language-dir&gt; &lt;en-US.gsi&gt; &lt;traget-language&gt; – creates a BZ2
+GSI/SDF file for the language against the en-US GSI file</p></li>
+<li><p>reviewsinout &lt;language&gt; &lt;phase-name&gt; – counts the number of review files
+returned vs sent and shows which are missing</p></li>
+<li><p>reviewsdiff &lt;language&gt; &lt;phase-name&gt; – create a diff between what was sent
+for review and what was returned</p></li>
+</ul>
+</section>
+<section id="bugs">
+<span id="phase-bugs"></span><h2>Bugs<a class="headerlink" href="#bugs" title="Permalink to this headline">¶</a></h2>
+<p>There are probably lots mostly the bug is that the command line options are
+pretty inconsistent</p>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>poclean &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pocompile" href="pocompile.html" />
+    <link rel="prev" title="–rewrite=STYLE" href="option_rewrite.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">poclean</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="option_rewrite.html"
+         title="previous chapter">&laquo; –rewrite=STYLE</a></li>
+  <li><a href="pocompile.html"
+         title="next chapter">pocompile &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/commands/poclean.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="poclean">
+<span id="id1"></span><h1>poclean<a class="headerlink" href="#poclean" title="Permalink to this headline">¶</a></h1>
+<p>This is a rudimentary tool to produce a clean file from an unclean file
+(Trados/Wordfast) by stripping out the tw4win indicators.</p>
+<section id="usage">
+<span id="poclean-usage"></span><h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poclean</span> <span class="o">&lt;</span><span class="nb">input</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">output</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>&lt;input&gt;</p></td>
+<td><p>is the text versions of the unclean RTF files</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;output&gt;</p></td>
+<td><p>is the intended output file / directory</p></td>
+</tr>
+</tbody>
+</table>
+<p>Options:</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--version</span></kbd></dt>
+<dd><p>show program’s version number and exit</p>
+</dd>
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>show this help message and exit</p>
+</dd>
+<dt><kbd><span class="option">--manpage</span></kbd></dt>
+<dd><p>output a manpage based on the help</p>
+</dd>
+<dt><kbd><span class="option">--progress=<var>PROGRESS</var></span></kbd></dt>
+<dd><p>show progress as: <a class="reference internal" href="option_progress.html"><span class="doc">dots, none, bar, names, verbose</span></a></p>
+</dd>
+<dt><kbd><span class="option">--errorlevel=<var>ERRORLEVEL</var></span></kbd></dt>
+<dd><p>show errorlevel as: <a class="reference internal" href="option_errorlevel.html"><span class="doc">none, message, exception,
+traceback</span></a></p>
+</dd>
+<dt><kbd><span class="option">-i <var>INPUT</var></span>, <span class="option">--input=<var>INPUT</var></span></kbd></dt>
+<dd><p>read from INPUT in pot format</p>
+</dd>
+<dt><kbd><span class="option">-x <var>EXCLUDE</var></span>, <span class="option">--exclude=<var>EXCLUDE</var></span></kbd></dt>
+<dd><p>exclude names matching EXCLUDE from input paths</p>
+</dd>
+<dt><kbd><span class="option">-o <var>OUTPUT</var></span>, <span class="option">--output=<var>OUTPUT</var></span></kbd></dt>
+<dd><p>write to OUTPUT in po, pot formats</p>
+</dd>
+<dt><kbd><span class="option">-S</span>, <span class="option">--timestamp</span></kbd></dt>
+<dd><p>skip conversion if the output file has newer timestamp</p>
+</dd>
+</dl>
+</section>
+<section id="examples">
+<span id="poclean-examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>To create a text version of the unclean RTF file, you need UnRTF, available
+here: <a class="reference external" href="http://www.gnu.org/software/unrtf/unrtf.html">project site</a> or <a class="reference external" href="http://gnuwin32.sourceforge.net/packages/unrtf.htm">here
+(windows)</a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">unrtf</span> <span class="n">translation</span><span class="o">.</span><span class="n">rtf</span>  <span class="o">--</span><span class="n">text</span> <span class="o">&gt;</span> <span class="n">translation</span><span class="o">.</span><span class="n">po</span>
+</pre></div>
+</div>
+<p>You might need to convert the encoding of the file, with iconv, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iconv</span> <span class="o">-</span><span class="n">f</span> <span class="n">latin1</span> <span class="o">-</span><span class="n">t</span> <span class="n">utf</span><span class="o">-</span><span class="mi">8</span> <span class="n">translation</span><span class="o">.</span><span class="n">po</span> <span class="o">&gt;</span> <span class="n">new_translation</span><span class="o">.</span><span class="n">po</span>
+</pre></div>
+</div>
+<p>Now you can clean the file with poclean</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poclean</span> <span class="n">new_translation</span><span class="o">.</span><span class="n">po</span> <span class="n">clean_translation</span><span class="o">.</span><span class="n">po</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Translate Toolkit 1.10.0 &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Translate Toolkit 1.9.0 Released" href="1.9.0.html" />
+    <link rel="prev" title="Translate Toolkit 1.11.0" href="1.11.0.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Translate Toolkit 1.10.0</a><ul>
+<li><a class="reference internal" href="#highlighted-improvements">Highlighted improvements</a><ul>
+<li><a class="reference internal" href="#most-important-for-pootle">Most important for Pootle</a></li>
+<li><a class="reference internal" href="#formats-and-converters">Formats and Converters</a></li>
+<li><a class="reference internal" href="#version-control-improvements">Version Control improvements</a></li>
+<li><a class="reference internal" href="#checks">Checks</a></li>
+<li><a class="reference internal" href="#language-specific-fixes">Language specific fixes</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+<li><a class="reference internal" href="#mozilla-tooling-fixes">Mozilla tooling fixes</a></li>
+<li><a class="reference internal" href="#contributors">Contributors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="1.11.0.html"
+         title="previous chapter">&laquo; Translate Toolkit 1.11.0</a></li>
+  <li><a href="1.9.0.html"
+         title="next chapter">Translate Toolkit 1.9.0 Released &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/releases/1.10.0.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="translate-toolkit-1-10-0">
+<h1>Translate Toolkit 1.10.0<a class="headerlink" href="#translate-toolkit-1-10-0" title="Permalink to this headline">¶</a></h1>
+<p><em>Released on 12 March 2013</em></p>
+<p>This release contains many improvements and bug fixes. While it contains many
+general improvements, it also specifically contains needed changes for the
+upcoming <a class="reference external" href="http://pootle.translatehouse.org/">Pootle</a> 2.5.0.</p>
+<p>It is just over a year since the last release so there are many improvements
+across the board.  A number of people contributed to this release and we’ve
+tried to credit them wherever possible (sorry if somehow we missed you).</p>
+<section id="highlighted-improvements">
+<h2>Highlighted improvements<a class="headerlink" href="#highlighted-improvements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Android format support</p></li>
+<li><p>Version control improvements</p></li>
+<li><p>Source now on Github - all our code is now on github</p></li>
+<li><p>Documentation - migrated all from our wiki into the code and Read The Docs</p></li>
+<li><p>Continuous Integration using Travis</p></li>
+</ul>
+<section id="most-important-for-pootle">
+<h3>Most important for Pootle<a class="headerlink" href="#most-important-for-pootle" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Version control improvements</p></li>
+<li><p>Categorize pofilter checks into critical, functional, cosmetic, etc</p></li>
+</ul>
+</section>
+<section id="formats-and-converters">
+<h3>Formats and Converters<a class="headerlink" href="#formats-and-converters" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Android format support [Michal Čihař]</p></li>
+<li><p>Mozilla .lang, many improvements</p></li>
+<li><p>PHP support for defintions, // comments and improved whitespace preservation</p></li>
+<li><p>PO: X-Merge-On header to explicitly demand a conversion strategy instead of
+guessing</p></li>
+<li><p>.properties: BOMs in messages and C style comments [Roman Imankulov]</p></li>
+<li><p>Mac OS String formatting improved [Roman Imankulov]</p></li>
+<li><p>The spaces in DTD files are now preserved. For example the spaces in
+<code class="docutils literal notranslate"><span class="pre">&lt;!ENTITY</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">some.label</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;definition&quot;&gt;</span></code> around the entity
+name <code class="docutils literal notranslate"><span class="pre">some.label</span></code> are now kept.</p></li>
+<li><p>The matching criterion when merging units can now be specified with the
+<code class="docutils literal notranslate"><span class="pre">X-Merge-On</span></code> header. Available values for this header are <cite>location</cite> and
+<cite>id</cite>. By default merges will be done by matching IDs. This supersedes the
+effects of the <code class="docutils literal notranslate"><span class="pre">X-Accelerator</span></code> header when merging and establishes an
+explicit way to set the desired matching criterion.</p></li>
+</ul>
+</section>
+<section id="version-control-improvements">
+<h3>Version Control improvements<a class="headerlink" href="#version-control-improvements" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Interface for adding files to a repository &amp; Implement .add() for all VCSs.</p></li>
+<li><p>Caching of VC version info</p></li>
+<li><p>Don’t look for VCS if it’s not available</p></li>
+<li><p>Stop looking for VCS at a given parent</p></li>
+<li><p>Subversion VC tests</p></li>
+<li><p>Alway pass -m to ‘commit’ in Subversion to prevent blocking</p></li>
+</ul>
+</section>
+<section id="checks">
+<h3>Checks<a class="headerlink" href="#checks" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New OpenOffice variables style used in extensions</p></li>
+<li><p>Check for self-closing tags in the xmltags test [Seb M].</p></li>
+<li><p>GConf test fixes</p></li>
+<li><p>Terminology checker type for future terminology features</p></li>
+<li><p>Categorize pofilter checks into critical, functional, cosmetic, etc</p></li>
+<li><p>Added support for Objective-C %&#64; printf specifiers</p></li>
+</ul>
+</section>
+<section id="language-specific-fixes">
+<h3>Language specific fixes<a class="headerlink" href="#language-specific-fixes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Correct plurals: Scottish Gaelic (gd), Irish</p></li>
+<li><p>Plural rules: Fulah, Brazilian Portuguese</p></li>
+<li><p>Punctuation rules and tests to ignore for: Burmese, Urdu, Afrikaans, Wolof</p></li>
+</ul>
+</section>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Moved to Git and we are now using reStructured Text and Sphinx</p></li>
+<li><p>Published in Read The Docs (RTD).</p></li>
+<li><p>Old wiki migrated to RTD.</p></li>
+<li><p>New clean theme for documentation and website</p></li>
+<li><p>API and code epydoc moved to reStructured Text.</p></li>
+<li><p>Translate code Style Guide written</p></li>
+</ul>
+</section>
+<section id="mozilla-tooling-fixes">
+<h3>Mozilla tooling fixes<a class="headerlink" href="#mozilla-tooling-fixes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Mozilla specific test for dialog size settings</p></li>
+<li><p>Gaia properties dialect and plural handling</p></li>
+<li><p>Fixes and improvement to the Firefox build scripts</p></li>
+<li><p>Improved accesskey detection</p></li>
+<li><p>Improved DTD escaping for &amp;quote, %, etc</p></li>
+<li><p>Improvement of DTD to align with Base classes</p></li>
+<li><p>Support new {{xx}} variable style introduced in PDF viewer</p></li>
+</ul>
+<p>…and refactoring, PEP8, test coverage and of course many many bugfixes.</p>
+</section>
+<section id="contributors">
+<h3>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h3>
+<p>This release was made possible by the following people:</p>
+<p>Dwayne Bailey, Friedel Wolff, Leandro Regueiro, Julen Ruiz Aizpuru,
+Michal Čihař, Roman Imankulov, Alexander Dupuy, Frank Tetzel,
+Luiz Fernando Ranghetti, Laurette Pretorius, Jiro Matsuzawa, Henrik Saari,
+Luca De Petrillo, Khaled Hosny, Dave Dash &amp; Chris Oelmueller.</p>
+<p>And to all our bug finders and testers, a Very BIG Thank You.</p>
+</section>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

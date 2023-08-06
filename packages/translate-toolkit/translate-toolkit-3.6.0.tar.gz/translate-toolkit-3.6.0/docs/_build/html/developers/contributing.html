@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Contributing &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Reporting Bugs" href="reporting_bugs.html" />
+    <link rel="prev" title="Testing" href="testing.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Contributing</a><ul>
+<li><a class="reference internal" href="#testing">Testing</a></li>
+<li><a class="reference internal" href="#debugging">Debugging</a></li>
+<li><a class="reference internal" href="#developing">Developing</a></li>
+<li><a class="reference internal" href="#documenting">Documenting</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="testing.html"
+         title="previous chapter">&laquo; Testing</a></li>
+  <li><a href="reporting_bugs.html"
+         title="next chapter">Reporting Bugs &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/developers/contributing.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="contributing">
+<span id="id1"></span><h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<p>We could use your help.  If you are interesting in contributing then please
+join us on our <a class="reference external" href="https://gitter.im/translate/pootle">Gitter development channel</a>.</p>
+<p>Here are some idea of how you can contribute</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#contributing-testing"><span class="std std-ref">Test</span></a> – help us test new candidate releases
+before they are released</p></li>
+<li><p><a class="reference internal" href="#contributing-debugging"><span class="std std-ref">Debug</span></a> – check bug reports, create tests to
+highlight problems</p></li>
+<li><p><a class="reference internal" href="#contributing-developing"><span class="std std-ref">Develop</span></a> – add your Python developer skills
+to the mix</p></li>
+<li><p><a class="reference internal" href="#contributing-documenting"><span class="std std-ref">Document</span></a> – help make our docs readable,
+useful and complete</p></li>
+</ul>
+<p>Below we give you more detail on these:</p>
+<section id="testing">
+<span id="contributing-testing"></span><h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>Before we release new versions of the Toolkit we need people to check that they
+still work correctly.  If you are a frequent user you might want to start using
+the release candidate on your current work and report any errors before we
+release them.</p>
+<p>Compile and install the software to see if we have any platform issues:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>Check for any files that are missing, tools that were not installed, etc.</p>
+<p><a class="reference internal" href="testing.html"><span class="doc">Run unit tests</span></a> to see if
+there are any issues.  Please report any failures.</p>
+<p>Finally, simply work with the software.  Checking all your current usage
+patterns and report problems.</p>
+</section>
+<section id="debugging">
+<span id="contributing-debugging"></span><h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Make sure your familiar with the <a class="reference internal" href="reporting_bugs.html"><span class="doc">bug reporting guidelines</span></a>.</p></li>
+<li><p>Create a login for yourself at <a class="reference external" href="https://github.com">https://github.com</a></p></li>
+<li><p>Then choose an <a class="reference external" href="https://github.com/translate/translate/issues">issue</a></p></li>
+</ul>
+<p>Now you need to try and validate the bug.  Your aim is to confirm that the bug
+is either fixed, is invalid or still exists.</p>
+<p>If its fixed please close the bug and give details of how when it was fixed or
+what version you used to validate it as corrected.</p>
+<p>If you find that the bug reporter has made the incorrect assumptions or their
+suggestion cannot work.  Then mark the bug as invalid and give reasons why.</p>
+<p>The last case, an existing bug is the most interesting.  Check through the bug
+and do the following:</p>
+<ul class="simple">
+<li><p>Fix up the summary to make it clear what the bug is</p></li>
+<li><p>Create new bugs for separate issues</p></li>
+<li><p>Set severity level and classifications correctly</p></li>
+<li><p>Add examples to reproduce the bug, or make the supplied files simpler</p></li>
+<li><p>If you can identify the bug but not fix it then explain what needs fixing</p></li>
+<li><p>Move on to the next bug</p></li>
+</ul>
+</section>
+<section id="developing">
+<span id="contributing-developing"></span><h2>Developing<a class="headerlink" href="#developing" title="Permalink to this headline">¶</a></h2>
+<p>Don’t ignore this area if you feel like you are not a hotshot coder!</p>
+<p>You will need some Python skills, this is a great way to learn.</p>
+<p>Here are some ideas to get you going:</p>
+<ul class="simple">
+<li><p>Write a test to expose some bug</p></li>
+<li><p>Try to fix the actual code to fix your bug</p></li>
+<li><p>Add a small piece of functionality that helps you</p></li>
+<li><p>Document the methods in especially the base class and derived classes</p></li>
+<li><p>Add a <a class="reference internal" href="../formats/index.html"><span class="doc">format</span></a> type and converters</p></li>
+<li><p>Add more features to help our formats <a class="reference internal" href="../formats/conformance.html"><span class="doc">conform to the standards</span></a></p></li>
+</ul>
+<p>You will definitely need to be on the <a class="reference external" href="https://gitter.im/translate/dev">Development channel</a></p>
+<p>Now is the time to familiarise yourself with the <a class="reference internal" href="developers.html"><span class="doc">developers guide</span></a>.</p>
+</section>
+<section id="documenting">
+<span id="contributing-documenting"></span><h2>Documenting<a class="headerlink" href="#documenting" title="Permalink to this headline">¶</a></h2>
+<p>This is the easy one.  Login to the wiki and start!</p>
+<p>The key areas that need to be looked at are:</p>
+<ul class="simple">
+<li><p>Do the guides to each tool cover all command line options</p></li>
+<li><p>Are the examples clear for the general cases</p></li>
+<li><p>Is the tools use clear</p></li>
+<li><p>In the Use cases, can we add more, do they need updating. Has upstream
+changed its approach</p></li>
+</ul>
+<p>After that and always:</p>
+<ul class="simple">
+<li><p>Grammar</p></li>
+<li><p>Spelling</p></li>
+<li><p>Layout</p></li>
+</ul>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

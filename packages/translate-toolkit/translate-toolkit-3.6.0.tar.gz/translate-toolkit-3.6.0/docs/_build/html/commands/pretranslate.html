@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>pretranslate &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="tmserver" href="tmserver.html" />
+    <link rel="prev" title="Stopword file format" href="poterminology_stopword_file.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">pretranslate</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#merging">Merging</a></li>
+<li><a class="reference internal" href="#performance">Performance</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="poterminology_stopword_file.html"
+         title="previous chapter">&laquo; Stopword file format</a></li>
+  <li><a href="tmserver.html"
+         title="next chapter">tmserver &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/commands/pretranslate.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="pretranslate">
+<span id="id1"></span><h1>pretranslate<a class="headerlink" href="#pretranslate" title="Permalink to this headline">¶</a></h1>
+<p>Merge existing translations from an old translation file to a new one as well
+as fill any missing translations from translation memory via fuzzy matching.</p>
+<p>This functionality used to be part of pot2po and corresponds to “msgmerge” from
+the gettext package.</p>
+<p>pretranslate works on PO and XLIFF files.</p>
+<section id="usage">
+<span id="pretranslate-usage"></span><h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pretranslate</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="o">&lt;</span><span class="nb">input</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">output</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>&lt;input&gt;</p></td>
+<td><p>is the translation file or directory to be pretranslated</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;output&gt;</p></td>
+<td><p>is the translation file or a directory where the
+pretranslated version will be stored</p></td>
+</tr>
+</tbody>
+</table>
+<p>Options:</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--version</span></kbd></dt>
+<dd><p>show program’s version number and exit</p>
+</dd>
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>show this help message and exit</p>
+</dd>
+<dt><kbd><span class="option">--manpage</span></kbd></dt>
+<dd><p>output a manpage based on the help</p>
+</dd>
+<dt><kbd><span class="option">--progress=<var>PROGRESS</var></span></kbd></dt>
+<dd><p>show progress as: <a class="reference internal" href="option_progress.html"><span class="doc">dots, none, bar, names, verbose</span></a></p>
+</dd>
+<dt><kbd><span class="option">--errorlevel=<var>ERRORLEVEL</var></span></kbd></dt>
+<dd><p>show errorlevel as: <a class="reference internal" href="option_errorlevel.html"><span class="doc">none, message, exception,
+traceback</span></a></p>
+</dd>
+<dt><kbd><span class="option">-i <var>INPUT</var></span>, <span class="option">--input=<var>INPUT</var></span></kbd></dt>
+<dd><p>read from INPUT in pot format</p>
+</dd>
+<dt><kbd><span class="option">-x <var>EXCLUDE</var></span>, <span class="option">--exclude=<var>EXCLUDE</var></span></kbd></dt>
+<dd><p>exclude names matching EXCLUDE from input paths</p>
+</dd>
+<dt><kbd><span class="option">-o <var>OUTPUT</var></span>, <span class="option">--output=<var>OUTPUT</var></span></kbd></dt>
+<dd><p>write to OUTPUT in po, pot formats</p>
+</dd>
+<dt><kbd><span class="option">-t <var>TEMPLATE</var></span>, <span class="option">--template=<var>TEMPLATE</var></span></kbd></dt>
+<dd><p>read old translations from TEMPLATE</p>
+</dd>
+<dt><kbd><span class="option">-S</span>, <span class="option">--timestamp</span></kbd></dt>
+<dd><p>skip conversion if the output file has newer timestamp</p>
+</dd>
+<dt><kbd><span class="option">--tm=<var>TM</var></span></kbd></dt>
+<dd><p>The file to use as translation memory when fuzzy matching</p>
+</dd>
+<dt><kbd><span class="option">-s <var>MIN_SIMILARITY</var></span>, <span class="option">--similarity=<var>MIN_SIMILARITY</var></span></kbd></dt>
+<dd><p>The minimum similarity for inclusion (default: 75%)</p>
+</dd>
+<dt><kbd><span class="option">--nofuzzymatching</span></kbd></dt>
+<dd><p>Disable all fuzzy matching</p>
+</dd>
+</dl>
+</section>
+<section id="examples">
+<span id="pretranslate-examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pretranslate</span> <span class="o">-</span><span class="n">t</span> <span class="n">zu</span><span class="o">-</span><span class="mf">1.0.1</span> <span class="o">-</span><span class="n">tm</span> <span class="n">zu_tm</span><span class="o">.</span><span class="n">po</span> <span class="n">zu</span><span class="o">-</span><span class="mf">2.0.2</span> <span class="n">zu</span><span class="o">-</span><span class="mf">2.0.2</span><span class="o">-</span><span class="n">translated</span>
+</pre></div>
+</div>
+<p>Here we are pretranslating the PO or XLIFF files in <em>zu-2.0.2</em> using the old
+translations in <em>zu-1.0.1</em> and fuzzy matches from the zu_tm.po compendium. the
+result is stored in <em>zu-2.0.2-translate</em></p>
+<p>Unlike pot2po pretranslate will not change anything in the input file except
+merge translations, no reordering or changes to headers.</p>
+</section>
+<section id="merging">
+<span id="pretranslate-merging"></span><h2>Merging<a class="headerlink" href="#merging" title="Permalink to this headline">¶</a></h2>
+<p>It helps to understand when and how pretranslate will merge. The default is to
+follow msgmerge’s behaviour but we add some extra features with fuzzy matching:</p>
+<ul class="simple">
+<li><p>If everything matches we carry that across</p></li>
+<li><p>We can resurrect obsolete messages for reuse</p></li>
+<li><p>If we cannot find a match we will first look through the current and obsolete
+messages and then through any global translation memory</p></li>
+<li><p>Fuzzy matching makes use of the <a class="reference internal" href="levenshtein_distance.html"><span class="doc">Levenshtein distance</span></a> algorithm to detect the best matches</p></li>
+</ul>
+</section>
+<section id="performance">
+<span id="pretranslate-performance"></span><h2>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h2>
+<p>Fuzzy matches are usually of good quality. Installation of the
+<a class="reference external" href="https://pypi.python.org/pypi/python-Levenshtein">python-Levenshtein</a>
+package will speed up fuzzy matching. Without this a Python based matcher is
+used which is considerably slower.</p>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

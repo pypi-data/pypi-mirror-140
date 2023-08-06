@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>poswap &#8212; Translate Toolkit 3.6.0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bootstrap.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="poterminology" href="poterminology.html" />
+    <link rel="prev" title="posegment" href="posegment.html" /> 
+  </head><body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="../index.html">Translate Toolkit</a>
+        <span class="navbar-text pull-left"><b>3.6.0</b></span>
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tools">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#scripts">Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats/index.html">Supported formats</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html">Translate Styleguide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/styleguide.html#documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/testing.html#command-line-functional-testing">Command Line Functional Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developers.html">Translate Toolkit Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/releasing.html">Making a Translate Toolkit Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/deprecation.html">Deprecation of Features</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History of the Translate Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">poswap</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#issues">Issues</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+            
+            
+              
+  <li><a href="posegment.html"
+         title="previous chapter">&laquo; posegment</a></li>
+  <li><a href="poterminology.html"
+         title="next chapter">poterminology &raquo;</a></li>
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+              
+  <li><a href="../_sources/commands/poswap.rst.txt"
+	  rel="nofollow"><i class="icon-file"></i> Source</a></li>
+            
+          
+            
+<form class="navbar-search pull-right" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container content">
+   
+  <section id="poswap">
+<span id="id1"></span><h1>poswap<a class="headerlink" href="#poswap" title="Permalink to this headline">¶</a></h1>
+<p>This tool builds a new translation file with the target text (translation) of
+the input file(s) as source language of the output file it creates.</p>
+<p>This makes it possible to have French as the source file for translation,
+rather than English.  Note that this requires no change in the software project
+and is only a manipulation of the strings in the existing files. The only
+requirement for this tool is a French translation.</p>
+<p>It can also be used to convert translatable files that use logical IDs instead
+of source text into a format usable by human localisers.</p>
+<section id="usage">
+<span id="poswap-usage"></span><h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poswap</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="o">&lt;</span><span class="n">newsource</span><span class="o">&gt;</span> <span class="p">[</span><span class="o">-</span><span class="n">t</span> <span class="n">current</span><span class="p">]</span> <span class="o">&lt;</span><span class="n">new</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>&lt;newsource&gt;</p></td>
+<td><p>is the translations (preferably 100% translated) of the
+preferred source language (like French)</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;current&gt;</p></td>
+<td><p>is the (optional) current English based translation in
+your intended target language</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;new&gt;</p></td>
+<td><p>is the intended output file / directory</p></td>
+</tr>
+</tbody>
+</table>
+<p>Options:</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--version</span></kbd></dt>
+<dd><p>show program’s version number and exit</p>
+</dd>
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>show this help message and exit</p>
+</dd>
+<dt><kbd><span class="option">--manpage</span></kbd></dt>
+<dd><p>output a manpage based on the help</p>
+</dd>
+<dt><kbd><span class="option">--progress=<var>PROGRESS</var></span></kbd></dt>
+<dd><p>show progress as: <a class="reference internal" href="option_progress.html"><span class="doc">dots, none, bar, names, verbose</span></a></p>
+</dd>
+<dt><kbd><span class="option">--errorlevel=<var>ERRORLEVEL</var></span></kbd></dt>
+<dd><p>show errorlevel as: <a class="reference internal" href="option_errorlevel.html"><span class="doc">none, message, exception,
+traceback</span></a></p>
+</dd>
+<dt><kbd><span class="option">-i <var>INPUT</var></span>, <span class="option">--input=<var>INPUT</var></span></kbd></dt>
+<dd><p>read from INPUT in pot format</p>
+</dd>
+<dt><kbd><span class="option">-x <var>EXCLUDE</var></span>, <span class="option">--exclude=<var>EXCLUDE</var></span></kbd></dt>
+<dd><p>exclude names matching EXCLUDE from input paths</p>
+</dd>
+<dt><kbd><span class="option">-o <var>OUTPUT</var></span>, <span class="option">--output=<var>OUTPUT</var></span></kbd></dt>
+<dd><p>write to OUTPUT in po, pot formats</p>
+</dd>
+<dt><kbd><span class="option">-t <var>TEMPLATE</var></span>, <span class="option">--template=<var>TEMPLATE</var></span></kbd></dt>
+<dd><p>read from TEMPLATE in po, pot formats</p>
+</dd>
+<dt><kbd><span class="option">--reverse</span></kbd></dt>
+<dd><p>Do the inverse operation (converting back to a normal English based file). See the examples.</p>
+</dd>
+</dl>
+</section>
+<section id="examples">
+<span id="poswap-examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Ensure that the two po files / directories correspond 100% to the same pot file
+before using this.</p>
+<p>To start a fresh Afrikaans (af) translation from Dutch (nl):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poswap</span> <span class="n">nl</span><span class="o">.</span><span class="n">po</span> <span class="n">nl</span><span class="o">-</span><span class="n">af</span><span class="o">.</span><span class="n">po</span>
+</pre></div>
+</div>
+<p>This initialises a new, empty file nl-af.po with Dutch as the source language.</p>
+<p>To change the nl-af.po file back to the expected English based af.po:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poswap</span> <span class="o">--</span><span class="n">reverse</span> <span class="n">nl</span><span class="o">.</span><span class="n">po</span> <span class="o">-</span><span class="n">t</span> <span class="n">nl</span><span class="o">-</span><span class="n">af</span><span class="o">.</span><span class="n">po</span> <span class="n">af</span><span class="o">.</span><span class="n">po</span>
+</pre></div>
+</div>
+<p>To translate Kurdish (ku) through French (fr):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poswap</span> <span class="o">-</span><span class="n">i</span> <span class="n">fr</span><span class="o">/</span> <span class="o">-</span><span class="n">t</span> <span class="n">ku</span><span class="o">/</span> <span class="o">-</span><span class="n">o</span> <span class="n">fr</span><span class="o">-</span><span class="n">ku</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>This will take the existing (English based) Kurdish translation in ku/ and
+produce files in fr-ku with French as the source language and Kurdish as the
+target language.</p>
+<p>To convert the fr-ku files back to en-ku:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poswap</span> <span class="o">--</span><span class="n">reverse</span> <span class="o">-</span><span class="n">i</span> <span class="n">fr</span><span class="o">/</span> <span class="o">-</span><span class="n">t</span> <span class="n">fr</span><span class="o">-</span><span class="n">ku</span><span class="o">/</span> <span class="o">-</span><span class="n">o</span> <span class="n">en</span><span class="o">-</span><span class="n">ku</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>This recreates the English based Kurdish translation from the French based
+files previously created in fr-ku/.</p>
+</section>
+<section id="issues">
+<span id="poswap-issues"></span><h2>Issues<a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Behaviour is undetermined if the two files don’t match 100%. If PO files are
+based in the same template, there should be no problem.</p></li>
+<li><p>We should probably be doing fuzzy matching in future to ease the migration
+over the lifetime of a changing French translation.</p></li>
+</ul>
+</section>
+</section>
+
+
+</div>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top ↑</a></p>
+    <ul class="unstyled muted">
+      <li><small>
+        &copy; 2002-2022, Translate.<br/>
+      </small></li>
+      <li><small>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.4.0.
+      </small></li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>
