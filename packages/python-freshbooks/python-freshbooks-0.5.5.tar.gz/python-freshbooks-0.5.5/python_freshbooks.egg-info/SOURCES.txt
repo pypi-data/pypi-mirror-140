@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+freshbooks/__init__.py
+freshbooks/client.py
+freshbooks/model/__init__.py
+freshbooks/model/business.py
+freshbooks/model/identity.py
+python_freshbooks.egg-info/PKG-INFO
+python_freshbooks.egg-info/SOURCES.txt
+python_freshbooks.egg-info/dependency_links.txt
+python_freshbooks.egg-info/requires.txt
+python_freshbooks.egg-info/top_level.txt
