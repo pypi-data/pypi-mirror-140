@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pada
+Version: 0.1.0
+Summary: a ligthweight feature manage framework
+Home-page: https://github.com/eleveyuan/pada
+Author: Eleve Yuan
+Author-email: eleveyuane@gmail.com
+License: MIT license
+Keywords: pada
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cookiecutter
+Requires-Dist: Click (>=6.0)
+Requires-Dist: funcy (>=1.14)
+Requires-Dist: scikit-learn (>=0.20)
+Requires-Dist: sklearn-pandas (~=1.0)
+Requires-Dist: stacklog
+Requires-Dist: pandas (~=1.0)
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: category-encoders (>=2.2.2) ; extra == 'all'
+Requires-Dist: feature-engine (~=1.0) ; extra == 'all'
+Requires-Dist: featuretools-sklearn-transformer (>=0.1) ; extra == 'all'
+Requires-Dist: skits (>=0.1.2) ; extra == 'all'
+Requires-Dist: tsfresh (>=0.16) ; extra == 'all'
+Provides-Extra: category_encoders
+Requires-Dist: category-encoders (>=2.2.2) ; extra == 'category_encoders'
+Provides-Extra: feature_engine
+Requires-Dist: feature-engine (~=1.0) ; extra == 'feature_engine'
+Provides-Extra: featuretools
+Requires-Dist: featuretools-sklearn-transformer (>=0.1) ; extra == 'featuretools'
+Provides-Extra: skits
+Requires-Dist: skits (>=0.1.2) ; extra == 'skits'
+Provides-Extra: tsfresh
+Requires-Dist: tsfresh (>=0.16) ; extra == 'tsfresh'
+
+# pada
+
+pada is an onomatopoeia, like the sound we make when building blocks.
+
+a ligthweight feature manage framework
+
+1. load_data: load data
+2. feature definition: metadata, input data, transform
+3. assemble: construct
+
+
+## pada command line generates the project directory
+
+```
+project
+|---definition
+|  |-feats_def.py
+|---load_data.py
+|---main.py
+|---url.py    
+```
+
+## base introduce
+
+### load_data.py
+define a function named *data()*, return your data which is a pd.DataFrame
+
+### definition
+you should define your feature in this directory
+
+### url.py
+find your feature definition by *url()* function
+
+### main.py
+run your feature engeering by *run()* function
+
+
+
+# History
+
+## 0.1.0 (2022-03-01)
+
+* First release on PyPI
+
