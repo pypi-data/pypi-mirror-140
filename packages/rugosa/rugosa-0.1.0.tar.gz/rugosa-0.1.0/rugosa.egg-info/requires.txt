@@ -1,0 +1,6 @@
+dragodis
+click
+yara-python
+
+[testing]
+pytest>=3.0.0
