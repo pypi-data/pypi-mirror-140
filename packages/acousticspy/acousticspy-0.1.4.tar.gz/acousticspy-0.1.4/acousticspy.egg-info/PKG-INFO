@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: acousticspy
+Version: 0.1.4
+Summary: Lots of simple acoustics calculations, all in one place.
+Author: Mark C. Anderson
+Author-email: anderson.mark.az@gmail.com
+License: UNKNOWN
+Keywords: python,acoustics
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE
+
+This is a package that I am writing during my time as a graduate student at Brigham Young University. My research is in aeroacoustics, and most of our code is written in MATLAB. Knowing that I may not always have access to MATLAB, and because I enjoy open-source software, I've decided to create code in Python that performs many of the same tasks that we regularly perform for research. My dream is that this package can develop to the point where it could realistically be used to do all of the same research that we currently perform in MATLAB.
+
