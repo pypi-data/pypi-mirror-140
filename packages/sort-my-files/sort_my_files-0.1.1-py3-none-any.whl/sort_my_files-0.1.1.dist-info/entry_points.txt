@@ -1,0 +1,3 @@
+[console_scripts]
+sort-my-files=sort_my_files.main:app
+
