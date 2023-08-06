@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: image-processing-pkg-vleite
+Version: 0.0.1
+Summary: Duplicated project to learn how work packages in Python
+Home-page: https://github.com/vitoleite/image_processing_dio
+Author: vitor_leite
+Author-email: vitorleite5@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: matplotlib
+
+# Image Processing
+
+## Description.
+
+The package package_name is used to:
+
+- Processing:
+	- Histogram matching
+	- Structural similarity
+	- Resize image
+- Utils:
+	- Read image
+	- Save image
+	- Plot image
+	- Plot result
+	- Plot histogram
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install image_processing
+```
+
+
+## Author
+Vitor Leite
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
