@@ -1,0 +1,13 @@
+jinja2
+pandas
+python-dotenv
+pyyaml
+rasgotransforms~=1.0
+
+[bigquery]
+google-auth-oauthlib
+google-cloud-bigquery
+
+[snowflake]
+snowflake-connector-python
+snowflake-connector-python[pandas]
