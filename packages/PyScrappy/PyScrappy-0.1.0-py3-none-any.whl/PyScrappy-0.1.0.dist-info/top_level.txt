@@ -1,0 +1,17 @@
+PyScrappy
+alibaba
+amazon
+flipkart
+image
+imdb
+instagram
+news
+snapdeal
+soundcloud
+spotify
+stock
+swiggy
+twitter
+wikipedia
+youtube
+zomato
