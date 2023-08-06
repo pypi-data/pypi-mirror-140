@@ -1,0 +1,9 @@
+LICENSE
+README.md
+baryrat.py
+setup.py
+baryrat.egg-info/PKG-INFO
+baryrat.egg-info/SOURCES.txt
+baryrat.egg-info/dependency_links.txt
+baryrat.egg-info/requires.txt
+baryrat.egg-info/top_level.txt
