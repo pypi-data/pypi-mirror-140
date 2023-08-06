@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: jaws-libp
+Version: 2.8.0
+Summary: Jefferson Lab Alarm Warning System API
+Home-page: https://github.com/JeffersonLab/jaws-libp
+Author: Ryan Slominski
+Author-email: ryans@jlab.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/JeffersonLab/jaws-libp/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: confluent-kafka (>=1.8.2)
+Requires-Dist: psutil (>=5.9.0)
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: tabulate (>=0.8.9)
+
+# jaws-libp [![PyPI](https://img.shields.io/pypi/v/jaws-libp)](https://pypi.org/project/jaws-libp/)
+Reusable Python Classes for [JAWS](https://github.com/JeffersonLab/jaws).
+
+## Install
+```
+pip install jaws-libp
+```
+
+## API
+[Sphinx Docs](https://jeffersonlab.github.io/jaws-libp/)
+
+
+## See Also
+ - [Developer Notes](https://github.com/JeffersonLab/jaws-libp/wiki/Developer-Notes)
+
+
