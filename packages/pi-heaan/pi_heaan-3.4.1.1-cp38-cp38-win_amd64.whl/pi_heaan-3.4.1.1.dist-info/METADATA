@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: pi-heaan
+Version: 3.4.1.1
+Summary: pi-HEaaN is a simulator to HEaaN API, the library of CKKS scheme
+Author: Cryptolab Inc.
+Author-email: cryptolab@cryptolab.co.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Other/Proprietary License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+pi-HEaaN
+==========
+
+pi-HEaaN is a Python library for simulating HEAAN(Homomorphic Encryption for Arithmetic of Approximate Numbers), so that it offers experience for HE(homomorphic encryption). It provides not only key generation, encryption and decryption, but homomorphic operations such as homomorphic addition and homomorphic multiplication.
+
+pi-HEaaN performs encryption, decryption and homomorphic operations in *block units*.
+
+The HE simulator pi-HEaaN is a marvellous package for HE engineers who attempt to implement their HE algorithms. HE engineers can evaluate complexity and effectiveness of algorithms which utilize homomorphic encryption by pi-HEaaN.
+
+## Install pi-HEaaN
+* pi-HEaaN package can be installed on Jupyter Notebook web browser. (`https://jupyter.org/try`)
+  ```jupyter
+  pip install pi-heaan
+  ```
+
+## Usage
+
+To import pi-HEaaN, run:
+
+```python
+import piheaan as heaan
+```
+
+Firstly, we set up parameters and context for homomorphic encryption as below:
+
+```python
+params = heaan.ParameterPreset.SS7
+context = heaan.make_context(params)
+```
+
+For using homomorphic operations, it is necessary to generate secret and public keys. The public key is for encrypting message to ciphertext and performing homomorphic operations on ciphertext, while secret key is for decrypting ciphertext.
+
+```python
+key_dir_path = "./keys"
+sk = heaan.SecretKey(context)
+keygen = heaan.KeyGenerator(context, sk)
+keygen.gen_common_keys()
+pack = keygen.keypack
+```
+
+To encrypt message `[1,2,3,4]` as a ciphertext by Encryptor, run:
+
+```python
+enc = heaan.Encryptor(context)
+log_slots = 2
+msg = heaan.Message(log_slots) # number_of slots = pow(2, log_slots)
+for i in range(4):
+  msg[i] = i + 1
+ctxt = heaan.Ciphertext(context)
+enc.encrypt(msg, pack, ctxt)
+```
+
+We need HomEvaluator while performing homomorphic operations on ciphertexts. In case of specific operations, public key such as multiplication key is required. The following is to multiply ciphertexts(i.e. square a ciphertext), which needs multiplication key.
+
+```python
+eval = heaan.HomEvaluator(context, pack)
+ctxt_out = heaan.Ciphertext(context)
+eval.mult(ctxt, ctxt, ctxt_out)
+```
+
+It is no wonder that we cannot see the contents of ciphertext — that is what ciphertext is for! To figure out what ciphertext has, we have to decrypt the ciphertext by Decryptor.
+
+```python
+dec = heaan.Decryptor(context)
+msg_out = heaan.Message()
+dec.decrypt(ctxt_out, sk, msg_out)
+```
+
+Note that the result of operation performed on ciphertext is not exactly the same as the result performed on message. This tiny and random error comes from *approximation operation*, which is the essence of HEaaN. To reduce time complexity and raise efficiency, HEaaN scheme adopts approximation operation instead of exact operations.
+
+```python
+msg_out                  # result of operation performed on ciphertext
+[ (1.000000+0.000000j), (4.000000+0.000000j), (9.000000+0.000000j), (16.000000+0.000000j), (0.000000+0.000000j), ..., (0.000000+0.000000j), (0.000000+0.000000j), (0.000000+0.000000j), (0.000000+0.000000j), (0.000000+0.000000j) ]
+[x*x for x in msg]       # result of operation performed on message
+[(1+0j), (4+0j), (9+0j), (16+0j)]
+```
+
+
