@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: oss-client
+Version: 0.1.4
+Summary: OSS Client for AliyunOSS/TencentOSS/QiniuOSS
+Home-page: https://github.com/olivetree123/oss-client
+Author: olivetree
+Author-email: olivetree123@163.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.18.0)
+Requires-Dist: oss2 (==2.15.0)
+Requires-Dist: qiniu (==7.5.0)
+Requires-Dist: cos-python-sdk-v5 (==1.9.10)
+
+# oss-client
+集成了阿里云OSS、腾讯云对象存储和七牛云对象存储，为不同的对象存储实现了统一的Client，方便使用
+
+## Install
+> pip install oss-client
+
+
+## Tutorial
+```
+from oss_client import AliyunClient
+
+client = AliyunClient(
+    access_key=ALY_ACCESS_KEY_ID,
+    secret_key=ALY_ACCESS_KEY_SECRET,
+    endpoint=ALY_OSS_ENDPOINT,
+    bucket=ALY_OSS_BUCKET,
+)
+```
+
+

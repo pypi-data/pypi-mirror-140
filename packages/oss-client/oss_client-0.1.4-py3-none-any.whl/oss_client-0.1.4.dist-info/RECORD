@@ -1,0 +1,9 @@
+oss_client/__init__.py,sha256=1AFdDglsX3ZyWvKKGtVlDelyoYig5DRQL6Fty6NNcqo,146
+oss_client/client.py,sha256=th7a-HCvEu3YGhBPkYRFx52a3Mdvj8mukpCZ6kHaHcY,3960
+oss_client/fileobj.py,sha256=H_WEuZW3BFWg_0xWEFD-W-lhV6R3fxCwi_PrrHlcdU8,1140
+oss_client/utils.py,sha256=HzWGjr1tvmtxb6CyOXAdZu6d79vOnJs4LadKXu3okGw,111
+oss_client-0.1.4.dist-info/LICENSE,sha256=HuNnEzfVXc8teGriEwhydOjGsZGBKohvMawJN5YXp3Y,1069
+oss_client-0.1.4.dist-info/METADATA,sha256=024pvocfIvD2v8zPK71Qwm2UXlwUFpUnEnDJI8bzfEI,852
+oss_client-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+oss_client-0.1.4.dist-info/top_level.txt,sha256=VNPQDTedLdsLBz_QjKMm5vIdOrb2BEOvlGYK2hwB92E,11
+oss_client-0.1.4.dist-info/RECORD,,
