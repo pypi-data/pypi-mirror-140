@@ -1,0 +1,8 @@
+setup.py
+Topsis_Sukrit_101903370.egg-info/PKG-INFO
+Topsis_Sukrit_101903370.egg-info/SOURCES.txt
+Topsis_Sukrit_101903370.egg-info/dependency_links.txt
+Topsis_Sukrit_101903370.egg-info/requires.txt
+Topsis_Sukrit_101903370.egg-info/top_level.txt
+topsis/101903370.py
+topsis/__init__.py
