@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: materia-spectra
+Version: 1.0.1
+Summary: Toolkit to analyze spectra.
+Home-page: https://github.com/kijanac/materia-spectra
+License: MIT
+Author: Ki-Jana Carter
+Author-email: kijana@mit.edu
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)
+Requires-Dist: unyt (>=2.8.0,<3.0.0)
+Project-URL: Repository, https://github.com/kijanac/materia-spectra
+Description-Content-Type: text/x-rst
+
+======================
+Materia Spectra Module
+======================
+
+.. begin-description
+
+.. image:: https://codecov.io/gh/kijanac/materia-spectra/branch/main/graph/badge.svg?token=ESFSS6DIMR
+    :target: https://codecov.io/gh/kijanac/materia-spectra
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github
+
+**Toolkit for managing spectral data.**
+
+Toolkit for managing spectral data through Materia.
+
+.. end-description
+
+---------------
+Getting Started
+---------------
+
+Installing
+----------
+.. begin-installing
+
+From `pip <https://pypi.org/project/materia-spectra/>`_:
+
+``pip install materia-spectra``
+
+From `conda <https://anaconda.org/kijana/materia-spectra>`_:
+
+``conda install -c conda-forge -c kijana materia-spectra``
+
+.. end-installing
+
+Documentation
+-------------
+See documentation `here <https://kijanac.github.io/materia-spectra/>`_.
+
+Examples
+--------
+See example scripts in `Examples <https://github.com/kijanac/materia-spectra/tree/main/examples>`_.
+
+.. begin-about
+
+-------
+Authors
+-------
+Ki-Jana Carter
+
+-------
+License
+-------
+This project is licensed under the MIT License - see the `LICENSE <https://github.com/kijanac/materia-spectra/blob/main/LICENSE>`_ file for details.
+
+.. end-about
+
+.. begin-contributing
+
+------------
+Contributing
+------------
+See `CONTRIBUTING <https://github.com/kijanac/materia-spectra/blob/main/CONTRIBUTING.rst>`_.
+
+.. end-contributing
+
