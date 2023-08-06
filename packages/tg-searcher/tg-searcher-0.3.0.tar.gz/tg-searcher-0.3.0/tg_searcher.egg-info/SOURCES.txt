@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+tg_searcher/__init__.py
+tg_searcher/__main__.py
+tg_searcher/backend_bot.py
+tg_searcher/common.py
+tg_searcher/frontend_bot.py
+tg_searcher/indexer.py
+tg_searcher/main.py
+tg_searcher/session.py
+tg_searcher.egg-info/PKG-INFO
+tg_searcher.egg-info/SOURCES.txt
+tg_searcher.egg-info/dependency_links.txt
+tg_searcher.egg-info/entry_points.txt
+tg_searcher.egg-info/requires.txt
+tg_searcher.egg-info/top_level.txt
