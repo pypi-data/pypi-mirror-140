@@ -1,0 +1,30 @@
+id: b7e03ac0-2b62-11ec-8d3d-0242ac130003
+label: 'image'
+category: FORMATTING
+factory:
+  name: image
+  classpath: 'drb_impl_image.image_node_factory:DrbImageFactory'
+signatures:
+  - python: |
+      import os
+      supported_ext = {
+            '.tif',
+            '.tiff',
+            '.image',
+            '.jp2',
+            '.png',
+            '.gif',
+            '.webp',
+            '.bmp',
+            '.jpeg',
+            '.jpg',
+            # '.blx',
+            # '.kap',
+            # '.dt0',
+            # '.dt1',
+            # '.bin',
+            # '.gpkg',
+            # '.mem'
+        }
+      filename, file_extension = os.path.splitext(node.path.filename)
+      return file_extension and file_extension.lower() in supported_ext
