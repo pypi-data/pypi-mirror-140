@@ -1,0 +1,8 @@
+PyYaml
+cachetools
+pandas
+pydash
+pypandoc
+pytest
+requests
+scipy
