@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: solve-logic
+Version: 0.1.2
+Summary: Solve a logic puzzle game.
+Home-page: https://github.com/SaitoTsutomu/solve-logic
+License: MIT
+Author: Saito Tsutomu
+Author-email: tsutomu7@hotmail.co.jp
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+
+## Solve a logic puzzle game.
+
+Attention: Number of columns must be 14.
+
+### Step
+
+- `pip install solve-logic Pillow numpy`
+- open https://www.wowgame.jp/game_html/10986.html
+- Zoom to 133%.
+- Capture the image(*.jpg) to Desktop.
+- `solve-logic`
+
