@@ -1,0 +1,2 @@
+[console_scripts]
+cbl-migrator = cbl_migrator.bin.run_migrator:main
