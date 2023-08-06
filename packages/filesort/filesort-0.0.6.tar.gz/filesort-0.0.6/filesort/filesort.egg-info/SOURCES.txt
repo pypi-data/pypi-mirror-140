@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+filesort/filesort.egg-info/PKG-INFO
+filesort/filesort.egg-info/SOURCES.txt
+filesort/filesort.egg-info/dependency_links.txt
+filesort/filesort.egg-info/entry_points.txt
+filesort/filesort.egg-info/requires.txt
+filesort/filesort.egg-info/top_level.txt
