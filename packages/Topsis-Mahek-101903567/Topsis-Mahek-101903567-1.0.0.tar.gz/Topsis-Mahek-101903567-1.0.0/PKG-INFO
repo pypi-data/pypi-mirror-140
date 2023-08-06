@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: Topsis-Mahek-101903567
+Version: 1.0.0
+Summary: TOPSIS method for Multiple-Criteria Decision Making (MCDM).
+Home-page: https://github.com/mac2503/Topsis-Mahek-101903567
+Author: Mahek Khowala
+Author-email: mahekkhowala@gmail.com
+License: MIT
+Download-URL: https://github.com/mac2503/Topsis-Mahek-101903567/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: TOPSIS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
