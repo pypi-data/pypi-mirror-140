@@ -1,0 +1,10 @@
+LICENSE
+README.md
+multiexec.py
+pyproject.toml
+setup.cfg
+multiexec.egg-info/PKG-INFO
+multiexec.egg-info/SOURCES.txt
+multiexec.egg-info/dependency_links.txt
+multiexec.egg-info/entry_points.txt
+multiexec.egg-info/top_level.txt
