@@ -1,0 +1,2 @@
+[console_scripts]
+choam = choam:main
