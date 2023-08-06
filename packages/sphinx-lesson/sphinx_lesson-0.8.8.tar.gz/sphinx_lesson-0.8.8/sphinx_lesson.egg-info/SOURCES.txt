@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+sphinx_lesson/__init__.py
+sphinx_lesson/_version.py
+sphinx_lesson/directives.py
+sphinx_lesson/exerciselist.py
+sphinx_lesson/md_transforms.py
+sphinx_lesson.egg-info/PKG-INFO
+sphinx_lesson.egg-info/SOURCES.txt
+sphinx_lesson.egg-info/dependency_links.txt
+sphinx_lesson.egg-info/requires.txt
+sphinx_lesson.egg-info/top_level.txt
+sphinx_lesson/_static/sphinx_lesson.css
