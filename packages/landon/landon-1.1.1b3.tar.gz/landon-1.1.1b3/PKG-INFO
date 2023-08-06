@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: landon
+Version: 1.1.1b3
+Summary: A package to use Landon's openAPI
+Home-page: https://developers.roavflights.com/python_package
+Author: felix
+Author-email: holag617@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.10
+License-File: LICENSE
+
+UNKNOWN
+

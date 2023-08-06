@@ -1,0 +1,2 @@
+class RequestReturnedException(Exception):
+    pass
