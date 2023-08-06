@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lifespline-utils
+Version: 0.0.8
+Summary: Lifespline Utils
+Home-page: https://github.com/lifespline/lifespline-utils
+Author: diogo
+Author-email: lifespline@fastmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: 
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+[![CircleCI](https://circleci.com/gh/lifespline/lifespline-utils/tree/dev.svg?style=svg)](https://circleci.com/gh/lifespline/lifespline-utils/tree/dev)
+# Lifespline-Utils
+
+Utils for the `lifespline` framework. Pip-install the package [here](https://pypi.org/project/lifespline-utils/).
+
+
