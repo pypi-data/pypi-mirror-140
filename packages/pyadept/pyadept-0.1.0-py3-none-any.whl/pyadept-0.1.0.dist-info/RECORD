@@ -1,0 +1,10 @@
+pyadept/describe_segments.py,sha256=qDbnbbVIXc-dRMVi_91TYS4s3RXr7FsQuz0LP4RuSLU,3960
+pyadept/segment_pattern.py,sha256=w8bc5bAv594wT230KnRW_qczr1qXRyfly5X3_RWkCD0,14221
+pyadept/segment_walking_bouts.py,sha256=zi09g3fw5dpJIz_MSnddkVwKDw-XJSRgGerRVyPQMsk,10749
+pyadept/sliding_functions.py,sha256=DFoUP_iFvP9MEgSa8hAJkhOEjhlONFxHJD2AAx0l6WQ,8419
+pyadept/wrapper_compute_results_wear.py,sha256=TjW88uVtwwJig-vNLOon7Y7XSA7AzTzNPPSGN9JjiMI,3448
+pyadept/wrapper_identify_walking.py,sha256=d0fd-1TP3a8GytuInqENlNJqEeZd6DWw3k9wnO4R80I,4017
+pyadept-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyadept-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyadept-0.1.0.dist-info/METADATA,sha256=S-oblcYx7o8XcY8-cpd3YIPrq-Et4YYPalKDN10a2Ss,7242
+pyadept-0.1.0.dist-info/RECORD,,
