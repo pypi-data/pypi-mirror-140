@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flake8-comma
+Version: 0.0
+Summary: Flake8 lint for trailing commas.
+Home-page: https://pypi.python.org/pypi/flake8-commas/
+Author: Trevor Creech
+Author-email: trevor@trevorcreech.com
+Maintainer: Thomas Grainger
+Maintainer-email: flake8-commas@graingert.co.uk
+License: UNKNOWN
+Platform: all
+Requires-Dist: flake8-commas
+
+Use `flake8-commas <https://pypi.python.org/pypi/flake8-commas/>`_ instead.
+
+
