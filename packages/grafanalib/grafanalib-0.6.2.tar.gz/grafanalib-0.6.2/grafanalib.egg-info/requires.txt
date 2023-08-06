@@ -1,0 +1,5 @@
+attrs>=15.2.0
+
+[dev]
+flake8
+pytest
