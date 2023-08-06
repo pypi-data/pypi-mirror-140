@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: asclepius
+Version: 0.0.4
+Summary: Python package for ValueCare
+Home-page: https://valuecare.nl
+Author: ValueCare (Nils Warsen)
+Author-email: nils.warsen@valuecare.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: selenium
+
+# Asclepius
+
+This package is meant to make some python functionality developed for ValueCare easily available to all of its employees.
+
