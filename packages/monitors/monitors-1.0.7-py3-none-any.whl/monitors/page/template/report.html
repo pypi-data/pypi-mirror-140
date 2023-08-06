@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>monitors report</title>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+
+<style>
+    .container {
+        margin: 20px;
+        background-color: {{ background_color }};
+    }
+    .card-body {
+        background-color: {{ background_color }};
+    }
+    .footer {
+        position: relative;
+        height: 40px;
+        bottom: 20px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        background-color: {{ background_color }};
+    }
+    body {
+        background-color: {{ background_color }};
+        margin-bottom: 40px;
+    }
+</style>
+
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="">monitors report</a>
+</nav>
+
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" data-toggle="tab" href="#nav-stages" role="tab"
+           aria-controls="nav-stages" aria-selected="true">Stages</a>
+        <a class="nav-item nav-link" data-toggle="tab" href="#nav-charts" role="tab"
+           aria-controls="nav-charts" aria-selected="false">Charts</a>
+        <a class="nav-item nav-link" data-toggle="tab" href="#nav-others" role="tab"
+           aria-controls="nav-others" aria-selected="false">Others</a>
+        <a class="nav-item nav-link" data-toggle="tab" href="#nav-helper" role="tab"
+           aria-controls="nav-helper" aria-selected="false">Help</a>
+    </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-stages" role="tabpanel">
+        {% if thumbnail_list %}
+        <div class="container">
+            <div class="card border-light">
+                <div class="card-body">
+                    <ul style="margin-top: 10px;">
+                        {% for name, each_thumbnail in thumbnail_list %}
+                        <li>
+                            <h5> {{ name }} </h5>
+                            <img src="data:image/png;base64,{{ each_thumbnail }}"/>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class="tab-pane fade" id="nav-charts" role="tabpanel">
+        <div class="container">
+            <div class="card border-light">
+                <div class="card-body">
+                    <h2>Charts</h2>
+                    <div>
+                        {{ chart }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="nav-others" role="tabpanel">
+        <div class="container">
+        </div>
+        {% if cost_dict %}
+        <div class="container">
+            <div class="card border-light">
+                <div class="card-body">
+                    <h2>Time Cost between stages</h2>
+                    <p> Calculate the time spent on stage changes. </p>
+                    {% for name, result in cost_dict.items() %}
+                    <h4> stage {{ name }} </h4>
+                    <ul>
+                        <li>range: {{ result[0].frame_id }} - {{ result[1].frame_id }} ({{ result[0].timestamp }} - {{
+                            result[1].timestamp }})
+                        </li>
+                        <li>time cost: {{ result[1].timestamp - result[0].timestamp }}</li>
+                    </ul>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if extras %}
+        <div class="container">
+            <div class="card border-light">
+                <div class="card-body">
+                    <h2>Extras</h2>
+                    {% for name, value in extras.items() %}
+                    <h4> {{ name }} </h4>
+                    <p> {{ value }} </p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="tab-pane fade" id="nav-helper" role="tabpanel">
+        <div class="container">
+            <h5 class="card-title">Stages(阶段)</h5>
+            <span class="card-text">报告中 "Stages" 将显示您的视频中发生的事情，带有精确的时间戳和缩略图。</span><br>
+            <span class="card-text">
+                <br>
+                - `stable` 表示在此期间（几乎）没有发生任何事情<br>
+                - `unstable` 表示发生了什么事<br>
+                - `unspecific` 意味着你的模型不知道`这个frame应该是哪类`（低于阈值）<br>
+                <br>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <HR>
+        <span class="text-muted">
+            Built with <a href="">@monitors</a> Page generated: {{ timestamp }}
+        </span>
+    </div>
+</footer>
+
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
