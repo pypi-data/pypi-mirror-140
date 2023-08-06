@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ac4y_object/__init__.py
+src/ac4y_object/ac4y_object.py
+src/ac4y_object.egg-info/PKG-INFO
+src/ac4y_object.egg-info/SOURCES.txt
+src/ac4y_object.egg-info/dependency_links.txt
+src/ac4y_object.egg-info/top_level.txt
