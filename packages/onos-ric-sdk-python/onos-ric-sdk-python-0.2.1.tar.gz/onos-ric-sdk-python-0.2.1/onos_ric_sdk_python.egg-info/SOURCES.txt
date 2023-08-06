@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+onos_ric_sdk_py/__init__.py
+onos_ric_sdk_py/e2.py
+onos_ric_sdk_py/exceptions.py
+onos_ric_sdk_py/sdl.py
+onos_ric_sdk_py/server.py
+onos_ric_sdk_python.egg-info/PKG-INFO
+onos_ric_sdk_python.egg-info/SOURCES.txt
+onos_ric_sdk_python.egg-info/dependency_links.txt
+onos_ric_sdk_python.egg-info/requires.txt
+onos_ric_sdk_python.egg-info/top_level.txt

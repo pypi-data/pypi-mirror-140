@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: onos-ric-sdk-python
+Version: 0.2.1
+Summary: ONOS RIC SDK for Python
+Home-page: UNKNOWN
+Author: Open Networking Foundation and Partners
+Author-email: support@opennetworking.org
+License: Apache v2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: AsyncIO
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
