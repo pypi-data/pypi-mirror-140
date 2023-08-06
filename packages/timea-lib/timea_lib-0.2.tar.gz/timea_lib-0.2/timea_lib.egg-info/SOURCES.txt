@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+Docs/doc.txt
+timea_lib/__init__.py
+timea_lib.egg-info/PKG-INFO
+timea_lib.egg-info/SOURCES.txt
+timea_lib.egg-info/dependency_links.txt
+timea_lib.egg-info/requires.txt
+timea_lib.egg-info/top_level.txt
+timea_lib/pack_a/__init__.py
+timea_lib/pack_a/find_index.py
+timea_lib/pack_b/__init__.py
+timea_lib/pack_b/my_factorial.py
