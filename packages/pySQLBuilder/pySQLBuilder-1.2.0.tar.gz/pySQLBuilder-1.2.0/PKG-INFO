@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pySQLBuilder
+Version: 1.2.0
+Summary: Standalone python library for building SQL query with elegant syntax
+Home-page: https://github.com/chandrawi/pySQLBuilder
+Author: Chandra Wijaya Sentosa
+Author-email: chandra.w.sentosa@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/chandrawi/pySQLBuilder/issues
+Description: ## SQLBuilder Library
+        
+        Standalone python library for building SQL query with elegant syntax
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
