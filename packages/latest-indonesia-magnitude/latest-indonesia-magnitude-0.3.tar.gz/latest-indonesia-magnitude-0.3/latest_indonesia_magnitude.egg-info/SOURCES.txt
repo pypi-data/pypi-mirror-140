@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gempaterkini/__init__.py
+latest_indonesia_magnitude.egg-info/PKG-INFO
+latest_indonesia_magnitude.egg-info/SOURCES.txt
+latest_indonesia_magnitude.egg-info/dependency_links.txt
+latest_indonesia_magnitude.egg-info/top_level.txt
