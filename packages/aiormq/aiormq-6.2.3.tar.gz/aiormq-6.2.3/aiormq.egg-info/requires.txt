@@ -1,0 +1,16 @@
+yarl
+
+[:python_version<'3.7']
+pamqp==3.0.1
+
+[:python_version>='3.7']
+pamqp==3.1.0
+
+[develop]
+aiomisc~=11.0
+coverage!=4.3
+coveralls
+pylava
+pytest
+pytest-cov
+tox>=2.4
