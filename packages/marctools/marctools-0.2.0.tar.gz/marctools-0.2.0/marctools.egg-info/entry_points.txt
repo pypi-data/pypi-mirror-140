@@ -1,0 +1,5 @@
+[console_scripts]
+marccount = marctools.marccount:marccount
+marcdiff = marctools.marcdiff.cli:run
+marcpager = marctools.marcpager:marcpager
+

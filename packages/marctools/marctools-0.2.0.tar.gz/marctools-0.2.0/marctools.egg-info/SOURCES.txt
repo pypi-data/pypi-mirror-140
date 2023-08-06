@@ -1,0 +1,14 @@
+README.md
+setup.py
+marctools/__init__.py
+marctools/marccount.py
+marctools/marcpager.py
+marctools.egg-info/PKG-INFO
+marctools.egg-info/SOURCES.txt
+marctools.egg-info/dependency_links.txt
+marctools.egg-info/entry_points.txt
+marctools.egg-info/requires.txt
+marctools.egg-info/top_level.txt
+marctools/marcdiff/__init__.py
+marctools/marcdiff/cli.py
+marctools/marcdiff/core.py
