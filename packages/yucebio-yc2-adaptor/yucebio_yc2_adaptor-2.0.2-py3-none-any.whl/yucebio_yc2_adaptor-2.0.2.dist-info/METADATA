@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: yucebio-yc2-adaptor
+Version: 2.0.2
+Summary: Yucebio YC2 WdlAdaptor
+Home-page: UNKNOWN
+Author: huangqingjun
+Author-email: huangqingjun@yucebio.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: json5
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: pymongo
+Requires-Dist: batchcompute (>=2.1)
+Requires-Dist: PyJWT (~=2.3.0)
+Requires-Dist: ldap3 (~=2.9.1)
+Requires-Dist: importlib-metadata
+Requires-Dist: python-dateutil
+
+# Yucebio Wdl适配器
+
+- 根据不同云平台的Cromwell基础设施将通用的workflow内容转换适合对应平台的版本
+- 已经支持的云
+    - Yucebio 本地SGE集群
+    - 阿里云批量计算平台
+    - 亚马逊云Batch平台
+- 适配器安装成功后会在本地python环境中添加`yc2_wdl`的命令行工具.使用人员可以通过输入该命令检查是否安装成功.
+- 适配器目前提供了6个子命令
+    - `yc2_wdl version`: 查看版本信息. 目前应当是 1.0.0
+    - `yc2_wdl login`: 用于登录, 使用适配器必须先登录
+    - `yc2_wdl config`: 用于配置Cromwell 和 API
+    - `yc2_wdl adaptor`: 用于投递作业
+        - `yc2_wdl adaptor submit` 生产人员投递通用流程
+        - `yc2_wdl adaptor restart` 生产人员重投作业, 重投之前,需要先中止运行中的作业
+        - `yc2_wdl adaptor abort` 中止作业
+        - `yc2_wdl adaptor convert` 生信研发人员投递(或重新投递)开发中的流程作业
+        - `yc2_wdl adaptor update-bcs-instance` 生信研发人员更新本地阿里云实例配置信息.避免因阿里云平台实例类型错误导致分析失败
+    - `yc2_wdl api`: 提供API相关的辅助命令
+        - `yc2_wdl api sync-backends` 将本地Cromwell配置上传到服务器或从服务器下载Cromwell配置到本地
+        - `yc2_wdl api list-backends` 列出服务器上保存的Cromwell配置
+        - `yc2_wdl api link-job` 该命令用于管理历史作业, 手动将历史作业信息上传到服务器.
+        - `yc2_wdl api export-workflow` 导出作业适配后的JSON或WDL内容
+    - `yc2_wdl monitor`: 提供查询作业信息相关的辅助命令
+        - `yc2_wdl monitor query`: 基于Cromwell原生接口查询指定Cromwell服务器上的所有作业信息
+        - `yc2_wdl monitor ls`: 查询个人(JSON中的owner)投递的作业.
+    - **所有子命令（和二级子命令）支持最小前缀匹配的简写模式，即根据子命令前缀自动识别要执行的命令**
+
+# 安装
+
+```bash
+# 初始化环境，如通过conda初始化python>=3.9的环境
+$ conda create -n python3.9 python=3.9
+
+# 安装
+$ pip install Yucebio-Wdladaptor
+
+# 使用
+$ yc2_wdl --help
+```
+
+# [详细使用说明](yucebio/README.md)
+
+# [更新日志](CHANGELOG.md)
+
+# 附录
+
+## 各个平台可用自定义RUNTIME属性
+
+**通用属性**
+- cpu
+- memory
+
+**阿里云**
+- rescource_type 控制生成竞价型或按需型实例
+- systemDisk
+- cluster
+- mounts, vpc
+- continueOnReturnCode, failOnStderr
+
+**SGE**
+- owner： 指定sge任务属主
+- 'cpu', 'memory', "sge_queue", "sge_project", "mount", 'continueOnReturnCode'
+- simg
+
+**亚马逊**
+- cpu
+- memory
+- docker
+- disk
+
+
+
+

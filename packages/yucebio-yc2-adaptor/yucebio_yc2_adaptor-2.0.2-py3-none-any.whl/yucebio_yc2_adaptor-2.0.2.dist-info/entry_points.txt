@@ -1,0 +1,3 @@
+[console_scripts]
+yc2_wdl = yucebio.yc2.adaptor.command:cli
+
