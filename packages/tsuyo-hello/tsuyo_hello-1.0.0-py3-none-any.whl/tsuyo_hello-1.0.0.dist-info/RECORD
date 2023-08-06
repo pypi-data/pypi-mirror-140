@@ -1,0 +1,7 @@
+hello/__init__.py,sha256=WwMPKIf_cB4c0cNmVBrM840xHh5iPVEdQaxDAPvYpAM,40
+hello/__main__.py,sha256=M_6XNzsiS0cDAZwP-HNS_SK2ZM0a_bdKJgtMs2tJqkI,457
+hello/helloserver.py,sha256=G5SqSm_Aw3ud4RSxQAI23SS_iQ7SVb30ZAW9pbkH_xQ,1621
+tsuyo_hello-1.0.0.dist-info/METADATA,sha256=dxG5i51RWuDpAN9f-wk-kg6BgTNLAxtu6vPWShbUJhA,150
+tsuyo_hello-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tsuyo_hello-1.0.0.dist-info/top_level.txt,sha256=WJG1tSLV3whtD_CxEPvZ0hu0_HFjrzTQgoai6Eb2vgM,6
+tsuyo_hello-1.0.0.dist-info/RECORD,,
