@@ -1,0 +1,11 @@
+LICENSE
+README.md
+obsd_crypt.c
+obsd_crypt.py
+obsd_crypt_wrap.c
+pyproject.toml
+setup.py
+obsd_crypt.egg-info/PKG-INFO
+obsd_crypt.egg-info/SOURCES.txt
+obsd_crypt.egg-info/dependency_links.txt
+obsd_crypt.egg-info/top_level.txt
