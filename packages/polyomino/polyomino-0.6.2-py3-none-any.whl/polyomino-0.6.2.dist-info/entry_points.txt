@@ -1,0 +1,4 @@
+[console_scripts]
+doctest=run_tests:run_doctests
+test=run_tests:run_tests
+
