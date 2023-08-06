@@ -1,0 +1,3 @@
+aliyun-fc2>=2.5.0
+alibabacloud-tunnel-service20210509
+retry
