@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: open-cv-plus
+Version: 1.2
+Summary: OpenCV Plus
+Home-page: UNKNOWN
+Author: TheCoder1001 (Atharv Baluja)
+License: UNKNOWN
+Keywords: python,opencv
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that gives you extra OpenCV functions.
+
