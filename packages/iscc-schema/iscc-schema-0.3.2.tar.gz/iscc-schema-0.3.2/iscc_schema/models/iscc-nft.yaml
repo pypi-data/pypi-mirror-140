@@ -1,0 +1,56 @@
+title: iscc-nft
+type: object
+description: Metadata for NFT Marketplaces
+properties:
+  external_url:
+    description: This is the URL that will appear below the asset's image on some NFT Marketplaces
+      and will allow users to leave the site and view the item on your site.
+    type: string
+    format: uri
+    x-iscc-context: http://purl.org/iscc/terms/#external_url
+    x-iscc-category: nft
+  animation_url:
+    description: A URL to a multi-media attachment for the item.
+    type: string
+    format: uri
+    x-iscc-context: http://purl.org/iscc/terms/#animation_url
+    x-iscc-category: nft
+  properties:
+    description: Arbitrary properties. Values may be strings, numbers, object or arrays. Properties
+      defined here may show up on NFT marketplaces. See [ERC-1155](https://eips.ethereum.org/EIPS/eip-1155#metadata)
+    type: object
+    example:
+      simple_property: example value
+      rich_property:
+        name: Name
+        value: '123'
+        display_value: 123 Example Value
+        class: emphasis
+        css:
+          color: '#ffffff'
+          font-weight: bold
+          text-decoration: underline
+      array_property:
+        name: Name
+        value:
+        - 1
+        - 2
+        - 3
+        - 4
+        class: emphasis
+    x-iscc-context: http://purl.org/iscc/terms/#properties
+    x-iscc-category: nft
+  attributes:
+    description: Similar to `properties` but as an array of objects. These attributes will
+      show up on some NFT marketplaces.
+    example:
+    - trait_type: METAL
+      value: SILVER
+    - display_type: number
+      trait_type: GENERATION
+      value: 1
+    type: array
+    items:
+      type: object
+    x-iscc-context: http://purl.org/iscc/terms/#attributes
+    x-iscc-category: nft
