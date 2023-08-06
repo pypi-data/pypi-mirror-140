@@ -1,0 +1,7 @@
+setup.py
+soda_sql_sqlserver.egg-info/PKG-INFO
+soda_sql_sqlserver.egg-info/SOURCES.txt
+soda_sql_sqlserver.egg-info/dependency_links.txt
+soda_sql_sqlserver.egg-info/requires.txt
+soda_sql_sqlserver.egg-info/top_level.txt
+sodasql/dialects/sqlserver_dialect.py
