@@ -1,0 +1,2 @@
+[console_scripts]
+py-to-ts-interfaces = py_to_ts_interfaces.__main__:main
