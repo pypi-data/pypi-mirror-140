@@ -1,0 +1,12 @@
+pandas
+jupyter
+matplotlib
+seaborn
+statsmodels
+dominate
+cmdstanpy
+pytest
+numpyencoder
+flake8
+coverage
+pytest-cov
