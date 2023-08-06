@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: g3-metaconfig
+Version: 1.1.0
+Summary: Simple metaclass to simplify work with argparse
+Home-page: https://github.com/BigGreenDelta/g3-metaconfig
+Author: Kirill Potapenko
+Author-email: ajiadb9@bgd.team
+License: UNKNOWN
+Project-URL: Site, http://bgd.team
+Project-URL: Bug Tracker, https://github.com/BigGreenDelta/g3-metaconfig/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# G3 metaconfig
+
+Metaclass to simplify work with argparse and it's forks
+
+

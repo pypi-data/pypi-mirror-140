@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+g3_metaconfig/__init__.py
+g3_metaconfig/configs.py
+g3_metaconfig/metaclass.py
+g3_metaconfig/param.py
+g3_metaconfig.egg-info/PKG-INFO
+g3_metaconfig.egg-info/SOURCES.txt
+g3_metaconfig.egg-info/dependency_links.txt
+g3_metaconfig.egg-info/requires.txt
+g3_metaconfig.egg-info/top_level.txt
+g3_metaconfig/tests/__init__.py
+g3_metaconfig/tests/test_all.py
