@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+beets_describe.egg-info/PKG-INFO
+beets_describe.egg-info/SOURCES.txt
+beets_describe.egg-info/dependency_links.txt
+beets_describe.egg-info/requires.txt
+beets_describe.egg-info/top_level.txt
+beetsplug/describe/__init__.py
+beetsplug/describe/about.py
+beetsplug/describe/command.py
+beetsplug/describe/common.py
+beetsplug/describe/config_default.yml

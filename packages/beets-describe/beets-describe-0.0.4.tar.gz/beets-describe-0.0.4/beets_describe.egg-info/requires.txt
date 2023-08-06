@@ -1,0 +1,7 @@
+beets>=1.4.9
+numpy
+pandas
+termtables
+termplotlib
+
+[tests]
