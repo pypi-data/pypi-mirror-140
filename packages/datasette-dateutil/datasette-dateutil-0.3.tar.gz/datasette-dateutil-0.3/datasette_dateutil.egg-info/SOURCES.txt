@@ -1,0 +1,9 @@
+README.md
+setup.py
+datasette_dateutil/__init__.py
+datasette_dateutil.egg-info/PKG-INFO
+datasette_dateutil.egg-info/SOURCES.txt
+datasette_dateutil.egg-info/dependency_links.txt
+datasette_dateutil.egg-info/entry_points.txt
+datasette_dateutil.egg-info/requires.txt
+datasette_dateutil.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+datasette
+python-dateutil
+
+[test]
+pytest
+pytest-asyncio
+httpx
