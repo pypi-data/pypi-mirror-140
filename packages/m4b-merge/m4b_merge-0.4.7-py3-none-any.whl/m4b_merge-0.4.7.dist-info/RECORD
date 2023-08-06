@@ -1,0 +1,13 @@
+m4b_merge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+m4b_merge/__main__.py,sha256=7YhYmHRgbkMSCi9QG_GfWtuHqXHwP7QcQNsgqFMnEfk,4085
+m4b_merge/audible_helper.py,sha256=M_06yK95zVU9s-TUirWy3HaSC_Ks5pc8G6_10Xn8vd8,3075
+m4b_merge/config.py,sha256=RYoQZAWduM09vGmhV7OtbZmDd9hBAbDmfIoe9LU0mj4,703
+m4b_merge/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+m4b_merge/helpers.py,sha256=m2GEF0L6xOIQV14D09iCUW_OCNT6FZSTTW_HLLlLwKI,3813
+m4b_merge/m4b_helper.py,sha256=4UCWlGdGuVp4kY4BFIqBlGIrRcq3w3Ax_pGiT-tslyI,16756
+m4b_merge-0.4.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+m4b_merge-0.4.7.dist-info/METADATA,sha256=TQvt7bU8B5OdPw_iF1S9Di65a3WL3WhZWU7L0bIZv1w,6306
+m4b_merge-0.4.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+m4b_merge-0.4.7.dist-info/entry_points.txt,sha256=olApEKpvHS7R_ZRJZSXXoRzvM97iBlqcJWenva2H_is,54
+m4b_merge-0.4.7.dist-info/top_level.txt,sha256=AldxIV9TGRftEGmhRbbOEXd-nHA2rkeZN6E9PT8DA-w,10
+m4b_merge-0.4.7.dist-info/RECORD,,
