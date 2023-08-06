@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/Topsis-Paryagdeep-101903573/101903573.py
+src/Topsis-Paryagdeep-101903573/__init__.py
+src/Topsis_Paryagdeep_101903573.egg-info/PKG-INFO
+src/Topsis_Paryagdeep_101903573.egg-info/SOURCES.txt
+src/Topsis_Paryagdeep_101903573.egg-info/dependency_links.txt
+src/Topsis_Paryagdeep_101903573.egg-info/requires.txt
+src/Topsis_Paryagdeep_101903573.egg-info/top_level.txt
