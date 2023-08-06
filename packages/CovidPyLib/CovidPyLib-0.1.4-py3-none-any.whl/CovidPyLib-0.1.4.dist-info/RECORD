@@ -1,0 +1,13 @@
+covidpy/__init__.py,sha256=Y2hY2xMaDhNW7lI4w0dsxTK6SWpsp1HQcSq4yAlT-w8,587
+covidpy/errors.py,sha256=3tPK8BzwmgC_0-SrrAiO-SbK2-N5kHOViq3ga4zhy1c,782
+covidpy/lib.py,sha256=xefci9ibpOVPrmHogXDps6jOfTh-0hrQtXvjII_KfnU,7560
+covidpy/types.py,sha256=OwG9QHk9g3_ACYulbG8tSpytVj4IYUitTw8sQL-R_jI,18868
+covidpy/verifier.py,sha256=UhY-iBGH3q9MyNK5JLKsvdmjcslVRjyR-zYWaO4SRYM,4083
+covidpy/certs/__init__.py,sha256=J_JyhxeUIevCPzTb05Y2AlPZckhsLV-JppPPWpETGQU,452
+covidpy/certs/dsc-worker.key,sha256=u8gc-nOyGeu8ADrRX5dF8hOzkatoFbDWk69348r2-Tc,226
+covidpy/certs/dsc-worker.pem,sha256=NO-lGCuirohh0dN6Sg_Bbd4eXkOHXIH_GCdWZmgTqtM,537
+CovidPyLib-0.1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+CovidPyLib-0.1.4.dist-info/METADATA,sha256=mdm4tlwEGeXSFppWzRRgPKpAU1upOp3QF1uNF_3firI,3907
+CovidPyLib-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CovidPyLib-0.1.4.dist-info/top_level.txt,sha256=wYUPC9_4G52mhDIWni9RWUwdQvyDggzrR3JI5iLVwxo,8
+CovidPyLib-0.1.4.dist-info/RECORD,,
