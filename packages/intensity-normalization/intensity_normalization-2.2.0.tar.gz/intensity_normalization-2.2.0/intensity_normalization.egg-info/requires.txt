@@ -1,0 +1,17 @@
+SimpleITK<3,>=2.1.0
+nibabel<4,>=3
+numpy<2,>=1.21
+pillow>=9.0.0
+pydicom<3,>=2.2.2
+pymedio<1,>=0.2.7
+scikit-fuzzy<1,>=0.4.2
+scikit-image<1,>=0.17
+scikit-learn<2,>=0.24
+scipy<2,>=1.5
+statsmodels<1,>=0.12
+
+[ants]
+antspyx>=0.2.7
+
+[plot]
+matplotlib<4,>=3
