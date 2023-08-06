@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=KTpUU96Z0DcFTpdchZLqodtk0u8NTIgELTYWLrIjBR0,558
+cmem_plugin_base/__init__.py,sha256=1Nk4vWv4WcpLE4ZoH5n45CpshBgIKMCt1RQocyNyMVk,73
+cmem_plugin_base/dataintegration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmem_plugin_base/dataintegration/description.py,sha256=q0YMRpiEEskAUEkafNmO4Nf2Ibi3kyCohcA8FmXl3kA,4010
+cmem_plugin_base/dataintegration/discovery.py,sha256=yFhZHrikWf166Q3ad3wcmnAbbLyNGzS3WykelVXj-mI,1965
+cmem_plugin_base/dataintegration/entity.py,sha256=6m9H86uLY8ShqKqGUjMtqSeYt7SQuNsuYGcPnHoKGIY,1370
+cmem_plugin_base/dataintegration/plugins.py,sha256=0jMtQm3nU5zj-fwYRHnDE6AJG1geaWJw1eF0ihThhXg,1236
+cmem_plugin_base-0.0.5.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_base-0.0.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+cmem_plugin_base-0.0.5.dist-info/METADATA,sha256=emRX9WyWcFu5RwgQ9V8eUY1Kf4LlQDVMyfHVvpTL-y4,864
+cmem_plugin_base-0.0.5.dist-info/RECORD,,
