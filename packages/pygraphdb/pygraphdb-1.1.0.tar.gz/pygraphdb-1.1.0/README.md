@@ -1,0 +1,89 @@
+# graphdb
+
+#### 介绍
+    python 连接 graphdb 数据库的包
+
+#### 功能
+    通过执行SPARQL语句就可查询和更新Graph数据库
+
+
+#### 安装教程
+
+    两种方式
+    1.pip install pygraphdb
+    2.下载此包，复制 pygraph 文件，放入你的项目目录下
+
+
+#### 使用说明
+
+    
+    1. 导入包
+    
+    import pygraph
+    
+    2. 数据库 config
+    
+    host = '0.0.0.0'
+    port = '7200'
+    db = 'db_name'
+    user = 'admin'
+    password = 'password'
+    
+    3. sparql 语句(例)
+    
+    sparql = "PREFIX disease_type_iri:<http://schema.omaha.org.cn/property/> " \
+         "select distinct ?x ?y where { ?x disease_type_iri:Alternatename ?y .}"
+         
+    4. 连接数据库
+    
+    db = pygraph.connect(host, port, db, user, password)
+    
+    5. 获取 cursor
+    
+    cur = db.cursor()
+    
+    6. 执行sparql语句，得到结果
+    
+    result = cur.execute(sparql)
+    
+    7. 打印结果
+    
+    print(result)
+    
+    8. 关闭 cursor
+    
+    cur.close()
+    
+    9. 关闭数据库
+    
+    db.close()
+
+#### 使用with
+
+    1.第一种方式
+    
+    with pygraph.connect(host, port, db, user, password) as db2:
+        #获取 cursor
+        cur2 = db2.cursor()
+        #执行sparql语句，得到结果
+        result2 = cur2.execute(sparql)
+        cur2.close()
+        print(result2)
+    
+    2.第二种方式
+    
+    db3 = pygraph.connect(host, port, db, user, password)
+    with db3.cursor() as cur3:
+        result3 = cur3.execute(sparql)
+        print(result3)
+    db3.close()
+
+#### 参与贡献
+    刘洪波
+
+
+
+#### 参考资料
+
+grapddb 使用教程： 
+https://graphdb.ontotext.com/documentation/free/index.html
