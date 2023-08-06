@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: deci-client
+Version: 1.29.1
+Summary: Deci platform Client
+Home-page: https://deci.ai
+Author: Deci AI
+Author-email: rnd@deci.ai
+License: UNKNOWN
+Keywords: Deci,AI,Platform
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: grpcio (==1.39.0)
+Requires-Dist: certifi (>=14.05.14)
+Requires-Dist: future
+Requires-Dist: six (>=1.10)
+Requires-Dist: python-dateutil (>=2.5.3)
+Requires-Dist: setuptools (>=21.0.0)
+Requires-Dist: urllib3 (>=1.15.1)
+Requires-Dist: pyarrow
+
+All of Deci's Python clients, wrapped together in a single library.
+
+
