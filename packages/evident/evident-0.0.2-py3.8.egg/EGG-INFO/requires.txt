@@ -1,0 +1,11 @@
+pandas
+statsmodels
+numpy
+scikit-bio
+matplotlib
+seaborn
+
+[dev]
+pytest
+pytest-cov
+flake8
