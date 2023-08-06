@@ -1,0 +1,3 @@
+[console_scripts]
+xfds=xfds.cli:app
+
