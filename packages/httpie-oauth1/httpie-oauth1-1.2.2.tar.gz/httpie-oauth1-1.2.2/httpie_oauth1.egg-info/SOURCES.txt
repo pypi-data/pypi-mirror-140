@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+httpie_oauth1.py
+setup.cfg
+setup.py
+httpie_oauth1.egg-info/PKG-INFO
+httpie_oauth1.egg-info/SOURCES.txt
+httpie_oauth1.egg-info/dependency_links.txt
+httpie_oauth1.egg-info/entry_points.txt
+httpie_oauth1.egg-info/not-zip-safe
+httpie_oauth1.egg-info/requires.txt
+httpie_oauth1.egg-info/top_level.txt
+test/test_httpie_oauth1.py

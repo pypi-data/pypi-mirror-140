@@ -1,0 +1,9 @@
+[httpie.plugins.auth.v1]
+httpie_oauth1_hs1 = httpie_oauth1:OAuth1HmacSha1Plugin
+httpie_oauth1_hs256 = httpie_oauth1:OAuth1HmacSha256Plugin
+httpie_oauth1_hs512 = httpie_oauth1:OAuth1HmacSha512Plugin
+httpie_oauth1_plaintext = httpie_oauth1:OAuth1PlaintextPlugin
+httpie_oauth1_rs1 = httpie_oauth1:OAuth1RsaSha1Plugin
+httpie_oauth1_rs256 = httpie_oauth1:OAuth1RsaSha256Plugin
+httpie_oauth1_rs512 = httpie_oauth1:OAuth1RsaSha512Plugin
+
