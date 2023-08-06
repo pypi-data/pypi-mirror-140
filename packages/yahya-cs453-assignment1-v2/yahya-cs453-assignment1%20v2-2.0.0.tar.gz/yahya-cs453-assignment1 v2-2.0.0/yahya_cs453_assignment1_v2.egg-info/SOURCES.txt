@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+dictionary/__init__.py
+dictionary/dictionary.py
+yahya_cs453_assignment1_v2.egg-info/PKG-INFO
+yahya_cs453_assignment1_v2.egg-info/SOURCES.txt
+yahya_cs453_assignment1_v2.egg-info/dependency_links.txt
+yahya_cs453_assignment1_v2.egg-info/requires.txt
+yahya_cs453_assignment1_v2.egg-info/top_level.txt
