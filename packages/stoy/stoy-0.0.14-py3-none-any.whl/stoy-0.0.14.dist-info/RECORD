@@ -1,0 +1,10 @@
+stoy/VERSION,sha256=JSzX767EDxfvCv0-_12GDdMnCwjC3ZqKQzgZo8MC2mI,6
+stoy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stoy/stoy.py,sha256=SY4uuVwg31XJ9QYYABO-AiwKqlSgDywcexdTBEiioPw,6105
+stoy-0.0.14.data/scripts/generate-token,sha256=3y7kLWcv6mvKQiXclAdSmVxGReb0zbDIjGd2Ax1eoHk,41
+stoy-0.0.14.data/scripts/stoy,sha256=6hXzxu60PW6QU4DV7U_C1TSi6LCvdnIvoJD_tb2ApFY,43
+stoy-0.0.14.dist-info/LICENSE,sha256=cGi7Sc4kxCzPuPXMyxc3aXO3-qNhUBc1WGXtx5fE4Lk,1073
+stoy-0.0.14.dist-info/METADATA,sha256=mpM3nQd_6qG3o_q0sw1iuxf2kArhTIK-cvD4K9LC5Lk,1702
+stoy-0.0.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stoy-0.0.14.dist-info/top_level.txt,sha256=nFyJUl8Gy8DxSW1UagV1C-i8Bl8b4wZ6us50XZvGWaU,5
+stoy-0.0.14.dist-info/RECORD,,
