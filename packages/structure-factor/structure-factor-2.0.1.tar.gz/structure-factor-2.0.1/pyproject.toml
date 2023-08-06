@@ -1,0 +1,112 @@
+[tool.poetry]
+name = "structure-factor"
+version = "2.0.1"
+description = "Approximate the structure factor of a stationary point process, test its effective hyperuniformity, and identify its class of hyperuniformity."
+license = "MIT"
+authors = [
+    "Diala Hawat <dialahawat7@gmail.com>",
+    "Guillaume Gautier <guillaume.gga@gmail.com>",
+]
+maintainers = [
+    "Diala Hawat <dialahawat7@gmail.com>",
+    "Guillaume Gautier <guillaume.gga@gmail.com>",
+]
+readme = "README.md" # path to README file (.md or .rst)
+homepage = "https://github.com/For-a-few-DPPs-more/structure-factor"
+repository = "https://github.com/For-a-few-DPPs-more/structure-factor"
+documentation = "https://for-a-few-dpps-more.github.io/structure-factor/"
+keywords = [] # ["optimization", "gradrient descent"] at most 5 keywords
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering :: Mathematics",
+] # https://pypi.org/classifiers/
+
+# https://python-poetry.org/docs/pyproject/#packages
+packages = []
+
+# https://python-poetry.org/docs/pyproject/#include-and-exclude
+# unexpected behavior when using include = ["data/**/*"]
+# will put data at root of site-packages not in package folder
+# https://github.com/python-poetry/poetry/issues/2015
+# Fall back: create a subpackage src/packagename/data
+include = []
+exclude = []
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<3.10"
+
+# Main dependencies
+# poetry add name
+numpy = "^1.20.3"
+scipy = "^1.6.2"
+matplotlib = "^3.4.2"
+pandas = "^1.2.4"
+spatstat-interface = "^0.1.0"
+
+numba = "^0.54.1"
+numba-scipy = "^0.3.0"
+
+pickle5 = { version = ">0.0", python = ">=3.5,<3.8" }
+
+# Optional dependencies
+# poetry add name --optional
+
+# Jupyter notebook
+jupyter = { version = "^1.0.0", optional = true }
+
+# Sphinx documentation https://www.sphinx-doc.org
+Sphinx = { version = "^4.0.3", optional = true }
+sphinxcontrib-bibtex = { version = "^2.4.1", optional = true }
+sphinxcontrib-proof = { version = "^1.3.0", optional = true }
+rstcheck = { version = "^3.3.1", optional = true }
+sphinx-rtd-theme = { version = "^1.0.0", optional = true }
+
+
+[tool.poetry.extras]
+# poetry install -E name
+notebook = ["jupyter"]
+docs = [
+    "Sphinx",
+    "sphinxcontrib-bibtex",
+    "sphinxcontrib-proof",
+    "rstcheck",
+    "sphinx-rtd-theme",
+]
+
+[tool.poetry.dev-dependencies]
+# poetry add name --dev
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+pytest-subtests = "^0.5.0"
+
+pre-commit = "^2.15.0"
+black = { version = "^21.5b1", allow-prereleases = true }
+isort = "^5.9.3"
+pylint = "^2.8.2"
+pydocstyle = "^6.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+# poetry run pytest
+minversion = "6.0"
+addopts = "-ra -q -vv --cov=structure_factor --cov-report=term-missing  --cov-report=xml"
+testpaths = ["tests"]
+
+
+# For other tools to be black compliant
+# https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html
+[tool.isort]
+profile = "black"
+
+[tool.pylint.messages_control]
+disable = "C0330, C0326"
+
+[tool.pylint.format]
+max-line-length = "88"
