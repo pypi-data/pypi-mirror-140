@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: SlyTwitter
+Version: 0.1.2
+Summary: No-boilerplate, async and typed Twitter access.
+Home-page: https://github.com/dunkyl/SlyPyTwitter
+Author: Dunkyl 🔣🔣
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/dunkyl/SlyPyTwitter/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SlyAPI (>=0.2.4)
+Requires-Dist: aiofiles
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+
+# ![sly logo](https://raw.githubusercontent.com/dunkyl/SlyMeta/main/sly%20logo.svg) Sly Twitter for Python
+
+> 🚧 **This library is an early work in progress! Breaking changes may be frequent.**
+
+> 🐍 For Python 3.10+
+
+## No-boilerplate, _async_ and _typed_ Twitter access. 😋
+
+```shell
+pip install slytwitter
+```
+
+This library does not have full coverage.
+Version 2 and premium version 1.1 are not supported.
+Currently, the following topics are supported:
+
+* Posting and managing tweets, with media
+* Reading followers
+
+You can directly grant user tokens using the command line, covering the whole OAuth 1.0 grant process.
+
+---
+
+Example usage:
+
+```python
+import asyncio
+from SlyTwitter import *
+
+async def main():
+
+    twitter = await Twitter('test/app.json', 'test/user.json')
+
+    follow = await twitter.check_follow('dunkyl_', 'TechConnectify')
+
+    print(follow) # @dunkyl_ follows @TechConnectify
+    
+asyncio.run(main())
+```
+
+
