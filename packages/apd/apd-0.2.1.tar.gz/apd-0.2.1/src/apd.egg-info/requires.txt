@@ -1,0 +1,15 @@
+requests
+requests_kerberos
+beautifulsoup4
+click
+click-log
+rich
+
+[testing]
+black
+flake8
+flake8-bugbear
+pylint
+pytest
+pytest-cov
+responses
