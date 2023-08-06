@@ -1,0 +1,12 @@
+magodo/__init__.py,sha256=qClsa9dB8ne-Pov6xZBjJZBrV8NZLWCdxzbLpvL0KkU,605
+magodo/_common.py,sha256=tiGvNFYdSIKVnwLrUCN_dzb0QzpErd3tyXAzi338ufU,2147
+magodo/_group.py,sha256=nAXfi5A0hP4G47huN-1M4_tSWF3meC0HYRMPUd1xF-s,5489
+magodo/_magic.py,sha256=9EImD-0kDbBNC9imMmyGeKrUOxjOpqDAsKW3CZcyOOY,4243
+magodo/_todo.py,sha256=sZ3mBPAILRx7C2dG2zHmpNnCj-ta36APMetHIIlrKQU,9629
+magodo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magodo/spells.py,sha256=dT862Wyk1dlY91kCvbnaqLY6bkQOCQ48s7EeUqDd_IU,7126
+magodo/types.py,sha256=Tqoy57bLQbH_tVM7W5aNVGuNQv9NF2zvFh33PdNW6A0,3705
+magodo-0.9.0.dist-info/METADATA,sha256=ZnSGKOvKfa0Ohmi0WULHPMIw43hN_Vg5xhDNEB4A8io,4014
+magodo-0.9.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+magodo-0.9.0.dist-info/top_level.txt,sha256=tcCFlJYdy4J7MXVhzLAUD82nsfqnZ_l_MsHssimiqjQ,7
+magodo-0.9.0.dist-info/RECORD,,
