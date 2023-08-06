@@ -1,0 +1,12 @@
+TRecSys/__init__.py,sha256=BOO9zSC24FOrCL9nDC2t3Y1t6NsesOSBvhDYFVYNHbo,71
+TRecSys/encoders.py,sha256=H7_Ji575uN5JnWmII-pqbvOhVghMqVKMm1phtO6dO7k,12941
+TRecSys/endpoint.py,sha256=-Fgrgjg7t8jJeFbOJ6ERFd8OGYMwG1XuPqH2pV6jd10,5226
+TRecSys/index_partitions.py,sha256=lrHG72ng-QffIIeiiLVM_JAoYSlsHdBhIoHFg4QO7KU,3461
+TRecSys/partitioner.py,sha256=wk5jysxcc2SutPwx63Ny52Hm45HngB52bPjeqxyxVw0,7170
+TRecSys/repartition.py,sha256=LQ3ewvNhS29UFqKTE-udGBd350gGYmJxd54bfNR9rq0,3444
+TRecSys/similarity_helpers.py,sha256=qUxQ2Ytw3iPz9PAUT94CtM-W08425dXxwdPr-SJQ-Wg,3562
+TRecSys/tree_helpers.py,sha256=DY9RFNK_yGY5kE8yuOhnP3oF7ycQe8csLO3FfIelsIU,2168
+TRecSys-0.0.17.dist-info/METADATA,sha256=mknt74fD0jjHKVCcBMRk8bHf4tcg2XS5nnDuCcWwJzg,660
+TRecSys-0.0.17.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+TRecSys-0.0.17.dist-info/top_level.txt,sha256=QVlxpLoJkBfeqLhwZWDV9KaW32Ap9XuZiQqzJ5t33TA,8
+TRecSys-0.0.17.dist-info/RECORD,,
