@@ -1,0 +1,4 @@
+[console_scripts]
+compiledoc=sciengdox.compiledoc:main
+pandoc-pythonexec=sciengdox.pandoc_pythonexec.filter:main
+
