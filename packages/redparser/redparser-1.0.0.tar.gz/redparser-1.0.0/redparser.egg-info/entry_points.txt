@@ -1,0 +1,3 @@
+[console_scripts]
+redparser = redparser.__main__:main
+
