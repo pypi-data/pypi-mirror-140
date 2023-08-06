@@ -1,0 +1,8 @@
+id: da61a26a-2b34-11ec-8d3d-0242ac130003
+label: 'zip'
+category: CONTAINER
+factory:
+  name: zip
+  classpath: 'drb_impl_zip.file_zip_node:DrbZipFactory'
+signatures:
+  - name: (?i).*\.zip
