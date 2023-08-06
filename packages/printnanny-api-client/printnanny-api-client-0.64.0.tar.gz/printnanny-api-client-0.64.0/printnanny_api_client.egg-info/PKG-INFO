@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: printnanny-api-client
+Version: 0.64.0
+Summary: printnanny-api-client
+Home-page: UNKNOWN
+Author: Leigh Johnson
+Author-email: leigh@print-nanny.com
+License: AGPLv3
+Keywords: OpenAPI,OpenAPI-Generator,printnanny-api-client
+Platform: UNKNOWN
+
+    Official API client library for print-nanny.com  # noqa: E501
+    
+
