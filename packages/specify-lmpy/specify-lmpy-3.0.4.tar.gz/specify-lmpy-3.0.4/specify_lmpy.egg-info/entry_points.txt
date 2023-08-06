@@ -1,0 +1,5 @@
+[console_scripts]
+clean_occurrences = lmpy.tools.clean_occurrences:cli
+convert_csv_to_lmm = lmpy.tools.convert_csv_to_lmm:cli
+convert_lmpy_to_csv = lmpy.tools.convert_lmpy_to_csv:cli
+randomize_pam = lmpy.tools.randomize_pam:cli
