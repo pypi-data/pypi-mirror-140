@@ -1,0 +1,9 @@
+bq_validator/__init__.py,sha256=0xyOJt5kW7RyPvr2Gi8smjgCwpjK_23pWbgQ_7h6Qgo,890
+bq_validator/bigquery.py,sha256=bfihWSKAKZrQyJVDifzsppXVhFMWzgIhPRHbxM02Gx8,4332
+bq_validator/cli.py,sha256=iYeliaWGlPg6FEGz3H7cXVkyNEH-3MpIh451CcfSgBY,2652
+bq_validator/utils.py,sha256=c8lfFnsku4LNklJEOECDxT8t34cP0FL0Ok03tpidpw0,1445
+bq_validator-0.4.1.dist-info/entry_points.txt,sha256=PeueVYvIz47jrWvHzrf6KPeyhuMSkz07ve73K1YweBk,54
+bq_validator-0.4.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bq_validator-0.4.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+bq_validator-0.4.1.dist-info/METADATA,sha256=ypjc_G32sx0skYHkrANf0zxkjXhUd-VlkhorvK2GoPc,3361
+bq_validator-0.4.1.dist-info/RECORD,,
