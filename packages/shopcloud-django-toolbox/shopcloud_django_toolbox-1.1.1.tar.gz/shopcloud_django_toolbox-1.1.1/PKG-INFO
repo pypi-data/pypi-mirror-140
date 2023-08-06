@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: shopcloud_django_toolbox
+Version: 1.1.1
+Summary: Django tool
+Home-page: https://github.com/Talk-Point/shopcloud-django-toolbox
+Author: Konstantin Stoldt
+Author-email: konstantin.stoldt@talk-point.de
+License: MIT
+Description: # Django Toolbox
+        
+        ## install
+        
+        ```sh
+        $ pip install shopcloud-django-toolbox
+        ```
+        
+        ## deploy
+        
+        ```sh
+        $ pip3 install wheel twine
+        $ python3 setup.py sdist bdist_wheel
+        $ twine upload dist/* 
+        ```
+Keywords: CLI
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
