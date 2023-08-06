@@ -1,0 +1,7 @@
+pip
+packaging
+pandas
+chess>=1.5.0
+python-lichess
+
+[dev]
