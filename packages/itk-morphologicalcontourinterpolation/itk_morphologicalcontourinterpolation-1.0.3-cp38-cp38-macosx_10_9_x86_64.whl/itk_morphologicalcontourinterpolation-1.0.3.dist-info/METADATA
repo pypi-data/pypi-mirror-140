@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: itk-morphologicalcontourinterpolation
+Version: 1.0.3
+Summary: Image morphological contour interpolation.
+Home-page: https://github.com/KitwareMedical/ITKMorphologicalContourInterpolation
+Author: Dženan Zukić
+Author-email: community@itk.org
+License: Apache
+Download-URL: https://github.com/KitwareMedical/ITKMorphologicalContourInterpolation
+Keywords: ITK InsightToolkit Segmentation Interpolation-methods
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: Android
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+Requires-Dist: itk (>=5.3rc3)
+
+itk-morphologicalcontourinterpolation provides classes to perform image morphological contour interpolation.
+Please refer to:
+Zukić Dž., Vicory J., McCormick M., Wisse L., Gerig G., Yushkevich P., Aylward S. "nD Morphological Contour Interpolation", Insight Journal, January-December 2016, http://hdl.handle.net/10380/3563.
+
