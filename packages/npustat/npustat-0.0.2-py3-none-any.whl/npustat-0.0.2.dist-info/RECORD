@@ -1,0 +1,12 @@
+npustat/__init__.py,sha256=xPtB902gxFdCKz3tVi9aM5TUjtaKwRIg2oWsS_iYHcA,486
+npustat/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+npustat/ascend_dmi.py,sha256=ZNrBmPD_VvR9P03sSD5XZ14qO-UaCz2iYXQEvt-DjOg,2529
+npustat/cli.py,sha256=u_giaTQO7hj5BQs5udQEccL5rSeIEQ6QNWnUvedrfWA,6225
+npustat/core.py,sha256=RV67p-Bs0-GtMFz4fkJAU-LGjCTd8H1lcjzh2zLYvGw,13859
+npustat/npu_smi.py,sha256=bAxr55V2x0eAEHHJaSjiRym8QnVrQjIZRuZpvtQlAUY,7586
+npustat-0.0.2.dist-info/LICENSE,sha256=NY7h7Gfsxq6CPiImPGSUIndy6N2ohA6que7rtP1XIoo,1073
+npustat-0.0.2.dist-info/METADATA,sha256=XVbeS9FT0ipIjyKDRoV5gm4CvI-JnCKqkBokX9r3Wuc,6745
+npustat-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+npustat-0.0.2.dist-info/entry_points.txt,sha256=oejXqF8fFODNy6XvRBgm4xyychS1TqvzvOhCmsbi-LA,42
+npustat-0.0.2.dist-info/top_level.txt,sha256=956rAEYzn8ywBm5fQ4wfkFlIxSoM3d_L9H7r5QuT71k,8
+npustat-0.0.2.dist-info/RECORD,,
