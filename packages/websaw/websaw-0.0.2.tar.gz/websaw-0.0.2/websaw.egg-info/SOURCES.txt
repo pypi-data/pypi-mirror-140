@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+websaw.egg-info/PKG-INFO
+websaw.egg-info/SOURCES.txt
+websaw.egg-info/dependency_links.txt
+websaw.egg-info/requires.txt
+websaw.egg-info/top_level.txt
