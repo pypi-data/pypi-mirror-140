@@ -1,0 +1,158 @@
+# About
+
+This repository contains the Command Line Client (CLI) for Clark which was produced by [Elio.earth](https://www.elio.earth/).
+We aim to simpify researcher's documentation and execution processes with Clark. The CLI is a tool which researchers
+use to document their workflows. This enables the researcher to definitively understand the end-to-end process of their
+research and creates a system of record with versioning for their research (similar to Github).
+
+# Pre-requisites
+
+- Linux or MacOS
+- Python 3.x
+- **MacOS only**: *sudo* access to your machine (We use [DTrace](https://en.wikipedia.org/wiki/DTrace) to trace system calls)
+
+# Install
+
+The CLI is available from PyPI.
+
+```bash
+pip install clark-cli
+```
+
+# Use
+
+Below is a basic usage example from start to finish.
+
+
+### Register
+Sign-up for an account at https://www.clarknest.com/register.
+
+*Remember to check your email to confirm your account. You will need to confirm your account before using the CLI.*
+
+**Once you are registered, and you have confirmed your account** you will be ready to issue commands with the CLI.
+
+### Create a Workflow
+
+First login to the CLI using the credentials you registered with.
+
+```bash
+clark login
+```
+
+To view all the possible commands run:
+
+```bash
+clark --help
+```
+
+The next step is to create directories and workflows. Just like a filesystem, you can organize your workflows into directories.
+You initially start with an empty *virtual* filesystem.
+
+Create a directory in the root folder (post login you always start in the root of your *virtual* filesystem)
+
+```bash
+clark add directory projectA
+```
+
+Change into the directory you just created.
+
+```bash
+clark cd projectA
+```
+
+Now you are ready to execute a script.
+
+```bash
+clark upload --message "A message to attach to this version of your workflow" python my_script.py
+```
+
+The CLI will run your script and auto-detect the inputs and outputs of the script. You will be asked to
+confirm the inputs and outputs before they are stored in the workflow. We upload the inputs, outputs and script to
+our servers.
+
+If you made a mistake you can re-run the workflow and "replace" the previous run of the script.
+
+```bash
+clark upload --message "A different message for this run" --replace python my_script.py
+```
+
+Don't worry, you will have access to both versions of your workflow in the UI (described below). We create a version for each
+upload.
+
+You can then go to another directory or workflow. You can back out of the workflow by:
+
+```bash
+clark cd ..
+```
+
+### View a Workflow
+
+You can then go to the [Clark Nest](https://www.clarknest.com/login) to view your workflows, add notes to the nodes or workflows.
+
+
+### Examples
+
+There some execution examples in the examples folder.
+
+
+# Contributing
+
+If you have a bug-fix or small improvement we welcome pull requests. If unsure, please reach out to us at [tech@elio.earth](mailto:tech@elio.earth).
+
+### Setup Local Dev Environment
+
+These instructions are intended for developers to set up their location development environment.
+
+Install [pyenv](https://github.com/pyenv/pyenv) 
+
+Install Python 3.10.0
+
+```shell
+pyenv install 3.10.0
+```
+
+Download repo
+
+```shell
+cd ~/workspace/
+git clone git@github.com:Elio-Earth/clark-cli.git
+```
+
+Create virtual env
+
+```shell
+pyenv virtualenv 3.10.0 clark-cli
+```
+
+Update pip
+
+```bash
+python -m pip install --upgrade pip
+```
+
+Install requirements
+
+```shell
+pip install -r requirements.txt
+```
+
+Install cli in development mode.
+
+```shell
+pip install --editable ~/workspace/clark-cli
+```
+
+Upgrade build
+
+```bash
+python -m pip install --upgrade build
+```
+
+### Testing
+
+To run the test suite
+
+```bash
+cd ~/workspace/clark-cli
+pytest .
+```
