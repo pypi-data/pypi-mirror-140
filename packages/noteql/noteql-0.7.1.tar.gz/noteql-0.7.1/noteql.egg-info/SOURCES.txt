@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+noteql/__init__.py
+noteql/schema_queries.py
+noteql.egg-info/PKG-INFO
+noteql.egg-info/SOURCES.txt
+noteql.egg-info/dependency_links.txt
+noteql.egg-info/requires.txt
+noteql.egg-info/top_level.txt

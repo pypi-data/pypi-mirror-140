@@ -1,0 +1,13 @@
+ijson
+xmltodict
+sqlalchemy
+psycopg2-binary
+ijson
+click
+jupyter
+jinja2
+lxml
+requests
+jinjasql
+pandas
+openpyxl
