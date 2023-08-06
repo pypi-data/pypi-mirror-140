@@ -1,0 +1,10 @@
+dkist-processing-common==0.13.1
+dkist-header-validator==2.1.0
+dkist-fits-specifications==1.6.0
+
+[test]
+pytest
+pytest-xdist
+pytest-cov
+pytest-mock
+dkist-data-simulator
