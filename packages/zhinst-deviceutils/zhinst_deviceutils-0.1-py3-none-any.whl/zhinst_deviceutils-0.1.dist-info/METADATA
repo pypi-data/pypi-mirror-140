@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: zhinst-deviceutils
+Version: 0.1
+Summary: Zurich Instruments utils for device control
+Home-page: https://github.com/zhinst/zhinst-device-utils
+Author: Zurich Instrument
+Author-email: info@zhinst.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/zhinst/zhinst-device-utils/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zhinst (>=22.02)
+Requires-Dist: numpy (>=1.14)
+
+[![PyPI version](https://badge.fury.io/py/zhinst-deviceutils.svg)](https://badge.fury.io/py/zhinst-deviceutils)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40zhinst)](https://twitter.com/zhinst)
+
+# Device Utils for Zurich Instruments
+
+zhinst-deviceutils provides a set of helper functions for the native LabOne Python API
+called [zhinst.ziPython](https://pypi.org/project/zhinst/).
+
+It offers higher level functions to ease the communication with
+[Zurich Instruments](https://zhinst.com) devices. It is not intendet to be a
+seperat layer above ``zhinst.ziPython`` but rather as an addition.
+
+It currently has utility functions for the following devices:
+* SHFQA
+* SHFSG
+
+To see the device utils in action check out the
+[LabOne API examples](https://github.com/zhinst/labone-api-examples).
+
+## Installation
+Python 3.6+ is required.
+```
+pip install zhinst-deviceutils
+```
+
+## Usage
+```
+import zhinst.deviceutils.shfqa
+import zhinst.deviceutils.shfsg
+
+help(zhinst.deviceutils.shfqa)
+help(zhinst.deviceutils.shfsg)
+```
+
+## About
+
+More information about programming with Zurich Instruments devices is available in the
+[package documentation](http://docs.pages.zhinst.com/manuals/zhinst-deviceutils/index.html)
+and the
+[LabOne Programming Manual](https://docs.zhinst.com/labone_programming_manual/overview.html).
+
+
