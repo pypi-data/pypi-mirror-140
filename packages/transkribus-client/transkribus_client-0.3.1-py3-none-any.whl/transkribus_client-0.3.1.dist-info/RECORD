@@ -1,0 +1,11 @@
+transkribus/__init__.py,sha256=fOc_uD6VK5UKIaioy8_Z35bh6PYfZB4FVWX3CMbw10E,99
+transkribus/api.py,sha256=z7_1OJE7WaBcx5yvuHeMmpni3fSQWsWrGc0ZpGzX_-8,4040
+transkribus/models.py,sha256=fP04UUArh3qmwSWJIp-tuTJyrCfpWW_2rJeGEHwAD50,7948
+transkribus/pagexml.py,sha256=8qqnir4q4oZgQIHOwkR3tvTjDnXRya7KyhzDxv8Nd1k,5146
+transkribus/utils.py,sha256=GxaWLIM1oZ2XA1y2KC5DHizzqv24WXmW4G6DCBsVe5k,889
+transkribus/xml.py,sha256=wFOJE1jEXpePc0fG_U7ynx1dTJj8r0r9X8JSOttaEdE,2679
+transkribus_client-0.3.1.dist-info/LICENSE,sha256=uRmVA6RbZoqueG6TPnk_WGgM2fX-gi--fMDRxMZgt6Q,1063
+transkribus_client-0.3.1.dist-info/METADATA,sha256=z5I4KNKJFYRq1pcfhtQCH0d0NZ_lQdy2KFHvradEGW8,3625
+transkribus_client-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+transkribus_client-0.3.1.dist-info/top_level.txt,sha256=l0DCJ4LmwmEOsjH5QkG0XD-OY_UG8T97QW2lqKvIh1s,12
+transkribus_client-0.3.1.dist-info/RECORD,,
