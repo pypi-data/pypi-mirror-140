@@ -1,0 +1,12 @@
+points/__init__.py,sha256=LmcYgKGRL1O-AWebTJ-33ct7ljJ1L0KiiLZ2yG5X3og,24
+points/point.py,sha256=X6JIUZfGiOVQ3B9xvLkK8LsLSDUswgnRdIRacUqUaBk,1022
+rotations/__init__.py,sha256=AZrILYCouSmy1jcc05U1Bl7sVwxMFcE3BBa3lM19xLg,49
+rotations/angles.py,sha256=s5JdKxFlTmrhNuQoUV5GuVenowcbl8bwICb4oroQWVA,2329
+supports/__init__.py,sha256=BnkDCCXyFguES1O6e8E-7vlK0bnBXgMOfAWQ8hjh9pc,50
+supports/support.py,sha256=HkEKxNA4KuhBT4Sp3He4dP4_qVWwHL2TJR2LaaTJyAQ,1012
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isostatic-0.0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+isostatic-0.0.2.dist-info/METADATA,sha256=li5oybTe0D4samE1kl1fsLFGDbgScr6_-RZeKr7SXcY,1018
+isostatic-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+isostatic-0.0.2.dist-info/top_level.txt,sha256=nCLOTgOvuMH694LECJ49FbH7sOmKI4fpmgis5Y_Lgyk,32
+isostatic-0.0.2.dist-info/RECORD,,
