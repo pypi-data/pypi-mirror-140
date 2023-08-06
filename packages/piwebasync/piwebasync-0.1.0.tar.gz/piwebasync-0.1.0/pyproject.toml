@@ -1,0 +1,11 @@
+
+[build-system]
+requires = [
+    "setuptools>=43",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-rxXs"
+asyncio_mode = "strict"
