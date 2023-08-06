@@ -1,0 +1,3 @@
+include README.md
+include LICENSE
+recursive-include megacrazyscripts/TAL-Reverb-4.vst3/ *
