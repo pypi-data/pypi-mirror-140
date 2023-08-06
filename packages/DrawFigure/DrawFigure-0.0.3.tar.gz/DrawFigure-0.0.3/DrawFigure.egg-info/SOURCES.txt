@@ -1,0 +1,8 @@
+README.md
+setup.py
+DrawFigure.egg-info/PKG-INFO
+DrawFigure.egg-info/SOURCES.txt
+DrawFigure.egg-info/dependency_links.txt
+DrawFigure.egg-info/top_level.txt
+zzz/DrawFigure.py
+zzz/__init__.py
