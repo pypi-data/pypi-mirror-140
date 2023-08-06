@@ -1,0 +1,2 @@
+[console_scripts]
+ugrid-checker = ugrid_checks.cli:call_cli

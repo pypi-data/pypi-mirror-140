@@ -1,0 +1,13 @@
+ugrid_checks/__init__.py,sha256=M4Fs0ZAQsVUj9YV4dsD08T5Q3x3Yly2yA-PQm1qX_S0,104
+ugrid_checks/__main__.py,sha256=L9o9zFMYXu_WG3o_gMe4PO86NqRyL5lowLBr8ST6aBI,103
+ugrid_checks/check.py,sha256=XZ4GpIzUn6HhjrFWIct2AjAG5sXLXG4zwkk6c9WJ3Zo,74263
+ugrid_checks/cli.py,sha256=05Ix4On49ASLEo2CegnhpzPi0J6RPOam9_5CRokPwZw,3207
+ugrid_checks/nc_dataset_scan.py,sha256=aiiR8OxW18F4mlp6hKjE5GqSzy-cg0FHbF8pnCyjrFI,5380
+ugrid_checks/scan_utils.py,sha256=-V2p10ZAYF4noo8Pqexfxo0RReoiAWSrV5SBrFNfQO8,3662
+ugrid_checks/ugrid_logger.py,sha256=dXZiTX-uxmW0d-e76oQCTs5bu032AH2UPoiKJwdSF18,5190
+ugrid_checks-0.1.1.dist-info/LICENSE,sha256=cKmIW9Jg7HAeJ-vqAqLQ0dV5-96PXpYDGIZrwkS9iu8,1523
+ugrid_checks-0.1.1.dist-info/METADATA,sha256=ioyAqv2xspN8ydFqUrePJHFkMdEMdaICHTMWW-l3rTE,10229
+ugrid_checks-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ugrid_checks-0.1.1.dist-info/entry_points.txt,sha256=YXWoVvYT1EPrQEcyr9OpjtgQSoSxn9-9c2jjXFZek8A,60
+ugrid_checks-0.1.1.dist-info/top_level.txt,sha256=Jjj1soSxNgVGQvlEcdqz8un6-eCBJi_1hVgIA9YIc7s,13
+ugrid_checks-0.1.1.dist-info/RECORD,,
