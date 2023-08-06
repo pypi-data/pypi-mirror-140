@@ -1,0 +1,17 @@
+ANU_inversion_course-0.1.0.dev4.data/data/bin/_rjmcmc.cp38-win_amd64.pyd,sha256=0epm69lSpTvs5nXY1eIDFjTNo6L84sdr7Nta6p_FGtE,310784
+ANU_inversion_course-0.1.0.dev4.data/data/lib/_rjmcmc.lib,sha256=A8O9903nQheZEqgoossHf1N0fyxhGGOUno9QSC12slQ,46000
+anu_inversion_course/__init__.py,sha256=H0JZCEtKYdO7_ly3GlQXAijHR0ti9GUzMp0USapFjDk,144
+anu_inversion_course/_rfc.cp38-win_amd64.pyd,sha256=Rl03mBVCze1r2KrXr63iY1H3D2ZOwFFGTXXfq8sUYfg,73728
+anu_inversion_course/curveFitting.py,sha256=RdCdzv5xbMJBArp8EBhbY6X9m1VZ3MUQB8DWDncQtk0,7469
+anu_inversion_course/eqlocate.py,sha256=kaWzpZzGxNjWPTYl7bzJoJUvWLTyPQW69arePu6errQ,3355
+anu_inversion_course/plotcovellipse.py,sha256=L4kf1OPntydy4J-hWm-OV-0-azvt2D699D5yCWvY08E,2666
+anu_inversion_course/rayTracer.py,sha256=_6W66c6BVPOIT82MO0Sfa4iBRVvjwSywM-4-yXiN8qY,20526
+anu_inversion_course/rejectmethod.py,sha256=YGui815BRz7GiUPWnEcNKq4gPOJ9BRMKEYBith2MQNQ,843
+anu_inversion_course/rf.py,sha256=dZhB4tMgFpnHWSAdJO_w3pizMKCoWlm8MxErlIHDPss,8828
+anu_inversion_course/rjmcmc.py,sha256=ZAQ7z7lLsxjXDo33jVTnWKnW_0U3Gxta2W6hup4FVYU,7728
+anu_inversion_course/xrayTomography.py,sha256=OfTboskSxeOKZZPayA_VtElJjbcLwmlHh2olc8Me-LM,7704
+ANU_inversion_course-0.1.0.dev4.dist-info/METADATA,sha256=eS2S-eam7vfDxSj5EHmTPVdeYTdHI_z5NNNr0qXPK9g,1969
+ANU_inversion_course-0.1.0.dev4.dist-info/WHEEL,sha256=ym4DYxTK-h9lyYHYlop8LQFKeVowK7gCZzpLCR7Ga58,94
+ANU_inversion_course-0.1.0.dev4.dist-info/top_level.txt,sha256=DhNuBtxzQ2glM3VYNB93Rb0sIFVd3R0hekiIXalhWeE,21
+ANU_inversion_course-0.1.0.dev4.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+ANU_inversion_course-0.1.0.dev4.dist-info/RECORD,,
