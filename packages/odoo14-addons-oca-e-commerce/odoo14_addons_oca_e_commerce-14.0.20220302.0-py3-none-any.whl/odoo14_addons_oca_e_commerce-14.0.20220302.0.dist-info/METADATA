@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-e-commerce
+Version: 14.0.20220302.0
+Summary: Meta package for oca-e-commerce Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-product-template-multi-link
+Requires-Dist: odoo14-addon-product-template-multi-link-date-span
+Requires-Dist: odoo14-addon-product-variant-multi-link
+Requires-Dist: odoo14-addon-website-sale-attribute-filter-form-submit
+Requires-Dist: odoo14-addon-website-sale-attribute-filter-price
+Requires-Dist: odoo14-addon-website-sale-checkout-country-vat
+Requires-Dist: odoo14-addon-website-sale-checkout-skip-payment
+Requires-Dist: odoo14-addon-website-sale-delivery-group
+Requires-Dist: odoo14-addon-website-sale-hide-price
+Requires-Dist: odoo14-addon-website-sale-order-type
+Requires-Dist: odoo14-addon-website-sale-product-attribute-filter-category
+Requires-Dist: odoo14-addon-website-sale-product-attribute-filter-visibility
+Requires-Dist: odoo14-addon-website-sale-product-brand
+Requires-Dist: odoo14-addon-website-sale-product-description
+Requires-Dist: odoo14-addon-website-sale-product-detail-attribute-image
+Requires-Dist: odoo14-addon-website-sale-product-detail-attribute-value-image
+Requires-Dist: odoo14-addon-website-sale-product-minimal-price
+Requires-Dist: odoo14-addon-website-sale-show-company-data
+Requires-Dist: odoo14-addon-website-sale-stock-available
+
+UNKNOWN
+
