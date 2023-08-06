@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: oogg
+Version: 1.1.1
+Summary: Quick way to open files in GitHub and GitLab.
+Home-page: https://github.com/r0x0d/oogg
+Author: Rodolfo Olivieri
+Author-email: rodolfo.olivieri3@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/r0x0d/oogg/main.svg)](https://results.pre-commit.ci/latest/github/r0x0d/oogg/main)
+[![Tests](https://github.com/r0x0d/oogg/actions/workflows/tests.yml/badge.svg)](https://github.com/r0x0d/oogg/actions/workflows/tests.yml)
+
+# OOGG
+
+This tools aim to be a helper to open files at the GitHub or GitLab page without
+going and try to search it in their UI.
+
+I made this because I was switching throught a lot of files daily and sometimes
+I wanted to see them on GitHub because of the jump to code feature.
+
+This tool is mostly useless.
+
+# Usage
+
+This is a simple tool, all you have to do in order to use it is simply go to
+your local repository folder and ran it. For example, let's see it in action
+using this own repository.
+
+```bash
+git clone git@github.com:r0x0d/oogg.git
+cd oogg
+oogg LICENSE#2
+Hooray! We have successfully opened your file in yourprefered browser.
+
+# Resulting URL in your prefered browser: https://github.com/r0x0d/oogg/blob/test-pipe/LICENSE#L2
+```
+
+# Note
+
+Windows and MacOS are not currently supported. If you would like to see this
+tool in different systems, feel free to fork it and open a PR.
+
+

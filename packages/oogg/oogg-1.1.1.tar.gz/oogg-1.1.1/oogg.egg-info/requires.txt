@@ -1,0 +1,2 @@
+giturlparse>=0.10.0
+rich>=11.2.0
