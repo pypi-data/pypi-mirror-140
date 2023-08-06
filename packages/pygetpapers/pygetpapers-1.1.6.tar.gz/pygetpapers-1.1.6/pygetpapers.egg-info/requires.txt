@@ -1,0 +1,10 @@
+requests
+pandas
+lxml
+xmltodict
+configargparse
+habanero
+arxiv
+dict2xml
+tqdm
+coloredlogs
