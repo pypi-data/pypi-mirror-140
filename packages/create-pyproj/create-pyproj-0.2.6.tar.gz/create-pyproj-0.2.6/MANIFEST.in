@@ -1,0 +1,5 @@
+recursive-include create_pyproj *.md
+recursive-include create_pyproj *.py
+recursive-include create_pyproj *.yaml
+recursive-include create_pyproj *.tmpl
+recursive-include create_pyproj *.json

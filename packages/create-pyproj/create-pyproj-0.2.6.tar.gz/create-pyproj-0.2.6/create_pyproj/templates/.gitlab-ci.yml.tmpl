@@ -1,0 +1,44 @@
+
+include:
+  - template: Security/SAST.gitlab-ci.yml
+
+stages:
+  - build
+  - test
+  - deploy
+
+image: registry.gitlab.com/evenergi/secdevops/build-tools/pybuild${python_version}:latest
+
+variables:
+  VAR: 0
+
+build:
+  stage: build
+  script:
+    - VERSION=$(cat VERSION)
+    - echo $VERSION
+    - pipenv install --deploy --system
+    - python ./scripts/pipfile_to_config.py
+  only:
+    - master
+
+test:
+  stage: test
+  script:
+    - pipenv check
+    - pipenv run pytest -v
+  needs: ["build"]
+  artifacts:
+    reports:
+      cobertura: coverage.xml
+  only:
+  - master
+
+deploy:
+  stage: deploy
+  script:
+    - python -m build --sdist --wheel .
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+  needs: ["build", "test"]
+  only:
+  - master

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: create-pyproj
+Version: 0.2.6
+Summary: An easy way to start a new python project
+Author: nicholasbutlin
+License: MIT
+Project-URL: Bug Tracker, https://gitlab.com/nickbutlin/create_pyproj/-/issues
+Project-URL: Documentation, https://gitlab.com/nickbutlin/create_pyproj
+Project-URL: Source Code, https://gitlab.com/nickbutlin/create_pyproj
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
