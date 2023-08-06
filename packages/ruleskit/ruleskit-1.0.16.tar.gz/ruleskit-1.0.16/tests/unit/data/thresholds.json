@@ -1,0 +1,5 @@
+{
+    "coverage": {"min": 0.05},
+    "prediction": {"max": 3, "arg": "abs"},
+    "criterion": {"min": 0.3}
+}
