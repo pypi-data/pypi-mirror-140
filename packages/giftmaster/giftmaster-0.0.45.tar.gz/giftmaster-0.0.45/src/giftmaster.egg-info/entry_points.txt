@@ -1,0 +1,2 @@
+[console_scripts]
+giftmaster = giftmaster.skeleton:run
