@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+oss_client/__init__.py
+oss_client/client.py
+oss_client/fileobj.py
+oss_client/utils.py
+oss_client.egg-info/PKG-INFO
+oss_client.egg-info/SOURCES.txt
+oss_client.egg-info/dependency_links.txt
+oss_client.egg-info/requires.txt
+oss_client.egg-info/top_level.txt

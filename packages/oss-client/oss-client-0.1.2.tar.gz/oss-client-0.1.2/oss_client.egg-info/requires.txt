@@ -1,0 +1,4 @@
+cos-python-sdk-v5==1.9.10
+oss2==2.15.0
+qiniu==7.5.0
+requests>=2.18.0
