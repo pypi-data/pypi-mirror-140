@@ -1,0 +1,27 @@
+httpx>=0.19.0
+jinja2>=2.11.2
+pydantic>=1.8.0
+click>=7.1.2
+python-dotenv>=0.12.0
+typing-extensions>=3.7
+
+[:python_version < "3.8"]
+cached-property
+
+[all]
+tox==3.24.0
+wheel==0.37.0
+blue==0.7.0
+pre-commit==2.15.0
+mkdocs==1.2.3
+mkdocs-material==7.3.0
+
+[dev]
+tox==3.24.0
+wheel==0.37.0
+blue==0.7.0
+pre-commit==2.15.0
+
+[docs]
+mkdocs==1.2.3
+mkdocs-material==7.3.0
