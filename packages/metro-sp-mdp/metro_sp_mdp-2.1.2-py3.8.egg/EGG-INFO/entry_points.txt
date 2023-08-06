@@ -1,0 +1,3 @@
+[console_scripts]
+metro-sp-mdp = metro_sp_mdp.__main__:main
+
