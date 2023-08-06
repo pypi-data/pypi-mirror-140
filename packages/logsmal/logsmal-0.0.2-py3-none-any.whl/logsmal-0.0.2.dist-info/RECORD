@@ -1,0 +1,11 @@
+logsmal/__init__.py,sha256=cp4zMjwg4-OpNp5WzeIuSVmLOuv9NXR8Z2RctMNcQOs,50
+logsmal/hlpful.py,sha256=HRxbcPE_hmozjleEsBNxv8d0hYotlzt29V_QhtcSBkM,378
+logsmal/independent/README.md,sha256=0ogNzSmuG962gyPRyww_O7X-QvnG5-WHPtzZibs8oOo,125
+logsmal/independent/__init__.py,sha256=iPDBwO2ss-IFHN7HiWBEKC75O98ebnedAume-OJiv2o,70
+logsmal/independent/helpful.py,sha256=i1JgxflLUEfHVG0I2k5qc4yGoYtOM93wR87gno8PMMQ,770
+logsmal/independent/log_file.py,sha256=-szbhSvaBwmKVd1kz2qGnGQdplrJZqBtJN8pU0u_M0g,8978
+logsmal/independent/zip_file.py,sha256=oJW_K1mcYm7tHaajzZVaPtwmfYsusccrRGE_cfYMcSM,4797
+logsmal/logsmal.py,sha256=d2QGZzqUZH5DBy_2UjTNW0YEkSwJGuMsb1OMuMDfdls,6087
+logsmal-0.0.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+logsmal-0.0.2.dist-info/METADATA,sha256=yyDjH84Gl-hSR97Mc_oQS5JxzaPymS1qlS9pDuPk5Wc,538
+logsmal-0.0.2.dist-info/RECORD,,
