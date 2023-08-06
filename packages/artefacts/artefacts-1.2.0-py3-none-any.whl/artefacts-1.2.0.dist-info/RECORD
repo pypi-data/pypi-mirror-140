@@ -1,0 +1,14 @@
+artefacts/__init__.py,sha256=iMpMMhB8nJ9qzZHAp_oVoflRKqYd-f-1ZoXMOIptMb4,142
+artefacts/api.py,sha256=nC_oJokY4CeNtQZUC5bC351Hf4NtTj30gqk6AmaSynw,7591
+artefacts/config.py,sha256=Cgig8ZmYx50t7KCSRMi2WSrzzcwB1taPBYGhbjOynMI,1637
+artefacts/conftest.py,sha256=UApQguH8JVsc9BkfoRkEurMhqkBMo03lsMLdMZyaguw,384
+artefacts/deserializers.py,sha256=5zRuMIOiNwb0PdADGR1c5TYa6gQK2qVsqKZFIjbIJ60,1860
+artefacts/loaders.py,sha256=hFj_r04c394x-djePuHlKU9IpLHdK43t5-GDHP0UOoU,423
+artefacts/mixins.py,sha256=SrzQ6RwrXrvTNq9Mf0pBBjpgUYvqb-XCGqxbgFwsVeI,3226
+artefacts/models.py,sha256=yUGiemu3zuKu-Jxy_6JrnwSpj7PIlM9Hws_NURsZH40,37768
+artefacts/state.py,sha256=kCI1kA9zFuFz619SzJO-tTQmuGtuwCJvInNeW08bve0,1362
+artefacts/version.py,sha256=6jjAtvK-iT4l3W9NkX10N-MxP9rReWnxWZTUIZwiG0w,88
+artefacts-1.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+artefacts-1.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+artefacts-1.2.0.dist-info/METADATA,sha256=QmCOrABdHJWW5a7PDlJ-XCX773OOXxLfvzfZAFcqdvM,3192
+artefacts-1.2.0.dist-info/RECORD,,
