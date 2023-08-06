@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: types-linq
+Version: 1.2.0
+Summary: Standard sequence helper methods with full typing support
+Home-page: https://github.com/cleoold/types-linq
+Author: cleoold
+License: BSD 2-Clause License
+Description: # types-linq
+        
+        ![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg) [![pypi](https://img.shields.io/pypi/v/types-linq)](https://pypi.org/project/types-linq/) [![pytest](https://github.com/cleoold/types-linq/workflows/pytest/badge.svg)](https://github.com/cleoold/types-linq/actions?query=workflow%3Apytest) [![codecov](https://codecov.io/gh/cleoold/types-linq/branch/main/graph/badge.svg?token=HTUKZ0SQJ3)](https://codecov.io/gh/cleoold/types-linq) [![Documentation Status](https://readthedocs.org/projects/types-linq/badge/?version=latest)](https://types-linq.readthedocs.io/en/latest/?badge=latest)
+        
+        types-linq is a lightweight Python library that attempts to implement LINQ (Language Integrated Query) features seen in .NET languages.
+        
+        Usage, guide and API references can be found in the [documentation](https://types-linq.readthedocs.io/en/latest/) page.
+        
+Platform: any
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
