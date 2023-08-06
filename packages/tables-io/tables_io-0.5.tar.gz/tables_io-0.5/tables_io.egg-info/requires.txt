@@ -1,0 +1,12 @@
+numpy>=1.21.0
+astropy
+h5py
+pyarrow
+tables
+setuptools_scm
+
+[:python_version < "3.8"]
+pandas<1.4.*
+
+[:python_version >= "3.8"]
+pandas
