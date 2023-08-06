@@ -1,0 +1,9 @@
+xxhash/_xxhash.pypy38-pp73-x86-linux-gnu.so,sha256=rgerLYSuyBnnC0oqr8YlFlkMx9LgJxNa6yKvY5BMEvA,98316
+xxhash/_xxhash.cpython-38-i386-linux-gnu.so,sha256=avz6ANx08BsnYE60qTth5WaGYCKWDyQuY4LHHRrItDc,693608
+xxhash/__init__.py,sha256=mPEdihxDMU0rjLWum3FrU9Ua2jQ-rzfewYgIg-J-Jlc,1147
+xxhash/version.py,sha256=LBljHHpQQFRrSAtaZBuaTAoeshcCvrsoMTnuI4BZlko,44
+xxhash-3.0.0.dist-info/LICENSE,sha256=-OnvAMeL5NLaUmssN-QJnJIMf-C52UO_Da6y78MKOls,1313
+xxhash-3.0.0.dist-info/METADATA,sha256=IE5FvBq3_dmZ3XF0wQichTel41QOykMqVKH3bv5yoGQ,11828
+xxhash-3.0.0.dist-info/top_level.txt,sha256=1PPSBP-gnjG59E5bigzMTzmT6BVWjHwnpzMiisPWZ5I,15
+xxhash-3.0.0.dist-info/RECORD,,
+xxhash-3.0.0.dist-info/WHEEL,sha256=kYh15Uwzu5_Q4bc9GfMgYNjOR4zpDvT6hqRAHh5JXtU,237
