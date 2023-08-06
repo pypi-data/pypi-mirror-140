@@ -1,0 +1,15 @@
+sng_parser/__init__.py,sha256=hrEVNZs463B04MKiQTSCzltFzm7HFezjSj7g_uPYb9s,415
+sng_parser/database.py,sha256=rwAQDJ5Mpwuo3q1Tx0NbawmCUHQc4BaeX4rZkgcgLc0,909
+sng_parser/parser.py,sha256=B15Qtw0Gepx1vW0y_gyiMhJO-kRfV1TEqmfpSzzTozU,3796
+sng_parser/utils.py,sha256=s7pwGJB8mp1WFpH0HhSGq_Nk8EGeKdM4Y7C40m-wWhw,1807
+sng_parser/_data/phrasal-preps.txt,sha256=kMZFY2F9yjVqVUqX4WfE6_GgTD05tB8FhZkg_IsJ3-8,134
+sng_parser/_data/phrasal-verbs.txt,sha256=AIQ4BjSERxcyZt_Upp-2vKX20Lm9V5K1hCdrm6uyZes,17800
+sng_parser/_data/scene-nouns.txt,sha256=YC39MlqgH_ymQJahsAUK74JOf7X-TnghJ4uNWmuBhiw,4064
+sng_parser/backends/__init__.py,sha256=8LHfkPTtCyo0ANOYiICtHonDJ7IMSrbQ8IHyOYQgwsU,313
+sng_parser/backends/backend.py,sha256=npzouZjKXPSY4SYqUr4Qqv0ory4xWXEXzDUO7y8mu-M,544
+sng_parser/backends/spacy_parser.py,sha256=gFpHN8Xq-Do-2mHLgFZO40yFoT27o58fdykuL_uydG4,11824
+SceneGraphParser-0.1.0.dist-info/LICENSE,sha256=WasACytfZOf9jMuZhAbDyKiTq_HIzMK-I6Sx1_iBQ7s,1068
+SceneGraphParser-0.1.0.dist-info/METADATA,sha256=1NyXeHVGLkEBPwrN_OZCt69zi56E8-jeJcsAPsC7ZdQ,6375
+SceneGraphParser-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SceneGraphParser-0.1.0.dist-info/top_level.txt,sha256=SbseQsOr8RuyKwb785MwSOBUyTjDtp3V4aaR7I-Alck,11
+SceneGraphParser-0.1.0.dist-info/RECORD,,
