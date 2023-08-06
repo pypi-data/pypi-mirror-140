@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: padl-extensions
+Version: 0.1.3
+Summary: Extensions for pytorch abstractions for deep learning
+Home-page: https://github.com/lf1-io/padl-extensions
+Author: LF1
+Author-email: contact@lf1.io
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: pytorch_lightning
+Provides-Extra: torchserve
+Provides-Extra: trainer
+License-File: LICENSE
+
+# PADL-EXTENSIONS
+
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+
+# PADL-Extensions
+Trainers, monitors, connectors for PADL
+
+**PADL-Extensions** was developed at [LF1](https://lf1.io/), an AI innovation lab based in Berlin, Germany.
+
+## Installation
+```
+pip install padl-extensions
+```
+
+## Extras Installation
+```
+pip install padl-extensions[pytorch_lightning]
+pip install padl-extensions[torchserve]
+pip install padl-extensions[trainer]
+```
+
+If you are installing locally use
+```
+pip install -e ".[pytorch_lightning]"
+pip install -e ".[torchserve]"
+pip install -e ".[trainer]"
+```
+
+## Notebooks on colab
+
+1. [Trainer](https://colab.research.google.com/github/lf1-io/padl-extensions/blob/main/notebooks/trainer.ipynb)
+1. [TorchServe](https://colab.research.google.com/github/lf1-io/padl-extensions/blob/main/notebooks/torchserve.ipynb)
+1. [PyTorch Lightning](https://colab.research.google.com/github/lf1-io/padl-extensions/blob/main/notebooks/pytorch_lightning.ipynb)
+1. [Hugging Face](https://colab.research.google.com/github/lf1-io/padl-extensions/blob/main/notebooks/hugging_face.ipynb)
+
+

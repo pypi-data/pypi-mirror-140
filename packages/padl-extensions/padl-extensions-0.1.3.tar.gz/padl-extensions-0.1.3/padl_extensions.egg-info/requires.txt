@@ -1,0 +1,16 @@
+padl>=0.2.2
+
+[all]
+padl>=0.2.2
+pytorch-lightning>=1.5.2
+torchserve
+torch-model-archiver
+
+[pytorch_lightning]
+pytorch-lightning>=1.5.2
+
+[torchserve]
+torchserve
+torch-model-archiver
+
+[trainer]
