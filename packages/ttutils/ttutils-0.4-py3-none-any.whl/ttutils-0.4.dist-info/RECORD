@@ -1,0 +1,11 @@
+ttutils/__init__.py,sha256=JKlFl3RJFa1TaRce9HDxkELKZ65XOsGsBtA1POEU9sY,586
+ttutils/compress.py,sha256=XMaWn-p5cRbBIJGBubISCjCdf3aDmJyDrmztZVaHX7g,3258
+ttutils/config.py,sha256=EyYeaHA7Kr37HdEs5uThKDC76neivEAM8DoEi9mAL_M,3612
+ttutils/datetime.py,sha256=mUwOH2cl3q2UQCH9CtfUSWcAZ1FzGrVdL6fr5sx1AAE,1649
+ttutils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ttutils/safe_types.py,sha256=EItT9KIPELosowlNLI9LGnWqK3s_Lozg60AWxDGQXvM,1566
+ttutils-0.4.dist-info/LICENSE,sha256=ZebfBDEJOiMfNrnnVBmqU2kPcobW8pshr64OV40Kf3k,11344
+ttutils-0.4.dist-info/METADATA,sha256=3g4hZdXwRuNUpimLmfHkvmgTb-PULEUgD7EJOfkbk4M,4144
+ttutils-0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ttutils-0.4.dist-info/top_level.txt,sha256=n-uWm95FHL3mc2XOs5MecJ_EzR4e4M3ce5fJV7LJhQQ,8
+ttutils-0.4.dist-info/RECORD,,
