@@ -1,0 +1,2 @@
+[console_scripts]
+tablet_tilt_joystick = tablet_tilt_joystick.__main__:main

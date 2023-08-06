@@ -1,0 +1,14 @@
+tablet_tilt_joystick/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tablet_tilt_joystick/__main__.py,sha256=MmGZH23JexPRLxSEoEakYnPA6d7iqVeRtgUsJRjpxuM,842
+tablet_tilt_joystick/joystick_control.py,sha256=PsdXXDE9XcBah6CwRkbcE5k3i_Kw8_cdqT_ekCU5jbg,735
+tablet_tilt_joystick/server.py,sha256=x1Tiq5BV_fw77Y8rZfscpaulS411anv-5bQHTnwNjZU,1205
+tablet_tilt_joystick/show_qr_link.py,sha256=DuUSGfnCeZgZxEYckTvzDjK4Q2j_XXxX-4AS4XtxrdA,237
+tablet_tilt_joystick/client/index.html,sha256=hYIQ0hNeOqfuJgOpYI83ZCUmzpywDvK1SsLS2_3hVqE,2249
+tablet_tilt_joystick/client/script.js,sha256=-qNoVYRLAHyRPaOWxRgedxvnF4zk5DZwwRdHxvpy25Q,2508
+tablet_tilt_joystick/client/style.css,sha256=-jeEMUiQ0h6bzKSsE8fQHwa7HJbyyp7KbXeHso4Bz58,372
+tablet_tilt_joystick-1.2.1.dist-info/LICENSE,sha256=BKNtSD0KZKhU603ZwMFvQBl1IzOktIBOlFo1km1cXOk,1072
+tablet_tilt_joystick-1.2.1.dist-info/METADATA,sha256=qodeOXVrSpcTLY4UHDxzY0kfrsLFKWUCM5k5jWEyzHE,2350
+tablet_tilt_joystick-1.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tablet_tilt_joystick-1.2.1.dist-info/entry_points.txt,sha256=Nk4dOwiU4anr5IEsk7nsPAJF2LOTMjHdUjkWnAz37PA,76
+tablet_tilt_joystick-1.2.1.dist-info/top_level.txt,sha256=jT3E4SX46rhv9WCiWcgimZwgiemLKt4Ahgyy88qwhpA,21
+tablet_tilt_joystick-1.2.1.dist-info/RECORD,,
