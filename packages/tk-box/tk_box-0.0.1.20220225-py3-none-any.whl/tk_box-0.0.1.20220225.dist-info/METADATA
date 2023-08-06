@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tk-box
+Version: 0.0.1.20220225
+Summary: 星光☆tk插件
+Author: 严子昱
+Author-email: yanziyu252625@qq.com
+Maintainer: 严子昱
+Maintainer-email: yanziyu252625@qq.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+
+tkinter的一些简单的小程序可以通过这个集合起来
+
