@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+nepali_sentiment_analysis/NepaliNLP-sentiment.py
+nepali_sentiment_analysis/__init__.py
+nepali_sentiment_analysis/downloader.py
+nepali_sentiment_analysis/nepali_sentiment_analysis.py
+nepali_sentiment_analysis.egg-info/PKG-INFO
+nepali_sentiment_analysis.egg-info/SOURCES.txt
+nepali_sentiment_analysis.egg-info/dependency_links.txt
+nepali_sentiment_analysis.egg-info/requires.txt
+nepali_sentiment_analysis.egg-info/top_level.txt
