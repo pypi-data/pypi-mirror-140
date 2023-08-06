@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: connexion-faker
+Version: 0.1.16
+Summary: Auto-generate mocks from your Connexion API using OpenAPI
+License: MIT
+Author: Erle Carrara
+Author-email: carrara.erle@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: aiohttp
+Provides-Extra: django
+Requires-Dist: Django (<=4.0.2); extra == "django"
+Requires-Dist: Faker (>=11.3.0,<12.0.0)
+Requires-Dist: aiohttp (>=3.0,<4.0); extra == "aiohttp"
+Requires-Dist: aiohttp_jinja2 (>=1.0,<2.0); extra == "aiohttp"
+Requires-Dist: connexion (>=2.9.0,<3.0.0)
+Requires-Dist: django-connexion (>=0.0.1,<0.0.2); extra == "django"
