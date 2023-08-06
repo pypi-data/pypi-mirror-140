@@ -1,0 +1,865 @@
+# variant list is found at the end of the template
+pref:
+  app.normandy.enabled:
+    variants:
+      default:
+      - false
+  app.update.auto:
+    variants:
+      default:
+      - false
+  app.update.staging.enabled:
+    variants:
+      default:
+      - false
+  # pref copied from domfuzz
+  app.update.url.android:
+    variants:
+      default:
+      - ''
+  apz.wr.activate_all_scroll_frames:
+    variants:
+      default:
+      - false
+      - true
+  browser.EULA.override:
+    variants:
+      default:
+      - true
+  browser.cache.disk.enable:
+    variants:
+      default:
+      - false
+  browser.cache.disk_cache_ssl:
+    variants:
+      default:
+      - false
+  browser.cache.memory.enable:
+    variants:
+      default:
+      - false
+  browser.cache.offline.enable:
+    variants:
+      default:
+      - false
+  browser.chrome.site_icons:
+    variants:
+      default:
+      - false
+  browser.chrome.toolbar_tips:
+    variants:
+      default:
+      - false
+  # Prints messages to the (native) console
+  browser.dom.window.dump.enabled:
+    variants:
+      default:
+      - true
+  browser.newtabpage.enabled:
+    variants:
+      default:
+      - false
+  # pref copied from domfuzz
+  browser.pagethumbnails.capturing_disabled:
+    variants:
+      default:
+      - true
+  # pref copied from domfuzz
+  browser.reader.detectedFirstArticle:
+    variants:
+      default:
+      - true
+  browser.safebrowsing.blockedURIs.enabled:
+    variants:
+      default:
+      - false
+  browser.safebrowsing.downloads.enabled:
+    variants:
+      default:
+      - false
+  browser.safebrowsing.downloads.remote.enabled:
+    variants:
+      default:
+      - false
+  browser.safebrowsing.enabled:
+    variants:
+      default:
+      - false
+  browser.safebrowsing.malware.enabled:
+    variants:
+      default:
+      - false
+  browser.safebrowsing.phishing.enabled:
+    variants:
+      default:
+      - false
+  browser.search.geoip.url:
+    variants:
+      default:
+      - ''
+  # pref Required for WebPayments
+  browser.search.region:
+    variants:
+      default:
+      - US
+  # pref copied from domfuzz
+  browser.search.suggest.enabled:
+    variants:
+      default:
+      - false
+  # needed on Android
+  browser.search.suggest.prompted:
+    variants:
+      default:
+      - true
+  browser.search.update:
+    variants:
+      default:
+      - false
+  browser.sessionstore.resume_from_crash:
+    variants:
+      default:
+      - false
+  browser.shell.checkDefaultBrowser:
+    variants:
+      default:
+      - false
+  browser.ssl_override_behavior:
+    variants:
+      default:
+      - 1
+  # TODO: this can be removed (browser.startup.page=0 does the job)?
+  browser.startup.homepage:
+    variants:
+      default:
+      - about:blank
+  browser.startup.homepage_override.mstone:
+    variants:
+      default:
+      - ignore
+  # use about:blank
+  browser.startup.page:
+    variants:
+      default:
+      - 0
+  browser.tabs.remote.autostart:
+    variants:
+      default:
+      - null
+      no-e10s:
+      - false
+  browser.tabs.warnOnClose:
+    variants:
+      default:
+      - false
+  browser.tabs.warnOnCloseOtherTabs:
+    variants:
+      default:
+      - false
+  browser.warnOnQuit:
+    variants:
+      default:
+      - false
+  canvas.hitregions.enabled:
+    variants:
+      default:
+      - true
+  captivedetect.canonicalURL:
+    variants:
+      default:
+      - ''
+  # ensures pref is enabled on Windows and OSX
+  clipboard.autocopy:
+    variants:
+      default:
+      - true
+  # suggested in bug 1503956 to avoid FPs
+  csp.skip_about_page_has_csp_assert:
+    variants:
+      default:
+      - true
+  datareporting.healthreport.uploadEnabled:
+    variants:
+      default:
+      - false
+  datareporting.policy.dataSubmissionEnabled:
+    variants:
+      default:
+      - false
+  datareporting.policy.dataSubmissionPolicyAcceptedVersion:
+    variants:
+      default:
+      - 2
+  # pref copied from domfuzz
+  datareporting.policy.dataSubmissionPolicyBypassNotification:
+    variants:
+      default:
+      - true
+  datareporting.policy.firstRunURL:
+    variants:
+      default:
+      - ''
+  device.sensors.ambientLight.enabled:
+    variants:
+      default:
+      - true
+  device.sensors.proximity.enabled:
+    variants:
+      default:
+      - true
+  devtools.selfxss.count:
+    variants:
+      default:
+      - 999
+  dom.allow_scripts_to_close_windows:
+    variants:
+      default:
+      - true
+  # pref copied from domfuzz
+  dom.always_stop_slow_scripts:
+    variants:
+      default:
+      - true
+  dom.audioworklet.enabled:
+    variants:
+      default:
+      - true
+  dom.caches.testing.enabled:
+    variants:
+      default:
+      - true
+  dom.css_pseudo_element.enabled:
+    variants:
+      default:
+      - true
+  dom.dialog_element.enabled:
+    variants:
+      default:
+      - true
+  # Popup blocker behavior - Required for Grizzly harness
+  dom.disable_open_during_load:
+    variants:
+      default:
+      - false
+  # Determines whether windows can be focus()ed via non-chrome JavaScript
+  dom.disable_window_flip:
+    variants:
+      default:
+      - false
+  dom.experimental_forms:
+    variants:
+      default:
+      - null
+      - true
+  dom.fetchObserver.enabled:
+    variants:
+      default:
+      - true
+  dom.gamepad.extensions.lightindicator:
+    variants:
+      default:
+      - false
+      vr:
+      - true
+  dom.gamepad.extensions.multitouch:
+    variants:
+      default:
+      - false
+      vr:
+      - true
+  dom.gamepad.test.enabled:
+    variants:
+      default:
+      - false
+      vr:
+      - true
+  dom.image-lazy-loading.enabled:
+    variants:
+      default:
+      - false
+      vr:
+      - true
+  # no plans to ship. https://bugzilla.mozilla.org/show_bug.cgi?id=1686145
+  dom.imagecapture.enabled:
+    variants:
+      default:
+      - null
+  dom.indexedDB.experimental:
+    variants:
+      default:
+      - null
+      - true
+  dom.input.dirpicker:
+    variants:
+      default:
+      - true
+  dom.input_events.beforeinput.enabled:
+    variants:
+      default:
+      - true
+  dom.max_chrome_script_run_time:
+    variants:
+      default:
+      - 0
+  dom.max_script_run_time:
+    variants:
+      default:
+      - 0
+  dom.min_background_timeout_value:
+    variants:
+      default:
+      - 4
+  # no plans to ship. https://bugzilla.mozilla.org/show_bug.cgi?id=1685228
+  dom.paintWorklet.enabled:
+    variants:
+      default:
+      - null
+  dom.payments.request.enabled:
+    variants:
+      default:
+      - true
+  dom.presentation.controller.enabled:
+    variants:
+      default:
+      - true
+  dom.presentation.enabled:
+    variants:
+      default:
+      - true
+  dom.presentation.receiver.enabled:
+    variants:
+      default:
+      - true
+  dom.push.testing.ignorePermission:
+    variants:
+      default:
+      - true
+  dom.security.featurePolicy.webidl.enabled:
+    variants:
+      default:
+      - true
+  # see bug 1650370
+  dom.security.sanitizer.enabled:
+    variants:
+      default:
+      - true
+  # needed when using MozAfterPaint event to control fuzzer
+  dom.send_after_paint_to_content:
+    variants:
+      default:
+      - true
+  dom.serviceWorkers.testing.enabled:
+    variants:
+      default:
+      - true
+  dom.streams.pipeTo.enabled:
+    variants:
+      default:
+      - null
+      writable-streams:
+      - true
+  dom.streams.writable_streams.enabled:
+    variants:
+      default:
+      - null
+      writable-streams:
+      - true
+  # pref copied from domfuzz
+  dom.successive_dialog_time_limit:
+    variants:
+      default:
+      - 0
+  dom.textMetrics.baselines.enabled:
+    variants:
+      default:
+      - true
+  dom.textMetrics.emHeight.enabled:
+    variants:
+      default:
+      - true
+  dom.textMetrics.fontBoundingBox.enabled:
+    variants:
+      default:
+      - true
+  dom.visualviewport.enabled:
+    variants:
+      default:
+      - true
+  dom.vr.enabled:
+    variants:
+      default:
+      - null
+      vr:
+      - true
+  dom.vr.external.notdetected.timeout:
+    variants:
+      default:
+      - 0
+  dom.vr.external.quit.timeout:
+    variants:
+      default:
+      - 0
+  dom.vr.poseprediction.enabled:
+    variants:
+      default:
+      - false
+      vr:
+      - true
+  # disabled until bug 1573528 is resolved
+  dom.vr.puppet.enabled:
+    variants:
+      default:
+      - false
+    vr:
+    - true
+  dom.vr.require-gesture:
+    variants:
+      default:
+      - false
+      vr:
+      - true
+  dom.vr.webxr.enabled:
+    variants:
+      default:
+      - false
+      vr:
+      - true
+  dom.webgpu.enabled:
+    variants:
+      default:
+      - true
+  dom.weblocks.enabled:
+    variants:
+      default:
+      - true
+  dom.window_print.fuzzing.block_while_printing:
+    variants:
+      default:
+      - true
+  dom.worklet.enabled:
+    variants:
+      default:
+      - true
+  # pref copied from domfuzz
+  extensions.autoDisableScopes:
+    variants:
+      default:
+      - 0
+  extensions.blocklist.enabled:
+    variants:
+      default:
+      - false
+  # pref copied from domfuzz
+  extensions.enabledScopes:
+    variants:
+      default:
+      - 5
+  # pref copied from domfuzz
+  extensions.getAddons.cache.enabled:
+    variants:
+      default:
+      - false
+  # pref copied from domfuzz
+  extensions.installDistroAddons:
+    variants:
+      default:
+      - false
+  # pref copied from domfuzz
+  extensions.showMismatchUI:
+    variants:
+      default:
+      - false
+  extensions.update.enabled:
+    variants:
+      default:
+      - false
+  # pref copied from domfuzz
+  extensions.update.notifyUser:
+    variants:
+      default:
+      - false
+  fission.autostart:
+    variants:
+      default:
+      - null
+      no-fission:
+      - false
+  fission.sessionHistoryInParent:
+    variants:
+      default:
+      - null
+      - true
+      no-fission:
+      - null
+  full-screen-api.allow-trusted-requests-only:
+    variants:
+      default:
+      - false
+  full-screen-api.warning.timeout:
+    variants:
+      default:
+      - 500
+  # required for FuzzingFunctions
+  fuzzing.enabled:
+    variants:
+      default:
+      - true
+  # pref copied from domfuzz
+  general.useragent.updates.enabled:
+    variants:
+      default:
+      - false
+  general.warnOnAboutConfig:
+    variants:
+      default:
+      - false
+  geo.enabled:
+    variants:
+      default:
+      - false
+  gfx.color_management.enablev4:
+    variants:
+      default:
+      - null
+      - true
+  # 0=off, 1=full, 2=tagged images only
+  gfx.color_management.mode:
+    variants:
+      default:
+      - 1
+  gfx.downloadable_fonts.disable_cache:
+    variants:
+      default:
+      - true
+  # required for some demo fonts
+  gfx.downloadable_fonts.otl_validation:
+    variants:
+      default:
+      - false
+  gfx.downloadable_fonts.sanitize_omt:
+    variants:
+      default:
+      - false
+  gfx.downloadable_fonts.validate_variation_tables:
+    variants:
+      default:
+      - false
+  # bug 1514869 (requested by jkew)
+  gfx.e10s.font-list.shared:
+    variants:
+      default:
+      - true
+  gfx.offscreencanvas.enabled:
+    variants:
+      default:
+      - true
+  # combinations of gfx.webrender.all & gfx.webrender.software:
+  # ---
+  # GPU=N | gfx.webrender.all=True  | gfx.webrender.software=True  | SW-WR
+  # GPU=N | gfx.webrender.all=True  | gfx.webrender.software=False | HR-WR (attempt)
+  # GPU=Y | gfx.webrender.all=True  | gfx.webrender.software=True  | SW-WR
+  # GPU=Y | gfx.webrender.all=True  | gfx.webrender.software=False | HW-WR
+  # ---
+  # when machines do not have GPUs 'true' will try to use HW-WR (on top of llvmpipe)
+  gfx.webrender.all:
+    variants:
+      default:
+      - true
+  # when machines do have GPUs 'true' will force SW-WR
+  gfx.webrender.software:
+    variants:
+      default:
+      - false
+      - true
+  image.animated.decode-on-demand.batch-size:
+    variants:
+      default:
+      - 1
+  image.animated.decode-on-demand.threshold-kb:
+    variants:
+      default:
+      - 0
+  image.avif.enabled:
+    variants:
+      default:
+      - true
+  image.cache.size:
+    variants:
+      default:
+      - 0
+  image.multithreaded_decoding.limit:
+    variants:
+      default:
+      - 1
+  layers.acceleration.force-enabled:
+    variants:
+      default:
+      - null
+      - true
+  # normally only enabled on devices with touchscreens (emilio)
+  layout.accessiblecaret.enabled:
+    variants:
+      default:
+      - true
+  layout.css.backdrop-filter.enabled:
+    variants:
+      default:
+      - true
+  # requested in bug 1609994
+  layout.css.constructable-stylesheets.enabled:
+    variants:
+      default:
+      - true
+  # Enable @-moz-document
+  layout.css.moz-document.content.enabled:
+    variants:
+      default:
+      - true
+  # 0=Allowed, 1=Blocked, 2=Prompt
+  media.autoplay.default:
+    variants:
+      default:
+      - 0
+  media.autoplay.enabled.user-gestures-needed:
+    variants:
+      default:
+      - false
+  media.eme.enabled:
+    variants:
+      default:
+      - true
+  media.eme.hdcp-policy-check.enabled:
+    variants:
+      default:
+      - true
+  # no plans to ship. https://bugzilla.mozilla.org/show_bug.cgi?id=1685233
+  media.getusermedia.audiocapture.enabled:
+    variants:
+      default:
+      - null
+  # development is stalled. https://bugzilla.mozilla.org/show_bug.cgi?id=1685415
+  media.getusermedia.browser.enabled:
+    variants:
+      default:
+      - null
+  media.gmp-manager.url.override:
+    variants:
+      default:
+      - http://127.0.0.1:6/dummy-gmp-manager.xml
+  media.mediasource.webm.enabled:
+    variants:
+      default:
+      - true
+  media.navigator.permission.disabled:
+    variants:
+      default:
+      - true
+  media.navigator.video.red_ulpfec_enabled:
+    variants:
+      default:
+      - true
+  # pref copied from domfuzz
+  media.peerconnection.default_iceservers:
+    variants:
+      default:
+      - '[{"url": "stun:23.21.150.121"}]'
+  media.setsinkid.enabled:
+    variants:
+      default:
+      - true
+  # no plans to ship. https://bugzilla.mozilla.org/show_bug.cgi?id=1685235
+  media.track.enabled:
+    variants:
+      default:
+      - null
+  # no plans to ship. https://bugzilla.mozilla.org/show_bug.cgi?id=1685417
+  media.webspeech.recognition.enable:
+    variants:
+      default:
+      - null
+  # disable automatic connection
+  # https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
+  network.captive-portal-service.enabled:
+    variants:
+      default:
+      - false
+  # disable automatic connection
+  # https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
+  network.connectivity-service.enabled:
+    variants:
+      default:
+      - false
+  # max time to wait for connection (default is 300)
+  network.http.response.timeout:
+    variants:
+      default:
+      - 1
+  network.http.spdy.enabled:
+    variants:
+      default:
+      - false
+  # pref copied from domfuzz
+  network.manage-offline-status:
+    variants:
+      default:
+      - false
+  # helps keep browser and fuzzer sync'd
+  network.prefetch-next:
+    variants:
+      default:
+      - false
+  network.protocol-handler.external.mailto:
+    variants:
+      default:
+      - false
+  # Disable proxy bypass. Necessary to avoid local connection crashes.
+  # Added by https://bugzilla.mozilla.org/show_bug.cgi?id=1732792
+  network.proxy.allow_bypass:
+    variants:
+      default:
+      - false
+  # pref copied from domfuzz
+  network.proxy.autoconfig_url:
+    variants:
+      default:
+      - data:text/plain,function FindProxyForURL(url, host) { if (host == 'localhost' || host == '127.0.0.1')
+        { return 'DIRECT'; } else { return 'PROXY 127.0.0.1:6'; } }
+  # disable 'proxy failover'. We explicitly configure the proxy settings.
+  # Added by https://bugzilla.mozilla.org/show_bug.cgi?id=1720221
+  network.proxy.failover_direct:
+    variants:
+      default:
+      - false
+  # pref copied from domfuzz
+  network.proxy.share_proxy_settings:
+    variants:
+      default:
+      - true
+  # pref copied from domfuzz
+  network.proxy.type:
+    variants:
+      default:
+      - 2
+  network.websocket.allowInsecureFromHTTPS:
+    variants:
+      default:
+      - true
+  network.websocket.delay-failed-reconnects:
+    variants:
+      default:
+      - false
+  nglayout.debug.disable_xul_cache:
+    variants:
+      default:
+      - false
+  notification.prompt.testing:
+    variants:
+      default:
+      - true
+  notification.prompt.testing.allow:
+    variants:
+      default:
+      - true
+  pdfjs.firstRun:
+    variants:
+      default:
+      - false
+  pdfjs.previousHandler.alwaysAskBeforeHandling:
+    variants:
+      default:
+      - true
+  pdfjs.previousHandler.preferredAction:
+    variants:
+      default:
+      - 4
+  permissions.default.camera:
+    variants:
+      default:
+      - 1
+  permissions.default.geo:
+    variants:
+      default:
+      - 1
+  permissions.default.microphone:
+    variants:
+      default:
+      - 1
+  plugin.disable:
+    variants:
+      default:
+      - true
+  print.always_print_silent:
+    variants:
+      default:
+      - true
+  print.print_to_file:
+    variants:
+      default:
+      - true
+  print.show_print_progress:
+    variants:
+      default:
+      - true
+  security.OCSP.enabled:
+    variants:
+      default:
+      - 0
+  security.data_uri.unique_opaque_origin:
+    variants:
+      default:
+      - false
+  security.default_personal_cert:
+    variants:
+      default:
+      - Select Automatically
+  security.fileuri.strict_origin_policy:
+    variants:
+      default:
+      - false
+  security.webauth.webauthn_enable_softtoken:
+    variants:
+      default:
+      - true
+  security.webauth.webauthn_enable_usbtoken:
+    variants:
+      default:
+      - false
+  toolkit.cosmeticAnimations.enabled:
+    variants:
+      default:
+      - false
+  toolkit.startup.max_resumed_crashes:
+    variants:
+      default:
+      - -1
+  toolkit.telemetry.enabled:
+    variants:
+      default:
+      - false
+  toolkit.telemetry.server:
+    variants:
+      default:
+      - ''
+  webgl.enable-draft-extensions:
+    variants:
+      default:
+      - null
+      - true
+  webgl.enable-privileged-extensions:
+    variants:
+      default:
+      - true
+  # Needed to prevent spamming of the webgl-xpcshell fuzzing target
+  webgl.max-warnings-per-context:
+    variants:
+      default:
+      - 0
+  webgl.prefer-native-gl:
+    variants:
+      default:
+      - false
+variant:
+- no-e10s
+- no-fission
+- vr
+- writable-streams
