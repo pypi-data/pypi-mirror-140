@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyfinra"
+version = "0.2.1"
+description = "unofficial Finra api"
+authors = ["T-136"]
+readme = "README.md"
+homepage = "https://github.com/T-136/pyfinra"
+repository = "https://github.com/T-136/pyfinra"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.4.1"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
