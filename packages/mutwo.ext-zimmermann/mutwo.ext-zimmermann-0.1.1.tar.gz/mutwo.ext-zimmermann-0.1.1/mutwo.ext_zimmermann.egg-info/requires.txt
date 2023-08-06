@@ -1,0 +1,7 @@
+mutwo.ext-core<0.56.0,>=0.55.0
+mutwo.ext-music<0.8.0,>=0.7.0
+mutwo.ext-common-generators<0.8.0,>=0.7.0
+
+[testing]
+nose
+coveralls
