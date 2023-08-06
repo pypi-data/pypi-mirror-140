@@ -1,0 +1,1 @@
+from .diamond_registry import configure, add_diamond, get_diamonds, delete_all, batch_import
