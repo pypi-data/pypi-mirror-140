@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: test_server
+Version: 0.0.37
+Summary: Server for testing HTTP clients
+Home-page: https://github.com/lorien/test_server
+Author: Gregory Petukhov
+Author-email: lorien@lorien.name
+Maintainer: Gregory Petukhov
+Maintainer-email: lorien@lorien.name
+License: MIT License
+Download-URL: https://pypi.python.org/pypi/test_server
+Keywords: test testing server http-server
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+===========
+Test-server
+===========
+
+.. image:: https://travis-ci.org/lorien/test_server.png?branch=master
+    :target: https://travis-ci.org/lorien/test_server
+
+Simple HTTP Server for testing HTTP clients.
+
+
+Installation
+============
+
+.. code:: bash
+
+    pip install test_server
+
+
+Usage Example
+=============
+
+Example:
+
+.. code:: python
+
+   from unittest import TestCase
+   import unittest
+   from urllib.request import urlopen
+
+   from test_server import TestServer, Response, HttpHeaderStorage
+
+
+   class UrllibTestCase(TestCase):
+       @classmethod
+       def setUpClass(cls):
+           cls.server = TestServer()
+           cls.server.start()
+
+       @classmethod
+       def tearDownClass(cls):
+           cls.server.stop()
+
+       def setUp(self):
+           self.server.reset()
+
+       def test_get(self):
+           self.server.add_response(
+               Response(
+                   data=b"hello",
+                   headers={"foo": "bar"},
+               )
+           )
+           self.server.add_response(Response(data=b"zzz"))
+           url = self.server.get_url()
+           info = urlopen(url)
+           self.assertEqual(b"hello", info.read())
+           self.assertEqual("bar", info.headers["foo"])
+           info = urlopen(url)
+           self.assertEqual(b"zzz", info.read())
+           self.assertTrue("bar" not in info.headers)
+
+
+   unittest.main()
+
+
