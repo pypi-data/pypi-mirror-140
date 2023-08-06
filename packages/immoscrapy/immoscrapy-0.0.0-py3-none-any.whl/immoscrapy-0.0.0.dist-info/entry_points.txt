@@ -1,0 +1,3 @@
+[console_scripts]
+immoscrapy = immoscrapy.cli:main
+
