@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/socialtelligence/__init__.py
+src/socialtelligence.egg-info/PKG-INFO
+src/socialtelligence.egg-info/SOURCES.txt
+src/socialtelligence.egg-info/dependency_links.txt
+src/socialtelligence.egg-info/top_level.txt
+src/socialtelligence/hicandidate/__init__.py
+src/socialtelligence/hicandidate/database.py
