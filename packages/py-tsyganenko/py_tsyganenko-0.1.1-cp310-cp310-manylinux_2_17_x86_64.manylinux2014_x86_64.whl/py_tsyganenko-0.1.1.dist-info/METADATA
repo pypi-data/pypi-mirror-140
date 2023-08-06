@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: py_tsyganenko
+Version: 0.1.1
+Summary: A simple python wrapper of N. A. Tsyganenko Fortran models and Geopack module
+Author: Alexis Jeandet
+Author-email: alexis.jeandet@member.fsf.org
+Description-Content-Type: text/plain
+Description:
+
+A simple python wrapper of N. A. Tsyganenko Fortran models and Geopack module
