@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: certbot-dnspod
+Version: 0.0.1
+Summary: 
+License: BSD-3-Clause
+Author: codeif
+Author-email: me@codeif.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: certbot (>=1.23.0,<2.0.0)
+Requires-Dist: dnspod-sdk (>=0.0.2,<0.0.3)
+Requires-Dist: zope.interface (>=5.4.0,<6.0.0)

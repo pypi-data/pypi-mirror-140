@@ -1,0 +1,5 @@
+certbot_dnspod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dnspod-0.0.1.dist-info/LICENSE,sha256=UL36QT6IuJn31NABiPrzhKoqGc_IKX6c7IfQfqLVGnU,1514
+certbot_dnspod-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+certbot_dnspod-0.0.1.dist-info/METADATA,sha256=AapXTLIvM6Qo1qDRxIBWwBvDtNcfN_3pUzOzJxYN6_Y,542
+certbot_dnspod-0.0.1.dist-info/RECORD,,
