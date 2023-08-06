@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bluebild
+Version: 0.0.1
+Summary: A flexible spherical imager for interferometric applications
+Home-page: https://github.com/imagingofthings/pypeline
+Author: orliac
+Author-email: etienne.orliac@epfl.ch
+License: UNKNOWN
+Project-URL: Fork, https://github.com/etolley/pypeline
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BlueBild Package
+
+The Bluebild algorithm offers a more robust, efficient way to calculate the sky intensity distribution. Bluebild is a flexible spherical imager for interferometric applications. It uses principle component analysis to calculate the sky intensity matrix in a series of energy levels. This provides astronomers with images of the sky decomposed into different energy levels, allowing for easy denoising through filtering low energy levels and recombination of the eigen-images in statistically optimal ways. With low computational complexity and affinity for parallel execution, Bluebild is an excellent candidate for next-generation radio-astronomy imaging. With additional optimization and parallelization, it may even achieve real-time imaging in the field.
+
+

@@ -1,0 +1,3 @@
+# BlueBild Package
+
+The Bluebild algorithm offers a more robust, efficient way to calculate the sky intensity distribution. Bluebild is a flexible spherical imager for interferometric applications. It uses principle component analysis to calculate the sky intensity matrix in a series of energy levels. This provides astronomers with images of the sky decomposed into different energy levels, allowing for easy denoising through filtering low energy levels and recombination of the eigen-images in statistically optimal ways. With low computational complexity and affinity for parallel execution, Bluebild is an excellent candidate for next-generation radio-astronomy imaging. With additional optimization and parallelization, it may even achieve real-time imaging in the field.
