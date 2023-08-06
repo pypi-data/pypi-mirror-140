@@ -1,0 +1,3 @@
+[console_scripts]
+rnpfind = rnpfind.main:main
+rnpfind-download = rnpfind.main:download_ro_data
