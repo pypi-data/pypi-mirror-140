@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "spawndb"
+version = "0.1.15"
+description = ""
+authors = ["Pablo Prieto <pabloprieto@live.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+SQLAlchemy = {extras = ["asyncio"], version = "^1.4.31"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.1.0"
+ipython = "^8.0.1"
+pytest = "^7.0.1"
+twine = "^3.8.0"
+psycopg2-binary = "^2.9.3"
+asyncpg = "^0.25.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
