@@ -1,0 +1,2 @@
+[ffmpegio]
+finder_downloader = ffmpegio_plugin_downloader
