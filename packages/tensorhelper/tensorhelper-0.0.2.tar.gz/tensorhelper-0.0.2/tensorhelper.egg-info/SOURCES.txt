@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+libraries/__init__.py
+libraries/tensorhelper/__init__.py
+libraries/tensorhelper/tensorhelper.py
+tensorhelper.egg-info/PKG-INFO
+tensorhelper.egg-info/SOURCES.txt
+tensorhelper.egg-info/dependency_links.txt
+tensorhelper.egg-info/top_level.txt
