@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wsmsg
+Version: 0.9.1
+Summary: A simple websocket messaging library
+Author: Stefan Peters
+Author-email: stefan@derpydo.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wsmsg Package
+
+A simple websocket/msgpack messaging library that provides pub/sub and rpc patterns.
+
