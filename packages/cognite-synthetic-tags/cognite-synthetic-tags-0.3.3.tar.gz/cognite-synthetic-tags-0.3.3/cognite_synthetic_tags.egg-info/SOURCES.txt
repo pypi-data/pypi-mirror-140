@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+cognite_synthetic_tags/__init__.py
+cognite_synthetic_tags/_operations.py
+cognite_synthetic_tags/data_stores.py
+cognite_synthetic_tags/tag.py
+cognite_synthetic_tags/tag_resolver.py
+cognite_synthetic_tags/types.py
+cognite_synthetic_tags.egg-info/PKG-INFO
+cognite_synthetic_tags.egg-info/SOURCES.txt
+cognite_synthetic_tags.egg-info/dependency_links.txt
+cognite_synthetic_tags.egg-info/requires.txt
+cognite_synthetic_tags.egg-info/top_level.txt
+cognite_synthetic_tags.egg-info/zip-safe
