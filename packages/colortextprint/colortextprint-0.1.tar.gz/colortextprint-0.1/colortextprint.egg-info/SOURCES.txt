@@ -1,0 +1,8 @@
+setup.py
+colortextprint/__init__.py
+colortextprint/colortextprint.py
+colortextprint.egg-info/PKG-INFO
+colortextprint.egg-info/SOURCES.txt
+colortextprint.egg-info/dependency_links.txt
+colortextprint.egg-info/not-zip-safe
+colortextprint.egg-info/top_level.txt
