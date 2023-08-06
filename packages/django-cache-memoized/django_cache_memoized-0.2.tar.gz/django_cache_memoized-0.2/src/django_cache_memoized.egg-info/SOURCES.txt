@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/django_cache_memoized/__init__.py
+src/django_cache_memoized.egg-info/PKG-INFO
+src/django_cache_memoized.egg-info/SOURCES.txt
+src/django_cache_memoized.egg-info/dependency_links.txt
+src/django_cache_memoized.egg-info/requires.txt
+src/django_cache_memoized.egg-info/top_level.txt
