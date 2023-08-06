@@ -1,0 +1,2 @@
+# Pyiocare
+A python interface for the IOCare API utilized by Coway air purifiers

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyiocare
+Version: 0.0.1
+Summary: A Python library for Coway Air Purifiers 
+Home-page: https://github.com/RobertD502/pyiocare
+Author: Robert Drinovac
+Author-email: unlisted@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/RobertD502/pyiocare/issues
+Project-URL: Source, https://github.com/RobertD502/pyiocare/
+Description: # Pyiocare
+        A python interface for the IOCare API utilized by Coway air purifiers
+        
+Keywords: coway,iocare,iocare api,coway api,airmega
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+iocare/__init__.py
+iocare/iocareapi.py
+iocare/devices/__init__.py
+iocare/devices/purifier.py
+pyiocare.egg-info/PKG-INFO
+pyiocare.egg-info/SOURCES.txt
+pyiocare.egg-info/dependency_links.txt
+pyiocare.egg-info/top_level.txt
