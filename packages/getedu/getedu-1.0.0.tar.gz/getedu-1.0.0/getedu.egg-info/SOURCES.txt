@@ -1,0 +1,9 @@
+LICENCE.txt
+README.txt
+setup.py
+getedu/__init__.py
+getedu.egg-info/PKG-INFO
+getedu.egg-info/SOURCES.txt
+getedu.egg-info/dependency_links.txt
+getedu.egg-info/requires.txt
+getedu.egg-info/top_level.txt
