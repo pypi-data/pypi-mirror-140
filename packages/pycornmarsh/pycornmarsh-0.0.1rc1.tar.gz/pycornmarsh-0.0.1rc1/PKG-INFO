@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pycornmarsh
+Version: 0.0.1rc1
+Summary: Automated OpenAPI documentation with Pyramid Cornice and Marshmallow 
+Home-page: https://github.com/debonzi/pycornmarsh
+Author: Daniel Debonzi
+Author-email: debonzi@gmail.com
+License: BSD
+Keywords: pyramid openapi apispec marshmallow cornice rest restful
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pyramid
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: ci
+Provides-Extra: dev
+
+# PyCornMarsh OpenAPI
+
+Automated OpenAPI documentation with Pyramid Cornice and Marshmallow
+
+
