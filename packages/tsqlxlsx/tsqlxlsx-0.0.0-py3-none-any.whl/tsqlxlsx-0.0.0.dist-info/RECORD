@@ -1,0 +1,9 @@
+tsqlxlsx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsqlxlsx/__main__.py,sha256=ShgEAao4V2XbP_0DgBj5vG8oFOSvn1Q7L-UhJq08WVQ,16185
+tsqlxlsx/data_loader.py,sha256=QVgLbjmLJmD9lK4IRpqbSC0gsnQgNY4bOxmVblnkagU,7163
+tsqlxlsx/sql_ddl.py,sha256=Z2JIrMkNbUei1pCaRc7gr6DqYu7soQQIszai_icNVFU,14483
+tsqlxlsx/tsql_connector.py,sha256=6TH2XwnxpcHIMTknH09zAECor0Hh-OtUJkoDHxEqWZI,15869
+tsqlxlsx-0.0.0.dist-info/METADATA,sha256=9suiWRll72UjjRGSbwAjX4L5JeHHaMK8gDXP5mEVCas,1086
+tsqlxlsx-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tsqlxlsx-0.0.0.dist-info/top_level.txt,sha256=BSRwVkBBS3z73_UDn83oII6WINbRxiAhNEsJLKzyDl0,9
+tsqlxlsx-0.0.0.dist-info/RECORD,,
