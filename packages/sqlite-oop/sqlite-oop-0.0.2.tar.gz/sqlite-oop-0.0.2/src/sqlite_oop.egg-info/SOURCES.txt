@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/sqlite_oop.egg-info/PKG-INFO
+src/sqlite_oop.egg-info/SOURCES.txt
+src/sqlite_oop.egg-info/dependency_links.txt
+src/sqlite_oop.egg-info/top_level.txt
+src/sqliteoop/__init__.py
+src/sqliteoop/sqlite.py
