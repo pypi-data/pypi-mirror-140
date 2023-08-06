@@ -1,0 +1,12 @@
+polylidar_pybind.cpython-38-darwin.so,sha256=9WCXOH785TlcHeEX3Qw02qxrGEsf-OgdCKgDtgE22j0,716000
+polylidar/__init__.py,sha256=wEeV3Ea-2UGZ0Vb1pn7xe8N5wa7NsEAwNbi57-QubQI,336
+polylidar/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polylidar/polylidarutil/__init__.py,sha256=X2-DGGNsBoCtEwetvVJs1g4bHaW5hNQ66Aw9EnKeMRc,10061
+polylidar/polylidarutil/line_mesh.py,sha256=q4gdm564-1ZMgYluc7EDKWZNdKzRVDgy3KQb0j5idPY,5381
+polylidar/polylidarutil/open3d_util.py,sha256=HyJyphBgpStbaZJBEs82qHFoxvcSLk9rmqjQiNNkPbw,5839
+polylidar/polylidarutil/plane_filtering.py,sha256=l1hZEP5DeE44aSpvWXNGE0_X0ccNTYHieXPCfmngvQA,19188
+polylidar-1.0.8.dist-info/LICENSE,sha256=Zty3KQuiCH6v26AO8gZjdZixIFNIT3FFGxJmwduOKz0,1072
+polylidar-1.0.8.dist-info/METADATA,sha256=u1LDuq-psI9XfBLYW5jzJwxPfT9ocKhzFDDPc-2i_fU,7088
+polylidar-1.0.8.dist-info/WHEEL,sha256=pXLpj1wTvqlD6RVUEKOuGQGeFX0NOPyDrsC-9xVDmYU,109
+polylidar-1.0.8.dist-info/top_level.txt,sha256=ouaox60V-QA960Zq0qRUyKLLzeqLPjEjaFEUiyzBWbk,27
+polylidar-1.0.8.dist-info/RECORD,,
