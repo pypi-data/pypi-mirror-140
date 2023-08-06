@@ -1,0 +1,9 @@
+abstracts>=0.0.12
+aiofiles
+aiohttp
+janus
+orjson
+psutil
+trycast
+types-orjson
+types-psutil
