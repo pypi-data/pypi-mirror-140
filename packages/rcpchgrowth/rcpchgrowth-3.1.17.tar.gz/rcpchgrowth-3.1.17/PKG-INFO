@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rcpchgrowth
+Version: 3.1.17
+Summary: SDS and Centile calculations for UK Growth Data
+Home-page: https://github.com/rcpch/digital-growth-charts/blob/master/README.md
+Author: @eatyourpeas, @marcusbaw @statist7 RCPCH
+Author-email: eatyourpeasapps@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/rcpch/digital-growth-charts/issues
+Project-URL: API management, https://dev.rcpch.ac.uk
+Project-URL: Source, https://github.com/rcpch/digital-growth-charts
+Description: https://github.com/rcpch/digital-growth-charts/blob/master/README.md
+Keywords: growth charts anthropometry SDS Centile
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.5, <3.9
+Provides-Extra: test
+Provides-Extra: dev
