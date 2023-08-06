@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/serverless_container_constructs/__init__.py
+src/serverless_container_constructs/py.typed
+src/serverless_container_constructs.egg-info/PKG-INFO
+src/serverless_container_constructs.egg-info/SOURCES.txt
+src/serverless_container_constructs.egg-info/dependency_links.txt
+src/serverless_container_constructs.egg-info/requires.txt
+src/serverless_container_constructs.egg-info/top_level.txt
+src/serverless_container_constructs/_jsii/__init__.py
+src/serverless_container_constructs/_jsii/serverless-container-constructs@0.1.20.jsii.tgz
