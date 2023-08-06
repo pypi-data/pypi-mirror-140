@@ -1,0 +1,175 @@
+{%- if filetype_loop == 0 %}Overall,Reachability,Issue Count,Interface Link Error,Inter Device Link Available,Inter Device Link Available Fabric,CPU,Memory,Client Count,Free Timer,Packet Pool,WQE Pools,WAN Link Utilization,Interference,Noise,Air Quality
+{%-     for item in health if item.name == device.hostname %}
+{{ item.overallHealth }},{{ item.reachabilityHealth }},{{ item.issueCount }},{{ item.interfaceLinkErrHealth }},{{ item.interDeviceLinkAvailHealth }},{{ item.interDeviceLinkAvailFabric }},{{ item.cpuHealth }},{{ item.memoryUtilizationHealth }},{{ item.clientCount }},{{ item.freeTimerScore }},{{ item.packetPoolHealth }},{{ item.wqePoolsHealth }},{{ item.wanLinkUtilization }},{{ item.interferenceHealth }},{{ item.noiseHealth }},{{ item.airQualityHealth }}
+{%-     endfor %}
+{%- else %}
+{%-     if filetype_loop == 1 %}
+# Device Health
+| Overall | Reachability | Issue Count | Interface Link Error | Inter Device Link Available | Inter Device Link Available Fabric | CPU | Memory | Client Count | Free Timer | Packet Pool | WQE Pools | WAN Link Utilization | Interference | Noise | Air Quality |
+| ------- | ------------ | ----------- | -------------------- | --------------------------- | ---------------------------------- | --- | ------ | ------------ | ---------- | ----------- | --------- | -------------------- | ------------ | ----- | ----------- |
+{%-     for item in health if item.name == device.hostname %}
+| {{ item.overallHealth }} | {{ item.reachabilityHealth }} | {{ item.issueCount }} | {{ item.interfaceLinkErrHealth }} | {{ item.interDeviceLinkAvailHealth }} | {{ item.interDeviceLinkAvailFabric }} | {{ item.cpuHealth }} | {{ item.memoryUtilizationHealth }} | {{ item.clientCount }} | {{ item.freeTimerScore }} | {{ item.packetPoolHealth }} | {{ item.wqePoolsHealth }} | {{ item.wanLinkUtilization }} | {{ item.interferenceHealth }} | {{ item.noiseHealth }} | {{ item.airQualityHealth }} |
+{%-     endfor %}
+{%-     else %}
+{%-         if filetype_loop == 2 %}
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/colreorder/1.5.4/js/dataTables.colReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/keytable/2.6.4/js/dataTables.keyTable.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.9/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.6.4/css/keyTable.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+</head>
+<body>
+<h1>DNAC </h1>
+<table id = "health">
+  <thead>
+    <tr>
+      <th>Overall</th>
+      <th>Reachability</th>
+      <th>Issue Count</th>
+      <th>Interface Link Error</th>
+      <th>Inter Device Link Available</th>
+      <th>Inter Device Link Available Fabric</th>
+      <th>CPU</th>
+      <th>Memory</th>
+      <th>Client Count</th>
+      <th>Free Timer</th>
+      <th>Packet Pool</th>
+      <th>WQE Pools</th>
+      <th>WAN Link Utilization</th>
+      <th>Interference</th>
+      <th>Noise</th>
+      <th>Air Quality</th>
+    </tr>
+  </thead>
+  <tbody>
+{%-     for item in health if item.name == device.hostname %}
+<tr>
+    <td>{{ item.overallHealth }}</td>
+    <td>{{ item.reachabilityHealth }}</td>
+    <td>{{ item.issueCount }}</td>
+    <td>{{ item.interfaceLinkErrHealth }}</td>
+    <td>{{ item.interDeviceLinkAvailHealth }}</td>
+    <td>{{ item.interDeviceLinkAvailFabric }}</td>
+    <td>{{ item.cpuHealth }}</td>
+    <td>{{ item.memoryUtilizationHealth }}</td>
+    <td>{{ item.clientCount }}</td>
+    <td>{{ item.freeTimerScore }}</td>
+    <td>{{ item.packetPoolHealth }}</td>
+    <td>{{ item.wqePoolsHealth }}</td>
+    <td>{{ item.wanLinkUtilization }}</td>
+    <td>{{ item.interferenceHealth }}</td>
+    <td>{{ item.noiseHealth }}</td>
+    <td>{{ item.airQualityHealth }}</td>
+  </tr>
+{%-     endfor %}
+  </tbody>
+</table>
+<script type = "text/javascript">
+  $(document).ready(function(){
+    $('#health thead tr')
+    .clone(true)
+    .addClass('filters')
+    .appendTo('#health thead');
+
+    var table = $('#health').DataTable({
+        keys: true,
+        dom: 'Bfrtip',
+        lengthMenu: [
+            [ 10, 25, 50, -1 ],
+            [ '10 rows', '25 rows', '50 rows', 'Show all' ]
+        ],
+        buttons: [
+        'pageLength','colvis','copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        colReorder: true,
+        select: true,            
+        orderCellsTop: true,
+        fixedHeader: true,
+        initComplete: function () {
+        var api = this.api();
+
+        // For each column
+        api
+            .columns()
+            .eq(0)
+            .each(function (colIdx) {
+                // Set the header cell to contain the input element
+                var cell = $('.filters th').eq(
+                    $(api.column(colIdx).header()).index()
+                );
+                var title = $(cell).text();
+                $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+                // On every keypress in this input
+                $(
+                    'input',
+                    $('.filters th').eq($(api.column(colIdx).header()).index())
+                )
+                    .off('keyup change')
+                    .on('keyup change', function (e) {
+                        e.stopPropagation();
+
+                        // Get the search value
+                        $(this).attr('title', $(this).val());
+                        var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                        var cursorPosition = this.selectionStart;
+                        // Search the column for that value
+                        api
+                            .column(colIdx)
+                            .search(
+                                this.value != ''
+                                    ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                    : '',
+                                this.value != '',
+                                this.value == ''
+                            )
+                            .draw();
+
+                        $(this)
+                            .focus()[0]
+                            .setSelectionRange(cursorPosition, cursorPosition);
+                    });
+            });
+    },
+});
+});        
+</script>   
+</body></html>
+{%-         else %}
+# Health
+{%-     for item in health if item.name == device.hostname %}
+## Overall: {{ item.overallHealth }}
+### Reachability: {{ item.reachabilityHealth }}
+### Issue Count: {{ item.issueCount }}
+### Interface Link Error: {{ item.interfaceLinkErrHealth }}
+### Inter Device Link Available: {{ item.interDeviceLinkAvailHealth }}
+### Inter Device Link Available Fabric: {{ item.interDeviceLinkAvailFabric }}
+### CPU: {{ item.cpuHealth }}
+### Memory: {{ item.memoryUtilizationHealth }}
+### Client Count: {{ item.clientCount }}
+### Free Timer: {{ item.freeTimerScore }}
+### Packet Pool: {{ item.packetPoolHealth }}
+### WQE Pools: {{ item.wqePoolsHealth }}
+### WAN Link Utilization: {{ item.wanLinkUtilization }}
+### Interference: {{ item.interferenceHealth }}
+### Noise: {{ item.noiseHealth }}
+### Air Quality: {{ item.airQualityHealth }}
+{%-     endfor %}
+{%-         endif %}
+{%-     endif %}
+{%- endif %}
