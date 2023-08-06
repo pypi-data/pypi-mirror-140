@@ -1,0 +1,2 @@
+[gui_scripts]
+npy_reader = npy_reader.npy_reader:main

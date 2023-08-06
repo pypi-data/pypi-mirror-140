@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: npy-reader
+Version: 1.0.2
+Summary: A simple tool to read and display numpy (.npy) files.
+Home-page: https://github.com/AstrophysicsAndPython/npy_reader
+Author: Astrophysics and Python, Syed Ali Mohsin Bukhari
+Author-email: astrophysicsandpython@gmail.com, syedali.b@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.12.5)
+
+README.md
+
