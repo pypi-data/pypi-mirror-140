@@ -1,0 +1,3 @@
+[console_scripts]
+swach = cloudwash.cli:cleanup_providers
+

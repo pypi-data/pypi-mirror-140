@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cloudwash.egg-info/PKG-INFO
+cloudwash.egg-info/SOURCES.txt
+cloudwash.egg-info/dependency_links.txt
+cloudwash.egg-info/entry_points.txt
+cloudwash.egg-info/requires.txt
+cloudwash.egg-info/top_level.txt
