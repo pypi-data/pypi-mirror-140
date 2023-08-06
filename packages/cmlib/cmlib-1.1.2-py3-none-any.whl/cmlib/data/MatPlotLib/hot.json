@@ -1,0 +1,13 @@
+{
+    "name": "hot",
+    "pretty_name": "Hot",
+    "file_name": "hot.csv",
+    "category": "Sequential",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Matlab. Sequential black-red-yellow-white, to emulate blackbody radiation from an object at increasing temperatures",
+    "tags": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "spring",
+    "pretty_name": "Spring",
+    "file_name": "spring.csv",
+    "category": "Sequential",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Matlab. Linearly-increasing shades of magenta-yellow",
+    "tags": []
+}

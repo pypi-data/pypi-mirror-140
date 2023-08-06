@@ -1,0 +1,13 @@
+{
+    "name": "brg",
+    "pretty_name": "Brg",
+    "file_name": "brg.csv",
+    "category": "Sequential",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "blue-red-green",
+    "tags": []
+}

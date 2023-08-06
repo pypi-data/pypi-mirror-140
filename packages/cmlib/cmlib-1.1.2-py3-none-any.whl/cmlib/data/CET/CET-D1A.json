@@ -1,0 +1,13 @@
+{
+    "name": "CET-D1A",
+    "pretty_name": "CET-D1A",
+    "file_name": "CET-D1A.csv",
+    "category": "Diverging",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "diverging_bwr_20-95_c54_n256",
+    "tags": []
+}

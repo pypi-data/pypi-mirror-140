@@ -1,0 +1,13 @@
+{
+    "name": "CET-L13",
+    "pretty_name": "CET-L13",
+    "file_name": "CET-L13.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "linear_ternary-red_0-50_c52_n256",
+    "tags": []
+}

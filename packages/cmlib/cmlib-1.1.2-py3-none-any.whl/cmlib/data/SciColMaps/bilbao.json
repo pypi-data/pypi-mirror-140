@@ -1,0 +1,13 @@
+{
+    "name": "bilbao",
+    "pretty_name": "Bilbao",
+    "file_name": "bilbao.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "",
+    "tags": []
+}

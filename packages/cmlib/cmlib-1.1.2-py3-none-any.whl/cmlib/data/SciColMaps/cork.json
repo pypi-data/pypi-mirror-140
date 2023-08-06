@@ -1,0 +1,13 @@
+{
+    "name": "cork",
+    "pretty_name": "Cork",
+    "file_name": "cork.csv",
+    "category": "Diverging",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "",
+    "tags": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "cool",
+    "pretty_name": "Cool",
+    "file_name": "cool.csv",
+    "category": "Sequential",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Matlab. Linearly-decreasing shades of cyan-magenta",
+    "tags": []
+}

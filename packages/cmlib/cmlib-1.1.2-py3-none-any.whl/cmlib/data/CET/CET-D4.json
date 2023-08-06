@@ -1,0 +1,13 @@
+{
+    "name": "CET-D4",
+    "pretty_name": "CET-D4",
+    "file_name": "CET-D4.csv",
+    "category": "Diverging",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "diverging_bkr_55-10_c35_n256",
+    "tags": []
+}

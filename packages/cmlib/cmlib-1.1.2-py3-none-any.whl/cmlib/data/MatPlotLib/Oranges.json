@@ -1,0 +1,13 @@
+{
+    "name": "Oranges",
+    "pretty_name": "Oranges",
+    "file_name": "Oranges.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Color Brewer. White, orange, dark brown",
+    "tags": []
+}

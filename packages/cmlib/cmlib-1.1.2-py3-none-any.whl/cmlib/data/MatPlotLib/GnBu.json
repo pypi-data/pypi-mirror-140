@@ -1,0 +1,13 @@
+{
+    "name": "GnBu",
+    "pretty_name": "GnBu",
+    "file_name": "GnBu.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Color Brewer. White, light green, dark blue",
+    "tags": []
+}

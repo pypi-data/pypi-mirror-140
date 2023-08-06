@@ -1,0 +1,13 @@
+{
+    "name": "summer",
+    "pretty_name": "Summer",
+    "file_name": "summer.csv",
+    "category": "Sequential",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Matlab. Equential linearly-increasing shades of green-yellow",
+    "tags": []
+}

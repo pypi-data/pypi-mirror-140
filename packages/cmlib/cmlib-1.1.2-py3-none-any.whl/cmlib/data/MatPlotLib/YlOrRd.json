@@ -1,0 +1,13 @@
+{
+    "name": "YlOrRd",
+    "pretty_name": "YlOrRd",
+    "file_name": "YlOrRd.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Color Brewer. Light yellow, orange, dark red",
+    "tags": []
+}

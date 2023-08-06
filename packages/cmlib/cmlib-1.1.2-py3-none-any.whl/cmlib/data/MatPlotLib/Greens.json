@@ -1,0 +1,13 @@
+{
+    "name": "Greens",
+    "pretty_name": "Greens",
+    "file_name": "Greens.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Color Brewer. White to dark green",
+    "tags": []
+}

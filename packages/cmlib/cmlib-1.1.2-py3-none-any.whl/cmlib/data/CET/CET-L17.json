@@ -1,0 +1,13 @@
+{
+    "name": "CET-L17",
+    "pretty_name": "CET-L17",
+    "file_name": "CET-L17.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "linear_worb_100-25_c53_n256",
+    "tags": []
+}

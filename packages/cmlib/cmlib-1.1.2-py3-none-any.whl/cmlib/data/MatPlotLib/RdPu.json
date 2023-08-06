@@ -1,0 +1,13 @@
+{
+    "name": "RdPu",
+    "pretty_name": "RdPu",
+    "file_name": "RdPu.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Color Brewer. White, pink, dark purple",
+    "tags": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "autumn",
+    "pretty_name": "Autumn",
+    "file_name": "autumn.csv",
+    "category": "Sequential",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Matlab. Sequential linearly-increasing shades of red-orange-yellow",
+    "tags": []
+}
