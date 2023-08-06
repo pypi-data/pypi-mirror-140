@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+easy_alpaca/__init__.py
+easy_alpaca.egg-info/PKG-INFO
+easy_alpaca.egg-info/SOURCES.txt
+easy_alpaca.egg-info/dependency_links.txt
+easy_alpaca.egg-info/top_level.txt
