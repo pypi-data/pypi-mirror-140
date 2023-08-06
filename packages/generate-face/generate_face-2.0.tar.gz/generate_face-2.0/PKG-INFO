@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: generate_face
+Version: 2.0
+Summary: Automatically download face from www.thispersondoesnotexist.com
+Home-page: https://github.com/evoreign/face_generator
+Author: edbert khovey
+Author-email: edbert.khovey@binus.ac.id
+License: MIT
+Download-URL: https://github.com/evoreign/generate_face/archive/refs/tags/2.0.tar.gz
+Description: UNKNOWN
+Keywords: face,library,data science
+Platform: UNKNOWN
