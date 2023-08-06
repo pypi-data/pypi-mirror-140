@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: wport
+Version: 0.0.12
+Summary: Common ports information fetcher for pentesting
+Home-page: https://github.com/octomany/wport
+Author: Maxime Beauchamp
+Author-email: cybersecmax@outlook.com
+License: LGPL-3.0-only
+Project-URL: Documentation, https://wport.readthedocs.io/
+Project-URL: Changelog, https://wport.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/octomany/wport/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: argparse (==1.4.0)
+Requires-Dist: colorama (==0.4.4)
+
+========
+Overview
+========
+
+
+
+Common ports information fetcher for pentesting
+
+* Free software: GNU Lesser General Public License v3 (LGPLv3)
+
+Installation
+============
+
+::
+
+    pip install wport
+
+Changelog
+=========
+
+0.1.4 (2022-02-25)
+------------------
+
+* First release on PyPI.
+
+
