@@ -1,0 +1,12 @@
+aiographql/client/__init__.py,sha256=B6laPQC3pI2gGEQyyylCsXZmTsemJLRl2PnZ0yjh5a8,987
+aiographql/client/client.py,sha256=1Qa-gnIetO3maTyPciLuk14TtkTOQ0m86CF2ZxvhIGE,17617
+aiographql/client/error.py,sha256=sJ5tvw30JM4Dsw4WxGTqp69YX7W0b36seiJU-VVY5ew,1160
+aiographql/client/exceptions.py,sha256=1nRA_h3PHRoQloIeLA8MmfGrFMkqIAKyqYIS5cci6m0,962
+aiographql/client/helpers.py,sha256=_QmbZG02Y8USHwaelK-kDYu85zh1PQHy6Ww5xWCGsQQ,933
+aiographql/client/request.py,sha256=r1Lbd0YivCnT_6izSDewV-YRDMG63wrCvxhkGSTqjpw,3469
+aiographql/client/response.py,sha256=5zeGkuaR881ZmsxlozR_BKqj9jopjMwsSUR5RDO0xSE,1127
+aiographql/client/subscription.py,sha256=5yKcQDWgLDvhruH1Irh7QfFiQpqLllIVDV-QZbfwU7k,10862
+aiographql_client-1.0.3.dist-info/LICENSE,sha256=owv67BMWbJ6GKjYUeCewlivm2bsIyvG-0HmNaloSEKo,1072
+aiographql_client-1.0.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aiographql_client-1.0.3.dist-info/METADATA,sha256=30JiBXLn1jfq47tH-CFrYywPTkuYIOFOKi3ptqFZNf8,5448
+aiographql_client-1.0.3.dist-info/RECORD,,
