@@ -1,0 +1,4 @@
+folium==0.12.1
+psycopg2-binary
+addict
+helper-mapilio
