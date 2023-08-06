@@ -1,0 +1,3 @@
+[console_scripts]
+todoer = todocli:main
+
