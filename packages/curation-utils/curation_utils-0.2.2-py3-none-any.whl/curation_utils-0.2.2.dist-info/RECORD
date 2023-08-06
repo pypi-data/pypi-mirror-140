@@ -1,0 +1,16 @@
+curation_utils/__init__.py,sha256=LKnEnDzOt08vl_Ymww8cGCubK9gCds3dGngO9G9xwKA,128
+curation_utils/archive_utility.py,sha256=V72oerAfs7luckbTeAg_a4XV_vbb0KuTirkldEN9T_8,6122
+curation_utils/dir_helper.py,sha256=4IzaIZtJNuXnKW6GSwrj5I73oZ5rj_zio7GRXGeaE2o,2772
+curation_utils/list_helper.py,sha256=HyC7FKDryzrM5MXFfZzT09D3SJuMTtVZ4Tr41kzmq4s,289
+curation_utils/scraping.py,sha256=w9r6or4LC8ZmuFhda2-8KvmlRsVe_XOfXurBmdul_nE,3122
+curation_utils/file_helper/__init__.py,sha256=9iZj15Vs5T3ktOOOOtkfqn5iDfkRhxMaPyXTjEKjxpU,7283
+curation_utils/file_helper/multi_file_reader.py,sha256=UooSncAr6cBLROJrooJdbJh7l0yZArUYDeOwb8DrSnA,2197
+curation_utils/google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curation_utils/google/api_helper.py,sha256=uLID3EFgAOGat15uO3bF3kj_ZySxtlVGxzw3dciQd6c,5466
+curation_utils/google/drive.py,sha256=_MLy_W15S8uTEr4fYG5LNLEhmqdsTU7rzraGSoL-Gfs,3214
+curation_utils/google/sheets.py,sha256=hhykq7S9o-XS2rQecZ3uhRCRiSbojcvisQLEjaVXTV4,3433
+curation_utils-0.2.2.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+curation_utils-0.2.2.dist-info/METADATA,sha256=0FseVwpDSAOdCJnSTD9BQ1EY7OZ6i7Ak76iVY-qGeTM,1206
+curation_utils-0.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+curation_utils-0.2.2.dist-info/top_level.txt,sha256=Zwec4MTvbF45FihaiVS_wd1o2YO0JUAd2-NJsMV_Q20,15
+curation_utils-0.2.2.dist-info/RECORD,,
