@@ -1,0 +1,7 @@
+unidecode
+
+[dev]
+pytest
+pytest-cov
+ipdb
+psycopg2-binary
