@@ -1,0 +1,3 @@
+lygadgets
+gdsfactory[full]>=4.2.16
+modes
