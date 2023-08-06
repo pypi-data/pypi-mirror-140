@@ -1,0 +1,9 @@
+README.md
+license.txt
+setup.py
+orf_news/orf_news.py
+orf_news/ORF_News.egg-info/PKG-INFO
+orf_news/ORF_News.egg-info/SOURCES.txt
+orf_news/ORF_News.egg-info/dependency_links.txt
+orf_news/ORF_News.egg-info/requires.txt
+orf_news/ORF_News.egg-info/top_level.txt

@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: ORF_News
+Version: 2.0.0
+Summary: Simple orf news scraper
+Home-page: https://github.com/mcbabo/ORF_News_v2
+Author: Moritz | mcbabo#6969
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: license.txt
+
+# ORF News Wrapper #
+
+A simple News Wrapper of https://orf.at/ made by mcbabo
+
+## How to use ##
+
+Install package with
+
+```
+pip install orfnews
+```
+
+### Get top news ###
+Create your main.py file
+
+```python
+import orf_news
+import asyncio
+
+# Create orf class
+orf = orf_news.ORF_News()
+
+# Call getTopicNews
+newest_post = asyncio.run(orf.getTopPost("inland"))
+
+# Print out dictionary
+print(newest_post)
+```
+
+### Get top news ###
+Create your main.py file
+
+```python
+import orf_news
+import asyncio
+
+# Create orf class
+orf = orf_news.ORF_News()
+
+# Call getTopicNews
+newest_post = asyncio.run(orf.getTopPosts("inland", amount : int))
+
+# Print out list with dictionaries
+print(newest_post)
+```
+
+### Get all available topics ###
+
+```python
+import orf_news
+import asyncio
+
+# Create orf class
+orf = orf_news.ORF_News()
+
+# Call getTopics
+topics = asyncio.run(orf.getTopics())
+
+# Print out dictionary
+print(topics)
+```
+
+
