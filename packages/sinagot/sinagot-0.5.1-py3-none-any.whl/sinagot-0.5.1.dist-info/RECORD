@@ -1,0 +1,15 @@
+sinagot/__init__.py,sha256=2VgsQ2pgG3J8ZMTLZz7iCAdtOGG3W9jJkqpBHrb4mOw,324
+sinagot/base.py,sha256=O9n3lPvM9v6kEJl-DJmEc3jW1GQ25qe-ZC-mIy4ZOfk,823
+sinagot/config.py,sha256=BnEqrXRJEA_M92NYUGxPCG4CcITKWx_g4VGDOJI00j8,404
+sinagot/logger.py,sha256=-kEEnmuMNeCfC5UXA3OFZrCbMSoLi8kahjkwoOFy3FQ,308
+sinagot/node.py,sha256=aswBDhtGr0vXxpE_OZxiv-GBASQspUKsNPzY7YcbKy4,3308
+sinagot/path_template.py,sha256=yX7LADq4XWxrlDLlDEJkS8W0Ab04wbWLm6WWiNboe4A,1012
+sinagot/ray.py,sha256=T81-CNtcDvYplP-0ik6Vi3ncGj1btFfl5dXMGNtw_yM,592
+sinagot/storage.py,sha256=sh89nuy_HeTcp59d7Tgj6THlWaFNnPoVGzJp3xfbPAg,3899
+sinagot/workflow.py,sha256=ZptCYvoMSsl3aOWM9daZWEsGD-WOKPoRZihIwUn1Ouc,2221
+sinagot/workspace.py,sha256=x5oufDuPeBzerlI7IeeB5NsJKKNpX_95r9xzAz-7FGg,1820
+sinagot-0.5.1.dist-info/entry_points.txt,sha256=MK2optEaKoI--c_q3PvirmLufWQl4sgBri_S04nK7c0,38
+sinagot-0.5.1.dist-info/LICENSE,sha256=plWKrdmSe2dVFUx3TU7eDLrfdmwkhvVskLNmmnldDtw,1331
+sinagot-0.5.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sinagot-0.5.1.dist-info/METADATA,sha256=AV_WFMcGnICfHrkqRwYCJ_DCdusskRz7xg3I5Kzrrys,4084
+sinagot-0.5.1.dist-info/RECORD,,
