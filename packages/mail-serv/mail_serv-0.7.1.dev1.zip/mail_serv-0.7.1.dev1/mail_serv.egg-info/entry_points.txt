@@ -1,0 +1,4 @@
+[console_scripts]
+mail_serv_arkon = mail_serv.arkon:arkon_service
+mail_serv_keeper = mail_serv.keeper:keeper_service
+mail_serv_syncer = mail_serv.syncer:syncer_service

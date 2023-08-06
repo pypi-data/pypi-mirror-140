@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: mail_serv
+Version: 0.7.1.dev1
+Summary: Mail Service
+Home-page: https://github.com/random-python/mail_serv
+Author: Andrei Pozolotin
+Author-email: andrei.pozolotin@gmail.com
+License: Apache-2
+Keywords: systemd,dovecot,postfix,getmail,tinc
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+
+## mail_serv
+
+[![Travis Status][travis_icon]][travis_link]
+[![Package Version][pypi_icon]][pypi_link]
+[![Python Versions][python_icon]][python_link]
+
+### Install
+
+To install python package:
+
+```
+sudo pip install mail_serv
+```
+
+[travis_icon]: https://travis-ci.org/random-python/mail_serv.svg?branch=master
+[travis_link]: https://travis-ci.org/random-python/mail_serv/builds
+
+[pypi_icon]: https://badge.fury.io/py/mail-serv.svg
+[pypi_link]: https://pypi.python.org/pypi/mail-serv
+
+[python_icon]: https://img.shields.io/pypi/pyversions/mail_serv.svg
+[python_link]: https://pypi.python.org/pypi/mail-serv
+
+[tokei_icon]: https://tokei.rs/b1/github/random-python/mail_serv
+[tokei_link]: https://github.com/random-python/mail_serv/tree/master/src
+
+
+
