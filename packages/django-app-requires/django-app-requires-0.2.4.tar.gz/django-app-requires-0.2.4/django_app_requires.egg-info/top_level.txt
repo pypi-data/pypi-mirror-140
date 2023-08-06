@@ -1,0 +1,2 @@
+django_app_requires
+django_app_requires_example

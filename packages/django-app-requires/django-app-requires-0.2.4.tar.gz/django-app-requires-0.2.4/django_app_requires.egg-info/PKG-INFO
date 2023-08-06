@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: django-app-requires
+Version: 0.2.4
+Summary: A simple tools auto add app extra requires.
+Home-page: https://github.com/zencore-cn/zencore-issues
+Author: zencore
+Author-email: dobetter@zencore.cn
+License: MIT
+Description: # django-app-requires
+        
+        A simple tools auto add app extra requires.
+        
+        ## Install
+        
+        ```
+        pip install django-app-requires
+        ```
+        
+        ## Usage
+        
+        **your_app/\_\_init\_\_.py**
+        
+        ```
+        app_requires = [
+            "your",
+            "required",
+            "apps",
+        ]
+        ```
+        
+        **pro/settings**
+        
+        ```
+        
+        INSTALLED_APPS = [
+            ...
+            'your_app',
+            'django_app_requires',
+            ...
+        ]
+        
+        from django_app_requires import add_requires
+        INSTALLED_APPS = add_requires(INSTALLED_APPS)
+        
+        # so the final INSTALLED_APPS = [
+        #     "your",
+        #     "required",
+        #     "apps",
+        #     "your_app",
+        #     "django_app_requires",
+        # ]
+        
+        ```
+        
+        1. If your django application requires extra application, then add `app_requires = ["your", "required", "apps"]` in the `app/__init__.py` file.
+        2. In project using your application, add following code to the `pro/settings.py` after `INSTALLED_APPS`.
+            ```
+            from django_app_requires import add_requires
+            INSTALLED_APPS = add_requires(INSTALLED_APPS)
+            ```
+        
+        
+        ## Releases
+        
+        
+        | Version | Released Time | Content                                                    | Notice |
+        | ------ | ---------- | ---------------------------------------------------------------- | ---- |
+        | v0.1.0 | 2020/09/23 | 1. First release. | |
+        | v0.1.1 | 2020/09/25 | 2. Add fastutils & magic-import in requirements.txt.<br />3. Fix problems of recursive required. | |
+        | v0.2.0 | 2020/10/25 | 4. Add collect_requirements function. | **Removed** |
+        | v0.2.1 | 2020/10/26 | 5. Don't scan all app, exclude third-part apps.<br />6. Suggest to use collect_requirements command before doing project package. | |
+        | v0.2.2 | 2020/10/26 | 7. Output sorting. | |
+        | v0.2.3 | 2021/04/12 | 8. Remove collect_requirements command.<br />9. Test with Django 3.2. | |
+        | v0.2.4 | 2021/06/09 | 10. We are not care about Django's version and fastutils' version, so let the end user to choose the version. | |
+        
+Keywords: django utils
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
