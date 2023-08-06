@@ -1,0 +1,12 @@
+License
+README.md
+pyproject.toml
+setup.cfg
+man/dcmp.1.gz
+src/dcmp/__init__.py
+src/dcmp/main.py
+src/pnu_dcmp.egg-info/PKG-INFO
+src/pnu_dcmp.egg-info/SOURCES.txt
+src/pnu_dcmp.egg-info/dependency_links.txt
+src/pnu_dcmp.egg-info/entry_points.txt
+src/pnu_dcmp.egg-info/top_level.txt
