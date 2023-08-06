@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cv-data
+Version: 0.0.3
+Summary: Utils for computer vision datasets
+Home-page: https://github.com/DIYer22/cv_data
+Author: DIYer22
+Author-email: ylxx@live.com
+License: UNKNOWN
+Description: Utils for computer vision datasets
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
