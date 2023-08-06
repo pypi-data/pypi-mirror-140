@@ -1,0 +1,4 @@
+tinycss2
+html5lib
+markdown
+python-magic
