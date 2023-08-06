@@ -1,0 +1,36 @@
+[dependencies]
+num-complex = "0.4"
+serde = "1.0"
+thiserror = "1.0"
+
+[dependencies.pyo3]
+features = ["num-complex"]
+version = "0.16"
+
+[dependencies.qoqo_calculator]
+path = "local_dependencies/qoqo_calculator"
+version = "0.7"
+
+[features]
+default = ["extension-module"]
+extension-module = ["pyo3/extension-module"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "qoqo_calculator_pyo3"
+path = "src/lib.rs"
+
+[package]
+authors = ["HQS Quantum Simulations <info@quantumsimulations.de>"]
+description = "Python interface to qoqo calculator, the calculator backend of the qoqo quantum computing toolkit by HQS Quantum Simulations"
+edition = "2018"
+include = ["src*", "qoqo_calculator_pyo3", "LICENSE", "pyproject.toml", "README.md"]
+license = "Apache-2.0"
+name = "qoqo_calculator_pyo3"
+readme = "README.md"
+repository = "https://github.com/HQSquantumsimulations/qoqo_calculator_pyo3"
+version = "0.7.0"
+[package.metadata.maturin]
+maintainer = "HQS Quantum Simulations GmbH"
+maintainer-email = "info@quantumsimulations.de"
+requires-python = ">=3.7"
