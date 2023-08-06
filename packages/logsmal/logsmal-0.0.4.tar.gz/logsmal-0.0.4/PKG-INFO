@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: logsmal
+Version: 0.0.4
+Summary: Создание файлов конфигураци
+Home-page: https://github.com/denisxab/logsmal.git
+Author: Denis Kustov
+Author-email: denis-kustov@rambler.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Project-URL: Documentation, https://logsmal.readthedocs.io/ru/latest/index.html
+Project-URL: Repository, https://github.com/denisxab/logsmal.git
+Description-Content-Type: text/markdown
+
+## Использование
+
+```python
+from logsmal import logger
+
+logger.success("Программа запущена", flag="RUN")
+```
+
+Создать кастомный логгер. Посмотрите все доступные аргменты :meth:`logsmal.loglevel.__init__()`
+
+```python
+from logsmal import loglevel, logger, CompressionLog
+
+logger.MyLogger = loglevel(
+    level="[melogger]",
+    fileout="./log/mylog.log",
+    max_size_file="10kb",
+    console_out=False,
+    compression=CompressionLog.zip_file
+)
+```
