@@ -1,0 +1,18 @@
+progressbar2
+numpy
+spatialist>=0.10.1
+pyyaml
+requests
+psycopg2
+SQLAlchemy>=1.4
+SQLAlchemy-Utils>=0.37
+GeoAlchemy2
+
+#Testing requirements
+pytest
+
+#Documentation requirements
+sphinx
+sphinxcontrib-bibtex
+sphinxcontrib-svg2pdfconverter
+cairosvg

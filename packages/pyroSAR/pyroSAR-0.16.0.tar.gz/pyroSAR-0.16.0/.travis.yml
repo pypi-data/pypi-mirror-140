@@ -1,0 +1,66 @@
+dist: focal
+language: python
+sudo: required
+cache:
+  directories:
+    - ~/.cache/pip
+
+env:
+  global:
+    - PIP_WHEEL_DIR=$HOME/.cache/pip/wheels
+    - PIP_FIND_LINKS=file://$HOME/.cache/pip/wheels
+    - TESTDATA_DIR=$HOME/testdata
+    - PGUSER=travis
+    - PGPORT=5433
+    - PGPASSWORD=Password12!
+    - SNAP_VERSION=8
+
+addons:
+  postgresql: '12'
+  apt:
+    sources:
+      - sourceline: 'ppa:ubuntugis/ppa'
+    packages:
+      - libgdal-dev
+      - gdal-bin
+      - libsqlite3-mod-spatialite
+      - libproj-dev
+      - python3-dev
+      - postgresql-12-postgis-3
+
+services:
+  - postgresql
+
+python:
+  - '3.7'
+
+before_install:
+  - export SNAP_INSTALLER=esa-snap_sentinel_unix_"$SNAP_VERSION"_0.sh
+  - wget -O $SNAP_INSTALLER https://step.esa.int/downloads/"$SNAP_VERSION".0/installers/"$SNAP_INSTALLER"
+  - bash $SNAP_INSTALLER -q
+  - export PATH=$PATH:/opt/snap/bin
+
+install:
+  - pip install --ignore-installed six certifi # install packages inside the venv if the system version is too old
+  - pip install numpy
+  - pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="$(gdal-config --cflags)"
+  - pip install -r requirements-dev.txt
+  - pip install coveralls coverage
+  - python setup.py install
+
+#before_script:
+#  - travis_wait 40 . ./pyroSAR/install/download_testdata.sh
+
+before_script:
+  - psql -U $PGUSER -c 'create database travis_ci_test'
+  - psql -U $PGUSER -c "create extension if not exists postgis"
+  - psql -U $PGUSER -c "alter user ${PGUSER} password '${PGPASSWORD}'"
+
+script:
+  - coverage run -m pytest
+
+after_success:
+  - coveralls
+
+notifications:
+  slack: pyrosar:bs03zodEkRSYr8MN5HrgfSeB

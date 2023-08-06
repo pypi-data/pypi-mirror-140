@@ -1,0 +1,24 @@
+name: ps_test_dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - progressbar2
+  - numpy
+  - spatialist>=0.10.1
+  - pyyaml
+  - requests
+  - psycopg2
+  - sqlalchemy>=1.4
+  - sqlalchemy-utils>=0.37
+  - geoalchemy2
+  - coveralls
+  - coverage
+  - pytest
+  - sphinx
+  - sphinxcontrib-bibtex>=2.2
+  - pip
+  - cairosvg
+  - gdal>=2.4
+  - pip:
+      - sphinxcontrib-svg2pdfconverter
