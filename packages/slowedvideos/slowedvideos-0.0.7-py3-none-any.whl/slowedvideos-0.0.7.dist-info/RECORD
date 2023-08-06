@@ -1,0 +1,14 @@
+slowedvideos/__init__.py,sha256=m8ZQfYuqIV_u9ppeWzaPB_kFxJiYkjpygPJtOYTNJlA,247
+slowedvideos/downloadurl/downloadurl.py,sha256=XqJseB8X_Vv5sWtzdnnlEids3rJTB6LkK_LQ-_pl5mo,492
+slowedvideos/exportvideo/exportvideo.py,sha256=hd3isl543MFTzGATm5DyvIm86Yyo0EEL8iOfDF58Gow,614
+slowedvideos/makeimages/Roboto-Black.ttf,sha256=LjN2g2L9NX54HQFnDbHSJt-0hMbyt2nzt5hGnuH4KtY,168060
+slowedvideos/makeimages/Roboto-Bold.ttf,sha256=uvRM6BY2zJJ_wndoQ35dqFO6xpnoqvgy0ELw3-0ptLQ,167336
+slowedvideos/makeimages/Roboto-Light.ttf,sha256=KDWzWKqqMp-aS7R5NslmhyAsokd0ouHHglGllvKwH6U,167000
+slowedvideos/makeimages/makeimages.py,sha256=2ZX-HqR8XQXpMvVs4O6kojspKYk4uvR3nVrgYbAwYzk,3010
+slowedvideos/makeslowed/makeslowed.py,sha256=J7jQxkEGDhsolpO2dOy4QQNJMtoRdNhV4_VTwVWeAFs,1113
+slowedvideos/makeslowed/TAL-Reverb-4.vst3/Contents/x86_64-linux/TAL-Reverb-4.so,sha256=osXkN38qWx0ZKdQCBMK-87-J4gGurwstxH42RVCBhM4,5528144
+slowedvideos-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+slowedvideos-0.0.7.dist-info/METADATA,sha256=OqYsYWS6ttLO9Ld_GBqsk1tsTSVR5op8YqGUG1nPAQQ,569
+slowedvideos-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+slowedvideos-0.0.7.dist-info/top_level.txt,sha256=bMsOW2bvJsWFr7ggBGNSpT1e4G2sKyKrSMzn_o-nSWg,13
+slowedvideos-0.0.7.dist-info/RECORD,,
