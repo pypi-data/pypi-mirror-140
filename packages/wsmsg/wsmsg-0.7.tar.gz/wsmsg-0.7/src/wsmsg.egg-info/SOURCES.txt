@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/wsmsg/__init__.py
+src/wsmsg/__main__.py
+src/wsmsg/client.py
+src/wsmsg/common.py
+src/wsmsg/server.py
+src/wsmsg.egg-info/PKG-INFO
+src/wsmsg.egg-info/SOURCES.txt
+src/wsmsg.egg-info/dependency_links.txt
+src/wsmsg.egg-info/requires.txt
+src/wsmsg.egg-info/top_level.txt
