@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+readme.txt
+setup.py
+commandlinetools/__init__.py
+commandlinetools.egg-info/PKG-INFO
+commandlinetools.egg-info/SOURCES.txt
+commandlinetools.egg-info/dependency_links.txt
+commandlinetools.egg-info/top_level.txt

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: commandlinetools
+Version: 0.0.1
+Summary: Simplified commands and shortcuts for python Command Line tool
+Home-page: UNKNOWN
+Author: EmeraldRaidz
+Author-email: raidzemerald@gmail.com
+License: MIT
+Keywords: command_line
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+CommandLine tools and shortcuts for python 3
+
+Change Log
+
+0.0.01 (3/2/2022)
+-------------------
+-First Release
+
