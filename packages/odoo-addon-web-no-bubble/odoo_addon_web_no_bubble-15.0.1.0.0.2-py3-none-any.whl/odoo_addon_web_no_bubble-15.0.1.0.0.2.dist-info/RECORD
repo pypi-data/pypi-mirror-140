@@ -1,0 +1,17 @@
+odoo/addons/web_no_bubble/README.rst,sha256=sdvK7XX_MezHEzuGbyqFH9DL_KOeHRjnRQeQelGCpKM,2762
+odoo/addons/web_no_bubble/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_no_bubble/__manifest__.py,sha256=cAQxRfGOlZ-SF268Mlc-FIcNW6ZhZw57dEu8EWvFaCU,654
+odoo/addons/web_no_bubble/i18n/es.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_no_bubble/i18n/fr_FR.po,sha256=7OS0i_hHpy_iqV0Xh9GjiAVRLl86sC_rH-7NXGLjltM,413
+odoo/addons/web_no_bubble/i18n/hr.po,sha256=CtxlYYY9EkdkX-TETE4vxeeirjqwXL9Be48wW9WrUJo,488
+odoo/addons/web_no_bubble/i18n/web_no_bubble.pot,sha256=BIyTShSvBhiJMqh2td4QGlxB8SDDzDZd0Pqu6WZgBR8,341
+odoo/addons/web_no_bubble/i18n/zh_CN.po,sha256=O6S1odG4VnhHhe2vRMzBxvED5_6LJ6-xYu--1IUrnuw,409
+odoo/addons/web_no_bubble/readme/CONTRIBUTORS.rst,sha256=HY03m4x2QFYi-rRguWm6HioFYWAnTf9wWR9fpuJViZI,198
+odoo/addons/web_no_bubble/readme/DESCRIPTION.rst,sha256=GaylycqzCmmk6n5ifdqNTmUn8FN7Q9Hguj2gkIztUGk,126
+odoo/addons/web_no_bubble/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_no_bubble/static/description/index.html,sha256=5AI4hrneJJoIGI3khJm24AVixPtCJDpNE4mGWGOgT-w,12143
+odoo/addons/web_no_bubble/static/src/css/web_no_bubble.scss,sha256=-uivRySCSkFiAKjusHlgp3jBWY3Ra0tUXbouoQPBLak,63
+odoo_addon_web_no_bubble-15.0.1.0.0.2.dist-info/METADATA,sha256=_TvCo_s5OwxNds96fK0xJKRanP3AKjtgadXryW2Atsw,3314
+odoo_addon_web_no_bubble-15.0.1.0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo_addon_web_no_bubble-15.0.1.0.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_web_no_bubble-15.0.1.0.0.2.dist-info/RECORD,,
