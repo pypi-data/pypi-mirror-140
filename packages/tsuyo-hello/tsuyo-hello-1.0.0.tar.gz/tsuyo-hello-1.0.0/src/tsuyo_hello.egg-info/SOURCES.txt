@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/hello/__init__.py
+src/hello/__main__.py
+src/hello/helloserver.py
+src/tsuyo_hello.egg-info/PKG-INFO
+src/tsuyo_hello.egg-info/SOURCES.txt
+src/tsuyo_hello.egg-info/dependency_links.txt
+src/tsuyo_hello.egg-info/top_level.txt
