@@ -1,0 +1,13 @@
+pywinpty-2.0.3.dist-info/METADATA,sha256=uHm_SwY065zGB22CDg43JZTPgIZuw4Dx0n9Qi23qC4Y,5755
+pywinpty-2.0.3.dist-info/WHEEL,sha256=oY2mDBziP8z6yvQSdiZR9gV5Aet1Ul3ppgG6araN2lY,95
+winpty/enums.py,sha256=fhHvBfb0ciVR2XsAiBn67Q-zNDlUGvakqlyZ2XRicig,1859
+winpty/ptyprocess.py,sha256=a-stZbYlnHCpwnZGw9Pw-AciaSPs4CxfzTEX7XSx_6U,11943
+winpty/tests/test_pty.py,sha256=PqZPzzZqfdABi_eW0KFVkDdSd8uskPtUKHj0Lw7uPIA,3725
+winpty/tests/test_ptyprocess.py,sha256=NhA5cmckbnrJMMAWiuB3X126_iFI-RP0ZSaRbK3xL5w,6217
+winpty/tests/__init__.py,sha256=fzb9cDnPt2R3b_rWh6sqDgIbiQOZtBlfsV1aq-ULT2Q,53
+winpty/winpty-agent.exe,sha256=REZ6g9hrYSe8e4duiy-zP6df3gnZuf8nx_jvhLqWmyk,2627338
+winpty/winpty.dll,sha256=UXfzIarC-oVDbdbsa_xtQUWdJfW1M6oDNJ71E0YbTHk,2509089
+winpty/winpty.pyi,sha256=CAFZIWyBAGwV-2pekJUF5ft6uxRwFo-5n0UGEbiToRE,1418
+winpty/__init__.py,sha256=laTi9sLjCLycyaQYO3wMvhZNIK2vh_pOvGTJT2Od4Qs,402
+winpty/winpty.cp38-win_amd64.pyd,sha256=SF4Ti5k32OUg_V0Tat3IAd35BoBuTj2Qq29XQboxQew,502784
+pywinpty-2.0.3.dist-info/RECORD,,
