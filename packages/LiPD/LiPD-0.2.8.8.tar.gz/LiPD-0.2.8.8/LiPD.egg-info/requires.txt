@@ -1,0 +1,7 @@
+bagit
+demjson3
+xlrd
+numpy
+pandas
+requests
+sip
