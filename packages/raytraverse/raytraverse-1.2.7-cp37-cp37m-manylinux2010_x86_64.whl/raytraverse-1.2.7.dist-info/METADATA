@@ -1,0 +1,189 @@
+Metadata-Version: 2.1
+Name: raytraverse
+Version: 1.2.7
+Summary: adaptive sampling for CBDM
+Home-page: https://github.com/stephanwaz/raytraverse
+Author: Stephen Wasilewski
+Author-email: stephanwaz@gmail.com
+License: Mozilla Public License 2.0 (MPL 2.0)
+Keywords: raytraverse
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: clasp
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: skyfield
+Requires-Dist: clipt
+Requires-Dist: pybind11
+Requires-Dist: shapely
+Requires-Dist: sklearn
+
+===================
+raytraverse (1.2.7)
+===================
+
+.. image:: https://img.shields.io/pypi/v/raytraverse?style=flat-square
+    :target: https://pypi.org/project/raytraverse
+    :alt: PyPI
+
+.. image:: https://img.shields.io/pypi/l/raytraverse?style=flat-square
+    :target: https://www.mozilla.org/en-US/MPL/2.0/
+    :alt: PyPI - License
+
+.. image:: https://img.shields.io/readthedocs/raytraverse/stable?style=flat-square
+    :target: https://raytraverse.readthedocs.io/en/stable/
+    :alt: Read the Docs (version)
+
+.. image:: https://img.shields.io/travis/com/stephanwaz/raytraverse?style=flat-square
+    :target: https://travis-ci.com/github/stephanwaz/raytraverse/builds
+    :alt: Travis (.com)
+
+.. image:: https://img.shields.io/coveralls/github/stephanwaz/raytraverse?style=flat-square
+    :target: https://coveralls.io/github/stephanwaz/raytraverse
+    :alt: Coveralls github
+
+.. image:: https://zenodo.org/badge/doi/10.5281/zenodo.4091318.svg
+   :target: https://zenodo.org/badge/latestdoi/296295567
+
+raytraverse is a complete workflow for climate based daylight modelling,
+simulation, and evaluation of architectural spaces. Built around a wavelet
+guided adaptive sampling strategy, raytraverse can fully explore the daylight
+conditions throughout a space with efficient use of processing power and
+storage space.
+
+* Free software: Mozilla Public License 2.0 (MPL 2.0)
+* Documentation: https://raytraverse.readthedocs.io/en/latest/.
+
+
+Installation
+------------
+The easiest way to install raytraverse is with pip::
+
+    pip install --upgrade pip setuptools wheel
+    pip install raytraverse
+
+or if you have cloned this repository::
+
+    cd path/to/this/file
+    pip install .
+
+Usage
+-----
+raytraverse includes a complete command line interface with all commands
+nested under the `raytraverse` parent command enter::
+
+    raytraverse --help
+
+raytraverse also exposes an object oriented API written primarily in python.
+calls to Radiance are made through Renderer objects that wrap the radiance
+c source code in c++ classes, which are made available in python with pybind11.
+see the src/ directory for more.
+
+For complete documentation of the API and the command line interface either
+use the Documentation link included above or::
+
+    pip install -r docs/requirements.txt
+    make docs
+
+to generate local documentation.
+
+Getting Started
+---------------
+
+the following example script shows the basic workflow for a complete simulation
+it can be saved to a local file with::
+
+    raytraverse examplescript > example.py
+
+or the file is located at raytraverse/example.py
+
+
+
+=======
+History
+=======
+
+1.2.4 (2021-12-03) (not posted until 2022-02-10)
+------------------------------------------------
+
+* organized command line code
+* use process pool for sun sampler when raytracing is fast (such as -ab 0 runs with dcomp)
+* propogate plotp to child sampler if sampling one level
+* separated utility command line to own entry point. fixed ambiguity in
+  coordinate handedness of some functions (changed kwarg defaults)
+
+1.2.3 (2021-09-03)
+------------------
+
+ * fixed rcontrib to work with Radiance/HEAD, radiance version string includes commit
+ * daylightplane - add indirect to -ab 0 sun run (daysim/5-phase style)
+ * lightpointkd - handle adding points with same sample rays
+ * sampler - add repeat function to follow an existing sampling scheme
+ * lightresult - added print function
+ * scene - remove logging from scene class
+ * cli.py
+    * new command imgmetric, extract rays from image and use same metricfuncs
+    * mew command pull, filter and output 2d data frames from lightresult
+    * add printdata option to suns, to see candidates or border
+ * make TStqdm progress bar class public
+ * include PositionIndex calculation in BaseMetricSet
+     * new metrics: loggcr and position weighted luminance/gcr
+ * skymapper: filter candidates by positive dirnorm when initialized with epw/wea
+ * imagetools: parallel process image metrics, also normalize peak with some
+    assumptions
+ * lightresult: accept slices for findices argument
+ * sunsamplerpt: at second and thrid sampling levels supplement sampling with
+    spec_guide at 1/100 the threshold. helps with imterior spaces to find smaller
+    patches of sun
+ * positionindex: fix bug transcribed from evalglare with the positionindex below horizon
+
+
+1.2.0/2 (2021-05-24)
+--------------------
+* command line interface development
+
+1.1.2 (2021-02-19)
+------------------
+* improved documentation
+
+1.1.0/1 (2021-02-10)
+--------------------
+* refactor code to operate on a single point at a time
+
+1.0.4 (2020-11-18)
+------------------
+* create and manage log file (attribute of Scene) for run directories
+* possible fix for bug in interpolate_kd resulting in index range errors
+* protect imports in cli.py so documentation can be built without installing
+
+1.0.3 (2020-11-10)
+------------------
+* new module for calculating position based on retinal features
+* view specifications for directview plotting
+* options for samples/weight visibility on directview plotting
+
+0.2.0 (2020-09-25)
+------------------
+
+* Build now includes all radiance dependencies to setup multi-platform testing
+* In the absence of craytraverse, sampler falls back to SPRenderer
+* install process streamlined for developer mode
+* travis ci deploys linux and mac wheels directly to pypi
+* release.sh should be run after updating this file, tests past locally and
+    docs build.
+
+0.1.0 (2020-05-19)
+------------------
+
+* First release on PyPI.
+
+
