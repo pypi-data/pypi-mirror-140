@@ -1,0 +1,2 @@
+[console_scripts]
+dragonn = dragonn.__init__:main
