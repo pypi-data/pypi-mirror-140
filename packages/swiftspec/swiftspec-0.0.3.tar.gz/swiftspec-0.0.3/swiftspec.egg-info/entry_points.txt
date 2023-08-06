@@ -1,0 +1,3 @@
+[fsspec.specs]
+swift = swiftspec.SWIFTFileSystem
+

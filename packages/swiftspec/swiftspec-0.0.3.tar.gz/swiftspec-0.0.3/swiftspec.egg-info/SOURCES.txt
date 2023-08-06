@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+swiftspec/__init__.py
+swiftspec/_version.py
+swiftspec/core.py
+swiftspec.egg-info/PKG-INFO
+swiftspec.egg-info/SOURCES.txt
+swiftspec.egg-info/dependency_links.txt
+swiftspec.egg-info/entry_points.txt
+swiftspec.egg-info/requires.txt
+swiftspec.egg-info/top_level.txt
+test/test_swiftfilesystem.py
+test/test_swiftref.py
