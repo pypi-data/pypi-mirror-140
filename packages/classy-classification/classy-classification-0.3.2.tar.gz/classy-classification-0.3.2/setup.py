@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['classy_classification',
+ 'classy_classification.classifiers',
+ 'classy_classification.examples']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['scikit-learn>=1.0,<2.0',
+ 'sentence-transformers>=2.0,<3.0',
+ 'spacy[transformers]>=3.0,<4.0']
+
+setup_kwargs = {
+    'name': 'classy-classification',
+    'version': '0.3.2',
+    'description': 'This repository contains an easy and intuitive approach to zero and few-shot text classification using sentence-transformers, huggingface or word embeddings within a Spacy pipeline.',
+    'long_description': '# Classy few shot classification\nThis repository contains an easy and intuitive approach to zero and few-shot text classification using sentence-transformers, huggingface or word embeddings within a Spacy pipeline.\n \n# Why?\n[Huggingface](https://huggingface.co/) does offer some nice models for few/zero-shot classification, but these are not tailored to multi-lingual approaches. Rasa NLU has [a nice approach](https://rasa.com/blog/rasa-nlu-in-depth-part-1-intent-classification/) for this, but its too embedded in their codebase for easy usage outside of Rasa/chatbots. Additionally, it made sense to integrate [sentence-transformers](https://github.com/UKPLab/sentence-transformers) and [Hugginface zero-shot](https://huggingface.co/models?pipeline_tag=zero-shot-classification), instead of default [word embeddings](https://arxiv.org/abs/1301.3781). Finally, I decided to integrate with Spacy, since training a custom [Spacy TextCategorizer](https://spacy.io/api/textcategorizer) seems like a lot of hassle if you want something quick and dirty. \n\n# Install\n``` pip install classy-classification```\n\n# Quickstart\nTake a look at the examples directory. Use data from any language. And choose a model from  [sentence-transformers](https://www.sbert.net/docs/pretrained_models.html) or from [Hugginface zero-shot](https://huggingface.co/models?pipeline_tag=zero-shot-classification).\n\n```import spacy\nimport classy_classification\n\n\ndata = {\n    "furniture": ["This text is about chairs.",\n               "Couches, benches and televisions.",\n               "I really need to get a new sofa."],\n    "kitchen": ["There also exist things like fridges.",\n                "I hope to be getting a new stove today.",\n                "Do you also have some ovens."]\n}\n\nnlp = spacy.blank("en")\n\nclassification_type = "spacy_few_shot"\nif classification_type == "spacy_few_shot":\n    nlp.add_pipe("text_categorizer", \n        config={"data": data, "model": "spacy"}\n    ) \nelif classification_type == "sentence_transformer_few_shot":\n    nlp.add_pipe("text_categorizer", \n        config={"data": data, "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"}\n    ) \nelif classification_type == "huggingface_zero_shot":\n    nlp.add_pipe("text_categorizer", \n        config={"data": list(data.keys()), "cat_type": "zero", "model": "facebook/bart-large-mnli"}\n    )\n\nprint(nlp(\\"I am looking for kitchen appliances.\\")._.cats)\nprint([doc._.cats for doc in nlp.pipe([\\"I am looking for kitchen appliances.\\"])])\n```\n\n# Credits\n## Inspiration Drawn From\n- [Scikit-learn](https://github.com/scikit-learn/scikit-learn)\n- [Rasa NLU](https://github.com/RasaHQ/rasa) \n- [Sentence Transformers](https://github.com/UKPLab/sentence-transformers)\n- [Spacy](https://github.com/explosion/spaCy)\n\n## Or buy me a coffee\n[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/98kf2552674)\n\n\n# More examples\n## Some quick and dirty training data.\n``` \ntraining_data = {\n    "politics": [\n        "Putin orders troops into pro-Russian regions of eastern Ukraine.",\n        "The president decided not to go through with his speech.",\n        "There is much uncertainty surrounding the coming elections.",\n        "Democrats are engaged in a ‘new politics of evasion’."\n    ],\n    "sports": [\n        "The soccer team lost.",\n        "The team won by two against zero.",\n        "I love all sport.",\n        "The olympics were amazing.",\n        "Yesterday, the tennis players wrapped up wimbledon."\n    ],\n    "weather": [\n        "It is going to be sunny outside.",\n        "Heavy rainfall and wind during the afternoon.",\n        "Clear skies in the morning, but mist in the evenening.",\n        "It is cold during the winter.",\n        "There is going to be a storm with heavy rainfall."\n    ]\n}\n\nvalidation_data = [\n    "I am surely talking about politics.",\n    "Sports is all you need.",\n    "Weather is amazing."\n]\n```\n\n## internal spacy word2vec embeddings\n```\nimport spacy\nimport classy_classification\n\nnlp = spacy.load("en_core_web_md") \nnlp.add_pipe("text_categorizer", config={"data": training_data, "model": "spacy"}) #use internal embeddings from spacy model\nprint(nlp(validation_data[0])._.cats)\nprint([doc._.cats for doc in nlp.pipe(validation_data)])\n```\n\n\n## using as an individual sentence-transformer\n```\nfrom classy_classification import classyClassifier\n\nclassifier = classyClassifier(data=training_data)\nclassifier(validation_data[0])\nclassifier.pipe(validation_data)\n\n# overwrite training data\nclassifier.set_training_data(data=new_training_data)\n\n# overwrite [embedding model](https://www.sbert.net/docs/pretrained_models.html)\nclassifier.set_embedding_model(model="paraphrase-MiniLM-L3-v2")\n\n# overwrite SVC config\nclassifier.set_svc(\n    config={                              \n        "C": [1, 2, 5, 10, 20, 100],\n        "kernels": ["linear"],                              \n        "max_cross_validation_folds": 5\n    }\n)\n```\n\n## external sentence-transformer within spacy pipeline for few-shot\n```\nimport spacy\nimport classy_classification\n\nnlp = spacy.blank("en")\nnlp.add_pipe("text_categorizer", config={"data": training_data}) #\nprint(nlp(validation_data[0])._.cats)\nprint([doc._.cats for doc in nlp.pipe(validation_data)])\n```\n\n## external hugginface model within spacy pipeline for zero-shot\n```\nimport spacy\nimport classy_classification\n\nnlp = spacy.blank("en")\nnlp.add_pipe("text_categorizer", config={"data": training_data, "cat_type": "zero"}) #\nprint(nlp(validation_data[0])._.cats)\nprint([doc._.cats for doc in nlp.pipe(validation_data)])\n```\n\n# Todo\n\n[ ] look into a way to integrate spacy trf models.\n[ ] multiple clasifications datasets for a single input e.g. emotions and topic.\n',
+    'author': 'David Berenstein',
+    'author_email': 'david.berenstein@pandoraintelligence.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/davidberenstein1957/classy-classification',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
