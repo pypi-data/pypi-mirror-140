@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fancy-abak
+Version: 0.7.0
+Summary: UNKNOWN
+Home-page: https://fancywhale.ca/
+Author: Gui Martins
+Author-email: gmartins@fancywhale.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: tabulate (>=0.8.9)
+Requires-Dist: iterfzf (>=0.5.0.20.0)
+Requires-Dist: PyYAML (>=5.4.1)
+Requires-Dist: click-keyring (>=0.2.1)
+
+UNKNOWN
+
