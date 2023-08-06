@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: fragmentation-nx
+Version: 0.2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Rust
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-benchmark; extra == 'test'
+Requires-Dist: networkx; extra == 'test'
+Provides-Extra: test
+Summary: Graph-theoretic fragment generation
+Author-email: Harry Zhang <zhanghar@iu.edu>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Fragmentation-nx
+
+[![PyPI version](https://img.shields.io/pypi/v/fragmentation-nx.svg)](https://pypi.org/project/fragmentation-nx)
+[![DOI:10.1021/acs.jctc.8b00186](https://zenodo.org/badge/DOI/10.1021/acs.jctc.8b00186.svg)](https://doi.org/10.1021/acs.jctc.8b00186)
+
+Graph-theoretic fragment generation with weight calculation, given a set of nodes. The algorithms are implemented in Rust, and a Python binding is provided through [PyO3](https://pyo3.rs).
+
+
+### Install
+
+```Bash
+pip install fragmentation-nx
+```
+
+Check out example usage in [example.py](example.py).
+
+
+### Compile and install from source
+
+Install the build dependencies: [Rust](https://rustup.rs) and [maturin](https://github.com/PyO3/maturin)
+
+```Bash
+make dev
+```
+
+### Build Python wheels and release to PyPI
+
+GitHub Action automate build and distribution for all supported Python versions. See [.github/workflows/build-release.yml](.github/workflows/build-release.yml).
+
