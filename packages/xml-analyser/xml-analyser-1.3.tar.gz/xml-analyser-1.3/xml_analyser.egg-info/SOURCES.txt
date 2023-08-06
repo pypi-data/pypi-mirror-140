@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+xml_analyser/__init__.py
+xml_analyser/cli.py
+xml_analyser.egg-info/PKG-INFO
+xml_analyser.egg-info/SOURCES.txt
+xml_analyser.egg-info/dependency_links.txt
+xml_analyser.egg-info/entry_points.txt
+xml_analyser.egg-info/requires.txt
+xml_analyser.egg-info/top_level.txt

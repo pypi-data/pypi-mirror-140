@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        xml-analyser=xml_analyser.cli:main
+    
