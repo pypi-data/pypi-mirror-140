@@ -1,0 +1,17 @@
+[dependencies.cutters]
+path = "local_dependencies/cutters"
+version = "*"
+
+[dependencies.pyo3]
+features = ["extension-module"]
+version = "0.16.0"
+
+[lib]
+crate-type = ["cdylib"]
+name = "cutters"
+
+[package]
+authors = ["cyanic-selkie <cyanic-selkie@protonmail.com>"]
+edition = "2021"
+name = "cutters-python"
+version = "0.1.3"
