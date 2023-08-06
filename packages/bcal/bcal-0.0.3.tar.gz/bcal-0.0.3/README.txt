@@ -1,0 +1,1 @@
+This is a basic calculator for performing arithmetic operations.
