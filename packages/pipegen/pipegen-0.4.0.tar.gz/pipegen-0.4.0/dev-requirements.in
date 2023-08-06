@@ -1,0 +1,12 @@
+-r requirements.txt
+
+pylint
+mypy
+pytest
+pytest-cov
+isort
+black
+
+boto3-stubs[cloudformation]
+typing-extensions
+types-setuptools

@@ -1,0 +1,5 @@
+cfn-sync>=0.0.9
+boto3
+strictyaml
+jinja2>=2.0.0
+click>=7.0.0

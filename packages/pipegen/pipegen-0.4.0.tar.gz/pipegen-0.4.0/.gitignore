@@ -1,0 +1,6 @@
+.coverage
+.eggs
+.mypy_cache
+.pytest_cache
+pipegen.egg-info
+htmlcov
