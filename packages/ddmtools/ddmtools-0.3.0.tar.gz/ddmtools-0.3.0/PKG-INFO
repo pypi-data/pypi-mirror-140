@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ddmtools
+Version: 0.3.0
+Summary: A Python library for doing differential dynamic microscopy on polydisperse samples
+Home-page: https://github.com/JeppeKlitgaard/DDMTools
+License: MIT
+Keywords: ddm,microscopy,physics,fluids
+Author: Jeppe Klitgaard
+Author-email: jk782@cam.ac.uk
+Requires-Python: >=3.7.1,<3.10
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Typing :: Typed
+Requires-Dist: Pillow (>=8.4.0,<9.0.0)
+Requires-Dist: colorcet (>=3.0.0,<4.0.0)
+Requires-Dist: ipywidgets (>=7.6.5,<8.0.0)
+Requires-Dist: joblib (>=1.1.0,<2.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: lmfit (>=1.0.3,<2.0.0)
+Requires-Dist: matplotlib (>=3.4.3,<4.0.0)
+Requires-Dist: numba (>=0.55.1,<0.56.0)
+Requires-Dist: numdifftools (>=0.9.40,<0.10.0)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: opencv-python
+Requires-Dist: pandas (>=1.3.4,<2.0.0)
+Requires-Dist: statsmodels (>=0.13.1,<0.14.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
+Requires-Dist: typing-extensions (>=4.1.1,<5.0.0)
+Requires-Dist: uncertainties (>=3.1.6,<4.0.0)
+Project-URL: Repository, https://github.com/JeppeKlitgaard/DDMTools
