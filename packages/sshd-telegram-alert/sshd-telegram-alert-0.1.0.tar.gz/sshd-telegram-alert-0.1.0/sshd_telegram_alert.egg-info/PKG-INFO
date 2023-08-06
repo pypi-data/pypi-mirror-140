@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: sshd-telegram-alert
+Version: 0.1.0
+Summary: Python telegram bot alert when someone login into server via SSH
+Home-page: https://github.com/nanih98/sshd-telegram-alert?ref=develop
+Author: shadowrookie
+Author-email: devopstech253@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# (BETA) python-telegram-bot
+Alerts to telegram group (with a bot), when someone logs in to a server via ssh
+
+# Work in progres
+
+## How to get your telegram_token and CHAT_ID
+**in progress**  
+....  
+....  
+....  
+
+

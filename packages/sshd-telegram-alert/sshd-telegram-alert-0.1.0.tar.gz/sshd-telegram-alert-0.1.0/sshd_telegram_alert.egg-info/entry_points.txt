@@ -1,0 +1,3 @@
+[console_scripts]
+sshd-telegram-alert = sshd_telegram_alert.__main__:main
+
