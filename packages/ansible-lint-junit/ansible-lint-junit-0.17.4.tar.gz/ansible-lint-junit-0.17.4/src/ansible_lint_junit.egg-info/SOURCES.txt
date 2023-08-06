@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/ansible_lint_junit/__init__.py
+src/ansible_lint_junit/main.py
+src/ansible_lint_junit/version.py
+src/ansible_lint_junit.egg-info/PKG-INFO
+src/ansible_lint_junit.egg-info/SOURCES.txt
+src/ansible_lint_junit.egg-info/dependency_links.txt
+src/ansible_lint_junit.egg-info/entry_points.txt
+src/ansible_lint_junit.egg-info/requires.txt
+src/ansible_lint_junit.egg-info/top_level.txt
