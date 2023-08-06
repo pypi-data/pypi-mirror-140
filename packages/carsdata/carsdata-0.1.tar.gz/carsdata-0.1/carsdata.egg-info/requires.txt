@@ -1,0 +1,9 @@
+numpy
+pymcr
+matplotlib
+
+[test]
+pytest
+
+[torch]
+pytorch
