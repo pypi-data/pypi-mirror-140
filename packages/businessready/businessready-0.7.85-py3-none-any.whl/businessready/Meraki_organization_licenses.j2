@@ -1,0 +1,172 @@
+{%- if filetype_loop == 0 %}Activation Date,Claim Date,Device Serial Number,Duration In Days,Expiration Date,ID,License Key,License Type,Network Id,Order Number,Permanently Queued Licenses,Seat Count,State,Total Duration In Days
+{%-     for fact in license %}
+{{ fact.activationDate }},{{ fact.claimDate }},{{ fact.deviceSerial }},{{ fact.durationInDays }},{{ fact.expirationDate }},{{ fact.id }},{{ fact.licenseKey }},{{ fact.licenseType }},{{ fact.networkId }},{{ fact.orderNumber }},{%- for license in fact.permanentlyQueuedLicenses %}{{ license }} {%- endfor %},{{ fact.seatCount }},{{ fact.state }},{{ fact.totalDurationInDays }}
+{%-     endfor %}
+{%- else %}
+{%-     if filetype_loop == 1 %}
+# Meraki Organization Licenses
+| Activation Date | Claim Date | Device Serial Number | Duration In Days | Expiration Date | ID | License Key | License Type | Network Id | Order Number | Permanently Queued Licenses | Seat Count | State | Total Duration In Days |
+| --------------- | ---------- | -------------------- | ---------------- | --------------- | -- | ----------- | ------------ | ---------- | ------------ | --------------------------- | ---------- | ----- | ---------------------- |
+{%-     for fact in license %}
+| {{ fact.activationDate }} | {{ fact.claimDate }} | {{ fact.deviceSerial }} | {{ fact.durationInDays }} | {{ fact.expirationDate }} | {{ fact.id }} | {{ fact.licenseKey }} | {{ fact.licenseType }} | {{ fact.networkId }} | {{ fact.orderNumber }} | {%- for license in fact.permanentlyQueuedLicenses %}{{ license }}  {%- endfor %}| {{ fact.seatCount }} | {{ fact.state }} | {{ fact.totalDurationInDays }} |
+{%-     endfor %}
+{%-     else %}
+{%-         if filetype_loop == 2 %}
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/colreorder/1.5.4/js/dataTables.colReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/keytable/2.6.4/js/dataTables.keyTable.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.9/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.6.4/css/keyTable.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+</head>
+<body>
+<h1>Meraki Organization Licenses</h1>
+<table id = "organizations">
+  <thead>
+    <tr>
+      <th>Activation Date</th>
+      <th>Claim Date</th>
+      <th>Device Serial Number</th>
+      <th>Duration In Days</th>
+      <th>Expiration Date</th>
+      <th>ID</th>
+      <th>License Key</th>
+      <th>License Type</th>
+      <th>Network Id</th>
+      <th>Order Number</th>
+      <th>Permanently Queued Licenses</th>
+      <th>Seat Count</th>
+      <th>State</th>
+      <th>Total Duration In Days</th>
+    </tr>
+  </thead>
+  <tbody>
+{%-     for fact in license %}
+  <tr>
+    <td>{{ fact.activationDate }}</td>
+    <td>{{ fact.claimDate }}</td>
+    <td>{{ fact.deviceSerial }}</td>
+    <td>{{ fact.durationInDays }}</td>
+    <td>{{ fact.expirationDate }}</td>
+    <td>{{ fact.id }}</td>
+    <td>{{ fact.licenseKey }}</td>
+    <td>{{ fact.licenseType }}</td>
+    <td>{{ fact.networkId }}</td>
+    <td>{{ fact.orderNumber }}</td>
+    <td>{%- for license in fact.permanentlyQueuedLicenses %}{{ license }}{%- endfor %}</td>
+    <td>{{ fact.seatCount }}</td>
+    <td>{{ fact.state }}</td>
+    <td>{{ fact.totalDurationInDays }}</td>
+  </tr>
+{%-     endfor %}
+  </tbody>
+</table>
+<script type = "text/javascript">
+  $(document).ready(function(){
+    $('#organizations thead tr')
+    .clone(true)
+    .addClass('filters')
+    .appendTo('#organizations thead');
+
+    var table = $('#organizations').DataTable({
+        keys: true,
+        dom: 'Bfrtip',
+        lengthMenu: [
+            [ 10, 25, 50, -1 ],
+            [ '10 rows', '25 rows', '50 rows', 'Show all' ]
+        ],
+        buttons: [
+        'pageLength','colvis','copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        colReorder: true,
+        select: true,            
+        orderCellsTop: true,
+        fixedHeader: true,
+        initComplete: function () {
+        var api = this.api();
+
+        // For each column
+        api
+            .columns()
+            .eq(0)
+            .each(function (colIdx) {
+                // Set the header cell to contain the input element
+                var cell = $('.filters th').eq(
+                    $(api.column(colIdx).header()).index()
+                );
+                var title = $(cell).text();
+                $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+                // On every keypress in this input
+                $(
+                    'input',
+                    $('.filters th').eq($(api.column(colIdx).header()).index())
+                )
+                    .off('keyup change')
+                    .on('keyup change', function (e) {
+                        e.stopPropagation();
+
+                        // Get the search value
+                        $(this).attr('title', $(this).val());
+                        var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                        var cursorPosition = this.selectionStart;
+                        // Search the column for that value
+                        api
+                            .column(colIdx)
+                            .search(
+                                this.value != ''
+                                    ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                    : '',
+                                this.value != '',
+                                this.value == ''
+                            )
+                            .draw();
+
+                        $(this)
+                            .focus()[0]
+                            .setSelectionRange(cursorPosition, cursorPosition);
+                    });
+            });
+    },
+});
+});        
+</script>
+</body></html>
+{%-         else %}
+# Meraki Organization Licenses
+## ID
+{%-     for fact in license %}
+### {{ fact.id }}
+#### Activation Date: {{ fact.activationDate }}
+#### Claim Date: {{ fact.claimDate }}
+#### Device Serial Number: {{ fact.deviceSerial }}
+#### Duration In Days: {{ fact.durationInDays }}
+#### Expiration Date: {{ fact.expirationDate }}
+#### License 
+##### Key: {{ fact.licenseKey }} 
+##### Type: {{ fact.licenseType }}
+#### Network ID: {{ fact.networkId }}
+#### Order Number: {{ fact.orderNumber }}
+#### Permanently Queued Licenses
+{%- for license in fact.permanentlyQueuedLicenses %}
+##### {{ license }}
+{%- endfor %}
+#### Seat Count: {{ fact.seatCount }}
+#### State: {{ fact.state }}
+#### Total Duration In Days: {{ fact.totalDurationInDays }}
+{%-     endfor %}
+{% endif %}{% endif %}{% endif %}
