@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: multiprocess-wraps
+Version: 0.8
+Summary: An easy way to multiprocess
+Home-page: https://github.com/thuxmf/multiprocess-decorator
+Author: thuxmf
+Author-email: 943774492@qq.com
+License: MIT Licence
+Description: An easy way to multiprocess
+Keywords: pip,multiprocess,multiprocessing
+Platform: any
