@@ -1,0 +1,8 @@
+setup.py
+Topsis-Tarush-102083060/__init__.py
+Topsis_Tarush_102083060.egg-info/PKG-INFO
+Topsis_Tarush_102083060.egg-info/SOURCES.txt
+Topsis_Tarush_102083060.egg-info/dependency_links.txt
+Topsis_Tarush_102083060.egg-info/entry_points.txt
+Topsis_Tarush_102083060.egg-info/requires.txt
+Topsis_Tarush_102083060.egg-info/top_level.txt
