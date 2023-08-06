@@ -1,0 +1,3 @@
+# PyCalCalc
+
+This package contains a module called `CalCalc`, with a method called `calculate` which computes evaluates any string passed to it. The default syntax is `calculate(str, use_Wolfram = False, return_float = False)`. If `use_Wolfram` is set to be `True`, `calculate` evaluates the string with Wolfram|Alpha API. If `return_float` is set to be `True`, `calculate` will return a float number to the best of its guess.

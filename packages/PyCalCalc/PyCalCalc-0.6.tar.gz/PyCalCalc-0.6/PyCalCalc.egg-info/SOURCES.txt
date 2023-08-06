@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyCalCalc.egg-info/PKG-INFO
+PyCalCalc.egg-info/SOURCES.txt
+PyCalCalc.egg-info/dependency_links.txt
+PyCalCalc.egg-info/top_level.txt
+calcalc/CalCalc.py
+calcalc/__init__.py
