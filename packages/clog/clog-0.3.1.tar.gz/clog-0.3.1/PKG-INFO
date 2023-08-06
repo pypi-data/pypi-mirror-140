@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: clog
+Version: 0.3.1
+Summary: pretty-print with color
+Home-page: https://github.com/bradmontgomery/clog
+Author: Brad Montgomery
+Author-email: brad@bradmontgomery.net
+License: MIT
+Project-URL: Bug Tracker, https://github.com/bradmontgomery/clog/issues
+Description: clog
+        ====
+        
+        This project is now simply a shortcut for using [rich](https://github.com/Textualize/rich).
+        
+        _If you want to save yourself a dependency, just use `rich`._
+        
+        
+        ## Usage
+        
+        Pass any data into clog and it'll get pretty-printed.
+        
+            >>> from clog import clog
+            >>> data = {'here': 'is some data'}
+            >>> clog(data)
+        
+        You can also give it a title:
+        
+            >>> clog(data, title="My Data")
+        
+        Or change the color:
+        
+            >>> clog(data, title="My Data", color="red")
+        
+        
+        ### Colors
+        
+        This library uses `rich` under the hood, so it theoretically supports
+        any color that `rich` supports.
+        
+        
+        ## Disclaimer
+        
+        The `clog` function is now simply a wrapper around:
+        
+        ```python
+        from rich.panel import Panel
+        from rich.pretty import Pretty
+        from rich import print
+        
+        print(Panel(Pretty(msg), title=title, subtitle=subtitle, border_style=color))
+        ```
+        
+        So, seriously... just use `rich`.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
