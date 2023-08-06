@@ -1,0 +1,4 @@
+# Include docs in the root.
+include *.md
+# Include everything in our project directory.
+graft classifier
