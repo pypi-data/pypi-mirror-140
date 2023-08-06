@@ -1,0 +1,11 @@
+external/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+external/plugin.py,sha256=rxXfBItoXcKp6T_lUu8PNc3d37of93m1Zb6Dh2Er3To,2334
+external_markdown/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+external_markdown/plugin.py,sha256=sJ6AZcXd3KhZ0ps4RUPT-PM560SkZR11L4THiNnKe1I,2272
+gitsnippet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitsnippet/plugin.py,sha256=_MCkUszZYQ2ITjZ7_HKPMqmIrnIznuT953Ymg8HNfnc,2346
+mkdocs_embed_external_markdown-1.0.1.dist-info/METADATA,sha256=AH3VXHTO0eP5Z6X0l8Xaa58sLFuJt9Hlz_K-EnSAETw,3864
+mkdocs_embed_external_markdown-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mkdocs_embed_external_markdown-1.0.1.dist-info/entry_points.txt,sha256=SPTBf2krAjV64bkXPOPq-VKH6zFlW6CYswyydKncJf4,80
+mkdocs_embed_external_markdown-1.0.1.dist-info/top_level.txt,sha256=rNiysuAd5aHfFLUmrISdlPOc4GgXOEky4v--pRnMTtg,18
+mkdocs_embed_external_markdown-1.0.1.dist-info/RECORD,,
