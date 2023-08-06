@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: xontrib-pyenv
+Version: 1.1.0
+Summary: Skeleton for `xontrib-pyenv`. This package is deprecated, please use `xontrib-langenv` instead.
+Home-page: https://github.com/dyuri/xontrib-pyenv
+License: MIT
+Author: Gyuri Horak
+Author-email: dyuri@horak.hu
+Requires-Python: >=3.6,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: System Shells
+Requires-Dist: xontrib-langenv (>=1.0.6,<2.0.0)
+Project-URL: Repository, https://github.com/dyuri/xontrib-pyenv
+Description-Content-Type: text/markdown
+
+# xontrib-pyenv
+
+Predecessor of `xontrib-langenv`, deprecated.
+
+If you are using this project, please update to [xontrib-langenv](https://github.com/dyuri/xontrib-langenv)!
+
