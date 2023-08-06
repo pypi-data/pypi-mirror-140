@@ -1,0 +1,3 @@
+[console_scripts]
+npustat = npustat:main
+
