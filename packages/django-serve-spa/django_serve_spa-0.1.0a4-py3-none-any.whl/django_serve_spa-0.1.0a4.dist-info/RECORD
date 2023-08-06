@@ -1,0 +1,13 @@
+django_serve_spa-0.1.0a4.data/scripts/build-spa,sha256=Nk2nmeSEeA12wbvmCeijpn3vLBOCD33mXEd6dpUgpKo,529
+django_serve_spa-0.1.0a4.data/scripts/cm-spa-build,sha256=rGSCw50iOM2wXaSjaLurIqMOfPGLTfJRnvnoJ8vwXLM,216
+serve_spa/__init__.py,sha256=luWN-PP4Bpgc-m6fhgRuiKi0j2sEPYx4DRix4PpAp5g,171
+serve_spa/settings.py,sha256=AYBBN8YpFEtHHVTq1xu_QBGvCNIjk5raVeHio--QPYY,270
+serve_spa/urls.py,sha256=iaT7v9rH93j39PawfyRk-0nx1Uo8KISBdzKOBC_Q1Po,627
+serve_spa/utils.py,sha256=tc3eBul9c8Q2ny8xiZqpn0YymnHaYRG2Kucv0fTe1sg,138
+serve_spa/views.py,sha256=w4BzHQZ4rOIFCSTwU2xPg6VSRiETh3DjRWZPlm24R2Q,425
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_serve_spa-0.1.0a4.dist-info/LICENSE,sha256=zJNfjFUB9aBVTiCBNhH2woKw5qXtUQKTx1Z0qJtVeHM,1492
+django_serve_spa-0.1.0a4.dist-info/METADATA,sha256=Dqfn7I0jKc9eGoIjHOSMyOpZ3beL75GblDLa7xxYe_k,3485
+django_serve_spa-0.1.0a4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_serve_spa-0.1.0a4.dist-info/top_level.txt,sha256=eGeeHChvGqYaFYesHr9ylURgrhopuEzsBRHDf3mul8Y,16
+django_serve_spa-0.1.0a4.dist-info/RECORD,,

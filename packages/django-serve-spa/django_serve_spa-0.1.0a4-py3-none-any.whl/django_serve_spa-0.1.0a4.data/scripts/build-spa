@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+
+dist_path=${SPA_BUILD_DIR_PATH:-'build/'}
+spa_dist_dir="${SPA_SRC_DIR:?}/${dist_path}"
+spa_in_django_dir="${SPA_IN_DJANGO_DIR:?}"
+build_cmd=${SPA_BUILD_CMD:-'npm run build'}
+
+
+function build {
+  echo building SPA project at ${SPA_SRC_DIR}
+  cd ${SPA_SRC_DIR} && PUBLIC_URL=/${SPA_URL} BUILD_PATH=${dist_path} eval $build_cmd
+}
+
+function copy {
+  echo Copying SPA build to ${spa_in_django_dir}
+  rm -rf ${spa_in_django_dir}
+  cp -a "${spa_dist_dir}/." ${spa_in_django_dir}
+}
+
+
+build && copy && echo Done
+
+
+
+
