@@ -1,0 +1,104 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/rivals_top8_results/__init__.py
+src/rivals_top8_results/draw_example.py
+src/rivals_top8_results/draw_layouts.py
+src/rivals_top8_results/draw_recolors.py
+src/rivals_top8_results/draw_results.py
+src/rivals_top8_results.egg-info/PKG-INFO
+src/rivals_top8_results.egg-info/SOURCES.txt
+src/rivals_top8_results.egg-info/dependency_links.txt
+src/rivals_top8_results.egg-info/top_level.txt
+src/rivals_top8_results/Resources/Backgrounds/Aether High/1.png
+src/rivals_top8_results/Resources/Backgrounds/Aethereal Gates/1.png
+src/rivals_top8_results/Resources/Backgrounds/Aethereal Gates/2.png
+src/rivals_top8_results/Resources/Backgrounds/Air Armada/1.png
+src/rivals_top8_results/Resources/Backgrounds/Air Armada/2.png
+src/rivals_top8_results/Resources/Backgrounds/Blazing Hideout/1.png
+src/rivals_top8_results/Resources/Backgrounds/Blazing Hideout/2.png
+src/rivals_top8_results/Resources/Backgrounds/Fire Capital/1.png
+src/rivals_top8_results/Resources/Backgrounds/Fire Capital/2.png
+src/rivals_top8_results/Resources/Backgrounds/Frozen Fortress/1.png
+src/rivals_top8_results/Resources/Backgrounds/Frozen Gates/1.png
+src/rivals_top8_results/Resources/Backgrounds/Frozen Gates/2.png
+src/rivals_top8_results/Resources/Backgrounds/Julesvale/1.png
+src/rivals_top8_results/Resources/Backgrounds/Julesvale/2.png
+src/rivals_top8_results/Resources/Backgrounds/Merchant Port/1.png
+src/rivals_top8_results/Resources/Backgrounds/Merchant Port/2.png
+src/rivals_top8_results/Resources/Backgrounds/Neo Fire Capital/1.png
+src/rivals_top8_results/Resources/Backgrounds/Pridemoor Keep/1.png
+src/rivals_top8_results/Resources/Backgrounds/Tempest Peak/1.png
+src/rivals_top8_results/Resources/Backgrounds/The CEO Ring/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Endless Abyss/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Forest Floor/1.png
+src/rivals_top8_results/Resources/Backgrounds/The RoA Ring/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Rock Wall/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Rock Wall/2.png
+src/rivals_top8_results/Resources/Backgrounds/The Spirit Tree/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Swampy Estuary/1.png
+src/rivals_top8_results/Resources/Backgrounds/The Swampy Estuary/2.png
+src/rivals_top8_results/Resources/Backgrounds/Tower of Heaven/1.png
+src/rivals_top8_results/Resources/Backgrounds/Treetop Lodge/1.png
+src/rivals_top8_results/Resources/Backgrounds/Troupple Pond/1.png
+src/rivals_top8_results/Resources/Characters/Main/Absa/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Clairen/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Elliana/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Etalus/Orticoltore.png
+src/rivals_top8_results/Resources/Characters/Main/Forsburn/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Hodan/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Champion.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Kragg/Orticoltore.png
+src/rivals_top8_results/Resources/Characters/Main/Maypul/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Frank.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Peg.png
+src/rivals_top8_results/Resources/Characters/Main/Mollo/Pink.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Blue.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Kai.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Niky_sanic.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Orticoltore.png
+src/rivals_top8_results/Resources/Characters/Main/Olympia/Pipo.png
+src/rivals_top8_results/Resources/Characters/Main/Orcane/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Ori/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Badeline.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Bura.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Kai.png
+src/rivals_top8_results/Resources/Characters/Main/Pomme/Klonohahero.png
+src/rivals_top8_results/Resources/Characters/Main/Random/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Random/Default_old.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Ranno/Valentines.png
+src/rivals_top8_results/Resources/Characters/Main/Shovel knight/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Sylvanos/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/Default.png
+src/rivals_top8_results/Resources/Characters/Main/Wrastor/dav.png
+src/rivals_top8_results/Resources/Characters/Main/Zetterburn/Default.png
+src/rivals_top8_results/Resources/Characters/Secondary/Absa.png
+src/rivals_top8_results/Resources/Characters/Secondary/Clairen.png
+src/rivals_top8_results/Resources/Characters/Secondary/Elliana.png
+src/rivals_top8_results/Resources/Characters/Secondary/Etalus.png
+src/rivals_top8_results/Resources/Characters/Secondary/Forsburn.png
+src/rivals_top8_results/Resources/Characters/Secondary/Hodan.png
+src/rivals_top8_results/Resources/Characters/Secondary/Kragg.png
+src/rivals_top8_results/Resources/Characters/Secondary/Maypul.png
+src/rivals_top8_results/Resources/Characters/Secondary/Mollo.png
+src/rivals_top8_results/Resources/Characters/Secondary/Olympia.png
+src/rivals_top8_results/Resources/Characters/Secondary/Orcane.png
+src/rivals_top8_results/Resources/Characters/Secondary/Ori.png
+src/rivals_top8_results/Resources/Characters/Secondary/Pomme.png
+src/rivals_top8_results/Resources/Characters/Secondary/Random.png
+src/rivals_top8_results/Resources/Characters/Secondary/Ranno.png
+src/rivals_top8_results/Resources/Characters/Secondary/Shovel Knight.png
+src/rivals_top8_results/Resources/Characters/Secondary/Sylvanos.png
+src/rivals_top8_results/Resources/Characters/Secondary/Wrastor.png
+src/rivals_top8_results/Resources/Characters/Secondary/Zetterburn.png
+src/rivals_top8_results/Resources/Layout/Pixellari.ttf
+src/rivals_top8_results/Resources/Layout/char_portrait.psd
+src/rivals_top8_results/Resources/Layout/char_portrait_no_nick.png
+src/rivals_top8_results/Resources/Layout/logo.png
