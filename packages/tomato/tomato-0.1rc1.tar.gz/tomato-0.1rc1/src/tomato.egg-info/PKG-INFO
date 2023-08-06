@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tomato
+Version: 0.1rc1
+Summary: au-tomation without pain!
+Home-page: https://github.com/dgbowl/tomato
+Author: Peter Kraus
+Author-email: peter@tondon.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/dgbowl/tomato/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tomato: au-tomation without pain!
+
+`tomato` is the instrument automation package developed at Empa.
+
+### Contributors:
+- [Peter Kraus](http://github.com/PeterKraus)
+
