@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+LPatternIdentification.egg-info/PKG-INFO
+LPatternIdentification.egg-info/SOURCES.txt
+LPatternIdentification.egg-info/dependency_links.txt
+LPatternIdentification.egg-info/top_level.txt
