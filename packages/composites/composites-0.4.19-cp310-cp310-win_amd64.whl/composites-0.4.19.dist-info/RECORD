@@ -1,0 +1,13 @@
+composites/__init__.py,sha256=7ogPdUAWp6Pax05r6g51cC5562UyIyI9J6yNXI0WZ0E,2054
+composites/core.cp310-win_amd64.pyd,sha256=Z8_pWLrczJtvSda1KNthUHsY6zi0mK0SHyBE6MacFVc,423424
+composites/core.pxd,sha256=90cRcN7FYhZKGsoNRHi2iSx0t4iVkmNy9uNzD_iqU-4,2620
+composites/utils.py,sha256=8k-UHocJiJ9FHeD3VOyuMxxEJ4BLmC7y6SiCFlXaL9g,11813
+composites/version.py,sha256=mfToEOXd_f_mFG0ts1iWNTvKhsjPQqwRFaAmcx61xJo,23
+composites-0.4.19.data/data/LICENSE,sha256=OuNuszRZtEPjRF2RHOaiuMDZl9myiXGY6IEmqWY05gg,1534
+composites-0.4.19.data/data/README.md,sha256=8inPv3dXS5A7hxrAy-86YJ5PYa26z0AVM6BJnP6Kb-c,2480
+composites-0.4.19.data/data/version.py,sha256=mfToEOXd_f_mFG0ts1iWNTvKhsjPQqwRFaAmcx61xJo,23
+composites-0.4.19.dist-info/LICENSE,sha256=OuNuszRZtEPjRF2RHOaiuMDZl9myiXGY6IEmqWY05gg,1534
+composites-0.4.19.dist-info/METADATA,sha256=I8YvjiN-Ws7X08uTeD9Dhi16Sc-bSwloLhBDu-KRp20,3702
+composites-0.4.19.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+composites-0.4.19.dist-info/top_level.txt,sha256=8rFKbL1In6cv0XBeSaI5uG5g6oe1tYJjAc1mLlAvhWU,11
+composites-0.4.19.dist-info/RECORD,,
