@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dvcw/__init__.py
+dvcw/api.py
+dvcw.egg-info/PKG-INFO
+dvcw.egg-info/SOURCES.txt
+dvcw.egg-info/dependency_links.txt
+dvcw.egg-info/not-zip-safe
+dvcw.egg-info/requires.txt
+dvcw.egg-info/top_level.txt
+tests/.gitkeep

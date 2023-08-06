@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dvcw
+Version: 0.0.1a0
+Summary: A python wrapper for DVC API
+Home-page: https://github.com/benouinirachid/dvcw
+Author: Rachid Benouini
+Author-email: benouini.rachid@gmail.com
+License: Apache License 2.0
+Keywords: dvc,s3,data version,wrapper,api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+
+# dvcw
+A python wrapper for DVC API, allows access dvc remote data without exposing access credential on the git repository.
+
+
