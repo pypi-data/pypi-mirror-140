@@ -1,0 +1,3 @@
+[console_scripts]
+skillmap=skillmap.main:main
+
