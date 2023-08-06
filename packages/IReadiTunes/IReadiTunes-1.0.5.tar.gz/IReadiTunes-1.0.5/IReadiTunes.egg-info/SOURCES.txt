@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+IReadiTunes/IReadiTunes.py
+IReadiTunes/__init__.py
+IReadiTunes.egg-info/PKG-INFO
+IReadiTunes.egg-info/SOURCES.txt
+IReadiTunes.egg-info/dependency_links.txt
+IReadiTunes.egg-info/top_level.txt
