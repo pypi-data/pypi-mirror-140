@@ -1,0 +1,8 @@
+README.md
+setup.py
+beamtrace/__init__.py
+beamtrace/tracer.py
+beamtrace.egg-info/PKG-INFO
+beamtrace.egg-info/SOURCES.txt
+beamtrace.egg-info/dependency_links.txt
+beamtrace.egg-info/top_level.txt
