@@ -1,0 +1,9 @@
+README.md
+lightmysql.py
+setup.cfg
+setup.py
+lightmysql.egg-info/PKG-INFO
+lightmysql.egg-info/SOURCES.txt
+lightmysql.egg-info/dependency_links.txt
+lightmysql.egg-info/requires.txt
+lightmysql.egg-info/top_level.txt
