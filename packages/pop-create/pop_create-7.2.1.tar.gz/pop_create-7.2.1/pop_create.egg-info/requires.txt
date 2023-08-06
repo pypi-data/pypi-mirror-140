@@ -1,0 +1,3 @@
+cookiecutter
+pop>=21.0.1
+pre-commit
