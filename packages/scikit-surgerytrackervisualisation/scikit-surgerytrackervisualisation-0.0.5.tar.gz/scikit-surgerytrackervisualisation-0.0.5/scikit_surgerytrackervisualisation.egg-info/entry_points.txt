@@ -1,0 +1,3 @@
+[console_scripts]
+sksurgerytrackervisualisation = sksurgerytrackervisualisation.__main__:main
+
