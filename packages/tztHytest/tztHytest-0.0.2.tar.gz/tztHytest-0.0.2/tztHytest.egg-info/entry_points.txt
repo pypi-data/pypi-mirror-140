@@ -1,0 +1,3 @@
+[console_scripts]
+tztHytest = tztHytest.run:run
+

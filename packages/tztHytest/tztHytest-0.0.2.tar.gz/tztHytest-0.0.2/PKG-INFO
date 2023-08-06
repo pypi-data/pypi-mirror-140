@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: tztHytest
+Version: 0.0.2
+Summary: 一款系统测试自动化框架 Generic automation framework for QA testing,修改自hytest
+Home-page: UNKNOWN
+Author: cz
+Author-email: 1781311641@qq.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: tztHytest automation testautomation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
