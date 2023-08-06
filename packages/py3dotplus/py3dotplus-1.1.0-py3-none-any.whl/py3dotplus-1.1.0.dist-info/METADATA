@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: py3dotplus
+Version: 1.1.0
+Summary: Python interface to Graphviz's Dot language
+Home-page: http://pydotplus.readthedocs.org/
+Author: PyDotPlus Developers
+Author-email: carlos@jenkins.co.cr
+License: UNKNOWN
+Keywords: graphviz dot graphs visualization
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: pyparsing (>=2.0.1)
+
+b"========================================================\nPy3DotPlus - Python interface to Graphviz's Dot language\n========================================================\n\n.. image:: https://pypip.in/py_versions/pydotplus/badge.png\n   :target: https://pypi.python.org/pypi/pydotplus/\n   :alt: Supported Python versions\n\n.. image:: https://pypip.in/version/pydotplus/badge.png?text=version\n   :target: https://pypi.python.org/pypi/pydotplus/\n   :alt: Latest Version\n\n.. image:: https://pypip.in/download/pydotplus/badge.png\n   :target: https://pypi.python.org/pypi/pydotplus/\n   :alt: Downloads\n\n.. image:: https://pypip.in/license/pydotplus/badge.png\n   :target: https://pypi.python.org/pypi/pydotplus/\n   :alt: License\n\n.. image:: https://pypip.in/status/pydotplus/badge.png\n   :target: https://pypi.python.org/pypi/pydotplus/\n   :alt: Status\n\n.. image:: https://travis-ci.org/carlos-jenkins/pydotplus.svg?branch=master\n   :target: https://travis-ci.org/carlos-jenkins/pydotplus\n   :alt: Continuous Integration\n\n.. image:: https://coveralls.io/repos/carlos-jenkins/pydotplus/badge.png\n   :target: https://coveralls.io/r/carlos-jenkins/pydotplus\n   :alt: Coverage\n\n\nAbout\n=====\n\nPy3DotPlus is an improved version of the old pydot project that provides a\nPython Interface to Graphviz's Dot language.\n\n   http://pydotplus.readthedocs.org/\n\nDifferences with pydotplus:\n\n- Python 3.8 compatible.\n\n\nInstallation\n============\n\n::\n\n   pip install py3dotplus\n\n\nDevelopment\n===========\n\n   https://github.com/carlos-jenkins/pydotplus\n\nRun code QA:\n\n::\n\n   pip install tox\n   tox\n\n\nDocumentation\n=============\n\nUser guide and API Reference can be found in:\n\n   http://pydotplus.readthedocs.org/\n\nTo build it from source execute:\n\n::\n\n   pip install sphinx sphinx_rtd_theme\n   cd doc/\n   make html\n\n\nRequirements\n============\n\n- ``pyparsing``: pydot requires the pyparsing module in order to be able to\n  load DOT files.\n\n- ``GraphViz``: is needed in order to render the graphs into any of the\n  plethora of output formats supported.\n\n\nLicense\n=======\n\nThis code is distributed under the MIT license. See LICENSE for details.\n"
+
