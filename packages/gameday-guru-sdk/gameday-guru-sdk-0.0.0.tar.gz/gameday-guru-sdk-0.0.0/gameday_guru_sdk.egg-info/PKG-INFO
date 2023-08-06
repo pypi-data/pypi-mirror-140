@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gameday-guru-sdk
+Version: 0.0.0
+Summary: The Gameday Guru SDK
+Home-page: https://github.com/realpython/reader
+Author: Real Python
+Author-email: info@realpython.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# gameday-guru-sdk
+Gameday Guru's SDK.
+
+

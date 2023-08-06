@@ -1,0 +1,10 @@
+README.md
+setup.py
+gameday_guru_sdk.egg-info/PKG-INFO
+gameday_guru_sdk.egg-info/SOURCES.txt
+gameday_guru_sdk.egg-info/dependency_links.txt
+gameday_guru_sdk.egg-info/entry_points.txt
+gameday_guru_sdk.egg-info/requires.txt
+gameday_guru_sdk.egg-info/top_level.txt
+gsdk/__init__.py
+gsdk/test.py
