@@ -1,0 +1,69 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Run PyTest
+    runs-on: ${{ matrix.os }}
+    env:
+      COVERAGE_FILE: .coverage.${{ matrix.os }}.${{ matrix.python-version }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+        python-version: ["3.7", "3.9"]
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Dependencies
+        run: python -m pip install --upgrade pip pytest coverage[toml] .
+      - name: Test with Pytest
+        run: coverage run --context=${{ matrix.os }}.${{ matrix.python-version }} -m pytest
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-data
+          path: ".coverage.*"
+          if-no-files-found: ignore
+          retention-days: 7
+
+  coverage:
+    name: Combine Coverage Report
+    runs-on: windows-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+      - name: Install Dependencies
+        run: python -m pip install --upgrade pip pytest coverage[toml] .
+      - name: Create Coverage
+        run: coverage run -m pytest
+      # - name: Download all workflow run artifacts
+      #   uses: actions/download-artifact@v2
+      #   with:
+      #       name: coverage-data
+      # - name: Fixup coverage db source paths
+      #   run: python ./ci/fix_win_coverage_paths.py
+      # - name: Create combined coverage file
+      #   run: python -m coverage combine
+      - name: Create coverage XML report
+        run: python -m coverage xml
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
