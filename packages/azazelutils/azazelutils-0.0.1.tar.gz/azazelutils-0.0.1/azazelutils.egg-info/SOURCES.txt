@@ -1,0 +1,9 @@
+setup.py
+azazelutils/crypto.py
+azazelutils/dropbox_manager.py
+azazelutils/freelancer.py
+azazelutils/info.py
+azazelutils.egg-info/PKG-INFO
+azazelutils.egg-info/SOURCES.txt
+azazelutils.egg-info/dependency_links.txt
+azazelutils.egg-info/top_level.txt
