@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+mne_faster/__init__.py
+mne_faster/faster.py
+mne_faster.egg-info/PKG-INFO
+mne_faster.egg-info/SOURCES.txt
+mne_faster.egg-info/dependency_links.txt
+mne_faster.egg-info/requires.txt
+mne_faster.egg-info/top_level.txt
