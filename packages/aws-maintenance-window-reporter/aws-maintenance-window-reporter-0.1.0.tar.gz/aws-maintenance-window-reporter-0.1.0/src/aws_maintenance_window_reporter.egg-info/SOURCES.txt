@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/aws_maintenance_window_reporter/__init__.py
+src/aws_maintenance_window_reporter/main.py
+src/aws_maintenance_window_reporter.egg-info/PKG-INFO
+src/aws_maintenance_window_reporter.egg-info/SOURCES.txt
+src/aws_maintenance_window_reporter.egg-info/dependency_links.txt
+src/aws_maintenance_window_reporter.egg-info/entry_points.txt
+src/aws_maintenance_window_reporter.egg-info/not-zip-safe
+src/aws_maintenance_window_reporter.egg-info/requires.txt
+src/aws_maintenance_window_reporter.egg-info/top_level.txt

@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: aws-maintenance-window-reporter
+Version: 0.1.0
+Summary: Reports AWS maintenance windows
+Home-page: https://github.com/binxio/aws-maintenance-window-reporter
+Author: Mathijs van Mourick
+Author-email: mathijsvanmourick@binx.io
+License: BSD
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AWS maintenance window reporter
+This utility reports outstanding maintenance window actions.
+
+## deploy the maintenance window reporter
+To deploy the maintenance window reporter as an AWS Lambda, type:
+
+```sh
+git clone https://github.com/binxio/aws-maintenance-window-reporter.git
+cd aws-maintenance-window-reporter
+read -p 'DD_API_KEY >' DD_API_KEY
+aws cloudformation deploy \
+	--capabilities CAPABILITY_IAM \
+	--stack-name aws-maintenance-window-reporter \
+	--template-file ./cloudformation/aws-maintenance-window-reporter.yaml \ 
+	--parameter-overrides DataDogAPIKey=$DD_API_KEY
+```
+This will install the maintenance window reporter in your AWS account and run every hour.
+
+
+

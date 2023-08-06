@@ -1,0 +1,3 @@
+[console_scripts]
+aws-mws = aws_maintenance_window_reporter.main:report
+
