@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nextcord/ext/activities/__init__.py
+nextcord/ext/activities/enums.py
+nextcord_ext_activities.egg-info/PKG-INFO
+nextcord_ext_activities.egg-info/SOURCES.txt
+nextcord_ext_activities.egg-info/dependency_links.txt
+nextcord_ext_activities.egg-info/requires.txt
+nextcord_ext_activities.egg-info/top_level.txt
