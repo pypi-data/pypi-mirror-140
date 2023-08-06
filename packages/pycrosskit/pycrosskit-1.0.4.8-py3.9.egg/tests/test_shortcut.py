@@ -1,0 +1,37 @@
+import os
+import unittest
+
+from pycrosskit.shortcuts import Shortcut
+
+
+class Test_Shortcuts(unittest.TestCase):
+
+    def test_create_desktop(self):
+        sh = Shortcut("Test", "__init__.py", desktop=True)
+        self.assertEqual(True, os.path.exists(sh.desktop_path))
+
+    def test_delete_desktop(self):
+        desktop, startmenu = Shortcut.delete("Test", desktop=True)
+        self.assertEqual(True, not os.path.exists(desktop))
+
+    def test_create_startmenu(self):
+        sh = Shortcut("Test", "__init__.py", start_menu=True)
+        self.assertEqual(True, os.path.exists(sh.startmenu_path))
+
+    def test_delete_startmenu(self):
+        desktop, startmenu = Shortcut.delete("Test", start_menu=True)
+        self.assertEqual(True, not os.path.exists(startmenu))
+
+    def test_create_both(self):
+        sh = Shortcut("Test", "__init__.py", desktop=True, start_menu=True)
+        self.assertEqual(True, os.path.exists(sh.desktop_path))
+        self.assertEqual(True, os.path.exists(sh.startmenu_path))
+
+    def test_delete_both(self):
+        desktop, startmenu = Shortcut.delete("Test", desktop=True, start_menu=True)
+        self.assertEqual(True, not os.path.exists(desktop))
+        self.assertEqual(True, not os.path.exists(startmenu))
+
+
+if __name__ == '__main__':
+    unittest.main()
