@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: scala-wrapper
+Version: 0.0.5
+Summary: Scala Wrapper
+Home-page: UNKNOWN
+Author: FirstImpression
+Author-email: programming@firstimpression.nl
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: geopy
+Requires-Dist: wheel
+Requires-Dist: lxml
+Requires-Dist: pytz
+Requires-Dist: socketIO-client
+Requires-Dist: requests[security]
+Requires-Dist: w3lib
+Requires-Dist: unidecode
+Requires-Dist: numpy
+Requires-Dist: firebase-admin
+Requires-Dist: ipinfo
+
+# fi-scala
+ Scala wrapper
+
+
