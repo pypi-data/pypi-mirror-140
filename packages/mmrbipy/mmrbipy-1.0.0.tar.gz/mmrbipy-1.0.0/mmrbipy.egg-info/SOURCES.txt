@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mmrbipy/__init__.py
+mmrbipy/model.py
+mmrbipy.egg-info/PKG-INFO
+mmrbipy.egg-info/SOURCES.txt
+mmrbipy.egg-info/dependency_links.txt
+mmrbipy.egg-info/requires.txt
+mmrbipy.egg-info/top_level.txt
