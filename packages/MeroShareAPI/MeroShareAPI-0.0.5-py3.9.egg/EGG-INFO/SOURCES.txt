@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+MeroShareAPI/__init__.py
+MeroShareAPI.egg-info/PKG-INFO
+MeroShareAPI.egg-info/SOURCES.txt
+MeroShareAPI.egg-info/dependency_links.txt
+MeroShareAPI.egg-info/requires.txt
+MeroShareAPI.egg-info/top_level.txt
