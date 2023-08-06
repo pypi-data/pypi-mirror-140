@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+typefire/__init__.py
+typefire/typefire.py
+typefire.egg-info/PKG-INFO
+typefire.egg-info/SOURCES.txt
+typefire.egg-info/dependency_links.txt
+typefire.egg-info/requires.txt
+typefire.egg-info/top_level.txt
