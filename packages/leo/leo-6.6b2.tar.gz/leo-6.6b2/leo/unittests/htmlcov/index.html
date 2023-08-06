@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Coverage report</title>
+    <link rel="icon" sizes="32x32" href="favicon_32.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage report:
+            <span class="pc_cov">49%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+<div id="index">
+    <table class="index">
+        <thead>
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>64030</td>
+                <td>32805</td>
+                <td>5783</td>
+                <td class="right" data-ratio="31225 64030">49%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo___init___py.html">C:\leo.repo\leo-editor\leo\__init__.py</a></td>
+                <td>4</td>
+                <td>3</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 4">25%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands___init___py.html">C:\leo.repo\leo-editor\leo\commands\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_abbrevCommands_py.html">C:\leo.repo\leo-editor\leo\commands\abbrevCommands.py</a></td>
+                <td>542</td>
+                <td>424</td>
+                <td>0</td>
+                <td class="right" data-ratio="118 542">22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_baseCommands_py.html">C:\leo.repo\leo-editor\leo\commands\baseCommands.py</a></td>
+                <td>65</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="59 65">91%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_bufferCommands_py.html">C:\leo.repo\leo-editor\leo\commands\bufferCommands.py</a></td>
+                <td>179</td>
+                <td>138</td>
+                <td>0</td>
+                <td class="right" data-ratio="41 179">23%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_checkerCommands_py.html">C:\leo.repo\leo-editor\leo\commands\checkerCommands.py</a></td>
+                <td>372</td>
+                <td>313</td>
+                <td>0</td>
+                <td class="right" data-ratio="59 372">16%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_commanderEditCommands_py.html">C:\leo.repo\leo-editor\leo\commands\commanderEditCommands.py</a></td>
+                <td>851</td>
+                <td>331</td>
+                <td>0</td>
+                <td class="right" data-ratio="520 851">61%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_commanderFileCommands_py.html">C:\leo.repo\leo-editor\leo\commands\commanderFileCommands.py</a></td>
+                <td>647</td>
+                <td>518</td>
+                <td>0</td>
+                <td class="right" data-ratio="129 647">20%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_commanderHelpCommands_py.html">C:\leo.repo\leo-editor\leo\commands\commanderHelpCommands.py</a></td>
+                <td>243</td>
+                <td>184</td>
+                <td>0</td>
+                <td class="right" data-ratio="59 243">24%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_commanderOutlineCommands_py.html">C:\leo.repo\leo-editor\leo\commands\commanderOutlineCommands.py</a></td>
+                <td>1197</td>
+                <td>690</td>
+                <td>0</td>
+                <td class="right" data-ratio="507 1197">42%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_controlCommands_py.html">C:\leo.repo\leo-editor\leo\commands\controlCommands.py</a></td>
+                <td>70</td>
+                <td>38</td>
+                <td>0</td>
+                <td class="right" data-ratio="32 70">46%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_convertCommands_py.html">C:\leo.repo\leo-editor\leo\commands\convertCommands.py</a></td>
+                <td>131</td>
+                <td>0</td>
+                <td>1840</td>
+                <td class="right" data-ratio="131 131">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_debugCommands_py.html">C:\leo.repo\leo-editor\leo\commands\debugCommands.py</a></td>
+                <td>84</td>
+                <td>58</td>
+                <td>0</td>
+                <td class="right" data-ratio="26 84">31%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_editCommands_py.html">C:\leo.repo\leo-editor\leo\commands\editCommands.py</a></td>
+                <td>2700</td>
+                <td>1164</td>
+                <td>109</td>
+                <td class="right" data-ratio="1536 2700">57%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_editFileCommands_py.html">C:\leo.repo\leo-editor\leo\commands\editFileCommands.py</a></td>
+                <td>779</td>
+                <td>680</td>
+                <td>0</td>
+                <td class="right" data-ratio="99 779">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_gotoCommands_py.html">C:\leo.repo\leo-editor\leo\commands\gotoCommands.py</a></td>
+                <td>248</td>
+                <td>171</td>
+                <td>0</td>
+                <td class="right" data-ratio="77 248">31%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_helpCommands_py.html">C:\leo.repo\leo-editor\leo\commands\helpCommands.py</a></td>
+                <td>172</td>
+                <td>104</td>
+                <td>0</td>
+                <td class="right" data-ratio="68 172">40%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_keyCommands_py.html">C:\leo.repo\leo-editor\leo\commands\keyCommands.py</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 6">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_killBufferCommands_py.html">C:\leo.repo\leo-editor\leo\commands\killBufferCommands.py</a></td>
+                <td>285</td>
+                <td>135</td>
+                <td>0</td>
+                <td class="right" data-ratio="150 285">53%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_rectangleCommands_py.html">C:\leo.repo\leo-editor\leo\commands\rectangleCommands.py</a></td>
+                <td>145</td>
+                <td>16</td>
+                <td>0</td>
+                <td class="right" data-ratio="129 145">89%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_spellCommands_py.html">C:\leo.repo\leo-editor\leo\commands\spellCommands.py</a></td>
+                <td>548</td>
+                <td>456</td>
+                <td>0</td>
+                <td class="right" data-ratio="92 548">17%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_commands_testCommands_py.html">C:\leo.repo\leo-editor\leo\commands\testCommands.py</a></td>
+                <td>180</td>
+                <td>66</td>
+                <td>0</td>
+                <td class="right" data-ratio="114 180">63%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core___init___py.html">C:\leo.repo\leo-editor\leo\core\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoApp_py.html">C:\leo.repo\leo-editor\leo\core\leoApp.py</a></td>
+                <td>1962</td>
+                <td>1207</td>
+                <td>0</td>
+                <td class="right" data-ratio="755 1962">38%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoAst_py.html">C:\leo.repo\leo-editor\leo\core\leoAst.py</a></td>
+                <td>1337</td>
+                <td>20</td>
+                <td>1050</td>
+                <td class="right" data-ratio="1317 1337">99%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoAtFile_py.html">C:\leo.repo\leo-editor\leo\core\leoAtFile.py</a></td>
+                <td>1074</td>
+                <td>65</td>
+                <td>1308</td>
+                <td class="right" data-ratio="1009 1074">94%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoBeautify_py.html">C:\leo.repo\leo-editor\leo\core\leoBeautify.py</a></td>
+                <td>411</td>
+                <td>363</td>
+                <td>0</td>
+                <td class="right" data-ratio="48 411">12%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoBridge_py.html">C:\leo.repo\leo-editor\leo\core\leoBridge.py</a></td>
+                <td>198</td>
+                <td>51</td>
+                <td>0</td>
+                <td class="right" data-ratio="147 198">74%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoCache_py.html">C:\leo.repo\leo-editor\leo\core\leoCache.py</a></td>
+                <td>438</td>
+                <td>266</td>
+                <td>0</td>
+                <td class="right" data-ratio="172 438">39%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoChapters_py.html">C:\leo.repo\leo-editor\leo\core\leoChapters.py</a></td>
+                <td>326</td>
+                <td>137</td>
+                <td>0</td>
+                <td class="right" data-ratio="189 326">58%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoColor_py.html">C:\leo.repo\leo-editor\leo\core\leoColor.py</a></td>
+                <td>35</td>
+                <td>23</td>
+                <td>0</td>
+                <td class="right" data-ratio="12 35">34%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoColorizer_py.html">C:\leo.repo\leo-editor\leo\core\leoColorizer.py</a></td>
+                <td>1754</td>
+                <td>1244</td>
+                <td>0</td>
+                <td class="right" data-ratio="510 1754">29%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoCommands_py.html">C:\leo.repo\leo-editor\leo\core\leoCommands.py</a></td>
+                <td>2706</td>
+                <td>1454</td>
+                <td>0</td>
+                <td class="right" data-ratio="1252 2706">46%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoCompare_py.html">C:\leo.repo\leo-editor\leo\core\leoCompare.py</a></td>
+                <td>488</td>
+                <td>445</td>
+                <td>0</td>
+                <td class="right" data-ratio="43 488">9%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoConfig_py.html">C:\leo.repo\leo-editor\leo\core\leoConfig.py</a></td>
+                <td>1380</td>
+                <td>880</td>
+                <td>0</td>
+                <td class="right" data-ratio="500 1380">36%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoDebugger_py.html">C:\leo.repo\leo-editor\leo\core\leoDebugger.py</a></td>
+                <td>346</td>
+                <td>282</td>
+                <td>0</td>
+                <td class="right" data-ratio="64 346">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoExternalFiles_py.html">C:\leo.repo\leo-editor\leo\core\leoExternalFiles.py</a></td>
+                <td>370</td>
+                <td>306</td>
+                <td>0</td>
+                <td class="right" data-ratio="64 370">17%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoFileCommands_py.html">C:\leo.repo\leo-editor\leo\core\leoFileCommands.py</a></td>
+                <td>1426</td>
+                <td>729</td>
+                <td>0</td>
+                <td class="right" data-ratio="697 1426">49%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoFind_py.html">C:\leo.repo\leo-editor\leo\core\leoFind.py</a></td>
+                <td>1085</td>
+                <td>21</td>
+                <td>817</td>
+                <td class="right" data-ratio="1064 1085">98%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoFrame_py.html">C:\leo.repo\leo-editor\leo\core\leoFrame.py</a></td>
+                <td>1530</td>
+                <td>674</td>
+                <td>0</td>
+                <td class="right" data-ratio="856 1530">56%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoGlobals_py.html">C:\leo.repo\leo-editor\leo\core\leoGlobals.py</a></td>
+                <td>4875</td>
+                <td>2834</td>
+                <td>0</td>
+                <td class="right" data-ratio="2041 4875">42%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoGui_py.html">C:\leo.repo\leo-editor\leo\core\leoGui.py</a></td>
+                <td>377</td>
+                <td>109</td>
+                <td>0</td>
+                <td class="right" data-ratio="268 377">71%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoHistory_py.html">C:\leo.repo\leo-editor\leo\core\leoHistory.py</a></td>
+                <td>60</td>
+                <td>30</td>
+                <td>0</td>
+                <td class="right" data-ratio="30 60">50%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoImport_py.html">C:\leo.repo\leo-editor\leo\core\leoImport.py</a></td>
+                <td>1854</td>
+                <td>1607</td>
+                <td>0</td>
+                <td class="right" data-ratio="247 1854">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoKeys_py.html">C:\leo.repo\leo-editor\leo\core\leoKeys.py</a></td>
+                <td>2483</td>
+                <td>1783</td>
+                <td>0</td>
+                <td class="right" data-ratio="700 2483">28%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoMarkup_py.html">C:\leo.repo\leo-editor\leo\core\leoMarkup.py</a></td>
+                <td>246</td>
+                <td>191</td>
+                <td>0</td>
+                <td class="right" data-ratio="55 246">22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoMenu_py.html">C:\leo.repo\leo-editor\leo\core\leoMenu.py</a></td>
+                <td>382</td>
+                <td>298</td>
+                <td>0</td>
+                <td class="right" data-ratio="84 382">22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoNodes_py.html">C:\leo.repo\leo-editor\leo\core\leoNodes.py</a></td>
+                <td>1592</td>
+                <td>397</td>
+                <td>0</td>
+                <td class="right" data-ratio="1195 1592">75%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoPersistence_py.html">C:\leo.repo\leo-editor\leo\core\leoPersistence.py</a></td>
+                <td>310</td>
+                <td>153</td>
+                <td>0</td>
+                <td class="right" data-ratio="157 310">51%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoPlugins_py.html">C:\leo.repo\leo-editor\leo\core\leoPlugins.py</a></td>
+                <td>337</td>
+                <td>261</td>
+                <td>0</td>
+                <td class="right" data-ratio="76 337">23%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoPrinting_py.html">C:\leo.repo\leo-editor\leo\core\leoPrinting.py</a></td>
+                <td>172</td>
+                <td>98</td>
+                <td>0</td>
+                <td class="right" data-ratio="74 172">43%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoQt_py.html">C:\leo.repo\leo-editor\leo\core\leoQt.py</a></td>
+                <td>23</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="15 23">65%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoQt6_py.html">C:\leo.repo\leo-editor\leo\core\leoQt6.py</a></td>
+                <td>92</td>
+                <td>22</td>
+                <td>0</td>
+                <td class="right" data-ratio="70 92">76%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoRst_py.html">C:\leo.repo\leo-editor\leo\core\leoRst.py</a></td>
+                <td>455</td>
+                <td>256</td>
+                <td>0</td>
+                <td class="right" data-ratio="199 455">44%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoShadow_py.html">C:\leo.repo\leo-editor\leo\core\leoShadow.py</a></td>
+                <td>335</td>
+                <td>112</td>
+                <td>0</td>
+                <td class="right" data-ratio="223 335">67%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoTest2_py.html">C:\leo.repo\leo-editor\leo\core\leoTest2.py</a></td>
+                <td>82</td>
+                <td>3</td>
+                <td>0</td>
+                <td class="right" data-ratio="79 82">96%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoUndo_py.html">C:\leo.repo\leo-editor\leo\core\leoUndo.py</a></td>
+                <td>1379</td>
+                <td>417</td>
+                <td>0</td>
+                <td class="right" data-ratio="962 1379">70%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoVersion_py.html">C:\leo.repo\leo-editor\leo\core\leoVersion.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoVim_py.html">C:\leo.repo\leo-editor\leo\core\leoVim.py</a></td>
+                <td>1364</td>
+                <td>1084</td>
+                <td>0</td>
+                <td class="right" data-ratio="280 1364">21%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_leoserver_py.html">C:\leo.repo\leo-editor\leo\core\leoserver.py</a></td>
+                <td>1213</td>
+                <td>492</td>
+                <td>650</td>
+                <td class="right" data-ratio="721 1213">59%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_core_signal_manager_py.html">C:\leo.repo\leo-editor\leo\core\signal_manager.py</a></td>
+                <td>85</td>
+                <td>67</td>
+                <td>0</td>
+                <td class="right" data-ratio="18 85">21%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_external___init___py.html">C:\leo.repo\leo-editor\leo\external\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_external_codewise_py.html">C:\leo.repo\leo-editor\leo\external\codewise.py</a></td>
+                <td>433</td>
+                <td>366</td>
+                <td>0</td>
+                <td class="right" data-ratio="67 433">15%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_modes___init___py.html">C:\leo.repo\leo-editor\leo\modes\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_modes_python_py.html">C:\leo.repo\leo-editor\leo\modes\python.py</a></td>
+                <td>62</td>
+                <td>29</td>
+                <td>0</td>
+                <td class="right" data-ratio="33 62">53%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins___init___py.html">C:\leo.repo\leo-editor\leo\plugins\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_free_layout_py.html">C:\leo.repo\leo-editor\leo\plugins\free_layout.py</a></td>
+                <td>275</td>
+                <td>222</td>
+                <td>0</td>
+                <td class="right" data-ratio="53 275">19%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers___init___py.html">C:\leo.repo\leo-editor\leo\plugins\importers\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_c_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\c.py</a></td>
+                <td>134</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="121 134">90%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_coffeescript_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\coffeescript.py</a></td>
+                <td>152</td>
+                <td>62</td>
+                <td>0</td>
+                <td class="right" data-ratio="90 152">59%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_csharp_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\csharp.py</a></td>
+                <td>30</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="29 30">97%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_ctext_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\ctext.py</a></td>
+                <td>43</td>
+                <td>35</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 43">19%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_cython_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\cython.py</a></td>
+                <td>325</td>
+                <td>130</td>
+                <td>0</td>
+                <td class="right" data-ratio="195 325">60%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_dart_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\dart.py</a></td>
+                <td>30</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="29 30">97%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_elisp_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\elisp.py</a></td>
+                <td>65</td>
+                <td>15</td>
+                <td>0</td>
+                <td class="right" data-ratio="50 65">77%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_html_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\html.py</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 9">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_ini_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\ini.py</a></td>
+                <td>25</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="25 25">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_ipynb_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\ipynb.py</a></td>
+                <td>183</td>
+                <td>157</td>
+                <td>0</td>
+                <td class="right" data-ratio="26 183">14%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_java_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\java.py</a></td>
+                <td>101</td>
+                <td>12</td>
+                <td>0</td>
+                <td class="right" data-ratio="89 101">88%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_javascript_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\javascript.py</a></td>
+                <td>265</td>
+                <td>56</td>
+                <td>0</td>
+                <td class="right" data-ratio="209 265">79%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_leo_json_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\leo_json.py</a></td>
+                <td>101</td>
+                <td>86</td>
+                <td>0</td>
+                <td class="right" data-ratio="15 101">15%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_leo_rst_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\leo_rst.py</a></td>
+                <td>113</td>
+                <td>11</td>
+                <td>0</td>
+                <td class="right" data-ratio="102 113">90%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_linescanner_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\linescanner.py</a></td>
+                <td>716</td>
+                <td>252</td>
+                <td>0</td>
+                <td class="right" data-ratio="464 716">65%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_lua_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\lua.py</a></td>
+                <td>147</td>
+                <td>121</td>
+                <td>0</td>
+                <td class="right" data-ratio="26 147">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_markdown_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\markdown.py</a></td>
+                <td>90</td>
+                <td>11</td>
+                <td>0</td>
+                <td class="right" data-ratio="79 90">88%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_org_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\org.py</a></td>
+                <td>57</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="49 57">86%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_otl_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\otl.py</a></td>
+                <td>32</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="31 32">97%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_pascal_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\pascal.py</a></td>
+                <td>64</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="right" data-ratio="57 64">89%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_perl_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\perl.py</a></td>
+                <td>78</td>
+                <td>20</td>
+                <td>0</td>
+                <td class="right" data-ratio="58 78">74%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_php_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\php.py</a></td>
+                <td>124</td>
+                <td>26</td>
+                <td>0</td>
+                <td class="right" data-ratio="98 124">79%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_python_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\python.py</a></td>
+                <td>143</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="right" data-ratio="141 143">99%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_rust_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\rust.py</a></td>
+                <td>130</td>
+                <td>102</td>
+                <td>0</td>
+                <td class="right" data-ratio="28 130">22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_tcl_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\tcl.py</a></td>
+                <td>42</td>
+                <td>21</td>
+                <td>0</td>
+                <td class="right" data-ratio="21 42">50%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_treepad_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\treepad.py</a></td>
+                <td>83</td>
+                <td>69</td>
+                <td>0</td>
+                <td class="right" data-ratio="14 83">17%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_typescript_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\typescript.py</a></td>
+                <td>112</td>
+                <td>39</td>
+                <td>0</td>
+                <td class="right" data-ratio="73 112">65%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_importers_xml_py.html">C:\leo.repo\leo-editor\leo\plugins\importers\xml.py</a></td>
+                <td>141</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="128 141">91%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_mod_scripting_py.html">C:\leo.repo\leo-editor\leo\plugins\mod_scripting.py</a></td>
+                <td>779</td>
+                <td>701</td>
+                <td>0</td>
+                <td class="right" data-ratio="78 779">10%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_nested_splitter_py.html">C:\leo.repo\leo-editor\leo\plugins\nested_splitter.py</a></td>
+                <td>680</td>
+                <td>582</td>
+                <td>0</td>
+                <td class="right" data-ratio="98 680">14%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_qt_commands_py.html">C:\leo.repo\leo-editor\leo\plugins\qt_commands.py</a></td>
+                <td>147</td>
+                <td>120</td>
+                <td>0</td>
+                <td class="right" data-ratio="27 147">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_qt_events_py.html">C:\leo.repo\leo-editor\leo\plugins\qt_events.py</a></td>
+                <td>262</td>
+                <td>213</td>
+                <td>0</td>
+                <td class="right" data-ratio="49 262">19%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_qt_frame_py.html">C:\leo.repo\leo-editor\leo\plugins\qt_frame.py</a></td>
+                <td>3099</td>
+                <td>1961</td>
+                <td>0</td>
+                <td class="right" data-ratio="1138 3099">37%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_qt_gui_py.html">C:\leo.repo\leo-editor\leo\plugins\qt_gui.py</a></td>
+                <td>1262</td>
+                <td>1034</td>
+                <td>0</td>
+                <td class="right" data-ratio="228 1262">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_qt_idle_time_py.html">C:\leo.repo\leo-editor\leo\plugins\qt_idle_time.py</a></td>
+                <td>56</td>
+                <td>43</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 56">23%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_qt_text_py.html">C:\leo.repo\leo-editor\leo\plugins\qt_text.py</a></td>
+                <td>1167</td>
+                <td>881</td>
+                <td>0</td>
+                <td class="right" data-ratio="286 1167">25%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_qt_tree_py.html">C:\leo.repo\leo-editor\leo\plugins\qt_tree.py</a></td>
+                <td>937</td>
+                <td>803</td>
+                <td>0</td>
+                <td class="right" data-ratio="134 937">14%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers___init___py.html">C:\leo.repo\leo-editor\leo\plugins\writers\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_basewriter_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\basewriter.py</a></td>
+                <td>20</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="right" data-ratio="11 20">55%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_ctext_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\ctext.py</a></td>
+                <td>20</td>
+                <td>15</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 20">25%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_dart_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\dart.py</a></td>
+                <td>15</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 15">40%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_ipynb_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\ipynb.py</a></td>
+                <td>124</td>
+                <td>101</td>
+                <td>0</td>
+                <td class="right" data-ratio="23 124">19%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_leo_json_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\leo_json.py</a></td>
+                <td>16</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 16">50%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_leo_rst_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\leo_rst.py</a></td>
+                <td>32</td>
+                <td>22</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 32">31%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_markdown_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\markdown.py</a></td>
+                <td>30</td>
+                <td>22</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 30">27%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_org_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\org.py</a></td>
+                <td>29</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="28 29">97%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_otl_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\otl.py</a></td>
+                <td>22</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="right" data-ratio="20 22">91%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_test_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\test.py</a></td>
+                <td>16</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 16">62%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_leo-editor_leo_plugins_writers_treepad_py.html">C:\leo.repo\leo-editor\leo\plugins\writers\treepad.py</a></td>
+                <td>21</td>
+                <td>15</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 21">29%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="__init___py.html">__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="commands___init___py.html">commands\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="commands_test_checkerCommands_py.html">commands\test_checkerCommands.py</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="16 16">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="commands_test_convertCommands_py.html">commands\test_convertCommands.py</a></td>
+                <td>81</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="81 81">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="commands_test_editCommands_py.html">commands\test_editCommands.py</a></td>
+                <td>1006</td>
+                <td>48</td>
+                <td>0</td>
+                <td class="right" data-ratio="958 1006">95%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core___init___py.html">core\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoApp_py.html">core\test_leoApp.py</a></td>
+                <td>53</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="52 53">98%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoAst_py.html">core\test_leoAst.py</a></td>
+                <td>1156</td>
+                <td>255</td>
+                <td>0</td>
+                <td class="right" data-ratio="901 1156">78%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoAtFile_py.html">core\test_leoAtFile.py</a></td>
+                <td>439</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="right" data-ratio="437 439">99%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoBridge_py.html">core\test_leoBridge.py</a></td>
+                <td>15</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="15 15">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoColorizer_py.html">core\test_leoColorizer.py</a></td>
+                <td>143</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="143 143">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoCommands_py.html">core\test_leoCommands.py</a></td>
+                <td>310</td>
+                <td>18</td>
+                <td>0</td>
+                <td class="right" data-ratio="292 310">94%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoConfig_py.html">core\test_leoConfig.py</a></td>
+                <td>15</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="15 15">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoExternalFiles_py.html">core\test_leoExternalFiles.py</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="16 16">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoFileCommands_py.html">core\test_leoFileCommands.py</a></td>
+                <td>61</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="right" data-ratio="59 61">97%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoFind_py.html">core\test_leoFind.py</a></td>
+                <td>613</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="613 613">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoFrame_py.html">core\test_leoFrame.py</a></td>
+                <td>41</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="41 41">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoGlobals_py.html">core\test_leoGlobals.py</a></td>
+                <td>318</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="314 318">99%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoImport_py.html">core\test_leoImport.py</a></td>
+                <td>696</td>
+                <td>93</td>
+                <td>0</td>
+                <td class="right" data-ratio="603 696">87%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoKeys_py.html">core\test_leoKeys.py</a></td>
+                <td>58</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="58 58">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoNodes_py.html">core\test_leoNodes.py</a></td>
+                <td>714</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="710 714">99%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoPersistence_py.html">core\test_leoPersistence.py</a></td>
+                <td>135</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="135 135">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoRst_py.html">core\test_leoRst.py</a></td>
+                <td>68</td>
+                <td>3</td>
+                <td>0</td>
+                <td class="right" data-ratio="65 68">96%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoShadow_py.html">core\test_leoShadow.py</a></td>
+                <td>473</td>
+                <td>3</td>
+                <td>0</td>
+                <td class="right" data-ratio="470 473">99%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoUndo_py.html">core\test_leoUndo.py</a></td>
+                <td>161</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="161 161">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoVim_py.html">core\test_leoVim.py</a></td>
+                <td>33</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="33 33">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="core_test_leoserver_py.html">core\test_leoserver.py</a></td>
+                <td>91</td>
+                <td>0</td>
+                <td>9</td>
+                <td class="right" data-ratio="91 91">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="test_doctests_py.html">test_doctests.py</a></td>
+                <td>45</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="right" data-ratio="43 45">96%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="test_gui_py.html">test_gui.py</a></td>
+                <td>50</td>
+                <td>3</td>
+                <td>0</td>
+                <td class="right" data-ratio="47 50">94%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="test_plugins_py.html">test_plugins.py</a></td>
+                <td>78</td>
+                <td>15</td>
+                <td>0</td>
+                <td class="right" data-ratio="63 78">81%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="test_syntax_py.html">test_syntax.py</a></td>
+                <td>46</td>
+                <td>11</td>
+                <td>0</td>
+                <td class="right" data-ratio="35 46">76%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_mypy_mypy___init___py.html">C:\leo.repo\mypy\mypy\__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_leo_repo_mypy_mypy_api_py.html">C:\leo.repo\mypy\mypy\api.py</a></td>
+                <td>27</td>
+                <td>21</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 27">22%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
+            created at 2022-02-23 10:29 -0600
+        </p>
+    </div>
+</div>
+</body>
+</html>
