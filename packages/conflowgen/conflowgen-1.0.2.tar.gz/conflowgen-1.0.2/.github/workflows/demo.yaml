@@ -1,0 +1,41 @@
+name: Demo
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    types: [opened, reopened, edited, synchronize]
+
+jobs:
+  build:
+    name: Run demo
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8, 3.9, "3.10"]
+        inplace: ["-e", ""]  # "pip install -e ." installs in place; "pip install ." installs to the default directory
+
+    steps:
+
+    - name: Skip Duplicate Actions
+      uses: fkirc/skip-duplicate-actions@v3.4.1
+
+    - uses: actions/checkout@v2
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install Python dependencies
+      run: |
+        pip3 install --user ${{ matrix.python-inplace }} .
+
+    - name: Run demo
+      run: |
+        python "./examples/Python_Script/demo_poc.py"

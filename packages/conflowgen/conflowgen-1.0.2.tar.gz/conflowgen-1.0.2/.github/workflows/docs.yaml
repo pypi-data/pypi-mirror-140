@@ -1,0 +1,51 @@
+name: Docs
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    types: [opened, reopened, edited, synchronize]
+
+jobs:
+  build:
+    name: Build documentation and check for warnings
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8, 3.9, "3.10"]
+
+    steps:
+
+    - name: Skip Duplicate Actions
+      uses: fkirc/skip-duplicate-actions@v3.4.1
+
+    - name: Update Ubuntu and install pandoc
+      run: |
+        sudo apt-get update && sudo apt-get upgrade && sudo apt-get install pandoc
+
+    - uses: actions/checkout@v2
+      with:
+        lfs: 'true'
+    - run: git lfs pull
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install Python dependencies including sphinx
+      run: |
+        pip3 install --user -e .[dev]
+
+    - name: Build documentation and check for warnings
+      run: |
+        cd ./docs/ && make html SPHINXOPTS="-W --keep-going"
+
+    - name: Check links
+      run: |
+        python -m sphinx -W --keep-going ./docs/ ./docs/_build/linkcheck/ -b linkcheck

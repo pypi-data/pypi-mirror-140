@@ -1,0 +1,58 @@
+# Python
+**/.ipynb_checkpoints/
+**/.virtual_documents/
+**/__pycache__/
+**/.pytest_cache/
+conflowgen-venv
+ConFlowGen.egg-info
+
+# Editors
+**/.vscode/
+**/.idea/
+
+# SQLite
+*.sqlite-shm
+*.sqlite-wal
+
+# Microsoft Office Products
+**/~$*
+
+# Batch script helper files
+*.tmp
+.conda_path
+
+# Conflowgen data directory
+conflowgen/data/logs/*.log
+conflowgen/data/databases/*.sqlite
+conflowgen/data/exports/
+
+# Conflowgen documentation
+docs/_build/
+
+# Testing
+.coverage
+
+# Automatic backup file of Plant Simulation 
+*.spp.bak
+
+# Merging
+*_BACKUP_*
+*_BASE_*
+*_LOCAL_*
+*_REMOTE_*
+
+# Publishing new versions
+build/
+dist/
+
+# The dirty Read the Docs hack - downloading git-lfs on-the-fly in case it is missing
+docs/.tools/
+docs/git-lfs*
+
+# Avoid publishing Jupyter Notebooks that were created for tampering
+Untitled*.ipynb
+
+# Ignore log files
+*.log 
+docs/notebooks/data/db/
+docs/notebooks/data/export/
