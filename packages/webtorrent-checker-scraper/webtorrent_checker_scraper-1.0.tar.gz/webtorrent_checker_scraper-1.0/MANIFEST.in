@@ -1,0 +1,3 @@
+include webtorrent_checker_scraper/README.md
+include webtorrent_checker_scraper/LICENSE
+include webtorrent_checker_scraper/requirements.txt

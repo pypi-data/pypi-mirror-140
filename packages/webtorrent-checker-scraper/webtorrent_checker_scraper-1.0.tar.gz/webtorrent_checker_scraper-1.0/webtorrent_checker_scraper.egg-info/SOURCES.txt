@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+webtorrent_checker_scraper/LICENSE
+webtorrent_checker_scraper/README.md
+webtorrent_checker_scraper/__init__.py
+webtorrent_checker_scraper/requirements.txt
+webtorrent_checker_scraper/webtorrent_checker_scraper.py
+webtorrent_checker_scraper.egg-info/PKG-INFO
+webtorrent_checker_scraper.egg-info/SOURCES.txt
+webtorrent_checker_scraper.egg-info/dependency_links.txt
+webtorrent_checker_scraper.egg-info/entry_points.txt
+webtorrent_checker_scraper.egg-info/requires.txt
+webtorrent_checker_scraper.egg-info/top_level.txt

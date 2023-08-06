@@ -1,0 +1,8 @@
+argparse
+beautifulsoup4
+colorama
+future
+lxml
+requests
+termcolor
+torf
