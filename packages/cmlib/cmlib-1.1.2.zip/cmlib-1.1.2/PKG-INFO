@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: cmlib
+Version: 1.1.2
+Summary: Color Map Library with harmonized data from different catalogs. Includes PyQt selection widgets.
+Home-page: https://github.com/titusjan/cmlib
+Author: Pepijn Kenter
+Author-email: titusjan@gmail.com
+License: BSD
+Keywords: color-maps
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+===============================
+CmLib
+===============================
+
+CmLib (color map library) is a collection of color maps, which originate from
+different sources and that have been converted to a uniform format.
+
+CmLib comes with PyQt widgets to view the collection and select a color map.
+However, you don't need Python to use the color maps because the data is
+stored in comma separated files, which can be read in any programming language.
+
+For more info, see: https://github.com/titusjan/cmlib
+
+
+
+
+History
+-------
+
+1.1.2 (2022-02-26)
+------------------
+*   Fixed errors when running with Python 3.10.
+
+1.1.1 (2021-04-27)
+------------------
+*   Fix setup.py install by adding HISTORY.rst in source distribution
+
+1.1.0 (2021-02-07)
+------------------
+*   Catalog and Category are are selected by combo-boxes (was checkboxes)
+*   Possible to change the button text of the selection widget.
+*   MatPlotLib Hsv has the 'rainbow' tag.
+
+
+1.0.0 (2019-08-04)
+------------------
+*   First release on PyPI.
+
+

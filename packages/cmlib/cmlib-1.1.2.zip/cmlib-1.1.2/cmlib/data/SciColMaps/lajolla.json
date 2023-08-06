@@ -1,0 +1,13 @@
+{
+    "name": "lajolla",
+    "pretty_name": "Lajolla",
+    "file_name": "lajolla.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "",
+    "tags": []
+}

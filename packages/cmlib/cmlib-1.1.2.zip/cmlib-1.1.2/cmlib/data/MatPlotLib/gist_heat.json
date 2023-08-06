@@ -1,0 +1,13 @@
+{
+    "name": "gist_heat",
+    "pretty_name": "Gist-Heat",
+    "file_name": "gist_heat.csv",
+    "category": "Sequential",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Yorick-GIST. Sequential increasing black-red-orange-white, to emulate blackbody radiation from an iron bar as it grows hotter",
+    "tags": []
+}

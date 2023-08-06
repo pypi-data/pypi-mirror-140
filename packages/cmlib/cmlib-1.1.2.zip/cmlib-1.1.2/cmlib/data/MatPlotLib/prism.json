@@ -1,0 +1,13 @@
+{
+    "name": "prism",
+    "pretty_name": "Prism",
+    "file_name": "prism.csv",
+    "category": "Cyclic",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Matlab. Repetitive red-yellow-green-blue-purple-...-green pattern (not cyclic at endpoints)",
+    "tags": []
+}

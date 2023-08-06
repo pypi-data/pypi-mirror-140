@@ -1,0 +1,15 @@
+{
+    "name": "ocean",
+    "pretty_name": "Ocean",
+    "file_name": "ocean.csv",
+    "category": "Sequential",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "green-blue-white",
+    "tags": [
+        "Geo"
+    ]
+}

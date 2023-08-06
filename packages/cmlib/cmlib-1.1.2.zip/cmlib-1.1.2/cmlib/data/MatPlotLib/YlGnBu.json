@@ -1,0 +1,13 @@
+{
+    "name": "YlGnBu",
+    "pretty_name": "YlGnBu",
+    "file_name": "YlGnBu.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Color Brewer. Light yellow, light green, dark blue",
+    "tags": []
+}

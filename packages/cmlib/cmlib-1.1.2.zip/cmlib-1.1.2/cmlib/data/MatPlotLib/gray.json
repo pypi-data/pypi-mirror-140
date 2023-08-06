@@ -1,0 +1,13 @@
+{
+    "name": "gray",
+    "pretty_name": "Gray",
+    "file_name": "gray.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Matlab. Sequential linearly-increasing black-to-white grayscale",
+    "tags": []
+}

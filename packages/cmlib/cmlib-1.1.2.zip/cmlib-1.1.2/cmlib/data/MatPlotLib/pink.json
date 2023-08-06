@@ -1,0 +1,13 @@
+{
+    "name": "pink",
+    "pretty_name": "Pink",
+    "file_name": "pink.csv",
+    "category": "Sequential",
+    "recommended": false,
+    "perceptually_uniform": false,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Matlab. Sequential increasing pastel black-pink-white, meant for sepia tone colorization of photographs",
+    "tags": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "CET-L6",
+    "pretty_name": "CET-L6",
+    "file_name": "CET-L6.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": true,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "linear_kbc_5-95_c73_n256",
+    "tags": []
+}

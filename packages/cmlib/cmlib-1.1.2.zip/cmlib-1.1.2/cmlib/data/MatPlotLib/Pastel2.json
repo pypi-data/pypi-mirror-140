@@ -1,0 +1,13 @@
+{
+    "name": "Pastel2",
+    "pretty_name": "Pastel2",
+    "file_name": "Pastel2.csv",
+    "category": "Qualitative",
+    "recommended": true,
+    "perceptually_uniform": false,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Color Brewer. ",
+    "tags": []
+}

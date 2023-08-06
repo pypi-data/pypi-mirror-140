@@ -1,0 +1,13 @@
+{
+    "name": "RdBu",
+    "pretty_name": "RdBu",
+    "file_name": "RdBu.csv",
+    "category": "Diverging",
+    "recommended": true,
+    "perceptually_uniform": false,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": false,
+    "notes": "Origin: Color Brewer. red, white, blue",
+    "tags": []
+}

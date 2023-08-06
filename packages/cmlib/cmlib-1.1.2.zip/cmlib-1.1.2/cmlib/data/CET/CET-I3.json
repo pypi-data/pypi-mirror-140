@@ -1,0 +1,13 @@
+{
+    "name": "CET-I3",
+    "pretty_name": "CET-I3",
+    "file_name": "CET-I3.csv",
+    "category": "Sequential",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": false,
+    "color_blind_friendly": false,
+    "isoluminant": true,
+    "notes": "isoluminant_cm_70_c39_n256",
+    "tags": []
+}

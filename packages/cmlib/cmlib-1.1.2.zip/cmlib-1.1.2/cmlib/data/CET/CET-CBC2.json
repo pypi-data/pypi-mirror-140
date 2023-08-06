@@ -1,0 +1,13 @@
+{
+    "name": "CET-CBC2",
+    "pretty_name": "CET-CBC2",
+    "file_name": "CET-CBC2.csv",
+    "category": "Cyclic",
+    "recommended": true,
+    "perceptually_uniform": true,
+    "black_white_friendly": false,
+    "color_blind_friendly": true,
+    "isoluminant": false,
+    "notes": "cyclic-protanopic-deuteranopic_wywb_55-96_c33_n256",
+    "tags": []
+}
