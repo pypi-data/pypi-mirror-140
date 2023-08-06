@@ -1,0 +1,16 @@
+bfio/OmeXml.py,sha256=9jfI2S7ld5GxDcqF_uUwxFkiZ_SRTBzLUh_ic_mmuVY,61219
+bfio/VERSION,sha256=Wf0R3GBYBxMo_x1iV0dRCr1UHEo0-SJzn7ZIXudEt68,11
+bfio/__init__.py,sha256=QnLM48VAx4nFVeGe_i4sj_R5qYSccOuqMjaeEYZWcug,1544
+bfio/backends.py,sha256=LT0082q1KFTUveUkpNBR4CbrG-IYF-KIegRch375tJg,38614
+bfio/base_classes.py,sha256=MKCPy32PxDL4vvSiHxZjKE-HaQA501gunREIWisaVhg,26650
+bfio/bfio.py,sha256=9xmBaE4PjW1nmKx7vaYISGOAZG3X1rE4J6YxBePxpIk,54603
+bfio/jars/bioformats_package.jar,sha256=vn7YrhSehktg0wTGPKQMsMnMJ0k1WJx7rty3Sp4R4u0,42985579
+bfio/jars/logback.xml,sha256=p9rvxJNrJsRP9aqnnUnkzMSn2YJ6jGkDwXW_CT13kpY,411
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_read.py,sha256=mywHNueNXLUlnd4nAEGzd39kKrzVumMaujZOBLSuAE4,8807
+bfio-2.2.0.dev1.dist-info/LICENSE,sha256=aaXu23RLKNjIAuRO3Ne467nfI1cDfvUAfZDBA646f6A,1065
+bfio-2.2.0.dev1.dist-info/METADATA,sha256=U6hlJiVy_SfAkxbKIbbV4sjw9tNgc1AocdxMf54HrSI,4054
+bfio-2.2.0.dev1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+bfio-2.2.0.dev1.dist-info/entry_points.txt,sha256=W5wl7ZaErxiXJJuPAelB2R4Oooi9Mp1RTnxMcGrS4sU,34
+bfio-2.2.0.dev1.dist-info/top_level.txt,sha256=SoljXCHhvlBJowtrkuSAiVfmq-bBPh4xobz1pbviz8Q,11
+bfio-2.2.0.dev1.dist-info/RECORD,,
