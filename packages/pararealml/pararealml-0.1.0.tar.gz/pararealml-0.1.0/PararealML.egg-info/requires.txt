@@ -1,0 +1,8 @@
+numpy>=1.21
+scipy>=1.7.0
+matplotlib>=3.5.0
+sympy>=1.6
+mpi4py>=3.0.0
+scikit-learn>=0.24.0
+tensorflow>=2.0.0
+tensorflow-probability>=0.10.0
