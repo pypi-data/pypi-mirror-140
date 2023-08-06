@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: semanticlayertools
+Version: 0.0.5
+Summary: Create semantic layers using different methods for word linking.
+Home-page: https://gitlab.gwdg.de/modelsen/semanticlayertools
+Author: Malte Vogl
+Author-email: mvogl@mpiwg-berlin.mpg.de
+License: UNKNOWN
+Project-URL: Project Home, https://modelsen.mpiwg-berlin.mpg.de
+Project-URL: Bug Tracker, https://gitlab.gwdg.de/modelsen/semanticlayertools/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: spacy
+Requires-Dist: textacy
+Requires-Dist: pandas
+Requires-Dist: infomap
+Requires-Dist: igraph
+Requires-Dist: leidenalg
+Provides-Extra: all
+Requires-Dist: torch ; extra == 'all'
+Requires-Dist: umap-learn ; extra == 'all'
+Requires-Dist: hdbscan ; extra == 'all'
+Requires-Dist: sentence-transformers ; extra == 'all'
+Requires-Dist: plotly ; extra == 'all'
+Requires-Dist: twine ; extra == 'all'
+Requires-Dist: tox ; extra == 'all'
+Requires-Dist: sphinx ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Provides-Extra: embeddml
+Requires-Dist: torch ; extra == 'embeddml'
+Requires-Dist: umap-learn ; extra == 'embeddml'
+Requires-Dist: hdbscan ; extra == 'embeddml'
+Requires-Dist: sentence-transformers ; extra == 'embeddml'
+Requires-Dist: plotly ; extra == 'embeddml'
+
+## SemanticLayerTools
+
+Collects tools to create semantic layers in the socio-epistemic networks framework. Source material can be any structured corpus with metadata of authors, time, and at least one text column.
+
+Documentation is available on [ReadTheDocs](https://semanticlayertools.readthedocs.io/).
+
+## Installation
+
+tl;dr Use pip
+
+~~~bash
+pip install semanticlayertools
+~~~
+
+Consider using a clean virtual environment to keep your main packages separated.
+Create a new virtual environment and install the package
+
+~~~bash
+python3 -m venv env
+source env/bin/activate
+pip install semanticlayertools
+~~~
+
+To use some sentence embedding utility functions please install with the
+`embeddml` option
+
+~~~bash
+pip install semanticlayertools[embeddml]
+~~~
+
+## Testing
+
+Tests can be run by installing the _dev_ requirements and running `tox`.
+
+~~~bash
+pip install semanticlayertools[dev]
+tox
+~~~
+
+## Building documentation
+
+The documentation is build using _sphinx_. Install with the _dev_ option and run
+
+~~~bash
+pip install semanticlayertools[dev]
+tox -e docs
+~~~
+
+## Funding information
+
+The development is part of the research project [ModelSEN](https://modelsen.mpiwg-berlin.mpg.de)
+
+> Socio-epistemic networks: Modelling Historical Knowledge Processes,
+
+in Department I of the Max Planck Institute for the History of Science 
+and funded by the Federal Ministry of Education and Research, Germany (Grant No. 01 UG2131).
+
+
