@@ -1,0 +1,1 @@
+from NOOR.topsis import topsis
