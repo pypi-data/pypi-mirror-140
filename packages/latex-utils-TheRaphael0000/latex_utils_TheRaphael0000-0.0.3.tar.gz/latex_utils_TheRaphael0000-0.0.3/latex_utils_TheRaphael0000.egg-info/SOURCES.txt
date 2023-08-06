@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+latex_utils/__init__.py
+latex_utils/latex_utils.py
+latex_utils_TheRaphael0000.egg-info/PKG-INFO
+latex_utils_TheRaphael0000.egg-info/SOURCES.txt
+latex_utils_TheRaphael0000.egg-info/dependency_links.txt
+latex_utils_TheRaphael0000.egg-info/requires.txt
+latex_utils_TheRaphael0000.egg-info/top_level.txt
