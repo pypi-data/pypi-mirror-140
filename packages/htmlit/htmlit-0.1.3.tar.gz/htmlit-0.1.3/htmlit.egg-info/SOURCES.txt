@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+htmlit/HtmlGenerator.py
+htmlit/__init__.py
+htmlit.egg-info/PKG-INFO
+htmlit.egg-info/SOURCES.txt
+htmlit.egg-info/dependency_links.txt
+htmlit.egg-info/top_level.txt
