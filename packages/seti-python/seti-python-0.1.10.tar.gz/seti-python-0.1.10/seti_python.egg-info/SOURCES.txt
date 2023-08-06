@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+seti_python/__init__.py
+seti_python/class_read.py
+seti_python/class_tools.py
+seti_python/class_users.py
+seti_python/payment_class.py
+seti_python/wallet_class.py
+seti_python.egg-info/PKG-INFO
+seti_python.egg-info/SOURCES.txt
+seti_python.egg-info/dependency_links.txt
+seti_python.egg-info/requires.txt
+seti_python.egg-info/top_level.txt
