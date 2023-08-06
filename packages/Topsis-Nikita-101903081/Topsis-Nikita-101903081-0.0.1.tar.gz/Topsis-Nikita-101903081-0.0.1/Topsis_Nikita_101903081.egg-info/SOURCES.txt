@@ -1,0 +1,5 @@
+setup.py
+Topsis_Nikita_101903081.egg-info/PKG-INFO
+Topsis_Nikita_101903081.egg-info/SOURCES.txt
+Topsis_Nikita_101903081.egg-info/dependency_links.txt
+Topsis_Nikita_101903081.egg-info/top_level.txt
