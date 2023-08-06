@@ -1,0 +1,2 @@
+[console_scripts]
+zoom = zoom.__main__:main
