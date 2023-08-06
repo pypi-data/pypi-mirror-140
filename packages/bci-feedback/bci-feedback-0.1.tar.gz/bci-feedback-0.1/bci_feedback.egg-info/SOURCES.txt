@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bci/car_racing/__init__.py
+bci/car_racing/car_racing.py
+bci/pacman/__init__.py
+bci_feedback.egg-info/PKG-INFO
+bci_feedback.egg-info/SOURCES.txt
+bci_feedback.egg-info/dependency_links.txt
+bci_feedback.egg-info/requires.txt
+bci_feedback.egg-info/top_level.txt
