@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: ptdb
+Version: 0.2.1
+Summary: A pdb class based on ptpython
+Home-page: https://github.com/4thel00z/ptdb
+License: GPL-3
+Author: 4thel00z
+Author-email: 4thel00z@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ptpython (>=3.0.20,<4.0.0)
+Description-Content-Type: text/markdown
+
+# ptb
+
+![Usage](https://raw.githubusercontent.com/4thel00z/ptdb/master/ptdb.png)
+
+## Motivation
+
+pdb sucks, the other packages do weird stuff and type completion does not work in interact mode (looking at you ipdb).
+
+## Installation
+
+```
+pip install ptb
+```
+
+## Usage
+
+Simple do:
+
+```python3
+from ptdb import set_trace
+
+# some where in your code do:
+
+set_trace()
+
+# Then just type the following to be thrown into a ptpython shell
+interact
+```
+
+
+## License
+
+This project is licensed under the GPL-3 license.
+

@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ptdb"
+version = "0.2.1"
+description = "A pdb class based on ptpython"
+authors = ["4thel00z <4thel00z@gmail.com>"]
+license = "GPL-3"
+readme = "README.md"
+homepage = "https://github.com/4thel00z/ptdb"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+ptpython = "^3.0.20"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
