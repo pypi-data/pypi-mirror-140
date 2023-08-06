@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: zdppy-mysql
+Version: 0.2.0
+Summary: 使用python操作MySQL,同时支持同步版本和异步版本,支持事务
+Author: zhangdapeng
+Author-email: pygosuperman@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiomysql (>=0.0.22,<0.0.23)
+Requires-Dist: zdppy-log (>=0.1.1,<0.2.0)
