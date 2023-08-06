@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/DeepLogger/DeepLogger.py
+src/DeepLogger/__init__.py
+src/DeepLogger.egg-info/PKG-INFO
+src/DeepLogger.egg-info/SOURCES.txt
+src/DeepLogger.egg-info/dependency_links.txt
+src/DeepLogger.egg-info/top_level.txt
