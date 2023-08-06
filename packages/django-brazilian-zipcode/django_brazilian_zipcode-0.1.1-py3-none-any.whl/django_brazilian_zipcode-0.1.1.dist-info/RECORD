@@ -1,0 +1,17 @@
+brazilian_zipcode/__init__.py,sha256=dgCo8nQZ9TdFQDizNeuA9MY6bZIx6suX-Al3D5CHRhg,79
+brazilian_zipcode/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brazilian_zipcode/api/serializers.py,sha256=9s9Yf_PkuPjis3gwYXSUIq_JEhXq3DmFG-iTt9SzEY4,284
+brazilian_zipcode/api/urls.py,sha256=Hs1X2OhyWQnwNzzcQYEbiC-qt8NbDOEQB2AJ95y5eag,136
+brazilian_zipcode/api/views.py,sha256=lrn9pt2sBMqmiDKczGC-_ltc0jaGOnT8YHUQ8tgFJSc,1002
+brazilian_zipcode/forms.py,sha256=vDBeEHzXo-FF4Vk3dXBgmufXDZQiTA_xHYT24wvCs2U,432
+brazilian_zipcode/injection.py,sha256=Qo_BDX4ZiFoVGYTKJSaYKexeHAsD0r8XmMwRJMvTSPU,712
+brazilian_zipcode/locale/pt_BR/LC_MESSAGES/django.po,sha256=iWdT6xcWvhEbx94Xkjb_H3qDAH8qIBOKsSbZcwrCIq0,812
+brazilian_zipcode/objects.py,sha256=qB3i_mImtMP5mdi_OYDBaKTLFXOohF__LdRQVkrDTG8,173
+brazilian_zipcode/parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brazilian_zipcode/parsers/base.py,sha256=Mn_DANuBER2UFVpvjiWH_9WKBa53rCgaDz70T_0yAlE,323
+brazilian_zipcode/parsers/correios.py,sha256=S5fk9xzEIRjr4Y3DUJeAsPLezeMU7Jwt8S4FbqxfugU,1128
+brazilian_zipcode/service.py,sha256=zrgABTyLX_URz7r5-M7lf5PhzmbpX_OZHAHZYzuS-IA,316
+brazilian_zipcode/urls.py,sha256=TYr6SCZsEm3XUkzGpjHMwxJr3LWtrO0qyIpyCgIvRoE,108
+django_brazilian_zipcode-0.1.1.dist-info/WHEEL,sha256=H68pkwFXYiPcYQggWGQrteqYmGEtEbAhNbB9JPX9hZ4,88
+django_brazilian_zipcode-0.1.1.dist-info/METADATA,sha256=Mn-5Q7UuYeZ-aa8Ug732vJ-Ci2EEK6sLYGQ9iwwhNMg,470
+django_brazilian_zipcode-0.1.1.dist-info/RECORD,,
