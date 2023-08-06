@@ -1,0 +1,3 @@
+from .badminton import *
+
+main()

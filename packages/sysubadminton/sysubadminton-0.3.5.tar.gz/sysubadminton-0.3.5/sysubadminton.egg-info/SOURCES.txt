@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+sysubadminton/__init__.py
+sysubadminton/__main__.py
+sysubadminton/badminton.py
+sysubadminton/version.py
+sysubadminton.egg-info/PKG-INFO
+sysubadminton.egg-info/SOURCES.txt
+sysubadminton.egg-info/dependency_links.txt
+sysubadminton.egg-info/entry_points.txt
+sysubadminton.egg-info/requires.txt
+sysubadminton.egg-info/top_level.txt
