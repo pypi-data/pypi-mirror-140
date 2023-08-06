@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: qrm_client
+Version: 0.0.3
+Summary: qrm_client
+Home-page: https://github.com/final-israel/qrm
+Author: iPerf
+Author-email: pavelr@final.israel
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6.9
