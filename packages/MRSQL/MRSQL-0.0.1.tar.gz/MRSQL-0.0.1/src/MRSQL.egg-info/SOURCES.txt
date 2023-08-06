@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/MRSQL/__init__.py
+src/MRSQL/connect.py
+src/MRSQL.egg-info/PKG-INFO
+src/MRSQL.egg-info/SOURCES.txt
+src/MRSQL.egg-info/dependency_links.txt
+src/MRSQL.egg-info/requires.txt
+src/MRSQL.egg-info/top_level.txt
