@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['pipechain']
+
+package_data = \
+{'': ['*']}
+
+setup_kwargs = {
+    'name': 'pipechain',
+    'version': '0.1.1',
+    'description': 'Functional pipelines in Python using method chaining',
+    'long_description': '# PipeChain\n\n## Motivation\n\nPipeChain is a utility library for creating functional pipelines.\nLet\'s start with a motivating example.\nWe have a list of Australian phone numbers from our users.\nWe need to clean this data before we insert it into the database.\nWith PipeChain, you can do this whole process in one neat pipeline:\n\n\n\n```python\nfrom pipechain import PipeChain, PLACEHOLDER as _\n\nnums = [\n    "493225813",\n    "0491 570 156",\n    "55505488",\n    "Barry",\n    "02 5550 7491",\n    "491570156",\n    "",\n    "1800 975 707"\n]\n\nPipeChain(\n    nums\n).pipe(\n    # Remove spaces\n    map, lambda x: x.replace(" ", ""), _\n).pipe(\n    # Remove non-numeric entries\n    filter, lambda x: x.isnumeric(), _\n).pipe(\n    # Add the mobile code to the start of 8-digit numbers\n    map, lambda x: "04" + x if len(x) == 8 else x, _\n).pipe(\n    # Add the 0 to the start of 9-digit numbers\n    map, lambda x: "0" + x if len(x) == 9 else x, _\n).pipe(\n    # Convert to a set to remove duplicates\n    set\n).eval()\n```\n\n\n\n\n    {\'0255507491\', \'0455505488\', \'0491570156\', \'0493225813\', \'1800975707\'}\n\n\n\nWithout PipeChain, we would have to horrifically nest our code, or else use a lot of temporary variables:\n\n\n```python\nset(\n    map(\n        lambda x: "0" + x if len(x) == 9 else x,\n        map(\n            lambda x: "04" + x if len(x) == 8 else x,\n            filter(\n                lambda x: x.isnumeric(),\n                map(\n                    lambda x: x.replace(" ", ""),\n                    nums\n                )\n            )\n        )\n    )\n)\n```\n\n\n\n\n    {\'0255507491\', \'0455505488\', \'0491570156\', \'0493225813\', \'1800975707\'}\n\n\n\n## Installation\n\n```bash\npip install pipechain\n```\n\n## Usage\n### Basic Usage\n\nPipeChain has only two exports: `PipeChain`, and `PLACEHOLDER`.\n\n`PipeChain` is a class that defines a pipeline.\nYou create an instance of the class, and then call `.pipe()` to add another function onto the pipeline:\n\n\n```python\nfrom pipechain import PipeChain, PLACEHOLDER\nPipeChain(1).pipe(str)\n```\n\n\n\n\n    PipeChain(arg=1, pipes=[functools.partial(<class \'str\'>)])\n\n\n\nFinally, you call `.eval()` to run the pipeline and return the result:\n\n\n```python\nPipeChain(1).pipe(str).eval()\n```\n\n\n\n\n    \'1\'\n\n\n\nYou can "feed" the pipe at either end, either during construction (`PipeChain("foo")`), or during evaluation `.eval("foo")`:\n\n\n```python\nPipeChain().pipe(str).eval(1)\n```\n\n\n\n\n    \'1\'\n\n\n\nEach call to `.pipe()` takes a function, and any additional arguments you provide, both positional and keyword, will be forwarded to the function:\n\n\n```python\nPipeChain(["b", "a", "c"]).pipe(sorted, reverse=True).eval()\n```\n\n\n\n\n    [\'c\', \'b\', \'a\']\n\n\n\n### Argument Position\nBy default, the previous value is passed as the first positional argument to the function:\n\n\n```python\nPipeChain(2).pipe(pow, 3).eval()\n```\n\n\n\n\n    8\n\n\n\nThe only magic here is that if you use the `PLACEHOLDER` variable as an argument to `.pipe()`, then the pipeline will replace it with the output of the previous pipe at runtime:\n\n\n```python\nPipeChain(2).pipe(pow, 3, PLACEHOLDER).eval()\n```\n\n\n\n\n    9\n\n\n\nNote that you can rename `PLACEHOLDER` to something more usable using Python\'s import statement, e.g.\n\n\n```python\nfrom pipechain import PLACEHOLDER as _\nPipeChain(2).pipe(pow, 3, _).eval()\n\n```\n\n\n\n\n    9\n\n\n\n### Methods\nIt might not see like methods will play that well with this pipe convention, but after all, they are just functions.\nYou should be able to access any object\'s method as a function by accessing it on that object\'s parent class.\nIn the below example, `str` is the parent class of "":\n\n\n```python\n"".join(["a", "b", "c"])\n```\n\n\n\n\n    \'abc\'\n\n\n\n\n```python\nPipeChain(["a", "b", "c"]).pipe(str.join, "", _).eval()\n```\n\n\n\n\n    \'abc\'\n\n\n\n### Operators\n\nThe same goes for operators, such as `+`, `*`, `[]` etc.\nWe just have to use the `operator` module in the standard library:\n\n\n```python\nfrom operator import add, mul, getitem\n\nPipeChain(5).pipe(mul, 3).eval()\n```\n\n\n\n\n    15\n\n\n\n\n```python\nPipeChain(5).pipe(add, 3).eval()\n```\n\n\n\n\n    8\n\n\n\n\n```python\nPipeChain(["a", "b", "c"]).pipe(getitem, 1).eval()\n```\n\n\n\n\n    \'b\'\n\n\n\n## Test Suite\n\nNote, you will need poetry installed.\n\nTo run the test suite, use:\n\n```bash\ngit clone https://github.com/multimeric/PipeChain.git\ncd PipeChain\npoetry install\npoetry run pytest test/test.py\n```\n',
+    'author': 'Michael Milton',
+    'author_email': 'michael.r.milton@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/multimeric/PipeChain',
+    'packages': packages,
+    'package_data': package_data,
+    'python_requires': '>=3.7,<3.11',
+}
+
+
+setup(**setup_kwargs)
