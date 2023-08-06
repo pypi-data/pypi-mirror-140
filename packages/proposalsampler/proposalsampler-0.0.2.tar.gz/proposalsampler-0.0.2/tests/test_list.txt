@@ -1,0 +1,11 @@
+### Test sampling:
+
+# main sampling tests:
+python3 -c "import proposalsampler.sampling.slambda.tests_slambda_main as ts;ts.run()"
+
+# sampling components tests:
+python3 -c "import proposalsampler.sampling.slambda.tests_slambda_synch as ts;ts.run()"
+
+python3 -c "import proposalsampler.sampling.slambda.tests_tree_editor as ts;ts.run()"
+
+python3 -c "import proposalsampler.sampling.slambda.tests_slambda_single as ts;ts.run()"
