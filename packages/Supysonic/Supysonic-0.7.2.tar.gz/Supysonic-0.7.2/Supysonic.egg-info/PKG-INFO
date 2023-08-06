@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: Supysonic
+Version: 0.7.2
+Summary: Python implementation of the Subsonic server API
+Home-page: https://supysonic.readthedocs.io
+Download-URL: https://github.com/spl0k/supysonic
+Author: Alban Féron
+Author-email: alban.feron@gmail.com
+License: GNU AGPLv3
+Keywords: subsonic,music,server
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Multimedia :: Sound/Audio
+Requires-Python: <3.11,>=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Supysonic is a Python implementation of the [Subsonic][] server API.
+
+Current supported features are:
+* browsing (by folders or tags)
+* streaming of various audio file formats
+* transcoding
+* user or random playlists
+* cover art
+* starred tracks/albums and ratings
+* [Last.FM][lastfm] scrobbling
+* Jukebox mode
+
+Supysonic currently targets the version 1.10.2 of the Subsonic API. For more
+details, go check the [API implementation status][docs-api].
+
+[subsonic]: http://www.subsonic.org/
+[lastfm]: https://www.last.fm/
+[docs-api]: https://supysonic.readthedocs.io/en/latest/api.html
+
