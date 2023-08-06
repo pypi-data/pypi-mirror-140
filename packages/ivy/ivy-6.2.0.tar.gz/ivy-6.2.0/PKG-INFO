@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: ivy
+Version: 6.2.0
+Summary: A static website generator for people who enjoy the simpler things in life.
+Home-page: https://github.com/dmulholl/ivy
+Author: Darren Mulholland
+License: Public Domain
+Description: 
+        A static website generator for people who enjoy the simpler things in life.
+        
+        * `Github <https://github.com/dmulholl/ivy>`_
+        * `Documentation <http://www.dmulholl.com/docs/ivy/dev/>`_
+        * `Demo <http://www.dmulholl.com/demos/ivy/>`_
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: Public Domain
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Requires-Python: >=3.8
