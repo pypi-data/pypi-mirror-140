@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+mkpy224o/__init__.py
+mkpy224o/version.py
+mkpy224o.egg-info/PKG-INFO
+mkpy224o.egg-info/SOURCES.txt
+mkpy224o.egg-info/dependency_links.txt
+mkpy224o.egg-info/top_level.txt
