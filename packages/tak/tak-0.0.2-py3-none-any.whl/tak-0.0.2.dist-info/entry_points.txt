@@ -1,0 +1,2 @@
+[console_scripts]
+tak = tak.main:main
