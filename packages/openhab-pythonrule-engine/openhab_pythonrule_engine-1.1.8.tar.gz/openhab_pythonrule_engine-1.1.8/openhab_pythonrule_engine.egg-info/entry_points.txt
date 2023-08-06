@@ -1,0 +1,3 @@
+[console_scripts]
+pyrule = openhab_pythonrule_engine:main
+
