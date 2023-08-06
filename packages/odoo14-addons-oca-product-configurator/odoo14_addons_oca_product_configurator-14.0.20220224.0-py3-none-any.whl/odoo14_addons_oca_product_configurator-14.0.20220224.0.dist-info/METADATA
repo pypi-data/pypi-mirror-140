@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-product-configurator
+Version: 14.0.20220224.0
+Summary: Meta package for oca-product-configurator Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-product-configurator
+Requires-Dist: odoo14-addon-product-configurator-mrp
+Requires-Dist: odoo14-addon-product-configurator-mrp-component
+Requires-Dist: odoo14-addon-product-configurator-purchase
+Requires-Dist: odoo14-addon-product-configurator-restriction-policy
+Requires-Dist: odoo14-addon-product-configurator-sale
+Requires-Dist: odoo14-addon-product-configurator-sale-mrp
+Requires-Dist: odoo14-addon-product-configurator-stock
+Requires-Dist: odoo14-addon-website-product-configurator
+Requires-Dist: odoo14-addon-website-product-configurator-mrp
+
+UNKNOWN
+
