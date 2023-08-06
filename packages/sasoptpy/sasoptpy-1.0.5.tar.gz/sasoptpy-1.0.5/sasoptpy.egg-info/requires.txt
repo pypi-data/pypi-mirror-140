@@ -1,0 +1,4 @@
+pandas
+swat
+saspy
+numpy
