@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: invenio-oaiserver
+Version: 1.4.1
+Summary: Invenio module that implements OAI-PMH server.
+Home-page: https://github.com/inveniosoftware/invenio-oaiserver
+Author: CERN
+Author-email: info@inveniosoftware.org
+License: MIT
+Keywords: invenio OAI-PMH
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Dist: arrow (>=0.17.0)
+Requires-Dist: dojson (>=1.3.0)
+Requires-Dist: invenio-base (>=1.2.5)
+Requires-Dist: invenio-i18n (>=1.3.1)
+Requires-Dist: invenio-pidstore (>=1.2.2)
+Requires-Dist: invenio-records (>=1.6.0)
+Requires-Dist: invenio-rest (>=1.2.4)
+Requires-Dist: lxml (>=4.3.0)
+Provides-Extra: admin
+Requires-Dist: invenio-admin (>=1.3.0) ; extra == 'admin'
+Provides-Extra: all
+Requires-Dist: invenio-admin (>=1.3.0) ; extra == 'all'
+Requires-Dist: invenio-celery (>=1.2.3) ; extra == 'all'
+Requires-Dist: Sphinx (==4.2.0) ; extra == 'all'
+Requires-Dist: SQLAlchemy-Continuum (>=1.3.6) ; extra == 'all'
+Requires-Dist: SQLAlchemy (<1.4.0,>=1.2.18) ; extra == 'all'
+Requires-Dist: SQLAlchemy-Utils (<0.36,>=0.33.1) ; extra == 'all'
+Requires-Dist: invenio-indexer (>=1.2.1) ; extra == 'all'
+Requires-Dist: invenio-jsonschemas (>=1.1.3) ; extra == 'all'
+Requires-Dist: invenio-marc21 (>=1.0.0a9) ; extra == 'all'
+Requires-Dist: mock (>=1.3.0) ; extra == 'all'
+Requires-Dist: pytest-invenio (>=1.4.1) ; extra == 'all'
+Provides-Extra: celery
+Requires-Dist: invenio-celery (>=1.2.3) ; extra == 'celery'
+Provides-Extra: docs
+Requires-Dist: Sphinx (==4.2.0) ; extra == 'docs'
+Provides-Extra: elasticsearch6
+Requires-Dist: invenio-search[elasticsearch6] (<2.0.0,>=1.4.2) ; extra == 'elasticsearch6'
+Provides-Extra: elasticsearch7
+Requires-Dist: invenio-search[elasticsearch7] (<2.0.0,>=1.4.2) ; extra == 'elasticsearch7'
+Provides-Extra: mysql
+Requires-Dist: invenio-db[mysql] (<2.0.0,>=1.0.9) ; extra == 'mysql'
+Provides-Extra: postgresql
+Requires-Dist: invenio-db[postgresql] (<2.0.0,>=1.0.9) ; extra == 'postgresql'
+Provides-Extra: sqlite
+Requires-Dist: invenio-db (<2.0.0,>=1.0.9) ; extra == 'sqlite'
+Provides-Extra: tests
+Requires-Dist: SQLAlchemy-Continuum (>=1.3.6) ; extra == 'tests'
+Requires-Dist: SQLAlchemy (<1.4.0,>=1.2.18) ; extra == 'tests'
+Requires-Dist: SQLAlchemy-Utils (<0.36,>=0.33.1) ; extra == 'tests'
+Requires-Dist: invenio-indexer (>=1.2.1) ; extra == 'tests'
+Requires-Dist: invenio-jsonschemas (>=1.1.3) ; extra == 'tests'
+Requires-Dist: invenio-marc21 (>=1.0.0a9) ; extra == 'tests'
+Requires-Dist: mock (>=1.3.0) ; extra == 'tests'
+Requires-Dist: pytest-invenio (>=1.4.1) ; extra == 'tests'
+
+..
+    This file is part of Invenio.
+    Copyright (C) 2016-2018 CERN.
+
+    Invenio is free software; you can redistribute it and/or modify it
+    under the terms of the MIT License; see LICENSE file for more details.
+
+===================
+ Invenio-OAIServer
+===================
+
+.. image:: https://img.shields.io/github/license/inveniosoftware/invenio-oaiserver.svg
+        :target: https://github.com/inveniosoftware/invenio-oaiserver/blob/master/LICENSE
+
+.. image:: https://github.com/inveniosoftware/invenio-oaiserver/workflows/CI/badge.svg
+        :target: https://github.com/inveniosoftware/invenio-oaiserver/actions?query=workflow%3ACI
+
+.. image:: https://img.shields.io/coveralls/inveniosoftware/invenio-oaiserver.svg
+        :target: https://coveralls.io/r/inveniosoftware/invenio-oaiserver
+
+.. image:: https://img.shields.io/pypi/v/invenio-oaiserver.svg
+        :target: https://pypi.org/pypi/invenio-oaiserver
+
+
+Invenio module that implements an OAI-PMH server.
+
+Further documentation is available on https://invenio-oaiserver.readthedocs.io/
+
+
+..
+    This file is part of Invenio.
+    Copyright (C) 2016-2022 CERN.
+
+    Invenio is free software; you can redistribute it and/or modify it
+    under the terms of the MIT License; see LICENSE file for more details.
+
+Changes
+=======
+
+Version 1.4.1 (released 2022-03-01)
+
+- Fixes marshmallow deprecation warning.
+
+Version 1.4.0 (released 2022-02-22)
+
+- OAI-PMH sets reimplementation via percolator queries during result fetching.
+- Removes Python 2.7 support.
+- Resumption token argument fixes.
+
+Version 1.3.0 (released 2021-10-20)
+
+- Unpin Flask version.
+
+Version 1.2.2 (released 2021-09-17)
+
+- Adds support for more easily integrating the OAI-PMH server in InvenioRDM.
+
+- Adds new configuration variables for dependency injection of search class,
+  ID fetcher, record getter tec.
+
+- The release is fully backward compatibility and does not change any
+  behaviour.
+
+- Fixes a bug with Elasticsearch 7 causing invalid OAI-PMH output for the
+  resumption token.
+
+Version 1.2.1 (released 2021-07-12)
+
+- Adds german translations
+
+Version 1.2.0 (released 2020-03-17)
+
+- Removes support for python 2.7
+- Centralises management of Flask dependency via invenio-base
+
+Version 1.1.2 (released 2019-07-19)
+
+- fixes default config OAISERVER_QUERY_PARSER_FIELDS
+- changes celery support module to invenio-celery
+
+Version 1.1.1 (released 2019-07-31)
+
+- Added support for Marshmallow v2 and v3.
+
+Version 1.1.0 (released 2019-07-31)
+
+- Added support for Eleasticsearch v7
+
+Version 1.0.3 (released 2019-02-15)
+
+- Pins marshmallow package to <3 in preparation for upcoming v3.0.0 release
+  which will break compatibility.
+
+Version 1.0.2 (released 2019-01-10)
+
+- Improved performance of the *Identify* verb response by fetching earliest
+  record date from Elasticsearch.
+
+Version 1.0.1 (released 2018-12-14)
+
+Version 1.0.0 (released 2018-03-23)
+
+- Initial public release.
+
+
