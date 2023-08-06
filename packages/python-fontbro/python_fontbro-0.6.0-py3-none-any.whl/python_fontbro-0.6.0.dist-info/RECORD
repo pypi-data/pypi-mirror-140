@@ -1,0 +1,17 @@
+fontbro/__init__.py,sha256=vz4O_iFZX3BLKScu3K558BnX13ZCxEyk1NmELOY_K0E,208
+fontbro/features.py,sha256=lhUU_oPGoZL9PhjvmdXcSaQ2Y9HNIHQOBU5Q4Pis0Ss,17334
+fontbro/flags.py,sha256=QNsg_zVv4fsNrttAL-2MwKJK3bjtR7RuTKqxyK-yI2Y,605
+fontbro/font.py,sha256=5r3sirH_xnvD8Atl6gBK6QEB_pB5RSKpEVUNODiENGg,38307
+fontbro/metadata.py,sha256=NZ7xQdmAMxn2clgUKkcCF6RQnbMM6y3ezEVMKPoHMVE,288
+fontbro/subset.py,sha256=fWei2JEif7hHZMtAMqcyxbnOZKqBZL5XE1BloFZUvzg,848
+fontbro/uni.py,sha256=X9_DhTSzwDXsmSd08u3NXRr5BLxWKqH1m1trK7aEpIw,39791
+fontbro/unicodedata.py,sha256=8F4riMlyy3jwsmkKwwMc0WL4QOHIOPfr0hpFF4OwGV8,39792
+fontbro/utils.py,sha256=xXvS4apiylne7eaR0qZAqu5rQyG03tmPRjkwZJAT9PQ,194
+fontbro/data/features.json,sha256=IWypeIPKJ7qsUmReQ2vFAy8idUQ5770Oh8D0wawVdzA,17152
+fontbro/data/unicode-blocks.json,sha256=vGXrRTulybale0Cybx_QZoC55V1OSnEY-U21l8MCIkg,24669
+fontbro/data/unicode-scripts.json,sha256=j4A2R9avz9C41Fix-O1nDB1MupX9pxIcrcDz_DTmd9w,15059
+python_fontbro-0.6.0.dist-info/LICENSE.txt,sha256=NOGOw1tmp315ex224Or-4PWS9W5jbVWxcqbf2KW-EK8,1078
+python_fontbro-0.6.0.dist-info/METADATA,sha256=zBlJTeKeM8W9kp-_WVXU20aSu3AMw2T_2wYT3Q9G8jg,16603
+python_fontbro-0.6.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_fontbro-0.6.0.dist-info/top_level.txt,sha256=RPG3vBzvn6LKU2E_FNPBPuKlygx9aodErAYJNeyV3Jc,8
+python_fontbro-0.6.0.dist-info/RECORD,,
