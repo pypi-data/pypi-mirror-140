@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: certainty-tensorflow
+Version: 0.0.1
+Summary: P r o b a b l i s t i c   m o d e l s   o f   c e r t a i n t y   i n   T e n s o r f l o w .
+Home-page: https://github.com/prijatelj/certainty-tensorflow
+Author: Derek S. Prijatelj
+Author-email: dprijate@nd.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## Certainty
+
+Probablistic models of certainty including those that are Bayesian or information theoretic.
+This uses Tensorflow as the computation backend.
+
+### Verisoning
+
+This project uses [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html).
+This project's version will remain < 1.0.0 until adequate unit test coverage exists.
+
+### License
+
+This project's license is the MIT license as seen in LICENSE.txt.
+
+
