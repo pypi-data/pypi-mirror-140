@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyfatx
+Version: 0.0.2
+Summary: FATX Filesystem Utils
+Home-page: https://github.com/mborgerson/fatx
+Author: Matt Borgerson
+Author-email: contact@mborgerson.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: cffi
+
+UNKNOWN
+
