@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: Topsis-Chavvi-102097012
+Version: 0.2.1
+Summary: A python package to implement TOPSIS on a given dataset
+Home-page: UNKNOWN
+Author: Chavvi Bhatia
+Author-email: cbhatia_be19@thapar.edu
+License: MIT
+Description: UNKNOWN
+Keywords: TOPSIS
+Platform: UNKNOWN
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
