@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kombu-producer
+Version: 0.1.0
+Summary: Python library that implements a simple Kombu producer
+Home-page: https://github.com/Deepanshu07/kombu_producer
+Author: Deepanshu Gupta
+Author-email: deepanshu71095@gmail.com
+License: MIT
+Download-URL: https://github.com/Deepanshu07/kombu_producer/archive/refs/tags/v0.1.0.tar.gz
+Description: ### _Python library that implements a simple Kombu producer_
+Keywords: Kombu,Kombu-producer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
