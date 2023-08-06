@@ -1,0 +1,16 @@
+fancy_test_runners/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fancy_test_runners/settings.py,sha256=_mN-qm4k75k2AdggbQZt-EwAdNAKtvIFZh11-XZJqj8,150
+fancy_test_runners/test_runners.py,sha256=BciXn9vZpFJBykwzl7Vno-GQUbmW3u4yrNWXwFrMu80,1967
+fancy_test_runners/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fancy_test_runners/db/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fancy_test_runners/db/backends/mysql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fancy_test_runners/db/backends/mysql/base.py,sha256=JzV9HtKL7TbwweT2kPF0GjAQqrhr38h4_2bShZQHJzg,1292
+fancy_test_runners/db/backends/postgresql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fancy_test_runners/db/backends/postgresql/base.py,sha256=LdHw4wNubwUfOAOx_1XcZH1lgXImhPJFQJF2C0_rKyo,916
+fancy_test_runners/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fancy_test_runners/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fancy_test_runners/management/commands/test.py,sha256=rxkLnqrXkw7F3ningucI7ioMkh_i6viPqbjW65poP8U,760
+django_fancy_test_runners-1.0.0.dist-info/METADATA,sha256=_ceHCq3o-l9PRk_yAF6F7_h0zPPjVHjwXBT1Se7esCY,1157
+django_fancy_test_runners-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_fancy_test_runners-1.0.0.dist-info/top_level.txt,sha256=nX6YriXZVss8juz_qYVNMrsOqpilw6elpNebESD3eYI,220
+django_fancy_test_runners-1.0.0.dist-info/RECORD,,
