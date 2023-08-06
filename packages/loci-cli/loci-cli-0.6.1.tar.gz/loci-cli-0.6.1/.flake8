@@ -1,0 +1,4 @@
+[flake8]
+exclude = .git,__pycache__,__init__.py,.mypy_cache,.pytest_cache,venv,db_migrations
+
+max-line-length = 120

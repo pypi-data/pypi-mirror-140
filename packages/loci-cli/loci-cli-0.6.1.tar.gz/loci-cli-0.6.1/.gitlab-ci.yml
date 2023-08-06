@@ -1,0 +1,62 @@
+.only-default: &only-default
+  only:
+    - master
+    - merge_requests
+    - tags
+
+merge commit lint:
+  stage: test
+  image: node:latest
+  before_script:
+    - npm --version  # Print out version for debugging
+    - npm install -g @commitlint/cli @commitlint/config-conventional
+  script:
+    - echo $CI_MERGE_REQUEST_TITLE
+    - echo $CI_MERGE_REQUEST_TITLE | commitlint --config .commitlintrc.js
+  only:
+    - merge_requests
+
+commit lint:
+  # This is included because if there's only one commit in an MR, it uses the commit comment instead of the merge request text.
+  <<: *only-default
+  stage: test
+  image: node:latest
+  before_script:
+    - npm --version  # Print out version for debugging
+    - npm install -g @commitlint/cli @commitlint/config-conventional
+  script:
+    - commitlint --config .commitlintrc.js --from=HEAD~1 
+
+
+code lint:
+  <<: *only-default
+  stage: test
+  image: python:latest
+  before_script:
+    - python -V  # Print out version for debugging
+    - pip install virtualenv
+    - virtualenv venv
+    - source venv/bin/activate
+    - pip install flake8 
+  script:
+    - flake8
+
+versioning:
+  stage: deploy
+  image: python:latest
+  variables:
+    GITLAB_CI: "true"
+  script:
+    # checkout to release branch
+    # git checkout -B "$CI_BUILD_REF_NAME" "$CI_BUILD_REF"
+    - git config --global user.name "semantic-release (via GitlabCI)"
+    - git config --global user.email "semantic-release@gitlab"
+    - git fetch
+    # install python-semantic-release
+    - pip install python-semantic-release
+    # publish release
+    - "semantic-release publish --verbosity=DEBUG -D branch=master -D commit_subject='chore: version bumped to {version}'"
+  only:
+    variables:
+      - $RELEASE
+
