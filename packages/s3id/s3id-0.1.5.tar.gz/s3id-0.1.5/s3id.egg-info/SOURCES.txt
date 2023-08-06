@@ -1,0 +1,9 @@
+LICENSE
+LICENSE-3rdparty.csv
+NOTICE
+README.md
+setup.py
+s3id.egg-info/PKG-INFO
+s3id.egg-info/SOURCES.txt
+s3id.egg-info/dependency_links.txt
+s3id.egg-info/top_level.txt
