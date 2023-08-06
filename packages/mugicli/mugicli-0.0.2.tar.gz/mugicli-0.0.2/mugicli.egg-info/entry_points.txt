@@ -1,0 +1,21 @@
+[console_scripts]
+pycat = mugicli.pycat:main
+pycol = mugicli.pycol:main
+pydu = mugicli.pydu:main
+pyecho = mugicli.pyecho:main
+pyextstat = mugicli.pyextstat:main
+pyfind = mugicli.pyfind:main
+pygrep = mugicli.pygrep:main
+pyhead = mugicli.pyhead:main
+pymtime = mugicli.pymtime:main
+pymtimestat = mugicli.pymtimestat:main
+pysed = mugicli.pysed:main
+pysort = mugicli.pysort:main
+pystart = mugicli.pystart:main
+pytail = mugicli.pytail:main
+pytime = mugicli.pytime:main
+pytouch = mugicli.pytouch:main
+pywc = mugicli.pywc:main
+pyxargs = mugicli.pyxargs:main
+pyzip = mugicli.pyzip:main
+
