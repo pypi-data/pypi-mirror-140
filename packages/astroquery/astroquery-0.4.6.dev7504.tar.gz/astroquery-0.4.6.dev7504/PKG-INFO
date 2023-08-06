@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: astroquery
+Version: 0.4.6.dev7504
+Summary: Functions and classes to access online astronomical data resources
+Home-page: http://astropy.org/astroquery
+Author: The Astroquery Developers
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: all
