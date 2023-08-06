@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycore-utils
+Version: 0.0.27
+Summary: python utils
+Home-page: UNKNOWN
+Author: pycore
+Author-email: pycore_team@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pymysql
+Requires-Dist: redis
+
+UNKNOWN
+
+
