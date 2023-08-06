@@ -1,0 +1,7 @@
+README.md
+setup.py
+libscreen/__init__.py
+libscreen.egg-info/PKG-INFO
+libscreen.egg-info/SOURCES.txt
+libscreen.egg-info/dependency_links.txt
+libscreen.egg-info/top_level.txt
