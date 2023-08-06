@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/pyvideoconverter/__init__.py
+src/pyvideoconverter/_version.py
+src/pyvideoconverter/cli.py
+src/pyvideoconverter/parallel.py
+src/pyvideoconverter/video.py
+src/pyvideoconverter.egg-info/PKG-INFO
+src/pyvideoconverter.egg-info/SOURCES.txt
+src/pyvideoconverter.egg-info/dependency_links.txt
+src/pyvideoconverter.egg-info/top_level.txt
+src/pyvideoconverter/bin/pyvideoc
