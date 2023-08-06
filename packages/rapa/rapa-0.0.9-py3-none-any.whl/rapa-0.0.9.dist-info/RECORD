@@ -1,0 +1,12 @@
+rapa/__init__.py,sha256=xn5DSv8HyWTb6mkRh4DpzDxvRW3gnb-1G9-joZnTc6s,213
+rapa/_var.py,sha256=1bebzgr_09iJCBpJcYnLbtLtbIj8mIj1CBkvZDAL5-0,94
+rapa/base.py,sha256=DIWXLAFa6v0ENwpdJff4CJITSDFvSNgAcW-wNv9z72I,43239
+rapa/config.py,sha256=4AzkeKFazUb9gsXiEUN5pQ8QE3UXZblZdNKd197YAM8,149
+rapa/rapa.py,sha256=KTd3-MPheg5aex4uFMTL9XQmOpKkLCUhj2aBng4Pknc,562
+rapa/utils.py,sha256=h2mobFX5RzaJRSQiF02sWWCbYVO7PQJa5Kxgs4nDYT0,23341
+rapa/version.py,sha256=i_8WJmpfvLpsjKXabWI0e47fVoWC1Es8pVboBDn2ORg,21
+rapa-0.0.9.dist-info/LICENSE,sha256=4UsJbIyyNyOi7_YL4_CKAxAUmdPpPY9N7NEs4f898Kw,1080
+rapa-0.0.9.dist-info/METADATA,sha256=vfXyOc1d5aJbwNqwP5cHg2qGPDIjkZsbEIcgUOZGhCY,2420
+rapa-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rapa-0.0.9.dist-info/top_level.txt,sha256=tqEXSGdhohdOuEs2T4cdap182kOZLUj0cuI4x2tFNIQ,5
+rapa-0.0.9.dist-info/RECORD,,
