@@ -1,0 +1,3 @@
+[console_scripts]
+sksurgeryeval = sksurgeryeval.__main__:main
+

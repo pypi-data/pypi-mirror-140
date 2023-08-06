@@ -1,0 +1,10 @@
+numpy
+ipykernel
+nbsphinx
+vtk
+PySide2
+scikit-surgeryvtk>=0.12.3
+scikit-surgerycore
+scikit-surgeryutils
+scikit-surgerynditracker
+scikit-surgeryarucotracker>=0.0.4
