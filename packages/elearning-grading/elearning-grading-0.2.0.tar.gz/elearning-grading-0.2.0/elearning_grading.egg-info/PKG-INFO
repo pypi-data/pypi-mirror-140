@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: elearning-grading
+Version: 0.2.0
+Summary: Python utilities to help Teaching Assistants grade assignments with eLearning
+Home-page: UNKNOWN
+Author: Maxwell Weinzierl
+Author-email: maxwellweinzierl@gmail.com
+License: Apache-2.0
+Download-URL: https://github.com/Supermaxman/elearning-grading
+Project-URL: Bug Tracker, https://github.com/Supermaxman/elearning-grading/issues
+Project-URL: Source Code, https://github.com/Supermaxman/elearning-grading
+Keywords: grading,elearning,education,teaching
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# eLearning Grading
+## Python utilities to help Teaching Assistants grade assignments with eLearning
+
+______________________________________________________________________
+
+## eLearning Grading
+
+This repository contains python scripts and tools to help Teaching Assistants
+using eLearning's assignment download feature to organize and grade written, typed, and programming assignments.
+
+## How To Use
+### Installing from pip
+```bash
+pip install elearning-grading
+```
+
+### Installing from GitHub
+```bash
+git clone https://github.com/Supermaxman/elearning-grading
+cd elearning-grading
+pip install -e .
+```
+
+### Extracting code and reports from .zip file
+eLearning provides the `Assignment File Download` feature for Teaching Assistants to download assignment files 
+for the entire class. 
+Sadly, this feature makes grading assignments extremely tedious, 
+as the .zip file provided usually looks like this:
+```bash
+TODO
+```
+
+## About Me
+My name is [Maxwell Weinzierl](https://personal.utdallas.edu/~maxwell.weinzierl/), and I am a
+Natural Language Processing researcher at the Human Technology Research Institute (HLTRI) at the
+University of Texas at Dallas. I am currently working on my PhD, which focuses on COVID-19 and
+HPV vaccine misinformation, trust, and more on Social Media platforms such as Twitter. I am 
+also a Graduate Teaching Assistant for the AI, NLP, and IR classes of Dr. Harabagiu.
+
+
