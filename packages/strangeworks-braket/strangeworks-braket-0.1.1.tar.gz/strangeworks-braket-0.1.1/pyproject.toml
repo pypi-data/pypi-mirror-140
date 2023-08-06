@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "strangeworks-braket"
+version = "0.1.1"
+description = "Strangeworks Braket SDK extension"
+readme = "DESCRIPTION.md"
+authors = ["Strange Devs <hello@strangeworks.com>"]
+license = "Apache-2.0"
+packages = [
+    {include = "strangeworks"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+strangeworks = "^0.2.0"
+amazon-braket-sdk="1.11.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+Flask = "^2.0.2"
+pytest = "^7.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools", "wheel"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--disable-warnings"
+testpaths = [
+    "tests",
+]
