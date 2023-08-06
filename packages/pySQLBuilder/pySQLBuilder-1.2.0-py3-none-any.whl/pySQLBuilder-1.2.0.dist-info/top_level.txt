@@ -1,0 +1,7 @@
+pySQLBuilder
+pySQLBuilder/Builder
+pySQLBuilder/Builder/Component
+pySQLBuilder/Query
+pySQLBuilder/Query/Component
+pySQLBuilder/Structure
+pySQLBuilder/Translator
