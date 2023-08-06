@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+VirtualEmbed.egg-info/PKG-INFO
+VirtualEmbed.egg-info/SOURCES.txt
+VirtualEmbed.egg-info/dependency_links.txt
+VirtualEmbed.egg-info/top_level.txt
+virtualembed.egg-info/PKG-INFO
+virtualembed.egg-info/SOURCES.txt
+virtualembed.egg-info/dependency_links.txt
+virtualembed.egg-info/top_level.txt
