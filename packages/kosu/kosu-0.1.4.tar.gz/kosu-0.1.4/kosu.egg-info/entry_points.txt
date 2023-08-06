@@ -1,0 +1,2 @@
+[console_scripts]
+kosu = kosu:cli
