@@ -1,0 +1,8 @@
+setup.py
+MyPackageAadi.egg-info/PKG-INFO
+MyPackageAadi.egg-info/SOURCES.txt
+MyPackageAadi.egg-info/dependency_links.txt
+MyPackageAadi.egg-info/not-zip-safe
+MyPackageAadi.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mypackage.py
