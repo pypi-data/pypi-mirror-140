@@ -1,0 +1,13 @@
+setuptools
+zope.globalrequest
+zodbupdate
+Products.GenericSetup
+Products.CMFCore
+
+[steps]
+experimental.broken
+collective.setdefaulteditor
+
+[test]
+plone.app.testing
+plone.app.contenttypes
