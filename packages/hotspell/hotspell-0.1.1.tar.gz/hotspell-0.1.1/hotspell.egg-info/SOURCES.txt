@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+hotspell/__init__.py
+hotspell/heatwaves.py
+hotspell/indices.py
+hotspell/metrics.py
+hotspell/utils.py
+hotspell.egg-info/PKG-INFO
+hotspell.egg-info/SOURCES.txt
+hotspell.egg-info/dependency_links.txt
+hotspell.egg-info/requires.txt
+hotspell.egg-info/top_level.txt
