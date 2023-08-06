@@ -1,0 +1,12 @@
+sgqlc
+click>=8
+tqdm
+requests
+Pillow
+jsonschema
+
+[:platform_system == "Windows"]
+pyreadline
+
+[:python_version < "3.7"]
+dataclasses
