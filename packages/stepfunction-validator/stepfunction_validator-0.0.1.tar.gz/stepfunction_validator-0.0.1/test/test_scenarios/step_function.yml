@@ -1,0 +1,258 @@
+---
+Comment: Post commission steps when launching a compute resource
+StartAt: try
+States:
+  try:
+    Type: Parallel
+    Branches:
+    - StartAt: AwsOrHybrid
+      States:
+        AwsOrHybrid:
+          Comment: Check if it is for AWS EC2 or Hybrid
+          Type: Choice
+          Choices:
+          - Variable: "$.StateData.Source"
+            StringEquals: AWS
+            Next: PassStepCycle
+          Default: ChooseOsTable
+        PassStepCycle:
+          Type: Pass
+          Result:
+            Cycle: 0
+          ResultPath: "$.StateData.StepCycle"
+          Next: wait_n_seconds
+        wait_n_seconds:
+          Comment: Wait for a period of time to let AWS EC2 instance complete it's
+            configuration
+          Type: Wait
+          Seconds: 1200
+          Next: GetEc2InstanceDetails
+        GetEc2InstanceDetails:
+          Comment: Get the EC2 instance information
+          Type: Task
+          Resource: "${FunctGetEc2InstanceDetails}"
+          Next: CheckInstanceState
+        CheckInstanceState:
+          Comment: Check and decide on State and cycle
+          Type: Choice
+          Choices:
+          - Variable: "$.StateData.ResourceState"
+            StringEquals: running
+            Next: DropTaggingEngine
+          - Variable: "$.StateData.ResourceState"
+            StringEquals: terminated
+            Next: TerminatedState
+          - And:
+            - Variable: "$.StateData.StepCycle.Cycle"
+              NumericEquals: 0
+            - Or:
+              - Not:
+                  Variable: "$.StateData.ResourceState"
+                  StringEquals: running
+              - Not:
+                  Variable: "$.StateData.ResourceState"
+                  StringEquals: terminated
+            Next: UpdateCycle
+          Default: TimedOutState
+        DropTaggingEngine:
+          Type: Task
+          Resource: arn:aws:states:::sqs:sendMessage
+          Parameters:
+            QueueUrl: "${SqsTaggingEngine}"
+            MessageBody:
+              AccountId.$: "$.StateData.EventAccount"
+              Region.$: "$.StateData.EventRegion"
+              ResourceType: ec2
+              Id.$: "$.StateData.ResourceId"
+              CreationDate.$: "$.StateData.SqsDate"
+              Logging: info
+              Apply: true
+          ResultPath: "$.StateLogging.SqsResponse"
+          Next: ChooseOsTable
+        ChooseOsTable:
+          Comment: Choose between Linux or Windows platform
+          Type: Choice
+          Choices:
+          - Variable: "$.StateData.ResourcePlatform"
+            StringEquals: windows
+            Next: PassWindowsData
+          Default: PassLinuxData
+        PassLinuxData:
+          Type: Pass
+          Result:
+            CmdbTable: cmdb_ci_linux_server
+            CmdbMethod: Post
+          ResultPath: "$.StateData.CmdbDetails"
+          Next: GetJumpGroup
+        PassWindowsData:
+          Type: Pass
+          Result:
+            CmdbTable: cmdb_ci_win_server
+            CmdbMethod: Post
+          ResultPath: "$.StateData.CmdbDetails"
+          Next: GetJumpGroup
+        GetJumpGroup:
+          Type: Task
+          Resource: arn:aws:states:::apigateway:invoke
+          Parameters:
+            ApiEndpoint: "${RulesEngineapiEndPoint}"
+            Method: POST
+            Stage: "${RulesEngineapiStage}"
+            Path: "${RulesEngineapiPath}"
+            RequestBody:
+              RulesSet: PRA
+              Subject.$: "$.StateData.tags"
+              Logging: "DEBUG"
+            AuthType: IAM_ROLE
+          Next: BeyondTrustPraApi
+          ResultPath: "$.StateData.JumpGroupApiResp"
+        BeyondTrustPraApi:
+          Type: Task
+          Resource: arn:aws:states:::apigateway:invoke
+          Parameters:
+            ApiEndpoint: "${ApiBeyondTrustEndPoint}"
+            Method: POST
+            Stage: "${TagGroup}"
+            Path: "/"
+            RequestBody:
+              action: add
+              resource:
+                ResourceId.$: "$.StateData.ResourceId"
+                JumpGroup.$: "$.StateData.JumpGroupApiResp.ResponseBody.Values.JumpGroup"
+                Platform.$: "$.StateData.ResourcePlatform"
+                ResourceName.$: "$.StateData.ResourceHostName"
+                ResourceDomain.$: "$.StateData.ResourceDomain"
+                DomainName.$: "$.StateData.DomainName"
+                ResourceIpAddress.$: "$.StateData.ResourcePrivIp"
+                Description.$: "$.StateData.ResourceDescription"
+                Ec2AutoScalingGroup.$: "$.StateData.Ec2AutoScalingGroup"
+                Location.$: "$.StateData.ResourceLocation"
+            AuthType: IAM_ROLE
+          Next: CheckSnowDefaults
+          ResultPath: "$.StateData.BeyondTrustApiResp"
+        CheckSnowDefaults:
+          Comment: Check for missing SNOW values
+          Type: Choice
+          Choices:
+          - Variable: "$.StateData.OutsideDiscoveryRange"
+            IsPresent: false
+            Next: AddSnowDefaults
+          Default: SNowPutVars
+        AddSnowDefaults:
+          Comment: Fill missing SNOW values
+          Type: Pass
+          Result: false
+          ResultPath: "$.StateData.OutsideDiscoveryRange"
+          Next: SNowPutVars
+        SNowPutVars:
+          Type: Pass
+          Parameters:
+            object_id.$: "$.StateData.ResourceId"
+            dns_domain: vopak.com
+            os.$: "$.StateData.ResourceOsName"
+            name.$: "$.StateData.ResourceHostName"
+            virtual: 'true'
+            serial_number: ''
+            u_control_domain.$: "$.StateData.ResourceDomain"
+            manufacturer.$: "$.StateData.ResourceManufacturer"
+            install_status: '11'
+            u_standby_sla.$: "$.StateData.SLA"
+            u_environment.$: "$.StateData.Environment"
+            location.$: "$.StateData.ResourceLocation"
+            company: Vopak Global IT B.V.
+            support_group: Global IT Infra Operations
+            ip_address.$: "$.StateData.ResourcePrivIp"
+            u_outside_discovery_range.$: "$.StateData.OutsideDiscoveryRange"
+            attributes.$: 'States.Format(''\{"Account": "{}", "Region": "{}", "OSName":
+              "{}", "AutoscalingGroup": "{}", "StateMachineExecutionName": "{}"\}'',
+              $.StateData.EventAccountAlias, $.StateData.EventRegion, $.StateData.ResourceOsName,
+              $.StateData.Ec2AutoScalingGroup, $.StateLogging.SfnExeName)'
+          Next: CmdbRestApi
+          ResultPath: "$.StateData.CmdbDetails.Body"
+        CmdbRestApi:
+          Type: Task
+          Resource: "${FunctCmdbRestApi}"
+          Next: SuccessState
+        TerminatedState:
+          Type: Pass
+          Parameters:
+            SfnExeName.$: "$.StateLogging.SfnExeName"
+            SfnExeUrl.$: "$.StateLogging.SfnExeUrl"
+            LogDetails.$: "$.StateLogging.LogDetails"
+            ResultMessage: "[INFO]: StateMachine outcome status is: EC2 Instance is
+              already terminated"
+            HighestLogLevel: INFO
+          ResultPath: "$.StateLogging"
+          Next: SuccessState
+        TimedOutState:
+          Type: Fail
+          Cause: "[ERROR]: Time out state machine task"
+          Error: "[ERROR]: StateMachine outcome status is: EC2 Instance not in desired
+            state after timeout"
+        SuccessState:
+          Type: Succeed
+        UpdateCycle:
+          Type: Pass
+          Result:
+            Cycle: 1
+          ResultPath: "$.StateData.StepCycle"
+          Next: wait_n_seconds
+    Catch:
+    - ErrorEquals:
+      - States.ALL
+      ResultPath: "$.StateLogging.ResultMessage"
+      Next: CatchResult
+    Next: UnwrapOutput
+  CatchResult:
+    Type: Pass
+    Parameters:
+      SfnExeName.$: "$.StateLogging.SfnExeName"
+      SfnExeUrl.$: "$.StateLogging.SfnExeUrl"
+      ResultMessage.$: "$.StateLogging.ResultMessage"
+      LogDetails.$: "$.StateLogging.LogDetails"
+      HighestLogLevel: FAILED
+    ResultPath: "$.StateLogging"
+    Next: FilterLoglevel
+  UnwrapOutput:
+    Type: Pass
+    InputPath: "$[0]"
+    Next: FilterLoglevel
+  FilterLoglevel:
+    Type: Choice
+    Choices:
+    - Or:
+      - Variable: "$.StateLogging.HighestLogLevel"
+        StringEquals: ERROR
+      - Variable: "$.StateLogging.HighestLogLevel"
+        StringEquals: FAILED
+      Next: DropWfResultDL
+    Default: DropWfResult
+  DropWfResultDL:
+    Type: Task
+    Resource: arn:aws:states:::sqs:sendMessage
+    Parameters:
+      QueueUrl: "${SqsWfResultDLqueue}"
+      MessageBody.$: "$.StateLogging"
+    ResultPath: "$.StateLogging.SqsResponse"
+    Next: NotifyResult
+  DropWfResult:
+    Type: Task
+    Resource: arn:aws:states:::sqs:sendMessage
+    Parameters:
+      QueueUrl: "${SqsWfResultqueue}"
+      MessageBody.$: "$.StateLogging"
+    ResultPath: "$.StateLogging.SqsResponse"
+    Next: NotifyResult
+  NotifyResult:
+    Type: Task
+    Resource: arn:aws:states:::sns:publish
+    Parameters:
+      MessageStructure: string
+      Message:
+        WorkflowExecutionName.$: "$.StateLogging.SfnExeName"
+        WorkflowExecutionUrl.$: "$.StateLogging.SfnExeUrl"
+        LogResult.$: "$.StateLogging.ResultMessage"
+        LogDetails.$: "$.StateLogging.LogDetails"
+      TopicArn: "${SnsTopicNotify}"
+      Subject.$: "$.StateLogging.HighestLogLevel"
+    End: true
