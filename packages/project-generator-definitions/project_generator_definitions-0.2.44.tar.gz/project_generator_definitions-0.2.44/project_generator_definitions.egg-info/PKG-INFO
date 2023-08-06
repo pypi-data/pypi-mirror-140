@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: project-generator-definitions
+Version: 0.2.44
+Summary: UNKNOWN
+Home-page: https://github.com/project-generator/project_generator_definitions
+Author-email: 0xc0170@gmail.com
+License: UNKNOWN
+Keywords: definitions mcu uvision iar coide
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+License-File: LICENSE
+
+UNKNOWN
+
