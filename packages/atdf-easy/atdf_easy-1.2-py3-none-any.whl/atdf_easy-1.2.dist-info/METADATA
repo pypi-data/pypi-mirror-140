@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: atdf-easy
+Version: 1.2
+Summary: un template pour tous les projets python
+Home-page: 
+Author: leo babonnaud
+Author-email: leobabonnaud@yahoo.fr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/skool-data-fy22/dojo-2/issues
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Provides-Extra: dev
+Requires-Dist: build (==0.7.0) ; extra == 'dev'
+Requires-Dist: twine (==3.7.1) ; extra == 'dev'
+Requires-Dist: setuptools (==60.6.0) ; extra == 'dev'
+Requires-Dist: wheel (==0.37.1) ; extra == 'dev'
+Requires-Dist: setuptools-scm (==6.4.2) ; extra == 'dev'
+Requires-Dist: flake8 (==4.0.1) ; extra == 'dev'
+Requires-Dist: flake8-html (==0.4.1) ; extra == 'dev'
+Requires-Dist: lxml (==4.7.1) ; extra == 'dev'
+Requires-Dist: mypy (==0.931) ; extra == 'dev'
+Requires-Dist: pylama[all] (==8.3.7) ; extra == 'dev'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'dev'
+Requires-Dist: pytest-html (==3.1.1) ; extra == 'dev'
+Requires-Dist: pytest (==6.2.5) ; extra == 'dev'
+Requires-Dist: bandit (==1.7.2) ; extra == 'dev'
+Requires-Dist: safety (==1.10.3) ; extra == 'dev'
+
+UNKNOWN
+

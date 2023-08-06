@@ -1,0 +1,2 @@
+[console_scripts]
+hello-template = atdf_easy.__main__:main
