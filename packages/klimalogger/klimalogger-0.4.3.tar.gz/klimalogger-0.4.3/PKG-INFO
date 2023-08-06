@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: klimalogger
+Version: 0.4.3
+Summary: Simple data logging client for InfluxDB
+Home-page: https://github.com/wuan/klimalogger
+Author: Andreas Würl
+Author-email: andreas@wuerl.net
+License: License :: OSI Approved :: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+UNKNOWN
+
