@@ -1,0 +1,10 @@
+Change Log
+==========
+
+0.0.1 (24/02/2022)
+------------------
+- First Release
+
+0.0.2 (24/02/2022)
+------------------
+- Fixed error when installing the package through PyPi
