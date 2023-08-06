@@ -1,0 +1,6 @@
+README.md
+setup.py
+Topsis-Yash-101903036/Topsis_Yash_101903036.egg-info/PKG-INFO
+Topsis-Yash-101903036/Topsis_Yash_101903036.egg-info/SOURCES.txt
+Topsis-Yash-101903036/Topsis_Yash_101903036.egg-info/dependency_links.txt
+Topsis-Yash-101903036/Topsis_Yash_101903036.egg-info/top_level.txt
