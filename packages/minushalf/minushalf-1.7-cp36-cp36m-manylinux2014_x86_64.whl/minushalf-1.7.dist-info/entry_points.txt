@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        minushalf=minushalf.minushalf:minushalf
+    
