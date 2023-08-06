@@ -1,0 +1,2 @@
+class CountryNotFoundError(ValueError):
+    pass

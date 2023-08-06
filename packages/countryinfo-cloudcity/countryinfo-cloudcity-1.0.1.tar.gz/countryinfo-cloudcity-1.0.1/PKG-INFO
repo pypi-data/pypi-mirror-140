@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: countryinfo-cloudcity
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: https://gitlab.com/dqna/countryinfo-cloudcity
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+Country Info CloudCity
+
+A simple wrapper around pycountry that collects all relevant data for a countr
+- Country info
+- Languages
+- Currency
+
+```python
+
+from cc_country import CountryInfo
+
+# An example on how to use this:
+"""
+be_result = CountryInfo('BE')
+print(be_result.__dict__)
+
+be_result = {
+    'country_code': 'BE',
+    'languages': {
+        'nl': {'alpha_2': 'nl', 'alpha_3': 'nld', 'bibliographic': 'dut', 'name': 'Dutch', 'scope': 'I', 'type': 'L'},
+        'fr': {'alpha_2': 'fr', 'alpha_3': 'fra', 'bibliographic': 'fre', 'name': 'French', 'scope': 'I', 'type': 'L'},
+        'de': {'alpha_2': 'de', 'alpha_3': 'deu', 'bibliographic': 'ger', 'name': 'German', 'scope': 'I', 'type': 'L'}},
+    'country': {
+        'alpha_2': 'BE', 'alpha_3': 'BEL', 'flag': '🇧🇪', 'name': 'Belgium', 'numeric': '056',
+        'official_name': 'Kingdom of Belgium'},
+    'currency': {
+        'alpha_3': 'EUR', 'name': 'Euro', 'numeric': '978'},
+    'search_res': {
+        'name': 'Belgium', 'native': 'België', 'phone': [32], 'continent': 'EU', 'capital': 'Brussels',
+        'currency': ['EUR'],
+        'languages': ['nl', 'fr', 'de']
+    }
+}
+"""
+
+if __name__ == '__main__':
+    c = CountryInfo('BE')
+    print(c.__dict__)
+
+
+```
+
