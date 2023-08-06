@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: python-mecab-ner
+Version: 0.0.2
+Summary: Test package for distribution
+Home-page: 
+Download-URL: 
+Author: Youngchan
+Author-email: youngchanchatbot@gmail.com
+License: UNKNOWN
+Keywords: Text Processing,Text Processing :: Linguistic,NER
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: Korean
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pybind11 (~=2.0)
+Requires-Dist: python-mecab-ko (~=1.0.12)
+
+# pygifconvt
+
+## Table of Contents
+  * [Installation](#installation)
+  * [Quick start](#quick-start)
+  * [Features](#features)
+  
+## Installation
+
+Download using pip via pypi.
+
+```bash
+$ pip install 'package' --upgrade
+  or
+$ pip install git+'repository'
+```
+(Mac/homebrew users may need to use ``pip3``)
+
+
+## Quick start
+```python
+from mecab_ner.mecab_parser import MeCabParser
+mecab_parse_results = list(MeCabParser("나는 서울대병원에 갔어").gen_mecab_token_feature())
+print(mecab_parse_results)
+
+mecab_parse_compound_results = list(MeCabParser("나는 서울대병원에 갔어").gen_mecab_compound_token_feature())
+print(mecab_parse_compound_results)
+```
+
+## Features
+  * Python library to get NER using Mecab
+
