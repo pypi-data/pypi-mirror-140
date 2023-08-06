@@ -1,0 +1,131 @@
+{% load static %}<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style type="text/css">
+            @media print {
+              #download {
+                display: none;
+              }
+            }
+           th {
+                font-family: "Agency FB", "sans-serif";
+              }
+            
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+            .box {
+              float: left;
+              width: 25%;
+              padding: 0px;
+            }
+
+            .clearfix::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+        </style>
+        <script src="{% static 'main/js/jquery.min.js' %}"></script>
+        <script src="{% static 'main/src/jquery.table2excel.js' %}"></script>
+    </head>
+          <button id='download' style="float: right;">Export  Dadus Ba Excel </button><br>
+        <body onload="print()">
+        <div style="margin-bottom: 10px"><center>Formatu A.7</center></div>
+        <div style="font-weight: bold;text-transform: uppercase;font-size: 1.5rem"><center>Livru lideransa komunit&aacute;riu</center></div>
+        <br>
+        <center>
+            {{title}}
+        </center>
+        <br>
+
+        <table id="table2excel" width="100%" border="1" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th rowspan="2" width="5%" style="padding: 2px">Nú.</th>
+                    <th rowspan="2" width="12%">Postu Administrativu</th>
+                    <th rowspan="2" width="12%">Suku</th>
+                    <th rowspan="2" width="15%">Naran Kompletu</th>
+                    <th rowspan="2" width="5%">Seksu</th>
+                    <th rowspan="2" width="6%">Estadu Sivil</th>
+                    <th rowspan="2" width="8%">Kargu</th>
+                    <th rowspan="2" width="8%">Fatin/Data Moris</th>
+                    <th rowspan="2" width="10%">Habilitasaun Literaria</th>
+                    <th colspan="2" width="15%" style="padding-top: 2px">Mandatu</th>
+                    <th rowspan="2" width="8%">N&uacute;. Identidade</th>
+                    <th rowspan="2" width="8%">Hela Fatin</th>
+                    <th rowspan="2" width="8%">Kondisaun Fíziku</th>
+                    <th rowspan="2" width="10%">Obs.</th>
+                </tr>
+                <tr>
+                    <th width="8%" style="padding: 2px">Data hahu</th>
+                    <th width="7%" style="padding: 2px">Data remata</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: rgb(185, 169, 169)">
+                    <td style="padding-top: 4px"><center>1</center></td>
+                    <td style="padding-top: 4px"><center>2</center></td>
+                    <td style="padding-top: 4px"><center>3</center></td>
+                    <td style="padding-top: 4px"><center>4</center></td>
+                    <td style="padding-top: 4px"><center>5</center></td>
+                    <td style="padding-top: 4px"><center>6</center></td>
+                    <td style="padding-top: 4px"><center>7</center></td>
+                    <td style="padding-top: 4px"><center>8</center></td>
+                    <td style="padding-top: 4px"><center>9</center></td>
+                    <td style="padding-top: 4px"><center>10</center></td>
+                    <td style="padding-top: 4px"><center>11</center></td>
+                    <td style="padding-top: 4px"><center>12</center></td>
+                    <td style="padding-top: 4px"><center>13</center></td>
+                    <td style="padding-top: 4px"><center>14</center></td>
+                    <td style="padding-top: 4px"><center>15</center></td>
+                </tr>
+                {% for data in listA7 %}
+                <tr>
+                    <td style="padding-top: 4px"><center>{{forloop.counter}}</center></td>
+                    <td style="padding: 4px">{{data.administrativepost}}</td>
+                    <td style="padding: 4px">{{data.village}}</td>
+                    <td style="padding: 4px">{{data.population.name}}</td>
+                    <td style="padding-top: 4px"><center>{% if data.population.gender == "m" %}Mane{% elif data.population.gender == "f" %}Feto{%endif%}</center></td>
+                    <td style="padding-top: 4px"><center>{% if data.population.marital_status == "c" %}Kaben Nain{% elif data.population.marital_status == "s" %}Klosan{% elif data.population.marital_status == "d" %}Faluk{%endif%}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.position}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.population.place_of_bird}}/{{data.population.date_of_bird|date:"d-M-Y"}}</center></td>
+                    <td style="padding-top: 4px"><center>{% if data.population.level_education %}{{data.population.level_education}}{%else%} {%endif%}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.startMandate|date:"d-M-Y"}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.endMandate|date:"d-M-Y"}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.population.nu_bi}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.population.place_of_bird}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.population.deficient}}</center></td>
+                    <td style="padding-top: 4px"><center>{% if data.observation %}{{data.observation}}{%else%} {%endif%}</center></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+<script>
+  $("#download").click(function(){
+    alert("Download Dados Ba Excel")
+    $("#table2excel").table2excel({
+      // exclude CSS class
+      exclude: ".noExl",
+      name: "Dados Lideransa Komunitáriu Suku :  {{userAddress.employee.village}} / Postu : {{userAddress.employee.administrativepost}}  /  Munisipiu :  {{userAddress.employee.municipality}} /  Tinan : {{year}} ",
+      filename: "Dados Lideransa Komunitáriu Suku :  {{userAddress.employee.village}} / Postu : {{userAddress.employee.administrativepost}}  /  Munisipiu :  {{userAddress.employee.municipality}} /  Tinan : {{year}}", //do not include extension
+      fileext: ".xls" // file extension
+    }); 
+  });
+</script>
+
+    </body>
+
+</html>

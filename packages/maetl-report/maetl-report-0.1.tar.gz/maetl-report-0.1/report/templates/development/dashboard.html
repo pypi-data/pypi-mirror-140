@@ -1,0 +1,286 @@
+{% extends 'main/layout.html' %} 
+{% load static %}
+{% load crispy_forms_tags %} {% block title %}{{title}}{% endblock title %} {% block content %} {% include 'report/sidebar.html' %}
+<section class="section-container">
+  <!-- Page content-->
+  <div class="content-wrapper">
+    <div class="content-heading d-flex justify-content-between">
+      <div>
+        {{title}}<small>
+          <ol class="breadcrumb mt-3">
+            <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Varanda</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+          </ol>
+        </small>
+      </div>
+      <div>
+              {% ifequal user.groups.all.0.name 'admin' %}
+              <div class="bg-danger p-2">
+              <small class="text-white">Admin Nasional MAE</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'xefe' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Xefe Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+              {% ifequal user.groups.all.0.name 'sec' %}
+              <div class="bg-warning p-2">
+              <small class="text-white"> Secretariado Suku {{user.employeeuser.employee.village}}</small>
+              </div>
+              {% endifequal %}
+            </div>
+    </div>
+    <center><h2>{{title}}</h2></center>
+    <div class="row">
+      {% comment %}
+      <div class="card-body">
+        <form method="POST" id="locationForm" data-posts-url="{% url 'custom:ajax_load_posts' %}" data-villages-url="{% url 'custom:ajax_load_villages' %}" novalidate>{% crispy form %}</form>
+      </div>
+      {% endcomment %}
+
+      <div class="card-body">
+        <form name="location" id="location_id" action="" method="POST" data-posts-url="{% url 'report:get-administrativepost' %}">
+          {% csrf_token %}
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <select  name="municipality" id="id_municipality" class="custom-select custom-select-sm">
+                  <option selected="" value="" >----Hili Munis&iacutepiu----</option>
+                  {% for m in municipality %}
+                  <option value="{{m.id}}">{{m.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <select  name="administrativepost" id="id_administrativepost" form="location_id" class="custom-select custom-select-sm" target="_blank">
+                  <option selected="" value="" >--Hili Postu Administrativu--</option>
+                  {% comment %} <option selected="" value="">-----Hili Postu Administrativu------</option>
+                  {% for i in year %}
+                  <option value="{{i.year}}">{{i.year}}</option>
+                  {% endfor %} {% endcomment %}
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="form-group">
+                <select  name="village" id="id_village" form="location_id" class="custom-select custom-select-sm">
+                  <option selected="" value="" >-----Hili Suku----</option>
+                  {% comment %} <option selected="" value="">-----Hili Postu Administrativu------</option>
+                  {% for i in year %}
+                  <option value="{{i.year}}">{{i.year}}</option>
+                  {% endfor %} {% endcomment %}
+                </select>
+              </div>
+            </div>
+            {% comment %} <div class="col-md-2">
+              <div class="form-group">
+                <select  name="year" class="custom-select custom-select-sm">
+                  <option selected="" value="">-----Hili Suku------</option>
+                  {% for i in year %}
+                  <option value="{{i.year}}">{{i.year}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+            {% endcomment %}
+            <div class="col-md-2">
+              <div class="form-group">
+                <select name="year" class="custom-select custom-select-sm">
+                  <option selected="" value="">-----Hili Tinan------</option>
+                  {% for i in all_year %}
+                  <option value="{{i.year}}">{{i.year}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div> 
+           <div class="col-md-2"> 
+            <button class="btn btn-sm btn-labeled btn-info" type="submit" name="Buka" title="Buka"><span class="btn-label"><i class='fas fa-eye'></i></span>Buka</button>
+            </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <hr>
+      
+      {% comment %} COUNT DISPLAY {% endcomment %}
+      <div class="col-xl-12">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <!-- START card-->
+            <div class="card flex-row align-items-center align-items-stretch border-0">
+              <div class="col-4 d-flex align-items-center bg-primary-dark justify-content-center rounded-left"><em class="fas fa-cogs fa-3x"></em></div>
+              <div class="col-8 py-3 bg-primary rounded-right">             
+                {% if mun and adm and vill and year %}
+                <a href="{% url 'report_development:project-list-mun-post-village-year' mun.id adm.id vill.id year %}" style="color: white;"><div class="h2 mt-0">{{project_count}}</div>
+                <div class="text-uppercase">Projetus</div></a>
+                {% elif mun and adm and vill %}
+                <a href="{% url 'report_development:project-list-mun-post-village' mun.id adm.id vill.id %}" style="color: white;"><div class="h2 mt-0">{{project_count}}</div>
+                <div class="text-uppercase">Projetus</div></a>
+                {% elif mun and adm and year %}
+                <a href="{% url 'report_development:project-list-mun-post-year' mun.id adm.id year %}" style="color: white;"><div class="h2 mt-0">{{project_count}}</div>
+                <div class="text-uppercase">Projetus</div></a>
+                {% elif mun and year %}
+                <a href="{% url 'report_development:project-list-mun-year' mun.id year %}" style="color: white;"><div class="h2 mt-0">{{project_count}}</div>
+                <div class="text-uppercase">Projetus</div></a>
+                {% elif mun and adm %}
+                <a href="{% url 'report_development:project-list-mun-post' mun.id adm.id %}" style="color: white;"><div class="h2 mt-0">{{project_count}}</div>
+                <div class="text-uppercase">Projetus</div></a>
+                {% elif mun %}
+                <a href="{% url 'report_development:project-list-mun' mun.id %}" style="color: white;"><div class="h2 mt-0">{{project_count}}</div>
+                <div class="text-uppercase">Projetus</div></a>
+                {% elif year %}
+                <a href="{% url 'report_development:project-list-year' year %}" style="color: white;"><div class="h2 mt-0">{{project_count}}</div>
+                  <div class="text-uppercase">Projetus</div></a>
+                  {% else %}
+                  <a href="{% url 'report_development:project-list-all' %}" style="color: white;">
+                  <div class="h2 mt-0">{{project_count}} </div>
+                  <div class="text-uppercase">Projetus</div>
+                </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <!-- START card-->
+            <div class="card flex-row align-items-center align-items-stretch border-0">
+              <div class="col-4 d-flex align-items-center bg-green-dark justify-content-center rounded-left"><em class="icon-folder fa-3x"></em></div>
+              <div class="col-8 py-3 bg-green rounded-right">
+                {% if mun and adm and vill and year %}
+                <a href="{% url 'report_development:activity-list-mun-post-village-year' mun.id adm.id vill.id year %}" style="color: white;">
+                <div class="h2 mt-0">{{activity_count}}</div>
+                <div class="text-uppercase">Atividades</div></a>
+                {% elif mun and adm and vill %}
+                <a href="{% url 'report_development:activity-list-mun-post-village' mun.id adm.id vill.id %}" style="color: white;">
+                <div class="h2 mt-0">{{activity_count}}</div>
+                <div class="text-uppercase">Atividades</div></a>
+                {% elif mun and adm and year %}
+                <a href="{% url 'report_development:activity-list-mun-post-year' mun.id adm.id year %}" style="color: white;">
+                <div class="h2 mt-0">{{activity_count}}</div>
+                <div class="text-uppercase">Atividades</div></a>
+                {% elif mun and year %}
+                <a href="{% url 'report_development:activity-list-mun-year' mun.id year %}" style="color: white;">
+                <div class="h2 mt-0">{{activity_count}}</div>
+                <div class="text-uppercase">Atividades</div></a>
+                {% elif mun and adm %}
+                <a href="{% url 'report_development:activity-list-mun-post' mun.id adm.id %}" style="color: white;">
+                <div class="h2 mt-0">{{activity_count}}</div>
+                <div class="text-uppercase">Atividades</div></a>
+                {% elif mun %}
+                <a href="{% url 'report_development:activity-list-mun' mun.id %}" style="color: white;">
+                <div class="h2 mt-0">{{activity_count}}</div>
+                <div class="text-uppercase">Atividades</div></a>
+                {% elif year %}
+                <a href="{% url 'report_development:activity-list-year' year %}" style="color: white;">
+                  <div class="h2 mt-0">{{activity_count}}</div>
+                  <div class="text-uppercase">Atividades</div></a>
+                  {% else %}
+                  <a href="{% url 'report_development:activity-list-all' %}" style="color: white;">
+                  <div class="h2 mt-0">{{activity_count}}</div>
+                  <div class="text-uppercase">Atividades</div></a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="card card-default">
+              <div class="card-header d-flex align-items-center">
+                <h4>Projetus</h4>
+              </div>
+              <div class="card-body">
+                <div class="chart-container">
+                  {% if page == 'municipality' %}
+                  <canvas id="project-charts" data-url="{% url 'report_development:project-charts-municpality' municipalityid %}"></canvas>
+                  {% elif  page == 'adminpost' %}
+                  <canvas id="project-charts" data-url="{% url 'report_development:project-charts-municpality-adminpost' municipalityid adminpost  %}"></canvas>
+                  {% elif page == 'munyear' %}
+                  <canvas id="project-charts" data-url="{% url 'report_development:project-charts-municpality-year' municipalityid year %}"></canvas>
+                  {% elif page == 'munadminpostyear' %}
+                  <canvas id="project-charts" data-url="{% url 'report_development:project-charts-municpality-adminpost-year' municipalityid adminpost year %}"></canvas>
+                  {% elif page == 'year' %}
+                  <canvas id="project-charts" data-url="{% url 'report_development:project-charts'  year %}"></canvas>
+                  {% else %}
+                  <canvas id="project-charts" data-url="{% url 'report_development:project-charts-all' %}"></canvas>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-xl-6">
+            <div class="card card-default" id="cardChart3">
+              <div class="card-header d-flex align-items-right">
+                <div class="card-title">
+                  <h4>Atividades</h4>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart-bar-stacked flot-chart">
+                  {% if page == 'municipality' %}
+                  <canvas id="activity-charts" data-url="{% url 'report_development:activity-charts-municpality' municipalityid %}"></canvas>
+                  {% elif page == 'adminpost' %}
+                  <canvas id="activity-charts" data-url="{% url 'report_development:activity-charts-municpality-adminpost' municipalityid adminpost %}"></canvas>
+                  {% elif page == 'munyear' %}
+                  <canvas id="activity-charts" data-url="{% url 'report_development:activity-charts-municpality-year' municipalityid year %}"></canvas>
+                  {% elif page == 'munadminpostyear' %}
+                  <canvas id="activity-charts" data-url="{% url 'report_development:activity-charts-municpality-adminpost-year' municipalityid adminpost year %}"></canvas>
+                  {% elif page == 'year' %}
+                  <canvas id="activity-charts" data-url="{% url 'report_development:activity-charts' year %}"></canvas>
+                  {% else %}
+                  <canvas id="activity-charts" data-url="{% url 'report_development:activity-charts-all' %}"></canvas>
+                  {% endif %}
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+<!-- Page footer-->
+{% include 'main/footer.html' %} {% endblock content %}
+{% block scripts %}
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="{% static 'main/vendor/chart.js/dist/development_chart.js' %}"></script>
+<script>
+  $("#id_municipality").change(function () {
+
+    var url = $("#location_id").attr("data-posts-url");
+    var municipalityId = $(this).val();
+    console.log(municipalityId)
+    $.ajax({
+      url: url,
+      data: {
+        'municipality': municipalityId
+      },
+      success: function (data) {
+        $("#id_administrativepost").html(data);
+      }
+    
+    });
+  });
+  $("#id_administrativepost").change(function () {
+    var url = $("#locationForm").attr("data-posts-url");
+    var postId = $(this).val();
+
+    $.ajax({
+      url: '{% url 'custom:ajax_load_villages' %}',
+      data: {
+        'post': postId
+      },
+      success: function (data) {
+        $("#id_village").html(data);
+      }
+    });
+
+  });
+</script>
+{% endblock scripts %}

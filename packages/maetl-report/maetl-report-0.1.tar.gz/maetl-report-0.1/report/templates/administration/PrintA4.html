@@ -1,0 +1,107 @@
+{% load static %}<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style type="text/css">
+            @media print {
+              #download {
+                display: none;
+              }
+            }
+           th {
+                font-family: "Agency FB", "sans-serif";
+              }
+            
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+            .box {
+              float: left;
+              width: 25%;
+              padding: 0px;
+            }
+
+            .clearfix::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+        </style>
+        <script src="{% static 'main/js/jquery.min.js' %}"></script>
+        <script src="{% static 'main/src/jquery.table2excel.js' %}"></script>
+    </head>
+          <button id='download' style="float: right;">Export  Dadus Ba Excel </button><br>
+        <body onload="print()">
+        <div style="margin-bottom: 10px"><center>Formatu A.4</center></div>
+        <div style="font-weight: bold;text-transform: uppercase;font-size: 1.5rem"><center>Livru ajenda karta sai</center></div>
+        <br>
+        <center>
+            {{title}}
+        </center>
+        <br>
+
+        <table id="table2excel" width="100%" border="1" cellpadding="0" cellspacing="0">
+             <thead>
+                <tr>
+                    <th colspan="7" style="padding: 2px">Ajenda Karta Sai</th>
+                </tr>
+                <tr>
+                    <th style="padding: 2px" width="5%">N&uacute;.</th>
+                    <th width="12%">Postu Administrativu</th>
+                    <th width="12%">Suku</th>
+                    <th width="12%">Data</th>
+                    <th width="18%">N&uacute;. Karta</th>
+                    <th width="27%" style="padding-top: 2px">Diriji ba S&eacute;</th>
+                    <th>Asuntu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: rgb(185, 169, 169)">
+                    <td style="padding-top: 4px"><center>1</center></td>
+                    <td style="padding-top: 4px"><center>2</center></td>
+                    <td style="padding-top: 4px"><center>3</center></td>
+                    <td style="padding-top: 4px"><center>4</center></td>
+                    <td style="padding-top: 4px"><center>5</center></td>
+                    <td style="padding-top: 4px"><center>6</center></td>
+                    <td style="padding-top: 4px"><center>7</center></td>
+                </tr>
+                {% for data in listA4 %}
+                <tr>
+                    <td style="padding-top: 4px"><center>{{forloop.counter}}</center></td>
+                    <td style="padding: 4px">{{data.administrativepost}}</td>
+                    <td style="padding: 4px">{{data.village}}</td>
+                    <td style="padding-top: 4px"><center>{{data.letter_date|date:"d-M-Y"}}</center></td>
+                    <td style="padding: 4px">{{data.letter_number}}</td>
+                    <td style="padding: 4px">{{data.destination}}</td>
+                    <td style="padding: 4px">{{data.subject}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+<script>
+  $("#download").click(function(){
+    alert("Download Dados Ba Excel")
+    $("#table2excel").table2excel({
+      // exclude CSS class
+      exclude: ".noExl",
+      name: "Dados Karta Sai Suku :  {{userAddress.employee.village}} / Postu : {{userAddress.employee.administrativepost}}  /  Munisipiu :  {{userAddress.employee.municipality}} /  Tinan : {{year}} ",
+      filename: "Dados Karta Sai Suku :  {{userAddress.employee.village}} / Postu : {{userAddress.employee.administrativepost}}  /  Munisipiu :  {{userAddress.employee.municipality}} /  Tinan : {{year}}", //do not include extension
+      fileext: ".xls" // file extension
+    }); 
+  });
+</script>
+
+    </body>
+
+</html>

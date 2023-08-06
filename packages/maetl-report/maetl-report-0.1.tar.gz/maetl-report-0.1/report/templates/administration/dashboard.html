@@ -1,0 +1,172 @@
+{% extends 'main/layout.html' %} 
+{% load static %}
+{% load crispy_forms_tags %} {% block title %}{{title}}{% endblock title %} {% block content %} {% include 'report/sidebar.html' %}
+<section class="section-container">
+  <!-- Page content-->
+  <div class="content-wrapper">
+    <div class="content-heading">
+      <div>
+        {{title}}<small>
+          <ol class="breadcrumb mt-3">
+            <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+          </ol>
+        </small>
+      </div>
+    </div>
+    <center><h2>{{title}}</h2></center>
+    <div class="row">
+      <div class="card-body">
+        <form name="location" id="location_id" target="_blank" action="{% url 'report_administration:nationalReportFilter' %}" method="POST" data-posts-url="{% url 'report:get-administrativepost' %}">
+          {% csrf_token %}
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <select required name="administrationReport" class="custom-select custom-select-sm">
+                     <option selected="" value="">-----Hili Livru Atu halo Relat&oacute;riu-----</option>
+                     <option value="A1">A1. Livru Desizaun Konsellu Suku</option>
+                     <option value="A2">A2. Livru Desizaun Xefe Suku</option>
+                     <option value="A3">A3. Livru Inventariu Suku</option>
+                     <option value="A4">A4. Livru Ajenda Karta Sai</option>
+                     <option value="A5">A5. Livru Ajenda Karta Tama</option>
+                     <option value="A6">A6. Livru Espedisaun</option>
+                     <option value="A7">A7. Livru Lideransa Komunitariu</option>
+                     <!-- <option value="A8">Three</option> -->
+                     <!-- <option value="A9">Minuta Enkontru Suku</option> -->
+                     <option value="A10">A10. Rejistu Keixa Suku</option>
+                     <option value="A11">A11. Rejistu Bainaka Suku</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <select  name="municipality" id="id_municipality" class="custom-select custom-select-sm">
+                    <option selected="" value="" >----Hili Mun&iacute;sipiu----</option>
+                    {% for m in municipality %}
+                    <option value="{{m.id}}">{{m.name}}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <select  name="administrativepost" id="id_administrativepost" form="location_id" class="custom-select custom-select-sm">
+                    <option selected="" value="" >--Hili Postu Administrativu--</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <select  name="village" id="id_village" form="location_id" class="custom-select custom-select-sm">
+                    <option selected="" value="" >-----Hili Suku----</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <select name="year" required class="custom-select custom-select-sm">
+                    <option selected="" value="">-----Hili Tinan------</option>
+                    {% for i in all_year %}
+                    <option value="{{i.year}}">{{i.year}}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div> 
+            </div>
+              <center><div class="col-md-4 d-flex justify-content-center">
+                <div class="form-group">
+                  <button class="btn btn-sm btn-labeled btn-info" name="excel" type="submit" title="Excel"><span class="btn-label"><i class='fas fa-save'></i></span>Eksporta ba Excel</button>
+                </div>
+                <div class="form-group ml-2">
+                  <button class="btn btn-sm btn-labeled btn-info" type="submit" name="print" title="Imprimi">
+                    <span class="btn-label"><i class="fas fa-print"></i></span>Imprimi
+                  </button>
+                </div>
+              </div>
+            </center>
+        </form>
+      </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="card-body">
+          <table class="table table-bordered">
+            <tr class="text-center bg-info"><th>Munis&iacute;piu\Livru</th><th>A1</th><th>A2</th><th>A3</th><th>A4</th><th>A5</th>
+              <th>A6</th><th>A7</th><th>A10</th><th>A11</th></tr>
+              {% for data in allReport %}
+            <tr class="text-center">
+              <th class="bg-dark text-white">{{data.municipality}}</th>
+              <td><a href="{% url 'report_administration:A1Munisipiu' data.municipalityID %}">{{data.a1}}</a></td>
+              <td><a href="{% url 'report_administration:A2Munisipiu' data.municipalityID %}">{{data.a2}}</a></td>
+              <td><a href="{% url 'report_administration:A3Munisipiu' data.municipalityID %}">{{data.a3}}</a></td>
+              <td><a href="{% url 'report_administration:A4Munisipiu' data.municipalityID %}">{{data.a4}}</a></td>
+              <td><a href="{% url 'report_administration:A5Munisipiu' data.municipalityID %}">{{data.a5}}</a></td>
+              <td><a href="{% url 'report_administration:A6Munisipiu' data.municipalityID %}">{{data.a6}}</a></td>
+              <td><a href="{% url 'report_administration:A7Munisipiu' data.municipalityID %}">{{data.a7}}</a></td>
+              <td><a href="{% url 'report_administration:A10Munisipiu' data.municipalityID %}">{{data.a10}}</a></td>
+              <td><a href="{% url 'report_administration:A11Munisipiu' data.municipalityID %}">{{data.a11}}</a></td>
+            </tr>
+            {% endfor %}
+            </table>
+        </div>
+      </div>
+        <div class="text-right shadow" style="float: right;">
+          <div class="col-sm-12 border">
+            <div class="card-body">
+              <table>
+                <tr><th>Nota</th><td>:</td><td class="text-left"></td></tr>
+                <tr><th class="text-left">A1</th><td>:</td><td class="text-left">Livru Desizaun Konsellu Suku</td></tr>
+                <tr><th class="text-left">A2</th><td>:</td><td class="text-left">Livru Desizaun Xefe Suku</td></tr>
+                <tr><th class="text-left">A3</th><td>:</td><td class="text-left">Livru Rejistu Invent&aacute;ria</td></tr>
+                <tr><th class="text-left">A4</th><td>:</td><td class="text-left">Livru Rejistu Karta Sai</td></tr>
+                <tr><th class="text-left">A5</th><td>:</td><td class="text-left">Livru Rejistu Karta Tama</td></tr>
+                <tr><th class="text-left">A6</th><td>:</td><td class="text-left">Livru Rejistu Espedisaun</td></tr>
+                <tr><th class="text-left">A7</th><td>:</td><td class="text-left">Livru Rejistu Lideransa Komunit&aacute;ria</td></tr>
+                <tr><th class="text-left">A10</th><td>:</td><td class="text-left">Livru Rejistu Keixa</td></tr>
+                <tr><th class="text-left">A11</th><td>:</td><td class="text-left">Livru Rejistu Bainaka</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- Page footer-->
+{% include 'main/footer.html' %} {% endblock content %}
+{% block scripts %}
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="{% static 'main/vendor/chart.js/dist/development_chart.js' %}"></script>
+<script>
+  $("#id_municipality").change(function () {
+
+    var url = $("#location_id").attr("data-posts-url");
+    var municipalityId = $(this).val();
+    console.log(municipalityId)
+    $.ajax({
+      url: url,
+      data: {
+        'municipality': municipalityId
+      },
+      success: function (data) {
+        $("#id_administrativepost").html(data);
+      }
+    
+    });
+  });
+  $("#id_administrativepost").change(function () {
+    var url = $("#locationForm").attr("data-posts-url");
+    var postId = $(this).val();
+
+    $.ajax({
+      url: '{% url 'custom:ajax_load_villages' %}',
+      data: {
+        'post': postId
+      },
+      success: function (data) {
+        $("#id_village").html(data);
+      }
+    });
+
+  });
+</script>
+{% endblock scripts %}

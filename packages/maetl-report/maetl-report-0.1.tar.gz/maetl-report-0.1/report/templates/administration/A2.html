@@ -1,0 +1,60 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock title %}
+{% block content %}
+{% include 'report/sidebar.html' %}
+	<section class="section-container">
+        <div class="content-wrapper">
+          <div class="content-heading d-flex justify-content-between">
+            <div>
+              {{title}}<small>
+                <ol class="breadcrumb mt-3">
+                  <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Varanda</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+                </ol>
+              </small>
+            </div>
+          </div>
+          <div class="container-fluid">
+               <div class="card card-default">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="card-title">{{title}}</div>
+                     <div class="card-title">
+                      <a href="{% url 'report_administration:PrintA2Munisipiu' municipality.hckey %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-plus-square"></i></span>Imprimi</a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                    <table width="100%" class="table table-hover" id='datatable1'>
+                      <thead>
+                          <tr>
+                              <th style="padding: 4px">Nú.</th>
+                              <th>Postu Administrativu</th>
+                              <th>Suku</th>
+                              <th>Data Enkontru</th>
+                              <th>Nú. Desizaun</th>
+                              <th><center>Desizaun Kona-ba</center></th>
+                              <th>Obs</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          {% for data in listA2 %}
+                          <tr>
+                              <td><center>{{forloop.counter}}</center></td>
+                              <td>{{data.administrativepost}}</td>
+                              <td>{{data.village}}</td>
+                              <td>{{data.meeting_date|date:"d-M-Y"}}</td>
+                              <td>{{data.decision_number}}</td>
+                              <td style="padding: 4px">{% for n in data.getVotingResult %}{{forloop.counter}}. {{n.decision_on}}<br>{%endfor%}</td>
+                              <td><center>{{data.observation}}</center></td>
+                          </tr>
+                          {% endfor %}
+                      </tbody>
+                  </table>
+                  </div>
+               </div>
+          </div>
+        </div>
+    </section>
+    {% include 'main/footer.html' %}
+{% endblock %}

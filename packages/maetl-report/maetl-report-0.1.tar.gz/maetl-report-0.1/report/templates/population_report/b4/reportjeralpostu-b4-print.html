@@ -1,0 +1,491 @@
+
+{% load static %}
+<html>
+  <head>
+    <style type="text/css" media="print">
+
+      @media print {
+  #download {
+    display: none;
+  }
+}
+
+
+      @page {
+        size: auto; /* auto is the current printer page size */
+        margin-top: 0mm; /* this affects the margin in the printer settings */
+        margin-bottom: 0mm;
+      }
+
+      body {
+        margin-top: 0px;
+        margin-bottom: 0mm; /* the margin on the content before printing */
+      }
+    </style>
+
+
+    <style>
+      .th2 {
+        padding: 1px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: normal;
+
+        font-family: "Agency FB", "sans-serif";
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td {
+        text-align: left;
+        padding: 5px;
+        font-size: 15px;
+        font-family: "Agency FB", "sans-serif";
+      }
+
+      .td2 {
+        text-align: justify;
+        padding: 5 px;
+        text-align: center;
+        background-color: rgb(208, 208, 208);
+      }
+    </style>
+
+    <style type="text/css">
+      .msg {
+        white-space: nowrap;
+        -moz-transform: rotate(-90deg);
+        -moz-transform-origin: center center;
+        -webkit-transform: rotate(-90deg);
+        -webkit-transform-origin: center center;
+        -ms-transform: rotate(-90deg);
+        -ms-transform-origin: center center;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+
+  <body onload="print()">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static 'main/src/jquery.table2excel.js' %}"></script>
+
+<button id ='download' style="float: right;">Export  Dadus Ba Excel </button>
+    <br /><br />
+    <br />
+    <center>
+      <h1>
+        REKAPITULASAUN POPULASAUN IHA KADA SUKU HUSI POSTU {{postu_title}} 
+    {% if munisipiu_title == 'Dili' or munisipiu_title == 'Ermera'  or munisipiu_title == 'Bobonaro'  or munisipiu_title == 'Baucau' %} 
+                     AUTORIDADE MUNISÍPAL :   {{munisipiu_title}}
+                     {% elif munisipiu_title == 'Oe-cusse' %} 
+                      REJIAUN AUT&Oacute;NOMU :   RAEOA
+                     {% else %}
+                      MUNISÍPIU :   {{munisipiu_title}}
+                     {% endif %}
+      Tinan: &nbsp; &nbsp;&nbsp;<b> {{year}} </b>
+
+        &nbsp;Fulan : 
+        <b>
+      {% if fulan == '1' %}
+      Janeiru
+      {% elif fulan == '2' %}
+      Fevereiru
+      {% elif fulan == '3' %}
+      Marsu
+      {% elif fulan == '4' %}
+      Abril
+      {% elif fulan == '5' %}
+      Maio
+      {% elif fulan == '6' %}
+      Junhu
+      {% elif fulan == '7' %}
+      Julhu
+      {% elif fulan == '8' %}
+      Agostu
+      {% elif fulan == '8' %}
+      Setembru
+      {% elif fulan == '10' %}
+      Outubru
+      {% elif fulan == '11' %}
+      Novembru
+      {% elif fulan == '12' %}
+      Dezembru
+      {% endif %}
+
+      </b> &nbsp; &nbsp;&nbsp; &nbsp;
+
+   <!--    Fulan : &nbsp; &nbsp;&nbsp;
+      <b> {{fulan}} </b> -->
+    </center>
+
+    <br />
+
+    <table border="1" id='pop'>
+      <tr>
+        <th class="th2" rowspan="4">Nu</th>
+        <th class="th2" rowspan="4">
+          <h3>Naran <br />Suku</h3>
+        </th>
+        <th class="th2" colspan="9">
+          <center>
+            <h3>
+              Quantidade (Qtd) <br />
+              Populasaun Inisiu Fulan <br />
+              ida ne’e
+            </h3>
+          </center>
+        </th>
+        <th class="th2" colspan="12"><h3>Aumenta Iha Fulan Ida Ne’e</h3></th>
+        <th class="th2" colspan="12"><h3>Menus Iha Fulan Ida Ne’e</h3></th>
+        <th class="th2" colspan="9" rowspan="2">
+          <h3>Total populasaun Fim do mes</h3>
+        </th>
+        <th
+          class="th2"
+          rowspan="4"
+          style="padding: 0px"
+          height="250"
+          style="padding: 0px; width: 1px"
+        >
+          <div class="msg">&nbsp; a s a u n</div>
+          <br />
+          <br />
+          <div class="msg">O b s e r v</div>
+        </th>
+      </tr>
+
+      <tr>
+        <th
+          class="th2"
+          rowspan="3"
+          style="padding: 0px"
+          height="250"
+          style="padding: 0px; width: 1px"
+        >
+          <div class="msg">F a m i l i a</div>
+          <br />
+          <br />
+          <div class="msg">C h e f e</div>
+          <br />
+          <div class="msg">Q t d.</div>
+        </th>
+        <th class="th2" colspan="3" rowspan="2">Estranjeiru</th>
+        <th class="th2" colspan="3" rowspan="2">TLS</th>
+        <th
+          class="th2"
+          rowspan="3"
+          style="padding: 0px"
+          height="250"
+          style="padding: 0px; width: 1px"
+        >
+          <div class="msg">&nbsp; &nbsp; F a m i l i a</div>
+          <br />
+          <br />
+          <div class="msg">M e m b r o</div>
+          <br />
+          <br />
+          <div class="msg">Q t d.</div>
+        </th>
+        <th
+          class="th2"
+          rowspan="3"
+          style="padding: 0px"
+          height="250"
+          style="padding: 0px; width: 1px"
+        >
+          <div class="msg">&nbsp; &nbsp; &nbsp; &nbsp;a s a u n</div>
+          <br />
+          <div class="msg">P o p u l</div>
+          <br />
+          <br />
+          <div class="msg">Q t d.</div>
+        </th>
+
+        <th class="th2" colspan="6"><h3>Moris</h3></th>
+        <th class="th2" colspan="6"><h3>Tama</h3></th>
+        <th class="th2" colspan="6"><h3>Mate</h3></th>
+        <th class="th2" colspan="6"><h3>Muda</h3></th>
+      </tr>
+
+      <tr>
+        <th class="th2" colspan="3">Estranjeiru</th>
+        <th class="th2" colspan="3">TLS</th>
+
+        <th class="th2" colspan="3">Estranjeiru</th>
+        <th class="th2" colspan="3">TLS</th>
+
+        <th class="th2" colspan="3">Estranjeiru</th>
+        <th class="th2" colspan="3">TLS</th>
+
+        <th class="th2" colspan="3">Estranjeiru</th>
+        <th class="th2" colspan="3">TLS</th>
+
+        <th class="th2" colspan="3">Estranjeiru</th>
+        <th class="th2" colspan="3">TLS</th>
+        <th
+          class="th2"
+          rowspan="2"
+          style="padding: 0px"
+          height="250"
+          style="padding: 0px; width: 1px"
+        >
+          <div class="msg">F a m i l i a</div>
+          <br />
+          <br />
+          <br />
+          <div class="msg">C h e f e</div>
+          <br />
+          <br />
+          <div class="msg">Q t d.</div>
+        </th>
+        <th
+          class="th2"
+          rowspan="2"
+          style="padding: 0px"
+          height="250"
+          style="padding: 0px; width: 1px"
+        >
+          <div class="msg">F a m i l i a</div>
+          <br />
+          <br />
+          <br />
+          <div class="msg">M e m b r o</div>
+          <br />
+          <br />
+          <div class="msg">Q t d.</div>
+        </th>
+        <th
+          class="th2"
+          rowspan="2"
+          style="padding: 0px"
+          height="250"
+          style="padding: 0px; width: 1px"
+        >
+          <div class="msg">&nbsp; &nbsp; &nbsp; a s a u n</div>
+          <br />
+          <div class="msg">P o p u l</div>
+          <br />
+          <br />
+          <div class="msg">Q t d.</div>
+        </th>
+      </tr>
+
+      <tr>
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+
+        <th class="th2">M</th>
+        <th class="th2">F</th>
+        <th class="th2">S</th>
+      </tr>
+
+      <tr>
+        <!-- {{dados.total}} -->
+
+        <td class="td2">1</td>
+        <td class="td2">2</td>
+        <td class="td2">3</td>
+        <td class="td2">4</td>
+        <td class="td2">5</td>
+        <td class="td2">6</td>
+        <td class="td2">7</td>
+        <td class="td2">8</td>
+        <td class="td2">9</td>
+        <td class="td2">10</td>
+
+        <td class="td2">11</td>
+        <td class="td2">12</td>
+        <td class="td2">13</td>
+
+        <td class="td2">14</td>
+        <td class="td2">15</td>
+
+        <td class="td2">16</td>
+
+        <td class="td2">17</td>
+
+        <td class="td2">18</td>
+        <td class="td2">19</td>
+        <td class="td2">20</td>
+        <td class="td2">21</td>
+
+        <td class="td2">22</td>
+
+        <td class="td2">23</td>
+
+        <td class="td2">24</td>
+
+        <td class="td2">25</td>
+
+        <td class="td2">26</td>
+        <td class="td2">27</td>
+
+        <td class="td2">28</td>
+
+        <td class="td2">29</td>
+        <td class="td2">30</td>
+        <td class="td2">31</td>
+        <td class="td2">32</td>
+        <td class="td2">33</td>
+ <td class="td2">34</td>
+        <td class="td2">35</td>
+        <td class="td2">36</td>
+        <td class="td2">37</td>
+        <td class="td2">38</td>
+
+
+
+  <td class="td2">39</td>
+        <td class="td2">40</td>
+ <td class="td2">41</td>
+        <td class="td2">42</td>
+        <td class="td2">43</td>
+        <td class="td2">44</td>
+        <td class="td2">45</td>
+      </tr>
+
+      {% for dados in family_member %}
+
+      <!-- #p1qxefefamilia,p1estrangeiromane,p1estrangeirofeto,p1tlsmane,p1tlsfeto,p1qmembrufamilia,p1qpopulasaun -->
+
+      <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{dados.suku}}</td>
+           <td>{{dados.p1qxefefamilia}}</td>
+
+
+        <td>{{dados.p1estrangeiromane}}</td>
+        <td>{{dados.p1estrangeirofeto}}</td>
+        <td>{{dados.p1estrangeiroseluk}}</td>
+
+
+        <td>{{dados.p1tlsmane}}</td>
+        <td>{{dados.p1tlsfeto}}</td>
+        <td>{{dados.p1tlsseluk}}</td>
+
+
+        <td>{{dados.p1qmembrufamilia}}</td>
+        <td>{{dados.p1qpopulasaun}}</td>
+
+
+
+        <td>{{dados.p3morisemane}}</td>
+        <td>{{dados.p3morisefeto}}</td>
+        <td>{{dados.p3moriseseluk}}</td>
+
+
+        <td>{{dados.p3moristmane2}}</td>
+        <td>{{dados.p3moristfeto2}}</td>
+        <td>{{dados.p3moristseluk2}}</td>
+
+        <td>{{dados.p3mudatamaemane}}</td>
+        <td>{{dados.p3mudatamaefeto}}</td>
+        <td>{{dados.p3mudatamaeseluk}}</td>
+
+        <td>{{dados.p3mudatamatfeto}}</td>
+        <td>{{dados.p3mudatamatmane}}</td>
+        <td>{{dados.p3mudatamatseluk}}</td>
+
+
+        <td>{{dados.p3mateemane}}</td>
+        <td>{{dados.p3mateefeto}}</td>
+        <td>{{dados.p3mateeseluk}}</td>
+
+
+
+        <td>{{dados.p3matetmane}}</td>
+        <td>{{dados.p3matetfeto}}</td>
+        <td>{{dados.p3matetseluk}}</td>
+
+        <td>{{dados.p3mudasaiefeto}}</td>
+        <td>{{dados.p3mudasaiemane}}</td>
+        <td>{{dados.p3mudasaieseluk}}</td>
+
+
+        <td>{{dados.p3mudasaitfeto}}</td>
+        <td>{{dados.p3mudasaitmane}}</td>
+        <td>{{dados.p3mudasaitseluk}}</td>
+
+
+        <td>{{dados.fimestrangeiromane}}</td>
+        <td>{{dados.fimestrangeirofeto}}</td>
+        <td>{{dados.fimestrangeiroseluk}}</td>
+
+
+        <td>{{dados.fimp1tlsmane}}</td>
+        <td>{{dados.fimp1tlsfeto}}</td>
+        <td>{{dados.fimp1tlsseluk}}</td>
+
+
+        <td>{{dados.fimp1qxefefamilia}}</td>
+        <td>{{dados.fimp1qmembrufamilia}}</td>
+        <td>{{dados.fimp1qpopulasaun}}</td>
+        <td>#</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+     <script>
+
+$("#download").click(function(){
+  alert("Download Dadus Ba Excel")
+  $("#pop").table2excel({
+    // exclude CSS class
+    exclude: ".noExl",
+    name: "Dadus Rekapitulasaun Populasaun  ",
+    filename: "Dadus Rekapitulasaun Populasaun ", //do not include extension
+    fileext: ".xls" // file extension
+  }); 
+});
+</script>
+
+
+</html>

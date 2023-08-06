@@ -1,0 +1,76 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock title %}
+{% block content %}
+{% include 'report/sidebar.html' %}
+	<section class="section-container">
+        <div class="content-wrapper">
+          <div class="content-heading d-flex justify-content-between">
+            <div>
+              {{title}}<small>
+                <ol class="breadcrumb mt-3">
+                  <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Varanda</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+                </ol>
+              </small>
+            </div>
+          </div>
+          <div class="container-fluid">
+               <div class="card card-default">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="card-title">{{title}}</div>
+                     <div class="card-title">
+                      <a href="{% url 'report_administration:PrintA10Munisipiu' municipality.hckey %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-plus-square"></i></span>Imprimi</a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                    <table width="100%" class="table table-hover" id='datatable1'>
+                        <thead>
+                            <tr>
+                                <th width="5%" style="padding: 2px">N&uacute;.</th>
+                                <th style="padding: 2px">Postu Administrativu</th>
+                                <th style="padding: 2px">Suku</th>
+                                <th style="padding: 2px">Data / N&uacute;. Karta</th>
+                                <th style="padding: 2px">Naran keixa nain</th>
+                                <th style="padding: 2px">Seksu</th>
+                                <th style="padding: 2px">Asuntu keixa</th>
+                                <th style="padding: 2px">Hela Fatin / N&uacute;. Telefone.</th>
+                                <th style="padding: 2px">Nú. Identidade</th>
+                                <th style="padding: 2px">Kondisaun Fíziku</th>
+                                <th width="15%" style="padding: 2px">Naran ida ne'ebe simu</th>
+                                <th>Data simu</th>
+                                <th width="8%">Asinatura</th>
+                                <th width="7%">Obs.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for data in listA10 %}
+                            <tr>
+                                <td style="padding: 3px"><center>{{forloop.counter}}</center></td>
+                                <td style="padding: 3px">{{data.administrativepost}}</td>
+                                <td style="padding: 3px">{{data.village}}</td>
+                                <td style="padding: 3px">{{data.date|date:"d-M-Y"}} / {{data.letter_number}}</td>
+                                <td style="padding: 3px">{{data.owner}}</td>
+                                <td style="padding: 3px">{{data.sex}}</td>
+                                <td style="padding: 3px"><center>{{data.subject}}</center></td>
+                                <td style="padding: 3px"><center>{{data.address}} / {{data.contact_number}}</center></td>
+                                <td style="padding: 3px">{% if data.identity_number %}BI :        {{data.identity_number}}{%endif%}
+                                          {% if data.nu_e %}<br>Eleitoral : {{data.nu_e}}{%endif%}
+                                          {% if data.nu_p %}<br>Passaporte : {{data.nu_p}}{%endif%}</td>
+                                <td style="padding: 3px">{{data.deficient}}</td>
+                                <td style="padding: 3px">{{data.recieve_complait_name}}</td>
+                                <td style="padding: 3px"><center>{{data.recieve_date|date:"d-M-Y"}}</center></td>
+                                <td style="padding: 3px"><center>{{data.signature}}</center></td>
+                                <td style="padding: 3px"><center>{% if data.observation %}{{data.observation}}{%else%}{%endif%}</center></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                  </div>
+               </div>
+          </div>
+        </div>
+    </section>
+    {% include 'main/footer.html' %}
+{% endblock %}

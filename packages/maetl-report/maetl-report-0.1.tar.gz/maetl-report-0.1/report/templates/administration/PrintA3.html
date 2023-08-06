@@ -1,0 +1,122 @@
+{% load static %}<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style type="text/css">
+            @media print {
+              #download {
+                display: none;
+              }
+            }
+           th {
+                font-family: "Agency FB", "sans-serif";
+              }
+            
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+            .box {
+              float: left;
+              width: 25%;
+              padding: 0px;
+            }
+
+            .clearfix::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+        </style>
+        <script src="{% static 'main/js/jquery.min.js' %}"></script>
+        <script src="{% static 'main/src/jquery.table2excel.js' %}"></script>
+    </head>
+          <button id='download' style="float: right;">Export  Dadus Ba Excel </button><br>
+        <body onload="print()">
+        <div style="margin-bottom: 10px"><center>Formatu A.3</center></div>
+        <div style="font-weight: bold;text-transform: uppercase;font-size: 1.5rem"><center>Livru Invent&aacute;riu Suku</center></div>
+        <br>
+        <center>
+            {{title}}
+        </center>
+        <br>
+
+        <table id="table2excel" width="100%" border="1" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nú.</th>
+                    <th>Postu Administrativu</th>
+                    <th>Suku</th>
+                    <th style="padding: 2px">Naran Inventária</th>
+                    <th>Data Sosa/Simu</th>
+                    <th>Kondisaun</th>
+                    <th>Nú. Seri</th>
+                    <th>Kuantidade</th>
+                    <th>Folin Sosa</th>
+                    <th style="padding: 2px">Fontes/Se mak fo</th>
+                    <th>Marka</th>
+                    <th>Se mak uza</th>
+                    <th>Obs.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: rgb(185, 169, 169)">
+                    <td style="padding-top: 4px"><center>1</center></td>
+                    <td style="padding-top: 4px"><center>2</center></td>
+                    <td style="padding-top: 4px"><center>3</center></td>
+                    <td style="padding-top: 4px"><center>4</center></td>
+                    <td style="padding-top: 4px"><center>5</center></td>
+                    <td style="padding-top: 4px"><center>6</center></td>
+                    <td style="padding-top: 4px"><center>7</center></td>
+                    <td style="padding-top: 4px"><center>8</center></td>
+                    <td style="padding-top: 4px"><center>9</center></td>
+                    <td style="padding-top: 4px"><center>10</center></td>
+                    <td style="padding-top: 4px"><center>11</center></td>
+                    <td style="padding-top: 4px"><center>12</center></td>
+                    <td style="padding-top: 4px"><center>13</center></td>
+                </tr>
+                {% for data in listA3 %}
+                <tr>
+                    <td style="padding-top: 4px"><center>{{forloop.counter}}</center></td>
+                    <td style="padding: 2px"> {{data.inventory.administrativepost}}</td>
+                    <td style="padding: 2px"> {{data.inventory.village}}</td>
+                    <td style="padding: 2px"> {{data.inventory.name}}</td>
+                    <td style="padding-top: 4px"><center>{{data.inventory.recieve_date|date:"d-M-Y"}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.inventory.condition}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.inventory.nu_serie}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.quantity}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.inventory.unitprice}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.inventory.supplier}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.inventory.brand}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.used.responsible}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.used.obs}}</center></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+<script>
+  $("#download").click(function(){
+    alert("Download Dados Ba Excel")
+    $("#table2excel").table2excel({
+      // exclude CSS class
+      exclude: ".noExl",
+      name: "Dados Inventáriu Suku :  {{userAddress.employee.village}} / Postu : {{userAddress.employee.administrativepost}}  /  Munisipiu :  {{userAddress.employee.municipality}} /  Tinan : {{year}} ",
+      filename: "Dados Inventáriu Suku :  {{userAddress.employee.village}} / Postu : {{userAddress.employee.administrativepost}}  /  Munisipiu :  {{userAddress.employee.municipality}} /  Tinan : {{year}}", //do not include extension
+      fileext: ".xls" // file extension
+    }); 
+  });
+</script>
+
+    </body>
+
+</html>

@@ -1,0 +1,304 @@
+{% extends 'main/layout.html' %} {% block title %}{{title}}{% endblock title %}
+{% block content %} {% include 'report/sidebar.html' %}
+<!-- block -->
+{% load static %}
+
+<!-- Page content-->
+
+<section class="section-container">
+  <div class="content-wrapper">
+    <div class="content-heading">
+      <div>
+        <h4>{{title}}</h4>
+        <small>Total Populasaun kada Munisípiu </small>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-9 block-center">
+        <!-- START card-->
+        <div class="card card-default">
+          <div class="card-body">
+            <div style="width: 700px; height: 250px; margin: 0 auto">
+              <center>
+                <div>
+                  <h4>Grafiku Populasaun Iha Kada Munisípiu no RAEOA </h4>
+                </div>
+                <hr />
+                Total Populasaun ({{totalpop}})
+              </center>
+
+              <hr />
+              <div class="table-responsive">
+
+              <canvas
+                style="width: 700px; height: 200px; margin: 0 auto"
+                id="populationmunisipality-chart"
+                data-url="{% url 'report_population:popchar_munisipality' %}"
+              ></canvas>
+            </div>
+            </div>
+            <br /><br />
+            <br /><br />
+            <div style="width: 700px; height: 250px; margin: 0 auto">
+              <center>
+                <div>
+                  <h4>Grafiku Família Uma Kain Iha Kada Munisípiu no RAEOA</h4>
+                </div>
+                <hr />
+                Total Uma Kain {{kontafamilia}}
+                <hr />
+              </center>
+
+              <br />
+               <div class="table-responsive">
+              <canvas
+                style="width: 700px; height: 200px; margin: 0 auto"
+                id="familynmunisipality-chart"
+                data-url="{% url 'report_population:popchar_familymunisipality' %}"
+              ></canvas>
+            </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+
+      <div class="col-xl-3 block-center">
+        <!-- START card-->
+        <div class="card card-default">
+          <div class="card-header">
+            <center>
+              <div>
+                <h4>Munisípiu No RAEOA</h4>
+              </div>
+            </center>
+            <hr />
+          </div>
+          <div class="card-body">
+            {% for dados in municipality %} {{forloop.counter}}.
+            <a
+              href="{% url 'report_population:reportb1jeralPostadministrative' dados.municipality__id %}"
+              >{{dados.municipality__name}}</a
+            >
+            ({{dados.count}})
+            <br />
+            <!-- block -->
+
+            {% endfor %}
+          
+     <!--          <a
+                href="{% url 'report_population:reportb1_printjeral'%}"
+                class="mb-1 btn btn btn-outline-info"
+                type="button"
+                target="__blank"
+              >
+                <i class="fa fa-print"> print Dados </i>
+              </a> -->
+            <hr />
+         
+
+<center>
+           <h4> 
+              Hili No print dadus populasaun tuir tipu dadus sira</h4>
+</center>
+<hr>
+
+
+
+
+
+
+                        <form
+            id="id_form_email_verification"
+            method="get"
+            action="{% url 'report_population:reportb1_printjeral'%}"
+            target="__blank"
+          >
+            {% csrf_token %}
+
+            <div class="form-row form-row">
+              <div class="form-group col-md-12 mb-0">
+                <div id="div_id_aldeia" class="form-group">
+         
+                      
+
+                      <label for="gender" class="">Hili Seksu </label>
+                      <div class="">
+                        <select
+                          name="gender"
+                          class="select form-control custom-select"
+                          id="gender"
+                        >
+                          <option value="jeral">--- Jeral ---</option>
+                          <option value="m">Mane</option>
+                          <option value="f">Feto</option>
+                              <option value="s">Seluk</option>
+                        </select>
+                      </div>
+                      <br />
+       <input name = "dados" type ='hidden' value="print">
+
+
+                      <label for="citizenp" class="">Hili Sidadaun </label>
+                      <div class="">
+                        <select
+                          name="citizenp"
+                          class="select form-control custom-select"
+                          id="citizenp"
+                        >
+                          <option value="jeral">--- Jeral ---</option>
+                          <option value="a">Adkeridu</option>
+                          <option value="o">Original</option>
+                        </select>
+
+
+
+
+                      </div>
+                      <br />
+                 
+                      <label for="religion" class="">Hili Relijiaun</label>
+                      <div class="">
+                        <select
+                          name="religion"
+                          class="select form-control custom-select"
+                          id="religion"
+                        >
+                          <option value="jeral">--- Jeral ---</option>
+                          {% for dados in relijiaun %}
+                          <option value="{{dados.id}}">{{dados.name}}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                      <br />
+                      <label for="level_education" class="">
+                        Habilitasaun Literaria
+                      </label>
+                      <div class="">
+                        <select
+                          name="level_education"
+                          class="select form-control custom-select"
+                          id="level_education"
+                        >
+                          <option value="jeral">--- Jeral ---</option>
+                          {% for dados in edukasaun %}
+                          <option value="{{dados.id}}">{{dados.name}}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+
+                      <br>
+
+                      
+                      <label for="marital_status" class="">Estadu Civil </label>
+                      <div class="">
+                        <select
+                          name="marital_status"
+                          class="select form-control custom-select"
+                          id=""
+                          id="marital_status"
+                        >
+                          <option value="jeral">--- Jeral ---</option>
+                          <option value="s">Klosan</option>
+                          <option value="c">Kaben Nain</option>
+                          <option value="f">Faluk</option>
+                          <option value="d">Fahe Malu</option>
+
+                        </select>
+
+
+
+
+                      </div>
+                      <br />
+
+
+                             <label for="profession" class="">
+                        Profisaun
+                      </label>
+                      <div class="">
+                        <select
+                          name="profession"
+                          class="select form-control custom-select"
+                          id="profession"
+                        >
+                            <option value="jeral">--- Jeral ---</option>
+                    
+                          {% for dados in profession %}
+                          <option value="{{dados.id}}">{{dados.name}}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                      <br>
+
+
+
+
+                            <label for="citizenp" class="">Vulnerável </label>
+                      <div class="">
+                                              <select
+                          name="vurneravel"
+                          class="select form-control custom-select"
+                          id="vurneravel"
+                        >
+                        <option value="jeral">--- Jeral ---</option>
+                          <option value="True">Lae</option>
+                          <option value="False">Sim</option>
+                        </select>
+                      </div>
+
+
+
+
+                     
+                   
+                  <br>
+
+    <label for="level_education" class="">
+                        Kondisaun
+                      </label>
+                      <div class="">
+                        <select
+                          name="kondisaun"
+                          class="select form-control custom-select"
+                          id="kondisaun"
+                        >
+                                            <option value="jeral">--- Jeral ---</option>
+                          {% for dados in kondisaun %}
+                          <option value="{{dados.id}}">{{dados.name}}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                      <br>
+                  <center>
+                    <button class="btn btn-info" type="submit">
+                      <i class="fa fa-print"></i> Print Dadus
+                    </button>
+                  </center>
+                   
+                </div>
+              </div>
+            </div>
+
+
+
+          </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="{% static 'main/vendor/chart.js/dist/family_chart.js' %}"></script>
+<script src="{% static 'main/vendor/chart.js/dist/populationjeral_chart.js' %}"></script>
+
+{% include 'main/footer.html' %} {% endblock content %}

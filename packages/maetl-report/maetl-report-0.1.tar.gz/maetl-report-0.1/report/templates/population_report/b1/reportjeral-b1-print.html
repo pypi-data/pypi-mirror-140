@@ -1,0 +1,295 @@
+{% load static %}
+<html>
+  <head>
+    <style type="text/css" media="print">
+
+      @media print {
+  #download {
+    display: none;
+  }
+}
+
+
+      @page {
+        size: auto; /* auto is the current printer page size */
+        margin-top: 0mm; /* this affects the margin in the printer settings */
+        margin-bottom: 0mm;
+      }
+
+      body {
+        margin-top: 0px;
+        margin-bottom: 0mm; /* the margin on the content before printing */
+      }
+    </style>
+  </head>
+
+  <body onload="print()">
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static 'main/src/jquery.table2excel.js' %}"></script>
+
+<button id ='download' style="float: right;">Export  Dadus Ba Excel </button>
+
+
+    <style>
+      .th2 {
+        padding: 5px;
+        text-align: center;
+        font-size: 15px;
+        font-family: "Agency FB", "sans-serif";
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td {
+        text-align: left;
+        padding: 5px;
+        font-size: 15px;
+        font-family: "Agency FB", "sans-serif";
+      }
+
+      .td2 {
+        text-align: justify;
+        padding: 5 px;
+        text-align: center;
+        background-color: rgb(208, 208, 208);
+      }
+    </style>
+    <br /><br /><br />
+    <center>
+      Formatu B. 1
+      <h1>LIVRU REJISTU POPULASAUN</h1>
+
+      Suku : {% if suku == 'mamuk' %} ..................
+      <!-- block -->
+      {% else %} <b> {{suku}}</b> {% endif %}
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <!-- block -->
+      Postu Administrativu : {% if postu == 'mamuk' %} ..................
+      <!-- block -->
+      {% else %}
+      <!-- block -->
+      <b>{{postu}}</b> {% endif %}
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+           
+
+
+      <!-- block --> {% if munisipiu == 'Dili' or munisipiu == 'Ermera'  or munisipiu == 'Bobonaro'  or munisipiu == 'Baucau' %} 
+                     Autoridade Munisipal : {{munisipiu}}
+                     {% elif munisipiu == 'Oe-cusse' %} 
+                      Rejiaun Aut&oacute;nomu : RAEOA
+                     {% else %}
+                      Munisípiu : {{munisipiu}}
+                     {% endif %}
+
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <!-- block -->
+      Tinan : {{tinan}}
+    </center>
+    <br> <center><b> {% if titulu_kategoria == '' %} Kategoria Dadus Jeral 
+    {% else %} Kategoria Dados : {{titulu_kategoria}}   {% endif %} - Total Populasaun : {{totpop}} </b></center>
+    <br />
+
+  
+    <table border="1" style="width: 100%" id = 'pop'>
+      <tr>
+        <th class="th2" >Nú.</th>
+        <th class="th2" >Naran Kompletu/Alias</th>
+        <th class="th2" >Seksu</th>
+        <th class="th2" >Estadu Civil</th>
+
+        <th class="th2" >Sidadania</th>
+
+        <th class="th2" >Fatin no Data Moris</th>
+
+        <th class="th2" >Relijiaun</th>
+        <th class="th2" >Habilitasaun Literaria ikus liu</th>
+        <th class="th2" >Profisaun</th>
+
+     
+        <th class="th2">Hela Fatin</th>
+
+
+
+        <th class="th2" >Pozisaun iha Familia</th>
+        <th class="th2" >Nu. Kartaun Identidade</th>
+        <th class="th2" >Nu Tlf</th>
+        <th class="th2" >Kondisaun Fiziku</th>
+        <th class="th2" >Nu. Kartaun Fixa Família</th>
+        <th class="th2" >Konhesementu Lingua</th>
+        <th class="th2" >Vulnerável</th>
+        <th class="th2" >Obs</th>
+      </tr>
+
+
+      <!-- 'family_position' 'dekrisaunmate' 'datamate' 'dekrisaunsai' , 'datasai' 'id'
+  'hashed' 'village' 'aldeia' 'profession' 'citizenp' 'religion' 'user_created' 'name' 'date_of_bird' 'place_of_bird' 'gender''marital_status''level_education' 'readalatin'
+  'readaarabe''readachina''nu_bi' 'id_pasaporte' 'id_family' 'descriptionp' 'imagen'
+  'status_datap' 'type_data' 'date_created'  -->
+
+      <tr>
+        <!-- {{dados.total}} -->
+
+        <td class="td2">1</td>
+        <td class="td2">2</td>
+        <td class="td2">3</td>
+        <td class="td2">4</td>
+        <td class="td2">5</td>
+        <td class="td2">6</td>
+        <td class="td2">7</td>
+        <td class="td2">8</td>
+        <td class="td2">9</td>
+        <td class="td2">10</td>
+
+        <td class="td2">11</td>
+        <td class="td2">12</td>
+        <td class="td2">13</td>
+        <td class="td2">14</td>
+        <td class="td2">15</td>
+        <td class="td2">16</td>
+        <td class="td2">17</td>
+            <td class="td2">18</td>
+
+
+
+   
+    
+   
+
+      </tr>
+
+      {% for dados in family_member %}
+
+      <tr>
+        <!-- {{dados.total}} -->
+
+        <td>{{ forloop.counter }}</td>
+        <td>{{ dados.name }}</td>
+
+
+        <td>     
+
+    {% if dados.gender == 'm' %}
+                            Mane
+                            {% elif dados.gender == 'f' %}
+                            Feto
+                            {% elif dados.gender == 's' %}
+                            Seluk
+                            {% endif %}
+
+        </td>
+
+
+        <td>         {% if dados.marital_status == 's' %}
+            Klosan  
+          {% elif dados.marital_status == 'c' %}
+            Kaben Nain  
+           {% elif dados.marital_status == 'f' %}
+            Faluk  
+
+          {% elif dados.marital_status == 'd' %}
+            Fahe Malu   
+          {% endif %}</td>
+        <td>   {% if  dados.citizenp == 'o' %}
+          Original
+          {% elif  dados.citizenp == 'f'  %}
+          Adkeridu
+          {% endif %}</td>
+        <td>{{ dados.place_of_bird}} /  {{ dados.date_of_bird}}</td>
+ 
+      
+        <td>{{ dados.religion }}</td>
+        <td>
+          {% if dados.level_education == None %} --- {% else %} 
+          {{dados.level_education }} {% endif %}
+        </td>
+        <td>
+          {% if dados.profession == None %} --- {% else %} {{ dados.profession }}
+          {% endif %}
+        </td>
+       
+       
+        <td>{{ dados.aldeia }}</td>
+
+        <td>{{ dados.family_position }}</td>
+       
+        <td>       
+   
+              -
+                  {% if dados.nu_bi is not None %}
+                  {% if dados.nu_bi %}
+                  Nú BI : {{dados.nu_bi}} 
+                  {% endif %}
+                  {% endif %}  
+              -
+                  {% if dados.nu_p is not None %}
+                  {% if dados.nu_p %}
+                  Nú Pasaporte : {{dados.nu_p}} 
+                  {% endif %}
+                  {% endif %}  
+
+
+                  {% if dados.nu_e is not None  %}
+                  {% if dados.nu_e %}
+                  Nú  Eleitoral : {{dados.nu_e}} 
+                  {% endif %}
+                  {% endif %} 
+
+        </td>
+
+        <td>   {% if dados.phone is None %}
+                              Dadus Laiha
+                              {% else %}
+                              {{dados.phone}}
+                              {% endif %}</td>
+
+        <td>{{ dados.kondisaun }}</td>
+
+
+    
+
+
+
+
+        <td>{{ dados.family }}</td>
+        <td>{{ dados.lingua }}</td>
+  <td>  {% if dados.vulnerable == True %}
+          Lae
+          {% else %}
+          Sim
+          {% endif %}</td>
+        <td>{{ dados.descriptionp }}</td>
+
+
+
+      </tr>
+
+      {% endfor %}
+    </table>
+
+
+
+   <script>
+
+$("#download").click(function(){
+  alert("Download Dadus Ba Excel")
+  $("#pop").table2excel({
+    // exclude CSS class
+    exclude: ".noExl",
+    name: "Dadus Populasaun Kategoria Dadus : {{titulu_kategoria}} - Total Populasaun : {{totpop}} ",
+    filename: "Dadus Populasaun Kategoria Dadus : {{titulu_kategoria}} - Total Populasaun : {{totpop}} ", //do not include extension
+    fileext: ".xls" // file extension
+  }); 
+});
+</script>
+  </body>
+</html>

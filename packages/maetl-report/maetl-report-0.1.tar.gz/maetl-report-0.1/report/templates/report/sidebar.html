@@ -1,0 +1,97 @@
+{% load static %}
+<aside class="aside-container">
+  <!-- START Sidebar (left)-->
+  <div class="aside-inner">
+    <nav class="sidebar" data-sidebar-anyclick-close="">
+      <!-- START sidebar nav-->
+      <ul class="sidebar-nav">
+        <!-- START user info-->
+        <li class="has-user-block">
+          <div class="collapse" id="user-block">
+            <div class="item user-block">
+              <!-- User picture-->
+              <div class="user-block-picture">
+                <div class="user-block-status">
+                  <img
+                    class="img-thumbnail rounded-circle"
+                    src="{% static 'main/img/user/02.jpg' %}"
+                    alt="Avatar"
+                    width="60"
+                    height="60"
+                  />
+                  <div class="circle bg-success circle-lg"></div>
+                </div>
+              </div>
+              <!-- Name and Job-->
+              <div class="user-block-info">
+                <span class="user-block-name"
+                  >Hello, {{ request.user.username | upper }}</span
+                ><span class="user-block-role">Admin</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- END user info-->
+        <!-- Iterates over all sidebar items-->
+        <li class="nav-heading mt-4">
+          <span data-localize="sidebar.heading.HEADER">Menu Livru</span>
+        </li>
+        <!-- <li class="{{home}}">
+          <a href="{% url 'development:dashboard-development' %}" title="Home">
+            <em class="fas fa-home"></em
+            ><span data-localize="sidebar.nav.WIDGETS">Home</span>
+          </a>
+        </li> -->
+        <li class="{{administration}}">
+          <a
+            href="{% url 'report_administration:administrationReportDashboard' %}"
+            title="Administrasaun"
+            ><em class="fas fa-book"></em><span>Administrasaun</span></a
+          >
+        </li>
+
+        <li class="">
+          <a href="#cos" title="Dashboard" data-toggle="collapse">
+            <em class="fas fa-users"></em
+            ><span data-localize="sidebar.nav.DASHBOARD">Populasaun</span>
+          </a>
+          <ul class="sidebar-nav sidebar-subnav collapse" id="cos">
+            <li class="sidebar-subnav-header">Populasaun</li>
+
+            <li class="">
+              <a
+                href="{% url 'report_population:reportb1jeralMunicipality'  %}"
+                title="Munisipiu"
+                ><span>Dadus Populasaun </span></a
+              >
+            </li>
+
+            <li class="">
+              <a
+                href="{% url 'report_population:reportb4jeral'  %}"
+                title="Munisipiu"
+                ><span
+                  >Dadus Rekapitulasun<br />
+                  Populasaun
+                </span></a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="{{activedevelopment}}">
+          <a
+            href="{% url 'report_development:report-development-dashboard' %}"
+            title="Desenvolvimentu"
+            ><em class="fas fa-project-diagram"></em><span>Dezenvolvimentu</span></a
+          >
+        </li>
+
+        {% comment %} END RELATORIO {% endcomment %}
+        <hr />
+      </ul>
+      <!-- END sidebar nav-->
+    </nav>
+  </div>
+  <!-- END Sidebar (left)-->
+</aside>

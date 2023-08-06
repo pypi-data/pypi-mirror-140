@@ -1,0 +1,79 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock title %}
+{% block content %}
+{% include 'report/sidebar.html' %}
+	<section class="section-container">
+        <div class="content-wrapper">
+          <div class="content-heading d-flex justify-content-between">
+            <div>
+              {{title}}<small>
+                <ol class="breadcrumb mt-3">
+                  <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Varanda</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+                </ol>
+              </small>
+            </div>
+          </div>
+          <div class="container-fluid">
+               <div class="card card-default">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="card-title">{{title}}</div>
+                     <div class="card-title">
+                      <a href="{% url 'report_administration:PrintA7Munisipiu' municipality.hckey %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-plus-square"></i></span>Imprimi</a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                    <table width="100%" class="table table-hover" id='datatable1'>
+                        <thead>
+                <tr>
+                    <th rowspan="2" width="5%" style="padding: 2px">Nú.</th>
+                    <th rowspan="2" width="15%">Postu Administrativu</th>
+                    <th rowspan="2" width="15%">Suku</th>
+                    <th rowspan="2" width="15%">Naran Kompletu</th>
+                    <th rowspan="2" width="5%">Seksu</th>
+                    <th rowspan="2" width="6%">Estadu Sivil</th>
+                    <th rowspan="2" width="8%">Kargu</th>
+                    <th rowspan="2" width="8%">Fatin/Data Moris</th>
+                    <th rowspan="2" width="10%">Habilitasaun Literaria</th>
+                    <th colspan="2" width="15%" style="padding-top: 2px">Mandatu</th>
+                    <th rowspan="2" width="8%">N&uacute;. Identidade</th>
+                    <th rowspan="2" width="8%">Hela Fatin</th>
+                    <th rowspan="2" width="8%">Kondisaun Fíziku</th>
+                    <th rowspan="2" width="10%">Obs.</th>
+                </tr>
+                <tr>
+                    <th width="8%" style="padding: 2px">Data hahu</th>
+                    <th width="7%" style="padding: 2px">Data remata</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in listA7 %}
+                <tr>
+                    <td style="padding-top: 4px"><center>{{forloop.counter}}</center></td>
+                    <td style="padding: 4px">{{data.administrativepost}}</td>
+                    <td style="padding: 4px">{{data.village}}</td>
+                    <td style="padding: 4px">{{data.population.name}}</td>
+                    <td style="padding-top: 4px"><center>{% if data.population.gender == "m" %}Mane{% elif data.population.gender == "f" %}Feto{%endif%}</center></td>
+                    <td style="padding-top: 4px"><center>{% if data.population.marital_status == "c" %}Kaben Nain{% elif data.population.marital_status == "s" %}Klosan{% elif data.population.marital_status == "d" %}Faluk{%endif%}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.position}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.population.place_of_bird}}/{{data.population.date_of_bird|date:"d-M-Y"}}</center></td>
+                    <td style="padding-top: 4px"><center>{% if data.population.level_education %}{{data.population.level_education}}{%else%} {%endif%}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.startMandate|date:"d-M-Y"}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.endMandate|date:"d-M-Y"}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.population.nu_bi}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.population.place_of_bird}}</center></td>
+                    <td style="padding-top: 4px"><center>{{data.population.deficient}}</center></td>
+                    <td style="padding-top: 4px"><center>{% if data.observation %}{{data.observation}}{%else%} {%endif%}</center></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+                    </table>
+                  </div>
+               </div>
+          </div>
+        </div>
+    </section>
+    {% include 'main/footer.html' %}
+{% endblock %}

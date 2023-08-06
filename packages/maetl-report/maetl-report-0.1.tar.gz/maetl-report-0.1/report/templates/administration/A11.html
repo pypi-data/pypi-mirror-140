@@ -1,0 +1,77 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock title %}
+{% block content %}
+{% include 'report/sidebar.html' %}
+	<section class="section-container">
+        <div class="content-wrapper">
+          <div class="content-heading d-flex justify-content-between">
+            <div>
+              {{title}}<small>
+                <ol class="breadcrumb mt-3">
+                  <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Varanda</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+                </ol>
+              </small>
+            </div>
+          </div>
+          <div class="container-fluid">
+               <div class="card card-default">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="card-title">{{title}}</div>
+                     <div class="card-title">
+                      <a href="{% url 'report_administration:PrintA11Munisipiu' municipality.hckey %}" target="_blank" class="btn btn-sm btn-labeled btn-info mb-2"><span class="btn-label"><i class="fa fa-plus-square"></i></span>Imprimi</a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                    <table width="100%" class="table table-hover" id='datatable1'>
+                        <thead>
+                <tr>
+                    <th rowspan="2" width="5%">Nú.</th>
+                    <th rowspan="2" width="8%">Postu Administrativu</th>
+                    <th rowspan="2" width="8%">Suku</th>
+                    <th rowspan="2" style="padding: 2px" width="10%">Data</th>
+                    <th style="padding-top: 2px" colspan="2">Horas</th>
+                    <th rowspan="2" width="15%">Naran</th>
+                    <th rowspan="2" width="8%">Seksu</th>
+                    <th rowspan="2">Instituisaun / Ministériu</th>
+                    <th rowspan="2">Asuntu</th>
+                    <th rowspan="2" style="padding: 2px">Hela Fatin / Nú. Telefone</th>
+                    <th rowspan="2" style="padding: 2px">Kondisaun Fíziku</th>
+                    <th rowspan="2" width="7%">Asinatura</th>
+                    <th rowspan="2" width="8%">Obs.</th>
+                </tr>
+                <tr>
+                    <th style="padding-top: 2px">Tama</th>
+                    <th style="padding-top: 2px">Sai</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in listA11 %}
+                <tr>
+                    <td style="padding: 3px"><center>{{forloop.counter}}</center></td>
+                    <td style="padding: 3px">{{data.administrativepost}}</td>
+                    <td style="padding: 3px">{{data.village}}</td>
+                    <td style="padding: 3px"><center>{{data.visitDate|date:"d-M-Y"}}</center></td>
+                    <td style="padding: 3px"><center>{{data.entryTime|time:"H:i"}}</center></td>
+                    <td style="padding: 3px"><center>{{data.outTime|time:"H:i"}}</center></td>
+                    <td style="padding: 3px">{{data.name}}</td>
+                    <td style="padding: 3px"><center>{{data.sex}}</center></td>
+                    <td style="padding: 3px"><center>{{data.visitor}}</center></td>
+                    <td style="padding: 3px"><center>{{data.subject}}</center></td>
+                    <td style="padding: 3px"><center>{{data.address}} / {{data.contact_number}}</center></td>
+                    <td style="padding: 3px"><center>{{data.deficient}}</center></td>
+                    <td style="padding: 3px"><center></center></td>
+                    <td style="padding: 3px"><center>{% if data.observation %}{{data.observation}}{%else%} {% endif %}</center></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+                    </table>
+                  </div>
+               </div>
+          </div>
+        </div>
+    </section>
+    {% include 'main/footer.html' %}
+{% endblock %}

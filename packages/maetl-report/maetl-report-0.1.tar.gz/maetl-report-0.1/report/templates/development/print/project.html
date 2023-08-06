@@ -1,0 +1,176 @@
+{% load static %}<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>{{title}}</title>
+    <style type="text/css">
+      .title span {
+        color: #007cae;
+      }
+      .details {
+        text-align: left !important;
+        /*margin-left: 40%;*/
+      }
+      .hrItem {
+        border: none;
+        height: 1px;
+        /* Set the hr color */
+        color: #333; /* old IE */
+        background-color: #fff; /* Modern Browsers */
+      }
+      .box {
+        float: left;
+        width: 20%;
+        padding: 0px;
+      }
+
+      .clearfix::after {
+        content: '';
+        clear: both;
+        display: table;
+      }
+      @page {
+        size: letter landscape;
+        margin: 1cm;
+      }
+    </style>
+    <script src="{% static 'main/js/jquery.min.js' %}"></script>
+    <script src="{% static 'main/src/jquery.table2excel.js' %}"></script>
+  </head>
+  {% if page == "excelproject" %}
+  <body>
+    {% else %}
+  <body onload="print()" style="font-family: Times New Roman; font-size: 15px">
+    {% endif %}
+    <br /><br />
+    <div  style="margin-bottom: 3px;font-family: Times New Roman;font-size: 1.2rem">
+      <center>Formatu C.1 {% if page == "excelproject" %}
+      <button id ='download'>Exporta ba Excel</button>
+      {% endif %}</center>
+    </div>
+    <center><h2>{{title}}</h2></center>
+    <table width="100%" border="1" cellpadding="0" cellspacing="0" style="font-size: 14px" id='table2excel'>
+      <thead>
+        <tr style="background-color: white; width: auto">
+          <th rowspan="2" style="width: 25px">N&uacute.</th>
+          <th rowspan="2" style="width: 12%">Naran Projetu</th>
+          <th rowspan="2">Naran Kompa&ntildeia</th>
+          <th colspan="2" style="padding-top: 2px"><center>Durasaun Konstrusaun</center></th>
+          <th colspan="5" style="padding-top: 2px; width: 50%"><center>Fundus Husi</center></th>
+          <th rowspan="2">Benef&iacutesiu</th>
+          {% if municipality and post and village %}
+          <th rowspan="2">Tinan</th>          
+          {% elif municipality and post %}
+          <th rowspan="2">Suku</th>
+          <th rowspan="2">Tinan</th>
+          {% elif municipality %}
+          <th rowspan="2">Postu Adm.</th>
+          <th rowspan="2">Suku</th>
+          <th rowspan="2">Tinan</th>
+          {% elif year %}
+          <th rowspan="2">Mun / dAut.Munisipal / Rej.Auto</th>
+          <th rowspan="2">Postu Adm.</th>
+          <th rowspan="2">Suku</th>
+          {% else %}
+          <th rowspan="2">Mun / Aut.Munisipal / Rej.Auto</th>
+          <th rowspan="2">Postu Adm.</th>
+          <th rowspan="2">Suku</th>
+          <th rowspan="2">Tinan</th>
+          {% endif %}
+          <th rowspan="2">Obs</th>
+        </tr>
+        <tr style="background-color: white; width: auto">
+          <th style="padding: 2px">Data Hahu</th>
+          <th style="padding: 2px">Data Remata</th>
+          <th>Munis&iacutepiu</th>
+          <th style="width: auto%">Nasional</th>
+          <th>ONG</th>
+          <th>Volunt&aacuteriu</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="padding-top: 2px; text-align: center; width: auto; background-color: silver">
+          <td><center>1</center></td>
+          <td><center>2</center></td>
+          <td><center>3</center></td>
+          <td><center>4</center></td>
+          <td><center>5</center></td>
+          <td><center>6</center></td>
+          <td><center>7</center></td>
+          <td><center>8</center></td>
+          <td><center>9</center></td>
+          <td><center>10</center></td>
+          <td><center>11</center></td>
+          <td><center>12</center></td>
+          {% if municipality and post and village %}
+          <td><center>13</center></td>          
+          {% elif municipality and post %}
+          <td><center>13</center></td>
+          <td><center>14</center></td>
+          {% elif municipality %}
+          <td><center>13</center></td>
+          <td><center>14</center></td>
+          <td><center>15</center></td>
+          {% elif year %}
+          <td><center>13</center></td>
+          <td><center>14</center></td>
+          <td><center>15</center></td>
+          {% else %}
+          <td><center>13</center></td>
+          <td><center>14</center></td>
+          <td><center>15</center></td>
+          <td><center>16</center></td>
+          {% endif %}
+        </tr>
+
+        {% for index, obj in objects.iterrows %}
+        <tr style="padding-top: 2px; text-align: center; width: auto">
+          <td>{{forloop.counter}}</td>
+          <td>{{obj.0.name}}</td>
+          <td>{{obj.0.company}}</td>
+          <td>{{obj.0.start_period|date:"d / M / Y"}}</td>
+          <td>{{obj.0.end_period|date:"d / M / Y"}}</td>
+          <td>{% for f in fMunicipality %} {% if f.project == obj.0 %} {{f}} {% endif %} {% endfor %}</td>
+          <td>{% for g in fNational %} {% if g.project == obj.0 %} {{g.national.code}} {% endif %} {% endfor %}</td>
+          <td>{% for h in fOng %} {% if h.project == obj.0 %} {{h}} {% endif %} {% endfor %}</td>
+          <td>{% for i in fVolunteer %} {% if i.project == obj.0 %} {{i}} {% endif %} {% endfor %}</td>
+          <td>{{obj.total_amount}}</td>
+          <td>{{obj.0.benefit}}</td>
+          {% if municipality and post and village %}
+          <td>{{obj.0.year}}</td>          
+          {% elif municipality and post %}
+          <td>{{obj.0.village}}</td>
+          <td>{{obj.0.year}}</td>
+          {% elif municipality %}
+          <td>{{obj.0.administrativepost}}</td>
+          <td>{{obj.0.village}}</td>
+          <td>{{obj.0.year}}</td>
+          {% elif year %}
+          <td>{{obj.0.municipality}}</td>
+          <td>{{obj.0.administrativepost}}</td>
+          <td>{{obj.0.village}}</td>
+          {% else %}
+          <td>{{obj.0.municipality}}</td>
+          <td>{{obj.0.administrativepost}}</td>
+          <td>{{obj.0.village}}</td>
+          <td>{{obj.0.year}}</td>
+          {% endif %}
+          <td>{{obj.0.obs}}</td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+    <script>
+  $("#download").click(function(){
+    alert("Exporta Dadus Ba Excel")
+    $("#table2excel").table2excel({
+      // exclude CSS class
+      exclude: ".noExl",
+      name: "Relatóriu Projetu Suku",
+      filename: "Relatóriu Projetu Suku", //do not include extension
+      fileext: ".xls" // file extension
+    }); 
+  });
+</script>
+  </body>
+</html>

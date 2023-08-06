@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %} {% block title %}{{title}}{% endblock title %} {% block content %} {% include 'report/sidebar.html' %}
+<section class="section-container">
+  <!-- Page content-->
+  <div class="content-wrapper">
+    <div class="content-heading">
+      <div>
+        {{title}}<small>
+          <ol class="breadcrumb mt-3">
+            <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Varanda</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+          </ol>
+        </small>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-12">
+        {% comment %} START PAGE {% endcomment %}
+
+        <h1>Dashboard Relat&oacuteriu</h1>
+        {% comment %} END PAGE {% endcomment %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page footer-->
+{% include 'main/footer.html' %} {% endblock content %}
