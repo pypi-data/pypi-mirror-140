@@ -1,0 +1,9 @@
+README.md
+setup.py
+nonebot_plugin_ygo/__init__.py
+nonebot_plugin_ygo/config.py
+nonebot_plugin_ygo.egg-info/PKG-INFO
+nonebot_plugin_ygo.egg-info/SOURCES.txt
+nonebot_plugin_ygo.egg-info/dependency_links.txt
+nonebot_plugin_ygo.egg-info/requires.txt
+nonebot_plugin_ygo.egg-info/top_level.txt
