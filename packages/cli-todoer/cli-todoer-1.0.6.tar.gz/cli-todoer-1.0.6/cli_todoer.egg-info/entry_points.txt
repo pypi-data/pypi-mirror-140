@@ -1,0 +1,3 @@
+[console_scripts]
+todoer1 = todoer.todocli:main
+
