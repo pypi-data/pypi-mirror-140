@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: colereader
+Version: 0.0.1
+Summary: This python module replaces, writes and clears text files making it much quicker then writing it out the normal way.
+Home-page: 
+Author: Cole
+Author-email: Coleberr1@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+This python module replaces, writes and clears text files making it much quicker then writing it out the normal way.
+
+Change Log
+==========
+
+0.0.1 (2022-02-26)
+------------------
+-First Release
+

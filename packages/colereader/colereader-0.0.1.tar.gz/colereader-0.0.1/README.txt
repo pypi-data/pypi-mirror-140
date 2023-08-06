@@ -1,0 +1,1 @@
+This python module replaces, writes and clears text files making it much quicker then writing it out the normal way.
