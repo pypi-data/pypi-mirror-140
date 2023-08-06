@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+samplelib/__init__.py
+samplelib/hello.py
+test_sayhello.egg-info/PKG-INFO
+test_sayhello.egg-info/SOURCES.txt
+test_sayhello.egg-info/dependency_links.txt
+test_sayhello.egg-info/top_level.txt
