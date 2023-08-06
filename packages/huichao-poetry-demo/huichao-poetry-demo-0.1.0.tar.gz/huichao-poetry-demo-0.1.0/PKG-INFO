@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: huichao-poetry-demo
+Version: 0.1.0
+Summary: 
+Author: cheng-huichao
+Author-email: cheng.huichao@yahoo.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: urllib3 (>=1.26.8,<2.0.0)
