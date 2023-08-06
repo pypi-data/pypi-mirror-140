@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: skime
+Version: 0.1.0
+Summary: 
+Requires-Python: >=2.7,<2.8
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: PyYAML (>=5,<6)
