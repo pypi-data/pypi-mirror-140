@@ -1,0 +1,2 @@
+cryptography==36.0.1
+typing_extensions==4.1.1
