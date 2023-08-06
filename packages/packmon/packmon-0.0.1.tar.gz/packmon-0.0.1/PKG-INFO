@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: packmon
+Version: 0.0.1
+Summary: Tool to monitor aging packages in order to detect obsolescence or updates
+Home-page: https://framagit.org/Mindiell/packmon
+Author: Mindiell
+License: GNU AFFERO GENERAL PUBLIC LICENSE version 3 or later
+Project-URL: Documentation, https://packmon.readthedocs.io/fr/latest/
+Description: packmon is a cli tool to monitor aging packages in order to see if somes become obsolete
+        or updates are availables.
+        
+        
+        # Philosophy
+        
+        As a simple monitoring tool, packmon tried to stay pure-python in order to simplify its
+        use.
+        
+        
+        # Usage
+        
+        1. Install packmon on your system
+        2. Use it to detect obsolescence and vulnerabilities in any of your project (virtual
+            environment or not)
+        
+        
+        ## Example
+        
+        System level :
+        
+            pip install packmon
+        
+        Then :
+        
+            packmon myproject/requirements.txt
+        
+        Result :
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

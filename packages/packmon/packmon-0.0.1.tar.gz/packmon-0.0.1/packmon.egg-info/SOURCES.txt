@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+packmon/__init__.py
+packmon/packmon.py
+packmon.egg-info/PKG-INFO
+packmon.egg-info/SOURCES.txt
+packmon.egg-info/dependency_links.txt
+packmon.egg-info/entry_points.txt
+packmon.egg-info/top_level.txt

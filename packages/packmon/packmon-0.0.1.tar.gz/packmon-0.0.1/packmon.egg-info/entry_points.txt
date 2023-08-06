@@ -1,0 +1,3 @@
+[console_scripts]
+packmon = packmon.packmon:main
+
