@@ -1,0 +1,9 @@
+README.md
+setup.py
+maptiles/__init__.py
+maptiles/maptiles.py
+maptiles.egg-info/PKG-INFO
+maptiles.egg-info/SOURCES.txt
+maptiles.egg-info/dependency_links.txt
+maptiles.egg-info/requires.txt
+maptiles.egg-info/top_level.txt
