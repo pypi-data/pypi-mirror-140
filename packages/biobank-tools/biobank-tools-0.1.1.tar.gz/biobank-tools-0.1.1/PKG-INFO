@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: biobank-tools
+Version: 0.1.1
+Summary: Biobank Tools.
+Home-page: https://github.com/altaf-ali/biobank-tools
+License: MIT
+Author: Altaf Ali
+Author-email: altaf@firecrest.io
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: autoflake (>=1.4,<2.0); extra == "test"
+Requires-Dist: black (>=21.5b2,<22.0); extra == "test"
+Requires-Dist: bump2version (>=1.0.1,<2.0.0); extra == "dev"
+Requires-Dist: dask (>=2022.2.0,<2023.0.0)
+Requires-Dist: flake8 (>=3.9.2,<4.0.0); extra == "test"
+Requires-Dist: flake8-docstrings (>=1.6.0,<2.0.0); extra == "test"
+Requires-Dist: isort (>=5.8.0,<6.0.0); extra == "test"
+Requires-Dist: mkdocs (>=1.1.2,<2.0.0); extra == "doc"
+Requires-Dist: mkdocs-autorefs (>=0.2.1,<0.3.0); extra == "doc"
+Requires-Dist: mkdocs-include-markdown-plugin (>=1.0.0,<2.0.0); extra == "doc"
+Requires-Dist: mkdocs-material (>=6.1.7,<7.0.0); extra == "doc"
+Requires-Dist: mkdocs-material-extensions (>=1.0.1,<2.0.0)
+Requires-Dist: mkdocstrings (>=0.15.2,<0.16.0); extra == "doc"
+Requires-Dist: mypy (>=0.900,<0.901); extra == "test"
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Requires-Dist: pip (>=20.3.1,<21.0.0); extra == "dev"
+Requires-Dist: pre-commit (>=2.12.0,<3.0.0); extra == "dev"
+Requires-Dist: pyarrow (>=7.0.0,<8.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: pytest (>=6.2.4,<7.0.0); extra == "test"
+Requires-Dist: pytest-cov (>=2.12.0,<3.0.0); extra == "test"
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0); extra == "dev"
+Requires-Dist: tox (>=3.20.1,<4.0.0); extra == "dev"
+Requires-Dist: twine (>=3.3.0,<4.0.0); extra == "dev"
+Requires-Dist: typer (==0.4.0)
+Requires-Dist: virtualenv (>=20.2.2,<21.0.0); extra == "dev"
+Description-Content-Type: text/markdown
+
+# Biobank Tools
+
+
+[![pypi](https://img.shields.io/pypi/v/biobank-tools.svg)](https://pypi.org/project/biobank-tools/)
+[![python](https://img.shields.io/pypi/pyversions/biobank-tools.svg)](https://pypi.org/project/biobank-tools/)
+[![Build Status](https://github.com/altaf-ali/biobank-tools/actions/workflows/dev.yml/badge.svg)](https://github.com/altaf-ali/biobank-tools/actions/workflows/dev.yml)
+[![codecov](https://codecov.io/gh/altaf-ali/biobank-tools/branch/main/graphs/badge.svg)](https://codecov.io/github/altaf-ali/biobank-tools)
+
+* Documentation: <https://altaf-ali.github.io/biobank-tools>
+* GitHub: <https://github.com/altaf-ali/biobank-tools>
+* PyPI: <https://pypi.org/project/biobank-tools/>
+
+
+## Features
+
+The Biobank Tools package provides simple, fast, and efficient access to UK
+Biobank data. Once you've downloaded and extracted the UK Biobank data to
+comma or tab separated files, you can use Biobank Tools to convert the data
+to a format that's better suited for searching and filtering than plain text
+files. Internally, Biobank Tools convert the data to [Apache Parquet][]
+format for optimized column-wise access.
+
+## Requirements
+
+Biobank Tools require Python 3.8 or above.
+
+## Credits
+
+This package was created with [Cookiecutter][] and the [altaf-ali/cookiecutter-pypackage][] project template.
+
+[Apache Parquet]: https://parquet.apache.org/documentation/latest
+[Cookiecutter]: https://cookiecutter.readthedocs.io/en/latest/
+[altaf-ali/cookiecutter-pypackage]: https://altaf-ali.github.io/cookiecutter-pypackage
+
