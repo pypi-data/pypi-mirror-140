@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/homemadeai/__init__.py
+src/homemadeai/homemadeai.py
+src/homemadeai.egg-info/PKG-INFO
+src/homemadeai.egg-info/SOURCES.txt
+src/homemadeai.egg-info/dependency_links.txt
+src/homemadeai.egg-info/top_level.txt
