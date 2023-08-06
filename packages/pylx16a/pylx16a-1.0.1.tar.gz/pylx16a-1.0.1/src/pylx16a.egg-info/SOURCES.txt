@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pylx16a/__init__.py
+src/pylx16a/lx16a.py
+src/pylx16a.egg-info/PKG-INFO
+src/pylx16a.egg-info/SOURCES.txt
+src/pylx16a.egg-info/dependency_links.txt
+src/pylx16a.egg-info/requires.txt
+src/pylx16a.egg-info/top_level.txt
