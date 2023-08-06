@@ -1,0 +1,10 @@
+README.md
+setup.py
+pybetareg/__init__.py
+pybetareg/api.py
+pybetareg/main.py
+pybetareg.egg-info/PKG-INFO
+pybetareg.egg-info/SOURCES.txt
+pybetareg.egg-info/dependency_links.txt
+pybetareg.egg-info/requires.txt
+pybetareg.egg-info/top_level.txt
