@@ -1,0 +1,8 @@
+gameoflife/__init__.py,sha256=6OnhG0-LRTIr5QMYU3-neysvafG9Nb5wjfG0xfUnecY,40
+gameoflife/gameOfLife.py,sha256=f17U0qtodsXlmI9AEamEBA46icuievUrvMWOE_brPQ8,2071
+gameoflife/runGameOfLife.py,sha256=dJikA9catm0mj7c2B0hrF8RuNNodm2E5etMAJaH6jCE,789
+gameoflife/testGOL.py,sha256=4zu1GspIjhF3kNcF2CL6PoCEJGhSudXPtJYV5jZqB6Q,450
+uu_tora_gameoflife-0.0.1.dist-info/METADATA,sha256=wVpeGMLakutfcC0wWqg8LCdb7_IpMVi8qPAgAhjwf3g,267
+uu_tora_gameoflife-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+uu_tora_gameoflife-0.0.1.dist-info/top_level.txt,sha256=R-DNr07bI0Xpof8vy9f_vIVzfNc_8Ue12zkOTIMY1vk,11
+uu_tora_gameoflife-0.0.1.dist-info/RECORD,,
