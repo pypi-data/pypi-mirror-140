@@ -1,0 +1,11 @@
+opencv-contrib-python
+dlib
+pandas
+sklearn
+h5py
+matplotlib
+onnxruntime-gpu
+cheetah3
+av
+tensorflow>=2.6
+pyro4
