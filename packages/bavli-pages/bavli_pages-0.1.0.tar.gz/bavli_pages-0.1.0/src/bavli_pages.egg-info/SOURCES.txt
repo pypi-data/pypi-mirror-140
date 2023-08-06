@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/bavli_pages/__init__.py
+src/bavli_pages/bavli.py
+src/bavli_pages.egg-info/PKG-INFO
+src/bavli_pages.egg-info/SOURCES.txt
+src/bavli_pages.egg-info/dependency_links.txt
+src/bavli_pages.egg-info/requires.txt
+src/bavli_pages.egg-info/top_level.txt
