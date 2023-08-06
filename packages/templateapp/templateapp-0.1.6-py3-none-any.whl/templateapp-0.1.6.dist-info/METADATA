@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: templateapp
+Version: 0.1.6
+Summary: The application to generate template format.
+Home-page: https://github.com/Geeks-Trident-LLC/templateapp
+Author: Tuyen Mathew Duong
+Author-email: tuyen@geekstrident.com
+Maintainer: Tuyen Mathew Duong
+Maintainer-email: tuyen@geekstrident.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: textfsm
+Requires-Dist: regexapp
+Requires-Dist: dlapp
+Requires-Dist: pyyaml
+
+# templateapp
+Provide a standard method to generate template for parsing text.
+
+
+## Disclaimer: This library is under development.
+
+
