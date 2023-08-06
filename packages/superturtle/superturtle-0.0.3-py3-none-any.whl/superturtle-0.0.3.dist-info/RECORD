@@ -1,0 +1,11 @@
+superturtle/__init__.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+superturtle/animation.py,sha256=HNqapfY5vdZyHOOMeHZFxWmQpCkQiqhOoPUnt-uxO7M,14157
+superturtle/easing.py,sha256=aIifrBsbBjmbQ3coOfN-XzpYYp9eN_ZPwPDUf9v6cLI,5186
+superturtle/fancy_drawing.py,sha256=8cENqE-XW_lLXhip3Mq9Rb8-u9QQoK5XkuW6orxTB8Y,76
+superturtle/image.py,sha256=G4Kow8aXaFMhj7PXsk0qTqgttuM5xgwGubpFw5BevYo,496
+superturtle/movement.py,sha256=-DOtz8N6sBPsWWfG-2u3EPSlVJ_r3M6hNhruUeNntHU,3526
+superturtle/stroke.py,sha256=o2m7EYpYnLmo_SnjSs3TaR7uK3p6a-VEfwZ3u99sLIc,5364
+superturtle/test.py,sha256=XOvFm8G5iHPBn2cQINdJnp_MW_41vwTJgNPqJ9caOWE,1558
+superturtle-0.0.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+superturtle-0.0.3.dist-info/METADATA,sha256=OCDrdjfg469cM_cDiPoCJPFLeFwppeNeu7yJQL-Yyzw,330
+superturtle-0.0.3.dist-info/RECORD,,

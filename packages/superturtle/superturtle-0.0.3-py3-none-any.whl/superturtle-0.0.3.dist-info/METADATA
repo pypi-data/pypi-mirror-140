@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: superturtle
+Version: 0.0.3
+Summary: Extensions to Python's turtle
+Author: Chris Proctor
+Author-email: chris@chrisproctor.net
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
