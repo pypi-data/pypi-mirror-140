@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.tox
+  | build
+  | dist
+)/
+'''
