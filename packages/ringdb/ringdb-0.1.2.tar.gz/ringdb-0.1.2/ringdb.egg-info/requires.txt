@@ -1,0 +1,6 @@
+h5py
+lalsuite
+matplotlib
+numpy
+pandas
+ringdown
