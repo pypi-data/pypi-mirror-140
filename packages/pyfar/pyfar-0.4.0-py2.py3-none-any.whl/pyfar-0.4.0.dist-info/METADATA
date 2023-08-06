@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: pyfar
+Version: 0.4.0
+Summary: Project for data formats in acoustics.
+Home-page: https://github.com/pyfar/pyfar
+Author: The pyfar developers
+Author-email: info@pyfar.org
+License: MIT license
+Keywords: pyfar
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Requires-Dist: numpy (>=1.14.0)
+Requires-Dist: scipy (>=1.5.0)
+Requires-Dist: matplotlib
+Requires-Dist: sofar (>=0.1.2)
+Requires-Dist: urllib3
+Requires-Dist: deepdiff
+Requires-Dist: soundfile
+
+======
+Readme
+======
+
+The python package for acoustics research (pyfar) offers classes to store
+audio data, filters, coordinates, and orientations. It also contains common
+functions for digital audio signal processing.
+
+Getting Started
+===============
+
+Check out the `examples notebook`_ for a tour of the most important pyfar
+functionality and `read the docs`_ for the complete documentation. Packages
+related to pyfar are listed at `pyfar.org`_.
+
+Installation
+============
+
+Use pip to install pyfar
+
+.. code-block:: console
+
+    $ pip install pyfar
+
+(Requires Python 3.7, 3.8 or 3.9)
+
+Audio file reading/writing is supported through `SoundFile`_, which is based on `libsndfile`_. On Windows and OS X, it will be installed automatically. On Linux, you need to install libsndfile using your distribution’s package manager, for example ``sudo apt-get install libsndfile1``.
+
+Contributing
+============
+
+Refer to the `contribution guidelines`_ for more information.
+
+
+.. _contribution guidelines: https://github.com/pyfar/pyfar/blob/develop/CONTRIBUTING.rst
+.. _examples notebook: https://mybinder.org/v2/gh/pyfar/pyfar/main?filepath=examples%2Fpyfar_demo.ipynb
+.. _pyfar.org: https://pyfar.org
+.. _read the docs: https://pyfar.readthedocs.io/en/latest
+.. _SoundFile: https://pysoundfile.readthedocs.io/en/latest/
+.. _libsndfile: http://www.mega-nerd.com/libsndfile/
+
+
