@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+bvPlayer/VideoPlayer.py
+bvPlayer/__init__.py
+bvPlayer/bvPlayer.py
+bvPlayer.egg-info/PKG-INFO
+bvPlayer.egg-info/SOURCES.txt
+bvPlayer.egg-info/dependency_links.txt
+bvPlayer.egg-info/requires.txt
+bvPlayer.egg-info/top_level.txt
