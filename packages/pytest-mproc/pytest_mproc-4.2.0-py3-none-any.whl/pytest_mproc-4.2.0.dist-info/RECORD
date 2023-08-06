@@ -1,0 +1,16 @@
+pytest_mproc/__init__.py,sha256=RnPVF5CgpqcIKKbQ5zJWKla3FcchPcmaXzAJFc5KiRg,2548
+pytest_mproc/coordinator.py,sha256=xI6Gy5IZHN8qmQ28uWkPc58FVO7RhvKsVYlPQZcJJrQ,6081
+pytest_mproc/data.py,sha256=uOSZG9JeCXCpCNMD4mj9EvZGoyQn9g_PYEjEmEABX6A,1136
+pytest_mproc/fixtures.py,sha256=j-l5-KNQxE_L_kb6nmkH_1e0RFTmCCsQr87ukyDoIHM,6714
+pytest_mproc/main.py,sha256=UnXq3z1R6jvFtlPVa2vaQa5-wzRpUMP7enAoyU9OyCE,12955
+pytest_mproc/plugin.py,sha256=SbGy8duIQZB6vTeCN8wIfxz-89-umCtLWoiUw0GJg6U,17602
+pytest_mproc/utils.py,sha256=G5PVRD_LGu9vgGp-rJtrOXwRN-SdPUYWWoJhyUwRjnA,269
+pytest_mproc/worker.py,sha256=e_ZEdjHvr0uiEkS0V4wU1ZDjxEQBkpyiyq1B3R97HDM,11559
+pytest_mproc-4.2.0.dist-info/LICENSE,sha256=ENRIpm1jVyLhY5t_QluCY2foQgKpS-5FSiDFO_zwq04,1315
+pytest_mproc-4.2.0.dist-info/LICENSE.txt,sha256=ENRIpm1jVyLhY5t_QluCY2foQgKpS-5FSiDFO_zwq04,1315
+pytest_mproc-4.2.0.dist-info/METADATA,sha256=n7oWb7BE-u2ALmsFcdPPr0q-947KrSJBD8fD3iCsL08,586
+pytest_mproc-4.2.0.dist-info/NOTICE,sha256=JU2MWZ7YXVJlYMwJviyb1DkY_hGF6uXlwMiiY_8ryqM,176
+pytest_mproc-4.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytest_mproc-4.2.0.dist-info/entry_points.txt,sha256=twUxdqnXkuwOewN1BuCuGf1Emk57T60S_TdErCvF22g,49
+pytest_mproc-4.2.0.dist-info/top_level.txt,sha256=tJ8TnZVz4OoHyiuZk-HldQQWA0trQKMUQxAosGO-0lk,13
+pytest_mproc-4.2.0.dist-info/RECORD,,
