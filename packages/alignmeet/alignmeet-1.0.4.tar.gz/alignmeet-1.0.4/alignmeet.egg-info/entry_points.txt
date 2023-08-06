@@ -1,0 +1,3 @@
+[console_scripts]
+alignmeet = alignmeet.__main__:main
+
