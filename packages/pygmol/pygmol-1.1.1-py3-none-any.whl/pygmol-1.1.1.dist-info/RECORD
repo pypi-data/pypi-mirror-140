@@ -1,0 +1,11 @@
+pygmol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygmol/abc.py,sha256=6x4nibyrivLudxbo0B0w5XByPozAogsUgpAj2yPJKPY,21065
+pygmol/chemistry.py,sha256=lPT7OnH5mKE5XOB8UbFzKINkJn-f9S5Y6tQiIcBQLPs,3730
+pygmol/equations.py,sha256=16XguPxTLjaLxLLvy1Ox_Nj8183esz9uuq_Q_x_M_Rk,56766
+pygmol/model.py,sha256=j9VQLa8CPfN9yDkFwX1RE_RWJUBq9-RqN8vtpCiRDAk,25614
+pygmol/plasma_parameters.py,sha256=ASNReJgaPYp6t64VO_z3BkshGsREsKmualns7RRBOZ4,5757
+pygmol-1.1.1.dist-info/LICENSE,sha256=C67KpZh4v1DPc-K4VllDG9S_L0kivqkReumigJHNFYE,1073
+pygmol-1.1.1.dist-info/METADATA,sha256=UzaxDLAMtu4ZHedks_CbIkjY70FX8lixajzni6HUN14,5809
+pygmol-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygmol-1.1.1.dist-info/top_level.txt,sha256=n9LsKzG-Swxj7fT7BLcjTDHnlhJz-_mnqAbGyO6UuPk,7
+pygmol-1.1.1.dist-info/RECORD,,
