@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aiogram-dialog-extras
+Version: 0.1.1
+Summary: A pack of extras for better use of the aiogram-dialog framework
+Home-page: https://github.com/SamWarden/aiogram_dialog_extras
+Author: Aivan Warden
+Author-email: SamWardenSad@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+License-File: LICENSE
+
+UNKNOWN
+
