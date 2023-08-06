@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: twobody
+Version: 0.8.3
+Summary: The gravitational two-body problem.
+Home-page: https://github.com/adrn/TwoBody
+Author: Adrian Price-Whelan
+Author-email: adrianmpw@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: licenses/LICENSE.rst
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: packaging
+Provides-Extra: docs
+Requires-Dist: sphinx-astropy ; extra == 'docs'
+Requires-Dist: numpy ; extra == 'docs'
+Requires-Dist: astropy ; extra == 'docs'
+Requires-Dist: scipy ; extra == 'docs'
+Requires-Dist: matplotlib ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest-astropy ; extra == 'test'
+Requires-Dist: numpy ; extra == 'test'
+Requires-Dist: astropy ; extra == 'test'
+Requires-Dist: scipy ; extra == 'test'
+Requires-Dist: matplotlib ; extra == 'test'
+
+twobody
+=======
+
+A Python package for computing orbits and astronomical observables for binary
+stars, exoplanets, and other gravitational two-body systems.
+
+.. image:: https://github.com/adrn/TwoBody/workflows/Test%20twobody/badge.svg
+    :target: https://github.com/adrn/TwoBody/workflows/Test%20twobody
+
+.. image:: https://readthedocs.org/projects/twobody/badge/?version=latest
+    :target: http://twobody.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
+    :target: http://www.astropy.org
+    :alt: Powered by Astropy Badge
+
+
+License
+-------
+
+This project is Copyright (c) Adrian Price-Whelan and licensed under the terms
+of the MIT license. See the ``licenses`` folder for more information.
+
+
