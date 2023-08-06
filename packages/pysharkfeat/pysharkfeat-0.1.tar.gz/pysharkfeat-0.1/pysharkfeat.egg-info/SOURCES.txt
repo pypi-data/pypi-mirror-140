@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pysharkfeat/__init__.py
+pysharkfeat/feat.py
+pysharkfeat/featextractor.py
+pysharkfeat/logger.py
+pysharkfeat/stream.py
+pysharkfeat/util.py
+pysharkfeat.egg-info/PKG-INFO
+pysharkfeat.egg-info/SOURCES.txt
+pysharkfeat.egg-info/dependency_links.txt
+pysharkfeat.egg-info/requires.txt
+pysharkfeat.egg-info/top_level.txt
