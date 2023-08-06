@@ -1,0 +1,7 @@
+setup.py
+intcom/__init__.py
+intcom/intcom.py
+intcom.egg-info/PKG-INFO
+intcom.egg-info/SOURCES.txt
+intcom.egg-info/dependency_links.txt
+intcom.egg-info/top_level.txt
