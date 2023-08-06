@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: django-dynamodb-cache
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/xncbf/django-dynamodb-cache
+License: MIT
+Keywords: django,dynamodb,cache,django cache backend
+Author: xncbf
+Author-email: xncbf12@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2,<4.0)
+Requires-Dist: boto3 (>=1.21.9,<2.0.0)
+Requires-Dist: botocore (>=1.24.9,<2.0.0)
+Project-URL: Repository, https://github.com/xncbf/django-dynamodb-cache
+Description-Content-Type: text/markdown
+
+# django-dynamodb-cache [WIP]
+
+<p align="center">
+<a href="https://github.com/xncbf/django-dynamodb-cache/actions?query=workflow%3ATests+event%3Apush+branch%3Amain" target="_blank">
+    <img src="https://github.com/xncbf/django-dynamodb-cache/workflows/Tests/badge.svg?event=push&branch=main" alt="Test">
+</a>
+<a href="https://codecov.io/gh/xncbf/django-dynamodb-cache" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/xncbf/django-dynamodb-cache?color=%2334D058" alt="Coverage">
+</a>
+<a href="https://pypi.org/project/django-dynamodb-cache" target="_blank">
+    <img src="https://img.shields.io/pypi/v/django-dynamodb-cache?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+<a href="https://pypi.org/project/django-dynamodb-cache" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/django-dynamodb-cache.svg?color=%2334D058" alt="Supported Python versions">
+</a>
+</p>
+
+- [django-dynamodb-cache [WIP]](#django-dynamodb-cache-wip)
+  - [Introduce](#introduce)
+  - [Installation](#installation)
+  - [Dependency](#dependency)
+  - [Example](#example)
+  - [Contribution](#contribution)
+
+## Introduce
+
+django cache backend for DynamoDB
+
+## Installation
+
+```sh
+pip install django-dynamodb-cache
+```
+
+## Dependency
+
+- python == ^3.8
+- django == ^3.2
+
+## Example
+
+
+## Contribution
+
