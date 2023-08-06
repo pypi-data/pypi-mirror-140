@@ -1,0 +1,13 @@
+typer==0.4.0
+sqlite-utils==3.24
+
+[dev]
+black
+rich
+datasette
+ipykernel
+isort
+pytest
+
+[test]
+pytest==7.0.1
