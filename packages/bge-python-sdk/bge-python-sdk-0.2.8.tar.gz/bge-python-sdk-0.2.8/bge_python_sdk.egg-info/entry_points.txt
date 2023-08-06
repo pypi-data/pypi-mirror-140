@@ -1,0 +1,3 @@
+[console_scripts]
+bge = bgesdk.__main__:main
+
