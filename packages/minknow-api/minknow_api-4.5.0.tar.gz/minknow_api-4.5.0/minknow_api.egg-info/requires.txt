@@ -1,0 +1,5 @@
+grpcio~=1.37
+numpy~=1.11
+protobuf~=3.15
+packaging>=15.0
+pyrfc3339~=1.1
