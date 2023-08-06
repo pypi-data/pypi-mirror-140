@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hasbulla-boom
+Version: 3.2.2
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiomisc (>=15.6.8,<16.0.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: pytest (>=7.0.1,<8.0.0)
+Requires-Dist: pytest-asyncio (>=0.18.1,<0.19.0)
+Requires-Dist: pytest-cov (>=3.0.0,<4.0.0)
