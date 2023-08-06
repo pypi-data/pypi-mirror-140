@@ -1,0 +1,3 @@
+[console_scripts]
+anilist-man=anilist_man.main:app
+
