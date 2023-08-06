@@ -1,0 +1,18 @@
+include *.txt
+include .isort.cfg
+include ci.cfg
+include *.py
+include *.rst
+include .coveragerc
+include .travis.yml
+include buildout.cfg
+include travis.cfg
+include versions.cfg
+recursive-include src *.css
+recursive-include src *.po
+recursive-include src *.pot
+recursive-include src *.pt
+recursive-include src *.sh
+recursive-include src *.xml
+recursive-include src *.zcml
+prune .tx
