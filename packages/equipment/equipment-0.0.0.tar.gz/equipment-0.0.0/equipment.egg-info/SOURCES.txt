@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+equipment/__init__.py
+equipment.egg-info/PKG-INFO
+equipment.egg-info/SOURCES.txt
+equipment.egg-info/dependency_links.txt
+equipment.egg-info/top_level.txt
