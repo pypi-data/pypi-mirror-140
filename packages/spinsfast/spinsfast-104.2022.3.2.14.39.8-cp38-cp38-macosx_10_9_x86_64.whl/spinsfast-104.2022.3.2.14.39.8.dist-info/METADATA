@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: spinsfast
+Version: 104.2022.3.2.14.39.8
+Summary: Fast and exact spin-s spherical-harmonic transforms
+Home-page: https://github.com/moble/spinsfast
+Maintainer: Mike Boyle
+Maintainer-email: mob22@cornell.edu
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+License-File: COPYING
+
+This module is a lightly modified version of the code originally written by Huffenberger and
+Wandelt.  It enables the user to transform between modes of a spin-weighted spherical-harmonic
+decomposition and values of that function on a spherical gride.
+
+
