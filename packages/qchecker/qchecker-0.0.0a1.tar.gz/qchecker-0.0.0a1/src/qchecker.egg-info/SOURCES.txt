@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/qchecker/__init__.py
+src/qchecker/_substructures.py
+src/qchecker/matchers.py
+src/qchecker/utils.py
+src/qchecker.egg-info/PKG-INFO
+src/qchecker.egg-info/SOURCES.txt
+src/qchecker.egg-info/dependency_links.txt
+src/qchecker.egg-info/top_level.txt
