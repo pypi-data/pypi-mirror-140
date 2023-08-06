@@ -1,0 +1,12 @@
+equinox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+equinox/asgi.py,sha256=Gjs0VeYvbAFFL4p4yPb_USV-XMW91Jwe0hsVDrK0NSo,1525
+equinox/serializers.py,sha256=2w_YtFkj4hBNc0mTn53chvEpHPpYAoz4N7yrShZIEAM,1816
+equinox/settings.py,sha256=-xXBlk6Y40TsLg8Vcdr521Sx1AssXAzCR3zch8ELjqY,11024
+equinox/urls.py,sha256=AyWALMKu_7apEDTbzyVbBrzDGo2GIB9iipjdzVM5cF8,3374
+equinox/views.py,sha256=E28OERlRLfjhcxCafolrCXpj3zkyjGJEJqPk7HjUzUc,5766
+equinox/wsgi.py,sha256=uzxlX7GBeBwrrlJJ_1FBebTe4eNzFSl_uuNO1BJhO2w,1528
+equinox_server-0.3.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+equinox_server-0.3.dist-info/METADATA,sha256=qmvQSPFtC2hiJkkLhwJuwK8LWZ1jvlfUHddf93NlvqA,3343
+equinox_server-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+equinox_server-0.3.dist-info/top_level.txt,sha256=qoivq4oQ9-WRhK3s0TJTkEd1EQ1PYZvzEPcLl-Fgubo,8
+equinox_server-0.3.dist-info/RECORD,,
