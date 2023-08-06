@@ -1,0 +1,6 @@
+flatbuffers==1.12.0
+lxml>=4.5.1
+numpy<=1.19.5,>=1.16.6
+
+[:platform_system == "Windows"]
+numpy<1.19.4,>=1.16.6
