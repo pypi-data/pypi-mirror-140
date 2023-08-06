@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tokenize-output
+tokenize_output/__init__.py
+tokenize_output/tokenize_output.py
+tokenize_output.egg-info/PKG-INFO
+tokenize_output.egg-info/SOURCES.txt
+tokenize_output.egg-info/dependency_links.txt
+tokenize_output.egg-info/requires.txt
+tokenize_output.egg-info/top_level.txt
