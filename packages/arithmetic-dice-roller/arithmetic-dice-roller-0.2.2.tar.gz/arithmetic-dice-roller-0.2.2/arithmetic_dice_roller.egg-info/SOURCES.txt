@@ -1,0 +1,11 @@
+README.md
+setup.py
+arithmetic_dice_roller/__init__.py
+arithmetic_dice_roller/__main__.py
+arithmetic_dice_roller/roller.py
+arithmetic_dice_roller.egg-info/PKG-INFO
+arithmetic_dice_roller.egg-info/SOURCES.txt
+arithmetic_dice_roller.egg-info/dependency_links.txt
+arithmetic_dice_roller.egg-info/entry_points.txt
+arithmetic_dice_roller.egg-info/requires.txt
+arithmetic_dice_roller.egg-info/top_level.txt
