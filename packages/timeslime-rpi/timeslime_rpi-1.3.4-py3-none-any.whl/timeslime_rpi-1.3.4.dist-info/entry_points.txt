@@ -1,0 +1,3 @@
+[console_scripts]
+timeslime-rpi = timeslime_rpi.__main__:main
+
