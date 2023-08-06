@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pandemaniac
+Version: 1.0.4
+Summary: CS144 Pandemaniac iterative visualizer
+Home-page: https://github.com/atisor73/pandemaniac
+Author: Rosita Fu
+Author-email: rosita.fu99@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+Pandemaniac is a package for visualizing the history of competing seeds on a multiplayer graph for the ‘pandemaniac’ project in CS144 at Caltech.
+
