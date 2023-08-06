@@ -1,0 +1,3 @@
+[console_scripts]
+classify=fw_classification.cli:app
+
