@@ -1,0 +1,3 @@
+docutils
+jupyterlite
+sphinx>=1.8
