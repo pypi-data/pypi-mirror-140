@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: torch-image-dataset
+Version: 0.0.1
+Summary: Image datasets for Pytorch.
+Home-page: https://github.com/andreamaracani/torch-image-dataset
+Author: Andrea Maracani
+Author-email: <andrea.maracani@iit.it>
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/andreamaracani/torch-image-dataset/issues
+Keywords: python,pytorch,dataset,image
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Some classes that help to load images, as dataset, for Pytorch projects.
+
