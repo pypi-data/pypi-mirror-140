@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mg-crp
+Version: 0.0.2
+Summary: Создание файлов конфигураци
+Home-page: https://github.com/denisxab/mg_crp.git
+Author: Denis Kustov
+Author-email: denis-kustov@rambler.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pycryptodomex (>=3.14.1,<4.0.0)
+Project-URL: Documentation, https://mg_crp.readthedocs.io/ru/latest/index.html
+Project-URL: Repository, https://github.com/denisxab/mg_crp.git
+Description-Content-Type: text/markdown
+
+
