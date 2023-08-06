@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "netwitness"
+version = "0.1.0"
+description = ""
+authors = ["Sean Drzewiecki <sean.drzewiecki@netwitness.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6.8"
+aiohttp = "^3.8.1"
+motor = "^2.5.1"
+pydantic = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
