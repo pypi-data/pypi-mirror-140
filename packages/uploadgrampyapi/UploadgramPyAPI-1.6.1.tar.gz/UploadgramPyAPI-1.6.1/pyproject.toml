@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "UploadgramPyAPI"
+version = "1.6.1"
+description = "This API can upload, download, remove and rename any files from the service uploadgram.me"
+authors = ["tankalxat34 <tankalxat34@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/tankalxat34/UploadgramPyAPI"
+repository = "https://github.com/tankalxat34/UploadgramPyAPI"
+
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
