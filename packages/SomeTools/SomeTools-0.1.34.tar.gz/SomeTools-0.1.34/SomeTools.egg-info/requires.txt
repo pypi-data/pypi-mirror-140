@@ -1,0 +1,8 @@
+datetime
+loguru==0.5.3
+opencc-python-reimplemented==0.1.6
+redis==4.0.2
+aioredis==2.0.1
+pillow==8.4.0
+chardet==4.0.0
+psutil==5.9.0
