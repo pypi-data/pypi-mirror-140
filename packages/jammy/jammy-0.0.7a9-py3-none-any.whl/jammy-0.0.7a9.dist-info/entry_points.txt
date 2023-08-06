@@ -1,0 +1,8 @@
+[console_scripts]
+jgpuc=jammy.cli.gpu_sc:start_client
+jgpus=jammy.cli.gpu_sc:start_sever
+jshc=jammy.cli.shell_executor:echo_hello
+jshinfo=jammy.cli.shell_executor:echo_state
+jshkf=jammy.cli.shell_executor:client_kill_all
+jshs=jammy.cli.shell_executor:start_sever
+
