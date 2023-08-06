@@ -1,0 +1,15 @@
+modelling/__init__.py,sha256=MkncHxFUBd1U5S05gLEgId7PuCoECjQM8Tc3zHqXq_o,748
+modelling/conversion.py,sha256=G30c_31yQqN77gdZYYMxyeWiaA2mTp8AQNzDtFyfWV0,4430
+modelling/database.py,sha256=qBaMNhInaw_c4V193SulAWlwLUsL0PrwKAdh2awmxk0,16834
+modelling/epanet.py,sha256=3NW56XrgKGzieyhCdZpWiW9g-0MctpsOoQswWwfjR20,11710
+modelling/etabs.py,sha256=kGmHpJPN9-GPf0jCm24xCa1KNIRsMVNvkQd9nbz7vXw,61061
+modelling/functions.py,sha256=_z3vQZweah8LfjmGNNqPEb3LdQRo2GT2eVuTzSB8FLM,15045
+modelling/gauges.py,sha256=7LPqtQ0IkmaoiU3Q2fo_BppUE1fhcsNQGmne594wDx0,11531
+modelling/geometryclean.py,sha256=fccMOG6_pPomP9EPtbI-ssALeLiBhwSrd1-jTVyD27A,17366
+modelling/plotting.py,sha256=i5Y6DwmVFCHtUQ_xx0D-IdPwtZRYRrP5ydvEdBEsORs,11831
+modelling/wslnetwork.py,sha256=VyttfDIPp2JNkdvs38UDWvFBAkMFGVfSnfEXMrbaAmw,4400
+modelling2-0.1.dist-info/LICENSE.txt,sha256=XqMXSsFaHT7rjBdgBFbSCBJmOt-fwXRq3TAYVYqrc0Q,1077
+modelling2-0.1.dist-info/METADATA,sha256=uhnsXRzHl45ZG1eB1_Ok0xGZW_8O6cAA7Kew1mijcMY,467
+modelling2-0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+modelling2-0.1.dist-info/top_level.txt,sha256=Srv5PKEoI1l0Qv7K5b9r1iflUgrn2vesy497Nk5e2VQ,10
+modelling2-0.1.dist-info/RECORD,,
