@@ -1,0 +1,7 @@
+cffi
+llvmlite>=0.29
+netifaces
+numba>=0.52
+six
+tblib
+thriftpy2
