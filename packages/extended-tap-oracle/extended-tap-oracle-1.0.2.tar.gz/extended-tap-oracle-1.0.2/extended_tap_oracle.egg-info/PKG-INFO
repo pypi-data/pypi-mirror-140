@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: extended-tap-oracle
+Version: 1.0.2
+Summary: Singer.io tap for extracting data from Oracle - extended for new Oracle versions
+Home-page: https://github.com/tdenimal/extended-tap-oracle
+Author: Stitch
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3 :: Only
