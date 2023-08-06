@@ -1,0 +1,18 @@
+
+[client]
+procrunner
+requests
+textual
+websocket-client
+
+[server]
+fastapi
+graypy
+ispyb
+jinja2
+packaging
+uvicorn[standard]
+zocalo
+
+[server:python_version < "3.9"]
+importlib_resources
