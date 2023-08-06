@@ -1,0 +1,5 @@
+bagit
+django
+djangorestframework
+psycopg2-binary
+odin
