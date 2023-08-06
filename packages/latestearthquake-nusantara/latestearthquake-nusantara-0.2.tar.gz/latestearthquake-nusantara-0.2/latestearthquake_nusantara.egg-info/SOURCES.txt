@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gempaterkini/__init__.py
+latestearthquake_nusantara.egg-info/PKG-INFO
+latestearthquake_nusantara.egg-info/SOURCES.txt
+latestearthquake_nusantara.egg-info/dependency_links.txt
+latestearthquake_nusantara.egg-info/top_level.txt
