@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django-migrations-mgmt
+Version: 0.2.2
+Summary: A Django management commands to help on migrations deployment rollbacks.
+Home-page: https://github.com/italux/django-migrations-mgmt/
+Author: Italo Santos
+Author-email: italux.santos@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
+UNKNOWN
+
