@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/AnPaFinder.egg-info/PKG-INFO
+src/AnPaFinder.egg-info/SOURCES.txt
+src/AnPaFinder.egg-info/dependency_links.txt
+src/AnPaFinder.egg-info/top_level.txt
+src/anpa_tools/__init__.py
+src/anpa_tools/anpatools.py
+src/anpa_tools/scrapeParseClean.py

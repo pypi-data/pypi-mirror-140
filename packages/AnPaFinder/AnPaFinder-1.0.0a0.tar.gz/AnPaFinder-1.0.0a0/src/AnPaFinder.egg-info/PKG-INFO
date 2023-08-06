@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: AnPaFinder
+Version: 1.0.0a0
+Summary: A basic package to find anagrams and palindromes.
+Home-page: https://github.com/AmryAnn/anpaFinder
+Author: Amry Ann
+Author-email: AmryAnnCoding@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AnPaFinder
+Version 1.0.0.a1 released 02/2022
+
+
+This package is under construction. It is built off of this repository:
+    https://github.com/AmryAnn/PythonCodeSample-Strings-Anagram_Palindrome_Finder
+
+## Installation
+`AnPaFinder` can be installed via `pip`:
+```
+$ python3 -m pip install AnPaFinder
+```
+
+-Find the anagrams and palindromes from a webpage using the scripts in the **anpaFinder GitHub repository** under `/bin`:
+ - In python environment: 
+   ```
+   $ python3 anagram_palyndrome_finder.py --url "<webpage url>"
+   ```
+ - In bash shell
+   ```
+   $ ./AP_finder.bash -w "<webpage url>"
+   ```
+-Play with classes and functions in `anpa_tools` package.
+		
+
