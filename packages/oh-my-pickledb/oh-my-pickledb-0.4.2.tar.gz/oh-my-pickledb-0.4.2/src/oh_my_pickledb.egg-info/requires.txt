@@ -1,0 +1,3 @@
+cryptography~=3.4.8
+fire~=0.4.0
+pysem_converters==0.1

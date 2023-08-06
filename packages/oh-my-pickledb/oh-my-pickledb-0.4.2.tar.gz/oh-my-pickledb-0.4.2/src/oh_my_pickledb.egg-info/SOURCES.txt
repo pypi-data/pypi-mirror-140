@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/my_pickledb/__init__.py
+src/my_pickledb/__main__.py
+src/my_pickledb/pickledb.py
+src/my_pickledb/utils.py
+src/oh_my_pickledb.egg-info/PKG-INFO
+src/oh_my_pickledb.egg-info/SOURCES.txt
+src/oh_my_pickledb.egg-info/dependency_links.txt
+src/oh_my_pickledb.egg-info/requires.txt
+src/oh_my_pickledb.egg-info/top_level.txt
