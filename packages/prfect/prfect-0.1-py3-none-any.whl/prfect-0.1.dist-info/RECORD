@@ -1,0 +1,12 @@
+prfect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prfect/codons.py,sha256=J1dR70gT2yVSgAMRlL1zOsc1cPXYIIHnCa4LM3DF8XM,3097
+prfect/feature.py,sha256=piQYFlNDUyTTFs9aeaUm4nlQ9LvvTlXnBy1yJML1AKk,1883
+prfect/file.py,sha256=9ZkluzW03qXT1UFAtMcbPTpNj3AEHn5ItDRhCZdsdWk,125
+prfect/locus.py,sha256=hd4hzbB9SokwfTwyHdeqaBuXMZn0UZLffhWojO7UgTs,5987
+prfect/stats.py,sha256=qdhrgVnSGZVZP1ZigIYza2e2s5CJ8Z_88521T9sJO3k,972
+prfect-0.1.data/scripts/prfect.py,sha256=tW_st6qXDgcEz5DZ90Oh7yy2WbOvmPW0bvt-3PkVTyE,1164
+prfect-0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+prfect-0.1.dist-info/METADATA,sha256=WKIx5zl3aB9Mfbjmgj6Ojhhyvvjl6aOAV-vDAKBqv8o,909
+prfect-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prfect-0.1.dist-info/top_level.txt,sha256=NjbBjYLx673jf_LB8Es0wm-_rMiejAf-oCtzsdZtOzI,7
+prfect-0.1.dist-info/RECORD,,
