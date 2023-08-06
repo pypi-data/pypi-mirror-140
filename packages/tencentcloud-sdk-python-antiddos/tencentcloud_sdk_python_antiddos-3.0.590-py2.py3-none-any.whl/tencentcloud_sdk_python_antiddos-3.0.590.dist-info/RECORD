@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=DDqmnLnqs2ztPdIMwb8by-y0q2ssCVzbdJurEMw5Oxs,630
+tencentcloud/antiddos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/antiddos/v20200309/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/antiddos/v20200309/antiddos_client.py,sha256=25kCw96eH-Py9XRhgEpvPcKl-VEbCn7-g48wSywoPqA,96170
+tencentcloud/antiddos/v20200309/errorcodes.py,sha256=2y2EJLTrMm-Ru0J3RAq8x59OHTtWQrRQMTQOf3_D1v0,1836
+tencentcloud/antiddos/v20200309/models.py,sha256=yQgJCdtpZdow6zS9td1Mh2Y-oiBegZaEPp3fqNHLLHY,246350
+tencentcloud_sdk_python_antiddos-3.0.590.dist-info/METADATA,sha256=0xSkLS_Oa6WIdCi_ygWh-OPHJ5cJXFja90Aoj858Az8,1457
+tencentcloud_sdk_python_antiddos-3.0.590.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_antiddos-3.0.590.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_antiddos-3.0.590.dist-info/RECORD,,
