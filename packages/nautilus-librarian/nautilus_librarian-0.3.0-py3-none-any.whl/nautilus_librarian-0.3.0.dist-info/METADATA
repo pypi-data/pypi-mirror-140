@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: nautilus-librarian
+Version: 0.3.0
+Summary: A Python Console application to handle media libraries like Git and DVC
+Home-page: https://github.com/Nautilus-Cyberneering/nautilus-librarian
+Author: Jose Celano
+Author-email: jose@nautilus-cyberneering.de
+Maintainer: Jose Celano
+Maintainer-email: jose@nautilus-cyberneering.de
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Deprecated (>=1.2.13,<2.0.0)
+Requires-Dist: GitPython (>=3.1.24)
+Requires-Dist: PyGithub (>=1.55)
+Requires-Dist: atoml (>=1.1.1,<2.0.0)
+Requires-Dist: dvc[azure] (>=2.8.3,<3.0.0)
+Requires-Dist: mypy (>=0.910,<0.911)
+Requires-Dist: python-gnupg (>=0.4.8,<0.5.0)
+Requires-Dist: pyvips (>=2.1.16)
+Requires-Dist: typer[all] (>=0.4.0,<0.5.0)
+Project-URL: Repository, https://github.com/Nautilus-Cyberneering/nautilus-librarian
+Description-Content-Type: text/markdown
+
+# Nautilus Librarian
+
+[![CodeQL](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/codeql-analysis.yml)
+[![Deploy Documentation](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/deploy-documentation.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/deploy-documentation.yml)
+[![Lint Code Base](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/mega-linter.yml)
+[![Publish Docker image](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/publish-docker-image.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/publish-docker-image.yml)
+[![Publish GitHub Release](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/publish-github-release.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/publish-github-release.yml)
+[![Publish package to PyPI](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/publish-pypi-package.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/publish-pypi-package.yml)
+[![Test](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/test.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/nautilus-librarian/actions/workflows/test.yml)
+
+A Python Console application to handle media libraries with [Git](https://git-scm.com/) and [Dvc](https://github.com/iterative/dvc).
+
+Documentation: [https://nautilus-cyberneering.github.io/nautilus-librarian/](https://nautilus-cyberneering.github.io/nautilus-librarian/)
+
+## Install
+
+Requirements:
+
+- Libvips
+- Python 3.9
+
+Install Python Package:
+
+```shell
+pip install nautilus-librarian
+```
+
+Please for a complete installation and development guide read the [documentation](https://nautilus-cyberneering.github.io/nautilus-librarian/).
+
