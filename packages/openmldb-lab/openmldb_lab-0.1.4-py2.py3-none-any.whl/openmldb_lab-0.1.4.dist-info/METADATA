@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: openmldb-lab
+Version: 0.1.4
+Summary: OpenMLDB Lab
+Home-page: https://github.com/tobegit3hub/openmldb_lab
+Author: tobe
+Author-email: tobeg3oogle@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: openmldb (>=0.4.2)
+
+UNKNOWN
+

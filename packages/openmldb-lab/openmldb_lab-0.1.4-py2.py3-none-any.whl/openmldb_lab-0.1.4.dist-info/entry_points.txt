@@ -1,0 +1,3 @@
+[console_scripts]
+openmldb_lab = openmldb_server.server:main
+
