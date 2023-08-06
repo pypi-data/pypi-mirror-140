@@ -1,0 +1,12 @@
+vtk
+numpy
+xarray>=0.18.1
+netCDF4
+pandas
+pygdal==3.0.4.*
+dask[complete]
+pyvista>0.29
+pyESMF~=8.2.1b3
+rioxarray
+rasterio
+ninja
