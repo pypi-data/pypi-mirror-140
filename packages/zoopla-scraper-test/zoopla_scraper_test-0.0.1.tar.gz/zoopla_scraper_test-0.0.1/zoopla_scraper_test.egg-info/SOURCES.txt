@@ -1,0 +1,10 @@
+setup.py
+scraper_package/__init__.py
+scraper_package/scraper.py
+test/__init__.py
+test/test_scraper.py
+zoopla_scraper_test.egg-info/PKG-INFO
+zoopla_scraper_test.egg-info/SOURCES.txt
+zoopla_scraper_test.egg-info/dependency_links.txt
+zoopla_scraper_test.egg-info/requires.txt
+zoopla_scraper_test.egg-info/top_level.txt
