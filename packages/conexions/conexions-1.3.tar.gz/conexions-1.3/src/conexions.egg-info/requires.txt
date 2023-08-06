@@ -1,0 +1,4 @@
+beautifulsoup4==4.10.0
+fake_useragent==0.1.11
+halo==0.0.31
+requests==2.26.0

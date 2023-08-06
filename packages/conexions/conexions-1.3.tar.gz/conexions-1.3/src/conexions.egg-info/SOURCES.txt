@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/conexions/__init__.py
+src/conexions/dto_proxy.py
+src/conexions/excepcions.py
+src/conexions/proxy.py
+src/conexions.egg-info/PKG-INFO
+src/conexions.egg-info/SOURCES.txt
+src/conexions.egg-info/dependency_links.txt
+src/conexions.egg-info/requires.txt
+src/conexions.egg-info/top_level.txt
