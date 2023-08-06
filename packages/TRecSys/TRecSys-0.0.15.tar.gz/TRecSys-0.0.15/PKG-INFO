@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: TRecSys
+Version: 0.0.15
+Summary: UNKNOWN
+Home-page: https://github.com/argmaxml/TRecs
+Author: ArgmaxML
+Author-email: uri@argmax.ml
+License: UNKNOWN
+Description: https://github.com/argmaxml/TRecs/blob/master/README.md
+Keywords: recommendation-systems,recsys,similarity-server
+Platform: UNKNOWN
