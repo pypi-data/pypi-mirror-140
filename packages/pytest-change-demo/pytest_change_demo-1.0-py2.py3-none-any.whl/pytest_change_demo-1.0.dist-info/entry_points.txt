@@ -1,0 +1,3 @@
+[pytest11]
+change-report = pytest_change_demo
+

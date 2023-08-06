@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pytest-change-demo
+Version: 1.0
+Summary: turn . into √，turn F into x
+Home-page: https://github.com/simayang/test2/pytest-change-demo
+Author: yoyo
+Author-email: 283340479@qq.com
+License: proprietary
+Keywords: pytest,py.test,pytest-change-demo
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pytest
+
+print result on terminal turn . into √，turn F into x using hook
+
+
