@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.cfg
+setup.py
+Topsis-Akshat-102083028/102083028.py
+Topsis-Akshat-102083028/__init__.py
+Topsis_Akshat_102083028.egg-info/PKG-INFO
+Topsis_Akshat_102083028.egg-info/SOURCES.txt
+Topsis_Akshat_102083028.egg-info/dependency_links.txt
+Topsis_Akshat_102083028.egg-info/requires.txt
+Topsis_Akshat_102083028.egg-info/top_level.txt

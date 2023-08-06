@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Topsis-Akshat-102083028
+Version: 0.0.1
+Summary: Multicriteria decision making using topsis analysis
+Home-page: https://github.com/akshat00001/Topsis-Akshat-102083028
+Download-URL: https://github.com/akshat00001/Topsis-Akshat-102083028/archive/refs/tags/0.1.tar.gz
+Author: Akshat Thakur
+Author-email: athakur3_be19@thapar.edu
+License: MIT
+Keywords: MULTIDIMENSIONAL,TOPSIS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
