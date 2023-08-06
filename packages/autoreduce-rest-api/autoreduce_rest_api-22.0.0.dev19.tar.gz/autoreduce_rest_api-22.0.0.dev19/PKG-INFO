@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: autoreduce_rest_api
+Version: 22.0.0.dev19
+Summary: ISIS Autoreduction Runs REST API
+Home-page: https://github.com/autoreduction/autoreduce/
+Author: ISIS Autoreduction Team
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
