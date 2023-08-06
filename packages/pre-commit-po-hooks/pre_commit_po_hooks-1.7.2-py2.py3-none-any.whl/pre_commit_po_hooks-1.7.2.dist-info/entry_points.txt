@@ -1,0 +1,8 @@
+[console_scripts]
+check-po-entries-hook = pre_commit_po_hooks.check_entries:main
+check-po-metadata-hook = pre_commit_po_hooks.check_metadata:main
+fuzzy-messages-hook = pre_commit_po_hooks.fuzzy_messages:main
+lreplace-extracted-comments-hook = pre_commit_po_hooks.lreplace_extracted_comments:main
+obsolete-messages-hook = pre_commit_po_hooks.obsolete_messages:main
+untranslated-messages-hook = pre_commit_po_hooks.untranslated_messages:main
+
