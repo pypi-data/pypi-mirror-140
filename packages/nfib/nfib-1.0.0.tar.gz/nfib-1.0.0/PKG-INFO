@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nfib
+Version: 1.0.0
+Summary:    Fibonacci Package which returns nth fibonacci number
+Author: neha
+Author-email: neha.patil@crestdatasys.com
+License: UNKNOWN
+Keywords: setuptools,development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6, <4
+License-File: LICENSE.txt
+
+Fibonacci package which returns nth fibonacci number
+

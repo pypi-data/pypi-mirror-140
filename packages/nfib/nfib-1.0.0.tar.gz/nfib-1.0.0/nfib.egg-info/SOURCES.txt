@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+nfib.egg-info/PKG-INFO
+nfib.egg-info/SOURCES.txt
+nfib.egg-info/dependency_links.txt
+nfib.egg-info/entry_points.txt
+nfib.egg-info/top_level.txt
