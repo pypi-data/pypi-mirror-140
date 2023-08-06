@@ -1,0 +1,21 @@
+@startuml
+title "$ greendeploy-cli\ndirectory without GreenDeploy project"
+
+participant "$ greendeploy" as greendeploy
+participant "setup.py\ngreendeploy = greendeploy.framework.cli:main" as entrypoint
+participant "GreenDeploy Plugins\nentry_point = greendeploy.init" as init_plugins
+participant "GreenDeploy CLI\nglobal commands\ninfo, new, docs, starter" as greendeploy_cli
+participant "GreenDeploy Plugins\nentry_point = greendeploy.global_commands" as global_plugins
+participant "Current directory\npyproject.toml" as pyproject.toml
+participant "Click" as click
+
+
+greendeploy->entrypoint: Python calls this
+
+entrypoint->init_plugins: load and run all installed plugins
+entrypoint->greendeploy_cli: collect built-in commands
+entrypoint->global_plugins: load and collect global plugin commands
+entrypoint->pyproject.toml: check current dir for a GreenDeploy project
+pyproject.toml-->>entrypoint: not found or missing [tool.greendeploy]
+entrypoint->click: combine all command collections and run click
+@enduml
