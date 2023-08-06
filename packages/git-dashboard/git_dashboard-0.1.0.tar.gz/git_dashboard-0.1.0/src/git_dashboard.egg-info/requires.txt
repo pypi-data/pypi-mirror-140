@@ -1,0 +1,6 @@
+GitPython
+PySide6
+PyYAML
+appdirs
+pathlib
+pylint
