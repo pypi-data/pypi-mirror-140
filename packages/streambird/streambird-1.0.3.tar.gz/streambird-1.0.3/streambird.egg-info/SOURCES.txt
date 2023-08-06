@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+streambird/__init__.py
+streambird/_version.py
+streambird/api.py
+streambird/exceptions.py
+streambird.egg-info/PKG-INFO
+streambird.egg-info/SOURCES.txt
+streambird.egg-info/dependency_links.txt
+streambird.egg-info/requires.txt
+streambird.egg-info/top_level.txt
