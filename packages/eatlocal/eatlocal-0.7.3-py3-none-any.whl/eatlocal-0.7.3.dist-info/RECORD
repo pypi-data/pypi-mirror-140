@@ -1,0 +1,10 @@
+eatlocal/__init__.py,sha256=InRJr3docsBzosDnUaFufEXkclUFulCvCk3JK2JEHGc,66
+eatlocal/__main__.py,sha256=jgmm0eNxX7SuSbVa6MjzhozrQwYbiCAEExVehGsh7qQ,2763
+eatlocal/constants.py,sha256=dFLHUJprjlYmbyM3WnSvqodBqFvURQPWjB8y7dc08tU,431
+eatlocal/eatlocal.py,sha256=sr_hxlDGoWpUhHFpKVI017zvTZZAHiqlXDzdi5ac9-c,6904
+eatlocal/pydriver.py,sha256=QxOdrH0fF4tAPgWe3qIuB50CW3zUX_QxGCa9aUNGsN0,1492
+eatlocal-0.7.3.dist-info/entry_points.txt,sha256=m3T1wGrp1z5jTAo2OqPfG4LYRyjtrf1tWpGYJ2CeYqs,50
+eatlocal-0.7.3.dist-info/LICENSE,sha256=D-wMABLfLveKal53D65lZlFm3u1SRyxYJFF1AewJik8,1076
+eatlocal-0.7.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+eatlocal-0.7.3.dist-info/METADATA,sha256=tQrQX-Eb8UdLqra12AgN5iPGTs7CJ_X-17Uu2tAPn6c,8299
+eatlocal-0.7.3.dist-info/RECORD,,
