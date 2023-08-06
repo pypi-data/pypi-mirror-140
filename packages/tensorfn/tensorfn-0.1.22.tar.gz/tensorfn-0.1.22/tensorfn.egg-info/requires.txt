@@ -1,0 +1,7 @@
+torch>=1.1
+pydantic>=1.8
+pyhocon>=0.3.54
+termcolor
+tabulate
+boto3
+rich
