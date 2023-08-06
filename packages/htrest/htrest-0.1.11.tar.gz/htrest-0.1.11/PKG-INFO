@@ -1,0 +1,1024 @@
+Metadata-Version: 2.1
+Name: htrest
+Version: 0.1.11
+Summary: Heliotherm heat pump REST API
+Home-page: https://github.com/dstrigl/HtREST
+Author: Daniel Strigl
+License: GNU General Public License v3
+Description: # HtREST
+        
+        [![PyPI version](https://img.shields.io/pypi/v/HtREST.svg)](https://pypi.org/project/HtREST)
+        [![Python versions](https://img.shields.io/pypi/pyversions/HtREST.svg)](https://pypi.org/project/HtREST)
+        [![License](https://img.shields.io/pypi/l/HtREST.svg)](https://pypi.org/project/HtREST)
+        [![Build status](https://github.com/dstrigl/HtREST/workflows/CI/badge.svg)](https://github.com/dstrigl/HtREST/actions?query=workflow%3ACI)
+        [![Updates](https://pyup.io/repos/github/dstrigl/HtREST/shield.svg)](https://pyup.io/repos/github/dstrigl/HtREST)
+        
+        
+        [Heliotherm](http://www.heliotherm.com/) heat pump HTTP/REST API server for Python 3.7 and 3.8.
+        
+        * GitHub repo: https://github.com/dstrigl/HtREST
+        * Free software: [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+        
+        
+        > **Warning:**
+        >
+        > Please note that any incorrect or careless usage of this application as well as
+        > errors in the implementation can damage your heat pump!
+        >
+        > Therefore, the author does not provide any guarantee or warranty concerning
+        > to correctness, functionality or performance and does not accept any liability
+        > for damage caused by this application, examples or mentioned information.
+        >
+        > **Thus, use it on your own risk!**
+        
+        
+        ### Wanna support me?
+        
+        [![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/N362PLZ)
+        
+        
+        ## Setup
+        
+        The following diagram shows a possible setup in order to work with one of the different smart home systems, like [Loxone](https://www.loxone.com), [Home Assistant](https://www.home-assistant.io/), [ioBroker](https://www.iobroker.net/) or [FHEM](https://www.fhem.de/).
+        
+        ![Setup](setup.png)
+        
+        Of course, for all smart home systems which are runnable on a Raspberry Pi (like [Home Assistant](https://www.home-assistant.io/), [ioBroker](https://www.iobroker.net/) or [FHEM](https://www.fhem.de/)), the HtREST service and the smart home system can be hosted on the same Raspberry Pi.
+        The connection can than be easily established via the [localhost](https://en.wikipedia.org/wiki/Localhost) address `127.0.0.1`.
+        
+        
+        ## API
+        
+        The following table describes the HTTP/REST API exposed by this server application for the
+        [Heliotherm](http://www.heliotherm.com/) heat pump.
+        
+        | URI                                             | GET   | PUT   | description                                                                                   |
+        | :---------------------------------------------- | :---: | :---: | :-------------------------------------------------------------------------------------------- |
+        | `/api/v1/device`                                |   X   |       | Delivers information about the connected heat pump.                                           |
+        | `/api/v1/datetime`                              |   X   |   X   | Returns or sets the current date and time of the heat pump.                                   |
+        | `/api/v1/faultlist`                             |   X   |       | Returns the fault list of the heat pump.                                                      |
+        | `/api/v1/faultlist/size`                        |   X   |       | Returns the fault list size of the heat pump.                                                 |
+        | `/api/v1/faultlist/<int:id>`                    |   X   |       | Returns the fault list entry with the given index.                                            |
+        | `/api/v1/faultlist/last`                        |   X   |       | Returns the last fault list entry of the heat pump.                                           |
+        | `/api/v1/timeprog`                              |   X   |       | Returns a list of all available time programs of the heat pump.                               |
+        | `/api/v1/timeprog/<int:id>`                     |   X   |   X   | Returns or sets the time program with the given index of the heat pump.                       |
+        | `/api/v1/timeprog/<int:id>/<int:day>/<int:num>` |   X   |   X   | Returns or sets a specific time program entry of the heat pump.                               |
+        | `/api/v1/param`                                 |   X   |   X   | Returns or sets the current value of several heat pump parameters.                            |
+        | `/api/v1/param/<string:name>`                   |   X   |   X   | Returns or sets the current value of a specific heat pump parameter.                          |
+        | `/api/v1/fastquery`                             |   X   |       | Performs a fast query of a subset or all heat pump parameters representing a 'MP' data point. |
+        | `/api/v1/fastquery/<string:name>`               |   X   |       | Performs a fast query of a specific heat pump parameter which represents a 'MP' data point.   |
+        
+        
+        ### GET /api/v1/device
+        
+        Delivers information about the connected heat pump.
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/device/" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/device/
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "property_id": 123456,
+          "serial_number": 123456,
+          "software_version": "3.0.20"
+        }
+        ```
+        
+        
+        ### GET /api/v1/datetime
+        
+        Returns the current date and time of the heat pump.
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/datetime/" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/datetime/
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "datetime": "2020-01-29T13:11:35"
+        }
+        ```
+        
+        
+        ### PUT /api/v1/datetime
+        
+        Sets the current date and time of the heat pump.
+        
+        **Sample Payload:**
+        
+        ```
+        {
+          "datetime": "2020-01-29T13:12:07"
+        }
+        ```
+        
+        *Remark: If the value of "datetime" is an empty string ("") current date and time of the host will be used.*
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X PUT "http://localhost:8777/api/v1/datetime/" -H "accept: application/json" -H "Content-Type: application/json" -d "{  \"datetime\": \"2020-01-29T13:12:07\"}"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/datetime/
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "datetime": "2020-01-29T13:12:07"
+        }
+        ```
+        
+        
+        ### GET /api/v1/faultlist
+        
+        Returns the fault list of the heat pump.
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/faultlist/" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/faultlist/
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        [
+          {
+            "index": 0,
+            "error": 65534,
+            "datetime": "2000-01-01T00:00:00",
+            "message": "Keine Stoerung"
+          },
+          {
+            "index": 1,
+            "error": 65286,
+            "datetime": "2000-01-01T00:00:00",
+            "message": "Info: Programmupdate 1"
+          },
+          {
+            "index": 2,
+            "error": 65285,
+            "datetime": "2000-01-01T00:00:00",
+            "message": "Info: Initialisiert"
+          },
+          {
+            "index": 3,
+            "error": 19,
+            "datetime": "2014-09-14T02:08:56",
+            "message": "EQ_Spreizung"
+          }
+        ]
+        ```
+        
+        
+        ### GET /api/v1/faultlist/size
+        
+        Returns the fault list size of the heat pump.
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/faultlist/size" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/faultlist/size
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "size": 4
+        }
+        ```
+        
+        
+        ### GET /api/v1/faultlist/\<int:id\>
+        
+        Returns the fault list entry with the given index.
+        
+        **Parameter:**
+        
+        * **\<int:id\>**: The fault list index.
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/faultlist/3" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/faultlist/3
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "index": 3,
+          "error": 19,
+          "datetime": "2014-09-14T02:08:56",
+          "message": "EQ_Spreizung"
+        }
+        ```
+        
+        
+        ### GET /api/v1/faultlist/last
+        
+        Returns the last fault list entry of the heat pump.
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/faultlist/last" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/faultlist/last
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "index": 3,
+          "error": 19,
+          "datetime": "2014-09-14T02:08:56",
+          "message": "EQ_Spreizung"
+        }
+        ```
+        
+        
+        ### GET /api/v1/timeprog
+        
+        Returns a list of all available time programs of the heat pump.
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/timeprog/" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/timeprog/
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        [
+          {
+            "index": 0,
+            "name": "Warmwasser",
+            "ead": 7,
+            "nos": 2,
+            "ste": 15,
+            "nod": 7
+          },
+          {
+            "index": 1,
+            "name": "Zirkulationspumpe",
+            "ead": 7,
+            "nos": 2,
+            "ste": 15,
+            "nod": 7
+          },
+          {
+            "index": 2,
+            "name": "Heizung",
+            "ead": 7,
+            "nos": 3,
+            "ste": 15,
+            "nod": 7
+          },
+          {...},
+          {...}
+        ]
+        ```
+        
+        
+        ### GET /api/v1/timeprog/\<int:id\>
+        
+        Returns the time program with the given index of the heat pump.
+        
+        **Parameter:**
+        
+        * **\<int:id\>**: The time program index.
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/timeprog/1" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/timeprog/1
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "index": 1,
+          "name": "Zirkulationspumpe",
+          "ead": 7,
+          "nos": 2,
+          "ste": 15,
+          "nod": 7,
+          "entries": [
+            [
+              {
+                "state": 0,
+                "start": "00:00",
+                "end": "05:15"
+              },
+              {
+                "state": 1,
+                "start": "05:15",
+                "end": "08:00"
+              },
+              {...},
+              {...},
+              {...},
+              {...},
+              {...}
+            ],
+            [...],
+            [...],
+            [...],
+            [...],
+            [...],
+            [...]
+          ]
+        }
+        ```
+        
+        
+        ### PUT /api/v1/timeprog/\<int:id\>
+        
+        Sets all time program entries of a specific time program of the heat pump.
+        
+        **Parameter:**
+        
+        * **\<int:id\>**: The time program index.
+        
+        **Sample Payload:**
+        
+        ```
+        {
+          "index": 1,
+          "name": "Zirkulationspumpe",
+          "ead": 7,
+          "nos": 2,
+          "ste": 15,
+          "nod": 7,
+          "entries": [
+            [
+              {
+                "state": 0,
+                "start": "00:00",
+                "end": "06:00"
+              },
+              {
+                "state": 1,
+                "start": "06:00",
+                "end": "09:00"
+              },
+              {...},
+              {...},
+              {...},
+              {...},
+              {...}
+            ],
+            [...],
+            [...],
+            [...],
+            [...],
+            [...],
+            [...]
+          ]
+        }
+        ```
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X PUT "http://localhost:8777/api/v1/timeprog/1" -H "accept: application/json" -H "Content-Type: application/json" -d "{  \"index\": 1,  \"name\": \"Zirkulationspumpe\",  ... }"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/timeprog/1
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "index": 1,
+          "name": "Zirkulationspumpe",
+          "ead": 7,
+          "nos": 2,
+          "ste": 15,
+          "nod": 7,
+          "entries": [
+            [
+              {
+                "state": 0,
+                "start": "00:00",
+                "end": "06:00"
+              },
+              {
+                "state": 1,
+                "start": "06:00",
+                "end": "09:00"
+              },
+              {...},
+              {...},
+              {...},
+              {...},
+              {...}
+            ],
+            [...],
+            [...],
+            [...],
+            [...],
+            [...],
+            [...]
+          ]
+        }
+        ```
+        
+        
+        #### GET /api/v1/timeprog/\<int:id\>/\<int:day\>/\<int:num\>
+        
+        Returns a specific time program entry of the heat pump.
+        
+        **Parameter:**
+        
+        * **\<int:num\>**: The number of the time program entry (of the specified day).
+        * **\<int:day\>**: The day of the time program entry (inside the specified time program).
+        * **\<int:id\>**:  The time program index.
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/timeprog/1/1/1" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/timeprog/1/1/1
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "state": 1,
+          "start": "06:00",
+          "end": "08:00"
+        }
+        ```
+        
+        
+        ### PUT /api/v1/timeprog/\<int:id\>/\<int:day\>/\<int:num\>
+        
+        Sets a specific time program entry of the heat pump.
+        
+        **Parameter:**
+        
+        * **\<int:num\>**: The number of the time program entry (of the specified day).
+        * **\<int:day\>**: The day of the time program entry (inside the specified time program).
+        * **\<int:id\>**:  The time program index.
+        
+        **Sample Payload:**
+        
+        ```
+        {
+          "state": 1,
+          "start": "06:00",
+          "end": "08:00"
+        }
+        ```
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X PUT "http://localhost:8777/api/v1/timeprog/1/1/1" -H "accept: application/json" -H "Content-Type: application/json" -d "{  \"state\": 1,  \"start\": \"06:00\",  \"end\": \"08:00\"}"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/timeprog/1/1/1
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "state": 1,
+          "start": "06:00",
+          "end": "08:00"
+        }
+        ```
+        
+        
+        ### GET /api/v1/param
+        
+        Returns the current value of a subset or all known heat pump parameters.
+        
+        **Sample Curl:**
+        
+        Complete list of all known heat pump parameters:
+        ```
+        curl -X GET "http://localhost:8777/api/v1/param/" -H "accept: application/json"
+        ```
+        Subset of the known heat pump parameters:
+        ```
+        curl -X GET "http://localhost:8777/api/v1/param/?HKR%20Soll_Raum&Temp.%20Aussen&Stoerung" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        Complete list of all known heat pump parameters:
+        ```
+        http://localhost:8777/api/v1/param/
+        ```
+        Subset of the known heat pump parameters:
+        ```
+        http://localhost:8777/api/v1/param/?HKR%20Soll_Raum&Temp.%20Aussen&Stoerung
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "HKR Soll_Raum": 23,
+          "Stoerung": false,
+          "Temp. EQ_Austritt": 4.7,
+          "Temp. EQ_Eintritt": 6.1,
+          "Temp. Ruecklauf": 27.7,
+          "Temp. Vorlauf": 27.8,
+          "Temp. Brauchwasser": 50.1,
+          "Temp. Aussen verzoegert": 4.9,
+          "Temp. Aussen": 4.9,
+          ...
+        }
+        ```
+        
+        *Remark: A list of available Heliotherm heat pump parameters can be found
+        [here](https://htheatpump.readthedocs.io/en/latest/htparams.html).*
+        
+        
+        ### PUT /api/v1/param
+        
+        Sets the current value of several heat pump parameters.
+        
+        **Sample Payload:**
+        
+        ```
+        {
+          "Betriebsart": 1,
+          "HKR Soll_Raum": 21.5,
+          "HKR Aufheiztemp. (K)": 3,
+          "HKR Absenktemp. (K)": -3,
+          "WW Minimaltemp.": 15,
+          "WW Normaltemp.": 50
+        }
+        ```
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X PUT "http://localhost:8777/api/v1/param/" -H "accept: application/json" -H "Content-Type: application/json" -d "{  \"Betriebsart\": 1,  \"HKR Soll_Raum\": 21.5,  ... }"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/param/
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "Betriebsart": 1,
+          "HKR Soll_Raum": 21.5,
+          "HKR Aufheiztemp. (K)": 3,
+          "HKR Absenktemp. (K)": -3,
+          "WW Minimaltemp.": 15,
+          "WW Normaltemp.": 50
+        }
+        ```
+        
+        *Remark: A list of available Heliotherm heat pump parameters can be found
+        [here](https://htheatpump.readthedocs.io/en/latest/htparams.html).*
+        
+        
+        ### GET /api/v1/param/\<string:name\>
+        
+        Returns the current value of a specific heat pump parameter.
+        
+        **Parameter:**
+        
+        * **\<string:name\>**: The parameter name.
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/param/Temp.%20Aussen" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/param/Temp.%20Aussen
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "value": 4.9
+        }
+        ```
+        
+        *Remark: A list of available Heliotherm heat pump parameters can be found
+        [here](https://htheatpump.readthedocs.io/en/latest/htparams.html).*
+        
+        
+        ### PUT /api/v1/param/\<string:name\>
+        
+        Sets the current value of a specific heat pump parameter.
+        
+        **Parameter:**
+        
+        * **\<string:name\>**: The parameter name.
+        
+        **Sample Payload:**
+        
+        ```
+        {
+          "value": 22.5
+        }
+        ```
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X PUT "http://localhost:8777/api/v1/param/HKR%20Soll_Raum" -H "accept: application/json" -H "Content-Type: application/json" -d "{  \"value\": 22.5}"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/param/HKR%20Soll_Raum
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "value": 22.5
+        }
+        ```
+        
+        *Remark: A list of available Heliotherm heat pump parameters can be found
+        [here](https://htheatpump.readthedocs.io/en/latest/htparams.html).*
+        
+        
+        ### GET /api/v1/fastquery
+        
+        Performs a fast query of a subset or all heat pump parameters representing a "MP" data point.
+        
+        **Sample Curl:**
+        
+        Complete list of all known heat pump parameters representing a "MP" data point:
+        ```
+        curl -X GET "http://localhost:8777/api/v1/fastquery/" -H "accept: application/json"
+        ```
+        Subset of the known heat pump parameters representing a "MP" data point:
+        ```
+        curl -X GET "http://localhost:8777/api/v1/fastquery/?Stoerung&Temp.%20Vorlauf&Warmwasservorrang" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        Complete list of all known heat pump parameters representing a "MP" data point:
+        ```
+        http://localhost:8777/api/v1/fastquery/
+        ```
+        Subset of the known heat pump parameters representing a "MP" data point:
+        ```
+        http://localhost:8777/api/v1/fastquery/?Stoerung&Temp.%20Vorlauf&Warmwasservorrang
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "HKR_Sollwert": 32.2,
+          "Verdichteranforderung": 3,
+          "Frischwasserpumpe": 0,
+          "FWS Stroemungsschalter": false,
+          "Stoerung": false,
+          "Verdichter": true,
+          "Zirkulationspumpe WW": false,
+          ...
+        }
+        ```
+        
+        *Remark: A list of available Heliotherm heat pump parameters can be found
+        [here](https://htheatpump.readthedocs.io/en/latest/htparams.html).*
+        
+        
+        ### GET /api/v1/fastquery/\<string:name\>
+        
+        Performs a fast query of a specific heat pump parameter which represents a "MP" data point.
+        
+        **Parameter:**
+        
+        * **\<string:name\>**: The parameter name (representing a "MP" data point).
+        
+        **Sample Curl:**
+        
+        ```
+        curl -X GET "http://localhost:8777/api/v1/fastquery/Verdichter" -H "accept: application/json"
+        ```
+        
+        **Sample Request URL:**
+        
+        ```
+        http://localhost:8777/api/v1/fastquery/Verdichter
+        ```
+        
+        **Sample Response:**
+        
+        ```
+        {
+          "value": true
+        }
+        ```
+        
+        *Remark: A list of available Heliotherm heat pump parameters can be found
+        [here](https://htheatpump.readthedocs.io/en/latest/htparams.html).*
+        
+        
+        ## Installation
+        
+        You can install or upgrade `HtREST` with:
+        
+        ```
+        $ pip install HtREST --upgrade
+        ```
+        
+        Or you can install from source with:
+        
+        ```
+        $ git clone https://github.com/dstrigl/HtREST.git
+        $ cd HtREST
+        $ python setup.py install
+        ```
+        
+        
+        ## Usage
+        
+        ```
+        usage: htrest [-h] [-d DEVICE] [-b {9600,19200,38400,57600,115200}]
+                      [--host HOST] [--port PORT] [--user USER] [--bool-as-int]
+                      [--logging-config LOGGING_CONFIG] [--debug] [--read-only]
+                      [--no-param-verification]
+        
+        Heliotherm heat pump REST API server
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -d DEVICE, --device DEVICE
+                                the serial device on which the heat pump is connected,
+                                default: /dev/ttyUSB0
+          -b {9600,19200,38400,57600,115200}, --baudrate {9600,19200,38400,57600,115200}
+                                baudrate of the serial connection (same as configured
+                                on the heat pump), default: 115200
+          --host HOST           the hostname to listen on, set to "0.0.0.0" to have
+                                the server available externally as well, default:
+                                127.0.0.1
+          --port PORT           the port of the web server, default: 8777
+          --user USER           the username and password for the basic access
+                                authentication in the form "<username>:<password>",
+                                default:
+          --bool-as-int         boolean values are treated as integers (with false
+                                equivalent to 0 and true equivalent to 1)
+          --logging-config LOGGING_CONFIG
+                                the filename under which the logging configuration can
+                                be found, default:
+                                /home/pi/prog/HtREST/htrest/logging.conf
+          --debug               enable Flask debug mode
+          --read-only           disable write access to the heat pump
+          --no-param-verification
+                                disable all parameter verification actions
+        ```
+        
+        
+        ### Example
+        
+        ```
+        $ htrest -d /dev/ttyUSB0 -b 115200 --host 192.168.11.99 --port 8777 --read-only
+        HTHEATPUMP: load parameter definitions from: /home/pi/venv/htrest/lib/python3.7/site-packages/htheatpump-1.2.4-py3.7.egg/htheatpump/htparams.csv
+        Start Heliotherm heat pump REST API server v0.1.8.
+        Namespace(baudrate=115200, bool_as_int=False, debug=False, device='/dev/ttyUSB0', host='192.168.11.99', logging_config='/home/pi/prog/HtREST/htrest/logging.conf', no_param_verification=False, port=8777, read_only=True, user='')
+        2020-04-18 12:36:15,834 INFO [htrest.app] open connection to heat pump (<htheatpump.htheatpump.HtHeatpump object at 0xb5dd61f0>)
+        2020-04-18 12:36:15,873 INFO [htrest.app] successfully connected to heat pump #123456
+        2020-04-18 12:36:15,904 INFO [htrest.app] software version = 3.0.20 (273)
+        2020-04-18 12:36:15,950 INFO [htrest.app] *** created Flask app <Flask 'htrest.app'> with config <Config {'ENV': 'production', 'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None, 'SECRET_KEY': None, 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': datetime.timedelta(seconds=43200), 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR': False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SWAGGER_UI_DOC_EXPANSION': 'list', 'RESTX_VALIDATE': True, 'RESTX_MASK_SWAGGER': False, 'ERROR_404_HELP': False, 'BUNDLE_ERRORS': True}>
+        Map([<Rule '/api/v1/faultlist/size' (OPTIONS, HEAD, GET) -> api.faultlist_fault_list_size>,
+         <Rule '/api/v1/faultlist/last' (OPTIONS, HEAD, GET) -> api.faultlist_last_fault>,
+         <Rule '/api/v1/swagger.json' (OPTIONS, HEAD, GET) -> api.specs>,
+         <Rule '/api/v1/faultlist/' (OPTIONS, HEAD, GET) -> api.faultlist_fault_list>,
+         <Rule '/api/v1/fastquery/' (OPTIONS, HEAD, GET) -> api.fastquery_fast_query_list>,
+         <Rule '/api/v1/datetime/' (PUT, OPTIONS, HEAD, GET) -> api.datetime_date_time>,
+         <Rule '/api/v1/timeprog/' (OPTIONS, HEAD, GET) -> api.timeprog_time_progs>,
+         <Rule '/api/v1/device/' (OPTIONS, HEAD, GET) -> api.device_device>,
+         <Rule '/api/v1/param/' (PUT, OPTIONS, HEAD, GET) -> api.param_param_list>,
+         <Rule '/api/v1/' (OPTIONS, HEAD, GET) -> api.doc>,
+         <Rule '/api/v1/' (OPTIONS, HEAD, GET) -> api.root>,
+         <Rule '/api/v1/faultlist/<id>' (OPTIONS, HEAD, GET) -> api.faultlist_fault_entry>,
+         <Rule '/api/v1/fastquery/<name>' (OPTIONS, HEAD, GET) -> api.fastquery_fast_query>,
+         <Rule '/api/v1/timeprog/<id>/<day>/<num>' (PUT, OPTIONS, HEAD, GET) -> api.timeprog_time_prog_entry>,
+         <Rule '/api/v1/timeprog/<id>' (PUT, OPTIONS, HEAD, GET) -> api.timeprog_time_prog>,
+         <Rule '/api/v1/param/<name>' (PUT, OPTIONS, HEAD, GET) -> api.param_param>,
+         <Rule '/swaggerui/<filename>' (OPTIONS, HEAD, GET) -> restx_doc.static>,
+         <Rule '/static/<filename>' (OPTIONS, HEAD, GET) -> static>])
+         * Serving Flask app "htrest.app" (lazy loading)
+         * Environment: production
+           WARNING: This is a development server. Do not use it in a production deployment.
+           Use a production WSGI server instead.
+         * Debug mode: off
+        2020-03-31 12:58:12,047 INFO [htrest.apis.param] *** [GET] http://192.168.11.99:8777/api/v1/param/HKR%20Soll_Raum -- name='HKR Soll_Raum'
+        2020-03-31 12:58:12,174 INFO [htrest.apis.param] *** [GET] http://192.168.11.99:8777/api/v1/param/Betriebsart -- name='Betriebsart'
+        ...
+        ```
+        
+        
+        ## Credits
+        
+        * Project dependencies scanned by [PyUp.io](https://pyup.io).
+        
+        
+        ## License
+        
+        Distributed under the terms of the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.en.html).
+        
+        
+        # History
+        
+        ## 0.1.11 (2022-02-27)
+        
+        * Bumped `htheatpump` from `1.3.1` to `1.3.2`.
+        * Bumped `Flask` from `1.1.2` to `2.0.3`.
+        * Bumped `flask-restx` from `0.2.0` to `0.5.1`.
+        * Bumped `flake8` from `3.8.4` to `4.0.1`.
+        * Bumped `tox` from `3.21.3` to `3.24.5`.
+        * Bumped `mypy` from `0.800` to `0.931`.
+        * Bumped `coverage` from `5.4` to `6.3.2`.
+        * Bumped `pytest` from `6.2.2` to `7.0.1`.
+        * Bumped `pytest-mypy` from `0.8.0` to `0.9.1`.
+        * Bumped `pytest-cov` from `2.11.1` to `3.0.0`.
+        
+        ## 0.1.10 (2021-01-30)
+        
+        * Updated README.
+        * Replaced Travis CI by GitHub Actions.
+        * Updated copyright statements.
+        * Python code reformatting using *Black* and *isort*.
+        * Bumped `htheatpump` from `1.2.4` to `1.3.1`.
+        * Dropped support for Python 3.5 and 3.6.
+        
+        ## 0.1.9 (2020-04-20)
+        
+        * Fixed *flake8* errors.
+        
+        ## 0.1.8 (2020-04-20)
+        
+        * Added support for Python 3.8.
+        * Bumped `htheatpump` from `1.2.3` to `1.2.4`.
+        * Some minor cleanup and improvements.
+        * Changed default port of the HtREST application to `8777`.
+        * Resource `/api/v1/param` and `/api/v1/fastquery` are now supports the possibility to request
+          for a specific subset of parameters.
+        * Resource `/api/v1/fastquery` now also supports the possibility to treat boolean values as
+          integers (arg `--bool-as-int`).
+        * Changed log statements to the form with the preferred and well-known `%s` (and `%d`, `%f`, etc.)
+          string formatting indicators (due to performance reasons).
+        
+        ## 0.1.7 (2020-04-01)
+        
+        * Fixed wrong uploaded package on PyPi.
+        
+        ## 0.1.6 (2020-03-31)
+        
+        * Updated to `htheatpump v1.2.3`, which now includes several helper scripts (e.g. `htcomplparams`).
+        * Added possibility to disable all parameter verification actions (arg `--no-param-verification`).
+        * Changed behaviour: No reconnect of the serial connection will be performed for each request,
+          because each `login()` call during a request will automatically try a reconnect on failure.
+        * Clean-up of `setup.py` and `MANIFEST.in`.
+        
+        ## 0.1.5 (2020-03-29)
+        
+        * Adapted logging statements and default log levels.
+        * Python code reformatting using *Black*.
+        * Added possibility so that boolean values can be treated as integers (arg `--bool-as-int`).
+        * Fixed unsynchronized access to `HtHeatpump`, which results in a serial communication error.
+        * Changed package requirements structure; some changes in `setup.py`, `setup.cfg`, `tox.ini`, etc.
+        
+        ## 0.1.4 (2020-03-17)
+        
+        * Fixed wrong uploaded package on PyPi.
+        
+        ## 0.1.3 (2020-03-17)
+        
+        * Fixed missing file `logging.conf`.
+        * Corrected usage of host and port for the web server.
+        
+        ## 0.1.2 (2020-02-18)
+        
+        * Fixed wrong version definition.
+        
+        ## 0.1.1 (2020-02-18)
+        
+        * Fixed some errors in the project packaging.
+        
+        ## 0.1.0 (2020-02-18)
+        
+        * First release on PyPI.
+        
+Keywords: python python3 heatpump Heliotherm rest restful api flask swagger
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Communications
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Terminals :: Serial
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: dev
