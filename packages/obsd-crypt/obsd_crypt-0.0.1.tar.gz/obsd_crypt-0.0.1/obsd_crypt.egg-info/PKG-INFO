@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: obsd-crypt
+Version: 0.0.1
+Summary: Python interface to the OpenBSD functions crypt_checkpass and crypt_newhash
+Home-page: https://github.com/bsd-ac/obsd_crypt
+Author: Aisha Tammy
+Author-email: aisha@bsd.ac
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: POSIX :: BSD :: OpenBSD
+License-File: LICENSE
+
+UNKNOWN
+
