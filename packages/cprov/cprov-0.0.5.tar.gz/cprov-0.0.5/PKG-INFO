@@ -1,0 +1,46 @@
+Metadata-Version: 1.2
+Name: cprov
+Version: 0.0.5
+Summary: Administer AWS
+Home-page: http://github.com/kjenney/cprov
+Author: Ken Jenney
+Author-email: me@kenjenney.com
+License: Apache Software License
+Description: cprov
+        ==============
+        
+            Author: Ken Jenney
+        
+        A CLI tool for provisoning cloud resoruces with Pulumi Automation
+        
+        Installation Instructions
+        -------------------------
+        
+        .. code:: bash
+        
+            $ pip install cprov
+        
+        Executing
+        ---------
+        
+        Once installed run ``cprov`` CLI with ``--help`` option:
+        
+        .. code:: bash
+        
+            $ cprov --help
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3

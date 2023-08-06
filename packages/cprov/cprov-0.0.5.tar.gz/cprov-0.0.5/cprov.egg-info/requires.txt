@@ -1,0 +1,6 @@
+incremental
+python-dotenv
+Click
+pulumi<4.0.0,>=3.5.1
+pulumi-aws<5.0.0,>=4.0.0
+pulumi-kubernetes<4.0.0,>=3.0.0
