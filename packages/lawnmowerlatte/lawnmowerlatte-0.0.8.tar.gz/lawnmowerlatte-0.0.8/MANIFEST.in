@@ -1,0 +1,6 @@
+include src/lawnmowerlatte
+include setup.cfg
+include README.md
+include pyproject.toml
+include VERSION
+include LICENSE
