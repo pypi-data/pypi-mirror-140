@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/jsondbpy/__init__.py
+src/jsondbpy/mysql.py
+src/jsondbpy.egg-info/PKG-INFO
+src/jsondbpy.egg-info/SOURCES.txt
+src/jsondbpy.egg-info/dependency_links.txt
+src/jsondbpy.egg-info/top_level.txt
