@@ -1,0 +1,3 @@
+[console_scripts]
+ytclip = ytclip.ytclip:run_cmd
+

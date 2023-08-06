@@ -1,0 +1,5 @@
+static_ffmpeg
+yt-dlp
+
+[test]
+pytest

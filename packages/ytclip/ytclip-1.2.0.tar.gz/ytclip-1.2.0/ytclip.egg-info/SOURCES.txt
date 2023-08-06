@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ytclip/__init__.py
+ytclip/version.py
+ytclip/ytclip.py
+ytclip.egg-info/PKG-INFO
+ytclip.egg-info/SOURCES.txt
+ytclip.egg-info/dependency_links.txt
+ytclip.egg-info/entry_points.txt
+ytclip.egg-info/requires.txt
+ytclip.egg-info/top_level.txt

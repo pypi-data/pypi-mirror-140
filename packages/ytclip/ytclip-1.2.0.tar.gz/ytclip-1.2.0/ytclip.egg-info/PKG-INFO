@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: ytclip
+Version: 1.2.0
+Summary: Command to download a video and cut out a clip.
+Home-page: https://github.com/zackees/ytclip
+Author: Zach Vorhies
+Author-email: dont@email.me
+License: MIT
+Description: # ytclip
+        
+        [![Actions Status](https://github.com/zackees/ytclip/workflows/MacOS_Tests/badge.svg)](https://github.com/zackees/ytclip/actions/workflows/push_macos.yml)
+        [![Actions Status](https://github.com/zackees/ytclip/workflows/Win_Tests/badge.svg)](https://github.com/zackees/ytclip/actions/workflows/push_win.yml)
+        [![Actions Status](https://github.com/zackees/ytclip/workflows/Ubuntu_Tests/badge.svg)](https://github.com/zackees/ytclip/actions/workflows/push_ubuntu.yml)
+        
+        This utility provides a command that will automate downloading files and creating clips out of them.
+        
+        The utility is user friendly.
+        
+        It relies on `yt-dlp` to do the downloading of files and uses `static_ffmpeg` to do the actual cutting. This
+        stack should be cross platform and should not require elevated permissions to install (yay!).
+        
+        # Install
+        
+        ```
+        $ python -m pip install ytclip
+        ```
+        
+        # Running
+        
+        
+        ``` (Interactive)
+        $ cd <MY_DIRECTORY>
+        $ ytclip
+        Add new video:
+          url: ...
+          start_timestamp: 08:08
+          end_timestamp: 08:20
+          output_name: my_file
+        ```
+        
+        ``` (CMD-line)
+        $ cd <MY_DIRECTORY>
+        $ ytclip --url https://www.youtube.com/watch?v=CLXt3yh2g0s --start_timestamp 00:32 --end_timestamp 00:52 --outname myoutputfile
+        ```
+        
+        ``` Help file
+        $ ytclip --help
+        ```
+        
+        
+        # Api
+        
+        You can also use it as an api:
+        
+        ```
+        from ytclip.ytclip import run_download_and_cut
+        
+        run_download_and_cut(
+            url="https://www.youtube.com/watch?v=-wtIMTCHWuI",
+            start_timestamp="1:10",
+            end_timestamp="1:30",
+            outname="myclip_withoutsuffix")
+        ```
+        
+        You can also turn off logging like so:
+        
+        ```
+        from ytclip.ytclip import run_download_and_cut, set_logging
+        
+        set_logging(False)
+        run_download_and_cut(...)
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: Console
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: test
