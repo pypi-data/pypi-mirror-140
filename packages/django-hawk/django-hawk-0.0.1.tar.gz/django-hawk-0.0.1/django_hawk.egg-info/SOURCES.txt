@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django_hawk/__init__.py
+django_hawk/authentication.py
+django_hawk/middleware.py
+django_hawk/settings.py
+django_hawk/utils.py
+django_hawk.egg-info/PKG-INFO
+django_hawk.egg-info/SOURCES.txt
+django_hawk.egg-info/dependency_links.txt
+django_hawk.egg-info/requires.txt
+django_hawk.egg-info/top_level.txt
