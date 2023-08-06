@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: isostatic
+Version: 0.0.5
+Summary: Un paquete para resolver estructuras isostaticas
+Home-page: https://github.com/Rodrigo-A-Jimenez/Isostatic
+Author: Rodrigo Jimenez
+Author-email: jimenezhuancarodrigo@gmail.com
+Maintainer: Rodrigo Jimenez
+Maintainer-email: jimenezhuancarodrigo@gmail.com
+License: GPL-3.0
+Project-URL: Github, https://github.com/Rodrigo-A-Jimenez/Isostatic
+Project-URL: Bug Tracker, https://github.com/Rodrigo-A-Jimenez/Isostatic/issues
+Project-URL: Source, https://github.com/Rodrigo-A-Jimenez/Isostatic
+Keywords: structures,ingenieria,engineering,isostatic
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Isostatic
+A repository for designing isostatic structures
+
+# Descripción
+Un repositorio para diseño de estructuras isostaticas mediante un paquete de python. 
+
+# Licencia
+Vea el archivo licencia en [github](https://github.com/Rodrigo-A-Jimenez/Isostatic)
+
+# Modulos
+- Point (2D)
+- Support (vertical, horizontal, momentos)
+- rotations (Solo casos de carga lineal)
+
+# Instalacion
+```python
+pip install isostatic
+```
+
+Una vez instalado importe los modulos
+
+```python
+from isostatic import Point, Support, LinealLoad, GeneralLoadLineal
+```
+
+
+
+
