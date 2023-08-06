@@ -1,0 +1,6 @@
+setup.py
+easierjson.egg-info/PKG-INFO
+easierjson.egg-info/SOURCES.txt
+easierjson.egg-info/dependency_links.txt
+easierjson.egg-info/top_level.txt
+easyjson/__init__.py
