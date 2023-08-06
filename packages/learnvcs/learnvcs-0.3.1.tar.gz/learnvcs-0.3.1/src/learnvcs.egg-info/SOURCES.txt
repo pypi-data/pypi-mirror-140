@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/learnvcs/__init__.py
+src/learnvcs/client.py
+src/learnvcs/navigators.py
+src/learnvcs/utils.py
+src/learnvcs.egg-info/PKG-INFO
+src/learnvcs.egg-info/SOURCES.txt
+src/learnvcs.egg-info/dependency_links.txt
+src/learnvcs.egg-info/requires.txt
+src/learnvcs.egg-info/top_level.txt
