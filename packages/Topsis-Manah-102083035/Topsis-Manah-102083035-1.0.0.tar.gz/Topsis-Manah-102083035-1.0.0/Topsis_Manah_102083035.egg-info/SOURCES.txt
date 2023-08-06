@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup-102083035.py
+Topsis-Manah-102083035/__init__.py
+Topsis-Manah-102083035/setup-102083035.py
+Topsis_Manah_102083035.egg-info/PKG-INFO
+Topsis_Manah_102083035.egg-info/SOURCES.txt
+Topsis_Manah_102083035.egg-info/dependency_links.txt
+Topsis_Manah_102083035.egg-info/requires.txt
+Topsis_Manah_102083035.egg-info/top_level.txt
