@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+psmpy.egg-info/PKG-INFO
+psmpy.egg-info/SOURCES.txt
+psmpy.egg-info/dependency_links.txt
+psmpy.egg-info/requires.txt
+psmpy.egg-info/top_level.txt
