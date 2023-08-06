@@ -1,0 +1,4 @@
+krules-env==0.11.1
+MarkupSafe==2.0.1
+flask==1.1.4
+json-logging==1.2.11
