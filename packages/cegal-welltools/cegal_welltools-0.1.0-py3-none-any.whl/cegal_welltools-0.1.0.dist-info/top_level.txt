@@ -1,0 +1,6 @@
+Notebooks
+build
+cegal
+examples
+images
+tests
