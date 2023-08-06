@@ -1,0 +1,5 @@
+alpha-vantage
+pandas
+fpdf
+plotly
+kaleido
