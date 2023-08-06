@@ -1,0 +1,17 @@
+pycmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycmd/__main__.py,sha256=mZrqNZCkHqXWtL9Vf8Faoc48EjV0OKwmE6Bkm8PzjUo,3985
+pycmd/commands/create.py,sha256=hE2Bo20MaQ0ZoklmhC7dTma_LLN41dXvXPtzGJP5CmQ,10434
+pycmd/commands/help.py,sha256=wmZ4zBvCDnXY_5ePhKHE8pIodPX95wKvx74jBB81xHs,4304
+pycmd/commands/ls.py,sha256=nwEPj5J-FzEhJqsh2qx5RzCBLtam2kx0tr8Iieu0P5k,4261
+pycmd/commands/open.py,sha256=C-KIpPLXvV2mtQtZRg-HJmhtqxAzWWs15Nm26JUuEDc,3316
+pycmd/commands/rm.py,sha256=bWEMecdNZJH4HNwKobrEy-SBE5rbLgnnl6Gf7TGkCEM,5137
+pycmd/commands/setup.py,sha256=Sn_kEf5rVj74RTxEtAyoXlYT_B3kY1EUjBj_HuRkOYs,10791
+pycmd/commands/src.py,sha256=Qt6L2nFpjqY1PXccyY3sNlBgvHENB0imhNu7hNtlfI8,743
+pycmd/json/commands.json,sha256=Y6CSMeMVzY4PzT5J5t5_wRdHFX4wZXMYBY5UFqkGroQ,1276
+pycmd/utils/pycmd.py,sha256=6eujv7OVgA3vncx2rrfGnvbPtOXUp6cC-gbrQq8-vvE,2677
+pycmd_cli-1.0.2.dist-info/LICENSE,sha256=mUtrh9yvf5WGEFwN_w-qwQxY-fDfjWGeiUTM6Wgt7bk,1083
+pycmd_cli-1.0.2.dist-info/METADATA,sha256=n-0mPebLmQIP4axu2kxwU1Lf57mcRzpe41ijMUVl1mY,6920
+pycmd_cli-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pycmd_cli-1.0.2.dist-info/entry_points.txt,sha256=L0uIUfg9SK4o7tQ4qojiwZjl0hxRi9EJ5a2P_2fwki4,43
+pycmd_cli-1.0.2.dist-info/top_level.txt,sha256=V6KVMrOdHPhJjrO-71ngGUPsiEcv41Aau-qBQwd4o7Q,6
+pycmd_cli-1.0.2.dist-info/RECORD,,
