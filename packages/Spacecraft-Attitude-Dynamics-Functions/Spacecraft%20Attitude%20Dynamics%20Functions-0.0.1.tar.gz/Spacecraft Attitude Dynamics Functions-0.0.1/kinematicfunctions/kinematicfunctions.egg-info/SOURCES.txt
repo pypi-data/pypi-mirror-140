@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+pyproject.toml
+setup.py
+kinematicfunctions/__init__.py
+kinematicfunctions/Spacecraft_Attitude_Dynamics_Functions.egg-info/SOURCES.txt
+kinematicfunctions/Spacecraft_Attitude_Dynamics_Functions.egg-info/dependency_links.txt
+kinematicfunctions/Spacecraft_Attitude_Dynamics_Functions.egg-info/requires.txt
+kinematicfunctions/Spacecraft_Attitude_Dynamics_Functions.egg-info/top_level.txt
+kinematicfunctions/kinematicfunctions.egg-info/PKG-INFO
+kinematicfunctions/kinematicfunctions.egg-info/SOURCES.txt
+kinematicfunctions/kinematicfunctions.egg-info/dependency_links.txt
+kinematicfunctions/kinematicfunctions.egg-info/requires.txt
+kinematicfunctions/kinematicfunctions.egg-info/top_level.txt
