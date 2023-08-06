@@ -1,0 +1,14 @@
+.gitignore
+.travis.yml
+LICENSE
+README.md
+requirements.txt
+setup.py
+test_yamlargs.py
+yamlargs/__init__.py
+yamlargs/yamlargs.py
+yamlargs.egg-info/PKG-INFO
+yamlargs.egg-info/SOURCES.txt
+yamlargs.egg-info/dependency_links.txt
+yamlargs.egg-info/requires.txt
+yamlargs.egg-info/top_level.txt
