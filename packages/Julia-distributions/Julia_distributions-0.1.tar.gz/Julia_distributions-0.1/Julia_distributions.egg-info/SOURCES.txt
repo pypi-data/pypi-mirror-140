@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+Julia_distributions/Binomialdistribution.py
+Julia_distributions/Gaussiandistribution.py
+Julia_distributions/Generaldistribution.py
+Julia_distributions/__init__.py
+Julia_distributions.egg-info/PKG-INFO
+Julia_distributions.egg-info/SOURCES.txt
+Julia_distributions.egg-info/dependency_links.txt
+Julia_distributions.egg-info/not-zip-safe
+Julia_distributions.egg-info/top_level.txt
