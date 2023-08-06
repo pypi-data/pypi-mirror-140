@@ -1,0 +1,2 @@
+[console_scripts]
+soda = sodasql.__main__:main
