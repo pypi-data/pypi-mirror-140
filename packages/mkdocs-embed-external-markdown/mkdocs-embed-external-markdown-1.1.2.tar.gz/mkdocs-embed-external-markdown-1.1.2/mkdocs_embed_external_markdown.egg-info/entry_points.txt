@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+external-markdown = external_markdown.plugin:ExternalMarkdown
+
