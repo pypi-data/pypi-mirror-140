@@ -1,0 +1,4 @@
+numpy>=1.9
+
+[test]
+scipy>=1.6.3
