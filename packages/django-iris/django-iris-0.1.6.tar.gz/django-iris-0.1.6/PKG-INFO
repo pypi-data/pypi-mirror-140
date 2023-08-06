@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: django-iris
+Version: 0.1.6
+Summary: Django backend for InterSystems IRIS
+Home-page: https://github.com/caretdev/django-iris
+Maintainer: CaretDev
+Maintainer-email: dmitry@caretdev.com
+License: MIT
+Project-URL: Source, https://github.com/caretdev/django-iris
+Project-URL: Tracker, https://github.com/caretdev/django-iris/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+django-iris
+===
+
+InterSystems IRIS backend for [Django](https://www.djangoproject.com/)
+
+Prerequisites
+---
+
+You must install, the latest version of InterSystems IRIS DB-API Python driver
+
+```shell
+pip3 install intersystems_irispython-3.2.0-py3-none-any.whl
+```
+
+Install and usage
+---
+
+Install with pip
+
+`pip install django-iris`
+
+Configure the Django `DATABASES` setting similar to this:
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django_iris',
+        'NAME': 'USER',
+        'USER': '_SYSTEM',
+        'PASSWORD': 'SYS',
+        'HOST': 'localhost',
+        'PORT': '1972',
+    },
+}
+```
+
+
