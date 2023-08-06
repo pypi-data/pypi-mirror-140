@@ -1,0 +1,13 @@
+formfyxer/__init__.py,sha256=f-TqwkqrrqZ8IW04mmNHxGQLxMo55Tspn_s3WVavJb0,57
+formfyxer/lit_explorer.py,sha256=_0_6bOp0byIpb4vK3k9wvK7sh9M48Wma9cfgxaAm-mM,17405
+formfyxer/pdf_wrangling.py,sha256=etjM9pdC4IyLiMyelCOxTgeuXlhe12Cp0YFqeJwbymA,20959
+formfyxer/data/clf_field_names.joblib,sha256=dSxKsCJU8IiufeXxxIAL32vZXTa3uoI-eFe_rjvZ-Dk,1246483
+formfyxer/data/groups.joblib,sha256=XNN4RDH3OKJ6RTFEp9HfDg-kJd7p_V2Yx0DQpFlwzKM,23
+formfyxer/data/included_fields.joblib,sha256=_y6IxUFeyxFcHFkjSS3lzZVrfY0yrcFiSnAI_2fXSnc,354
+formfyxer/data/jurisdictions.joblib,sha256=XNN4RDH3OKJ6RTFEp9HfDg-kJd7p_V2Yx0DQpFlwzKM,23
+formfyxer/keys/spot_token.txt,sha256=3mEx7wYWC_BtQj93lJT7To9csHvHq8ChTMBbhb6-KqI,30
+formfyxer-0.0.6.dist-info/LICENSE,sha256=kMZ-_AEUinrnUsTB8uJ8i3DOFp1jlHLWFrIeA3Dc-Uc,1092
+formfyxer-0.0.6.dist-info/METADATA,sha256=SpCHBAxvj8Ixovv1k0pya2Q0FAzJJe-ujjECLGGemSk,26879
+formfyxer-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+formfyxer-0.0.6.dist-info/top_level.txt,sha256=H4GeXvqKzI3NKJydFTrmmXAz2li_12F0nPdrBI9OG30,10
+formfyxer-0.0.6.dist-info/RECORD,,
