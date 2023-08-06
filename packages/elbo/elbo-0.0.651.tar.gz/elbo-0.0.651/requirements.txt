@@ -1,0 +1,15 @@
+click
+pyyaml
+coloredlogs
+shortuuid
+better_profanity
+requests
+halo
+inquirer
+setuptools>=42
+wheel
+tinynetrc
+tabulate
+python-dateutil
+pandas
+questionary
