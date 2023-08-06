@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Topsis-Ujjwal-101916067
+Version: 1.2
+Summary: Comparing the models based on TOPSIS
+Author: Ujjwal Madaan
+Author-email: madaan.ujjwal05@gmail.com
+License: UNKNOWN
+Keywords: ML,Models,Compare,Performance
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+It takes csv file with the model information, weights, impacts as input and returns the ranking of the model based on the certain algorithm.
+
