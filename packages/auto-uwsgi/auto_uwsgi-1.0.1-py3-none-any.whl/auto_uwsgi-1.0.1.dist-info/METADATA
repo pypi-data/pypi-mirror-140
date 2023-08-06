@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: auto-uwsgi
+Version: 1.0.1
+Summary: Auto deploy django project on linux using nginx and uwsgi
+Home-page: https://github.com/nghiemIUH/auto-uwsgi
+Author: Van Nghiem
+Author-email: vannghiem848@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: uwsgi
+
+# Auto deploy Django project
+
+## Install:
+
+    pip install auto-uwsgi
+
+## Using
+
+```python
+>>> from auto_uwsgi import Deployment
+>>> deploy = Deployment(
+    '<username>',
+    '<path to project>',
+    '<path to virtual environment>',
+    '<domain name or ip>'
+)
+>>> deploy.start()
+```
+
+### Change setting
+
+```python
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
+
+## Example
+
+```python
+>>> from auto_uwsgi import Deployment
+>>> deploy = Deployment(
+    'nghiem',
+    '/home/nghiem/auto-uwsgi/tests/projecttest',
+    '/home/nghiem/auto-uwsgi/tests/venv',
+    '192.168.0.105'
+)
+>>> deploy.start()
+```
+
+
