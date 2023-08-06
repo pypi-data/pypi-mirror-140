@@ -1,0 +1,15 @@
+SharedData/Logger.py,sha256=stOIGfAwTfaxHLh7yDZhuotQ5QF2FTspznK4LIXLZJo,4245
+SharedData/Metadata.py,sha256=BiwvTBHLxJsNrR6UNpb-BhJ6ErATCo51xf9xDtN4JiQ,6633
+SharedData/SharedData.py,sha256=pk-PaNwZpFwAXlalm56WAgn8NDeTbpC5NyNYVK-eTAM,2595
+SharedData/SharedDataAWSKinesis.py,sha256=TK66l0xbVsYiSo_6t0c3PIzQgLlKbLjDwhsM5AB96Rs,10777
+SharedData/SharedDataAWSS3.py,sha256=3lFIlTPH7ZFhHy-vBTaAmrL7We3s9qvRMt3h8YWU8dI,5196
+SharedData/SharedDataFeeder.py,sha256=HVdtRTh3ulcpPtpcCd6M0XCLQ3IsDVjD5zg6oIGI6GU,1322
+SharedData/SharedDataFrame.py,sha256=h_nzAd3gN1TGhwyKnZOmfwah0K7ubvSKwdRw9fLUHw4,9301
+SharedData/SharedDataPeriod.py,sha256=fgiKtUC1FbutIGW8s4iz5A2MHKUojE97F00_A-x4SaQ,4972
+SharedData/SharedDataTimeSeries.py,sha256=O1DGUHZQfZb7YUIEAPH7Kp5kQU34ioVczyQZjwJBlw4,13639
+SharedData/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shareddata-0.0.25.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+shareddata-0.0.25.dist-info/METADATA,sha256=_GiTgllJBrb3wpweYVCF1HEaV4qqDMTw6iOb2HtShF0,2753
+shareddata-0.0.25.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shareddata-0.0.25.dist-info/top_level.txt,sha256=fu_DSyp80di-5H_iW3_0AlykF0kSwbFUoPawGY8QQfM,11
+shareddata-0.0.25.dist-info/RECORD,,
