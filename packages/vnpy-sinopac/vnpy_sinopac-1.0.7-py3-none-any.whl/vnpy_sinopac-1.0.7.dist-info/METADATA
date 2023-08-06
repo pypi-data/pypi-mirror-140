@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vnpy-sinopac
+Version: 1.0.7
+Summary: The best trading API - Shioaji gateway with VNPY.
+License: MIT
+Author: ypochien
+Requires-Python: >=3.7,<3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: colors
+Provides-Extra: pipfile_deprecated_finder
+Provides-Extra: plugins
+Provides-Extra: requirements_deprecated_finder
+Requires-Dist: shioaji (>=0.3.4-alpha.1,<0.4.0)
