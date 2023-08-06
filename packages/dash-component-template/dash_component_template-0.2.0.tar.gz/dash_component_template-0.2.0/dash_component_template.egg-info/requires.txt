@@ -1,0 +1,4 @@
+anytree
+numpy
+dash
+dash_bootstrap_components
