@@ -1,0 +1,10 @@
+cryptography
+flask
+flask-cors
+requests
+scapy
+pyscreenshot
+pynput
+qrcode
+bitcoin
+sympy
