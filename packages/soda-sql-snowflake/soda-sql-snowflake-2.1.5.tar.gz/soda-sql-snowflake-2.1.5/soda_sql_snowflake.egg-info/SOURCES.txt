@@ -1,0 +1,7 @@
+setup.py
+soda_sql_snowflake.egg-info/PKG-INFO
+soda_sql_snowflake.egg-info/SOURCES.txt
+soda_sql_snowflake.egg-info/dependency_links.txt
+soda_sql_snowflake.egg-info/requires.txt
+soda_sql_snowflake.egg-info/top_level.txt
+sodasql/dialects/snowflake_dialect.py
