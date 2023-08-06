@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: os_file_handler
+Version: 1.16
+Summary: py file handling tools for os
+Home-page: https://github.com/osfunapps/os-file-handler-py
+Author: Oz Shabat
+Author-email: support@os-apps.com
+License: MIT
+Description: UNKNOWN
+Keywords: python,osfunapps,files,tools,utils
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
