@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+Cip_library/__init__.py
+Cip_library.egg-info/PKG-INFO
+Cip_library.egg-info/SOURCES.txt
+Cip_library.egg-info/dependency_links.txt
+Cip_library.egg-info/requires.txt
+Cip_library.egg-info/top_level.txt
+Cip_library/pack_a/__init__.py
+Cip_library/pack_a/find_index.py
+Cip_library/pack_b/__init__.py
+Cip_library/pack_b/my_factorial.py

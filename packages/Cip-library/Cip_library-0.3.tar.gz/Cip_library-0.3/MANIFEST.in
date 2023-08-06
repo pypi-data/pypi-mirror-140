@@ -1,0 +1,3 @@
+include README.md
+
+include "docs/doc.txt" #or other files that are not with python extension
