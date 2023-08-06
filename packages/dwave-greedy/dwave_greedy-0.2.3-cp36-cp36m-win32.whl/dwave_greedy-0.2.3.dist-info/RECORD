@@ -1,0 +1,14 @@
+greedy/__init__.py,sha256=NH78_HtEp2hmFMOBu96r9OEXxXz18S4lA8pBiheU81Y,3284
+greedy/composite.py,sha256=ZEXWIx-e2V8b2kZsPsH9PigniFw3mj9ys2uLThOMK58,2993
+greedy/decl.pxd,sha256=Tq1gE738rBEhI8vn1r22ED6NpkVN9MyHTZ0bQfEBwRE,1073
+greedy/descent.cp36-win32.pyd,sha256=6BAzFVQpLMyXYjkQKoLh6aJ1EXfIk9aP_r7bmetyBHQ,136192
+greedy/descent.cpp,sha256=Bm82jVYUl_ZuF95fuzUpgkDkZ1tvqSUeBGhbEwQF-NQ,875993
+greedy/descent.pyx,sha256=IXk4DmCKP7pT01oqU5_2Oju0ptv1z6xkjQ0BElvM_KE,4412
+greedy/sampler.py,sha256=gjbVcGzijhOg8o1EpaXX-fKaeJF2pFylRbJSnpfEKgs,11049
+greedy/src/descent.cpp,sha256=uWeP4oXciqJlCxIJJZ15rQSzQIS7oqirAY4qQFVTrg4,16047
+greedy/src/descent.h,sha256=XOxf6qIeNTDT8KI4jYbH6zf6lhlysOC9mM9MSDR_KaQ,1873
+dwave_greedy-0.2.3.dist-info/LICENSE,sha256=XzTDHQjZ4xLxxJdo-PmY2omX9TYSG8-XTf3-J7wgfgI,11562
+dwave_greedy-0.2.3.dist-info/METADATA,sha256=X-5o8ynKuxqRPcTxPoICzBNfuNKAUe8NbId1grM48Ys,5040
+dwave_greedy-0.2.3.dist-info/WHEEL,sha256=ZX-iFFGFiHZRWPwXowAnONYwAL2TBxDHVbhC1HaSV9Q,97
+dwave_greedy-0.2.3.dist-info/top_level.txt,sha256=KYAvvuWLnjV5NafMWS71O7pnSJj7RZU6gWFwc-w-GjA,7
+dwave_greedy-0.2.3.dist-info/RECORD,,
