@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: 1Q847
+Version: 0.6.0
+Summary: 模拟操作
+Home-page: https://github.com/qxt514657/
+Author: 1Q847
+Author-email: 976671673@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: pywin32
+Requires-Dist: comtypes
+
+UNKNOWN
+
