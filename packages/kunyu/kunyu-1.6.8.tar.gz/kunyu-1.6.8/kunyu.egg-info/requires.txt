@@ -1,0 +1,12 @@
+mmh3
+pyyaml==5.3.1
+requests
+tld
+xlwt
+grequests==0.6.0
+rich==11.0.0
+python-nmap==0.7.1
+colorama
+pocsuite3
+colorlog
+setuptools

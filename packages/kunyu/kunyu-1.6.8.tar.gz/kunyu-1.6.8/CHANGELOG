@@ -1,0 +1,73 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+
+## [v1.6.5] - 2021-2-25
+### Added
+- Added The retrieval results were scanned for viability
+- Fixed some module incompatibilities
+
+## [v1.6.4] - 2021-1-4
+### Added
+- Added "show rule"/"show config" command
+- Added the function of loading fingerprint files externally
+
+## [v1.6.2] - 2021-12-11
+### Added
+- Add the function of creating asset distribution map
+- Optimized the dependency package version
+- Added the configuration of hosts crash Serverless scan
+
+## [v1.6.1] - 2021-11-20
+### Added
+- Optimized the issue of CTRL+C exiting the program when executing system commands
+- The stype parameter is added, and the data type can be set to IPV4 or IPV6
+- Added the views command to get the original information of the SSL certificate [views]
+
+## [v1.6] - 2021-11-12
+### Added
+- Brand new style heading
+- Add Custom timeout options [timeout]
+- Add Raw data sensitive information matching [SearchKeyWord]
+- Added a command to view the output information banner information [view]
+- Optimized the abnormal launching program mechanism
+- Optimized the field information output by the info command
+- Support the execution of system commands
+- Optimized the host collision mechanism
+- Optimized the problem of incomplete information display on the mac system
+
+
+## [v1.5] - 2021-10-20
+### Added 
+- Optimized the HOSTS collision function
+- Add HOSTS collision cross collision function
+- Increase the output file path customization function
+
+## [v1.4] - 2021-9-4
+### Added 
+- Modify the POC storage directory of the pocsuite module
+- Add HOST collision function
+- Example Change the output result set LAT and LON to Update time
+- Refactor part of the code
+
+## [v1.3] - 2021-8-12
+### Added 
+- Calculate hex/base64/mmh3/md5 	Command : [EncodeHash] 
+- Optimized the problem of red font garbled output in the terminal
+- Added public method of encode function
+- Support calling pocsuite components
+
+## [v1.2] - 2021-8-2
+### Added
+- optimizedthe problem of outputting an empty table when no data is returned
+- optimized  the problem that no data is returned when the number of parameters in the page is exceeded
+- update Use mmh3 encoding when querying iconhash
+- add Output the current icon query statement
+- update User credentials are saved as hidden files
+
+## [v1.1] - 2021-7-13
+### Added
+- Initialize project
