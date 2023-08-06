@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: feat-ml
+Version: 0.5.2
+Summary: A Feature Engineering Automation Tool
+Home-page: https://cavalab.org/feat
+Author: William La Cava
+Author-email: williamlacava@gmail.com
+License: GNU/GPLv3
+Download-URL: https://github.com/cavalab/feat/releases/tag/0.5.2
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
