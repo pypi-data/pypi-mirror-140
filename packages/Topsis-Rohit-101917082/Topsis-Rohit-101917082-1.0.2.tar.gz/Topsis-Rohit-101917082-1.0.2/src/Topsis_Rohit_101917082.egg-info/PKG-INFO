@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Topsis-Rohit-101917082
+Version: 1.0.2
+Summary: It calculates topsis score of the data
+Home-page: https://github.com/Rohit-singla-2310/Topsis-Rohit-101917082
+Author: Rohit Singla
+Author-email: rsingla_be19@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Topsis-Rohit-101917082
+It takes a data and calculates its topsis score
+
+## Installation
+```pip install Topsis-Rohit-101917082```
+
+## License
+
+Â© 2022 Rohit Singla
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
