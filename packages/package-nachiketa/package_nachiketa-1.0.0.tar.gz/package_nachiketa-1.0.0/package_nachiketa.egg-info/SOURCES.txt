@@ -1,0 +1,7 @@
+Licence.txt
+setup.py
+package_nachiketa/__init__.py
+package_nachiketa.egg-info/PKG-INFO
+package_nachiketa.egg-info/SOURCES.txt
+package_nachiketa.egg-info/dependency_links.txt
+package_nachiketa.egg-info/top_level.txt
