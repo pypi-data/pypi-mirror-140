@@ -1,0 +1,9 @@
+torch
+numpy
+scipy
+pyro-ppl
+tqdm
+matplotlib
+netCDF4
+xarray
+xarray[io]
