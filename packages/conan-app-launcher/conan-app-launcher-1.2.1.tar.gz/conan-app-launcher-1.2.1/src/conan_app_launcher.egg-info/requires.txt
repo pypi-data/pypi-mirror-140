@@ -1,0 +1,30 @@
+PyQt5>=5.13.0
+conan<2,>=1.24
+jsonschema>=3.2.0
+packaging
+Jinja2>=2.3
+
+[:python_version < "3.7"]
+dataclasses>=0.8
+
+[:python_version < "3.8"]
+importlib-metadata>=4.8.2
+typing-extensions>=3.10.0.2
+
+[dev]
+autopep8
+rope
+debugpy
+PyQt5-stubs
+pytest==6.2.5
+pytest-cov==3.0.0
+pytest-mock==3.6.1
+pytest-qt==4.0.2
+psutil
+
+[test]
+pytest==6.2.5
+pytest-cov==3.0.0
+pytest-mock==3.6.1
+pytest-qt==4.0.2
+psutil
