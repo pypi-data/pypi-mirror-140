@@ -1,0 +1,3 @@
+[console_scripts]
+htrest = htrest.__main__:main
+
