@@ -1,0 +1,4 @@
+[console_scripts]
+run=sensorpi.__main__:main_with_prompt
+sensorpi=sensorpi.__main__:main_with_prompt
+
