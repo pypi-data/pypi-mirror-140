@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    odoo-fr-mapper=odoo_fast_report_mapper.odoo_fast_report_mapper:start_odoo_fast_report_mapper
+    
