@@ -1,0 +1,13 @@
+README.md
+setup.py
+foundrydeploy/__init__.py
+foundrydeploy/__main__.py
+foundrydeploy/const.py
+foundrydeploy/deployer.py
+foundrydeploy/log.py
+foundrydeploy/parser.py
+foundrydeploy.egg-info/PKG-INFO
+foundrydeploy.egg-info/SOURCES.txt
+foundrydeploy.egg-info/dependency_links.txt
+foundrydeploy.egg-info/requires.txt
+foundrydeploy.egg-info/top_level.txt
