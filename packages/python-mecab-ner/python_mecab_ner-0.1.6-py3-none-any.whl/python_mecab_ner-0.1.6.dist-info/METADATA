@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: python-mecab-ner
+Version: 0.1.6
+Summary: Test package for distribution
+Home-page: https://github.com/YoungchanChang/python-mecab-ner
+Download-URL: 
+Author: Youngchan
+Author-email: youngchanchatbot@gmail.com
+License: UNKNOWN
+Keywords: Text Processing,Text Processing :: Linguistic,NER,mecab,mecab-ko,mecab-ner
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: Korean
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pybind11 (~=2.0)
+Requires-Dist: python-mecab-ko (~=1.0.12)
+
+# mecab_ner
+
+## Table of Contents
+  * [Installation](#installation)
+  * [Quick start](#quick-start)
+  * [Features](#features)
+  
+## Installation
+
+Download using pip via pypi.
+
+```bash
+$ pip install 'python-mecab-ner' --upgrade
+```
+(Mac/homebrew users may need to use ``pip3``)
+
+
+## A Simple Example
+```python
+from python_mecab_ner.mecab_ner import MecabNer
+
+mecab_ner = MecabNer()
+test_sentence = "아이묭 노래 들으면서 신촌 제철 딸기랑 거봉 감이 먹고 싶어"
+print(mecab_ner.parse(test_sentence))
+print(mecab_ner.morphs(test_sentence))
+['아이묭', '노래', '들으면서', '들으면서', '신촌 제철 딸기', '랑', '거봉 감', '이', '먹', '고', '싶', '어']
+
+mecab_ner.ners(test_sentence)
+# [('아이묭', 'music_singer', '가수'), ('신촌 제철 딸기', 'fruit', '과일'), ('거봉 감', 'fruit', '과일')]
+```
+
+##
+
+
+## Features
+  * Python library to get NER using Mecab
+
