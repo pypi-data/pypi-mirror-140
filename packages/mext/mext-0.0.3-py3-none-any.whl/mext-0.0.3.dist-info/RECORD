@@ -1,0 +1,9 @@
+mext/__init__.py,sha256=6oWWgyOD8D3IhwyAH6LJ_aN-4sO6wBL-E8H-wQkhci8,930
+mext/provider_template.py,sha256=lAn9y174Nwq5D_ZVLNe9vBKGs4Y60zQUMTTC2h158rs,661
+mext/providers/__init__.py,sha256=oaMpB9hvCdsDi6Z6cAwxdOq0QeuEvkYfi2MWWOldQlw,68
+mext/providers/mangadex_org.py,sha256=ABarEXUwmQtHeDH0692ku6aisH3HSPOiE7use5AFi4g,15269
+mext-0.0.3.dist-info/LICENSE,sha256=jTAFsbYUtkGqG1kLseTqKJ4vvuvqVyD8WGqYG7Wvb9E,1546
+mext-0.0.3.dist-info/METADATA,sha256=j-LTfuoQyuzBpLgQi1k98xXCKibH7yAOn1gCmZ9Rcu0,2720
+mext-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mext-0.0.3.dist-info/top_level.txt,sha256=O4ynki6Q7QqBqsGqo9GFKi5mJ-J_p-5LqWTZsy6eKMY,5
+mext-0.0.3.dist-info/RECORD,,
