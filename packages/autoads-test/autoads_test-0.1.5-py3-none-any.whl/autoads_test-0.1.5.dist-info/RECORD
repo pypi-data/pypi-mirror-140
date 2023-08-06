@@ -1,0 +1,9 @@
+autoads/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoads/client.py,sha256=K6juLvrkmsmjYJCbYgLwic0Ho5o1kfLbO8mNFkimUVM,1119
+autoads/gads.py,sha256=QhYDV8_MfYgr7DKbrC-h6XFFN0mru8RIdF9bbxloI80,24564
+autoads/keywords.py,sha256=Bk_0xOVxm1YSZL1YCwhlOJw6vl6LH5Y4UUrBVeYkVdo,24187
+autoads/models.py,sha256=vvSl7oEeBM4SzgNFFoZRAjQD9qp2xDvEXdA73i5KO4U,2794
+autoads_test-0.1.5.dist-info/METADATA,sha256=lUAgNiyH847oCd-qLhDvb2_W4oCsr1jkoX1YopyZpi4,546
+autoads_test-0.1.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+autoads_test-0.1.5.dist-info/top_level.txt,sha256=6Hkesb114rQzBCL7fBiOBt4qzBpnX_IloSC2ASK7RQc,8
+autoads_test-0.1.5.dist-info/RECORD,,
