@@ -1,0 +1,13 @@
+global-exclude *.py[cod]
+prune __pycache__
+prune requirements
+prune tests
+exclude .editorconfig
+exclude .pre-commit-config.yaml
+exclude tox.ini
+include HISTORY.rst
+include img/*.png
+include LICENSE
+include pyproject.toml
+include README.rst
+include src/*/py.typed
