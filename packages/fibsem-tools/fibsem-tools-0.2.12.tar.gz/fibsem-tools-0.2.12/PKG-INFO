@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fibsem-tools
+Version: 0.2.12
+Summary: Tools for processing FIBSEM datasets
+License: MIT
+Author: Davis Vann Bennett
+Author-email: davis.v.bennett@gmail.com
+Requires-Python: >=3.7.1,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: backoff (>=1.10.0,<2.0.0)
+Requires-Dist: dacite (>=1.6.0,<2.0.0)
+Requires-Dist: dask-jobqueue (==0.7.3)
+Requires-Dist: distributed (>=2021.10.0)
+Requires-Dist: fsspec (>=2022.2.0,<2023.0.0)
+Requires-Dist: h5py (>=3.1.0,<4.0.0)
+Requires-Dist: mrcfile (>=1.2.0,<2.0.0)
+Requires-Dist: numpy (>=1.20.0,<2.0.0)
+Requires-Dist: pandas (>=1.2.3,<2.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: s3fs (>=2022.2.0,<2023.0.0)
+Requires-Dist: tensorstore (>=0.1.8,<0.2.0)
+Requires-Dist: xarray (>=0.20.0,<0.21.0)
+Requires-Dist: xarray-multiscale (>=0.3.0,<0.4.0)
+Requires-Dist: zarr (>=2.10.3,<3.0.0)
