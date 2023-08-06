@@ -1,0 +1,10 @@
+aiohttp
+requests
+
+[dev]
+sphinx
+sphinx-press-theme
+black
+
+[voice]
+PyNaCl
