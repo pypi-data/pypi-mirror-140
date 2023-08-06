@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/functional_extensions/__init__.py
+src/functional_extensions/fe.py
+src/functional_extensions/prototyping.py
+src/functional_extensions/tests.py
+src/funext.egg-info/PKG-INFO
+src/funext.egg-info/SOURCES.txt
+src/funext.egg-info/dependency_links.txt
+src/funext.egg-info/requires.txt
+src/funext.egg-info/top_level.txt
