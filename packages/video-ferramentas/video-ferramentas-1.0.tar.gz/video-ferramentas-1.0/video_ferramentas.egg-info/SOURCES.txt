@@ -1,0 +1,9 @@
+README.md
+setup.py
+video_ferramentas/__init__.py
+video_ferramentas/camera.py
+video_ferramentas/video.py
+video_ferramentas.egg-info/PKG-INFO
+video_ferramentas.egg-info/SOURCES.txt
+video_ferramentas.egg-info/dependency_links.txt
+video_ferramentas.egg-info/top_level.txt
