@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Topsis-Jayant-401903026
+Version: 0.0.2
+Summary: TOPSIS ASSIGNMENT BY PS RANA
+Author: Jayant
+Author-email: jnarayan_bemba19@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+THIS IS A WORK OF ART BY JAYANT NARAYAN FOR P.S. RANA AS TOPSIS ASSIGNMENT 4 
+TO INSTALL THIS INTO PC:
+pip install Topsis-Jayant-401903026==0.0.2
+
+TO RUN IN CMD:
+
+python <program.py> <InputDataFile> <Weights> <Impacts> <ResultFileName>
+
+
+
