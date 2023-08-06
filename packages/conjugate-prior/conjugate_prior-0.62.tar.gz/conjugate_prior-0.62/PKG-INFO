@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: conjugate_prior
+Version: 0.62
+Summary: Bayesian Statistics conjugate prior distributions
+Home-page: https://github.com/urigoren/conjugate_prior
+Author: Uri Goren
+Author-email: uri@goren.ml
+License: UNKNOWN
+Keywords: conjugate,bayesian,stats,statistics,bayes,distribution,probability,hypothesis,modelling,thompson sampling
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+https://github.com/urigoren/conjugate_prior/blob/master/README.md
+
