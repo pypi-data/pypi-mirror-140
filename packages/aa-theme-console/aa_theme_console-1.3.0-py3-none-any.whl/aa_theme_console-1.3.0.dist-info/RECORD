@@ -1,0 +1,12 @@
+aa_theme_console/__init__.py,sha256=jPdIheRslg4GgAAbTD54IO3e3oE5Mf2DXG-qQ3nD6j4,73
+aa_theme_console/apps.py,sha256=QnnYVa3yUhNPO4imvhzP8gRPchDklVGFS-WSabXKmDM,304
+aa_theme_console/images/aa-theme-console.jpg,sha256=PBwPW8_9-li0QiRh9l140t5mXIN0BuxgeALSniYxrZk,196514
+aa_theme_console/static/aa_theme_console/css/aa-theme-console.css,sha256=sE2h1QLtsI0dnPeeArE3sVnOSFSWFjgbxqI-teufeZ4,1847
+aa_theme_console/static/aa_theme_console/css/aa-theme-console.min.css,sha256=fHd7EcceDPO0vBVnOd1i-1dc_mBbmFqb77ekeekcCOM,878
+aa_theme_console/templates/allianceauth/base.html,sha256=c49UxOIyni5tcfbQELOmtIXpCGzx3nwglDMmGdsZk9M,2953
+aa_theme_console/templates/corpstat/corpstats.html,sha256=AWL3OiTze0QC27OslLDcoBmZ-SHhD-TnuvrjssRpLik,30531
+aa_theme_console-1.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aa_theme_console-1.3.0.dist-info/METADATA,sha256=uvPZgW0LrHNN-wCXS8yqNdRKT_1fqDSSk93Zv-G4uiY,2256
+aa_theme_console-1.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aa_theme_console-1.3.0.dist-info/top_level.txt,sha256=aDM_0-cSX0tgjQzUqvb4UeNFs1P-NTNRoEMS8n7o_F4,17
+aa_theme_console-1.3.0.dist-info/RECORD,,
