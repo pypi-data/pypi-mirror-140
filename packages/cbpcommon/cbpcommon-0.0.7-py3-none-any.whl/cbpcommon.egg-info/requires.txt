@@ -1,0 +1,5 @@
+avro==1.11.0
+confluent_kafka==1.8.2
+setuptools>=60.9.0
+elasticsearch~=7.16.3
+jsonpickle
