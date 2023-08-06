@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% if not user.mfa_enabled and user.compute_groups() != user.compute_groups(ignore_mfa=True) %}
+<div class="alert alert-warning" role="alert">
+	{{_("Some permissions require you to setup two-factor authentication.
+	These permissions are not in effect until you do that.")}}
+</div>
+{% endif %}
+
+<div class="row">
+	<div class="col-12 col-md-5">
+		<h5>{{_("Profile")}}</h5>
+		<p>{{_("Your profile information is used by all services that are integrated into the Single-Sign-On. Your e-mail address is also used for password recovery.")}}</p>
+		<p>{{_("Changes may take serveral minutes to be visible in all services.")}}</p>
+	</div>
+	<div class="col-12 col-md-7">
+		<form class="form" action="{{ url_for("selfservice.update_profile") }}" method="POST">
+			<div class="form-group">
+				<label>{{_("Login Name")}}</label>
+				<input type="text" class="form-control" value="{{ user.loginname }}" readonly>
+			</div>
+			<div class="form-group">
+				<label>{{_("Display Name")}}</label>
+				<input type="text" class="form-control" id="user-displayname" name="displayname" value="{{ user.displayname }}">
+			</div>
+			<div class="form-group">
+				<label>{{_("E-Mail Address")}}</label>
+				<input type="email" class="form-control" id="user-mail" name="mail" value="{{ user.mail }}" required>
+				<small class="form-text text-muted">
+					{{_("We will send you a confirmation mail to this address if you change it")}}
+				</small>
+			</div>
+			<button type="submit" class="btn btn-primary btn-block">{{_("Update Profile")}}</button>
+		</form>
+	</div>
+</div>
+
+<hr>
+
+<div class="row mt-3">
+	<div class="col-12 col-md-5">
+		<h5>{{_("Password")}}</h5>
+		<p>{{_("Your login password for the Single-Sign-On. Only enter it on the Single-Sign-On login page! No other legit websites will ask you for this password. We do not ever need your password to assist you.")}}</p>
+	</div>
+	<div class="col-12 col-md-7">
+		<form class="form" action="{{ url_for("selfservice.change_password") }}" method="POST">
+			<div class="form-group">
+				<input type="password" class="form-control" id="user-password1" name="password1" placeholder="{{_("New Password")}}" minlength={{ User.PASSWORD_MINLEN }} maxlength={{ User.PASSWORD_MAXLEN }} pattern="{{ User.PASSWORD_REGEX }}" required>
+				<small class="form-text text-muted">
+					{{ User.PASSWORD_DESCRIPTION|safe }}
+				</small>
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" id="user-password2" name="password2" placeholder="{{_("Repeat Password")}}" required>
+			</div>
+			<button type="submit" class="btn btn-primary btn-block">{{_("Change Password")}}</button>
+		</form>
+	</div>
+</div>
+
+<hr>
+
+<div class="row mt-3">
+	<div class="col-12 col-md-5">
+		<h5>{{_("Two-Factor Authentication")}}</h5>
+		<p>{{_("Setting up Two-Factor Authentication (2FA) adds an additional step to the Single-Sign-On login and increases the security of your account significantly.")}}</p>
+	</div>
+	<div class="col-12 col-md-7">
+		<p>
+			{% if user.mfa_enabled %}
+			{{ _("Two-factor authentication is currently <strong>enabled</strong>.")|safe }}
+			{% else %}
+			{{ _("Two-factor authentication is currently <strong>disabled</strong>.")|safe }}
+			{% endif %}
+		</p>
+		<a class="btn btn-primary btn-block" href="{{ url_for('mfa.setup') }}">{{_("Manage two-factor authentication")}}</a>
+	</div>
+</div>
+
+<hr>
+
+<div class="row mt-3">
+	<div class="col-12 col-md-5">
+		<h5>{{_("Roles")}}</h5>
+		<p>{{_("Aside from a set of base permissions, your roles determine the permissions of your account.")}}</p>
+		{% if config['SERVICES'] %}
+		<p>{{_("See <a href=\"%(services_url)s\">Services</a> for an overview of your current permissions.", services_url=url_for('service.overview'))}}</p>
+		{% endif %}
+	</div>
+	<div class="col-12 col-md-7">
+		<p>{{_("Administrators and role moderators can invite you to new roles.")}}</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">{{_("Name")}}</th>
+					<th scope="col">{{_("Description")}}</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for role in user.roles|sort(attribute='name') %}
+				<tr>
+					<td>{{ role.name }}
+						{% if not user.mfa_enabled and role.groups.values()|selectattr('requires_mfa')|list %}
+						<i class="fas fa-exclamation-triangle text-warning" title="{{_("Some permissions in this role require you to setup two-factor authentication")}}"></i>
+						{% endif %}
+					</td>
+					<td>{{ role.description }}</td>
+					<td>
+						<form action="{{ url_for("selfservice.leave_role", roleid=role.id) }}" method="POST" onsubmit='return confirm({{_("Are you sure?")|tojson|e}});'>
+							<button type="submit" class="btn btn-sm btn-danger float-right">{{_("Leave")}}</button>
+						</form>
+					</td>
+				</tr>
+				{% endfor %}
+				{% if not user.roles %}
+				<tr class="table-secondary">
+					<td colspan=3 class="text-center">{{_("You currently don't have any roles")}}</td>
+				</tr>
+				{% endif %}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+{% endblock %}

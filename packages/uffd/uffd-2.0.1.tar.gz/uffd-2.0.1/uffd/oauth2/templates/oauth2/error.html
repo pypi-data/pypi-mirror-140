@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>OAuth2.0 Authorization Error</h1>
+<p><b>Error: {{ error }}</b> {{ '(' + error_description + ')' if error_description else '' }}</p>
+
+<hr>
+
+<p>OAuth2.0 Server URLs:</p>
+<ul>
+	<li>{{ url_for('oauth2.authorize', _external=True) }}</li>
+	<li>{{ url_for('oauth2.token', _external=True) }}</li>
+	<li>{{ url_for('oauth2.userinfo', _external=True) }}</li>
+</ul>
+
+{% endblock %}
