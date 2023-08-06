@@ -1,0 +1,40 @@
+#python cache files
+*.pyc
+__pycache__/
+data/
+
+#log files
+tests.log
+
+#test type file
+test-type.txt
+
+#copy settings
+CopySettings.json
+# Ignore data
+*.csv
+*.wav
+# Unignore default audio
+!mcvqoe/psud/audio_clips/set1/*.wav
+!mcvqoe/psud/audio_clips/set1/*.csv
+!mcvqoe/psud/audio_clips/set2/*.wav
+!mcvqoe/psud/audio_clips/set2/*.csv
+!mcvqoe/psud/audio_clips/set3/*.wav
+!mcvqoe/psud/audio_clips/set3/*.csv
+!mcvqoe/psud/audio_clips/set4/*.wav
+!mcvqoe/psud/audio_clips/set4/*.csv
+# Unignore test csvs
+!tests/test_data/reference/*.csv
+
+# Ignore version file
+mcvqoe/psud/version.py
+
+#ignore egg info
+mcvqoe_psud.egg-info/
+
+#build and dist directories
+build/
+dist/
+
+# Ignore eggs
+.eggs/
