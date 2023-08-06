@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pyndamics3
+Version: 0.0.29
+Summary: Python Numerical Dynamics Simulator
+Home-page: https://github.com/bblais/pyndamics3/tree/master/
+Author: Brian Blais
+Author-email: bblais@bryant.edu
+License: Apache Software License 2.0
+Keywords: python,dynamics,ode,systems
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: emcee
+Requires-Dist: lmfit
+Requires-Dist: numdifftools
+Requires-Dist: numba
+Requires-Dist: tqdm
+
+# Pyndamics3
+> An Update of the Python Numerical Dynamics library pyndamics
+
+
+This file will become your README and also the index of your documentation.
+
+## Install
+
+`pip install pyndamics3`
+
+## How to use
+
+Some simple examples.
+
+```python
+from pyndamics3 import Simulation
+```
+
+    pyndamics3  version  0.0.2
+
+
+```python
+sim=Simulation()
+sim.add("p'=a*p*(1-p/K)",1,plot=True)
+sim.params(a=1,K=50)
+sim.run(50)
+```
+
+
+![png](docs/images/output_6_0.png)
+
+
+
+    <Figure size 432x288 with 0 Axes>
+
+
+
