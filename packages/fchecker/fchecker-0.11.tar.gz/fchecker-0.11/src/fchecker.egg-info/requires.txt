@@ -1,0 +1,6 @@
+fexception==0.3.13
+
+[testing]
+setuptools
+pytest
+pytest-cov
