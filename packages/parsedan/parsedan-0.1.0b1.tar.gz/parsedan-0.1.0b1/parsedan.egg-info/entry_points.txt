@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        parsedan=parsedan.__main__:cli
+    
