@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: harzvatool
+Version: 2.5
+Summary: harzva's package
+Home-page: https://github.com/Harzva/harzvatool/
+Author: harzva
+Author-email: 626609967@qq.com
+License: Apache License v1
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: torch
+
+
+[harzvatool](https://github.com/Harzva/harzvatool/)
+torch and will requirement no need to have torch
+to write your content.
+
+python setup.py sdist bdist_wheel  
+
+python -m twine upload dist/*
+
+python -m twine upload --repository testpypi dist/*
+
+
+
