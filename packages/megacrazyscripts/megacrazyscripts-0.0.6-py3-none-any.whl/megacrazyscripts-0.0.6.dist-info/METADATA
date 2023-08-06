@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: megacrazyscripts
+Version: 0.0.6
+Summary: Various scripts from justcow.
+Home-page: UNKNOWN
+Author: JustCow
+Author-email: <justcow@pm.me>
+License: UNKNOWN
+Keywords: python,video,audio,youtubedl,justcow
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: ffmpeg-python
+Requires-Dist: pedalboard
+Requires-Dist: youtube-dl
+Requires-Dist: pillow
+
+UNKNOWN
+
