@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+torchsort/__init__.py
+torchsort/isotonic_cpu.cpp
+torchsort/isotonic_cuda.cu
+torchsort/ops.py
+torchsort.egg-info/PKG-INFO
+torchsort.egg-info/SOURCES.txt
+torchsort.egg-info/dependency_links.txt
+torchsort.egg-info/requires.txt
+torchsort.egg-info/top_level.txt
