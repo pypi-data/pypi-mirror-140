@@ -1,0 +1,15 @@
+drf_fields_limiting/__init__.py,sha256=TI4IbIdPjVgdx0rAvV4foU1A2XlfJ9ZvNbJrWVECCRQ,53
+drf_fields_limiting/constants.py,sha256=xf38Z8tbCmky2AGaupeaA0Tjmj7mX1aJM8OwyFTpLF8,24
+drf_fields_limiting/mixins.py,sha256=RsPYRirGACT_wIHoyfLNTUDxrFg5DnJP81kDSXf9jmI,4531
+drf_fields_limiting/operations.py,sha256=GUvzC-e_ZyRpaszrsOgDU0DFNNS-oYmy1ZW-dFdsvfg,1856
+drf_fields_limiting/serializers.py,sha256=g_z41X0RWVMF5gX_cjPd_xu8goGBAAUHe-mJQhuR5mo,621
+drf_fields_limiting/views.py,sha256=_9bbv-7VSxMlkRMj5eZ0pryDqtXTJRvOG_I1cw8jnYQ,190
+drf_fields_limiting/viewsets.py,sha256=H9x6RvSMdDVvIBuYbgplG22V_0seTHZFaz2VloCTOvU,199
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=t-NAUKhO0Ug1-cXkxICklmrfpci1lq0wkMCPakSahDo,928
+tests/test_views.py,sha256=1cWg-TlAmLAi0jG2FzLT0GgFsMJT7zfDEGfcBHUkBvY,2248
+tests/test_viewsets.py,sha256=mn0KPGRvIb-X0Fvrb7OoFozswCMXjyp6uBV4pj17Tes,5909
+drf_fields_limiting-1.0.0.dist-info/METADATA,sha256=9YHzT5m6oJtg0ih4meq_580WndK5wHeFFBRXqmIqvmM,2844
+drf_fields_limiting-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+drf_fields_limiting-1.0.0.dist-info/top_level.txt,sha256=m6uO0U6_Lh_faHMa4sNl2J572EL3GjkFhudJkpVXRCg,26
+drf_fields_limiting-1.0.0.dist-info/RECORD,,
