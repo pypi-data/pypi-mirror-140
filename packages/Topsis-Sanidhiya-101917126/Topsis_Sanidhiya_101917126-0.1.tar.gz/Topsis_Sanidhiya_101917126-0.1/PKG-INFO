@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Topsis_Sanidhiya_101917126
+Version: 0.1
+Summary: Find Topsis of Dataset
+Home-page: https://github.com/dragonman164/Topsis-Sanidhiya-101917126
+Author: Sanidhiya
+Author-email: sanidhiyafirefox123@gmail.com
+License: MIT
+Download-URL: https://github.com/dragonman164/Topsis-Sanidhiya-101917126/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: pandas,topsis,data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
