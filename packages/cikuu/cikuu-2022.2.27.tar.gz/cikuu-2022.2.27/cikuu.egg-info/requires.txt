@@ -1,0 +1,6 @@
+elasticsearch
+fire
+lmdb
+pika
+pymysql
+redis
