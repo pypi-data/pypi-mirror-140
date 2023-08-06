@@ -1,0 +1,6 @@
+
+[dateutil]
+python-dateutil
+
+[django]
+Django>1.10
