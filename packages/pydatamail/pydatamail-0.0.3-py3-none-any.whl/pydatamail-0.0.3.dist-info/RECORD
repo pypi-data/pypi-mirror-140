@@ -1,0 +1,11 @@
+pydatamail/__init__.py,sha256=JJq4ChqnZToVKnRT03O4UdLJvAbOBye1VQTyeM6IRyw,365
+pydatamail/_version.py,sha256=wkMZdJWBALN2sYWRZ6IVTJqUXLTIO6UtlZ6ELGmHEdw,18492
+pydatamail/database.py,sha256=2o-0AA7Y5Hoff2h2BN96bc_s0wF-KDsEf0OmV5NOiZs,14057
+pydatamail/machinelearning.py,sha256=p2w28WvvQcuvpe-f5i0bXgGis1CL05JWyV9FLSxDCIk,6194
+pydatamail/message.py,sha256=9lpn5UGqWHY1xPV4BSJsqcZDfG1PstDaCsCCg3pVASA,1560
+pydatamail/plots.py,sha256=cPWRO-cCADdrQ2tsSz4748KcA1NYhcG2D7eL0oxtaZo,1953
+pydatamail-0.0.3.dist-info/LICENSE,sha256=NkrhccIxPXCbbvp_upyVojt7DNTwZIco3z9wsYpSLqU,1511
+pydatamail-0.0.3.dist-info/METADATA,sha256=bcX2f5bAnU5GL_-zPTxjJU2rGkyFLh9IFaBn-2G_F5c,525
+pydatamail-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydatamail-0.0.3.dist-info/top_level.txt,sha256=yfBqbOyTu1hPokUkUwCs9yLyJP1-5oBsblZWQ_Wge3E,11
+pydatamail-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pydatamail
+Version: 0.0.3
+Summary: pydatamail - a python module to apply data science principles to email processing
+Home-page: https://github.com/pyscioffice/pydatamail
+Author: Jan Janssen
+Author-email: jan.janssen@outlook.com
+License: BSD
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: tqdm (>=4.62.3)
+Requires-Dist: pandas (>=1.4.1)
+Requires-Dist: sqlalchemy (>=1.4.31)
+Requires-Dist: numpy (>=1.22.2)
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: scikit-learn (>=1.0.2)
+
+UNKNOWN
+
