@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: seqflow
+Version: 0.1.3
+Summary: A sequence processing pipeline for Python.
+Home-page: https://github.com/iBiology/SeqFlow.git
+Author: FEI YUAN
+Author-email: yuanfeifuzzy@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/iBiology/SeqFlow/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+SeqFlow
+=======
+
+`SeqFlow` is a NGS sequence processing pipeline written in Python.
+

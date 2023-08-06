@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/seqflow/__init__.py
+src/seqflow/flow.py
+src/seqflow.egg-info/PKG-INFO
+src/seqflow.egg-info/SOURCES.txt
+src/seqflow.egg-info/dependency_links.txt
+src/seqflow.egg-info/requires.txt
+src/seqflow.egg-info/top_level.txt
