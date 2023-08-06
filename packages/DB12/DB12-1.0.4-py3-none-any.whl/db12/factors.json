@@ -1,0 +1,10 @@
+{
+	"python_version": {
+		"3.9": {
+			"cpu_brand": {
+				"Intel": 0.86,
+				"AMD": 0.71
+			}
+		}
+	}
+}
