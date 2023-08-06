@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "charmonium.cache"
+version = "1.2.5"
+description = "Provides a decorator for caching a function and an equivalent command-line util."
+authors = ["Samuel Grayson <sam+dev@samgrayson.me>"]
+license = "MPL-2.0"
+readme = 'README.rst'
+repository = "https://github.com/charmoniumQ/charmonium.cache.git"
+packages = [
+    { include = "charmonium" },
+]
+documentation = "https://charmoniumq.github.io/charmonium.cache/"
+keywords = ["cache", "memoize", "decorator"]
+classifiers = [
+			"Development Status :: 4 - Beta",
+			"Operating System :: MacOS",
+			"Operating System :: Microsoft :: Windows",
+			"Operating System :: POSIX :: Linux",
+			"Intended Audience :: Developers",
+			"Intended Audience :: Science/Research",
+			"Natural Language :: English",
+			"Topic :: Scientific/Engineering",
+			"Topic :: Software Development :: Libraries",
+]
+
+[tool.poetry.scripts]
+cache = "charmonium.cache._cli:main"
+
+[tool.poetry.dependencies]
+# Note that versions <3.7 cannot be supported because they do not have "delayed evaluation of type annotations."
+# It is too burdensome to rewrite my code with that in mind.
+python = ">=3.7.1,<3.11"
+bitmath = "^1.3.3"
+fasteners = "^0.16"
+attrs = "^20.3.0"
+"charmonium.determ-hash" = "^0.2.0"
+"charmonium.freeze" = "^0.5.1"
+#{git = "https://github.com/charmoniumQ/charmonium.freeze", rev = "main"}
+
+[tool.poetry.dev-dependencies]
+isort = "^4.3.21"
+black = "^19.10b0"
+pylint = "^2.5.2"
+pylint-exit = "^1.2.0"
+pytest = "^5.4.1"
+pytest-cov = "^2.10.0"
+coverage = "^5.1"
+codecov = "^2.1.4"
+sphinx = "^3.1.0"
+tox = "^3.15.2"
+twine = "^3.1.1"
+mypy = "^0.812"
+pytest-assume = "^2.4.2"
+pytest-parallel = "^0.1.0"
+sphinx-autodoc-typehints = "^1.12.0"
+sphinxcontrib-spelling = "^7.1.0"
+radon = "^4.5.0"
+cloudpickle = "^1.6.0"
+autoimport = "^0.7.0"
+dask = {extras = ["bag"], version = "^2021.4.1"}
+gitchangelog = "^3.0.4"
+bump2version = "^1.0.1"
+numpy = "^1.20.3"
+ipython = "^7.24.0"
+"charmonium.time-block" = "^0.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ["py38"]
