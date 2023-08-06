@@ -1,0 +1,7 @@
+setup.py
+soda_sql_dbt.egg-info/PKG-INFO
+soda_sql_dbt.egg-info/SOURCES.txt
+soda_sql_dbt.egg-info/dependency_links.txt
+soda_sql_dbt.egg-info/requires.txt
+soda_sql_dbt.egg-info/top_level.txt
+sodasql/dbt.py
