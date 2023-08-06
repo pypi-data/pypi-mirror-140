@@ -1,0 +1,6 @@
+.shopping-cart-dock {
+}
+
+.shopping-cart-dock .shopping-cart-dock--heading .counter:after {
+    content: attr(data-count);
+}

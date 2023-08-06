@@ -1,0 +1,41 @@
+{#
+scope
+cart
+
+heading
+body
+footer
+item
+
+counter
+
+
+
+#}
+
+
+<div class="shopping-cart-dock" data-module="shopping-cart-dock"
+     data-module-scope="{{ scope }}"
+     data-module-cart="{{ cart }}"
+
+     data-module-snippet="{{ snippet }}"
+
+     {% if counter %} data-module-counter="{{ counter }}"{% endif %}
+
+     {% if heading %} data-module-heading="{{ heading }}"{% endif %}
+     {% if empty %} data-module-empty="{{ empty }}"{% endif %}
+     {% if footer %} data-module-footer="{{ footer }}"{% endif %}
+     {% if not_empty %} data-module-not_empty="{{ not_empty }}"{% endif %}
+>
+    <div class="shopping-cart-dock--heading">
+
+    </div>
+
+    <div class="shopping-cart-dock--body">
+
+    </div>
+
+    <div class="shopping-cart-dock--footer">
+
+    </div>
+</div>
