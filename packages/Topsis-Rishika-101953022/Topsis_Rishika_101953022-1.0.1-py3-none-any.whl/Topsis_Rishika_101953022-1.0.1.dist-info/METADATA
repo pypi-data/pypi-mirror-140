@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: Topsis-Rishika-101953022
+Version: 1.0.1
+Summary: A Python package for topsis analysis.
+Author: Rishika
+Author-email: rishikatayal2325@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis-Rishika-101953022
+It takes dataset, weights and impacts associated to the columns of dataset and output file to perform topsis on input dataset.
+
+## Installation
+```pip install Topsis-Rishika-101953022```
+
+## Usage
+Step 1: Open the command prompt
+Step 2: type 
+> python <filename> <dataset> <weights> <impacts> <outputfilename>
+
+
+
