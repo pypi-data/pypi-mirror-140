@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Topsis_Chavvi/Topsis.py
+Topsis_Chavvi_102097012.egg-info/PKG-INFO
+Topsis_Chavvi_102097012.egg-info/SOURCES.txt
+Topsis_Chavvi_102097012.egg-info/dependency_links.txt
+Topsis_Chavvi_102097012.egg-info/entry_points.txt
+Topsis_Chavvi_102097012.egg-info/requires.txt
+Topsis_Chavvi_102097012.egg-info/top_level.txt
