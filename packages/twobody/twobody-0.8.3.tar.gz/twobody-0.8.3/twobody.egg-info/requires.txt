@@ -1,0 +1,17 @@
+astropy
+numpy
+packaging
+
+[docs]
+sphinx-astropy
+numpy
+astropy
+scipy
+matplotlib
+
+[test]
+pytest-astropy
+numpy
+astropy
+scipy
+matplotlib
