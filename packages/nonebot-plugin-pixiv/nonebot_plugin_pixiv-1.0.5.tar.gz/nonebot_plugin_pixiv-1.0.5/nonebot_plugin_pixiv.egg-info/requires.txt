@@ -1,0 +1,4 @@
+aiohttp
+nonebot-adapter-onebot<3.0.0,>=2.0.0-beta.1
+nonebot2<3.0.0,>=2.0.0-beta.1
+opencv-python
