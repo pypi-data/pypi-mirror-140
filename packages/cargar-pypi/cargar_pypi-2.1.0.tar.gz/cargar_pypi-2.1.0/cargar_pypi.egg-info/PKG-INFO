@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: cargar-pypi
+Version: 2.1.0
+Summary: Aprende IT package example
+Home-page: https://aprendeit.com
+Author: Aprende IT
+Author-email: un_email@gmail.com
+License: NOTFOUND
+Download-URL: https://URL_PAQUETE/ejemplo_paquete/-/archive/master/ejemplo_paquete-master.tar
+Keywords: cargar_pypi,ejemplo,paquete,package,example
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+Aprende IT - code example 
+==========================
+
+.. image:: https://aprendeit.com/wp-content/uploads/2020/02/LOGO-DEF-e1582099960877-1.png
+  :alt: pipeline status
+  :target: https://aprendeit.com
+
+
+
+Installation (*pip or setup*)
+=============================
+
++ With pip (*for extend lib*) : 
+
+  1. ``pip install ejemplo_paquete.zip``
+
+
+Usage (*scripts*)
+=================
+
+
+
+
+.. code::
+
+    usage: ejemplo_paquete
+    Returns your public IP
+
+
+
+
+

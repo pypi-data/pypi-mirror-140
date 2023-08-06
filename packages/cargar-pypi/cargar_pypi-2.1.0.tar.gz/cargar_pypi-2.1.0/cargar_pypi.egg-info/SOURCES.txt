@@ -1,0 +1,10 @@
+README.rst
+setup.py
+cargarPypi/__init__.py
+cargarPypi/cargar_pypi_mod.py
+cargar_pypi.egg-info/PKG-INFO
+cargar_pypi.egg-info/SOURCES.txt
+cargar_pypi.egg-info/dependency_links.txt
+cargar_pypi.egg-info/entry_points.txt
+cargar_pypi.egg-info/requires.txt
+cargar_pypi.egg-info/top_level.txt

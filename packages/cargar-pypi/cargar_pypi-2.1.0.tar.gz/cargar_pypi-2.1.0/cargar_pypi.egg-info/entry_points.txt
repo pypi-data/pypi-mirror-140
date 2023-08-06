@@ -1,0 +1,3 @@
+[console_scripts]
+cargarPypi = cargarPypi.cargar_pypi_mod:main
+
