@@ -1,0 +1,11 @@
+gen3==4.2.0
+firecloud==0.16.29
+xmltodict==0.12.0
+Click==7.1.2
+attrdict==2.0.1
+google-cloud-storage==1.42.3
+google-cloud-core==2.0.0
+fastavro==1.2.0
+tabulate==0.8.9
+gspread==5.2.0
+oauth2client==4.1.3
