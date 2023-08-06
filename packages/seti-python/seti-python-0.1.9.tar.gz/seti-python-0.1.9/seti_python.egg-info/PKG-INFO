@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: seti-python
+Version: 0.1.9
+Summary: Library to use conect to seti functions
+Home-page: https://github.com/4CodersColombia/seti-python
+Author: Andres Gonzalez
+Author-email: andres@4coders.co
+License: GPLv3
+Download-URL: https://github.com/4CodersColombia/seti-python/archive/refs/tags/0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
