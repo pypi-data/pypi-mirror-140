@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: thoth-license-solver
+Version: 0.1.1
+Summary: Package and package stack license-solver for the Thoth project
+Home-page: https://github.com/thoth-station/license-solver
+Author: Viliam Podhajecky
+Author-email: vpodhaje@redhat.com
+License: GPLv3+
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: attrs
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: thoth-common
+
+UNKNOWN
+

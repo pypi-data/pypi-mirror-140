@@ -1,0 +1,2 @@
+[console_scripts]
+thoth-license-solver = thoth.license_solver.cli:cli
