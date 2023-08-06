@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: picsellia-yolov5
+Version: 0.1.10
+Summary: Picsellia wrapper for pytorch implementation of Yolov5
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.9
+Requires-Dist: tensorboard (>=2.2)
+Requires-Dist: torch (>=1.7.0)
+Requires-Dist: torchvision (>=0.8.1)
+Requires-Dist: tqdm (>=4.41.0)
+Requires-Dist: pillow (==7.2.0)
+Requires-Dist: matplotlib (==3.3.4)
+Requires-Dist: Cython (==0.29.21)
+Requires-Dist: pycocotools (==2.0.2)
+Requires-Dist: lvis (==0.5.3)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: pandas (<=1.1.5)
+Requires-Dist: opencv-python (>=4.1.2)
+Requires-Dist: ruamel.yaml (==0.16.13)
+Requires-Dist: PyYAML (>=5.3.1)
+Requires-Dist: thop (==0.0.31-2005241907)
+Requires-Dist: seaborn (>=0.11.0)
+
+UNKNOWN
+
+
