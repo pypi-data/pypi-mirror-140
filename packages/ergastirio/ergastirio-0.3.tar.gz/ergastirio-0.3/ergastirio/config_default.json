@@ -1,0 +1,14 @@
+{
+  "Instruments": [ "pyThorlabsPM100A", "pySRSLockin", "pySRSLockin" ],
+  "Plots": [
+    {
+      "x": "acq#",
+      "y": [ "dev0.Power", "dev2.X", "dev1.X" ]
+    },
+    {
+      "x": "dev0.Power",
+      "y": [ "dev0.Power","dev1.X" ]
+    }
+  ],
+  "Alignment_Instruments_Window": "V"
+}
