@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/pymongo_sl/__init__.py
+src/pymongo_sl/cache_client.py
+src/pymongo_sl/collection.py
+src/pymongo_sl/common.py
+src/pymongo_sl/cursor.py
+src/pymongo_sl/database.py
+src/pymongo_sl/errors.py
+src/pymongo_sl/keywords.py
+src/pymongo_sl/mongo_client.py
+src/snaplogic_pymg.egg-info/PKG-INFO
+src/snaplogic_pymg.egg-info/SOURCES.txt
+src/snaplogic_pymg.egg-info/dependency_links.txt
+src/snaplogic_pymg.egg-info/top_level.txt
