@@ -1,0 +1,7 @@
+vnpy_sinopac/__init__.py,sha256=JfOjcLgJb2lpRXwcYdpvgHNAUadFOkb9le2GNkFFGpc,240
+vnpy_sinopac/gateway/__init__.py,sha256=Dc6JAUJoqv6DtLeo7FTejABM8ptZkZmOlXQTf5I_JiM,44
+vnpy_sinopac/gateway/sinopac_gateway.py,sha256=rmw2l8Ig5ws7l_U71lgyOH8HMbKwBN2nAg7pvb-boRg,12748
+vnpy_sinopac-1.0.5.dist-info/LICENSE,sha256=XwFWcRCpTyDZrhtVjoSenyH9oDZGeKloLBpqBPCRqas,1077
+vnpy_sinopac-1.0.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+vnpy_sinopac-1.0.5.dist-info/METADATA,sha256=vcsFvXe0hOLiCZNoY9Y4hSOgzcrNIo-8JpIzcnlb74w,657
+vnpy_sinopac-1.0.5.dist-info/RECORD,,
