@@ -1,0 +1,16 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/greeter.py,sha256=0E8UvOqXqPDero4Ccp4n9nUbXlFvEzorcsbt1LXUXV0,136
+examples/say_hello_script.py,sha256=_TigE-hlKz8mMPnPOgZtUt_JBGrkjNNI6OSfO9KTMEw,501
+func_to_script/__init__.py,sha256=u6M8Kgfc3cosci5mSPB_3caa94Qg4eQ9eIAkPL6EL6o,112
+func_to_script/_version.py,sha256=5iZStMLIT0e9U1mGwR-8_jgGr2OTRTe5v34r6Mv4qxc,498
+func_to_script/core.py,sha256=afaLeRERFkvFN8KNsUEQfTjN2mMJq6jLX8dgFV7tHNc,3427
+test/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/scripts/script_no_defaults.py,sha256=ngGdPuQ9yiN97NuzN9omjBsdI7DrwVOOQai2r20xz8k,336
+test/scripts/script_with_defaults.py,sha256=3QqWQuYsWTsOm_2bIJTBSBLVm4rt5xHkcRD-Zh-Ud_8,554
+test/scripts/script_with_incorrect_type.py,sha256=2sb1i3wJgX5UDco_zBS72pEFM46GlK9d80ZBUTchAKg,581
+test/scripts/script_with_missing_types.py,sha256=36_3cvyEQwEBafPEkw81h8sqZtlg2zpucdF3qjXuiig,540
+func_to_script-0.1.0.dist-info/LICENSE.txt,sha256=KSsNJpxNQKuPZN6sH3RIhOxlC12r6PExIWGymMbCKYM,1069
+func_to_script-0.1.0.dist-info/METADATA,sha256=MVeTt7vzSMXYtIZbFCjvy_0gfT2eCe1fOIoDX5JHaVI,3838
+func_to_script-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+func_to_script-0.1.0.dist-info/top_level.txt,sha256=-gssPkxyzTktLV43o_x-9_zrBrePCSs09P5Rq4d_wqM,29
+func_to_script-0.1.0.dist-info/RECORD,,
