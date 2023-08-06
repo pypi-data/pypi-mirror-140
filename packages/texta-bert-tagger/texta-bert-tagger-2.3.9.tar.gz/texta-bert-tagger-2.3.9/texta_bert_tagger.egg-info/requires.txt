@@ -1,0 +1,14 @@
+torch
+pandas==1.3.5
+numpy
+datetime
+transformers==4.10.*
+sklearn
+gputil
+pytest
+deepdiff
+dill
+pynvml
+psutil
+regex
+sentencepiece
