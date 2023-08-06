@@ -1,0 +1,6 @@
+
+[testing]
+mock
+six
+flake8
+coverage
