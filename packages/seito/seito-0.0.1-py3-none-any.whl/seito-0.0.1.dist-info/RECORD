@@ -1,0 +1,11 @@
+seito/__init__.py,sha256=XjT3U-wuwXnSon0PozcBeYE-LD65Ub6fZh2n0Cs42A4,157
+seito/http.py,sha256=CZ1UjF_Z8WTTVJ3CX6krUM2IkQZFRSIGcRg4x3SdGsw,1543
+seito/json.py,sha256=-5VcKLLMs2WKPAXH_0yf_uAk-EuTIyWYiqWIwZsdUhc,1368
+seito/monad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seito/monad/async_opt.py,sha256=kDNmfuDef_2SfD0ZRooORK6ZFOQ0kub1H9D3RwBcKI0,4564
+seito/monad/func.py,sha256=WB8lJpEYGyvAAFw9ApiVz3wDb22qwQhkNlRXdpVTJHg,120
+seito/monad/opt.py,sha256=FqUOTngwM90FK-gPBSMEEfdehNGS__2fHPmONJfwDOE,6061
+seito/monad/try_.py,sha256=ZnGYWMLeiE329_0vC89lIRnB2JAZKSyS4R3tG9zOyHM,1158
+seito-0.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+seito-0.0.1.dist-info/METADATA,sha256=EkO1Se6-3yFda7awyJpif690BX37KDprNo60rNTinAU,1667
+seito-0.0.1.dist-info/RECORD,,
