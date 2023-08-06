@@ -1,0 +1,3 @@
+[console_scripts]
+powerBI-EIO-NPP = gather.gather:main
+
