@@ -1,0 +1,5 @@
+click>=7
+rich>=10
+
+[:python_version < "3.8"]
+importlib-metadata
