@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: PyPony
+Version: 0.1.0
+Summary: A python utility for contract testing APIs
+Home-page: https://github.com/Bandwidth/pypony/
+Author: Bandwidth
+Author-email: letstalk@bandwidth.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: actions-toolkit (==0.0.9)
+Requires-Dist: addict (==2.4.0)
+Requires-Dist: click (==8.0.3)
+Requires-Dist: jschon (==0.7.3)
+Requires-Dist: openapi-spec-validator (==0.3.1)
+Requires-Dist: prance (==0.21.8.0)
+Requires-Dist: py-openapi-schema-to-json-schema (==0.0.3)
+Requires-Dist: python-dotenv (==0.19.1)
+Requires-Dist: requests (==2.26.0)
+
+UNKNOWN
+
+
