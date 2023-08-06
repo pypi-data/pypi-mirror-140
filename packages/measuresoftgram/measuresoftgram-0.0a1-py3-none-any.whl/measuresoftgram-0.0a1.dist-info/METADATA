@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: measuresoftgram
+Version: 0.0a1
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+UNKNOWN
+
