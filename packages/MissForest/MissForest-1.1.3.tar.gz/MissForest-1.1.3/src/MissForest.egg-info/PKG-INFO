@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: MissForest
+Version: 1.1.3
+Summary: nonparametric imputation on missing values.
+Home-page: https://github.com/HindyDS/MissForest
+Author: Hindy Yuen
+Author-email: hindy888@hotmail.com
+License: MIT
+Keywords: machine learning genetic algorithm hyperparameters tuning feature selection
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# MissForest
+Arguably the best missing values imputation method.
+
+MissForest aims to provide the most convenient way for the data science community to perform nonparametric imputation on missing values by using machine learning models.
+
+- **Examples:** https://github.com/HindyDS/MissFores/tree/main/examples
+- **Email:** hindy888@hotmail.com
+- **Source code:** https://github.com/HindyDS/MissForest/tree/main/MissForest
+- **Bug reports:** https://github.com/HindyDS/MissForest/issues
+- 
+# Convenient
+It only requires 3 arguments to run:
+
+- x: dataset that being imputed
+- feature_to_be_imputed (str): feature that being imputed
+- estimator: machine learning model
+
+Optional arguments:
+- max_iter (int): maximum number of iterations
+
+If you have any ideas for this packge please don't hesitate to bring forward!
+
+# Flexible
+You can implement other machine learning models besides RandomForest into MissForest
+
+# Quick Start
+    !pip install MissForestExtra
+    
+    from MissForestExtra import MissForestExtra
+
+    mfe = MissForestExtra()
+
+    mfe.single_impute(x, feature_to_be_imputed, estimator)
+
+    # return the imputed pandas series
+
+    mfe.impute(x, classifier, regressor)
+
+     # return imputed dataframe
+
