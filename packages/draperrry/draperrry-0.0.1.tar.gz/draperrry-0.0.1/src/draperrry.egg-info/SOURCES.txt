@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/draper_adder/__init__.py
+src/draper_adder/draper_adder.py
+src/draper_adder/main.py
+src/draperrry.egg-info/PKG-INFO
+src/draperrry.egg-info/SOURCES.txt
+src/draperrry.egg-info/dependency_links.txt
+src/draperrry.egg-info/top_level.txt
