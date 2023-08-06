@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+y2m/__init__.py
+y2m/y2mconv.py
+y2m/y2mlink.py
+y2m/ytlive2m3u.py
+y2m.egg-info/PKG-INFO
+y2m.egg-info/SOURCES.txt
+y2m.egg-info/dependency_links.txt
+y2m.egg-info/entry_points.txt
+y2m.egg-info/requires.txt
+y2m.egg-info/top_level.txt
