@@ -1,0 +1,9 @@
+attrs
+PyQt5
+requests
+typing-extensions
+
+[bot]
+pytz
+requests-toolbelt
+tabulate
