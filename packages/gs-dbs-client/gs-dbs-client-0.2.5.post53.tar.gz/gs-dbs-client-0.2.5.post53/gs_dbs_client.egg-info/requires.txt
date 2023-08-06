@@ -1,0 +1,16 @@
+gql
+pandas
+Twisted
+ujson
+PyYAML
+requests
+aiohttp
+stomper
+graphql-core
+Pillow
+requests
+websocket-client
+blosc
+av
+aiortc
+python-socketio
