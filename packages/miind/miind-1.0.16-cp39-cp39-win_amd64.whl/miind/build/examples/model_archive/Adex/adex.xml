@@ -1,0 +1,29 @@
+<Simulation>
+ <Variable Name='TIME_END'>1</Variable>
+<WeightType>CustomConnectionParameters</WeightType>
+<Algorithms>
+<Algorithm type="GridAlgorithm" name="OSC" modelfile="adex.model" tau_refractive="0.0" transformfile="adex_0_0_0_0_.tmat" start_v="-70.6" start_w="4.0" >
+<TimeStep>0.00001</TimeStep>
+</Algorithm>
+<Algorithm type="RateFunctor" name="MLR_1">
+<expression>2100</expression>
+</Algorithm>
+</Algorithms>
+<Nodes>
+<Node algorithm="OSC" name="RG_E" type="NEUTRAL" />
+<Node algorithm="MLR_1" name="MLR_E" type="NEUTRAL" />
+</Nodes>
+<Connections>
+<Connection In="MLR_E" Out="RG_E" num_connections="1" efficacy="1.0" delay="0.0"/>
+</Connections>
+<Reporting>
+	<Density node="RG_E" t_start="0.0" t_end="1.0" t_interval="0.001" />
+	<!--<Display node="RG_E" />-->
+	<Rate node="RG_E" t_interval="0.001" />
+</Reporting>
+<SimulationRunParameter>
+<t_end>TIME_END</t_end>
+<t_step>0.0001</t_step>
+<name_log>adex.log</name_log>
+</SimulationRunParameter>
+</Simulation>
