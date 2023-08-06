@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: medusa-kernel
+Version: 0.1.2
+Summary: Advanced biosignal processing toolbox
+Home-page: https://gib.tel.uva.es/
+Author: Eduardo Santamaría-Vázquez, Víctor Martínez-Cagigal, Víctor Rodríguez-González
+Author-email: eduardo.santamaria@gib.tel.uva.es
+License: MIT
+Description: UNKNOWN
+Keywords: Signal,Biosignal,EEG,BCI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
