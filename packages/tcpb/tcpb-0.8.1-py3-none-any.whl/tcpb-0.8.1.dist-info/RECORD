@@ -1,0 +1,14 @@
+tcpb/__init__.py,sha256=h4OeXFHdHW1Pn14fzoUCPlK-CXwOxiGniJxfn3-kfS8,135
+tcpb/clients.py,sha256=K-GGxH972uMLpQobO2LcXS6fnAOaiVf2UnpDtiMxads,42676
+tcpb/config.py,sha256=F9mqa-yyEfIFscu0_-6LGQhCkZMUYVFvHv7u-pgm0Yg,323
+tcpb/exceptions.py,sha256=6orrqHoKLSUQrmeDcM3UISab3iLwm4WbmuY-JaZli14,990
+tcpb/molden_constructor.py,sha256=gtqSDoUJ4EKIm_sLIpD9H_WP6ny2stMPUU7zKR-D0gw,7205
+tcpb/serial_utils.py,sha256=bpgnX7mBD_ddpfI6Bxm_sqW20b-TjQwhCvAzrEdhJ5c,2612
+tcpb/terachem_server.proto,sha256=XvTJAcba3tU34vECjhwTPaa-xQshxvaBhiZUNAhenmM,6196
+tcpb/terachem_server_pb2.py,sha256=TKFon1ad3UlYEBCEhb-UJPkwZCarBBrmnf5pmJ_k3rs,65777
+tcpb/terachem_server_pb2.pyi,sha256=3GemEgbuQZs0t82YXH3xbpKgLwCdCVAsyWDj0-BHPEE,24581
+tcpb/utils.py,sha256=Z_qnIM_k0JWFLjRfqcwiM3YYJhqF-yuFkL6Efdbc4a4,8247
+tcpb-0.8.1.dist-info/LICENSE,sha256=2U6Q_LesW51Jy-va7TZUineBanmxGyBUvxMUTMbgbRk,1079
+tcpb-0.8.1.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+tcpb-0.8.1.dist-info/METADATA,sha256=egpVXI7-6uVc2Rx-Ph0a2-BlT2Vetf2D4xodM9i6qRI,2291
+tcpb-0.8.1.dist-info/RECORD,,
