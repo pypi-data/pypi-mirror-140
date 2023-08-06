@@ -1,0 +1,3 @@
+[console_scripts]
+flake518=flake518.__main__:main
+
