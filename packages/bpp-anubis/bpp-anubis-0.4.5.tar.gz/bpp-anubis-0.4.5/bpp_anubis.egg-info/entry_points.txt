@@ -1,0 +1,9 @@
+[console_scripts]
+anubis = anubis.__main__:main
+anubis-combine-results = anubis.results_utils.__main__:main
+anubis-create-cc-run = anubis.sync.cucumber_studio.create_run:main
+anubis-generate-ids = anubis.id_generator.__main__:main
+anubis-json-to-csv = anubis.sync.cucumber_json_to_csv:main
+anubis-mkobj = anubis.page_creator.__main__:main
+anubis-send-cc-results = anubis.sync.cucumber_studio.send_results:main
+anubis-send-cs-results = anubis.sync.cucumber_studio.send_results:main
