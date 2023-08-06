@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: cyclonefw
+Version: 1.0.23
+Summary: A package to simplify the creation of MAX models
+Home-page: https://github.com/wenlaizhou/cyclonefw
+Author: CODAIT
+Author-email: 
+License: Apache
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: flask (==1.1.2)
+Requires-Dist: werkzeug (==0.16.1)
+Requires-Dist: flask-restx (==0.1.1)
+Requires-Dist: flask-cors (==3.0.9)
+Requires-Dist: Pillow (==7.2.0)
+Requires-Dist: numpy (==1.19.1)
+Requires-Dist: opentelemetry-exporter-zipkin-proto-http
+Requires-Dist: opentelemetry-exporter-jaeger
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-sdk
+Requires-Dist: opentelemetry-instrumentation-flask
+Requires-Dist: opentelemetry-instrumentation-requests
+Requires-Dist: opentelemetry-exporter-zipkin
+
+# cyclone ai-platform python framework
+
+## Dependencies
+* [flask-restx](https://pypi.org/project/flask-restx/0.1.1/)
+* [flask-cors](https://pypi.org/project/Flask-Cors/)
+
+## Installation
+
+```shell script
+pip install -U cyclonefw
+```
+
+## Demo
+
+```python
+
+#!/usr/bin/env python3
+
+from cyclonefw import MAXApp
+
+app = MAXApp()
+app.run()
+
+
+```
+
+
