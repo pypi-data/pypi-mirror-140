@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+setup.py
+src/projplot/__init__.py
+src/projplot/proj.py
+src/projplot.egg-info/PKG-INFO
+src/projplot.egg-info/SOURCES.txt
+src/projplot.egg-info/dependency_links.txt
+src/projplot.egg-info/requires.txt
+src/projplot.egg-info/top_level.txt
+src/test/__init__.py
+src/test/test_projdata.py
+src/test/test_xvals.py

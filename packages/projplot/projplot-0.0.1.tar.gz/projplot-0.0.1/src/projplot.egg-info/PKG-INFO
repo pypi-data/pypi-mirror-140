@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: projplot
+Version: 0.0.1
+Summary: A package to generate projection plots
+Home-page: https://github.com/kanikadchopra/projplot
+Author: Kanika Chopra
+Author-email: <kdchopra@uwaterloo.ca
+License: GNU General Public License v3.0
+Description: A package that will generate projection plots to visualize optimality by altering one variable at a time.
+Keywords: python,projection,plots,optimalty
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
