@@ -1,0 +1,6 @@
+fabric
+mako
+setuptools
+twine
+typer
+uvicorn
