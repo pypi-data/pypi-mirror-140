@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: certainty-sims
+Version: 0.0.1
+Summary: Simulations to evaluate probablistic models of certainty.
+Home-page: https://github.com/prijatelj/certainty-sims
+Author: Derek S. Prijatelj
+Author-email: dprijate@nd.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## Certainty
+
+Simulated tasks to be learned within environments that are used to evaluate probablistic models of certainty.
+
+### Verisoning
+
+This project uses [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html).
+This project's version will remain < 1.0.0 until adequate unit test coverage exists.
+
+### License
+
+This project's license is the MIT license as seen in LICENSE.txt.
+
+
