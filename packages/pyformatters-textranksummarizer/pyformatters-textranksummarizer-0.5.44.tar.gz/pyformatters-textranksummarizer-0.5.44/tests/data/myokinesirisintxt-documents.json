@@ -1,0 +1,2563 @@
+[
+  {
+    "identifier": "23861558.txt",
+    "title": "23861558.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:40.036Z",
+    "modifiedDate": "2021-10-28T08:09:40.036Z",
+    "text": "Adipo-Myokines: Two Sides of the Same Coin—Mediators of Inflammation and Mediators of Exercise\n\nThis review summarizes the current literature regarding the most discussed contraction-regulated moykines like IL-6, IL-15, irisin, BDNF, ANGPTL4, FGF21, myonectin and MCP-1. It is suggested that the term myokine is restricted to proteins secreted from skeletal muscle cells, excluding proteins that are secreted by other cell types in skeletal muscle tissue and excluding proteins which are only described on the mRNA level. Interestingly, many of the contraction-regulated myokines described in the literature are additionally known to be secreted by adipocytes. We termed these proteins adipo-myokines. Within this review, we try to elaborate on the question why pro-inflammatory adipokines on the one hand are upregulated in the obese state, and have beneficial effects after exercise on the other hand. Both, adipokines and myokines do have autocrine effects within their corresponding tissues. In addition, they are involved in an endocrine crosstalk with other tissues. Depending on the extent and the kinetics of adipo-myokines in serum, these molecules seem to have a beneficial or an adverse effect on the target tissue.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 94
+      },
+      {
+        "start": 96,
+        "end": 270
+      },
+      {
+        "start": 271,
+        "end": 521
+      },
+      {
+        "start": 522,
+        "end": 660
+      },
+      {
+        "start": 661,
+        "end": 701
+      },
+      {
+        "start": 702,
+        "end": 903
+      },
+      {
+        "start": 904,
+        "end": 995
+      },
+      {
+        "start": 996,
+        "end": 1072
+      },
+      {
+        "start": 1073,
+        "end": 1226
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "23979219.txt",
+    "title": "23979219.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:40.957Z",
+    "modifiedDate": "2021-10-28T08:09:40.957Z",
+    "text": "Effect of endurance training on skeletal muscle myokine expression in obese men: identification of apelin as a novel myokine\n\nBackground:It has been suggested that the metabolic benefits of physical exercise could be mediated by myokines. We examined here the effect of exercise training on skeletal muscle expression of a panel of myokines in humans. Pathways regulating myokine expression were investigated in human myotubes.Methods:Eleven obese non-diabetic male subjects were enrolled in an 8-week endurance training program. Insulin sensitivity was assessed by an oral glucose tolerance test. Subcutaneous adipose tissue and Vastus lateralis muscle biopsy samples were collected before and after training. RNAs were prepared from adipose tissue and skeletal muscle. Primary culture of myoblasts was established.Results:As expected, exercise training improved aerobic capacity and decreased fat mass. No significant change in interleukin 6, fibroblast growth factor 21, myostatin (MSTN) or irisin mRNA level was found in muscle after training. A twofold increase in apelin mRNA level was found in muscle but not in adipose tissue. No change in circulating myokine and adipokine plasma levels was observed in the resting state in response to training. Interestingly, apelin was significantly expressed and secreted in primary human myotubes. Apelin gene expression was upregulated by cyclic AMP and calcium, unlike the other myokines investigated. Importantly, changes in muscle apelin mRNA levels were positively related to whole-body insulin sensitivity improvement.Conclusion:Collectively, our data show that exercise training upregulates muscle apelin expression in obese subjects. Apelin expression is induced by exercise signaling pathways and secreted in vitro in human primary myotubes, and may behave as a novel exercise-regulated myokine with autocrine/paracrine action.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 124
+      },
+      {
+        "start": 126,
+        "end": 238
+      },
+      {
+        "start": 239,
+        "end": 351
+      },
+      {
+        "start": 352,
+        "end": 427
+      },
+      {
+        "start": 427,
+        "end": 529
+      },
+      {
+        "start": 530,
+        "end": 597
+      },
+      {
+        "start": 598,
+        "end": 710
+      },
+      {
+        "start": 711,
+        "end": 770
+      },
+      {
+        "start": 771,
+        "end": 816
+      },
+      {
+        "start": 816,
+        "end": 904
+      },
+      {
+        "start": 905,
+        "end": 1047
+      },
+      {
+        "start": 1048,
+        "end": 1134
+      },
+      {
+        "start": 1135,
+        "end": 1254
+      },
+      {
+        "start": 1255,
+        "end": 1344
+      },
+      {
+        "start": 1345,
+        "end": 1450
+      },
+      {
+        "start": 1451,
+        "end": 1571
+      },
+      {
+        "start": 1571,
+        "end": 1688
+      },
+      {
+        "start": 1689,
+        "end": 1883
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "24381432.txt",
+    "title": "24381432.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:41.916Z",
+    "modifiedDate": "2021-10-28T08:09:41.916Z",
+    "text": "Irisin, a Novel Myokine Responsible for Exercise Induced Browning of White Adipose Tissue\n\n",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 89
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "24498244.txt",
+    "title": "24498244.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:42.853Z",
+    "modifiedDate": "2021-10-28T08:09:42.853Z",
+    "text": "Locus Characterization and Gene Expression of Bovine FNDC5: Is the Myokine Irisin Relevant in Cattle?\n\nThe transmembrane protein FNDC5 was recently characterized as precursor of an exercise induced myokine named irisin. Previous studies found a relationship between circulating irisin levels and muscle mass in humans. Consequently, we tested the hypothesis whether FNDC5/irisin is involved in the modulation of body composition in cattle. Since information on the bovine FNDC5 locus was scarce, we characterized the gene experimentally as prerequisite for these investigations. We provide here a revised and extended gene model for bovine FNDC5. Although similarly organized like the human and murine loci, a higher variability was observed at transcript level in the bovine locus. FNDC5 mRNA was abundant in bovine skeletal muscle and was detected at lower levels in adipose tissue and liver. There were no expression differences between two groups of bulls highly different in muscularity and adiposity. Full-length FNDC5 protein (25 kDa) was present in bovine skeletal muscle independent of muscularity. Neither FNDC5 nor its putatively secreted peptide irisin were found in circulation of bulls. In contrast, we demonstrated that FNDC5 (25 kDa) and irisin (12 kDa) were present in murine skeletal muscle and that irisin was circulating in murine serum. This indicates fundamental differences in the regulation of FNDC5 and irisin between rodents and cattle.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 101
+      },
+      {
+        "start": 103,
+        "end": 219
+      },
+      {
+        "start": 220,
+        "end": 318
+      },
+      {
+        "start": 319,
+        "end": 439
+      },
+      {
+        "start": 440,
+        "end": 578
+      },
+      {
+        "start": 579,
+        "end": 646
+      },
+      {
+        "start": 647,
+        "end": 782
+      },
+      {
+        "start": 783,
+        "end": 894
+      },
+      {
+        "start": 895,
+        "end": 1006
+      },
+      {
+        "start": 1007,
+        "end": 1107
+      },
+      {
+        "start": 1108,
+        "end": 1200
+      },
+      {
+        "start": 1201,
+        "end": 1357
+      },
+      {
+        "start": 1358,
+        "end": 1462
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "24676645.txt",
+    "title": "24676645.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:43.762Z",
+    "modifiedDate": "2021-10-28T08:09:43.762Z",
+    "text": "Myokines in insulin resistance and type 2 diabetes\n\nSkeletal muscle represents the largest organ of the body in non-obese individuals and is now considered to be an active endocrine organ releasing a host of so-called myokines. These myokines are part of a complex network that mediates communication between muscle, the liver, adipose tissue, the brain and other organs. Recent data suggest that myokines regulated by muscle contraction may play a key role in mediating the health-promoting effects of regular physical activity. Although hundreds of myokines have recently been described in proteomic studies, we currently have a rather limited knowledge of the specific role these myokines play in the prevention of insulin resistance, inflammation and associated metabolic dysfunction. Several myokines are known to have both local and endocrine functions, but in many cases the contribution of physical activity to the systemic level of these molecules remains as yet unexplored. Very recently, novel myokines such as irisin, which is thought to induce a white to brown shift in adipocytes, have gained considerable interest as potential therapeutic targets. In this review, we summarise the most recent findings on the role of myokines in the regulation of substrate metabolism and insulin sensitivity. We further explore the role of myokines in the regulation of inflammation and provide a critical assessment of irisin and other myokines regarding their potential as therapeutic targets.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 50
+      },
+      {
+        "start": 52,
+        "end": 227
+      },
+      {
+        "start": 228,
+        "end": 371
+      },
+      {
+        "start": 372,
+        "end": 529
+      },
+      {
+        "start": 530,
+        "end": 788
+      },
+      {
+        "start": 789,
+        "end": 983
+      },
+      {
+        "start": 984,
+        "end": 1162
+      },
+      {
+        "start": 1163,
+        "end": 1307
+      },
+      {
+        "start": 1308,
+        "end": 1494
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "24780049.txt",
+    "title": "24780049.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:44.712Z",
+    "modifiedDate": "2021-10-28T08:09:44.712Z",
+    "text": "Implication of circulating irisin levels with brown adipose tissue and sarcopenia in humans.\n\nCONTEXT: Irisin is an exercise-induced novel myokine that drives brown-fat-like conversion of white adipose tissue and has been suggested to be a promising target for the treatment of obesity-related metabolic disorders.\nOBJECTIVE: To assess the association of circulating irisin concentrations with brown adipose tissue (BAT) and/or sarcopenia in humans.\nSETTING AND DESIGN: We examined irisin levels in 40 BAT-positive and 40 BAT-negative women detected by (18)F-fluorodeoxyglucose positron emission tomography ((18)FDG-PET). In a separate study, we also examined 401 subjects with or without sarcopenia defined by skeletal muscle mass index (SMMI) and appendicular skeletal muscle (ASM)/height(2) using dual-energy x-ray absorptiometry.\nRESULTS: Among 6877 consecutive (18)FDG-PET scans in 4736 subjects, 146 subjects (3.1%) had positive BAT scans. The BAT-detectable group and the matched BAT-undetectable group did not differ in circulating irisin levels measured using two different ELISA kits (P = .747 and P = .160, respectively). Serum irisin levels were not different between individuals with sarcopenia and those without sarcopenia using either kit (P = .305 and P = .569, respectively). Also, serum irisin levels were not different between groups defined by ASM/height(2) using either kit (P = .352 and P = .134, respectively). Although visceral fat area and skeletal muscle mass showed significant difference according to tertiles of SMMI levels, irisin concentrations did not differ.\nCONCLUSIONS: Circulating irisin levels were not different in individuals with detectable BAT or those with sarcopenia compared with control subjects and were not correlated with SMMI.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 92
+      },
+      {
+        "start": 94,
+        "end": 314
+      },
+      {
+        "start": 315,
+        "end": 449
+      },
+      {
+        "start": 450,
+        "end": 621
+      },
+      {
+        "start": 622,
+        "end": 833
+      },
+      {
+        "start": 834,
+        "end": 945
+      },
+      {
+        "start": 946,
+        "end": 1132
+      },
+      {
+        "start": 1133,
+        "end": 1292
+      },
+      {
+        "start": 1293,
+        "end": 1433
+      },
+      {
+        "start": 1434,
+        "end": 1591
+      },
+      {
+        "start": 1592,
+        "end": 1775
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "26075283.txt",
+    "title": "26075283.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:45.66Z",
+    "modifiedDate": "2021-10-28T08:09:45.66Z",
+    "text": "Irisin and Myonectin Regulation in the Insulin Resistant Muscle: Implications to Adipose Tissue: Muscle Crosstalk\n\nMyokines are peptides produced and secreted by the skeletal muscle, with autocrine, paracrine, and endocrine actions. Many of them are overexpressed during physical exercise and appear to contribute to the benefits of exercise to metabolic homeostasis. Irisin, resulting from the cleavage of the membrane protein FNDC5, was shown to induce adipocyte browning, with increased lipid oxidation and thermogenesis. Myonectin was only recently discovered and initial studies revealed a role in fatty acid uptake and oxidation in adipose tissue and liver. However, the mechanisms of their regulation by exercise are not entirely established. Impaired secretion and action of myokines, such as irisin and myonectin, may have a role in the establishment of insulin resistance. On the other hand, several studies have shown that insulin resistance in the skeletal muscle may change myokines expression and secretion. This may have consequences on lipid and glucose metabolism in adipose tissue and lead to a vicious cycle between impaired myokines production and insulin resistance. This review summarizes the current knowledge about the influence of skeletal muscle insulin resistance on the secretion of irisin and myonectin, as well as its impact on adipose tissue metabolism.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 113
+      },
+      {
+        "start": 115,
+        "end": 232
+      },
+      {
+        "start": 233,
+        "end": 367
+      },
+      {
+        "start": 368,
+        "end": 524
+      },
+      {
+        "start": 525,
+        "end": 663
+      },
+      {
+        "start": 664,
+        "end": 749
+      },
+      {
+        "start": 750,
+        "end": 882
+      },
+      {
+        "start": 883,
+        "end": 1021
+      },
+      {
+        "start": 1022,
+        "end": 1187
+      },
+      {
+        "start": 1188,
+        "end": 1384
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "26248861.txt",
+    "title": "26248861.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:46.592Z",
+    "modifiedDate": "2021-10-28T08:09:46.592Z",
+    "text": "Connecting Myokines and Metabolism\n\nSkeletal muscle is the largest organ of the body in non-obese individuals and is now considered to be an endocrine organ. Hormones (myokines) secreted by skeletal muscle mediate communications between muscle and liver, adipose tissue, brain, and other organs. Myokines affect muscle mass and myofiber switching, and have profound effects on glucose and lipid metabolism and inflammation, thus contributing to energy homeostasis and the pathogenesis of obesity, diabetes, and other diseases. In this review, we summarize recent findings on the biology of myokines and provide an assessment of their potential as therapeutic targets.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 34
+      },
+      {
+        "start": 36,
+        "end": 157
+      },
+      {
+        "start": 158,
+        "end": 295
+      },
+      {
+        "start": 296,
+        "end": 526
+      },
+      {
+        "start": 527,
+        "end": 667
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "26374841.txt",
+    "title": "26374841.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:47.531Z",
+    "modifiedDate": "2021-10-28T08:09:47.531Z",
+    "text": "The myokine irisin increases cortical bone mass\n\nIt is unclear how physical activity stimulates new bone synthesis. We explored whether irisin, a newly discovered myokine released upon physical activity, displays anabolic actions on the skeleton. Young male mice were injected with vehicle or recombinant irisin (r-irisin) at a low cumulative weekly dose of 100 µg kg(-1). We observed significant increases in cortical bone mass and strength, notably in cortical tissue mineral density, periosteal circumference, polar moment of inertia, and bending strength. This anabolic action was mediated primarily through the stimulation of bone formation, but with parallel notable reductions in osteoclast numbers. The trabecular compartment of the same bones was spared, as were vertebrae from the same mice. Higher irisin doses (3,500 µg kg(-1) per week) cause browning of adipose tissue; this was not seen with low-dose r-irisin. Expectedly, low-dose r-irisin modulated the skeletal genes, Opn and Sost, but not Ucp1 or Pparγ expression in white adipose tissue. In bone marrow stromal cell cultures, r-irisin rapidly phosphorylated Erk, and up-regulated Atf4, Runx2, Osx, Lrp5, β-catenin, Alp, and Col1a1; this is consistent with a direct receptor-mediated action to stimulate osteogenesis. We also noted that, although the irisin precursor Fndc5 was expressed abundantly in skeletal muscle, other sites, such as bone and brain, also expressed Fndc5, albeit at low levels. Furthermore, muscle fibers from r-irisin-injected mice displayed enhanced Fndc5 positivity, and irisin induced Fdnc5 mRNA expression in cultured myoblasts. Our data therefore highlight a previously unknown action of the myokine irisin, which may be the molecular entity responsible for muscle-bone connectivity.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 47
+      },
+      {
+        "start": 49,
+        "end": 115
+      },
+      {
+        "start": 116,
+        "end": 246
+      },
+      {
+        "start": 247,
+        "end": 372
+      },
+      {
+        "start": 373,
+        "end": 559
+      },
+      {
+        "start": 560,
+        "end": 706
+      },
+      {
+        "start": 707,
+        "end": 801
+      },
+      {
+        "start": 802,
+        "end": 924
+      },
+      {
+        "start": 925,
+        "end": 1056
+      },
+      {
+        "start": 1057,
+        "end": 1285
+      },
+      {
+        "start": 1286,
+        "end": 1467
+      },
+      {
+        "start": 1468,
+        "end": 1623
+      },
+      {
+        "start": 1624,
+        "end": 1779
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "27040995.txt",
+    "title": "27040995.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:48.471Z",
+    "modifiedDate": "2021-10-28T08:09:48.471Z",
+    "text": "Crosstalk between adipokines and myokines in fat browning\n\nSkeletal muscle is the largest organ determining whole-body insulin sensitivity and metabolic homoeostasis. Adaptive changes of skeletal muscle in response to physical activity include adjustments in the production and secretion of muscle-derived bioactive factors, known as myokines, such as myostatin, IL-4, IL-6, IL-7 and IL-15, myonectin, follistatin-like 1 or leukaemia inhibitory factor. These myokines not only act locally in the muscle in an autocrine/paracrine manner, but also are released to the bloodstream as endocrine factors to regulate physiological processes in other tissues. Irisin, derived from the cleavage of FNDC5 protein, constitutes a myokine that induces myogenesis and fat browning (switch of white adipocytes to brown fat-like cells) together with a concomitant increase in energy expenditure. Besides being a target for irisin actions, the adipose tissue also constitutes a production site of FNDC5. Interestingly, irisin secretion from subcutaneous and visceral fat depots is decreased by long-term exercise training and fasting, suggesting a discordant regulation of FNDC5/irisin in skeletal muscle and adipose tissue. Accordingly, our group has recently reported that the adipokine leptin differentially regulates FNDC5/irisin expression in skeletal muscle and fat, confirming the crosstalk between both tissues. Moreover, irisin secretion and function are regulated by other myokines, such as follistatin or myostatin, as well as by other adipokines, including fibroblast growth factor 21 and leptin. Taken together, myokines have emerged as novel molecular mediators of fat browning and their activity can be modulated by adipokines, confirming the crosstalk between skeletal muscle and adipose tissue to regulate thermogenesis and energy expenditure.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 57
+      },
+      {
+        "start": 59,
+        "end": 166
+      },
+      {
+        "start": 167,
+        "end": 452
+      },
+      {
+        "start": 453,
+        "end": 652
+      },
+      {
+        "start": 653,
+        "end": 880
+      },
+      {
+        "start": 881,
+        "end": 987
+      },
+      {
+        "start": 988,
+        "end": 1208
+      },
+      {
+        "start": 1209,
+        "end": 1403
+      },
+      {
+        "start": 1404,
+        "end": 1592
+      },
+      {
+        "start": 1593,
+        "end": 1844
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "27101470.txt",
+    "title": "27101470.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:49.394Z",
+    "modifiedDate": "2021-10-28T08:09:49.394Z",
+    "text": "Skeletal muscle as a gene regulatory endocrine organ\n\nPURPOSE OF REVIEW: Skeletal muscle is gaining increased attention as an endocrine organ. Recently, novel myokines and new effects of already established myokines have been identified. The objective of this review is to give an update on the recent advances in the field.\nRECENT FINDINGS: Several hundred putative myokines have been described, some of which are induced by contraction and differentially regulated between healthy and metabolically diseased individuals. Interleukin-6 (IL-6) is the prototype myokine, which was identified as a muscle-derived cytokine 15 years ago. Recently, IL-6 has been linked to β-cell survival and inhibition of cancer-cell growth. Moreover, trans-signaling appears to determine whether IL-6 acts as a proinflammatory or an anti-inflammatory cytokine. Irisin has been shown to be a secreted myokine, which contribute to circulating concentrations dependent on training status. IL-15 has been established as a cytokine mediating cross-talk between skeletal muscle and skin tissue, and decorin has been characterized as a contraction-induced myokine which apparently is differentially regulated between healthy and dysglycemic individuals.\nSUMMARY: Skeletal muscle is an endocrine organ which, by the release of myokines, may influence metabolism in virtually all organs in the body. This knowledge may potentially open up for the possibility of designing new drugs that mimic the effects of myokine signaling.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 52
+      },
+      {
+        "start": 54,
+        "end": 142
+      },
+      {
+        "start": 143,
+        "end": 237
+      },
+      {
+        "start": 238,
+        "end": 324
+      },
+      {
+        "start": 325,
+        "end": 522
+      },
+      {
+        "start": 523,
+        "end": 633
+      },
+      {
+        "start": 634,
+        "end": 721
+      },
+      {
+        "start": 722,
+        "end": 841
+      },
+      {
+        "start": 842,
+        "end": 966
+      },
+      {
+        "start": 967,
+        "end": 1227
+      },
+      {
+        "start": 1228,
+        "end": 1371
+      },
+      {
+        "start": 1372,
+        "end": 1498
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "27299471.txt",
+    "title": "27299471.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:50.319Z",
+    "modifiedDate": "2021-10-28T08:09:50.319Z",
+    "text": "Crosstalk Between Muscle and Bone Via the Muscle-Myokine Irisin\n\nSeveral lines of evidence have recently established that skeletal muscle is an endocrine organ producing and releasing myokines acting in a paracrine or endocrine fashion. Among these, the newly identified myokine Irisin, produced by skeletal muscle after physical exercise, was originally described as molecule able to promote energy expenditure in white adipose tissue. Recently, it has been shown that the myokine Irisin affects skeletal metabolism in vivo. Thus, mice treated with a micro-dose of r-Irisin displayed improved cortical bone mass, geometry and strength, resembling the effect of physical activity in developing an efficient load-bearing skeleton. Further studies highlighted the autocrine effect of Irisin on skeletal muscle, and research performed in humans has definitively established that Irisin is a circulating hormone-like myokine, increased by physical activity. Albeit there are still few, since Irisin has been very recently discovered, herein are summarized the most relevant research findings published on this topic.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 63
+      },
+      {
+        "start": 65,
+        "end": 236
+      },
+      {
+        "start": 237,
+        "end": 436
+      },
+      {
+        "start": 437,
+        "end": 525
+      },
+      {
+        "start": 526,
+        "end": 729
+      },
+      {
+        "start": 730,
+        "end": 953
+      },
+      {
+        "start": 954,
+        "end": 1112
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "27765498.txt",
+    "title": "27765498.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:51.282Z",
+    "modifiedDate": "2021-10-28T08:09:51.282Z",
+    "text": "Myokines and adipokines: Involvement in the crosstalk between skeletal muscle and adipose tissue\n\nSkeletal muscle and adipose tissue are the two largest organs in the body. Skeletal muscle is an effector organ, and adipose tissue is an organ that stores energy; in addition, they are endocrine organs that secrete cytokines, namely myokines and adipokines, respectively. Myokines consist of myostatin, interleukin (IL)-8, IL-15, irisin, fibroblast growth factor 21, and myonectin; adipokines include leptin, adiponectin, resistin, chemerin, and visfatin. Furthermore, certain cytokines, such as IL-6 and tumor necrosis factor-α, are released by both skeletal muscle and adipose tissue and exhibit a bioactive effect; thus, they are called adipo-myokines. Recently, novel myokines or adipokines were identified through the secretomic technique, which has expanded our knowledge on the previously unknown functions of skeletal muscle and adipose tissue and provide a new avenue of investigation for obesity treatment or animal production. This review focuses on the roles of and crosstalk between myokines and adipokines in skeletal muscle and adipose tissue that modulate the molecular events in the metabolic homeostasis of the whole body.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 96
+      },
+      {
+        "start": 98,
+        "end": 172
+      },
+      {
+        "start": 173,
+        "end": 370
+      },
+      {
+        "start": 371,
+        "end": 554
+      },
+      {
+        "start": 555,
+        "end": 754
+      },
+      {
+        "start": 755,
+        "end": 1036
+      },
+      {
+        "start": 1037,
+        "end": 1239
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "28437576.txt",
+    "title": "28437576.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:52.227Z",
+    "modifiedDate": "2021-10-28T08:09:52.227Z",
+    "text": "Irisin and musculoskeletal health\n\nIrisin is a hormone-like myokine produced in abundance by skeletal muscle in response to exercise, both in mice and humans. Once released into the circulation, irisin acts on white adipocytes to induce the browning response and subsequently activates nonshivering thermogenesis. We have examined the premise that irisin produced during exercise may subserve further functions in the musculoskeletal system. We review evidence for its possible skeletal effects, including the central role that irisin plays in the control of bone mass, with positive effects on cortical mineral density and geometry in mice. We also review the autocrine effects of irisin in skeletal muscle, in which it upregulates the expression of its precursor (FNDC5). Since loss of bone and muscle mass occurs with aging, immobility, and several metabolic diseases, future studies exploring the efficacy of irisin in restoring bone and reversing muscle wasting could be important to establishing irisin as a molecule that combines beneficial effects for treating osteoporosis and muscular atrophy. If the results from mice were confirmed in human studies, an irisin-based therapy could be developed for physically disabled or bedridden patients.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 33
+      },
+      {
+        "start": 35,
+        "end": 158
+      },
+      {
+        "start": 159,
+        "end": 313
+      },
+      {
+        "start": 314,
+        "end": 441
+      },
+      {
+        "start": 442,
+        "end": 641
+      },
+      {
+        "start": 642,
+        "end": 773
+      },
+      {
+        "start": 774,
+        "end": 1103
+      },
+      {
+        "start": 1104,
+        "end": 1251
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "29062100.txt",
+    "title": "29062100.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:53.16Z",
+    "modifiedDate": "2021-10-28T08:09:53.16Z",
+    "text": "Irisin is a pro-myogenic factor that induces skeletal muscle hypertrophy and rescues denervation-induced atrophy\n\nExercise induces expression of the myokine irisin, which is known to promote browning of white adipose tissue and has been shown to mediate beneficial effects following exercise. Here we show that irisin induces expression of a number of pro-myogenic and exercise response genes in myotubes. Irisin increases myogenic differentiation and myoblast fusion via activation of IL6 signaling. Injection of irisin in mice induces significant hypertrophy and enhances grip strength of uninjured muscle. Following skeletal muscle injury, irisin injection improves regeneration and induces hypertrophy. The effects of irisin on hypertrophy are due to activation of satellite cells and enhanced protein synthesis. In addition, irisin injection rescues loss of skeletal muscle mass following denervation by enhancing satellite cell activation and reducing protein degradation. These data suggest that irisin functions as a pro-myogenic factor in mice.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 112
+      },
+      {
+        "start": 114,
+        "end": 292
+      },
+      {
+        "start": 293,
+        "end": 405
+      },
+      {
+        "start": 406,
+        "end": 500
+      },
+      {
+        "start": 501,
+        "end": 608
+      },
+      {
+        "start": 609,
+        "end": 706
+      },
+      {
+        "start": 707,
+        "end": 816
+      },
+      {
+        "start": 817,
+        "end": 978
+      },
+      {
+        "start": 979,
+        "end": 1053
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "29210643.txt",
+    "title": "29210643.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:54.1Z",
+    "modifiedDate": "2021-10-28T08:09:54.1Z",
+    "text": "Adipokines and Myokines: A Pivotal Role in Metabolic and Cardiovascular Disorders.\n\nObesity induces an imbalance in the expression and secretion of several cytokines, which contributes to the development of metabolic and cardiovascular disorders. On the contrary, skeletal muscle is known to have a role in reversing the detrimental impact of obesity. It has been established that adipose tissue acts as an endocrine organ that secretes proinflammatory and anti-inflammatory adipokines. Similarly, skeletal muscle produces secretory molecules, called myokines, from contracting muscle fibers. Myokines were recently recognized as beneficial modulators of obesity, metabolic syndrome, and type 2 diabetes. Furthermore, adipokines and myokines play a crucial role in the communication between adipose tissue, skeletal muscle and other organs. It could be beneficial to find novel adipokines and myokines, and to explore their signaling pathways to identify targets for the treatment and prevention of cardiometabolic disorders. In this review, we summarize recent studies on cross-talk between skeletal muscle and adipose tissue. In particular, we concentrate on the major action mechanisms of adipokines and myokines, such as adiponectin, adipocyte fatty acid binding protein, C1q/TNF-related proteins, interleukin- 6, irisin, and fibroblast growth factor 21.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 82
+      },
+      {
+        "start": 84,
+        "end": 246
+      },
+      {
+        "start": 247,
+        "end": 351
+      },
+      {
+        "start": 352,
+        "end": 486
+      },
+      {
+        "start": 487,
+        "end": 592
+      },
+      {
+        "start": 593,
+        "end": 704
+      },
+      {
+        "start": 705,
+        "end": 840
+      },
+      {
+        "start": 841,
+        "end": 1025
+      },
+      {
+        "start": 1026,
+        "end": 1127
+      },
+      {
+        "start": 1128,
+        "end": 1358
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "29228710.txt",
+    "title": "29228710.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:55.033Z",
+    "modifiedDate": "2021-10-28T08:09:55.033Z",
+    "text": "Irisin treatment improves healing of dystrophic skeletal muscle\n\nBackground: Irisin is an exercise induced myokine that is shown to promote browning of adipose tissue and hence, increase energy expenditure. Furthermore, our unpublished results indicate that Irisin improves myogenic differentiation and induces skeletal muscle hypertrophy. Since exercise induced skeletal muscle hypertrophy improves muscle strength, we wanted to investigate if ectopic injection of Irisin peptide improves skeletal muscle function in a mouse model of muscular dystrophy. This utility of Irisin peptide is yet to be studied in animal models.\nMethods: In order to test this hypothesis, we expressed and purified recombinant murine Irisin peptide from E. coli. Three- to six-week-old male mdx mice were injected IP with either vehicle (dialysis buffer) or Irisin recombinant peptide for two or four weeks, three times-a-week.\nResults: Irisin injection increased muscle weights and enhanced grip strength in mdx mice. Improved muscle strength can be attributed to the significant hypertrophy observed in the Irisin injected mdx mice. Moreover, Irisin treatment resulted in reduced accumulation of fibrotic tissue and myofiber necrosis in mdx mice. In addition, Irisin improved sarcolemmal stability, which is severely compromised in mdx mice.\nConclusion: Irisin injection induced skeletal muscle hypertrophy, improved muscle strength and reduced necrosis and fibrotic tissue in a murine dystrophy model. These results demonstrate the potential therapeutic value of Irisin in muscular dystrophy.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 63
+      },
+      {
+        "start": 65,
+        "end": 206
+      },
+      {
+        "start": 207,
+        "end": 339
+      },
+      {
+        "start": 340,
+        "end": 554
+      },
+      {
+        "start": 555,
+        "end": 624
+      },
+      {
+        "start": 625,
+        "end": 741
+      },
+      {
+        "start": 742,
+        "end": 906
+      },
+      {
+        "start": 907,
+        "end": 997
+      },
+      {
+        "start": 998,
+        "end": 1113
+      },
+      {
+        "start": 1114,
+        "end": 1227
+      },
+      {
+        "start": 1228,
+        "end": 1322
+      },
+      {
+        "start": 1323,
+        "end": 1483
+      },
+      {
+        "start": 1484,
+        "end": 1574
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "30063442.txt",
+    "title": "30063442.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:55.945Z",
+    "modifiedDate": "2021-10-28T08:09:55.945Z",
+    "text": "Exercise-induced myokines: a brief review of controversial issues of this decade\n\nINTRODUCTION: Myokines, known to mediate metabolism, inflammation, and other pathophysiological conditions, have been widely investigated, including myokines induced by exercise. However, among published literature, there is substantial inconsistency in the quantification of exercise-induced myokines. Here, we summarized and compared published data regarding the effects of exercise on commonly studied myokines including apelin, Brain-derived neurotrophic factor (BDNF), Interleukin-15 (IL-15), irisin, and Secreted protein acidic and rich in cysteine (SPARC) during the last decade and discussed possible reasons for discrepancy in these reports.\nAREAS COVERED: A search on PubMed for original articles published in this decade was conducted, focusing on the impacts of exercises on myokines and metabolic and age-related disorders. Beneficial relationship between skeletal muscle plasticity and myokines due to exercise is also discussed.\nEXPERT COMMENTARY: Based on these analyses, exercise induces the secretion of a number of myokines, which has positive effects on metabolic diseases or age-related muscle atrophy (sarcopenia). However, among published reports, there is wide discrepancy in the quantification of myokines induced by exercise, which could be due to timing of sample collection, pre-analytic sample processing, analytical method, and calculation and other factors. Thus, these factors need to be considered in future studies on exercise induced myokines.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 80
+      },
+      {
+        "start": 82,
+        "end": 260
+      },
+      {
+        "start": 261,
+        "end": 384
+      },
+      {
+        "start": 385,
+        "end": 732
+      },
+      {
+        "start": 733,
+        "end": 918
+      },
+      {
+        "start": 919,
+        "end": 1025
+      },
+      {
+        "start": 1026,
+        "end": 1218
+      },
+      {
+        "start": 1219,
+        "end": 1470
+      },
+      {
+        "start": 1471,
+        "end": 1560
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "30627775.txt",
+    "title": "30627775.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:56.878Z",
+    "modifiedDate": "2021-10-28T08:09:56.878Z",
+    "text": "Roles of myokines in exercise-induced improvement of neuropsychiatric function\n\nExercise is a well-known non-pharmacological intervention to improve brain functions, including cognition, memory, and motor coordination. Contraction of skeletal muscles during exercise releases humoral factors that regulate the whole-body metabolism via interaction with other non-muscle organs. Myokines are muscle-derived effectors that regulate body metabolism by autocrine, paracrine, or endocrine action and were reportedly suggested as “exercise factors” that can improve the brain function. However, several aspects remain to be elucidated, namely the specific activities of myokines related to the whole-body metabolism or brain function, the mechanisms of regulation of other organs or cells, the sources of “exercise factors” that regulate brain function, and their mechanisms of interaction with non-muscle organs. In this paper, we present the physiological functions of myokines secreted by exercise, including regulation of the whole-body metabolism by interaction with other organs and adaptation of skeletal muscles to exercise. In addition, we discuss the functions of myokines that possibly contribute to exercise-induced improvement of brain function. Among several myokines, brain-derived neurotrophic factor (BDNF) is the most studied myokine that regulates adult neurogenesis and synaptic plasticity. However, the source of circulating BDNF and its upstream effector, insulin-like growth factor (IGF-1), and irisin and the effect size of peripheral BDNF, irisin, and IGF-1 released after exercise should be further investigated. Recently, cathepsin B has been reported to be secreted from skeletal muscles and upregulate BDNF following exercise, which was associated with improved cognitive function. We reviewed the level of evidence for the effect of myokine on the brain function. Level of evidence for the association of the change in circulating myokine following exercise and improvement of neuropsychiatric function is lower than the level of evidence for the benefit of exercise on the brain. Therefore, more clinical evidences for the association of myokine release after exercise and their effect on the brain function are required. Finally, we discuss the effect size of the action of myokines on cognitive benefits of exercise, in addition to other contributors, such as improvement of the cardiovascular system or the effect of “exercise factors” released from non-muscle organs, particularly in patients with sarcopenia.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 78
+      },
+      {
+        "start": 80,
+        "end": 218
+      },
+      {
+        "start": 219,
+        "end": 377
+      },
+      {
+        "start": 378,
+        "end": 579
+      },
+      {
+        "start": 580,
+        "end": 907
+      },
+      {
+        "start": 908,
+        "end": 1126
+      },
+      {
+        "start": 1127,
+        "end": 1252
+      },
+      {
+        "start": 1253,
+        "end": 1404
+      },
+      {
+        "start": 1405,
+        "end": 1632
+      },
+      {
+        "start": 1633,
+        "end": 1804
+      },
+      {
+        "start": 1805,
+        "end": 1887
+      },
+      {
+        "start": 1888,
+        "end": 2104
+      },
+      {
+        "start": 2105,
+        "end": 2246
+      },
+      {
+        "start": 2247,
+        "end": 2538
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "30761018.txt",
+    "title": "30761018.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:57.8Z",
+    "modifiedDate": "2021-10-28T08:09:57.8Z",
+    "text": "Role of Myokines in Regulating Skeletal Muscle Mass and Function\n\nLoss of skeletal muscle mass and strength has recently become a hot research topic with the extension of life span and an increasingly sedentary lifestyle in modern society. Maintenance of skeletal muscle mass is considered an essential determinant of muscle strength and function. Myokines are cytokines synthesized and released by myocytes during muscular contractions. They are implicated in autocrine regulation of metabolism in the muscle as well as in the paracrine/endocrine regulation of other tissues and organs including adipose tissue, the liver, and the brain through their receptors. Till date, secretome analysis of human myocyte culture medium has revealed over 600 myokines. In this review article, we summarize our current knowledge of major identified and characterized myokines focusing on their biological activity and function, particularly in muscle mass and function.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 64
+      },
+      {
+        "start": 66,
+        "end": 239
+      },
+      {
+        "start": 240,
+        "end": 347
+      },
+      {
+        "start": 348,
+        "end": 437
+      },
+      {
+        "start": 438,
+        "end": 662
+      },
+      {
+        "start": 663,
+        "end": 756
+      },
+      {
+        "start": 757,
+        "end": 956
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "30893090.txt",
+    "title": "30893090.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:58.713Z",
+    "modifiedDate": "2021-10-28T08:09:58.713Z",
+    "text": "Sarcopenic obesity in fatty liver.\n\nPURPOSE OF REVIEW: Nonalcoholic fatty liver disease (NAFLD) and nonalcoholic steato hepatitis have an increasing prevalence among liver diseases. Overweight and obesity are frequently associated conditions in patients with fatty liver. Skeletal muscle mass depletion may also coexist with chronic liver disease even in obese patients. This review will focus on the relationship between sarcopenic obesity and fatty liver.\nRECENT FINDINGS: Obesity and sarcopenia are frequently encountered in patients with NAFLD. Adipose tissue is able to release molecules (adipokines) that regulate lipid metabolism, interact with insulin sensitivity and may contribute to induce fibrogenesis in the liver. Skeletal muscle tissue is able to secrete myokines regulating muscle metabolism and insulin sensitivity. Myokines perturbation has been reported to influence adipose tissue mass and fat deposition in the liver. Sarcopenia has been reported as independent risk factor for the development of NAFLD, and for a more severe liver fibrosis in patients with NAFLD.\nSUMMARY: The interaction between skeletal muscle, adipose tissue and the liver may play a role in the development of NAFLD. Sarcopenia and sarcopenic obesity are risk factors for the development of fatty liver and associated with more severe liver fibrosis. Management is not standardized, but dietary counseling and physical training have been proposed as promising strategies. Bariatric surgery may be considered in patients with severe 'resistant' obesity.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 34
+      },
+      {
+        "start": 36,
+        "end": 181
+      },
+      {
+        "start": 182,
+        "end": 271
+      },
+      {
+        "start": 272,
+        "end": 370
+      },
+      {
+        "start": 371,
+        "end": 457
+      },
+      {
+        "start": 458,
+        "end": 548
+      },
+      {
+        "start": 549,
+        "end": 727
+      },
+      {
+        "start": 728,
+        "end": 832
+      },
+      {
+        "start": 833,
+        "end": 938
+      },
+      {
+        "start": 939,
+        "end": 1085
+      },
+      {
+        "start": 1086,
+        "end": 1209
+      },
+      {
+        "start": 1210,
+        "end": 1343
+      },
+      {
+        "start": 1344,
+        "end": 1464
+      },
+      {
+        "start": 1465,
+        "end": 1545
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "31065382.txt",
+    "title": "31065382.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:09:59.675Z",
+    "modifiedDate": "2021-10-28T08:09:59.675Z",
+    "text": "Exercise-Induced Irisin, the Fat Browning Myokine, as a Potential Anticancer Agent\n\nIrisin is a recently discovered myokine that plays an important role in fat metabolism through the browning of white adipose tissue. This myokine is usually secreted after exercise by improving energy balance and has shown great potential as a possible treatment for some metabolic diseases such as obesity, insulin resistance, and inflammation. Obesity has been linked to a higher incidence of some cancers. Furthermore, some studies have shown irisin to have direct positive effects on different types of cancers. Although it is hard to relay conclusions from in vitro to in vivo studies, the majority of the available data favor irisin as a potential substance for cancer regression through reducing proinflammatory markers linked to obesity. However, some controversies remain on the exact benefits of irisin on cancer with some studies showing no or even a negative effect of irisin on cancer. This review summarizes these 2 differing viewpoints and synthesizes them to form a clearer picture of exercise-induced irisin's effects on cancer.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 82
+      },
+      {
+        "start": 84,
+        "end": 216
+      },
+      {
+        "start": 217,
+        "end": 429
+      },
+      {
+        "start": 430,
+        "end": 492
+      },
+      {
+        "start": 493,
+        "end": 599
+      },
+      {
+        "start": 600,
+        "end": 829
+      },
+      {
+        "start": 830,
+        "end": 982
+      },
+      {
+        "start": 983,
+        "end": 1129
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "31133682.txt",
+    "title": "31133682.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:00.635Z",
+    "modifiedDate": "2021-10-28T08:10:00.635Z",
+    "text": "The Role of Myokines and Adipokines in Hypertension and Hypertension-related Complications\n\nThe cross-talk between skeletal muscle and adipose tissue has been identified to play a key role in the regulation of blood pressure and the development of hypertension. The role of different adipokines and myokines in hypertension and hypertension-related complications remains unclear. In the present study, 98 hypertensive patients and 24 normotensive controls were recruited, and additional subgroup analyses of hypertension-related complications were also performed. The levels of the circulating bone-derived factors leptin, apelin, fractalkine, brain-derived neurotrophic factor (BDNF), leukemia inhibitory factor (LIF), myostatin, fatty-acid-binding protein 3 (FABP3), irisin, follistatin-related protein 1 (FSTL1), oncostatin M, fibroblast growth factor 21 (FGF21) and musclin were measured by a protein liquid chip assay. The circulating levels of BDNF and musclin were decreased, whereas the leptin and irisin levels were increased, in hypertensive patients compared with those in the control individuals. Further logistic analysis indicated that the irisin level was positively correlated with SBP and an independent predictor for hypertension after adjustment. In nonobese subjects, the concentrations of DKK1, BDNF and FSTL1 were decreased, whereas the concentrations of leptin and irisin were increased. Irisin and DKK1 might be associated with hypertension. Additional subgroup analyses showed that irisin is significantly associated with hypertension-related stroke. In conclusion, we found that increased irisin levels are associated with hypertension and hypertension-related stroke. These findings indicate that irisin may be involved in the pathophysiology of hypertension.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 90
+      },
+      {
+        "start": 92,
+        "end": 261
+      },
+      {
+        "start": 262,
+        "end": 379
+      },
+      {
+        "start": 380,
+        "end": 563
+      },
+      {
+        "start": 564,
+        "end": 923
+      },
+      {
+        "start": 924,
+        "end": 1108
+      },
+      {
+        "start": 1109,
+        "end": 1265
+      },
+      {
+        "start": 1266,
+        "end": 1410
+      },
+      {
+        "start": 1411,
+        "end": 1465
+      },
+      {
+        "start": 1466,
+        "end": 1575
+      },
+      {
+        "start": 1576,
+        "end": 1694
+      },
+      {
+        "start": 1695,
+        "end": 1786
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "31494773.txt",
+    "title": "31494773.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:01.562Z",
+    "modifiedDate": "2021-10-28T08:10:01.562Z",
+    "text": "Role of irisin in androgen-deficient muscle wasting and osteopenia in mice\n\nAndrogen deficiency plays a crucial role in the pathogenesis of male osteoporosis and sarcopenia. Myokines have recently been identified as humoral factors that are involved in the interactions between muscle and bone; however, the influence of androgen deficiency on these interactions remains unclear. Therefore, we herein investigated the roles of humoral factors linking muscle to bone using orchidectomized mice with sarcopenia and osteopenia. Orchidectomy (ORX) significantly reduced muscle mass, grip strength, and trabecular bone mineral density (BMD) in mice. Among the myokines examined, ORX only significantly reduced fibronectin type III domain-containing 5 (Fndc5) mRNA levels in both the soleus and gastrocnemius muscles of mice. In simple regression analyses, Fndc5 mRNA levels in the soleus muscle positively correlated with trabecular BMD, but not cortical BMD. The administration of irisin, a product of Fndc5, significantly protected against the decrease induced in trabecular BMD, but not muscle mass, by androgen deficiency in mice. In conclusion, the present results demonstrated that androgen deficiency decreases the expression of irisin in the skeletal muscle of mice. Irisin may be involved in muscle/bone relationships negatively affected by androgen deficiency.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 74
+      },
+      {
+        "start": 76,
+        "end": 173
+      },
+      {
+        "start": 174,
+        "end": 379
+      },
+      {
+        "start": 380,
+        "end": 524
+      },
+      {
+        "start": 525,
+        "end": 644
+      },
+      {
+        "start": 645,
+        "end": 819
+      },
+      {
+        "start": 820,
+        "end": 954
+      },
+      {
+        "start": 955,
+        "end": 1129
+      },
+      {
+        "start": 1130,
+        "end": 1269
+      },
+      {
+        "start": 1270,
+        "end": 1365
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "31952571.txt",
+    "title": "31952571.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:02.472Z",
+    "modifiedDate": "2021-10-28T08:10:02.472Z",
+    "text": "Myokines: The endocrine coupling of skeletal muscle and bone\n\nBone and skeletal muscle are integrated organs and their coupling has been considered mainly a mechanical one in which bone serves as attachment site to muscle while muscle applies load to bone and regulates bone metabolism. However, skeletal muscle can affect bone homeostasis also in a non-mechanical fashion, i.e., through its endocrine activity. Being recognized as an endocrine organ itself, skeletal muscle secretes a panel of cytokines and proteins named myokines, synthesized and secreted by myocytes in response to muscle contraction. Myokines exert an autocrine function in regulating muscle metabolism as well as a paracrine/endocrine regulatory function on distant organs and tissues, such as bone, adipose tissue, brain and liver. Physical activity is the primary physiological stimulus for bone anabolism (and/or catabolism) through the production and secretion of myokines, such as IL-6, irisin, IGF-1, FGF2, beside the direct effect of loading. Importantly, exercise-induced myokine can exert an anti-inflammatory action that is able to counteract not only acute inflammation due to an infection, but also a condition of chronic low-grade inflammation raised as consequence of physical inactivity, aging or metabolic disorders (i.e., obesity, type 2 diabetes mellitus). In this review article, we will discuss the effects that some of the most studied exercise-induced myokines exert on bone formation and bone resorption, as well as a brief overview of the anti-inflammatory effects of myokines during the onset pathological conditions characterized by the development a systemic low-grade inflammation, such as sarcopenia, obesity and aging.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 60
+      },
+      {
+        "start": 62,
+        "end": 286
+      },
+      {
+        "start": 287,
+        "end": 411
+      },
+      {
+        "start": 412,
+        "end": 605
+      },
+      {
+        "start": 606,
+        "end": 805
+      },
+      {
+        "start": 806,
+        "end": 1022
+      },
+      {
+        "start": 1023,
+        "end": 1347
+      },
+      {
+        "start": 1348,
+        "end": 1721
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "31998896.txt",
+    "title": "31998896.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:03.398Z",
+    "modifiedDate": "2021-10-28T08:10:03.398Z",
+    "text": "Grape pomace extract supplementation activates FNDC5/irisin in muscle and promotes white adipose browning in rats fed a high-fat diet\n\nIrisin is a myokine regulated by peroxisome proliferator-activated receptor gamma co-activator-1α (PGC-1α) in the exercising skeletal muscle and released into the bloodstream after cleavage of FNDC5. Circulating irisin can up-regulate UCP-1 expression in white adipose tissue (WAT) promoting the formation of brown-like adipocytes. The aim of this study was to evaluate if supplementation with a grape pomace extract (GPE) could activate the FNDC5/irisin pathway via PGC-1α in rats fed a high fat diet (HFD). For this purpose we characterized the activation of: i. the FNDC5/irisin pathway and AMPK in skeletal muscle and ii. proteins involved in the formation of brown-like cells in epididymal WAT (eWAT). Consumption of the GPE activated the FNDC5/irisin pathway, increased AMPK phosphorylation in skeletal muscle and enhanced irisin plasma levels. In eWAT, the GPE increased the level of proteins involved in WAT browning, i.e. PGC-1α, PPARγ, PRDM16 and UCP-1. The GPE also prevented HFD-induced adipocyte hypertrophy and systemic insulin resistance. Consistently, in L6 myotubes, (-)-epicatechin (EC), a flavonoid abundant in the GPE, prevented palmitate-mediated downregulation of FNDC5/irisin protein expression and secretion, in part via PGC-1α activation. Consumption of the GPE, a winemaking residue rich in bioactive compounds, could be a beneficial strategy to counteract the adverse effects of Western style diets through the promotion of WAT browning.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 133
+      },
+      {
+        "start": 135,
+        "end": 334
+      },
+      {
+        "start": 335,
+        "end": 466
+      },
+      {
+        "start": 467,
+        "end": 643
+      },
+      {
+        "start": 644,
+        "end": 841
+      },
+      {
+        "start": 842,
+        "end": 985
+      },
+      {
+        "start": 986,
+        "end": 1098
+      },
+      {
+        "start": 1099,
+        "end": 1188
+      },
+      {
+        "start": 1189,
+        "end": 1398
+      },
+      {
+        "start": 1399,
+        "end": 1599
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "32207258.txt",
+    "title": "32207258.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:04.308Z",
+    "modifiedDate": "2021-10-28T08:10:04.308Z",
+    "text": "Impact of Skeletal Muscle Mass on Metabolic Health\n\nSkeletal muscle is regarded as an endocrine and paracrine organ. Muscle-derived secretory proteins, referred to as myokines, mediate interactions between skeletal muscle mass and other organs such as the liver, adipose tissue, pancreas, bone, and the cardiovascular system. As individuals age, reduced levels of physical activity and sarcopenia (loss of skeletal muscle mass and strength) are associated with physical frailty and disability. Recently, several studies have suggested that the loss of skeletal muscle mass may contribute to metabolic disease. Therefore, herein, we focus on the relationships between skeletal muscle mass and metabolic diseases, including metabolic syndrome and non-alcoholic fatty liver disease.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 50
+      },
+      {
+        "start": 52,
+        "end": 116
+      },
+      {
+        "start": 117,
+        "end": 325
+      },
+      {
+        "start": 326,
+        "end": 493
+      },
+      {
+        "start": 494,
+        "end": 609
+      },
+      {
+        "start": 610,
+        "end": 779
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "32236810.txt",
+    "title": "32236810.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:05.222Z",
+    "modifiedDate": "2021-10-28T08:10:05.222Z",
+    "text": "Impact of adipokines and myokines on fat browning\n\nSince the discovery of leptin in 1994, the adipose tissue (AT) is not just considered a passive fat storage organ but also an extremely active secretory and endocrine organ that secretes a large variety of hormones, called adipokines, involved in energy metabolism. Adipokines may not only contribute to AT dysfunction and obesity, but also in fat browning, a process that induces a phenotypic switch from energy-storing white adipocytes to thermogenic brown fat–like cells. The fat browning process and, consequently, thermogenesis can also be stimulated by physical exercise. Contracting skeletal muscle is a metabolically active tissue that participates in several endocrine functions through the production of bioactive factors, collectively termed myokines, proposed as the mediators of physical activity–induced health benefits. Myokines affect muscle mass, have profound effects on glucose and lipid metabolism, and promote browning and thermogenesis of white AT in an endocrine and/or paracrine manner. The present review focuses on the role of different myokines and adipokines in the regulation of fat browning, as well as in the potential cross-talk between AT and skeletal muscle, in order to control body weight, energy expenditure and thermogenesis.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 49
+      },
+      {
+        "start": 51,
+        "end": 316
+      },
+      {
+        "start": 317,
+        "end": 525
+      },
+      {
+        "start": 526,
+        "end": 628
+      },
+      {
+        "start": 629,
+        "end": 885
+      },
+      {
+        "start": 886,
+        "end": 1061
+      },
+      {
+        "start": 1062,
+        "end": 1314
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "32443765.txt",
+    "title": "32443765.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:06.156Z",
+    "modifiedDate": "2021-10-28T08:10:06.156Z",
+    "text": "Physical Exercise and Myokines: Relationships with Sarcopenia and Cardiovascular Complications\n\nSkeletal muscle is capable of secreting different factors in order to communicate with other tissues. These mediators, the myokines, show potentially far-reaching effects on non-muscle tissues and can provide a molecular interaction between muscle and body physiology. Sarcopenia is a chronic degenerative neuromuscular disease closely related to cardiomyopathy and chronic heart failure, which influences the production and release of myokines. Our objective was to explore the relationship between myokines, sarcopenia, and cardiovascular diseases (CVD). The autocrine, paracrine, and endocrine actions of myokines include regulation of energy expenditure, insulin sensitivity, lipolysis, free fatty acid oxidation, adipocyte browning, glycogenolysis, glycogenesis, and general metabolism. A sedentary lifestyle accelerates the aging process and is a risk factor for developing sarcopenia, metabolic syndrome, and CVD. Increased adipose tissue resulting from the decrease in muscle mass in patients with sarcopenia may also be involved in the pathology of CVD. Myokines are protagonists in the complex condition of sarcopenia, which is associated with adverse clinical outcomes in patients with CVD. The discovery of new pathways and the link between myokines and CVD remain a cornerstone toward multifaceted interventions and perhaps the minimization of the damage resulting from muscle loss induced by factors such as atherosclerosis.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 94
+      },
+      {
+        "start": 96,
+        "end": 197
+      },
+      {
+        "start": 198,
+        "end": 364
+      },
+      {
+        "start": 365,
+        "end": 541
+      },
+      {
+        "start": 542,
+        "end": 652
+      },
+      {
+        "start": 653,
+        "end": 887
+      },
+      {
+        "start": 888,
+        "end": 1016
+      },
+      {
+        "start": 1017,
+        "end": 1158
+      },
+      {
+        "start": 1159,
+        "end": 1297
+      },
+      {
+        "start": 1298,
+        "end": 1534
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "32586076.txt",
+    "title": "32586076.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:07.109Z",
+    "modifiedDate": "2021-10-28T08:10:07.109Z",
+    "text": "Myokines: a descriptive review.\n\nIn the last years, scientists have shown that skeletal muscle is not a pure locomotor unit or responsible for propulsion and posture. Skeletal muscle encompasses one of the major organs of the body (constituting about 40% of the body mass in non-obese men). It regulates energy and metabolic processes and is now recognized as an organ capable of producing molecules with vital functions. These molecules are termed myokines, a new field of research in the health sciences, and represent an open field of discoveries and applications in several areas. The aim of this review was to show the role of some well-known myokines in the maintenance of homeostasis. Our search was performed in databases such as Medline/Pubmed, Embase and Scielo. Some relevant myokines are interleukin-6 (IL-6), IL-8, IL-15, irisin, myostatin, fibroblast growth factor 21 (FGF21), leukemia inhibitory factor (LIF), brain-derived neurotrophic factor (BDNF), and insulin-like growth factor-1 (IGF-1). They are related to play a positive or negative role in muscle function and metabolism homeostasis. They are associated with the regulation of glucose and lipid metabolism, the deposition of fat in the adipose tissue, and the \"browning\" of the white adipose tissue. For these reasons, they can interfere with the prevention of obesity, diabetes, metabolic syndrome, and cardiovascular diseases. The discovery of the myokines has opened a new direction in understanding the effects of exercises on humans.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 31
+      },
+      {
+        "start": 33,
+        "end": 166
+      },
+      {
+        "start": 167,
+        "end": 290
+      },
+      {
+        "start": 291,
+        "end": 421
+      },
+      {
+        "start": 422,
+        "end": 584
+      },
+      {
+        "start": 585,
+        "end": 691
+      },
+      {
+        "start": 692,
+        "end": 772
+      },
+      {
+        "start": 773,
+        "end": 1008
+      },
+      {
+        "start": 1009,
+        "end": 1108
+      },
+      {
+        "start": 1109,
+        "end": 1274
+      },
+      {
+        "start": 1275,
+        "end": 1403
+      },
+      {
+        "start": 1404,
+        "end": 1513
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "32668398.txt",
+    "title": "32668398.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:08.095Z",
+    "modifiedDate": "2021-10-28T08:10:08.095Z",
+    "text": "Myokines and adipokines in sarcopenia: understanding cross-talk between skeletal muscle and adipose tissue and the role of exercise\n\nDetrimental age-associated changes in skeletal muscle and adipose tissue increase the risk of sarcopenia. Age-related changes in myokines, such as myostatin and irisin, as well as adipokines, such as leptin and adiponectin, contribute to cross-talk between muscle and adipose tissue. These age-related changes in myokines and adipokines have important implications for sarcopenia, however, recent literature highlights discrepancies in these relationships. Exercise may alter serum profiles and muscle receptor expression of these factors, but future work is needed to determine whether these changes in myokines and adipokines relate to improvements in muscle mass and function. Here, we describe myokine-mediated and adipokine-mediated interactions between muscle and adipose tissue, and discuss the fundamental importance of these cytokines to understanding the development of sarcopenia.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 131
+      },
+      {
+        "start": 133,
+        "end": 238
+      },
+      {
+        "start": 239,
+        "end": 416
+      },
+      {
+        "start": 417,
+        "end": 589
+      },
+      {
+        "start": 590,
+        "end": 812
+      },
+      {
+        "start": 813,
+        "end": 1024
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33003490.txt",
+    "title": "33003490.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:09.038Z",
+    "modifiedDate": "2021-10-28T08:10:09.038Z",
+    "text": "Irisin in Liver Cirrhosis\n\nBACKGROUND: Sarcopenia is a prevalent muscle abnormality characterized by progressive and generalized loss of skeletal muscle mass and strength, common among patients with decompensated advanced chronic liver disease (dACLD). Irisin is a recently identified myokine, which is mainly expressed and secreted by skeletal muscle. Pointing to the essential role of irisin in metabolic regulation and energy expenditure we hypothesize that it plays an important role in cirrhosis development and progression.\nAIM: To assess irisin serum levels in patients with dACLD, with different cirrhosis stage and etiology. To analyze relationship between sarcopenia and irisin serum levels.\nMETHODS: Serum irisin concentrations were measured with commercially available ELISA kits in 88 cirrhotic patients. Recorded parameters of muscle mass were hand-grip strength (HGS), mid-arm muscle circumference (MAC), and transversal psoas muscle index (TPMI).\nRESULTS: There was no difference in serum irisin levels between cirrhotic patients with different Child-Pugh (CTP) and model of end-stage liver disease (MELD) score, and those with and without ascites. The Liver Frailty Index (LFI) was significantly higher in patients with more advanced liver disease according to CTP and MELD. There was no association between serum irisin level with MAC (r = 0.04, p = 0.74) nor with TPMI (r = 0.20, p = 0.06). We observed significant negative correlation between serum irisin level and age (r = -0.35, p < 0.001).\nCONCLUSIONS: Serum irisin levels did not correlate with sarcopenia. There was no difference in serum irisin levels between cirrhotic patients with and without diabetes. There was no difference in serum irisin levels among patients with more severe dACLD, although we observed significant LFI increase among patients with more advanced liver disease.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 25
+      },
+      {
+        "start": 27,
+        "end": 252
+      },
+      {
+        "start": 253,
+        "end": 352
+      },
+      {
+        "start": 353,
+        "end": 529
+      },
+      {
+        "start": 530,
+        "end": 633
+      },
+      {
+        "start": 634,
+        "end": 701
+      },
+      {
+        "start": 702,
+        "end": 817
+      },
+      {
+        "start": 818,
+        "end": 962
+      },
+      {
+        "start": 963,
+        "end": 1164
+      },
+      {
+        "start": 1165,
+        "end": 1291
+      },
+      {
+        "start": 1292,
+        "end": 1409
+      },
+      {
+        "start": 1410,
+        "end": 1513
+      },
+      {
+        "start": 1514,
+        "end": 1581
+      },
+      {
+        "start": 1582,
+        "end": 1682
+      },
+      {
+        "start": 1683,
+        "end": 1863
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33019579.txt",
+    "title": "33019579.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:10.006Z",
+    "modifiedDate": "2021-10-28T08:10:10.006Z",
+    "text": "Exercise-Induced Myokines can Explain the Importance of Physical Activity in the Elderly: An Overview\n\nPhysical activity has been found to aid the maintenance of health in the elderly. Exercise-induced skeletal muscle contractions lead to the production and secretion of many small proteins and proteoglycan peptides called myokines. Thus, studies on myokines are necessary for ensuring the maintenance of skeletal muscle health in the elderly. This review summarizes 13 myokines regulated by physical activity that are affected by aging and aims to understand their potential roles in metabolic diseases. We categorized myokines into two groups based on regulation by aerobic and anaerobic exercise. With aging, the secretion of apelin, β-aminoisobutyric acid (BAIBA), bone morphogenetic protein 7 (BMP-7), decorin, insulin-like growth factor 1 (IGF-1), interleukin-15 (IL-15), irisin, stromal cell-derived factor 1 (SDF-1), sestrin, secreted protein acidic rich in cysteine (SPARC), and vascular endothelial growth factor A (VEGF-A) decreased, while that of IL-6 and myostatin increased. Aerobic exercise upregulates apelin, BAIBA, IL-15, IL-6, irisin, SDF-1, sestrin, SPARC, and VEGF-A expression, while anaerobic exercise upregulates BMP-7, decorin, IGF-1, IL-15, IL-6, irisin, and VEGF-A expression. Myostatin is downregulated by both aerobic and anaerobic exercise. This review provides a rationale for developing exercise programs or interventions that maintain a balance between aerobic and anaerobic exercise in the elderly.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 101
+      },
+      {
+        "start": 103,
+        "end": 184
+      },
+      {
+        "start": 185,
+        "end": 333
+      },
+      {
+        "start": 334,
+        "end": 444
+      },
+      {
+        "start": 445,
+        "end": 605
+      },
+      {
+        "start": 606,
+        "end": 700
+      },
+      {
+        "start": 701,
+        "end": 1089
+      },
+      {
+        "start": 1090,
+        "end": 1304
+      },
+      {
+        "start": 1305,
+        "end": 1371
+      },
+      {
+        "start": 1372,
+        "end": 1533
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33171610.txt",
+    "title": "33171610.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:10.943Z",
+    "modifiedDate": "2021-10-28T08:10:10.943Z",
+    "text": "Adipokines, Myokines, and Cardiokines: The Role of Nutritional Interventions\n\nIt is now established that adipose tissue, skeletal muscle, and heart are endocrine organs and secrete in normal and in pathological conditions several molecules, called, respectively, adipokines, myokines, and cardiokines. These secretory proteins constitute a closed network that plays a crucial role in obesity and above all in cardiac diseases associated with obesity. In particular, the interaction between adipokines, myokines, and cardiokines is mainly involved in inflammatory and oxidative damage characterized obesity condition. Identifying new therapeutic agents or treatment having a positive action on the expression of these molecules could have a key positive effect on the management of obesity and its cardiac complications. Results from recent studies indicate that several nutritional interventions, including nutraceutical supplements, could represent new therapeutic agents on the adipo-myo-cardiokines network. This review focuses the biological action on the main adipokines, myokines and cardiokines involved in obesity and cardiovascular diseases and describe the principal nutraceutical approaches able to regulate leptin, adiponectin, apelin, irisin, natriuretic peptides, and follistatin-like 1 expression.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 76
+      },
+      {
+        "start": 78,
+        "end": 301
+      },
+      {
+        "start": 302,
+        "end": 450
+      },
+      {
+        "start": 451,
+        "end": 616
+      },
+      {
+        "start": 617,
+        "end": 819
+      },
+      {
+        "start": 820,
+        "end": 1010
+      },
+      {
+        "start": 1011,
+        "end": 1312
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33190987.txt",
+    "title": "33190987.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:11.87Z",
+    "modifiedDate": "2021-10-28T08:10:11.87Z",
+    "text": "Myokines in treatment-na�ve patients with cancer-associated cachexia\n\nCancer-associated cachexia is a complex metabolic syndrome characterized by weight loss and systemic inflammation. Muscle loss and fatty infiltration into muscle are associated with poor prognosis in cancer patients. Skeletal muscle secretes myokines, factors with autocrine, paracrine and/or endocrine action, which may be modified by or play a role in cachexia. This study examined myokine content in the plasma, skeletal muscle and tumor homogenates from treatment-na�ve patients with gastric or colorectal stages I-IV cancer with cachexia (CC, N�=�62), or not (weight stable cancer, WSC, N�=�32). Myostatin, interleukin (IL) 15, follistatin-like protein 1 (FSTL-1), fatty acid binding protein 3 (FABP3), irisin and brain-derived neurotrophic factor (BDNF) protein content in samples was measured with Multiplex technology; body composition and muscle lipid infiltration were evaluated in computed tomography, and quantification of triacylglycerol (TAG) in the skeletal muscle. Cachectic patients presented lower muscle FSTL-1 expression (p�=�0.047), higher FABP3 plasma content (p�=�0.0301) and higher tumor tissue expression of FABP3 (p�=�0.0182), IL-15 (p�=�0.007) and irisin (p�=�0.0110), compared to WSC. Neither muscle TAG content, nor muscle attenuation were different between weight stable and cachectic patients. Lumbar adipose tissue (AT) index, visceral AT index and subcutaneous AT index were lower in CC (p�=�0.0149, p�=�0.0455 and p�=�0.0087, respectively), who also presented lower muscularity in the cohort (69.2% of patients; p�=�0.0301), compared to WSC. The results indicate the myokine profile in skeletal muscle, plasma and tumor is impacted by cachexia. These findings show that myokines eventually affecting muscle wasting may not solely derive from the muscle itself (as the tumor also may contribute to the systemic scenario), and put forward new perspectives on cachexia treatment targeting myokines and associated receptors and pathways.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 68
+      },
+      {
+        "start": 70,
+        "end": 184
+      },
+      {
+        "start": 185,
+        "end": 286
+      },
+      {
+        "start": 287,
+        "end": 433
+      },
+      {
+        "start": 434,
+        "end": 670
+      },
+      {
+        "start": 671,
+        "end": 1050
+      },
+      {
+        "start": 1051,
+        "end": 1282
+      },
+      {
+        "start": 1283,
+        "end": 1394
+      },
+      {
+        "start": 1395,
+        "end": 1645
+      },
+      {
+        "start": 1646,
+        "end": 1748
+      },
+      {
+        "start": 1749,
+        "end": 2037
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33317180.txt",
+    "title": "33317180.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:12.794Z",
+    "modifiedDate": "2021-10-28T08:10:12.794Z",
+    "text": "Modulatory Effect of Myokines on Reactive Oxygen Species in Ischemia/Reperfusion\n\nThere is a growing body of evidence showing the importance of physical activity against acute ischemic events in various organs. Ischemia/reperfusion injury (I/R) is characterized by tissue damage as a result of restriction and subsequent restoration of blood supply to an organ. Oxidative stress due to increased reactive oxygen species formation and/or insufficient antioxidant defense is considered to play an important role in I/R. Physical activity not only decreases the general risk factors for ischemia but also confers direct anti-ischemic protection via myokine production. Myokines are skeletal muscle-derived cytokines, representing multifunctional communication channels between the contracting skeletal muscle and other organs through an endocrine manner. In this review, we discuss the most prominent members of the myokines (i.e., brain-derived neurotrophic factor (BDNF), cathepsin B, decorin, fibroblast growth factors-2 and -21, follistatin, follistatin-like, insulin-like growth factor-1; interleukin-6, interleukin-7, interleukin-15, irisin, leukemia inhibitory factor, meteorin-like, myonectin, musclin, myostatin, and osteoglycin) with a particular interest in their potential influence on reactive oxygen and nitrogen species formation or antioxidant capacity. A better understanding of the mechanism of action of myokines and particularly their participation in the regulation of oxidative stress may widen their possible therapeutic use and, thereby, may support the fight against I/R.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 80
+      },
+      {
+        "start": 82,
+        "end": 210
+      },
+      {
+        "start": 211,
+        "end": 361
+      },
+      {
+        "start": 362,
+        "end": 665
+      },
+      {
+        "start": 666,
+        "end": 851
+      },
+      {
+        "start": 852,
+        "end": 1366
+      },
+      {
+        "start": 1367,
+        "end": 1593
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33359670.txt",
+    "title": "33359670.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:13.701Z",
+    "modifiedDate": "2021-10-28T08:10:13.701Z",
+    "text": "The “irisin system”: From biological roles to pharmacological and nutraceutical perspectives\n\nThe scientific interest in irisin, a myokine discovered in 2012, has grown exponentially in recent years. Irisin, which is mainly produced in skeletal muscle, influences the browning process of adipose tissue and lipid and energy metabolism. Recent discoveries highlight that the potential of this hormone may have been underestimated. In the first part of this review, reports on irisin structure and molecules involved in its metabolic pathway are shown. Furthermore, data related to unclear aspects are also reported: distribution, different gene expression of its precursors in different tissues, physiological levels of circulating irisin, and pharmacokinetic and pharmacodynamic profile. The second part of this work focuses on exogenous stimuli and pharmacological agents which regulate the metabolic pathway of irisin and its serum concentration. In addition to physical exercise and exposure to low temperatures, which were early recognized as exogenous stimuli able to promote the production of this myokine, preclinical and clinical evidence demonstrates the ability of natural and synthetic molecules to interfere with this metabolic pathway. Current experimental data on irisin cannot dissolve all doubts related to this interesting molecule, but they certainly underline its potential for therapeutic purposes. Thus, identification of new pharmacological tools able to act on the irisin pathway is a challenging issue for biomedical research.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 92
+      },
+      {
+        "start": 94,
+        "end": 199
+      },
+      {
+        "start": 200,
+        "end": 335
+      },
+      {
+        "start": 336,
+        "end": 429
+      },
+      {
+        "start": 430,
+        "end": 550
+      },
+      {
+        "start": 551,
+        "end": 787
+      },
+      {
+        "start": 788,
+        "end": 948
+      },
+      {
+        "start": 949,
+        "end": 1248
+      },
+      {
+        "start": 1249,
+        "end": 1418
+      },
+      {
+        "start": 1419,
+        "end": 1550
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33493316.txt",
+    "title": "33493316.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:14.616Z",
+    "modifiedDate": "2021-10-28T08:10:14.616Z",
+    "text": "Progress and Challenges in the Biology of FNDC5 and Irisin\n\nIn 2002, a transmembrane protein-now known as FNDC5-was discovered and shown to be expressed in skeletal muscle, heart, and brain. It was virtually ignored for 10 years, until a study in 2012 proposed that, in response to exercise, the ectodomain of skeletal muscle FNDC5 was cleaved, traveled to white adipose tissue, and induced browning. The wasted energy of this browning raised the possibility that this myokine, named irisin, might mediate some beneficial effects of exercise. Since then, more than 1000 papers have been published exploring the roles of irisin. A major interest has been on adipose tissue and metabolism, following up the major proposal from 2012. Many studies correlating plasma irisin levels with physiological conditions have been questioned for using flawed assays for irisin concentration. However, experiments altering irisin levels by injecting recombinant irisin or by gene knockout are more promising. Recent discoveries have suggested potential roles of irisin in bone remodeling and in the brain, with effects potentially related to Alzheimer's disease. We discuss some discrepancies between research groups and the mechanisms that are yet to be determined. Some important questions raised in the initial discovery of irisin, such as the role of the mutant start codon of human FNDC5 and the mechanism of ectodomain cleavage, remain to be answered. Apart from these specific questions, a promising new tool has been developed-mice with a global or tissue-specific knockout of FNDC5. In this review, we critically examine the current knowledge and delineate potential solutions to resolve existing ambiguities.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 58
+      },
+      {
+        "start": 60,
+        "end": 190
+      },
+      {
+        "start": 191,
+        "end": 400
+      },
+      {
+        "start": 401,
+        "end": 542
+      },
+      {
+        "start": 543,
+        "end": 627
+      },
+      {
+        "start": 628,
+        "end": 730
+      },
+      {
+        "start": 731,
+        "end": 877
+      },
+      {
+        "start": 878,
+        "end": 993
+      },
+      {
+        "start": 994,
+        "end": 1147
+      },
+      {
+        "start": 1148,
+        "end": 1251
+      },
+      {
+        "start": 1252,
+        "end": 1442
+      },
+      {
+        "start": 1443,
+        "end": 1576
+      },
+      {
+        "start": 1577,
+        "end": 1703
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33528828.txt",
+    "title": "33528828.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:15.565Z",
+    "modifiedDate": "2021-10-28T08:10:15.565Z",
+    "text": "Recent advances and future avenues in understanding the role of adipose tissue cross talk in mediating skeletal muscle mass and function with ageing\n\nSarcopenia, broadly defined as the age-related decline in skeletal muscle mass, quality, and function, is associated with chronic low-grade inflammation and an increased likelihood of adverse health outcomes. The regulation of skeletal muscle mass with ageing is complex and necessitates a delicate balance between muscle protein synthesis and degradation. The secretion and transfer of cytokines, long non-coding RNAs (lncRNAs) and microRNAs (miRNAs), both discretely and within extracellular vesicles, have emerged as important communication channels between tissues. Some of these factors have been implicated in regulating skeletal muscle mass, function, and pathologies and may be perturbed by excessive adiposity. Indeed, adipose tissue participates in a broad spectrum of inter-organ communication and obesity promotes the accumulation of macrophages, cellular senescence, and the production and secretion of pro-inflammatory factors. Pertinently, age-related sarcopenia has been reported to be more prevalent in obesity; however, such effects are confounded by comorbidities and physical activity level. In this review, we provide evidence that adiposity may exacerbate age-related sarcopenia and outline some emerging concepts of adipose-skeletal muscle communication including the secretion and processing of novel myokines and adipokines and the role of extracellular vesicles in mediating inter-tissue cross talk via lncRNAs and miRNAs in the context of sarcopenia, ageing, and obesity. Further research using advances in proteomics, transcriptomics, and techniques to investigate extracellular vesicles, with an emphasis on translational, longitudinal human studies, is required to better understand the physiological significance of these factors, the impact of obesity upon them, and their potential as therapeutic targets in combating muscle wasting.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 148
+      },
+      {
+        "start": 150,
+        "end": 358
+      },
+      {
+        "start": 359,
+        "end": 506
+      },
+      {
+        "start": 507,
+        "end": 719
+      },
+      {
+        "start": 720,
+        "end": 869
+      },
+      {
+        "start": 870,
+        "end": 1091
+      },
+      {
+        "start": 1092,
+        "end": 1261
+      },
+      {
+        "start": 1262,
+        "end": 1648
+      },
+      {
+        "start": 1649,
+        "end": 2016
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33566209.txt",
+    "title": "33566209.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:16.537Z",
+    "modifiedDate": "2021-10-28T08:10:16.537Z",
+    "text": "Role of irisin in effects of chronic exercise on muscle and bone in ovariectomized mice\n\nIntroductionExercise is beneficial for the prevention and treatment of osteoporosis. Skeletal muscle affects other tissues via myokines, the release of which is regulated by acute exercise. However, the effects of chronic exercise on myokines linking muscle to bone have not been fully elucidated. Therefore, we investigated the effects of chronic exercise on bone and myokines using ovariectomized (OVX) mice.Materials and methodsTreadmill exercise with moderate intensity was performed for 8 weeks after OVX or sham surgery. We measured bone mineral density (BMD) at the femurs and tibias of mice by quantitative computed tomography and myokine mRNA levels in the gastrocnemius and soleus muscles.ResultsTreadmill exercise ameliorated decreases in trabecular and cortical BMD in the femurs of OVX mice. Irisin is a proteolytic product of fibronectin type III domain-containing 5 (Fndc5). Among the myokines examined, treadmill exercise increased irisin protein and Fndc5 mRNA levels in the gastrocnemius and soleus muscles of sham and OVX mice. Treadmill exercise increased peroxisome proliferator-activated receptor γ coactivator-1α mRNA levels in the gastrocnemius muscles of mice. Fndc5 mRNA levels in the gastrocnemius muscles positively correlated with trabecular BMD, but not with cortical BMD, at the femurs and tibias of mice in simple regression analyses.ConclusionsWe demonstrated that chronic exercise elevated irisin expression in the gastrocnemius and soleus muscles of estrogen-deficient mice. Irisin might be related to increases in trabecular BMD in mice; however, further studies are needed to clarify the involvement of irisin in the effects of chronic exercise on muscle/bone interactions.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 87
+      },
+      {
+        "start": 89,
+        "end": 173
+      },
+      {
+        "start": 174,
+        "end": 278
+      },
+      {
+        "start": 279,
+        "end": 386
+      },
+      {
+        "start": 387,
+        "end": 499
+      },
+      {
+        "start": 499,
+        "end": 615
+      },
+      {
+        "start": 616,
+        "end": 788
+      },
+      {
+        "start": 788,
+        "end": 893
+      },
+      {
+        "start": 894,
+        "end": 978
+      },
+      {
+        "start": 979,
+        "end": 1135
+      },
+      {
+        "start": 1136,
+        "end": 1274
+      },
+      {
+        "start": 1275,
+        "end": 1455
+      },
+      {
+        "start": 1455,
+        "end": 1598
+      },
+      {
+        "start": 1599,
+        "end": 1799
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33597894.txt",
+    "title": "33597894.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:17.494Z",
+    "modifiedDate": "2021-10-28T08:10:17.494Z",
+    "text": "Irisin: A New Code Uncover the Relationship of Skeletal Muscle and Cardiovascular Health During Exercise\n\nExercise not only produces beneficial effects on muscle itself via various molecular pathways, but also mediates the interaction between muscles and other organs in an autocrine/paracrine manner through myokines, which plays a positive role in maintaining overall health. Irisin, an exercise-derived myokine, has been found involved in the regulation of some cardiovascular diseases. However, the relationship between irisin and cardiovascular health is not fully elucidated and there are some divergences on the regulation of irisin by exercise. In this review, we present the current knowledge on the origin and physiology of irisin, describe the regulation of irisin by acute and chronic exercises, and discuss the divergences of the related research results. Importantly, we discuss the role of irisin as a biomarker in the diagnosis of cardiovascular diseases and describe its treatment and molecular mechanism in some cardiovascular diseases. It is expected that irisin will be used as a therapeutic agent to combat cardiovascular diseases or other disorders caused by inactivity in the near future.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 104
+      },
+      {
+        "start": 106,
+        "end": 377
+      },
+      {
+        "start": 378,
+        "end": 489
+      },
+      {
+        "start": 490,
+        "end": 652
+      },
+      {
+        "start": 653,
+        "end": 868
+      },
+      {
+        "start": 869,
+        "end": 1054
+      },
+      {
+        "start": 1055,
+        "end": 1211
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33732908.txt",
+    "title": "33732908.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:18.462Z",
+    "modifiedDate": "2021-10-28T08:10:18.462Z",
+    "text": "Irisin supports integrin-mediated cell adhesion of lymphocytes\n\nIrisin, a myokine released from skeletal muscle, has recently been found to act as a ligand for the integrins αVβ5, αVβ1, and α5β1 expressed on mesenchymal cells, thereby playing an important role in the metabolic remodeling of the bone, skeletal muscle and adipose tissues. Although the immune-modulatory effects of irisin in chronic inflammation have been documented, its interactions with lymphocytic integrins have yet to be elucidated. Here, we show that irisin supports the cell adhesion of human and mouse lymphocytes. Cell adhesion assays using a panel of inhibitory antibodies to integrins have shown that irisin-mediated lymphocyte adhesion involves multiple integrins including not only α4β1 and α5β1, but also leukocyte-specific αLβ2 and α4β7. Importantly, mouse lymphocytic TK-1 cells that lack the expression of β1 integrins have exhibited αLβ2- and α4β7-mediated cell adhesion to irisin. Irisin has also been demonstrated to bind to purified recombinant integrin αLβ2 and α4β7 proteins. Thus, irisin represents a novel ligand for integrin αLβ2 and α4β7, capable of supporting lymphocyte cell adhesion independently of β1 integrins. These results suggest that irisin may play an important role in regulating lymphocyte adhesion and migration in the inflamed vasculature.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 62
+      },
+      {
+        "start": 64,
+        "end": 338
+      },
+      {
+        "start": 339,
+        "end": 504
+      },
+      {
+        "start": 505,
+        "end": 589
+      },
+      {
+        "start": 590,
+        "end": 819
+      },
+      {
+        "start": 820,
+        "end": 966
+      },
+      {
+        "start": 967,
+        "end": 1065
+      },
+      {
+        "start": 1066,
+        "end": 1210
+      },
+      {
+        "start": 1211,
+        "end": 1348
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "33935687.txt",
+    "title": "33935687.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:19.431Z",
+    "modifiedDate": "2021-10-28T08:10:19.431Z",
+    "text": "Multiple Roles in Neuroprotection for the Exercise Derived Myokine Irisin\n\nExercise has multiple beneficial effects on health including decreasing the risk of neurodegenerative diseases. Such effects are thought to be mediated (at least in part) by myokines, a collection of cytokines and other small proteins released from skeletal muscles. As an endocrine organ, skeletal muscle synthesizes and secretes a wide range of myokines which contribute to different functions in different organs, including the brain. One such myokine is the recently discovered protein Irisin, which is secreted into circulation from skeletal muscle during exercise from its membrane bound precursor Fibronectin type III domain-containing protein 5 (FNDC5). Irisin contributes to metabolic processes such as glucose homeostasis and browning of white adipose tissue. Irisin also crosses the blood brain barrier and initiates a neuroprotective genetic program in the hippocampus that culminates with increased expression of brain derived neurotrophic factor (BDNF). Furthermore, exercise and FNDC5/Irisin have been shown to have several neuroprotective effects against injuries in ischemia and neurodegenerative disease models, including Alzheimer's disease. In addition, Irisin has anxiolytic and antidepressant effects. In this review we present and summarize recent findings on the multiple effects of Irisin on neural function, including signaling pathways and mechanisms involved. We also discuss how exercise can positively influence brain function and mental health via the \"skeletal muscle-brain axis.\" While there are still many unanswered questions, we put forward the idea that Irisin is a potentially essential mediator of the skeletal muscle-brain crosstalk.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 73
+      },
+      {
+        "start": 75,
+        "end": 186
+      },
+      {
+        "start": 187,
+        "end": 341
+      },
+      {
+        "start": 342,
+        "end": 512
+      },
+      {
+        "start": 513,
+        "end": 736
+      },
+      {
+        "start": 737,
+        "end": 844
+      },
+      {
+        "start": 845,
+        "end": 1042
+      },
+      {
+        "start": 1043,
+        "end": 1235
+      },
+      {
+        "start": 1236,
+        "end": 1298
+      },
+      {
+        "start": 1299,
+        "end": 1462
+      },
+      {
+        "start": 1463,
+        "end": 1586
+      },
+      {
+        "start": 1586,
+        "end": 1748
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "34071869.txt",
+    "title": "34071869.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:20.407Z",
+    "modifiedDate": "2021-10-28T08:10:20.407Z",
+    "text": "Current Evidence of the Role of the Myokine Irisin in Cancer\n\nCancer is a disease associated with extreme human suffering, a huge economic cost to health systems, and is the second leading cause of death worldwide. Regular physical activity is associated with many health benefits, including reduced cancer risk. In the past two decades, exercising/contracting skeletal muscles have been found to secrete a wide range of biologically active proteins, named myokines. Myokines are delivered, via the circulation, to different cells/tissues, bind to their specific receptors and initiate signaling cascades mediating the health benefits of exercise. The present review summarizes the existing evidence of the role of the myokine irisin in cancer. In vitro studies have shown that the treatment of various cancer cells with irisin resulted in the inhibition of cell proliferation, survival, migration/ invasion and induced apoptosis by affecting key proliferative and antiapoptotic signaling pathways. However, the effects of irisin in humans remains unclear. Although the majority of the existing studies have found reduced serum irisin levels in cancer patients, a few studies have shown the opposite. Similarly, the majority of studies have found increased levels of irisin in cancer tissues, with a few studies showing the opposite trend. Clearly, further investigations are required to determine the exact role of irisin in cancer.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 60
+      },
+      {
+        "start": 62,
+        "end": 214
+      },
+      {
+        "start": 215,
+        "end": 312
+      },
+      {
+        "start": 313,
+        "end": 466
+      },
+      {
+        "start": 467,
+        "end": 647
+      },
+      {
+        "start": 648,
+        "end": 744
+      },
+      {
+        "start": 745,
+        "end": 998
+      },
+      {
+        "start": 999,
+        "end": 1056
+      },
+      {
+        "start": 1057,
+        "end": 1200
+      },
+      {
+        "start": 1201,
+        "end": 1339
+      },
+      {
+        "start": 1340,
+        "end": 1433
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "34158658.txt",
+    "title": "34158658.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:21.371Z",
+    "modifiedDate": "2021-10-28T08:10:21.371Z",
+    "text": "Exercise-induced myokines and their effect on prostate cancer\n\nExercise is recognized by clinicians in the field of clinical oncology for its potential role in reducing the risk of certain cancers and in reducing the risk of disease recurrence and progression; yet, the underlying mechanisms behind this reduction in risk are not fully understood. Studies applying post-exercise blood serum directly to various types of cancer cell lines provide insight that exercise might have a role in inhibiting cancer growth via altered soluble and cell-free blood contents. Myokines, which are cytokines produced by muscle and secreted into the bloodstream, might offer multiple benefits to cellular metabolism (such as a reduction in insulin resistance, improved glucose uptake and reduced adiposity), and blood myokine levels can be altered with exercise. Alterations in the levels of myokines such as IL-6, IL-15, IL-10, irisin, secreted protein acidic risk in cysteine (SPARC), myostatin, oncostatin M and decorin might exert a direct inhibitory effect on cancer growth via inhibiting proliferation, promoting apoptosis, inducing cell-cycle arrest and inhibiting the epithermal transition to mesenchymal cells. The association of insulin resistance, hyperinsulinaemia and hyperlipidaemia with obesity can create a tumour-favourable environment; exercise-induced myokines can manipulate this environment by regulating adipose tissue and adipocytes. Exercise-induced myokines also have a critical role in increasing cytotoxicity and the infiltration of immune cells into the tumour.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 61
+      },
+      {
+        "start": 63,
+        "end": 347
+      },
+      {
+        "start": 348,
+        "end": 563
+      },
+      {
+        "start": 564,
+        "end": 847
+      },
+      {
+        "start": 848,
+        "end": 1204
+      },
+      {
+        "start": 1205,
+        "end": 1441
+      },
+      {
+        "start": 1442,
+        "end": 1574
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "34425103.txt",
+    "title": "34425103.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:22.327Z",
+    "modifiedDate": "2021-10-28T08:10:22.327Z",
+    "text": "Irisin in Atherosclerosis\n\nIrisin, a novel exercise-induced myokine, has been shown to play important roles in increasing white adipose tissue browning, regulating energy metabolism and improving insulin resistance. Growing evidence suggests a direct role for irisin in preventing atherosclerosis (AS) by inhibiting oxidative stress, improving dyslipidemia, facilitating anti-inflammation, reducing cellular damage and recovering endothelial function. In addition, some studies have noted that serum irisin levels play an essential role in cardiovascular diseases (CVDs) risk prediction, highlighting that irisin has the potential to be a useful predictive marker and therapeutic target of AS, especially in monitoring therapeutic efficacy. This review summarizes the understanding of irisin-mediated regulation in essential biological pathways and functions in atherosclerosis and prompts further exploitation of the biological properties of irisin in the pathogenesis of atherosclerosis.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 25
+      },
+      {
+        "start": 27,
+        "end": 215
+      },
+      {
+        "start": 216,
+        "end": 451
+      },
+      {
+        "start": 452,
+        "end": 740
+      },
+      {
+        "start": 741,
+        "end": 989
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "34445222.txt",
+    "title": "34445222.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:23.253Z",
+    "modifiedDate": "2021-10-28T08:10:23.253Z",
+    "text": "Biological Aspects of Selected Myokines in Skeletal Muscle: Focus on Aging.\n\nIn the last decade, clear evidence has emerged that the cellular components of skeletal muscle are important sites for the release of proteins and peptides called \"myokines\", suggesting that skeletal muscle plays the role of a secretory organ. After their secretion by muscles, these factors serve many biological functions, including the exertion of complex autocrine, paracrine and/or endocrine effects. In sum, myokines affect complex multi-organ processes, such as skeletal muscle trophism, metabolism, angiogenesis and immunological response to different physiological (physical activity, aging, etc.) or pathological states (cachexia, dysmetabolic conditions, chronic inflammation, etc.). The aim of this review is to describe in detail a number of myokines that are, to varying degrees, involved in skeletal muscle aging processes and belong to the group of proteins present in the functional environment surrounding the muscle cell known as the \"Niche\". The particular myokines described are those that, acting both from within the cell and in an autocrine manner, have a defined relationship with the modulation of oxidative stress in muscle cells (mature or stem) involved in the regulatory (metabolic or regenerative) processes of muscle aging. Myostatin, IGF-1, NGF, S100 and irisin are examples of specific myokines that have peculiar features in their mechanisms of action. In particular, the potential role of one of the most recently characterized myokines-irisin, directly linked to an active lifestyle-in reducing if not reversing senescence-induced oxidative damage is discussed in terms of its possible application as an agent able to counteract the deleterious effects of muscle aging.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 75
+      },
+      {
+        "start": 77,
+        "end": 320
+      },
+      {
+        "start": 321,
+        "end": 482
+      },
+      {
+        "start": 483,
+        "end": 682
+      },
+      {
+        "start": 682,
+        "end": 769
+      },
+      {
+        "start": 769,
+        "end": 771
+      },
+      {
+        "start": 772,
+        "end": 1038
+      },
+      {
+        "start": 1039,
+        "end": 1332
+      },
+      {
+        "start": 1333,
+        "end": 1464
+      },
+      {
+        "start": 1465,
+        "end": 1783
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "34501443.txt",
+    "title": "34501443.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:24.214Z",
+    "modifiedDate": "2021-10-28T08:10:24.214Z",
+    "text": "Does a Vegetarian Diet Affect the Levels of Myokine and Adipokine in Prepubertal Children?\n\nMyokines are cytokines secreted by muscle and exert autocrine, paracrine, or endocrine effects. Myokines mediate communication between muscle and other organs, including adipose tissue. The aim of the study was to assess serum myokines and their relationships with adipokines and anthropometric and nutritional parameters in children following vegetarian and omnivorous diets. One hundred and five prepubertal children were examined. Among them there were 55 children on a vegetarian diet and 50 children on an omnivorous diet. Concentrations of myokines (myostatin, irisin) and adipokines (leptin, adiponectin, omentin, visfatin) in serum were determined by enzyme-linked immunosorbent assay (ELISA). We observed comparable median values of serum myokines and adipokines (except of leptin concentration) in both of the studied groups of children. We also found several correlations between myokine and adipokine levels and certain nutritional parameters. Serum myostatin was positively correlated with omentin levels in vegetarians and omnivores (p = 0.002). Serum irisin was positively associated with omentin (p = 0.045) levels in omnivores and inversely with visfatin concentration (p = 0.037) in vegetarians. Myostatin concentration was negatively correlated with the percentage of energy from protein (p = 0.014), calcium (p = 0.046), and vitamin A (p = 0.028) intakes in vegetarians and with dietary vitamin C (p = 0.041) and vitamin E (p = 0.021) intakes in omnivores. In multivariate regression analyses, positive correlations of serum myostatin with omentin levels were revealed in both study groups (β = 0.437, p < 0.001 for vegetarians; and β = 0.359, p = 0.001 for omnivores). Consuming a lacto-ovo-vegetarian diet did not influence serum levels of myokines (myostatin, irisin) and adipokines such as adiponectin, visfatin, and omentin in prepubertal children. However, leptin levels were significantly lower in vegetarians compared with omnivores. The observed significant positive correlations between myostatin and omentin concentrations might suggest tissue cross-talk between skeletal muscle and fat tissue. Further studies, carried out in a larger group of children following different dietary patterns, could be important to fully understand the relations between muscle, adipose tissues, and nutrition.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 90
+      },
+      {
+        "start": 92,
+        "end": 187
+      },
+      {
+        "start": 188,
+        "end": 277
+      },
+      {
+        "start": 278,
+        "end": 468
+      },
+      {
+        "start": 469,
+        "end": 525
+      },
+      {
+        "start": 526,
+        "end": 619
+      },
+      {
+        "start": 620,
+        "end": 793
+      },
+      {
+        "start": 794,
+        "end": 939
+      },
+      {
+        "start": 940,
+        "end": 1047
+      },
+      {
+        "start": 1048,
+        "end": 1151
+      },
+      {
+        "start": 1152,
+        "end": 1305
+      },
+      {
+        "start": 1306,
+        "end": 1568
+      },
+      {
+        "start": 1569,
+        "end": 1781
+      },
+      {
+        "start": 1782,
+        "end": 1965
+      },
+      {
+        "start": 1966,
+        "end": 2053
+      },
+      {
+        "start": 2054,
+        "end": 2217
+      },
+      {
+        "start": 2218,
+        "end": 2415
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "identifier": "34650518.txt",
+    "title": "34650518.txt",
+    "metadata": {},
+    "categories": [],
+    "createdBy": "oterrier",
+    "createdDate": "2021-10-28T08:10:25.193Z",
+    "modifiedDate": "2021-10-28T08:10:25.193Z",
+    "text": "Muscle-Bone Crosstalk in Chronic Obstructive Pulmonary Disease\n\nSarcopenia and osteoporosis are common musculoskeletal comorbidities of chronic obstructive pulmonary disease (COPD) that seriously affect the quality of life and prognosis of the patient. In addition to spatially mechanical interactions, muscle and bone can also serve as endocrine organs by producing myokines and osteokines to regulate muscle and bone functions, respectively. As positive and negative regulators of skeletal muscles, the myokines irisin and myostatin not only promote/inhibit the differentiation and growth of skeletal muscles, but also regulate bone metabolism. Both irisin and myostatin have been shown to be dysregulated and associated with exercise and skeletal muscle dysfunction in COPD. During exercise, skeletal muscles produce a large amount of IL-6 which acts as a myokine, exerting at least two different conflicting functions depending on physiological or pathological conditions. Remarkably, IL-6 is highly expressed in COPD, and considered to be a biomarker of systemic inflammation, which is associated with both sarcopenia and bone loss. For osteokines, receptor activator of nuclear factor kappa-B ligand (RANKL), a classical regulator of bone metabolism, was recently found to play a critical role in skeletal muscle atrophy induced by chronic cigarette smoke (CS) exposure. In this focused review, we described evidence for myokines and osteokines in the pathogenesis of skeletal muscle dysfunction/sarcopenia and osteoporosis in COPD, and proposed muscle-bone crosstalk as an important mechanism underlying the coexistence of muscle and bone diseases in COPD.",
+    "sentences": [
+      {
+        "start": 0,
+        "end": 62
+      },
+      {
+        "start": 64,
+        "end": 252
+      },
+      {
+        "start": 253,
+        "end": 443
+      },
+      {
+        "start": 444,
+        "end": 646
+      },
+      {
+        "start": 647,
+        "end": 777
+      },
+      {
+        "start": 778,
+        "end": 976
+      },
+      {
+        "start": 977,
+        "end": 1137
+      },
+      {
+        "start": 1138,
+        "end": 1376
+      },
+      {
+        "start": 1377,
+        "end": 1663
+      }
+    ],
+    "annotations": []
+  }
+]
