@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+woo_sdk/__init__.py
+woo_sdk.egg-info/PKG-INFO
+woo_sdk.egg-info/SOURCES.txt
+woo_sdk.egg-info/dependency_links.txt
+woo_sdk.egg-info/top_level.txt

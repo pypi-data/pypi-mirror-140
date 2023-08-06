@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: woo-sdk
+Version: 0.1
+Summary: A declarative library for making the scheduled trading more accessible
+Home-page: https://github.com/ltanedo/woo-algotrading-sdk.git
+Download-URL: https://github.com/ltanedo/woo-algotrading-sdk/archive/refs/tags/v_01.tar.gz
+Author: lloydtan
+Author-email: lloydtan@buffalo.edu
+License: MIT
+Keywords: python,algo,trading,data,stocks,stock
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+
+UNKNOWN
+
