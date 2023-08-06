@@ -1,0 +1,17 @@
+quick_topic/__init__.py,sha256=D7p3QQjUyeUOD7Lfu7ifyjZIib8ssDGORASaQkkDL2E,25
+quick_topic/__pycache__/__init__.cpython-36.pyc,sha256=M-Rx0j62r4d_xyj_wK2TpmUYhlBuza1LTOPO9o63GMc,196
+quick_topic/topic_prevalence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quick_topic/topic_prevalence/divide_per_year.py,sha256=IAGFOawWyIvgAWiUVNL1Fmq8IBUFO6xT1yEKz2kr9XE,1433
+quick_topic/topic_prevalence/lda_per_year.py,sha256=UWL_90B0PmkppMo6id0GhYahFA6Tapux_xxS4EHzj0Y,4468
+quick_topic/topic_prevalence/main.py,sha256=J3Qn8AUFBd1rRSOR-xmkFO_Rtb2bQK1S3d_ykW-AgOc,1153
+quick_topic/topic_prevalence/trends_per_year.py,sha256=vXh7YcecW62OAfbA6SYEMytJT5WqmMKKrSqYG2fL_us,3292
+quick_topic/topic_prevalence/__pycache__/__init__.cpython-36.pyc,sha256=FOu2rqwaLp5n9ReKtFbCwKMqFSWLlJX21LI71nZeJIk,185
+quick_topic/topic_prevalence/__pycache__/divide_per_year.cpython-36.pyc,sha256=RvVRBL4KvHSLAzf1mfc0m5IamBhqUu2kKDcYRvjybqI,1152
+quick_topic/topic_prevalence/__pycache__/lda_per_year.cpython-36.pyc,sha256=nTPDTl6AVYlhMbMBOCRpDfc-FD2KXEHALeReXdCZRe0,3034
+quick_topic/topic_prevalence/__pycache__/main.cpython-36.pyc,sha256=hAuyO6EMsSsj5zAjohbOHxQphTT9Pj00Gfb6jFlvgmI,966
+quick_topic/topic_prevalence/__pycache__/trends_per_year.cpython-36.pyc,sha256=ZV-7KerFyirs-QUT4UMXfBcuyBNXeuXSikgEodxPzyo,2280
+quick_topic-0.0.1.dist-info/LICENSE,sha256=ajxCpFG1ZxRGDKhOE45GyYsTpVBwzw4xagnZYh2Uooc,1086
+quick_topic-0.0.1.dist-info/METADATA,sha256=wEq8hR-GgY_P1TOwWGNmxo8Dg3uNl0nTS7ZpaLlo9SM,3506
+quick_topic-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+quick_topic-0.0.1.dist-info/top_level.txt,sha256=0Ev6W8C7FMCaYRDyPuHiY6HNA0EH45xfspg-__Qb3Fs,12
+quick_topic-0.0.1.dist-info/RECORD,,
