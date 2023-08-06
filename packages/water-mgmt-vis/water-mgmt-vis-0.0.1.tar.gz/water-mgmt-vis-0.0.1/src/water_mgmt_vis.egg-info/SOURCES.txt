@@ -1,0 +1,11 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+src/water-mgmt/__init__.py
+src/water-mgmt/calc_cost.py
+src/water-mgmt/geektrust.py
+src/water-mgmt/tankwater_slabcalc.py
+src/water_mgmt_vis.egg-info/PKG-INFO
+src/water_mgmt_vis.egg-info/SOURCES.txt
+src/water_mgmt_vis.egg-info/dependency_links.txt
+src/water_mgmt_vis.egg-info/top_level.txt
