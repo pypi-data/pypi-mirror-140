@@ -1,0 +1,12 @@
+AUTHORS
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.rst
+nslog.py
+setup.cfg
+setup.py
+std_nslog.egg-info/PKG-INFO
+std_nslog.egg-info/SOURCES.txt
+std_nslog.egg-info/dependency_links.txt
+std_nslog.egg-info/top_level.txt
