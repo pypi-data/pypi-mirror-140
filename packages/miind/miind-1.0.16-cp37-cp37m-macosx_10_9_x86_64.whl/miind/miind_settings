@@ -1,0 +1,6 @@
+mpi_enabled=OFF
+openmp_enabled=ON
+root_enabled=OFF
+cuda_enabled=OFF
+c_compiler=/usr/local/bin/gcc-6
+cxx_compiler=/usr/local/bin/g++-6
