@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+apiStock/__init__.py
+apiStock/__version__.py
+apiStock/const.py
+apiStock/core.py
+apiStock/test.py
+apiStock.egg-info/PKG-INFO
+apiStock.egg-info/SOURCES.txt
+apiStock.egg-info/dependency_links.txt
+apiStock.egg-info/requires.txt
+apiStock.egg-info/top_level.txt
