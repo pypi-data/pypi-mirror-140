@@ -1,0 +1,3 @@
+[tool.black]
+# path = ['attrs_mek/*', 'tests/*.py']
+# include = '\.py$'
