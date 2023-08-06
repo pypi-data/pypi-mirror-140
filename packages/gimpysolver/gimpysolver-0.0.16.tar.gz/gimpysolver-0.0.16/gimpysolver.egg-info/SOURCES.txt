@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+gimpysolver/captchaSolver.h5
+gimpysolver.egg-info/PKG-INFO
+gimpysolver.egg-info/SOURCES.txt
+gimpysolver.egg-info/dependency_links.txt
+gimpysolver.egg-info/not-zip-safe
+gimpysolver.egg-info/requires.txt
+gimpysolver.egg-info/top_level.txt
+gimpysolver/model/captchaSolver.h5
