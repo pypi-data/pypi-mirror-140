@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: messkit
+Version: 0.1.0
+Summary: Generic-ish Data Utility App
+Home-page: https://rattailproject.org
+Author: Lance Edgar
+Author-email: lance@edbob.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pyramid
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Office/Business
+
+
+messkit
+=======
+
+Hopefully some kind of generic data manipulation thingy, we'll see...
+
+

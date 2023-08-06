@@ -1,0 +1,11 @@
+[console_scripts]
+messkit = messkit.commands:main
+
+[messkit.commands]
+install = messkit.commands:Install
+
+[paste.app_factory]
+main = messkit.web.app:main
+
+[rattail.config.extensions]
+messkit = messkit.config:MesskitConfig
