@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: baste
+Version: 0.1.0
+Summary: A simple wrapper around fabric for multi-repo projects
+License: MIT
+Author: Lakin Wecker
+Author-email: lakin@structuredabstraction.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: blessings (==1.7)
+Requires-Dist: fabric (==2.6.0)
+Requires-Dist: patchwork (==1.0.1)
