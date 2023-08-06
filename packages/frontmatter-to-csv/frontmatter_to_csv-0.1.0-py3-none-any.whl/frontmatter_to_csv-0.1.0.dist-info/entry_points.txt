@@ -1,0 +1,2 @@
+[console_scripts]
+frontmatter-to-csv = frontmatter_to_csv.convert:convert
