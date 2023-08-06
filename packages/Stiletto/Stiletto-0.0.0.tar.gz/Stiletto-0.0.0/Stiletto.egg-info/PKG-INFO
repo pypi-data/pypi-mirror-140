@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: Stiletto
+Version: 0.0.0
+Summary: The Stiletto project
+Home-page: https://www.gnusolidario.org
+Author: Luis Falcon
+Author-email: info@gnuhealth.org
+License: GPL v3+
+Download-URL: https://www.gnusolidario.org
+Keywords: stiletto
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Natural Language :: English
+Requires-Python: >=3.10,<4
+
+
+MyGNUHealth: The GNU Health Personal Health Record (PHR)
+=======================================================================
+
+
+Homepage
+--------
+https://www.gnusolidario.org
+
+
+Documentation
+-------------
+
+Soon
+
+
+License
+--------
+
+GNU Health is licensed under GPL v3+::
+
+ Copyright (C) 2022 Luis Falcon <falcon@gnuhealth.org>
+ Copyright (C) 2022 GNU Solidario <health@gnusolidario.org>
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
