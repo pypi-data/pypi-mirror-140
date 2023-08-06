@@ -1,0 +1,13 @@
+httpx>=0.19
+platformdirs
+prettytable>=2.4.0
+pytablewriter[html]>=0.63
+python-dateutil
+python-slugify
+termcolor
+
+[tests]
+freezegun
+pytest
+pytest-cov
+respx>=0.11
