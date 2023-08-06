@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: topsis-deepanshi-401903006
+Version: 1.0.0
+Summary: A package -> Calculates Topsis Score and Rank accordingly
+Home-page: https://github.com/Deepanshi21/topsis_deepanshi
+Author: Deepanshi Srivastava
+Author-email: dsrivastava_bemba19@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
+# topsis_deepanshi
+Topsis
+
+
