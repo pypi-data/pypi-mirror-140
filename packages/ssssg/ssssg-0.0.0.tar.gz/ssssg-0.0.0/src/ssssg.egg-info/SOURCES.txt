@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ssssg/__init__.py
+src/ssssg/create_site.py
+src/ssssg/logger.py
+src/ssssg/site_creator.py
+src/ssssg.egg-info/PKG-INFO
+src/ssssg.egg-info/SOURCES.txt
+src/ssssg.egg-info/dependency_links.txt
+src/ssssg.egg-info/entry_points.txt
+src/ssssg.egg-info/requires.txt
+src/ssssg.egg-info/top_level.txt

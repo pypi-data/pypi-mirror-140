@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ssssg
+Version: 0.0.0
+Summary: Stupidly Simple Static Site Generator
+Home-page: https://gitlab.com/octesian/ssssg
+Author: Kyle Graves
+License: GPLv3
+Project-URL: Issue Tracker, https://gitlab.com/octesian/ssssg/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Provides-Extra: test
+License-File: LICENSE
+
+# SSSSG - Stupidly Simple Static Site Generator
+## TO-DO
+- Alias ssssg with s4g
+- update deploy job
+- Add lint testing
+- update lint job
+
