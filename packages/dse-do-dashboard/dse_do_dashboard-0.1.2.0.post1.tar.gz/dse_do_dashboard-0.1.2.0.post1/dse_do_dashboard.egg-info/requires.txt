@@ -1,0 +1,14 @@
+dse-do-utils>=0.5.4.2
+dash
+flask_caching
+dash_bootstrap_components
+dash-bootstrap-templates
+dash_pivottable
+dash_daq
+sqlalchemy<1.4,>=1.3.23
+pandas<1.4
+plotly
+openpyxl
+diskcache
+multiprocess
+psutil
