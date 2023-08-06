@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/SlyTwitter/__init__.py
+src/SlyTwitter/common.py
+src/SlyTwitter/twitter.py
+src/SlyTwitter/twitter_upload.py
+src/SlyTwitter.egg-info/PKG-INFO
+src/SlyTwitter.egg-info/SOURCES.txt
+src/SlyTwitter.egg-info/dependency_links.txt
+src/SlyTwitter.egg-info/requires.txt
+src/SlyTwitter.egg-info/top_level.txt
+test/test_readme.py
