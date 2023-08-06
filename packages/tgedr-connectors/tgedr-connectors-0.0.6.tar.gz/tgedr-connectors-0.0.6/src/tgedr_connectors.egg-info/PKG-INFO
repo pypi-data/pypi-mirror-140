@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tgedr-connectors
+Version: 0.0.6
+Summary: This package provides a set of wrappers to specific connectors, be it db's, api's, etc...
+Home-page: https://github.com/tgedr/connectors
+Author: joao tiago viegas
+Author-email: jtviegas.js@gmail.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# connectors
+a set of wrappers to specific connectors, be it db's, api's, etc...
+
+
