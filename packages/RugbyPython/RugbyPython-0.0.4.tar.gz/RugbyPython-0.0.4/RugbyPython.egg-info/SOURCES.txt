@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+RugbyPython/__init__.py
+RugbyPython.egg-info/PKG-INFO
+RugbyPython.egg-info/SOURCES.txt
+RugbyPython.egg-info/dependency_links.txt
+RugbyPython.egg-info/requires.txt
+RugbyPython.egg-info/top_level.txt

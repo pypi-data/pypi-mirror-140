@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: RugbyPython
+Version: 0.0.4
+Summary: A package for rugby analytics.
+Home-page: UNKNOWN
+Author: Maverick Guest
+Author-email: maverickguest@outlook.com
+License: MIT
+Keywords: sport
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+A package for rugby analytics that makes it easy to plot custom pitches with matplotlib.
+
