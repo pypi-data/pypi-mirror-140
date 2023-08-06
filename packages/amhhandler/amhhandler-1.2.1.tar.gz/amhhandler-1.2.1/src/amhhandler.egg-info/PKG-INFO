@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: amhhandler
+Version: 1.2.1
+Summary: An even better way to work with Python.
+Home-page: https://gitee.com/nbyue/amh-handler
+Author: nbyue
+Author-email: 20671413@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### shell
+
+``` shell
+from amhhandler import shell
+
+
+cmd = "ls /tmp"
+result, rcode = shell.run(cmd)
+if rcode == 0:
+    print(result)
+else:
+    print('execute error: {0}'.format(result))
+```
+
+### mysql
+
+``` shell
+from amhhandler import mysql
+
+
+dbconfig = {"host":"127.0.0.1","port":3306, "user":"admin", "password":"123456", "db":"mysql"}
+
+dbHandler = mysql.Conn(**dbconfig)
+sql = "select * from mysql.user where user='admin';"
+result = dbHandler.select(sql)
+
+```
+
+### ding ding robot
+
+
+### logging
+```shell
+log = logger.log2file('/tmp/run.log')
+log.info('execute log')
+```
+
+
