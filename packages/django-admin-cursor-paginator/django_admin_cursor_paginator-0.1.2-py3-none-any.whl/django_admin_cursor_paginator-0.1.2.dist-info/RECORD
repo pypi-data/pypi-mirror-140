@@ -1,0 +1,15 @@
+admin_cursor_paginator/__init__.py,sha256=iXmA4Jui2mtq0CwEFkIIHuq9eY6Rx_AvIUFOOVoUNhA,54
+admin_cursor_paginator/admin.py,sha256=v7wIrhrLs9_8aQcATGKPqG0tkBog9SXEt7DU1VaFAaY,755
+admin_cursor_paginator/cursor.py,sha256=LxE98K4Lbz4T9N03rV-tRpwY0G6NHLfl2RSroROtq2I,1485
+admin_cursor_paginator/paginator.py,sha256=4yevfgSKVjWDrsXVS-X-l7W7guTy0i_wNBOapACeMgk,3397
+admin_cursor_paginator/version.py,sha256=mdp2CftfqYbdKtP-eWv1z7rAUycYv6X1ntXSMUf8Kss,22
+admin_cursor_paginator/views.py,sha256=YDYg6QlEmNdQlvkVW2jAqqhv940GU60YvznkxNzR3bM,589
+admin_cursor_paginator/templates/admin_cursor_paginator/change_list.html,sha256=ylgvqWRsFhiBQK3aBj6lvTv0GJOBwl3EwenMfTS4PPY,149
+admin_cursor_paginator/templates/admin_cursor_paginator/pagination.html,sha256=R02kNZZ_Fgi2P2orcYYa9n5RBsqbHgY21ODMI3n7DYY,651
+admin_cursor_paginator/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+admin_cursor_paginator/templatetags/admin_cursor_paginator_tags.py,sha256=bVc7-t4BXC6IR-n0LyvLem13QfVjjLF2ymIL-ve9AAI,1084
+django_admin_cursor_paginator-0.1.2.dist-info/LICENSE,sha256=94V6PuYGUcKw_8Irv-_YH5RrcmSShl0rL3qRp47sTAk,1054
+django_admin_cursor_paginator-0.1.2.dist-info/METADATA,sha256=rw7ruIsr1yCIB8npfPURNvr7kHQ1wwniHOHJwJbe41U,4985
+django_admin_cursor_paginator-0.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_admin_cursor_paginator-0.1.2.dist-info/top_level.txt,sha256=fz36dWJZagnJm4Q35BvynY98QwzO0SkkURDgnLsc8tM,23
+django_admin_cursor_paginator-0.1.2.dist-info/RECORD,,
