@@ -1,0 +1,11 @@
+anilist_man/__init__.py,sha256=MZROqMwVP4JA-LXfTOR7mgacQSXDOlHt1eBZRUHPRnc,22
+anilist_man/__main__.py,sha256=_CLVGcgCuf6XKxzy2WJMsTWGcmpBhA-9A4_PJTg-qVw,50
+anilist_man/custom.json,sha256=Kqm5ja2hDMjnOilYIh7Yg-PTNulqvrtDy4LMFYFnqR4,8
+anilist_man/main.py,sha256=LSfX0f0H3hHVMIJn1hAoA09pqJP5TwMshlT3WoaNTxI,4633
+anilist_man/queries.py,sha256=R8dm2GwMfUNN9_QUIwzob3MT5NKDeqpn4pAqD8vVLxs,1066
+anilist_man/query_func.py,sha256=zF6lUS3vcT4n5ZV_L7dVGHtpXTP5MNXwUM8R1OInnJ8,1478
+anilist_man-0.3.7.dist-info/entry_points.txt,sha256=SwvoQA_sdDLjJ6W6UEUiIlaEzaLyco7EgMccJGXBnK4,52
+anilist_man-0.3.7.dist-info/LICENSE,sha256=G2WJT-gwyWlaJ7C_djnB1HvedlCHHsZcjkPdg8LrEJ4,1065
+anilist_man-0.3.7.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+anilist_man-0.3.7.dist-info/METADATA,sha256=0hMyCsy7GKHIRRuZgiECBl6EDmF2BpSfb7YLBfOPNj4,1680
+anilist_man-0.3.7.dist-info/RECORD,,
