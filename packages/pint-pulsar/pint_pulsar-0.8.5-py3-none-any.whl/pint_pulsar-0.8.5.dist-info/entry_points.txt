@@ -1,0 +1,11 @@
+[console_scripts]
+convert_parfile = pint.scripts.convert_parfile:main
+event_optimize = pint.scripts.event_optimize:main
+event_optimize_multiple = pint.scripts.event_optimize_multiple:main
+fermiphase = pint.scripts.fermiphase:main
+photonphase = pint.scripts.photonphase:main
+pintbary = pint.scripts.pintbary:main
+pintempo = pint.scripts.pintempo:main
+pintk = pint.scripts.pintk:main
+zima = pint.scripts.zima:main
+
