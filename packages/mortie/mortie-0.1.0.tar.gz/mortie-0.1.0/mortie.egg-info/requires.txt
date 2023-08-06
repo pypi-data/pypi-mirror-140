@@ -1,0 +1,5 @@
+healpy
+numpy
+numba
+cython
+llvmlite
