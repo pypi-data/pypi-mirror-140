@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+Topsis_Kashin_101903542.egg-info/PKG-INFO
+Topsis_Kashin_101903542.egg-info/SOURCES.txt
+Topsis_Kashin_101903542.egg-info/dependency_links.txt
+Topsis_Kashin_101903542.egg-info/top_level.txt
