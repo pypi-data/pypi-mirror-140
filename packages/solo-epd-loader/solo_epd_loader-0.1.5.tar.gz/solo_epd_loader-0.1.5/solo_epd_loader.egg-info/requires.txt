@@ -1,0 +1,17 @@
+cdflib
+h5netcdf
+numpy
+pandas
+requests
+astropy
+
+[all]
+
+[docs]
+sphinx
+sphinx-automodapi
+
+[test]
+pytest
+pytest-doctestplus
+pytest-cov
