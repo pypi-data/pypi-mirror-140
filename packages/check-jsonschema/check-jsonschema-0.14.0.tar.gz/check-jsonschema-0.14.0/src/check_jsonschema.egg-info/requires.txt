@@ -1,0 +1,13 @@
+ruamel.yaml==0.16.12
+jsonschema<5.0,>=4
+identify<3,>2.4.10
+requests<3.0
+
+[:python_version < "3.9"]
+importlib_resources
+
+[dev]
+pytest<7
+pytest-cov<3
+pytest-xdist<3
+responses==0.18.0
