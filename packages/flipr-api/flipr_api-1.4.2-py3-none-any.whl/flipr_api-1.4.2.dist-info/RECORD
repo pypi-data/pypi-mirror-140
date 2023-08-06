@@ -1,0 +1,11 @@
+flipr_api/__init__.py,sha256=QcEok1uyzo35SeQQU-3ATnoQMyFczeQf4fTyQlNmkJQ,102
+flipr_api/__main__.py,sha256=eMIEhjgs3WipUNQa7iDLPSEhYhBKm8V5XVn7yb_QZeE,52
+flipr_api/client.py,sha256=-cwy5OjT45qSdCAMbQyn5nWKY7TwqXgREFG3TKAus4Y,6815
+flipr_api/const.py,sha256=a5_AHtq8MNFgy-8bXbHG0Pj61jPW4l3HNi6tYs90cpM,158
+flipr_api/exceptions.py,sha256=sViqzEbHr_Q7Dmkne49qfDG2LuPcfx5f8voQZ3sQ6Ao,320
+flipr_api/session.py,sha256=RwN-Ck6ymodRt-e2yVProssahM1vmQw-gV8sIr6JRk8,2161
+flipr_api-1.4.2.dist-info/entry_points.txt,sha256=w3ZwDVEbyaJtYjQwLIV3mHMkD96hV3_lnta7ZgeEQUI,53
+flipr_api-1.4.2.dist-info/LICENSE.rst,sha256=UQPWccffMSxcux_vhVdxj_2WkgdCI-36sI3mAyA8-ao,1078
+flipr_api-1.4.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+flipr_api-1.4.2.dist-info/METADATA,sha256=Y9RCssnKOvZ9RWUbreM-70pVg2o-LvUlOfDVMQNZ4WE,5203
+flipr_api-1.4.2.dist-info/RECORD,,
