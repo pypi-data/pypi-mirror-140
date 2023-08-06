@@ -1,0 +1,19 @@
+beautifulsoup4
+biopython
+biosimulators_xpp >= 0.0.13
+biosimulators_utils >= 0.1.167
+boto3
+cement
+gitpython
+lxml
+mammoth
+markdownify
+natsort
+numpy
+pyyaml
+python_dateutil
+python_dotenv
+requests_cache
+setuptools
+simplejson
+termcolor
