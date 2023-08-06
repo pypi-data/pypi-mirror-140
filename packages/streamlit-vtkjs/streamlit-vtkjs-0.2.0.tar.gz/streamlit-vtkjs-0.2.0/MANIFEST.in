@@ -1,0 +1,6 @@
+recursive-include streamlit_vtkjs/frontend/build *
+
+recursive-exclude .github *
+recursive-exclude .vscode *
+exclude yarn.lock
+exclude README.md
