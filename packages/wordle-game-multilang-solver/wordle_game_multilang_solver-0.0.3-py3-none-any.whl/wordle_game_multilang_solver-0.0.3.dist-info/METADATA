@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: wordle-game-multilang-solver
+Version: 0.0.3
+Summary: A basic solver for popular game wordle
+Home-page: UNKNOWN
+Author: Serhat Karaman
+Author-email: serhatkedu@gmail.com
+License: UNKNOWN
+Keywords: python,wordle,words,wordle game,game,guess
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: string
+Requires-Dist: os
+Requires-Dist: pathlib
+
+
+<img src="https://www.nytimes.com/games/wordle/images/NYT-Wordle-Meta.png"></img>
+# Wordle-English-Turkish-Solver
+
+### Wordle spread its fame all over the world. So I code a script to make guessing process easier 
+
+# How-Game-Works
+### 🟩 -> Means letter is in word and correct place. Represent with 'g' (green) 
+### 🟨 -> Means letter is in the word but wrong place. Represent with 'y' (yellow) 
+### 🟥 -> Means letter not in the word. Represent with 'r' (red)
+### 'e' word is to represent word not in wordle database for example if word is not available type 'eeeee' to console
+
+# Social-Media
+### https://www.reddit.com/user/s3rh4tk
+### https://www.instagram.com/kernel___error/
+
+
+

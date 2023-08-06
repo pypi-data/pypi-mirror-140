@@ -1,0 +1,13 @@
+wordletr-game-solver/__init__.py,sha256=AOk7EUWOZrFBH2ajOSTXXlgcQFXjl1OLEfKxRAX5Eq4,64
+wordletr-game-solver/five_letter.py,sha256=bqK90pDWuxW3BBuGseyyWQBoZlJY44oqkWgX2YcRgB4,293
+wordletr-game-solver/main.py,sha256=YhtCxNm7YJhWCkAM21nDtPodiGi90E4GjEpJrB321dI,500
+wordletr-game-solver/pro_guesser.py,sha256=_zNhw6uouoG3mblg7z10OXqppEvbQDgO0u3mUiWPNTA,2011
+wordletr-game-solver/wordle_eng.py,sha256=cNElX1PPUlMRAN5vHICtDtY6jtjGo03WROTafIRCKcQ,4995
+wordletr-game-solver/wordle_solver.py,sha256=Dj022wf_ap6SHq7Pr6arrT57XSdhGj6jDbgWVKHWVqk,5205
+wordletr-game-solver/wordlist.py,sha256=jJ_cYZfyIpU8XxHSrApiRl5BmSE9zrh0oBxXz5nOUA0,43996
+wordletr-game-solver/wordlist_eng.py,sha256=4a1BW1gimh8xxOoxej_7Jpt6Uoip1Lo1mP-rOWVRc_4,401
+wordletr-game-solver/words/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wordle_game_multilang_solver-0.0.3.dist-info/METADATA,sha256=O4xKiVB3YzJoiOwi1f2dedgYPdrwiDGAhZUtwfDIY6o,1359
+wordle_game_multilang_solver-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wordle_game_multilang_solver-0.0.3.dist-info/top_level.txt,sha256=TdtWfqCP8gAYmM3-eJs69HfSSmzyhZHo6r8jjgVVjV4,21
+wordle_game_multilang_solver-0.0.3.dist-info/RECORD,,
