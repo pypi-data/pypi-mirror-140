@@ -1,0 +1,3 @@
+qiskit
+six
+urllib3
