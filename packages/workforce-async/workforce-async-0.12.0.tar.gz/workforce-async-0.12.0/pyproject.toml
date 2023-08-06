@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "workforce-async"
+version = "0.12.0"
+description = "Asyncio Wrapper"
+authors = ["Caswall Engelsman <mail@cengelsman.com>"]
+homepage = "https://github.com/Kick1911/WorkForce"
+repository = "https://github.com/Kick1911/WorkForce"
+keywords = ["asyncio", "tasks", "framework"]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+aiohttp = "^3.7.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+parse = "^1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Kick1911/WorkForce/issues"
+
