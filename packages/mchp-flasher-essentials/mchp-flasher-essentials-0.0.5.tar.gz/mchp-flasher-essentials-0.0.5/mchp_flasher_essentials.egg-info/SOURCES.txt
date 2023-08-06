@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+HelloModule/__init__.py
+HelloModule/hello.py
+mchp_flasher_essentials.egg-info/PKG-INFO
+mchp_flasher_essentials.egg-info/SOURCES.txt
+mchp_flasher_essentials.egg-info/dependency_links.txt
+mchp_flasher_essentials.egg-info/requires.txt
+mchp_flasher_essentials.egg-info/top_level.txt
