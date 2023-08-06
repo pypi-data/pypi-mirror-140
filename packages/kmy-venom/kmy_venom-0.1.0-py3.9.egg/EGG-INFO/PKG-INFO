@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: kmy-venom
+Version: 0.1.0
+Summary: bind blackdoor into apk/exe file.
+Home-page: https://github.com/ExsoKamabay/
+Author: Exso Kamabay
+License: Apache License 2.0
+Description: # ``bind blackdoor into apk/exe file``
+        
+        ```python
+        pip install kmy_venom
+        ```
+        ## **command to run it**
+        
+        ```python
+        $-> venom #in terminal
+        
+        # or
+        
+        from venom import main
+        if __name__=='__main__':
+            main()
+        ```
+Keywords: kamabay,venom
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
