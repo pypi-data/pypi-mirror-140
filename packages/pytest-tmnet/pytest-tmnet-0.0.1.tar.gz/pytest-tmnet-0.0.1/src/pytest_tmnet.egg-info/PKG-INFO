@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pytest-tmnet
+Version: 0.0.1
+Summary: A small example package
+Author: Tibor Arpas
+Author-email: info@infinit.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+long description
+
