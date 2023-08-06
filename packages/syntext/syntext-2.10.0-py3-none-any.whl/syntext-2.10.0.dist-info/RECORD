@@ -1,0 +1,16 @@
+syntext/__init__.py,sha256=EzFI7OUHJlE7rGpeo7kugzS8d2xOeTfxippKmqAQWUw,444
+syntext/__main__.py,sha256=KvCu6JSncw_w3tqHIZuWjR7oj_KaI5khy5njdjWJ1es,625
+syntext/escapes.py,sha256=wvbboeJiqQW9UoigXNm3IFjgfxhvFJB7p3_-pbAR3Oc,1118
+syntext/inline.py,sha256=vS56_9Zi6ehPyO3r6xZLqus2Xf90Li_63jSnPADiKjI,6879
+syntext/interface.py,sha256=el8KZD2kp7A12KwahkxKDtZpiMglUOfJcVMpq354X4Y,3418
+syntext/nodes.py,sha256=-BNDYp96P7bbD6LOawWE7E-XKoWk4U0TA6ywLZRMKPA,3463
+syntext/parsers.py,sha256=4q0OSd7tR9XzOe1cOxdBadqSm8TGjecTKHB7uOCRfhA,19760
+syntext/shorthand.py,sha256=y6y4EC4fW0SCUc-hukXtjkDGLqmF1xIJELLfWjpm_eY,2348
+syntext/tags.py,sha256=rP82wDJMTzKXEVHEvkwOx0uqy6_IdqPojcL3sq61-jo,8943
+syntext/toc.py,sha256=LAV99mvvpJIyR56aun09MQMPIaRmxOA2yrkzIXzlRnI,2911
+syntext/utils.py,sha256=ZvIXm9IcCYtQptdU-4A-eI8OnX5AyVMi0kbJybNQzFM,5723
+syntext-2.10.0.dist-info/METADATA,sha256=o4LqoQIZ6aJ-1F727DpAvoYLh1QGplXrJqNMpV260Tg,940
+syntext-2.10.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+syntext-2.10.0.dist-info/entry_points.txt,sha256=j9TeMq46EuuJmMmrdnEBnm3oeRKrmy4Y5zYBxzA5Xxo,42
+syntext-2.10.0.dist-info/top_level.txt,sha256=TAolTh1r45_H3-94oMhrew_J1wP1UTpRGnQwXJEkty4,8
+syntext-2.10.0.dist-info/RECORD,,
