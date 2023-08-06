@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: clspy
+Version: 0.0.4
+Summary: Wrapper of python 3.x usage
+Home-page: http://git.lovelacelee.com/clspy
+Author: Connard.Lee
+Author-email: lovelacelee@gmail.com
+License: UNKNOWN
+Keywords: clspy,clspy-utils
+Platform: all
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires: loguru
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: License.py
+License-File: AUTHORS
+Requires-Dist: loguru
+Requires-Dist: Click
+Requires-Dist: pipenv
+Requires-Dist: pyyaml
+Requires-Dist: sqlalchemy
+
+CHANGES
+=======
+
+* **202201**
+    * 0.0.3 Bug fixed
+
+* **202112**
+    * 0.0.2 Detach from the clslq project
+    * 0.0.1 Project bootstrap
+
