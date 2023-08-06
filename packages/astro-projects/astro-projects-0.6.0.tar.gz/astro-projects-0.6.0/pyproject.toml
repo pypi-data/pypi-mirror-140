@@ -1,0 +1,86 @@
+[build-system]
+requires = ["flit_core ~=3.2"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "astro-projects"
+dynamic = ["version", "description"]
+
+authors = [
+    {name = "Daniel Imberman", email = "daniel@astronomer.io"},
+    {name = "Plinio Guzman"},
+    {name = "Utkarsh Sharma", email = "utkarsh.sharma@astronomer.io"},
+    {name = "Tatiana Al-Chueyr", email = "tatiana.alchueyr@astronomer.io"}
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+
+requires-python = ">=3.7"
+dependencies = [
+    "apache-airflow>=2.0",
+    "python-frontmatter",
+    "pandas>=1.3.4,<=1.3.5",
+    "SQLAlchemy>=1.3.18,<=1.3.24",
+    "markupsafe>=1.1.1,<2.1.0",
+    "smart-open"
+]
+
+keywords = ["airflow", "provider", "astronomer", "sql", "decorator", "task flow", "elt", "etl", "dag"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Database",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest>=6.0",
+    "pytest-split",
+    "pytest-dotenv",
+    "requests-mock",
+]
+google = [
+    "apache-airflow-providers-google",
+    "sqlalchemy-bigquery==1.3.0",
+    "smart-open[gcs]>=5.2.1",
+]
+snowflake = [
+    "apache-airflow-providers-snowflake",
+    "snowflake-sqlalchemy>=1.2.0,<=1.2.4",
+    "snowflake-connector-python[pandas]",
+]
+postgres = [
+    "apache-airflow-providers-postgres",
+]
+amazon = [
+    "s3fs",
+    "smart-open[s3]>=5.2.1",
+]
+all = [
+    "apache-airflow-providers-google",
+    "sqlalchemy-bigquery==1.3.0",
+    "smart-open[all]>=5.2.1",
+    "s3fs",
+    "apache-airflow-providers-snowflake",
+    "snowflake-sqlalchemy>=1.2.0,<=1.2.4",
+    "snowflake-connector-python[pandas]",
+    "apache-airflow-providers-postgres"
+]
+
+[project.urls]
+Home = "http://astronomer.io/"
+
+[project.entry-points.apache_airflow_provider]
+provider_info = "astro.__init__:get_provider_info"
+
+[tool.pytest.ini_options]
+env_files = [".env"]
+testpaths = ["tests"]
+
+[tool.flit.module]
+name = "astro"  # Or "astro.sql" if you just want this directory, not the entire 'astro'.
