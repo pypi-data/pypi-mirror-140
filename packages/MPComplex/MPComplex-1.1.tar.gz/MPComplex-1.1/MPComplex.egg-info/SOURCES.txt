@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+MPComplex/mp_complex.py
+MPComplex/mp_complex_tests.py
+MPComplex/mp_complex_versus_mpc.py
+MPComplex.egg-info/PKG-INFO
+MPComplex.egg-info/SOURCES.txt
+MPComplex.egg-info/dependency_links.txt
+MPComplex.egg-info/entry_points.txt
+MPComplex.egg-info/top_level.txt
