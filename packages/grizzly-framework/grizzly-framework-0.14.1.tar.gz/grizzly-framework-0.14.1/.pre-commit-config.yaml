@@ -1,0 +1,60 @@
+repos:
+  - repo: https://github.com/pycqa/isort
+    rev: 5.9.2
+    hooks:
+      - id: isort
+  - repo: https://github.com/asottile/yesqa
+    rev: v1.2.3
+    hooks:
+      - id: yesqa
+  - repo: https://github.com/ambv/black
+    rev: 21.7b0
+    hooks:
+      - id: black
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+      - id: flake8
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-ast
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: debug-statements
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: mixed-line-ending
+      - id: name-tests-test
+        args: ['--django']
+      - id: check-json
+      - id: requirements-txt-fixer
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.1.0
+    hooks:
+      - id: codespell
+        exclude_types: [json]
+  - repo: https://github.com/marco-c/taskcluster_yml_validator
+    rev: v0.0.7
+    hooks:
+      - id: taskcluster_yml
+  - repo: https://github.com/MozillaSecurity/orion
+    rev: v0.0.4
+    hooks:
+      - id: orion_ci
+  - repo: meta
+    hooks:
+      - id: check-useless-excludes
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: tox -e pylint --
+        language: system
+        require_serial: true
+        types: [python]
+
+default_language_version:
+  python: python3

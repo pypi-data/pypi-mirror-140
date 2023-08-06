@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>Grizzly &sdot; Harness</title>
+<script>
+let close_after, limit_tmr, time_limit
+let sub = null
+
+let grzDump = (msg) => {
+  console.log(`[grz harness][${new Date().toUTCString()}] ${msg}\n`)
+}
+
+let setBanner = (msg) => {
+  try {
+    document.getElementById('banner').innerHTML = msg
+  } catch(e) {
+    grzDump(`setBanner error: ${e}`)
+  }
+}
+
+let setTestTimeout = () => {
+  if (limit_tmr !== undefined) {
+    grzDump('Test case time limit already set')
+    return
+  }
+  limit_tmr = setTimeout(() => {
+    grzDump('Test case time limit exceeded')
+    if (!sub.closed){
+      grzDump('Closing test case')
+      sub.close()
+    }
+  }, time_limit)
+}
+
+let main = () => {
+  // poll sub and wait until closed
+  // sub should be closed by either the test case or setTestTimeout
+  if (sub && !sub.closed) {
+    setTimeout(main, 50)
+    return
+  }
+
+  if ((close_after !== undefined) && (close_after-- < 1)) {
+    grzDump('Iteration limit hit.')
+    setBanner('Iteration limit hit. Browser should close momentarily...<br>' +
+              'Warning: Any additional open tabs can block browser from closing.')
+    try { window.focus() } catch(e) { }
+    let xhr = new XMLHttpRequest()
+    // indicate test is complete by requesting `/grz_next_test`
+    xhr.open('GET', '/grz_next_test', true)
+    // if web server goes away don't hang (sapphire times out)
+    xhr.timeout = 250
+    // close the harness to catch crashes that are triggered when the browser closes
+    xhr.onabort = () => { window.close() }
+    xhr.onerror = () => { window.close() }
+    xhr.onload = () => { setTimeout(window.close, 100) }
+    xhr.ontimeout = () => { window.close() }
+    xhr.send()
+    return
+  }
+
+  // if limit_tmr is set, clear it before opening a new tab
+  if (limit_tmr !== undefined) {
+    clearTimeout(limit_tmr)
+    limit_tmr = undefined
+  }
+
+  // open test
+  sub = open((sub !== null) ? '/grz_next_test' : '/grz_current_test', 'GrizzlyFuzz')
+  if (sub === null) {
+    setBanner('Error! Could not open window. Blocked by the popup blocker?')
+    grzDump('Could not open test! Blocked by the popup blocker?')
+    return
+  }
+
+  // set the test case time limit
+  if (time_limit > 0) {
+    grzDump(`Using test case time limit of ${time_limit}`)
+    sub.addEventListener('abort', setTestTimeout)
+    sub.addEventListener('error', setTestTimeout)
+    sub.addEventListener('load', setTestTimeout)
+  }
+
+  setTimeout(main, 50)
+}
+
+window.addEventListener('load', () => {
+  let args = window.location.search.replace('?', '')
+  if (args) {
+    for (let kv of args.split('&')) {
+      let [k, v] = kv.split('=')
+      if (k === 'time_limit') {
+        time_limit = Number(v)
+      } else if (k === 'close_after') {
+        close_after = Number(v)
+      } else {
+        grzDump(`unknown arg '${k}'`)
+      }
+    }
+  }
+
+  // update banner
+  setBanner('&#x1f43b; &sdot; Grizzly Harness &sdot; &#x1f98a;')
+  main()
+})
+
+window.addEventListener('beforeunload', () => {
+  grzDump('Cleaning up')
+  if (limit_tmr !== undefined) {
+    clearTimeout(limit_tmr)
+  }
+  if (!sub.closed) {
+    sub.close()
+  }
+})
+</script>
+</head>
+<body style='background-color:#E5E4E2'>
+<h4 id='banner'>&#x1f43b; &sdot; Loading...</h4>
+</body>
+</html>
