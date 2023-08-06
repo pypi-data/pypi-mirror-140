@@ -1,0 +1,11 @@
+bandwidth_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bandwidth_cli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bandwidth_cli/commands/create.py,sha256=pd0CC8ua_AbkpfWHit1UbrKVyPAss8I7zPBh37qSw9s,1845
+bandwidth_cli/commands/delete.py,sha256=ZtfBydl0vi8JjBRi5tZib4m-N-D7sJECIzDrO3c7c6g,987
+bandwidth_cli/commands/get.py,sha256=VGUc3MmhgOzX6VFCZxMfxV-aXB0bx9qrcwlASCGpaqU,743
+bandwidth_cli/commands/retrieve.py,sha256=E3h4pYhdBedv8EMC0kyG9QAeOh83KOd_-vApPP7XGfU,688
+bandwidth_cli/main.py,sha256=07vhQyXUpQ-XWjupGoob4pvjY0YChA8JnfDexF8N1U0,476
+bandwidth_cli-0.1.1.dist-info/entry_points.txt,sha256=F6PfAED7kjyYRUbSlhpyGAT0StLvpThKvAUMeSKLplI,56
+bandwidth_cli-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bandwidth_cli-0.1.1.dist-info/METADATA,sha256=jI4H-N_F7UBztBkw_-qxVQn3GtiOzVNiQcN3FDxb6V8,1255
+bandwidth_cli-0.1.1.dist-info/RECORD,,
