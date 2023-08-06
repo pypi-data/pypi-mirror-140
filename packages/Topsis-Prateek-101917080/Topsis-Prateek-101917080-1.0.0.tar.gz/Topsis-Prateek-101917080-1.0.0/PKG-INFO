@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Topsis-Prateek-101917080
+Version: 1.0.0
+Summary: Assignment of Prateek Bansal
+Home-page: 
+Author: Prateek Bansal
+Author-email: prateekbansal64@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+#Prateek Bansal
+
+#Topsis Package
+
+##INSTALLATION GUIDE
+
+#pip install Topsis-Prateek-101917080
+
+##USAGE GUIDE
+
+#import topsis
+#topsis.topsis("input_file.csv", "1,1,1,1", "+,-,+,-") 
+
+
+#PRATEEK BANSAL 2022
+
