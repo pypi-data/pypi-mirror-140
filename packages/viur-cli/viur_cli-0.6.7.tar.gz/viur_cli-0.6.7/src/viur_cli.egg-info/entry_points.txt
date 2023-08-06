@@ -1,0 +1,4 @@
+[console_scripts]
+flare = viur_cli.scripts.flare:main
+get-pyodide = viur_cli.scripts.get_pyodide:main
+viur = viur_cli:cli
