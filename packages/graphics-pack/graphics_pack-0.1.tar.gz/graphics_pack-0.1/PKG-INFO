@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: graphics_pack
+Version: 0.1
+Summary: Graphics library for some uses in exploratory analysis
+Home-page: https://github.com/yaniela/publish_my_own_package
+Author: Yaniela
+Author-email: yanielajanis@gmail.com
+License: MIT
+Download-URL: https://github.com/yaniela/publish_my_own_package/archive/refs/tags/v1.0.tar.gz
+Description: UNKNOWN
+Keywords: graphics,colors,palette
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
