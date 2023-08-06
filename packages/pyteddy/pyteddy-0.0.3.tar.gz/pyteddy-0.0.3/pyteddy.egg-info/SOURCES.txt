@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./pyteddy/__init__.py
+./pyteddy/__main__.py
+./pyteddy/templates.py
+./pyteddy/commands/__init__.py
+./pyteddy/commands/config.py
+./pyteddy/commands/create_package.py
+./tests/__init__.py
+pyteddy.egg-info/PKG-INFO
+pyteddy.egg-info/SOURCES.txt
+pyteddy.egg-info/dependency_links.txt
+pyteddy.egg-info/top_level.txt
