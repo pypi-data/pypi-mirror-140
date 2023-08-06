@@ -1,0 +1,8 @@
+gci/__init__.py,sha256=xvuUJmDXnIB0U7pCcM5rwHJPu5JsERRz6p4WUZEOXNk,603
+gci/componentmodel.py,sha256=0MfNsLsdzWj-Nx_W6MGYpQtZYo6HGldfrSGgsnMCoU8,13931
+gci/oci.py,sha256=KI9Tc_q4Ul38fIMZGEFituhanCCwQkdWwEVT3Q77-U0,2597
+gci/jsonschema/component-descriptor-v2-schema.yaml,sha256=Dogv7Tdqbv6Ij2gHBnYxvbJEuGVmnIIsD9T0J8euq-E,10095
+gardener_component_model-0.0.57.dist-info/METADATA,sha256=Qj9klomQzN2g3zP9lp-f5Nusx_ttV9-KBqfm7-JTwrE,253
+gardener_component_model-0.0.57.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gardener_component_model-0.0.57.dist-info/top_level.txt,sha256=euRfNpMoSotSAGN0HqhzyUkiGqFiZ6xi6Rf-xR7pKSE,4
+gardener_component_model-0.0.57.dist-info/RECORD,,
