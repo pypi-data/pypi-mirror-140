@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: TOPSIS-Tushar-101903407
+Version: 0.1
+Summary: Topsis Value Calculator CalcTopsis is a Python package implementing Topsis method sed for multi-criteria decision analysis. Topsis stands for Technique for Order of Preference by Similarity to Ideal Solution Just provide your input attributes and it will give you the results
+Home-page: https://github.com/user/Topsis-Tushar-101903407
+Author: Tushar Chugh
+Author-email: tchugh_be19@thapar.edu
+License: MIT
+Download-URL: https://github.com/TusharChugh2212/Topsis-Tushar-101903407/archive/refs/tags/v_02.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
