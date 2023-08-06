@@ -1,0 +1,6 @@
+peakutils
+numpy
+scipy
+pyqtgraph
+matplotlib
+seaborn
