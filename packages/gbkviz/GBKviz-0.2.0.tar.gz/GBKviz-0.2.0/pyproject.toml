@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "GBKviz"
+version = "0.2.0"
+description = "Genbank data visualization webapp"
+authors = ["moshi"]
+license = "MIT"
+homepage = "https://github.com/moshi4/GBKviz/"
+repository = "https://github.com/moshi4/GBKviz/"
+readme = "README.md"
+keywords = [
+    "gbkviz",
+    "bioinformatics",
+    "streamlit",
+    "genomics",
+    "visualization",
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.poetry.dependencies]
+python = "^3.8"
+biopython = "^1.79"
+reportlab = "^3.6.2"
+streamlit = "^1.5.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.10b0"
+flake8 = "^4.0.1"
+pydocstyle = "^6.1.1"
+
+[tool.poetry.scripts]
+gbkviz_webapp = "gbkviz.scripts.launch_gbkviz_webapp:main"
+download_gbk_from_acc = "gbkviz.scripts.download_gbk_from_acc:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
