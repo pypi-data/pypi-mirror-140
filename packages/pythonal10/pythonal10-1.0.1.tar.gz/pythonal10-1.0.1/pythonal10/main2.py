@@ -1,0 +1,1 @@
+text = "We are AL10"

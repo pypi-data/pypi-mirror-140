@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+pythonal10/__init__.py
+pythonal10/main.py
+pythonal10/main2.py
+pythonal10.egg-info/PKG-INFO
+pythonal10.egg-info/SOURCES.txt
+pythonal10.egg-info/dependency_links.txt
+pythonal10.egg-info/top_level.txt
