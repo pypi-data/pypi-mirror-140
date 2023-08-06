@@ -1,0 +1,3 @@
+lark<2,>=1
+bitstruct
+jinja2
