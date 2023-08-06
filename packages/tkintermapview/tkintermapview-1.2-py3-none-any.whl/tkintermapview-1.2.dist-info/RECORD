@@ -1,0 +1,12 @@
+tkintermapview/__init__.py,sha256=DzWymlzo-3cCAaAQjLfUJt51hea8FfrAVVPEpmPYys8,60
+tkintermapview/canvas_button.py,sha256=pD4kcSh2wAUvvFIjWpd9znDL77QqgyeN2nr0Yjkp9pE,3548
+tkintermapview/canvas_path.py,sha256=ahgLuxdQD1qicTRDiP45tg9wAhp-bssglUEQMn8C9Vs,3803
+tkintermapview/canvas_position_marker.py,sha256=Xo9hvXItrRb80Za12Q_c6owPn_VbSiBVW0jlj0ts7Ag,8423
+tkintermapview/canvas_tile.py,sha256=2nEGFcmfG35pLgOpp58yQO-FGzYm59uJBEhkyQ6J-Ew,2954
+tkintermapview/coordinate_convert_functions.py,sha256=mQpgzkRFyGP6UUESPdj1lCW9p4MhMT6OZ3Wn5tSZLlY,613
+tkintermapview/map_widget.py,sha256=X013T29qk_mRNZFssKyBBDO4669ftYGI7F-vtzpJMxk,34548
+tkintermapview-1.2.dist-info/LICENSE.txt,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+tkintermapview-1.2.dist-info/METADATA,sha256=ZR47Ckwte9367MZ6uEXrvvzb85mHh_Q0KyIwxLfjKQk,708
+tkintermapview-1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tkintermapview-1.2.dist-info/top_level.txt,sha256=m8kLglsnOVS25kyu-C0ujCgop2Vk_zo2LMx_nskHVi4,15
+tkintermapview-1.2.dist-info/RECORD,,
