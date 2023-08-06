@@ -1,0 +1,2 @@
+[console_scripts]
+bock = bock.cli:cli

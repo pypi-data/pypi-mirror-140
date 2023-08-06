@@ -1,0 +1,258 @@
+Metadata-Version: 2.1
+Name: bock
+Version: 0.2.0
+Summary: Small cli - tool to support GAMS4+ local development
+Author: Sebastian Stoff
+Author-email: SebastianStoff@gmx.at
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: autopep8 (==1.6.0)
+Requires-Dist: bleach (==4.1.0)
+Requires-Dist: build (==0.7.0)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: charset-normalizer (==2.0.7)
+Requires-Dist: click (==8.0.3)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: docutils (==0.18)
+Requires-Dist: idna (==3.3)
+Requires-Dist: importlib-metadata (==4.8.1)
+Requires-Dist: keyring (==23.2.1)
+Requires-Dist: packaging (==21.2)
+Requires-Dist: pep517 (==0.12.0)
+Requires-Dist: pkginfo (==1.7.1)
+Requires-Dist: pycodestyle (==2.8.0)
+Requires-Dist: Pygments (==2.10.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pywin32-ctypes (==0.2.0)
+Requires-Dist: readme-renderer (==30.0)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tomli (==1.2.2)
+Requires-Dist: tqdm (==4.62.3)
+Requires-Dist: twine (==3.4.2)
+Requires-Dist: urllib3 (==1.26.7)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==3.6.0)
+
+
+# bock
+
+Very basic cli-tool to support local (GAMS4+)[http://gams.uni-graz.at/] project development.
+
+
+## Quick Start
+
+```sh
+
+# 1. make sure python3 + pip are installed
+pip install bock
+
+
+# 2. restart shell / wsl etc.
+# run bock
+bock
+
+```
+
+## Requirements
+- python 3.10.0?
+- pip installed
+
+
+## Bock development
+
+### Windows
+
+```sh
+# cd to clone of repo
+cd /to/the/clone
+
+# install via pip locally
+pip install .
+# logout / login from wsl afterwards
+
+# launch bock commands
+bock [cmd]
+
+# launch demo sub-command (inside commands/demo.py)
+bock demo testme
+
+
+```
+
+
+### WSL / Linux
+
+```sh
+# cd to clone of repo
+cd /to/the/clone
+
+# activate venv (needs virtualenv installed)
+source venv/Scripts/activate    # if there is an error (like command not found -> use dos2Unix command on venv/Scripts/activate )
+
+# install via pip locally
+pip install .
+# logout / login from wsl afterwards
+
+# launch bock commands
+bock [cmd]
+
+# launch demo sub-command (inside commands/demo.py)
+bock demo testme
+
+
+```
+
+
+## Idols / Sources
+- https://github.com/IVIURRAY/yt-eve
+- https://www.youtube.com/watch?v=Jr4QDJwwj60&ab_channel=SoftwareEngineerHaydn
+
+
+
+### 1. Install pip (WSL + Ubuntu 20.x LTS)
+```sh
+# pip wsl ubuntu installation
+# update / upgrade ubuntu first
+sudo apt update && sudo apt upgrade
+# install pip on ubuntu
+sudo apt install python3-pip
+# then install bock
+
+```
+
+## Install
+
+1. create venv
+2. install requirements specified in requirements.txt
+3. code along!
+
+
+### Update bock
+
+```sh
+# update bock
+py -m pip install --upgrade bock
+
+```
+
+## Aims
+
+1. Simplify
+  - setting up the dev assets shpuld be
+2. Centralize
+  - avoid copying of old code. Make sure to spread best practices / bug fixes etc.
+3. Abstract away:
+  - knowledge about different repositories and other implementation details.
+4. Validate:
+  - integrate frontend test possiblity into the tool
+
+
+## Example cli calls
+
+```sh
+
+
+```
+
+# Production / Packaging
+
+- according to official doc here: https://packaging.python.org/guides/distributing-packages-using-setuptools/#packaging-your-project
+
+- based on windows machines
+
+- packaged as "wheel" (check doc link from before)
+
+```sh
+# on windows!
+# launch venv first
+# cd into clone
+./venv/Scripts/activate.bat
+
+# then increment version in setup.py according to semantic versioning!
+
+# build python wheel
+py -m build --wheel
+
+# OPTIONAL: check if description is valid
+twine check dist/*
+
+```
+
+
+# Deployment (on pypi)
+
+- on pypi https://packaging.python.org/guides/distributing-packages-using-setuptools/#uploading-your-project-to-pypi
+
+- check docu for api token (test out on testpypi)
+
+
+## Pypi
+
+```sh
+# First build files + create pypi account (if not existing)
+# username: __token__
+# pw: MYTOKEN
+twine upload dist/*
+
+# install from pypi
+pip install bock
+
+
+```
+
+## Testpypi
+
+
+```sh
+# test on testpypi
+# need to specify testpypi repo
+# username: __token__
+# pw: MYTOKEN
+twine upload dist/* --repository testpypi
+
+# install from testpypi
+# needs to be done this way -> deps need to be installed from pypi and not the test instance.
+pip install bock --extra-index-url https://test.pypi.org/simple 
+
+
+```
+
+
+# Testing
+
+## Manual Deployment
+
+### Installation from TestPypi
+
+```sh
+
+# first update ubuntu stuff
+sudo apt-get update && apt-get upgrade 
+
+# install pip first
+sudo apt-get python3-pip
+
+# install from testpypi
+# needs to be done this way -> deps need to be installed from pypi and not the test instance.
+pip install bock --extra-index-url https://test.pypi.org/simple 
+# (when on wsl -> restart wsl )
+
+# use bock
+bock project setup "templates"
+
+
+```
+
+
