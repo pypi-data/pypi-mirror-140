@@ -1,0 +1,1 @@
+__all__=["act_info_ex_model","act_module_ex_model","act_prize_ex_model","act_prize_senior_config_model","act_prize_sku_model",]

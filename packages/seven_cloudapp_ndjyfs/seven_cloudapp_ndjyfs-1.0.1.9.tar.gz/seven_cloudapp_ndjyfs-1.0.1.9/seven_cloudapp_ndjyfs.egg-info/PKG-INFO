@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: seven-cloudapp-ndjyfs
+Version: 1.0.1.9
+Summary: seven_cloudapp_ndjyfs
+Home-page: http://gitlab.tdtech.gao7.com/TaoBaoCloud/seven_cloudapp_ndjyfs.git
+Author: seven
+Author-email: tech@gao7.com
+License: MIT
+Description: # seven_cloudapp_ndjyfs
+        
+        ## 天志互联Python淘宝云应用框架库(扭蛋机一番赏)
+        
+        
+        ### 1.0.1.9 更新内容
+        * 框架内容添加
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: ~=3.4
+Description-Content-Type: text/markdown
