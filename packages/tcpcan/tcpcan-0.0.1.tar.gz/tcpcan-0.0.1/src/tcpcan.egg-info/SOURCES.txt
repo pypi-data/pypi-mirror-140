@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tcpcan/__init__.py
+src/tcpcan.egg-info/PKG-INFO
+src/tcpcan.egg-info/SOURCES.txt
+src/tcpcan.egg-info/dependency_links.txt
+src/tcpcan.egg-info/entry_points.txt
+src/tcpcan.egg-info/top_level.txt
