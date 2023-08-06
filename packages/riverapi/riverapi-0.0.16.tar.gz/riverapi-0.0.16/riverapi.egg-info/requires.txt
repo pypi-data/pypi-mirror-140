@@ -1,0 +1,9 @@
+dill
+requests
+river
+
+[all]
+dill
+requests
+river
+pytest>=4.6.2
