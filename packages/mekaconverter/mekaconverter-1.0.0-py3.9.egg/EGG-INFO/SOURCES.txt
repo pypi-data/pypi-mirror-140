@@ -1,0 +1,10 @@
+README.md
+setup.py
+mekaconverter/__init__.py
+mekaconverter/__mekaconverter__.py
+mekaconverter.egg-info/PKG-INFO
+mekaconverter.egg-info/SOURCES.txt
+mekaconverter.egg-info/dependency_links.txt
+mekaconverter.egg-info/entry_points.txt
+mekaconverter.egg-info/requires.txt
+mekaconverter.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        mekaconverter=mekaconverter.__mekaconverter__:main
+    
