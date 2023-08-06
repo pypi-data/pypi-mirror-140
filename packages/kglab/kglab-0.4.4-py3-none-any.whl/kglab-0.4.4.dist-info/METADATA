@@ -1,0 +1,314 @@
+Metadata-Version: 2.1
+Name: kglab
+Version: 0.4.4
+Summary: A simple abstraction layer in Python for building knowledge graphs
+Home-page: https://derwen.ai/docs/kgl/
+Author: Paco Nathan
+Author-email: paco@derwen.ai
+License: MIT
+Project-URL: Source Code, https://github.com/DerwenAI/kglab
+Project-URL: Issue Tracker, https://github.com/DerwenAI/kglab/issues
+Project-URL: Community Survey, https://forms.gle/FMHgtmxHYWocprMn6
+Project-URL: Discussion Forum, https://www.linkedin.com/groups/6725785/
+Project-URL: Hands-on Tutorial, https://derwen.ai/docs/kgl/tutorial/
+Keywords: knowledge graph,graph algorithms,interactive visualization,validation,inference,rdf,owl,skos,sparql,shacl,controlled vocabulary,managing namespaces,serialization,n3,turtle,json-ld,parquet,psl,probabilistic soft logic,pandas,roam research,networkx,igraph,pytorch,embedding,deep learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing :: Indexing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (>=3.8)
+Requires-Dist: chocolate (>=0.0.2)
+Requires-Dist: csvwlib (>=0.3.2)
+Requires-Dist: decorator (>=4.4.2)
+Requires-Dist: fsspec[gs,s3] (>=0.8.5)
+Requires-Dist: gcsfs (>=0.7.1)
+Requires-Dist: gensim (>=3.8.3)
+Requires-Dist: icecream (>=2.1)
+Requires-Dist: matplotlib (>=3.3.4)
+Requires-Dist: morph-kgc (>=1.6.0)
+Requires-Dist: networkx (>=2.6)
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: owlrl (>=6.0.2)
+Requires-Dist: pandas (>=1.3)
+Requires-Dist: pslpython (>=2.2.2)
+Requires-Dist: pyarrow (>=1.0.1)
+Requires-Dist: pygments (>=2.7.4)
+Requires-Dist: pylev (>=1.3)
+Requires-Dist: pynvml (>=8.0.4)
+Requires-Dist: pyshacl (>=0.17.3)
+Requires-Dist: python-dateutil (>=2.8)
+Requires-Dist: pyvis (>=0.1.7.0)
+Requires-Dist: rdflib (>=6.0.2)
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: scikit-learn (>=0.20.2)
+Requires-Dist: statsmodels (>=0.10.2)
+Requires-Dist: torch (>=1.8)
+Requires-Dist: tqdm (>=4.56)
+Requires-Dist: urlpath (>=1.1.7)
+Provides-Extra: base
+Requires-Dist: aiohttp (>=3.8) ; extra == 'base'
+Requires-Dist: chocolate (>=0.0.2) ; extra == 'base'
+Requires-Dist: csvwlib (>=0.3.2) ; extra == 'base'
+Requires-Dist: decorator (>=4.4.2) ; extra == 'base'
+Requires-Dist: fsspec[gs,s3] (>=0.8.5) ; extra == 'base'
+Requires-Dist: gcsfs (>=0.7.1) ; extra == 'base'
+Requires-Dist: gensim (>=3.8.3) ; extra == 'base'
+Requires-Dist: icecream (>=2.1) ; extra == 'base'
+Requires-Dist: matplotlib (>=3.3.4) ; extra == 'base'
+Requires-Dist: morph-kgc (>=1.6.0) ; extra == 'base'
+Requires-Dist: networkx (>=2.6) ; extra == 'base'
+Requires-Dist: numpy (>=1.19.2) ; extra == 'base'
+Requires-Dist: owlrl (>=6.0.2) ; extra == 'base'
+Requires-Dist: pandas (>=1.3) ; extra == 'base'
+Requires-Dist: pslpython (>=2.2.2) ; extra == 'base'
+Requires-Dist: pyarrow (>=1.0.1) ; extra == 'base'
+Requires-Dist: pygments (>=2.7.4) ; extra == 'base'
+Requires-Dist: pylev (>=1.3) ; extra == 'base'
+Requires-Dist: pynvml (>=8.0.4) ; extra == 'base'
+Requires-Dist: pyshacl (>=0.17.3) ; extra == 'base'
+Requires-Dist: python-dateutil (>=2.8) ; extra == 'base'
+Requires-Dist: pyvis (>=0.1.7.0) ; extra == 'base'
+Requires-Dist: rdflib (>=6.0.2) ; extra == 'base'
+Requires-Dist: requests (>=2.25.1) ; extra == 'base'
+Requires-Dist: scikit-learn (>=0.20.2) ; extra == 'base'
+Requires-Dist: statsmodels (>=0.10.2) ; extra == 'base'
+Requires-Dist: torch (>=1.8) ; extra == 'base'
+Requires-Dist: tqdm (>=4.56) ; extra == 'base'
+Requires-Dist: urlpath (>=1.1.7) ; extra == 'base'
+Provides-Extra: docs
+Requires-Dist: bandit ; extra == 'docs'
+Requires-Dist: codespell ; extra == 'docs'
+Requires-Dist: coverage ; extra == 'docs'
+Requires-Dist: flask ; extra == 'docs'
+Requires-Dist: grayskull ; extra == 'docs'
+Requires-Dist: jupyterlab (>=3.1.4) ; extra == 'docs'
+Requires-Dist: mistune (>=2.0.1) ; extra == 'docs'
+Requires-Dist: mkdocs-git-revision-date-plugin ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mknotebooks ; extra == 'docs'
+Requires-Dist: mypy ; extra == 'docs'
+Requires-Dist: nbconvert (>=6.4) ; extra == 'docs'
+Requires-Dist: nbmake (>=1.0) ; extra == 'docs'
+Requires-Dist: notebook (>=6.1.5) ; extra == 'docs'
+Requires-Dist: pipdeptree ; extra == 'docs'
+Requires-Dist: pre-commit ; extra == 'docs'
+Requires-Dist: pygments (>=2.7.4) ; extra == 'docs'
+Requires-Dist: pylint (>=2.7.0) ; extra == 'docs'
+Requires-Dist: pymdown-extensions ; extra == 'docs'
+Requires-Dist: pytest ; extra == 'docs'
+Requires-Dist: selenium ; extra == 'docs'
+Requires-Dist: twine ; extra == 'docs'
+Requires-Dist: types-python-dateutil ; extra == 'docs'
+Requires-Dist: wheel ; extra == 'docs'
+
+# kglab
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4717287.svg)](https://doi.org/10.5281/zenodo.4717287)
+![Licence](https://img.shields.io/github/license/DerwenAI/kglab)
+![Repo size](https://img.shields.io/github/repo-size/DerwenAI/kglab)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/DerwenAI/kglab?style=plastic)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/DerwenAI/kglab.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DerwenAI/kglab/context:python)
+![CI](https://github.com/DerwenAI/kglab/workflows/CI/badge.svg)
+![downloads](https://img.shields.io/pypi/dm/kglab)
+![sponsor](https://img.shields.io/github/sponsors/ceteri)
+
+Welcome to *graph data science*:
+<https://derwen.ai/docs/kgl/>
+
+The **kglab** library provides a simple abstraction layer in Python 3.7+
+for building knowledge graphs.
+
+> **SPECIAL REQUEST:**  
+> Which features would you like in an open source Python library for building knowledge graphs?  
+> Please add your suggestions through this survey:  
+> https://forms.gle/FMHgtmxHYWocprMn6  
+> This will help us prioritize the **kglab** roadmap.
+
+
+## Reviews
+
+[@kaaloo](https://github.com/kaaloo): 
+> "Feels like it's a Hugging Face for graphs! 🤯"
+
+
+## Getting Started
+
+See the ["Getting Started"](https://derwen.ai/docs/kgl/start/)
+section of the online documentation.
+
+To install from [PyPi](https://pypi.python.org/pypi/kglab):
+```
+python3 -m pip install kglab
+```
+
+If you work directly from this Git repo, be sure to install the 
+dependencies as well:
+```
+python3 -m pip install -r requirements.txt
+```
+
+Alternatively, to install dependencies using `conda`:
+```
+conda env create -f environment.yml
+conda activate kglab
+```
+
+Then to run some simple uses of this library:
+```python
+import kglab
+
+# create a KnowledgeGraph object
+kg = kglab.KnowledgeGraph()
+
+# load RDF from a URL
+kg.load_rdf("http://bigasterisk.com/foaf.rdf", format="xml")
+
+# measure the graph
+measure = kglab.Measure()
+measure.measure_graph(kg)
+
+print("edges: {}\n".format(measure.get_edge_count()))
+print("nodes: {}\n".format(measure.get_node_count()))
+
+# serialize as a string in "Turtle" TTL format
+ttl = kg.save_rdf_text()
+print(ttl)
+```
+
+See the **tutorial notebooks** in the `examples` subdirectory for
+sample code and patterns to use in integrating **kglab** with other
+graph libraries in Python:
+<https://derwen.ai/docs/kgl/tutorial/>
+
+
+> **WARNING when installing in an existing environment:**  
+> Installing a new package in an existing environment may reveal  
+> or create version conflicts. See the **kglab** requirements  
+> in `requirements.txt` before you do. For example, there are  
+> [known version conflicts](https://github.com/DerwenAI/kglab/issues/160) regarding NumPy (>= 1.19.4) and [TensorFlow 2+](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/pip_package/setup.py) (~-1.19.2)
+
+
+<details>
+  <summary>Contributing Code</summary>
+
+We welcome people getting involved as contributors to this open source
+project!
+
+For detailed instructions please see:
+[CONTRIBUTING.md](https://github.com/DerwenAI/kglab/blob/main/CONTRIBUTING.md)
+</details>
+
+<details>
+  <summary>Build Instructions</summary>
+
+<strong>
+Note: unless you are contributing code and updates,
+in most use cases won't need to build this package locally.
+</strong>
+
+Instead, simply install from
+[PyPi](https://pypi.python.org/pypi/kglab)
+or use [Conda](https://docs.conda.io/).
+
+To set up the build environment locally, see the 
+["Build Instructions"](https://derwen.ai/docs/kgl/build/)
+section of the online documentation.
+</details>
+
+<details>
+  <summary>Semantic Versioning</summary>
+
+Before <strong>kglab</strong> reaches release <code>v1.0.0</code> the 
+types and classes may undergo substantial changes and the project is 
+not guaranteed to have a consistent API.
+
+Even so, we'll try to minimize breaking changes.
+We'll also be sure to provide careful notes.
+
+See:
+[changelog.txt](https://github.com/DerwenAI/kglab/blob/main/changelog.txt)
+</details>
+
+<img
+ alt="illustration of a knowledge graph, plus laboratory glassware"
+ src="https://raw.githubusercontent.com/DerwenAI/kglab/main/docs/assets/logo.png"
+ width="231"
+ />
+
+## Testing
+
+It's possible to run tests with any of the Jupyter notebooks using:
+```python
+python3 -m pytest --nbmake examples/*ipynb
+```
+
+## License and Copyright
+
+Source code for **kglab** plus its logo, documentation, and examples
+have an [MIT license](https://spdx.org/licenses/MIT.html) which is
+succinct and simplifies use in commercial applications.
+
+All materials herein are Copyright &copy; 2020-2021 Derwen, Inc.
+
+
+## Attribution
+
+Please use the following BibTeX entry for citing **kglab** if you use
+it in your research or software.
+Citations are helpful for the continued development and maintenance of
+this library.
+
+```bibtex
+@software{kglab,
+  author = {Paco Nathan},
+  title = {{kglab: a simple abstraction layer in Python for building knowledge graphs}},
+  year = 2020,
+  publisher = {Derwen},
+  doi = {10.5281/zenodo.4717287},
+  url = {https://github.com/DerwenAI/kglab}
+}
+```
+
+
+## Kudos
+
+Many thanks to our open source [sponsors](https://github.com/sponsors/ceteri);
+and to our contributors:
+[@ceteri](https://github.com/ceteri),
+[@dvsrepo](https://github.com/dvsrepo),
+[@Ankush-Chander](https://github.com/Ankush-Chander),
+[@louisguitton](https://github.com/louisguitton),
+[@tomaarsen](https://github.com/tomaarsen),
+[@Mec-iS](https://github.com/Mec-iS),
+[@ArenasGuerreroJulian](https://github.com/ArenasGuerreroJulian),
+[@fils](https://github.com/fils),
+[@gauravjaglan](https://github.com/gauravjaglan),
+[@pebbie](https://github.com/pebbie),
+[@CatChenal](https://github.com/CatChenal),
+[@jake-aft](https://github.com/jake-aft),
+[@dmoore247](https://github.com/dmoore247),
+plus general support from [Derwen, Inc.](https://derwen.ai/);
+the [Knowledge Graph Conference](https://www.knowledgegraph.tech/)
+and [Connected Data World](https://connected-data.world/);
+plus an even larger scope of [use cases](https://derwen.ai/docs/kgl/use_case/)
+represented by their communities;
+[Kubuntu Focus](https://kfocus.org/),
+the [RAPIDS team @ NVIDIA](https://rapids.ai/),
+[Gradient Flow](https://gradientflow.com/),
+and
+[Manning Publications](https://www.manning.com/).
+
+
