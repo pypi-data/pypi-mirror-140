@@ -1,0 +1,14 @@
+azure-storage-blob>=12.8.1
+pathlib>=1.0
+numpy>=1.17.0
+pandas>=1.0.0
+Pillow>=7.0.0
+requests>=2.22.0
+tqdm>=4.29.0
+urllib3>=1.25.2
+
+[:platform_system == "Windows" or sys_platform == "darwin"]
+python-magic-bin
+
+[:sys_platform == "linux"]
+python-magic>=0.4.24
