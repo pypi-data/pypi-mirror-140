@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: baiduads-sdk-auto
+Version: 2022.1.0
+Summary: dev2 api schema
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: UNKNOWN
+Description:     &#39;dev2.baidu.com&#39; api schema  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,dev2 api schema
+Platform: UNKNOWN
+Requires-Python: >=3.6
