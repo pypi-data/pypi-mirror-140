@@ -1,0 +1,13 @@
+LICENSE,sha256=-8LbRkCOAOIZgTGSl9zXQjC98oE5OUjTEUUIPZaqTi8,1314
+README.md,sha256=htZdY_Vb1TMuX8Wu-RHP-mHhgZPrQWhm_50D8bN-LSg,3150
+lookup_fields/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lookup_fields/fields.py,sha256=OfZyuMNNBSlq7M88kFV4n0kr7VoFJ-9TwVB0L6AHW8s,7936
+lookup_fields/locale/en/LC_MESSAGES/django.po,sha256=ZpSHIn1YUmJ_KnLBs17Fsr0D4Pk-tD8xYFWY4gB1fA0,1576
+lookup_fields/locale/pl/LC_MESSAGES/django.po,sha256=6Gyk1eEfWZYZj7uha2WbAXPF0oXOuCQQv7ucDJkyCvs,1801
+lookup_fields/permissions.py,sha256=-TuJGY2NQZmCXFDGJGBJLlIc96fjcihe6iDElRQYoT0,677
+lookup_fields/serializers.py,sha256=eSdRUzCu9tsiNye6-fvastlHTQPXsQE-geO_mEGIdZc,502
+lookup_fields/views.py,sha256=IYWF_LDTPyhNlHJaAI_aF2wPymehFI6xynCBPRbeGjo,3834
+drf_lookup_fields-1.0.0.dist-info/LICENSE,sha256=-8LbRkCOAOIZgTGSl9zXQjC98oE5OUjTEUUIPZaqTi8,1314
+drf_lookup_fields-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+drf_lookup_fields-1.0.0.dist-info/METADATA,sha256=MR5OdGby4i9EhL2pO3Po6xWx1Roet6K8TrNTArhdYbQ,3910
+drf_lookup_fields-1.0.0.dist-info/RECORD,,
