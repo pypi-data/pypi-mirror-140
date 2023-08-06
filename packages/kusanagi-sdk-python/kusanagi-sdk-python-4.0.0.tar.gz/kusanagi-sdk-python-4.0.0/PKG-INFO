@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kusanagi-sdk-python
+Version: 4.0.0
+Summary: Python SDK for the KUSANAGI™ framework
+Home-page: http://kusanagi.io/
+License: MIT
+Author: Jeronimo Albi
+Author-email: jeronimo.albi@gmail.com
+Requires-Python: >=3.9
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Requires-Dist: msgpack (>=1.0.0,<2.0.0)
+Requires-Dist: pyzmq (>=22.3.0,<23.0.0)
+Project-URL: Releases, https://github.com/kusanagi/kusanagi-sdk-python/releases
