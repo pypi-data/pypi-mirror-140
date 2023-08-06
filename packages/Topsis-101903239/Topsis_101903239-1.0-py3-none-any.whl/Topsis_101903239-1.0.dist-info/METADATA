@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: Topsis-101903239
+Version: 1.0
+Summary: Topsis Calculation
+License: MIT
+Keywords: Topsis,TopsisPackage
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
+# Topsis
+
+## A Multi-Criteria Decision Analysis Method
+
+**Submitted By** - Pushpak Kamboj
+**Roll No.** - 101903239
+**Group** - 3COE9
+
+It is a Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) came in the 1980s as a multi-criteria-based decision-making method. TOPSIS chooses the alternative of shortest the Euclidean distance from the ideal solution and greatest distance from the negative ideal solution.
+
+## Installation
+
+This package requires pandas to be pre-installed and python to run.
+Install the dependencies and devDependencies and start the server.
+**To Install and run in cmd line:**
+
+```sh
+pip install Topsis_101903239
+import Topsis_101903239
+Topsis_101903239.Topsis(Input_File_Name.csv,"1,1,1,1 ...","+,-,+,- ...","resultfile.csv")
+```
+
+
