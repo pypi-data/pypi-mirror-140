@@ -1,0 +1,470 @@
+debug: false
+
+#    """
+#    Steps
+#    Copy the full Parent client aggr tables as-is into the demo/aggr (OVERWRITE)
+#    this only include the incremental tables that dont have anomyized data elements 
+#    Get incrementals comparing the full against the history
+#    note: the result will be different from the parent incremental since the history is different (the load frequency can be different from the parent).
+#    note: the comparison still use the hash value created for the parent table (so there isn't any comparison with the anonymized values)
+#    """
+
+## Files to Load / Create View
+variables:
+  - project_root_path = {config.project_root_path}
+  #  - cad_job_id = {config.job_id}
+  - client = {config.client}
+  - parent_demo_client = {config.project_config.parent_demo_client}
+  - aggr_location =  {config.aggr_location}
+  - debug = False
+
+Extract:
+#settings are taken from the parent client since all the RA data has been calculated using the parent client settings.
+# we ignore the demo client settings.  
+  EpiAnalyst_Client_Settings:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/EpiAnalyst_Client_Settings/"
+
+#history tables in the demo client
+  timestamps_history:
+    type: parquet
+    location: "{aggr_location}/timestamps_history/"
+
+  member_dx_codes_history:
+    type: parquet
+    location: "{aggr_location}/member_dx_codes_history/"
+
+  suspect_sources_history:
+    type: parquet
+    location: "{aggr_location}/suspect_sources_history/"
+
+#full tables from the parent client
+  timestamps_full:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/timestamps_full/"
+
+  member_dx_codes_full:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/member_dx_codes_full/"
+
+  suspect_sources_full:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/suspect_sources_full/"
+
+#monthly stats is not calculated during incremental, so we just copy what the parent has to s3 and pg
+  parent_aggr_monthly_stats:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/monthly_stats/"
+
+  aggr_monthly_stats:
+    type: parquet
+    location: "{aggr_location}/monthly_stats/"
+
+#job for the demo client
+  job:
+    type: postgres
+    conn_config_name: cadmium_postgres_db
+    table_name: job
+
+Transform:
+  cad_job:
+    sql: >-
+      With LastJob as (
+        SELECT
+          max(id) as last_job_id,
+          max(client_name) as client_name
+          FROM job
+          WHERE status = 'CLOSED' and client_name ='{client}'
+        )
+      SELECT
+        max(j.id) as cad_job_id, max(coalesce(l.last_job_id,0)) as last_job_id
+        FROM job j
+        inner join LastJob l on j.client_name = l.client_name
+        WHERE status = 'OPEN'
+    cache: true
+
+#  cad_job:
+#    sql: >-
+#      SELECT
+#        2 as  cad_job_id, 1 as last_job_id
+
+# previous job should ONLY include the table keys , hash values and job id for the previous job_id for the specific client
+#---------------------------------------------member_dxcodes-----------------------------------------------------------
+  member_dxcodes_previous_load:
+    sql: >-
+      SELECT
+         member_id,
+         provider_id,
+         dxcode,
+         hcc_code,
+         date_of_service,
+         hash_value,
+         job_id
+      FROM member_dx_codes_history m
+      INNER JOIN cad_job  c on c.last_job_id =m.job_id
+
+  member_dx_codes_incremental:
+    sql: >-
+      WITH new_rows as (
+           SELECT
+            a.hash_value,
+            'INSERT' as operation,
+            a.job_id,
+            a.provider_id,
+            a.member_id,
+            a.dxcode,
+            a.date_of_service,
+            a.date_of_service_year,
+            a.hcc_code,
+            a.hcc_type,
+            a.description,
+            a.source,
+            a.suspect_reason,
+            a.added_by_client,
+            a.pos,
+            a.is_deleted,
+            a.procedure_code,
+            a.dx_status,
+            a.is_chronic,
+            a.code_source,
+            a.is_recap,
+            a.flex1,
+            a.flex2,
+            a.flex3,
+            a.flex4,
+            a.flex5,
+            a.flex6,
+            a.flex7,
+            a.flex8,
+            a.flex9,
+            a.flex10
+          FROM  member_dx_codes_full a
+          inner join EpiAnalyst_Client_Settings s on year(a.date_of_service) between s.current_year - 3 and  s.current_year
+          LEFT JOIN member_dxcodes_previous_load b
+              ON a.member_id = b.member_id
+              AND a.provider_id = b.provider_id
+              AND a.hcc_code = b.hcc_code
+              AND a.date_of_service = b.date_of_service
+              AND a.dxcode = b.dxcode
+          WHERE b.member_id is null ),
+      delete_rows as (
+          SELECT
+            a.hash_value,
+            'DELETE' as operation,
+           ( select cad_job_id from cad_job )  as job_id,
+            a.provider_id,
+            a.member_id,
+            a.dxcode,
+            a.date_of_service,
+            cast(null as integer) as date_of_service_year,
+            a.hcc_code,
+            cast(null as string) as hcc_type,
+            cast(null as string) as description,
+            cast(null as string) as source,
+            cast(null as string) as suspect_reason,
+            cast(null as boolean) as added_by_client,
+            cast(null as string) as pos,
+            cast(null as boolean) as is_deleted,
+            cast(null as string) as procedure_code,
+            cast(null as string) as dx_status,
+            cast(null as boolean) as is_chronic,
+            cast(null as string) as code_source,
+            cast(null as boolean) as is_recap,
+            cast(null as string) as flex1,
+            cast(null as string) as flex2,
+            cast(null as string) as flex3,
+            cast(null as string) as flex4,
+            cast(null as string) as flex5,
+            cast(null as string) as flex6,
+            cast(null as string) as flex7,
+            cast(null as string) as flex8,
+            cast(null as string) as flex9,
+            cast(null as string) as flex10
+            FROM member_dxcodes_previous_load a
+            inner join EpiAnalyst_Client_Settings s on year(a.date_of_service) between s.current_year - 3 and  s.current_year
+            LEFT JOIN member_dx_codes_full b
+                ON a.member_id = b.member_id
+                AND a.provider_id = b.provider_id
+                AND a.hcc_code = b.hcc_code
+                AND a.date_of_service = b.date_of_service
+                AND a.dxcode = b.dxcode
+            WHERE b.member_id is null ),
+      update_rows as (
+           SELECT
+            a.hash_value,
+            'UPDATE' as operation,
+            a.job_id,
+            a.provider_id,
+            a.member_id,
+            a.dxcode,
+            a.date_of_service,
+            a.date_of_service_year,
+            a.hcc_code,
+            a.hcc_type,
+            a.description,
+            a.source,
+            a.suspect_reason,
+            a.added_by_client,
+            a.pos,
+            a.is_deleted,
+            a.procedure_code,
+            a.dx_status,
+            a.is_chronic,
+            a.code_source,
+            a.is_recap,
+            a.flex1,
+            a.flex2,
+            a.flex3,
+            a.flex4,
+            a.flex5,
+            a.flex6,
+            a.flex7,
+            a.flex8,
+            a.flex9,
+            a.flex10
+          FROM member_dx_codes_full a
+          inner join EpiAnalyst_Client_Settings s on year(a.date_of_service) between s.current_year - 3 and  s.current_year
+          INNER JOIN member_dxcodes_previous_load b
+              ON a.member_id = b.member_id
+              AND a.provider_id = b.provider_id
+              AND a.hcc_code = b.hcc_code
+              AND a.date_of_service = b.date_of_service
+              AND a.dxcode = b.dxcode
+              WHERE a.hash_value <> b.hash_value )
+          SELECT *
+          FROM new_rows
+          UNION
+          SELECT *
+          FROM delete_rows
+          UNION
+          SELECT *
+          FROM update_rows
+
+#---------------------------------------------suspect sources-----------------------------------------------------------
+  suspect_sources_previous_load:
+    sql: >-
+      SELECT
+         member_id,
+         hcc_code,
+         year,
+         suspect_type,
+         hash_value,
+         job_id
+      FROM suspect_sources_history m
+      INNER JOIN cad_job  c on c.last_job_id =m.job_id
+ 
+  suspect_sources_incremental:
+    sql: >-
+      WITH new_rows as (
+           SELECT
+            a.hash_value,
+            'INSERT' as operation,
+            a.job_id,
+            a.member_id,
+            a.hcc_code,
+            a.hcc_description,
+            a.hcc_coefficient,
+            a.hcc_status,
+            a.year,
+            a.trumped_by,
+            a.suspect_type,
+            a.data,
+            a.data_description,
+            a.confidence_level,
+            a.hcc_captured
+           FROM suspect_sources_full a
+           inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 3 and  s.current_year
+           LEFT JOIN suspect_sources_previous_load b
+           ON a.member_id = b.member_id
+           AND a.hcc_code = b.hcc_code
+           AND a.year = b.year
+           AND a.suspect_type = b.suspect_type
+           WHERE b.member_id IS NULL
+      ) ,
+      delete_rows as (
+           SELECT
+           a.hash_value,
+           'DELETE' as operation,
+           ( select cad_job_id from cad_job )  as job_id,
+           a.member_id,
+           a.hcc_code,
+           cast(null as string) as hcc_description,
+           cast(null as double) as hcc_coefficient,
+           cast(null as string) as hcc_status,
+           a.year,
+           cast(null as string) as trumped_by,
+           a.suspect_type,
+           cast(null as string) as data,
+           cast(null as string) as data_description,
+           cast(null as double) as confidence_level,
+           cast(null as boolean) as hcc_captured
+           FROM suspect_sources_previous_load a
+           inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 3 and  s.current_year
+           LEFT JOIN suspect_sources_full b
+           ON a.member_id = b.member_id
+           AND a.hcc_code = b.hcc_code
+           AND a.year = b.year
+           AND a.suspect_type = b.suspect_type
+           WHERE b.member_id is null),
+      update_rows as (
+            SELECT
+             a.hash_value,
+             'UPDATE' as operation,
+             a.job_id,
+             a.member_id,
+             a.hcc_code,
+             a.hcc_description,
+             a.hcc_coefficient,
+             a.hcc_status,
+             a.year,
+             a.trumped_by,
+             a.suspect_type,
+             a.data,
+             a.data_description,
+             a.confidence_level,
+             a.hcc_captured
+            FROM suspect_sources_full a
+            inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 3 and  s.current_year
+            INNER JOIN suspect_sources_previous_load b
+            ON a.member_id = b.member_id
+            AND a.hcc_code = b.hcc_code
+            AND a.year = b.year
+            AND a.suspect_type = b.suspect_type
+            WHERE a.hash_value <> b.hash_value)
+      SELECT * FROM new_rows
+      UNION
+      SELECT * FROM delete_rows
+      UNION
+      SELECT * FROM update_rows
+
+#---------------------------------------------load_times----------------------------------------------------------
+  load_times_previous_load:
+    sql: >-
+      SELECT
+         load_type,
+         load_start,
+         load_end ,
+         hash_value,
+         job_id
+      FROM timestamps_history m
+      INNER JOIN cad_job  c on c.last_job_id =m.job_id
+
+  timestamps_incremental:
+    sql: >-
+      WITH new_rows as (
+           SELECT
+            a.hash_value,
+            'INSERT' as operation,
+            a.job_id,
+            a.load_type,
+            a.load_start,
+            a.load_end
+           FROM timestamps_full a
+           LEFT JOIN load_times_previous_load b
+           ON a.load_type = b.load_type
+           AND a.load_start = b.load_start
+           AND a.load_end = b.load_end
+           WHERE b.load_start IS NULL OR b.load_end IS NULL),
+      delete_rows as (
+           SELECT
+            a.hash_value,
+            'DELETE' as operation,
+            a.job_id,
+            CAST(a.load_type AS STRING),
+            CAST(a.load_start AS STRING),
+            CAST(a.load_end AS STRING)
+           FROM load_times_previous_load a
+           LEFT JOIN timestamps_full b
+           ON a.load_type = b.load_type
+           AND a.load_start = b.load_start
+           AND a.load_end = b.load_end
+           WHERE b.load_start IS NULL OR b.load_end IS NULL),
+      update_rows as (
+           SELECT
+            a.hash_value,
+            'UPDATE' as operation,
+            a.job_id,
+            a.load_type,
+            a.load_start,
+            a.load_end
+           FROM timestamps_full a
+           INNER JOIN load_times_previous_load b
+           ON a.load_type = b.load_type
+           AND a.load_start = b.load_start
+           AND a.load_end = b.load_end
+           WHERE a.hash_value <> b.hash_value)
+      SELECT * FROM new_rows
+      UNION
+      SELECT * FROM delete_rows
+      UNION
+      SELECT * FROM update_rows
+
+#---------------------------------------------------- new rows in monthly stats -------------------------------------
+  incremental_aggr_monthly_stats:
+    sql: >-
+      with last_per_unique_key as (
+          SELECT a.*,
+           row_number() over(partition by measure, year, history_month order by record_timestamp desc) as r
+           from parent_aggr_monthly_stats a
+      )
+      select
+        a.hash_value,
+        a.operation,
+        a.job_id,
+        a.record_timestamp,
+        a.history_month,
+        a.year,
+        a.measure,
+        a.value
+      from last_per_unique_key a
+      left join aggr_monthly_stats b on a.measure=b.measure and a.year=b.year and  a.history_month= b.history_month
+      where a.r=1 and b.measure is null
+
+    # Note: Load tables have to be same as Extract tables.
+Load:
+  member_dx_codes_full:
+    load_1:
+      type: parquet
+      location: '{aggr_location}/member_dx_codes_full'
+      mode: overwrite
+
+  member_dx_codes_incremental:
+    load_1:
+      type: parquet
+      location: '{project_root_path}/{client}/sync/member_dx_codes_incremental'
+      mode: overwrite
+
+  suspect_sources_full:
+    load_1:
+      type: parquet
+      location: '{aggr_location}/suspect_sources_full'
+      mode: overwrite
+
+  suspect_sources_incremental:
+    load_1:
+      type: parquet
+      location: '{project_root_path}/{client}/sync/suspect_sources_incremental'
+      mode: overwrite
+
+  timestamps_full:
+    load_1:
+      type: parquet
+      location: '{aggr_location}/timestamps_full'
+      mode: overwrite
+
+  timestamps_incremental:
+    load_1:
+      type: parquet
+      location: '{project_root_path}/{client}/sync/timestamps_incremental'
+      mode: overwrite
+
+  incremental_aggr_monthly_stats:
+    load_to_postgres:
+      type: postgres
+      conn_config_name: epia_medicare_postgres
+      table_name: load_monthly_dashboard
+      mode: overwrite
+    load_1:
+      type: parquet
+      location: '{aggr_location}/monthly_stats'
+      mode: append

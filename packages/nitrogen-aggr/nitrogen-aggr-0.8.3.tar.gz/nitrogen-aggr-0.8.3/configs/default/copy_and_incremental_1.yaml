@@ -1,0 +1,986 @@
+debug: false
+
+#    """
+#    Steps
+#    Copy the full Parent client aggr tables as-is into the demo/aggr (OVERWRITE)
+#    this only include the incremental tables that dont have anomyized data elements 
+#    Get incrementals comparing the full against the history
+#    note: the result will be different from the parent incremental since the history is different (the load frequency can be different from the parent).
+#    note: the comparison still use the hash value created for the parent table (so there isn't any comparison with the anonymized values)
+#    """
+
+## Files to Load / Create View
+variables:
+  - project_root_path = {config.project_root_path}
+  #  - cad_job_id = {config.job_id}
+  - client = {config.client}
+  - parent_demo_client = {config.project_config.parent_demo_client}
+  - aggr_location =  {config.aggr_location}
+  - debug = False
+
+Extract:
+#settings are taken from the parent client since all the RA data has been calculated using the parent client settings.
+# we ignore the demo client settings.  
+  EpiAnalyst_Client_Settings:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/EpiAnalyst_Client_Settings/"
+
+#history tables in the demo client
+  member_details_history:
+    type: parquet
+    location: "{aggr_location}/member_details_history/"
+
+  member_hccs_history:
+    type: parquet
+    location: "{aggr_location}/member_hccs_history/"
+
+  providers_history:
+    type: parquet
+    location: "{aggr_location}/providers_history/"
+
+  provider_details_history:
+    type: parquet
+    location: "{aggr_location}/provider_details_history/"
+
+  provider_npi_history:
+    type: parquet
+    location: "{aggr_location}/provider_npi_history/"
+
+  provider_member_relationships_history:
+    type: parquet
+    location: "{aggr_location}/provider_member_relationships_history/"
+
+#full tables from the parent client
+  member_details_full:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/member_details_full/"
+
+  member_hccs_full:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/member_hccs_full/"
+
+  providers_full:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/providers_full/"
+
+  provider_details_full:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/provider_details_full/"
+
+  provider_npi_full:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/provider_npi_full/"
+
+  provider_member_relationships_full:
+    type: parquet
+    location: "{project_root_path}/{parent_demo_client}/aggr/provider_member_relationships_full/"
+
+#job for the demo client
+  job:
+    type: postgres
+    conn_config_name: cadmium_postgres_db
+    table_name: job
+
+Transform:
+  cad_job:
+    sql: >-
+      With LastJob as (
+        SELECT
+          max(id) as last_job_id,
+          max(client_name) as client_name
+          FROM job
+          WHERE status = 'CLOSED' and client_name ='{client}'
+        )
+      SELECT
+        max(j.id) as cad_job_id, max(coalesce(l.last_job_id,0)) as last_job_id
+        FROM job j
+        inner join LastJob l on j.client_name = l.client_name
+        WHERE status = 'OPEN'
+    cache: true
+
+#  cad_job:
+#    sql: >-
+#      SELECT
+#        2 as  cad_job_id, 1 as last_job_id
+
+# previous job should ONLY include the table keys , hash values and job id for the previous job_id for the specific client
+#---------------------------------------------member_details-----------------------------------------------------------
+  member_details_previous_load:
+    sql: >-
+      SELECT
+         member_id,
+         year,
+         hash_value,
+         job_id
+      FROM member_details_history m
+      INNER JOIN cad_job  c on c.last_job_id =m.job_id
+
+  member_details_incremental:
+    sql: >-
+      WITH new_rows as (
+           SELECT
+            a.hash_value,
+            'INSERT' as operation,
+            a.job_id,
+            a.load_year,
+            a.load_month,
+            a.member_id,
+            a.year,
+            a.dos_count,
+            a.eligibility_date,
+            a.eligibility_end_date,
+            a.is_eligible,
+            a.medicaid,
+            a.months_eligible,
+            a.opportunity,
+            a.pcp_dos_count,
+            a.raf_captured,
+            a.raf_demographic,
+            a.raf_projected,
+            a.recap_count,
+            a.recap_opp_count,
+            a.wellness_visit,
+            a.hcc_captured,
+            a.hcc_captured_source_claim,
+            a.hcc_captured_source_hra,
+            a.hcc_captured_source_hra_crr,
+            a.hcc_captured_source_mor,
+            a.hcc_captured_source_crr,
+            a.hcc_captured_source_other,
+            a.hcc_captured_new_chronic,
+            a.hcc_captured_yoy_recapture,
+            a.hcc_captured_mor_new_chronic,
+            a.hcc_captured_mor_yoy_recapture,
+            a.hcc_captured_acute,
+            a.hcc_captured_other,
+            a.hcc_suspects_all,
+            a.hcc_suspects_yoy,
+            a.hcc_suspects_mor_yoy,
+            a.hcc_suspects_u,
+            a.hcc_suspects_asr,
+            a.hcc_suspects_n,
+            a.hcc_suspects_cpt,
+            a.hcc_suspects_ml,
+            a.hcc_suspects_other,
+            a.hcc_suspects_clinical,
+            a.hcc_captured_num_source_claim,
+            a.hcc_captured_num_source_hra,
+            a.hcc_captured_num_source_hra_crr,
+            a.hcc_captured_num_source_mor,
+            a.hcc_captured_num_source_crr,
+            a.hcc_captured_num_source_other,
+            a.hcc_captured_num_new_chronic,
+            a.hcc_captured_num_yoy_recapture,
+            a.hcc_captured_num_mor_new_chronic,
+            a.hcc_captured_num_mor_yoy_recapture,
+            a.hcc_captured_num_acute,
+            a.hcc_captured_num_other,
+            a.hcc_suspects_num_yoy,
+            a.hcc_suspects_num_mor_yoy,
+            a.hcc_suspects_num_u,
+            a.hcc_suspects_num_asr,
+            a.hcc_suspects_num_n,
+            a.hcc_suspects_num_cpt,
+            a.hcc_suspects_num_ml,
+            a.hcc_suspects_num_other,
+            a.hcc_suspects_num_clinical,
+            a.pcp_last_encounter,
+            a.any_last_encounter,
+            a.cf_profitability,
+            a.dual_opp_score,
+            a.raf_dual_boost,
+            a.raf_profitability,
+            a.raf_captured_cf,
+            a.parta_ramra_pa,
+            a.partb_ramra_pa,
+            a.esrd,
+            a.risk_code_type,
+            a.hra_completed,
+            a.year_name
+          FROM  member_details_full a
+          inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 2 and  s.current_year
+          LEFT JOIN  member_details_previous_load b on a.member_id = b.member_id and a.year = b.year
+          WHERE b.member_id is null ),
+      delete_rows as (
+          SELECT
+             a.hash_value,
+             'DELETE' as operation,
+              ( select cad_job_id from cad_job )  as job_id,
+             cast(null as integer) as load_year,
+             cast(null as integer) as load_month,
+             a.member_id,
+             a.year,
+              cast(null as long) as dos_count,
+              cast(null as  date) as eligibility_date,
+              cast(null as  date) as eligibility_end_date,
+              cast(null as boolean) as is_eligible,
+              cast(null as string) as medicaid,
+              cast(null as long) as months_eligible,
+              cast(null as double) as opportunity,
+              cast(null as long) as pcp_dos_count,
+              cast(null as double) as raf_captured,
+              cast(null as double) as raf_demographic,
+              cast(null as double) as raf_projected,
+              cast(null as long) as recap_count,
+              cast(null as long) as recap_opp_count,
+              cast(null as boolean) as wellness_visit,
+              cast(null as double) as hcc_captured,
+              cast(null as double) as hcc_captured_source_claim,
+              cast(null as double) as hcc_captured_source_hra,
+              cast(null as double) as hcc_captured_source_hra_crr,
+              cast(null as double) as hcc_captured_source_mor,
+              cast(null as double) as hcc_captured_source_crr,
+              cast(null as double) as hcc_captured_source_other,
+              cast(null as double) as hcc_captured_new_chronic,
+              cast(null as double) as hcc_captured_yoy_recapture,
+              cast(null as double) as hcc_captured_mor_new_chronic,
+              cast(null as double) as hcc_captured_mor_yoy_recapture,
+              cast(null as double) as hcc_captured_acute,
+              cast(null as double) as hcc_captured_other,
+              cast(null as double) as hcc_suspects_all,
+              cast(null as double) as hcc_suspects_yoy,
+              cast(null as double) as hcc_suspects_mor_yoy,
+              cast(null as double) as hcc_suspects_u,
+              cast(null as double) as hcc_suspects_asr,
+              cast(null as double) as hcc_suspects_n,
+              cast(null as double) as hcc_suspects_cpt,
+              cast(null as double) as hcc_suspects_ml,
+              cast(null as double) as hcc_suspects_other,
+              cast(null as double) as hcc_suspects_clinical,
+              cast(null as long) as hcc_captured_num_source_claim,
+              cast(null as long) as hcc_captured_num_source_hra,
+              cast(null as long) as hcc_captured_num_source_hra_crr,
+              cast(null as long) as hcc_captured_num_source_mor,
+              cast(null as long) as hcc_captured_num_source_crr,
+              cast(null as long) as hcc_captured_num_source_other,
+              cast(null as long) as hcc_captured_num_new_chronic,
+              cast(null as long) as hcc_captured_num_yoy_recapture,
+              cast(null as long) as hcc_captured_num_mor_new_chronic,
+              cast(null as long) as hcc_captured_num_mor_yoy_recapture,
+              cast(null as long) as hcc_captured_num_acute,
+              cast(null as long) as hcc_captured_num_other,
+              cast(null as long) as hcc_suspects_num_yoy,
+              cast(null as long) as hcc_suspects_num_mor_yoy,
+              cast(null as long) as hcc_suspects_num_u,
+              cast(null as long) as hcc_suspects_num_asr,
+              cast(null as long) as hcc_suspects_num_n,
+              cast(null as long) as hcc_suspects_num_cpt,
+              cast(null as long) as hcc_suspects_num_ml,
+              cast(null as long) as hcc_suspects_num_other,
+              cast(null as long) as hcc_suspects_num_clinical,
+              cast(null as  date) as pcp_last_encounter,
+              cast(null as  date) as any_last_encounter,
+              cast(null as double) as cf_profitability,
+              cast(null as double) as dual_opp_score,
+              cast(null as double) as raf_dual_boost,
+              cast(null as double) as raf_profitability,
+              cast(null as double) as raf_captured_cf,
+              cast(null as double) as parta_ramra_pa,
+              cast(null as double) as partb_ramra_pa,
+              cast(null as string) as esrd,
+              cast(null as string) as risk_code_type,
+              cast(null as boolean) as hra_completed,
+              cast(null as string) as year_name
+          FROM  member_details_previous_load a
+          inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 2 and  s.current_year
+          LEFT JOIN  member_details_full  b on a.member_id = b.member_id and a.year = b.year
+          WHERE b.member_id is null ),
+      update_rows as (
+          SELECT
+             a.hash_value,
+             'UPDATE' as operation,
+             a.job_id,
+             a.load_year,
+             a.load_month,
+            a.member_id,
+            a.year,
+            a.dos_count,
+            a.eligibility_date,
+            a.eligibility_end_date,
+            a.is_eligible,
+            a.medicaid,
+            a.months_eligible,
+            a.opportunity,
+            a.pcp_dos_count,
+            a.raf_captured,
+            a.raf_demographic,
+            a.raf_projected,
+            a.recap_count,
+            a.recap_opp_count,
+            a.wellness_visit,
+            a.hcc_captured,
+            a.hcc_captured_source_claim,
+            a.hcc_captured_source_hra,
+            a.hcc_captured_source_hra_crr,
+            a.hcc_captured_source_mor,
+            a.hcc_captured_source_crr,
+            a.hcc_captured_source_other,
+            a.hcc_captured_new_chronic,
+            a.hcc_captured_yoy_recapture,
+            a.hcc_captured_mor_new_chronic,
+            a.hcc_captured_mor_yoy_recapture,
+            a.hcc_captured_acute,
+            a.hcc_captured_other,
+            a.hcc_suspects_all,
+            a.hcc_suspects_yoy,
+            a.hcc_suspects_mor_yoy,
+            a.hcc_suspects_u,
+            a.hcc_suspects_asr,
+            a.hcc_suspects_n,
+            a.hcc_suspects_cpt,
+            a.hcc_suspects_ml,
+            a.hcc_suspects_other,
+            a.hcc_suspects_clinical,
+            a.hcc_captured_num_source_claim,
+            a.hcc_captured_num_source_hra,
+            a.hcc_captured_num_source_hra_crr,
+            a.hcc_captured_num_source_mor,
+            a.hcc_captured_num_source_crr,
+            a.hcc_captured_num_source_other,
+            a.hcc_captured_num_new_chronic,
+            a.hcc_captured_num_yoy_recapture,
+            a.hcc_captured_num_mor_new_chronic,
+            a.hcc_captured_num_mor_yoy_recapture,
+            a.hcc_captured_num_acute,
+            a.hcc_captured_num_other,
+            a.hcc_suspects_num_yoy,
+            a.hcc_suspects_num_mor_yoy,
+            a.hcc_suspects_num_u,
+            a.hcc_suspects_num_asr,
+            a.hcc_suspects_num_n,
+            a.hcc_suspects_num_cpt,
+            a.hcc_suspects_num_ml,
+            a.hcc_suspects_num_other,
+            a.hcc_suspects_num_clinical,
+            a.pcp_last_encounter,
+            a.any_last_encounter,
+            a.cf_profitability,
+            a.dual_opp_score,
+            a.raf_dual_boost,
+            a.raf_profitability,
+            a.raf_captured_cf,
+            a.parta_ramra_pa,
+            a.partb_ramra_pa,
+            a.esrd,
+            a.risk_code_type,
+            a.hra_completed,
+            a.year_name
+           FROM   member_details_full  a
+           inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 2 and  s.current_year
+           INNER JOIN member_details_previous_load b on a.member_id = b.member_id and a.year = b.year
+           WHERE a.hash_value <> b.hash_value )
+      SELECT *
+      FROM new_rows
+      UNION
+      SELECT *
+      FROM delete_rows
+      UNION
+      SELECT *
+      FROM update_rows
+
+#---------------------------------------------member_hccs-----------------------------------------------------------
+  member_hccs_previous_load:
+    sql: >-
+      SELECT
+         member_id,
+         year,
+         hcc_code,
+         hash_value,
+         job_id
+      FROM member_hccs_history m
+      INNER JOIN cad_job  c on c.last_job_id =m.job_id
+
+  member_hccs_incremental:
+    sql: >-
+      WITH new_rows as (
+           SELECT
+             a.hash_value,
+             'INSERT' as operation,
+             a.job_id,
+             a.load_year,
+             a.load_month,
+             a.member_id,
+             a.year,
+             a.hcc_code,
+             a.hcc_description,
+             a.raf_captured,
+             a.raf_suspects,
+             a.suspect_type,
+             a.trumped_by,
+             a.is_trumped,
+             a.is_recap_opp,
+             a.is_recap,
+             a.hcc_status,
+             a.source_code
+          FROM  member_hccs_full a
+          inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 3 and  s.current_year
+          LEFT JOIN  member_hccs_previous_load b on a.member_id = b.member_id and a.year = b.year and a.hcc_code = b.hcc_code
+          WHERE b.member_id is null ),
+      delete_rows as (
+          SELECT
+             a.hash_value,
+             'DELETE' as operation,
+              ( select cad_job_id from cad_job ) as job_id,
+             cast(null as integer) as load_year,
+             cast(null as integer) as load_month,
+             a.member_id,
+             a.year,
+             a.hcc_code,
+             cast(null as string) as hcc_description,
+             cast(null as double) as raf_captured,
+             cast(null as double) as raf_suspects,
+             cast(null as string) as suspect_type,
+             cast(null as string) as trumped_by,
+             cast(null as boolean) as is_trumped,
+             cast(null as boolean) as is_recap_opp,
+             cast(null as boolean) as is_recap,
+             cast(null as string) as hcc_status,
+             cast(null as string) as source_code
+          FROM  member_hccs_previous_load a
+          inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 3 and  s.current_year
+          LEFT JOIN  member_hccs_full  b on a.member_id = b.member_id and a.year = b.year and a.hcc_code = b.hcc_code
+          WHERE b.member_id is null ),
+      update_rows as (
+          SELECT
+             a.hash_value,
+             'UPDATE' as operation,
+             a.job_id,
+             a.load_year,
+             a.load_month,
+             a.member_id,
+             a.year,
+             a.hcc_code,
+             a.hcc_description,
+             a.raf_captured,
+             a.raf_suspects,
+             a.suspect_type,
+             a.trumped_by,
+             a.is_trumped,
+             a.is_recap_opp,
+             a.is_recap,
+             a.hcc_status,
+             a.source_code
+           FROM   member_hccs_full  a
+           inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 3 and  s.current_year
+           INNER JOIN member_hccs_previous_load b on a.member_id = b.member_id and a.year = b.year and a.hcc_code = b.hcc_code
+           WHERE a.hash_value <> b.hash_value )
+      SELECT *
+      FROM new_rows
+      UNION
+      SELECT *
+      FROM delete_rows
+      UNION
+      SELECT *
+      FROM update_rows
+
+#---------------------------------------------providers-----------------------------------------------------------
+  providers_previous_load:
+    sql: >-
+      SELECT
+         provider_id,
+         hash_value,
+         job_id
+      FROM providers_history m
+      INNER JOIN cad_job  c on c.last_job_id =m.job_id
+
+  providers_incremental:
+    sql: >-
+      WITH new_rows as (
+           SELECT
+             a.hash_value,
+             'INSERT' as operation,
+             a.job_id,
+            a.provider_id,
+            a.npi,
+            a.tax_id,
+            a.alternate_id,
+            a.first_name,
+            a.last_name,
+            a.full_name,
+            a.license,
+            a.provider_type,
+            a.address_1,
+            a.address_2,
+            a.city,
+            a.state,
+            a.zip,
+            a.phone,
+            a.fax,
+            a.opportunity_score,
+            a.number_of_members,
+            a.pcp_assigned_members,
+            a.non_pcp_assigned_members,
+            a.is_acceptable,
+            a.taxonomy_code_1,
+            a.taxonomy_desc_1,
+            a.taxonomy_code_2,
+            a.taxonomy_desc_2,
+            a.taxonomy_code_3,
+            a.taxonomy_desc_3,
+            a.taxonomy_code_4,
+            a.taxonomy_desc_4,
+            a.taxonomy_code_5,
+            a.taxonomy_desc_5,
+            a.taxonomy_code_6,
+            a.taxonomy_desc_6,
+            a.taxonomy_code_7,
+            a.taxonomy_desc_7,
+            a.taxonomy_code_8,
+            a.taxonomy_desc_8,
+            a.taxonomy_code_9,
+            a.taxonomy_desc_9,
+            a.taxonomy_code_10,
+            a.taxonomy_desc_10,
+            a.flex1,
+            a.flex2,
+            a.flex3,
+            a.flex4,
+            a.flex5,
+            a.flex6,
+            a.flex7,
+            a.flex8,
+            a.flex9,
+            a.flex10
+          FROM  providers_full a
+          LEFT JOIN  providers_previous_load b on a.provider_id = b.provider_id
+          WHERE b.provider_id is null ),
+      delete_rows as (
+          SELECT
+             a.hash_value,
+             'DELETE' as operation,
+              ( select cad_job_id from cad_job ) as job_id,
+             a.provider_id,
+             cast(null as string) as npi,
+             cast(null as string) as tax_id,
+             cast(null as string) as alternate_id,
+             cast(null as string) as first_name,
+             cast(null as string) as last_name,
+             cast(null as string) as full_name,
+             cast(null as string) as license,
+             cast(null as string) as provider_type,
+             cast(null as string) as address_1,
+             cast(null as string) as address_2,
+             cast(null as string) as city,
+             cast(null as string) as state,
+             cast(null as string) as zip,
+             cast(null as string) as phone,
+             cast(null as string) as fax,
+             cast(null as double) as opportunity_score,
+             cast(null as integer) as number_of_members,
+             cast(null as integer) as pcp_assigned_members,
+             cast(null as integer) as non_pcp_assigned_members,
+             cast(null as boolean) as is_acceptable,
+             cast(null as string) as taxonomy_code_1,
+             cast(null as string) as taxonomy_desc_1,
+             cast(null as string) as taxonomy_code_2,
+             cast(null as string) as taxonomy_desc_2,
+             cast(null as string) as taxonomy_code_3,
+             cast(null as string) as taxonomy_desc_3,
+             cast(null as string) as taxonomy_code_4,
+             cast(null as string) as taxonomy_desc_4,
+             cast(null as string) as taxonomy_code_5,
+             cast(null as string) as taxonomy_desc_5,
+             cast(null as string) as taxonomy_code_6,
+             cast(null as string) as taxonomy_desc_6,
+             cast(null as string) as taxonomy_code_7,
+             cast(null as string) as taxonomy_desc_7,
+             cast(null as string) as taxonomy_code_8,
+             cast(null as string) as taxonomy_desc_8,
+             cast(null as string) as taxonomy_code_9,
+             cast(null as string) as taxonomy_desc_9,
+             cast(null as string) as taxonomy_code_10,
+             cast(null as string) as taxonomy_desc_10,
+             cast(null as string) as flex1,
+             cast(null as string) as flex2,
+             cast(null as string) as flex3,
+             cast(null as string) as flex4,
+             cast(null as string) as flex5,
+             cast(null as string) as flex6,
+             cast(null as string) as flex7,
+             cast(null as string) as flex8,
+             cast(null as string) as flex9,
+             cast(null as string) as flex10
+          FROM  providers_previous_load a
+          LEFT JOIN  providers_full  b on a.provider_id = b.provider_id
+          WHERE b.provider_id is null ),
+      update_rows as (
+          SELECT
+             a.hash_value,
+             'UPDATE' as operation,
+             a.job_id,
+            a.provider_id,
+            a.npi,
+            a.tax_id,
+            a.alternate_id,
+            a.first_name,
+            a.last_name,
+            a.full_name,
+            a.license,
+            a.provider_type,
+            a.address_1,
+            a.address_2,
+            a.city,
+            a.state,
+            a.zip,
+            a.phone,
+            a.fax,
+            a.opportunity_score,
+            a.number_of_members,
+            a.pcp_assigned_members,
+            a.non_pcp_assigned_members,
+            a.is_acceptable,
+            a.taxonomy_code_1,
+            a.taxonomy_desc_1,
+            a.taxonomy_code_2,
+            a.taxonomy_desc_2,
+            a.taxonomy_code_3,
+            a.taxonomy_desc_3,
+            a.taxonomy_code_4,
+            a.taxonomy_desc_4,
+            a.taxonomy_code_5,
+            a.taxonomy_desc_5,
+            a.taxonomy_code_6,
+            a.taxonomy_desc_6,
+            a.taxonomy_code_7,
+            a.taxonomy_desc_7,
+            a.taxonomy_code_8,
+            a.taxonomy_desc_8,
+            a.taxonomy_code_9,
+            a.taxonomy_desc_9,
+            a.taxonomy_code_10,
+            a.taxonomy_desc_10,
+            a.flex1,
+            a.flex2,
+            a.flex3,
+            a.flex4,
+            a.flex5,
+            a.flex6,
+            a.flex7,
+            a.flex8,
+            a.flex9,
+            a.flex10
+           FROM   providers_full  a
+           INNER JOIN providers_previous_load b on a.provider_id = b.provider_id
+           WHERE a.hash_value <> b.hash_value )
+      SELECT *
+      FROM new_rows
+      UNION
+      SELECT *
+      FROM delete_rows
+      UNION
+      SELECT *
+      FROM update_rows
+
+#---------------------------------------------provider_details-----------------------------------------------------------
+  provider_details_previous_load:
+    sql: >-
+      SELECT
+         provider_id,
+         year,
+         hash_value,
+         job_id
+      FROM provider_details_history m
+      INNER JOIN cad_job  c on c.last_job_id =m.job_id
+
+  provider_details_incremental:
+    sql: >-
+      WITH new_rows as (
+           SELECT
+             a.hash_value,
+             'INSERT' as operation,
+             a.job_id,
+            a.provider_id,
+            a.year,
+            a.avg_hcc_captured,
+            a.avg_raf_demo,
+            a.avg_opportunity,
+            a.avg_raf_captured,
+            a.avg_raf_projected,
+            a.avg_hcc_suspects_yoy,
+            a.avg_hcc_suspects_unaccpt,
+            a.avg_hcc_suspects_asr,
+            a.avg_hcc_suspects_clin,
+            a.recapture_rate,
+            a.num_eligible_members,
+            a.num_eligible_pcp_members,
+            a.num_eligible_non_pcp_members,
+            a.pcp_awv_percent,
+            a.enc_awv_percent
+          FROM  provider_details_full a
+          inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 2 and  s.current_year
+          LEFT JOIN  provider_details_previous_load b on a.provider_id = b.provider_id and a.year =b.year
+          WHERE b.provider_id is null ),
+      delete_rows as (
+          SELECT
+             a.hash_value,
+             'DELETE' as operation,
+              ( select cad_job_id from cad_job ) as job_id,
+             a.provider_id,
+             a.year,
+              cast(null as double ) as  avg_hcc_captured,
+              cast(null as double ) as  avg_raf_demo,
+              cast(null as double ) as  avg_opportunity,
+              cast(null as double ) as  avg_raf_captured,
+              cast(null as double ) as  avg_raf_projected,
+              cast(null as double ) as  avg_hcc_suspects_yoy,
+              cast(null as double ) as  avg_hcc_suspects_unaccpt,
+              cast(null as double ) as  avg_hcc_suspects_asr,
+              cast(null as double ) as  avg_hcc_suspects_clin,
+              cast(null as double ) as  recapture_rate,
+              cast(null as integer ) as  num_eligible_members,
+              cast(null as integer  ) as  num_eligible_pcp_members,
+              cast(null as integer  ) as  num_eligible_non_pcp_members,
+              cast(null as double ) as  pcp_awv_percent,
+              cast(null as double ) as  enc_awv_percent
+          FROM  provider_details_previous_load a
+          inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 2 and  s.current_year
+          LEFT JOIN  provider_details_full  b on a.provider_id = b.provider_id and a.year =b.year
+          WHERE b.provider_id is null ),
+      update_rows as (
+          SELECT
+             a.hash_value,
+             'UPDATE' as operation,
+             a.job_id,
+            a.provider_id,
+            a.year,
+            a.avg_hcc_captured,
+            a.avg_raf_demo,
+            a.avg_opportunity,
+            a.avg_raf_captured,
+            a.avg_raf_projected,
+            a.avg_hcc_suspects_yoy,
+            a.avg_hcc_suspects_unaccpt,
+            a.avg_hcc_suspects_asr,
+            a.avg_hcc_suspects_clin,
+            a.recapture_rate,
+            a.num_eligible_members,
+            a.num_eligible_pcp_members,
+            a.num_eligible_non_pcp_members,
+            a.pcp_awv_percent,
+            a.enc_awv_percent
+           FROM   provider_details_full  a
+           inner join EpiAnalyst_Client_Settings s on a.year between s.current_year - 2 and  s.current_year
+           INNER JOIN provider_details_previous_load b on a.provider_id = b.provider_id and a.year =b.year
+           WHERE a.hash_value <> b.hash_value )
+      SELECT *
+      FROM new_rows
+      UNION
+      SELECT *
+      FROM delete_rows
+      UNION
+      SELECT *
+      FROM update_rows
+
+#---------------------------------------------provider_npi-----------------------------------------------------------
+  provider_npi_previous_load:
+    sql: >-
+      SELECT
+         provider_id,
+         hash_value,
+         job_id
+      FROM provider_npi_history m
+      INNER JOIN cad_job  c on c.last_job_id =m.job_id
+
+  provider_npi_incremental:
+    sql: >-
+      WITH new_rows as (
+           SELECT
+             a.hash_value,
+             'INSERT' as operation,
+             a.job_id,
+            a.provider_id,
+            a.npi,
+            a.business_name,
+            a.business_address_1,
+            a.business_address_2,
+            a.business_city,
+            a.business_state,
+            a.business_zip,
+            a.business_country,
+            a.business_phone,
+            a.business_fax,
+            a.taxonomy_code,
+            a.taxonomy_desc,
+            a.entity_type_code
+          FROM  provider_npi_full a
+          LEFT JOIN  provider_npi_previous_load b on a.provider_id = b.provider_id
+          WHERE b.provider_id is null ),
+      delete_rows as (
+          SELECT
+             a.hash_value,
+             'DELETE' as operation,
+              ( select cad_job_id from cad_job ) as job_id,
+             a.provider_id,
+             cast(null as string) as npi,
+            cast(null as string) as business_name,
+            cast(null as string) as business_address_1,
+            cast(null as string) as business_address_2,
+            cast(null as string) as business_city,
+            cast(null as string) as business_state,
+            cast(null as string) as business_zip,
+            cast(null as string) as business_country,
+            cast(null as string) as business_phone,
+            cast(null as string) as business_fax,
+            cast(null as string) as taxonomy_code,
+            cast(null as string) as taxonomy_desc,
+             cast(null as string) as entity_type_code
+          FROM  provider_npi_previous_load a
+          LEFT JOIN  provider_npi_full  b on a.provider_id = b.provider_id
+          WHERE b.provider_id is null ),
+      update_rows as (
+          SELECT
+             a.hash_value,
+             'UPDATE' as operation,
+             a.job_id,
+            a.provider_id,
+            a.npi,
+            a.business_name,
+            a.business_address_1,
+            a.business_address_2,
+            a.business_city,
+            a.business_state,
+            a.business_zip,
+            a.business_country,
+            a.business_phone,
+            a.business_fax,
+            a.taxonomy_code,
+            a.taxonomy_desc,
+            a.entity_type_code
+           FROM   provider_npi_full  a
+           INNER JOIN provider_npi_previous_load b on a.provider_id = b.provider_id
+           WHERE a.hash_value <> b.hash_value )
+      SELECT *
+      FROM new_rows
+      UNION
+      SELECT *
+      FROM delete_rows
+      UNION
+      SELECT *
+      FROM update_rows
+
+#---------------------------------------------provider_member_rel------------------------------------------------------
+  provider_member_previous_load:
+    sql: >-
+      SELECT
+         member_id,
+         provider_id,
+         hash_value,
+         job_id
+      FROM provider_member_relationships_history m
+      INNER JOIN cad_job  c on c.last_job_id =m.job_id
+
+  provider_member_relationships_incremental:
+    sql: >-
+      WITH new_rows as (
+           SELECT
+             'INSERT' as operation,
+             a.job_id,
+             a.member_id ,
+             a.provider_id,
+             a.relation_type
+          FROM  provider_member_relationships_full a
+          LEFT JOIN  provider_member_previous_load b on a.member_id = b.member_id and a.provider_id = b.provider_id
+          WHERE b.member_id is null ),
+      delete_rows as (
+          SELECT
+              'DELETE' as operation,
+               ( select cad_job_id from cad_job )  as job_id,
+              a.member_id ,
+              a.provider_id,
+               cast(null as string)  as relation_type
+          FROM  provider_member_previous_load a
+          LEFT JOIN  provider_member_relationships_full  b on a.member_id = b.member_id and a.provider_id = b.provider_id
+          WHERE b.member_id is null ),
+      update_rows as (
+          SELECT
+              'UPDATE' as operation,
+              a.job_id,
+              a.member_id ,
+              a.provider_id,
+              a.relation_type
+           FROM  provider_member_relationships_full a
+           INNER JOIN provider_member_previous_load b on a.member_id = b.member_id and a.provider_id = b.provider_id
+           WHERE a.hash_value <> b.hash_value )
+      SELECT *
+      FROM new_rows
+      UNION
+      SELECT *
+      FROM delete_rows
+      UNION
+      SELECT *
+      FROM update_rows
+
+
+    # Note: Load tables have to be same as Extract tables.
+Load:
+  member_details_full:
+    load_1:
+      type: parquet
+      location: '{aggr_location}/member_details_full'
+      mode: overwrite
+
+  member_details_incremental:
+    load_1:
+      type: parquet
+      location: '{project_root_path}/{client}/sync/member_details_incremental'
+      mode: overwrite
+
+  member_hccs_full:
+    load_1:
+      type: parquet
+      location: '{aggr_location}/member_hccs_full'
+      mode: overwrite
+
+  member_hccs_incremental:
+    load_1:
+      type: parquet
+      location: '{project_root_path}/{client}/sync/member_hccs_incremental'
+      mode: overwrite
+
+  providers_full:
+    load_1:
+      type: parquet
+      location: '{aggr_location}/providers_full'
+      mode: overwrite
+
+  providers_incremental:
+    load_1:
+      type: parquet
+      location: '{project_root_path}/{client}/sync/providers_incremental'
+      mode: overwrite
+
+  provider_details_full:
+    load_1:
+      type: parquet
+      location: '{aggr_location}/provider_details_full'
+      mode: overwrite
+
+  provider_details_incremental:
+    load_1:
+      type: parquet
+      location: '{project_root_path}/{client}/sync/provider_details_incremental'
+      mode: overwrite
+
+  provider_npi_full:
+    load_1:
+      type: parquet
+      location: '{aggr_location}/provider_npi_full'
+      mode: overwrite
+
+  provider_npi_incremental:
+    load_1:
+      type: parquet
+      location: '{project_root_path}/{client}/sync/provider_npi_incremental'
+      mode: overwrite
+
+  provider_member_relationships_full:
+    load_1:
+      type: parquet
+      location: '{aggr_location}/provider_member_relationships_full'
+      mode: overwrite
+
+  provider_member_relationships_incremental:
+    load_1:
+      type: parquet
+      location: '{project_root_path}/{client}/sync/provider_member_relationships_incremental'
+      mode: overwrite
