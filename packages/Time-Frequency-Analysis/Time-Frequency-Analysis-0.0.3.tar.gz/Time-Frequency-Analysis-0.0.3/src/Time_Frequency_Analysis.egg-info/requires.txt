@@ -1,0 +1,4 @@
+Audio_proc_lib
+Plotting_funcs
+numpy
+scipy
