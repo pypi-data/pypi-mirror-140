@@ -1,0 +1,14 @@
+parallellinear/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parallellinear/calculations/CalculationsManager.py,sha256=z1BBa138yRcYJLENy6R51072WMZaHd-ViVW7gaYUog4,393
+parallellinear/calculations/LinearCalculations.py,sha256=ZqRjfXs-ttqC6DrIZ9As1eb87e57oKxABd4ImoezLQ0,1803
+parallellinear/calculations/NumpyLinear.py,sha256=23SpN1g5misIrvhzjWASBfj20TUgknCVpkksuX1OnOI,2357
+parallellinear/calculations/ParallelLinear.py,sha256=VvfskuXQ8yOTYeyHLrLmwkClDIvO0qDNawcifFJB8nc,14477
+parallellinear/calculations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parallellinear/datatypes/Matrix.py,sha256=Gty5t8QMdAnb4mtGUzt_lc8l93TBhllh7DNg7P3Kbgo,6659
+parallellinear/datatypes/Vector.py,sha256=sRRyT-_DNnQdNQIgocANER_qqivepgYKSTEQ4BB9SV4,4628
+parallellinear/datatypes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ParallelLinear_CraigR8806-0.0.35.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+ParallelLinear_CraigR8806-0.0.35.dist-info/METADATA,sha256=MEMnjWh3n5hqpQFS1Cot4_NFBXeOfTHIKE8wACsFpKM,1389
+ParallelLinear_CraigR8806-0.0.35.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ParallelLinear_CraigR8806-0.0.35.dist-info/top_level.txt,sha256=_60drVFfNa4yxLH4MyzVAVhjS6K6nb7VhdyFFaJBVgo,15
+ParallelLinear_CraigR8806-0.0.35.dist-info/RECORD,,
