@@ -1,0 +1,12 @@
+README.md
+setup.py
+PlantNannyDB/__init__.py
+PlantNannyDB/database_use.py
+PlantNannyDB/dictionaries.py
+PlantNannyDB/logger.py
+PlantNannyDB/settings.py
+PlantNannyDB.egg-info/PKG-INFO
+PlantNannyDB.egg-info/SOURCES.txt
+PlantNannyDB.egg-info/dependency_links.txt
+PlantNannyDB.egg-info/requires.txt
+PlantNannyDB.egg-info/top_level.txt
