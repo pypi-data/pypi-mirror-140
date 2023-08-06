@@ -1,0 +1,9 @@
+xxhash/__init__.py,sha256=mPEdihxDMU0rjLWum3FrU9Ua2jQ-rzfewYgIg-J-Jlc,1147
+xxhash/_xxhash.cp37-win_amd64.pyd,sha256=AphDpzy0WTflb5VLFcHUwvM8YOHKSRltaErXhVg40TY,60416
+xxhash/_xxhash.pypy37-pp73-win_amd64.pyd,sha256=pWgKyyLzdHBffiOgeS0q2asBCqcB032Th7fZsR7yc1E,61440
+xxhash/version.py,sha256=nhq033E1Mp0WYKG1EjEeVlRjSGXtad6gu0jvPDp8nEg,46
+xxhash-3.0.0.dist-info/LICENSE,sha256=-OnvAMeL5NLaUmssN-QJnJIMf-C52UO_Da6y78MKOls,1313
+xxhash-3.0.0.dist-info/METADATA,sha256=IE5FvBq3_dmZ3XF0wQichTel41QOykMqVKH3bv5yoGQ,11828
+xxhash-3.0.0.dist-info/WHEEL,sha256=Ut7uqN9dGLPqzGl_YXDFeMyPjGKjOo0e9GUmMGhME9c,107
+xxhash-3.0.0.dist-info/top_level.txt,sha256=1PPSBP-gnjG59E5bigzMTzmT6BVWjHwnpzMiisPWZ5I,15
+xxhash-3.0.0.dist-info/RECORD,,
