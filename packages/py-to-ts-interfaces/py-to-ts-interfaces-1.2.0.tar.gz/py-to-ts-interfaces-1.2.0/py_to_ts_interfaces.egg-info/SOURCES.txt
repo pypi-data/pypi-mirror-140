@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+py_to_ts_interfaces/__init__.py
+py_to_ts_interfaces/__main__.py
+py_to_ts_interfaces/enums.py
+py_to_ts_interfaces/file_io.py
+py_to_ts_interfaces/interfaces.py
+py_to_ts_interfaces/strings.py
+py_to_ts_interfaces/type_converting.py
+py_to_ts_interfaces/utils.py
+py_to_ts_interfaces.egg-info/PKG-INFO
+py_to_ts_interfaces.egg-info/SOURCES.txt
+py_to_ts_interfaces.egg-info/dependency_links.txt
+py_to_ts_interfaces.egg-info/entry_points.txt
+py_to_ts_interfaces.egg-info/top_level.txt
