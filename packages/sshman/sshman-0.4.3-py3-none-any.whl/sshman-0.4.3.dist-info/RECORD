@@ -1,0 +1,15 @@
+sshman/Colors.py,sha256=oXgGAjrXXEz688BYmE6lXFMQ6YXS7bXKTk8QIpJB7QE,233
+sshman/Domain.py,sha256=xKjj-Us6OfpqRv8q0gEi5R34UBsjRqWPtHhwc8dsYWg,7543
+sshman/Dumper.py,sha256=vtbwATvkUPU0epesB4u9oSCBhp51rQYHNc8eagtVVxs,817
+sshman/Errors.py,sha256=ZlopI9XeDTy-hQttA7oc7BBX_qYzPE4jhFMbl9820DI,631
+sshman/Runner.py,sha256=IT_RIAkAN_8Y74U_1Wcq6IF7ftwh7t2tmIQXh1WSHhg,16540
+sshman/SSH.py,sha256=6dVhS8IbTyZQP3CX4X5Su0o0gwVQafVTkM6ELGxKHSo,602
+sshman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sshman/__main__.py,sha256=v4_W3-Z8tc0u4S-8CUi0j1Jq66fPCUZ7JjTYMDJ0bpY,62
+sshman/sshman_cmd.py,sha256=1hIMBBuGu9l2WS0nk8fNI1JVLWh1HdG3foR07JT-H8w,5820
+sshman-0.4.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sshman-0.4.3.dist-info/METADATA,sha256=HqX4lbzBnHDSHUyXOm95dHo1KBlNHFo8LK9uiwxYXQM,809
+sshman-0.4.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sshman-0.4.3.dist-info/entry_points.txt,sha256=4ZFsYhiO4Gzr6GOicEVIfrbFu38f0_J9nV1Bdc1sp9w,51
+sshman-0.4.3.dist-info/top_level.txt,sha256=vB0r8wUdBFrStmUhfcrwE2GKPMCNUqvbhZnT-I1uz20,7
+sshman-0.4.3.dist-info/RECORD,,
