@@ -1,0 +1,26 @@
+# Package name
+package_name: regression_model
+
+# Data file URL
+data_url: "http://s3.amazonaws.com/assets.datacamp.com/course/Kaggle/train.csv"
+
+# Columns model able to work with
+columns_to_select:
+  - Age
+  - Sex
+  - Embarked
+  - Survived
+
+features:
+  - Age
+  - Sex
+  - Embarked
+
+# Target column
+target: Survived
+
+# Project random seed
+random_state: 100
+
+# Train-test split test size
+test_size: 0.20
