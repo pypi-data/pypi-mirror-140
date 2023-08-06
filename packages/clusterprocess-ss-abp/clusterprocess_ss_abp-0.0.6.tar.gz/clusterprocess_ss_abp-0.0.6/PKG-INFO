@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: clusterprocess_ss_abp
+Version: 0.0.6
+Summary: package to process LAMMPS data
+Home-page: https://github.com/samueljmcameron/clusterprocess_ss_abp
+Author: Sam Cameron
+Author-email: samuel.j.m.cameron@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
+
+This package is a personal package to analyse ABP LAMMPS data.
+It processes histogram type data or lammps log data. E.g. if there
+was 100 runs of data, named output_1.rdf, output_2.rdf, ...,
+output_100.rdf, then you could process this data using the functions
+in this package.
+
