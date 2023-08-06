@@ -1,0 +1,10 @@
+quickey_python_sdk/__init__.py,sha256=G4Sgc0CQ9SOeznKMdffPvjP2OXcOCtm2Kew1N6rKVRo,36
+quickey_python_sdk/app.py,sha256=mK6RFJ_3IXdFd4vzJP9xgp6jgbKEdys7fkyVjyMjLgk,576
+quickey_python_sdk/auth.py,sha256=0ARCQk1T4KakesBQNekRwIvc-0BAtACRnmIUKza1rcg,1199
+quickey_python_sdk/config.py,sha256=NXSDRp4EVfq_nuA3I9OokzFHz-gGoa753C8KjY_wfdk,83
+quickey_python_sdk/sdk.py,sha256=_avh6zqDXD6HEX4EIrM4Q8bqg7AIRDxHE5xbxfhu0c4,434
+quickey_python_sdk-1.0.13.dist-info/LICENSE,sha256=7DEvWvuqvtNp9pxmbF2ZlovDC1j92YHmJFZ5WAvQ5-8,1083
+quickey_python_sdk-1.0.13.dist-info/METADATA,sha256=_EQ68GmFeJER9qWmbn_BsDFNCfgxizttNfusJ_gzvIU,1350
+quickey_python_sdk-1.0.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+quickey_python_sdk-1.0.13.dist-info/top_level.txt,sha256=6RSsBRtl-_AvtpemNyykZO4uU0OiegDmZV7ZK8ZeH4w,19
+quickey_python_sdk-1.0.13.dist-info/RECORD,,
