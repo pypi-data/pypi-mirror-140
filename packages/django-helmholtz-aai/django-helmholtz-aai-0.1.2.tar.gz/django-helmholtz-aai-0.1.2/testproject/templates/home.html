@@ -1,0 +1,18 @@
+{% load helmholtz_aai %}
+
+{% if not user.is_anonymous %}
+  <pre>
+    {{ user }}
+  </pre>
+
+  <pre>
+    {% for group in user.groups.all %} {{ group }} {% endfor %}
+  </pre>
+  <hr>
+  <a href="{% url 'logout' %}">logout</a>
+
+{% else %}
+
+  <a href="{% url 'login' %}">login</a>
+
+{% endif %}
