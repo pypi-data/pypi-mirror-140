@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Topsis-Garvit-101903778
+Version: 0.1
+Summary: A Python package to find TOPSIS for multi-criteria decision analysis method
+Home-page: https://github.com/Garvit-25/Topsis-Garvit-101903778
+Author: UNKNOWN
+Author-email: nagiagarvit@live.com
+License: MIT
+Download-URL: https://github.com/Garvit-25/Topsis-Garvit-101903778/archive/refs/tags/0.1.tar.gz
+Description: UNKNOWN
+Keywords: TOPSIS,TIET
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
