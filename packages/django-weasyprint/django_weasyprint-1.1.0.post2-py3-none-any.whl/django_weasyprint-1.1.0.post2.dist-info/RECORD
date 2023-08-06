@@ -1,0 +1,12 @@
+django_weasyprint/__init__.py,sha256=UVw_e4dpBG-pB8ZTZQapbGc_4Dl_Ele-N5r9RthDL_I,88
+django_weasyprint/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_weasyprint/utils.py,sha256=yDgF9aQCD6AF-rA06l7c8-IPqi1Tnmt1c_JlUtbzIUQ,1431
+django_weasyprint/views.py,sha256=18EUMSMdwBoF7Ifftc5h1ooKULMEqZkI-f1dkOKifFk,5108
+django_weasyprint/tests/__init__.py,sha256=maVi31SFuP6NCDRlfO10Hpz3sE_dOgIn7Hz__WFUPDs,1298
+django_weasyprint/tests/test_utils.py,sha256=XJ1gYuIN5GFw-4u-2oOUPi6-DGZRvGD1OzXwdFE_tsM,3105
+django_weasyprint/tests/test_views.py,sha256=uuErnQDFyBnE5md1e0rZSVL-hBuJ_6_OdpMDRE_0K50,1364
+django_weasyprint-1.1.0.post2.dist-info/LICENSE,sha256=HhWQ3d6hS9mw96X-5BaSlXB7IoMcqBT3ZYKl4bCgyeE,627
+django_weasyprint-1.1.0.post2.dist-info/METADATA,sha256=-047dp_NUmjj676SqOSan3b9ie4zPCmLKjgWfpVkjQM,4808
+django_weasyprint-1.1.0.post2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_weasyprint-1.1.0.post2.dist-info/top_level.txt,sha256=3Ec67nUPLXaXoXJN0m8dDoCa69JYaFj3Yx9UH1xYx1c,18
+django_weasyprint-1.1.0.post2.dist-info/RECORD,,
