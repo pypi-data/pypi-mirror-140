@@ -1,0 +1,301 @@
+{
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": ["string"]
+            },
+            "custom_id": {
+                "type": ["string", "null"]
+            },
+            "name": {
+                "type": ["string", "null"]
+            },
+            "priority": {
+                "type": ["object", "null"],
+                "properties":{
+                        "color":{
+                            "type": ["string"]
+                        },
+                        "id":{
+                            "type": ["string"]
+                        },
+                        "orderindex":{
+                            "type": ["string", "null", "integer"]
+                        },
+                        "priority":{
+                            "type": ["string"]
+                        }
+                }
+            },
+            "time_spent": {
+                "type": ["null", "number"]
+            },
+            "text_content": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+            },
+            "description": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+            },
+            "status": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": ["string", "null"]
+                    },
+                    "color": {
+                        "type": ["string", "null"]
+                    },
+                    "type": {
+                        "type": ["string", "null"]
+                    },
+                    "orderindex": {
+                        "type": ["string", "integer", "null"]
+                    }
+                }
+            },
+            "orderindex": {
+                "type": ["string", "integer", "null"]
+            },
+            "date_created": {
+                "type": ["string", "null"]
+            },
+            "date_updated": {
+                "type": ["string", "null"]
+            },
+            "date_closed": {
+                "type": ["string", "null"]
+            },
+            "archived": {
+                "type": ["boolean", "null"]
+            },
+            "creator": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": ["integer", "null"]
+                    },
+                    "username": {
+                        "type": ["string", "null"]
+                    },
+                    "color": {
+                        "type": ["string", "null"]
+                    },
+                    "email": {
+                        "type": ["string", "null"]
+                    },
+                    "profilePicture": {
+                        "type": ["string", "null"]
+                    }
+                }
+            },
+            "assignees": {
+                "type": ["array", "null"],
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": ["integer", "null"]
+                        },
+                        "username": {
+                            "type": ["string", "null"]
+                        },
+                        "color": {
+                            "type": ["string", "null"]
+                        },
+                        "initials": {
+                            "type": ["string", "null"]
+                        },
+                        "email": {
+                            "type": ["string", "null"]
+                        },
+                        "profilePicture": {
+                            "type": ["string", "null"]
+                        }
+                    }
+                }
+            },
+            "watchers": {
+                "type": ["array", "null"]
+            },
+            "checklists": {
+                "type": ["array", "null"]
+            },
+            "tags": {
+                "type": ["array", "null"],
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": ["string", "null"]
+                        },
+                        "tag_fg": {
+                            "type": ["string", "null"]
+                        },
+                        "tag_bg": {
+                            "type": ["string", "null"]
+                        },
+                        "creator": {
+                            "type": ["integer", "null"]
+                        }
+                    }
+                }
+            },
+            "parent": {
+                "type": ["string", "null"]
+            },
+
+            "due_date": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+            },
+            "start_date": {
+                "type": ["string", "null"]
+            },
+            "points": {
+                "type": ["string", "number", "null"]
+            },
+            "time_estimate": {
+                "type": ["integer", "null"]
+            },
+            "custom_fields": {
+                "type": ["array", "null"],
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": ["string", "null"]
+                        },
+                        "name": {
+                            "type": ["string", "null"]
+                        },
+                        "type": {
+                            "type": ["string", "null"]
+                        },
+                        "type_config": {
+                            "type": "object",
+                            "properties": {
+                                "default": {
+                                    "type": ["integer", "null"]
+                                },
+                                "placeholder": {
+                                    "type": ["string", "null"]
+                                },
+                                "options": {
+                                    "type": ["array", "null"],
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": ["string", "null"]
+                                            },
+                                            "name": {
+                                                "type": ["string", "null"]
+                                            },
+                                            "color": {
+                                                "type": ["string", "null"]
+                                            },
+                                            "orderindex": {
+                                                "type": ["integer", "string", "null"]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "date_created": {
+                            "type": ["string", "null"]
+                        },
+                        "hide_from_guests": {
+                            "type": ["string", "boolean", "null"]
+                        },
+                        "required": {
+                            "type": ["string", "boolean", "null"]
+                        },
+                        "value": {
+                            "type": ["integer", "string", "boolean", "null", "array", "object"]
+                        }
+                    }
+                }
+            },
+            "dependencies": {
+                "type": ["array", "null"]
+            },
+            "linked_tasks": {
+                "type": ["array", "null"]
+            },
+            "team_id": {
+                "type": ["string", "null"]
+            },
+            "url": {
+                "type": ["string", "null"]
+            },
+            "permission_level": {
+                "type": ["string", "null"]
+            },
+            "list": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": ["string", "null"]
+                    },
+                    "name": {
+                        "type": ["string", "null"]
+                    },
+                    "access": {
+                        "type": ["boolean", "null"]
+                    }
+                }
+            },
+            "project": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": ["string", "null"]
+                    },
+                    "name": {
+                        "type": ["string", "null"]
+                    },
+                    "hidden": {
+                        "type": ["boolean", "null"]
+                    },
+                    "access": {
+                        "type": ["boolean", "null"]
+                    }
+                }
+            },
+            "folder": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": ["string", "null"]
+                    },
+                    "name": {
+                        "type": ["string", "null"]
+                    },
+                    "hidden": {
+                        "type": ["boolean", "null"]
+                    },
+                    "access": {
+                        "type": ["boolean", "null"]
+                    }
+                }
+            },
+            "space": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": ["string", "null"]
+                    }
+                }
+            }
+    }
+}
+

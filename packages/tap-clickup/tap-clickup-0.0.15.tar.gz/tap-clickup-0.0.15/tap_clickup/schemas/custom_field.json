@@ -1,0 +1,107 @@
+{
+    "type": "object",
+    "properties": {
+    "id": {
+        "type": "string"
+    },
+    "name": {
+        "type": ["null", "string"]
+    },
+    "type": {
+        "type": "string"
+    },
+    "required": {
+        "type": ["null","boolean"]
+    },
+    "type_config": {
+        "type": "object",
+        "properties": {
+            "default": {
+                "type": [
+                    "integer",
+                    "null"
+                ]
+            },
+            "placeholder": {
+                "type": ["string", "null"]
+            },
+            "options": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": ["null", "string"]
+                        },
+                        "color": {
+                            "type": ["null", "string"]
+                        },
+                        "orderindex": {
+                            "type": ["null", "integer", "string"]
+                        },
+                        "label": {
+                            "type": ["null", "string"]
+                        },
+                        "value": {
+                            "type": ["null", "string"]
+                        },
+                        "type": {
+                            "type": ["null", "string"]
+                        }
+                    },
+                    "required": [
+                        "id"
+                    ]
+                }
+            },
+            "precision": {
+                "type": ["null", "integer"]
+            },
+            "currency_type": {
+                "type": ["null", "string"]
+            },
+            "end": {
+                "type": ["null", "integer"]
+            },
+            "start": {
+                "type": ["null", "integer"]
+            },
+            "count": {
+                "type": ["null", "integer"]
+            },
+            "code_point": {
+                "type": ["null", "string"]
+            },
+            "tracking": {
+                "type": "object",
+                "properties": {
+                    "subtasks": {
+                        "type": ["null", "boolean"]
+                    },
+                    "checklists": {
+                        "type": ["null", "boolean"]
+                    },
+                    "assigned_comments": {
+                        "type": ["null", "boolean"]
+                    }
+                }
+            },
+            "complete_on": {
+                "type": ["null", "integer"]
+            },
+            "method": {
+                "type": ["null", "string"]
+            }
+        }
+    },
+    "date_created": {
+        "type": "string"
+    },
+    "hide_from_guests": {
+        "type": "boolean"
+    }
+    }
+}

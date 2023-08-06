@@ -1,0 +1,132 @@
+{
+    "definitions": {
+        "status": {
+            "type": ["object", "null"],
+            "properties": {
+                    "id": {
+                        "type": ["null", "string"]
+                    },
+                    "status": {
+                        "type": ["null", "string"]
+                    },
+                    "orderindex": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "color": {
+                        "type": ["null", "string"]
+                    },
+                    "type": {
+                        "type": ["null", "string"]
+                    }
+            }
+        },
+        "list": {
+                "type": ["object", "null"],
+                "properties": {
+                    "id": {
+                        "type": ["string", "null"]
+                    },
+                    "name": {
+                        "type": ["null", "string"]
+                    },
+                    "orderindex": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "status": {
+                        "type": ["null", "string"]
+                    },
+                    "priority": {
+                        "type": ["null", "string"]
+                    },
+                    "assignee": {
+                        "type": ["null", "string"]
+                    },
+                    "task_count": {
+                        "type": ["null", "string", "integer"]
+                    },
+                    "due_date": {
+                        "type": ["null", "string"]
+                    },
+                    "start_date": {
+                        "type": ["null", "string"]
+                    },
+                    "space": {
+                        "type": ["null", "object"],
+                        "properties": {
+                            "id": {
+                                "type": ["null", "string"]
+                            },
+                            "name": {
+                                "type": ["null", "string"]
+                            }
+                        }
+                    },
+                    "archived": {
+                        "type": ["null", "boolean"]
+                    },
+                    "override_statuses": {
+                        "type": ["null", "boolean", "string"]
+                    },
+                    "statuses": {
+                        "type": ["array","null"],
+                        "items": {
+                            "$ref": "#/definitions/status"
+                        }
+                    },
+                    "permission_level": {
+                        "type": ["null", "string"]
+                    }
+            }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string"]
+        },
+        "name": {
+            "type": ["null", "string"]
+        },
+        "orderindex": {
+            "type": ["null", "string", "integer"]
+        },
+        "override_statuses": {
+            "type": ["null", "string", "boolean"]
+        },
+        "hidden": {
+            "type": ["null", "boolean"]
+        },
+        "space": {
+            "type": ["object", "null"],
+            "properties": {
+                "id": {
+                    "type": ["null", "string"]
+                },
+                "name": {
+                    "type": ["null", "string"]
+                }
+            }
+        },
+        "task_count": {
+            "type": ["null", "string", "integer"]
+        },
+        "statuses": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "#/definitions/status"
+            }
+        },
+        "lists": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "#/definitions/list"
+            }
+        },
+        "archived": {
+            "type": ["null", "boolean"]
+        },
+        "permission_level": {
+            "type": ["null", "string"]
+        }
+    }
+}
