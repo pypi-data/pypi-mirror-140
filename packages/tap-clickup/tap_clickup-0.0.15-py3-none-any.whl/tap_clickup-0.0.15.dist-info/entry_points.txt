@@ -1,0 +1,3 @@
+[console_scripts]
+tap-clickup=tap_clickup.tap:TapClickUp.cli
+

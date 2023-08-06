@@ -1,0 +1,134 @@
+{
+    "definitions": {
+        "folder": {
+            "type": ["object", "null"],
+            "properties": {
+                    "id": {
+                        "type": ["null", "string"]
+                    },
+                    "name": {
+                        "type": ["null", "string"]
+                    },
+                    "hidden": {
+                        "type": ["null", "boolean"]
+                    },
+                    "access": {
+                        "type": ["null", "boolean"]
+                    }
+            }
+        },
+        "status": {
+            "type": ["object", "null"],
+            "properties": {
+                    "id": {
+                        "type": ["null", "string"]
+                    },
+                    "status": {
+                        "type": ["null", "string"]
+                    },
+                    "orderindex": {
+                        "type": ["null", "string", "integer"]
+                    },
+                    "color": {
+                        "type": ["null", "string"]
+                    },
+                    "type": {
+                        "type": ["null", "string"]
+                    }
+            }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string"]
+            },
+        "name": {
+                "type": ["null", "string"]
+            },
+        "orderindex": {
+                "type": ["null", "integer", "string"]
+            },
+        "content": {
+                "type": ["null", "string"]
+            },
+        "status": {
+                "$ref": "#/definitions/status"
+            },
+        "priority": {
+            "type": ["string", "object", "null"],
+            "properties":{
+               "color":{
+                        "type": ["string"]
+                        },
+                        "id":{
+                            "type": ["string"]
+                        },
+                        "orderindex":{
+                            "type": ["string", "null", "integer"]
+                        },
+                        "priority":{
+                            "type": ["string"]
+                        }
+            }
+        },
+        "assignee": {
+                "type": ["object", "null"],
+                "properties": {
+                    "id": {
+                        "type": ["integer", "null"]
+                     },
+                    "username": {
+                        "type": ["string", "null"]
+                    },
+                    "color": {
+                        "type": ["string", "null"]
+                    },
+                    "initials": {
+                        "type": ["string", "null"]
+                    },
+                    "email": {
+                        "type": ["string", "null"]
+                    },
+                    "profilePicture": {
+                        "type": ["string", "null"]
+                    }
+                }
+            },
+        "task_count": {
+                "type": ["null", "string", "integer"]
+            },
+        "due_date": {
+                "type": ["null", "string"]
+            },
+        "start_date": {
+                "type": ["null", "string"]
+            },
+        "folder": {
+                "$ref": "#/definitions/folder"
+            },
+        "space": {
+                "type": ["null", "object"],
+                "properties": {
+                    "id": {
+                        "type": ["null", "string"]
+                    },
+                    "name": {
+                        "type": ["null", "string"]
+                    },
+                    "access": {
+                        "type": ["null", "boolean"]
+                    }
+                }
+            },
+        "archived": {
+                "type": ["null", "boolean"]
+            },
+        "override_statuses": {
+                "type": ["null", "string", "boolean"]
+            },
+        "permission_level": {
+            "type": ["null", "string"]
+        }
+    }
+}
