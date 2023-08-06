@@ -1,0 +1,5 @@
+calculation-mapilio
+solve==0.0.0
+trianglesolver==1.2
+geopy==2.1.0
+opencv-python==4.5.1.48
