@@ -1,0 +1,17 @@
+clark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clark/__version__.py,sha256=b9zgSZtXDzS_B1jJnbHOWD2_EDsZ05TuVFS3zEgIWc4,62
+clark/aws.py,sha256=bkB9Bxq5GSsqPfGi8y0ULzcGCUafT_GxU41Sauak5G8,2063
+clark/backend.py,sha256=2Azhr-KCQmjJJjXq6VRhHBiXOVOTdECl59zMjYqKUQk,9734
+clark/cache.py,sha256=-pH5qwTVuz_sp9r-oxZNCKTxcd_WqMAIVZKNjC8LHUI,4282
+clark/directory.py,sha256=_MYCCxX5nTG-204OpU1vnwsHFR0Tvvfv2eWk21dfecY,1435
+clark/execution.py,sha256=LFQi3B8INB078hqTGqQ_EyHH9XjqI8jqBNoh680bPQE,3432
+clark/executor.py,sha256=dy2wNAcyx8wMZErFlJBfepIh6L0NHg3yaA5M-8H66ho,5001
+clark/mac_executor.py,sha256=1BoleGyLC_7yZgaVZ8Y4wnCoWf6w9p2EgrjMX5Mtevo,8980
+clark/main.py,sha256=CNXdAU8ANjyl8onrOw-YZQDISvQvFg9f6h3mf9le3C8,12477
+clark/xnix_executor.py,sha256=AHBRhN0N6MTaKNPdYuAsZ_0DwkQHWWJtnmFgKxr8FC0,8514
+clark_cli-0.4.3.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+clark_cli-0.4.3.dist-info/METADATA,sha256=JBTK-POnTD2NyBZJEyVvQzqBfpYb9l06hbgnf3stUqI,4447
+clark_cli-0.4.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+clark_cli-0.4.3.dist-info/entry_points.txt,sha256=Wc2PdWrEnI2Z9904C45rZcvefK80WTMDhBsfRJ6eQGY,43
+clark_cli-0.4.3.dist-info/top_level.txt,sha256=9s3plPG4cvsgoecvlbqa1zGIDLrex2aUYyvF6DyVS88,6
+clark_cli-0.4.3.dist-info/RECORD,,
