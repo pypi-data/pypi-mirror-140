@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyreader.egg-info/PKG-INFO
+src/pyreader.egg-info/SOURCES.txt
+src/pyreader.egg-info/dependency_links.txt
+src/pyreader.egg-info/top_level.txt
+src/pythonreader/__init__.py
+src/pythonreader/pyreader.py
