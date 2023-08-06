@@ -1,0 +1,1 @@
+recursive-include autograde_visualizer/frontend/build *
