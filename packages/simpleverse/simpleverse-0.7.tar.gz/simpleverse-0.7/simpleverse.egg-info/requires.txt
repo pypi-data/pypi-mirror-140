@@ -1,0 +1,10 @@
+prompt-toolkit>=3.0.28
+requests>=2.27.1
+types-requests>=2.27.1
+
+[dev]
+black
+flake8
+mypy
+setuptools>=46.4.0
+types-setuptools

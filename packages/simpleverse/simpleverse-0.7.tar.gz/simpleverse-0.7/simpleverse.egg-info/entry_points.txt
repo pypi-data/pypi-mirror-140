@@ -1,0 +1,3 @@
+[console_scripts]
+simv = simpleverse.main:main
+
