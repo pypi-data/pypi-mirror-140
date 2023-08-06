@@ -1,0 +1,8 @@
+aws_service_availability/__init__.py,sha256=WVjs_WKEdtOxHVpwLMxymFCtgzeUgYh_HCv9gw1AXBc,466
+aws_service_availability/__main__.py,sha256=v2iHEr7_V6iS1qBJHQ4EuTXKtbdvGBj8gOZkUzDVtNc,1573
+aws_service_availability/scraper.py,sha256=eC89afFNQnoV18NQN9-tMqctBCfTW29aY22Sc3bNjQU,3423
+aws_service_availability-1.0.1.dist-info/entry_points.txt,sha256=PctmMleSM-ZbiRz9IczH9dTy7ovApA48A1Kl3nxg1ms,82
+aws_service_availability-1.0.1.dist-info/LICENSE,sha256=0ElQUwUZZ-vnb7H6zSh9edHtgA2hvnXPUBpVa8OaBHI,32471
+aws_service_availability-1.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aws_service_availability-1.0.1.dist-info/METADATA,sha256=99OE4GMEy45LR438ewJYbjzI7vVgNMtrBAKtVC0E2mI,3541
+aws_service_availability-1.0.1.dist-info/RECORD,,
