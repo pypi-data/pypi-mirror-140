@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: merlin-core
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/NVIDIA-Merlin/core
+Author: NVIDIA Corporation
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# merlin-core
+
+This repository contains core utilities for [NVIDIA Merlin](https://github.com/NVIDIA-Merlin) libraries
+like [NVTabular](https://github.com/NVIDIA-Merlin/NVTabular), [Transformers4Rec](https://github.com/NVIDIA-Merlin/Transformers4Rec) 
+and [merlin-models](https://github.com/NVIDIA-Merlin/models).
+
+## Installation
+
+To install from pypi:
+
+```
+pip install merlin-core
+```
+
+To install from conda:
+
+```
+conda install -c nvidia -c rapidsai -c numba -c conda-forge merlin-core python=3.7 cudatoolkit=11.0
+```
+
+
