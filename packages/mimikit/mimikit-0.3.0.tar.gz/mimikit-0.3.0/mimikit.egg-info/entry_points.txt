@@ -1,0 +1,8 @@
+[console_scripts]
+freqnet = mimikit.models.freqnet:demo
+samplernn = mimikit.models.sample_rnn:demo
+segment = mimikit.extract.segment:segment
+seq2seq = mimikit.models.s2s_lstm:demo
+stretch = mimikit.extract.segment:re_stretch
+wavenet = mimikit.models.wavenet:demo
+
