@@ -1,0 +1,12 @@
+astropy
+numpy
+scipy
+xmltodict
+imagecodecs
+zarr
+dask
+xarray
+scikit-image>=0.18
+xtiff
+tifffile>=2021.7.2
+s3fs>=2022.2.0

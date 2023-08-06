@@ -1,0 +1,34 @@
+Metadata-Version: 1.2
+Name: imaxt-image
+Version: 0.17.3
+Summary: IMAXT Image Utilities
+Home-page: https://github.com/IMAXT/imaxt-image
+Author: Eduardi Gonzalez Solares
+Maintainer: Eduardo Gonzalez Solares
+Maintainer-email: eglez@ast.cam.ac.uk
+License: GNU General Public License v3
+Description: IMAXT Image Utilities
+        =====================
+        
+        Installation
+        ------------
+        
+        We recomment to install the IMAXT software in a Conda environment with Python 3.7 and a few numerical Python libraries. The command below will create such environment::
+        
+            conda create -n imaxt python=3.7 numpy scipy zarr xarray dask distributed
+        
+        To install `imaxt-image` activate the created environment and use pip::
+        
+            conda activate imaxt
+            pip install imaxt-image
+        
+        
+        
+        
+Keywords: imaxt
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
