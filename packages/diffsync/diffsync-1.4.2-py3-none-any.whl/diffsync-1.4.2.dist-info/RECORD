@@ -1,0 +1,15 @@
+CHANGELOG.md,sha256=_iHgtlQxl1C49GGYrGJovtBhk7OgOL0xsCM4W60WuZw,2559
+LICENSE,sha256=KyBM0g5DkjaXihsMh1IXLfukfmLsCIdPl82pr-A1A90,602
+README.md,sha256=_NiypT-hhmGkH5LOjuEKlZEc3ueVFi0Z4qr6mPT82K0,1877
+diffsync/__init__.py,sha256=yWTK9T6giTK6qwlthLDzKJmX1Lbb0_nWtmpEEN5rYLQ,35042
+diffsync/diff.py,sha256=IZcNCx7D_diLE-z1tl16P6JC_r3fQKcvTcybPVEoEtI,15364
+diffsync/enum.py,sha256=PD2KGLZO6D0C2V9NF3kvsatY-h_xPgatVA6OTVgECtU,3364
+diffsync/exceptions.py,sha256=lr5zffAlZeXeuvld_g7UxoBWu4QGMidarBrdkfAKdfQ,2133
+diffsync/helpers.py,sha256=W3gaDelACAYP_PlpxhYh8doOElrkuOkttB5-97iPXqQ,20794
+diffsync/logging.py,sha256=QVkiGhzotJukVLp0kleo7c5yGjX8W5oA-qj2AwmHE-c,2865
+diffsync/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diffsync/utils.py,sha256=5BAhcQpeOfYBZC-fJ0a7KZ2RQwcz4PwESO0q8-D5fJo,1535
+diffsync-1.4.2.dist-info/LICENSE,sha256=KyBM0g5DkjaXihsMh1IXLfukfmLsCIdPl82pr-A1A90,602
+diffsync-1.4.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+diffsync-1.4.2.dist-info/METADATA,sha256=z60o1RxzIwag4kHgsHDL41DNBYnd_n5AYarW1x9bGu8,2954
+diffsync-1.4.2.dist-info/RECORD,,
