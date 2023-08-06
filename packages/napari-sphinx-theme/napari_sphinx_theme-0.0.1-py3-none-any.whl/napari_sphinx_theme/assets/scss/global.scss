@@ -1,0 +1,26 @@
+@import '@/scss/utils';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  @apply tw-w-screen tw-h-screen tw-p-0 tw-m-0;
+}
+
+main[role='main'] {
+  padding-top: 0 !important;
+
+  @media (min-width: 720px) {
+    padding-top: 128px !important;
+  }
+}
+
+html {
+  font-size: 100%;
+}
+
+main {
+  overflow-x: auto;
+}
