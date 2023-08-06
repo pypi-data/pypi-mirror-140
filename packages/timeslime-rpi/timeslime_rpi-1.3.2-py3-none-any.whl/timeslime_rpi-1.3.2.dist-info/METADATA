@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: timeslime-rpi
+Version: 1.3.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Christian Decker
+Author-email: christian.decker@lookslikematrix.de
+License: MIT
+Project-URL: Donate, https://www.buymeacoffee.com/lookslikematrix
+Project-URL: Source Code, https://gitlab.com/lookslikematrix/timeslime-rpi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: timeslime (==1.5.1)
+Requires-Dist: gpiozero (==1.6.2)
+Requires-Dist: rpi.gpio (==0.7.1)
+Requires-Dist: rpi-tm1637 (==1.3.4)
+
+# timeslime-rpi
+
+With *timeslime-rpi* you have the possibility to control your [**timeslime**](https://gitlab.com/lookslikematrix/timeslime/)
+
+## Install
+
+1. Install *timeslime-rpi*
+
+    ~~~bash
+    sudo apt install -y libdbus-1-dev libglib2.0-dev
+    pip3 install --upgrade timeslime-rpi
+    ~~~
+
+2. Wire everything
+
+    ![timeslime](./assets/timeslime.png)
+
+3. Run *timeslime-rpi*
+
+    ~~~bash
+    timeslime init --weekly_hours 40
+    timeslime-rpi
+    ~~~
+
+4. Add it to your autostart
+
+    ~~~bash
+    crontab -e
+    # insert at the end
+    @reboot /home/pi/.local/bin/timeslime-rpi
+    ~~~
+
+## Update
+
+### 1.1 to 1.2
+
+* timeslime was updated to version 1.4 so you have to update the timeslime database
+
+    ~~~bash
+    timeslime update
+    ~~~
+
+
