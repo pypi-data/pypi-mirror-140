@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+xmca/__init__.py
+xmca/array.py
+xmca/version.py
+xmca/xarray.py
+xmca.egg-info/PKG-INFO
+xmca.egg-info/SOURCES.txt
+xmca.egg-info/dependency_links.txt
+xmca.egg-info/requires.txt
+xmca.egg-info/top_level.txt
+xmca/tools/__init__.py
+xmca/tools/array.py
+xmca/tools/rotation.py
+xmca/tools/text.py
+xmca/tools/xarray.py
