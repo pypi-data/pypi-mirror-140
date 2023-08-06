@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/cloner/__init__.py
+src/cloner/ssm_cloner.py
+src/ssm_cloner.egg-info/PKG-INFO
+src/ssm_cloner.egg-info/SOURCES.txt
+src/ssm_cloner.egg-info/dependency_links.txt
+src/ssm_cloner.egg-info/requires.txt
+src/ssm_cloner.egg-info/top_level.txt
