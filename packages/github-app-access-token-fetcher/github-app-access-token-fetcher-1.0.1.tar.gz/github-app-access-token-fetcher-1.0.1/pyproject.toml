@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "github-app-access-token-fetcher"
+version = "1.0.1"
+description = "Utility script to produce a github app access token."
+authors = ["Bendik Samseth <bendik.samseth@inspera.no>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "^1.21.8"
+requests = "^2.27.1"
+PyJWT = "^2.3.0"
+cryptography = "^36.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+get-github-app-token = "github_app_access_token_fetcher:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
