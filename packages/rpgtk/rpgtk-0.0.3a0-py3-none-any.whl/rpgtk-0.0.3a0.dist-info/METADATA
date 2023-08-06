@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: rpgtk
+Version: 0.0.3a0
+Summary: the python rpg toolkit
+Home-page: https://github.com/is-gabs/rpgtk
+License: MIT
+Author: Gabriel Sarmento
+Author-email: gabrielfs.bot@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/is-gabs/rpgtk
+Description-Content-Type: text/markdown
+
+[![Coverage Status](https://coveralls.io/repos/github/is-gabs/rpgtk/badge.svg)](https://coveralls.io/github/is-gabs/rpgtk)
+
+# RPGTK \[alpha\]
+
+Role-Playing Game Toolkit is a platform for build Python RPG's systems.
+
+## Installing
+Install and update using [pip](https://pypi.org/project/rpgtk/):
+```
+$ pip install -U --pre rpgtk
+```
+
+## A simple example
+```python
+# dice.py
+from rpgtk import Dice
+
+dice = Dice(sides=20)
+
+dice.roll()
+
+print(dice)
+```
+```bash
+python dice.py
+'D10[6]'
+```
