@@ -1,0 +1,169 @@
+Metadata-Version: 2.1
+Name: mopac-step
+Version: 2022.3.1
+Summary: A SEAMM plug-in to setup, run and analyze semiempirical calculations with MOPAC
+Home-page: https://github.com/molssi-seam/mopac_step
+Author: Paul Saxe
+Author-email: psaxe@molssi.org
+License: BSD-3-Clause
+Keywords: SEAMM,plug-in,flowchart,forcefield,MOPAC,semiempirical,orbitals
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Platform: Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+===================
+SEAMM MOPAC plug-in
+===================
+
+.. image:: https://img.shields.io/github/issues-pr-raw/molssi-seamm/mopac_step
+   :target: https://github.com/molssi-seamm/mopac_step/pulls
+   :alt: GitHub pull requests
+
+.. image:: https://github.com/molssi-seamm/mopac_step/workflows/CI/badge.svg
+   :target: https://github.com/molssi-seamm/mopac_step/actions
+   :alt: Build Status
+
+.. image:: https://codecov.io/gh/molssi-seamm/mopac_step/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/molssi-seamm/mopac_step
+   :alt: Code Coverage
+
+.. image:: https://img.shields.io/lgtm/grade/python/g/molssi-seamm/mopac_step.svg?logo=lgtm&logoWidth=18
+   :target: https://lgtm.com/projects/g/molssi-seamm/mopac_step/context:python
+   :alt: Code Quality
+
+.. image:: https://github.com/molssi-seamm/mopac_step/workflows/Documentation/badge.svg
+   :target: https://molssi-seamm.github.io/mopac_step/index.html
+   :alt: Documentation Status
+
+.. image:: https://pyup.io/repos/github/molssi-seamm/mopac_step/shield.svg
+   :target: https://pyup.io/repos/github/molssi-seamm/mopac_step/
+   :alt: Updates for Dependencies
+
+.. image:: https://img.shields.io/pypi/v/mopac_step.svg
+   :target: https://pypi.python.org/pypi/mopac_step
+   :alt: PyPi VERSION
+
+A SEAMM plug-in to setup, run and analyze semiempirical calculations
+with MOPAC.
+
+This plug-in provides a graphical user interface (GUI) for setting up
+and running simulations using the semiempirical quantum chemistry code
+MOPAC_.
+
+* Free software: BSD license
+* Documentation: https://molssi-seamm.github.io/mopac_step/index.html
+* Code: https://github.com/molssi-seamm/mopac_step
+
+.. _MOPAC: http://openmopac.net
+
+Features
+--------
+
+* Single-point energies
+* Structural optimization
+* IR and Raman vibrational frequencies
+* Temperature dependent thermodynamic functions
+* Results can be stored in flowchart variables or tables_.
+
+.. _tables: https://molssi-seamm.github.io/table_step/index.html
+
+Acknowledgements
+----------------
+
+This package was created with Cookiecutter_ and the `molssi-seamm/cookiecutter-seamm-plugin`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`molssi-seamm/cookiecutter-seamm-plugin`: https://github.com/molssi-seamm/cookiecutter-seamm-plugin
+
+Developed by the Molecular Sciences Software Institute (MolSSI_),
+which receives funding from the `National Science Foundation`_ under
+award ACI-1547580
+
+.. _MolSSI: https://www.molssi.org
+.. _`National Science Foundation`: https://www.nsf.gov
+
+
+=======
+History
+=======
+
+2021.2.11 (11 February 2021)
+----------------------------
+
+* Updated the README file to give a better description.
+* Updated the short description in setup.py to work with the new installer.
+* Added keywords for better searchability.
+
+2021.2.4 (4 February 2021)
+--------------------------
+
+* Updated for compatibility with the new system classes in MolSystem
+  2021.2.2 release.
+
+2020.12.5 (5 December 2020)
+---------------------------
+
+* Internal: switching CI from TravisCI to GitHub Actions, and in the
+  process moving documentation from ReadTheDocs to GitHub Pages where
+  it is consolidated with the main SEAMM documentation.
+
+2020.11.2 (2 November 2020)
+---------------------------
+
+* Updated to be compatible with the new command-line argument
+  handling.
+
+2020.10.7 (7 October 2020)
+----------------------------
+
+* Updated to handle citations using the new framework.
+
+2020.9.29 (29 September 2020)
+-----------------------------
+
+* Updated to be compatible with the new system classes in MolSystem.
+
+2020.8.1 (1 August 2020)
+------------------------
+
+* Fixed bug caused by coordinates being strings, not numbers, in some
+  cases.
+
+2020.7.0 (23 July 2020)
+-----------------------
+
+* Improved the text output when running.
+
+0.9 (15 April 2020)
+-------------------
+
+* General bug fixes and cleanup of the code.
+
+0.7.0 (17 December 2019)
+------------------------
+
+* Consolidating minor changes and making a uniform release at year's
+  end.
+
+0.5.1 (29 August 2019)
+----------------------
+
+* First version that runs correctly and generates output.
+
+0.2.0 (13 August 2019)
+----------------------
+
+* First release on PyPI.
+
+
