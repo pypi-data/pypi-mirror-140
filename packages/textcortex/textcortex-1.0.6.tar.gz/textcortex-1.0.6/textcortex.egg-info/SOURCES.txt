@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+textcortex/__init__.py
+textcortex/textcortex.py
+textcortex.egg-info/PKG-INFO
+textcortex.egg-info/SOURCES.txt
+textcortex.egg-info/dependency_links.txt
+textcortex.egg-info/requires.txt
+textcortex.egg-info/top_level.txt
