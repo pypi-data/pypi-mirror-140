@@ -1,0 +1,13 @@
+setup.py
+NXModToolkit/__init__.py
+NXModToolkit/__main__.py
+NXModToolkit.egg-info/PKG-INFO
+NXModToolkit.egg-info/SOURCES.txt
+NXModToolkit.egg-info/dependency_links.txt
+NXModToolkit.egg-info/entry_points.txt
+NXModToolkit.egg-info/namespace_packages.txt
+NXModToolkit.egg-info/requires.txt
+NXModToolkit.egg-info/top_level.txt
+NXModToolkit.egg-info/zip-safe
+NXModToolkit/creator/__init__.py
+NXModToolkit/packager/__init__.py

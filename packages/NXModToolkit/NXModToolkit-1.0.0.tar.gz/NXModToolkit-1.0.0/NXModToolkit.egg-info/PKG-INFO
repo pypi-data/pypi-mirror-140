@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: NXModToolkit
+Version: 1.0.0
+Summary: NXModToolkit - A toolkit for creating and packaging .nxmod files.
+Home-page: 
+Author: Witherking25
+Author-email: witherking@withertech.com
+Maintainer: 
+Maintainer-email: 
+License: GNU GPL v3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+
+
+NXModToolkit is a toolkit for creating and packaging .nxmod files.
+Usage: 
+nxmodtoolkit create
+nxmodtoolkit package <path>
+
+
