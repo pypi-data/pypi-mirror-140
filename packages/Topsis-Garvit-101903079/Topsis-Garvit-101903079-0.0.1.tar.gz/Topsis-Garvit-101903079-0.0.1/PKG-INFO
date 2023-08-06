@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Topsis-Garvit-101903079
+Version: 0.0.1
+Summary: A very basic topsis calculator
+Home-page: UNKNOWN
+Author: Garvit Jain
+Author-email: gjain1_be19@thapar.edu
+License: MIT
+Keywords: topsis-calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a very simple topsis calculator.
+
+Change Log
+==========
+
+0.0.1 (23/02/2022)
+-------------------
+- First Release
+
