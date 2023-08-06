@@ -1,0 +1,4 @@
+pyyaml<7.0,>=6.0
+Jinja2<4.0,>=3.0
+xmltodict
+project_generator_definitions<0.3.0,>=0.2.2

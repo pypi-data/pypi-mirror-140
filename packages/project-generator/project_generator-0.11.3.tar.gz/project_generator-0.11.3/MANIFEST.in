@@ -1,0 +1,3 @@
+include project_generator/templates/*
+include LICENSE
+include README.md
