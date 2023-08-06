@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cython_coverage
+Version: 0.0.0
+Summary: A coverage plugin to work around a cython coverage bug
+Home-page: https://github.com/Ian-Foote/cython-coverage
+Author: Ian Foote
+Author-email: python@ian.feete.org
+License: apache
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+UNKNOWN
+

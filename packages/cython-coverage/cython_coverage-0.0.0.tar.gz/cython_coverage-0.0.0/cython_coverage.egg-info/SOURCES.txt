@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+cython_coverage.py
+pyproject.toml
+setup.cfg
+cython_coverage.egg-info/PKG-INFO
+cython_coverage.egg-info/SOURCES.txt
+cython_coverage.egg-info/dependency_links.txt
+cython_coverage.egg-info/top_level.txt
